@@ -23,6 +23,10 @@ ROOT = Path(__file__).parent.parent
 DISCOVERY_DIR = ROOT / "crawler" / "out"
 OUT_DIR = Path(__file__).parent / "out"
 PROMPT = Path(__file__).parent / "prompt.md"
+# online_clarity は4項目の抽出とは別のプロンプトで聞く。
+# 同じプロンプトに同居させると「曖昧」という語が4項目の判定にも漏れて、
+# 必要書類などが「見つからず(曖昧)」に落ちる副作用が出た（2026-07-21 実測）。
+CLARITY_PROMPT = Path(__file__).parent / "clarity_prompt.md"
 
 FIELDS = ["必要書類", "窓口オンライン可否", "期限", "手数料"]
 MAX_TEXT_CHARS = 18000
@@ -80,6 +84,26 @@ def build_input(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
     meta = {"has_jsonld": bool(jsonld), "text_len": len(text), "truncated": truncated,
             "n_links": len(link_lines)}
     return "".join(parts), meta
+
+
+def judge_clarity(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
+                  model: str) -> dict:
+    """ページの性質として online_clarity だけを1回観測する（4項目の抽出とは別呼び出し）。"""
+    r = fetcher.cached(page["url"])
+    if r is None or not r.body_path:
+        return {"online_clarity": "記載なし", "evidence": ""}
+    _, text, _ = parse(r.body(), page["url"])
+    prompt = "".join([
+        CLARITY_PROMPT.read_text(encoding="utf-8"),
+        "\n---\n",
+        f"## 対象\n\n- 自治体: {muni}\n- 手続き: {proc}\n- ページURL: {page['url']}\n",
+        f"\n## ページ本文\n\n{text[:MAX_TEXT_CHARS]}\n",
+    ])
+    data = parse_json_reply(call_claude(prompt, model))
+    clarity = (data.get("online_clarity") or "").strip()
+    if clarity not in ("明記", "曖昧", "記載なし"):
+        clarity = "記載なし"
+    return {"online_clarity": clarity, "evidence": (data.get("evidence") or "").strip()}
 
 
 def call_claude(prompt: str, model: str, timeout: int = 300) -> str:
@@ -169,6 +193,11 @@ def main() -> None:
                                              fetcher, extra_pages=extra)
                     data = parse_json_reply(call_claude(prompt2, args.model))
 
+            # ページの性質として1回だけ観測する。採点側はこれを機械的に点に変えるだけで、
+            # LLMに判定し直させない（同じ判定を二重に使うとスコアのぶれが増幅されるため）
+            clarity = judge_clarity(page, disc["municipality"], disc["procedure"],
+                                    fetcher, args.model)
+
             result = {
                 "municipality": disc["municipality"], "municipality_id": disc["municipality_id"],
                 "procedure": disc["procedure"], "procedure_id": disc["procedure_id"],
@@ -176,15 +205,15 @@ def main() -> None:
                 "reached": True,
                 "model": args.model,
                 "followed_urls": followed,
-                # ページの性質として1回だけ観測する。採点側はこれを機械的に点に変えるだけで、
-                # LLMに判定し直させない（同じ判定を二重に使うとスコアのぶれが増幅されるため）
-                "online_clarity": (data.get("online_clarity") or "記載なし").strip(),
+                "online_clarity": clarity["online_clarity"],
+                "online_clarity_evidence": clarity["evidence"],
                 "items": normalize_items(data),
                 "page_notes": data.get("page_notes", ""),
             }
             found = sum(1 for v in result["items"].values() if v["found"])
             tail = f" (+リンク先{len(followed)}件)" if followed else ""
-            print(f"[{disc['municipality']}] hop{page['hops']} {found}/4項目 抽出{tail} — {page['url']}")
+            print(f"[{disc['municipality']}] hop{page['hops']} {found}/4項目 抽出"
+                  f" / オンライン明示={clarity['online_clarity']}{tail} — {page['url']}")
 
         out = OUT_DIR / f"extract_{disc['municipality_id']}_{disc['procedure_id']}.json"
         out.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
