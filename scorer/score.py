@@ -88,7 +88,9 @@ def judge(golden: GoldenRow, item: dict, muni: str, proc: str, model: str) -> di
         "\n---\n",
         f"## 対象\n\n- 自治体: {muni}\n- 手続き: {proc}\n- 項目: {golden.field}\n",
         f"\n## 正解（人手）\n\n{golden.expected_value}",
-        f"\n（補足: {golden.note}）" if golden.note else "",
+        # golden.note は「ページのどこが読みにくいか」を人間向けに書いた注記であって、
+        # 正解の一部ではない。採点プロンプトに渡すと注記の内容まで required 扱いされ、
+        # 同じ抽出結果が実行ごとに 正解/部分正解 の間でぶれる。だから渡さない。
         f"\n\n## エージェントの答え\n\n{item['value']}",
         f"\n\n## エージェントが挙げた根拠\n\n{item['evidence'] or '（なし）'}",
     ])
@@ -139,7 +141,9 @@ def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -
         })
 
     reach_pts = 20 if reached else 0
-    machine_pts = (10 if reached and not page.get("is_pdf") else 0) + (10 if page.get("has_jsonld") else 0)
+    html_ok = bool(reached and not page.get("is_pdf"))
+    jsonld_ok = bool(page.get("has_jsonld"))
+    machine_pts = (10 if html_ok else 0) + (10 if jsonld_ok else 0)
     online_pts = {"正解": 20, "正解(記載なしが正しい)": 20, "部分正解": 10}.get(online_verdict or "", 0)
     total = reach_pts + accuracy + machine_pts + online_pts
 
@@ -150,6 +154,7 @@ def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -
         "followed_urls": ext.get("followed_urls", []),
         "breakdown": {"情報到達": reach_pts, "抽出正確性": accuracy,
                       "機械可読性": machine_pts, "オンライン明示": online_pts},
+        "machine": {"html": html_ok, "jsonld": jsonld_ok},
         "total": total,
         "fields": results,
         "page_notes": ext.get("page_notes", ""),

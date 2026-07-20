@@ -27,7 +27,18 @@ python3 scorer/score.py -p tennyu
 
 # 4. 1枚のレポートに出力
 python3 scorer/report.py -p tennyu
+
+# 5. ダッシュボード用のJSONを書き出す
+python3 analysis/export_web.py -p tennyu
 ```
+
+ダッシュボードは `web/` の静的ファイル。ローカルで見るには `web/` を配信する。
+
+```bash
+python3 -m http.server 4173 --directory web
+```
+
+デプロイ先は Cloudflare Pages 想定（ビルド不要・出力ディレクトリ = `web/`）。
 
 再実行しても自治体サイトには一切アクセスしない（`crawler/cache/` から返る）。
 取り直したいときだけ `python3 crawler/polite_fetch.py <URL> --refresh`。
@@ -51,7 +62,18 @@ python3 scorer/report.py -p tennyu
 | `extractor/` | 読解層。`prompt.md` が抽出プロンプト本体 |
 | `scorer/` | 採点層。`golden/*.csv` が人手の正解、`judge_prompt.md` が採点プロンプト |
 | `reports/` | 突合表つきレポート |
-| `personas/` `trust_check/` `analysis/` `web/` | Phase 2 以降。Phase 1 では触らない |
+| `analysis/` | 集計。`export_web.py` がダッシュボード用JSONを作る |
+| `web/` | ダッシュボード。`vendor/dads/` はデジタル庁デザインシステムの複製（[NOTICE](web/vendor/dads/NOTICE.md)） |
+| `personas/` `trust_check/` | Phase 2 以降。Phase 1 では触らない |
+
+## 未解決（Phase 2 に入る前に決着させる）
+
+1. **採点器の判定がぶれる。** 同じ抽出結果を2回採点すると、自治体によって合計が±10点動く
+   （実測: 八王子市 70点 / 80点）。「部分正解」の線引きが実行ごとに揺れるため。
+   ゴールデンセットを30件規模にして、まず**ぶれ幅そのもの**を測ること。
+2. **ルーブリックが自治体とエージェントを混ぜている。** 現在は「サイトに記載がないことを
+   正直に報告した」を満点にしている。エージェントの誠実さの評価としては正しいが、
+   *自治体*の準備度としては、書いていないこと自体が減点であるべき。
 
 ## 採点基準を変えるときの決まり
 

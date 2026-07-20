@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>東京エージェント・レディネス調査 — あなたの区はAIに手続きを頼めるか</title>
+<meta name="description" content="東京の区市町村の行政手続き情報が、住民のAIエージェントから読み取れるかを実測した第三者調査。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/dads/global.css">
+<link rel="stylesheet" href="vendor/dads/components/heading/heading.css">
+<link rel="stylesheet" href="vendor/dads/components/table/table.css">
+<link rel="stylesheet" href="vendor/dads/components/link/link.css">
+<link rel="stylesheet" href="vendor/dads/components/divider/divider.css">
+<link rel="stylesheet" href="vendor/dads/components/chip-label/chip-label.css">
+<link rel="stylesheet" href="vendor/dads/components/notification-banner/notification-banner.css">
+<link rel="stylesheet" href="vendor/dads/components/description-list/description-list.css">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品（調査中）</p>
+    <h1 class="dads-heading" data-size="xl">東京エージェント・レディネス調査</h1>
+    <p class="site-header__lead">住民のAIエージェントが行政手続きを代行する時代に、区市町村の行政情報は「AIから読める」状態か。実際にエージェントに読ませて測っています。</p>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+
+  <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
+    <h2 class="dads-notification-banner__heading">
+      <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="情報">
+        <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
+        <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
+      </svg>
+      <span class="dads-notification-banner__heading-text" id="phase-note">読み込み中</span>
+    </h2>
+    <div class="dads-notification-banner__body">
+      <p>これは個人が行った第三者調査であり、行政機関の公式発表ではありません。順位をつけることが目的ではなく、<strong>どこを直せば住民のAIから読めるようになるか</strong>を示すための調査です。</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="summary-heading">
+    <h2 class="dads-heading" data-size="l" id="summary-heading">全体の数字</h2>
+    <dl class="stat-row" id="summary"></dl>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="ranking-heading">
+    <h2 class="dads-heading" data-size="l" id="ranking-heading">自治体別スコア</h2>
+    <p class="section-note">100点満点。内訳は 情報到達20 / 抽出正確性40 / 機械可読性20 / オンライン明示20。自治体名を選ぶと内訳が下に出ます。</p>
+    <div class="dads-table" data-size="dense">
+      <table class="dads-table__table" id="ranking">
+        <caption class="dads-table__caption">エージェント手続き完遂率スコア（<span id="proc-name"></span>）</caption>
+        <thead>
+          <tr class="dads-table__col-header">
+            <th scope="col">自治体</th>
+            <th scope="col">合計</th>
+            <th scope="col">情報到達</th>
+            <th scope="col">抽出正確性</th>
+            <th scope="col">機械可読性</th>
+            <th scope="col">オンライン明示</th>
+            <th scope="col">到達ホップ数</th>
+          </tr>
+        </thead>
+        <tbody id="ranking-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="detail-heading">
+    <h2 class="dads-heading" data-size="l" id="detail-heading">選んだ自治体の内訳</h2>
+    <div id="detail" aria-live="polite"></div>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="reasons-heading">
+    <h2 class="dads-heading" data-size="l" id="reasons-heading">どこで読めなくなったか</h2>
+    <p class="section-note">エージェントが答えを出せなかった理由の集計。ここが行政向けの改善箇所リストの元データです。</p>
+    <div class="dads-table" data-size="dense">
+      <table class="dads-table__table">
+        <thead>
+          <tr class="dads-table__col-header">
+            <th scope="col">理由</th>
+            <th scope="col">件数</th>
+          </tr>
+        </thead>
+        <tbody id="reasons-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="method-heading">
+    <h2 class="dads-heading" data-size="l" id="method-heading">測り方</h2>
+    <dl class="dads-description-list">
+      <div class="dads-description-list__item">
+        <dt class="dads-description-list__term">情報到達</dt>
+        <dd class="dads-description-list__description">自治体トップページから、検索エンジンを使わずリンクだけを辿って手続きページに着けるか（深さ3まで）。</dd>
+      </div>
+      <div class="dads-description-list__item">
+        <dt class="dads-description-list__term">抽出正確性</dt>
+        <dd class="dads-description-list__description">必要書類・窓口/オンライン可否・期限・手数料の4項目を、ページに書かれていることだけから答えられるか。推測での補完は禁止しています。</dd>
+      </div>
+      <div class="dads-description-list__item">
+        <dt class="dads-description-list__term">機械可読性</dt>
+        <dd class="dads-description-list__description">HTML本文で読めるか（PDF頼みでないか）、構造化データ（JSON-LD）があるか。</dd>
+      </div>
+      <div class="dads-description-list__item">
+        <dt class="dads-description-list__term">オンライン明示</dt>
+        <dd class="dads-description-list__description">その手続きがオンラインで完結するのかどうかが、迷わず読み取れるか。</dd>
+      </div>
+    </dl>
+    <p class="section-note">クロールは robots.txt を守り、同一ドメインへのアクセスは3秒以上あけ、取得済みページは再取得していません。申請の送信は一切行っていません（読み取りのみ）。</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>調査・実装: 田沼秀（個人）。<strong>行政機関の公式発表ではありません。</strong></p>
+    <p>正解データは各ページを人手で読んで作った暫定版です。誤りの指摘を歓迎します。</p>
+    <p class="site-footer__credit">画面のスタイルに <a class="dads-link" href="https://design.digital.go.jp/">デジタル庁デザインシステム</a> のコードスニペット（MIT）を利用しています。デジタル庁が本調査を提供・監修しているものではありません。</p>
+    <p class="site-footer__generated">データ生成日: <span id="generated-at"></span></p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

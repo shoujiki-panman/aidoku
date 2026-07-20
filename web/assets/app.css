@@ -1,0 +1,197 @@
+/* このダッシュボード固有のレイアウトだけを書く。
+   デザインシステム側（vendor/dads/）のCSSは改変しない。色・字は必ずトークンを使う。 */
+
+body {
+  margin: 0;
+  background-color: var(--color-neutral-solid-gray-50, #f2f2f2);
+  color: var(--color-neutral-solid-gray-900);
+  font-family: var(--font-family-sans);
+}
+
+.wrap {
+  max-width: 1040px;
+  margin-inline: auto;
+  padding-inline: calc(20 / 16 * 1rem);
+}
+
+/* --- ヘッダー --- */
+
+.site-header {
+  background-color: var(--color-primitive-blue-1000);
+  color: #fff;
+  padding-block: calc(32 / 16 * 1rem) calc(28 / 16 * 1rem);
+  margin-bottom: calc(28 / 16 * 1rem);
+}
+
+.site-header .dads-heading {
+  color: #fff;
+  margin-block: calc(4 / 16 * 1rem);
+}
+
+.site-header__eyebrow {
+  margin: 0;
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--color-primitive-blue-100);
+}
+
+.site-header__lead {
+  margin: 0;
+  max-width: 68ch;
+  line-height: 1.8;
+  color: var(--color-primitive-blue-50);
+}
+
+/* --- 本文 --- */
+
+main section {
+  margin-block: calc(36 / 16 * 1rem);
+}
+
+.section-note {
+  max-width: 76ch;
+  line-height: 1.8;
+  color: var(--color-neutral-solid-gray-800);
+}
+
+.dads-notification-banner {
+  margin-block: calc(24 / 16 * 1rem);
+}
+
+/* --- 数字のならび --- */
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: calc(16 / 16 * 1rem);
+  margin: 0;
+  padding: 0;
+}
+
+.stat {
+  background-color: #fff;
+  border: 1px solid var(--color-neutral-solid-gray-300);
+  border-radius: 8px;
+  padding: calc(20 / 16 * 1rem);
+}
+
+.stat dt {
+  margin: 0 0 calc(8 / 16 * 1rem);
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--color-neutral-solid-gray-800);
+}
+
+.stat dd {
+  margin: 0;
+  font-size: calc(32 / 16 * 1rem);
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--color-primitive-blue-900);
+}
+
+.stat dd .unit {
+  font-size: calc(15 / 16 * 1rem);
+  font-weight: normal;
+  color: var(--color-neutral-solid-gray-800);
+}
+
+/* --- 表 --- */
+
+.dads-table {
+  background-color: #fff;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.dads-table__table {
+  width: 100%;
+  min-width: 720px;
+}
+
+.muni-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--color-primitive-blue-900);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.muni-button[aria-pressed="true"] {
+  font-weight: bold;
+}
+
+tr[data-selected="true"] {
+  background-color: var(--color-primitive-blue-50);
+}
+
+.score-cell {
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+
+.sub-cell {
+  font-variant-numeric: tabular-nums;
+  color: var(--color-neutral-solid-gray-800);
+}
+
+/* 満点でない内訳は色を変えて、伸びしろの位置が一目で分かるようにする */
+.sub-cell[data-full="false"] {
+  color: var(--color-semantic-warning-orange-2);
+  font-weight: bold;
+}
+
+/* --- 内訳パネル --- */
+
+.detail-card {
+  background-color: #fff;
+  border: 1px solid var(--color-neutral-solid-gray-300);
+  border-radius: 8px;
+  padding: calc(24 / 16 * 1rem);
+}
+
+.detail-card__source {
+  font-size: calc(14 / 16 * 1rem);
+  word-break: break-all;
+}
+
+.improve-list {
+  margin: 0;
+  padding-left: calc(20 / 16 * 1rem);
+  line-height: 1.9;
+}
+
+.improve-list .gain {
+  color: var(--color-semantic-success-2);
+  font-weight: bold;
+}
+
+.placeholder {
+  color: var(--color-neutral-solid-gray-800);
+}
+
+/* --- フッター --- */
+
+.site-footer {
+  margin-top: calc(48 / 16 * 1rem);
+  padding-block: calc(28 / 16 * 1rem);
+  background-color: var(--color-neutral-solid-gray-100);
+  border-top: 1px solid var(--color-neutral-solid-gray-300);
+  font-size: calc(14 / 16 * 1rem);
+  line-height: 1.9;
+}
+
+.site-footer p {
+  margin-block: calc(4 / 16 * 1rem);
+}
+
+.site-footer__credit,
+.site-footer__generated {
+  color: var(--color-neutral-solid-gray-800);
+}
+
+@media (max-width: 600px) {
+  .stat dd {
+    font-size: calc(26 / 16 * 1rem);
+  }
+}

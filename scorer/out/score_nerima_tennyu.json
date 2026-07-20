@@ -12,12 +12,16 @@
     "機械可読性": 10,
     "オンライン明示": 20
   },
+  "machine": {
+    "html": true,
+    "jsonld": false
+  },
   "total": 90,
   "fields": [
     {
       "field": "必要書類",
       "verdict": "正解",
-      "reason": "本人確認書類・転出証明書（特例転出時はマイナンバーカードで代替）・在留カード・在学証明書・委任状という正解の主要書類がすべて含まれており、住民が困る欠落はない。",
+      "reason": "本人確認書類・転出証明書とマイナンバーカードの例外・在留カード・在学証明書・委任状という主要項目がすべて正解と一致しており、住民が困る欠落はない",
       "points": 10,
       "judged_by": "claude-sonnet-5",
       "expected_found": true,
@@ -29,7 +33,7 @@
     {
       "field": "窓口オンライン可否",
       "verdict": "正解",
-      "reason": "肯定・否定の表現差はあるが、区民事務所窓口のみで郵送・インターネット不可という主要な意味内容は正解と一致している",
+      "reason": "窓口箇所数・郵送/インターネット不可の両方が正解と一致している",
       "points": 10,
       "judged_by": "claude-sonnet-5",
       "expected_found": true,
@@ -41,7 +45,7 @@
     {
       "field": "期限",
       "verdict": "正解",
-      "reason": "エージェントの答えは正解と完全に一致している",
+      "reason": "正解と完全に一致する内容を抽出できている",
       "points": 10,
       "judged_by": "claude-sonnet-5",
       "expected_found": true,
