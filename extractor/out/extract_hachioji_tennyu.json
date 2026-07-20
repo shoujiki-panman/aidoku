@@ -1,0 +1,52 @@
+{
+  "municipality": "八王子市",
+  "municipality_id": "hachioji",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
+    "hops": 3,
+    "link_text": "転入届",
+    "has_jsonld": false,
+    "text_len": 778,
+    "truncated": false,
+    "n_links": 35
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ）、住民基本台帳カード（所有者のみ）、代理人の場合は委任状（外国人住民は在留カード等・続柄を証する文書も必要）",
+      "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "オンライン不可。市役所本庁舎1階市民課（7番窓口）、八王子駅南口総合事務所、南大沢事務所、各事務所の窓口で届出（受付時間は窓口ごとに異なる）",
+      "evidence": "市役所本庁舎1階市民課（7番窓口） 可 午前8時30分から 午後5時 不可 不可",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "八王子市に住み始めてから14日以内",
+      "evidence": "八王子市に住み始めてから14日以内（注意1）",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "トップページ（index.html）自体には手続詳細がなく、リンク先の「市外からの引っ越し（転出証明書での手続き）」ページに必要書類・窓口・期限が記載されている。手数料については転入届自体の記載はなく、14日を過ぎた場合の「5万円以下の過料」の言及があるのみ。"
+}

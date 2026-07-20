@@ -1,0 +1,468 @@
+{
+  "municipality": "練馬区",
+  "municipality_id": "nerima",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.nerima.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+      "link_text": "転入届 （練馬区に引っ越してきたとき）",
+      "hops": 2,
+      "score": 42,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bamen/hikkoshi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7637,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyukokugai.html",
+      "link_text": "転入届（国外から練馬区に引越したとき）",
+      "hops": 3,
+      "score": 42,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3887,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
+      "link_text": "転入・転出に伴う区役所以外の手続き（電気・水道・ガス等）",
+      "hops": 2,
+      "score": 21,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bamen/hikkoshi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1307,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bamen/hikkoshi.html",
+      "link_text": "引越し",
+      "hops": 1,
+      "score": 18,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1535,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenshutsu.html",
+      "link_text": "転出届 （練馬区外に引っ越しするとき）",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bamen/hikkoshi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 8111,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenkyo.html",
+      "link_text": "転居届 （練馬区内で引っ越ししたとき）",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bamen/hikkoshi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4748,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tensyutsukokugai.html",
+      "link_text": "転出届 （国外へ引越しするとき）",
+      "hops": 3,
+      "score": 18,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 8839,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/shomei/honninkakunin25.html",
+      "link_text": "戸籍、住民票の申請・届出の本人確認方法について",
+      "hops": 3,
+      "score": 17,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3279,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html",
+      "link_text": "区役所に行かずにできる手続き（戸籍・住民登録）",
+      "hops": 3,
+      "score": 17,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2183,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
+      "link_text": "7月17日から7月21日までに戸籍のお届をされる方へ",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2124,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/juminkiroku.html",
+      "link_text": "住民記録の届出について",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenshutsu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1007,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyoka/index.html",
+      "link_text": "みどりに関する届出・手続き",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1065,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/index.html",
+      "link_text": "戸籍・住民登録",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1158,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/index.html",
+      "link_text": "お知らせ一覧（戸籍・住民登録）",
+      "hops": 3,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1158,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
+      "link_text": "",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1726,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/photoguide.html",
+      "link_text": "",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1345,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/midori_network.html",
+      "link_text": "みどりのネットワークの形成",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1598,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyodo/index.html",
+      "link_text": "みどりを育むムーブメントの輪を広げる",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1332,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
+      "link_text": "",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1031,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
+      "link_text": "区内で特殊詐欺が多発しています",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3334,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/chisui/shisuiban.html",
+      "link_text": "止水板の購入・設置費用を助成します",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2757,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kifu/kifu/kifu0701.html",
+      "link_text": "皆様の寄付に感謝申し上げます（4月の寄付）",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2493,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/aratanakotsu.html",
+      "link_text": "バスに代わる交通について考えるオープンハウスを開催します",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1633,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/nerimakyodorabo/jisshijigyo/miraichallenge/komaneri/index.html",
+      "link_text": "こまねり登録団体の取材情報を更新しました！",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2761,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/nenkinhoken/oshirase/koureisyou_kousin.html",
+      "link_text": "新しい高齢受給者証または資格情報のお知らせを7月16日（木）に発送",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2210,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bamen/hikkoshi.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/chisui/shisuiban.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kifu/kifu/kifu0701.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenshutsu.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenkyo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyoka/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/photoguide.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/midori_network.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyodo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/aratanakotsu.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/nerimakyodorabo/jisshijigyo/miraichallenge/komaneri/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/nenkinhoken/oshirase/koureisyou_kousin.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyukokugai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tensyutsukokugai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/shomei/honninkakunin25.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/juminkiroku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

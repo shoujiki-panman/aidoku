@@ -1,0 +1,61 @@
+{
+  "_note": "Phase 1 はパイロット3自治体×転入届のみ。reference_url は答え合わせ用のメモであり、discover.py は使わない（トップページからの到達性を測るため）。",
+  "municipalities": [
+    {
+      "id": "nerima",
+      "name": "練馬区",
+      "type": "特別区",
+      "top_url": "https://www.city.nerima.tokyo.jp/",
+      "reference_url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html"
+    },
+    {
+      "id": "edogawa",
+      "name": "江戸川区",
+      "type": "特別区",
+      "top_url": "https://www.city.edogawa.tokyo.jp/",
+      "reference_url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html"
+    },
+    {
+      "id": "hachioji",
+      "name": "八王子市",
+      "type": "市",
+      "top_url": "https://www.city.hachioji.tokyo.jp/",
+      "reference_url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html"
+    }
+  ],
+  "procedures": [
+    {
+      "id": "tennyu",
+      "name": "転入届",
+      "domain": "引越し",
+      "keywords": {
+        "strong": ["転入届", "転入", "引越し", "引っ越し"],
+        "weak": ["住民票", "住民登録", "住所", "異動", "届出", "戸籍", "くらし", "手続き"],
+        "url_hints": ["tennyu", "tenyu", "hikkoshi", "juminhyo", "jumin", "koseki", "kurashi", "todoke", "ido"]
+      },
+      "fields": ["必要書類", "窓口/オンライン可否", "期限", "手数料"]
+    },
+    {
+      "id": "jidouteate",
+      "name": "児童手当の申請",
+      "domain": "子育て",
+      "keywords": {
+        "strong": ["児童手当"],
+        "weak": ["子育て", "手当", "申請", "認定請求", "こども"],
+        "url_hints": ["jidou", "teate", "kosodate", "kodomo"]
+      },
+      "fields": ["必要書類", "窓口/オンライン可否", "期限", "手数料"]
+    },
+    {
+      "id": "sodaigomi",
+      "name": "粗大ごみ収集の申込",
+      "domain": "ごみ",
+      "keywords": {
+        "strong": ["粗大ごみ", "粗大ゴミ"],
+        "weak": ["ごみ", "ゴミ", "収集", "申込", "リサイクル"],
+        "url_hints": ["sodai", "gomi", "gomi", "recycle"]
+      },
+      "fields": ["必要書類", "窓口/オンライン可否", "期限", "手数料"]
+    }
+  ]
+}

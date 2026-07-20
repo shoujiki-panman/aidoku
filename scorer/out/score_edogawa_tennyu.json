@@ -1,0 +1,67 @@
+{
+  "municipality": "江戸川区",
+  "municipality_id": "edogawa",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page_url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
+  "hops": 3,
+  "followed_urls": [],
+  "breakdown": {
+    "情報到達": 20,
+    "抽出正確性": 35,
+    "機械可読性": 10,
+    "オンライン明示": 20
+  },
+  "total": 85,
+  "fields": [
+    {
+      "field": "必要書類",
+      "verdict": "部分正解",
+      "reason": "3パターンの分岐や主要書類はおおむね一致しているが、正解にある「世帯によっては続柄を確認できる書類」という条件付き記載が欠落している",
+      "points": 5,
+      "judged_by": "claude-sonnet-5",
+      "expected_found": true,
+      "expected_value": "本人確認書類、前住所地発行の転出証明書（紙の転出証明書を持つ場合）。マイナンバーカードでの特例転出・引越しワンストップ利用時はマイナンバーカード。外国人住民は在留カード等、世帯によっては続柄を確認できる書類",
+      "agent_found": true,
+      "agent_value": "紙の転出証明書を持つ場合：本人確認書類、転出証明書、マイナンバーカード（お持ちの方のみ）。委任状（本人以外が届出する場合）。外国人住民は在留カード等、国外からの転入者はパスポート・戸籍謄本等が別途必要。ワンストップサービス利用者・特例転出者は全員分のマイナンバーカードのみで来庁可。",
+      "failure_reason": null
+    },
+    {
+      "field": "窓口オンライン可否",
+      "verdict": "正解",
+      "reason": "オンライン不可・必ず来庁して窓口(区民課・各事務所戸籍住民係)で届出という主要事実が正解と一致している。",
+      "points": 10,
+      "judged_by": "claude-sonnet-5",
+      "expected_found": true,
+      "expected_value": "窓口のみ。区役所区民課・各事務所の戸籍住民係で届出（必ず来庁が必要）",
+      "agent_found": true,
+      "agent_value": "オンライン完結不可。ワンストップサービスや特例転出を利用した場合も含め、必ず区役所区民課・各事務所の戸籍住民係の窓口へ本人が来庁して届出する必要がある。",
+      "failure_reason": null
+    },
+    {
+      "field": "期限",
+      "verdict": "正解",
+      "reason": "期限の主要な内容（住みはじめた日から14日以内）が一致しており、住民が困る欠落はない",
+      "points": 10,
+      "judged_by": "claude-sonnet-5",
+      "expected_found": true,
+      "expected_value": "住みはじめた日から14日以内（住みはじめる前の届出は不可）",
+      "agent_found": true,
+      "agent_value": "住みはじめた日から14日以内",
+      "failure_reason": null
+    },
+    {
+      "field": "手数料",
+      "verdict": "正解(記載なしが正しい)",
+      "reason": "正解側も記載なしで、正直に見つからないと報告した",
+      "points": 10,
+      "judged_by": "rule",
+      "expected_found": false,
+      "expected_value": "",
+      "agent_found": false,
+      "agent_value": "",
+      "failure_reason": "記載なし"
+    }
+  ],
+  "page_notes": "必要書類は転出届の方法（ワンストップ／特例転出／紙の転出証明書）や外国人住民・国外転入かどうかで場合分けされており、一つの一覧に統一されていない。手数料についてはページ内のどこにも言及がなかった。"
+}

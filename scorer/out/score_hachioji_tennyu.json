@@ -1,0 +1,70 @@
+{
+  "municipality": "八王子市",
+  "municipality_id": "hachioji",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page_url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
+  "hops": 3,
+  "followed_urls": [
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+  ],
+  "breakdown": {
+    "情報到達": 20,
+    "抽出正確性": 35,
+    "機械可読性": 10,
+    "オンライン明示": 20
+  },
+  "total": 85,
+  "fields": [
+    {
+      "field": "必要書類",
+      "verdict": "正解",
+      "reason": "転出証明書・本人確認書類・マイナンバーカード/住基カード（所有者のみ）・委任状・外国人向け書類など主要項目が全て正しく含まれている",
+      "points": 10,
+      "judged_by": "claude-sonnet-5",
+      "expected_found": true,
+      "expected_value": "前住所地市区町村発行の転出証明書、本人確認書類。所有者のみマイナンバーカード・住民基本台帳カード（異動者全員分）、代理人の場合は委任状。外国人住民は在留カード又は特別永住者証明書、続柄を証する文書",
+      "agent_found": true,
+      "agent_value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ）、住民基本台帳カード（所有者のみ）、代理人の場合は委任状（外国人住民は在留カード等・続柄を証する文書も必要）",
+      "failure_reason": null
+    },
+    {
+      "field": "窓口オンライン可否",
+      "verdict": "正解",
+      "reason": "エージェントも「オンライン不可・窓口のみ（本庁舎市民課、八王子駅南口総合事務所、南大沢事務所、各事務所）」と正解と同じ結論・窓口情報を示せている",
+      "points": 10,
+      "judged_by": "claude-sonnet-5",
+      "expected_found": true,
+      "expected_value": "窓口のみ。市役所本庁舎1階市民課、八王子駅南口総合事務所、南大沢事務所、市民部各事務所で受付（曜日・時間は窓口ごとに異なる）",
+      "agent_found": true,
+      "agent_value": "オンライン不可。市役所本庁舎1階市民課（7番窓口）、八王子駅南口総合事務所、南大沢事務所、各事務所の窓口で届出（受付時間は窓口ごとに異なる）",
+      "failure_reason": null
+    },
+    {
+      "field": "期限",
+      "verdict": "部分正解",
+      "reason": "期限の日数は合っているが、正解にある「予定では届出できない（転入後でないと受理されない）」という重要な但し書きが抜けている",
+      "points": 5,
+      "judged_by": "claude-sonnet-5",
+      "expected_found": true,
+      "expected_value": "八王子市に住み始めてから14日以内（予定では届出できない）",
+      "agent_found": true,
+      "agent_value": "八王子市に住み始めてから14日以内",
+      "failure_reason": null
+    },
+    {
+      "field": "手数料",
+      "verdict": "正解(記載なしが正しい)",
+      "reason": "正解側も記載なしで、正直に見つからないと報告した",
+      "points": 10,
+      "judged_by": "rule",
+      "expected_found": false,
+      "expected_value": "",
+      "agent_found": false,
+      "agent_value": "",
+      "failure_reason": "記載なし"
+    }
+  ],
+  "page_notes": "トップページ（index.html）自体には手続詳細がなく、リンク先の「市外からの引っ越し（転出証明書での手続き）」ページに必要書類・窓口・期限が記載されている。手数料については転入届自体の記載はなく、14日を過ぎた場合の「5万円以下の過料」の言及があるのみ。"
+}

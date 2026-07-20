@@ -1,0 +1,67 @@
+{
+  "municipality": "練馬区",
+  "municipality_id": "nerima",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page_url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+  "hops": 2,
+  "followed_urls": [],
+  "breakdown": {
+    "情報到達": 20,
+    "抽出正確性": 40,
+    "機械可読性": 10,
+    "オンライン明示": 20
+  },
+  "total": 90,
+  "fields": [
+    {
+      "field": "必要書類",
+      "verdict": "正解",
+      "reason": "本人確認書類・転出証明書（特例転出時はマイナンバーカードで代替）・在留カード・在学証明書・委任状という正解の主要書類がすべて含まれており、住民が困る欠落はない。",
+      "points": 10,
+      "judged_by": "claude-sonnet-5",
+      "expected_found": true,
+      "expected_value": "窓口に来る方の本人確認書類、前住所地発行の転出証明書（マイナンバーカードで特例転出した場合は不要・代わりにマイナンバーカードが必須）。該当者のみ在留カード等、在学証明書、代理人の場合は委任状",
+      "agent_found": true,
+      "agent_value": "来所者の本人確認書類、前住所地発行の転出証明書（マイナンバーカードで転出手続き済みの場合は不要、代わりにマイナンバーカードが必要）。お持ちの方はマイナンバーカード、外国人住民は在留カード等、練馬区立小中学校へ転校する児童は在学証明書、代理人の場合は委任状等の追加書類が必要",
+      "failure_reason": null
+    },
+    {
+      "field": "窓口オンライン可否",
+      "verdict": "正解",
+      "reason": "肯定・否定の表現差はあるが、区民事務所窓口のみで郵送・インターネット不可という主要な意味内容は正解と一致している",
+      "points": 10,
+      "judged_by": "claude-sonnet-5",
+      "expected_found": true,
+      "expected_value": "区内6か所の区民事務所の窓口のみ。郵送・インターネットでの届出は不可と明記",
+      "agent_found": true,
+      "agent_value": "練馬区内6か所の区民事務所の窓口でのみ受付。郵送・インターネットでの手続きは不可",
+      "failure_reason": null
+    },
+    {
+      "field": "期限",
+      "verdict": "正解",
+      "reason": "エージェントの答えは正解と完全に一致している",
+      "points": 10,
+      "judged_by": "claude-sonnet-5",
+      "expected_found": true,
+      "expected_value": "練馬区に住み始めてから14日以内（住み始める前の届出は不可）",
+      "agent_found": true,
+      "agent_value": "練馬区に住み始めてから14日以内（住み始める前の届出は不可）",
+      "failure_reason": null
+    },
+    {
+      "field": "手数料",
+      "verdict": "正解(記載なしが正しい)",
+      "reason": "正解側も記載なしで、正直に見つからないと報告した",
+      "points": 10,
+      "judged_by": "rule",
+      "expected_found": false,
+      "expected_value": "",
+      "agent_found": false,
+      "agent_value": "",
+      "failure_reason": "記載なし"
+    }
+  ],
+  "page_notes": "1〜8の番号見出しで届出方法・期間・必要書類・マイナンバーカード継続利用手続きまで詳細に記載されているが、転入届自体の手数料についての明記は本文中に見当たらない（マイナンバーカード再交付手数料の記載はあるが別手続き）。"
+}
