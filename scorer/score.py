@@ -30,6 +30,8 @@ JUDGE_PROMPT = Path(__file__).parent / "judge_prompt.md"
 
 FIELDS = ["必要書類", "窓口オンライン可否", "期限", "手数料"]
 
+ONLINE_CLARITY_POINTS = {"明記": 20, "曖昧": 10, "記載なし": 0}
+
 VERDICT_POINTS = {
     "正解": 10,
     "正解(記載なしが正しい)": 10,
@@ -117,7 +119,6 @@ def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -
 
     results = []
     accuracy = 0
-    online_verdict = None
     for field in FIELDS:
         g = golden.get((mid, field))
         if g is None:
@@ -130,8 +131,6 @@ def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -
             "verdict": "不正解", "reason": "ページに到達できなかった", "judged_by": "rule"}
         pts = VERDICT_POINTS.get(v["verdict"], 0)
         accuracy += pts
-        if field == "窓口オンライン可否":
-            online_verdict = v["verdict"]
         results.append({
             "field": field, "verdict": v["verdict"], "reason": v.get("reason", ""),
             "points": pts, "judged_by": v.get("judged_by", ""),
@@ -144,7 +143,11 @@ def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -
     html_ok = bool(reached and not page.get("is_pdf"))
     jsonld_ok = bool(page.get("has_jsonld"))
     machine_pts = (10 if html_ok else 0) + (10 if jsonld_ok else 0)
-    online_pts = {"正解": 20, "正解(記載なしが正しい)": 20, "部分正解": 10}.get(online_verdict or "", 0)
+    # オンライン明示は、抽出時に観測した online_clarity を機械的に点へ変えるだけ。
+    # 以前は「窓口オンライン可否」のLLM判定を流用していたが、同じ判定が抽出正確性(10点)と
+    # ここ(20点)の両方を動かすため、判定が1回ゆらぐだけで合計が15点動いていた（実測）。
+    online_clarity = (ext.get("online_clarity") or "記載なし") if reached else "記載なし"
+    online_pts = ONLINE_CLARITY_POINTS.get(online_clarity, 0)
     total = reach_pts + accuracy + machine_pts + online_pts
 
     return {
@@ -155,6 +158,7 @@ def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -
         "breakdown": {"情報到達": reach_pts, "抽出正確性": accuracy,
                       "機械可読性": machine_pts, "オンライン明示": online_pts},
         "machine": {"html": html_ok, "jsonld": jsonld_ok},
+        "online_clarity": online_clarity,
         "total": total,
         "fields": results,
         "page_notes": ext.get("page_notes", ""),

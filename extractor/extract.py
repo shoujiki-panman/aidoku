@@ -176,6 +176,9 @@ def main() -> None:
                 "reached": True,
                 "model": args.model,
                 "followed_urls": followed,
+                # ページの性質として1回だけ観測する。採点側はこれを機械的に点に変えるだけで、
+                # LLMに判定し直させない（同じ判定を二重に使うとスコアのぶれが増幅されるため）
+                "online_clarity": (data.get("online_clarity") or "記載なし").strip(),
                 "items": normalize_items(data),
                 "page_notes": data.get("page_notes", ""),
             }
