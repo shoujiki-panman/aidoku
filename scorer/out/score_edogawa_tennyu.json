@@ -8,7 +8,7 @@
   "followed_urls": [],
   "breakdown": {
     "情報到達": 20,
-    "抽出正確性": 35,
+    "抽出正確性": 32.5,
     "機械可読性": 10,
     "オンライン明示": 20
   },
@@ -17,14 +17,39 @@
     "jsonld": false
   },
   "online_clarity": "明記",
-  "total": 85,
+  "total": 82.5,
   "fields": [
     {
       "field": "必要書類",
       "verdict": "部分正解",
-      "reason": "本人確認書類・転出証明書・マイナンバーカード・在留カードの主要点は一致しているが、正解にある「世帯によっては続柄を確認できる書類」が必要という条件付きの記載が抜けている",
-      "points": 5,
+      "reason": "3/4要素（欠落: 該当者限定・数量の条件）",
+      "points": 7.5,
       "judged_by": "claude-sonnet-5",
+      "missing": [
+        "該当者限定・数量の条件"
+      ],
+      "elements": [
+        {
+          "id": 1,
+          "covered": "yes",
+          "why": "本人確認書類を明記"
+        },
+        {
+          "id": 2,
+          "covered": "yes",
+          "why": "両パターン条件を記載"
+        },
+        {
+          "id": 3,
+          "covered": "yes",
+          "why": "在留カード等と明記"
+        },
+        {
+          "id": 4,
+          "covered": "no",
+          "why": "続柄書類の言及なし"
+        }
+      ],
       "expected_found": true,
       "expected_value": "本人確認書類、前住所地発行の転出証明書（紙の転出証明書を持つ場合）。マイナンバーカードでの特例転出・引越しワンストップ利用時はマイナンバーカード。外国人住民は在留カード等、世帯によっては続柄を確認できる書類",
       "agent_found": true,
@@ -34,9 +59,27 @@
     {
       "field": "窓口オンライン可否",
       "verdict": "正解",
-      "reason": "窓口のみ・来庁必須という主要事実が正解と一致しており、転出手続きの補足は誤りではなく住民が困る欠落もない",
-      "points": 10,
+      "reason": "3/3要素",
+      "points": 10.0,
       "judged_by": "claude-sonnet-5",
+      "missing": [],
+      "elements": [
+        {
+          "id": 1,
+          "covered": "yes",
+          "why": "オンライン不可と明記"
+        },
+        {
+          "id": 2,
+          "covered": "yes",
+          "why": "区民課・戸籍住民係と一致"
+        },
+        {
+          "id": 3,
+          "covered": "yes",
+          "why": "来庁必須と明記"
+        }
+      ],
       "expected_found": true,
       "expected_value": "窓口のみ。区役所区民課・各事務所の戸籍住民係で届出（必ず来庁が必要）",
       "agent_found": true,
@@ -45,10 +88,25 @@
     },
     {
       "field": "期限",
-      "verdict": "正解",
-      "reason": "住みはじめる前の届出不可という制約は欠けているが、住民が知るべき期限の主要情報（14日以内）は一致している",
-      "points": 10,
+      "verdict": "部分正解",
+      "reason": "1/2要素（欠落: 届出できる期間の始まり）",
+      "points": 5.0,
       "judged_by": "claude-sonnet-5",
+      "missing": [
+        "届出できる期間の始まり"
+      ],
+      "elements": [
+        {
+          "id": 1,
+          "covered": "yes",
+          "why": "14日以内と明記"
+        },
+        {
+          "id": 2,
+          "covered": "no",
+          "why": "事前不可の言及なし"
+        }
+      ],
       "expected_found": true,
       "expected_value": "住みはじめた日から14日以内（住みはじめる前の届出は不可）",
       "agent_found": true,
@@ -59,8 +117,10 @@
       "field": "手数料",
       "verdict": "正解(記載なしが正しい)",
       "reason": "正解側も記載なしで、正直に見つからないと報告した",
-      "points": 10,
+      "points": 10.0,
       "judged_by": "rule",
+      "missing": [],
+      "elements": [],
       "expected_found": false,
       "expected_value": "",
       "agent_found": false,

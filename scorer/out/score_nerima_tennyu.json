@@ -8,7 +8,7 @@
   "followed_urls": [],
   "breakdown": {
     "情報到達": 20,
-    "抽出正確性": 35,
+    "抽出正確性": 38.0,
     "機械可読性": 10,
     "オンライン明示": 20
   },
@@ -17,14 +17,44 @@
     "jsonld": false
   },
   "online_clarity": "明記",
-  "total": 85,
+  "total": 88.0,
   "fields": [
     {
       "field": "必要書類",
       "verdict": "部分正解",
-      "reason": "本人確認書類・転出証明書・在留カード等・在学証明書は正しく捉えているが、代理人の場合に必要な委任状の記載が抜けている",
-      "points": 5,
+      "reason": "4/5要素（欠落: 代理人が届け出る場合）",
+      "points": 8.0,
       "judged_by": "claude-sonnet-5",
+      "missing": [
+        "代理人が届け出る場合"
+      ],
+      "elements": [
+        {
+          "id": 1,
+          "covered": "yes",
+          "why": "本人確認書類に言及"
+        },
+        {
+          "id": 2,
+          "covered": "yes",
+          "why": "証明書と特例条件を明記"
+        },
+        {
+          "id": 3,
+          "covered": "yes",
+          "why": "在留カード等に言及"
+        },
+        {
+          "id": 4,
+          "covered": "no",
+          "why": "委任状の記載なし"
+        },
+        {
+          "id": 5,
+          "covered": "yes",
+          "why": "在学証明書に言及"
+        }
+      ],
       "expected_found": true,
       "expected_value": "窓口に来る方の本人確認書類、前住所地発行の転出証明書（マイナンバーカードで特例転出した場合は不要・代わりにマイナンバーカードが必須）。該当者のみ在留カード等、在学証明書、代理人の場合は委任状",
       "agent_found": true,
@@ -34,9 +64,22 @@
     {
       "field": "窓口オンライン可否",
       "verdict": "正解",
-      "reason": "窓口箇所数・郵送不可・オンライン不可のいずれも正解と一致しており、住民が困る欠落はない",
-      "points": 10,
+      "reason": "2/2要素",
+      "points": 10.0,
       "judged_by": "claude-sonnet-5",
+      "missing": [],
+      "elements": [
+        {
+          "id": 1,
+          "covered": "yes",
+          "why": "窓口のみ・郵送不可も明記"
+        },
+        {
+          "id": 2,
+          "covered": "yes",
+          "why": "6か所の区民事務所と明記"
+        }
+      ],
       "expected_found": true,
       "expected_value": "区内6か所の区民事務所の窓口のみ。郵送・インターネットでの届出は不可と明記",
       "agent_found": true,
@@ -46,9 +89,22 @@
     {
       "field": "期限",
       "verdict": "正解",
-      "reason": "期限・不可条件ともに正解と完全一致している。",
-      "points": 10,
+      "reason": "2/2要素",
+      "points": 10.0,
       "judged_by": "claude-sonnet-5",
+      "missing": [],
+      "elements": [
+        {
+          "id": 1,
+          "covered": "yes",
+          "why": "14日以内と明記"
+        },
+        {
+          "id": 2,
+          "covered": "yes",
+          "why": "住み始める前は不可と明記"
+        }
+      ],
       "expected_found": true,
       "expected_value": "練馬区に住み始めてから14日以内（住み始める前の届出は不可）",
       "agent_found": true,
@@ -59,8 +115,10 @@
       "field": "手数料",
       "verdict": "正解(記載なしが正しい)",
       "reason": "正解側も記載なしで、正直に見つからないと報告した",
-      "points": 10,
+      "points": 10.0,
       "judged_by": "rule",
+      "missing": [],
+      "elements": [],
       "expected_found": false,
       "expected_value": "",
       "agent_found": false,

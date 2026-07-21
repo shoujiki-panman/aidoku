@@ -11,7 +11,7 @@
   ],
   "breakdown": {
     "情報到達": 20,
-    "抽出正確性": 35,
+    "抽出正確性": 29.7,
     "機械可読性": 10,
     "オンライン明示": 10
   },
@@ -20,14 +20,44 @@
     "jsonld": false
   },
   "online_clarity": "曖昧",
-  "total": 75,
+  "total": 69.7,
   "fields": [
     {
       "field": "必要書類",
-      "verdict": "正解",
-      "reason": "転出証明書・本人確認書類・マイナンバーカード/住基カード（所有者のみ）・代理人の委任状・外国人住民の在留カード等、正解の要素をすべて過不足なくカバーしている",
-      "points": 10,
+      "verdict": "部分正解",
+      "reason": "4/5要素（欠落: 外国人住民の追加書類）",
+      "points": 8.0,
       "judged_by": "claude-sonnet-5",
+      "missing": [
+        "外国人住民の追加書類"
+      ],
+      "elements": [
+        {
+          "id": 1,
+          "covered": "yes",
+          "why": "本人確認書類の記載あり"
+        },
+        {
+          "id": 2,
+          "covered": "yes",
+          "why": "転出証明書の記載あり"
+        },
+        {
+          "id": 3,
+          "covered": "no",
+          "why": "特別永住者証明書は「等」で曖昧"
+        },
+        {
+          "id": 4,
+          "covered": "yes",
+          "why": "代理人は委任状と明記"
+        },
+        {
+          "id": 5,
+          "covered": "yes",
+          "why": "所有者のみ・全員分と明記"
+        }
+      ],
       "expected_found": true,
       "expected_value": "前住所地市区町村発行の転出証明書、本人確認書類。所有者のみマイナンバーカード・住民基本台帳カード（異動者全員分）、代理人の場合は委任状。外国人住民は在留カード又は特別永住者証明書、続柄を証する文書",
       "agent_found": true,
@@ -36,10 +66,30 @@
     },
     {
       "field": "窓口オンライン可否",
-      "verdict": "正解",
-      "reason": "受付窓口の具体名は正解と一致し、オンライン不可の記載も正解の「窓口のみ」と意味が合致している",
-      "points": 10,
+      "verdict": "部分正解",
+      "reason": "2/3要素（欠落: 来庁・受付の条件）",
+      "points": 6.7,
       "judged_by": "claude-sonnet-5",
+      "missing": [
+        "来庁・受付の条件"
+      ],
+      "elements": [
+        {
+          "id": 1,
+          "covered": "yes",
+          "why": "窓口のみと明記"
+        },
+        {
+          "id": 2,
+          "covered": "yes",
+          "why": "4窓口すべて記載"
+        },
+        {
+          "id": 3,
+          "covered": "no",
+          "why": "曜日時間差の言及なし"
+        }
+      ],
       "expected_found": true,
       "expected_value": "窓口のみ。市役所本庁舎1階市民課、八王子駅南口総合事務所、南大沢事務所、市民部各事務所で受付（曜日・時間は窓口ごとに異なる）",
       "agent_found": true,
@@ -49,9 +99,24 @@
     {
       "field": "期限",
       "verdict": "部分正解",
-      "reason": "期限「14日以内」は一致するが、正解にある「予定では届出できない（住み始めてから起算）」という但し書きが抜けており、事前に届け出ようとする住民が窓口で戸惑う可能性がある",
-      "points": 5,
+      "reason": "1/2要素（欠落: 届出できる期間の始まり）",
+      "points": 5.0,
       "judged_by": "claude-sonnet-5",
+      "missing": [
+        "届出できる期間の始まり"
+      ],
+      "elements": [
+        {
+          "id": 1,
+          "covered": "yes",
+          "why": "14日以内と明記"
+        },
+        {
+          "id": 2,
+          "covered": "no",
+          "why": "始期の言及なし"
+        }
+      ],
       "expected_found": true,
       "expected_value": "八王子市に住み始めてから14日以内（予定では届出できない）",
       "agent_found": true,
@@ -62,8 +127,10 @@
       "field": "手数料",
       "verdict": "正解(記載なしが正しい)",
       "reason": "正解側も記載なしで、正直に見つからないと報告した",
-      "points": 10,
+      "points": 10.0,
       "judged_by": "rule",
+      "missing": [],
+      "elements": [],
       "expected_found": false,
       "expected_value": "",
       "agent_found": false,

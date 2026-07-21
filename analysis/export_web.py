@@ -43,9 +43,14 @@ def build(procedure: str, run_date: str) -> dict:
     for s in sorted(scores, key=lambda x: -x["total"]):
         # 改善箇所は2種類ある。項目ごとの取りこぼしと、配点そのものの取りこぼし（構造化データ等）。
         # 後者を落とすと「4項目すべて満点」なのに満点でない、という表示になるので両方を集める。
+        # points が要素比になったので gain は float。0.1 の誤差が出ないよう丸める。
+        # missing には欠落した必須要素のスロット名が入るので、「どこを直せば何点」が
+        # 自由文の reason ではなく構造化データで取れる。
         weak = [
-            {"field": f["field"], "verdict": f["verdict"], "reason": f.get("failure_reason") or f["reason"],
-             "gain": 10 - f["points"]}
+            {"field": f["field"], "verdict": f["verdict"],
+             "reason": f.get("failure_reason") or f["reason"],
+             "missing": f.get("missing", []),
+             "gain": round(10 - f["points"], 1)}
             for f in s["fields"] if f["points"] < 10
         ]
         machine = s.get("machine") or {}
