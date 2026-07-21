@@ -87,23 +87,35 @@ def build_input(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
 
 
 def judge_clarity(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
-                  model: str) -> dict:
-    """ページの性質として online_clarity だけを1回観測する（4項目の抽出とは別呼び出し）。"""
+                  model: str, extra_pages: list[tuple[str, str]] | None = None) -> dict:
+    """ページの性質として online_clarity だけを1回観測する（4項目の抽出とは別呼び出し）。
+
+    読む範囲は4項目の抽出と必ず揃える（本体ページ＋--follow で開いたリンク先）。
+    本体ページだけで判定していた頃、入口が薄い自治体（八王子）で4項目は
+    リンク先を読み clarity は読まない非対称が起き、判定が「記載なし」に落ちていた。
+    入口が薄いこと自体のコストは「情報到達」で別に測っているので、ここで二重に引かない。
+    """
     r = fetcher.cached(page["url"])
     if r is None or not r.body_path:
-        return {"online_clarity": "記載なし", "evidence": ""}
+        return {"online_clarity": "記載なし", "evidence": "", "pages": []}
     _, text, _ = parse(r.body(), page["url"])
-    prompt = "".join([
+    parts = [
         CLARITY_PROMPT.read_text(encoding="utf-8"),
         "\n---\n",
         f"## 対象\n\n- 自治体: {muni}\n- 手続き: {proc}\n- ページURL: {page['url']}\n",
         f"\n## ページ本文\n\n{text[:MAX_TEXT_CHARS]}\n",
-    ])
-    data = parse_json_reply(call_claude(prompt, model))
+    ]
+    for url, ptext in (extra_pages or []):
+        parts.append(f"\n---\n\n## リンク先ページの本文（{url}）\n\n{ptext[:MAX_TEXT_CHARS]}\n")
+    if extra_pages:
+        parts.append("\n（上のリンク先ページも、このページから1クリックで到達できる範囲です。"
+                     "同じ手続きの説明として合わせて読んでください。）")
+    data = parse_json_reply(call_claude("".join(parts), model))
     clarity = (data.get("online_clarity") or "").strip()
     if clarity not in ("明記", "曖昧", "記載なし"):
         clarity = "記載なし"
-    return {"online_clarity": clarity, "evidence": (data.get("evidence") or "").strip()}
+    return {"online_clarity": clarity, "evidence": (data.get("evidence") or "").strip(),
+            "pages": [page["url"], *(u for u, _ in (extra_pages or []))]}
 
 
 def call_claude(prompt: str, model: str, timeout: int = 300) -> str:
@@ -178,9 +190,9 @@ def main() -> None:
             # 探索順序4「リンク先1階層」— エージェントが開きたいと言ったページだけを追う。
             # ここだけ取得層に降りるが、通すのは同じ PoliteFetcher（robots・3秒・キャッシュ）。
             followed: list[str] = []
+            extra: list[tuple[str, str]] = []
             if args.follow:
                 wants = [u for u in (data.get("follow_urls") or []) if str(u).startswith("http")]
-                extra: list[tuple[str, str]] = []
                 for url in wants[:MAX_FOLLOW]:
                     fr = fetcher.fetch(url)
                     if not fr.body_path:
@@ -195,8 +207,9 @@ def main() -> None:
 
             # ページの性質として1回だけ観測する。採点側はこれを機械的に点に変えるだけで、
             # LLMに判定し直させない（同じ判定を二重に使うとスコアのぶれが増幅されるため）
+            # 読む範囲は4項目と揃える（extra_pages を同じように渡す）
             clarity = judge_clarity(page, disc["municipality"], disc["procedure"],
-                                    fetcher, args.model)
+                                    fetcher, args.model, extra_pages=extra)
 
             result = {
                 "municipality": disc["municipality"], "municipality_id": disc["municipality_id"],
@@ -207,6 +220,8 @@ def main() -> None:
                 "followed_urls": followed,
                 "online_clarity": clarity["online_clarity"],
                 "online_clarity_evidence": clarity["evidence"],
+                # 何を読んで判定したかを残す（判定範囲が4項目とずれていないかの確認用）
+                "online_clarity_pages": clarity["pages"],
                 "items": normalize_items(data),
                 "page_notes": data.get("page_notes", ""),
             }
