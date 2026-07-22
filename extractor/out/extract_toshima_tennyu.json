@@ -16,33 +16,33 @@
   "model": "claude-sonnet-5",
   "followed_urls": [
     "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
-    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html"
+    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html"
   ],
-  "online_clarity": "記載なし",
-  "online_clarity_evidence": "",
+  "online_clarity": "明記",
+  "online_clarity_evidence": "必ずマイナンバーカードをお持ちの上、豊島区の窓口で転入手続きを行ってください。",
   "online_clarity_pages": [
     "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
     "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
-    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html"
+    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html"
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "転出証明書（前住所で転出届をして交付を受けたもの）、窓口に来る人の本人確認書類、引越しする世帯全員分のマイナンバーカード（所持者のみ）、法定代理人の場合は戸籍謄本等の権限確認書類、外国人世帯の場合は在留カード・特別永住者証明書、続柄変更がある場合は続柄証明書類",
-      "evidence": "届出に必要なもの 1 転出証明書 2 窓口で手続きを行う方の本人確認書類",
+      "value": "転出証明書（前住所の区市町村で発行、マイナンバーカードで特例転出した場合は不要）、窓口へ来る人の本人確認書類、引越しをする方全員のマイナンバーカード（持っている場合）。法定代理人は戸籍謄本等、外国人は在留カード等・続柄証明書の原本が追加で必要。",
+      "evidence": "1 転出証明書 豊島区に引越してくる前の住所の区市町村で転出届を行い、「転出証明書」または「転出証明書に準ずる証明書」の交付を受けてください。",
       "source": "linked_page",
       "failure_reason": null
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみ（豊島区役所3階総合窓口課、東部区民事務所、西部区民事務所のいずれか）。このページの手続き（通常の転入届）にオンライン申請の案内はなし",
-      "evidence": "届出場所・届出時間 豊島区役所（3階総合窓口課） 住所：豊島区南池袋2-45-1",
+      "value": "窓口のみで完結（豊島区役所3階総合窓口課／東部区民事務所／西部区民事務所）。マイナポータルの引越しワンストップサービスで転出届をオンライン申請した場合でも、転入の手続き自体はマイナンバーカードを持参して窓口で行う必要があり、オンラインだけでは完結しない。",
+      "evidence": "マイナポータルを利用したオンライン申請（引越しワンストップサービス）にて転出届を行った方は、必ずマイナンバーカードをお持ちの上、豊島区の窓口で転入手続きを行ってください。",
       "source": "linked_page",
       "failure_reason": null
     },
     "期限": {
       "found": true,
-      "value": "新しい住所に住み始めてから14日以内",
+      "value": "豊島区の新しい住所に住み始めてから14日以内（住み始める前は受付不可）",
       "evidence": "豊島区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
       "source": "linked_page",
       "failure_reason": null
@@ -55,5 +55,5 @@
       "failure_reason": "記載なし"
     }
   },
-  "page_notes": "トップページ（index.html）自体は本文を持たず、届出人の属性（本人/代理人/国外から/マイナンバーカード利用/マイナポータル利用）ごとに枝分かれする6つのリンク一覧のみのハブページだった。実際の必要書類・期限・窓口情報は「本人または新しく同じ世帯になる方が手続きをするとき」のリンク先ページにまとめて記載されており、手数料への言及はどのページにも見当たらなかった。"
+  "page_notes": "トップページ自体は届出人の属性（本人/代理人/国外/マイナンバーカード/マイナポータル）ごとの案内へのリンク集にすぎず、必要書類・期限・窓口の詳細情報は子ページ側にのみ記載されている。手数料についてはどのページにも言及がなかった。"
 }
