@@ -35,27 +35,27 @@
         {
           "id": 1,
           "covered": "yes",
-          "why": "本人確認書類の記載あり"
+          "why": "本人確認書類と明記"
         },
         {
           "id": 2,
           "covered": "yes",
-          "why": "転出証明書の記載あり"
+          "why": "転出証明書を明記"
         },
         {
           "id": 3,
           "covered": "no",
-          "why": "特別永住者証明書は「等」で曖昧"
+          "why": "特別永住者証明書に言及なし"
         },
         {
           "id": 4,
           "covered": "yes",
-          "why": "代理人は委任状と明記"
+          "why": "代理人の場合委任状と明記"
         },
         {
           "id": 5,
           "covered": "yes",
-          "why": "所有者のみ・全員分と明記"
+          "why": "所有者のみ全員分と明記"
         }
       ],
       "expected_found": true,
@@ -82,12 +82,12 @@
         {
           "id": 2,
           "covered": "yes",
-          "why": "4窓口すべて記載"
+          "why": "4窓口を列挙"
         },
         {
           "id": 3,
           "covered": "no",
-          "why": "曜日時間差の言及なし"
+          "why": "曜日・時間の記載なし"
         }
       ],
       "expected_found": true,
@@ -114,7 +114,7 @@
         {
           "id": 2,
           "covered": "no",
-          "why": "始期の言及なし"
+          "why": "起算前不可の言及なし"
         }
       ],
       "expected_found": true,

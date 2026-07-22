@@ -8,7 +8,7 @@
   "followed_urls": [],
   "breakdown": {
     "情報到達": 20,
-    "抽出正確性": 32.5,
+    "抽出正確性": 25.7,
     "機械可読性": 10,
     "オンライン明示": 20
   },
@@ -17,37 +17,44 @@
     "jsonld": false
   },
   "online_clarity": "明記",
-  "total": 82.5,
+  "total": 75.7,
   "fields": [
     {
       "field": "必要書類",
       "verdict": "部分正解",
-      "reason": "3/4要素（欠落: 該当者限定・数量の条件）",
-      "points": 7.5,
+      "reason": "2/5要素（欠落: 外国人住民の追加書類、代理人が届け出る場合、該当者限定・数量の条件）",
+      "points": 4.0,
       "judged_by": "claude-sonnet-5",
       "missing": [
+        "外国人住民の追加書類",
+        "代理人が届け出る場合",
         "該当者限定・数量の条件"
       ],
       "elements": [
         {
           "id": 1,
           "covered": "yes",
-          "why": "本人確認書類を明記"
+          "why": "本人確認できるものと明記"
         },
         {
           "id": 2,
           "covered": "yes",
-          "why": "両パターン条件を記載"
+          "why": "転出証明書の条件も一致"
         },
         {
           "id": 3,
-          "covered": "yes",
-          "why": "在留カード等と明記"
+          "covered": "no",
+          "why": "在留カード等で特別永住者証明書不明"
         },
         {
           "id": 4,
           "covered": "no",
-          "why": "続柄書類の言及なし"
+          "why": "委任状の言及なし"
+        },
+        {
+          "id": 5,
+          "covered": "no",
+          "why": "続柄確認書類の言及なし"
         }
       ],
       "expected_found": true,
@@ -58,26 +65,28 @@
     },
     {
       "field": "窓口オンライン可否",
-      "verdict": "正解",
-      "reason": "3/3要素",
-      "points": 10.0,
+      "verdict": "部分正解",
+      "reason": "2/3要素（欠落: 来庁・受付の条件）",
+      "points": 6.7,
       "judged_by": "claude-sonnet-5",
-      "missing": [],
+      "missing": [
+        "来庁・受付の条件"
+      ],
       "elements": [
         {
           "id": 1,
           "covered": "yes",
-          "why": "オンライン不可と明記"
+          "why": "オンライン不可・窓口のみ明記"
         },
         {
           "id": 2,
           "covered": "yes",
-          "why": "区民課・戸籍住民係と一致"
+          "why": "区民課・戸籍住民係と明記"
         },
         {
           "id": 3,
-          "covered": "yes",
-          "why": "来庁必須と明記"
+          "covered": "no",
+          "why": "届出人の条件の記載なし"
         }
       ],
       "expected_found": true,

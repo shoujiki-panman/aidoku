@@ -8,7 +8,7 @@
   "followed_urls": [],
   "breakdown": {
     "情報到達": 20,
-    "抽出正確性": 38.0,
+    "抽出正確性": 30.7,
     "機械可読性": 10,
     "オンライン明示": 20
   },
@@ -17,42 +17,44 @@
     "jsonld": false
   },
   "online_clarity": "明記",
-  "total": 88.0,
+  "total": 80.7,
   "fields": [
     {
       "field": "必要書類",
       "verdict": "部分正解",
-      "reason": "4/5要素（欠落: 代理人が届け出る場合）",
-      "points": 8.0,
+      "reason": "2/5要素（欠落: 外国人住民の追加書類、代理人が届け出る場合、該当者限定・数量の条件）",
+      "points": 4.0,
       "judged_by": "claude-sonnet-5",
       "missing": [
-        "代理人が届け出る場合"
+        "外国人住民の追加書類",
+        "代理人が届け出る場合",
+        "該当者限定・数量の条件"
       ],
       "elements": [
         {
           "id": 1,
           "covered": "yes",
-          "why": "本人確認書類に言及"
+          "why": "本人確認書類明記"
         },
         {
           "id": 2,
           "covered": "yes",
-          "why": "証明書と特例条件を明記"
+          "why": "特例時の代替も明記"
         },
         {
           "id": 3,
-          "covered": "yes",
-          "why": "在留カード等に言及"
+          "covered": "no",
+          "why": "在留カード等で具体列挙なし"
         },
         {
           "id": 4,
           "covered": "no",
-          "why": "委任状の記載なし"
+          "why": "代理人・委任状の言及なし"
         },
         {
           "id": 5,
-          "covered": "yes",
-          "why": "在学証明書に言及"
+          "covered": "no",
+          "why": "該当者のみで条件未特定"
         }
       ],
       "expected_found": true,
@@ -63,21 +65,28 @@
     },
     {
       "field": "窓口オンライン可否",
-      "verdict": "正解",
-      "reason": "2/2要素",
-      "points": 10.0,
+      "verdict": "部分正解",
+      "reason": "2/3要素（欠落: 来庁・受付の条件）",
+      "points": 6.7,
       "judged_by": "claude-sonnet-5",
-      "missing": [],
+      "missing": [
+        "来庁・受付の条件"
+      ],
       "elements": [
         {
           "id": 1,
           "covered": "yes",
-          "why": "窓口のみ・郵送不可も明記"
+          "why": "郵送・不可と明記"
         },
         {
           "id": 2,
           "covered": "yes",
-          "why": "6か所の区民事務所と明記"
+          "why": "6か所と明記"
+        },
+        {
+          "id": 3,
+          "covered": "no",
+          "why": "曜日時間の記載なし"
         }
       ],
       "expected_found": true,
