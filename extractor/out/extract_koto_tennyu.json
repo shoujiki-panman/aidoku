@@ -1,0 +1,54 @@
+{
+  "municipality": "江東区",
+  "municipality_id": "koto",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html",
+    "hops": 3,
+    "link_text": "転入届（江東区以外の区市町村からのお引越し）",
+    "has_jsonld": false,
+    "text_len": 6315,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "前住所の区市町村で発行した転出証明書、窓口に来られる方の本人確認書類、住民異動届（マイナンバーカードの特例転入の場合はマイナンバーカード等）。世帯主以外が届出る場合は委任状が必要",
+      "evidence": "前住所の区市町村で発行した転出証明書 窓口に来られる方の本人確認書類 住民異動届（窓口にて記入または下記の関連ドキュメントよりダウンロードできます。）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "オンライン不可。窓口のみ（江東区役所2階3番窓口、豊洲特別出張所、区内7箇所の出張所）",
+      "evidence": "江東区役所2階3番窓口（区民課住民記録係） 豊洲特別出張所 出張所（区内7箇所）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "新しい住所に住み始めてから14日以内（引越し前の届出は不可、14日目が閉庁日の場合は翌開庁日）",
+      "evidence": "新しい住所に住み始めてから14日以内（注釈：お引越し前に届出をすることはできません。）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "必要書類・届出先・届出期間は本文に詳細に明記されているが、手数料については本文中に一切言及がない。転入届自体は住民票の異動届であり無料の可能性が高いが、ページに明記がないため「記載なし」とする。"
+}

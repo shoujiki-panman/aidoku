@@ -1,0 +1,54 @@
+{
+  "municipality": "台東区",
+  "municipality_id": "taito",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tennyu-inin-denshi.docx",
+    "hops": 3,
+    "link_text": "・「委任状 転入届（台東区外からのお引越し）、電子証明書の発行」(ワード:29KB)",
+    "has_jsonld": false,
+    "text_len": 21992,
+    "truncated": true,
+    "n_links": 0
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tennyu-inin-denshi.docx"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "指定URLはHTMLページではなく.docxファイル（ファイル名から転入時の委任状電子版と推測）そのものを直接指しており、渡された本文はWord文書（zip形式）の生バイナリをテキストとして展開したもので、意味のある文章として読み取れない。本文からの引用も構造化データもPDFもリンク一覧も存在しないため、4項目とも抽出不能と判定した。"
+}

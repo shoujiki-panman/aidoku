@@ -1,0 +1,57 @@
+{
+  "municipality": "中野区",
+  "municipality_id": "nakano",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+    "hops": 2,
+    "link_text": "マイナンバーカードを利用する転入届",
+    "has_jsonld": false,
+    "text_len": 2653,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html"
+  ],
+  "online_clarity": "曖昧",
+  "online_clarity_evidence": "届出書の事前入力ができるサービスを開始しました。ご自宅･移動中に入力し、区役所で届出書の印刷が可能です。",
+  "online_clarity_pages": [
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "前住所地（または最終住民登録地）発行の転出証明書等、本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）。代理人の場合は委任状と代理人の本人確認書類も必要",
+      "evidence": "前住所地（または最終住民登録地）が発行した転出証明書等 本人確認書類等 官公署が発行した写真付き証明書等（マイナンバーカード（個人番号カード）、運転免許証、日本国発行のパスポート、在留カードなど）",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "戸籍住民課住民記録係窓口(本庁2階4番)または各地域事務所(区内5か所)での届出が必要。事前入力サービスで自宅からフォーム入力はできるが、印刷・提出は窓口で行うためオンライン完結は不可",
+      "evidence": "戸籍住民課住民記録係窓口(本庁2階4番）または各地域事務所(区内5か所）",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "新しい住所に住み始めてから14日以内（遅れると過料がかかる場合あり）",
+      "evidence": "新しい住所に住み始めてから14日以内（届け出が遅れると過料がかかる場合があります）。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "指定URLは『マイナンバーカードを利用する転入届』という特定手続きのページで、一般的な転入届は別ページ（転入届（区外から中野区へ））にある。両ページとも手数料の記載は一切なし。"
+}

@@ -1,0 +1,57 @@
+{
+  "municipality": "墨田区",
+  "municipality_id": "sumida",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+    "hops": 2,
+    "link_text": "転入届・転居届と併せて行う「電子証明書の発行」の同一世帯員による代理手続きについて",
+    "has_jsonld": false,
+    "text_len": 4295,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+  ],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+    "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページは転入届本体ではなく「転入届・転居届と併せて行う電子証明書発行の代理手続き」という限定的な付随手続きの持ち物のみを説明しており、転入届自体の必要書類・窓口・期限・手数料には触れていない。リンク先の「届出・登録・証明」ページも『住民登録の届出』等へのリンク一覧（目次）に過ぎず、具体的なURLが本文中に示されていないため追跡できなかった。"
+}

@@ -3,70 +3,466 @@
   "municipality_id": "kita",
   "procedure": "転入届",
   "procedure_id": "tennyu",
-  "top_url": "https://www.city.kita.tokyo.jp/",
+  "top_url": "https://www.city.kita.lg.jp/",
   "candidates": [
     {
-      "url": "https://www.city.kita.tokyo.jp/living/registration/1001564/index.html",
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+      "link_text": "マイナンバーカードや特定在留カードなどをお持ちの方の転出転入手続き(転入届の特例)",
+      "hops": 2,
+      "score": 23,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5777,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+      "link_text": "転入届、転居届に伴うマイナンバーカードや特定在留カードなどの手続き",
+      "hops": 2,
+      "score": 23,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7717,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+      "link_text": "転入・転出の住所変更等の届出",
+      "hops": 2,
+      "score": 16,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7282,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001565.html",
+      "link_text": "引越しに関する手続き",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4369,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001566.html",
+      "link_text": "転入時の手続き",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.kita.lg.jp/living/registration/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7703,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001573.html",
+      "link_text": "留学などに伴い、北区への転入手続きを団体で行う方へ",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.kita.lg.jp/living/registration/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4470,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/index.html",
       "link_text": "引越し",
       "hops": 1,
       "score": 10,
-      "parent": "https://www.city.kita.tokyo.jp/",
-      "status": 404,
+      "parent": "https://www.city.kita.lg.jp/",
+      "status": 200,
       "is_pdf": false,
+      "text_len": 3333,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001629/1001639.html",
+      "link_text": "月1回、日曜と火曜夜間に転出・転入・転居などの窓口を開庁しています",
+      "hops": 2,
+      "score": 10,
+      "parent": "https://www.city.kita.lg.jp/living/registration/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4807,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001571.html",
+      "link_text": "オンラインによる転出届・転入（転居）予定連絡",
+      "hops": 2,
+      "score": 10,
+      "parent": "https://www.city.kita.lg.jp/living/registration/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7696,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/570/idoutodokdesyo20260105.pdf",
+      "link_text": "住民異動届出書 （PDF 154.5KB）",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+      "status": 200,
+      "is_pdf": true,
       "text_len": 0,
       "has_jsonld": false
     },
     {
-      "url": "https://www.city.kita.tokyo.jp/living/index.html",
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/568/idoutodokdesyo20260105.pdf",
+      "link_text": "住民異動届出書 （PDF 154.5KB）",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/index.html",
       "link_text": "くらし・手続きトップ",
       "hops": 1,
       "score": 6,
-      "parent": "https://www.city.kita.tokyo.jp/",
-      "status": 404,
+      "parent": "https://www.city.kita.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4047,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001523/index.html",
+      "link_text": "戸籍の届出（婚姻、離婚、出生、死亡など）",
+      "hops": 2,
+      "score": 6,
+      "parent": "https://www.city.kita.lg.jp/living/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3266,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001590/index.html",
+      "link_text": "住民票・戸籍の証明書",
+      "hops": 2,
+      "score": 6,
+      "parent": "https://www.city.kita.lg.jp/living/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3166,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/568/ininjyo-ido20251222.pdf",
+      "link_text": "委任状見本・様式（住民異動） （PDF 558.1KB）",
+      "hops": 3,
+      "score": 5,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/index.html",
+      "link_text": "届出・証明",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.city.kita.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4699,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/shinsei_tetsuzuki_search.html",
+      "link_text": "申請・手続き検索",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.city.kita.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3265,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001641/index.html",
+      "link_text": "届出・証明に関するお知らせ",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.kita.lg.jp/living/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3459,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001585/index.html",
+      "link_text": "外国人住民の手続き",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.kita.lg.jp/living/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3240,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010040/1001570",
+      "link_text": "区民部 戸籍住民課 王子区民事務所へのお問い合わせは専用フォームをご利用ください。",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+      "status": 0,
       "is_pdf": false,
       "text_len": 0,
       "has_jsonld": false
     },
     {
-      "url": "https://www.city.kita.tokyo.jp/living/registration/index.html",
-      "link_text": "届出・証明",
-      "hops": 1,
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010050/1001570",
+      "link_text": "区民部 戸籍住民課 赤羽区民事務所へのお問い合わせは専用フォームをご利用ください。",
+      "hops": 3,
       "score": 3,
-      "parent": "https://www.city.kita.tokyo.jp/",
-      "status": 404,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+      "status": 0,
       "is_pdf": false,
       "text_len": 0,
       "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010040/1016956",
+      "link_text": "区民部 戸籍住民課 王子区民事務所へのお問い合わせは専用フォームをご利用ください。",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010050/1016956",
+      "link_text": "区民部 戸籍住民課 赤羽区民事務所へのお問い合わせは専用フォームをご利用ください。",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010060/1016956",
+      "link_text": "区民部 戸籍住民課 滝野川区民事務所へのお問い合わせは専用フォームをご利用ください。",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001629/1001631.html",
+      "link_text": "区民事務所・戸籍係・個人番号カード交付係の混雑・待合情報サービス",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4843,
+      "has_jsonld": true
     }
   ],
   "fetch_log": [
     {
-      "url": "https://www.city.kita.tokyo.jp/",
+      "url": "https://www.city.kita.lg.jp/",
       "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
       "error": null
     },
     {
-      "url": "https://www.city.kita.tokyo.jp/living/registration/1001564/index.html",
-      "status": 404,
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/index.html",
+      "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
-      "error": "HTTP 404"
+      "error": null
     },
     {
-      "url": "https://www.city.kita.tokyo.jp/living/index.html",
-      "status": 404,
+      "url": "https://www.city.kita.lg.jp/living/index.html",
+      "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
-      "error": "HTTP 404"
+      "error": null
     },
     {
-      "url": "https://www.city.kita.tokyo.jp/living/registration/index.html",
-      "status": 404,
+      "url": "https://www.city.kita.lg.jp/living/registration/index.html",
+      "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
-      "error": "HTTP 404"
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/shinsei_tetsuzuki_search.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001565.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001523/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001590/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001641/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001585/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001566.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001573.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001629/1001639.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001571.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/570/idoutodokdesyo20260105.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010040/1001570",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010050/1001570",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010040/1016956",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010050/1016956",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010060/1016956",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/568/idoutodokdesyo20260105.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/568/ininjyo-ido20251222.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/living/registration/1001629/1001631.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
     }
   ]
 }

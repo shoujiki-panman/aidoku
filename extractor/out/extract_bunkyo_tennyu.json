@@ -1,0 +1,59 @@
+{
+  "municipality": "文京区",
+  "municipality_id": "bunkyo",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.bunkyo.lg.jp/b013/p000261/index.html",
+    "hops": 3,
+    "link_text": "転入届(区外や国外から文京区へ引越しされる方）",
+    "has_jsonld": false,
+    "text_len": 2064,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+    "https://www.city.bunkyo.lg.jp/b013/p000264.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "届出は文京シビックセンター2階のみで受け付けています。注意：郵送またはメールでの受付はしておりませんのでご注意ください。",
+  "online_clarity_pages": [
+    "https://www.city.bunkyo.lg.jp/b013/p000261/index.html",
+    "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+    "https://www.city.bunkyo.lg.jp/b013/p000264.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）、（お持ちの方は）マイナンバーカード、転出証明書（マイナンバーカードで特例転出した場合は不要）、代理人の場合は委任状など",
+      "evidence": "(1)窓口に来られた方の本人確認書類 マイナンバーカード(個人番号カード）、運転免許証、パスポート、在留カード等",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口のみ（文京シビックセンター2階 戸籍住民課住民記録係）。郵送・メールでの受付は不可。オンライン手続き不可",
+      "evidence": "届出は文京シビックセンター2階のみで受け付けています。注意：郵送またはメールでの受付はしておりませんのでご注意ください。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "引越した日から14日以内",
+      "evidence": "届出期間 引越した日から14日以内",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "トップページ自体には受付窓口の場所と担当課の情報しかなく、必要書類・受付方法・期限は1階層下の「他の区市町村から文京区へ転入する場合」ページに集約されていた。手数料についてはトップページ・リンク先2ページのいずれにも記載が見当たらない。"
+}

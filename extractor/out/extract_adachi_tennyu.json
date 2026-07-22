@@ -1,0 +1,54 @@
+{
+  "municipality": "足立区",
+  "municipality_id": "adachi",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html",
+    "hops": 3,
+    "link_text": "転入届（他の市区町村や海外から足立区に引っ越してきたとき）",
+    "has_jsonld": false,
+    "text_len": 2720,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "足立区への転入届は必ず窓口での届出が必要です。郵送での届出はできません。",
+  "online_clarity_pages": [
+    "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "他の市区町村から転入の場合：転出証明書、世帯全員分のマイナンバーカード（所持者のみ）、世帯全員分の在留カード等（外国人のみ）、国民健康保険資格確認書（該当者のみ）、本人確認書類、（代理人の場合は委任状）。海外からの転入の場合は別途パスポート・戸籍謄本等が必要。",
+      "evidence": "転出証明書（旧住所地市区町村が発行したもの）／世帯全員分のマイナンバーカード （所持されている方のみ）／本人確認書類（本人または代理人本人であることを証明できるもの）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "オンライン不可・郵送不可。区内16ヶ所の区民事務所、または区役所南館1階戸籍住民課の窓口でのみ届出可能。",
+      "evidence": "足立区への転入届は必ず窓口での届出が必要です。郵送での届出はできません。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "引っ越ししてから14日以内",
+      "evidence": "引っ越ししてから『14日以内』",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "届出場所・期限・持ち物（国内転入／海外転入で場合分け）・過料の注意まで本文に明記されているが、手数料についての記載はページ内に見当たらない。"
+}

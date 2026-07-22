@@ -1,0 +1,54 @@
+{
+  "municipality": "品川区",
+  "municipality_id": "shinagawa",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html",
+    "hops": 3,
+    "link_text": "● 転入届の詳細ページ",
+    "has_jsonld": false,
+    "text_len": 14142,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "本人が手続きする場合：転出証明書、本人確認書類、マイナンバーカード（お持ちの方のみ）。代理人が行う場合は委任状等が別途必要（本人以外の申請パターンごとに持ち物が異なる）。",
+      "evidence": "・転出証明書 ・本人確認書類 ・マイナンバーカード（お持ちの方のみ）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "品川区役所戸籍住民課（住民異動）、荏原第一地域センターほか5つの地域センターの窓口で手続き。オンラインで転入届自体を完結できるという記載はなし（オンラインは転出届側の「特例転入」を前提とする案内のみ）。",
+      "evidence": "品川区役所 戸籍住民課 戸籍住民担当（住民異動） 荏原第一地域センター　平日：午前8時30分～午後5時",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "新しい住所地に住み始めてから14日以内。届出期間を大幅に過ぎると5万円以下の過料の可能性あり。",
+      "evidence": "新しい住所地に住み始めてから14日以内に転入届を出す必要があります。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "本人／同一世帯／法定代理人／任意代理人の4パターンで持ち物説明が並列され情報量が多いが、手数料への言及は本文中どこにも見当たらない。オンライン可否についても明示的な可否表明はなく、窓口の受付時間表のみが詳細に記載されている。"
+}

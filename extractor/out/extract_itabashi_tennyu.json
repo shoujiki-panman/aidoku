@@ -1,0 +1,54 @@
+{
+  "municipality": "板橋区",
+  "municipality_id": "itabashi",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+    "hops": 2,
+    "link_text": "転入届 （板橋区外から板橋区に転入した方）",
+    "has_jsonld": false,
+    "text_len": 4449,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "転入届はマイナポータルによる申請のみでは完結しません。必ず窓口へお越しいただき、手続きが必要になります。",
+  "online_clarity_pages": [
+    "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "前住所地で発行された転出証明書（マイナンバーカードで転出手続きをした場合は不要）、届出に来た方の本人確認資料（マイナンバーカード・運転免許証・パスポート等）、全員分のマイナンバーカード（お持ちの方）、在学証明書・教科書給与証明書（該当の小中学生がいる場合）、全員分の在留カードまたは特別永住者証明書（外国人の方）、居住実態を確認できる書類（異動日から届出日まで1年以上経過している場合）",
+      "evidence": "前住所地で発行された転出証明書 マイナンバーカードや運転免許証、パスポートなど届出に来た方の本人確認資料 全員分のマイナンバーカード（お持ちの方）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口のみで完結。本庁舎1階または区内6か所の区民事務所（管轄区域なし・どこでも可）で受付。マイナポータル申請のみでは完結せず、必ず窓口への来庁が必要。",
+      "evidence": "転入届はマイナポータルによる申請のみでは完結しません。必ず窓口へお越しいただき、手続きが必要になります。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "新住所に住み始めた日から14日以内（住み始める前の手続きはできません）",
+      "evidence": "新住所に住み始めた日から14日以内（住み始める前の手続きはできません）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "必要書類・届出期間・オンライン可否（窓口必須の明記）は本文に詳しく記載されているが、転入届自体の手数料についての言及は本文中に見当たらない（マイナンバーカード再交付の手数料1000円は別手続きの話）。"
+}

@@ -1,0 +1,59 @@
+{
+  "municipality": "豊島区",
+  "municipality_id": "toshima",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
+    "hops": 2,
+    "link_text": "転入届：豊島区外から豊島区に住所を変更したとき",
+    "has_jsonld": false,
+    "text_len": 1151,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html"
+  ],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
+    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "転出証明書（前住所で転出届をして交付を受けたもの）、窓口に来る人の本人確認書類、引越しする世帯全員分のマイナンバーカード（所持者のみ）、法定代理人の場合は戸籍謄本等の権限確認書類、外国人世帯の場合は在留カード・特別永住者証明書、続柄変更がある場合は続柄証明書類",
+      "evidence": "届出に必要なもの 1 転出証明書 2 窓口で手続きを行う方の本人確認書類",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口のみ（豊島区役所3階総合窓口課、東部区民事務所、西部区民事務所のいずれか）。このページの手続き（通常の転入届）にオンライン申請の案内はなし",
+      "evidence": "届出場所・届出時間 豊島区役所（3階総合窓口課） 住所：豊島区南池袋2-45-1",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "新しい住所に住み始めてから14日以内",
+      "evidence": "豊島区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "トップページ（index.html）自体は本文を持たず、届出人の属性（本人/代理人/国外から/マイナンバーカード利用/マイナポータル利用）ごとに枝分かれする6つのリンク一覧のみのハブページだった。実際の必要書類・期限・窓口情報は「本人または新しく同じ世帯になる方が手続きをするとき」のリンク先ページにまとめて記載されており、手数料への言及はどのページにも見当たらなかった。"
+}
