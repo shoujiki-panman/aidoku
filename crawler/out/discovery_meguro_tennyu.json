@@ -1,0 +1,468 @@
+{
+  "municipality": "目黒区",
+  "municipality_id": "meguro",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.meguro.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
+      "link_text": "転入届：国外から目黒区へ住所を変更したとき",
+      "hops": 3,
+      "score": 39,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3966,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html",
+      "link_text": "転入届：本人または新しく同じ世帯になるかたが手続きをするとき",
+      "hops": 3,
+      "score": 39,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3653,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuudairi.html",
+      "link_text": "転入届：代理人が手続きをするとき",
+      "hops": 3,
+      "score": 39,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3721,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/ido.html",
+      "link_text": "転入届：マイナンバーカード等を使って本人または同じ世帯になるかたが窓口で手続きをするとき",
+      "hops": 3,
+      "score": 39,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3373,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
+      "link_text": "転入届",
+      "hops": 2,
+      "score": 36,
+      "parent": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3075,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+      "link_text": "転入届",
+      "hops": 2,
+      "score": 36,
+      "parent": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3304,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
+      "link_text": "転入届：目黒区外から目黒区に住所を変更したとき",
+      "hops": 2,
+      "score": 35,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1168,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/index.html",
+      "link_text": "引越しの手続き（転入・転出など）",
+      "hops": 2,
+      "score": 31,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1327,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tenkyo/index.html",
+      "link_text": "目黒区内で引っ越し",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1146,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/kosekitodokede/index.html",
+      "link_text": "戸籍の届出（出生、死亡など）",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1255,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
+      "link_text": "引越しワンストップサービス",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 8203,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/honninkakunin-junin.html",
+      "link_text": "本人確認を実施しています（住所変更の手続き、住民票の取得、印鑑登録に関する手続き）",
+      "hops": 2,
+      "score": 17,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2087,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+      "link_text": "简体中文",
+      "hops": 3,
+      "score": 16,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 205,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+      "link_text": "繁體中文",
+      "hops": 3,
+      "score": 16,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 205,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/kyuuuzikisai.html",
+      "link_text": "住民票、マイナンバーカード等への旧氏（旧姓）記載",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4486,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
+      "link_text": "引っ越し",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1198,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "link_text": "マイナンバーカードに関する手続きは一部を除いて地区サービス事務所でも行えます",
+      "hops": 1,
+      "score": 11,
+      "parent": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2648,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
+      "link_text": "マイナンバー入り住民票の写しの発行",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3237,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/mynumber_rinji_madoguchi.html",
+      "link_text": "マイナンバーカードに関する手続きの休日開庁日",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3117,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
+      "link_text": "くらし・手続き",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4177,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/holiday_kohu.html",
+      "link_text": "休日の証明書交付",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2700,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/konbinikoufu.html",
+      "link_text": "コンビニ交付サービス",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5579,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "link_text": "简体中文",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 210,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "link_text": "繁體中文",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 210,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+      "link_text": "ごみの 出し方・分別検索",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1602,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/holiday_kohu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/konbinikoufu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tenkyo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/kosekitodokede/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/mynumber_rinji_madoguchi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/honninkakunin-junin.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuudairi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/ido.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/kyuuuzikisai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "municipality": "荒川区",
+  "municipality_id": "arakawa",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.arakawa.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "link_text": "くらしの手続きガイド（引越し・結婚・離婚・出生・死亡）",
+      "hops": 1,
+      "score": 24,
+      "parent": "https://www.city.arakawa.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1760,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/tennyuutenshutsu/index.html",
+      "link_text": "転入・転出・転居",
+      "hops": 3,
+      "score": 22,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1015,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/index.html",
+      "link_text": "戸籍・住民票",
+      "hops": 3,
+      "score": 14,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1671,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/tenseki.html",
+      "link_text": "転籍(戸籍を移す)に関する届出",
+      "hops": 3,
+      "score": 14,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1839,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
+      "link_text": "戸籍",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1059,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
+      "link_text": "住民票",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 906,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/yuusouseikyuu/index.html",
+      "link_text": "住民票に関する証明書等の窓口・郵送請求",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 930,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
+      "link_text": "住民票関連の証明書",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3368,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
+      "link_text": "住民票の写しの電話予約",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1400,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/ininjou/koronayuusou.html",
+      "link_text": "郵送による住民票の写し、戸籍に関する証明書等の交付申請",
+      "hops": 3,
+      "score": 10,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1421,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a012/todokede/shoumeisho/online_manyuaru.html",
+      "link_text": "住民票の写し・戸籍証明書のオンライン申請",
+      "hops": 3,
+      "score": 10,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2531,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
+      "link_text": "住民票の写し・戸籍証明書の郵送請求におけるキャッシュレス決済",
+      "hops": 3,
+      "score": 10,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2066,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+      "link_text": "届出・登録・証明",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1593,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/gaikokujintouroku/index.html",
+      "link_text": "外国人住民の方の手続き",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 847,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
+      "link_text": "手続き・よく利用される届出",
+      "hops": 1,
+      "score": 6,
+      "parent": "https://www.city.arakawa.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1187,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
+      "link_text": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1471,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/index.html",
+      "link_text": "電子申請・電子納付サービス等",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 869,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
+      "link_text": "電子申請",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 913,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/denshinoufu/index.html",
+      "link_text": "電子納付サービス",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 758,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/mynumbercard/index.html",
+      "link_text": "マイナンバーカード",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1437,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/inkantouroku/index.html",
+      "link_text": "印鑑登録",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 868,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/howtodenshi.html",
+      "link_text": "電子申請とは",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2073,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinsei-riyou.html",
+      "link_text": "電子申請の利用状況",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1389,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/denshinoufu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/mynumbercard/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/inkantouroku/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/tennyuutenshutsu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/tenseki.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/yuusouseikyuu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/ininjou/koronayuusou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a012/todokede/shoumeisho/online_manyuaru.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/gaikokujintouroku/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/howtodenshi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinsei-riyou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "municipality": "杉並区",
+  "municipality_id": "suginami",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.suginami.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tennyuu/index.html",
+      "link_text": "転入届：杉並区外から杉並区に住所を変更したとき",
+      "hops": 3,
+      "score": 39,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1166,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/index.html",
+      "link_text": "引越しの手続き（転入・転出など）",
+      "hops": 2,
+      "score": 35,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1030,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tetsuzuki/index.html",
+      "link_text": "お引越しをされる方へ必要な手続き",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 885,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekitodoke/index.html",
+      "link_text": "戸籍の届出（出生、死亡など）",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1005,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tenkyo/index.html",
+      "link_text": "転居届：杉並区内で住所を変更するとき",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.suginami.tokyo.jp/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 936,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/index.html",
+      "link_text": "戸籍に関する各種証明書",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 942,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tenshutsu/index.html",
+      "link_text": "転出届：杉並区から杉並区外へ住所を変更するとき",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 897,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/kunai/index.html",
+      "link_text": "戸籍証明の窓口申請（本籍地が杉並区の方）",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1126,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/kugai/index.html",
+      "link_text": "戸籍証明の窓口申請（本籍地が杉並区外の方）",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 813,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/yuusou/index.html",
+      "link_text": "戸籍証明の郵送申請",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 820,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/hikkoshi/index.html",
+      "link_text": "引っ越し",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 823,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/mynumberseido/index.html",
+      "link_text": "マイナンバー（社会保障・税番号）制度",
+      "hops": 2,
+      "score": 12,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 988,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/shoumei/index.html",
+      "link_text": "住民票に関する各種証明書",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.suginami.tokyo.jp/koseki_zyuuminhyou/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 921,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/index.html",
+      "link_text": "届出・証明",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekitodoke/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1021,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/madoguchi/index.html",
+      "link_text": "その他の手続き・お知らせ",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekitodoke/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 942,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
+      "link_text": "くらし・手続き",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2790,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/koseki_zyuuminhyou/index.html",
+      "link_text": "戸籍・住民票",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 750,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s018/536.html",
+      "link_text": "杉並区に転入する方へ",
+      "hops": 2,
+      "score": 10,
+      "parent": "https://www.city.suginami.tokyo.jp/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5664,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/inkan/index.html",
+      "link_text": "印鑑登録・印鑑登録証明書",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekitodoke/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 875,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "link_text": "ごみ・リサイクル",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2047,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/kakushusoudan/index.html",
+      "link_text": "相談窓口",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1218,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kusei/kouhou/kouhou/benricho/index.html",
+      "link_text": "すぎなみくらしのガイド",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.suginami.tokyo.jp/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 886,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s018/10722.html",
+      "link_text": "転居届：本人、同じ世帯の方が手続きをするとき",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tenkyo/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2801,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s018/10723.html",
+      "link_text": "転居届：代理人が手続きをするとき",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tenkyo/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2636,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s018/1007.html",
+      "link_text": "住民票やマイナンバーカードなどへの旧氏（旧姓）併記",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tenkyo/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3194,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/hikkoshi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/koseki_zyuuminhyou/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/kakushusoudan/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tenkyo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s018/536.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kusei/kouhou/kouhou/benricho/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekitodoke/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/mynumberseido/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/shoumei/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tennyuu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tetsuzuki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tenshutsu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/madoguchi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/inkan/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s018/10722.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s018/10723.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s018/1007.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/kunai/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/kugai/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/yuusou/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

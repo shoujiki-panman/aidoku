@@ -1,0 +1,468 @@
+{
+  "municipality": "中野区",
+  "municipality_id": "nakano",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.tokyo-nakano.lg.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+      "link_text": "マイナンバーカードを利用する転入届",
+      "hops": 2,
+      "score": 36,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/shinsei.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2653,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjotokureitennnyu.pdf",
+      "link_text": "委任状(代理人が本人のマイナンバーカードを使用して転入届をする際の委任状)（PDF形式：367KB）",
+      "hops": 3,
+      "score": 34,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240117145211630.html",
+      "link_text": "転入届、転居届とあわせて行う電子証明書発行の代理手続きについて",
+      "hops": 2,
+      "score": 31,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/shinsei.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2434,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html",
+      "link_text": "他の区市町村からの転入",
+      "hops": 2,
+      "score": 22,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/case/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3242,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kokugaikara.html",
+      "link_text": "国外からの転入",
+      "hops": 2,
+      "score": 22,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/case/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3269,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/hikkoshi.html",
+      "link_text": "引越し・印鑑登録をされる方へ",
+      "hops": 3,
+      "score": 22,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2666,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tenkyo-kunai.html",
+      "link_text": "転居届（中野区内で引越しをしたとき）",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/case/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3295,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/case/hikkoshi/index.html",
+      "link_text": "引越し・住まい",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1052,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/ikanai-kakanai-matanai.html",
+      "link_text": "行かない・書かない・待たない窓口(住民異動・マイナンバーカードに関する手続き)",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/case/hikkoshi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3208,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/index.html",
+      "link_text": "戸籍・住民票・各種証明",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3207,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/koseki/index.html",
+      "link_text": "戸籍の届出、証明",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 862,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/index.html",
+      "link_text": "住民票の届出、証明",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1024,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/denshishinsei/koseki/index.html",
+      "link_text": "戸籍・住民票・登録",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 629,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjyou.pdf",
+      "link_text": "本人の委任状（PDF形式：138KB）",
+      "hops": 3,
+      "score": 14,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/mynumber-seido.html",
+      "link_text": "マイナンバー制度（社会保障・税番号制度）について",
+      "hops": 2,
+      "score": 12,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/shinsei.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5405,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/mynumber-tetsuduki.html",
+      "link_text": "区の窓口でマイナンバーを利用する主な手続き",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/shinsei.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3522,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/nichiyo.html",
+      "link_text": "2階戸籍住民課日曜窓口のご案内【9月20日、9月27日、10月4日、10月25日は休止します】",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2653,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/kayoencyo.html",
+      "link_text": "2階戸籍住民課での火曜延長窓口のご案内",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240117145211630.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2271,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240211143306245.html",
+      "link_text": "外国人の方の在留期間延長に伴うマイナンバーカードの手続きについて",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240117145211630.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3502,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
+      "link_text": "くらし・手続き",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3107,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/koseki/index.html",
+      "link_text": "戸籍・住民票・マイナンバー",
+      "hops": 3,
+      "score": 10,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240117145211630.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1638,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/shinsei.html",
+      "link_text": "マイナンバーカードの申請",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3763,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "link_text": "粗大ごみの申込み",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3877,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+      "link_text": "ごみ・資源",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3296,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/digitalmadoguti/index.html",
+      "link_text": "デジタル窓口",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 920,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/case/hikkoshi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/shinsei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/digitalmadoguti/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kokugaikara.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tenkyo-kunai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/ikanai-kakanai-matanai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/koseki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/denshishinsei/koseki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240117145211630.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/mynumber-seido.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/mynumber-tetsuduki.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjotokureitennnyu.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjyou.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/nichiyo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/kayoencyo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240211143306245.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/koseki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/hikkoshi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

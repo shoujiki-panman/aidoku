@@ -1,0 +1,72 @@
+{
+  "municipality": "北区",
+  "municipality_id": "kita",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.kita.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.kita.tokyo.jp/living/registration/1001564/index.html",
+      "link_text": "引越し",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.kita.tokyo.jp/",
+      "status": 404,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.kita.tokyo.jp/living/index.html",
+      "link_text": "くらし・手続きトップ",
+      "hops": 1,
+      "score": 6,
+      "parent": "https://www.city.kita.tokyo.jp/",
+      "status": 404,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.kita.tokyo.jp/living/registration/index.html",
+      "link_text": "届出・証明",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.city.kita.tokyo.jp/",
+      "status": 404,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.kita.tokyo.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.kita.tokyo.jp/living/registration/1001564/index.html",
+      "status": 404,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.city.kita.tokyo.jp/living/index.html",
+      "status": 404,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.city.kita.tokyo.jp/living/registration/index.html",
+      "status": 404,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": "HTTP 404"
+    }
+  ]
+}

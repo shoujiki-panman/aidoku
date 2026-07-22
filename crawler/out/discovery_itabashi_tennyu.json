@@ -1,0 +1,468 @@
+{
+  "municipality": "板橋区",
+  "municipality_id": "itabashi",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.itabashi.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+      "link_text": "転入届 （板橋区外から板橋区に転入した方）",
+      "hops": 2,
+      "score": 32,
+      "parent": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4449,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+      "link_text": "転入届 （国外から板橋区に転入した方）",
+      "hops": 2,
+      "score": 32,
+      "parent": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3680,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/index.html",
+      "link_text": "住民登録(引越し等の手続き)",
+      "hops": 2,
+      "score": 28,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1212,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1041451/index.html",
+      "link_text": "引越しワンストップサービス（オンラインでの引越し手続き）について",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1271,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
+      "link_text": "転居届 （板橋区内で引越しの方）",
+      "hops": 2,
+      "score": 22,
+      "parent": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3820,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
+      "link_text": "団体での住民異動届出について",
+      "hops": 3,
+      "score": 18,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2878,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
+      "link_text": "旧氏（旧姓）の住民票などへの併記",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4502,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
+      "link_text": "同じ住所に戸建建物が複数あり誤配等でお困りの方へ",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4502,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
+      "link_text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー",
+      "hops": 1,
+      "score": 13,
+      "parent": "https://www.city.itabashi.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1048,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/kenko/kourei/kouki/tetsuduki/1003527.html",
+      "link_text": "転入転出等に係わる手続き（後期高齢者医療制度）",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2736,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://twitter.com/intent/tweet?text=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html",
+      "link_text": "",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html&t=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
+      "link_text": "",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://twitter.com/intent/tweet?text=%E4%BD%8F%E6%B0%91%E7%99%BB%E9%8C%B2%28%E5%BC%95%E8%B6%8A%E3%81%97%E7%AD%89%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%29%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2Findex.html",
+      "link_text": "",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/index.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
+      "link_text": "引越し",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.itabashi.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1132,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/1001687.html",
+      "link_text": "くらしの各種手続・届出",
+      "hops": 2,
+      "score": 10,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2381,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koseki/index.html",
+      "link_text": "戸籍",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1237,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/koseki/koseki/index.html",
+      "link_text": "戸籍",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1416,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1001605.html",
+      "link_text": "お墓を移す手続きについて",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3273,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
+      "link_text": "手続き・くらしトップ",
+      "hops": 1,
+      "score": 6,
+      "parent": "https://www.city.itabashi.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3123,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koufu/1001666.html",
+      "link_text": "コンビニ交付の休止",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.itabashi.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1265,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1053497.html",
+      "link_text": "詳しく見る",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.itabashi.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3208,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/mynumber/1045073/1001657.html",
+      "link_text": "法人番号について",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.itabashi.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1409,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://twitter.com/intent/tweet?text=%E6%88%B8%E7%B1%8D%E3%83%BB%E4%BD%8F%E6%B0%91%E7%A5%A8%E3%83%BB%E5%8D%B0%E9%91%91%E7%99%BB%E9%8C%B2%E3%83%BB%E5%B1%8A%E5%87%BA%E3%83%BB%E8%A8%BC%E6%98%8E%E3%83%BB%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Findex.html",
+      "link_text": "",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/madoguchi/index.html",
+      "link_text": "受付窓口(区役所・区民事務所)",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1082,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/inkan/index.html",
+      "link_text": "印鑑登録",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1104,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koufu/1001666.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1053497.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/mynumber/1045073/1001657.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/1001687.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koseki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://twitter.com/intent/tweet?text=%E6%88%B8%E7%B1%8D%E3%83%BB%E4%BD%8F%E6%B0%91%E7%A5%A8%E3%83%BB%E5%8D%B0%E9%91%91%E7%99%BB%E9%8C%B2%E3%83%BB%E5%B1%8A%E5%87%BA%E3%83%BB%E8%A8%BC%E6%98%8E%E3%83%BB%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Findex.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/kenko/kourei/kouki/tetsuduki/1003527.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/koseki/koseki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1001605.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/madoguchi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/inkan/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1041451/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://twitter.com/intent/tweet?text=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html&t=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://twitter.com/intent/tweet?text=%E4%BD%8F%E6%B0%91%E7%99%BB%E9%8C%B2%28%E5%BC%95%E8%B6%8A%E3%81%97%E7%AD%89%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%29%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2Findex.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    }
+  ]
+}

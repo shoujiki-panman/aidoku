@@ -1,0 +1,468 @@
+{
+  "municipality": "渋谷区",
+  "municipality_id": "shibuya",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.shibuya.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+      "link_text": "転入届",
+      "hops": 2,
+      "score": 36,
+      "parent": "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2585,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu_kaigai.html",
+      "link_text": "国外転入届（国外から渋谷区へ）",
+      "hops": 3,
+      "score": 36,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2254,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/f_t_tennyu.html",
+      "link_text": "転入届（外国人住民）",
+      "hops": 2,
+      "score": 32,
+      "parent": "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2269,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/out_postal_fuki.html",
+      "link_text": "転入届の特例による転入",
+      "hops": 3,
+      "score": 32,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2819,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenkyo.html",
+      "link_text": "転居届（渋谷区内の引っ越し）",
+      "hops": 3,
+      "score": 22,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2149,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/",
+      "link_text": "住所の異動",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 889,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/koseki/koseki-todokede/",
+      "link_text": "戸籍の届出",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 817,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/juminzei/todokede/",
+      "link_text": "手続き・届出",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 826,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/koseki/koseki-todokede/koseki_todoke.html",
+      "link_text": "戸籍の届出・証明",
+      "hops": 3,
+      "score": 18,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/koseki/koseki-todokede/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2392,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "link_text": "住民票・戸籍",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1988,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html",
+      "link_text": "引っ越し",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1184,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/nenkin/shikaku-menjo/nenkin_tetsuzuki_todokede.html",
+      "link_text": "国民年金（手続き・届出）",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5003,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/nimpu-info/tennyuu_ninpu.html",
+      "link_text": "渋谷区へ転入した妊婦の皆さまへ",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3344,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/mynumber/mynumber-tsuchi/mynumber_keizokuriyou.html",
+      "link_text": "マイナンバーカードの継続利用について（他区市町村からの転入の場合）",
+      "hops": 3,
+      "score": 14,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2490,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu.html",
+      "link_text": "転出届（渋谷区から区外へ）",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1965,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu_kaigai.html",
+      "link_text": "国外転出届（渋谷区から国外へ）",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3535,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/utsushi/",
+      "link_text": "住民票の写しの請求・閲覧",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 838,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/",
+      "link_text": "外国人住民の手続き",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/f_t_tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 827,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/contents/case/kyouiku.html",
+      "link_text": "入学・転入学",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 789,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/mynumber/mynumber-seido/mynumber_houjinno.html",
+      "link_text": "9000020131130",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1805,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/shisetsu/kuyakusho/kuyakusho/shintyousha.html",
+      "link_text": "暮らしの手続きのフロア（庁舎3階）住民戸籍課",
+      "hops": 3,
+      "score": 6,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/f_t_tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2786,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/kifu/kifu/furusatonozei.html",
+      "link_text": "ふるさと納税",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4327,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "link_text": "粗大ごみ",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5421,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kodomo/gakko-kyoiku/nyugaku-tennyu-shugaku/tetsuduki_g.html",
+      "link_text": "小中学校",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.shibuya.tokyo.jp/contents/case/kyouiku.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4475,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/ininjo/kakunin/inin.html",
+      "link_text": "委任状",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/f_t_tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1708,
+      "has_jsonld": true
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/contents/case/kyouiku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/mynumber/mynumber-seido/mynumber_houjinno.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/kifu/kifu/furusatonozei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/koseki/koseki-todokede/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/juminzei/todokede/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/utsushi/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/f_t_tennyu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/nenkin/shikaku-menjo/nenkin_tetsuzuki_todokede.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/nimpu-info/tennyuu_ninpu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kodomo/gakko-kyoiku/nyugaku-tennyu-shugaku/tetsuduki_g.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu_kaigai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/out_postal_fuki.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/mynumber/mynumber-tsuchi/mynumber_keizokuriyou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/shisetsu/kuyakusho/kuyakusho/shintyousha.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/ininjo/kakunin/inin.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenkyo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu_kaigai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/koseki/koseki-todokede/koseki_todoke.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

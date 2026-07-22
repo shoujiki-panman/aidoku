@@ -1,0 +1,468 @@
+{
+  "municipality": "世田谷区",
+  "municipality_id": "setagaya",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.setagaya.lg.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+      "link_text": "戸籍・住民登録",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.setagaya.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2537,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/48.html",
+      "link_text": "引越し手続きを行う窓口（くみん窓口・出張所）の混雑状況を確認できます",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3067,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02312/18274.html",
+      "link_text": "お引越し手続きのご案内（総合支所くみん窓口）",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4120,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/84.html",
+      "link_text": "転入・転居届に伴う関連手続きの案内について",
+      "hops": 3,
+      "score": 13,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11661.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4342,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11660.html",
+      "link_text": "戸籍",
+      "hops": 1,
+      "score": 11,
+      "parent": "https://www.city.setagaya.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1894,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11661.html",
+      "link_text": "住民登録",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1760,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
+      "link_text": "住所や世帯を変更したときの届け出",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1341,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11664.html",
+      "link_text": "外国人の方の手続き",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.setagaya.lg.jp/02233/48.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1511,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12308.html",
+      "link_text": "住民票の写し等の交付",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.setagaya.lg.jp/02312/18274.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1594,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12309.html",
+      "link_text": "住民票コード",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.setagaya.lg.jp/02312/18274.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1173,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12830.html",
+      "link_text": "住民票の変更の届け出",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11661.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1446,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/index.html",
+      "link_text": "住宅・引っ越し",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.setagaya.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1158,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/11524.html",
+      "link_text": "くらし・手続き",
+      "hops": 2,
+      "score": 10,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11660.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3446,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/15709.html",
+      "link_text": "引越し",
+      "hops": 2,
+      "score": 10,
+      "parent": "https://www.city.setagaya.lg.jp/lifescene/juutaku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1231,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02053/29211.html",
+      "link_text": "転入される外国人の方への住民税のご案内について",
+      "hops": 3,
+      "score": 10,
+      "parent": "https://www.city.setagaya.lg.jp/02312/18274.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2332,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11665.html",
+      "link_text": "コンビニ交付",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.setagaya.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1267,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11662.html",
+      "link_text": "印鑑登録",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.setagaya.lg.jp/02233/48.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1551,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11663.html",
+      "link_text": "住民基本台帳ネットワークシステム・公的個人認証",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.setagaya.lg.jp/02233/48.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1356,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/57.html",
+      "link_text": "戸籍届出の時間外受付窓口",
+      "hops": 2,
+      "score": 6,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11660.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3968,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/58.html",
+      "link_text": "戸籍の届出",
+      "hops": 2,
+      "score": 6,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11660.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4282,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/setagayachiiki/taishidou/index.html",
+      "link_text": "太子堂地区",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.setagaya.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3075,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/11535.html",
+      "link_text": "ごみ・リサイクル",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.setagaya.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2882,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/33729.html",
+      "link_text": "9月のくみん窓口戸籍担当（区民課戸籍係）の混雑予想について",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11660.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2729,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/15710.html",
+      "link_text": "住民票の変更の届け出",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.setagaya.lg.jp/lifescene/juutaku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1480,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/15713.html",
+      "link_text": "その他の届出",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.setagaya.lg.jp/lifescene/juutaku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1183,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.setagaya.lg.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11660.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11665.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/setagayachiiki/taishidou/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/11535.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/48.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02312/18274.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11661.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/11524.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/57.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/58.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/33729.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/15709.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/15710.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/15713.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11664.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11662.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11663.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12308.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12309.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02053/29211.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/02233/84.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12830.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "municipality": "墨田区",
+  "municipality_id": "sumida",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.city.sumida.lg.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+      "link_text": "転入届・転居届と併せて行う「電子証明書の発行」の同一世帯員による代理手続きについて",
+      "hops": 2,
+      "score": 27,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4295,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+      "link_text": "引越しワンストップサービスが始まりました（墨田区から転出の場合、来庁不要に）",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6587,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
+      "link_text": "戸籍の届出・証明",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3084,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
+      "link_text": "戸籍の届出",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6602,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/index.html",
+      "link_text": "住民登録の届出・証明（住民票）・閲覧",
+      "hops": 3,
+      "score": 17,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3084,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
+      "link_text": "戸籍の証明",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7784,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
+      "link_text": "戸籍・住民票",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.sumida.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4309,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
+      "link_text": "住民登録の届出",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7564,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/tetudukihayami.html",
+      "link_text": "【窓口課】（届出・登録・証明）郵送・電子申請（オンライン）等でできる手続一覧",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4943,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/konzatsu-kanwa.html",
+      "link_text": "区役所1階及び2階窓口（住民登録やマイナンバーカード等）の混雑緩和対策について",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4475,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/mado-yuso_taisaku.html",
+      "link_text": "転出届出書（郵送用）",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4267,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
+      "link_text": "住民票等の証明書",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5231,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
+      "link_text": "引越し",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.sumida.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3305,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
+      "link_text": "令和7年12月1日から墨田区役所庁舎一部窓口の受付時間を変更しました（平日は午前9時から午後4時30分までに変更ほか）",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.sumida.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5265,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/zyuutau_zyosei_seido.html",
+      "link_text": "住宅に関する助成制度",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3378,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/kasituke_seido/index.html",
+      "link_text": "住宅に関する貸付制度",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2744,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/index.html",
+      "link_text": "受付時間・混雑状況",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2939,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/suiyou_mado.html",
+      "link_text": "水曜延長窓口 ※",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5458,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/index.html",
+      "link_text": "くらし",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.sumida.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3304,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/kenkouhoken/kokuminkenkouhoken/hokensyou/kokuhokisaihenkou.html",
+      "link_text": "国民健康保険証の記載内容に変更があったときの手続き",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3328,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/uketori/mainayoyaku.html",
+      "link_text": "【予約をお願いします】マイナンバーカードに関する手続きの予約について（受け取り・電子証明書に関する手続き）",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5510,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/index.html",
+      "link_text": "マイナンバー",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.sumida.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4503,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/okuyami/okuyami.html",
+      "link_text": "おくやみコーナー・ ハンドブック",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.sumida.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6364,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/zeikin/index.html",
+      "link_text": "税金",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4222,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/kokuminnenkin/index.html",
+      "link_text": "国民年金",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3061,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.sumida.lg.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/okuyami/okuyami.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/zyuutau_zyosei_seido.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/kasituke_seido/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/kenkouhoken/kokuminkenkouhoken/hokensyou/kokuhokisaihenkou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/tetudukihayami.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/konzatsu-kanwa.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/suiyou_mado.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/uketori/mainayoyaku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/zeikin/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/kokuminnenkin/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/mado-yuso_taisaku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}
