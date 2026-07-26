@@ -30,7 +30,7 @@ AIDOKU_URL = os.environ.get("AIDOKU_URL", "http://127.0.0.1:8791/invoke")
 
 # 実行履歴（源内の「このアプリの利用履歴」に出す）。プロセス内に保持する。
 HISTORY = []
-HISTORY_MAX = 20
+HISTORY_MAX = 40
 AIDOKU_API_KEY = os.environ.get("AIDOKU_API_KEY", "dev-local-key")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
