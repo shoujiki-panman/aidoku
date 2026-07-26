@@ -33,14 +33,30 @@
 
 ## ⏭ 残り
 
-- [ ] **提出フォームから収録枠を早めに予約**（30分単位・早い者順。埋まる前に）
-- [ ] 提出ガイドを読む（プレゼン資料の構成・画面キャプチャの条件・著作物の注意点）
-- [ ] mulmoclaude で動画生成 → **[VIDEO-HANDOFF-mulmoclaude.md](VIDEO-HANDOFF-mulmoclaude.md) を貼るだけ**
-      （声のトーンだけ先に決める: 静かな語り／ずんだもん）
-- [ ] プレゼン動画の**事前収録枠を予約**（8月上旬に）
-- [ ] 16:9のプレゼン資料
-- [ ] 未知URLのライブ判定を源内画面から使えるようにする（非同期経路。30〜60秒かかる）
-- [ ] 転入届以外（児童手当・粗大ごみ）への拡張は、余力があれば
+**ゴール**: 区の担当者が「開いて、直して、確かめた」までを迷わず一周できること。
+フェーズと課題の全体像は [KICKOFF.md](KICKOFF.md)、個々の作業は
+**[GitHub Issues](https://github.com/shoujiki-panman/aidoku/issues)** に切ってある。
+
+### Phase A — 出せる状態にする（最優先）
+- [#1](https://github.com/shoujiki-panman/aidoku/issues/1) 画面キャプチャ3枚（1600×900）
+- [#2](https://github.com/shoujiki-panman/aidoku/issues/2) デモ操作動画（60秒・無音）
+- [#3](https://github.com/shoujiki-panman/aidoku/issues/3) **プレゼン動画の収録と枠の予約** ← 早い者順
+- [#4](https://github.com/shoujiki-panman/aidoku/issues/4) 提出ガイドで著作物の条件を確認
+- [#15](https://github.com/shoujiki-panman/aidoku/issues/15) 提出前チェックリスト
+
+### Phase B — 使い勝手を極める（本丸）
+- [#5](https://github.com/shoujiki-panman/aidoku/issues/5) 判定中の進捗が見えない（30〜60秒 無言）
+- [#6](https://github.com/shoujiki-panman/aidoku/issues/6) 処方箋の（　）を埋める作業が重い
+- [#7](https://github.com/shoujiki-panman/aidoku/issues/7) 履歴から「もう一度診断」ができない
+- [#8](https://github.com/shoujiki-panman/aidoku/issues/8) 1回に1URLしか診断できない
+- [#9](https://github.com/shoujiki-panman/aidoku/issues/9) 点数だけで「どこから直すか」が分からない
+- [#10](https://github.com/shoujiki-panman/aidoku/issues/10) 判定基準が画面から見えない
+- [#11](https://github.com/shoujiki-panman/aidoku/issues/11) 転入届しか対応していない
+
+### Phase C — 広げる（提出後）
+- [#12](https://github.com/shoujiki-panman/aidoku/issues/12) 多摩地域へ拡大
+- [#13](https://github.com/shoujiki-panman/aidoku/issues/13) 自治体との接点をつくる
+- [#14](https://github.com/shoujiki-panman/aidoku/issues/14) 判定のぶれを提出前に測り直す
 
 ## ⚠️ 触るときの注意
 
