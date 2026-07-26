@@ -2,9 +2,14 @@
 
 > 最初に読む: [START-HERE.md](START-HERE.md)　／　経緯の全記録: [reports/](reports/)
 
-> ## 🚨 エントリー締切 2026-07-27（月）17:00 — あと1日
-> 作品提出（8/23）とは**別枠**。逃すと何を作っても出せない。
-> 貼るだけの文章 → [ENTRY-DRAFT.md](ENTRY-DRAFT.md)　／　フォーム → https://form.jotform.com/261468325066056
+> ## ✅ エントリーは**済んでいる**（2026-07-08時点で事務局メールが「エントリーされた皆様へ」宛て）
+> Slackワークスペースにも参加済み。7/27の締切は未エントリー者向けだった。
+>
+> ## 🚨 次の締切: **作品提出 8/23（日）17:00**
+> - 提出フォーム: https://form.jotform.com/261870604352051
+> - 提出ガイド: https://drive.google.com/file/d/15TPprqBEkUK6MMs0vj8FNGf7MVicAQLV/view
+> - **プレゼン動画の収録予約もこのフォームから**（8/26〜30オンライン／8/29都内会場・**30分枠の早い者順**）
+> - ハッカソン本番は 8/22・23
 
 ## 🎯 作品
 
@@ -28,7 +33,8 @@
 
 ## ⏭ 残り
 
-- [ ] **エントリー提出（7/27 17:00）** ← 田沼さん
+- [ ] **提出フォームから収録枠を早めに予約**（30分単位・早い者順。埋まる前に）
+- [ ] 提出ガイドを読む（プレゼン資料の構成・画面キャプチャの条件・著作物の注意点）
 - [ ] mulmoclaude で動画生成 → **[VIDEO-HANDOFF-mulmoclaude.md](VIDEO-HANDOFF-mulmoclaude.md) を貼るだけ**
       （声のトーンだけ先に決める: 静かな語り／ずんだもん）
 - [ ] プレゼン動画の**事前収録枠を予約**（8月上旬に）
@@ -69,8 +75,10 @@ git push          # 以降はこれだけ
 
 ## 👤 田沼さんタスク
 
-- [ ] **エントリー提出（7/27 17:00）**
-- [ ] Cloudflare 特典の申請（1人でも「1名のチーム」で可）
+- [ ] **Cloudflare特典＋OpenCode/Workers AI特典の申請**（マニュアルを読んでから。1人でも「1名のチーム」で可）
+      Cloudflare: https://odh-tokyo2026.code4japan.org/2026-Cloudflare-Paid-39a3e9710744805a9da2c82af3ec7bd4
+      OpenCode/Workers AI: https://odh-tokyo2026.code4japan.org/AI-2026-OpenCode-Cloudflare-Workers-AI-39a3e9710744804c82f0c30bc6f6db25
+- [ ] キックオフウィークの申込（8/6〜8/9・8/19。申込フォームは後日公開）
 - [ ] 提出ガイドの著作権条件の確認（自治体サイトのスクショを載せる前に）
 - [ ] `crawler/polite_fetch.py` の `CONTACT` を自分の連絡先に差し替え（**公開前に必須**）
 - [ ] リポジトリを公開に切り替えるか判断（提出でURLが要る場合）
