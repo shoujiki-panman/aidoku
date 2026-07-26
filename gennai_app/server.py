@@ -255,9 +255,19 @@ class Handler(BaseHTTPRequestHandler):
     def _validate(self, inputs):
         url = inputs.get("url")
         if not isinstance(url, str) or not re.match(r"^https?://", url.strip()):
-            self._send(400, {"status": "ERROR", "error": {
-                "message": "inputs.url is required.",
-                "details": "http(s) で始まるURLを 'url' フィールドに指定してください。"}})
+            # 利用者の入力ミスはプロトコルエラーではないので、200で案内を返す。
+            # 400を返すと源内の画面には何も表示されず「押しても無反応」に見える。
+            got = (url or "").strip()
+            self._send(200, {"outputs": (
+                "# 入力を確認してください\n\n"
+                + (f"入力された値: `{got[:80]}`\n\n" if got else "URLが空欄です。\n\n")
+                + "**診断するページのURLを、`https://` から始まる形で入力してください。**\n\n"
+                "例:\n\n"
+                "```\n"
+                "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html\n"
+                "```\n\n"
+                "自治体の公式サイトで、転入届などの手続きを説明しているページのURLを"
+                "そのまま貼り付けてください。")})
             return None
         raw_checks = inputs.get("checks")
         if isinstance(raw_checks, str) and raw_checks.strip():
