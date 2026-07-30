@@ -195,3 +195,34 @@ tr[data-selected="true"] {
     font-size: calc(26 / 16 * 1rem);
   }
 }
+
+/* ---- AI読 の表示（2026-07-27 追加） ---- */
+[data-tone="green"] { color: #0f7a3d; }
+[data-tone="blue"]  { color: #0056b3; }
+[data-tone="orange"]{ color: #a06a00; }
+[data-tone="red"]   { color: #b3261e; }
+
+.stat__value[data-tone] { font-weight: 700; }
+.muni-link { background: none; border: 0; padding: 0; font: inherit; cursor: pointer;
+             color: #0056b3; text-decoration: underline; }
+.muni-link[aria-current="true"] { font-weight: 700; background: #eef4fd; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+td.mark { text-align: center; font-weight: 700; }
+
+.detail-head { display: flex; align-items: baseline; gap: .8em; flex-wrap: wrap;
+               margin: 0 0 1em; padding-bottom: .6em; border-bottom: 1px solid #d8dde3; }
+.detail-name { font-size: 1.5rem; }
+.detail-score { font-size: 1.3rem; font-weight: 700; }
+.detail-src { font-size: .85rem; color: #5c5c66; }
+
+.readlist .dads-description-list__term[data-tone] { font-weight: 700; }
+.readlist i.ng { color: #b3261e; font-style: normal; }
+
+.fixlist { list-style: none; padding: 0; margin: .5em 0 0; }
+.fixlist li { padding: .7em .9em; margin-bottom: .5em; border-radius: 8px;
+              background: #fff8e6; border: 1px solid #e6c866; }
+.fixlist .gain { display: inline-block; min-width: 4.5em; font-weight: 700; color: #8a6d00; }
+.fixlist .fixnote { color: #5c5c66; }
+.allok { padding: .9em 1.1em; border-radius: 8px; background: #f0f9f3;
+         border: 1px solid #bfe3cd; color: #0f7a3d; }
+.err { color: #b3261e; }

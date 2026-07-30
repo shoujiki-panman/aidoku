@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>東京エージェント・レディネス調査 — あなたの区はAIに手続きを頼めるか</title>
-<meta name="description" content="東京の区市町村の行政手続き情報が、住民のAIエージェントから読み取れるかを実測した第三者調査。">
+<title>AI読（アイドク） — あなたの区のサイトを、AIの愛読書に。</title>
+<meta name="description" content="自治体サイトの手続きページが「AIに読めるか」を採点し、読めない箇所と直す文面まで示します。東京23区の実測つき。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -22,9 +22,9 @@
 
 <header class="site-header">
   <div class="wrap">
-    <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品（調査中）</p>
-    <h1 class="dads-heading" data-size="xl">東京エージェント・レディネス調査</h1>
-    <p class="site-header__lead">住民のAIエージェントが行政手続きを代行する時代に、区市町村の行政情報は「AIから読める」状態か。実際にエージェントに読ませて測っています。</p>
+    <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品</p>
+    <h1 class="dads-heading" data-size="xl">AI読<span style="font-size:.5em;font-weight:400;margin-left:.5em;">アイドク</span></h1>
+    <p class="site-header__lead"><strong>あなたの区のサイトを、AIの愛読書に。</strong><br>引越しの手続きをAIに聞く人が増えています。ではそのAIは、区の公式サイトを正しく読めているのか。東京23区で実測しました。<br>自治体名を選ぶと、AIが何を読み取れて、どこを直せば伝わるようになるかが出ます。</p>
   </div>
 </header>
 
@@ -52,19 +52,20 @@
 
   <section aria-labelledby="ranking-heading">
     <h2 class="dads-heading" data-size="l" id="ranking-heading">自治体別スコア</h2>
-    <p class="section-note">100点満点。内訳は 情報到達20 / 抽出正確性40 / 機械可読性20 / オンライン明示20。自治体名を選ぶと内訳が下に出ます。</p>
+    <p class="section-note">100点満点。4項目（必要書類／窓口・オンライン可否／期限／手数料）×20点 ＋ オンライン明示20点。<strong>自治体名を選ぶと、AIが読み取った実際の文と、直す箇所が下に出ます。</strong></p>
     <div class="dads-table" data-size="dense">
       <table class="dads-table__table" id="ranking">
-        <caption class="dads-table__caption">エージェント手続き完遂率スコア（<span id="proc-name"></span>）</caption>
+        <caption class="dads-table__caption">AI判読度（<span id="proc-name"></span>）</caption>
         <thead>
           <tr class="dads-table__col-header">
             <th scope="col">自治体</th>
             <th scope="col">合計</th>
-            <th scope="col">情報到達</th>
-            <th scope="col">抽出正確性</th>
-            <th scope="col">機械可読性</th>
+            <th scope="col">必要書類</th>
+            <th scope="col">窓口/オンライン</th>
+            <th scope="col">期限</th>
+            <th scope="col">手数料</th>
             <th scope="col">オンライン明示</th>
-            <th scope="col">到達ホップ数</th>
+            <th scope="col">到達</th>
           </tr>
         </thead>
         <tbody id="ranking-body"></tbody>
@@ -73,51 +74,31 @@
   </section>
 
   <section aria-labelledby="detail-heading">
-    <h2 class="dads-heading" data-size="l" id="detail-heading">選んだ自治体の内訳</h2>
+    <h2 class="dads-heading" data-size="l" id="detail-heading">AIが読み取った内容と、直す箇所</h2>
     <div id="detail" aria-live="polite"></div>
   </section>
 
   <hr class="dads-divider">
 
-  <section aria-labelledby="reasons-heading">
-    <h2 class="dads-heading" data-size="l" id="reasons-heading">どこで読めなくなったか</h2>
-    <p class="section-note">エージェントが答えを出せなかった理由の集計。ここが行政向けの改善箇所リストの元データです。</p>
-    <div class="dads-table" data-size="dense">
-      <table class="dads-table__table">
-        <thead>
-          <tr class="dads-table__col-header">
-            <th scope="col">理由</th>
-            <th scope="col">件数</th>
-          </tr>
-        </thead>
-        <tbody id="reasons-body"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <hr class="dads-divider">
+  
 
   <section aria-labelledby="method-heading">
     <h2 class="dads-heading" data-size="l" id="method-heading">測り方</h2>
     <dl class="dads-description-list">
       <div class="dads-description-list__item">
-        <dt class="dads-description-list__term">情報到達</dt>
-        <dd class="dads-description-list__description">自治体トップページから、検索エンジンを使わずリンクだけを辿って手続きページに着けるか（深さ3まで）。</dd>
+        <dt class="dads-description-list__term">4項目（各20点）</dt>
+        <dd class="dads-description-list__description">必要書類・窓口/オンライン可否・期限・手数料。<strong>ページに書かれていることだけ</strong>から読み取れるかを見ます。推測での補完は禁止しています。</dd>
       </div>
       <div class="dads-description-list__item">
-        <dt class="dads-description-list__term">抽出正確性</dt>
-        <dd class="dads-description-list__description">必要書類・窓口/オンライン可否・期限・手数料の4項目を、ページに書かれていることだけから答えられるか。推測での補完は禁止しています。</dd>
-      </div>
-      <div class="dads-description-list__item">
-        <dt class="dads-description-list__term">機械可読性</dt>
-        <dd class="dads-description-list__description">HTML本文で読めるか（PDF頼みでないか）、構造化データ（JSON-LD）があるか。</dd>
+        <dt class="dads-description-list__term">到達</dt>
+        <dd class="dads-description-list__description">自治体トップページから、検索エンジンを使わずリンクだけを辿って手続きページに着くまでのクリック数（深さ3まで探索）。</dd>
       </div>
       <div class="dads-description-list__item">
         <dt class="dads-description-list__term">オンライン明示</dt>
         <dd class="dads-description-list__description">その手続きがオンラインで完結するのかどうかが、迷わず読み取れるか。</dd>
       </div>
     </dl>
-    <p class="section-note">クロールは robots.txt を守り、同一ドメインへのアクセスは3秒以上あけ、取得済みページは再取得していません。申請の送信は一切行っていません（読み取りのみ）。</p>
+    <p class="section-note">採点はAIによる判定のため、同じ入力でも±2点ほど揺れます（測定記録あり）。クロールは robots.txt を守り、同一ドメインへのアクセスは3秒以上あけ、取得済みページは再取得していません。申請の送信は一切行っていません（読み取りのみ）。</p>
   </section>
 
 </main>
@@ -125,7 +106,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>調査・実装: 正直パンマン（個人）。<strong>行政機関の公式発表ではありません。</strong></p>
-    <p>正解データは各ページを人手で読んで作った暫定版です。誤りの指摘を歓迎します。</p>
+    <p>判定基準（必須要素）を公開しています。誤りの指摘を歓迎します → <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku">GitHub</a></p>
     <p class="site-footer__credit">画面のスタイルに <a class="dads-link" href="https://design.digital.go.jp/">デジタル庁デザインシステム</a> のコードスニペット（MIT）を利用しています。デジタル庁が本調査を提供・監修しているものではありません。</p>
     <p class="site-footer__generated">データ生成日: <span id="generated-at"></span></p>
   </div>
