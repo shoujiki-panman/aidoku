@@ -226,3 +226,45 @@ td.mark { text-align: center; font-weight: 700; }
 .allok { padding: .9em 1.1em; border-radius: 8px; background: #f0f9f3;
          border: 1px solid #bfe3cd; color: #0f7a3d; }
 .err { color: #b3261e; }
+
+/* ---- 住民のAIの答え（2026-07-31 主役交代） ---- */
+
+.chat__q { margin: 0 0 .8em; font-size: 1.05rem; line-height: 1.7; }
+.chat__q.hero-q { font-size: 1.15rem; font-weight: 700; }
+.chat__who { display: inline-block; margin-right: .6em; padding: .1em .6em;
+             border-radius: 999px; font-size: .78rem; font-weight: 700;
+             background: #e8eef7; color: #1a3a6b; vertical-align: middle; }
+.chat__a { background: #fff; border: 1px solid #d8dde3; border-radius: 10px;
+           padding: .9em 1.1em; }
+.chat__a .chat__who { background: #eef7ee; color: #0f5c2e; }
+
+.ans { list-style: none; margin: .6em 0 0; padding: 0; }
+.ans__item { display: grid; grid-template-columns: 9.5em 1fr; gap: .6em;
+             padding: .45em 0; border-top: 1px dashed #e3e6ea; line-height: 1.7; }
+.ans__item:first-child { border-top: 0; }
+.ans__item b { font-weight: 700; }
+.ans__item[data-ok="true"] b::before { content: "✓ "; color: #0f7a3d; }
+.ans__item[data-ok="false"] b::before { content: "✕ "; color: #b3261e; }
+.ans__item .ng { color: #b3261e; }
+
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.hero-card { border-radius: 10px; padding: 1em 1.1em; background: #fff; }
+.hero-card[data-kind="ng"] { border: 2px solid #e5b6b3; }
+.hero-card[data-kind="ok"] { border: 2px solid #b6d9c0; }
+.hero-card__title { margin: 0 0 .5em; font-weight: 700; }
+.hero-card .chat__a { border: 0; padding: 0; }
+.hero-card__foot { margin: .8em 0 0; font-size: .88rem; color: #5c5c66; line-height: 1.7; }
+
+.whybox { margin: 1.2em 0; padding: .9em 1.1em; border-radius: 8px;
+          background: #f4f0fa; border: 1px solid #cbb8e8; }
+.whybox__title { margin: 0 0 .4em; font-weight: 700; color: #4a2d7a; }
+.whybox__body { margin: 0; line-height: 1.8; }
+
+.detail-verdict { font-weight: 700; }
+.scoreline { margin-top: 1.2em; padding-top: .8em; border-top: 1px solid #d8dde3;
+             font-size: .9rem; color: #5c5c66; }
+
+@media (max-width: 720px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .ans__item { grid-template-columns: 1fr; gap: .1em; }
+}

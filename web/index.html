@@ -24,7 +24,7 @@
   <div class="wrap">
     <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品</p>
     <h1 class="dads-heading" data-size="xl">AI読<span style="font-size:.5em;font-weight:400;margin-left:.5em;">アイドク</span></h1>
-    <p class="site-header__lead"><strong>あなたの区のサイトを、AIの愛読書に。</strong><br>引越しの手続きをAIに聞く人が増えています。ではそのAIは、区の公式サイトを正しく読めているのか。東京23区で実測しました。<br>自治体名を選ぶと、AIが何を読み取れて、どこを直せば伝わるようになるかが出ます。</p>
+    <p class="site-header__lead"><strong>あなたの区のサイトを、AIの愛読書に。</strong><br>引越しの手続きをAIに聞く人が増えています。区のサイトをAIが読めないと、住民に返ってくる答えは「分かりません」。<br>東京23区の手続きページをAIに読ませ、<strong>住民のAIが実際にどう答えるか</strong>を実測しました。</p>
   </div>
 </header>
 
@@ -43,16 +43,25 @@
     </div>
   </div>
 
-  <section aria-labelledby="summary-heading">
-    <h2 class="dads-heading" data-size="l" id="summary-heading">全体の数字</h2>
-    <dl class="stat-row" id="summary"></dl>
+  <section aria-labelledby="hero-heading">
+    <h2 class="dads-heading" data-size="l" id="hero-heading">同じ質問を、住民のAIにしてみると</h2>
+    <p class="section-note">質問は同じ。<strong>区のページの書き方だけで、答えがここまで変わります。</strong>答えはすべて実測です（各区の手続きページをAIに読ませて取り出せた実文のみ。AIによる推測や補完はしていません）。</p>
+    <div id="hero"></div>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="detail-heading">
+    <h2 class="dads-heading" data-size="l" id="detail-heading">あなたの区では？ — 住民のAIの答えと、直す箇所</h2>
+    <p class="section-note">下の一覧から自治体名を選ぶと、その区のページを読ませたAIの答え・<strong>読めない理由</strong>・直す箇所が出ます。</p>
+    <div id="detail" aria-live="polite"></div>
   </section>
 
   <hr class="dads-divider">
 
   <section aria-labelledby="ranking-heading">
-    <h2 class="dads-heading" data-size="l" id="ranking-heading">自治体別スコア</h2>
-    <p class="section-note">100点満点。4項目（必要書類／窓口・オンライン可否／期限／手数料）×20点 ＋ オンライン明示20点。<strong>自治体名を選ぶと、AIが読み取った実際の文と、直す箇所が下に出ます。</strong></p>
+    <h2 class="dads-heading" data-size="l" id="ranking-heading">23区の一覧</h2>
+    <p class="section-note">✓＝住民のAIに伝わる／✕＝伝わらない（4項目＋オンライン明示）。合計点は参考値です（AI判定のため±2点の測定誤差。2点差以内は同順位帯として見てください）。</p>
     <div class="dads-table" data-size="dense">
       <table class="dads-table__table" id="ranking">
         <caption class="dads-table__caption">AI判読度（<span id="proc-name"></span>）</caption>
@@ -73,9 +82,9 @@
     </div>
   </section>
 
-  <section aria-labelledby="detail-heading">
-    <h2 class="dads-heading" data-size="l" id="detail-heading">AIが読み取った内容と、直す箇所</h2>
-    <div id="detail" aria-live="polite"></div>
+  <section aria-labelledby="summary-heading">
+    <h2 class="dads-heading" data-size="l" id="summary-heading">全体の数字</h2>
+    <dl class="stat-row" id="summary"></dl>
   </section>
 
   <hr class="dads-divider">
