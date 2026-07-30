@@ -92,12 +92,13 @@ const resA = await worker.fetch(
 const bodyA = await resA.json();
 check('署名つきは整った答え(JSON)が返る', bodyA.answer?.fee === '無料', JSON.stringify(bodyA));
 check(
-  '記録が残る(誰が・どこへ・何を)',
+  '記録が残る(何を探しに来て・取れたか・誰が)',
   records.length === 1 &&
+    records[0].looking_for === '転入届 必要書類' &&
+    records[0].answered === true &&
     records[0].verified === true &&
     records[0].agent === AGENT_ORIGIN &&
-    records[0].path === PAGE &&
-    records[0].looking_for === '転入届 必要書類',
+    records[0].path === PAGE,
   JSON.stringify(records),
 );
 
@@ -120,9 +121,18 @@ check('検証失敗は素通し（門番は拒否しない）', bodyC.includes('
 const last = records[records.length - 1];
 check('検証失敗も verified=false で記録される', records.length === before + 1 && last.verified === false, JSON.stringify(last));
 
-// D. 署名つきだが答えが未整備のページ → 素通し＋記録
-const resD = await worker.fetch(new Request(`${SITE}/mimatomo.html`, { headers: signedHeaders }), env);
+// D. 署名つきだが答えが未整備のページ → 素通し＋「取れずに帰った」が記録される
+const resD = await worker.fetch(
+  new Request(`${SITE}/mimatomo.html?q=${encodeURIComponent('戸籍謄本 手数料')}`, { headers: signedHeaders }),
+  env,
+);
 check('答えが未整備なら素通し', (await resD.text()).includes('元サイトのHTML'));
+const lastD = records[records.length - 1];
+check(
+  '「取れずに帰った」が answered=false で記録される（このデータが主役）',
+  lastD.answered === false && lastD.looking_for === '戸籍謄本 手数料' && lastD.verified === true,
+  JSON.stringify(lastD),
+);
 
 console.log = realLog;
 realLog(`\n結果: ${pass} PASS / ${fail} FAIL`);

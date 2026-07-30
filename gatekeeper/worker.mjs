@@ -4,6 +4,10 @@
 //   人間のブラウザ（署名なし） → 記録せずそのまま元サイトへ素通し
 //   検証に失敗した署名        → 記録だけして素通し（門番は拒否しない）
 //
+// 通行料は取らない（402課金は AWS/Cloudflare/Akamai の標準機能＝作る場所ではない）。
+// この門番が貯める主役のデータは「AIが何を探しに来て、取れたか／取れずに帰ったか」。
+// サーバーログには「来た」しか残らず、「来たが取れなかった」はどこにも記録が無い。
+//
 // ローカル実測は test_local.mjs / check_chatgpt_keys.mjs 参照。
 // この形のまま Cloudflare Workers にデプロイできる（wrangler deploy）。
 // 実運用の記録先は console.log ではなく Workers Analytics Engine / KV に差し替える。
@@ -66,28 +70,31 @@ export default {
       return fetch(request);
     }
 
-    // 門番が貯める記録: どのエージェントが / どのURLに / 何を探しに来たか
+    // 検証済みエージェントに返す整った答え（AI読の実測データを流用）を先に引く。
+    // 「答えがあるか」自体が記録の主役になるため、記録より先に引く。
+    let answer = null;
+    if (result.ok && env?.ANSWERS) {
+      answer = await env.ANSWERS.get(url.pathname, 'json');
+    }
+
+    // 門番が貯める記録の主役: 何を探しに来て、取れたか／取れずに帰ったか
     const record = {
       ts: new Date().toISOString(),
+      looking_for: url.searchParams.get('q') ?? null, // 何を探しに来たか
+      answered: result.ok ? Boolean(answer) : null, // 取れた=true ／ 取れずに帰った=false
       verified: result.ok,
       reason: result.reason,
       agent: result.agent ?? null,
       keyid: result.keyid ?? null,
       authority: url.host,
       path: url.pathname,
-      looking_for: url.searchParams.get('q') ?? null,
     };
     console.log(JSON.stringify(record)); // TODO: Analytics Engine / KV に置き換え
 
-    if (result.ok && env?.ANSWERS) {
-      // 検証済みエージェントには、HTMLを読ませる代わりに整った答え(JSON)を返す。
-      // 中身は AI読 の実測データ（必須要素ごとの実文）をそのまま流用する。
-      const answer = await env.ANSWERS.get(url.pathname, 'json');
-      if (answer) {
-        return new Response(JSON.stringify({ source: url.href, answer }), {
-          headers: { 'content-type': 'application/json; charset=utf-8' },
-        });
-      }
+    if (answer) {
+      return new Response(JSON.stringify({ source: url.href, answer }), {
+        headers: { 'content-type': 'application/json; charset=utf-8' },
+      });
     }
 
     // 整った答えがまだ無いページ／検証失敗 → 元のサイトへ素通し

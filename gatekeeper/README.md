@@ -12,6 +12,12 @@
 User-Agent と違って**署名は偽装できない**。ChatGPT が実際に公開鍵を配布中で、
 Cloudflare のエッジでは2026年3月から本番稼働している標準。
 
+**通行料は取らない。** 402課金は AWS（WAF AI traffic monetization・2026-06提供開始）／
+Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所ではない。
+この門番が貯める主役のデータは **「AIが何を探しに来て、取れたか／取れずに帰ったか」**
+（記録レコードの `looking_for` と `answered`）。サーバーログには「来た」しか残らず、
+「来たが取れなかった」はどこにも記録されていない——これが誰も持っていないデータになる。
+
 ## ファイル
 
 | ファイル | 中身 |
@@ -19,14 +25,14 @@ Cloudflare のエッジでは2026年3月から本番稼働している標準。
 | `httpsig.mjs` | RFC 9421 の最小実装（署名ベース構築・Ed25519署名/検証・RFC 7638 JWK指紋）。依存はWebCryptoのみ＝NodeとWorkersで同じコードが動く |
 | `worker.mjs` | 門番本体（Cloudflare Worker 形。`wrangler deploy` できる形） |
 | `test_local.mjs` | 署名→検証の暗号テスト 7本 |
-| `test_worker.mjs` | 門番の応対テスト 7本（ネットワークはスタブ） |
+| `test_worker.mjs` | 門番の応対テスト 8本（ネットワークはスタブ） |
 | `check_chatgpt_keys.mjs` | ChatGPT の実鍵を取得してパース互換を確認（要ネットワーク） |
 
 ## 動かす
 
 ```bash
 node gatekeeper/test_local.mjs        # 暗号として動く証明（7 PASS）
-node gatekeeper/test_worker.mjs       # 門番の応対一周（7 PASS）
+node gatekeeper/test_worker.mjs       # 門番の応対一周（8 PASS）
 node gatekeeper/check_chatgpt_keys.mjs  # ChatGPTの実鍵で形式互換を確認
 ```
 
