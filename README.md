@@ -7,7 +7,17 @@
 
 都知事杯オープンデータ・ハッカソン2026 応募作品（提出 2026-08-23）。
 
-## 触ってみる方へ
+## 触ってみる
+
+### 1. ブラウザで見る（設定不要）
+
+**https://shoujiki-panman.github.io/aidoku/**
+
+東京23区の実測結果がそのまま見られます。自治体名を選ぶと、
+**AIが読み取った実際の文**と、**どこを直せば伝わるか（+N点）**が出ます。
+最初に出るのは最下位の区です（直す価値が一番大きいので）。
+
+### 2. 手元で動かす
 
 Python 3.10 の標準ライブラリだけで動きます。判定に Claude Code の `claude -p` を使うので、
 Claude Code にログイン済みであれば APIキーは要りません。
@@ -22,14 +32,18 @@ curl -X POST http://127.0.0.1:8791/invoke \
   -d '{"inputs":{"url":"https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html"}}'
 ```
 
-23区の実測済みURLは即座に返ります。それ以外のURLはその場で取得して判定するため
-30〜60秒かかります（robots.txt遵守・3秒以上の間隔）。
+23区の実測済みURLは即座に返ります。
+
+**それ以外のURLを試すには Claude Code が必要です**（`claude -p` を呼ぶため）。
+その場で取得して判定するので30〜60秒かかります（robots.txt遵守・3秒以上の間隔）。
+Claude Code が無い環境では、23区の実測結果のみ返ります。
 
 **気づいたこと・動かなかったことは [Issues](https://github.com/shoujiki-panman/aidoku/issues) へどうぞ。**
 使い勝手の課題は既に7件挙げてあります（`Phase B` ラベル）。
 
 ## ドキュメント
 
+- 公開ダッシュボード → https://shoujiki-panman.github.io/aidoku/
 - はじめて読むなら → [START-HERE.md](START-HERE.md)
 - いまの進捗 → [STATUS.md](STATUS.md)
 - 実測と調査の記録 → [reports/](reports/)
