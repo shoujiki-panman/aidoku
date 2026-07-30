@@ -24,7 +24,7 @@ from dataclasses import dataclass, asdict
 from pathlib import Path
 
 # 連絡先はユーザーが自分のものに差し替える。空のまま本番クロールしない。
-CONTACT = "https://github.com/shoujiki-panman (tokyo-agent-readiness survey)"
+CONTACT = "https://github.com/shoujiki-panman/aidoku"
 USER_AGENT = f"TokyoAgentReadinessBot/0.1 (+{CONTACT})"
 
 MIN_INTERVAL_SEC = 3.0

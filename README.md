@@ -5,12 +5,34 @@
 自治体サイトのURLを入れると、AIがどこまで読めるかを採点し、**読めない箇所と「直す文面」まで出す**。
 デジタル庁OSS「源内」のAIアプリ仕様に準拠し、職員が自分の区の源内で使える形にしている。
 
-都知事杯オープンデータ・ハッカソン2026 応募作品（エントリー 7/27 17:00 / 提出 8/23 17:00）。
+都知事杯オープンデータ・ハッカソン2026 応募作品（提出 2026-08-23）。
+
+## 触ってみる方へ
+
+Python 3.10 の標準ライブラリだけで動きます。判定に Claude Code の `claude -p` を使うので、
+Claude Code にログイン済みであれば APIキーは要りません。
+
+```bash
+cd gennai_app
+AIDOKU_PORT=8791 python3 server.py
+
+# 別のターミナルから
+curl -X POST http://127.0.0.1:8791/invoke \
+  -H "x-api-key: dev-local-key" \
+  -d '{"inputs":{"url":"https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html"}}'
+```
+
+23区の実測済みURLは即座に返ります。それ以外のURLはその場で取得して判定するため
+30〜60秒かかります（robots.txt遵守・3秒以上の間隔）。
+
+**気づいたこと・動かなかったことは [Issues](https://github.com/shoujiki-panman/aidoku/issues) へどうぞ。**
+使い勝手の課題は既に7件挙げてあります（`Phase B` ラベル）。
+
+## ドキュメント
 
 - はじめて読むなら → [START-HERE.md](START-HERE.md)
 - いまの進捗 → [STATUS.md](STATUS.md)
 - 実測と調査の記録 → [reports/](reports/)
-- 企画の仕様（初期版） → [CLAUDE.md](CLAUDE.md)
 
 ## 実測でわかっていること（2026-07-22・東京23区・転入届）
 
@@ -28,7 +50,6 @@
 | `scorer/` | 採点層。人手で決めた必須要素と突合。ぶれ幅 ±2点 |
 | `web/` | ダッシュボード（デジタル庁デザインシステム） |
 | `reports/` | 実測・調査の全記録（崩れた探索も残してある） |
-| `docs/archive/` | 使わなくなったもの |
 
 ## 動かす
 
@@ -81,8 +102,8 @@ python3 -m http.server 4173 --directory web
 
 - robots.txt を読み、Disallow なら取得しない。robots.txt が読めない場合は取得しない
 - 同一ドメインへのリクエスト間隔 3秒以上（robots の Crawl-delay がそれより長ければ従う）
-- User-Agent にプロジェクト名と連絡先を明記 — `crawler/polite_fetch.py` の `CONTACT` を
-  **公開前に自分の連絡先へ差し替える**
+- User-Agent にプロジェクト名と連絡先を明記（`crawler/polite_fetch.py` の `CONTACT`）。
+  **フォークして自分でクロールする場合は、必ず自分の連絡先に差し替えること**
 - 一度取得したページは再取得しない
 - 申請の送信・フォーム送信・脆弱性の探索は実装しない（Layer C として禁止）
 
@@ -121,4 +142,20 @@ python3 -m http.server 4173 --directory web
 ## 採点基準を変えるときの決まり
 
 プロンプトや配点を変えたら、必ずゴールデンセットで再計測してから全体に適用する。
-感覚で変えない（CLAUDE.md §5）。
+感覚で変えない。
+
+
+## この作品について
+
+- 判定の対象は**実在の公開情報のみ**。申請の送信や個人情報の取り扱いは行いません
+- スコアは自治体を非難するためのものではなく、**どこを直せば伝わるか**を示すためのものです
+- 判定基準（`scorer/golden/*.csv` の `required_elements`）を公開しています。
+  基準を隠さないことで、結果を検証でき、同じ物差しで再測定できます
+- **行政機関の公式発表ではありません。** 個人による調査・開発です
+- デジタル庁OSS「源内」の**AIアプリAPI仕様（2026年3月版）に準拠**しています。
+  源内本体に採用されたものではありません
+
+## ライセンス
+
+MIT（[LICENSE](LICENSE)）。`web/vendor/dads/` はデジタル庁デザインシステムの複製で、
+その利用条件は [NOTICE](web/vendor/dads/NOTICE.md) を参照してください。

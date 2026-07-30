@@ -2,14 +2,8 @@
 
 > 最初に読む: [START-HERE.md](START-HERE.md)　／　経緯の全記録: [reports/](reports/)
 
-> ## ✅ エントリーは**済んでいる**（2026-07-08時点で事務局メールが「エントリーされた皆様へ」宛て）
-> Slackワークスペースにも参加済み。7/27の締切は未エントリー者向けだった。
->
-> ## 🚨 次の締切: **作品提出 8/23（日）17:00**
-> - 提出フォーム: https://form.jotform.com/261870604352051
-> - 提出ガイド: https://drive.google.com/file/d/15TPprqBEkUK6MMs0vj8FNGf7MVicAQLV/view
-> - **プレゼン動画の収録予約もこのフォームから**（8/26〜30オンライン／8/29都内会場・**30分枠の早い者順**）
-> - ハッカソン本番は 8/22・23
+> ## 次の締切: **作品提出 2026-08-23（日）17:00**
+> プレゼン動画2分＋16:9資料が必須。ハッカソン本番は 8/22・23、Final Stage は 10/17。
 
 ## 🎯 作品
 
@@ -29,7 +23,6 @@
 | **源内Web本体がローカルで起動** | ✅ AWS不要（`web:dev`）。AI読が源内のAIアプリとして動作 |
 | 源内画面での動作 | ✅ 港区100点／世田谷0点／処方箋／23区のランキング履歴 |
 | 動画台本 | ✅ [VIDEO-SCRIPT-aidoku.md](VIDEO-SCRIPT-aidoku.md)（全カット実物・9シーン） |
-| エントリー文 | ✅ [ENTRY-DRAFT.md](ENTRY-DRAFT.md)（302/334/234字） |
 
 ## ⏭ 残り
 
@@ -60,7 +53,7 @@
 
 ## ⚠️ 触るときの注意
 
-- **`pkill -f vite` を使わない**。mulmoclaude（5173）を巻き添えにする。パスで絞る
+- **`pkill -f vite` を使わない**。同じマシンの別のViteアプリを巻き添えにする。パスで絞る
 - 源内の起動は `web:dev`。**`web:devw` はAWSを要求する**（末尾のwに注意）
 - `server.py` のポートは環境変数 `AIDOKU_PORT`。`--port` 引数は**無い**（黙って無視される）
 - 源内のフロントは `createdDate` を**エポックミリ秒**で扱う。ISO文字列だと `Invalid time value`
@@ -78,23 +71,8 @@
 
 ## 📦 リポジトリ
 
-**https://github.com/shoujiki-panman/aidoku （プライベート）**
+**https://github.com/shoujiki-panman/aidoku**
 
-- 42コミット push 済み。ローカルだけの状態は解消
 - クロールした生HTMLは `.gitignore` で除外（自治体サイトの著作物のため）
-- **提出前に公開へ切り替える**かは要判断。公開すると、捨てた企画の検討過程
-  （都営住宅・母子手帳・アトム等）と、源内の認証を5行バイパスした話も読める状態になる
-
-```bash
-git push          # 以降はこれだけ
-```
-
-## 👤 田沼さんタスク
-
-- [ ] **Cloudflare特典＋OpenCode/Workers AI特典の申請**（マニュアルを読んでから。1人でも「1名のチーム」で可）
-      Cloudflare: https://odh-tokyo2026.code4japan.org/2026-Cloudflare-Paid-39a3e9710744805a9da2c82af3ec7bd4
-      OpenCode/Workers AI: https://odh-tokyo2026.code4japan.org/AI-2026-OpenCode-Cloudflare-Workers-AI-39a3e9710744804c82f0c30bc6f6db25
-- [ ] キックオフウィークの申込（8/6〜8/9・8/19。申込フォームは後日公開）
-- [ ] 提出ガイドの著作権条件の確認（自治体サイトのスクショを載せる前に）
-- [ ] `crawler/polite_fetch.py` の `CONTACT` を自分の連絡先に差し替え（**公開前に必須**）
-- [ ] リポジトリを公開に切り替えるか判断（提出でURLが要る場合）
+- 触ってみたい方は [START-HERE.md](START-HERE.md) の「動かす」から。
+  気づいたことは [Issues](https://github.com/shoujiki-panman/aidoku/issues) へどうぞ

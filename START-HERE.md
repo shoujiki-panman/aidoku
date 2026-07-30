@@ -3,10 +3,9 @@
 新しいAIセッションを始めたら、このファイルと [STATUS.md](STATUS.md) を最初に読む。
 セッションを終える前に、必ず STATUS.md を今日の状態に更新する。
 
-> ## 🚨 期日
-> - **エントリー: 2026-07-27（月）17:00** ← 逃すと出場不可。文章は [ENTRY-DRAFT.md](ENTRY-DRAFT.md) にある
-> - 作品提出: 8/23 17:00（プレゼン動画2分＋16:9資料が必須・事前収録は予約制）
-> - Final Stage: 10/17
+> ## 期日
+> - 作品提出: 2026-08-23 17:00（プレゼン動画2分＋16:9資料）
+> - Final Stage: 2026-10-17
 
 ## 何を作っているのか（1枚で）
 
@@ -55,7 +54,7 @@ python3 seed_history.py
 ```
 
 止めるときは `pkill -f "<gennai-web>/node_modules/.bin/vite"`。
-**`pkill -f vite` だけだと mulmoclaude（5173）を巻き添えにする。**
+**`pkill -f vite` だけだと 同じマシンの別のViteアプリを巻き添えにする。**
 
 ## 言い方の線（審査で崩されないため）
 
@@ -71,4 +70,4 @@ python3 seed_history.py
 - 分かったことは [LEARNING-LOG.md](LEARNING-LOG.md) に書く
 - 「〜のはず」で進めない。**確かめてから乗る**（この1週間で6回、前提が崩れた）
 
-詳細は [STATUS.md](STATUS.md)。企画の経緯は [reports/](reports/) に全部残っている。
+詳細は [STATUS.md](STATUS.md)。実測と検証の記録は [reports/](reports/) にある。
