@@ -7,6 +7,7 @@
 
 | ファイル | 中身 |
 |---|---|
+| `gatekeeper_sigverify_2026-07-31.md` | **門番の署名検証を実際に動かした記録**。Web Bot Auth (RFC 9421 + Ed25519) の署名→検証 14/14 PASS。ChatGPT実鍵で kid=RFC 7638指紋の一致を確認 |
 | `aidoku_feasibility_2026-07-26.md` | **処方箋の効き方の実測**。そのまま貼っても0点上昇／実値で埋めれば 0→100点 |
 | `gennai_local_run_2026-07-26.md` | 源内WebをAWS無しでローカル起動できた記録。`web:dev` の抜け道 |
 | `gennai_hands_on_2026-07-26.md` | 源内の画面を実際に操作した検証。見つけた3つの問題と、その潰し方 |

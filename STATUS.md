@@ -23,6 +23,7 @@
 | **源内Web本体がローカルで起動** | ✅ AWS不要（`web:dev`）。AI読が源内のAIアプリとして動作 |
 | 源内画面での動作 | ✅ 港区100点／世田谷0点／処方箋／23区のランキング履歴 |
 | 動画台本 | ✅ [VIDEO-SCRIPT-aidoku.md](VIDEO-SCRIPT-aidoku.md)（全カット実物・9シーン） |
+| **門番の署名検証** [gatekeeper/](gatekeeper/) | ✅ Web Bot Auth (RFC 9421+Ed25519) の署名→検証 14/14 PASS。ChatGPT実鍵で形式互換を確認。[記録](reports/gatekeeper_sigverify_2026-07-31.md) |
 
 ## ⏭ 残り
 
