@@ -65,6 +65,17 @@ async function init() {
   const measured = PROCEDURES.filter((p) => p.measured).length;
   const total = PROCEDURES.length * data.municipalities.length;
   const done = measured * data.municipalities.length;
+
+  // 表を目で追わなくても中身が分かる要約（デジタル庁チェックリスト 25「代替テキスト」）。
+  // 画面にも出すので、読み上げの人だけでなく、ざっと見たい人にも効く。
+  const counts = { full: 0, part: 0, none: 0 };
+  for (const m of data.municipalities) counts[cellState(m).tone]++;
+  $('board-summary').innerHTML =
+    `${data.municipalities.length}区の${esc(PROCEDURES[0].name)}では、` +
+    `<b data-tone="green">4項目とも届くのが${counts.full}区</b>、` +
+    `<b data-tone="orange">一部だけ届くのが${counts.part}区</b>、` +
+    `<b data-tone="red">1つも届かないのが${counts.none}区</b>。` +
+    `他の${PROCEDURES.length - measured}手続きはまだ調べていません。`;
   $('board-note').innerHTML =
     `埋まっているのは <strong>${done} / ${total} マス</strong>（${data.n_municipalities}区 × ${measured}手続き）。` +
     `残りがグレーなのは、AIが読めなかったからではなく、<strong>まだ測っていないから</strong>です。<br>` +
