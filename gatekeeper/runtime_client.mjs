@@ -151,6 +151,40 @@ const main = async () => {
   const t4 = await r4.text();
   check('他人の鍵で keyid を騙っても答えは出ない', !t4.includes('"answered"'), t4.slice(0, 80));
 
+  // --- 5-e. NLWeb の窓口（POST /ask）を実HTTPで通す ------------------------
+  // 実際のAIは ?q= を付けてこない。自然文の質問が query.text で届くことを確かめる。
+  async function askOverHttp(text) {
+    const nowSec = Math.floor(Date.now() / 1000);
+    const h = await signRequest({
+      authority: AUTHORITY,
+      agent,
+      privateKey,
+      keyid,
+      created: nowSec,
+      expires: nowSec + 300,
+    });
+    const res = await fetch(`${BASE}/ask`, {
+      method: 'POST',
+      headers: { ...h, 'content-type': 'application/json' },
+      body: JSON.stringify({ query: { text, site: KEY_PATH } }),
+    });
+    return asJson(res);
+  }
+
+  const ask1 = await askOverHttp('転入届はオンラインでできますか');
+  check('NLWeb /ask に自然文で聞くと answer が返る', ask1._meta?.response_type === 'answer', ask1._meta);
+  check(
+    '  └ schema.org の型と実測値が返る',
+    ask1.results?.[0]?.['@type'] === 'GovernmentService' && ask1.results[0].provider?.name === '新宿区',
+    JSON.stringify(ask1.results?.[0]).slice(0, 120),
+  );
+
+  const ask2 = await askOverHttp('転入届の手数料はいくらですか');
+  check('  └ 書かれていない項目は failure(NO_RESULTS)', ask2.error?.code === 'NO_RESULTS', ask2);
+
+  const ask3 = await askOverHttp('転入届について教えてください');
+  check('  └ 曖昧な問いは elicitation で聞き返す', ask3._meta?.response_type === 'elicitation', ask3._meta);
+
   // --- 6. 集めたものがデータになっているか ---------------------------------
   const d = await (await fetch(`${BASE}/_aidoku/demand`)).json();
   check('KV に貯まった記録が集計されて返る', !!d, d);

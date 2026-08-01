@@ -18,6 +18,33 @@ Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所では�
 （記録レコードの `looking_for` と `answered`）。サーバーログには「来た」しか残らず、
 「来たが取れなかった」はどこにも記録されていない——これが誰も持っていないデータになる。
 
+## AIの聞き方（`POST /ask` — NLWeb）
+
+**探し物の受け取り方は自分で発明しない。** 実際のAIエージェントは `?q=` のような
+各サイト独自のクエリを付けてこないので、[NLWeb](https://nlweb.ai/docs/specification)
+（サイトを自然言語で聞ける窓口にする公開プロトコル。Shopify / Snowflake / O'Reilly /
+Tripadvisor 等が採用、Cloudflare Workers への載せ方も公開されている）に合わせる。
+
+```
+POST /ask
+{"query": {"text": "転入届の手数料はいくらですか", "site": "/todokede/tennyu.html"}}
+```
+
+返す型は規格のまま3つ。**「取れずに帰った」は我々の造語ではなく、NLWeb の `failure` そのもの。**
+
+| 聞かれたもの | 返す型 | 記録 |
+|---|---|---|
+| 書いてある項目 | `answer`（schema.org の `GovernmentService` ＋ 実測値） | `answered: true` |
+| **書かれていない項目** | **`failure` / `NO_RESULTS`** | **`answered: false`** ←主役 |
+| どの項目か分からない | `elicitation`（聞き返す） | `answered: null` |
+
+3つ目が肝心なところ。**曖昧な問いを黙って「取れた」に倒さない。**
+推測で数えると、実運用ではほぼ全件が「取れた」になって、主役のデータが消える。
+聞き返した分は `totals.undetermined` として別に数える。
+
+※ `results` の `fields` は schema.org の語彙ではなく、AI読の実測値そのもの
+（`answers/*.json` の中身）。文章はここで作らない。
+
 ## できるデータ（`GET /_aidoku/demand`）
 
 門番は集めたものをKVに追記し、この口から集計して返す。**取れずに帰った一覧が、
@@ -55,11 +82,13 @@ Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所では�
 |---|---|
 | `httpsig.mjs` | RFC 9421 の最小実装（署名ベース構築・Ed25519署名/検証・RFC 7638 JWK指紋）。依存はWebCryptoのみ＝NodeとWorkersで同じコードが動く |
 | `worker.mjs` | 門番本体（Cloudflare Worker 形。`wrangler deploy` できる形） |
+| `nlweb.mjs` | **AIの聞き方（NLWeb の `POST /ask`）**。answer / failure / elicitation を規格どおりに返す |
 | `demand.mjs` | **集めたものをデータにする部分**。KVに追記し、読み出し時に集計する |
 | `demo_talk.mjs` | **AIと門番のやり取りをそのまま書き出すデモ**（何を聞かれ、何を返したか） |
 | `demo_demand.mjs` | **Cloudflare無しで、データができるところを見せるデモ** |
 | `test_local.mjs` | 署名→検証の暗号テスト 7本 |
-| `test_worker.mjs` | 門番の応対テスト 17本（ネットワークはスタブ） |
+| `test_worker.mjs` | 門番の応対テスト 23本（ネットワークはスタブ） |
+| `test_nlweb.mjs` | NLWeb の窓口テスト 20本（自然文で聞いて answer / failure / elicitation） |
 | `build_answers.mjs` | 23区の実測から「整った答え」を作る（`answers/`。文章はここで作らない） |
 | `wrangler.jsonc` / `put_answers.sh` | Cloudflare Workers へのデプロイ設定とKV投入 |
 | `check_chatgpt_keys.mjs` | ChatGPT の実鍵を取得してパース互換を確認（要ネットワーク） |
@@ -68,8 +97,9 @@ Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所では�
 ## 動かす
 
 ```bash
-node gatekeeper/test_local.mjs        # 暗号として動く証明（7 PASS）
-node gatekeeper/test_worker.mjs       # 門番の応対一周（17 PASS）
+node gatekeeper/test_local.mjs        # 暗号として動く証明（11 PASS）
+node gatekeeper/test_worker.mjs       # 門番の応対一周（23 PASS）
+node gatekeeper/test_nlweb.mjs        # ★AIが自然文で聞く窓口（20 PASS）
 node gatekeeper/check_chatgpt_keys.mjs  # ChatGPTの実鍵で形式互換を確認
 node gatekeeper/build_answers.mjs     # 23区の実測から「整った答え」を作る
 node gatekeeper/demo_talk.mjs         # ★AIと門番のやり取りをそのまま見る
@@ -86,7 +116,7 @@ Node v24 以上（WebCrypto の Ed25519 が必要）。npm install は不要。
 ```bash
 cd gatekeeper
 npx wrangler dev -c runtime_check.wrangler.jsonc --local-protocol https --port 8901
-node runtime_client.mjs   # 別の端末から。署名つきの実HTTPリクエストを送る（18 PASS）
+node runtime_client.mjs   # 別の端末から。署名つきの実HTTPリクエストを送る（22 PASS）
 ```
 
 - `--local-protocol https` は必須（門番は鍵配布を https でしか信用しない）

@@ -97,10 +97,12 @@ export async function aggregate(env, { limit = LIST_LIMIT } = {}) {
   let answered = 0;
   let unanswered = 0;
   let unverified = 0; // 署名の検証に失敗した来訪（名乗りは自称なので数に入れない）
+  let undetermined = 0; // 何を聞かれたか特定できず、聞き返した分（推測で「取れた」にしない）
 
   for (const r of rows) {
     if (r.answered === true) answered++;
     else if (r.answered === false) unanswered++;
+    else if (r.verified === true) undetermined++;
     if (r.verified !== true) unverified++;
 
     // どのAIが来たか。**検証に成功した名乗りだけ**を数える。
@@ -151,6 +153,7 @@ export async function aggregate(env, { limit = LIST_LIMIT } = {}) {
       asks: rows.length,
       answered,
       unanswered,
+      undetermined, // 何を聞かれたか特定できなかった分（NLWeb の elicitation で聞き返した）
       unverified, // 署名の検証に失敗した来訪（「偽の名乗りが来た」という別の観測値）
       agents: byAgent.size,
     },
