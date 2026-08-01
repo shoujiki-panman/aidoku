@@ -128,54 +128,83 @@ PRESCRIPTIONS = engine.TEMPLATES
 
 
 def render_markdown(url, result):
+    """主役は点数ではなく「住民がAIに聞いたときの答え」。
+
+    住民の質問 → いまの答え → なぜそうなるか → 直したらどう答えられるか、の順に出す。
+    点数は最後に参考として置く（点数が主役だと「だから何？」で終わる、と実地で分かったため）。
+    """
     L = []
     muni = result.get("municipality") or ""
-    L.append(f"# AI読 診断結果{('　' + muni) if muni else ''}")
-    L.append("")
-    L.append(f"- 対象URL: {url}")
-    if result.get("hops") is not None:
-        L.append(f"- トップページから **{result['hops']}クリック** で到達")
-    L.append(f"- 判定日時: {_now()}")
-    L.append("")
-    L.append(f"## スコア: **{result['total']} / 100点**")
-    L.append("")
-    L.append("| 項目 | 判定 | 配点 | AIが読み取った内容 |")
-    L.append("| --- | --- | --- | --- |")
     vals = result.get("values", {})
+    reasons = result.get("reasons", {})
+    missing = [k for k, v in result["found"].items() if v is False]
+    answered = [k for k, v in result["found"].items() if v is True]
+
+    L.append(f"# AI読{('　' + muni) if muni else ''}")
+    L.append("")
+
+    # ── 主役: 住民がAIに聞いたときの答え ──
+    L.append("## 住民がこのページを読んだAIに聞くと、いまはこう返ります")
+    L.append("")
+    L.append(f"> **住民**「{muni or 'この自治体'}に引っ越します。転入届に必要なもの・期限・"
+             "手数料を教えて。オンラインでできますか？」")
+    L.append("")
+    L.append("**住民のAIの答え**")
+    L.append("")
     for key, label in ITEM_LABELS.items():
         v = result["found"].get(key)
         if v is None:
-            L.append(f"| {label} | 対象外 | - | - |")
-        elif v:
-            got = (vals.get(key) or "").replace("|", "／").replace("\n", " ")[:90]
-            L.append(f"| {label} | 読めた | 20 / 20 | {got or '-'} |")
+            continue
+        if v:
+            got = (vals.get(key) or "").replace("|", "／").replace("\n", " ")[:110]
+            L.append(f"- **{label}**: {got or '（値の記録なし）'}")
         else:
-            L.append(f"| {label} | **読めない** | 0 / 20 | — |")
-    L.append(f"| オンライン明示 | {result['clarity']} | {result['clarity_pt']} / 20 | — |")
+            L.append(f"- **{label}**: _このページからは分かりません_")
+    L.append("")
+    n_target = len([v for v in result["found"].values() if v is not None])
+    if missing:
+        L.append(f"**{n_target}項目のうち {len(answered)}項目しか答えられません。** "
+                 "住民が知りたいことの残りは、AIには届いていません。")
+    else:
+        L.append(f"**{n_target}項目すべて答えられます。** "
+                 "住民がAIに尋ねても、このページからは正しい答えが返ります。")
     L.append("")
 
-    missing = [k for k, v in result["found"].items() if v is False]
-
-    if result["mode"] == "score":
-        L.append("_（出力モード=採点のみ。処方箋は省略しました）_")
-    elif not missing and result["clarity"] == "明記":
-        L.append("**読めない箇所はありませんでした。** 住民がAIに尋ねても、"
-                 "このページからは正しい答えが返ります。")
-    else:
-        L.append("## 処方箋 — どこに、どう書けば伝わるか")
+    # ── なぜそうなるのか ──
+    if missing or result["clarity"] != "明記":
+        L.append("## なぜ答えられないのか")
         L.append("")
-        L.append("下の型をページに追記してください。**（　）の中は、"
-                 "各自治体の実際の値に置き換えてください。**")
+        notes = (result.get("page_notes") or "").strip()
+        if notes:
+            L.append(f"{notes}")
+            L.append("")
+        if missing:
+            L.append("| 答えられなかった項目 | 判定AIの記録 |")
+            L.append("| --- | --- |")
+            for key in missing:
+                r = (reasons.get(key) or "記載なし").replace("|", "／")
+                L.append(f"| {ITEM_LABELS[key]} | {r} |")
+            L.append("")
+
+    # ── 直したらどうなるか ──
+    if result["mode"] == "score":
+        L.append("_（出力モード=採点のみ。直し方の提案は省略しました）_")
+        L.append("")
+    elif missing or result["clarity"] != "明記":
+        L.append("## 直すと、住民のAIはこう答えられるようになります")
+        L.append("")
+        L.append("下の型をページに追記してください。"
+                 "**（　）の中は、各自治体の実際の値に置き換えてください。**")
         L.append("")
         for key in missing:
-            L.append(f"### {ITEM_LABELS[key]} が読めません")
+            L.append(f"### {ITEM_LABELS[key]}（いまは答えられない）")
             L.append("")
             L.append("```markdown")
             L.append(PRESCRIPTIONS[key])
             L.append("```")
             L.append("")
         if result["clarity"] != "明記" and "online" not in missing:
-            L.append("### オンライン明示が弱いです")
+            L.append("### オンラインで完結できるかが読み取りにくい")
             L.append("")
             L.append("```markdown")
             L.append(PRESCRIPTIONS["online"])
@@ -188,11 +217,34 @@ def render_markdown(url, result):
                  "（2026-07-26 実測）。逆に、（　）を空欄のまま貼っても点は上がりません。"
                  "**AIは穴の場所と書き方を示すところまでで、値を埋めるのは職員の方です。**"
                  "これは、AIが役所の情報を作り出さないための設計です。")
+        L.append("")
+
+    # ── 参考: 点数 ──
+    L.append(f"## 参考: AI判読度 {result['total']} / 100点")
+    L.append("")
+    L.append("| 項目 | 住民のAIに伝わるか | 配点 |")
+    L.append("| --- | --- | --- |")
+    for key, label in ITEM_LABELS.items():
+        v = result["found"].get(key)
+        if v is None:
+            L.append(f"| {label} | 対象外 | - |")
+        elif v:
+            L.append(f"| {label} | 伝わる | 20 / 20 |")
+        else:
+            L.append(f"| {label} | **伝わらない** | 0 / 20 |")
+    L.append(f"| オンライン明示 | {result['clarity']} | {result['clarity_pt']} / 20 |")
+    L.append("")
+    L.append("_AI判定のため±2点の測定誤差があります。2点差以内は同順位帯として見てください。_")
 
     if result.get("history_used"):
         L.append("")
         L.append("_（会話履歴を受け取りました）_")
 
+    L.append("")
+    L.append(f"- 対象URL: {url}")
+    if result.get("hops") is not None:
+        L.append(f"- トップページから **{result['hops']}クリック** で到達")
+    L.append(f"- 判定日時: {_now()}")
     L.append("")
     if result.get("source") == "measured":
         L.append(f"> 判定の出どころ: **実測値**（{result.get('measured_at')} に"
@@ -319,7 +371,14 @@ class Handler(BaseHTTPRequestHandler):
         url, checks, mode, history = parsed
 
         if self.path == "/invoke":  # 同期
-            md = render_markdown(url, score_page(url, checks, mode, history))
+            # 判定に失敗しても接続を切らず、理由を返す。
+            # （源内の画面では、無応答だと原因不明のエラーにしか見えないため）
+            try:
+                md = render_markdown(url, score_page(url, checks, mode, history))
+            except Exception as e:
+                self._send(500, {"status": "ERROR", "error": {
+                    "message": "判定できませんでした。", "details": str(e)[:300]}})
+                return
             self._send(200, {"outputs": md})
             return
 

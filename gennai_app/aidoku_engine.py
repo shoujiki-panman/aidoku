@@ -66,6 +66,11 @@ def load_measured() -> dict[str, dict]:
                       for k, jp in ITEM_KEYS.items()},
             "values": {k: (items.get(jp, {}).get("value") or "")[:200]
                        for k, jp in ITEM_KEYS.items()},
+            # 読めない理由。項目ごとの分類（記載なし/曖昧）と、ページ全体の観察記録。
+            # 「読めないから何？」に答えるため、判定時の記録をそのまま画面まで運ぶ。
+            "reasons": {k: (items.get(jp, {}).get("failure_reason") or "")
+                        for k, jp in ITEM_KEYS.items()},
+            "page_notes": (d.get("page_notes") or "").strip(),
             "clarity": (d.get("online_clarity") or "記載なし").strip(),
             "hops": page.get("hops"),
             "measured_at": "2026-07-22",
@@ -123,6 +128,8 @@ def judge_live(url: str) -> dict:
     items = data.get("items", {})
     found = {k: bool((items.get(jp) or {}).get("found")) for k, jp in ITEM_KEYS.items()}
     values = {k: ((items.get(jp) or {}).get("value") or "")[:200] for k, jp in ITEM_KEYS.items()}
+    reasons = {k: ((items.get(jp) or {}).get("failure_reason") or "") for k, jp in ITEM_KEYS.items()}
+    page_notes = (data.get("page_notes") or "").strip()
 
     # オンライン明示（別プロンプト。同居させると4項目の判定まで変わるため）
     cp = "".join([
@@ -137,6 +144,7 @@ def judge_live(url: str) -> dict:
         clarity = "記載なし"
 
     return {"municipality": "", "found": found, "values": values,
+            "reasons": reasons, "page_notes": page_notes,
             "clarity": clarity, "hops": None, "measured_at": None, "followed": []}
 
 
@@ -164,6 +172,8 @@ def score(url: str, checks: list[str] | None, allow_live: bool = True) -> dict:
         "municipality": base.get("municipality", ""),
         "found": found,
         "values": base.get("values", {}),
+        "reasons": base.get("reasons", {}),
+        "page_notes": base.get("page_notes", ""),
         "clarity": clarity,
         "clarity_pt": clarity_pt,
         "item_pt": item_pt,
