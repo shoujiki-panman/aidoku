@@ -2,10 +2,14 @@
   // 門番の Cloudflare Workers 設定。
   // 都知事杯2026の参加者特典（Cloudflare Paidプラン相当）で動かす想定。
   // 招待メールが届いたら:
-  //   npx wrangler login              # ハッカソン用チームアカウントを選ぶ
+  //   npx wrangler login              # ★必ずハッカソン用チームアカウントを選ぶ
+  //                                   #   （個人アカウントだと特典のリソースに触れない）
   //   npx wrangler kv namespace create ANSWERS   # 出力の id を下の "id" に貼る
   //   node build_answers.mjs && ./put_answers.sh # 実測の答えをKVへ
   //   npx wrangler deploy
+  //
+  // ★2026年9月末で権限が停止する（Final進出なら延長）。停止後はKVのデータを
+  //   取り出せないので、貯めた記録は9月末までに必ずエクスポートすること。
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "aidoku-gatekeeper",
   "main": "worker.mjs",
