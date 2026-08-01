@@ -17,6 +17,7 @@ Python標準ライブラリのみ。
 
 import json
 import os
+import re
 import time
 import urllib.error
 import uuid
@@ -34,9 +35,11 @@ HISTORY_MAX = 40
 AIDOKU_API_KEY = os.environ.get("AIDOKU_API_KEY", "dev-local-key")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+# request_format.json はこのスクリプトと同じディレクトリにある。
+# （以前は開発時の作業ディレクトリを指す絶対パスになっていて、他所からは起動できなかった）
 REQUEST_FORMAT_PATH = os.environ.get(
     "REQUEST_FORMAT_PATH",
-    os.path.join(os.path.dirname(HERE), "feasibility", "gennai_app", "request_format.json"),
+    os.path.join(HERE, "request_format.json"),
 )
 
 with open(REQUEST_FORMAT_PATH, encoding="utf-8") as f:
@@ -162,13 +165,15 @@ class Handler(BaseHTTPRequestHandler):
         # 利用履歴に積む（源内の画面右側に出る）
         inputs_in = body.get("inputs", {}) or {}
         target = str(inputs_in.get("url", ""))
-        # 一覧の見出し。判定結果からスコア行を拾えたらそれを使う
+        # 一覧の見出し。判定結果から自治体名と点数を拾えたらそれを使う。
+        # 例: 「AI読　世田谷区（0/100点）」
         title = target.replace("https://", "").replace("http://", "")[:48]
         for line in (out["outputs"] or "").splitlines():
-            if line.startswith("# AI読 診断結果"):
-                title = line.replace("# ", "").strip()
-            if "スコア:" in line:
-                title = f"{title}（{line.split('スコア:')[1].strip().replace('**','')}）"
+            if line.startswith("# AI読"):
+                title = line.lstrip("#").strip()
+            m = re.search(r"AI判読度\s*(\d+)\s*/\s*(\d+)点", line)
+            if m:
+                title = f"{title}（{m.group(1)}/{m.group(2)}点）"
                 break
         HISTORY.append({
             "invokeExAppHistoryId": uuid.uuid4().hex,
