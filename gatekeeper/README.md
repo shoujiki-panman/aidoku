@@ -45,6 +45,25 @@ POST /ask
 ※ `results` の `fields` は schema.org の語彙ではなく、AI読の実測値そのもの
 （`answers/*.json` の中身）。文章はここで作らない。
 
+### MCP からも同じことを聞ける（`POST /mcp`）
+
+NLWeb は**各インスタンスがMCPサーバーにもなる**規格。公開するツール名は
+NLWeb仕様 Appendix A のとおり **`ask`**、引数は `query` / `context` / `prefer` / `meta`。
+[MCP 2025-06-18](https://modelcontextprotocol.io/specification/2025-06-18) の
+JSON-RPC 2.0（`initialize` / `tools/list` / `tools/call` / `ping`）で話す。
+
+```bash
+curl -X POST https://<門番>/mcp -H 'content-type: application/json' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"ask",
+       "arguments":{"query":{"text":"転入届の手数料はいくらですか","site":"/todokede/tennyu.html"}}}}'
+```
+
+**どの口から来ても、答え方も数え方も同じ**（記録の `via` が `nlweb` / `mcp` / `query` で分かれるだけ）。
+
+`isError` は「ツールが実行できなかった」ときの印なので、
+**「そのページには書かれていなかった」(`NO_RESULTS`) は `isError: false`**。
+書かれていないことは失敗ではなく、正しい答え。
+
 ## できるデータ（`GET /_aidoku/demand`）
 
 門番は集めたものをKVに追記し、この口から集計して返す。**取れずに帰った一覧が、
@@ -83,16 +102,18 @@ POST /ask
 | `httpsig.mjs` | RFC 9421 の最小実装（署名ベース構築・Ed25519署名/検証・RFC 7638 JWK指紋）。依存はWebCryptoのみ＝NodeとWorkersで同じコードが動く |
 | `worker.mjs` | 門番本体（Cloudflare Worker 形。`wrangler deploy` できる形） |
 | `nlweb.mjs` | **AIの聞き方（NLWeb の `POST /ask`）**。answer / failure / elicitation を規格どおりに返す |
+| `mcp.mjs` | **MCP の窓口（`POST /mcp`）**。JSON-RPC 2.0。ツールは NLWeb 仕様の `ask` 1本 |
 | `demand.mjs` | **集めたものをデータにする部分**。KVに追記し、読み出し時に集計する |
 | `demo_talk.mjs` | **AIと門番のやり取りをそのまま書き出すデモ**（何を聞かれ、何を返したか） |
 | `demo_demand.mjs` | **Cloudflare無しで、データができるところを見せるデモ** |
-| `test_local.mjs` | 署名→検証の暗号テスト 7本 |
+| `test_local.mjs` | 署名→検証の暗号テスト 11本（門番が例外で落ちないことの確認を含む） |
 | `test_worker.mjs` | 門番の応対テスト 23本（ネットワークはスタブ） |
 | `test_nlweb.mjs` | NLWeb の窓口テスト 20本（自然文で聞いて answer / failure / elicitation） |
+| `test_mcp.mjs` | MCP の窓口テスト 24本（握手・tools/list・tools/call・規格どおりのエラー） |
 | `build_answers.mjs` | 23区の実測から「整った答え」を作る（`answers/`。文章はここで作らない） |
 | `wrangler.jsonc` / `put_answers.sh` | Cloudflare Workers へのデプロイ設定とKV投入 |
 | `check_chatgpt_keys.mjs` | ChatGPT の実鍵を取得してパース互換を確認（要ネットワーク） |
-| `runtime_check.mjs` / `runtime_client.mjs` | **本番ランタイム(workerd)の上で門番を動かして確かめる**（18本）。素の worker.mjs をそのまま呼ぶ |
+| `runtime_check.mjs` / `runtime_client.mjs` | **本番ランタイム(workerd)の上で門番を動かして確かめる**（25本）。素の worker.mjs をそのまま呼ぶ |
 
 ## 動かす
 
@@ -100,6 +121,7 @@ POST /ask
 node gatekeeper/test_local.mjs        # 暗号として動く証明（11 PASS）
 node gatekeeper/test_worker.mjs       # 門番の応対一周（23 PASS）
 node gatekeeper/test_nlweb.mjs        # ★AIが自然文で聞く窓口（20 PASS）
+node gatekeeper/test_mcp.mjs          # ★MCPクライアントから同じことを聞く（24 PASS）
 node gatekeeper/check_chatgpt_keys.mjs  # ChatGPTの実鍵で形式互換を確認
 node gatekeeper/build_answers.mjs     # 23区の実測から「整った答え」を作る
 node gatekeeper/demo_talk.mjs         # ★AIと門番のやり取りをそのまま見る
@@ -110,13 +132,13 @@ Node v24 以上（WebCrypto の Ed25519 が必要）。npm install は不要。
 
 ### 本番ランタイム(workerd)で動かして確かめる
 
-上の6本は Node の上で、ネットワークをスタブして動かしている。
+上のテストは Node の上で、ネットワークをスタブして動かしている。
 実際に乗るのは Cloudflare の workerd なので、そこでも動くことを別に確かめる。
 
 ```bash
 cd gatekeeper
 npx wrangler dev -c runtime_check.wrangler.jsonc --local-protocol https --port 8901
-node runtime_client.mjs   # 別の端末から。署名つきの実HTTPリクエストを送る（22 PASS）
+node runtime_client.mjs   # 別の端末から。署名つきの実HTTPリクエストを送る（25 PASS）
 ```
 
 - `--local-protocol https` は必須（門番は鍵配布を https でしか信用しない）

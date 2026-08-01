@@ -185,6 +185,48 @@ const main = async () => {
   const ask3 = await askOverHttp('転入届について教えてください');
   check('  └ 曖昧な問いは elicitation で聞き返す', ask3._meta?.response_type === 'elicitation', ask3._meta);
 
+  // --- 5-f. MCP の窓口（POST /mcp）を実HTTPで通す --------------------------
+  async function rpc(message) {
+    const nowSec = Math.floor(Date.now() / 1000);
+    const h = await signRequest({
+      authority: AUTHORITY,
+      agent,
+      privateKey,
+      keyid,
+      created: nowSec,
+      expires: nowSec + 300,
+    });
+    const res = await fetch(`${BASE}/mcp`, {
+      method: 'POST',
+      headers: { ...h, 'content-type': 'application/json' },
+      body: JSON.stringify(message),
+    });
+    return asJson(res);
+  }
+
+  const init = await rpc({
+    jsonrpc: '2.0',
+    id: 1,
+    method: 'initialize',
+    params: { protocolVersion: '2025-06-18', capabilities: {}, clientInfo: { name: 'runtime-check', version: '1' } },
+  });
+  check('MCP の握手(initialize)が通る', init.result?.protocolVersion === '2025-06-18', init);
+
+  const tools = await rpc({ jsonrpc: '2.0', id: 2, method: 'tools/list' });
+  check('  └ tools/list が ask ツールを返す', tools.result?.tools?.[0]?.name === 'ask', tools.result?.tools?.[0]?.name);
+
+  const called = await rpc({
+    jsonrpc: '2.0',
+    id: 3,
+    method: 'tools/call',
+    params: { name: 'ask', arguments: { query: { text: '転入届の手数料はいくらですか', site: KEY_PATH } } },
+  });
+  check(
+    '  └ tools/call でも「書かれていない」が failure で返る',
+    called.result?.structuredContent?.error?.code === 'NO_RESULTS',
+    JSON.stringify(called.result?.structuredContent).slice(0, 120),
+  );
+
   // --- 6. 集めたものがデータになっているか ---------------------------------
   const d = await (await fetch(`${BASE}/_aidoku/demand`)).json();
   check('KV に貯まった記録が集計されて返る', !!d, d);

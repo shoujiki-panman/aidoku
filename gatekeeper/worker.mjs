@@ -14,6 +14,7 @@
 import { verifyRequest, importPublicJwk, jwkThumbprint } from './httpsig.mjs';
 import { recordAsk, aggregate, isAnswered } from './demand.mjs';
 import { ASK_PATH, parseAsk, askTarget, decideAsk, failureResponse } from './nlweb.mjs';
+import { MCP_PATH, handleRpc, rpcError } from './mcp.mjs';
 
 // 集めたデータの取り出し口。自治体サイトのURLと衝突しないよう接頭辞を付ける。
 const DEMAND_PATH = '/_aidoku/demand';
@@ -112,23 +113,9 @@ async function keepRecord(env, ctx, record, keyid) {
 // 探し物は自分ルール(?q=)ではなく query.text で受け取る。
 // 答えられなければ規格の failure を返す＝「取れずに帰った」が標準の型で残る。
 // どの項目を聞かれたか分からなければ elicitation で聞き返す（推測で「取れた」にしない）。
-async function handleAsk(request, url, env, ctx, result) {
-  if (request.method !== 'POST') {
-    return jsonResponse(
-      failureResponse('INVALID_QUERY', 'POST で {"query":{"text":"..."}} を送ってください。'),
-      405,
-    );
-  }
-
-  let body = null;
-  try {
-    body = await request.json();
-  } catch {
-    body = null;
-  }
-  const parsed = parseAsk(body);
-  if (parsed.error) return jsonResponse(failureResponse('INVALID_QUERY', parsed.error), 400);
-
+// 聞かれてから答えるまでの中身。HTTP(/ask) と MCP(/mcp) で同じものを使う。
+// via は「どの口から来たか」の印だけで、答え方も数え方も変えない。
+async function askCore(parsed, url, env, ctx, result, via) {
   const target = askTarget(url.host, parsed.site);
 
   let answer = null;
@@ -155,13 +142,53 @@ async function handleAsk(request, url, env, ctx, result) {
         keyid: result.keyid ?? null,
         authority: url.host,
         path: target.path,
-        via: 'nlweb',
+        via,
       },
       result.keyid,
     );
   }
 
-  return jsonResponse(decided.body);
+  return decided.body;
+}
+
+async function handleAsk(request, url, env, ctx, result) {
+  if (request.method !== 'POST') {
+    return jsonResponse(
+      failureResponse('INVALID_QUERY', 'POST で {"query":{"text":"..."}} を送ってください。'),
+      405,
+    );
+  }
+
+  let body = null;
+  try {
+    body = await request.json();
+  } catch {
+    body = null;
+  }
+  const parsed = parseAsk(body);
+  if (parsed.error) return jsonResponse(failureResponse('INVALID_QUERY', parsed.error), 400);
+
+  return jsonResponse(await askCore(parsed, url, env, ctx, result, 'nlweb'));
+}
+
+// MCP の窓口（POST /mcp）。NLWeb は各インスタンスがMCPサーバーにもなる規格。
+// 仕様: https://modelcontextprotocol.io/specification/2025-06-18
+async function handleMcp(request, url, env, ctx, result) {
+  if (request.method !== 'POST') {
+    return jsonResponse(rpcError(null, -32600, 'POST で JSON-RPC を送ってください。'), 405);
+  }
+
+  let message = null;
+  try {
+    message = await request.json();
+  } catch {
+    return jsonResponse(rpcError(null, -32700, 'Parse error'), 400);
+  }
+
+  const reply = await handleRpc(message, (parsed) => askCore(parsed, url, env, ctx, result, 'mcp'));
+  // 通知（id が無いもの）には本文を返さない
+  if (reply === null) return new Response(null, { status: 202 });
+  return jsonResponse(reply);
 }
 
 export default {
@@ -195,6 +222,12 @@ export default {
     // （素通ししても元サイトに /ask は無い）。記録の作法は下と同じ。
     if (url.pathname === ASK_PATH) {
       return handleAsk(request, url, env, ctx, result);
+    }
+
+    // MCP の窓口。NLWeb は各インスタンスがMCPサーバーにもなる規格なので、
+    // 同じ答えを MCP クライアント（Claude 等）からも引けるようにする。
+    if (url.pathname === MCP_PATH) {
+      return handleMcp(request, url, env, ctx, result);
     }
 
     // 署名なし＝普通の人間のアクセス。記録せず素通し（住民のデータは集めない）
