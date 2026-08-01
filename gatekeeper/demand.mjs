@@ -76,14 +76,22 @@ export async function aggregate(env, { limit = LIST_LIMIT } = {}) {
   } while (cursor && rows.length < limit);
 
   const byAsk = new Map(); // 「どのページに・何を探しに来たか」ごとの集計
-  const agents = new Set();
+  const byAgent = new Map(); // どのAIが来て、どれだけ持ち帰れたか
   let answered = 0;
   let unanswered = 0;
 
   for (const r of rows) {
-    if (r.agent) agents.add(r.agent);
     if (r.answered === true) answered++;
     else if (r.answered === false) unanswered++;
+
+    // どのAIが来たか。名乗りは署名で証明済みなので、偽装できない。
+    if (r.agent) {
+      const a = byAgent.get(r.agent) ?? { agent: r.agent, asks: 0, answered: 0, unanswered: 0 };
+      a.asks++;
+      if (r.answered === true) a.answered++;
+      if (r.answered === false) a.unanswered++;
+      byAgent.set(r.agent, a);
+    }
 
     const key = `${r.authority}\t${r.path}\t${r.looking_for ?? ''}`;
     const cur = byAsk.get(key) ?? {
@@ -93,12 +101,20 @@ export async function aggregate(env, { limit = LIST_LIMIT } = {}) {
       count: 0,
       answered_count: 0,
       unanswered_count: 0,
+      by_agent: {}, // どのAIが何回来て、取れたか（盤面のマスになる）
       first_seen: r.ts,
       last_seen: r.ts,
     };
     cur.count++;
     if (r.answered === true) cur.answered_count++;
     if (r.answered === false) cur.unanswered_count++;
+    if (r.agent) {
+      const c = cur.by_agent[r.agent] ?? { asks: 0, answered: 0, unanswered: 0 };
+      c.asks++;
+      if (r.answered === true) c.answered++;
+      if (r.answered === false) c.unanswered++;
+      cur.by_agent[r.agent] = c;
+    }
     if (r.ts < cur.first_seen) cur.first_seen = r.ts;
     if (r.ts > cur.last_seen) cur.last_seen = r.ts;
     byAsk.set(key, cur);
@@ -112,8 +128,10 @@ export async function aggregate(env, { limit = LIST_LIMIT } = {}) {
       asks: rows.length,
       answered,
       unanswered,
-      agents: agents.size,
+      agents: byAgent.size,
     },
+    // どのAIが来て、どれだけ手ぶらで帰ったか。名乗りは署名で証明されている。
+    by_agent: [...byAgent.values()].sort((a, b) => b.asks - a.asks),
     // ここが本体。AIが探しに来たのに取れずに帰った＝そのページに足りていない情報。
     // そのまま「区役所への更新依頼リスト」になる。
     unanswered: all.filter((x) => x.unanswered_count > 0),

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>盤面 — 住民のAIに、どこまで答えが届いているか | AI読（アイドク）</title>
+<meta name="description" content="東京23区 × 手続き のマス目。住民のAIが答えを持ち帰れるかを実測で塗り、まだ調べていないところはグレーのままにしています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/dads/global.css">
+<link rel="stylesheet" href="vendor/dads/components/heading/heading.css">
+<link rel="stylesheet" href="vendor/dads/components/table/table.css">
+<link rel="stylesheet" href="vendor/dads/components/link/link.css">
+<link rel="stylesheet" href="vendor/dads/components/divider/divider.css">
+<link rel="stylesheet" href="vendor/dads/components/notification-banner/notification-banner.css">
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/board.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
+    <h1 class="dads-heading" data-size="xl">盤面</h1>
+    <p class="site-header__lead"><strong>住民のAIに、どこまで答えが届いているか。</strong><br>
+      東京23区 × 手続き のマス目です。実際にAIに読ませて確かめたところだけ色がつきます。<br>
+      <strong>グレーは「まだ調べていない」。</strong>塗りつぶすには人の手が要ります。</p>
+    <p class="site-header__nav"><a class="dads-link" href="index.html">← 住民のAIの答えを見る（トップ）</a></p>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+
+  <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
+    <h2 class="dads-notification-banner__heading">
+      <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="情報">
+        <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
+        <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
+      </svg>
+      <span class="dads-notification-banner__heading-text">色がついているのは、実際にAIに読ませて確かめたマスだけです</span>
+    </h2>
+    <div class="dads-notification-banner__body">
+      <p>これは個人が行った第三者調査であり、行政機関の公式発表ではありません。<strong>グレーのマスは「読めない」ではなく「まだ調べていない」</strong>という意味です。憶測では塗りません。</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="board-heading">
+    <h2 class="dads-heading" data-size="l" id="board-heading">23区 × 手続き</h2>
+    <p class="section-note">1マス＝その区のその手続きのページを、住民のAIが読んだとき<strong>4項目（必要書類・窓口/オンライン可否・期限・手数料）を持ち帰れるか</strong>。区名を選ぶと、トップの詳細に移動します。</p>
+    <div class="legend" id="legend"></div>
+    <div class="board-scroll">
+      <table class="board" id="board">
+        <caption class="board__caption">住民のAIが答えを持ち帰れるか（実測）</caption>
+        <thead><tr id="board-head"></tr></thead>
+        <tbody id="board-body"></tbody>
+      </table>
+    </div>
+    <p class="section-note" id="board-note"></p>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="visit-heading">
+    <h2 class="dads-heading" data-size="l" id="visit-heading">どのAIが、何を探しに来たか</h2>
+    <p class="section-note">
+      上の盤面は「AIが読んだら答えが返るか」を<strong>こちらから読ませて</strong>測ったものです。
+      その先にもう一枚あります——<strong>実際に住民のAIが来て、何を探して、取れずに帰ったか</strong>。
+      これは自治体サイトの前に立つ<a class="dads-link" href="https://github.com/shoujiki-panman/aidoku/tree/main/gatekeeper">門番</a>が集めます。
+    </p>
+    <div class="visit-grid" id="visit"></div>
+    <p class="section-note">
+      門番は、来たのが本物のAIかを<strong>署名（Web Bot Auth）で確かめてから</strong>記録します。名乗りは偽装できません。
+      <strong>人（ブラウザ）のアクセスは記録しません。</strong>
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>調査・実装: 正直パンマン（個人）。<strong>行政機関の公式発表ではありません。</strong></p>
+    <p>判定基準（必須要素）を公開しています。誤りの指摘を歓迎します → <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku">GitHub</a></p>
+    <p class="site-footer__credit">画面のスタイルに <a class="dads-link" href="https://design.digital.go.jp/">デジタル庁デザインシステム</a> のコードスニペット（MIT）を利用しています。デジタル庁が本調査を提供・監修しているものではありません。</p>
+  </div>
+</footer>
+
+<script src="assets/board.js"></script>
+</body>
+</html>

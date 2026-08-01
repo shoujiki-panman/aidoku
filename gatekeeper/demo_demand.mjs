@@ -108,6 +108,11 @@ for (const r of d.unanswered) {
   console.log(`  ${String(r.unanswered_count).padStart(2)}回  ${r.looking_for}`);
   console.log(`        ${r.authority}${r.path}`);
 }
+console.log('\n■ どのAIが来て、どれだけ手ぶらで帰ったか（名乗りは署名で証明済み）');
+for (const a of d.by_agent) {
+  console.log(`  ${a.agent}  来訪${a.asks}回 → 取れた${a.answered} / 取れずに帰った${a.unanswered}`);
+}
+
 console.log('\n■ 答えを渡せたもの');
 for (const r of d.all.filter((x) => x.answered_count > 0)) {
   console.log(`  ${String(r.answered_count).padStart(2)}回  ${r.looking_for}  （${r.authority}）`);

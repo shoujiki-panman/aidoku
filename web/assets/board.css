@@ -1,0 +1,70 @@
+/* 盤面。色は「実測で分かったこと」だけに使い、分からないところはグレーで置く。 */
+
+.site-header__nav { margin: .8em 0 0; }
+.site-header__nav .dads-link { color: #cfe0ff; }
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
+  margin: 0 0 1em;
+  font-size: .9rem;
+}
+.legend__item { display: inline-flex; align-items: center; gap: .45em; }
+
+.cell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6em;
+  height: 1.9em;
+  border-radius: 5px;
+  font-style: normal;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #fff;
+}
+.legend .cell { width: 1.5em; height: 1.1em; }
+
+.cell[data-tone="full"] { background: #0f7a3d; }
+.cell[data-tone="part"] { background: #c58a00; }
+.cell[data-tone="none"] { background: #b3261e; }
+.cell[data-tone="gray"] { background: #e2e5ea; border: 1px dashed #b9bfc7; }
+
+.board-scroll { overflow-x: auto; background: #fff; border: 1px solid #d8dde3; border-radius: 8px; }
+.board { border-collapse: collapse; width: 100%; min-width: 720px; }
+.board__caption { text-align: left; padding: .8em 1em .2em; font-size: .9rem; color: #5c5c66; }
+.board th, .board td { padding: .4em .6em; text-align: center; }
+.board thead th {
+  font-size: .85rem;
+  border-bottom: 2px solid #d8dde3;
+  vertical-align: bottom;
+  padding-bottom: .6em;
+}
+.board thead th.col-gray { color: #7a828c; font-weight: 500; }
+.col-note { display: block; font-size: .7rem; font-weight: 400; color: #8a929b; }
+.board__corner { text-align: left; }
+.board tbody th { text-align: left; font-weight: 400; white-space: nowrap; padding-right: 1em; }
+.board tbody tr:nth-child(odd) { background: #fafbfc; }
+
+.visit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1em 0;
+}
+.visit-card {
+  background: #fff;
+  border: 1px solid #d8dde3;
+  border-radius: 8px;
+  padding: 1em;
+}
+.visit-card[data-state="gray"] { background: #f6f7f9; border-style: dashed; }
+.visit-card__name { margin: 0; font-weight: 700; }
+.visit-card__count { margin: .3em 0; font-size: 1.8rem; font-weight: 700; color: #9aa2ab; }
+.visit-card__note { margin: 0; font-size: .85rem; color: #5c5c66; line-height: 1.7; }
+.visit-card__sub { color: #8a929b; }
+
+@media (max-width: 600px) {
+  .cell { width: 2.2em; }
+}
