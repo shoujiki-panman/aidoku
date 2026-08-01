@@ -28,16 +28,26 @@
   </div>
 </header>
 
+<nav class="site-nav" aria-label="ページ内の案内">
+  <ul class="wrap site-nav__list">
+    <li><a href="index.html" aria-current="page">住民のAIの答え</a></li>
+    <li><a href="#ranking-heading">23区の一覧</a></li>
+    <li><a href="#detail-heading">区ごとの詳細</a></li>
+    <li><a href="board.html">盤面</a></li>
+    <li><a href="#method-heading">測り方</a></li>
+  </ul>
+</nav>
+
 <main class="wrap" id="main">
 
   <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
-    <h2 class="dads-notification-banner__heading">
+    <p class="dads-notification-banner__heading">
       <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="情報">
         <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
         <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
       </svg>
       <span class="dads-notification-banner__heading-text" id="phase-note">読み込み中</span>
-    </h2>
+    </p>
     <div class="dads-notification-banner__body">
       <p>これは個人が行った第三者調査であり、行政機関の公式発表ではありません。順位をつけることが目的ではなく、<strong>どこを直せば住民のAIから読めるようになるか</strong>を示すための調査です。</p>
     </div>
@@ -51,17 +61,10 @@
 
   <hr class="dads-divider">
 
-  <section aria-labelledby="detail-heading">
-    <h2 class="dads-heading" data-size="l" id="detail-heading">あなたの区では？ — 住民のAIの答えと、直す箇所</h2>
-    <p class="section-note">下の一覧から自治体名を選ぶと、その区のページを読ませたAIの答え・<strong>読めない理由</strong>・直す箇所が出ます。</p>
-    <div id="detail" aria-live="polite"></div>
-  </section>
-
-  <hr class="dads-divider">
-
   <section aria-labelledby="ranking-heading">
-    <h2 class="dads-heading" data-size="l" id="ranking-heading">23区の一覧</h2>
-    <p class="section-note">✓＝住民のAIに伝わる／✕＝伝わらない（4項目＋オンライン明示）。合計点は参考値です（AI判定のため±2点の測定誤差。2点差以内は同順位帯として見てください）。</p>
+    <h2 class="dads-heading" data-size="l" id="ranking-heading">① 23区の一覧 — 見たい区を選ぶ</h2>
+    <p class="section-note"><strong>自治体名を押すと、すぐ下にその区の詳しい結果が出ます。</strong><br>
+      ✓＝住民のAIに伝わる／✕＝伝わらない（4項目＋オンライン明示）。合計点は参考値です（AI判定のため±2点の測定誤差。2点差以内は同順位帯として見てください）。</p>
     <div class="dads-table" data-size="dense">
       <table class="dads-table__table" id="ranking">
         <caption class="dads-table__caption">AI判読度（<span id="proc-name"></span>）</caption>
@@ -81,6 +84,16 @@
       </table>
     </div>
   </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="detail-heading">
+    <h2 class="dads-heading" data-size="l" id="detail-heading">② 選んだ区の結果 — 住民のAIの答えと、直す箇所</h2>
+    <p class="section-note">上の一覧で選んだ区について、そのページを読ませたAIの答え・<strong>読めない理由</strong>・直す箇所が出ます。</p>
+    <div id="detail" aria-live="polite"></div>
+  </section>
+
+  <hr class="dads-divider">
 
   <section aria-labelledby="summary-heading">
     <h2 class="dads-heading" data-size="l" id="summary-heading">全体の数字</h2>

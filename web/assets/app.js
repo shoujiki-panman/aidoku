@@ -108,7 +108,8 @@ function renderRanking() {
     const b = e.target.closest('button[data-id]');
     if (b) {
       select(b.dataset.id);
-      $('detail').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // 見出しごと画面に入れる。結果だけ出ても「どこを見ているか」が分からなくなるため
+      $('detail-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
 }

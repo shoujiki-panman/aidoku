@@ -41,6 +41,50 @@ body {
   color: var(--color-primitive-blue-50);
 }
 
+/* --- ページ内の案内（どこに何があるかを常に出しておく） --- */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #fff;
+  border-bottom: 1px solid #d8dde3;
+  margin-bottom: calc(20 / 16 * 1rem);
+}
+
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  list-style: none;
+  margin: 0 auto;
+  padding-block: 0;
+}
+
+.site-nav__list a {
+  display: block;
+  padding: calc(12 / 16 * 1rem) calc(14 / 16 * 1rem);
+  color: #1a3a6b;
+  text-decoration: none;
+  font-size: calc(14.5 / 16 * 1rem);
+  border-bottom: 3px solid transparent;
+}
+
+.site-nav__list a:hover { background: #f2f6fc; text-decoration: underline; }
+
+.site-nav__list a[aria-current="page"] {
+  font-weight: 700;
+  border-bottom-color: var(--color-primitive-blue-900, #0056b3);
+}
+
+@media (max-width: 600px) {
+  .site-nav { position: static; }
+  .site-nav__list a { padding: calc(10 / 16 * 1rem) calc(10 / 16 * 1rem); font-size: calc(13.5 / 16 * 1rem); }
+}
+
+/* 案内バーが固定なので、飛び先の見出しがその下に隠れないよう余白をとる */
+main [id] { scroll-margin-top: calc(64 / 16 * 1rem); }
+
 /* --- 本文 --- */
 
 main section {
