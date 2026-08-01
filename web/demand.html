@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AIが取れずに帰ったもの — 門番が集めるデータ | AI読（アイドク）</title>
-<meta name="description" content="住民のAIが自治体サイトに何を探しに来て、答えを見つけられずに帰ったか。サーバーログには「来た」しか残らず、「来たが取れなかった」はどこにも記録されていません。">
+<meta name="description" content="住民のAIが自治体サイトに何を探しに来て、答えを見つけられずに帰ったか。サーバーログには「来た」しか残りません。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -23,9 +23,7 @@
   <div class="wrap">
     <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
     <h1 class="dads-heading" data-size="xl">AIが取れずに帰ったもの</h1>
-    <p class="site-header__lead"><strong>住民のAIが何を探しに来て、見つけられずに帰ったか。</strong><br>
-      サーバーの記録には「来た」しか残りません。<strong>「来たが取れなかった」は、どこにも記録されていません。</strong><br>
-      自治体サイトの前に立つ門番が、そこだけを集めます。</p>
+    <p class="site-header__lead">サーバーの記録に残るのは「来た」だけ。<strong>「来たが取れなかった」はどこにも残りません。</strong></p>
   </div>
 </header>
 
@@ -41,7 +39,6 @@
 
 <main class="wrap" id="main">
 
-  <!-- ① いちばん上に、いちばん大事な事実。見本であることを隠さない -->
   <div class="dads-notification-banner" data-style="standard" data-type="warning" role="note">
     <p class="dads-notification-banner__heading">
       <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="注意">
@@ -55,38 +52,34 @@
     </div>
   </div>
 
-  <!-- ② 全体（基準となる指標）。左上に置く -->
   <section aria-labelledby="totals-heading">
     <h2 class="dads-heading" data-size="l" id="totals-heading">全体</h2>
 
     <div class="headline" id="headline">
       <p class="headline__label">本物のAIエージェントの来訪</p>
       <p class="headline__value"><span id="real-visits">0</span><span class="unit">件</span></p>
-      <p class="headline__note" id="headline-note">門番はまだ公開していません。公開すると、ここに実際の来訪が入ります。</p>
+      <p class="headline__note" id="headline-note"></p>
     </div>
 
-    <p class="section-note">以下は<strong>見本の数字</strong>です（門番の実物のコードに、こちらで用意したAIを来させた再現）。</p>
+    <p class="section-note">以下は<strong>見本の数字</strong>です。</p>
     <dl class="stat-row" id="totals"></dl>
     <p class="section-note" id="totals-note"></p>
   </section>
 
   <hr class="dads-divider">
 
-  <!-- ③ 部分。ここが本体 -->
   <section aria-labelledby="unanswered-heading">
     <h2 class="dads-heading" data-size="l" id="unanswered-heading">取れずに帰った探し物</h2>
-    <p class="section-note">
-      <strong>そのまま区役所への更新依頼リストになります。</strong>
-      「取れた」はページに何か書いてあることではなく、<strong>聞かれた項目に答えがあること</strong>です。
-      手数料を聞かれて手数料だけ空なら、取れずに帰ったと数えます。
-    </p>
+    <p class="section-note">そのまま区役所への更新依頼リストになります。</p>
+    <p class="rollup" id="rollup"></p>
     <div class="dads-table">
       <table class="dads-table__table">
         <caption class="visually-hidden">AIが探しに来たのに取れずに帰ったものの一覧</caption>
         <thead>
           <tr>
             <th scope="col">結果</th>
-            <th scope="col">探し物（AIが聞いた言葉そのまま）</th>
+            <th scope="col">探し物</th>
+            <th scope="col">どのAIが</th>
             <th scope="col">自治体</th>
             <th scope="col" class="num">回数</th>
           </tr>
@@ -94,49 +87,63 @@
         <tbody id="unanswered-body"></tbody>
       </table>
     </div>
-    <p class="section-note" id="unanswered-note"></p>
   </section>
 
   <hr class="dads-divider">
 
-  <!-- ④ どのAIが来たか -->
   <section aria-labelledby="agents-heading">
-    <h2 class="dads-heading" data-size="l" id="agents-heading">どのAIが来たか</h2>
-    <p class="section-note">
-      門番は、来たのが本物のAIかを<strong>署名（Web Bot Auth）で確かめてから</strong>数えます。
-      検証できなかった名乗りはここに入れません（他人の公開鍵IDは誰でも書けるため）。
-      <strong>人（ブラウザ）のアクセスは記録しません。</strong>
-    </p>
+    <h2 class="dads-heading" data-size="l" id="agents-heading">どのAIが、何回来たか</h2>
     <div class="agent-grid" id="agents"></div>
+    <p class="section-note">
+      名乗りは<strong>署名（Web Bot Auth）で確かめた分だけ</strong>数えています。
+      <strong>個人は分かりません。</strong>署名が示すのは「どのAIサービスか」で、その先の利用者ではありません。人（ブラウザ）は記録しません。
+    </p>
   </section>
 
   <hr class="dads-divider">
 
-  <!-- ⑤ 右下＝いちばん詳しいところ。定義と入手 -->
+  <section aria-labelledby="pages-heading">
+    <h2 class="dads-heading" data-size="l" id="pages-heading">どのページを見て行ったか</h2>
+    <div class="dads-table">
+      <table class="dads-table__table">
+        <caption class="visually-hidden">AIが訪れたページの一覧</caption>
+        <thead>
+          <tr>
+            <th scope="col">ページ</th>
+            <th scope="col" class="num">来訪</th>
+            <th scope="col" class="num">取れた</th>
+            <th scope="col" class="num">取れず</th>
+            <th scope="col">聞かれたこと</th>
+          </tr>
+        </thead>
+        <tbody id="pages-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="dads-divider">
+
   <section aria-labelledby="method-heading">
     <h2 class="dads-heading" data-size="l" id="method-heading">数え方とデータの入手</h2>
 
-    <h3 class="dads-heading" data-size="s">数え方の定義</h3>
-    <dl class="def-list">
-      <dt>取れた</dt><dd>聞かれた項目に、そのページから読み取れた実測値があった。</dd>
-      <dt>取れずに帰った</dt><dd>聞かれた項目が、そのページに書かれていなかった。<strong>これが集めたいデータ。</strong></dd>
-      <dt>聞き返した</dt><dd>4項目のどれを聞かれたか特定できなかった。<strong>推測で「取れた」に数えません。</strong></dd>
-      <dt>検証に失敗</dt><dd>署名が確かめられなかった来訪。件数だけ数え、名乗りは記録しません。</dd>
-    </dl>
+    <details class="def-details">
+      <summary>数え方の定義</summary>
+      <dl class="def-list">
+        <dt>取れた</dt><dd>聞かれた項目に、そのページから読み取れた実測値があった。</dd>
+        <dt>取れずに帰った</dt><dd>聞かれた項目が、そのページに書かれていなかった。</dd>
+        <dt>聞き返した</dt><dd>どの項目を聞かれたか特定できなかった。推測で「取れた」に数えません。</dd>
+        <dt>検証に失敗</dt><dd>署名が確かめられなかった来訪。件数だけ数え、名乗りは記録しません。</dd>
+      </dl>
+    </details>
 
-    <h3 class="dads-heading" data-size="s">集計の範囲</h3>
     <p class="section-note" id="coverage"></p>
 
-    <h3 class="dads-heading" data-size="s">データの入手</h3>
     <ul class="file-list">
-      <li><a class="dads-link" href="data/demand.csv">demand.csv</a> — 表計算ソフトで開けます</li>
-      <li><a class="dads-link" href="data/demand.json">demand.json</a> — 門番の <code>/_aidoku/demand</code> がそのまま返す形</li>
-      <li><a class="dads-link" href="data/demand-summary.txt">demand-summary.txt</a> — 文字だけの要約</li>
+      <li><a class="dads-link" href="data/demand.csv">demand.csv</a></li>
+      <li><a class="dads-link" href="data/demand.json">demand.json</a>（門番の <code>/_aidoku/demand</code> がそのまま返す形）</li>
+      <li><a class="dads-link" href="data/demand-summary.txt">demand-summary.txt</a></li>
+      <li><a class="dads-link" href="https://github.com/shoujiki-panman/aidoku/tree/main/gatekeeper">門番のコード（GitHub）</a></li>
     </ul>
-    <p class="section-note">
-      門番のコードと、この数字の作り方 →
-      <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku/tree/main/gatekeeper">GitHub の gatekeeper</a>
-    </p>
   </section>
 
 </main>
@@ -144,8 +151,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>調査・実装: 正直パンマン（個人）。<strong>行政機関の公式発表ではありません。</strong></p>
-    <p>誤りの指摘を歓迎します → <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku">GitHub</a></p>
-    <p class="site-footer__credit">画面のスタイルに <a class="dads-link" href="https://design.digital.go.jp/">デジタル庁デザインシステム</a> のコードスニペット（MIT）を利用しています。デジタル庁が本調査を提供・監修しているものではありません。</p>
+    <p class="site-footer__credit">画面のスタイルに <a class="dads-link" href="https://design.digital.go.jp/">デジタル庁デザインシステム</a> のコードスニペット（MIT）を利用。デジタル庁が本調査を提供・監修しているものではありません。</p>
     <p class="site-footer__generated">データ生成日: <span id="generated-at"></span></p>
   </div>
 </footer>
