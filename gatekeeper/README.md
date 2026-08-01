@@ -46,6 +46,7 @@ Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所では�
 | `httpsig.mjs` | RFC 9421 の最小実装（署名ベース構築・Ed25519署名/検証・RFC 7638 JWK指紋）。依存はWebCryptoのみ＝NodeとWorkersで同じコードが動く |
 | `worker.mjs` | 門番本体（Cloudflare Worker 形。`wrangler deploy` できる形） |
 | `demand.mjs` | **集めたものをデータにする部分**。KVに追記し、読み出し時に集計する |
+| `demo_talk.mjs` | **AIと門番のやり取りをそのまま書き出すデモ**（何を聞かれ、何を返したか） |
 | `demo_demand.mjs` | **Cloudflare無しで、データができるところを見せるデモ** |
 | `test_local.mjs` | 署名→検証の暗号テスト 7本 |
 | `test_worker.mjs` | 門番の応対テスト 17本（ネットワークはスタブ） |
@@ -60,6 +61,7 @@ node gatekeeper/test_local.mjs        # 暗号として動く証明（7 PASS）
 node gatekeeper/test_worker.mjs       # 門番の応対一周（17 PASS）
 node gatekeeper/check_chatgpt_keys.mjs  # ChatGPTの実鍵で形式互換を確認
 node gatekeeper/build_answers.mjs     # 23区の実測から「整った答え」を作る
+node gatekeeper/demo_talk.mjs         # ★AIと門番のやり取りをそのまま見る
 node gatekeeper/demo_demand.mjs       # ★AIを来させて、データができるところを見る
 ```
 
