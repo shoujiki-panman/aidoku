@@ -20,7 +20,13 @@
       // 検証済みエージェントに返す「整った答え」。キーは host+path。
       // 中身は build_answers.mjs が23区の実測から作る（文章はここで作らない）。
       "binding": "ANSWERS",
-      "id": "PLACEHOLDER_ここに wrangler kv namespace create の出力を貼る"
+      "id": "PLACEHOLDER_ここに wrangler kv namespace create ANSWERS の出力を貼る"
+    },
+    {
+      // 集めた「何を探しに来て、取れたか／取れずに帰ったか」の置き場。
+      // 追記だけして、読み出し( /_aidoku/demand )のときに集計する。
+      "binding": "DEMAND",
+      "id": "PLACEHOLDER_ここに wrangler kv namespace create DEMAND の出力を貼る"
     }
   ],
 

@@ -12,6 +12,10 @@
 // この形のまま Cloudflare Workers にデプロイできる（wrangler deploy）。
 // 実運用の記録先は console.log ではなく Workers Analytics Engine / KV に差し替える。
 import { verifyRequest, importPublicJwk, jwkThumbprint } from './httpsig.mjs';
+import { recordAsk, aggregate, isAnswered } from './demand.mjs';
+
+// 集めたデータの取り出し口。自治体サイトのURLと衝突しないよう接頭辞を付ける。
+const DEMAND_PATH = '/_aidoku/demand';
 
 // Signature-Agent のオリジンごとに JWKS を取得してキャッシュ（1時間）
 const directoryCache = new Map(); // origin -> { fetchedAt, keys: Map<keyid, CryptoKey> }
@@ -59,6 +63,19 @@ export default {
     const url = new URL(request.url);
     const headers = Object.fromEntries(request.headers);
 
+    // 集めたデータの取り出し口。誰でも読める（中身は「AIが何を探しに来たか」だけで、
+    // 人の情報は入っていない）。新しいオープンデータとして自治体に返すための口。
+    if (url.pathname === DEMAND_PATH) {
+      const data = await aggregate(env);
+      if (!data) return new Response('demand store is not configured', { status: 503 });
+      return new Response(JSON.stringify(data, null, 2), {
+        headers: {
+          'content-type': 'application/json; charset=utf-8',
+          'access-control-allow-origin': '*',
+        },
+      });
+    }
+
     const result = await verifyRequest({
       authority: url.host,
       headers,
@@ -84,10 +101,13 @@ export default {
     }
 
     // 門番が貯める記録の主役: 何を探しに来て、取れたか／取れずに帰ったか
+    // 「取れた」は、ページに答えの束があることではなく、**聞かれた項目に答えがあること**。
+    // 例: 手数料を聞かれたのに手数料だけ空なら、取れずに帰った。
+    const lookingFor = url.searchParams.get('q');
     const record = {
       ts: new Date().toISOString(),
-      looking_for: url.searchParams.get('q') ?? null, // 何を探しに来たか
-      answered: result.ok ? Boolean(answer) : null, // 取れた=true ／ 取れずに帰った=false
+      looking_for: lookingFor ?? null, // 何を探しに来たか
+      answered: result.ok ? isAnswered(answer, lookingFor) : null,
       verified: result.ok,
       reason: result.reason,
       agent: result.agent ?? null,
@@ -95,12 +115,25 @@ export default {
       authority: url.host,
       path: url.pathname,
     };
-    console.log(JSON.stringify(record)); // TODO: Analytics Engine / KV に置き換え
+    console.log(JSON.stringify(record));
+    // データとして貯める。応答を待たせないよう、書き込みはリクエストの外に逃がす。
+    const uniq = `${result.keyid ?? 'unknown'}-${crypto.randomUUID().slice(0, 8)}`;
+    const writing = recordAsk(env, record, uniq).catch(() => false);
+    if (ctx?.waitUntil) ctx.waitUntil(writing);
+    else await writing;
 
     if (answer) {
-      return new Response(JSON.stringify({ source: url.href, answer }), {
-        headers: { 'content-type': 'application/json; charset=utf-8' },
-      });
+      // 持っているぶんは渡す。ただし聞かれた項目が空なら、それを隠さず伝える
+      // （AI側が「このページには無い」と正しく答えられるように）。
+      return new Response(
+        JSON.stringify({
+          source: url.href,
+          asked: record.looking_for,
+          answered: record.answered,
+          answer,
+        }),
+        { headers: { 'content-type': 'application/json; charset=utf-8' } },
+      );
     }
 
     // 整った答えがまだ無いページ／検証失敗 → 元のサイトへ素通し

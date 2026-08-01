@@ -18,14 +18,37 @@ Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所では�
 （記録レコードの `looking_for` と `answered`）。サーバーログには「来た」しか残らず、
 「来たが取れなかった」はどこにも記録されていない——これが誰も持っていないデータになる。
 
+## できるデータ（`GET /_aidoku/demand`）
+
+門番は集めたものをKVに追記し、この口から集計して返す。**取れずに帰った一覧が、
+そのまま区役所への更新依頼リストになる。**
+
+```
+■ AIが探しに来たのに、取れずに帰ったもの（＝そのページに足りていない情報）
+   4回  転入届 必要書類   www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html
+   3回  転入届 手数料     www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html
+   2回  転入届 手数料     www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html
+```
+
+数え方で気をつけていること:
+
+- **「取れた」は、ページに答えの束があることではない。聞かれた項目に答えがあること。**
+  手数料を聞かれて手数料だけ空なら、取れずに帰ったと数える（新宿区がまさにこれ）
+- 表記ゆれ（全角空白など）はならしてから数える
+- **人（署名なし）のアクセスは記録しない。** データに入るのは身元を署名で証明したAIだけ
+- KVには足し算が無いので、**書き込みは追記だけ**にして読み出し時に集計する（同時に来ても数え落ちない）
+- 記録は90日で自動的に消える（貯めっぱなしにしない）
+
 ## ファイル
 
 | ファイル | 中身 |
 |---|---|
 | `httpsig.mjs` | RFC 9421 の最小実装（署名ベース構築・Ed25519署名/検証・RFC 7638 JWK指紋）。依存はWebCryptoのみ＝NodeとWorkersで同じコードが動く |
 | `worker.mjs` | 門番本体（Cloudflare Worker 形。`wrangler deploy` できる形） |
+| `demand.mjs` | **集めたものをデータにする部分**。KVに追記し、読み出し時に集計する |
+| `demo_demand.mjs` | **Cloudflare無しで、データができるところを見せるデモ** |
 | `test_local.mjs` | 署名→検証の暗号テスト 7本 |
-| `test_worker.mjs` | 門番の応対テスト 10本（ネットワークはスタブ） |
+| `test_worker.mjs` | 門番の応対テスト 17本（ネットワークはスタブ） |
 | `build_answers.mjs` | 23区の実測から「整った答え」を作る（`answers/`。文章はここで作らない） |
 | `wrangler.jsonc` / `put_answers.sh` | Cloudflare Workers へのデプロイ設定とKV投入 |
 | `check_chatgpt_keys.mjs` | ChatGPT の実鍵を取得してパース互換を確認（要ネットワーク） |
@@ -34,9 +57,10 @@ Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所では�
 
 ```bash
 node gatekeeper/test_local.mjs        # 暗号として動く証明（7 PASS）
-node gatekeeper/test_worker.mjs       # 門番の応対一周（10 PASS）
+node gatekeeper/test_worker.mjs       # 門番の応対一周（17 PASS）
 node gatekeeper/check_chatgpt_keys.mjs  # ChatGPTの実鍵で形式互換を確認
 node gatekeeper/build_answers.mjs     # 23区の実測から「整った答え」を作る
+node gatekeeper/demo_demand.mjs       # ★AIを来させて、データができるところを見る
 ```
 
 Node v24 以上（WebCrypto の Ed25519 が必要）。npm install は不要。
@@ -49,6 +73,7 @@ Node v24 以上（WebCrypto の Ed25519 が必要）。npm install は不要。
 cd gatekeeper
 npx wrangler login                        # ハッカソン用チームアカウントを選ぶ
 npx wrangler kv namespace create ANSWERS  # 出力の id を wrangler.jsonc に貼る
+npx wrangler kv namespace create DEMAND   # 同上（集めたデータの置き場）
 node build_answers.mjs && ./put_answers.sh
 npx wrangler deploy
 ```
@@ -77,7 +102,8 @@ npx wrangler deploy
 
 ## まだやっていないこと
 
-- Cloudflare Workers への実デプロイ（**参加者特典の申請が先**＝本人タスク）
-- 記録先の永続化（いまは console.log。Workers Analytics Engine / KV に差し替える）
-- 整った答え（ANSWERS）への AI読 実測データの投入
-- 本物のエージェント（ChatGPT等）からの実リクエスト受信確認
+- **Cloudflare Workers への実デプロイ**（特典は2026-08-01に申請済み。招待メール待ち）
+- **本物のエージェント（ChatGPT等）からの実リクエスト受信確認**。
+  いまのデータは、自前の鍵で署名した2体のエージェントを来させた再現（`demo_demand.mjs`）。
+  署名検証・記録・集計はすべて実物のコードで動いているが、**本物のAIが来た実データはまだ無い**
+- 集めたデータの画面（いまはJSONと、デモの標準出力まで）

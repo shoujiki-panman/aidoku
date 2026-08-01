@@ -46,9 +46,26 @@ console.log = (line) => {
 };
 
 // --- 整った答え（AI読の実測データを流用する想定のモック）---
+// 貯める側（KV）のスタブ。put のメタデータを持ち、list で返す。
+const store = new Map();
+const DEMAND = {
+  put: async (key, _value, opts) => {
+    store.set(key, opts?.metadata ?? null);
+  },
+  list: async ({ prefix = '', limit = 1000 } = {}) => ({
+    keys: [...store.entries()]
+      .filter(([k]) => k.startsWith(prefix))
+      .slice(0, limit)
+      .map(([name, metadata]) => ({ name, metadata })),
+    list_complete: true,
+  }),
+};
+
 const HOST = 'www.city.setagaya.lg.jp';
 const EMPTY_PAGE = '/kurashi/kosekijuumin/11531.html'; // 実測で4項目とも読めなかったページ
+const PARTIAL_PAGE = '/todokede/partial.html'; // 一部の項目だけ書いてあるページ
 const env = {
+  DEMAND,
   ANSWERS: {
     get: async (key) => {
       if (key === `${HOST}${PAGE}`) {
@@ -59,6 +76,18 @@ const env = {
             how_to_apply: '窓口のみ',
             deadline: '住み始めた日から14日以内',
             fee: '無料',
+          },
+        };
+      }
+      if (key === `${HOST}${PARTIAL_PAGE}`) {
+        // 必要書類はあるが手数料が空。手数料を聞かれたら「取れずに帰った」になるべき
+        return {
+          procedure: '転入届',
+          fields: {
+            required_documents: '転出証明書、本人確認書類',
+            how_to_apply: '窓口のみ',
+            deadline: null,
+            fee: null,
           },
         };
       }
@@ -159,6 +188,66 @@ check(
   '全項目nullも answered=false で記録される',
   lastE.answered === false && lastE.path === EMPTY_PAGE,
   JSON.stringify(lastE),
+);
+
+// F. 集めたものがデータになって取り出せるか（これが門番の成果物）
+const resF = await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env);
+const demand = await resF.json();
+check(
+  'データの取り出し口が集計を返す',
+  demand.totals?.asks >= 3 && demand.totals.answered >= 1 && demand.totals.unanswered >= 2,
+  JSON.stringify(demand.totals),
+);
+const missing = demand.unanswered.find((x) => x.looking_for === '戸籍謄本 手数料');
+check(
+  '取れずに帰った探し物が一覧に出る（＝区役所への更新依頼リスト）',
+  missing && missing.unanswered_count >= 1 && missing.path === '/mimatomo.html',
+  JSON.stringify(demand.unanswered),
+);
+check(
+  '人（署名なし）のアクセスはデータに入らない',
+  !demand.all.some((x) => x.looking_for === null && x.path === PAGE && x.count > 1),
+  JSON.stringify(demand.all.map((x) => `${x.path}:${x.count}`)),
+);
+
+// G. 同じ探し物を繰り返すと件数が積み上がる（需要の大きさが見える）
+for (let i = 0; i < 2; i++) {
+  await worker.fetch(
+    new Request(`${SITE}/mimatomo.html?q=${encodeURIComponent('戸籍謄本　手数料')}`, { headers: signedHeaders }),
+    env,
+  );
+}
+const demand2 = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+const grown = demand2.unanswered.find((x) => x.looking_for === '戸籍謄本 手数料');
+check(
+  '同じ探し物は表記ゆれを吸収して数が積み上がる',
+  grown && grown.unanswered_count === 3,
+  JSON.stringify(grown),
+);
+
+// H. ページに答えの束はあるが、聞かれた項目だけ空 → 取れずに帰った扱い
+const resH = await worker.fetch(
+  new Request(`${SITE}${PARTIAL_PAGE}?q=${encodeURIComponent('転入届 手数料')}`, { headers: signedHeaders }),
+  env,
+);
+const bodyH = await resH.json();
+check(
+  '聞かれた項目が空なら answered=false を返す（持っているぶんは渡す）',
+  bodyH.answered === false && bodyH.answer?.fields?.required_documents,
+  JSON.stringify(bodyH).slice(0, 160),
+);
+const resH2 = await worker.fetch(
+  new Request(`${SITE}${PARTIAL_PAGE}?q=${encodeURIComponent('転入届 必要書類')}`, { headers: signedHeaders }),
+  env,
+);
+check('同じページでも、書いてある項目を聞かれたら answered=true', (await resH2.json()).answered === true);
+
+const demand3 = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+check(
+  '一部だけ空のページも、空の項目だけが更新依頼リストに出る',
+  demand3.unanswered.some((x) => x.path === PARTIAL_PAGE && x.looking_for === '転入届 手数料') &&
+    !demand3.unanswered.some((x) => x.path === PARTIAL_PAGE && x.looking_for === '転入届 必要書類'),
+  JSON.stringify(demand3.unanswered.filter((x) => x.path === PARTIAL_PAGE)),
 );
 
 console.log = realLog;
