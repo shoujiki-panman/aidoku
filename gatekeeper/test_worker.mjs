@@ -46,17 +46,31 @@ console.log = (line) => {
 };
 
 // --- 整った答え（AI読の実測データを流用する想定のモック）---
+const HOST = 'www.city.setagaya.lg.jp';
+const EMPTY_PAGE = '/kurashi/kosekijuumin/11531.html'; // 実測で4項目とも読めなかったページ
 const env = {
   ANSWERS: {
-    get: async (path) =>
-      path === PAGE
-        ? {
-            procedure: '転入届',
+    get: async (key) => {
+      if (key === `${HOST}${PAGE}`) {
+        return {
+          procedure: '転入届',
+          fields: {
             required_documents: '転出証明書、本人確認書類、マイナンバーカード',
+            how_to_apply: '窓口のみ',
             deadline: '住み始めた日から14日以内',
             fee: '無料',
-          }
-        : null,
+          },
+        };
+      }
+      if (key === `${HOST}${EMPTY_PAGE}`) {
+        // 実測データはあるが、そのページからは何も読み取れなかった
+        return {
+          procedure: '転入届',
+          fields: { required_documents: null, how_to_apply: null, deadline: null, fee: null },
+        };
+      }
+      return null;
+    },
   },
 };
 
@@ -90,7 +104,7 @@ const resA = await worker.fetch(
   env,
 );
 const bodyA = await resA.json();
-check('署名つきは整った答え(JSON)が返る', bodyA.answer?.fee === '無料', JSON.stringify(bodyA));
+check('署名つきは整った答え(JSON)が返る', bodyA.answer?.fields?.fee === '無料', JSON.stringify(bodyA));
 check(
   '記録が残る(何を探しに来て・取れたか・誰が)',
   records.length === 1 &&
@@ -132,6 +146,19 @@ check(
   '「取れずに帰った」が answered=false で記録される（このデータが主役）',
   lastD.answered === false && lastD.looking_for === '戸籍謄本 手数料' && lastD.verified === true,
   JSON.stringify(lastD),
+);
+
+// E. 実測データはあるが4項目とも読めなかったページ → 答えたふりをせず素通し＋取れずに帰った記録
+const resE = await worker.fetch(
+  new Request(`${SITE}${EMPTY_PAGE}?q=${encodeURIComponent('転入届 手数料')}`, { headers: signedHeaders }),
+  env,
+);
+check('全項目nullの実測は「答えあり」にしない', (await resE.text()).includes('元サイトのHTML'));
+const lastE = records[records.length - 1];
+check(
+  '全項目nullも answered=false で記録される',
+  lastE.answered === false && lastE.path === EMPTY_PAGE,
+  JSON.stringify(lastE),
 );
 
 console.log = realLog;

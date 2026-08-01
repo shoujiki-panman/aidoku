@@ -72,9 +72,15 @@ export default {
 
     // 検証済みエージェントに返す整った答え（AI読の実測データを流用）を先に引く。
     // 「答えがあるか」自体が記録の主役になるため、記録より先に引く。
+    // キーは host+path（1つの門番が複数の自治体の前に立てるように）。
     let answer = null;
     if (result.ok && env?.ANSWERS) {
-      answer = await env.ANSWERS.get(url.pathname, 'json');
+      answer = await env.ANSWERS.get(`${url.host}${url.pathname}`, 'json');
+      // 全項目が null＝そのページからは何も読み取れなかった、ということ。
+      // 「答えがある」ふりをせず、取れずに帰った扱いにする。
+      if (answer && Object.values(answer.fields ?? {}).every((v) => v === null)) {
+        answer = null;
+      }
     }
 
     // 門番が貯める記録の主役: 何を探しに来て、取れたか／取れずに帰ったか
