@@ -34,7 +34,7 @@
     <li><a href="#ranking-heading">23区の一覧</a></li>
     <li><a href="#detail-heading">区ごとの詳細</a></li>
     <li><a href="board.html">盤面</a></li>
-    <li><a href="#method-heading">測り方</a></li>
+    <li><a href="#method-heading">測り方・データ</a></li>
   </ul>
 </nav>
 
@@ -49,13 +49,20 @@
       <span class="dads-notification-banner__heading-text" id="phase-note">読み込み中</span>
     </p>
     <div class="dads-notification-banner__body">
-      <p>これは個人が行った第三者調査であり、行政機関の公式発表ではありません。順位をつけることが目的ではなく、<strong>どこを直せば住民のAIから読めるようになるか</strong>を示すための調査です。</p>
+      <p>個人による第三者調査です（行政機関の公式発表ではありません）。順位づけが目的ではなく、<strong>どこを直せば住民のAIに伝わるか</strong>を示すための調査です。</p>
     </div>
   </div>
 
+  <section aria-labelledby="summary-heading">
+    <h2 class="dads-heading" data-size="l" id="summary-heading">全体</h2>
+    <dl class="stat-row" id="summary"></dl>
+  </section>
+
+  <hr class="dads-divider">
+
   <section aria-labelledby="hero-heading">
     <h2 class="dads-heading" data-size="l" id="hero-heading">同じ質問を、住民のAIにしてみると</h2>
-    <p class="section-note">質問は同じ。<strong>区のページの書き方だけで、答えがここまで変わります。</strong>答えはすべて実測です（各区の手続きページをAIに読ませて取り出せた実文のみ。AIによる推測や補完はしていません）。</p>
+    <p class="section-note">答えはすべて実測です（ページから取り出せた実文のみ。推測での補完はしていません）。</p>
     <div id="hero"></div>
   </section>
 
@@ -63,20 +70,14 @@
 
   <section aria-labelledby="ranking-heading">
     <h2 class="dads-heading" data-size="l" id="ranking-heading">① 23区の一覧 — 見たい区を選ぶ</h2>
-    <p class="section-note"><strong>自治体名を押すと、すぐ下にその区の詳しい結果が出ます。</strong><br>
-      ✓＝住民のAIに伝わる／✕＝伝わらない（4項目＋オンライン明示）。合計点は参考値です（AI判定のため±2点の測定誤差。2点差以内は同順位帯として見てください）。</p>
+    <p class="section-note"><strong>自治体名を押すと、すぐ下にその区の詳しい結果が出ます。</strong></p>
     <div class="dads-table" data-size="dense">
       <table class="dads-table__table" id="ranking">
-        <caption class="dads-table__caption">AI判読度（<span id="proc-name"></span>）</caption>
+        <caption class="dads-table__caption">住民のAIに伝わった項目（<span id="proc-name"></span>）</caption>
         <thead>
           <tr class="dads-table__col-header">
             <th scope="col">自治体</th>
-            <th scope="col">合計</th>
-            <th scope="col">必要書類</th>
-            <th scope="col">窓口/オンライン</th>
-            <th scope="col">期限</th>
-            <th scope="col">手数料</th>
-            <th scope="col">オンライン明示</th>
+            <th scope="col">住民のAIに伝わった項目</th>
             <th scope="col">到達</th>
           </tr>
         </thead>
@@ -95,20 +96,6 @@
 
   <hr class="dads-divider">
 
-  <section aria-labelledby="summary-heading">
-    <h2 class="dads-heading" data-size="l" id="summary-heading">全体の数字</h2>
-    <dl class="stat-row" id="summary"></dl>
-    <p class="section-note" style="margin-top:1em;">
-      <a class="dads-link" href="board.html"><strong>盤面を見る →</strong></a>
-      　23区 × 手続き のマス目。実際に確かめたところだけ色がつき、
-      <strong>まだ調べていないところはグレーのまま</strong>です。
-    </p>
-  </section>
-
-  <hr class="dads-divider">
-
-  
-
   <section aria-labelledby="method-heading">
     <h2 class="dads-heading" data-size="l" id="method-heading">測り方</h2>
     <dl class="dads-description-list">
@@ -126,6 +113,13 @@
       </div>
     </dl>
     <p class="section-note">採点はAIによる判定のため、同じ入力でも±2点ほど揺れます（測定記録あり）。クロールは robots.txt を守り、同一ドメインへのアクセスは3秒以上あけ、取得済みページは再取得していません。申請の送信は一切行っていません（読み取りのみ）。</p>
+
+    <h3 class="dads-heading" data-size="s" id="data-heading">データの入手</h3>
+    <ul class="datalist">
+      <li><a class="dads-link" href="data/scores.csv">scores.csv</a> — 23区 × 全項目の点数（Excelで開けます）</li>
+      <li><a class="dads-link" href="data/scores.json">scores.json</a> — この画面が読んでいるデータそのもの</li>
+      <li><a class="dads-link" href="data/summary.txt">summary.txt</a> — 調査結果の要約（テキスト）</li>
+    </ul>
   </section>
 
 </main>

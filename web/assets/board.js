@@ -39,6 +39,10 @@ async function init() {
   if (!res.ok) throw new Error(`データを読めませんでした (${res.status})`);
   const data = await res.json();
 
+  // データの更新日を出す（デジタル庁チェックリスト 16）
+  const gen = $('generated-at');
+  if (gen) gen.textContent = (data.generated_at || '').slice(0, 10);
+
   $('legend').innerHTML = LEGEND.map((l) =>
     `<span class="legend__item"><i class="cell" data-tone="${l.tone}"></i>${esc(l.text)}</span>`).join('');
 

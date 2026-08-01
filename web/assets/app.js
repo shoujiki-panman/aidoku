@@ -3,6 +3,8 @@
 // 答えの文はすべて実測値（agent_value）。ここで文章を作らない。
 
 const ITEMS = ['必要書類', '窓口/オンライン可否', '期限', '手数料', 'オンライン明示'];
+// 住民が知りたい4項目（オンライン明示は「書き方」の指標なので数に入れない）
+const FIELDS = ['必要書類', '窓口/オンライン可否', '期限', '手数料'];
 const REPORT_URL = 'https://github.com/shoujiki-panman/aidoku/blob/main/reports/aidoku_feasibility_2026-07-26.md';
 
 const $ = (id) => document.getElementById(id);
@@ -90,19 +92,28 @@ function renderSummary() {
     </div>`).join('');
 }
 
+// 一覧は「自治体 / 伝わった項目 / 到達」の3列に絞る。
+// 内訳（どの項目が伝わらなかったか）は記号を横に並べて1列に収め、
+// 詳しい中身は区を選んだあとに出す（全体 → 部分）。
 function renderRanking() {
-  $('ranking-body').innerHTML = data.municipalities.map((m) => `
+  $('ranking-body').innerHTML = data.municipalities.map((m) => {
+    const got = FIELDS.filter((k) => (m.breakdown[k] ?? 0) >= 20).length;
+    const marks = ITEMS.map((k) => {
+      const pt = m.breakdown[k] ?? 0;
+      const mark = pt >= 20 ? '✓' : pt > 0 ? '△' : '✕';
+      const t = pt >= 20 ? 'green' : pt > 0 ? 'orange' : 'red';
+      return `<span class="mark" data-tone="${t}" title="${esc(k)}: ${pt}/20点">${mark}</span>`;
+    }).join('');
+    return `
     <tr>
       <th scope="row"><button type="button" class="muni-link dads-link" data-id="${esc(m.id)}">${esc(m.name)}</button></th>
-      <td class="num" data-tone="${tone(m.total)}"><b>${m.total}</b></td>
-      ${ITEMS.map((k) => {
-        const pt = m.breakdown[k] ?? 0;
-        const mark = pt >= 20 ? '✓' : pt > 0 ? '△' : '✕';
-        const t = pt >= 20 ? 'green' : pt > 0 ? 'orange' : 'red';
-        return `<td class="mark" data-tone="${t}" title="${pt}/20点">${mark}</td>`;
-      }).join('')}
+      <td class="marks">
+        <b class="marks__count" data-tone="${got === 4 ? 'green' : got === 0 ? 'red' : 'orange'}">${got}/4</b>
+        <span class="marks__row">${marks}</span>
+      </td>
       <td class="num">${m.hops ?? '-'}</td>
-    </tr>`).join('');
+    </tr>`;
+  }).join('');
 
   $('ranking-body').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-id]');

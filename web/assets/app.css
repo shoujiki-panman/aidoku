@@ -246,12 +246,24 @@ tr[data-selected="true"] {
 [data-tone="orange"]{ color: #a06a00; }
 [data-tone="red"]   { color: #b3261e; }
 
+/* .stat dd の色指定に負けないよう、こちらを強くする（違いに気づけるように） */
+.stat .stat__value[data-tone="green"]  { color: #0f7a3d; }
+.stat .stat__value[data-tone="red"]    { color: #b3261e; }
+.stat .stat__value[data-tone="orange"] { color: #a06a00; }
 .stat__value[data-tone] { font-weight: 700; }
 .muni-link { background: none; border: 0; padding: 0; font: inherit; cursor: pointer;
              color: #0056b3; text-decoration: underline; }
 .muni-link[aria-current="true"] { font-weight: 700; background: #eef4fd; }
 td.num { text-align: right; font-variant-numeric: tabular-nums; }
-td.mark { text-align: center; font-weight: 700; }
+
+/* 一覧の「伝わった項目」列: 件数＋内訳の記号を1列にまとめる */
+td.marks { white-space: nowrap; }
+.marks__count { display: inline-block; min-width: 2.6em; font-variant-numeric: tabular-nums; }
+.marks__row { margin-left: .6em; letter-spacing: .18em; }
+.marks__row .mark { font-weight: 700; }
+
+/* データの入手 */
+.datalist { line-height: 2; padding-left: 1.2em; }
 
 .detail-head { display: flex; align-items: baseline; gap: .8em; flex-wrap: wrap;
                margin: 0 0 1em; padding-bottom: .6em; border-bottom: 1px solid #d8dde3; }
