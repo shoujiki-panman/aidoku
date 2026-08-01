@@ -20,6 +20,12 @@ const DEMAND_PATH = '/_aidoku/demand';
 // Signature-Agent のオリジンごとに JWKS を取得してキャッシュ（1時間）
 const directoryCache = new Map(); // origin -> { fetchedAt, keys: Map<keyid, CryptoKey> }
 const DIRECTORY_TTL_MS = 60 * 60 * 1000;
+// 取りに行った先が落ちている・存在しない場合も、しばらくは覚えておく。
+// 覚えないと、存在しないオリジンを名乗るリクエストが来るたびに外部fetchが走る。
+const DIRECTORY_FAIL_TTL_MS = 5 * 60 * 1000;
+const DIRECTORY_TIMEOUT_MS = 2000; // 相手が遅いだけで門番が詰まらないように
+const MAX_KEYS = 50; // 1オリジンから取り込む鍵の上限
+const MAX_CACHED_ORIGINS = 100; // キャッシュそのものが太らないように
 
 async function resolveKey(keyid, signatureAgentValue) {
   if (!keyid || !signatureAgentValue) return null;
@@ -33,29 +39,53 @@ async function resolveKey(keyid, signatureAgentValue) {
   }
 
   let entry = directoryCache.get(origin);
-  if (!entry || Date.now() - entry.fetchedAt > DIRECTORY_TTL_MS) {
-    // 名乗ったオリジンが存在しない・落ちている場合も門番は落ちない → unknown-key 扱い
+  const ttl = entry?.failed ? DIRECTORY_FAIL_TTL_MS : DIRECTORY_TTL_MS;
+  if (!entry || Date.now() - entry.fetchedAt > ttl) {
+    // 名乗ったオリジンが存在しない・落ちている場合も門番は落ちない → unknown-key 扱い。
+    // 失敗も短く覚えておく（覚えないと、来るたびに外部fetchが走る）。
     let body;
     try {
       const res = await fetch(`${origin}/.well-known/http-message-signatures-directory`, {
         headers: { accept: 'application/http-message-signatures-directory+json, application/json' },
+        signal: AbortSignal.timeout(DIRECTORY_TIMEOUT_MS),
       });
-      if (!res.ok) return null;
+      if (!res.ok) return rememberFailure(origin);
       body = await res.json();
     } catch {
-      return null;
+      return rememberFailure(origin);
     }
     const keys = new Map();
-    for (const jwk of body.keys || []) {
+    // 相手が置いた JWKS は「外から来た値」。壊れた鍵1本で門番が落ちないよう、
+    // 1本ずつ握って飛ばす。件数にも上限を置く（数万本返して CPU を焼く手を塞ぐ）。
+    for (const jwk of (body.keys || []).slice(0, MAX_KEYS)) {
       if (jwk.kty !== 'OKP' || jwk.crv !== 'Ed25519') continue;
-      const key = await importPublicJwk(jwk);
-      // keyid は kid、無ければ RFC 7638 指紋（ChatGPT は両者一致を実測済み）
-      keys.set(jwk.kid ?? (await jwkThumbprint(jwk)), key);
+      if (jwk.use && jwk.use !== 'sig') continue;
+      try {
+        const key = await importPublicJwk(jwk);
+        // keyid は kid、無ければ RFC 7638 指紋（ChatGPT は両者一致を実測済み）
+        keys.set(jwk.kid ?? (await jwkThumbprint(jwk)), key);
+      } catch {
+        continue; // 壊れた鍵は飛ばす（この1本のせいで他の鍵まで捨てない）
+      }
     }
     entry = { fetchedAt: Date.now(), keys };
-    directoryCache.set(origin, entry);
+    setCache(origin, entry);
   }
   return entry.keys.get(keyid) ?? null;
+}
+
+function rememberFailure(origin) {
+  setCache(origin, { fetchedAt: Date.now(), keys: new Map(), failed: true });
+  return null;
+}
+
+// 古いものから落として、キャッシュが無制限に太らないようにする
+function setCache(origin, entry) {
+  directoryCache.delete(origin);
+  directoryCache.set(origin, entry);
+  while (directoryCache.size > MAX_CACHED_ORIGINS) {
+    directoryCache.delete(directoryCache.keys().next().value);
+  }
 }
 
 export default {
@@ -76,11 +106,14 @@ export default {
       });
     }
 
-    const result = await verifyRequest({
-      authority: url.host,
-      headers,
-      getKey: resolveKey,
-    });
+    // 門番は落ちない。検証の中で何が起きても、素通しに落として先へ進む。
+    // （7/31 に JWKS fetch で同じ壊れ方をしている。原則を実装で担保しておく）
+    let result;
+    try {
+      result = await verifyRequest({ authority: url.host, headers, getKey: resolveKey });
+    } catch {
+      result = { ok: false, reason: 'verify-error' };
+    }
 
     // 署名なし＝普通の人間のアクセス。記録せず素通し（住民のデータは集めない）
     if (result.reason === 'no-signature') {
@@ -110,7 +143,10 @@ export default {
       answered: result.ok ? isAnswered(answer, lookingFor) : null,
       verified: result.ok,
       reason: result.reason,
-      agent: result.agent ?? null,
+      // 名乗りは検証に成功したときだけ記録する。
+      // 検証前の signature-agent は自称（他人の公開 keyid は誰でも書ける）なので、
+      // そのまま残すと「ChatGPTがN回来た」を誰でも作れてしまう。
+      agent: result.ok ? (result.agent ?? null) : null,
       keyid: result.keyid ?? null,
       authority: url.host,
       path: url.pathname,

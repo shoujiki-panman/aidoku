@@ -105,9 +105,20 @@ export async function verifyRequest({ authority, headers, getKey, now = Math.flo
   if (params.created && now + 60 < Number(params.created)) return { ok: false, reason: 'created-in-future' };
   if (params.expires && now > Number(params.expires)) return { ok: false, reason: 'expired' };
 
-  const sm = sigHeader.match(new RegExp(`${label}=:([A-Za-z0-9+/=]+):`));
-  if (!sm) return { ok: false, reason: 'malformed-signature' };
-  const sigBytes = b64ToBytes(sm[1]);
+  // ラベルは正規表現に埋める前に必ずエスケープする。
+  // RFC 8941 の辞書キーは `*` で始められ `.` `*` を含められるので、そのまま埋めると
+  // `*sig` で SyntaxError、`a.c` で `.` がワイルドカードとして働く。
+  // 先頭かカンマの直後に固定して、別エントリを拾わないようにする。
+  const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const sm = sigHeader.match(new RegExp(`(?:^|,)\\s*${escaped}=:([A-Za-z0-9+/=]+):`));
+  if (!sm || !sm[1]) return { ok: false, reason: 'malformed-signature' };
+  // base64 として成立しない長さでも atob は例外を投げる（外から来た値なので握る）
+  let sigBytes;
+  try {
+    sigBytes = b64ToBytes(sm[1]);
+  } catch {
+    return { ok: false, reason: 'malformed-signature' };
+  }
 
   let base;
   try {
@@ -126,10 +137,22 @@ export async function verifyRequest({ authority, headers, getKey, now = Math.flo
     return { ok: false, reason: 'base-construction-failed', detail: String(e.message) };
   }
 
-  const key = await getKey(params.keyid, h['signature-agent']);
+  // 鍵の取得も検証も、外から来た値を触る＝落ちうる場所。ここで握って結果に変える
+  // （門番は拒否しない＝例外で落ちてもいけない）。
+  let key;
+  try {
+    key = await getKey(params.keyid, h['signature-agent']);
+  } catch {
+    return { ok: false, reason: 'unknown-key', keyid: params.keyid };
+  }
   if (!key) return { ok: false, reason: 'unknown-key', keyid: params.keyid };
 
-  const ok = await crypto.subtle.verify({ name: 'Ed25519' }, key, sigBytes, enc.encode(base));
+  let ok = false;
+  try {
+    ok = await crypto.subtle.verify({ name: 'Ed25519' }, key, sigBytes, enc.encode(base));
+  } catch {
+    return { ok: false, reason: 'bad-signature', keyid: params.keyid };
+  }
   return {
     ok,
     reason: ok ? 'verified' : 'bad-signature',
