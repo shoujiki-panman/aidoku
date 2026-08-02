@@ -1,0 +1,35 @@
+name: test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  gatekeeper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # WebCrypto の Ed25519 が要るので Node 24 以上。npm install は不要（外部依存なし）
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # テストは PR ごとに増えるので、名前を列挙せず glob で拾う
+      - name: gatekeeper のテストを回す
+        run: |
+          shopt -s nullglob
+          files=(gatekeeper/test_*.mjs)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "テストファイルが1つも無い"
+            exit 1
+          fi
+          fail=0
+          for f in "${files[@]}"; do
+            echo "::group::$f"
+            node "$f" || fail=1
+            echo "::endgroup::"
+          done
+          exit $fail
+        shell: bash
