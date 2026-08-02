@@ -56,6 +56,29 @@ python3 seed_history.py
 止めるときは `pkill -f "<gennai-web>/node_modules/.bin/vite"`。
 **`pkill -f vite` だけだと 同じマシンの別のViteアプリを巻き添えにする。**
 
+### 門番（gatekeeper）を動かす
+
+住民のAIエージェントが**代わりに来た**ときに応対する前段レイヤー。作品本体とは独立して動く。
+
+```bash
+cd <repo>/gatekeeper
+
+# テストを回す（外部ネットワーク不要・78 PASS / 0 FAIL）
+node test_local.mjs && node test_worker.mjs && node test_nlweb.mjs && node test_mcp.mjs
+
+# 本番ランタイム(workerd)で動かして確かめる
+#   ★ --local-protocol https が必須（門番は鍵配布をhttpsでしか信用しない）
+#   ★ ポート8787・8791・8177は別プロセスが居座っている。空きは lsof -nP -iTCP -sTCP:LISTEN で先に確認
+node runtime_check.mjs
+```
+
+- 聞き方は `POST /ask`（NLWeb準拠）と `POST /mcp`（MCP）の2つ
+- 集めたものの画面は [web/demand.html](web/demand.html)
+- **本物のAIエージェントの来訪は現在0件**。画面の数字は見本（`"is_sample": true`）
+- テスト用の鍵を作り直したら wrangler dev を再起動する（**JWKSを1時間キャッシュする**）
+
+詳しくは [gatekeeper/README.md](gatekeeper/README.md)。
+
 ## 言い方の線（審査で崩されないため）
 
 - ✅ 「源内のAIアプリAPI仕様（2026年3月版）に**準拠**」
