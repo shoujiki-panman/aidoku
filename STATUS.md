@@ -1,9 +1,21 @@
-# 進捗ボード — AI読（アイドク） 2026-07-26
+# 進捗ボード — AI読（アイドク） 更新: 2026-08-03
 
 > 最初に読む: [START-HERE.md](START-HERE.md)　／　経緯の全記録: [reports/](reports/)
 
-> ## 次の締切: **作品提出 2026-08-23（日）17:00**
-> プレゼン動画2分＋16:9資料が必須。ハッカソン本番は 8/22・23、Final Stage は 10/17。
+> ## 次の締切: **作品提出 2026-08-23（日）17:00**（残り20日）
+
+### 📅 期日一覧
+
+| 日付 | 何 | 状態 |
+|---|---|---|
+| **8/8ごろ** | Cloudflare特典の**招待メール**（8/1申請済み） | **届いたら3日以内に受諾**。切れると再申請 |
+| 8/22・23 | ハッカソン本番 | — |
+| **8/23（日）17:00** | **作品提出締切**。過ぎると提出も修正も不可 | **未提出** |
+| 8/26〜30 | First Stage プレゼン動画の収録 | 枠の決まり方は**未確認** |
+| 9月下旬 | First Stage 審査結果 | — |
+| 10/17 | Final Stage・表彰式 | — |
+| 未定 | キックオフのLT抽選結果／資料提出期限 | 事務局から**個別案内待ち**（8/3申込済み） |
+| **9月末** | KVに貯めた記録のエクスポート期限 | 権限停止後は取り出せない |
 
 ## 🎯 作品
 
@@ -24,6 +36,12 @@
 | 源内画面での動作 | ✅ 港区100点／世田谷0点／処方箋／23区のランキング履歴 |
 | 動画台本 | ✅ [VIDEO-SCRIPT-aidoku.md](VIDEO-SCRIPT-aidoku.md)（全カット実物・9シーン） |
 | **門番の署名検証** [gatekeeper/](gatekeeper/) | ✅ Web Bot Auth (RFC 9421+Ed25519) の署名→検証 14/14 PASS。ChatGPT実鍵で形式互換を確認。[記録](reports/gatekeeper_sigverify_2026-07-31.md) |
+| 門番を本番ランタイム(workerd)で実行 | ✅ Ed25519 は標準名のまま動く。[記録](reports/gatekeeper_runtime_2026-08-02.md) |
+| 門番の監査と穴埋め | ✅ 落ちる経路2つ・偽の名乗り・黙った打ち切りを修正。[記録](reports/gatekeeper_audit_2026-08-02.md) |
+| **AIの聞き方 `POST /ask`（NLWeb準拠）** | ✅ answer / failure / elicitation を規格どおり。[記録](reports/gatekeeper_nlweb_2026-08-02.md) |
+| **MCPの窓口 `POST /mcp`** | ✅ JSON-RPC 2.0・ツール `ask` 1本。[記録](reports/gatekeeper_mcp_2026-08-02.md) |
+| 門番のテスト | ✅ **78 PASS / 0 FAIL**（local 11 / worker 23 / nlweb 20 / mcp 24） |
+| データ画面 [web/demand.html](web/demand.html) | ⚠️ 画面は完成。ただし**本物のAIエージェントの来訪は0件**（`is_sample: true`）。デプロイしないと集まらない |
 
 ## ⏭ 残り
 
@@ -34,7 +52,8 @@
 ### Phase A — 出せる状態にする（最優先）
 - [#1](https://github.com/shoujiki-panman/aidoku/issues/1) 画面キャプチャ3枚（1600×900）
 - [#2](https://github.com/shoujiki-panman/aidoku/issues/2) デモ操作動画（60秒・無音）
-- [#3](https://github.com/shoujiki-panman/aidoku/issues/3) **プレゼン動画の収録と枠の予約** ← 早い者順
+- [#3](https://github.com/shoujiki-panman/aidoku/issues/3) **プレゼン動画の収録と枠の予約**（収録は8/26〜30）
+  ※ 従来「早い者順」と書いていたが、**公式サイト・ガイドブックに該当する記述は見つからなかった**（2026-08-03 確認）。事務局に要確認
 - [#4](https://github.com/shoujiki-panman/aidoku/issues/4) 提出ガイドで著作物の条件を確認
 - [#15](https://github.com/shoujiki-panman/aidoku/issues/15) 提出前チェックリスト
 
