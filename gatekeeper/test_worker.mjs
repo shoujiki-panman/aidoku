@@ -3,6 +3,7 @@
 // 実行: node gatekeeper/test_worker.mjs
 import worker from './worker.mjs';
 import { generateKeyPair, jwkThumbprint, signRequest } from './httpsig.mjs';
+import { aggregate, descendingStamp } from './demand.mjs';
 
 const AGENT_ORIGIN = 'https://agent.example';
 const SITE = 'https://www.city.setagaya.lg.jp';
@@ -248,6 +249,86 @@ check(
   demand3.unanswered.some((x) => x.path === PARTIAL_PAGE && x.looking_for === '転入届 手数料') &&
     !demand3.unanswered.some((x) => x.path === PARTIAL_PAGE && x.looking_for === '転入届 必要書類'),
   JSON.stringify(demand3.unanswered.filter((x) => x.path === PARTIAL_PAGE)),
+);
+
+// --- ここから: 2026-08-02 の監査で見つかった穴 ---
+
+// I. 検証に失敗した名乗りは「どのAIが来たか」に入れない。
+//    他人の公開 keyid は誰でも書けるので、入れると「ChatGPTがN回来た」を誰でも作れてしまう。
+const demandBefore = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+const beforeAsks = demandBefore.by_agent.find((a) => a.agent === AGENT_ORIGIN)?.asks ?? 0;
+
+const impostor = await generateKeyPair();
+const forgedHeaders = await signRequest({
+  authority: HOST,
+  agent: AGENT_ORIGIN, // 本物のオリジンを名乗り
+  privateKey: impostor.privateKey, // 鍵は別人のもの
+  keyid, // keyid だけ本物を騙る（＝鍵は見つかるが検証は落ちる）
+  created: now,
+  expires: now + 300,
+});
+records.length = 0;
+await worker.fetch(
+  new Request(`${SITE}${PAGE}?q=${encodeURIComponent('転入届 必要書類')}`, { headers: forgedHeaders }),
+  env,
+);
+check(
+  '検証に失敗したら名乗りを記録しない（agent=null）',
+  records[0]?.verified === false && records[0]?.agent === null,
+  JSON.stringify(records[0]),
+);
+
+const demandAfter = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+const afterAsks = demandAfter.by_agent.find((a) => a.agent === AGENT_ORIGIN)?.asks ?? 0;
+check('偽の名乗りでは by_agent の件数を増やせない', afterAsks === beforeAsks, `${beforeAsks} -> ${afterAsks}`);
+check(
+  '偽の名乗りは unverified として別に数える',
+  demandAfter.totals.unverified > demandBefore.totals.unverified,
+  `${demandBefore.totals.unverified} -> ${demandAfter.totals.unverified}`,
+);
+
+// J. 集計を打ち切ったことを隠さない。落とすのは古いほう（直近は必ず見える）。
+const many = new Map();
+const tsOf = (i) => new Date(Date.UTC(2026, 7, 1, 0, 0, i)).toISOString();
+for (let i = 0; i < 1500; i++) {
+  many.set(`ask:${descendingStamp(tsOf(i))}:${i}`, {
+    ts: tsOf(i),
+    authority: HOST,
+    path: PAGE,
+    looking_for: '転入届 手数料',
+    answered: false,
+    verified: true,
+    agent: AGENT_ORIGIN,
+  });
+}
+const bigEnv = {
+  DEMAND: {
+    list: async ({ prefix = '', limit = 1000, cursor } = {}) => {
+      const all = [...many.entries()]
+        .filter(([k]) => k.startsWith(prefix))
+        .sort(([a], [b]) => (a < b ? -1 : 1)); // KV はキーの辞書順で返す
+      const start = cursor ? Number(cursor) : 0;
+      const page = all.slice(start, start + limit);
+      const next = start + limit;
+      return {
+        keys: page.map(([name, metadata]) => ({ name, metadata })),
+        list_complete: next >= all.length,
+        cursor: String(next),
+      };
+    },
+  },
+};
+const big = await aggregate(bigEnv);
+check('1000件を超えたら「打ち切った」と出す', big.coverage?.truncated === true, JSON.stringify(big.coverage));
+check(
+  '打ち切っても直近の記録は必ず入る（落とすのは古いほう）',
+  big.coverage?.to === tsOf(1499),
+  `to=${big.coverage?.to} 期待=${tsOf(1499)}`,
+);
+check(
+  '集計対象の期間を出す（どこまで見たかが分かる）',
+  big.coverage?.from === tsOf(500),
+  `from=${big.coverage?.from} 期待=${tsOf(500)}`,
 );
 
 console.log = realLog;

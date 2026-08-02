@@ -18,10 +18,41 @@ Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所では�
 （記録レコードの `looking_for` と `answered`）。サーバーログには「来た」しか残らず、
 「来たが取れなかった」はどこにも記録されていない——これが誰も持っていないデータになる。
 
+## AIの聞き方（`POST /ask` — NLWeb）
+
+**探し物の受け取り方は自分で発明しない。** 実際のAIエージェントは `?q=` のような
+各サイト独自のクエリを付けてこないので、[NLWeb](https://nlweb.ai/docs/specification)
+（サイトを自然言語で聞ける窓口にする公開プロトコル。Shopify / Snowflake / O'Reilly /
+Tripadvisor 等が採用、Cloudflare Workers への載せ方も公開されている）に合わせる。
+
+```
+POST /ask
+{"query": {"text": "転入届の手数料はいくらですか", "site": "/todokede/tennyu.html"}}
+```
+
+返す型は規格のまま3つ。**「取れずに帰った」は我々の造語ではなく、NLWeb の `failure` そのもの。**
+
+| 聞かれたもの | 返す型 | 記録 |
+|---|---|---|
+| 書いてある項目 | `answer`（schema.org の `GovernmentService` ＋ 実測値） | `answered: true` |
+| **書かれていない項目** | **`failure` / `NO_RESULTS`** | **`answered: false`** ←主役 |
+| どの項目か分からない | `elicitation`（聞き返す） | `answered: null` |
+
+3つ目が肝心なところ。**曖昧な問いを黙って「取れた」に倒さない。**
+推測で数えると、実運用ではほぼ全件が「取れた」になって、主役のデータが消える。
+聞き返した分は `totals.undetermined` として別に数える。
+
+※ `results` の `fields` は schema.org の語彙ではなく、AI読の実測値そのもの
+（`answers/*.json` の中身）。文章はここで作らない。
+
 ## できるデータ（`GET /_aidoku/demand`）
 
 門番は集めたものをKVに追記し、この口から集計して返す。**取れずに帰った一覧が、
 そのまま区役所への更新依頼リストになる。**
+
+⚠️ **下の回数は `demo_demand.mjs` の再現で、こちらで決めた仮の値**。
+本物のAIが来た記録ではない（実データはまだ無い。「まだやっていないこと」を参照）。
+実測で言えるのは「どのページのどの項目が空か」のほうで、そちらは `answers/` が実測値。
 
 ```
 ■ AIが探しに来たのに、取れずに帰ったもの（＝そのページに足りていない情報）
@@ -35,8 +66,14 @@ Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所では�
 - **「取れた」は、ページに答えの束があることではない。聞かれた項目に答えがあること。**
   手数料を聞かれて手数料だけ空なら、取れずに帰ったと数える（新宿区がまさにこれ）
 - 表記ゆれ（全角空白など）はならしてから数える
-- **人（署名なし）のアクセスは記録しない。** データに入るのは身元を署名で証明したAIだけ
+- **人（署名なし）のアクセスは記録しない。** 記録に入るのは署名を付けて来たAIだけ
+- **「どのAIが来たか」(`by_agent`) は、署名の検証に成功した名乗りだけを数える。**
+  他人の公開 keyid は誰でも書けるので、検証前の名乗りは自称にすぎない。
+  検証に失敗した来訪は件数（`totals.unverified`）としてだけ出す
 - KVには足し算が無いので、**書き込みは追記だけ**にして読み出し時に集計する（同時に来ても数え落ちない）
+- **読み切れなかったことを隠さない。** 集計は上限（既定1000件）で打ち切るので、
+  打ち切ったかどうかと集計対象の期間を `coverage` で必ず返す。
+  落とすのは古いほう（キーを時刻の降順にしてある＝直近が必ず見える）
 - 記録は90日で自動的に消える（貯めっぱなしにしない）
 
 ## ファイル
@@ -45,20 +82,24 @@ Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所では�
 |---|---|
 | `httpsig.mjs` | RFC 9421 の最小実装（署名ベース構築・Ed25519署名/検証・RFC 7638 JWK指紋）。依存はWebCryptoのみ＝NodeとWorkersで同じコードが動く |
 | `worker.mjs` | 門番本体（Cloudflare Worker 形。`wrangler deploy` できる形） |
+| `nlweb.mjs` | **AIの聞き方（NLWeb の `POST /ask`）**。answer / failure / elicitation を規格どおりに返す |
 | `demand.mjs` | **集めたものをデータにする部分**。KVに追記し、読み出し時に集計する |
 | `demo_talk.mjs` | **AIと門番のやり取りをそのまま書き出すデモ**（何を聞かれ、何を返したか） |
 | `demo_demand.mjs` | **Cloudflare無しで、データができるところを見せるデモ** |
 | `test_local.mjs` | 署名→検証の暗号テスト 7本 |
-| `test_worker.mjs` | 門番の応対テスト 17本（ネットワークはスタブ） |
+| `test_worker.mjs` | 門番の応対テスト 23本（ネットワークはスタブ） |
+| `test_nlweb.mjs` | NLWeb の窓口テスト 20本（自然文で聞いて answer / failure / elicitation） |
 | `build_answers.mjs` | 23区の実測から「整った答え」を作る（`answers/`。文章はここで作らない） |
 | `wrangler.jsonc` / `put_answers.sh` | Cloudflare Workers へのデプロイ設定とKV投入 |
 | `check_chatgpt_keys.mjs` | ChatGPT の実鍵を取得してパース互換を確認（要ネットワーク） |
+| `runtime_check.mjs` / `runtime_client.mjs` | **本番ランタイム(workerd)の上で門番を動かして確かめる**（18本）。素の worker.mjs をそのまま呼ぶ |
 
 ## 動かす
 
 ```bash
-node gatekeeper/test_local.mjs        # 暗号として動く証明（7 PASS）
-node gatekeeper/test_worker.mjs       # 門番の応対一周（17 PASS）
+node gatekeeper/test_local.mjs        # 暗号として動く証明（11 PASS）
+node gatekeeper/test_worker.mjs       # 門番の応対一周（23 PASS）
+node gatekeeper/test_nlweb.mjs        # ★AIが自然文で聞く窓口（20 PASS）
 node gatekeeper/check_chatgpt_keys.mjs  # ChatGPTの実鍵で形式互換を確認
 node gatekeeper/build_answers.mjs     # 23区の実測から「整った答え」を作る
 node gatekeeper/demo_talk.mjs         # ★AIと門番のやり取りをそのまま見る
@@ -66,6 +107,21 @@ node gatekeeper/demo_demand.mjs       # ★AIを来させて、データがで�
 ```
 
 Node v24 以上（WebCrypto の Ed25519 が必要）。npm install は不要。
+
+### 本番ランタイム(workerd)で動かして確かめる
+
+上の6本は Node の上で、ネットワークをスタブして動かしている。
+実際に乗るのは Cloudflare の workerd なので、そこでも動くことを別に確かめる。
+
+```bash
+cd gatekeeper
+npx wrangler dev -c runtime_check.wrangler.jsonc --local-protocol https --port 8901
+node runtime_client.mjs   # 別の端末から。署名つきの実HTTPリクエストを送る（22 PASS）
+```
+
+- `--local-protocol https` は必須（門番は鍵配布を https でしか信用しない）
+- ポート8787等は他のプロセスが居座っていることがある。`lsof -nP -iTCP -sTCP:LISTEN` で先に確認
+- テスト用の鍵を作り直したら wrangler dev を再起動する（JWKSを1時間キャッシュするため）
 
 ## デプロイ（Cloudflare特典の招待が届いてから）
 
@@ -101,6 +157,17 @@ npx wrangler deploy
 - 名乗ったオリジンが存在しない場合も門番は落ちず unknown-key として記録する
 
 詳細: [reports/gatekeeper_sigverify_2026-07-31.md](../reports/gatekeeper_sigverify_2026-07-31.md)
+
+## 実測で確かめたこと（2026-08-02・本番ランタイム）
+
+- **workerd の上でも Ed25519 がそのまま動く**（標準名 `Ed25519` のまま。書き換え不要）
+- **署名つきの実HTTPリクエストに、整った答えが返る**。書かれていない項目を聞かれたら
+  `answered=false` を返して記録する（＝主役のデータが実ランタイムで貯まる）
+- 期限切れ・鍵の騙りは、実リクエストでも答えを出さない
+- workerd から本物の https は取れるが、**wrangler dev の自己署名証明書には繋げない**
+  （ローカル固有の制約。本番の相手は必ず本物の https）
+
+詳細: [reports/gatekeeper_runtime_2026-08-02.md](../reports/gatekeeper_runtime_2026-08-02.md)
 
 ## まだやっていないこと
 

@@ -97,6 +97,58 @@ const forged = await signRequest({
 const r7 = await verifyRequest({ authority: AUTHORITY, headers: forged, getKey });
 check('他人の鍵で本物の keyid を騙ると bad-signature', !r7.ok && r7.reason === 'bad-signature', JSON.stringify(r7));
 
+// --- ここから: 2026-08-02 の監査で見つかった「門番が落ちる」経路 ---
+// 門番は拒否しない＝例外で落ちてもいけない。外から来る値で例外が出ないことを確かめる。
+
+// 8. 仕様上ありうるラベル（RFC 8941 の辞書キーは * で始められる）で例外が出ない
+async function noThrow(name, headersIn, expectReason) {
+  let r;
+  try {
+    r = await verifyRequest({ authority: AUTHORITY, headers: headersIn, getKey });
+  } catch (e) {
+    check(name, false, `例外が出た: ${e.message}`);
+    return;
+  }
+  check(name, !r.ok && r.reason === expectReason, JSON.stringify(r));
+}
+
+const params = '("@authority" "signature-agent");created=1;expires=99999999999;keyid="x";alg="ed25519";tag="web-bot-auth"';
+
+await noThrow(
+  'ラベルが *sig でも例外を投げない（正規表現に素で埋めない）',
+  { 'signature-agent': `"${AGENT}"`, 'signature-input': `*sig=${params}`, signature: '*sig=:QUJD:' },
+  'unknown-key',
+);
+
+await noThrow(
+  'ラベルが a|b でも例外を投げない（別エントリを拾わない）',
+  { 'signature-agent': `"${AGENT}"`, 'signature-input': `a|b=${params}`, signature: 'a|b=:QUJD:' },
+  'unknown-key',
+);
+
+await noThrow(
+  '署名が base64 として壊れていても例外を投げない',
+  { 'signature-agent': `"${AGENT}"`, 'signature-input': `sig1=${params}`, signature: 'sig1=:A:' },
+  'malformed-signature',
+);
+
+// 9. 鍵の取得が例外を投げても、門番の側では落ちない
+{
+  let r;
+  try {
+    r = await verifyRequest({
+      authority: AUTHORITY,
+      headers,
+      getKey: async () => {
+        throw new Error('JWKSの取得に失敗');
+      },
+    });
+  } catch (e) {
+    r = { ok: true, reason: `例外が出た: ${e.message}` };
+  }
+  check('鍵の取得が例外を投げても unknown-key に落ちる', !r.ok && r.reason === 'unknown-key', JSON.stringify(r));
+}
+
 // --- 記録レコードの形（門番が貯めるデータ）---
 const record = {
   ts: new Date().toISOString(),
