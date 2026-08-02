@@ -10,7 +10,10 @@
 
 エージェントの見分けには **Web Bot Auth**（RFC 9421 HTTP Message Signatures + Ed25519）を使う。
 User-Agent と違って**署名は偽装できない**。ChatGPT が実際に公開鍵を配布中で、
-Cloudflare のエッジでは2026年3月から本番稼働している標準。
+[Cloudflare は2025年7月から Verified Bots の一部として署名検証を提供](https://blog.cloudflare.com/verified-bots-with-cryptography/)、
+[AWS WAF も2025年11月に対応](https://aws.amazon.com/about-aws/whats-new/2025/11/aws-waf-web-bot-auth-support)している。
+ただし **Web Bot Auth 自体はまだ IETF のドラフト段階**（architecture draft-05・2026-03-02）で、
+RFC にはなっていない。RFC 9421（署名の形式）だけが確定済み。
 
 **通行料は取らない。** 402課金は AWS（WAF AI traffic monetization・2026-06提供開始）／
 Cloudflare（Pay per crawl）／Akamai の標準機能で、作る場所ではない。
