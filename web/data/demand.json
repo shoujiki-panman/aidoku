@@ -1,0 +1,950 @@
+{
+  "generated_at": "2026-08-01T21:10:15.021Z",
+  "totals": {
+    "asks": 56,
+    "answered": 24,
+    "unanswered": 32,
+    "undetermined": 0,
+    "unverified": 0,
+    "agents": 2
+  },
+  "coverage": {
+    "truncated": false,
+    "limit": 1000,
+    "from": "2026-08-01T21:10:15.009Z",
+    "to": "2026-08-01T21:10:15.021Z"
+  },
+  "by_agent": [
+    {
+      "agent": "https://agent-a.example",
+      "asks": 28,
+      "answered": 12,
+      "unanswered": 16
+    },
+    {
+      "agent": "https://agent-b.example",
+      "asks": 28,
+      "answered": 12,
+      "unanswered": 16
+    }
+  ],
+  "unanswered": [
+    {
+      "authority": "www.city.itabashi.tokyo.jp",
+      "path": "/tetsuduki/koseki/juminhyo/1001611.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.020Z",
+      "last_seen": "2026-08-01T21:10:15.020Z"
+    },
+    {
+      "authority": "www.city.hachioji.tokyo.jp",
+      "path": "/kurashi/kosekijumin/002/001/index.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.019Z",
+      "last_seen": "2026-08-01T21:10:15.019Z"
+    },
+    {
+      "authority": "www.city.edogawa.tokyo.jp",
+      "path": "/e038/kurashi/todoke/ido_todoke/tennyu.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.018Z",
+      "last_seen": "2026-08-01T21:10:15.018Z"
+    },
+    {
+      "authority": "www.city.chuo.lg.jp",
+      "path": "/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.016Z",
+      "last_seen": "2026-08-01T21:10:15.017Z"
+    },
+    {
+      "authority": "www.city.chiyoda.lg.jp",
+      "path": "/koho/kurashi/koseki/jumintoroku/tennyu.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.015Z",
+      "last_seen": "2026-08-01T21:10:15.016Z"
+    },
+    {
+      "authority": "www.city.bunkyo.lg.jp",
+      "path": "/b013/p000261/index.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.014Z",
+      "last_seen": "2026-08-01T21:10:15.014Z"
+    },
+    {
+      "authority": "www.city.arakawa.tokyo.jp",
+      "path": "/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.012Z",
+      "last_seen": "2026-08-01T21:10:15.012Z"
+    },
+    {
+      "authority": "www.city.adachi.tokyo.jp",
+      "path": "/koseki/kurashi/todokede/h-tennyu.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.009Z",
+      "last_seen": "2026-08-01T21:10:15.010Z"
+    },
+    {
+      "authority": "www.city.chuo.lg.jp",
+      "path": "/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 0,
+      "unanswered_count": 2,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.017Z",
+      "last_seen": "2026-08-01T21:10:15.017Z"
+    },
+    {
+      "authority": "www.city.arakawa.tokyo.jp",
+      "path": "/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 0,
+      "unanswered_count": 2,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.013Z",
+      "last_seen": "2026-08-01T21:10:15.013Z"
+    },
+    {
+      "authority": "www.city.chuo.lg.jp",
+      "path": "/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 0,
+      "unanswered_count": 1,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.017Z",
+      "last_seen": "2026-08-01T21:10:15.017Z"
+    },
+    {
+      "authority": "www.city.chuo.lg.jp",
+      "path": "/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 0,
+      "unanswered_count": 1,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.017Z",
+      "last_seen": "2026-08-01T21:10:15.017Z"
+    },
+    {
+      "authority": "www.city.arakawa.tokyo.jp",
+      "path": "/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 0,
+      "unanswered_count": 1,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.013Z",
+      "last_seen": "2026-08-01T21:10:15.013Z"
+    },
+    {
+      "authority": "www.city.arakawa.tokyo.jp",
+      "path": "/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 0,
+      "unanswered_count": 1,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.013Z",
+      "last_seen": "2026-08-01T21:10:15.013Z"
+    }
+  ],
+  "all": [
+    {
+      "authority": "www.city.itabashi.tokyo.jp",
+      "path": "/tetsuduki/koseki/juminhyo/1001611.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.020Z",
+      "last_seen": "2026-08-01T21:10:15.020Z"
+    },
+    {
+      "authority": "www.city.hachioji.tokyo.jp",
+      "path": "/kurashi/kosekijumin/002/001/index.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.019Z",
+      "last_seen": "2026-08-01T21:10:15.019Z"
+    },
+    {
+      "authority": "www.city.edogawa.tokyo.jp",
+      "path": "/e038/kurashi/todoke/ido_todoke/tennyu.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.018Z",
+      "last_seen": "2026-08-01T21:10:15.018Z"
+    },
+    {
+      "authority": "www.city.chuo.lg.jp",
+      "path": "/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.016Z",
+      "last_seen": "2026-08-01T21:10:15.017Z"
+    },
+    {
+      "authority": "www.city.chiyoda.lg.jp",
+      "path": "/koho/kurashi/koseki/jumintoroku/tennyu.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.015Z",
+      "last_seen": "2026-08-01T21:10:15.016Z"
+    },
+    {
+      "authority": "www.city.bunkyo.lg.jp",
+      "path": "/b013/p000261/index.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.014Z",
+      "last_seen": "2026-08-01T21:10:15.014Z"
+    },
+    {
+      "authority": "www.city.arakawa.tokyo.jp",
+      "path": "/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.012Z",
+      "last_seen": "2026-08-01T21:10:15.012Z"
+    },
+    {
+      "authority": "www.city.adachi.tokyo.jp",
+      "path": "/koseki/kurashi/todokede/h-tennyu.html",
+      "looking_for": "転入届の手数料はいくらですか",
+      "count": 3,
+      "answered_count": 0,
+      "unanswered_count": 3,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 2,
+          "answered": 0,
+          "unanswered": 2
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.009Z",
+      "last_seen": "2026-08-01T21:10:15.010Z"
+    },
+    {
+      "authority": "www.city.chuo.lg.jp",
+      "path": "/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 0,
+      "unanswered_count": 2,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.017Z",
+      "last_seen": "2026-08-01T21:10:15.017Z"
+    },
+    {
+      "authority": "www.city.arakawa.tokyo.jp",
+      "path": "/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 0,
+      "unanswered_count": 2,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.013Z",
+      "last_seen": "2026-08-01T21:10:15.013Z"
+    },
+    {
+      "authority": "www.city.itabashi.tokyo.jp",
+      "path": "/tetsuduki/koseki/juminhyo/1001611.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 2,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.020Z",
+      "last_seen": "2026-08-01T21:10:15.020Z"
+    },
+    {
+      "authority": "www.city.hachioji.tokyo.jp",
+      "path": "/kurashi/kosekijumin/002/001/index.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 2,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.019Z",
+      "last_seen": "2026-08-01T21:10:15.019Z"
+    },
+    {
+      "authority": "www.city.edogawa.tokyo.jp",
+      "path": "/e038/kurashi/todoke/ido_todoke/tennyu.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 2,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.018Z",
+      "last_seen": "2026-08-01T21:10:15.018Z"
+    },
+    {
+      "authority": "www.city.chiyoda.lg.jp",
+      "path": "/koho/kurashi/koseki/jumintoroku/tennyu.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 2,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.016Z",
+      "last_seen": "2026-08-01T21:10:15.016Z"
+    },
+    {
+      "authority": "www.city.bunkyo.lg.jp",
+      "path": "/b013/p000261/index.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 2,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.014Z",
+      "last_seen": "2026-08-01T21:10:15.015Z"
+    },
+    {
+      "authority": "www.city.adachi.tokyo.jp",
+      "path": "/koseki/kurashi/todokede/h-tennyu.html",
+      "looking_for": "転入届に必要な書類は何ですか",
+      "count": 2,
+      "answered_count": 2,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        },
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.010Z",
+      "last_seen": "2026-08-01T21:10:15.011Z"
+    },
+    {
+      "authority": "www.city.chuo.lg.jp",
+      "path": "/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 0,
+      "unanswered_count": 1,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.017Z",
+      "last_seen": "2026-08-01T21:10:15.017Z"
+    },
+    {
+      "authority": "www.city.chuo.lg.jp",
+      "path": "/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 0,
+      "unanswered_count": 1,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.017Z",
+      "last_seen": "2026-08-01T21:10:15.017Z"
+    },
+    {
+      "authority": "www.city.arakawa.tokyo.jp",
+      "path": "/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 0,
+      "unanswered_count": 1,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.013Z",
+      "last_seen": "2026-08-01T21:10:15.013Z"
+    },
+    {
+      "authority": "www.city.arakawa.tokyo.jp",
+      "path": "/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 0,
+      "unanswered_count": 1,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 0,
+          "unanswered": 1
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.013Z",
+      "last_seen": "2026-08-01T21:10:15.013Z"
+    },
+    {
+      "authority": "www.city.itabashi.tokyo.jp",
+      "path": "/tetsuduki/koseki/juminhyo/1001611.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.021Z",
+      "last_seen": "2026-08-01T21:10:15.021Z"
+    },
+    {
+      "authority": "www.city.itabashi.tokyo.jp",
+      "path": "/tetsuduki/koseki/juminhyo/1001611.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.021Z",
+      "last_seen": "2026-08-01T21:10:15.021Z"
+    },
+    {
+      "authority": "www.city.hachioji.tokyo.jp",
+      "path": "/kurashi/kosekijumin/002/001/index.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.020Z",
+      "last_seen": "2026-08-01T21:10:15.020Z"
+    },
+    {
+      "authority": "www.city.hachioji.tokyo.jp",
+      "path": "/kurashi/kosekijumin/002/001/index.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.019Z",
+      "last_seen": "2026-08-01T21:10:15.019Z"
+    },
+    {
+      "authority": "www.city.edogawa.tokyo.jp",
+      "path": "/e038/kurashi/todoke/ido_todoke/tennyu.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.018Z",
+      "last_seen": "2026-08-01T21:10:15.018Z"
+    },
+    {
+      "authority": "www.city.edogawa.tokyo.jp",
+      "path": "/e038/kurashi/todoke/ido_todoke/tennyu.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.018Z",
+      "last_seen": "2026-08-01T21:10:15.018Z"
+    },
+    {
+      "authority": "www.city.chiyoda.lg.jp",
+      "path": "/koho/kurashi/koseki/jumintoroku/tennyu.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.016Z",
+      "last_seen": "2026-08-01T21:10:15.016Z"
+    },
+    {
+      "authority": "www.city.chiyoda.lg.jp",
+      "path": "/koho/kurashi/koseki/jumintoroku/tennyu.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.016Z",
+      "last_seen": "2026-08-01T21:10:15.016Z"
+    },
+    {
+      "authority": "www.city.bunkyo.lg.jp",
+      "path": "/b013/p000261/index.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.015Z",
+      "last_seen": "2026-08-01T21:10:15.015Z"
+    },
+    {
+      "authority": "www.city.bunkyo.lg.jp",
+      "path": "/b013/p000261/index.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.015Z",
+      "last_seen": "2026-08-01T21:10:15.015Z"
+    },
+    {
+      "authority": "www.city.adachi.tokyo.jp",
+      "path": "/koseki/kurashi/todokede/h-tennyu.html",
+      "looking_for": "転入届はオンラインでできますか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-a.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.011Z",
+      "last_seen": "2026-08-01T21:10:15.011Z"
+    },
+    {
+      "authority": "www.city.adachi.tokyo.jp",
+      "path": "/koseki/kurashi/todokede/h-tennyu.html",
+      "looking_for": "転入届はいつまでに出せばいいですか",
+      "count": 1,
+      "answered_count": 1,
+      "unanswered_count": 0,
+      "by_agent": {
+        "https://agent-b.example": {
+          "asks": 1,
+          "answered": 1,
+          "unanswered": 0
+        }
+      },
+      "first_seen": "2026-08-01T21:10:15.011Z",
+      "last_seen": "2026-08-01T21:10:15.011Z"
+    }
+  ],
+  "note": "記録しているのは署名を付けて来たAIエージェントのアクセスだけです。人（ブラウザ）のアクセスは記録していません。署名の検証に失敗したものも件数には含みます（totals.unverified）が、どのAIが来たか（by_agent）は検証に成功した名乗りだけを数えています。デジタル庁OSS「源内」のAIアプリ仕様に準拠した第三者調査（AI読）による実測値です。行政機関の公式発表ではありません。",
+  "is_sample": true,
+  "sample_note": "⚠️ これは見本です。門番はまだ公開されておらず、本物のAIエージェントは1件も来ていません。来訪（誰が・何回）はこちらで作った再現で、「どの項目が空か」だけが23区の実測値です。"
+}
