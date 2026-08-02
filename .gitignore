@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .DS_Store
 .venv/
+
+# wrangler dev がローカルに作る状態（KVの中身・証明書）。手元だけのもの
+.wrangler/

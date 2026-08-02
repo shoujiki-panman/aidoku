@@ -1,0 +1,18 @@
+{
+  // 本番ランタイム(workerd)の上で門番を動かして確かめるための設定。
+  // デプロイ用ではない（デプロイは wrangler.jsonc のほう）。
+  //
+  //   npx wrangler dev -c runtime_check.wrangler.jsonc --local-protocol https --port 8787
+  //
+  // https で立てるのは、門番が「鍵配布は https のみ信用する」設計だから。
+  // KV の id はローカル実行では使われない（wrangler がローカルに作る）。
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aidoku-gatekeeper-runtime-check",
+  "main": "runtime_check.mjs",
+  "compatibility_date": "2026-07-01",
+
+  "kv_namespaces": [
+    { "binding": "ANSWERS", "id": "local-answers" },
+    { "binding": "DEMAND", "id": "local-demand" }
+  ]
+}
