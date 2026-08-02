@@ -13,6 +13,7 @@
 // 実運用の記録先は console.log ではなく Workers Analytics Engine / KV に差し替える。
 import { verifyRequest, importPublicJwk, jwkThumbprint } from './httpsig.mjs';
 import { recordAsk, aggregate, isAnswered } from './demand.mjs';
+import { ASK_PATH, parseAsk, askTarget, decideAsk, failureResponse } from './nlweb.mjs';
 
 // 集めたデータの取り出し口。自治体サイトのURLと衝突しないよう接頭辞を付ける。
 const DEMAND_PATH = '/_aidoku/demand';
@@ -88,6 +89,81 @@ function setCache(origin, entry) {
   }
 }
 
+const jsonResponse = (obj, status = 200) =>
+  new Response(JSON.stringify(obj), {
+    status,
+    headers: {
+      'content-type': 'application/json; charset=utf-8',
+      'access-control-allow-origin': '*',
+    },
+  });
+
+// 記録を1件残す。署名なし（＝人間）はそもそも呼ばない。
+async function keepRecord(env, ctx, record, keyid) {
+  console.log(JSON.stringify(record));
+  const uniq = `${keyid ?? 'unknown'}-${crypto.randomUUID().slice(0, 8)}`;
+  const writing = recordAsk(env, record, uniq).catch(() => false);
+  if (ctx?.waitUntil) ctx.waitUntil(writing);
+  else await writing;
+}
+
+// NLWeb の窓口（POST /ask）。仕様: https://nlweb.ai/docs/specification
+//
+// 探し物は自分ルール(?q=)ではなく query.text で受け取る。
+// 答えられなければ規格の failure を返す＝「取れずに帰った」が標準の型で残る。
+// どの項目を聞かれたか分からなければ elicitation で聞き返す（推測で「取れた」にしない）。
+async function handleAsk(request, url, env, ctx, result) {
+  if (request.method !== 'POST') {
+    return jsonResponse(
+      failureResponse('INVALID_QUERY', 'POST で {"query":{"text":"..."}} を送ってください。'),
+      405,
+    );
+  }
+
+  let body = null;
+  try {
+    body = await request.json();
+  } catch {
+    body = null;
+  }
+  const parsed = parseAsk(body);
+  if (parsed.error) return jsonResponse(failureResponse('INVALID_QUERY', parsed.error), 400);
+
+  const target = askTarget(url.host, parsed.site);
+
+  let answer = null;
+  if (env?.ANSWERS) {
+    answer = await env.ANSWERS.get(target.key, 'json');
+    // 全項目が null＝そのページからは何も読み取れなかった。「答えがある」ふりをしない。
+    if (answer && Object.values(answer.fields ?? {}).every((v) => v === null)) answer = null;
+  }
+
+  const decided = decideAsk(answer, parsed.text, target.url);
+
+  // 署名なし＝人間。答えは返すが記録しない（住民のデータは集めない）。
+  if (result.reason !== 'no-signature') {
+    await keepRecord(
+      env,
+      ctx,
+      {
+        ts: new Date().toISOString(),
+        looking_for: parsed.text, // 自然文の質問がそのまま入る（?q= のような自分ルールが要らない）
+        answered: result.ok ? decided.answered : null, // null = どの項目か分からず聞き返した
+        verified: result.ok,
+        reason: result.reason,
+        agent: result.ok ? (result.agent ?? null) : null,
+        keyid: result.keyid ?? null,
+        authority: url.host,
+        path: target.path,
+        via: 'nlweb',
+      },
+      result.keyid,
+    );
+  }
+
+  return jsonResponse(decided.body);
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -113,6 +189,12 @@ export default {
       result = await verifyRequest({ authority: url.host, headers, getKey: resolveKey });
     } catch {
       result = { ok: false, reason: 'verify-error' };
+    }
+
+    // NLWeb の窓口。ここは門番自身の口なので、署名の有無にかかわらず答える
+    // （素通ししても元サイトに /ask は無い）。記録の作法は下と同じ。
+    if (url.pathname === ASK_PATH) {
+      return handleAsk(request, url, env, ctx, result);
     }
 
     // 署名なし＝普通の人間のアクセス。記録せず素通し（住民のデータは集めない）
@@ -150,13 +232,10 @@ export default {
       keyid: result.keyid ?? null,
       authority: url.host,
       path: url.pathname,
+      via: 'query', // ?q= で来た分（NLWeb の /ask で来た分は via: 'nlweb'）
     };
-    console.log(JSON.stringify(record));
     // データとして貯める。応答を待たせないよう、書き込みはリクエストの外に逃がす。
-    const uniq = `${result.keyid ?? 'unknown'}-${crypto.randomUUID().slice(0, 8)}`;
-    const writing = recordAsk(env, record, uniq).catch(() => false);
-    if (ctx?.waitUntil) ctx.waitUntil(writing);
-    else await writing;
+    await keepRecord(env, ctx, record, result.keyid);
 
     if (answer) {
       // 持っているぶんは渡す。ただし聞かれた項目が空なら、それを隠さず伝える
