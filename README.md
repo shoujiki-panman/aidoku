@@ -54,11 +54,32 @@ Claude Code が無い環境では、23区の実測結果のみ返ります。
 - **5区**（世田谷・中央・台東・墨田・荒川）はほとんど読み取れない
 - 手数料は **22区** で見つからない（実際は無料）
 
+## 門番（gatekeeper）— 来たエージェントに答え、取れなかったものを記録する
+
+住民のAIエージェントが行政サイトへ**代わりに来る**ことを前提にした前段レイヤー。
+署名（Web Bot Auth）でエージェントを見分け、HTMLの代わりに整った答えを返す。
+**人（ブラウザ）は記録しない。**
+
+| 窓口 | 何 |
+|---|---|
+| `POST /ask` | [NLWeb](https://nlweb.ai/docs/specification) 準拠。`answer` / `failure` / `elicitation` を規格どおり返す |
+| `POST /mcp` | MCP（JSON-RPC 2.0）。ツールは NLWeb 仕様の `ask` 1本 |
+| `web/demand.html` | 集めたものの画面「AIが取れずに帰ったもの」 |
+
+**主役のデータは「取れなかった」の方**。サーバーログには「来た」しか残らず、
+**「来たが答えを見つけられずに帰った」はどこにも記録されていない**。
+
+> ⚠️ 現在、**本物のAIエージェントの来訪は0件**。画面に出ている数字は自分で作った見本で、
+> JSON に `"is_sample": true` が付いている。デプロイするまで本物は集まらない。
+
+詳しくは [gatekeeper/README.md](gatekeeper/README.md)。テストは **78 PASS / 0 FAIL**。
+
 ## 構成
 
 | ディレクトリ | 役割 |
 |---|---|
 | `gennai_app/` | **作品本体**。源内AIアプリとして動く判定API（[README](gennai_app/README.md)） |
+| `gatekeeper/` | **門番**。自治体サイトの前に立ち、AIエージェントに答えを返して「取れずに帰った」を記録（[README](gatekeeper/README.md)） |
 | `crawler/` | 取得層。robots.txt遵守・3秒間隔・キャッシュ。ここだけが外に触る |
 | `extractor/` | 読解層。`claude -p` で4項目を抽出 |
 | `scorer/` | 採点層。人手で決めた必須要素と突合。ぶれ幅 ±2点 |
