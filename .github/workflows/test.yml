@@ -33,3 +33,16 @@ jobs:
           done
           exit $fail
         shell: bash
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 作品本体は Python 標準ライブラリのみ。pip install は不要
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Python のテストを回す
+        run: python3 -m unittest discover -s crawler -p 'test_*.py' -v

@@ -100,11 +100,14 @@ class PoliteFetcher:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 rp.parse(_decode(resp).splitlines())
         except urllib.error.HTTPError as e:
-            # robots.txt が無い (404) は「全許可」。それ以外のエラーは保守的に全禁止扱い。
-            if e.code in (401, 403):
-                rp = None
-            else:
+            # robots.txt が「無い」(404/410) ときだけ全許可。
+            # それ以外（401・403 のアクセス制限、5xx のサーバ不調、429 など）は
+            # 「読めなかった」ので保守的に全禁止扱いにする。
+            # 読めないことを許可へ倒すと、相手が落ちているときに一番叩くことになる。
+            if e.code in (404, 410):
                 rp.parse([])
+            else:
+                rp = None
         except Exception:
             rp = None
 
