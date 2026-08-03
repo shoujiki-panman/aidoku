@@ -24,8 +24,9 @@ import subprocess
 import sys
 from pathlib import Path
 
-REPO = Path("/Users/tanumashuu/Documents/Codex/2026-06-24/handoff-next-chat-2026-06-24"
-            "/work/agent-readiness")
+# このファイルの位置から導く。絶対パスを直書きすると書いた本人の手元でしか動かず、
+# クローンした人は MEASURED が空になって「23区が即答されない＝壊れている」に見える。
+REPO = Path(__file__).resolve().parent.parent
 EXTRACT_DIR = REPO / "extractor" / "out"
 MODEL = os.environ.get("AIDOKU_MODEL", "claude-sonnet-5")
 
@@ -37,12 +38,15 @@ CLARITY_POINTS = {"明記": 20, "曖昧": 10, "記載なし": 0}
 # ── 実測データ（23区）の読み込み ──────────────────────────
 
 def _norm_url(u: str) -> str:
-    """比較用にURLを正規化する。末尾スラッシュ・クエリ・スキームの揺れを吸収。"""
-    u = (u or "").strip()
+    """比較用にURLを正規化する。末尾スラッシュ・クエリ・スキームの揺れを吸収。
+
+    小文字化を先にやる。あとからだと `WWW.` が `^www\\.` に当たらず残り、
+    同じページを「未知のURL」と誤判定してライブ判定（30〜60秒）に落ちる。
+    """
+    u = (u or "").strip().lower()
     u = re.sub(r"^https?://", "", u)
     u = re.sub(r"^www\.", "", u)
-    u = u.split("?")[0].split("#")[0].rstrip("/")
-    return u.lower()
+    return u.split("?")[0].split("#")[0].rstrip("/")
 
 
 def load_measured() -> dict[str, dict]:
