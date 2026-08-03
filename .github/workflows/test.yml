@@ -44,5 +44,20 @@ jobs:
         with:
           python-version: '3.10'
 
+      # テストのあるディレクトリは増えるので、探して回す
       - name: Python のテストを回す
-        run: python3 -m unittest discover -s crawler -p 'test_*.py' -v
+        run: |
+          dirs=$(find . -name 'test_*.py' -not -path './node_modules/*' \
+                 -exec dirname {} \; | sort -u)
+          if [ -z "$dirs" ]; then
+            echo "テストファイルが1つも無い"
+            exit 1
+          fi
+          fail=0
+          for d in $dirs; do
+            echo "::group::$d"
+            python3 -m unittest discover -s "$d" -p 'test_*.py' -v || fail=1
+            echo "::endgroup::"
+          done
+          exit $fail
+        shell: bash
