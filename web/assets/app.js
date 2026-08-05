@@ -166,7 +166,7 @@ function select(id) {
     ${why}
     ${fixes}
     <p class="scoreline">参考: AI判読度 <b data-tone="${tone(m.total)}">${m.total}</b>/100点
-      （4項目×20点＋オンライン明示20点。AI判定のため±2点の測定誤差があります）</p>`;
+      （4項目×20点＋オンライン明示20点。各項目は「読めた／読めない」の2値なので、判定が1つ変わると20点動きます）</p>`;
 }
 
 init().catch((e) => {
