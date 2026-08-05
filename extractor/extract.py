@@ -14,6 +14,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "crawler"))
 from htmlutil import parse  # noqa: E402
@@ -34,10 +35,26 @@ MAX_LINKS = 40
 MAX_FOLLOW = 2
 
 
+# HTML以外の添付ファイル。本文の代わりにバイナリが渡ると、
+# text_len だけは大きくなるので「本文200字以上」の条件をすり抜ける。
+# 実測: 台東区が .docx（Word）を診断ページに選び、ZIP/XMLのバイナリを採点していた。
+NON_HTML_SUFFIXES = (
+    ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx",
+    ".zip", ".rtf", ".odt", ".ods", ".csv",
+)
+
+
+def is_non_html(url: str) -> bool:
+    """URL の拡張子が HTML 以外のファイルを指しているか。"""
+    return urlsplit(url).path.lower().endswith(NON_HTML_SUFFIXES)
+
+
 def pick_page(discovery: dict) -> dict | None:
     """探索結果から、抽出対象にする1ページを選ぶ（スコア最上位のHTMLページ）。"""
     for c in discovery.get("candidates", []):
-        if c.get("is_pdf") or c.get("status") != 200:
+        if c.get("is_pdf") or is_non_html(c.get("url") or ""):
+            continue
+        if c.get("status") != 200:
             continue
         if (c.get("text_len") or 0) < 200:
             continue
