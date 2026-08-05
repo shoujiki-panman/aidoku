@@ -237,7 +237,7 @@ def render_markdown(url, result):
             L.append(f"| {label} | **伝わらない** | 0 / 20 |")
     L.append(f"| オンライン明示 | {result['clarity']} | {result['clarity_pt']} / 20 |")
     L.append("")
-    L.append("_AI判定のため±2点の測定誤差があります。2点差以内は同順位帯として見てください。_")
+    L.append("_AI判定です。各項目は「読めた／読めない」の2値で20点なので、判定が1つ変われば20点動きます。_")
 
     if result.get("history_used"):
         L.append("")
