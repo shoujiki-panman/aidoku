@@ -27,10 +27,13 @@ async function loadJson(path) {
 async function init() {
   procs = (await loadJson('data/procedures.json')).procedures;
   renderProcTabs();
-  await loadProcedure(procs[0].id);
+  // 盤面から「区名」を押して来たときは、その区を開く（?muni=setagaya&proc=tennyu）。
+  // これが無いと、どの区を押しても同じ画面が出る。
+  const q = new URLSearchParams(location.search);
+  await loadProcedure(q.get('proc') || procs[0].id, q.get('muni'));
 }
 
-async function loadProcedure(id) {
+async function loadProcedure(id, muniId = null) {
   const p = procs.find((x) => x.id === id) || procs[0];
   data = await loadJson(`data/${p.file}`);
 
@@ -46,8 +49,9 @@ async function loadProcedure(id) {
   renderHero();
   renderSummary();
   renderRanking();
-  // 最初に見せるのは一番低い区。「情報はあるのに、入口からたどり着けない」の実例
-  select(worstMuni().id);
+  // 指定が無ければ一番低い区。「情報はあるのに、入口からたどり着けない」の実例
+  const target = muniId && data.municipalities.some((m) => m.id === muniId) ? muniId : worstMuni().id;
+  select(target);
 }
 
 function renderProcTabs() {
