@@ -1,0 +1,54 @@
+{
+  "municipality": "北区",
+  "municipality_id": "kita",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html",
+    "hops": 2,
+    "link_text": "児童手当",
+    "has_jsonld": true,
+    "text_len": 3228,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "児童手当（多子加算を受給している方の提出書類について）",
+      "source": "html",
+      "failure_reason": "リンク先にあり"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "児童手当制度のご案内（令和6年10月分以降）",
+      "source": "html",
+      "failure_reason": "リンク先にあり"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "児童手当（定時の届出）",
+      "source": "html",
+      "failure_reason": "リンク先にあり"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページは本文情報を持たず、5件のサブページへのリンク一覧（見出しのみ）だけで構成されている。ただし抽出されたリンク一覧には言語選択・ナビゲーションのURLしか含まれず、肝心のサブページ（制度案内・提出書類・定時の届出・変更手続）へのURLが取得できていないため、follow_urlsを指定できなかった。"
+}

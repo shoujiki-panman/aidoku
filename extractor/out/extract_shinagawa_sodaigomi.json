@@ -1,0 +1,54 @@
+{
+  "municipality": "品川区",
+  "municipality_id": "shinagawa",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
+    "hops": 1,
+    "link_text": "粗大ごみの出し方",
+    "has_jsonld": false,
+    "text_len": 6656,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "インターネットまたは電話で、「品川区粗大ごみ受付センター」に日数を余裕をもってお申し込みください。",
+  "online_clarity_pages": [
+    "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "収集を依頼する場合は必要書類は無く、必要な手数料分の「品川区有料粗大ごみ処理券」を購入し各粗大ごみに貼付する（電子決済の場合は必要事項を記入した任意の紙を貼付）。持ち込みの場合はこれに加え、氏名・住所を確認できるもの（運転免許証・保険証など）が必要。",
+      "evidence": "必要な手数料分の「品川区有料粗大ごみ処理券」を購入する「有料粗大ごみ処理券(電子決済の場合は必要事項を記入した任意の紙)」を当日までにそれぞれの粗大ごみに貼る",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口へは行かず、インターネット（品川区粗大ごみ受付センター、24時間受付）または電話（03-6733-5374、月〜土曜8時〜19時）で申込。オンラインのみで申込は完結できる（処理手数料も電子決済可）。持ち込みを選ぶ場合のみ品川区資源化センターへの来所が必要。",
+      "evidence": "インターネットまたは電話で、「品川区粗大ごみ受付センター」に日数を余裕をもってお申し込みください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "収集日はご希望に添えない場合がありますので、なるべく早めにお申し込みください。",
+      "source": "html",
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "粗大ごみ処理手数料についてはこちらのページをご覧ください。",
+      "source": "html",
+      "failure_reason": "リンク先にあり"
+    }
+  },
+  "page_notes": "手数料は本文中に金額の記載が無く「こちらのページをご覧ください」と別ページへ誘導されているが、そのリンクのURLは提供されたリンク一覧（ナビゲーション・多言語リンクのみ）に含まれておらず特定できなかった。期限も「日数を余裕をもって」「なるべく早めに」という表現のみで具体的な日数の記載はない。"
+}

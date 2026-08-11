@@ -1,0 +1,59 @@
+{
+  "municipality": "江東区",
+  "municipality_id": "koto",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
+    "hops": 2,
+    "link_text": "粗大ごみ等の収集手数料の減免",
+    "has_jsonld": false,
+    "text_len": 2387,
+    "truncated": false,
+    "n_links": 37
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "インターネットでの申し込み　粗大ごみ受付センター　24時間受け付けています。料金の検索もできます。",
+  "online_clarity_pages": [
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+    "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口来庁は不要。インターネット（粗大ごみ受付センターサイト、24時間受付・料金検索可）、LINEミニアプリ（24時間受付）、電話（03-6431-9997、月〜土 8:00〜19:00、年末年始を除く）のいずれかで申込可能。",
+      "evidence": "インターネットでの申し込み 粗大ごみ受付センター（外部サイトへリンク）（別ウィンドウで開きます）24時間受け付けています。料金の検索もできます。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": true,
+      "value": "品目ごとに金額が異なる。処理料金分に応じて有料粗大ごみ処理券（粗大ごみシール、A券200円・B券300円）を組み合わせて購入・貼付する。具体的な品目別金額は粗大ごみ受付センターサイトでの検索、または品目別一覧表（PDF）で確認する。",
+      "evidence": "粗大ごみシールは、A券（200円）、B券（300円）の2種類がありますので、排出する粗大ごみの品目ごとに組み合わせて、処理料金分を貼ってください。",
+      "source": "linked_page",
+      "failure_reason": null
+    }
+  },
+  "page_notes": "指定URL(7370.html)は「粗大ごみ収集の申込」本体ではなく、生活保護受給者等向けの手数料減免専用ページだった。一般の申込方法・料金の仕組みは同じ分類の別ページ（7367.html「粗大ごみの出し方」、7368.html「粗大ごみ手数料・シール組合せ表」）に分散しており、1ページで完結しない構成。"
+}

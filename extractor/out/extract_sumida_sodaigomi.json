@@ -1,0 +1,54 @@
+{
+  "municipality": "墨田区",
+  "municipality_id": "sumida",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
+    "hops": 1,
+    "link_text": "粗大ごみ",
+    "has_jsonld": false,
+    "text_len": 5808,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "インターネット申込みであれば、オンライン決済（キャッシュレス決済）が利用可能で、有料粗大ごみ処理券を購入する必要がありません。",
+  "online_clarity_pages": [
+    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口来�ち不要。インターネット申込み（24時間受付、オンライン決済で手数料支払いまで完結）または電話申込み（粗大ごみ受付センター、月〜土曜8時〜19時、祝日も可）の2方式。",
+      "evidence": "24時間申込可能なインターネット申込みをご利用ください。（システムメンテナンス時は利用できません）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "粗大ごみ手数料一覧（R7.3.1更新）（PDF：123KB）",
+      "source": "html",
+      "failure_reason": "PDF内のみ"
+    }
+  },
+  "page_notes": "手順1〜4の見出しで構成され、具体的な料金はPDF一覧かチャットボット回答に誘導される形で本文には数字が出ない。必要書類や申込期限（いつまでに申し込むか）についての記載は見当たらず、申込方法（インターネット／電話）と支払い方法の説明が中心。"
+}

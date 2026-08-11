@@ -1,0 +1,59 @@
+{
+  "municipality": "中野区",
+  "municipality_id": "nakano",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+    "hops": 2,
+    "link_text": "粗大ごみ収集のインターネット申込み",
+    "has_jsonld": false,
+    "text_len": 1100,
+    "truncated": false,
+    "n_links": 26
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html"
+  ],
+  "online_clarity": "曖昧",
+  "online_clarity_evidence": "インターネット申込に無い品目の物をお申し込みの際は、お電話でお申込み下さい。",
+  "online_clarity_pages": [
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "インターネット申込み可（ページ内のインターネット申込アイコンから）。ただしインターネット申込みに無い品目は粗大ごみ受付センター（電話03-5715-2255）へ電話で申込み。",
+      "evidence": "下記インターネット申込のアイコンをクリックして下さい。※申込みにあたり、まず、「粗大ごみ」の出し方（事前申し込み制） をお読みください。インターネット申込に無い品目の物をお申し込みの際は、お電話でお申込み下さい。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": true,
+      "value": "有料。処理券A（200円）と処理券B（300円）の2種類があり、粗大ごみの寸法等により購入する枚数・種類が異なる。",
+      "evidence": "有料粗大ごみ処理券は、「処理券A(200円)」と「処理券B(300円)」の2種類あります。粗大ごみの寸法などにより、購入する枚数・種類が異なります。",
+      "source": "linked_page",
+      "failure_reason": null
+    }
+  },
+  "page_notes": "対象ページ自体は申込みアイコンへの入口のみで、必要書類や申込期限の記載はない。関連ページ「「粗大ごみ」の出し方（事前申し込み制）」を確認しても、手数料（処理券の金額）は明記されているが、期限や必要書類についての記載は見当たらなかった。"
+}

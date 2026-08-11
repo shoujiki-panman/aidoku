@@ -1,0 +1,432 @@
+{
+  "municipality": "杉並区",
+  "municipality_id": "suginami",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "top_url": "https://www.city.suginami.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s053/1142.html",
+      "link_text": "児童手当",
+      "hops": 3,
+      "score": 13,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5684,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "link_text": "子どもの手当",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1050,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/jidoukan/index.html",
+      "link_text": "児童館、子ども・子育てプラザ、児童青少年センター（ゆう杉並）、放課後等居場所事業など",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1228,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kodomoshokudou/index.html",
+      "link_text": "区内の子ども食堂のご案内",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 994,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/jidoukan/jidoukanjouhou/index.html",
+      "link_text": "児童館情報",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/jidoukan/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1269,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/index.html",
+      "link_text": "子ども・子育て・教育",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1732,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/index.html",
+      "link_text": "妊娠・出産・子育て",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1308,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18351.html",
+      "link_text": "コンテンツ一覧（すぎなみ子育てサイト）",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 970,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18310.html",
+      "link_text": "手当・助成・支援",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1188,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18311.html",
+      "link_text": "子育て家庭支援",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1271,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/index.html",
+      "link_text": "子育て",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1063,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/benrichou/index.html",
+      "link_text": "子育て便利帳",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 959,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/houkokusho/index.html",
+      "link_text": "子育て支援・子ども家庭支援の報告書",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kodomoshokudou/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1042,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/sinseido/index.html",
+      "link_text": "子ども・子育て支援新制度",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kodomoshokudou/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1001,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kodomoazukeru/index.html",
+      "link_text": "子どもを預ける",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 892,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/topics/index.html",
+      "link_text": "トピックス一覧を見る",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodate/index.html",
+      "status": 404,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18306.html",
+      "link_text": "妊娠・妊産婦健診",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1319,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18309.html",
+      "link_text": "親子・子どもの居場所",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.suginami.tokyo.jp/kodomoazukeru/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1257,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/index.html",
+      "link_text": "子どもの居場所",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/jidoukan/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 897,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/gakudou/index.html",
+      "link_text": "学童クラブ",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/jidoukan/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 952,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/ikuji/index.html",
+      "link_text": "育児",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kodomoshokudou/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1234,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/news/index.html?value=0",
+      "link_text": "手当・給付金など",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 14223,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s058/24087.html",
+      "link_text": "8年度 こども誰でも通園制度（乳児等通園支援事業）",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.suginami.tokyo.jp/kodomoazukeru/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5274,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kodomoazukeru/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/news/index.html?value=0",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/jidoukan/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kodomoshokudou/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18351.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18310.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18311.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/topics/index.html",
+      "status": 404,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18306.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodate/18309.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s058/24087.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s053/1142.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/benrichou/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/jidoukan/jidoukanjouhou/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/gakudou/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/houkokusho/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/sinseido/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/ikuji/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

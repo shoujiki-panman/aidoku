@@ -1,0 +1,324 @@
+{
+  "municipality": "渋谷区",
+  "municipality_id": "shibuya",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "top_url": "https://www.city.shibuya.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "link_text": "粗大ごみ",
+      "hops": 1,
+      "score": 25,
+      "parent": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5421,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/kyasshuresu_sodaigomi.html",
+      "link_text": "2026年6月1日粗大ごみ処理手数料をキャッシュレス決済で支払いする場合は、粗大ごみのキャッシュレス決済についてのページをご確認ください。",
+      "hops": 2,
+      "score": 25,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2458,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html",
+      "link_text": "粗大ごみ品目手数料一覧",
+      "hops": 2,
+      "score": 25,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 17750,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
+      "link_text": "有料粗大ごみ処理券",
+      "hops": 2,
+      "score": 21,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3219,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
+      "link_text": "ごみ減量・リサイクルに関する取り組み",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1068,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/application.html",
+      "link_text": "渋谷区ごみ・資源分別アプリ",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2176,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/",
+      "link_text": "リサイクル",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1125,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/",
+      "link_text": "リサイクルイベント",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1027,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/",
+      "link_text": "リサイクル意識啓発",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1100,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/r_shop.html",
+      "link_text": "委託販売 （リサイクルショップ）",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1691,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/ku_syusyu.html",
+      "link_text": "区の収集に事業系ごみを出すとき",
+      "hops": 3,
+      "score": 14,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2061,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kaisyu.html",
+      "link_text": "集団回収",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1829,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kagu.html",
+      "link_text": "再生木製家具の販売",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1245,
+      "has_jsonld": true
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "link_text": "ごみ・資源",
+      "hops": 1,
+      "score": 11,
+      "parent": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1988,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/",
+      "link_text": "家庭から出るごみ・資源",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/kyasshuresu_sodaigomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1621,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/",
+      "link_text": "有料ごみ手数料",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 985,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/h_jigyo.html",
+      "link_text": "事業者のごみ処理",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2291,
+      "has_jsonld": true
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/kyasshuresu_sodaigomi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/application.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/ku_syusyu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/h_jigyo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/r_shop.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kaisyu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kagu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

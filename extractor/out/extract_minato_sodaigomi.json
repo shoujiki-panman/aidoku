@@ -1,0 +1,57 @@
+{
+  "municipality": "港区",
+  "municipality_id": "minato",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
+    "hops": 2,
+    "link_text": "粗大ごみ",
+    "has_jsonld": false,
+    "text_len": 3019,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "減免申請の方はインターネット・AIチャットボットでのお申し込みはできません。ご注意ください。減免申請の方はお電話で「みなと粗大ごみ受付センター」へ申し込みをお願いします。",
+  "online_clarity_pages": [
+    "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
+    "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "みなと粗大ごみ受付センターのインターネット受付（「訪問収集申込」「直接持込申込（日曜日のみ受入）」）で随時申込可能。電話（03-6747-9253、8:00〜19:00、月〜土）でも受付。ただし粗大ごみ処理手数料の減免申請はインターネット不可で電話のみ。",
+      "evidence": "減免申請の方はインターネット・AIチャットボットでのお申し込みはできません。ご注意ください。減免申請の方はお電話で「みなと粗大ごみ受付センター(03-6747-9253)」へ申し込みをお願いします。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": true,
+      "value": "品目ごとに異なる有料（事前に「有料ごみ処理券」の購入が必要）。例：400円（布団、いすなど）、900円（ソファ1人用、卓上式ミシンなど）、1,300円（机、ベッドマット、たたみなど）、2,300円（ソファ2人以上用のものなど）、3,200円（両そで机など）。",
+      "evidence": "粗大ごみを収集する場合は「有料ごみ処理券」を事前に購入する必要があります。",
+      "source": "html",
+      "failure_reason": null
+    }
+  },
+  "page_notes": "本文には料金表が明記されていたが、申込に必要な書類や提出期限の記載は無かった。リンク先の受付センターページで「インターネット申込可・減免のみ電話限定」という運用が分かったが、書類要件や期限には触れていない。"
+}

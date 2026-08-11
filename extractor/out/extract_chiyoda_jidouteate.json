@@ -1,0 +1,54 @@
+{
+  "municipality": "千代田区",
+  "municipality_id": "chiyoda",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
+    "hops": 3,
+    "link_text": "児童手当に関する各種届出について",
+    "has_jsonld": false,
+    "text_len": 3362,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "児童手当の新規申請に必要なもの",
+      "source": "html",
+      "failure_reason": "リンク先にあり"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "転出予定日から15日以内に、転出先の市区町村で新規申請をしてください。／出生日等から15日以内にご申請ください。／公務員になった日から15日以内に、勤務先で新規申請をしてください。",
+      "source": "html",
+      "failure_reason": "曖昧"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページ「児童手当に関する各種届出ほか」は、既に受給中の人が転出・出生・離婚などの事由変化を届け出るためのページで、初めての（新規）申請そのものを解説するページではない。ページ末尾のサイト内ナビに「児童手当の新規申請に必要なもの」という関連ページ名は出ているが、リンクURLが本文中の抽出リンク一覧（最大40件）には含まれておらず、辿れなかった。"
+}

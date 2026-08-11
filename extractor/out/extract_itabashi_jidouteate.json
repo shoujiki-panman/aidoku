@@ -1,0 +1,59 @@
+{
+  "municipality": "板橋区",
+  "municipality_id": "itabashi",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
+    "hops": 3,
+    "link_text": "児童手当 総合案内",
+    "has_jsonld": false,
+    "text_len": 1809,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html",
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1064042.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "国が運営する電子申請サービス（ぴったりサービス）です。下記のリンクからお手続きしてください。",
+  "online_clarity_pages": [
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html",
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1064042.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "新規申請の場合、(1)児童手当認定請求書 (2)申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など） (3)申請者の本人確認書類（マイナンバーカード等）が必須。状況により監護事実の同意書等が追加で必要。",
+      "evidence": "1．児童手当認定請求書 2．申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など） 3．申請者の本人確認書類",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "区役所北館1階6番窓口、赤塚支所住民サービス係窓口、郵送申請、または電子申請（ぴったりサービス）でオンライン申請が可能。",
+      "evidence": "区役所北館1階6番窓口 赤塚支所住民サービス係窓口 郵送申請 電子申請（ぴったりサービス）",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "出生・転入などの事由発生日の翌日から起算して15日以内",
+      "evidence": "出生・転入などの事由発生日から15日以内に申請が必要です。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "総合案内ページ自体には手続きの詳細（書類・窓口・期限）は無く、1階層下の「申請手続きについて」と「よくある問い合わせ」に情報が分散している。手数料についてはどちらのページにも記載が見当たらない。"
+}

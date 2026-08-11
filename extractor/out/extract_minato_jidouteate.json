@@ -1,0 +1,54 @@
+{
+  "municipality": "港区",
+  "municipality_id": "minato",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html",
+    "hops": 3,
+    "link_text": "児童手当",
+    "has_jsonld": false,
+    "text_len": 9345,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "マイナポータルによる電子申請（外部サイトへリンク）※ただし、電子申請にはマイナンバーカード及びマイナンバーカードに対応するICカードリーダまたはマイナンバーカード対応のスマートフォンやタブレットが必要になります。",
+  "online_clarity_pages": [
+    "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "児童手当認定請求書に加え、請求者の本人確認書類、請求者及び配偶者の個人番号確認書類、請求者名義の預金口座がわかるもの、（該当者のみ）健康保険の資格情報がわかるもの・旅券の写し等。別居児童や大学生年代の子がいる場合等は追加書類が必要。",
+      "evidence": "請求者の本人確認書類（窓口申請の場合は原本提示、郵送の場合は写しを提出）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "港区役所子ども若者支援課子ども給付係への郵送、各総合支所区民課保健福祉係の窓口への持参、またはマイナポータルによる電子申請の3方法。電子申請にはマイナンバーカード等が必要。",
+      "evidence": "『必要書類』を用意し、以下の1～3のいずれかの方法で申請してください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "出生・転入日（前住地の転出予定日）の翌日から15日以内（15日目が閉庁日の場合は翌開庁日まで）。郵送の場合は港区役所への到着日が申請日となる。",
+      "evidence": "出生、転入日（前住地の転出予定日）の翌日から15日以内に申請してください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "アンカーリンクで区切られた単一の長大ページに、申請方法・必要書類・支給額・制度改正の経緯まで全て詰め込まれている。手数料については申請・届出のどの節にも言及がなく、児童手当が無料であることは記載自体からは確認できない。"
+}

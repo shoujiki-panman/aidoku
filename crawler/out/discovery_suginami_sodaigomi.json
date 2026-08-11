@@ -1,0 +1,324 @@
+{
+  "municipality": "杉並区",
+  "municipality_id": "suginami",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "top_url": "https://www.city.suginami.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.suginami.tokyo.jp/documents/727/sodai_itiran5080401.pdf",
+      "link_text": "粗大ごみ処理手数料一覧表（主な品目）（PDF：1,253KB）",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.suginami.tokyo.jp/s105/727.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "link_text": "ごみ・リサイクル",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2047,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s105/727.html",
+      "link_text": "粗大ごみ",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6733,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/728.html",
+      "link_text": "ごみ処理券取り扱い店一覧（粗大ごみ処理券・事業系ごみ処理券）",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3702,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/762.html",
+      "link_text": "不燃ごみ・粗大ごみの資源化",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1519,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/gomibunbetsu/index.html",
+      "link_text": "ごみと資源 分別検索",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1003,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/dashikata.html",
+      "link_text": "ごみと資源の出し方",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.suginami.tokyo.jp/s105/727.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1017,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/syusyuhuka.html",
+      "link_text": "ピアノ・タイヤ・バッテリー・消火器など区が収集できないもの",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.suginami.tokyo.jp/s105/727.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 974,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/wakekata.html",
+      "link_text": "ごみと資源の分け方・出し方に関すること",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.suginami.tokyo.jp/s104/728.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1004,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/taisakushien.html",
+      "link_text": "区が実施している対策や支援",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.suginami.tokyo.jp/s104/762.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1020,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/gomibunbetsu/a/index.html",
+      "link_text": "あ",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.suginami.tokyo.jp/gomibunbetsu/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 797,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/gomibunbetsu/i/index.html",
+      "link_text": "い",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.suginami.tokyo.jp/gomibunbetsu/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 797,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/gomibunbetsu/u/index.html",
+      "link_text": "う",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.suginami.tokyo.jp/gomibunbetsu/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 797,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/736.html",
+      "link_text": "ごみ収集量・資源回収量と処理経費、組成、処理の流れ",
+      "hops": 3,
+      "score": 6,
+      "parent": "https://www.city.suginami.tokyo.jp/s104/762.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1786,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s105/724.html",
+      "link_text": "ごみ出しが困難な高齢者・障害者の方に「ふれあい収集」",
+      "hops": 3,
+      "score": 6,
+      "parent": "https://www.city.suginami.tokyo.jp/s104/762.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1181,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/740.html",
+      "link_text": "事業系ごみ",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.suginami.tokyo.jp/s104/728.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6321,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/713.html",
+      "link_text": "ごみと資源の分け方・出し方",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.suginami.tokyo.jp/s104/728.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3845,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.suginami.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s105/727.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/728.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/762.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/gomibunbetsu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/documents/727/sodai_itiran5080401.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/dashikata.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/syusyuhuka.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/wakekata.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/740.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/713.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/taisakushien.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s104/736.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/s105/724.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/gomibunbetsu/a/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/gomibunbetsu/i/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/gomibunbetsu/u/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,450 @@
+{
+  "municipality": "文京区",
+  "municipality_id": "bunkyo",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "top_url": "https://www.city.bunkyo.lg.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "link_text": "こどもの手当・助成など",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1236,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/b022/p001469/index.html",
+      "link_text": "児童手当",
+      "hops": 3,
+      "score": 13,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7507,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/iryouhi/index.html",
+      "link_text": "こどもの医療費助成",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1062,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+      "link_text": "お子さんの安全について",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1083,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+      "link_text": "児童館",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1153,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "link_text": "やさしい日本語ON",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+      "link_text": "やさしい日本語ON",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+      "link_text": "やさしい日本語ON",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/honkomagomeminami/index.html",
+      "link_text": "本駒込南児童館",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1070,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/yanagimachi/index.html",
+      "link_text": "柳町児童館",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1107,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
+      "link_text": "子育て・教育",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.bunkyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2198,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
+      "link_text": "子育てサービス検索",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 903,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/index.html",
+      "link_text": "子育て",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1976,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kenri/index.html",
+      "link_text": "こどもの権利",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1147,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kosodatejouhou/index.html",
+      "link_text": "子育て情報",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1329,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_chirashikakutei.pdf",
+      "link_text": "文京区こどもメディアパートナー募集チラシ（PDF：729KB）",
+      "hops": 2,
+      "score": 5,
+      "parent": "https://www.city.bunkyo.lg.jp/b003/p006119/p000002.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_youkoukakutei.pdf",
+      "link_text": "文京区こどもメディアパートナー募集要項（PDF：451KB）",
+      "hops": 2,
+      "score": 5,
+      "parent": "https://www.city.bunkyo.lg.jp/b003/p006119/p000002.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/hitorioya/index.html",
+      "link_text": "ひとり親支援",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1114,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/index.html",
+      "link_text": "保育園・幼稚園・一時預かり",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2038,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/hoikushisetsu/index.html",
+      "link_text": "保育施設等",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1059,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
+      "link_text": "やさしい日本語ON",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
+      "link_text": "こども宅食プロジェクト",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.city.bunkyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6650,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/b003/p006119/p000002.html",
+      "link_text": "【参加者募集】こどもメディアパートナー",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.city.bunkyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2136,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/b003/p008237.html",
+      "link_text": "こどもメディアパートナー",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.bunkyo.lg.jp/b003/p006119/p000002.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 961,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.bunkyo.lg.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/b003/p006119/p000002.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kenri/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kosodatejouhou/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/hitorioya/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_chirashikakutei.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_youkoukakutei.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/b003/p008237.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/b022/p001469/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/iryouhi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/hoikushisetsu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/honkomagomeminami/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/yanagimachi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    }
+  ]
+}

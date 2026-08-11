@@ -1,0 +1,57 @@
+{
+  "municipality": "目黒区",
+  "municipality_id": "meguro",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
+    "hops": 2,
+    "link_text": "子育てに関する手当・助成",
+    "has_jsonld": false,
+    "text_len": 1327,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
+  ],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
+    "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "起点ページ・リンク先ページとも「子育てに関する手当・助成」「子どものための諸手当」という一覧（索引）ページで、どちらも本文に手続きの詳細は書かれていない。リンク先ページには「児童手当」という項目名がリンクとして存在するが、そのリンク先URLは本文中に示されておらず、さらに1階層先へ辿らないと4項目には到達できない。"
+}

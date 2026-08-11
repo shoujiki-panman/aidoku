@@ -1,0 +1,396 @@
+{
+  "municipality": "中野区",
+  "municipality_id": "nakano",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "top_url": "https://www.city.tokyo-nakano.lg.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+      "link_text": "粗大ごみ収集のインターネット申込み",
+      "hops": 2,
+      "score": 31,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1100,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "link_text": "粗大ごみの申込み",
+      "hops": 1,
+      "score": 28,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3877,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/index.html",
+      "link_text": "粗大ごみの申込み",
+      "hops": 2,
+      "score": 28,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 695,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html",
+      "link_text": "コンビニ以外の購入場所を確認する場合は、「有料粗大ごみ処理券取扱所一覧」のページをご覧ください。",
+      "hops": 2,
+      "score": 25,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2142,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi02.html",
+      "link_text": "粗大ごみの出し方を教えてください。",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1744,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html",
+      "link_text": "粗大ごみの処理手数料を教えてください。",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1781,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
+      "link_text": "○○は粗大ごみですか？",
+      "hops": 2,
+      "score": 21,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1760,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/jigyosyo-ogata.html",
+      "link_text": "事業所から出る大型のごみ（粗大ごみ）",
+      "hops": 2,
+      "score": 21,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2005,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/syugojyutaku-recycle.html",
+      "link_text": "集合住宅のリサイクル資源集積所の設置について",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3903,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/gomizero/recycletenji.html",
+      "link_text": "ようこそリサイクル展示室へ",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2633,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/index.html",
+      "link_text": "ごみ収集・資源回収曜日一覧",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1033,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi33.html",
+      "link_text": "普段のごみの収集、資源の回収時間が午後でも、朝に出さなくてはいけまんせんか？",
+      "hops": 3,
+      "score": 14,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1832,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+      "link_text": "ごみ・資源",
+      "hops": 1,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3296,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/chatbot.html",
+      "link_text": "中野区ごみ分別チャットボットをご利用ください",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1445,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/index.html",
+      "link_text": "ごみ・資源の出し方",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1513,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/index.html",
+      "link_text": "商店・事業所から出るごみと資源の出し方",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1001,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/kyotenkaisyu/shokuyoabura.html",
+      "link_text": "7月28日（火曜日）に区民活動センターで食用油を回収します",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 404,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/katei-aircon.html",
+      "link_text": "エアコン、テレビ（ブラウン管式・液晶式・プラズマ式）、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3767,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/pcsyori.html",
+      "link_text": "パソコン",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2422,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyushinaimono.html",
+      "link_text": "ピアノ、オートバイ、タイヤ、バッテリー、耐火金庫、消火器など",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1466,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/shisetsu/kankyo/gomi/jimusyo.html",
+      "link_text": "環境部 清掃事務所",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 931,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/kyotenkaisyu/shokuyoabura.html",
+      "status": 404,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/jigyosyo-ogata.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/syugojyutaku-recycle.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/gomizero/recycletenji.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/katei-aircon.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/pcsyori.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyushinaimono.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/chatbot.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/shisetsu/kankyo/gomi/jimusyo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi02.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi33.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

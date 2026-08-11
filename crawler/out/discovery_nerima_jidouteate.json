@@ -1,0 +1,414 @@
+{
+  "municipality": "練馬区",
+  "municipality_id": "nerima",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "top_url": "https://www.city.nerima.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jidouteate20120401.html",
+      "link_text": "児童手当",
+      "hops": 3,
+      "score": 29,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/shinsei.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7806,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/tokubetujidoufuyou.html",
+      "link_text": "特別児童扶養手当",
+      "hops": 3,
+      "score": 19,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/shinsei.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7463,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/shinsei.html",
+      "link_text": "子ども医療助成費（マル乳・マル子）の払い戻し（償還払い）申請",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bamen/kosodate.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5685,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jido/index.html",
+      "link_text": "子どもの手当・医療費助成",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bamen/kosodate.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1552,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/index.html",
+      "link_text": "手当・医療助成",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/shinsei.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1192,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jido/teategaku.html",
+      "link_text": "児童扶養手当・特別児童扶養手当の手当額（月額）が変わります。",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jido/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1381,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/ikuseiteate.html",
+      "link_text": "児童育成手当（育成手当・障害手当）",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jido/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7425,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/fuyoteate.html",
+      "link_text": "児童扶養手当",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jido/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 11216,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/haraimodoshi.html",
+      "link_text": "ひとり親家庭等医療費助成（マル親） の払い戻し（償還払い）申請",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5093,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.html",
+      "link_text": "子ども医療費の助成（マル乳・マル子医療証）",
+      "hops": 2,
+      "score": 12,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bamen/kosodate.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6266,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/saikoufu.html",
+      "link_text": "ひとり親家庭等医療証（マル親医療証）の再交付",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1932,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/daredemo.html",
+      "link_text": "練馬区こども誰でも通園事業（試行）",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bamen/kosodate.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4787,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/tatakanai_kosodate.html",
+      "link_text": "たたかない・どならない子育てのために",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2515,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/20200413.html",
+      "link_text": "子どもや子育てに関する悩みがある方は、ご相談ください",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1445,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/index.html",
+      "link_text": "子育て",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1539,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/ninnteischedule.html",
+      "link_text": "【認定こども園（2号利用）】令和8年4月入園の利用申込み",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/daredemo.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3295,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/ninnteigaiyou.html",
+      "link_text": "認定こども園とは（概要と認定区分について）",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/daredemo.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2503,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/line_hoiku.html",
+      "link_text": "LINE保活支援サービス（保育園探し、保育指数シミュレーション、チャットボットで質問、子育て情報の配信）のごあんない",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/daredemo.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4021,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.files/kodomo_tebiki_2025.pdf",
+      "link_text": "子ども医療費助成（マル乳・マル子・マル青）のてびき（PDF：1,359KB）",
+      "hops": 3,
+      "score": 10,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html",
+      "link_text": "体罰などによる子どもの身体と心への影響",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2567,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bamen/kosodate.html",
+      "link_text": "子育て",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1429,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/index.html",
+      "link_text": "",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 736,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bamen/kosodate.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/shinsei.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jido/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/daredemo.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/tatakanai_kosodate.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/20200413.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jidouteate20120401.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/tokubetujidoufuyou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jido/teategaku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/ikuseiteate.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/fuyoteate.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/haraimodoshi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/saikoufu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.files/kodomo_tebiki_2025.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/ninnteischedule.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/ninnteigaiyou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/line_hoiku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

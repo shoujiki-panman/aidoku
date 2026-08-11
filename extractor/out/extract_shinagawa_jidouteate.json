@@ -1,0 +1,54 @@
+{
+  "municipality": "品川区",
+  "municipality_id": "shinagawa",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000027168.html",
+    "hops": 2,
+    "link_text": "9_児童手当",
+    "has_jsonld": false,
+    "text_len": 11826,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "申請者ご本人様がマイナンバーカードを持ち、かつ電子署名の使用が可能な場合は、「品川区電子申請サービス」または「ぴったりサービス」からご申請いただけます。",
+  "online_clarity_pages": [
+    "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000027168.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "申請者名義の金融機関口座がわかる書類（増額申請時は不要）、申請者の健康保険情報がわかるもの（原則不要、共済組合加入者のみ）、本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）。代理人申請時はさらに委任状が必要。",
+      "evidence": "申請者（請求者）名義の金融機関口座の分かる書類 申請者の健康保険情報の分かるもの 本人確認書類 マイナンバーカード・運転免許証・パスポート・在留カード等",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口は品川区役所本庁舎7階の子育て応援課手当医療助成担当（地域センターでの取扱いなし）。郵送も可。マイナンバーカードと電子署名が使える場合は品川区電子申請サービスまたはぴったりサービスでオンライン申請可能。",
+      "evidence": "品川区役所本庁舎7階の子育て応援課手当医療助成担当へ申請してください。申請は(1)郵送または(2)電子申請サービスも可能です。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "出生や転入等により受給資格が生じた日（または前住地の転出予定日）の翌日から15日以内に申請（15日特例）。遅れるとその分の手当が受けられない。",
+      "evidence": "出生により受給資格が生じた日の翌日から15日以内に、お住まいの区市町村に申請が必要です。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "冒頭に多言語切替メニューと全区メニューが大量に続き、本文（児童手当の説明）に到達するまでが長い。本文自体は1〜13の見出しで整理され、必要書類・申請方法・期限は明記されているが、手数料（無料である旨を含む）についての記載はページ中に見当たらなかった。"
+}

@@ -1,0 +1,59 @@
+{
+  "municipality": "文京区",
+  "municipality_id": "bunkyo",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
+    "hops": 2,
+    "link_text": "ごみ・リサイクル",
+    "has_jsonld": false,
+    "text_len": 2348,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "インターネットで申込む場合　粗大ごみ受付センター（外部リンク）　受付時間　24時間",
+  "online_clarity_pages": [
+    "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+    "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "電話・インターネット・チャットボットの3方法で「粗大ごみ受付センター」に申込む。インターネット申込みは24時間受付。出す場所は自宅前（集合住宅は1階出入口スペース等）。",
+      "evidence": "・インターネットで申込む場合 粗大ごみ受付センター（インターネット） 申込先（下記をクリックしてください。） 受付時間24時間 お休み12月28日～1月4日",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": true,
+      "value": "有料。有料粗大ごみ処理券（A券200円・B券300円）を品目ごとに組み合わせて購入。例：両袖机3,200円（A券1枚・B券10枚）。品目別の具体的な料金は粗大ごみ受付センターで案内される。",
+      "evidence": "有料粗大ごみ処理券は、A券（200円）とB券（300円）の2種類で、粗大ごみの品目ごとに組み合わせて購入してください。例：両袖机（3,200円）A券1枚、B券10枚",
+      "source": "linked_page",
+      "failure_reason": null
+    }
+  },
+  "page_notes": "トップの「ごみ・リサイクル」ページ自体には申込手続きの詳細が無く、リンク先の「粗大ごみの出し方」ページに申込方法・料金がまとまっている。必要書類と申込期限（何日前までに申込むか等）はどちらのページにも記載が見当たらなかった。"
+}

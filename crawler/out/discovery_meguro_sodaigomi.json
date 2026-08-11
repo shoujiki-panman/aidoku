@@ -1,0 +1,414 @@
+{
+  "municipality": "目黒区",
+  "municipality_id": "meguro",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "top_url": "https://www.city.meguro.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
+      "link_text": "粗大ごみの収集曜日",
+      "hops": 3,
+      "score": 28,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1665,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
+      "link_text": "粗大ごみ",
+      "hops": 2,
+      "score": 25,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1229,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+      "link_text": "粗大ごみ処理の手続き",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3348,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/ticket_shop.html",
+      "link_text": "有料ごみ（粗大ごみ・事業系ごみ）処理券取扱所一覧",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3077,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
+      "link_text": "ごみの減量・リサイクル",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 960,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/reminder.html",
+      "link_text": "資源とごみの収集日をLINEでお知らせします",
+      "hops": 3,
+      "score": 18,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1898,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
+      "link_text": "燃やすごみ",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2641,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "link_text": "燃やさないごみ",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2299,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengominihongopdf.html",
+      "link_text": "資源・ごみに関する印刷物PDFデータ（資源とごみの分け方・出し方 日本語版）",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1828,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/gomigomi.html",
+      "link_text": "めぐろ買い物ルールソング「ごみごみ あ！ミーゴ」",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1741,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/3r/index.html",
+      "link_text": "3Rの推進（リデュース・リユース・リサイクル）",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1159,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/nenmatsu_mgr100.html",
+      "link_text": "MGR100（1人1日100グラムのごみ減量）を目指しましょう！",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2913,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengomipdf.html",
+      "link_text": "資源・ごみに関する印刷物PDFデータ（資源とごみの分け方・出し方 外国語版）",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1662,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+      "link_text": "資源とごみの収集日・分別検索",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1602,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/index.html",
+      "link_text": "ごみ・リサイクル",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1171,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
+      "link_text": "めぐろ買い物ルール",
+      "hops": 1,
+      "score": 12,
+      "parent": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2372,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
+      "link_text": "简体中文",
+      "hops": 2,
+      "score": 12,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
+      "link_text": "简体中文",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
+      "link_text": "简体中文",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "link_text": "简体中文",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "link_text": "繁體中文",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jako/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "link_text": "한국어",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.meguro.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengominihongopdf.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/gomigomi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/ticket_shop.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/3r/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/nenmatsu_mgr100.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/reminder.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengomipdf.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jako/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    }
+  ]
+}
