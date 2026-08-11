@@ -144,6 +144,9 @@ def main() -> None:
         "generated_at": args.generated_at or datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "procedure": proc["name"],
         "procedure_id": proc["id"],
+        # 画面に出す「住民の質問」。手続きごとに違うので targets.json に持たせてある。
+        # 画面側で文を組み立てると、手続きを増やすたびに JS を直すことになる。
+        "question": proc.get("question", "{muni}について教えて。"),
         "phase": args.phase,
         "n_municipalities": len(entries),
         "summary": summarize(entries),

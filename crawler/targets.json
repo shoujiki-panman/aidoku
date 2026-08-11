@@ -148,6 +148,24 @@
       "name": "葛飾区",
       "type": "特別区",
       "top_url": "https://www.city.katsushika.lg.jp/"
+    },
+    {
+      "id": "machida",
+      "name": "町田市",
+      "type": "市",
+      "top_url": "https://www.city.machida.tokyo.jp/"
+    },
+    {
+      "id": "mitaka",
+      "name": "三鷹市",
+      "type": "市",
+      "top_url": "https://www.city.mitaka.lg.jp/"
+    },
+    {
+      "id": "musashino",
+      "name": "武蔵野市",
+      "type": "市",
+      "top_url": "https://www.city.musashino.lg.jp/"
     }
   ],
   "procedures": [
@@ -189,7 +207,8 @@
         "窓口/オンライン可否",
         "期限",
         "手数料"
-      ]
+      ],
+      "question": "{muni}に引っ越します。転入届に必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "jidouteate",
@@ -218,7 +237,8 @@
         "窓口/オンライン可否",
         "期限",
         "手数料"
-      ]
+      ],
+      "question": "{muni}で子どもが生まれました。児童手当の申請に必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "sodaigomi",
@@ -248,7 +268,43 @@
         "窓口/オンライン可否",
         "期限",
         "手数料"
-      ]
+      ],
+      "question": "{muni}で粗大ごみを出したいです。申込に必要なもの・期限・手数料を教えて。オンラインでできますか？"
+    },
+    {
+      "id": "hinanjo",
+      "name": "避難所",
+      "domain": "防災",
+      "keywords": {
+        "strong": [
+          "避難所",
+          "避難場所",
+          "指定避難所",
+          "広域避難場所"
+        ],
+        "weak": [
+          "防災",
+          "災害",
+          "避難",
+          "地震",
+          "風水害",
+          "ハザード",
+          "くらし",
+          "安全"
+        ],
+        "url_hints": [
+          "hinan",
+          "bosai",
+          "saigai",
+          "bousai",
+          "anzen",
+          "hazard"
+        ]
+      },
+      "fields": [
+        "避難所の場所"
+      ],
+      "question": "{muni}の避難所はどこですか。"
     }
   ]
 }
