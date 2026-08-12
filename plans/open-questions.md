@@ -118,37 +118,68 @@ Cloudflare の実測（2025年7月・[記事](https://blog.cloudflare.com/crawle
 
 ---
 
-## 4. 差別化 — 門番だけでは真似される。堀は「門番 × 採点データ」
+## 4. 差別化 — 門番の新規性はほぼ消えた。残った層は「200なのに答えが無い」
 
-### 既にあるもの
+> **2026-08-13 更新。**Cloudflare の一次情報を当たり直した結果、
+> 前の版（「観測部分だけが重なる」）は**過小評価だった。**書き換える。
+> 調査時点 2026-08-13。すべて `blog.cloudflare.com` / `developers.cloudflare.com` の原文で確認。
 
-**Cloudflare AI Crawl Control**（[製品](https://www.cloudflare.com/ai-crawl-control/)・2025年8月28日GA）
-- どのAIボットが来たか・頻度・ルールを守っているかが見える
-- **全Cloudflareサイトで無料・設定不要**
-- クローラーごとに 許可／拒否／課金 を選べる
+### Cloudflare が押さえたもの（2026年8月時点・一次情報）
 
-**門番の「観測」部分は、これとほぼ同じ。**しかも相手は無料・ゼロ設定。
+2026年に **Agents Week が2回**開催されている（4/12〜4/20、8/2〜8/10）。
+[8月回の総括](https://blog.cloudflare.com/agents-week-review-august-2026/)（2026-08-10）。
 
-### Cloudflare にできないこと
+| 門番のどの部分か | Cloudflare の該当物 | 重なり |
+|---|---|---|
+| Web Bot Auth（RFC 9421 + Ed25519 + JWKS）の検証 | [Web Bot Auth](https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/)。2026-07-01 に Verified bot へ統合 | **ほぼ完全** |
+| どのエージェントが来たか | AI Crawl Control（**全プラン・設定不要**） | **完全** |
+| どのURLを取ろうとしたか | Most popular paths / Patterns / robots.txt violations の Path 列 | 重なる |
+| 取れずに帰ったか | Status code 分布（403/402/404）、unsuccessful requests | **HTTPレベルでは重なる** |
+| サイトをエージェント向けに整える | [**Agent Readiness score**](https://blog.cloudflare.com/agent-readiness/)（2026-04-17）。robots.txt / sitemap / Markdown配信 / MCP agent card 等を pass・fail で採点し、直し方リンクまで出す | **強く重なる** |
 
-Cloudflare が分かるのは「**誰が来たか**」まで。
-「**何を知ろうとして、取れずに帰ったか**」は分からない。
-**そのページに何が書いてあるべきかを知らないから。**
+**このリポジトリのディレクトリ名は `work/agent-readiness/`。**
+Cloudflare が 2026-04-17 に同じ名前の製品を出している。名前がぶつかっている。
 
-それを知っているのが AI読。4項目の実測データを持っているので
-「手数料を聞かれて、このページには無い」と言える。
+### それでも残っている層（ここが堀）
 
-### つまり
+Cloudflare が「取れなかった」と判定する根拠は、確認できた範囲で**3つだけ**。
 
-**堀は門番そのものではなく「門番 × 採点データ」。**
-`plans/ideal-state.md` は「A（測る）は B（溜める）への入口」と書いているが、
-**実際には A が B の堀。**A が無ければ門番はただのボット解析ツールになる。
+1. HTTP ステータスコード（4xx / 5xx）
+2. robots.txt のディレクティブとパスの文字列照合
+3. Accept ヘッダと Content-Type の不一致
+
+**どれも「ページが200を返したのに、答えが載っていない」を捕まえられない。**
+
+そして自治体サイトで一番起きるのはそれ。
+**世田谷区の転入届のページは200を返す。**中身も表示される。
+それでも4項目は0点だった。Cloudflare のどの製品も、これを異常として検出しない。
+
+Agent Readiness が採点するのは**形式**（robots.txt があるか、Markdown を配れるか）。
+**内容は採点しない。**AEO が測るのは「AIが自社を推薦するか」で、
+[記事](https://blog.cloudflare.com/aeo/)自身が対象を Claude と GPT の2つと書いている。
+住民の問いに答えられたかではない。
+
+> つまり Cloudflare が押さえたのは
+> **入口（誰が来たか・入れたか）と出口（サイトを整えろ）。**
+> **「エージェントが帰った後、何が欠けていたか」の中間層は空いている。**
 
 ### 決めること
 
-- [ ] 提出時の説明を「AはBへの入口」から「**AがBを他と分ける**」に直すか
-- [ ] 門番が答えを引く `env.ANSWERS`（`worker.mjs:242`）は AI読の実測データ。
-      この接続をもっと前に出す
+- [ ] **提出本文・LT台本から「観測」を売りにした言い方を消す。**
+      門番は「AIの来訪を観測する装置」ではなく「**採点データを持った受付**」
+- [ ] **`agent-readiness` の名前をどうするか。**Cloudflare の製品名と衝突している（#3 の改名と同時に判断）
+- [ ] 門番が答えを引く `env.ANSWERS`（`worker.mjs:242`）は AI読の実測データ。この接続を前に出す
+- [ ] **「200なのに答えが無い」を主張の中心に置くか。**
+      これが唯一 Cloudflare に埋められていない層で、しかも実測データがある
+
+### 裏が取れなかったこと（断定しない）
+
+- 「Agents + Wallets」という**名前の製品は存在しない**。実在するのは Cloudflare Wallets（2026-08-04）
+- AI Crawl Control の「2025-08-28 GA」は**未検証**（changelog の最古は 2024-09-23）
+- Claude / Perplexity / Gemini が Web Bot Auth の公開鍵を配っているかは**未確認**。
+  一次情報で確認できたのは ChatGPT の directory URL が
+  [registry 記事](https://blog.cloudflare.com/agent-registry/)に例示されていることだけ
+- Cloudflare が llms.txt を扱う製品を出したかは**確認できなかった**（Agent Readiness の項目に無い）
 
 ---
 
