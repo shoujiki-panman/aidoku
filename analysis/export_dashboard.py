@@ -50,6 +50,37 @@ DISCLAIMER = (
     "行政機関の公式発表ではありません。"
 )
 
+# ライセンスは「こちらが作ったもの」にだけかかる。点数・集計・処方箋がそれ。
+# agent_value（自治体サイトから抜き出した実際の文）は自治体のものなので、
+# こちらのライセンスで再配布を許可することはできない。**そこを混ぜない。**
+LICENSE = {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "applies_to": "点数・集計・改善案など、この調査が作り出した部分",
+    "attribution": "正直パンマン「AI読（アイドク）」 https://github.com/shoujiki-panman/aidoku",
+    "not_covered": (
+        "fields[].agent_value は各自治体の公式サイトから抜き出した実際の文で、"
+        "著作権は各自治体にあります。判定の根拠を示すための引用であり、"
+        "出典は各レコードの page_url です。"
+        "再利用の可否は各自治体の利用規約に従ってください。"
+    ),
+}
+
+# 使わせてもらっているもの。**実際に使ったものだけ書く。**
+SOURCES = [
+    {
+        "name": "各自治体の公式サイト（手続きページ）",
+        "used_for": "採点の対象。抜き出した文は fields[].agent_value、出典は page_url",
+        "license": "各自治体の利用規約による（個別には確認していない）",
+    },
+    {
+        "name": "デジタル庁デザインシステム",
+        "url": "https://design.digital.go.jp/",
+        "used_for": "公開画面のスタイル（コードスニペット）",
+        "license": "MIT",
+    },
+]
+
 
 def build_fields(items: dict) -> tuple[list[dict], dict, list[dict]]:
     """4項目の内訳・配点・処方箋を作る。"""
@@ -152,6 +183,8 @@ def main() -> None:
         "summary": summarize(entries),
         "municipalities": entries,
         "disclaimer": DISCLAIMER,
+        "license": LICENSE,
+        "sources": SOURCES,
     }
     Path(args.out).write_text(
         json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
