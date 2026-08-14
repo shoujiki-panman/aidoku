@@ -79,6 +79,12 @@ SOURCES = [
         "used_for": "公開画面のスタイル（コードスニペット）",
         "license": "MIT",
     },
+    {
+        "name": "総務省「都道府県コード及び市区町村コード」",
+        "url": "https://www.soumu.go.jp/denshijiti/code.html",
+        "used_for": "municipalities[].lg_code（全国地方公共団体コード）",
+        "license": "総務省サイトの利用規約による",
+    },
 ]
 
 
@@ -140,13 +146,19 @@ def summarize(entries: list[dict]) -> dict:
     }
 
 
-def collect(procedure: str, only: set[str] | None) -> list[dict]:
+def collect(procedure: str, only: set[str] | None, codes: dict[str, str]) -> list[dict]:
     entries = []
     for path in sorted(EXTRACT_DIR.glob(f"extract_*_{procedure}.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
-        if only is not None and data["municipality_id"] not in only:
+        mid = data["municipality_id"]
+        if only is not None and mid not in only:
             continue
-        entries.append(build_entry(data))
+        entry = build_entry(data)
+        # 全国地方公共団体コード。他のデータと突き合わせる鍵。
+        # 自治体名は表記ゆれがあるので、名前ではなくこれで繋ぐ。
+        # 未設定の自治体は落とさず null で残す（欠けていることが見えるように）。
+        entry["lg_code"] = codes.get(mid)
+        entries.append(entry)
     # 点の高い順。同点は自治体IDの辞書順で固定する（実行ごとに並びが変わらないように）
     entries.sort(key=lambda e: (-e["total"], e["id"]))
     return entries
@@ -167,7 +179,8 @@ def main() -> None:
     proc = next(p for p in targets["procedures"] if p["id"] == args.procedure)
     keep = {m["id"] for m in targets["municipalities"]} - set(args.exclude)
 
-    entries = collect(args.procedure, keep)
+    codes = {m["id"]: m["lg_code"] for m in targets["municipalities"] if m.get("lg_code")}
+    entries = collect(args.procedure, keep, codes)
     if not entries:
         raise SystemExit(f"extractor/out に {args.procedure} の結果がありません")
 
