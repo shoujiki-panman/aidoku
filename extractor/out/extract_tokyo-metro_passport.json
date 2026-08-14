@@ -1,0 +1,54 @@
+{
+  "municipality": "東京都",
+  "municipality_id": "tokyo-metro",
+  "procedure": "パスポートの申請",
+  "procedure_id": "passport",
+  "page": {
+    "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents/0000000374",
+    "hops": 3,
+    "link_text": "一般旅券発給申請書の記入例",
+    "has_jsonld": false,
+    "text_len": 4774,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents/0000000374"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "必要書類・申請書記入例など　申請・受領に必要な書類",
+      "source": "html",
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "お問い合わせ　東京都パスポート電話案内センター　電話　03-5908-0400",
+      "source": "html",
+      "failure_reason": "電話でのみ確認可"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": "html",
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "手数料一覧",
+      "source": "html",
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページは「一般旅券発給申請書の記入例」専用ページで、本文はメガメニュー・パンくず・お問い合わせ先（電話案内センター）のみで構成され、必要書類・窓口・期限・手数料の実質的な記載が無い。「申請・受領に必要な書類」「窓口のご案内」「手数料一覧」という兄弟ページへのリンク文言は本文中に見えるが、抽出されたリンク一覧（上位40件）はグローバルナビで占められておりURLが取得できず、follow_urlsに入れられなかった。"
+}
