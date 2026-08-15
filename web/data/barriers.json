@@ -78,7 +78,48 @@
         "改善後の実測",
         "第三者による確認"
       ],
-      "note": "改変したのは手元の複製。区のサイトは1文字も変更していない。"
+      "note": "改変したのは手元の複製。区のサイトは1文字も変更していない。",
+      "prevalence": {
+        "measured_at": "2026-08-16",
+        "method": "採点済み69マスについて、採点されたページ本文に手続き名そのものが含まれるかを既存キャッシュから判定。新規取得なし",
+        "same_barrier_cells": 6,
+        "total_cells": 69,
+        "zero_score_cells": 18,
+        "share_of_zeros": "6/18（33%）",
+        "cells": [
+          {
+            "procedure": "転入届",
+            "municipality": "世田谷区",
+            "hops": 1
+          },
+          {
+            "procedure": "児童手当の申請",
+            "municipality": "台東区",
+            "hops": 1
+          },
+          {
+            "procedure": "児童手当の申請",
+            "municipality": "墨田区",
+            "hops": 3
+          },
+          {
+            "procedure": "児童手当の申請",
+            "municipality": "目黒区",
+            "hops": 2
+          },
+          {
+            "procedure": "児童手当の申請",
+            "municipality": "豊島区",
+            "hops": 2
+          },
+          {
+            "procedure": "粗大ごみ収集の申込",
+            "municipality": "中央区",
+            "hops": 1
+          }
+        ],
+        "caveat": "数え方で変わる。targets.json の広い語（転入届/転入/引越し/引っ越し）だと転入届は0件になる。上は手続き名そのもので数えた値。1マスはキャッシュ欠でこの判定から除外"
+      }
     }
   ],
   "license": {
