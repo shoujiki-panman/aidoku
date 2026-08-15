@@ -1,0 +1,154 @@
+/* 段差1件を縦1本で追う画面。
+   色は「実測で分かったこと」にだけ使う（読めた=緑／読めない=赤／確認=青）。
+   数字を大きく出すのは before/after と件数だけにして、視線の行き先を1つに絞る。 */
+
+.flow {
+  list-style: none;
+  margin: calc(28 / 16 * 1rem) 0;
+  padding: 0;
+}
+
+.step {
+  position: relative;
+  display: grid;
+  grid-template-columns: calc(44 / 16 * 1rem) 1fr;
+  gap: calc(16 / 16 * 1rem);
+  padding-bottom: calc(28 / 16 * 1rem);
+}
+
+/* 縦につながる線。最後の1件だけ線を消して「ここで終わり」を出す */
+.step::before {
+  content: "";
+  position: absolute;
+  left: calc(21 / 16 * 1rem);
+  top: calc(40 / 16 * 1rem);
+  bottom: 0;
+  width: 2px;
+  background: #d8dde3;
+}
+.step:last-child::before { display: none; }
+
+.step__no {
+  z-index: 1;
+  width: calc(44 / 16 * 1rem);
+  height: calc(44 / 16 * 1rem);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+  background: #6b7280;
+}
+.step[data-kind="ng"]    .step__no { background: #b3261e; }
+.step[data-kind="ok"]    .step__no { background: #0f7a3d; }
+.step[data-kind="why"]   .step__no { background: #c58a00; }
+.step[data-kind="proof"] .step__no { background: #0056b3; }
+.step[data-kind="many"]  .step__no { background: #b3261e; }
+.step[data-kind="open"]  .step__no { background: #0056b3; }
+
+.step__body {
+  background: #fff;
+  border: 1px solid #d8dde3;
+  border-radius: 10px;
+  padding: calc(16 / 16 * 1rem) calc(18 / 16 * 1rem);
+}
+.step[data-kind="ng"]    .step__body { border-left: 4px solid #b3261e; }
+.step[data-kind="ok"]    .step__body { border-left: 4px solid #0f7a3d; }
+.step[data-kind="proof"] .step__body { border-left: 4px solid #0056b3; }
+
+.step__title {
+  margin: 0 0 .6em;
+  font-size: calc(18 / 16 * 1rem);
+  font-weight: 700;
+}
+.step__body p { margin: .5em 0; line-height: 1.9; }
+
+/* 住民の質問。かぎ括弧のまま見せる */
+.q {
+  font-size: calc(17 / 16 * 1rem);
+  background: #f2f6fc;
+  border-radius: 8px;
+  padding: .8em 1em;
+}
+
+/* before / after の回数。ここだけ大きくする */
+.big { display: flex; align-items: baseline; gap: .4em; margin: .2em 0 .6em; }
+.big b { font-size: calc(44 / 16 * 1rem); line-height: 1; font-weight: 700; }
+.big span { color: #5c5c66; font-size: calc(14 / 16 * 1rem); }
+.step[data-kind="ng"]   .big b { color: #b3261e; }
+.step[data-kind="ok"]   .big b { color: #0f7a3d; }
+.step[data-kind="many"] .big b { color: #b3261e; }
+
+/* 4項目の内訳。before/after で同じ形にして見比べられるようにする */
+.marks { display: flex; flex-wrap: wrap; gap: .5em; margin: .4em 0 .6em; }
+.mk {
+  display: inline-flex;
+  align-items: center;
+  gap: .45em;
+  padding: .3em .7em;
+  border-radius: 999px;
+  font-size: calc(13 / 16 * 1rem);
+  background: #fdecea;
+  color: #8c1d18;
+}
+.mk[data-ok="true"] { background: #e6f4ea; color: #0b5c2e; }
+.mk i { font-style: normal; font-weight: 700; }
+
+/* 公式に書かれている実文 */
+.gt { margin: .6em 0; }
+.gt dt {
+  font-weight: 700;
+  font-size: calc(13.5 / 16 * 1rem);
+  color: #0b5c2e;
+  margin-top: .7em;
+}
+.gt dd { margin: .2em 0 0; line-height: 1.85; }
+
+/* 反実仮想の2行。0回であることが効くので、0側も同じ大きさで出す */
+.cf { display: grid; gap: .4em; margin: .6em 0; }
+.cf__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .55em .9em;
+  background: #f2f6fc;
+  border-radius: 8px;
+}
+.cf__row i { font-style: normal; font-weight: 700; font-size: calc(18 / 16 * 1rem); color: #0056b3; }
+.cf__row i[data-zero="true"] { color: #8a929b; }
+
+/* 同じ段差があった区の一覧 */
+.cells { list-style: none; margin: .6em 0 0; padding: 0; display: grid; gap: .35em; }
+.cells li {
+  padding: .5em .8em;
+  background: #fdecea;
+  border-radius: 8px;
+  font-size: calc(14 / 16 * 1rem);
+}
+.cells li span { color: #8c1d18; font-size: calc(12.5 / 16 * 1rem); margin-left: .5em; }
+
+.lead-note { color: #3a3a44; }
+.src { font-size: calc(12.5 / 16 * 1rem); color: #5c5c66; word-break: break-all; }
+.tag { font-size: calc(13 / 16 * 1rem); color: #5c5c66; }
+.tag code, .src code { background: #f0f2f5; padding: .1em .4em; border-radius: 4px; }
+
+/* まだ言えないこと。ここは目立たせない代わりに、省略もしない */
+.honest { margin: .6em 0; padding-left: 1.2em; }
+.honest li { margin: .5em 0; line-height: 1.9; }
+
+.err { color: #b3261e; }
+
+/* 生URLを本文に出しているので、狭い画面で親からはみ出さないよう折る。
+   これが無いと横スクロールが出る（実測 457px > 390px）。 */
+#license-note { overflow-wrap: anywhere; }
+
+@media (max-width: 600px) {
+  /* 2カラムのまま幅だけ詰める。1fr を落とすと本文が34pxの列に入り、
+     1文字ずつ縦に並んで読めなくなる（ページ全高が3万px超になった）。 */
+  .step { grid-template-columns: calc(34 / 16 * 1rem) 1fr; gap: .7em; }
+  .step__no { width: calc(34 / 16 * 1rem); height: calc(34 / 16 * 1rem); font-size: calc(14 / 16 * 1rem); }
+  .step::before { left: calc(16 / 16 * 1rem); top: calc(32 / 16 * 1rem); }
+  .big b { font-size: calc(34 / 16 * 1rem); }
+  .cf__row { flex-direction: column; align-items: flex-start; gap: .2em; }
+}

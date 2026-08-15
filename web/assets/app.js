@@ -16,11 +16,30 @@ const trunc = (s, n) => (s.length > n ? s.slice(0, n) + '…' : s);
 const tone = (n) => (n >= 100 ? 'green' : n >= 60 ? 'blue' : n > 0 ? 'orange' : 'red');
 
 let data = null;
+let procs = [];
+
+async function loadJson(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(`データを読めませんでした (${res.status}): ${path}`);
+  return res.json();
+}
 
 async function init() {
-  const res = await fetch('data/scores.json');
-  if (!res.ok) throw new Error(`データを読めませんでした (${res.status})`);
-  data = await res.json();
+  procs = (await loadJson('data/procedures.json')).procedures;
+  renderProcTabs();
+  // 盤面から「区名」を押して来たときは、その区を開く（?muni=setagaya&proc=tennyu）。
+  // これが無いと、どの区を押しても同じ画面が出る。
+  const q = new URLSearchParams(location.search);
+  await loadProcedure(q.get('proc') || procs[0].id, q.get('muni'));
+}
+
+async function loadProcedure(id, muniId = null) {
+  const p = procs.find((x) => x.id === id) || procs[0];
+  data = await loadJson(`data/${p.file}`);
+
+  document.querySelectorAll('.proc-tab').forEach((b) => {
+    b.setAttribute('aria-selected', String(b.dataset.proc === p.id));
+  });
 
   $('phase-note').textContent =
     `${data.phase}の${data.procedure}を、AIに読ませた結果です（${data.n_municipalities}自治体）`;
@@ -30,13 +49,28 @@ async function init() {
   renderHero();
   renderSummary();
   renderRanking();
-  // 最初に見せるのは世田谷区。「情報はあるのに、入口からたどり着けない」の実例
-  select('setagaya');
+  // 指定が無ければ一番低い区。「情報はあるのに、入口からたどり着けない」の実例
+  const target = muniId && data.municipalities.some((m) => m.id === muniId) ? muniId : worstMuni().id;
+  select(target);
 }
 
-// 質問文はどの区でも同じにする（比較のため）
-const question = (name) =>
-  `${name}に引っ越します。${data.procedure}に必要なもの・期限・手数料を教えて。オンラインでできますか？`;
+function renderProcTabs() {
+  $('proc-tabs').innerHTML = procs.map((p) => `
+    <button type="button" class="proc-tab" role="tab" data-proc="${esc(p.id)}"
+            aria-selected="false">${esc(p.name)}</button>`).join('');
+  $('proc-tabs').addEventListener('click', (e) => {
+    const b = e.target.closest('.proc-tab');
+    if (b) loadProcedure(b.dataset.proc);
+  });
+}
+
+// 一番低い区／一番高い区。手続きが変わると入れ替わるので、IDを固定しない。
+// municipalities は書き出し側で「点の高い順 → ID昇順」に並べてある。
+const bestMuni = () => data.municipalities[0];
+const worstMuni = () => data.municipalities[data.municipalities.length - 1];
+
+// 質問文はどの区でも同じにする（比較のため）。文は targets.json 側に持たせてある。
+const question = (name) => (data.question || '{muni}について教えて。').replace('{muni}', name);
 
 // 1項目ぶんの答え行。読めた→実測の実文／読めない→「分かりません」
 function answerLine(f, maxLen) {
@@ -57,12 +91,13 @@ function chatBlock(m, { maxLen = 0, withQuestion = true } = {}) {
 }
 
 function renderHero() {
-  const worst = data.municipalities.find((x) => x.id === 'setagaya');
-  const best = data.municipalities.find((x) => x.id === 'minato');
-  if (!worst || !best) { $('hero').hidden = true; return; }
+  const worst = worstMuni();
+  const best = bestMuni();
+  if (!worst || !best || worst.id === best.id) { $('hero').hidden = true; return; }
+  $('hero').hidden = false;
 
   $('hero').innerHTML = `
-    <p class="chat__q hero-q"><span class="chat__who">住民</span>「引っ越します。${esc(data.procedure)}に必要なもの・期限・手数料を教えて。オンラインでできますか？」</p>
+    <p class="chat__q hero-q"><span class="chat__who">住民</span>「${esc(question('◯◯区'))}」</p>
     <div class="hero-grid">
       <div class="hero-card" data-kind="ng">
         <p class="hero-card__title">${esc(worst.name)}のページを読んだAI</p>

@@ -1,0 +1,414 @@
+{
+  "municipality": "練馬区",
+  "municipality_id": "nerima",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "top_url": "https://www.city.nerima.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
+      "link_text": "粗大ごみ（有料・申込制）・料金検索",
+      "hops": 2,
+      "score": 28,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5085,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaigomi.html",
+      "link_text": "粗大ごみ破砕処理施設の本復旧について",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2171,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/reuse.html",
+      "link_text": "粗大ごみとして出す前に「リユース（再使用）」を検討しませんか？",
+      "hops": 2,
+      "score": 21,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3049,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/homonshushu.html",
+      "link_text": "ごみの戸別訪問収集",
+      "hops": 3,
+      "score": 18,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/downloads.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1964,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/downloads.html",
+      "link_text": "資源・ごみに関する印刷物のダウンロード",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2558,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/keijiban.html",
+      "link_text": "大型生活用品リサイクル情報掲示板",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2417,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/ichiran.html",
+      "link_text": "練馬区ごみ処理券取扱所一覧はこちら",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2831,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/assen.html",
+      "link_text": "生ごみ処理機と生ごみコンポスト化容器購入のあっせん",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/reuse.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3714,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/kasidasi.html",
+      "link_text": "家庭用生ごみ処理機の貸出し",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/reuse.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3134,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/recyclingcenter.html",
+      "link_text": "練馬区立リサイクルセンターの行事・講座",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/downloads.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1726,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/aozorashukai.html",
+      "link_text": "青空集会（資源・ごみの分け方・出し方説明会）を開催してみませんか？",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/downloads.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1816,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/recycle-market.html",
+      "link_text": "リサイクル・マーケット",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/keijiban.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1694,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/daichi.html",
+      "link_text": "学校等給食生ごみから肥料「練馬の大地」を作っています",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/keijiban.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1550,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/index.html",
+      "link_text": "ごみ・リサイクル",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2150,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/index.html",
+      "link_text": "お知らせ一覧（ごみ・リサイクル）",
+      "hops": 3,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/reuse.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1788,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/recycle.html",
+      "link_text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機",
+      "hops": 2,
+      "score": 12,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/ichiran/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3041,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
+      "link_text": "こちら",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3133,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/index.html",
+      "link_text": "各種相談・サービス",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/keijiban.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1276,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/index.html",
+      "link_text": "資源・ごみの分け方と出し方",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/ichiran/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1456,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/pennorisaikuru.html",
+      "link_text": "使用済みプラスチック製ペンのリサイクル",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/ichiran/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1540,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/gominoyukue.html",
+      "link_text": "練馬区ごみのゆくえ",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/ichiran/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1087,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/ichiran/index.html",
+      "link_text": "",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1432,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/ichiran/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/reuse.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/downloads.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/keijiban.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/recycle.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/pennorisaikuru.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/gominoyukue.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaigomi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/ichiran.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/assen.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/kasidasi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/homonshushu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/recyclingcenter.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/aozorashukai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/recycle-market.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/daichi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

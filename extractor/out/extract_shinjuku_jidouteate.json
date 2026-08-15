@@ -1,0 +1,54 @@
+{
+  "municipality": "新宿区",
+  "municipality_id": "shinjuku",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
+    "hops": 3,
+    "link_text": "児童手当",
+    "has_jsonld": false,
+    "text_len": 1896,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "本文として取得できたのはグローバルナビ・フッターのみで、児童手当の制度説明（必要書類・窓口・期限・手数料）にあたる本体コンテンツが本文中に存在しない。「児童手当・子ども医療関係届出用紙ダウンロード」という関連ページ名は見えるがリンク一覧にURLが含まれておらず、追跡できなかった。"
+}

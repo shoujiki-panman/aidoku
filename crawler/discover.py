@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import urllib.parse
 from dataclasses import dataclass, asdict
 from pathlib import Path
 
@@ -65,8 +66,38 @@ def score_link(link_text: str, url: str, kw: dict) -> int:
     return s
 
 
+def link_filter(top_url: str, allow_subdomains: bool):
+    """リンクを辿ってよいかを判定する関数を作る。
+
+    既定は「そのページと同じホストだけ」。23区はこれで足りる
+    （2026-08-13 時点、採点した69ページすべてがトップと同じホスト）。
+
+    東京都は局ごとにホストが分かれている（tax. / seikatubunka. / kyoiku. …）ので、
+    同じホストだけに限ると**トップページから1歩も進めない。**それは都のサイトの
+    性質ではなく、こちらの制限。住民のAIはサブドメインの境目で止まらない。
+    そこで targets.json 側で `allow_subdomains: true` を立てた自治体だけ、
+    親ドメイン配下（`*.metro.tokyo.lg.jp`）を辿れるようにする。
+
+    フラグ（コマンドライン引数）ではなく設定に置くのは、**つけ忘れると
+    結果が変わるのに、あとから見て分からなくなる**ため。
+    """
+    if not allow_subdomains:
+        return lambda page_host, href: page_host in href
+
+    # www. を落として親ドメインを作る。www.metro.tokyo.lg.jp → metro.tokyo.lg.jp
+    top_host = urllib.parse.urlsplit(top_url).netloc
+    parent = top_host[4:] if top_host.startswith("www.") else top_host
+
+    def allowed(page_host: str, href: str) -> bool:
+        host = urllib.parse.urlsplit(href).netloc
+        return host == parent or host.endswith("." + parent)
+
+    return allowed
+
+
 def discover(muni: dict, proc: dict, fetcher: PoliteFetcher) -> dict:
     kw = proc["keywords"]
+    can_follow = link_filter(muni["top_url"], bool(muni.get("allow_subdomains")))
     seen: set[str] = set()
     candidates: list[Candidate] = []
     fetch_log: list[dict] = []
@@ -98,8 +129,8 @@ def discover(muni: dict, proc: dict, fetcher: PoliteFetcher) -> dict:
         # 同じページに同じ先へのリンクが複数あるのは普通なので、最高得点の1件に畳む
         best: dict[str, Candidate] = {}
         for ln in links:
-            if not ln.href.startswith("http") or host not in ln.href:
-                continue  # 同一ドメイン内に限定
+            if not ln.href.startswith("http") or not can_follow(host, ln.href):
+                continue  # 既定は同一ホスト。allow_subdomains のときだけ親ドメイン配下
             n = normalize(ln.href)
             if n in seen:
                 continue

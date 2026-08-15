@@ -1,0 +1,468 @@
+{
+  "municipality": "台東区",
+  "municipality_id": "taito",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "top_url": "https://www.city.taito.lg.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+      "link_text": "粗大ごみの出し方",
+      "hops": 1,
+      "score": 25,
+      "parent": "https://www.city.taito.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5079,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html",
+      "link_text": "粗大ごみ",
+      "hops": 2,
+      "score": 25,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 974,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/tyattotukaikata.html",
+      "link_text": "チャットボットの使い方（粗大ごみの手数料の検索から申し込みまでチャットで手続きができます）",
+      "hops": 2,
+      "score": 25,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1253,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
+      "link_text": "・有料粗大ごみ処理券の取扱所等についてはこちら",
+      "hops": 2,
+      "score": 25,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2525,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
+      "link_text": "令和5年10月1日から粗大ごみ処理手数料が変更になります",
+      "hops": 2,
+      "score": 25,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1558,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.files/10.pdf",
+      "link_text": "粗大ごみ（PDF：838KB）",
+      "hops": 2,
+      "score": 19,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/seikatsukaden.html",
+      "link_text": "生活家電ごみ持込窓口",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3733,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/gomikentoriastukaijo.html",
+      "link_text": "有料ごみ処理券取扱所",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3938,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/pcrecycle.html",
+      "link_text": "パソコンリサイクル",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1712,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/korona.html",
+      "link_text": "ごみの収集について",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1361,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/kobetsukakudai.html",
+      "link_text": "燃やすごみ・燃やさないごみは戸別収集です",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2648,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/demaekoza.html",
+      "link_text": "ごみ減量・リサイクル出前講座",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1346,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/index.html",
+      "link_text": "ごみ・リサイクルに関するお知らせ",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 960,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/index.html",
+      "link_text": "ごみ・リサイクル関係の計画・方針等",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 704,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/20180124165732477.html",
+      "link_text": "【外国語版】リサイクル品(資源)とごみのわけ方・だし方(英・中・韓)",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1170,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/benri/qa/gomi/index.html",
+      "link_text": "ごみ・リサイクル",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 364,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/oikura.html",
+      "link_text": "「おいくら」を活用して、リユースを検討してみませんか?",
+      "hops": 3,
+      "score": 12,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/tyattotukaikata.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1796,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
+      "link_text": "資源・ごみの出し方",
+      "hops": 1,
+      "score": 11,
+      "parent": "https://www.city.taito.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 768,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
+      "link_text": "ごみと資源の分け方・出し方",
+      "hops": 1,
+      "score": 11,
+      "parent": "https://www.city.taito.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1680,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/index.html",
+      "link_text": "資源・ごみの出し方",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/tyattotukaikata.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1025,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/index.html",
+      "link_text": "ごみの分け方・出し方",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/tyattotukaikata.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 712,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/jigyosho/gomi/gomi.html",
+      "link_text": "事業者のごみの出し方について",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3134,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/taishohinmoku.html",
+      "link_text": "家電リサイクル法対象品目",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2507,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html",
+      "link_text": "プラスチック分別回収",
+      "hops": 1,
+      "score": 8,
+      "parent": "https://www.city.taito.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5269,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/saiyojoho/seisoukakibosyuu.html",
+      "link_text": "台東清掃事務所 夏期（9月）アルバイト職員（会計年度任用職員＜ごみ収集補助B＞を募集します",
+      "hops": 1,
+      "score": 6,
+      "parent": "https://www.city.taito.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2065,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.taito.lg.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/saiyojoho/seisoukakibosyuu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/tyattotukaikata.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/korona.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/kobetsukakudai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/demaekoza.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.files/10.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/20180124165732477.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/benri/qa/gomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/seikatsukaden.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/gomikentoriastukaijo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/pcrecycle.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/oikura.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/jigyosho/gomi/gomi.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/taishohinmoku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

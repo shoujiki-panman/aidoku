@@ -1,0 +1,1455 @@
+{
+  "generated_at": "2026-08-11T13:52:32+00:00",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "question": "{muni}で粗大ごみを出したいです。申込に必要なもの・期限・手数料を教えて。オンラインでできますか？",
+  "phase": "23区",
+  "n_municipalities": 23,
+  "summary": {
+    "average": 39.6,
+    "max": 60,
+    "min": 0,
+    "full_marks": 0,
+    "zero": 5,
+    "fee_missing": 14
+  },
+  "municipalities": [
+    {
+      "id": "arakawa",
+      "name": "荒川区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口来庁は不要。粗大ごみ受付センターへインターネット（24時間受付）または電話（日曜・年末年始を除く午前8時から午後7時）で事前申込み。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "有料。品目により300円〜3,200円（有料粗大ごみ処理券をコンビニ等で購入し貼付）。減免制度あり（生活保護受給者等は免除、火災被災者は9割減額）。"
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "申込み手順・料金表は本文に詳細に書かれているが、標準申込みに必要な持参書類（本人確認書類等）や申込み期限についての明記はなく、減免申請用の書類のみが個別に記載されている。",
+      "lg_code": "131181"
+    },
+    {
+      "id": "bunkyo",
+      "name": "文京区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
+      "followed": [
+        "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+        "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "電話・インターネット・チャットボットの3方法で「粗大ごみ受付センター」に申込む。インターネット申込みは24時間受付。出す場所は自宅前（集合住宅は1階出入口スペース等）。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "有料。有料粗大ごみ処理券（A券200円・B券300円）を品目ごとに組み合わせて購入。例：両袖机3,200円（A券1枚・B券10枚）。品目別の具体的な料金は粗大ごみ受付センターで案内される。"
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "トップの「ごみ・リサイクル」ページ自体には申込手続きの詳細が無く、リンク先の「粗大ごみの出し方」ページに申込方法・料金がまとまっている。必要書類と申込期限（何日前までに申込むか等）はどちらのページにも記載が見当たらなかった。",
+      "lg_code": "131059"
+    },
+    {
+      "id": "chiyoda",
+      "name": "千代田区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口来庁は本文に記載なし。インターネット申し込み（外部サイト「千代田区 粗大ごみ収集受付」、年末年始12/29正午〜1/3 23:59を除き利用可）、チャットボット申し込み（ページ右下のバナー）、電話申し込み（粗大ごみ受付センター 03-6743-0603、月〜土 8時〜19時、日曜・年末年始休み）の3通りでオンライン完結可能。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "有料（有料粗大ごみ処理券方式）。区内コンビニ等でA券200円・B券300円を購入し組み合わせて貼付。例：布団・イス等300円（B券1枚）、自転車・1人用ソファ600円（B券2枚）、机・シングルベッド900円（B券3枚）、2人掛けソファ等1,600円（A券2枚+B券4枚）、大型家具2,200円（A券2枚+B券6枚）。その他品目は別途PDF一覧表参照。"
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "料金は本文の表に主要品目が明記され、それ以外はPDF一覧表に誘導される二段構成。必要書類や申込期限（何日前までに申し込むか）についての記載は本文中に見当たらない。",
+      "lg_code": "131016"
+    },
+    {
+      "id": "itabashi",
+      "name": "板橋区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
+      "followed": [
+        "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "電話（粗大ごみ受付センター 03-6747-9353、午前8時〜午後7時、月〜土）またはインターネット（https://ecolife.e-tumo.jp/itabashi_sodai-u/ 、24時間受付）で申込み可能。ファクスでの申込みも可。ただし手数料の減額・免除を受ける場合はインターネット申込みでは減免にならず、電話申込みが必要。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "品目ごとに手数料が異なり、一律の金額ではない（例：ふとん400円、扇風機400円、1人用ソファ900円）。西台粗大ごみセンターへの持ち込みの場合は収集時の半額（100円未満切捨て）。品目ごとの正確な金額は「板橋区粗大ごみ品目一覧」PDFまたはAIチャットボットで確認する必要がある。"
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "本体ページには具体的な品目別料金が書かれておらず、金額の一覧はPDF「板橋区粗大ごみ品目一覧」またはAIチャットボットへの誘導のみ。リンク先の手数料ページ（1001869）にも一律の料金表はなく、持ち込み時の割引計算例として一部品目の金額が断片的に出てくるのみだった。",
+      "lg_code": "131199"
+    },
+    {
+      "id": "koto",
+      "name": "江東区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
+      "followed": [
+        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口来庁は不要。インターネット（粗大ごみ受付センターサイト、24時間受付・料金検索可）、LINEミニアプリ（24時間受付）、電話（03-6431-9997、月〜土 8:00〜19:00、年末年始を除く）のいずれかで申込可能。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "品目ごとに金額が異なる。処理料金分に応じて有料粗大ごみ処理券（粗大ごみシール、A券200円・B券300円）を組み合わせて購入・貼付する。具体的な品目別金額は粗大ごみ受付センターサイトでの検索、または品目別一覧表（PDF）で確認する。"
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "指定URL(7370.html)は「粗大ごみ収集の申込」本体ではなく、生活保護受給者等向けの手数料減免専用ページだった。一般の申込方法・料金の仕組みは同じ分類の別ページ（7367.html「粗大ごみの出し方」、7368.html「粗大ごみ手数料・シール組合せ表」）に分散しており、1ページで完結しない構成。",
+      "lg_code": "131083"
+    },
+    {
+      "id": "minato",
+      "name": "港区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
+      "followed": [
+        "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "みなと粗大ごみ受付センターのインターネット受付（「訪問収集申込」「直接持込申込（日曜日のみ受入）」）で随時申込可能。電話（03-6747-9253、8:00〜19:00、月〜土）でも受付。ただし粗大ごみ処理手数料の減免申請はインターネット不可で電話のみ。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "品目ごとに異なる有料（事前に「有料ごみ処理券」の購入が必要）。例：400円（布団、いすなど）、900円（ソファ1人用、卓上式ミシンなど）、1,300円（机、ベッドマット、たたみなど）、2,300円（ソファ2人以上用のものなど）、3,200円（両そで机など）。"
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "本文には料金表が明記されていたが、申込に必要な書類や提出期限の記載は無かった。リンク先の受付センターページで「インターネット申込可・減免のみ電話限定」という運用が分かったが、書類要件や期限には触れていない。",
+      "lg_code": "131032"
+    },
+    {
+      "id": "shibuya",
+      "name": "渋谷区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "来庁不要。電話・LINE・インターネットの3方法から選択可能で、インターネット申込（外部サイトgovtech-express）で完結できる。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "有料粗大ごみ処理券（コンビニ等で購入）にA券200円とB券300円があり、品目に応じて必要枚数を貼付する。品目ごとの具体的な手数料（必要枚数）は別紙PDF「粗大ごみ品目手数料一覧」に記載。"
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "申し込み方法・支払い方法は本文に明記されているが、品目ごとの具体的な手数料額はPDF頼みで、本文は「手数料はご予約の際に、ご確認頂けます」と案内するのみ。申込に必要な書類や申込期限についての記載はページ内に見当たらない。",
+      "lg_code": "131130"
+    },
+    {
+      "id": "shinagawa",
+      "name": "品川区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "収集を依頼する場合は必要書類は無く、必要な手数料分の「品川区有料粗大ごみ処理券」を購入し各粗大ごみに貼付する（電子決済の場合は必要事項を記入した任意の紙を貼付）。持ち込みの場合はこれに加え、氏名・住所を確認できるもの（運転免許証・保険証など）が必要。"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口へは行かず、インターネット（品川区粗大ごみ受付センター、24時間受付）または電話（03-6733-5374、月〜土曜8時〜19時）で申込。オンラインのみで申込は完結できる（処理手数料も電子決済可）。持ち込みを選ぶ場合のみ品川区資源化センターへの来所が必要。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "手数料は本文中に金額の記載が無く「こちらのページをご覧ください」と別ページへ誘導されているが、そのリンクのURLは提供されたリンク一覧（ナビゲーション・多言語リンクのみ）に含まれておらず特定できなかった。期限も「日数を余裕をもって」「なるべく早めに」という表現のみで具体的な日数の記載はない。",
+      "lg_code": "131091"
+    },
+    {
+      "id": "toshima",
+      "name": "豊島区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
+      "followed": [
+        "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
+        "https://www.city.toshima.lg.jp/151/2012181541.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "粗大ごみ受付センターへインターネット(24時間受付・https://ecolife.e-tumo.jp/toshima-sodai-u/)または電話(03-6633-2211、月〜土 午前8時〜午後7時)で申込み。ただし手数料の減額・免除を受ける場合はインターネット申込不可で、電話申込のみ。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "品目ごとに設定されており、有料粗大ごみ処理券（A券200円・B券300円）を金額に応じて組み合わせて購入・貼付する。品目別の具体的な金額は別リンクの品目別手数料一覧（PDF）に記載。"
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "起点のindex.htmlは分類リンクのみで内容がなく、実際の申込方法・手数料は「粗大ごみの出し方」「粗大ごみ処理手数料（料金）」という下位2階層のページに分散している。品目別の正確な手数料はさらにPDF（品目別手数料一覧）を開かないと分からない。",
+      "lg_code": "131164"
+    },
+    {
+      "id": "nakano",
+      "name": "中野区",
+      "total": 50,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 10
+      },
+      "hops": 2,
+      "page_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+      "followed": [
+        "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+        "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "インターネット申込み可（ページ内のインターネット申込アイコンから）。ただしインターネット申込みに無い品目は粗大ごみ受付センター（電話03-5715-2255）へ電話で申込み。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "有料。処理券A（200円）と処理券B（300円）の2種類があり、粗大ごみの寸法等により購入する枚数・種類が異なる。"
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 10,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "対象ページ自体は申込みアイコンへの入口のみで、必要書類や申込期限の記載はない。関連ページ「「粗大ごみ」の出し方（事前申し込み制）」を確認しても、手数料（処理券の金額）は明記されているが、期限や必要書類についての記載は見当たらなかった。",
+      "lg_code": "131148"
+    },
+    {
+      "id": "katsushika",
+      "name": "葛飾区",
+      "total": 40,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/index.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "インターネットまたは電話で事前申し込み（収集・持ち込みとも）"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "このページは「粗大ごみ・家電など」の総合案内トップで、申込方法（インターネット／電話）には触れているが、実際の申込フォームや処理券料金表へのリンクは本文・リンク一覧のどちらにも見当たらない。「有料粗大ごみ処理券の還付手続きについて」という見出しから有料制度の存在は示唆されるが、金額の記載はない。",
+      "lg_code": "131229"
+    },
+    {
+      "id": "meguro",
+      "name": "目黒区",
+      "total": 40,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
+      "followed": [
+        "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+        "https://www2.sodai-web.jp/meguro/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "電話（目黒区粗大ごみ受付センター 03-5715-0053、月〜土 午前8時〜午後7時、祝日も受付）またはインターネット（目黒区粗大ごみ受付センターインターネット受付、24時間受付・メンテナンス時除く）で申込み可能。ただしインターネットは申込める品目に制限あり。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "収集曜日ページ（youbi.html）は申込方法（電話・インターネット）は明記しているが、手数料は品目ごとに異なるとしか書かれておらず金額表は別ページに分散、必要書類・提出期限にあたる記載はどのページにも見当たらなかった。",
+      "lg_code": "131105"
+    },
+    {
+      "id": "nerima",
+      "name": "練馬区",
+      "total": 40,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
+      "followed": [
+        "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "粗大ごみ受付センターへの事前申込みが必要。インターネット申込み（24時間受付、クレジットカードまたはPayPayでのオンライン決済可）、または電話申込み（03-5703-5399）で完結できる。ただし持込みの場合はオンライン決済不可。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "申込み方法（インターネット／電話）と支払い方法は本文に明記されているが、品目ごとの正確な手数料は外部の料金検索ツール（品目を選択して検索するUI）に依存しており、リンク先ページを開いても具体的な金額は取得できなかった。必要書類も収集時（処理券貼付）と持込み時（本人確認書類）で異なり、申込み手続き自体に一意の必要書類は書かれていない。",
+      "lg_code": "131202"
+    },
+    {
+      "id": "ota",
+      "name": "大田区",
+      "total": 40,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "大田区粗大ごみ受付センターへ電話（受付時間8時〜19時）またはインターネット（24時間受付）で申込み。インターネットは1回10個までで収集のみ、持ち込み希望は電話のみ。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "手続きの流れはHTML本文に詳しく書かれているが、必要書類は申込方法（電話・インターネット・FAX・持ち込み）ごとに条件が分かれ、手数料の具体額は申込時に窓口案内される仕組みで、このページ単体では確定できない。",
+      "lg_code": "131113"
+    },
+    {
+      "id": "shinjuku",
+      "name": "新宿区",
+      "total": 40,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "粗大ごみ受付センターへ電話（03-5304-8080、月〜土曜日 午前8時〜午後7時）、またはウェブサイト（https://www.shinjuku-sodai.com、24時間受付・メンテナンス等除く）で申込み"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "このページは粗大ごみ収集の手続き詳細ではなく、申込先「粗大ごみ受付センター」の電話番号・URLが変更された旨のお知らせのみ。本文に「粗大ごみの出し方は、こちらからご確認ください」という誘導リンクがあるが、そのリンク先URLは抽出済みリンク一覧（ナビゲーションメニューのみ）に含まれておらず追跡できない。",
+      "lg_code": "131041"
+    },
+    {
+      "id": "suginami",
+      "name": "杉並区",
+      "total": 40,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "followed": [
+        "https://www.city.suginami.tokyo.jp/s105/727.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "区役所窓口へ行く必要はなく、粗大ごみ受付センターへインターネット（24時間受付）またはチャットボット（24時間受付）で申し込み可能。電話・ファクスでも申し込み可。自己搬入を希望する場合のみ日曜日に指定場所へ持ち込み可（電話・ファクスで要事前申込）。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "申込ページ自体（index.html）は品目リンク集のみで手続き情報が無く、実質的な手続きページはリンク先の「粗大ごみの出し方・申し込み方法」（s105/727.html）だった。手数料は品目ごとに異なり、具体額は本文中のPDF一覧表に依存するため単一の数値としては本文から確定できない。",
+      "lg_code": "131156"
+    },
+    {
+      "id": "sumida",
+      "name": "墨田区",
+      "total": 40,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口来�ち不要。インターネット申込み（24時間受付、オンライン決済で手数料支払いまで完結）または電話申込み（粗大ごみ受付センター、月〜土曜8時〜19時、祝日も可）の2方式。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "手順1〜4の見出しで構成され、具体的な料金はPDF一覧かチャットボット回答に誘導される形で本文には数字が出ない。必要書類や申込期限（いつまでに申し込むか）についての記載は見当たらず、申込方法（インターネット／電話）と支払い方法の説明が中心。",
+      "lg_code": "131075"
+    },
+    {
+      "id": "taito",
+      "name": "台東区",
+      "total": 40,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "粗大ごみ受付センターへ電話（03-6747-5111、月〜土曜8:00-19:00）またはインターネット（https://ecolife.e-tumo.jp/taitosodai-u/、24時間受付）で申込。オンラインで申込は完結するが、手数料分の有料粗大ごみ処理券は別途購入して現物に貼付する必要がある。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "収集申込（電話/インターネット）の手順と、別手続きである持込窓口（本人確認書類・持込手数料200円など）の情報が同一ページに混在しており、項目によってはどちらの手続きの説明か区別が必要。収集の手数料額は本文になく、PDFかチャットボット誘導のみ。",
+      "lg_code": "131067"
+    },
+    {
+      "id": "adachi",
+      "name": "足立区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 2,
+      "page_url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
+      "followed": [
+        "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページは粗大ごみの資源化（リサイクル）実績・推移を説明する統計ページであり、粗大ごみ収集の申込方法（受付窓口・オンライン可否・手数料など）には触れていない。リンク先の「ごみとリサイクル」一覧ページにも申込手続きへの直接リンクは見当たらず、申込専用ページ（受付センター等）はこの階層のリンク一覧に含まれていない。",
+      "lg_code": "131211"
+    },
+    {
+      "id": "chuo",
+      "name": "中央区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 1,
+      "page_url": "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページは「ごみ・リサイクル」カテゴリのトップ（一覧）ページで、分別・出し方・拠点回収・資源回収などのリンク集にとどまり、「粗大ごみ」という語自体がリンク一覧中に一件も現れない。粗大ごみ収集の申込に関する専用ページはこのページからは特定できなかった。",
+      "lg_code": "131024"
+    },
+    {
+      "id": "edogawa",
+      "name": "江戸川区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": null,
+      "page_url": null,
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "",
+      "lg_code": "131237"
+    },
+    {
+      "id": "kita",
+      "name": "北区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 2,
+      "page_url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページは「粗大ごみの出し方」という見出し1つと、「粗大ごみについて」「有料ごみ処理券の販売店一覧」「有料粗大ごみ処理券の還付手続き」「粗大ごみ料金改定」という4件のリンク見出しのみで構成された索引ページで、申込方法・必要書類・期限・料金の具体的な記述は本文中に一切ない。これらのリンク先URLはページ内リンク一覧（言語切替リンクが大半を占め上限40件を占有）に含まれておらず、follow_urls に確認済みのURLとして挙げられなかった。",
+      "lg_code": "131172"
+    },
+    {
+      "id": "setagaya",
+      "name": "世田谷区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 1,
+      "page_url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページは目次（見出し一覧）のみで構成され、「粗大ごみの出し方」「粗大ごみの処理手数料について」等の実質的な内容セクションの本文がこの抽出には含まれていない。目次項目自体のリンク先URLも、提供されたリンク一覧（ナビゲーション・フッター中心）には含まれておらず、追跡できなかった。",
+      "lg_code": "131121"
+    }
+  ],
+  "disclaimer": "AIが自治体の公式サイトを読み取れたかの実測（2026-07-22）。自治体を評価するものではなく、どこを直せば伝わるかを示すためのもの。行政機関の公式発表ではありません。",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "applies_to": "点数・集計・改善案など、この調査が作り出した部分",
+    "attribution": "正直パンマン「AI読（アイドク）」 https://github.com/shoujiki-panman/aidoku",
+    "not_covered": "fields[].agent_value は各自治体の公式サイトから抜き出した実際の文で、著作権は各自治体にあります。判定の根拠を示すための引用であり、出典は各レコードの page_url です。再利用の可否は各自治体の利用規約に従ってください。"
+  },
+  "sources": [
+    {
+      "name": "各自治体の公式サイト（手続きページ）",
+      "used_for": "採点の対象。抜き出した文は fields[].agent_value、出典は page_url",
+      "license": "各自治体の利用規約による（個別には確認していない）"
+    },
+    {
+      "name": "デジタル庁デザインシステム",
+      "url": "https://design.digital.go.jp/",
+      "used_for": "公開画面のスタイル（コードスニペット）",
+      "license": "MIT"
+    },
+    {
+      "name": "総務省「都道府県コード及び市区町村コード」",
+      "url": "https://www.soumu.go.jp/denshijiti/code.html",
+      "used_for": "municipalities[].lg_code（全国地方公共団体コード）",
+      "license": "総務省サイトの利用規約による"
+    }
+  ]
+}

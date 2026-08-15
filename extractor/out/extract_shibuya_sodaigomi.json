@@ -1,0 +1,54 @@
+{
+  "municipality": "渋谷区",
+  "municipality_id": "shibuya",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+    "hops": 1,
+    "link_text": "粗大ごみ",
+    "has_jsonld": true,
+    "text_len": 5421,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
+  "online_clarity_pages": [
+    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "来庁不要。電話・LINE・インターネットの3方法から選択可能で、インターネット申込（外部サイトgovtech-express）で完結できる。",
+      "evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": true,
+      "value": "有料粗大ごみ処理券（コンビニ等で購入）にA券200円とB券300円があり、品目に応じて必要枚数を貼付する。品目ごとの具体的な手数料（必要枚数）は別紙PDF「粗大ごみ品目手数料一覧」に記載。",
+      "evidence": "有料粗大ごみ処理券 はA券200円とＢ券300円があります。",
+      "source": "html",
+      "failure_reason": null
+    }
+  },
+  "page_notes": "申し込み方法・支払い方法は本文に明記されているが、品目ごとの具体的な手数料額はPDF頼みで、本文は「手数料はご予約の際に、ご確認頂けます」と案内するのみ。申込に必要な書類や申込期限についての記載はページ内に見当たらない。"
+}

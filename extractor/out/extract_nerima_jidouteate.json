@@ -1,0 +1,54 @@
+{
+  "municipality": "練馬区",
+  "municipality_id": "nerima",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jidouteate20120401.html",
+    "hops": 3,
+    "link_text": "児童手当",
+    "has_jsonld": false,
+    "text_len": 7806,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "電子申請、郵送、窓口のいずれかで申請ができます。電子申請（ぴったりサービスからご申請ください。申請にはマイナンバーカードが必要です。）",
+  "online_clarity_pages": [
+    "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jidouteate20120401.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "①児童手当認定請求書（初めて申請する場合）②マイナンバーカードまたは個人番号確認書類＋身元確認書類③申請者名義の口座情報が分かるもの（通帳・キャッシュカード等）④3歳未満で共済組合員の場合は健康保険情報が分かるもの⑤2人目以降は額改定認定請求書⑥本人以外が申請する場合は委任状",
+      "evidence": "マイナンバーカードまたは個人番号が確認できるもの（（個人番号通知書等）+身元確認書類（運転免許証、在留カード等））",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "電子申請（ぴったりサービス、マイナンバーカード必要）・郵送・窓口（練馬区役所本庁舎、光が丘/石神井/大泉の各総合福祉事務所）のいずれかで申請可能。区民事務所では受付不可。",
+      "evidence": "電子申請、郵送、窓口のいずれかで申請ができます。電子申請（ぴったりサービスからご申請ください。申請にはマイナンバーカードが必要です。）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "手当は原則申請日の翌月分から支給。ただし出生日や転入日（前住所地の転出予定日）の翌日から15日以内に申請すれば、出生・転入月の翌月分から支給される。",
+      "evidence": "出生日や転入日（前住所地の転出予定日）の翌日から15日以内に申請した場合は、出生日や転入日（前住所地の転出予定日）の翌月分から手当を支給します。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": "html",
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "手続きの全体像（対象者・手当額・支給月・申請方法・必要書類・現況届）は本文に網羅的に記載されているが、手数料についての言及は本文中に一切見当たらない（児童手当は無料が一般的だが、そのことすら明記されていない）。"
+}

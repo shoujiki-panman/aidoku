@@ -1,0 +1,468 @@
+{
+  "municipality": "東京都",
+  "municipality_id": "tokyo-metro",
+  "procedure": "パスポートの申請",
+  "procedure_id": "passport",
+  "top_url": "https://www.metro.tokyo.lg.jp/",
+  "candidates": [
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents/0000000374",
+      "link_text": "一般旅券発給申請書の記入例",
+      "hops": 3,
+      "score": 34,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/passport",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4774,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/documents/d/seikatubunka/passport_goannai_20260401",
+      "link_text": "「旅券（パスポート）申請のご案内」",
+      "hops": 3,
+      "score": 31,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/passport",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/others/0000000484",
+      "link_text": "パスポート（旅券）について",
+      "hops": 3,
+      "score": 28,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/passport",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6327,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport",
+      "link_text": "パスポート（生活文化局）",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.metro.tokyo.lg.jp/purpose/apply",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 10041,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access/0000000357",
+      "link_text": "パスポートセンター",
+      "hops": 2,
+      "score": 18,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5177,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents/0000000418",
+      "link_text": "パスポート写真の規格と見本",
+      "hops": 3,
+      "score": 18,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6558,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents",
+      "link_text": "必要書類・申請書記入例など",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4580,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access",
+      "link_text": "窓口のご案内",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4594,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access/0000000427",
+      "link_text": "窓口の受付日時と混雑状況",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access/0000000357",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5231,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access/0000000454",
+      "link_text": "申請書の入手場所",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access/0000000357",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 13991,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/0000000487",
+      "link_text": "総合案内",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7770,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/0000001069",
+      "link_text": "お知らせ",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access/0000000357",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5820,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/application",
+      "link_text": "法人、消費生活、私立学校、文化施設などに関する届出・申請（生活文化局）",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.metro.tokyo.lg.jp/purpose/apply",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4587,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/about/linklist",
+      "link_text": "リンク集（関連窓口・団体等）",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/tomin_anzen/",
+      "status": 404,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/purpose/apply?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "link_text": "手続き・申請",
+      "hops": 1,
+      "score": 6,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/purpose/apply",
+      "link_text": "手続き・申請",
+      "hops": 1,
+      "score": 6,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5251,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/search?keyword=&purpose=163074",
+      "link_text": "ほかの手続き・申請に関する記事を探す",
+      "hops": 2,
+      "score": 6,
+      "parent": "https://www.metro.tokyo.lg.jp/purpose/apply",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 8646,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.my.metro.tokyo.lg.jp/search/?keyword=&tag=187695",
+      "link_text": "ポータルサイト「My TOKYO」個人向け新着記事（手続き・申請）",
+      "hops": 2,
+      "score": 6,
+      "parent": "https://www.metro.tokyo.lg.jp/purpose/apply",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6207,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "link_text": "生活文化局",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/",
+      "link_text": "生活文化局",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7147,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/tomin_anzen/",
+      "link_text": "都民安全総合対策本部",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5302,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/field",
+      "link_text": "局の分野別",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/tomin_anzen/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4623,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/about",
+      "link_text": "組織情報",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/tomin_anzen/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4592,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/about/jyourei-kisoku",
+      "link_text": "所管条例・規則",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.seikatubunka.metro.tokyo.lg.jp/tomin_anzen/",
+      "status": 404,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kurashi?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "link_text": "くらし・住まい",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.metro.tokyo.lg.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/purpose/apply?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/purpose/apply",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/tomin_anzen/",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kurashi?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/application",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/search?keyword=&purpose=163074",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.my.metro.tokyo.lg.jp/search/?keyword=&tag=187695",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access/0000000357",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/0000000487",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/about/linklist",
+      "status": 404,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/field",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/about",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/about/jyourei-kisoku",
+      "status": 404,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents/0000000374",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/documents/d/seikatubunka/passport_goannai_20260401",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/others/0000000484",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access/0000000427",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/access/0000000454",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/0000001069",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents/0000000418",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

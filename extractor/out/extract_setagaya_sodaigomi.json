@@ -1,0 +1,54 @@
+{
+  "municipality": "世田谷区",
+  "municipality_id": "setagaya",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
+    "hops": 1,
+    "link_text": "粗大ごみ",
+    "has_jsonld": false,
+    "text_len": 1457,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "粗大ごみ処理手数料のオンライン決済が始まりました",
+      "source": "html",
+      "failure_reason": "曖昧"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページは目次（見出し一覧）のみで構成され、「粗大ごみの出し方」「粗大ごみの処理手数料について」等の実質的な内容セクションの本文がこの抽出には含まれていない。目次項目自体のリンク先URLも、提供されたリンク一覧（ナビゲーション・フッター中心）には含まれておらず、追跡できなかった。"
+}

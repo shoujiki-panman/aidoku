@@ -1,0 +1,468 @@
+{
+  "municipality": "大田区",
+  "municipality_id": "ota",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "top_url": "https://www.city.ota.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaigomi_fax.pdf",
+      "link_text": "粗大ごみ申込書（ファックス専用）（PDF：79KB）",
+      "hops": 2,
+      "score": 26,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+      "link_text": "【チラシ】高齢者世帯等に対する粗大ごみの運び出し収集（PDF：151KB）",
+      "hops": 2,
+      "score": 26,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "link_text": "粗大ごみ",
+      "hops": 1,
+      "score": 25,
+      "parent": "https://www.city.ota.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6343,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf",
+      "link_text": "有料粗大ごみ処理券の説明（PDF：139KB）",
+      "hops": 2,
+      "score": 23,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
+      "link_text": "有料粗大ごみ処理券取り扱い店舗一覧",
+      "hops": 2,
+      "score": 21,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5192,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+      "link_text": "消火器のリサイクル",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1788,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
+      "link_text": "資源とごみの収集日",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.ota.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4046,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
+      "link_text": "ごみ・リサイクル",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.ota.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 625,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "link_text": "ごみの戸別訪問収集",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1627,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/oshirase/mokutekibetsu/gomi/index.html",
+      "link_text": "ごみ･リサイクル",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 272,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+      "link_text": "",
+      "hops": 2,
+      "score": 12,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1436,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/kyougikai.html",
+      "link_text": "大田区清掃・リサイクル協議会委員の公募について",
+      "hops": 1,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/",
+      "status": 404,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/index.html",
+      "link_text": "家庭から出る資源とごみ",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1178,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/gomi/index.html",
+      "link_text": "事業系のごみ・資源",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 611,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/hokanbasyo/index.html",
+      "link_text": "大規模建築物のごみと資源の保管場所（建築計画をたてるとき）",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 547,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomisaku.html",
+      "link_text": "ごみ分別辞典",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1000,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/manners.html",
+      "link_text": "資源とごみの集積所について",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1910,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html",
+      "link_text": "風水害が発生した際の資源・ごみの出し方について",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2506,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html",
+      "link_text": "令和7年9月11日大田区豪雨により発生したごみの取扱いについて",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2027,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.html",
+      "link_text": "パンフレット「令和8年度版 資源とごみの分け方・出し方」",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2029,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html",
+      "link_text": "可燃ごみ",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2494,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html",
+      "link_text": "不燃ごみ",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2456,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html",
+      "link_text": "家電（エアコン、テレビ、洗濯機・衣類乾燥機、冷蔵・冷凍庫）のリサイクル",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3508,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kogatakadenn.html",
+      "link_text": "小型家電（携帯電話、デジカメ等）リサイクル事業について",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2458,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei.html",
+      "link_text": "家庭用パーソナルコンピューターのリサイクル",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2358,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.ota.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/kyougikai.html",
+      "status": 404,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaigomi_fax.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/oshirase/mokutekibetsu/gomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/gomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/hokanbasyo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomisaku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/manners.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kogatakadenn.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

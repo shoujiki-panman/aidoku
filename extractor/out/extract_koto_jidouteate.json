@@ -1,0 +1,59 @@
+{
+  "municipality": "江東区",
+  "municipality_id": "koto",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
+    "hops": 3,
+    "link_text": "児童手当・子ども医療費等の郵送受付",
+    "has_jsonld": false,
+    "text_len": 4172,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.koto.lg.jp/281011/2024jidou.html",
+    "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/96043.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "マイナポータルでの電子申請　お手持ちのスマートフォンから、マイナポータルを利用した電子申請もご利用いただけます。",
+  "online_clarity_pages": [
+    "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
+    "https://www.city.koto.lg.jp/281011/2024jidou.html",
+    "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/96043.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "初めて児童が生まれた方・転入された方は「児童手当認定請求書」、申請者本人の口座番号が分かるもの、（厚生年金・共済年金加入者は）健康保険の資格情報を確認できるもの、マイナンバーカードの写し（申請者および配偶者）が必要。",
+      "evidence": "「児童手当認定請求書」申請者（請求者）本人の銀行等の口座番号が分かるもの（一部金融機関は取り扱い不可）",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "郵送申請、窓口申請（区役所3階14番窓口または豊洲シビックセンター内豊洲特別出張所3階7番窓口）、マイナポータルでの電子申請の3方法があり、オンラインでも完結可能。",
+      "evidence": "マイナポータルでの電子申請　お手持ちのスマートフォンから、マイナポータルを利用した電子申請もご利用いただけます。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "原則、申請月の翌月分から支給。出生・転入した日の翌日から15日以内に申請すれば要件発生月の申請とみなされる（15日特例）。",
+      "evidence": "出生または転入した日（転出予定日）の翌日から数えて15日以内に申請した場合、要件の発生した月に申請があったものとみなします。（15日特例）",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "起点ページは「郵送受付」専用ページで一覧表形式の可否のみ記載。実際の必要書類・申請方法・期限は別ページ『児童手当について』にまとまっており、そちらを開かないと答えが揃わない。手数料への言及はどちらのページにも無い。"
+}

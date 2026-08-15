@@ -1,0 +1,468 @@
+{
+  "municipality": "荒川区",
+  "municipality_id": "arakawa",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "top_url": "https://www.city.arakawa.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
+      "link_text": "児童手当",
+      "hops": 3,
+      "score": 21,
+      "parent": "https://www.city.arakawa.tokyo.jp/kosodate/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4343,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/teate/index.html",
+      "link_text": "子育てに関する手当・助成",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1108,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/iryohijyoseikanpu.html",
+      "link_text": "乳幼児・子ども・高校生等及びひとり親家庭医療費助成費の支給申請（自己負担分を支払ったとき）",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.arakawa.tokyo.jp/kosodate/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2197,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/teate/manseishippei_shinsei.html",
+      "link_text": "小児慢性特定疾病医療費支給の申請について（対象児童保護者の方）",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.arakawa.tokyo.jp/kosodate/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2777,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/kodomo_hotline.html",
+      "link_text": "子どもの学校や家庭での困りごと等の相談",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1932,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/jidougyakutai/index.html",
+      "link_text": "児童虐待",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 908,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hisotijidoutougyakutai.html",
+      "link_text": "施設職員や里親等による虐待（被措置児童等虐待）",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1986,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/kodomo_center.html",
+      "link_text": "子ども家庭総合センター（児童相談所）",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2330,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
+      "link_text": "子ども・子育て",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1468,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/shisetsuannai/kosodate/index.html",
+      "link_text": "子育て・教育施設",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1103,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/sodan.html",
+      "link_text": "子育て全般の相談窓口",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2757,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/index.html",
+      "link_text": "子育て",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2354,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a036/kosodate/ikujisoudan/counselor.html",
+      "link_text": "子育て支援カウンセラーが相談に応じます",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1348,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/index.html",
+      "link_text": "子育て支援",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/kodomo_hotline.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1506,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/odekakemap.html",
+      "link_text": "あらかわ子育て応援ブック（令和7年8月発行）",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/kodomo_hotline.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1753,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/gakkyu_koza/index.html",
+      "link_text": "子育てハッピー講座",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/kodomo_hotline.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1065,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
+      "link_text": "虐待対応ダイヤル189",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1949,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
+      "link_text": "あらかわキッズ・ファミリーコール24",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1246,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
+      "link_text": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1471,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/index.html",
+      "link_text": "家庭に関する相談",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1087,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/kateisodan.html",
+      "link_text": "家庭相談",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1360,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/ikujisoudan/i-space.html",
+      "link_text": "母親グループミーティング 「I・スペース」",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1337,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hoikutougyakutai.html",
+      "link_text": "保育所等における虐待等に関する相談窓口",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/jidougyakutai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1856,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/satooyaseido/index.html",
+      "link_text": "里親制度",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/jidougyakutai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 924,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/youngcarer.html",
+      "link_text": "ヤングケアラー～家事や介護などを過度に行っている子ども・若者",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/jidougyakutai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2658,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/teate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/kodomo_hotline.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/shisetsuannai/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/sodan.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/jidougyakutai/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hisotijidoutougyakutai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/kodomo_center.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a036/kosodate/ikujisoudan/counselor.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/kateisodan.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/ikujisoudan/i-space.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/iryohijyoseikanpu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/teate/manseishippei_shinsei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/odekakemap.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/gakkyu_koza/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hoikutougyakutai.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/satooyaseido/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/youngcarer.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIがつまずいた段差 #1 — 世田谷区・転入届 | AI読（アイドク）</title>
+<meta name="description" content="住民のAIが世田谷区の転入届ページでつまずいた段差を、発見から再検証まで通した記録。直したら5回中5回取れるようになりました。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/dads/global.css">
+<link rel="stylesheet" href="vendor/dads/components/heading/heading.css">
+<link rel="stylesheet" href="vendor/dads/components/link/link.css">
+<link rel="stylesheet" href="vendor/dads/components/divider/divider.css">
+<link rel="stylesheet" href="vendor/dads/components/notification-banner/notification-banner.css">
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/barrier.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
+    <h1 class="dads-heading" data-size="xl">AIがつまずいた段差</h1>
+    <p class="site-header__lead"><strong>見つけて、直して、本当に直ったか測って、記録を公開するまで。</strong><br>
+      1件を最後まで通した記録です。</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="ページの案内">
+  <ul class="wrap site-nav__list">
+    <li><a href="barrier.html" aria-current="page">つまずいた段差</a></li>
+    <li><a href="index.html">結果を見る</a></li>
+    <li><a href="board.html">盤面</a></li>
+    <li><a href="demand.html">取れずに帰ったもの</a></li>
+  </ul>
+</nav>
+
+<main class="wrap" id="main">
+
+  <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
+    <!-- アイコンの svg を省略してはいけない。DADS のバナー見出しは
+         「アイコン36px / 本文1fr / auto」の3カラムグリッドなので、
+         svg を抜くと本文が36pxの列に入って1文字ずつ縦に並ぶ。 -->
+    <p class="dads-notification-banner__heading">
+      <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="情報">
+        <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
+        <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
+      </svg>
+      <span class="dads-notification-banner__heading-text" id="banner-head">読み込み中</span>
+    </p>
+    <div class="dads-notification-banner__body">
+      <p id="banner-body"></p>
+    </div>
+  </div>
+
+  <!-- 段差1件を、住民の質問から Open Data まで縦に1本で見せる。
+       点数を並べるのではなく「何が起きて、何を変えたら、どうなったか」を追える形にする。 -->
+  <ol class="flow" id="flow" aria-label="段差を見つけてから記録を公開するまで"></ol>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="honest-heading">
+    <h2 class="dads-heading" data-size="l" id="honest-heading">まだ言えないこと</h2>
+    <p class="section-note">ここを隠すと、この記録の意味が無くなります。</p>
+    <ul class="honest" id="honest"></ul>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="data-heading">
+    <h2 class="dads-heading" data-size="l" id="data-heading">この記録を使う</h2>
+    <p class="section-note">点数ではなく<strong>「どこでつまずき、何を変えたら改善したか」</strong>をデータにしています。誰でも再現・再利用できます。</p>
+    <ul class="datalist" id="datalist"></ul>
+    <p class="section-note" id="license-note"></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>調査・実装: 正直パンマン（個人）。<strong>行政機関の公式発表ではありません。</strong></p>
+    <p>誤りの指摘を歓迎します → <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku">GitHub</a></p>
+    <p class="site-footer__credit">画面のスタイルに <a class="dads-link" href="https://design.digital.go.jp/">デジタル庁デザインシステム</a> のコードスニペット（MIT）を利用しています。デジタル庁が本調査を提供・監修しているものではありません。</p>
+    <p class="site-footer__generated">記録日: <span id="generated-at"></span></p>
+  </div>
+</footer>
+
+<script src="assets/barrier.js"></script>
+</body>
+</html>

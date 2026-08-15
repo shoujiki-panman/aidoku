@@ -1,0 +1,1419 @@
+{
+  "generated_at": "2026-08-11T13:52:32+00:00",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "question": "{muni}で子どもが生まれました。児童手当の申請に必要なもの・期限・手数料を教えて。オンラインでできますか？",
+  "phase": "23区",
+  "n_municipalities": 23,
+  "summary": {
+    "average": 45.7,
+    "max": 80,
+    "min": 0,
+    "full_marks": 0,
+    "zero": 9,
+    "fee_missing": 23
+  },
+  "municipalities": [
+    {
+      "id": "arakawa",
+      "name": "荒川区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)／申請者本人が加入している健康保険がわかるもの／申請者本人及び配偶者の個人番号(マイナンバー)が確認できるもの／申請者本人及び配偶者の所得証明書(該当年1月1日に荒川区に住民登録がなかった方のみ)"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口(区役所2階16番窓口)、郵送、ぴったりサービスによる電子申請のいずれかで申請可能。電子申請にはマイナンバーカードによる電子署名が必要。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "出生日または前住所地の転出予定日の同月内に申請。月後半の場合は、その翌日から数えて15日以内(15日目が区役所閉庁日の場合はその翌開庁日)に申請すれば同月内申請の扱いになる。それを過ぎると申請月の翌月分からの支給となり遡及不可。"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "必要書類・申請方法・期限はいずれもHTML本文のQ&Aや箇条書きで明記されているが、手数料については本文中に一切言及がなく、無料か有料かの記載自体が存在しない。",
+      "lg_code": "131181"
+    },
+    {
+      "id": "chuo",
+      "name": "中央区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html",
+      "followed": [
+        "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/202409jidouteate.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口申請の場合は本人確認書類と申請者・配偶者・対象児童のマイナンバーが分かるものが必要。手続きには児童手当認定請求書（PDF）の提出が必要で、代理人が別世帯から手続きする場合は委任状も必要。"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "オンライン申請・郵送・窓口のいずれの方法でも申請可能。窓口は区役所6階子ども子育て支援課子育て給付係、日本橋・月島・晴海の各特別出張所地域活動係。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "手当は申請日の翌月分から支給されるため異動日と同月中の申請が原則。ただし異動日が月末に近い場合は、異動日の翌日から15日以内に申請すれば、申請が翌月になっても異動日の翌月分から支給される。"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "元URL（jidouteate202206.html）は本文がなく別ページへのリダイレクト案内のみで、実質的な情報はリンク先の202409jidouteate.htmlに集約されている。手数料についてはリンク先ページにも一切記載がなかった。",
+      "lg_code": "131024"
+    },
+    {
+      "id": "itabashi",
+      "name": "板橋区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
+      "followed": [
+        "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html",
+        "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1064042.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "新規申請の場合、(1)児童手当認定請求書 (2)申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など） (3)申請者の本人確認書類（マイナンバーカード等）が必須。状況により監護事実の同意書等が追加で必要。"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "区役所北館1階6番窓口、赤塚支所住民サービス係窓口、郵送申請、または電子申請（ぴったりサービス）でオンライン申請が可能。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "出生・転入などの事由発生日の翌日から起算して15日以内"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "総合案内ページ自体には手続きの詳細（書類・窓口・期限）は無く、1階層下の「申請手続きについて」と「よくある問い合わせ」に情報が分散している。手数料についてはどちらのページにも記載が見当たらない。",
+      "lg_code": "131199"
+    },
+    {
+      "id": "koto",
+      "name": "江東区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
+      "followed": [
+        "https://www.city.koto.lg.jp/281011/2024jidou.html",
+        "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/96043.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "初めて児童が生まれた方・転入された方は「児童手当認定請求書」、申請者本人の口座番号が分かるもの、（厚生年金・共済年金加入者は）健康保険の資格情報を確認できるもの、マイナンバーカードの写し（申請者および配偶者）が必要。"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "郵送申請、窓口申請（区役所3階14番窓口または豊洲シビックセンター内豊洲特別出張所3階7番窓口）、マイナポータルでの電子申請の3方法があり、オンラインでも完結可能。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "原則、申請月の翌月分から支給。出生・転入した日の翌日から15日以内に申請すれば要件発生月の申請とみなされる（15日特例）。"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "起点ページは「郵送受付」専用ページで一覧表形式の可否のみ記載。実際の必要書類・申請方法・期限は別ページ『児童手当について』にまとまっており、そちらを開かないと答えが揃わない。手数料への言及はどちらのページにも無い。",
+      "lg_code": "131083"
+    },
+    {
+      "id": "minato",
+      "name": "港区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "児童手当認定請求書に加え、請求者の本人確認書類、請求者及び配偶者の個人番号確認書類、請求者名義の預金口座がわかるもの、（該当者のみ）健康保険の資格情報がわかるもの・旅券の写し等。別居児童や大学生年代の子がいる場合等は追加書類が必要。"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "港区役所子ども若者支援課子ども給付係への郵送、各総合支所区民課保健福祉係の窓口への持参、またはマイナポータルによる電子申請の3方法。電子申請にはマイナンバーカード等が必要。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "出生・転入日（前住地の転出予定日）の翌日から15日以内（15日目が閉庁日の場合は翌開庁日まで）。郵送の場合は港区役所への到着日が申請日となる。"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "アンカーリンクで区切られた単一の長大ページに、申請方法・必要書類・支給額・制度改正の経緯まで全て詰め込まれている。手数料については申請・届出のどの節にも言及がなく、児童手当が無料であることは記載自体からは確認できない。",
+      "lg_code": "131032"
+    },
+    {
+      "id": "nakano",
+      "name": "中野区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+      "followed": [
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/tetsuduki.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）、申請者の加入保険が確認できるもの（3歳未満の児童を養育し各種共済組合員の場合のみ必要）、請求者名義の振込口座（普通預金）が確認できるもの（郵送申請時は認定請求書等の様式も必要）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "電子申請（ぴったりサービス）・郵送・窓口（子ども総合窓口や地域事務所）のいずれでも申請可能"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "トップの目的別ページ（index.html）自体には手続きの詳細が無く、1階層先の「児童手当」ページに必要書類・期限・オンライン可否がまとまって記載されていた。手数料については両ページとも一切言及がなかった。",
+      "lg_code": "131148"
+    },
+    {
+      "id": "nerima",
+      "name": "練馬区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jidouteate20120401.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "①児童手当認定請求書（初めて申請する場合）②マイナンバーカードまたは個人番号確認書類＋身元確認書類③申請者名義の口座情報が分かるもの（通帳・キャッシュカード等）④3歳未満で共済組合員の場合は健康保険情報が分かるもの⑤2人目以降は額改定認定請求書⑥本人以外が申請する場合は委任状"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "電子申請（ぴったりサービス、マイナンバーカード必要）・郵送・窓口（練馬区役所本庁舎、光が丘/石神井/大泉の各総合福祉事務所）のいずれかで申請可能。区民事務所では受付不可。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "手当は原則申請日の翌月分から支給。ただし出生日や転入日（前住所地の転出予定日）の翌日から15日以内に申請すれば、出生・転入月の翌月分から支給される。"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "手続きの全体像（対象者・手当額・支給月・申請方法・必要書類・現況届）は本文に網羅的に記載されているが、手数料についての言及は本文中に一切見当たらない（児童手当は無料が一般的だが、そのことすら明記されていない）。",
+      "lg_code": "131202"
+    },
+    {
+      "id": "ota",
+      "name": "大田区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html",
+      "followed": [
+        "https://www.city.ota.tokyo.jp/faq/bunya/kosodate/jidouteate.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "請求者名義の普通預金口座のわかるもの（公金受取口座利用の場合は不要）。請求者が児童と別居している場合は「児童手当別居監護申立書」も必要。個々の状況により他の書類を求められる場合あり。"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "子育ち支援課子育ち支援担当の窓口（区役所3階24番）、郵送、または電子申請（マイナンバーカード必須）で申請可能。オンラインのみで完結できる（電子申請）。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "異動日（出生日や転入日＝前住所地の転出予定日）の翌日から15日以内に申請すれば、申請月から支給される。15日を過ぎると支給を受けられない月が発生する場合がある。"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "本文はかなり詳細で「4 申請方法」節に窓口・郵送・電子申請の別と必要書類、「3 支給時期等」に期限に相当する15日ルールが明記されている。ただし手数料についてはこのページにもリンク先のFAQページにも一切言及がなく、児童手当申請が有料か無料かは読み取れない。",
+      "lg_code": "131113"
+    },
+    {
+      "id": "shibuya",
+      "name": "渋谷区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_t.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "（同居の場合）(1)児童手当 認定請求書、(2)請求者名義の口座情報、(3)該当する健康保険に加入している場合は健康保険証などのコピー。別居の場合はこれに加えて(4)別居監護申立書が必要"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口（区役所4階子ども政策課子育て給付係）、郵送、オンライン申請（外部サイトGrafferでのスマート申請）のいずれも可能。フォーム・電話予約・FAX・メール・コンビニ・LINE・マイナンバー・マイポータルは不可"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "出生・前住所の転出予定日の翌日から15日以内に申請"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "手続き情報がアコーディオン形式の長い1ページに集約されており、必要書類・申請方法・期限は本文に明記されている一方、手数料への言及はページ内のどこにも見当たらない（児童手当は制度上無料と推測できるが、ページに記載がないためfound: falseとした）。",
+      "lg_code": "131130"
+    },
+    {
+      "id": "shinagawa",
+      "name": "品川区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000027168.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "申請者名義の金融機関口座がわかる書類（増額申請時は不要）、申請者の健康保険情報がわかるもの（原則不要、共済組合加入者のみ）、本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）。代理人申請時はさらに委任状が必要。"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口は品川区役所本庁舎7階の子育て応援課手当医療助成担当（地域センターでの取扱いなし）。郵送も可。マイナンバーカードと電子署名が使える場合は品川区電子申請サービスまたはぴったりサービスでオンライン申請可能。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "出生や転入等により受給資格が生じた日（または前住地の転出予定日）の翌日から15日以内に申請（15日特例）。遅れるとその分の手当が受けられない。"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "冒頭に多言語切替メニューと全区メニューが大量に続き、本文（児童手当の説明）に到達するまでが長い。本文自体は1〜13の見出しで整理され、必要書類・申請方法・期限は明記されているが、手数料（無料である旨を含む）についての記載はページ中に見当たらなかった。",
+      "lg_code": "131091"
+    },
+    {
+      "id": "suginami",
+      "name": "杉並区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.suginami.tokyo.jp/s053/1142.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "児童手当 認定請求書、請求者名義の金融機関口座（普通口座）がわかるもの、（3歳未満で公務員共済等に加入の場合）請求者の健康保険情報がわかるもの、（児童が別居の場合）監護・生計同一申立書、（大学生年代の子を養育する場合）監護相当・生計費の負担についての確認書"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "窓口（子ども家庭部管理課子ども医療・手当係、区民課区民係、区民事務所）で申請可。郵送申請も可（子ども家庭部管理課宛）。電子申請サービス「LoGoフォーム」（マイナンバーカード必須）でオンライン完結も可能"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "手当は請求のあった月の翌月分から支給。ただし出生日・転出予定日の翌日から数えて15日以内の請求であれば、同月内の請求と同じく翌月分から支給される（15日目が土日祝・年末年始の場合は次の平日が期限）。期限を過ぎると支給されない月が発生する"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "このページは本文のみで必要書類・窓口・電子申請・期限（支給開始条件）まで具体的に記載されており読みやすい。ただし申請にかかる手数料についてはページ内のどこにも言及がなく、無料と明記もされていない。",
+      "lg_code": "131156"
+    },
+    {
+      "id": "edogawa",
+      "name": "江戸川区",
+      "total": 70,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 10
+      },
+      "hops": 3,
+      "page_url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "①児童手当認定（額改定）請求書 ②身元確認書類（マイナンバーカード等の区分A、または区分Bを2種類） ③マイナンバー（個人番号）確認書類 ④申請者名義の普通預金通帳またはキャッシュカード。別居監護や兄姉等がいる場合は追加で「養育事実の同意書」「監護相当・生計費の負担についての確認書」が必要"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "「電子」（マイナポータル、ログイン・電子署名必須）・「郵送」・「窓口」のいずれかで申請可能。窓口は本庁舎東棟2階4番児童家庭課窓口でのみ受付（区内の各事務所では受付していない）"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "通常の申請自体に一律の期限はないが、申請日の翌月からしか支給されず遡っての支給はできないため早めの申請が必要。出生・転入の場合は、その翌日から15日以内に申請すれば出生等のあった月の申請とみなされる（15日特例）"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 10,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "手当の制度説明・申請方法・必要書類は本文に詳細に記載されているが、「手数料」という語自体がページ内に一切登場しない。期限は『通常は明確な期限なし（ただし遅れると遡及支給なし）』と『出生・転入時の15日特例』という2種類の異なる規定が併存しており、単純な一つの答えにはならない構成。",
+      "lg_code": "131237"
+    },
+    {
+      "id": "adachi",
+      "name": "足立区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 3,
+      "page_url": "https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/teate/jidouteate/index.html",
+      "followed": [
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "認定請求書（新規申請の場合は児童手当・子ども医療費助成制度認定請求書）、申請者（保護者）名義の普通預金通帳、本人確認書類。別居監護の場合は別居監護申立書、18歳年度末〜22歳年度末の子を養育する場合は監護相当・生計費の負担についての確認書も必要。"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "オンライン申請の案内はなし。郵送（推奨）または窓口（親子支援課児童手当係〈区役所中央館3階〉、足立福祉事務所各福祉課、転入時のみ区民事務所）で受付。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "出生・転入の同月内に申請するのが原則。月の後半に出生・転入した場合は、出生日・転入日の翌日から15日以内に申請すれば出生・転入月の翌月分から支給される（15日特例）。"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "トップページ（index.html）自体には手続きの詳細は無く、各見出しリンクに情報が分散している。必要書類・窓口・期限は「児童手当のご案内」ページに集約されているが、手数料についてはこの2つのリンク先ページのどこにも記載が見当たらない。",
+      "lg_code": "131211"
+    },
+    {
+      "id": "bunkyo",
+      "name": "文京区",
+      "total": 40,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "followed": [
+        "https://www.city.bunkyo.lg.jp/b022/p001469/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "郵送（こども若者支援課児童給付係宛て）で申請するか、マイナンバーカードがあれば外部リンクから電子申請が可能。区役所窓口への来庁申請については本文に記載なし。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "トップの「こどもの手当・助成など」一覧ページ自体には本文情報がなく、リンク一覧のみだった。実際の内容は1階層下の「児童手当」ページにあったが、そこも令和6年度制度改正に伴う特定ケース（所得制限撤廃前の未受給者、大学生年代の子がいる世帯など）の説明が中心で、通常の新規申請（出生・転入時など）に必要な持ち物一覧や標準的な届出期限、手数料の有無を一箇所にまとめた記載は見当たらなかった。",
+      "lg_code": "131059"
+    },
+    {
+      "id": "chiyoda",
+      "name": "千代田区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 3,
+      "page_url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページ「児童手当に関する各種届出ほか」は、既に受給中の人が転出・出生・離婚などの事由変化を届け出るためのページで、初めての（新規）申請そのものを解説するページではない。ページ末尾のサイト内ナビに「児童手当の新規申請に必要なもの」という関連ページ名は出ているが、リンクURLが本文中の抽出リンク一覧（最大40件）には含まれておらず、辿れなかった。",
+      "lg_code": "131016"
+    },
+    {
+      "id": "katsushika",
+      "name": "葛飾区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 1,
+      "page_url": "https://www.city.katsushika.lg.jp/kosodate/index.html",
+      "followed": [
+        "https://www.city.katsushika.lg.jp/kosodate/1000056/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "トップページも1階層リンク先（子育て）も、カテゴリ一覧の見出しのみで手続きの詳細記述がない。「各種手当・医療費助成」という項目名の中に児童手当を含む説明文があるが、そのリンクURLが本文中に提示されておらず、これ以上辿れない。",
+      "lg_code": "131229"
+    },
+    {
+      "id": "kita",
+      "name": "北区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 2,
+      "page_url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページは本文情報を持たず、5件のサブページへのリンク一覧（見出しのみ）だけで構成されている。ただし抽出されたリンク一覧には言語選択・ナビゲーションのURLしか含まれず、肝心のサブページ（制度案内・提出書類・定時の届出・変更手続）へのURLが取得できていないため、follow_urlsを指定できなかった。",
+      "lg_code": "131172"
+    },
+    {
+      "id": "meguro",
+      "name": "目黒区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 2,
+      "page_url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
+      "followed": [
+        "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "起点ページ・リンク先ページとも「子育てに関する手当・助成」「子どものための諸手当」という一覧（索引）ページで、どちらも本文に手続きの詳細は書かれていない。リンク先ページには「児童手当」という項目名がリンクとして存在するが、そのリンク先URLは本文中に示されておらず、さらに1階層先へ辿らないと4項目には到達できない。",
+      "lg_code": "131105"
+    },
+    {
+      "id": "setagaya",
+      "name": "世田谷区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 3,
+      "page_url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページは「子育て・教育に関する手当」の分類ページで、本文は見出しリンクの一覧（児童育成手当の現況届、物価高対応子育て応援手当、障害のある子どもの養育手当、児童関連手当一覧、児童手当現況届のご案内）のみ。児童手当の新規申請そのものの説明本文が無く、必要書類・窓口・期限・手数料のいずれも記載がない。関連しそうなリンク先（児童関連手当一覧など）のURLは、抽出されたリンク一覧にナビゲーション項目しか含まれておらずhrefが確認できないため follow_urls に入れられなかった。",
+      "lg_code": "131121"
+    },
+    {
+      "id": "shinjuku",
+      "name": "新宿区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 3,
+      "page_url": "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "本文として取得できたのはグローバルナビ・フッターのみで、児童手当の制度説明（必要書類・窓口・期限・手数料）にあたる本体コンテンツが本文中に存在しない。「児童手当・子ども医療関係届出用紙ダウンロード」という関連ページ名は見えるがリンク一覧にURLが含まれておらず、追跡できなかった。",
+      "lg_code": "131041"
+    },
+    {
+      "id": "sumida",
+      "name": "墨田区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 3,
+      "page_url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kteate/index.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "本文のほとんどがナビゲーションメニューで、実際のページ内容は「物価高対応子育て応援手当」という別の手当についてのもの（パンくずも同じ表題）。指定URL（児童手当）に対応する本文自体が取得できておらず、児童手当の申請に関する記載は一切ない。",
+      "lg_code": "131075"
+    },
+    {
+      "id": "taito",
+      "name": "台東区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 1,
+      "page_url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/azukari.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページは石浜橋場こども園の預かり保育（拡充）に関する案内で、児童手当の申請とは無関係の内容。ページ内・リンク先のいずれにも児童手当への言及は見当たらない。",
+      "lg_code": "131067"
+    },
+    {
+      "id": "toshima",
+      "name": "豊島区",
+      "total": 0,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 2,
+      "page_url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/kodomokateicenter.html",
+      "followed": [
+        "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "元ページは「こども家庭センター・地域子育て相談機関」の相談窓口案内で、児童手当の申請手続きそのものは扱っていない。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」への入口を示すだけのカテゴリページで、URLが本文に示されておらずこれ以上たどれない。",
+      "lg_code": "131164"
+    }
+  ],
+  "disclaimer": "AIが自治体の公式サイトを読み取れたかの実測（2026-07-22）。自治体を評価するものではなく、どこを直せば伝わるかを示すためのもの。行政機関の公式発表ではありません。",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "applies_to": "点数・集計・改善案など、この調査が作り出した部分",
+    "attribution": "正直パンマン「AI読（アイドク）」 https://github.com/shoujiki-panman/aidoku",
+    "not_covered": "fields[].agent_value は各自治体の公式サイトから抜き出した実際の文で、著作権は各自治体にあります。判定の根拠を示すための引用であり、出典は各レコードの page_url です。再利用の可否は各自治体の利用規約に従ってください。"
+  },
+  "sources": [
+    {
+      "name": "各自治体の公式サイト（手続きページ）",
+      "used_for": "採点の対象。抜き出した文は fields[].agent_value、出典は page_url",
+      "license": "各自治体の利用規約による（個別には確認していない）"
+    },
+    {
+      "name": "デジタル庁デザインシステム",
+      "url": "https://design.digital.go.jp/",
+      "used_for": "公開画面のスタイル（コードスニペット）",
+      "license": "MIT"
+    },
+    {
+      "name": "総務省「都道府県コード及び市区町村コード」",
+      "url": "https://www.soumu.go.jp/denshijiti/code.html",
+      "used_for": "municipalities[].lg_code（全国地方公共団体コード）",
+      "license": "総務省サイトの利用規約による"
+    }
+  ]
+}

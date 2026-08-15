@@ -14,6 +14,15 @@
 }
 .board-summary b[data-tone] { font-weight: 700; }
 
+/* 手続きが3つになったので、要約は1行ずつ縦に並べる（横に続けると読み飛ばされる） */
+.board-summary__list { list-style: none; margin: 0; padding: 0; }
+.board-summary__list li + li { margin-top: .3em; }
+.board-summary__list li > b:first-child { display: inline-block; min-width: 10em; }
+
+@media (max-width: 600px) {
+  .board-summary__list li > b:first-child { display: block; min-width: 0; }
+}
+
 .legend {
   display: flex;
   flex-wrap: wrap;
@@ -36,6 +45,22 @@
   color: #fff;
 }
 .legend .cell { width: 1.5em; height: 1.1em; }
+
+/* マスはリンク。色は data-tone が持っているので、リンクの既定色と下線は消す。
+   見た目は同じまま、キーボードでも辿れるようにする。 */
+a.cell { text-decoration: none; color: #fff; }
+a.cell:hover { outline: 2px solid #0056b3; outline-offset: 1px; }
+a.cell:focus-visible { outline: 3px solid #0056b3; outline-offset: 2px; }
+
+/* 読み上げ用。「4/4」だけでは、どの区のどの手続きか分からない */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 
 .cell[data-tone="full"] { background: #0f7a3d; }
 .cell[data-tone="part"] { background: #c58a00; }

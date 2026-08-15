@@ -1,0 +1,468 @@
+{
+  "municipality": "千代田区",
+  "municipality_id": "chiyoda",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "top_url": "https://www.city.chiyoda.lg.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
+      "link_text": "児童手当に関する各種届出について",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3362,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
+      "link_text": "児童手当",
+      "hops": 2,
+      "score": 21,
+      "parent": "https://www.city.chiyoda.lg.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1592,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
+      "link_text": "こども・高校生等医療費助成制度（乳幼児～高校生等）",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.chiyoda.lg.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4555,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/getsugaku.html",
+      "link_text": "手当月額",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1264,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html",
+      "link_text": "支給対象者（手当を受給できる方）",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2683,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomokateicenter.html",
+      "link_text": "千代田区こども家庭センター",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.chiyoda.lg.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2131,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/index.html",
+      "link_text": "手当・助成",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.chiyoda.lg.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1339,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/chukosei-oenteate.html",
+      "link_text": "中高生世代応援手当（区独自制度）",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4347,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/shin-chugakusei.html",
+      "link_text": "令和8年4月から新たに中学生になる児童を養育している方へ（受給のための申請受付を開始します）",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3487,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-uketsuke.html",
+      "link_text": "子どもケアプランの受け付けが始まります",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kyubyo/kyukyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2374,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-kettei.html",
+      "link_text": "はばたきプラン",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kyubyo/kyukyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2409,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/gaikokujin.html",
+      "link_text": "外国人学校児童・生徒保護者補助金",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1985,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/kosodate/index.html",
+      "link_text": "子育て・教育",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4736,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kuse/shisaku/juyo/kosodate/index.html",
+      "link_text": "子育て中の方へ",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1311,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kyubyo/kyukyu.html",
+      "link_text": "ちよだこども救急室",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2613,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/lifeevent/teate/index.html",
+      "link_text": "手当・助成",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 995,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/guidebook.html",
+      "link_text": "千代田区の子育て応援情報をご紹介します",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2588,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/event.html",
+      "link_text": "保育園・こども園でいっしょに遊びましょう（イベント・入園体験）",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kuse/shisaku/juyo/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4586,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/shinseido-2.html",
+      "link_text": "子ども・子育て支援新制度",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kuse/shisaku/juyo/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2917,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/ko-nayamu/index.html",
+      "link_text": "お子さんの教育や子育てに悩んだとき",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kuse/shisaku/juyo/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1290,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/index.html",
+      "link_text": "子育て",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kyubyo/kyukyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1340,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kosodate/index.html",
+      "link_text": "子育てに迷ったり、困ったとき",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kyubyo/kyukyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1383,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/chiyoda-kosodate-map.html",
+      "link_text": "chiyoda子育てMapをご活用ください",
+      "hops": 3,
+      "score": 7,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomokateicenter.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2686,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kuse/jinji/boshu/hijokin/kodomo/jidoshidoin.html",
+      "link_text": "令和8年度千代田区児童指導員（会計年度任用職員）の募集",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.chiyoda.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4452,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/teiin-akijokyo.html",
+      "link_text": "【例月（4月入所を除く）】保育所等の定員と空き状況および待機児童数の状況",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.chiyoda.lg.jp/koho/kuse/shisaku/juyo/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3594,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.chiyoda.lg.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kuse/shisaku/juyo/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kyubyo/kyukyu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/lifeevent/teate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/guidebook.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kuse/jinji/boshu/hijokin/kodomo/jidoshidoin.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomokateicenter.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/event.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/shinseido-2.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/ko-nayamu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/teiin-akijokyo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-uketsuke.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-kettei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/getsugaku.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/chukosei-oenteate.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/shin-chugakusei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/gaikokujin.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/chiyoda-kosodate-map.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

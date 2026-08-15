@@ -1,0 +1,54 @@
+{
+  "municipality": "大田区",
+  "municipality_id": "ota",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+    "hops": 1,
+    "link_text": "粗大ごみ",
+    "has_jsonld": false,
+    "text_len": 6343,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "インターネット （24時間受付）保守点検日以外は受付できます。パソコン、スマートフォンのいずれからもお申し込みできます。",
+  "online_clarity_pages": [
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "申込者本人の氏名及び住所が確認できるものをご持参ください。（運転免許証・マイナンバーカードなど）",
+      "source": "html",
+      "failure_reason": "曖昧"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "大田区粗大ごみ受付センターへ電話（受付時間8時〜19時）またはインターネット（24時間受付）で申込み。インターネットは1回10個までで収集のみ、持ち込み希望は電話のみ。",
+      "evidence": "電話又はインターネットで、「大田区粗大ごみ受付センター」に日数に余裕をもってお申し込みください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "区の収集を希望する場合（2週間以上先の日程での受付となる場合があります）",
+      "source": "html",
+      "failure_reason": "曖昧"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "収集日や手数料などは、申し込みの際にご案内します。",
+      "source": "html",
+      "failure_reason": "電話でのみ確認可"
+    }
+  },
+  "page_notes": "手続きの流れはHTML本文に詳しく書かれているが、必要書類は申込方法（電話・インターネット・FAX・持ち込み）ごとに条件が分かれ、手数料の具体額は申込時に窓口案内される仕組みで、このページ単体では確定できない。"
+}

@@ -1,0 +1,468 @@
+{
+  "municipality": "中野区",
+  "municipality_id": "nakano",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "top_url": "https://www.city.tokyo-nakano.lg.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+      "link_text": "児童手当・助成",
+      "hops": 2,
+      "score": 21,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1500,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
+      "link_text": "児童手当など",
+      "hops": 3,
+      "score": 21,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 917,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
+      "link_text": "児童手当の制度改正(令和6年10月分以降)",
+      "hops": 3,
+      "score": 21,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2741,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+      "link_text": "児童手当",
+      "hops": 3,
+      "score": 21,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 9800,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
+      "link_text": "中野区子どもと子育て家庭の実態調査",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 768,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/r6kodomojittaityousa.html",
+      "link_text": "令和6年度中野区子どもと子育て家庭の実態調査報告書",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1438,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/kosodate.html",
+      "link_text": "令和元年度中野区子どもと子育て家庭の実態調査報告書",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1493,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
+      "link_text": "子ども・若者支援センターのご案内",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2141,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/index.html",
+      "link_text": "小学生～",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1028,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
+      "link_text": "子育て・教育",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1129,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+      "link_text": "子育て",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 622,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/index.html",
+      "link_text": "子育て・教育",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1100,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/0237315720240701181428935.html",
+      "link_text": "令和5年度中野区子ども・子育てアンケート調査結果報告書について",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1549,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/h30-kosodate-anketo.html",
+      "link_text": "【再掲】平成30年度「中野区子ども・子育てアンケート調査」の結果報告について",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1591,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+      "link_text": "",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1605,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
+      "link_text": "",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 944,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/hoikuen/goannnai/hoikushisetsuichiran.html",
+      "link_text": "中野区内の保育施設一覧",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 12767,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/ninshin/kouza/0236162120240202111253211.html",
+      "link_text": "北部すこやか福祉センター妊婦さんの歯っぴいお食事講座",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1631,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/gakko/syuugakuzikensin.html",
+      "link_text": "就学時健康診断のご案内",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3271,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kyoikuiinkai/shisetsu/library/event-202608.html",
+      "link_text": "区立図書館のイベント情報【8月】",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1267,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/nakano-teensbase.html",
+      "link_text": "中高生年代の居場所（（仮称）ナカノティーンズベース）の開設について",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2462,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/index.html",
+      "link_text": "育児支援・家事援助",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1198,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/index.html",
+      "link_text": "でかける・居場所",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1108,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/index.html",
+      "link_text": "保育園・幼稚園",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1862,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa_yasasii.html",
+      "link_text": "やさしいにほんごでこたえる中野区若者実態調査（なかのくわかものじったいちょうさ）",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3500,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/hoikuen/goannnai/hoikushisetsuichiran.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/ninshin/kouza/0236162120240202111253211.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/gakko/syuugakuzikensin.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kyoikuiinkai/shisetsu/library/event-202608.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/nakano-teensbase.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/0237315720240701181428935.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/h30-kosodate-anketo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/r6kodomojittaityousa.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/kosodate.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa_yasasii.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

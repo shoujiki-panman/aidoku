@@ -23,17 +23,17 @@
   <div class="wrap">
     <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
     <h1 class="dads-heading" data-size="xl">AIが取れずに帰ったもの</h1>
-    <p class="site-header__lead">サーバーの記録に残るのは「来た」だけ。<strong>「来たが取れなかった」はどこにも残りません。</strong></p>
+    <p class="site-header__lead">サーバーの記録に残るのは「開けたか」まで。<br>
+      <strong>ページが正常に開いたのに、答えが載っていなかった。</strong>これはどこにも残りません。</p>
   </div>
 </header>
 
-<nav class="site-nav" aria-label="ページ内の案内">
+<nav class="site-nav" aria-label="ページの案内">
   <ul class="wrap site-nav__list">
-    <li><a href="index.html">住民のAIの答え</a></li>
-    <li><a href="index.html#ranking-heading">23区の一覧</a></li>
+    <li><a href="barrier.html">つまずいた段差</a></li>
+    <li><a href="index.html">結果を見る</a></li>
     <li><a href="board.html">盤面</a></li>
     <li><a href="demand.html" aria-current="page">取れずに帰ったもの</a></li>
-    <li><a href="index.html#method-heading">測り方・データ</a></li>
   </ul>
 </nav>
 
@@ -71,6 +71,30 @@
   <section aria-labelledby="unanswered-heading">
     <h2 class="dads-heading" data-size="l" id="unanswered-heading">取れずに帰った探し物</h2>
     <p class="section-note">そのまま区役所への更新依頼リストになります。</p>
+
+    <!-- 2026-08-13 追記。Cloudflare AI Crawl Control が 403/404/robots.txt違反まで
+         無料で記録するようになったので、「取れなかった」だけでは差にならない。
+         残っている差は「200なのに答えが無い」を検出できるかどうかだけ。ここを明示する。 -->
+    <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
+      <p class="dads-notification-banner__heading">
+        <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="情報">
+          <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
+          <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
+        </svg>
+        <span class="dads-notification-banner__heading-text">「エラーで取れなかった」は、もう無料で分かります</span>
+      </p>
+      <div class="dads-notification-banner__body">
+        <p>どのAIが来たか、どのURLでエラーになったか（403・404）、robots.txt に弾かれたか——
+        ここまでは <a class="dads-link" href="https://developers.cloudflare.com/ai-crawl-control/" target="_blank" rel="noopener">Cloudflare AI Crawl Control</a>
+        が全プラン・設定不要で記録します（2026-08-13 確認）。</p>
+        <p><strong>残っているのは「ページは正常に開いたのに、答えが載っていなかった」です。</strong>
+        自治体サイトで一番起きるのはこれで、HTTPの記録には一切現れません。
+        世田谷区の転入届のページは <strong>200 を返します</strong>。中身も表示されます。それでも4項目は0点でした。</p>
+        <p>この判定には「そのページに何が書かれているべきか」の知識が要ります。
+        AI読が持っているのは、<a class="dads-link" href="index.html">4項目の実測データ</a>そのものです。</p>
+      </div>
+    </div>
+
     <p class="rollup" id="rollup"></p>
     <div class="dads-table">
       <table class="dads-table__table">

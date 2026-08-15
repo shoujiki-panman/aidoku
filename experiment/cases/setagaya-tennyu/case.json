@@ -1,0 +1,81 @@
+{
+  "municipality": "世田谷区",
+  "municipality_lg_code": "131121",
+  "procedure": "転入届",
+  "page_url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+  "site_version": {
+    "fetched_at": "2026-07-22T22:22:15+0900",
+    "status": 200,
+    "sha256_prefix": "9b493159ad542af1"
+  },
+
+  "failure": {
+    "type": "target_page_unreachable_from_index",
+    "summary": "採点対象になる目次ページに「転入」の語が1回も無く、本体ページまで3クリック。導線の文言が『住所や世帯を変更したときの届け出』→『住所や世帯を変更したときの届出』とほぼ同一で区別がつかない",
+    "note": "本体ページ自体は4項目すべてを専用見出しで持っており、記述の問題ではない"
+  },
+
+  "ground_truth_source": {
+    "url": "https://www.city.setagaya.lg.jp/02233/88.html",
+    "title": "区外から世田谷区に引越しをしてきたときの届出（転入届）",
+    "page_last_updated": "2026-07-17",
+    "confirmed_at": "2026-08-15T18:02:30+09:00",
+    "clicks_from_index": 3,
+    "path": [
+      "住所や世帯を変更したときの届け出 → /kurashi/kosekijuumin/category/12307.html",
+      "住所や世帯を変更したときの届出 → /02233/82.html",
+      "転入届についてはこちら → /02233/88.html"
+    ]
+  },
+
+  "ground_truth": {
+    "必要書類": {
+      "must_include": ["転出証明書"],
+      "official": "転出証明書(前住所の役所が発行)。ただしマイナンバーカードで特例の転出届をされた場合は不要。届出する方の本人確認書類。外国人の方は在留カードまたは特別永住者証明書。ほか計9項目",
+      "quote_context": "見出し「持ち物」"
+    },
+    "窓口オンライン可否": {
+      "must_include": ["窓口"],
+      "official": "（注意）転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。",
+      "quote_context": "冒頭リード文および見出し「届出方法」"
+    },
+    "期限": {
+      "must_include": ["14日"],
+      "official": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+      "quote_context": "見出し「届出期間」"
+    },
+    "手数料": {
+      "must_include": ["無料"],
+      "official": "無料",
+      "quote_context": "見出し「手数料」（独立見出しの下、本文は「無料」の2文字）"
+    }
+  },
+
+  "variants": [
+    {
+      "id": "before",
+      "label": "現状の目次ページ（区の公式サイトそのまま・2026-07-22 取得）",
+      "file": "before.html",
+      "intervention": null
+    },
+    {
+      "id": "after",
+      "label": "目次ページに4項目を書き足した版",
+      "file": "after.html",
+      "intervention": "本体ページ /02233/88.html に書かれている実文を、目次ページにも載せた。新しい情報は足していない（要約と項目の抜粋のみ）"
+    },
+    {
+      "id": "counterfactual",
+      "label": "反実仮想（期限だけ 14日→37日 に変えた版）",
+      "file": "counterfactual.html",
+      "intervention": "after.html の『14日以内』を『37日以内』に変えただけ。他は1バイトも同じ",
+      "ground_truth_override": {
+        "期限": {
+          "must_include": ["37日"],
+          "official": "（実験用の改変値）37日以内",
+          "quote_context": "AIがページを読んでいるかの確認用。37日が返れば学習済み知識ではなくページを読んでいる"
+        }
+      }
+    }
+  ]
+}

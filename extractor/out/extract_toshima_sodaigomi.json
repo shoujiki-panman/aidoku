@@ -1,0 +1,59 @@
+{
+  "municipality": "豊島区",
+  "municipality_id": "toshima",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
+    "hops": 2,
+    "link_text": "粗大ごみ（一辺が30センチメートルを超えるもの）",
+    "has_jsonld": false,
+    "text_len": 921,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
+    "https://www.city.toshima.lg.jp/151/2012181541.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "インターネットでの申し込み（24時間受付） インターネット受付：https://ecolife.e-tumo.jp/toshima-sodai-u/",
+  "online_clarity_pages": [
+    "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
+    "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
+    "https://www.city.toshima.lg.jp/151/2012181541.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "粗大ごみ受付センターへインターネット(24時間受付・https://ecolife.e-tumo.jp/toshima-sodai-u/)または電話(03-6633-2211、月〜土 午前8時〜午後7時)で申込み。ただし手数料の減額・免除を受ける場合はインターネット申込不可で、電話申込のみ。",
+      "evidence": "1.粗大ごみ受付センターへインターネットか電話で申し込む",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": true,
+      "value": "品目ごとに設定されており、有料粗大ごみ処理券（A券200円・B券300円）を金額に応じて組み合わせて購入・貼付する。品目別の具体的な金額は別リンクの品目別手数料一覧（PDF）に記載。",
+      "evidence": "シールは、A券(200円）とB券(300円）の2種類があります。金額に合わせて、シールを組み合わせて貼ってください。",
+      "source": "linked_page",
+      "failure_reason": null
+    }
+  },
+  "page_notes": "起点のindex.htmlは分類リンクのみで内容がなく、実際の申込方法・手数料は「粗大ごみの出し方」「粗大ごみ処理手数料（料金）」という下位2階層のページに分散している。品目別の正確な手数料はさらにPDF（品目別手数料一覧）を開かないと分からない。"
+}
