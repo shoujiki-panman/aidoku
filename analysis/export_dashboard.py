@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -23,26 +24,19 @@ EXTRACT_DIR = ROOT / "extractor" / "out"
 TARGETS = ROOT / "crawler" / "targets.json"
 OUT = ROOT / "web" / "data" / "scores.json"
 
-# extractor 側のキー名 → 画面に出す項目名
-FIELD_KEYS = [
-    ("必要書類", "必要書類"),
-    ("窓口オンライン可否", "窓口/オンライン可否"),
-    ("期限", "期限"),
-    ("手数料", "手数料"),
-]
+sys.path.insert(0, str(ROOT))
+from fact_types import EXTRACTOR_TO_DISPLAY, FIX_TEXT  # noqa: E402
+
+# extractor 側のキー名 → 画面に出す項目名。
+# 対応表の出どころは fact_types.json ただ1つ。ここに直書きしない。
+FIELD_KEYS = list(EXTRACTOR_TO_DISPLAY.items())
 ITEM_POINTS = 20
 CLARITY_POINTS = {"明記": 20, "曖昧": 10, "記載なし": 0}
 # 画面に出す「AIが読み取った実際の文」の上限。既存の scores.json もこの長さで切れている。
 MAX_VALUE_CHARS = 200
 
-# 「ここを直すと、AIの答えが変わる」に出す処方箋。項目ごとに固定。
-FIX_TEXT = {
-    "必要書類": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）",
-    "窓口/オンライン可否": "窓口のみか、オンラインで完結できるかを、はっきり書く",
-    "期限": "「住み始めた日から14日以内」のように、起算点つきで書く",
-    "手数料": "手数料の額を書く。無料なら「無料」と書く",
-    "オンライン明示": "オンラインで完結できるか否かを、はっきり書く",
-}
+# 「ここを直すと、AIの答えが変わる」に出す処方箋は fact_types.json の fix_hint。
+# （import は上でまとめて済ませてある）
 
 DISCLAIMER = (
     "AIが自治体の公式サイトを読み取れたかの実測（2026-07-22）。"

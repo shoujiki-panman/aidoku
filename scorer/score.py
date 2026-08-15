@@ -27,6 +27,7 @@ import json
 import re
 import subprocess
 from dataclasses import dataclass, field as dc_field
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -35,7 +36,10 @@ GOLDEN_DIR = Path(__file__).parent / "golden"
 OUT_DIR = Path(__file__).parent / "out"
 JUDGE_PROMPT = Path(__file__).parent / "judge_prompt.md"
 
-FIELDS = ["必要書類", "窓口オンライン可否", "期限", "手数料"]
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from fact_types import EXTRACTOR_KEYS  # noqa: E402
+
+FIELDS = EXTRACTOR_KEYS
 
 ONLINE_CLARITY_POINTS = {"明記": 20, "曖昧": 10, "記載なし": 0}
 

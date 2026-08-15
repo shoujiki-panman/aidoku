@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import csv
 import json
+import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -20,7 +21,10 @@ SRC = REPO / "web" / "data" / "scores.json"
 OUT_CSV = REPO / "web" / "data" / "scores.csv"
 OUT_TXT = REPO / "web" / "data" / "summary.txt"
 
-ITEMS = ["必要書類", "窓口/オンライン可否", "期限", "手数料", "オンライン明示"]
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from fact_types import DISPLAY_KEYS, EXTRA_MEASURES  # noqa: E402
+
+ITEMS = [*DISPLAY_KEYS, *(m["display_label"] for m in EXTRA_MEASURES)]
 
 
 def main() -> None:
