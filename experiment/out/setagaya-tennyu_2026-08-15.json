@@ -1,0 +1,1119 @@
+{
+  "case": "setagaya-tennyu",
+  "measurement_version": "exp-0.1",
+  "model": "claude-sonnet-5",
+  "trials_per_variant": 5,
+  "run_at": "2026-08-15T09:20:15+00:00",
+  "page_url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+  "site_version": {
+    "fetched_at": "2026-07-22T22:22:15+0900",
+    "status": 200,
+    "sha256_prefix": "9b493159ad542af1"
+  },
+  "ground_truth_source": {
+    "url": "https://www.city.setagaya.lg.jp/02233/88.html",
+    "title": "区外から世田谷区に引越しをしてきたときの届出（転入届）",
+    "page_last_updated": "2026-07-17",
+    "confirmed_at": "2026-08-15T18:02:30+09:00",
+    "clicks_from_index": 3,
+    "path": [
+      "住所や世帯を変更したときの届け出 → /kurashi/kosekijuumin/category/12307.html",
+      "住所や世帯を変更したときの届出 → /02233/82.html",
+      "転入届についてはこちら → /02233/88.html"
+    ]
+  },
+  "results": [
+    {
+      "variant": "before",
+      "label": "現状の目次ページ（区の公式サイトそのまま・2026-07-22 取得）",
+      "intervention": null,
+      "page_meta": {
+        "text_len": 2537,
+        "truncated": false,
+        "n_links": 40,
+        "has_jsonld": false
+      },
+      "trials": [
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:13:08+00:00",
+          "items": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": null,
+              "failure_reason": "記載なし"
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": null,
+              "failure_reason": "記載なし"
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": null,
+              "failure_reason": "記載なし"
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": null,
+              "failure_reason": "記載なし"
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:13:44+00:00",
+          "items": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": "html",
+              "failure_reason": "記載なし"
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": "html",
+              "failure_reason": "記載なし"
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": "html",
+              "failure_reason": "記載なし"
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": "html",
+              "failure_reason": "記載なし"
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:14:45+00:00",
+          "items": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": null,
+              "failure_reason": "記載なし"
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": null,
+              "failure_reason": "記載なし"
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": null,
+              "failure_reason": "記載なし"
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": null,
+              "failure_reason": "記載なし"
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:15:14+00:00",
+          "items": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": "html",
+              "failure_reason": "記載なし"
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": "html",
+              "failure_reason": "記載なし"
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": "html",
+              "failure_reason": "記載なし"
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "evidence": "",
+              "source": "html",
+              "failure_reason": "記載なし"
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:15:43+00:00",
+          "items": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "evidence": "住所や世帯を変更したときの届け出",
+              "source": "html",
+              "failure_reason": "リンク先にあり"
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "evidence": "住所や世帯を変更したときの届け出",
+              "source": "html",
+              "failure_reason": "リンク先にあり"
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "evidence": "住所や世帯を変更したときの届け出",
+              "source": "html",
+              "failure_reason": "リンク先にあり"
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "evidence": "住所や世帯を変更したときの届け出",
+              "source": "html",
+              "failure_reason": "リンク先にあり"
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": false,
+              "value": "",
+              "matches_truth": false,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        }
+      ],
+      "summary": {
+        "trials": 5,
+        "succeeded_runs": 5,
+        "per_field_matches": {
+          "必要書類": 0,
+          "窓口オンライン可否": 0,
+          "期限": 0,
+          "手数料": 0
+        },
+        "all_four": 0
+      }
+    },
+    {
+      "variant": "after",
+      "label": "目次ページに4項目を書き足した版",
+      "intervention": "本体ページ /02233/88.html に書かれている実文を、目次ページにも載せた。新しい情報は足していない（要約と項目の抜粋のみ）",
+      "page_meta": {
+        "text_len": 2941,
+        "truncated": false,
+        "n_links": 40,
+        "has_jsonld": false
+      },
+      "trials": [
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:16:12+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行、マイナンバーカードで特例転出届をした場合は不要）、届出人の本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、就学中の子がいれば在学証明書等",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口でのみ受付（各総合支所くみん窓口、各出張所の受付窓口10か所）。郵送も不可",
+              "evidence": "（注意）転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "evidence": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行、マイナンバーカードで特例転出届をした場合は不要）、届出人の本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、就学中の子がいれば在学証明書等",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口でのみ受付（各総合支所くみん窓口、各出張所の受付窓口10か所）。郵送も不可",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "matches_truth": true,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:16:29+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行。マイナンバーカードで特例転出届をした場合は不要）、届出人の本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、在学児童がいれば在学証明書等",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口でのみ受付（郵送等不可）。各総合支所くみん窓口、各出張所の受付窓口（10か所）で受付。",
+              "evidence": "（注意）転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。各総合支所くみん窓口、各出張所の受付窓口（10か所）で受付しています。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "evidence": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "手数料 無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行。マイナンバーカードで特例転出届をした場合は不要）、届出人の本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、在学児童がいれば在学証明書等",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口でのみ受付（郵送等不可）。各総合支所くみん窓口、各出張所の受付窓口（10か所）で受付。",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "matches_truth": true,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:16:56+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行。マイナンバーカードで特例転出届をした場合は不要）、届出人の本人確認書類、外国人は引越しをした方全員分の在留カードまたは特別永住者証明書、全員分のマイナンバーカード、国外からの転入者は全員分のパスポート、国立・私立小中学校在学中の子がいる場合は在学証明書など",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口のみ受付（各総合支所くみん窓口、各出張所の受付窓口10か所）。郵送等での届出も不可",
+              "evidence": "（注意）転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "evidence": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行。マイナンバーカードで特例転出届をした場合は不要）、届出人の本人確認書類、外国人は引越しをした方全員分の在留カードまたは特別永住者証明書、全員分のマイナンバーカード、国外からの転入者は全員分のパスポート、国立・私立小中学校在学中の子がいる場合は在学証明書など",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口のみ受付（各総合支所くみん窓口、各出張所の受付窓口10か所）。郵送等での届出も不可",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "matches_truth": true,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:17:15+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行。マイナンバーカードによる特例転出届の場合は不要）、届出人の本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、就学児がいる場合は在学証明書等",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "窓口のみ受付（各総合支所くみん窓口・各出張所の受付窓口、計10か所）。オンライン不可、郵送も不可",
+              "evidence": "転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "evidence": "届出期間 引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "手数料 無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行。マイナンバーカードによる特例転出届の場合は不要）、届出人の本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、就学児がいる場合は在学証明書等",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "窓口のみ受付（各総合支所くみん窓口・各出張所の受付窓口、計10か所）。オンライン不可、郵送も不可",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "matches_truth": true,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:17:47+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行、ただしマイナンバーカードで特例転出届をした場合は不要）、届出人の本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、就学中の子がいれば在学証明書など",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口でのみ受付（各総合支所くみん窓口、各出張所の受付窓口10か所）",
+              "evidence": "転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "evidence": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所発行、ただしマイナンバーカードで特例転出届をした場合は不要）、届出人の本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、就学中の子がいれば在学証明書など",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口でのみ受付（各総合支所くみん窓口、各出張所の受付窓口10か所）",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から14日以内",
+              "matches_truth": true,
+              "must_include": [
+                "14日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        }
+      ],
+      "summary": {
+        "trials": 5,
+        "succeeded_runs": 5,
+        "per_field_matches": {
+          "必要書類": 5,
+          "窓口オンライン可否": 5,
+          "期限": 5,
+          "手数料": 5
+        },
+        "all_four": 5
+      }
+    },
+    {
+      "variant": "counterfactual",
+      "label": "反実仮想（期限だけ 14日→37日 に変えた版）",
+      "intervention": "after.html の『14日以内』を『37日以内』に変えただけ。他は1バイトも同じ",
+      "page_meta": {
+        "text_len": 2941,
+        "truncated": false,
+        "n_links": 40,
+        "has_jsonld": false
+      },
+      "trials": [
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:18:07+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書(前住所の役所が発行、マイナンバーカードで特例転出届をした場合は不要)、届出する方の本人確認書類（マイナンバーカード・運転免許証・パスポート等）、外国人は引越しをした方全員分の在留カードまたは特別永住者証明書、全員分のマイナンバーカード、国外から転入した場合は全員分のパスポート、国立・私立小中学校在学中の子どもがいる場合は在学証明書等",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "窓口のみで受付（オンライン・郵送不可）。各総合支所くみん窓口、各出張所の受付窓口（10か所）",
+              "evidence": "転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "evidence": "届出期間 引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "手数料 無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書(前住所の役所が発行、マイナンバーカードで特例転出届をした場合は不要)、届出する方の本人確認書類（マイナンバーカード・運転免許証・パスポート等）、外国人は引越しをした方全員分の在留カードまたは特別永住者証明書、全員分のマイナンバーカード、国外から転入した場合は全員分のパスポート、国立・私立小中学校在学中の子どもがいる場合は在学証明書等",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "窓口のみで受付（オンライン・郵送不可）。各総合支所くみん窓口、各出張所の受付窓口（10か所）",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "matches_truth": true,
+              "must_include": [
+                "37日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:18:43+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所が発行。マイナンバーカードで特例転出届をした場合は不要）、本人確認書類（マイナンバーカード・運転免許証・パスポート等）、外国人は在留カードまたは特別永住者証明書、全員分のマイナンバーカード、国外転入者は全員分のパスポート、在学中の子がいる場合は在学証明書など",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可・郵送不可。窓口のみで受付（各総合支所くみん窓口、各出張所の受付窓口 計10か所）",
+              "evidence": "転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。各総合支所くみん窓口、各出張所の受付窓口（10か所）で受付しています。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "evidence": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所が発行。マイナンバーカードで特例転出届をした場合は不要）、本人確認書類（マイナンバーカード・運転免許証・パスポート等）、外国人は在留カードまたは特別永住者証明書、全員分のマイナンバーカード、国外転入者は全員分のパスポート、在学中の子がいる場合は在学証明書など",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可・郵送不可。窓口のみで受付（各総合支所くみん窓口、各出張所の受付窓口 計10か所）",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "matches_truth": true,
+              "must_include": [
+                "37日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:19:12+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（特例転出の場合は不要）、本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、就学児は在学証明書など",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン・郵送不可。窓口のみ（各総合支所くみん窓口、各出張所の受付窓口10か所）",
+              "evidence": "転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "evidence": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（特例転出の場合は不要）、本人確認書類、外国人は在留カード等、全員分のマイナンバーカード、国外転入者は全員分のパスポート、就学児は在学証明書など",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン・郵送不可。窓口のみ（各総合支所くみん窓口、各出張所の受付窓口10か所）",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "matches_truth": true,
+              "must_include": [
+                "37日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:19:35+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所が発行。マイナンバーカードで特例転出届をした場合は不要）、本人確認書類（マイナンバーカード、運転免許証、パスポート等）、外国人の場合は在留カードまたは特別永住者証明書、全員分のマイナンバーカード、国外からの転入者は全員分のパスポート、国立・私立小中学校在学中の子がいる場合は在学証明書等",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "窓口のみ受付。オンライン・郵送不可。各総合支所くみん窓口、各出張所の受付窓口（10か所）で受付",
+              "evidence": "（注意）転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "evidence": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "手数料 無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所の役所が発行。マイナンバーカードで特例転出届をした場合は不要）、本人確認書類（マイナンバーカード、運転免許証、パスポート等）、外国人の場合は在留カードまたは特別永住者証明書、全員分のマイナンバーカード、国外からの転入者は全員分のパスポート、国立・私立小中学校在学中の子がいる場合は在学証明書等",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "窓口のみ受付。オンライン・郵送不可。各総合支所くみん窓口、各出張所の受付窓口（10か所）で受付",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "matches_truth": true,
+              "must_include": [
+                "37日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        },
+        {
+          "ok": true,
+          "started_at": "2026-08-15T09:19:50+00:00",
+          "items": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所発行、マイナンバーカードで特例転出届をした場合は不要）／本人確認書類／外国人は在留カードまたは特別永住者証明書／全員分のマイナンバーカード／国外転入者は全員分のパスポート／在学中の子がいれば在学証明書など",
+              "evidence": "転出証明書(前住所の役所が発行)。ただし、マイナンバーカード（個人番号カード）をお持ちの方が特例の転出届をされた場合は不要です。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口でのみ受付（郵送不可）。各総合支所くみん窓口・各出張所の受付窓口（10か所）",
+              "evidence": "転入届は窓口でのみ受付しております。規定により、郵送等でのお届けはできません。各総合支所くみん窓口、各出張所の受付窓口（10か所）で受付しています。",
+              "source": "html",
+              "failure_reason": null
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "evidence": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "source": "html",
+              "failure_reason": null
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "evidence": "無料",
+              "source": "html",
+              "failure_reason": null
+            }
+          },
+          "check": {
+            "必要書類": {
+              "found": true,
+              "value": "転出証明書（前住所発行、マイナンバーカードで特例転出届をした場合は不要）／本人確認書類／外国人は在留カードまたは特別永住者証明書／全員分のマイナンバーカード／国外転入者は全員分のパスポート／在学中の子がいれば在学証明書など",
+              "matches_truth": true,
+              "must_include": [
+                "転出証明書"
+              ]
+            },
+            "窓口オンライン可否": {
+              "found": true,
+              "value": "オンライン不可。窓口でのみ受付（郵送不可）。各総合支所くみん窓口・各出張所の受付窓口（10か所）",
+              "matches_truth": true,
+              "must_include": [
+                "窓口"
+              ]
+            },
+            "期限": {
+              "found": true,
+              "value": "引越しをしてきた日（世田谷区に住み始めた日）から37日以内",
+              "matches_truth": true,
+              "must_include": [
+                "37日"
+              ]
+            },
+            "手数料": {
+              "found": true,
+              "value": "無料",
+              "matches_truth": true,
+              "must_include": [
+                "無料"
+              ]
+            }
+          }
+        }
+      ],
+      "summary": {
+        "trials": 5,
+        "succeeded_runs": 5,
+        "per_field_matches": {
+          "必要書類": 5,
+          "窓口オンライン可否": 5,
+          "期限": 5,
+          "手数料": 5
+        },
+        "all_four": 5
+      }
+    }
+  ]
+}
