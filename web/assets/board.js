@@ -12,7 +12,9 @@ const UNMEASURED = [
   { id: 'kokuho', name: '国民健康保険' },
 ];
 
-const ITEMS = ['必要書類', '窓口/オンライン可否', '期限', '手数料'];
+// 項目名は data/fact-types.json が唯一の出どころ。ここに直書きしない。
+// この画面が使うのは display_label（scores-*.json の breakdown のキー）。
+let ITEMS = [];
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -113,6 +115,9 @@ function renderNote(rows, procs) {
 }
 
 async function init() {
+  const ft = await loadJson('data/fact-types.json');
+  ITEMS = ft.fact_types.map((f) => f.display_label);
+
   const procs = (await loadJson('data/procedures.json')).procedures;
   const docs = await Promise.all(procs.map((p) => loadJson(`data/${p.file}`)));
 

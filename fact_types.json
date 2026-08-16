@@ -1,0 +1,64 @@
+{
+  "_note": "住民が知りたい事実の種類（fact_type）の唯一の定義。ここ以外に4項目を書かない。",
+  "_why": [
+    "2026-08-16 時点で、この4項目が12か所以上に文字列リテラルで直書きされ、",
+    "英語IDが2系統（gennai_app の documents/online/deadline/fee と",
+    "gatekeeper の required_documents/how_to_apply/deadline/fee）に割れていた。",
+    "日本語も『窓口オンライン可否』と『窓口/オンライン可否』の2表記があった。",
+    "Failure を横に繋げられない原因になっていたので、ここに集約する。"
+  ],
+  "_compat": [
+    "既存の出力JSON（extractor/out・web/data）のキー名は変えない。",
+    "変えると web/data/*.json と4画面が同時に壊れる。",
+    "この定義は『どの表記が何を指すか』の対応表として使い、表記自体は据え置く。"
+  ],
+  "version": "1.0",
+  "fact_types": [
+    {
+      "id": "documents",
+      "label": "必要書類",
+      "extractor_key": "必要書類",
+      "display_label": "必要書類",
+      "gatekeeper_key": "required_documents",
+      "question": "手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "fix_hint": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+    },
+    {
+      "id": "channel",
+      "label": "窓口/オンライン可否",
+      "extractor_key": "窓口オンライン可否",
+      "display_label": "窓口/オンライン可否",
+      "gatekeeper_key": "how_to_apply",
+      "gennai_key": "online",
+      "question": "窓口だけか、オンラインで完結できるか",
+      "fix_hint": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+    },
+    {
+      "id": "deadline",
+      "label": "期限",
+      "extractor_key": "期限",
+      "display_label": "期限",
+      "gatekeeper_key": "deadline",
+      "question": "いつまでに手続きが必要か（起算点つきで）",
+      "fix_hint": "「住み始めた日から14日以内」のように、起算点つきで書く"
+    },
+    {
+      "id": "fee",
+      "label": "手数料",
+      "extractor_key": "手数料",
+      "display_label": "手数料",
+      "gatekeeper_key": "fee",
+      "question": "手数料はいくらか（無料なら無料と）",
+      "fix_hint": "手数料の額を書く。無料なら「無料」と書く"
+    }
+  ],
+  "extra_measures": [
+    {
+      "id": "online_clarity",
+      "label": "オンライン明示",
+      "display_label": "オンライン明示",
+      "_note": "4項目とは別枠。ページの書き方の指標で、3値（明記20/曖昧10/記載なし0）。満点判定の分母に入れない",
+      "fix_hint": "オンラインで完結できるか否かを、はっきり書く"
+    }
+  ]
+}

@@ -29,7 +29,11 @@ PROMPT = Path(__file__).parent / "prompt.md"
 # 必要書類などが「見つからず(曖昧)」に落ちる副作用が出た（2026-07-21 実測）。
 CLARITY_PROMPT = Path(__file__).parent / "clarity_prompt.md"
 
-FIELDS = ["必要書類", "窓口オンライン可否", "期限", "手数料"]
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from fact_types import EXTRACTOR_KEYS  # noqa: E402
+
+# 4項目の定義は fact_types.json が唯一の出どころ。ここに直書きしない。
+FIELDS = EXTRACTOR_KEYS
 MAX_TEXT_CHARS = 18000
 MAX_LINKS = 40
 MAX_FOLLOW = 2

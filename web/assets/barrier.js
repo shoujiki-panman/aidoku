@@ -6,9 +6,16 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-const FIELDS = ['必要書類', '窓口オンライン可否', '期限', '手数料'];
+// 項目名は data/fact-types.json が唯一の出どころ。ここに直書きしない。
+// **この画面だけ extractor_key を使う**（barriers.json の per_field と
+// ground_truth のキーが extractor 側の表記のため）。display_label ではない。
+let FIELDS = [];
 
 async function init() {
+  const ftRes = await fetch('data/fact-types.json');
+  if (!ftRes.ok) throw new Error(`fact-types.json を読めませんでした (${ftRes.status})`);
+  FIELDS = (await ftRes.json()).fact_types.map((f) => f.extractor_key);
+
   const res = await fetch('data/barriers.json');
   if (!res.ok) throw new Error(`データを読めませんでした (${res.status})`);
   const doc = await res.json();

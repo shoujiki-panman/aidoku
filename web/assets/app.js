@@ -2,9 +2,13 @@
 // 主役は点数ではなく「住民のAIに聞くと、こう返ってくる」という答えそのもの。
 // 答えの文はすべて実測値（agent_value）。ここで文章を作らない。
 
-const ITEMS = ['必要書類', '窓口/オンライン可否', '期限', '手数料', 'オンライン明示'];
+// 項目名は data/fact-types.json が唯一の出どころ。ここに直書きしない。
+// （直書きしていた頃、app.js は「窓口/オンライン可否」、barrier.js は
+//   「窓口オンライン可否」を使っていて、同じものが別名で並んでいた）
+// この画面が使うのは display_label のほう（scores-*.json の breakdown のキー）。
+let ITEMS = [];
 // 住民が知りたい4項目（オンライン明示は「書き方」の指標なので数に入れない）
-const FIELDS = ['必要書類', '窓口/オンライン可否', '期限', '手数料'];
+let FIELDS = [];
 const REPORT_URL = 'https://github.com/shoujiki-panman/aidoku/blob/main/reports/aidoku_feasibility_2026-07-26.md';
 
 const $ = (id) => document.getElementById(id);
@@ -25,6 +29,10 @@ async function loadJson(path) {
 }
 
 async function init() {
+  const ft = await loadJson('data/fact-types.json');
+  FIELDS = ft.fact_types.map((f) => f.display_label);
+  ITEMS = [...FIELDS, ...ft.extra_measures.map((m) => m.display_label)];
+
   procs = (await loadJson('data/procedures.json')).procedures;
   renderProcTabs();
   // 盤面から「区名」を押して来たときは、その区を開く（?muni=setagaya&proc=tennyu）。
