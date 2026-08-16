@@ -1,9 +1,9 @@
-# 進捗ボード — AI読（アイドク） 更新: 2026-08-16
+# 進捗ボード — AI読（アイドク） 更新: 2026-08-17
 
 > 最初に読む: [START-HERE.md](START-HERE.md)　／　経緯の全記録: [reports/](reports/)
 
 > ## 次の締切: **作品提出 2026-08-23（日）17:00**
-> （2026-08-16 19:46 JST 時点で残り約6日21時間）
+> （2026-08-17 01:29 JST 時点で残り約6日15時間30分）
 
 ### 📅 期日一覧
 
@@ -32,6 +32,7 @@
 | 23区の実測（転入届4項目） | ✅ 完了。港区のみ4項目、5区がほぼ読めず、手数料22区で不記載 |
 | 採点器 | ✅ 必須要素チェック方式。3自治体12行で測った最大ぶれは2点。**公開23区のぶれは未測定** |
 | Evidence Check | ✅ AIの引用を本文と照合。既存73出力は verified 104 / partial 23 / missing 0（この73件内のみ） |
+| Failure Taxonomy | ✅ 8種を共通化。既存73出力は到達済み284項目中、整合した失敗157（missing 134 / ambiguous 11 / not_retrieved 12）。未到達2実行はpage_not_discoverable。旧契約矛盾2項目は別記 |
 | 判定エンジン `aidoku_engine.py` | ✅ 23区は実測値を即返す／未知URLはその場で取得して判定 |
 | 源内API `server.py` | ✅ 仕様準拠（同期・非同期・ポーリング・添付・認証） |
 | **源内Web本体がローカルで起動** | ✅ AWS不要（`web:dev`）。AI読が源内のAIアプリとして動作 |
@@ -48,9 +49,9 @@
 ## ⏭ 残り
 
 **ゴール**: 最初のAI段差を1件消すために必要なものから進める。
-PR #80のマージ後、open issue は29件。そのうち提出マイルストーンは
+本変更（#71）のマージ後、open issue は28件。そのうち提出マイルストーンは
 [#55〜#75](https://github.com/shoujiki-panman/aidoku/issues?q=is%3Aissue+is%3Aopen+milestone%3A%22%E4%BD%9C%E5%93%81%E6%8F%90%E5%87%BA%22)
-のうち17件（#54・#55・#56・#67・#68は完了）。古い課題も消していない。全件は
+のうち16件（#54・#55・#56・#67・#68・#71は完了）。古い課題も消していない。全件は
 [GitHub Issues](https://github.com/shoujiki-panman/aidoku/issues) を正とする。
 
 ### いま進める測定基盤
@@ -61,7 +62,7 @@ PR #80のマージ後、open issue は29件。そのうち提出マイルスト�
 - [#68](https://github.com/shoujiki-panman/aidoku/issues/68) Test Caseをfact_type単位に分ける — 最新mainへの統合・検証完了（PR [#80](https://github.com/shoujiki-panman/aidoku/pull/80)）
 - [#69](https://github.com/shoujiki-panman/aidoku/issues/69) 回答にconfidenceとevidence_locationを足す
 - [#70](https://github.com/shoujiki-panman/aidoku/issues/70) Evaluatorの4判定を揃える
-- [#71](https://github.com/shoujiki-panman/aidoku/issues/71) Failure Taxonomyを定義する
+- [#71](https://github.com/shoujiki-panman/aidoku/issues/71) Failure Taxonomyを定義する — 8種の定義・新規出力への接続・既存結果の再分類まで本変更で完了
 
 ### 提出までに外せない確認
 

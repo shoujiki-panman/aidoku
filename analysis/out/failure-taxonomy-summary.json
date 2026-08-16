@@ -1,0 +1,101 @@
+{
+  "taxonomy_version": "1.0",
+  "failure_types": [
+    "fact_missing",
+    "fact_ambiguous",
+    "not_retrieved",
+    "wrong_evidence",
+    "wrong_answer",
+    "page_not_discoverable",
+    "structure_issue",
+    "stale_information"
+  ],
+  "units_are_not_additive": true,
+  "extractor": {
+    "source_files": 73,
+    "reached_runs": 71,
+    "unreached_runs": 2,
+    "fact_results_in_reached_runs": 284,
+    "fact_failures": 157,
+    "fact_failure_distribution": {
+      "fact_missing": 134,
+      "fact_ambiguous": 11,
+      "not_retrieved": 12,
+      "wrong_evidence": 0,
+      "wrong_answer": 0,
+      "page_not_discoverable": 0,
+      "structure_issue": 0,
+      "stale_information": 0
+    },
+    "legacy_reason_distribution": {
+      "PDF内のみ": 3,
+      "リンク先にあり": 9,
+      "曖昧": 11,
+      "記載なし": 132,
+      "電話でのみ確認可": 2
+    },
+    "legacy_contract_anomalies": [
+      {
+        "source": "extract_edogawa_tennyu.json",
+        "location": "items.必要書類",
+        "found": true,
+        "failure_reason": "曖昧"
+      },
+      {
+        "source": "extract_meguro_tennyu.json",
+        "location": "items.期限",
+        "found": true,
+        "failure_reason": "記載なし"
+      }
+    ],
+    "legacy_contract_anomaly_count": 2,
+    "run_failures": 2,
+    "run_failure_distribution": {
+      "fact_missing": 0,
+      "fact_ambiguous": 0,
+      "not_retrieved": 0,
+      "wrong_evidence": 0,
+      "wrong_answer": 0,
+      "page_not_discoverable": 2,
+      "structure_issue": 0,
+      "stale_information": 0
+    }
+  },
+  "experiment_cases": {
+    "source_files": 1,
+    "failure_events": 1,
+    "failure_distribution": {
+      "fact_missing": 0,
+      "fact_ambiguous": 0,
+      "not_retrieved": 0,
+      "wrong_evidence": 0,
+      "wrong_answer": 0,
+      "page_not_discoverable": 1,
+      "structure_issue": 0,
+      "stale_information": 0
+    },
+    "legacy_type_distribution": {
+      "target_page_unreachable_from_index": 1
+    }
+  },
+  "experiment_trials": {
+    "source_files": 1,
+    "trials": 15,
+    "fact_results": 60,
+    "fact_failures": 20,
+    "fact_failure_distribution": {
+      "fact_missing": 16,
+      "fact_ambiguous": 0,
+      "not_retrieved": 4,
+      "wrong_evidence": 0,
+      "wrong_answer": 0,
+      "page_not_discoverable": 0,
+      "structure_issue": 0,
+      "stale_information": 0
+    },
+    "legacy_reason_distribution": {
+      "リンク先にあり": 4,
+      "記載なし": 16
+    }
+  }
+}
