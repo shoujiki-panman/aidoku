@@ -117,7 +117,7 @@ Claude Code が無い環境では、23区の実測結果のみ返ります。
 | `gennai_app/` | **作品本体**。源内AIアプリとして動く判定API（[README](gennai_app/README.md)） |
 | `gatekeeper/` | **門番**。自治体サイトの前に立ち、AIエージェントに答えを返して「取れずに帰った」を記録（[README](gatekeeper/README.md)） |
 | `crawler/` | 取得・正規化層。robots.txt遵守・3秒間隔・キャッシュ。title・meta・見出し・更新情報も構造化する。ここだけが外に触る |
-| `extractor/` | 読解層。`claude -p` で4項目を抽出 |
+| `extractor/` | 読解層。`claude -p`をfact_typeごとに独立して呼び、4項目を抽出 |
 | `scorer/` | 採点層。人手で決めた必須要素と突合。ぶれ幅 ±2点 |
 | `web/` | ダッシュボード（デジタル庁デザインシステム） |
 | `reports/` | 実測・調査の全記録（崩れた探索も残してある） |
@@ -145,7 +145,7 @@ Claude Code にログイン済みであれば APIキーは要らない。
 # 1. 取得＋情報到達の測定（トップページから深さ3までビーム探索）
 python3 crawler/discover.py -m nerima -m edogawa -m hachioji -p tennyu
 
-# 2. 4項目の抽出（--follow でリンク先1階層まで追う）
+# 2. 4項目を独立したTest Caseで抽出（--followで各項目のリンク先を追う）
 python3 extractor/extract.py -p tennyu --follow
 
 # 3. 既存の抽出結果も、AIが読んだ本文と引用を照合（元ファイルは上書きしない）
@@ -172,6 +172,12 @@ python3 -m http.server 4173 --directory web
 再実行しても自治体サイトには一切アクセスしない（`crawler/cache/` から返る）。
 取り直したいときだけ `python3 crawler/polite_fetch.py <URL> --refresh`。
 
+抽出は1回のLLM呼び出しに1つの`service × fact_type`だけを入れる。通常は1回、
+`--follow`で「リンク先にあり」と返した項目だけ同じTest Caseをもう1回呼び、全callを
+`attempts[]`へ残す。追従先がPDF等だった場合は本文を読まず`llm_called: false`の
+観測attemptとして区別する。各結果には質問と`test_case_version`も残す。従来の`items`は
+最後のattemptと同じ値から生成するため、採点・公開画面の入力形式は変わらない。
+
 ## クロールの作法（変更しないこと）
 
 - robots.txt を読み、Disallow なら取得しない。robots.txt が読めない場合は取得しない
@@ -188,9 +194,10 @@ python3 -m http.server 4173 --directory web
 | `crawler/` | 取得層。`polite_fetch.py`（行儀のよいfetcher）、`discover.py`（情報到達の測定）、`targets.json` |
 | `crawler/cache/` | 生HTMLとHTTPメタデータ。再実行はここから。Git管理外 |
 | `crawler/out/` | 探索結果（候補ページ・ホップ数・title/meta/見出し/更新情報・取得ログ） |
-| `extractor/` | 読解層。`prompt.md` が抽出プロンプト本体 |
+| `extractor/` | 読解層。`fact_extract.py`がfact_typeごとの呼び出し、`prompt.md`が1項目用プロンプト |
 | `evidence_check.py` | AIの引用が、実際に渡した本文に存在するか照合 |
 | `measurement.py` | 測定条件を記録し、条件の違う結果が同じ集計へ混ざるのを防止 |
+| `experiment/` | 再現実験。本測定と同じ1 fact_typeずつのpromptで手元HTMLを反復測定 |
 | `scorer/` | 採点層。`golden/*.csv` が人手の正解、`judge_prompt.md` が採点プロンプト |
 | `reports/` | 突合表つきレポート |
 | `analysis/` | 集計。`export_web.py` がダッシュボード用JSONを作る |

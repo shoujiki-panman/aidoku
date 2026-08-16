@@ -51,7 +51,7 @@ AI読（アイドク）が測った結果です。**使うのに許可は要り�
 |---|---|
 | `generated_at` | このファイルを書き出した時刻（UTC・ISO 8601）。**測った日ではない** |
 | `procedure` / `procedure_id` | 手続きの名前とID |
-| `question` | 住民がAIにする想定の質問。`{muni}` が自治体名に置き換わる |
+| `question` | 画面表示用の会話文。測定用の質問はextract JSONの`test_cases[]`にfact_type単位で残る |
 | `phase` | 対象の範囲（`23区`） |
 | `n_municipalities` | 件数 |
 | `measurement` | 測定条件・互換性・自治体ごとの実行時刻（下記） |

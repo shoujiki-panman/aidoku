@@ -72,13 +72,14 @@
 |---|---|
 | 本文の上限 | 18,000文字（超えたら `truncated: true`） |
 | 渡すリンク数 | 40件 |
-| 追従リンク | `--follow` 指定時のみ、**最大2本** |
+| 追従リンク | `--follow` 指定時のみ、**各Test Case最大2本** |
 | モデル | `claude-sonnet-5`（`claude -p` をローカルログインで呼ぶ） |
 
 #### Evidence Check — `evidence_check.py`
 
-AIが返した引用 `evidence` を、**AIへ本文として渡した範囲**と照合する。
-範囲は本体ページと `--follow` で開いた最大2ページで、各ページ18,000文字まで。
+AIが返した引用 `evidence` を、**そのTest CaseでAIへ本文として渡した範囲**と照合する。
+範囲は本体ページと、そのTest Caseが `--follow` で開いた最大2ページで、
+各ページ18,000文字まで。別のTest Caseが開いたページは混ぜない。
 JSON-LDやリンク一覧は照合対象に含めない。
 
 | verdict | 意味 |
@@ -105,11 +106,25 @@ JSON-LDやリンク一覧は照合対象に含めない。
 Evidenceが正しいと一般化できるサンプルではない。**
 集計は `analysis/out/evidence-check-summary.json` に残す。
 
+#### fact_type単位のTest Case
+
+4項目はまとめて聞かず、`service / fact_type / question / test_case_version`を持つ
+独立Test Caseとして、**1回のLLM呼び出しに1 fact_typeだけ**を入れる。別の項目を
+同じプロンプトへ入れたとき、追加した語が他項目の判定へ漏れた実測があるため。
+`--follow`で「リンク先にあり」と返した項目だけは、同じTest Caseの2回目として再実行する。
+リンク先はTest Case間で共有しない。
+
+出力の`test_cases[]`が測定単位で、到達失敗も4件の`found: false`として残す。
+各callは`test_cases[].attempts[]`へ残し、`result`は最後のattemptと同じ値にする。
+PDF等へのredirectは本文を読まず、`llm_called: false`の観測attemptとして残す。
+既存の`items`は`test_cases[].result`から機械的に復元し、採点・公開画面との互換性を保つ。
+
 ### ③ 書き出し — `analysis/export_dashboard.py`
 
 `extractor/out/` の結果を、画面が読む `web/data/scores-<手続き>.json` にする。
 
 **八王子市は既定で除外**（23区の集計に混ぜないため）。
+画面に出す会話文は測定用Test Caseではなく、`targets.json`の`display_question`を使う。
 
 ### 測定条件の記録 — `measurement.py`
 

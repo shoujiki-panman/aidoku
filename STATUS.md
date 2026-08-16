@@ -48,9 +48,9 @@
 ## ⏭ 残り
 
 **ゴール**: 最初のAI段差を1件消すために必要なものから進める。
-2026-08-16確認時点で open issue は33件。そのうち提出マイルストーンの新しい一群は
+PR #80のマージ後、open issue は29件。そのうち提出マイルストーンは
 [#55〜#75](https://github.com/shoujiki-panman/aidoku/issues?q=is%3Aissue+is%3Aopen+milestone%3A%22%E4%BD%9C%E5%93%81%E6%8F%90%E5%87%BA%22)
-の21件（#54は完了）。古い課題も消していない。全件は
+のうち17件（#54・#55・#56・#67・#68は完了）。古い課題も消していない。全件は
 [GitHub Issues](https://github.com/shoujiki-panman/aidoku/issues) を正とする。
 
 ### いま進める測定基盤
@@ -58,7 +58,7 @@
 - [#55](https://github.com/shoujiki-panman/aidoku/issues/55) **Evidence Check** — 既存73件の照合まで完了し、PR [#77](https://github.com/shoujiki-panman/aidoku/pull/77) をmainへマージ済み
 - [#56](https://github.com/shoujiki-panman/aidoku/issues/56) **測定条件を出力へ記録** — PR [#78](https://github.com/shoujiki-panman/aidoku/pull/78) をmainへマージ済み。既存73件は推測せず `legacy_unknown`
 - [#67](https://github.com/shoujiki-panman/aidoku/issues/67) Page Normalizer — 実装・検証完了（PR [#79](https://github.com/shoujiki-panman/aidoku/pull/79)）
-- [#68](https://github.com/shoujiki-panman/aidoku/issues/68) Test Caseをfact_type単位に分ける
+- [#68](https://github.com/shoujiki-panman/aidoku/issues/68) Test Caseをfact_type単位に分ける — 最新mainへの統合・検証完了（PR [#80](https://github.com/shoujiki-panman/aidoku/pull/80)）
 - [#69](https://github.com/shoujiki-panman/aidoku/issues/69) 回答にconfidenceとevidence_locationを足す
 - [#70](https://github.com/shoujiki-panman/aidoku/issues/70) Evaluatorの4判定を揃える
 - [#71](https://github.com/shoujiki-panman/aidoku/issues/71) Failure Taxonomyを定義する
