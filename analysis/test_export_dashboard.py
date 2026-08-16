@@ -11,14 +11,19 @@ LLM は呼ばない。標準ライブラリのみ。
 
 from __future__ import annotations
 
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).parent))
+import export_dashboard  # noqa: E402
 from export_dashboard import (  # noqa: E402
     MAX_VALUE_CHARS,
     build_entry,
+    display_question,
     prepare_public_entries,
     summarize,
 )
@@ -171,6 +176,48 @@ class MeasurementTest(unittest.TestCase):
         ]
         with self.assertRaisesRegex(MeasurementError, "follow"):
             prepare_public_entries(entries)
+
+
+class DisplayQuestionTest(unittest.TestCase):
+    def test_画面用質問と測定用TestCaseを混同しない(self):
+        proc = {
+            "display_question": "{muni}に引っ越します。何が必要ですか？",
+            "fact_types": ["documents"],
+        }
+        self.assertEqual(display_question(proc), proc["display_question"])
+
+    def test_欠落と不正値は既定文にする(self):
+        for proc in ({}, {"display_question": None}, {"display_question": " "}):
+            with self.subTest(proc=proc):
+                self.assertEqual(display_question(proc), "{muni}について教えて。")
+
+    def test_mainの出力もdisplay_questionを使う(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            extract_dir = root / "extract"
+            extract_dir.mkdir()
+            targets = root / "targets.json"
+            output = root / "scores.json"
+            targets.write_text(json.dumps({
+                "municipalities": [{
+                    "id": "test", "name": "テスト区", "lg_code": "130000"}],
+                "procedures": [{
+                    "id": "tennyu", "name": "転入届",
+                    "display_question": "画面用の質問", "fact_types": [],
+                }],
+            }, ensure_ascii=False), encoding="utf-8")
+            (extract_dir / "extract_test_tennyu.json").write_text(
+                json.dumps(extract(ALL_FOUND), ensure_ascii=False), encoding="utf-8")
+            with mock.patch.object(export_dashboard, "TARGETS", targets), \
+                    mock.patch.object(export_dashboard, "EXTRACT_DIR", extract_dir):
+                export_dashboard.main([
+                    "--procedure", "tennyu", "--out", str(output),
+                    "--generated-at", "2026-01-01T00:00:00+00:00",
+                ])
+            self.assertEqual(
+                json.loads(output.read_text(encoding="utf-8"))["question"],
+                "画面用の質問",
+            )
 
 
 if __name__ == "__main__":

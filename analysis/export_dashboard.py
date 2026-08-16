@@ -168,6 +168,12 @@ def prepare_public_entries(entries: list[dict]) -> tuple[list[dict], dict]:
     return public_entries, measurement
 
 
+def display_question(procedure: dict) -> str:
+    """測定用Test Caseと分離した、公開画面用の従来質問を返す。"""
+    value = procedure.get("display_question")
+    return value if isinstance(value, str) and value.strip() else "{muni}について教えて。"
+
+
 def collect(procedure: str, only: set[str] | None, codes: dict[str, str]) -> list[dict]:
     entries = []
     for path in sorted(EXTRACT_DIR.glob(f"extract_*_{procedure}.json")):
@@ -186,7 +192,7 @@ def collect(procedure: str, only: set[str] | None, codes: dict[str, str]) -> lis
     return entries
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--procedure", "-p", default="tennyu")
     ap.add_argument("--phase", default="23区")
@@ -195,7 +201,7 @@ def main() -> None:
     ap.add_argument("--generated-at", default=None,
                     help="生成時刻を固定したいとき（既存ファイルの再現確認用）")
     ap.add_argument("--out", default=str(OUT))
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
 
     targets = json.loads(TARGETS.read_text(encoding="utf-8"))
     proc = next(p for p in targets["procedures"] if p["id"] == args.procedure)
@@ -216,7 +222,7 @@ def main() -> None:
         "procedure_id": proc["id"],
         # 画面に出す「住民の質問」。手続きごとに違うので targets.json に持たせてある。
         # 画面側で文を組み立てると、手続きを増やすたびに JS を直すことになる。
-        "question": proc.get("question", "{muni}について教えて。"),
+        "question": display_question(proc),
         "phase": args.phase,
         "n_municipalities": len(entries),
         "measurement": measurement,

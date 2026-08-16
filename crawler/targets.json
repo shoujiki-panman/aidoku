@@ -1,5 +1,6 @@
 {
   "_note": "Phase 1 はパイロット3自治体×転入届のみ。reference_url は答え合わせ用のメモであり、discover.py は使わない（トップページからの到達性を測るため）。",
+  "test_case_version": "1.0",
   "municipalities": [
     {
       "id": "nerima",
@@ -238,13 +239,13 @@
           "ido"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}に引っ越します。転入届に必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}に引っ越します。転入届に必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "jidouteate",
@@ -268,13 +269,13 @@
           "kodomo"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}で子どもが生まれました。児童手当の申請に必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}で子どもが生まれました。児童手当の申請に必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "sodaigomi",
@@ -299,13 +300,13 @@
           "recycle"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}で粗大ごみを出したいです。申込に必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}で粗大ごみを出したいです。申込に必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "hinanjo",
@@ -337,10 +338,9 @@
           "hazard"
         ]
       },
-      "fields": [
-        "避難所の場所"
-      ],
-      "question": "{muni}の避難所はどこですか。"
+      "fact_types": [],
+      "_test_case_note": "中央4 fact_typeの対象外。避難所用fact_typeを定義するまでは測定しない。",
+      "display_question": "{muni}の避難所はどこですか。"
     },
     {
       "id": "passport",
@@ -366,13 +366,13 @@
           "seikatubunka"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}でパスポートを申請したいです。必要なもの・窓口・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}でパスポートを申請したいです。必要なもの・窓口・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "jidoshazei",
@@ -398,13 +398,13 @@
           "shubetsu"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}で自動車税の納税通知書の送付先を変えたいです。必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}で自動車税の納税通知書の送付先を変えたいです。必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "tozei_nofu",
@@ -430,13 +430,13 @@
           "tozei"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}で都税を納めたいです。必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}で都税を納めたいです。必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "fudosan",
@@ -460,14 +460,14 @@
           "real_estate"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
       "_caveat": "手数料の項目が手続きの性質に合わない。0点を『書いていない』と読んではいけない",
-      "question": "{muni}で不動産を取得しました。不動産取得税の申告に必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}で不動産を取得しました。不動産取得税の申告に必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "toei_jutaku",
@@ -494,13 +494,13 @@
           "housing"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}の都営住宅に申し込みたいです。必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}の都営住宅に申し込みたいです。必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "toritsu_nyugaku",
@@ -527,13 +527,13 @@
           "nyugaku"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}の都立高校を受検したいです。出願に必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}の都立高校を受検したいです。出願に必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "jugyoryo",
@@ -561,13 +561,13 @@
           "admission"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}で高校の授業料の支援を受けたいです。申請に必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}で高校の授業料の支援を受けたいです。申請に必要なもの・期限・手数料を教えて。オンラインでできますか？"
     },
     {
       "id": "chusho_josei",
@@ -596,13 +596,13 @@
           "shoko"
         ]
       },
-      "fields": [
-        "必要書類",
-        "窓口/オンライン可否",
-        "期限",
-        "手数料"
+      "fact_types": [
+        "documents",
+        "channel",
+        "deadline",
+        "fee"
       ],
-      "question": "{muni}で中小企業向けの助成を受けたいです。申請に必要なもの・期限・手数料を教えて。オンラインでできますか？"
+      "display_question": "{muni}で中小企業向けの助成を受けたいです。申請に必要なもの・期限・手数料を教えて。オンラインでできますか？"
     }
   ]
 }
