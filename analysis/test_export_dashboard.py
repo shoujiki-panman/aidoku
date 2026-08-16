@@ -16,7 +16,17 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from export_dashboard import MAX_VALUE_CHARS, build_entry, summarize  # noqa: E402
+from export_dashboard import (  # noqa: E402
+    MAX_VALUE_CHARS,
+    build_entry,
+    prepare_public_entries,
+    summarize,
+)
+from measurement import (  # noqa: E402
+    MeasurementError,
+    build_discovery_measurement,
+    build_measurement,
+)
 
 
 def extract(items: dict, clarity: str = "明記", **kw) -> dict:
@@ -36,6 +46,7 @@ def item(found: bool, value: str = "") -> dict:
 
 ALL_FOUND = {k: item(True, "あり") for k in
              ("必要書類", "窓口オンライン可否", "期限", "手数料")}
+VALID_PROMPT_VERSION = "sha256:" + "0" * 64
 
 
 class ScoringTest(unittest.TestCase):
@@ -98,6 +109,68 @@ class SummaryTest(unittest.TestCase):
         e = build_entry(extract(ALL_FOUND, "記載なし"))
         self.assertEqual(e["total"], 80)
         self.assertEqual(summarize([e])["full_marks"], 1)
+
+
+class MeasurementTest(unittest.TestCase):
+    def test_旧結果は不明と明示する(self):
+        entry = build_entry(extract(ALL_FOUND, model="claude-sonnet-5"))
+        self.assertEqual(entry["measurement"]["recording_status"], "legacy_unknown")
+        self.assertIsNone(entry["measurement"]["follow"])
+        self.assertEqual(entry["measurement"]["model_version"], "claude-sonnet-5")
+
+    def test_新しい測定条件を公開結果へ運ぶ(self):
+        discovery = build_discovery_measurement(
+            3, {1: (1, 6), 2: (3, 4), 3: (4, 3)}, 26,
+            "2026-08-16T00:00:00+00:00",
+        )
+        record = build_measurement(
+            discovery,
+            prompt=VALID_PROMPT_VERSION,
+            follow=True,
+            max_follow=2,
+            max_text_chars=18000,
+            max_links=40,
+            model_version="claude-sonnet-5",
+            run_at="2026-08-16T01:00:00+00:00",
+        )
+        entry = build_entry(extract(ALL_FOUND, measurement=record))
+        self.assertEqual(entry["measurement"], record)
+
+    def test_共通条件は先頭に1回だけ置く(self):
+        entries = [
+            build_entry(extract(ALL_FOUND, municipality_id="a")),
+            build_entry(extract(ALL_FOUND, municipality_id="b")),
+        ]
+        public_entries, measurement = prepare_public_entries(entries)
+        self.assertNotIn("measurement", public_entries[0])
+        self.assertEqual(measurement["comparison_status"], "legacy_unknown")
+        self.assertEqual([run["municipality_id"] for run in measurement["runs"]],
+                         ["a", "b"])
+
+    def test_条件の違う公開結果を拒否する(self):
+        discovery = build_discovery_measurement(
+            3, {1: (1, 6), 2: (3, 4), 3: (4, 3)}, 26,
+            "2026-08-16T00:00:00+00:00",
+        )
+        records = [
+            build_measurement(
+                discovery,
+                prompt=VALID_PROMPT_VERSION,
+                follow=follow,
+                max_follow=2,
+                max_text_chars=18000,
+                max_links=40,
+                model_version="claude-sonnet-5",
+                run_at="2026-08-16T01:00:00+00:00",
+            )
+            for follow in (True, False)
+        ]
+        entries = [
+            build_entry(extract(ALL_FOUND, municipality_id=str(index), measurement=record))
+            for index, record in enumerate(records)
+        ]
+        with self.assertRaisesRegex(MeasurementError, "follow"):
+            prepare_public_entries(entries)
 
 
 if __name__ == "__main__":

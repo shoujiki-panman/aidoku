@@ -26,6 +26,11 @@ OUT = ROOT / "web" / "data" / "scores.json"
 
 sys.path.insert(0, str(ROOT))
 from fact_types import EXTRACTOR_TO_DISPLAY, FIX_TEXT  # noqa: E402
+from measurement import (  # noqa: E402
+    MeasurementError,
+    normalize_measurement,
+    summarize_measurements,
+)
 
 # extractor 側のキー名 → 画面に出す項目名。
 # 対応表の出どころは fact_types.json ただ1つ。ここに直書きしない。
@@ -113,6 +118,7 @@ def build_entry(data: dict) -> dict:
             "reason": FIX_TEXT["オンライン明示"],
         })
     page = data.get("page") or {}
+    measurement = normalize_measurement(data.get("measurement"), data.get("model"))
     return {
         "id": data["municipality_id"],
         "name": data["municipality"],
@@ -121,6 +127,7 @@ def build_entry(data: dict) -> dict:
         "hops": page.get("hops"),
         "page_url": page.get("url"),
         "followed": data.get("followed_urls") or [],
+        "measurement": measurement,
         "fields": fields,
         "improvements": fixes,
         "notes": data.get("page_notes") or "",
@@ -138,6 +145,27 @@ def summarize(entries: list[dict]) -> dict:
         "zero": sum(1 for t in totals if t == 0),
         "fee_missing": sum(1 for e in entries if e["breakdown"]["手数料"] == 0),
     }
+
+
+def prepare_public_entries(entries: list[dict]) -> tuple[list[dict], dict]:
+    """共通条件を1か所へまとめ、自治体ごとの実行時刻だけ対応づける。"""
+    measurement = summarize_measurements([entry["measurement"] for entry in entries])
+    runs = []
+    public_entries = []
+    for entry in entries:
+        record = entry["measurement"]
+        runs.append({
+            "municipality_id": entry["id"],
+            "recording_status": record["recording_status"],
+            "model": record["model"],
+            "model_version": record["model_version"],
+            "run_at": record["run_at"],
+            "discovery_run_at": record["discovery_run_at"],
+        })
+        public_entries.append({key: value for key, value in entry.items()
+                               if key != "measurement"})
+    measurement["runs"] = runs
+    return public_entries, measurement
 
 
 def collect(procedure: str, only: set[str] | None, codes: dict[str, str]) -> list[dict]:
@@ -177,6 +205,10 @@ def main() -> None:
     entries = collect(args.procedure, keep, codes)
     if not entries:
         raise SystemExit(f"extractor/out に {args.procedure} の結果がありません")
+    try:
+        entries, measurement = prepare_public_entries(entries)
+    except MeasurementError as error:
+        ap.error(str(error))
 
     doc = {
         "generated_at": args.generated_at or datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -187,6 +219,7 @@ def main() -> None:
         "question": proc.get("question", "{muni}について教えて。"),
         "phase": args.phase,
         "n_municipalities": len(entries),
+        "measurement": measurement,
         "summary": summarize(entries),
         "municipalities": entries,
         "disclaimer": DISCLAIMER,

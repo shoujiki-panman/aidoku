@@ -100,6 +100,26 @@ Evidenceが正しいと一般化できるサンプルではない。**
 
 **八王子市は既定で除外**（23区の集計に混ぜないため）。
 
+### 測定条件の記録 — `measurement.py`
+
+新しい測定は、探索時に `MAX_DEPTH` / `BEAM` / `MAX_FETCHES` と実行時刻を保存し、
+抽出時に次の条件を合わせて `measurement` へ残す。
+
+- `measurement_version` / `prompt_version`
+- `follow` / `max_follow`
+- `max_depth` / `beam` / `max_fetches`
+- `max_text_chars` / `max_links`
+- `model` / `model_version`
+- 抽出の `run_at` と探索の `discovery_run_at`
+
+`prompt_version` は抽出用とオンライン明示用のプロンプト本文から作るSHA-256で、
+手動更新ではない。公開JSON生成時は実行時刻以外の条件を比較し、1つでも違えば停止する。
+条件記録のある新結果と、記録開始前の結果も混ぜない。
+
+既存73件は測定時の実行時刻などを復元できないため、推測で埋めず
+`recording_status: legacy_unknown` としている。これは「条件が同じ」ではなく、
+**比較できるだけの記録が無い**という意味。
+
 ---
 
 ## 3. 点数（**2つの道がある。混ぜない**）
@@ -174,6 +194,12 @@ Evidenceが正しいと一般化できるサンプルではない。**
 本物のAIエージェントがもっと辿る可能性はある。
 **0点のうちどこまでが道具の制約かは、切り分けていない。**
 
+### 4-8. 既存73件の測定条件は後から完全には戻せない
+
+測定条件の記録を始める前の出力なので、実行時刻・プロンプト版・`--follow` 指定の有無を
+ファイルだけからは確定できない。現在の定数を過去データへ書き足すことはしていない。
+公開JSONの `measurement.comparison_status` は `legacy_unknown` とする。
+
 ---
 
 ## 5. 再現の仕方
@@ -187,6 +213,8 @@ cd analysis  && python3 export_dashboard.py -p <手続きID> --out ../web/data/s
 
 `--follow` を付けるかで結果が変わる。**23区の公開値は付けて測っている。**
 `apply_evidence_check.py` はキャッシュだけを読み、元の `extractor/out/*.json` は上書きしない。
+新しい抽出は、測定条件を持つ探索JSONだけを受け付ける。古い探索JSONを使う場合は、
+先に `crawler/discover.py` をやり直す。
 
 テスト: `crawler/test_polite_fetch.py`（16件）・`crawler/test_discover.py`（9件）・
 `extractor/test_extract.py`・`test_evidence_check.py`・

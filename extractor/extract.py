@@ -13,6 +13,7 @@ import json
 import re
 import subprocess
 import sys
+from collections.abc import Sequence
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -36,6 +37,12 @@ from evidence_check import (  # noqa: E402
     attach_checks_across_pages,
     summarize,
     truncate_page_text,
+)
+from measurement import (  # noqa: E402
+    MeasurementError,
+    build_measurement,
+    prompt_version,
+    utc_timestamp,
 )
 
 # 4項目の定義は fact_types.json が唯一の出どころ。ここに直書きしない。
@@ -198,6 +205,46 @@ def normalize_items(data: dict) -> dict:
     return out
 
 
+def measurement_for(discovery: dict, *, follow: bool, model: str,
+                    prompt: str, run_at: str) -> dict:
+    return build_measurement(
+        discovery.get("measurement"),
+        prompt=prompt,
+        follow=follow,
+        max_follow=MAX_FOLLOW,
+        max_text_chars=MAX_TEXT_CHARS,
+        max_links=MAX_LINKS,
+        model_version=model,
+        run_at=run_at,
+    )
+
+
+def load_discovery(path: Path) -> dict:
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise MeasurementError(f"{path}: 探索結果JSONを読めない: {error}") from error
+    if not isinstance(value, dict):
+        raise MeasurementError(f"{path}: 探索結果のrootがオブジェクトでない")
+    return value
+
+
+def prepare_discoveries(files: Sequence[Path], *, follow: bool, model: str,
+                        prompt: str, run_at: str) -> list[tuple[dict, dict]]:
+    """全入力を先に検証し、途中失敗で既存出力を一部上書きしない。"""
+    prepared = []
+    for path in files:
+        discovery = load_discovery(path)
+        try:
+            measurement = measurement_for(
+                discovery, follow=follow, model=model, prompt=prompt, run_at=run_at
+            )
+        except MeasurementError as error:
+            raise MeasurementError(f"{path}: {error}") from error
+        prepared.append((discovery, measurement))
+    return prepared
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--municipality", "-m", action="append")
@@ -213,17 +260,26 @@ def main() -> None:
     if not files:
         raise SystemExit("探索結果がない。先に crawler/discover.py を実行すること")
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    fetcher = PoliteFetcher()
+    run_at = utc_timestamp()
+    current_prompt = prompt_version([PROMPT, CLARITY_PROMPT])
+    try:
+        prepared = prepare_discoveries(
+            files, follow=args.follow, model=args.model,
+            prompt=current_prompt, run_at=run_at,
+        )
+    except MeasurementError as error:
+        raise SystemExit(str(error)) from error
 
-    for f in files:
-        disc = json.loads(f.read_text(encoding="utf-8"))
+    fetcher = PoliteFetcher()
+    results = []
+    for disc, measurement in prepared:
         page = pick_page(disc)
         if page is None:
             print(f"[{disc['municipality']}] 抽出対象ページなし（到達失敗）")
             result = {"municipality": disc["municipality"], "municipality_id": disc["municipality_id"],
                       "procedure": disc["procedure"], "procedure_id": disc["procedure_id"],
-                      "page": None, "reached": False, "items": {}, "error": "到達失敗",
+                      "page": None, "reached": False, "model": args.model,
+                      "measurement": measurement, "items": {}, "error": "到達失敗",
                       "evidence_check_status": "not_applicable",
                       "evidence_check_scope": {"pages": [],
                                                "max_text_chars_per_page": MAX_TEXT_CHARS},
@@ -267,6 +323,7 @@ def main() -> None:
                 "page": {"url": page["url"], "hops": page["hops"], "link_text": page["link_text"], **meta},
                 "reached": True,
                 "model": args.model,
+                "measurement": measurement,
                 "followed_urls": followed,
                 "online_clarity": clarity["online_clarity"],
                 "online_clarity_evidence": clarity["evidence"],
@@ -286,7 +343,11 @@ def main() -> None:
             print(f"[{disc['municipality']}] hop{page['hops']} {found}/4項目 抽出"
                   f" / オンライン明示={clarity['online_clarity']}{tail} — {page['url']}")
 
-        out = OUT_DIR / f"extract_{disc['municipality_id']}_{disc['procedure_id']}.json"
+        results.append(result)
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    for result in results:
+        out = OUT_DIR / f"extract_{result['municipality_id']}_{result['procedure_id']}.json"
         out.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
