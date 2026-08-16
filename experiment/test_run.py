@@ -81,11 +81,30 @@ class ExperimentContractTest(unittest.TestCase):
         self.assertEqual(call.call_count, 4)
         self.assertEqual(len(result["test_cases"]), 4)
         self.assertEqual(result["test_cases"][0]["result"]["failure_reason"], "抽出エラー")
+        self.assertEqual(
+            result["test_cases"][0]["result"]["failure_type"], "not_retrieved")
         self.assertEqual(len(result["test_cases"][0]["attempts"]), 1)
         self.assertIn("tennyu/documents", result["test_cases"][0]["attempts"][0]["error"])
         for record in result["test_cases"]:
             self.assertEqual(record["result"], record["attempts"][-1]["result"])
             self.assertTrue(record["attempts"][-1]["llm_called"])
+
+    def test_ケースの旧failure語彙を残して共通分類を付ける(self):
+        failure = run.normalized_failure({
+            "failure": {
+                "type": "target_page_unreachable_from_index",
+                "summary": "入口から届かない",
+            },
+        })
+        self.assertEqual(
+            failure["type"], "target_page_unreachable_from_index")
+        self.assertEqual(
+            failure["failure_type"], "page_not_discoverable")
+        self.assertEqual(failure["summary"], "入口から届かない")
+        for invalid in ({}, {"failure": []}, {"failure": {"type": "unknown"}}):
+            with self.subTest(invalid=invalid):
+                with self.assertRaises(ValueError):
+                    run.normalized_failure(invalid)
 
     def test_直接実行とmodule実行のhelpが動く(self):
         for command in (

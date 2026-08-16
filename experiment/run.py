@@ -20,6 +20,7 @@ sys.path.insert(0, str(ROOT))
 
 from htmlutil import parse  # noqa: E402
 from fact_types import EXTRACTOR_KEYS  # noqa: E402
+from failure_taxonomy import classify_experiment_failure  # noqa: E402
 from measurement_cases import TestCase, test_cases_for  # noqa: E402
 from extractor.fact_extract import (  # noqa: E402
     allowed_sources, call_claude, compose_input, validated_attempt,
@@ -114,6 +115,17 @@ def check(items: dict, truth: dict) -> dict:
     return out
 
 
+def normalized_failure(case: dict) -> dict:
+    """caseの旧分類を残したまま共通failure_typeを付ける。"""
+    failure = case.get("failure")
+    if not isinstance(failure, dict):
+        raise ValueError("case.failureがobjectでない")
+    return {
+        **failure,
+        "failure_type": classify_experiment_failure(failure.get("type")),
+    }
+
+
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--case", default="setagaya-tennyu",
@@ -191,6 +203,7 @@ def main(argv: list[str] | None = None) -> None:
         "page_url": case["page_url"],
         "site_version": case.get("site_version"),
         "ground_truth_source": case.get("ground_truth_source"),
+        "failure": normalized_failure(case),
         "results": results,
     }
     output = out_dir / f"{args.case}_{doc['run_at'][:10]}.json"

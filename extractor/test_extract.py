@@ -146,8 +146,32 @@ class FactTypeCallTest(unittest.TestCase):
             record, _, _ = run_test_case(
                 page(), "練馬区", "転入届", case, fetcher, "model", False)
         self.assertEqual(record["result"]["evidence_check"]["verdict"], "exact")
+        self.assertIsNone(record["result"]["failure_type"])
         self.assertEqual(record["result"], record["attempts"][-1]["result"])
         self.assertEqual(record["evidence_summary"]["verified"], 1)
+
+    def test_本文に無い引用をwrong_evidenceへ分類する(self):
+        case = TestCase("tennyu", "documents", "質問", "1.0")
+        fetcher = FakeFetcher("<p>実際に取得したページの本文だけがあります。</p>")
+        response = json.dumps({
+            "item": {
+                "found": True,
+                "value": "値",
+                "evidence": "本文には存在しない十分に長い捏造された引用文です。",
+                "source": "html",
+                "failure_reason": None,
+            },
+            "follow_urls": [],
+            "page_notes": "",
+        }, ensure_ascii=False)
+        with mock.patch.object(
+                fact_extract, "call_claude", return_value=response):
+            record, _, _ = run_test_case(
+                page(), "練馬区", "転入届", case, fetcher, "model", False)
+        self.assertEqual(
+            record["result"]["evidence_check"]["verdict"], "missing")
+        self.assertEqual(record["result"]["failure_type"], "wrong_evidence")
+        self.assertEqual(record["result"], record["attempts"][-1]["result"])
 
     def test_全fact_typeのpromptに他項目のIDと質問を混ぜない(self):
         cases = test_cases_for("tennyu", "練馬区")
@@ -400,6 +424,7 @@ class ResponseContractTest(unittest.TestCase):
         }})
         self.assertFalse(item["found"])
         self.assertEqual(item["failure_reason"], "記載なし")
+        self.assertEqual(item["failure_type"], "fact_missing")
 
     def test_follow_urlsは配列とHTTP形式を要求する(self):
         for data in ({"follow_urls": "https://example.jp/"},
@@ -438,8 +463,11 @@ class ResponseContractTest(unittest.TestCase):
         self.assertTrue(all(not item["found"] for item in items.values()))
         self.assertTrue(all(item["failure_reason"] == "到達失敗"
                             for item in items.values()))
+        self.assertTrue(all(item["failure_type"] == "page_not_discoverable"
+                            for item in items.values()))
         result = unreachable_result(discovery(), cases)
         self.assertFalse(result["reached"])
+        self.assertEqual(result["failure_type"], "page_not_discoverable")
         self.assertEqual(result["test_cases"], records)
         self.assertEqual(result["items"], items)
 
@@ -459,6 +487,7 @@ class ResponseContractTest(unittest.TestCase):
             {"online_clarity": "明記", "evidence": "引用", "pages": [page()["url"]]},
         )
         self.assertTrue(result["reached"])
+        self.assertIsNone(result["failure_type"])
         self.assertEqual(result["items"], legacy_items(records))
         self.assertEqual(result["items"]["期限"]["value"], "deadline")
         self.assertEqual(len(result["followed_urls"]), 4)

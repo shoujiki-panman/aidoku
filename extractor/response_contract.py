@@ -6,6 +6,8 @@ import json
 import re
 from urllib.parse import urlsplit
 
+from failure_taxonomy import annotate_result
+
 VALID_SOURCES = frozenset({"html", "jsonld", "linked_page"})
 VALID_FAILURE_REASONS = frozenset({
     "PDF内のみ", "リンク先にあり", "電話でのみ確認可", "記載なし", "曖昧",
@@ -49,7 +51,7 @@ def normalize_item(data: dict,
         "failure_reason": optional_text(item, "failure_reason") or None,
     }
     _validate_item_state(normalized, allowed_sources)
-    return normalized
+    return annotate_result(normalized)
 
 
 def requested_urls(data: dict, allowed_urls: set[str],

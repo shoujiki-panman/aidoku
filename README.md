@@ -148,16 +148,19 @@ python3 crawler/discover.py -m nerima -m edogawa -m hachioji -p tennyu
 # 2. 4項目を独立したTest Caseで抽出（--followで各項目のリンク先を追う）
 python3 extractor/extract.py -p tennyu --follow
 
-# 3. 既存の抽出結果も、AIが読んだ本文と引用を照合（元ファイルは上書きしない）
+# 3. 失敗理由を8種の共通分類へ再分類し、分布を出す
+python3 analysis/failure_distribution.py
+
+# 4. 既存の抽出結果も、AIが読んだ本文と引用を照合（元ファイルは上書きしない）
 python3 analysis/apply_evidence_check.py
 
-# 4. ゴールデンセットと突合して採点
+# 5. ゴールデンセットと突合して採点
 python3 scorer/score.py -p tennyu
 
-# 5. 1枚のレポートに出力
+# 6. 1枚のレポートに出力
 python3 scorer/report.py -p tennyu
 
-# 6. ダッシュボード用のJSONを書き出す
+# 7. ダッシュボード用のJSONを書き出す
 python3 analysis/export_web.py -p tennyu
 ```
 
@@ -177,6 +180,9 @@ python3 -m http.server 4173 --directory web
 `attempts[]`へ残す。追従先がPDF等だった場合は本文を読まず`llm_called: false`の
 観測attemptとして区別する。各結果には質問と`test_case_version`も残す。従来の`items`は
 最後のattemptと同じ値から生成するため、採点・公開画面の入力形式は変わらない。
+失敗項目にはLLMの日本語`failure_reason`を残したまま、8種の共通`failure_type`を
+コードで付ける。定義と既存語彙の対応は
+[`docs/failure-taxonomy.md`](docs/failure-taxonomy.md)を参照。
 
 ## クロールの作法（変更しないこと）
 
@@ -197,10 +203,11 @@ python3 -m http.server 4173 --directory web
 | `extractor/` | 読解層。`fact_extract.py`がfact_typeごとの呼び出し、`prompt.md`が1項目用プロンプト |
 | `evidence_check.py` | AIの引用が、実際に渡した本文に存在するか照合 |
 | `measurement.py` | 測定条件を記録し、条件の違う結果が同じ集計へ混ざるのを防止 |
+| `failure_taxonomy.py` | 失敗を8種へ変換する共通のPure Function |
 | `experiment/` | 再現実験。本測定と同じ1 fact_typeずつのpromptで手元HTMLを反復測定 |
 | `scorer/` | 採点層。`golden/*.csv` が人手の正解、`judge_prompt.md` が採点プロンプト |
 | `reports/` | 突合表つきレポート |
-| `analysis/` | 集計。`export_web.py` がダッシュボード用JSONを作る |
+| `analysis/` | 集計。`failure_distribution.py` が失敗分布、`export_web.py` がダッシュボード用JSONを作る |
 | `web/` | ダッシュボード。`vendor/dads/` はデジタル庁デザインシステムの複製（[NOTICE](web/vendor/dads/NOTICE.md)） |
 | `personas/` `trust_check/` | Phase 2 以降。Phase 1 では触らない |
 

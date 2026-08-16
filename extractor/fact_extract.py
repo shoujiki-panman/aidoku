@@ -20,6 +20,7 @@ from polite_fetch import PoliteFetcher  # noqa: E402
 sys.path.insert(0, str(ROOT))
 from evidence_check import attach_checks_across_pages, truncate_page_text  # noqa: E402
 from fact_types import by_id  # noqa: E402
+from failure_taxonomy import annotate_result  # noqa: E402
 from measurement_cases import TestCase  # noqa: E402
 
 from extractor.response_contract import (  # noqa: E402
@@ -251,7 +252,7 @@ def _attach_evidence_check(page: dict, fetcher: PoliteFetcher,
     page_texts.extend(truncate_page_text(text) for _url, text in extra)
     checked, summary = attach_checks_across_pages(
         {"item": attempt["result"]}, page_texts)
-    attempt["result"] = checked["item"]
+    attempt["result"] = annotate_result(checked["item"])
     return summary
 
 

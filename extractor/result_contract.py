@@ -10,6 +10,7 @@ ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 from evidence_check import MAX_TEXT_CHARS_PER_PAGE, summarize  # noqa: E402
 from fact_types import EXTRACTOR_KEYS, by_id  # noqa: E402
+from failure_taxonomy import annotate_result  # noqa: E402
 from measurement_cases import TestCase  # noqa: E402
 
 
@@ -17,14 +18,14 @@ def failed_test_cases(cases: list[TestCase], reason: str) -> list[dict]:
     """到達失敗でもTest Caseを消さず、success rateの分母へ残す。"""
     return [{
         **asdict(test_case),
-        "result": {
+        "result": annotate_result({
             "found": False, "value": "", "evidence": "", "source": None,
             "failure_reason": reason,
             "evidence_check": {
                 "verdict": "not_applicable", "run": 0,
                 "note": "found=false のため照合しない",
             },
-        },
+        }),
         "attempts": [],
         "followed_urls": [],
         "page_notes": "",
@@ -54,6 +55,7 @@ def unreachable_result(discovery: dict, cases: list[TestCase],
         **_identity(discovery),
         "page": None,
         "reached": False,
+        "failure_type": "page_not_discoverable",
         "model": model,
         "measurement": measurement,
         "followed_urls": [],
@@ -81,6 +83,7 @@ def successful_result(discovery: dict, page: dict, records: list[dict],
             "link_text": page["link_text"], **meta,
         },
         "reached": True,
+        "failure_type": None,
         "model": model,
         "measurement": measurement,
         "followed_urls": followed_urls,
