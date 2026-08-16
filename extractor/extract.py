@@ -31,10 +31,16 @@ CLARITY_PROMPT = Path(__file__).parent / "clarity_prompt.md"
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from fact_types import EXTRACTOR_KEYS  # noqa: E402
+from evidence_check import (  # noqa: E402
+    MAX_TEXT_CHARS_PER_PAGE,
+    attach_checks_across_pages,
+    summarize,
+    truncate_page_text,
+)
 
 # 4項目の定義は fact_types.json が唯一の出どころ。ここに直書きしない。
 FIELDS = EXTRACTOR_KEYS
-MAX_TEXT_CHARS = 18000
+MAX_TEXT_CHARS = MAX_TEXT_CHARS_PER_PAGE
 MAX_LINKS = 40
 MAX_FOLLOW = 2
 
@@ -74,7 +80,7 @@ def build_input(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
     links, text, jsonld = parse(r.body(), page["url"])
 
     truncated = len(text) > MAX_TEXT_CHARS
-    body = text[:MAX_TEXT_CHARS]
+    body = truncate_page_text(text)
 
     link_lines = []
     seen = set()
@@ -96,7 +102,10 @@ def build_input(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
         f"\n## このページから出ているリンク（最大{MAX_LINKS}件）\n\n" + ("\n".join(link_lines) or "（なし）"),
     ]
     for url, ptext in (extra_pages or []):
-        parts.append(f"\n---\n\n## リンク先ページの本文（{url}）\n\n{ptext[:MAX_TEXT_CHARS]}\n")
+        parts.append(
+            f"\n---\n\n## リンク先ページの本文（{url}）\n\n"
+            f"{truncate_page_text(ptext)}\n"
+        )
     if extra_pages:
         parts.append(
             "\n（上のリンク先ページはあなたの要求で開いたものです。ここから答えが取れた項目は "
@@ -105,6 +114,18 @@ def build_input(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
     meta = {"has_jsonld": bool(jsonld), "text_len": len(text), "truncated": truncated,
             "n_links": len(link_lines)}
     return "".join(parts), meta
+
+
+def build_evidence_pages(page: dict, fetcher: PoliteFetcher,
+                         extra_pages: list[tuple[str, str]] | None = None) -> list[str]:
+    """LLMへ本文として渡した各ページを、混ぜずに照合用へ返す。"""
+    r = fetcher.cached(page["url"])
+    if r is None or not r.body_path:
+        raise SystemExit(f"キャッシュに無い: {page['url']}（先に crawler/discover.py を実行）")
+    _, text, _ = parse(r.body(), page["url"])
+    pages = [truncate_page_text(text)]
+    pages.extend(truncate_page_text(ptext) for _, ptext in (extra_pages or []))
+    return pages
 
 
 def judge_clarity(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
@@ -202,7 +223,11 @@ def main() -> None:
             print(f"[{disc['municipality']}] 抽出対象ページなし（到達失敗）")
             result = {"municipality": disc["municipality"], "municipality_id": disc["municipality_id"],
                       "procedure": disc["procedure"], "procedure_id": disc["procedure_id"],
-                      "page": None, "reached": False, "items": {}, "error": "到達失敗"}
+                      "page": None, "reached": False, "items": {}, "error": "到達失敗",
+                      "evidence_check_status": "not_applicable",
+                      "evidence_check_scope": {"pages": [],
+                                               "max_text_chars_per_page": MAX_TEXT_CHARS},
+                      "evidence_summary": summarize({})}
         else:
             prompt, meta = build_input(page, disc["municipality"], disc["procedure"], fetcher)
             raw = call_claude(prompt, args.model)
@@ -232,6 +257,10 @@ def main() -> None:
             clarity = judge_clarity(page, disc["municipality"], disc["procedure"],
                                     fetcher, args.model, extra_pages=extra)
 
+            items, evidence_summary = attach_checks_across_pages(
+                normalize_items(data), build_evidence_pages(page, fetcher, extra_pages=extra)
+            )
+
             result = {
                 "municipality": disc["municipality"], "municipality_id": disc["municipality_id"],
                 "procedure": disc["procedure"], "procedure_id": disc["procedure_id"],
@@ -243,7 +272,13 @@ def main() -> None:
                 "online_clarity_evidence": clarity["evidence"],
                 # 何を読んで判定したかを残す（判定範囲が4項目とずれていないかの確認用）
                 "online_clarity_pages": clarity["pages"],
-                "items": normalize_items(data),
+                "items": items,
+                "evidence_check_status": "complete",
+                "evidence_check_scope": {
+                    "pages": [page["url"], *followed],
+                    "max_text_chars_per_page": MAX_TEXT_CHARS,
+                },
+                "evidence_summary": evidence_summary,
                 "page_notes": data.get("page_notes", ""),
             }
             found = sum(1 for v in result["items"].values() if v["found"])
