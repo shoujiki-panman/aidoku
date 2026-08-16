@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import sys
+import types
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -20,6 +21,42 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).parent))
 
 import aidoku_engine as eng  # noqa: E402
+
+
+class LivePage:
+    body_path = "cached.html"
+
+    def body(self) -> str:
+        return """
+            <script type="application/ld+json">{"name":"転入届"}</script>
+            <h1>転入届</h1><p>必要書類の本文</p>
+        """
+
+
+class LiveFetcher:
+    def fetch(self, _url: str) -> LivePage:
+        return LivePage()
+
+
+class JudgeLivePageNormalizerTest(unittest.TestCase):
+    def test_正規化後も未知URLをライブ判定できる(self):
+        polite_fetch = types.ModuleType("polite_fetch")
+        polite_fetch.PoliteFetcher = LiveFetcher
+        extracted = {"items": {
+            jp: {"found": True, "value": "値", "failure_reason": None}
+            for jp in eng.ITEM_KEYS.values()
+        }, "page_notes": ""}
+        replies = [json.dumps(extracted), json.dumps({
+            "online_clarity": "明記", "evidence": "本文",
+        })]
+        with mock.patch.dict(sys.modules, {"polite_fetch": polite_fetch}), \
+                mock.patch.object(eng, "_call_claude", side_effect=replies) as call:
+            result = eng.judge_live("https://example.jp/tennyu")
+
+        self.assertTrue(all(result["found"].values()))
+        self.assertEqual(result["clarity"], "明記")
+        self.assertIn("必要書類の本文", call.call_args_list[0].args[0])
+        self.assertIn('{"name":"転入届"}', call.call_args_list[0].args[0])
 
 
 def measured_row(**over) -> dict:

@@ -55,9 +55,9 @@
 
 ### いま進める測定基盤
 
-- [#55](https://github.com/shoujiki-panman/aidoku/issues/55) **Evidence Check** — 実装・既存73件の照合・Draft PR [#77](https://github.com/shoujiki-panman/aidoku/pull/77) のCIまで完了
-- [#56](https://github.com/shoujiki-panman/aidoku/issues/56) **測定条件を出力へ記録** — 実装・全270テスト・3観点の連続LGTMまで完了。既存73件は推測せず `legacy_unknown`
-- [#67](https://github.com/shoujiki-panman/aidoku/issues/67) Page Normalizerを仕様どおりにする
+- [#55](https://github.com/shoujiki-panman/aidoku/issues/55) **Evidence Check** — 既存73件の照合まで完了し、PR [#77](https://github.com/shoujiki-panman/aidoku/pull/77) をmainへマージ済み
+- [#56](https://github.com/shoujiki-panman/aidoku/issues/56) **測定条件を出力へ記録** — PR [#78](https://github.com/shoujiki-panman/aidoku/pull/78) をmainへマージ済み。既存73件は推測せず `legacy_unknown`
+- [#67](https://github.com/shoujiki-panman/aidoku/issues/67) Page Normalizer — 実装・検証完了（PR [#79](https://github.com/shoujiki-panman/aidoku/pull/79)）
 - [#68](https://github.com/shoujiki-panman/aidoku/issues/68) Test Caseをfact_type単位に分ける
 - [#69](https://github.com/shoujiki-panman/aidoku/issues/69) 回答にconfidenceとevidence_locationを足す
 - [#70](https://github.com/shoujiki-panman/aidoku/issues/70) Evaluatorの4判定を揃える

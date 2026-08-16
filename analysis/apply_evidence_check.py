@@ -103,8 +103,8 @@ def load_evidence_pages(result: dict, fetcher: PoliteFetcher) -> tuple[list[str]
         if cached is None or not cached.body_path or not Path(cached.body_path).exists():
             missing.append(url)
             continue
-        _, text, _ = parse(cached.body(), url)
-        pages.append(truncate_page_text(text))
+        normalized = parse(cached.body(), url)
+        pages.append(truncate_page_text(normalized.text))
     return pages, urls, missing
 
 

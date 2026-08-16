@@ -24,6 +24,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from extract import (  # noqa: E402
     MAX_TEXT_CHARS,
     build_evidence_pages,
+    build_input,
     is_non_html,
     measurement_for,
     main,
@@ -38,6 +39,35 @@ def candidate(url: str, **kw) -> dict:
     base = {"url": url, "status": 200, "is_pdf": False, "text_len": 5000, "score": 10}
     base.update(kw)
     return base
+
+
+class CachedPage:
+    body_path = "cached.html"
+
+    def body(self) -> str:
+        return """
+            <script type="application/ld+json">{"name":"転入届"}</script>
+            <h1>転入届</h1><p>必要書類の本文</p>
+            <a href="/detail">詳しい案内</a>
+        """
+
+
+class CachedFetcher:
+    def cached(self, _url: str) -> CachedPage:
+        return CachedPage()
+
+
+class NormalizedPageApiTest(unittest.TestCase):
+    def test_正規化後も抽出promptへ本文リンクJSONLDを渡す(self):
+        prompt, meta = build_input(
+            {"url": "https://example.jp/tennyu"},
+            "テスト区", "転入届", CachedFetcher(),
+        )
+        self.assertIn("必要書類の本文", prompt)
+        self.assertIn("詳しい案内 → https://example.jp/detail", prompt)
+        self.assertIn('{"name":"転入届"}', prompt)
+        self.assertTrue(meta["has_jsonld"])
+        self.assertEqual(meta["n_links"], 1)
 
 
 class IsNonHtmlTest(unittest.TestCase):

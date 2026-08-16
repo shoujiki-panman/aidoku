@@ -116,7 +116,7 @@ Claude Code が無い環境では、23区の実測結果のみ返ります。
 |---|---|
 | `gennai_app/` | **作品本体**。源内AIアプリとして動く判定API（[README](gennai_app/README.md)） |
 | `gatekeeper/` | **門番**。自治体サイトの前に立ち、AIエージェントに答えを返して「取れずに帰った」を記録（[README](gatekeeper/README.md)） |
-| `crawler/` | 取得層。robots.txt遵守・3秒間隔・キャッシュ。ここだけが外に触る |
+| `crawler/` | 取得・正規化層。robots.txt遵守・3秒間隔・キャッシュ。title・meta・見出し・更新情報も構造化する。ここだけが外に触る |
 | `extractor/` | 読解層。`claude -p` で4項目を抽出 |
 | `scorer/` | 採点層。人手で決めた必須要素と突合。ぶれ幅 ±2点 |
 | `web/` | ダッシュボード（デジタル庁デザインシステム） |
@@ -186,8 +186,8 @@ python3 -m http.server 4173 --directory web
 | 場所 | 役割 |
 |---|---|
 | `crawler/` | 取得層。`polite_fetch.py`（行儀のよいfetcher）、`discover.py`（情報到達の測定）、`targets.json` |
-| `crawler/cache/` | 生HTML。再実行はここから。Git管理外 |
-| `crawler/out/` | 探索結果（候補ページとホップ数、取得ログ） |
+| `crawler/cache/` | 生HTMLとHTTPメタデータ。再実行はここから。Git管理外 |
+| `crawler/out/` | 探索結果（候補ページ・ホップ数・title/meta/見出し/更新情報・取得ログ） |
 | `extractor/` | 読解層。`prompt.md` が抽出プロンプト本体 |
 | `evidence_check.py` | AIの引用が、実際に渡した本文に存在するか照合 |
 | `measurement.py` | 測定条件を記録し、条件の違う結果が同じ集計へ混ざるのを防止 |

@@ -41,6 +41,8 @@ class FetchResult:
     from_cache: bool
     blocked_by_robots: bool
     body_path: str | None
+    last_modified: str | None = None
+    etag: str | None = None
     error: str | None = None
 
     def body(self) -> str:
@@ -179,6 +181,8 @@ class PoliteFetcher:
                     from_cache=False,
                     blocked_by_robots=False,
                     body_path=str(body_path),
+                    last_modified=resp.headers.get("Last-Modified"),
+                    etag=resp.headers.get("ETag"),
                 )
                 body_path.write_text(text, encoding="utf-8")
         except urllib.error.HTTPError as e:

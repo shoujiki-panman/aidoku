@@ -48,7 +48,18 @@
 - 同一ドメインへは **3秒以上**あける。`Crawl-delay` がそれより長ければ従う
 - User-Agent に**プロジェクト名と連絡先**を入れる — `TokyoAgentReadinessBot/0.1 (+https://github.com/shoujiki-panman/aidoku)`
 - 取得済みはキャッシュから返す。**同じページを二度取りに行かない**
+- HTTPの `Last-Modified` / `ETag` もcache metadataへ保存する。古いcacheは値なしとして読む
 - **申請の送信は一切しない。読み取りのみ。**
+
+取得したHTMLは `crawler/htmlutil.py` で、本文とリンクだけでなく次も構造化する。
+
+- `<title>`
+- `<meta name="description">` と `og:*`
+- h1〜h6の文書順とlevel
+- JSON-LD生文字列と、その中の `dateModified` / `datePublished`
+
+これらは候補ページごとに `crawler/out/discovery_*.json` へ残す。見出しの有無を
+本文全文検索で代用せず、構造として確認できるようにするため。
 
 ### ② 抽出 — `extractor/extract.py`
 
