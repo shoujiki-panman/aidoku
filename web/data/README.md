@@ -37,7 +37,7 @@ AI読（アイドク）が測った結果です。**使うのに許可は要り�
 | `scores-tennyu.json` | 転入届 × 23区 |
 | `scores-jidouteate.json` | 児童手当の申請 × 23区 |
 | `scores-sodaigomi.json` | 粗大ごみ収集の申込 × 23区 |
-| `scores.json` | `scores-tennyu.json` の写し（古いリンク用に残してある） |
+| `scores.json` | 古いリンク用の互換ファイル。新しいデータ契約では `scores-tennyu.json` を使う |
 | `scores.csv` | 表計算で開く用 |
 | `summary.txt` | 要約（テキスト） |
 
@@ -54,9 +54,30 @@ AI読（アイドク）が測った結果です。**使うのに許可は要り�
 | `question` | 住民がAIにする想定の質問。`{muni}` が自治体名に置き換わる |
 | `phase` | 対象の範囲（`23区`） |
 | `n_municipalities` | 件数 |
+| `measurement` | 測定条件・互換性・自治体ごとの実行時刻（下記） |
 | `summary` | 全体の集計（下記） |
 | `municipalities` | 自治体ごとの結果（下記） |
 | `disclaimer` / `license` / `sources` | 但し書き・ライセンス・出典 |
+
+### `measurement`
+
+| キー | 意味 |
+|---|---|
+| `recording_status` | `recorded`（条件記録あり）/ `legacy_unknown`（記録開始前） |
+| `comparison_status` | `compatible`（条件一致）/ `legacy_unknown`（比較できない） |
+| `measurement_version` / `prompt_version` | 測定方法とプロンプト本文の版 |
+| `follow` / `max_follow` | リンク追従を有効にしたか、その上限 |
+| `max_depth` / `beam` / `max_fetches` | 探索条件 |
+| `max_text_chars` / `max_links` | AIへ渡す本文・リンクの上限 |
+| `model` / `model_version` | 実行手段と指定モデル |
+| `run_at` / `discovery_run_at` | 含まれる抽出・探索実行時刻の一覧 |
+| `runs` | 自治体ID・モデル・実行時刻の対応表 |
+
+`run_at` だけが違う結果は同じ条件として集計できる。その他の条件が1つでも違う場合、
+`export_dashboard.py` は公開JSONを書かずに停止する。新しい記録と `legacy_unknown` も混ぜない。
+
+現在の公開23区データは記録開始前に測ったため `legacy_unknown`。現在のコード値を
+過去の実測値として後付けしていない。
 
 ### `summary`
 
@@ -121,6 +142,8 @@ AI読（アイドク）が測った結果です。**使うのに許可は要り�
 - **`agent_value` が空文字** → そのページから読み取れなかった。**「無料」等の値が空という意味ではない**
 - **`followed` が空配列** → 追加のリンクを読まなかった。**リンクが無かったとは限らない**
 - **`notes` が空文字** → 観察記録が無い。読める場合はたいてい空
+- **`measurement.recording_status` が `legacy_unknown`** → 条件が同じという意味ではない。
+  比較に必要な記録が残っていない
 
 ---
 

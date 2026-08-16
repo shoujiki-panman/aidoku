@@ -9,7 +9,73 @@ from __future__ import annotations
 
 import unittest
 
-from discover import link_filter
+from discover import discover, link_filter
+from measurement import build_discovery_measurement
+
+
+class FailedResult:
+    status = 0
+    from_cache = False
+    blocked_by_robots = False
+    body_path = None
+    error = "取得失敗"
+
+
+class FailedFetcher:
+    def fetch(self, _url: str) -> FailedResult:
+        return FailedResult()
+
+
+class SuccessResult:
+    status = 200
+    from_cache = True
+    blocked_by_robots = False
+    body_path = "cached.html"
+    content_type = "text/html"
+    error = None
+
+    def body(self) -> str:
+        return "<html><body>トップページ</body></html>"
+
+
+class SuccessFetcher:
+    def fetch(self, _url: str) -> SuccessResult:
+        return SuccessResult()
+
+
+class 測定条件の出力(unittest.TestCase):
+    def setUp(self) -> None:
+        self.measurement = build_discovery_measurement(
+            3, {1: (1, 6), 2: (3, 4), 3: (4, 3)}, 26,
+            "2026-08-16T00:00:00+00:00",
+        )
+        self.municipality = {
+            "name": "テスト区", "id": "test", "top_url": "https://example.jp"
+        }
+        self.procedure = {
+            "name": "転入届", "id": "tennyu", "keywords": {}
+        }
+
+    def test_到達失敗でも探索条件とIDを残す(self):
+        result = discover(
+            self.municipality,
+            self.procedure,
+            FailedFetcher(),
+            self.measurement,
+        )
+        self.assertEqual(result["municipality_id"], "test")
+        self.assertEqual(result["procedure_id"], "tennyu")
+        self.assertEqual(result["measurement"], self.measurement)
+
+    def test_到達成功でも探索条件を残す(self):
+        result = discover(
+            self.municipality,
+            self.procedure,
+            SuccessFetcher(),
+            self.measurement,
+        )
+        self.assertNotIn("error", result)
+        self.assertEqual(result["measurement"], self.measurement)
 
 
 class 既定は同一ホストのみ(unittest.TestCase):

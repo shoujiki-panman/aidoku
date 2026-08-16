@@ -12,12 +12,17 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 import urllib.parse
 from dataclasses import dataclass, asdict
 from pathlib import Path
 
 from htmlutil import normalize, parse
 from polite_fetch import PoliteFetcher
+
+ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(ROOT))
+from measurement import build_discovery_measurement, utc_timestamp  # noqa: E402
 
 OUT_DIR = Path(__file__).parent / "out"
 TARGETS = Path(__file__).parent / "targets.json"
@@ -95,7 +100,7 @@ def link_filter(top_url: str, allow_subdomains: bool):
     return allowed
 
 
-def discover(muni: dict, proc: dict, fetcher: PoliteFetcher) -> dict:
+def discover(muni: dict, proc: dict, fetcher: PoliteFetcher, measurement: dict) -> dict:
     kw = proc["keywords"]
     can_follow = link_filter(muni["top_url"], bool(muni.get("allow_subdomains")))
     seen: set[str] = set()
@@ -118,9 +123,10 @@ def discover(muni: dict, proc: dict, fetcher: PoliteFetcher) -> dict:
     top = get(top_url)
     if not top.body_path:
         return {
-            "municipality": muni["name"], "procedure": proc["name"], "top_url": top_url,
+            "municipality": muni["name"], "municipality_id": muni["id"],
+            "procedure": proc["name"], "procedure_id": proc["id"], "top_url": top_url,
             "error": top.error or "トップページを取得できなかった",
-            "candidates": [], "fetch_log": fetch_log,
+            "candidates": [], "fetch_log": fetch_log, "measurement": measurement,
         }
 
     def harvest(page_url: str, body: str, hops: int, limit: int) -> list[Candidate]:
@@ -185,6 +191,7 @@ def discover(muni: dict, proc: dict, fetcher: PoliteFetcher) -> dict:
         "procedure": proc["name"],
         "procedure_id": proc["id"],
         "top_url": top_url,
+        "measurement": measurement,
         "candidates": [asdict(c) for c in candidates],
         "fetch_log": fetch_log,
     }
@@ -203,8 +210,11 @@ def main() -> None:
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     fetcher = PoliteFetcher()
+    measurement = build_discovery_measurement(
+        MAX_DEPTH, BEAM, MAX_FETCHES, utc_timestamp()
+    )
     for m in munis:
-        result = discover(m, proc, fetcher)
+        result = discover(m, proc, fetcher, measurement)
         out = OUT_DIR / f"discovery_{m['id']}_{proc['id']}.json"
         out.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
         top3 = result["candidates"][:3]

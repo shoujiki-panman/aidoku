@@ -190,6 +190,7 @@ python3 -m http.server 4173 --directory web
 | `crawler/out/` | 探索結果（候補ページとホップ数、取得ログ） |
 | `extractor/` | 読解層。`prompt.md` が抽出プロンプト本体 |
 | `evidence_check.py` | AIの引用が、実際に渡した本文に存在するか照合 |
+| `measurement.py` | 測定条件を記録し、条件の違う結果が同じ集計へ混ざるのを防止 |
 | `scorer/` | 採点層。`golden/*.csv` が人手の正解、`judge_prompt.md` が採点プロンプト |
 | `reports/` | 突合表つきレポート |
 | `analysis/` | 集計。`export_web.py` がダッシュボード用JSONを作る |

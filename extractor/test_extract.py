@@ -14,11 +14,24 @@ LLM（`claude -p`）は呼ばない。呼ばずに決まる経路だけを対象
 from __future__ import annotations
 
 import sys
+import json
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).parent))
-from extract import MAX_TEXT_CHARS, build_evidence_pages, is_non_html, pick_page  # noqa: E402
+from extract import (  # noqa: E402
+    MAX_TEXT_CHARS,
+    build_evidence_pages,
+    is_non_html,
+    measurement_for,
+    main,
+    pick_page,
+)
+from measurement import MeasurementError, build_discovery_measurement  # noqa: E402
+
+VALID_PROMPT_VERSION = "sha256:" + "0" * 64
 
 
 def candidate(url: str, **kw) -> dict:
@@ -111,6 +124,68 @@ class EvidenceScopeTest(unittest.TestCase):
 
         with self.assertRaises(SystemExit):
             build_evidence_pages({"url": "https://example.jp/base"}, MissingFetcher())
+
+
+class MeasurementRecordTest(unittest.TestCase):
+    def test_探索条件と抽出条件をまとめる(self):
+        discovery = {
+            "measurement": build_discovery_measurement(
+                3, {1: (1, 6), 2: (3, 4), 3: (4, 3)}, 26,
+                "2026-08-16T00:00:00+00:00",
+            )
+        }
+        result = measurement_for(
+            discovery,
+            follow=True,
+            model="claude-sonnet-5",
+            prompt=VALID_PROMPT_VERSION,
+            run_at="2026-08-16T01:00:00+00:00",
+        )
+        self.assertTrue(result["follow"])
+        self.assertEqual(result["max_depth"], 3)
+        self.assertEqual(result["max_text_chars"], MAX_TEXT_CHARS)
+
+    def test_探索条件の無い旧結果は拒否する(self):
+        with self.assertRaises(MeasurementError):
+            measurement_for(
+                {},
+                follow=True,
+                model="claude-sonnet-5",
+                prompt=VALID_PROMPT_VERSION,
+                run_at="2026-08-16T01:00:00+00:00",
+            )
+
+    def test_後半の旧探索結果で失敗しても前半の出力を書かない(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            discovery_dir = root / "discovery"
+            out_dir = root / "out"
+            discovery_dir.mkdir()
+            valid = {
+                "municipality": "A市", "municipality_id": "a",
+                "procedure": "転入届", "procedure_id": "tennyu",
+                "candidates": [],
+                "measurement": build_discovery_measurement(
+                    3, {1: (1, 6), 2: (3, 4), 3: (4, 3)}, 26,
+                    "2026-08-16T00:00:00+00:00",
+                ),
+            }
+            legacy = {**valid, "municipality": "B市", "municipality_id": "b"}
+            legacy.pop("measurement")
+            (discovery_dir / "discovery_a_tennyu.json").write_text(
+                json.dumps(valid), encoding="utf-8"
+            )
+            (discovery_dir / "discovery_b_tennyu.json").write_text(
+                json.dumps(legacy), encoding="utf-8"
+            )
+
+            with patch("extract.DISCOVERY_DIR", discovery_dir), \
+                    patch("extract.OUT_DIR", out_dir), \
+                    patch.object(sys, "argv", ["extract.py"]):
+                with self.assertRaises(SystemExit):
+                    main()
+
+            self.assertFalse(list(out_dir.glob("*.json")))
 
 
 if __name__ == "__main__":

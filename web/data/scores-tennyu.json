@@ -5,6 +5,209 @@
   "question": "{muni}に引っ越します。転入届に必要なもの・期限・手数料を教えて。オンラインでできますか？",
   "phase": "23区",
   "n_municipalities": 23,
+  "measurement": {
+    "measurement_version": null,
+    "prompt_version": null,
+    "follow": null,
+    "max_follow": null,
+    "max_depth": null,
+    "beam": null,
+    "max_fetches": null,
+    "max_text_chars": null,
+    "max_links": null,
+    "model": null,
+    "model_version": null,
+    "run_at": [],
+    "discovery_run_at": [],
+    "recording_status": "legacy_unknown",
+    "comparison_status": "legacy_unknown",
+    "runs": [
+      {
+        "municipality_id": "minato",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "adachi",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "bunkyo",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "chiyoda",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "edogawa",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "itabashi",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "nerima",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "shibuya",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "suginami",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "taito",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "toshima",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "nakano",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "katsushika",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "kita",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "koto",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "meguro",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "ota",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "shinagawa",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "shinjuku",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "arakawa",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "chuo",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "setagaya",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "sumida",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      }
+    ]
+  },
   "summary": {
     "average": 59.6,
     "max": 100,
