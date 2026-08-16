@@ -84,7 +84,8 @@ def build_input(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
     r = fetcher.cached(page["url"])
     if r is None or not r.body_path:
         raise SystemExit(f"キャッシュに無い: {page['url']}（先に crawler/discover.py を実行）")
-    links, text, jsonld = parse(r.body(), page["url"])
+    normalized = parse(r.body(), page["url"])
+    links, text, jsonld = normalized.links, normalized.text, normalized.jsonld
 
     truncated = len(text) > MAX_TEXT_CHARS
     body = truncate_page_text(text)
@@ -129,8 +130,8 @@ def build_evidence_pages(page: dict, fetcher: PoliteFetcher,
     r = fetcher.cached(page["url"])
     if r is None or not r.body_path:
         raise SystemExit(f"キャッシュに無い: {page['url']}（先に crawler/discover.py を実行）")
-    _, text, _ = parse(r.body(), page["url"])
-    pages = [truncate_page_text(text)]
+    normalized = parse(r.body(), page["url"])
+    pages = [truncate_page_text(normalized.text)]
     pages.extend(truncate_page_text(ptext) for _, ptext in (extra_pages or []))
     return pages
 
@@ -147,7 +148,7 @@ def judge_clarity(page: dict, muni: str, proc: str, fetcher: PoliteFetcher,
     r = fetcher.cached(page["url"])
     if r is None or not r.body_path:
         return {"online_clarity": "記載なし", "evidence": "", "pages": []}
-    _, text, _ = parse(r.body(), page["url"])
+    text = parse(r.body(), page["url"]).text
     parts = [
         CLARITY_PROMPT.read_text(encoding="utf-8"),
         "\n---\n",
@@ -299,7 +300,7 @@ def main() -> None:
                     fr = fetcher.fetch(url)
                     if not fr.body_path:
                         continue
-                    _, ptext, _ = parse(fr.body(), url)
+                    ptext = parse(fr.body(), url).text
                     extra.append((url, ptext))
                     followed.append(url)
                 if extra:

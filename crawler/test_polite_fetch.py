@@ -15,6 +15,7 @@
 from __future__ import annotations
 
 import io
+import json
 import sys
 import unittest
 import urllib.error
@@ -30,10 +31,13 @@ import polite_fetch  # noqa: E402
 from polite_fetch import CONTACT, USER_AGENT, PoliteFetcher  # noqa: E402
 
 
-def _resp(body: str, *, status: int = 200, content_type: str = "text/html; charset=utf-8"):
+def _resp(body: str, *, status: int = 200, content_type: str = "text/html; charset=utf-8",
+          extra_headers: dict[str, str] | None = None):
     """urlopen が返すコンテキストマネージャの最小の偽物。"""
     headers = Message()
     headers["Content-Type"] = content_type
+    for key, value in (extra_headers or {}).items():
+        headers[key] = value
 
     class _R(io.BytesIO):
         def __enter__(self):
@@ -157,12 +161,15 @@ class CacheTest(unittest.TestCase):
     def tearDown(self):
         self.tmp.cleanup()
 
-    def _fetch_once(self, body="<html>本文</html>"):
+    def _fetch_once(self, body="<html>本文</html>",
+                    page_headers: dict[str, str] | None = None):
         robots = "User-agent: *\nDisallow:\n"
 
         def _side_effect(req, *a, **kw):
             url = req.full_url if hasattr(req, "full_url") else str(req)
-            return _resp(robots if url.endswith("/robots.txt") else body)
+            return _resp(robots) if url.endswith("/robots.txt") else _resp(
+                body, extra_headers=page_headers
+            )
 
         with mock.patch.object(urllib.request, "urlopen", side_effect=_side_effect) as m:
             r = self.f.fetch("https://example.lg.jp/page.html")
@@ -191,6 +198,41 @@ class CacheTest(unittest.TestCase):
             r = self.f.fetch("https://example.lg.jp/page.html", refresh=True)
         self.assertFalse(r.from_cache)
         self.assertEqual(r.body(), "<html>新しい</html>")
+
+    def test_更新ヘッダを保存しcache_hitでも保持する(self):
+        headers = {
+            "Last-Modified": "Sun, 16 Aug 2026 01:02:03 GMT",
+            "ETag": '"page-v2"',
+        }
+        first, _ = self._fetch_once(page_headers=headers)
+        second = self.f.fetch("https://example.lg.jp/page.html")
+        for result in (first, second):
+            self.assertEqual(result.last_modified, headers["Last-Modified"])
+            self.assertEqual(result.etag, headers["ETag"])
+        self.assertTrue(second.from_cache)
+
+    def test_旧cacheは更新ヘッダなしとして読める(self):
+        url = "https://example.lg.jp/legacy.html"
+        body_path, meta_path = self.f._paths(url)
+        body_path.write_text("<html>旧cache</html>", encoding="utf-8")
+        meta_path.write_text(json.dumps({
+            "url": url,
+            "final_url": url,
+            "status": 200,
+            "content_type": "text/html",
+            "fetched_at": "2026-08-01T00:00:00+0000",
+            "from_cache": False,
+            "blocked_by_robots": False,
+            "body_path": str(body_path),
+            "error": None,
+        }), encoding="utf-8")
+
+        result = self.f.cached(url)
+        self.assertIsNotNone(result)
+        self.assertTrue(result.from_cache)
+        self.assertIsNone(result.last_modified)
+        self.assertIsNone(result.etag)
+        self.assertEqual(result.body(), "<html>旧cache</html>")
 
 
 class UserAgentTest(unittest.TestCase):

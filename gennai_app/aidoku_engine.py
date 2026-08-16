@@ -117,7 +117,8 @@ def judge_live(url: str) -> dict:
     r = fetcher.fetch(url)
     if not r or not r.body_path:
         raise RuntimeError(f"取得できなかった: {url}")
-    _, text, jsonld = parse(r.body(), url)
+    normalized = parse(r.body(), url)
+    text, jsonld = normalized.text, normalized.jsonld
     body = text[:18000]
 
     # 4項目の抽出（リポジトリの本番プロンプトをそのまま使う）

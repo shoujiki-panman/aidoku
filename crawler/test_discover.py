@@ -13,11 +13,20 @@ from discover import discover, link_filter
 from measurement import build_discovery_measurement
 
 
+def measurement() -> dict:
+    return build_discovery_measurement(
+        3, {1: (1, 6), 2: (3, 4), 3: (4, 3)}, 26,
+        "2026-08-16T00:00:00+00:00",
+    )
+
+
 class FailedResult:
     status = 0
     from_cache = False
     blocked_by_robots = False
     body_path = None
+    last_modified = None
+    etag = None
     error = "取得失敗"
 
 
@@ -26,7 +35,7 @@ class FailedFetcher:
         return FailedResult()
 
 
-class SuccessResult:
+class FakeResult:
     status = 200
     from_cache = True
     blocked_by_robots = False
@@ -34,21 +43,24 @@ class SuccessResult:
     content_type = "text/html"
     error = None
 
+    def __init__(self, body: str, *, last_modified: str | None = None,
+                 etag: str | None = None):
+        self._body = body
+        self.last_modified = last_modified
+        self.etag = etag
+
     def body(self) -> str:
-        return "<html><body>トップページ</body></html>"
+        return self._body
 
 
 class SuccessFetcher:
-    def fetch(self, _url: str) -> SuccessResult:
-        return SuccessResult()
+    def fetch(self, _url: str) -> FakeResult:
+        return FakeResult("<html><body>トップページ</body></html>")
 
 
 class 測定条件の出力(unittest.TestCase):
     def setUp(self) -> None:
-        self.measurement = build_discovery_measurement(
-            3, {1: (1, 6), 2: (3, 4), 3: (4, 3)}, 26,
-            "2026-08-16T00:00:00+00:00",
-        )
+        self.measurement = measurement()
         self.municipality = {
             "name": "テスト区", "id": "test", "top_url": "https://example.jp"
         }
@@ -76,6 +88,48 @@ class 測定条件の出力(unittest.TestCase):
         )
         self.assertNotIn("error", result)
         self.assertEqual(result["measurement"], self.measurement)
+
+
+class PageFetcher:
+    def fetch(self, url: str) -> FakeResult:
+        if url == "https://example.jp/":
+            return FakeResult('<a href="/tennyu">転入届</a>')
+        return FakeResult("""
+            <head>
+              <title>転入届</title>
+              <meta name="description" content="転入届の案内">
+              <meta property="og:type" content="article">
+              <script type="application/ld+json">
+                {"dateModified":"2026-08-16", "datePublished":"2026-08-01"}
+              </script>
+            </head>
+            <body><h1>転入届</h1><h2>必要書類</h2><p>本文です。</p></body>
+        """, last_modified="Sun, 16 Aug 2026 00:00:00 GMT", etag='"v2"')
+
+
+class 正規化結果の出力(unittest.TestCase):
+    def test_候補へページ構造と更新情報を残す(self):
+        result = discover(
+            {"name": "テスト区", "id": "test", "top_url": "https://example.jp/"},
+            {"name": "転入届", "id": "tennyu", "keywords": {
+                "strong": ["転入届"], "weak": [], "url_hints": [],
+            }},
+            PageFetcher(),
+            measurement(),
+        )
+        candidate = result["candidates"][0]
+        self.assertEqual(candidate["title"], "転入届")
+        self.assertEqual(candidate["meta"], {
+            "description": "転入届の案内", "og:type": "article",
+        })
+        self.assertEqual(candidate["headings"], [
+            {"level": 1, "text": "転入届"},
+            {"level": 2, "text": "必要書類"},
+        ])
+        self.assertEqual(candidate["date_modified"], ["2026-08-16"])
+        self.assertEqual(candidate["date_published"], ["2026-08-01"])
+        self.assertEqual(candidate["last_modified"], "Sun, 16 Aug 2026 00:00:00 GMT")
+        self.assertEqual(candidate["etag"], '"v2"')
 
 
 class 既定は同一ホストのみ(unittest.TestCase):

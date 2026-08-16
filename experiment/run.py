@@ -50,7 +50,8 @@ def build_prompt(html: str, url: str, muni: str, proc: str) -> tuple[str, dict]:
 
     違いはHTMLの出どころだけ（キャッシュ ではなく 手元のファイル）。
     """
-    links, text, jsonld = parse(html, url)
+    normalized = parse(html, url)
+    links, text, jsonld = normalized.links, normalized.text, normalized.jsonld
     truncated = len(text) > MAX_TEXT_CHARS
 
     link_lines, seen = [], set()

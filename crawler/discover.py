@@ -4,7 +4,7 @@
 トップページのリンク文字列と URL だけを頼りにビーム探索する（深さ2まで）。
 
 出力: out/discovery_<自治体>_<手続き>.json
-  - candidates: スコア順の候補ページ（hops つき）
+  - candidates: スコア順の候補ページ（hops・title・meta・見出し・更新情報つき）
   - fetch_log: 実際に取得したURLとキャッシュヒットの記録（再現性のため）
 """
 
@@ -14,7 +14,7 @@ import argparse
 import json
 import sys
 import urllib.parse
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, field
 from pathlib import Path
 
 from htmlutil import normalize, parse
@@ -48,6 +48,13 @@ class Candidate:
     is_pdf: bool = False
     text_len: int = 0
     has_jsonld: bool = False
+    title: str | None = None
+    meta: dict[str, str] = field(default_factory=dict)
+    headings: list[dict[str, int | str]] = field(default_factory=list)
+    date_modified: list[str] = field(default_factory=list)
+    date_published: list[str] = field(default_factory=list)
+    last_modified: str | None = None
+    etag: str | None = None
 
 
 def score_link(link_text: str, url: str, kw: dict) -> int:
@@ -114,7 +121,8 @@ def discover(muni: dict, proc: dict, fetcher: PoliteFetcher, measurement: dict) 
         fetches += 1
         fetch_log.append({
             "url": url, "status": r.status, "from_cache": r.from_cache,
-            "blocked_by_robots": r.blocked_by_robots, "error": r.error,
+            "blocked_by_robots": r.blocked_by_robots,
+            "last_modified": r.last_modified, "etag": r.etag, "error": r.error,
         })
         return r
 
@@ -130,11 +138,11 @@ def discover(muni: dict, proc: dict, fetcher: PoliteFetcher, measurement: dict) 
         }
 
     def harvest(page_url: str, body: str, hops: int, limit: int) -> list[Candidate]:
-        links, _, _ = parse(body, page_url)
+        page = parse(body, page_url)
         host = page_url.split("/")[2]
         # 同じページに同じ先へのリンクが複数あるのは普通なので、最高得点の1件に畳む
         best: dict[str, Candidate] = {}
-        for ln in links:
+        for ln in page.links:
             if not ln.href.startswith("http") or not can_follow(host, ln.href):
                 continue  # 既定は同一ホスト。allow_subdomains のときだけ親ドメイン配下
             n = normalize(ln.href)
@@ -157,13 +165,20 @@ def discover(muni: dict, proc: dict, fetcher: PoliteFetcher, measurement: dict) 
         r = get(c.url)
         c.status = r.status
         c.is_pdf = "pdf" in (r.content_type or "").lower() or c.url.lower().endswith(".pdf")
+        c.last_modified = r.last_modified
+        c.etag = r.etag
         candidates.append(c)
         if not r.body_path or c.is_pdf:
             return None
         body = r.body()
-        _, text, jsonld = parse(body, c.url)
-        c.text_len = len(text)
-        c.has_jsonld = bool(jsonld)
+        page = parse(body, c.url)
+        c.text_len = len(page.text)
+        c.has_jsonld = bool(page.jsonld)
+        c.title = page.title
+        c.meta = page.meta
+        c.headings = [asdict(heading) for heading in page.headings]
+        c.date_modified = page.date_modified
+        c.date_published = page.date_published
         return body
 
     # 深さごとに「有望な親を展開 → 子を取得」を繰り返す
