@@ -18,7 +18,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from extract import is_non_html, pick_page  # noqa: E402
+from extract import MAX_TEXT_CHARS, build_evidence_pages, is_non_html, pick_page  # noqa: E402
 
 
 def candidate(url: str, **kw) -> dict:
@@ -73,6 +73,44 @@ class PickPageTest(unittest.TestCase):
 
     def test_returns_none_when_nothing_usable(self):
         self.assertIsNone(pick_page({"candidates": []}))
+
+
+class FakeCachedPage:
+    body_path = "cached.html"
+
+    def __init__(self, body: str):
+        self._body = body
+
+    def body(self) -> str:
+        return f"<html><body>{self._body}</body></html>"
+
+
+class FakeFetcher:
+    def __init__(self, body: str):
+        self._body = body
+
+    def cached(self, _url: str) -> FakeCachedPage:
+        return FakeCachedPage(self._body)
+
+
+class EvidenceScopeTest(unittest.TestCase):
+    def test_本体と追跡ページを各18000字まで照合対象にする(self):
+        pages = build_evidence_pages(
+            {"url": "https://example.jp/base"},
+            FakeFetcher("本" * (MAX_TEXT_CHARS + 10)),
+            extra_pages=[("https://example.jp/detail", "追" * (MAX_TEXT_CHARS + 10))],
+        )
+        self.assertEqual(len(pages), 2)
+        self.assertEqual(pages[0].count("本"), MAX_TEXT_CHARS)
+        self.assertEqual(pages[1].count("追"), MAX_TEXT_CHARS)
+
+    def test_基点ページのキャッシュが無ければ明示的に失敗する(self):
+        class MissingFetcher:
+            def cached(self, _url: str):
+                return None
+
+        with self.assertRaises(SystemExit):
+            build_evidence_pages({"url": "https://example.jp/base"}, MissingFetcher())
 
 
 if __name__ == "__main__":

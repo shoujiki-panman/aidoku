@@ -148,13 +148,16 @@ python3 crawler/discover.py -m nerima -m edogawa -m hachioji -p tennyu
 # 2. 4項目の抽出（--follow でリンク先1階層まで追う）
 python3 extractor/extract.py -p tennyu --follow
 
-# 3. ゴールデンセットと突合して採点
+# 3. 既存の抽出結果も、AIが読んだ本文と引用を照合（元ファイルは上書きしない）
+python3 analysis/apply_evidence_check.py
+
+# 4. ゴールデンセットと突合して採点
 python3 scorer/score.py -p tennyu
 
-# 4. 1枚のレポートに出力
+# 5. 1枚のレポートに出力
 python3 scorer/report.py -p tennyu
 
-# 5. ダッシュボード用のJSONを書き出す
+# 6. ダッシュボード用のJSONを書き出す
 python3 analysis/export_web.py -p tennyu
 ```
 
@@ -186,6 +189,7 @@ python3 -m http.server 4173 --directory web
 | `crawler/cache/` | 生HTML。再実行はここから。Git管理外 |
 | `crawler/out/` | 探索結果（候補ページとホップ数、取得ログ） |
 | `extractor/` | 読解層。`prompt.md` が抽出プロンプト本体 |
+| `evidence_check.py` | AIの引用が、実際に渡した本文に存在するか照合 |
 | `scorer/` | 採点層。`golden/*.csv` が人手の正解、`judge_prompt.md` が採点プロンプト |
 | `reports/` | 突合表つきレポート |
 | `analysis/` | 集計。`export_web.py` がダッシュボード用JSONを作る |

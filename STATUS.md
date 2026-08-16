@@ -1,8 +1,9 @@
-# 進捗ボード — AI読（アイドク） 更新: 2026-08-03
+# 進捗ボード — AI読（アイドク） 更新: 2026-08-16
 
 > 最初に読む: [START-HERE.md](START-HERE.md)　／　経緯の全記録: [reports/](reports/)
 
-> ## 次の締切: **作品提出 2026-08-23（日）17:00**（残り20日）
+> ## 次の締切: **作品提出 2026-08-23（日）17:00**
+> （2026-08-16 19:46 JST 時点で残り約6日21時間）
 
 ### 📅 期日一覧
 
@@ -29,7 +30,8 @@
 | | 状態 |
 |---|---|
 | 23区の実測（転入届4項目） | ✅ 完了。港区のみ4項目、5区がほぼ読めず、手数料22区で不記載 |
-| 採点器 | ✅ 必須要素チェック方式。ぶれ幅 ±15点 → **±2点** |
+| 採点器 | ✅ 必須要素チェック方式。3自治体12行で測った最大ぶれは2点。**公開23区のぶれは未測定** |
+| Evidence Check | ✅ AIの引用を本文と照合。既存73出力は verified 104 / partial 23 / missing 0（この73件内のみ） |
 | 判定エンジン `aidoku_engine.py` | ✅ 23区は実測値を即返す／未知URLはその場で取得して判定 |
 | 源内API `server.py` | ✅ 仕様準拠（同期・非同期・ポーリング・添付・認証） |
 | **源内Web本体がローカルで起動** | ✅ AWS不要（`web:dev`）。AI読が源内のAIアプリとして動作 |
@@ -45,31 +47,27 @@
 
 ## ⏭ 残り
 
-**ゴール**: 区の担当者が「開いて、直して、確かめた」までを迷わず一周できること。
-フェーズと課題の全体像は [KICKOFF.md](KICKOFF.md)、個々の作業は
-**[GitHub Issues](https://github.com/shoujiki-panman/aidoku/issues)** に切ってある。
+**ゴール**: 最初のAI段差を1件消すために必要なものから進める。
+2026-08-16確認時点で open issue は33件。そのうち提出マイルストーンの新しい一群は
+[#55〜#75](https://github.com/shoujiki-panman/aidoku/issues?q=is%3Aissue+is%3Aopen+milestone%3A%22%E4%BD%9C%E5%93%81%E6%8F%90%E5%87%BA%22)
+の21件（#54は完了）。古い課題も消していない。全件は
+[GitHub Issues](https://github.com/shoujiki-panman/aidoku/issues) を正とする。
 
-### Phase A — 出せる状態にする（最優先）
-- [#1](https://github.com/shoujiki-panman/aidoku/issues/1) 画面キャプチャ3枚（1600×900）
-- [#2](https://github.com/shoujiki-panman/aidoku/issues/2) デモ操作動画（60秒・無音）
-- [#3](https://github.com/shoujiki-panman/aidoku/issues/3) **プレゼン動画の収録と枠の予約**（収録は8/26〜30）
-  ※ 従来「早い者順」と書いていたが、**公式サイト・ガイドブックに該当する記述は見つからなかった**（2026-08-03 確認）。事務局に要確認
-- [#4](https://github.com/shoujiki-panman/aidoku/issues/4) 提出ガイドで著作物の条件を確認
-- [#15](https://github.com/shoujiki-panman/aidoku/issues/15) 提出前チェックリスト
+### いま進める測定基盤
 
-### Phase B — 使い勝手を極める（本丸）
-- [#5](https://github.com/shoujiki-panman/aidoku/issues/5) 判定中の進捗が見えない（30〜60秒 無言）
-- [#6](https://github.com/shoujiki-panman/aidoku/issues/6) 処方箋の（　）を埋める作業が重い
-- [#7](https://github.com/shoujiki-panman/aidoku/issues/7) 履歴から「もう一度診断」ができない
-- [#8](https://github.com/shoujiki-panman/aidoku/issues/8) 1回に1URLしか診断できない
-- [#9](https://github.com/shoujiki-panman/aidoku/issues/9) 点数だけで「どこから直すか」が分からない
-- [#10](https://github.com/shoujiki-panman/aidoku/issues/10) 判定基準が画面から見えない
-- [#11](https://github.com/shoujiki-panman/aidoku/issues/11) 転入届しか対応していない
+- [#55](https://github.com/shoujiki-panman/aidoku/issues/55) **Evidence Check** — 実装・既存73件の照合まで完了。この変更をPRにする
+- [#56](https://github.com/shoujiki-panman/aidoku/issues/56) 測定条件を出力へ記録する
+- [#67](https://github.com/shoujiki-panman/aidoku/issues/67) Page Normalizerを仕様どおりにする
+- [#68](https://github.com/shoujiki-panman/aidoku/issues/68) Test Caseをfact_type単位に分ける
+- [#69](https://github.com/shoujiki-panman/aidoku/issues/69) 回答にconfidenceとevidence_locationを足す
+- [#70](https://github.com/shoujiki-panman/aidoku/issues/70) Evaluatorの4判定を揃える
+- [#71](https://github.com/shoujiki-panman/aidoku/issues/71) Failure Taxonomyを定義する
 
-### Phase C — 広げる（提出後）
-- [#12](https://github.com/shoujiki-panman/aidoku/issues/12) 多摩地域へ拡大
-- [#13](https://github.com/shoujiki-panman/aidoku/issues/13) 自治体との接点をつくる
-- [#14](https://github.com/shoujiki-panman/aidoku/issues/14) 判定のぶれを提出前に測り直す
+### 提出までに外せない確認
+
+- [#3](https://github.com/shoujiki-panman/aidoku/issues/3) プレゼン動画2分の収録と収録枠の予約
+- [#63](https://github.com/shoujiki-panman/aidoku/issues/63) 提出前チェック
+- [#66](https://github.com/shoujiki-panman/aidoku/issues/66) Cloudflare確認後の主張を提出物へ反映
 
 ## ⚠️ 触るときの注意
 
@@ -79,7 +77,9 @@
 - 源内のフロントは `createdDate` を**エポックミリ秒**で扱う。ISO文字列だと `Invalid time value`
 - 源内のチャット画面は動かない（Lambda直叩き構造）。**AIアプリ画面だけ見せる**
 - 認証は5行バイパスしている（本家に無い改変）。説明できる範囲に留めてある
-- 採点はLLM判定なのでぶれる。±2点は測定誤差として明記して出す
+- 公開23区の点数は各1回しか測っておらず、ぶれ幅は未測定。**3自治体12行の最大2点と混ぜない**
+- `web/assets/barrier.js` だけは `extractor_key` を使う。`display_label` に揃えると `barrier.html` が空欄になる
+- `fact_types.json` と `web/data/fact-types.json` は生成スクリプトがなく手動同期。片方だけ直さない
 
 ## 📌 この1週間で学んだこと（同じ失敗を繰り返さないため）
 

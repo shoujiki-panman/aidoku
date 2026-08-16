@@ -64,6 +64,36 @@
 | 追従リンク | `--follow` 指定時のみ、**最大2本** |
 | モデル | `claude-sonnet-5`（`claude -p` をローカルログインで呼ぶ） |
 
+#### Evidence Check — `evidence_check.py`
+
+AIが返した引用 `evidence` を、**AIへ本文として渡した範囲**と照合する。
+範囲は本体ページと `--follow` で開いた最大2ページで、各ページ18,000文字まで。
+JSON-LDやリンク一覧は照合対象に含めない。
+
+| verdict | 意味 |
+|---|---|
+| `exact` | 本文にそのまま存在する |
+| `normalized` | NFKC・空白・引用記号などのゆれを吸収すると存在する |
+| `partial` | 正規化後に15文字以上の連続一致があるが、引用全体は未確認 |
+| `missing` | 上のどれにも当たらない。捏造とは断定せず監査フラグにする |
+| `too_short` | 8文字未満で、照合しても意味がない |
+| `not_applicable` | `found=false` で、引用ではないため対象外 |
+| `not_checked` | 必要なキャッシュが欠け、判定できない |
+
+`missing` でも `found=false` へ変更しない。公開スコアを裏で書き換えず、
+項目の `evidence_check` と出力全体の `evidence_summary` に監査結果を残す。
+
+2026-08-16に既存73出力へ遡って適用した結果:
+
+- 到達71件が使った117 URLはすべてキャッシュあり。未到達は2件
+- 照合対象127項目: verified 104（exact 74 + normalized 30）/
+  partial 23 / missing 0 / too_short 0
+- `found=false` の157項目は対象外
+
+**これは既存73出力内の確認結果であり、別の自治体・手続き・将来の出力まで
+Evidenceが正しいと一般化できるサンプルではない。**
+集計は `analysis/out/evidence-check-summary.json` に残す。
+
 ### ③ 書き出し — `analysis/export_dashboard.py`
 
 `extractor/out/` の結果を、画面が読む `web/data/scores-<手続き>.json` にする。
@@ -151,13 +181,16 @@
 ```bash
 cd crawler   && python3 discover.py -m <自治体ID> -p <手続きID>
 cd extractor && python3 extract.py  -m <自治体ID> -p <手続きID> --follow
+python3 analysis/apply_evidence_check.py
 cd analysis  && python3 export_dashboard.py -p <手続きID> --out ../web/data/scores-<手続きID>.json
 ```
 
 `--follow` を付けるかで結果が変わる。**23区の公開値は付けて測っている。**
+`apply_evidence_check.py` はキャッシュだけを読み、元の `extractor/out/*.json` は上書きしない。
 
 テスト: `crawler/test_polite_fetch.py`（16件）・`crawler/test_discover.py`（9件）・
-`extractor/test_extract.py`・`scorer/test_score.py`
+`extractor/test_extract.py`・`test_evidence_check.py`・
+`analysis/test_apply_evidence_check.py`・`scorer/test_score.py`
 
 ---
 
