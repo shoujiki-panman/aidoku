@@ -54,6 +54,9 @@
     </div>
   </div>
 
+  <!-- サイトの見張り状態。普段は1行、知らせることがあるときだけ大きくなる -->
+  <div id="site-status" class="site-status" aria-live="polite"></div>
+
   <div class="proc-tabs" id="proc-tabs" role="tablist" aria-label="手続きを選ぶ"></div>
 
   <!-- 最上段は「今やる1件」。点数の一覧より先に、次の一手を1つだけ出す。
@@ -163,6 +166,7 @@
 </footer>
 
 <script src="assets/next-action.js"></script>
+<script src="assets/site-status.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

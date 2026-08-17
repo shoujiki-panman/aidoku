@@ -28,7 +28,40 @@ async function loadJson(path) {
   return res.json();
 }
 
+// サイトの見張り状態。無ければ黙って出さない（数字を作らない）。
+// 判定は assets/site-status.js の Pure Function（テスト: web/test_site_status.mjs）。
+async function renderSiteStatus() {
+  const box = $('site-status');
+  let report = null;
+  try {
+    const res = await fetch('data/site-status.json');
+    if (res.ok) report = await res.json();
+  } catch {
+    report = null;
+  }
+  const s = AidokuSiteStatus.describe(report);
+  if (s.level === 'none') { box.hidden = true; return; }
+
+  const when = AidokuSiteStatus.formatCheckedAt(s.checkedAt);
+  const rows = s.items.slice(0, 10).map((i) => `
+    <li><b>${esc(i.municipality ?? '')}</b>・${esc(i.procedure ?? '')}
+        <a class="dads-link" href="${esc(i.url ?? '')}" target="_blank" rel="noopener">ページ</a>
+        <span class="site-status__why">${esc(i.reason ?? '')}</span></li>`).join('');
+
+  box.hidden = false;
+  box.dataset.level = s.level;
+  box.innerHTML = `
+    <p class="site-status__line">
+      <span class="site-status__badge">サイトの見張り</span>
+      <b>${esc(s.headline)}</b>
+      ${when ? `<span class="site-status__when">最終確認 ${esc(when)}</span>` : ''}
+    </p>
+    ${s.detail ? `<p class="site-status__detail">${esc(s.detail)}</p>` : ''}
+    ${rows ? `<ul class="site-status__list">${rows}</ul>` : ''}`;
+}
+
 async function init() {
+  renderSiteStatus();
   const ft = await loadJson('data/fact-types.json');
   FIELDS = ft.fact_types.map((f) => f.display_label);
   ITEMS = [...FIELDS, ...ft.extra_measures.map((m) => m.display_label)];
