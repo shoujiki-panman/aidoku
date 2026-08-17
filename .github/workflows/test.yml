@@ -17,10 +17,11 @@ jobs:
           node-version: '24'
 
       # テストは PR ごとに増えるので、名前を列挙せず glob で拾う
+      # web/ は画面ロジックの node テスト（DOM不要の Pure Function だけを対象にする）
       - name: gatekeeper のテストを回す
         run: |
           shopt -s nullglob
-          files=(gatekeeper/test_*.mjs)
+          files=(gatekeeper/test_*.mjs web/test_*.mjs)
           if [ ${#files[@]} -eq 0 ]; then
             echo "テストファイルが1つも無い"
             exit 1

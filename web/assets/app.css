@@ -325,6 +325,50 @@ td.marks { white-space: nowrap; }
   .ans__item { grid-template-columns: 1fr; gap: .1em; }
 }
 
+/* ---- 今やる1件（2026-08-17 追加・Issue #9） ----
+   最上段の1枚。選んで読むだけで終わらせず、次の一手を1つだけ出す。 */
+
+.next-action { background: #fff; border: 2px solid var(--color-primitive-blue-900, #0056b3);
+               border-radius: 10px; padding: 1.1em 1.3em; }
+.next-action[data-empty="true"] { border-color: #bfe3cd; background: #f0f9f3; }
+.next-action__none { margin: 0; color: #0f7a3d; line-height: 1.8; }
+
+.next-action__head { display: flex; align-items: center; gap: .8em; flex-wrap: wrap;
+                     margin: 0 0 .6em; }
+.next-action__chip { display: inline-block; padding: .15em .8em; border-radius: 999px;
+                     font-size: .8rem; font-weight: 700;
+                     background: #fff8e6; border: 1px solid #e6c866; color: #8a6d00; }
+.next-action__where { color: #5c5c66; }
+
+.next-action__what { margin: 0 0 .4em; font-size: 1.25rem; line-height: 1.6; }
+.next-action__why { margin: 0 0 .8em; font-size: .9rem; color: #5c5c66; }
+
+.next-action__facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+                      gap: .6em 1.2em; margin: 0 0 1em; padding: .8em 0;
+                      border-block: 1px solid #e3e6ea; }
+.next-action__facts > div { margin: 0; }
+.next-action__facts dt { font-size: .8rem; color: #5c5c66; margin: 0 0 .15em; }
+.next-action__facts dd { margin: 0; line-height: 1.6; word-break: break-all; }
+
+.next-action__request-title { margin: 0 0 .5em; }
+.next-action__text { width: 100%; box-sizing: border-box; font: inherit;
+                     font-size: .9rem; line-height: 1.7; padding: .7em .9em;
+                     border: 1px solid #d8dde3; border-radius: 8px; background: #f8f9fa;
+                     resize: vertical; }
+.next-action__request-foot { display: flex; align-items: center; gap: .8em; margin: .5em 0 0; }
+.next-action__copy { font: inherit; font-weight: 700; padding: .5rem 1.2rem;
+                     border: 1px solid var(--color-primitive-blue-900, #0056b3);
+                     border-radius: 8px; background: var(--color-primitive-blue-900, #0056b3);
+                     color: #fff; cursor: pointer; }
+.next-action__copy:hover { background: #003d80; }
+.next-action__copy:focus-visible { outline: 3px solid #ffc700; outline-offset: 2px; }
+#copy-done { color: #0f7a3d; font-weight: 700; }
+
+.next-action__recheck { margin-top: 1em; }
+.next-action__recheck summary { cursor: pointer; color: #1a3a6b; }
+.next-action__cmd { overflow-x: auto; background: #f2f2f2; border: 1px solid #d8dde3;
+                    border-radius: 8px; padding: .8em 1em; font-size: .85rem; line-height: 1.7; }
+
 /* 手続きの切り替え。3つしかないので、選択肢を全部見せる（ドロップダウンにしない） */
 .proc-tabs {
   display: flex;

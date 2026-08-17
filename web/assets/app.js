@@ -168,11 +168,93 @@ function renderRanking() {
   });
 }
 
+// 「今やる1件」。点数の閲覧で終わらせず、選んだ区について次の一手を1つだけ出す。
+// 選ぶのは assets/next-action.js の Pure Function（テスト: web/test_next_action.mjs）。
+// 文中の事実（項目・直し方・点・URL・時刻）はすべて JSON の値。ここで作らない。
+function renderNextAction(m) {
+  const box = $('next-action');
+  const picked = AidokuNextAction.pickNextAction(m.improvements, ITEMS);
+
+  if (!picked) {
+    // 全項目読めた区。架空の改善案を出さない
+    box.innerHTML = `
+      <div class="next-action" data-empty="true">
+        <p class="next-action__none"><b>${esc(m.name)}</b>の${esc(data.procedure)}ページに、今やる1件はありません。4項目とも住民のAIに伝わっています。</p>
+      </div>`;
+    return;
+  }
+
+  const hasGain = typeof picked.gain === 'number' && Number.isFinite(picked.gain);
+  const runs = Array.isArray(data.measurement?.runs) ? data.measurement.runs : [];
+  const run = runs.find((r) => r.municipality_id === m.id);
+  // legacy_unknown の測定は実行時刻が残っていない。推測で埋めず「記録なし」と出す
+  const measuredAt = run?.run_at
+    ? run.run_at.slice(0, 16).replace('T', ' ')
+    : '記録なし（測定条件の記録を始める前の測定です）';
+
+  const request = AidokuNextAction.buildRequestText({
+    muniName: m.name,
+    procedureName: data.procedure,
+    field: picked.field,
+    reason: picked.reason ?? '',
+    pageUrl: m.page_url ?? '',
+    gain: picked.gain,
+  });
+  const recheck = AidokuNextAction.buildRecheckCommand(m.id, data.procedure_id);
+
+  box.innerHTML = `
+    <div class="next-action">
+      <p class="next-action__head">
+        <span class="next-action__chip">未検証の提案</span>
+        <span class="next-action__where"><b>${esc(m.name)}</b>・${esc(data.procedure)}</span>
+      </p>
+      <p class="next-action__what">「<b>${esc(picked.field)}</b>」をページに書き足す — ${esc(picked.reason ?? '')}</p>
+      <p class="next-action__why">なぜこの1件: 読めなかった項目のうち、見込み効果が最大だからです${hasGain ? `（+${esc(picked.gain)}点）` : ''}。</p>
+      <dl class="next-action__facts">
+        <div><dt>現在</dt><dd>${esc(m.total)}/100点</dd></div>
+        ${hasGain ? `<div><dt>直すと（見込み）</dt><dd>${esc(m.total + picked.gain)}/100点 — 実ページの再測定までは未検証</dd></div>` : ''}
+        <div><dt>対象ページ</dt><dd><a class="dads-link" href="${esc(m.page_url)}" target="_blank" rel="noopener">${esc(m.page_url)}</a></dd></div>
+        <div><dt>測定日時</dt><dd>${esc(measuredAt)}</dd></div>
+      </dl>
+      ${request ? `
+      <div class="next-action__request">
+        <p class="next-action__request-title"><b>担当部署へ渡せる依頼文</b>（コピーして使えます。こちらから自動では送りません）</p>
+        <textarea class="next-action__text" id="request-text" readonly rows="10">${esc(request)}</textarea>
+        <p class="next-action__request-foot">
+          <button type="button" class="next-action__copy" id="copy-request">依頼文をコピー</button>
+          <span id="copy-done" role="status" aria-live="polite"></span>
+        </p>
+      </div>` : ''}
+      ${recheck ? `
+      <details class="next-action__recheck">
+        <summary>直したあとの再確認のしかた</summary>
+        <p class="section-note">直しても、同じ条件で再測定するまでは「改善確認済み」と言いません。再測定のコマンド:</p>
+        <pre class="next-action__cmd"><code>${esc(recheck)}</code></pre>
+      </details>` : ''}
+    </div>`;
+
+  const btn = $('copy-request');
+  if (btn) {
+    btn.addEventListener('click', async () => {
+      const ta = $('request-text');
+      try {
+        await navigator.clipboard.writeText(ta.value);
+      } catch {
+        ta.select();
+        document.execCommand('copy');
+      }
+      $('copy-done').textContent = 'コピーしました';
+    });
+  }
+}
+
 function select(id) {
   const m = data.municipalities.find((x) => x.id === id);
   if (!m) return;
   document.querySelectorAll('.muni-link').forEach((b) =>
     b.setAttribute('aria-current', b.dataset.id === id ? 'true' : 'false'));
+
+  renderNextAction(m);
 
   const unread = m.fields.filter((f) => f.verdict !== '読めた').length;
 

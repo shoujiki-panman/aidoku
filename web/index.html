@@ -56,6 +56,16 @@
 
   <div class="proc-tabs" id="proc-tabs" role="tablist" aria-label="手続きを選ぶ"></div>
 
+  <!-- 最上段は「今やる1件」。点数の一覧より先に、次の一手を1つだけ出す。
+       選び方は plans/feat-next-action.md で固定（gain降順→fact-types定義順→field順）。 -->
+  <section aria-labelledby="next-action-heading">
+    <h2 class="dads-heading" data-size="l" id="next-action-heading">今やる1件</h2>
+    <p class="section-note">下の一覧で選んだ区について、<strong>読めなかった項目のうち見込み効果が最大の1件</strong>を出します。改善案は、実ページでの再測定が済むまで<strong>未検証の提案</strong>です。</p>
+    <div id="next-action" aria-live="polite"></div>
+  </section>
+
+  <hr class="dads-divider">
+
   <section aria-labelledby="summary-heading">
     <h2 class="dads-heading" data-size="l" id="summary-heading">全体</h2>
     <dl class="stat-row" id="summary"></dl>
@@ -152,6 +162,7 @@
   </div>
 </footer>
 
+<script src="assets/next-action.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
