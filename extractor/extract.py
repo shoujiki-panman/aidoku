@@ -28,6 +28,7 @@ from extractor.fact_extract import (  # noqa: E402
 )
 from extractor.response_contract import is_non_html_url as is_non_html  # noqa: E402
 from extractor.result_contract import successful_result, unreachable_result  # noqa: E402
+from extractor.trials import aggregate_trials, positive_trial_count  # noqa: E402
 
 def pick_page(discovery: dict) -> dict | None:
     """探索結果から、抽出対象にするスコア最上位のHTMLページを選ぶ。"""
@@ -93,13 +94,15 @@ def discovery_files(procedure: str, municipalities: list[str] | None) -> list[Pa
 
 
 def extract_one(discovery: dict, fetcher: PoliteFetcher,
-                model: str, follow: bool) -> dict:
+                model: str, follow: bool, trials: int = 1) -> dict:
+    trial_count = positive_trial_count(trials)
     cases = test_cases_for(discovery["procedure_id"], discovery["municipality"])
     measurement = measurement_for(
         discovery, follow=follow, model=model,
         prompt=prompt_version([PROMPT, CLARITY_PROMPT]), run_at=utc_timestamp())
-    return extract_prepared(
-        discovery, tuple(cases), fetcher, model, follow, measurement)
+    return extract_trials(
+        discovery, tuple(cases), fetcher, model, follow, measurement,
+        trial_count)
 
 
 def measurement_for(discovery: dict, *, follow: bool, model: str,
@@ -132,15 +135,33 @@ def extract_prepared(discovery: dict, cases: tuple[TestCase, ...],
         discovery, page, records, meta, model, clarity, measurement)
 
 
+def extract_trials(discovery: dict, cases: tuple[TestCase, ...],
+                   fetcher: PoliteFetcher, model: str, follow: bool,
+                   measurement: dict, trials: int) -> dict:
+    """指定回数を独立に実行し、全回成功後に1つの出力へまとめる。"""
+    trial_count = positive_trial_count(trials)
+    results = [
+        extract_prepared(discovery, cases, fetcher, model, follow, measurement)
+        for _run_number in range(1, trial_count + 1)
+    ]
+    return aggregate_trials(results)
+
+
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--municipality", "-m", action="append")
     parser.add_argument("--procedure", "-p", default="tennyu")
     parser.add_argument("--model", default="claude-sonnet-5")
+    parser.add_argument("--trials", type=int, default=1,
+                        help="同じ自治体・手続きを測る回数（既定: 1）")
     parser.add_argument(
         "--follow", action="store_true",
         help="各Test Caseが指定したリンク先を1階層だけ開いて再抽出する")
     args = parser.parse_args(argv)
+    try:
+        trial_count = positive_trial_count(args.trials)
+    except ValueError as error:
+        parser.error(str(error))
 
     files = discovery_files(args.procedure, args.municipality)
     if not files:
@@ -159,9 +180,9 @@ def main(argv: list[str] | None = None) -> None:
         raise SystemExit(str(error)) from error
 
     fetcher = PoliteFetcher()
-    batch = build_batch(jobs, lambda job: extract_prepared(
+    batch = build_batch(jobs, lambda job: extract_trials(
         job.discovery, job.cases, fetcher, args.model, args.follow,
-        measurements[job.output]))
+        measurements[job.output], trial_count))
 
     write_batch(batch)
     for _job, result, _serialized in batch:
@@ -169,8 +190,13 @@ def main(argv: list[str] | None = None) -> None:
 
 
 def _print_result(result: dict) -> None:
+    rates = "、".join(
+        f"{key} {value['total_runs']}回中{value['successful_runs']}回"
+        for key, value in result["success_rate"].items())
     if not result["reached"]:
-        print(f"[{result['municipality']}] 抽出対象ページなし（到達失敗）")
+        print(
+            f"[{result['municipality']}] 抽出対象ページなし（到達失敗）"
+            f" / {rates}")
         return
     found = sum(1 for item in result["items"].values() if item["found"])
     followed = result["followed_urls"]
@@ -179,6 +205,7 @@ def _print_result(result: dict) -> None:
         f"[{result['municipality']}] hop{result['page']['hops']} "
         f"{found}/{len(result['test_cases'])}項目 抽出"
         f" / オンライン明示={result['online_clarity']}{tail}"
+        f" / {rates}"
         f" — {result['page']['url']}")
 
 

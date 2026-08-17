@@ -240,6 +240,26 @@ class 既存データの契約(unittest.TestCase):
                 self.assertEqual(len(data["measurement"]["runs"]),
                                  data["n_municipalities"])
 
+    def test_公開69件が既存1回測定の成功率を持つ(self):
+        paths = sorted((Path(__file__).parent / "web" / "data").glob(
+            "scores-*.json"))
+        self.assertEqual(len(paths), 3)
+        cells = []
+        for path in paths:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            for municipality in data["municipalities"]:
+                self.assertEqual(municipality["trial_count"], 1)
+                for field in municipality["fields"]:
+                    rate = field["success_rate"]
+                    expected = 1 if field["verdict"] == "読めた" else 0
+                    self.assertEqual(rate, {
+                        "successful_runs": expected,
+                        "total_runs": 1,
+                        "rate": float(expected),
+                    })
+                cells.append(municipality)
+        self.assertEqual(len(cells), 69)
+
 
 if __name__ == "__main__":
     unittest.main()

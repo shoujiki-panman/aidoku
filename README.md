@@ -148,6 +148,10 @@ python3 crawler/discover.py -m nerima -m edogawa -m hachioji -p tennyu
 # 2. 4項目を独立したTest Caseで抽出（--followで各項目のリンク先を追う）
 python3 extractor/extract.py -p tennyu --follow
 
+# 同じ条件で5回測る例。最初はIssue #57で指定した段差6件だけに絞る
+python3 extractor/extract.py -p tennyu --trials 5 \
+  -m setagaya -m taito -m sumida -m meguro -m toshima -m chuo
+
 # 3. 失敗理由を8種の共通分類へ再分類し、分布を出す
 python3 analysis/failure_distribution.py
 
@@ -180,6 +184,9 @@ python3 -m http.server 4173 --directory web
 `attempts[]`へ残す。追従先がPDF等だった場合は本文を読まず`llm_called: false`の
 観測attemptとして区別する。各結果には質問と`test_case_version`も残す。従来の`items`は
 最後のattemptと同じ値から生成するため、採点・公開画面の入力形式は変わらない。
+`--trials`の既定値は1。複数回では各回を`trials[]`へ`run_number`つきで残し、
+各項目の`found=true`回数を`success_rate`へ「全何回中、成功何回」として記録する。
+従来の`items`と点数は最後の試行を使い、多数決で勝手に判定を変えない。
 失敗項目にはLLMの日本語`failure_reason`を残したまま、8種の共通`failure_type`を
 コードで付ける。定義と既存語彙の対応は
 [`docs/failure-taxonomy.md`](docs/failure-taxonomy.md)を参照。

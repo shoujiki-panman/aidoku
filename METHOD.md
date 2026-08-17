@@ -73,6 +73,7 @@
 | 本文の上限 | 18,000文字（超えたら `truncated: true`） |
 | 渡すリンク数 | 40件 |
 | 追従リンク | `--follow` 指定時のみ、**各Test Case最大2本** |
+| 試行回数 | `--trials`（既定1） |
 | モデル | `claude-sonnet-5`（`claude -p` をローカルログインで呼ぶ） |
 
 #### Evidence Check — `evidence_check.py`
@@ -118,6 +119,22 @@ Evidenceが正しいと一般化できるサンプルではない。**
 各callは`test_cases[].attempts[]`へ残し、`result`は最後のattemptと同じ値にする。
 PDF等へのredirectは本文を読まず、`llm_called: false`の観測attemptとして残す。
 既存の`items`は`test_cases[].result`から機械的に復元し、採点・公開画面との互換性を保つ。
+
+#### 複数回測定とsuccess rate
+
+`--trials N`では同じ自治体・手続きをN回独立に抽出する。各回は`trials[]`へ
+1から始まる`run_number`つきで残し、各項目の`found=true`回数を
+`success_rate.{項目}`の`successful_runs / total_runs / rate`へ記録する。
+途中の1回が例外終了した場合は不完全な分母で公開せず、その自治体の出力を更新しない。
+
+success rateは「AIが値を抽出した回数」であり、答えの正しさではない。従来の`items`と
+点数は最後の試行を使い、多数決や平均で既存の採点方法を変えない。旧結果は実際に1回
+測定した記録なので、公開JSONでは`total_runs: 1`として明示する。
+
+Issue #68以降、ページへ到達できた1試行は4 fact_typeとonline clarityで5回の
+`claude -p`呼び出しを行う。段差6件がすべて到達済みなら5試行で150回、69マスが
+すべて到達済みなら1,725回で、リンク追従があればさらに増える。到達失敗ではLLMを
+呼ばない。実際の回数は到達結果で変わるため、Issue #57の指定どおり最初は6件に絞る。
 
 ### ③ 書き出し — `analysis/export_dashboard.py`
 
