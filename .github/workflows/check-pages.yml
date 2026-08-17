@@ -19,7 +19,7 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write   # 確認結果を web/data/site-status.json へコミットする（画面が読む）
   issues: write
 
 jobs:
@@ -50,7 +50,8 @@ jobs:
             args="-p ${{ inputs.procedure }}"
           fi
           # 初回や新しいページは比較材料が無いので、その場で土台を作る
-          python3 crawler/check_pages.py $args --prime --out site-status.json
+          python3 crawler/check_pages.py $args --prime --out web/data/site-status.json
+          cp web/data/site-status.json site-status.json
           {
             echo "headline<<EOF"
             python3 -c "import json;print(json.load(open('site-status.json'))['summary']['headline'])"
@@ -58,6 +59,20 @@ jobs:
             echo "changed=$(python3 -c "import json;print(json.load(open('site-status.json'))['summary']['changed'])")"
             echo "gone=$(python3 -c "import json;print(json.load(open('site-status.json'))['summary']['gone'])")"
           } >> "$GITHUB_OUTPUT"
+        shell: bash
+
+      # 画面が読む場所へ置く。変化が無かった日も更新して「いつ確認したか」を出す
+      - name: 確認結果をコミットする
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/data/site-status.json
+          if git diff --cached --quiet; then
+            echo "変化なし（ファイルも同じ）"
+          else
+            git commit -m "chore: サイト確認の結果を更新（$(date -u +%Y-%m-%d)）"
+            git push
+          fi
         shell: bash
 
       # 結果は常に残す。変化が無かった日も「いつ確認したか」が分かるようにする

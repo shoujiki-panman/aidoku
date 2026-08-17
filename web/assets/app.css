@@ -325,6 +325,33 @@ td.marks { white-space: nowrap; }
   .ans__item { grid-template-columns: 1fr; gap: .1em; }
 }
 
+/* ---- サイトの見張り状態（2026-08-17 追加） ----
+   普段は静かな1行。知らせることがあるときだけ色と情報が増える。 */
+
+.site-status { margin: 1.2rem 0 0; padding: .7em 1em; border-radius: 8px;
+               background: #fff; border: 1px solid var(--color-neutral-solid-gray-300);
+               font-size: .92rem; line-height: 1.7; }
+.site-status[data-level="ok"]      { border-color: #bfe3cd; background: #f0f9f3; }
+.site-status[data-level="unknown"] { border-color: #e6c866; background: #fff8e6; }
+.site-status[data-level="changed"] { border-color: #0056b3; border-width: 2px; }
+.site-status[data-level="gone"]    { border-color: #b3261e; border-width: 2px; background: #fdf2f2; }
+
+.site-status__line { display: flex; align-items: baseline; gap: .7em;
+                     flex-wrap: wrap; margin: 0; }
+.site-status__badge { display: inline-block; padding: .1em .7em; border-radius: 999px;
+                      font-size: .76rem; font-weight: 700;
+                      background: #e8eef7; color: #1a3a6b; }
+.site-status[data-level="gone"] .site-status__badge { background: #f7dedc; color: #8c1d18; }
+.site-status__when { color: #5c5c66; font-size: .85rem; margin-left: auto; }
+.site-status__detail { margin: .4em 0 0; color: #5c5c66; }
+.site-status__list { margin: .6em 0 0; padding-left: 1.2em; }
+.site-status__list li { padding: .15em 0; }
+.site-status__why { color: #5c5c66; font-size: .88rem; }
+
+@media (max-width: 600px) {
+  .site-status__when { margin-left: 0; }
+}
+
 /* ---- 今やる1件（2026-08-17 追加・Issue #9） ----
    最上段の1枚。選んで読むだけで終わらせず、次の一手を1つだけ出す。 */
 
