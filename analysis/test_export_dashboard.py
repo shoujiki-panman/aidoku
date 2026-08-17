@@ -96,6 +96,60 @@ class ScoringTest(unittest.TestCase):
         self.assertNotIn("窓口オンライン可否", e["breakdown"])
 
 
+class PageStatusTest(unittest.TestCase):
+    """対象ページに着けたか確認できたかどうか（#86）。
+
+    4項目が1つも読めないとき、区のページに書かれていないのか、こちらが別の
+    ページを採点したのかを区別できない。区別できないものを区への依頼にしない。
+    """
+
+    NONE_FOUND = {k: item(False) for k in
+                  ("必要書類", "窓口オンライン可否", "期限", "手数料")}
+
+    def test_all_found_is_facts_found(self):
+        e = build_entry(extract(ALL_FOUND, "明記"))
+        self.assertEqual(e["page_status"]["code"], "facts_found")
+
+    def test_none_found_is_target_unconfirmed(self):
+        e = build_entry(extract(self.NONE_FOUND, "記載なし"))
+        self.assertEqual(e["page_status"]["code"], "target_unconfirmed")
+
+    def test_one_found_is_facts_found(self):
+        """1項目でも読めれば、そのページを採点していると考えられる。"""
+        items = dict(self.NONE_FOUND, 手数料=item(True, "無料"))
+        e = build_entry(extract(items, "記載なし"))
+        self.assertEqual(e["page_status"]["code"], "facts_found")
+
+    def test_online_clarity_does_not_count(self):
+        """オンライン明示は4項目に含めない（full_marks と同じ扱い）。"""
+        e = build_entry(extract(self.NONE_FOUND, "明記"))
+        self.assertEqual(e["page_status"]["code"], "target_unconfirmed")
+
+    def test_unconfirmed_does_not_assert_wrong_page(self):
+        """断定しない。こちらが確認できていないという状態だけを言う。"""
+        e = build_entry(extract(self.NONE_FOUND, "記載なし"))
+        text = e["page_status"]["label"] + e["page_status"]["detail"]
+        self.assertIn("確認できていません", e["page_status"]["label"])
+        self.assertIn("区別できません", text)
+
+    def test_status_has_label_and_detail(self):
+        for items in (ALL_FOUND, self.NONE_FOUND):
+            st = build_entry(extract(items))["page_status"]
+            self.assertEqual(set(st), {"code", "label", "detail"})
+            self.assertTrue(st["label"] and st["detail"])
+
+    def test_notes_are_not_interpreted(self):
+        """notes の文面で判定を変えない（構造だけで決める）。"""
+        a = build_entry(extract(self.NONE_FOUND, page_notes="別の手続きのページ"))
+        b = build_entry(extract(self.NONE_FOUND, page_notes=""))
+        self.assertEqual(a["page_status"]["code"], b["page_status"]["code"])
+
+    def test_score_is_unchanged(self):
+        """page_status を足しても、公開している点は変わらない。"""
+        e = build_entry(extract(self.NONE_FOUND, "記載なし"))
+        self.assertEqual(e["total"], 0)
+
+
 class SummaryTest(unittest.TestCase):
     def test_counts(self):
         full = build_entry(extract(ALL_FOUND, "明記"))

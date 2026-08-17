@@ -173,7 +173,40 @@ function renderRanking() {
 // 文中の事実（項目・直し方・点・URL・時刻）はすべて JSON の値。ここで作らない。
 function renderNextAction(m) {
   const box = $('next-action');
-  const picked = AidokuNextAction.pickNextAction(m.improvements, ITEMS);
+  const decided = AidokuNextAction.decideNextAction(m, ITEMS);
+  const recheckCmd = AidokuNextAction.buildRecheckCommand(m.id, data.procedure_id);
+
+  // 4項目が1つも読めない区。区のページに書かれていないのか、こちらが別のページを
+  // 採点したのかを区別できない。区へ依頼を出さず、こちら側の一手を出す（#86）
+  if (decided.kind === 'remeasure') {
+    box.innerHTML = `
+      <div class="next-action" data-kind="remeasure">
+        <p class="next-action__head">
+          <span class="next-action__chip" data-kind="ours">こちら側の一手</span>
+          <span class="next-action__where"><b>${esc(m.name)}</b>・${esc(data.procedure)}</span>
+        </p>
+        <p class="next-action__what">このページが${esc(data.procedure)}のページか確かめて、<b>測り直す</b></p>
+        <p class="next-action__why">${esc(m.page_status?.detail ?? '')}
+          <br><b>区への改善依頼は出しません。</b>こちらの到達失敗を、区の不備として通知しないためです。</p>
+        <dl class="next-action__facts">
+          <div><dt>採点したページ</dt><dd><a class="dads-link" href="${esc(m.page_url)}" target="_blank" rel="noopener">${esc(m.page_url)}</a></dd></div>
+          <div><dt>トップページからの到達</dt><dd>${esc(m.hops ?? '-')} クリック</dd></div>
+        </dl>
+        ${m.notes ? `
+        <div class="whybox">
+          <p class="whybox__title">判定したAIの観察記録</p>
+          <p class="whybox__body">${esc(m.notes)}</p>
+        </div>` : ''}
+        ${recheckCmd ? `
+        <details class="next-action__recheck">
+          <summary>測り直しのコマンド</summary>
+          <pre class="next-action__cmd"><code>${esc(recheckCmd)}</code></pre>
+        </details>` : ''}
+      </div>`;
+    return;
+  }
+
+  const picked = decided.item;
 
   if (!picked) {
     // 全項目読めた区。架空の改善案を出さない
@@ -200,7 +233,7 @@ function renderNextAction(m) {
     pageUrl: m.page_url ?? '',
     gain: picked.gain,
   });
-  const recheck = AidokuNextAction.buildRecheckCommand(m.id, data.procedure_id);
+  const recheck = recheckCmd;
 
   box.innerHTML = `
     <div class="next-action">

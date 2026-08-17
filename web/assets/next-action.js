@@ -79,5 +79,26 @@
     );
   }
 
-  return { pickNextAction, buildRequestText, buildRecheckCommand };
+  // 次の一手が「区への依頼」なのか「こちらの測り直し」なのかを決める（#86）。
+  //
+  // 4項目が1つも読めなかった区は、区のページに書かれていないのか、こちらが
+  // 別のページを採点したのかを区別できない。区別できないものを区への依頼にしない。
+  // 実データでは、4項目とも読めない18組のうち17組が、判定AI自身の観察記録で
+  // 「別の手続きのページ」「索引ページ」と書かれていた。
+  //
+  // page_status を持たない古いデータは ward_request に倒さない。判定材料が無い以上、
+  // 誤った依頼文を出すより、こちらで確かめる側へ倒す。
+  function decideNextAction(muni, factOrder) {
+    if (muni === null || typeof muni !== 'object' || Array.isArray(muni)) {
+      return { kind: 'none', item: null };
+    }
+    const status = muni.page_status;
+    const code = status !== null && typeof status === 'object' ? status.code : undefined;
+    if (code !== 'facts_found') return { kind: 'remeasure', item: null };
+
+    const item = pickNextAction(muni.improvements, factOrder);
+    return item ? { kind: 'ward_request', item } : { kind: 'none', item: null };
+  }
+
+  return { pickNextAction, buildRequestText, buildRecheckCommand, decideNextAction };
 });
