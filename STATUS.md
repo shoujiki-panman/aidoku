@@ -44,6 +44,7 @@
 | **AIの聞き方 `POST /ask`（NLWeb準拠）** | ✅ answer / failure / elicitation を規格どおり。[記録](reports/gatekeeper_nlweb_2026-08-02.md) |
 | **MCPの窓口 `POST /mcp`** | ✅ JSON-RPC 2.0・ツール `ask` 1本。[記録](reports/gatekeeper_mcp_2026-08-02.md) |
 | 門番のテスト | ✅ **78 PASS / 0 FAIL**（local 11 / worker 23 / nlweb 20 / mcp 24） |
+| **見張り（安い確認）** | ✅ `python3 crawler/check_pages.py` で「前回から変わったか」だけを条件付きGETで確認し `web/data/site-status.json` に書く。**LLMを呼ばない。**実測: 23区で**1分5秒・21区が304**（変化なし）。初回だけ `--prime` で土台作り（1分12秒）。⚠️ 渋谷区・品川区はサーバーがヘッダを返さず判定不可 |
 | **Lint・重複検出** | ✅ CIで落とす。`ruff check .`（pyproject.toml）と `npx jscpd .`（.jscpd.json・ソースのみ5%まで）。導入時の実測は違反0件・重複1.32%。**型チェック / Mutation Testing / Cross Review は提出後** |
 | データ画面 [web/demand.html](web/demand.html) | ⚠️ 画面は完成。ただし**本物のAIエージェントの来訪は0件**（`is_sample: true`）。デプロイしないと集まらない |
 | **公開画面の最上段「今やる1件」** [web/index.html](web/index.html) | ✅ 選んだ区について、読めなかった項目のうち見込み効果が最大の1件と、依頼文・再確認方法を出す（#9）。既存 `improvements` から決定的に選ぶ。**実ページで再測定するまで「未検証の提案」**と明示 |
