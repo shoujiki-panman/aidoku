@@ -114,8 +114,16 @@ const worstMuni = () => data.municipalities[data.municipalities.length - 1];
 const question = (name) => (data.question || '{muni}について教えて。').replace('{muni}', name);
 
 // 1項目ぶんの答え行。読めた→実測の実文／読めない→「分かりません」
+//
+// 実文（agent_value）は各区のサイトの文なので、利用許諾の整理が済むまで公開データに
+// 載せていない（quote_withheld・Issue #100）。そのときは「読み取れた」ことだけを出す。
+// **読めた／読めないの判定と点数は変わらない。**
 function answerLine(f, maxLen) {
   if (f.verdict === '読めた') {
+    if (f.quote_withheld || !f.agent_value) {
+      return `<li class="ans__item" data-ok="true"><b>${esc(f.field)}</b>
+        <span class="withheld">読み取れました（本文は区の公式ページでご覧ください）</span></li>`;
+    }
     const v = maxLen ? trunc(f.agent_value, maxLen) : f.agent_value;
     return `<li class="ans__item" data-ok="true"><b>${esc(f.field)}</b><span>${esc(v)}</span></li>`;
   }

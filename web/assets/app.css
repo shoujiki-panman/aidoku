@@ -424,3 +424,6 @@ td.marks { white-space: nowrap; }
   font-weight: 700;
 }
 .proc-tab:focus-visible { outline: 3px solid #ffc700; outline-offset: 2px; }
+
+/* 実文を伏せているときの表示（Issue #100・利用許諾の整理が済むまで） */
+.withheld { color: #5c5c66; font-style: normal; }

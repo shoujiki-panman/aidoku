@@ -74,7 +74,11 @@ function renderFlow(b, doc) {
       n: 4, kind: 'ok', title: '公式ページには、ちゃんと書いてある',
       body: `<p class="lead-note"><strong>情報が無いのではありません。</strong>本体ページは4項目すべてを専用の見出しで持っています。
           ただし<strong>${esc(b.failure.clicks_to_official_page)}クリック先</strong>です。</p>
-        <dl class="gt">${FIELDS.map((f) => `<dt>${esc(f)}</dt><dd>${esc(gt[f])}</dd>`).join('')}</dl>
+        <dl class="gt">${FIELDS.map((f) => `<dt>${esc(f)}</dt><dd>${
+          gt[f] ? esc(gt[f]) : '<span class="withheld">記載あり（本文は出典ページでご覧ください）</span>'
+        }</dd>`).join('')}</dl>
+        ${b.evidence.ground_truth_withheld
+          ? `<p class="src">${esc(b.evidence.ground_truth_note || '')}</p>` : ''}
         <p class="src">出典: <a class="dads-link" href="${esc(b.evidence.official_page)}" target="_blank" rel="noopener">${esc(b.evidence.official_page)}</a>
           ／ ページ最終更新 ${esc(b.evidence.official_page_last_updated)}
           ／ 確認 ${esc((b.evidence.confirmed_at || '').slice(0, 10))}</p>`,
