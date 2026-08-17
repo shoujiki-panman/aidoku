@@ -105,6 +105,33 @@ def build_fields(items: dict) -> tuple[list[dict], dict, list[dict]]:
     return fields, breakdown, fixes
 
 
+def build_page_status(fields: list[dict]) -> dict:
+    """対象の手続きのページに着けたと言えるかどうかを、構造だけで判定する。
+
+    4項目が1つも読めなかったとき、「区のページに書かれていない」のか
+    「こちらが別のページを採点した」のかを、この結果から区別できない。
+    実データ69組のうち4項目とも読めない18組は、17組までが page_notes に
+    「別の手続きのページ」「索引ページ」と書かれていた（#86）。
+
+    notes の日本語は解釈しない。読めた項目が0という構造だけで決める。
+    断定もしない。「確認できていない」というこちら側の状態だけを言う。
+    """
+    if any(f["verdict"] == "読めた" for f in fields):
+        return {
+            "code": "facts_found",
+            "label": "このページから読み取れた項目があります",
+            "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。",
+        }
+    return {
+        "code": "target_unconfirmed",
+        "label": "対象ページに着けたか確認できていません",
+        "detail": (
+            "4項目が1つも読み取れませんでした。区のページに書かれていないのか、"
+            "こちらが別のページを採点したのかを、この結果からは区別できません。"
+        ),
+    }
+
+
 def build_entry(data: dict) -> dict:
     """extractor の1ファイルから、ダッシュボード1件分を作る。"""
     fields, breakdown, fixes = build_fields(data.get("items") or {})
@@ -131,6 +158,7 @@ def build_entry(data: dict) -> dict:
         "fields": fields,
         "improvements": fixes,
         "notes": data.get("page_notes") or "",
+        "page_status": build_page_status(fields),
     }
 
 

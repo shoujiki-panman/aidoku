@@ -2,7 +2,7 @@
 // 実行: node web/test_next_action.mjs
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const { pickNextAction, buildRequestText, buildRecheckCommand } =
+const { pickNextAction, buildRequestText, buildRecheckCommand, decideNextAction } =
   require('./assets/next-action.js');
 
 let pass = 0;
@@ -177,6 +177,43 @@ check('IDが想定外の形ならコマンドを出さない（画面への混�
   buildRecheckCommand('adachi', '../etc') === '' &&
   buildRecheckCommand(undefined, 'tennyu') === '');
 
+// --- decideNextAction: 区への依頼か、こちらの測り直しか（#86） ---
+
+const FOUND = { code: 'facts_found' };
+const UNCONFIRMED = { code: 'target_unconfirmed' };
+const IMPS = [{ field: '手数料', gain: 20, reason: '額を書く' }];
+
+{
+  const d = decideNextAction({ page_status: FOUND, improvements: IMPS }, ORDER);
+  check('読めた項目がある区は区への依頼', d.kind === 'ward_request' && d.item.field === '手数料');
+}
+
+{
+  const d = decideNextAction({ page_status: UNCONFIRMED, improvements: IMPS }, ORDER);
+  check('4項目とも読めない区は測り直し（区への依頼にしない）', d.kind === 'remeasure');
+  check('測り直しのときは改善案を渡さない（依頼文を作らせない）', d.item === null);
+}
+
+{
+  const d = decideNextAction({ page_status: FOUND, improvements: [] }, ORDER);
+  check('全項目読めた区は none', d.kind === 'none');
+}
+
+{
+  const d = decideNextAction({ improvements: IMPS }, ORDER);
+  check('page_status が無い古いデータは依頼に倒さず測り直し', d.kind === 'remeasure');
+}
+
+check('page_status が object でなければ測り直し',
+  decideNextAction({ page_status: 'facts_found', improvements: IMPS }, ORDER).kind === 'remeasure');
+check('page_status が null でも落ちない',
+  decideNextAction({ page_status: null, improvements: IMPS }, ORDER).kind === 'remeasure');
+check('未知の code は依頼に倒さない',
+  decideNextAction({ page_status: { code: 'zzz' }, improvements: IMPS }, ORDER).kind === 'remeasure');
+check('自治体が object でなければ none',
+  decideNextAction(null, ORDER).kind === 'none' &&
+  decideNextAction([], ORDER).kind === 'none');
+
 // --- 実データとの突き合わせ（scores-*.json の improvements がこの関数で選べる形か） ---
 
 import { readFileSync, readdirSync } from 'node:fs';
@@ -204,6 +241,22 @@ for (const file of readdirSync(dataDir).filter((f) => /^scores-.*\.json$/.test(f
   }
   check(`実データ ${file}: 改善案のある自治体すべてで1件選べて reason も付く`, broken === 0,
     `broken=${broken}`);
+
+  // 4項目とも読めない自治体へ、区あての依頼を出していないこと（#86）
+  let leaked = 0;
+  let remeasure = 0;
+  for (const m of d.municipalities) {
+    const readable = m.fields.filter((f) => f.verdict === '読めた').length;
+    const kind = decideNextAction(m, order).kind;
+    if (readable === 0) {
+      remeasure++;
+      if (kind === 'ward_request') leaked++;
+    } else if (kind === 'remeasure') {
+      leaked++; // 読めた項目があるのに測り直し扱いになっていないか
+    }
+  }
+  check(`実データ ${file}: 4項目とも読めない${remeasure}件へ区あての依頼を出さない`,
+    leaked === 0, `leaked=${leaked}`);
 }
 
 // --- 結果 ---
