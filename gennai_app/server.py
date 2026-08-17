@@ -14,7 +14,7 @@ Python標準ライブラリのみ。外部依存なし。
 認証: x-api-key ヘッダ（仕様のcurl例に準拠）。環境変数 AIDOKU_API_KEY、既定 "dev-local-key"。
 
 判定は aidoku_engine が行う（本物）。
-23区は2026-07-22の実測値を即返し、未知のURLはその場で取得してclaude -pで判定する。
+23区は2026-07-21〜08-05の実測値を即返し、未知のURLはその場で取得してclaude -pで判定する。
 """
 
 import base64
@@ -43,8 +43,8 @@ REQUEST_FORMAT = {
     },
     "checks": {
         "type": "checkbox",
-        "title": "採点する項目",
-        "desc": "未選択の場合は全項目を採点します。",
+        "title": "確認する項目",
+        "desc": "未選択の場合は全項目を確認します。",
         "items": [
             {"title": "必要書類", "value": "documents"},
             {"title": "窓口/オンライン可否", "value": "online"},
@@ -56,8 +56,8 @@ REQUEST_FORMAT = {
         "type": "radio",
         "title": "出力モード",
         "items": [
-            {"title": "採点のみ", "value": "score"},
-            {"title": "採点＋処方箋", "value": "full"},
+            {"title": "判定のみ", "value": "score"},
+            {"title": "判定＋処方箋", "value": "full"},
         ],
         "default_value": "full",
     },
@@ -69,7 +69,7 @@ REQUEST_FORMAT = {
     },
 }
 
-# 採点定義: 4項目 × 20点 + オンライン明示(明記20/曖昧10/記載なし0) = 100点
+# 4項目の点数は共通Evaluatorの4判定を通った場合だけ付く。
 ITEM_LABELS = {
     "documents": "必要書類",
     "online": "窓口/オンライン可否",
@@ -137,6 +137,7 @@ def render_markdown(url, result):
     muni = result.get("municipality") or ""
     vals = result.get("values", {})
     reasons = result.get("reasons", {})
+    field_points = result.get("field_points", {})
     missing = [k for k, v in result["found"].items() if v is False]
     answered = [k for k, v in result["found"].items() if v is True]
 
@@ -166,8 +167,8 @@ def render_markdown(url, result):
         L.append(f"**{n_target}項目のうち {len(answered)}項目しか答えられません。** "
                  "住民が知りたいことの残りは、AIには届いていません。")
     else:
-        L.append(f"**{n_target}項目すべて答えられます。** "
-                 "住民がAIに尋ねても、このページからは正しい答えが返ります。")
+        L.append(f"**{n_target}項目すべてに回答があります。** "
+                 "回答内容の正しさは、下の4条件で別に検証します。")
     L.append("")
 
     # ── なぜそうなるのか ──
@@ -188,7 +189,7 @@ def render_markdown(url, result):
 
     # ── 直したらどうなるか ──
     if result["mode"] == "score":
-        L.append("_（出力モード=採点のみ。直し方の提案は省略しました）_")
+        L.append("_（出力モード=判定のみ。直し方の提案は省略しました）_")
         L.append("")
     elif missing or result["clarity"] != "明記":
         L.append("## 直すと、住民のAIはこう答えられるようになります")
@@ -214,30 +215,36 @@ def render_markdown(url, result):
         L.append("")
         # 太字の閉じ記号の直後が日本語だと Markdown が太字として認識しない
         # （閉じ側の判定に空白か句読点が要る）。行を分けて空白を置く。
-        L.append("> **実測での確認**: （　）を実際の値で埋めて追記した場合、"
-                 "世田谷区で 0点 → 100点、新宿区で 0点 → 80点 に上がることを確認しています"
-                 "（2026-07-26 実測）。逆に、（　）を空欄のまま貼っても点は上がりません。")
+        L.append("> **過去の回答観測での確認**: （　）を実際の値で埋めて追記すると、"
+                 "AIが回答できる項目は増えました（2026-07-26 実測）。"
+                 "ただし当時の点数は4条件で未検証です。")
         L.append(">")
         L.append("> **AIは穴の場所と書き方を示すところまでで、値を埋めるのは職員の方です。** "
                  "これは、AIが役所の情報を作り出さないための設計です。")
         L.append("")
 
-    # ── 参考: 点数 ──
-    L.append(f"## 参考: AI判読度 {result['total']} / 100点")
+    # ── 参考: 4条件で検証した点数 ──
+    total = result.get("total")
+    if total is None:
+        L.append("## 参考: AI判読度 未検証")
+    else:
+        L.append(f"## 参考: AI判読度 {total} / 100点")
     L.append("")
-    L.append("| 項目 | 住民のAIに伝わるか | 配点 |")
+    L.append("| 項目 | AIの回答観測 | 4条件の点数 |")
     L.append("| --- | --- | --- |")
     for key, label in ITEM_LABELS.items():
         v = result["found"].get(key)
         if v is None:
             L.append(f"| {label} | 対象外 | - |")
-        elif v:
-            L.append(f"| {label} | 伝わる | 20 / 20 |")
         else:
-            L.append(f"| {label} | **伝わらない** | 0 / 20 |")
+            observation = "回答あり" if v else "回答なし"
+            points = field_points.get(key)
+            point_text = "未検証" if points is None else f"{points} / 20"
+            L.append(f"| {label} | {observation} | {point_text} |")
     L.append(f"| オンライン明示 | {result['clarity']} | {result['clarity_pt']} / 20 |")
     L.append("")
-    L.append("_AI判定です。各項目は「読めた／読めない」の2値で20点なので、判定が1つ変われば20点動きます。_")
+    L.append("_4項目は、回答の正しさ・引用の実在・引用の支持・Ground Truth一致を"
+             "すべて確認した場合だけ20点です。未検証は0点ではありません。_")
 
     if result.get("history_used"):
         L.append("")
@@ -251,14 +258,14 @@ def render_markdown(url, result):
     L.append("")
     if result.get("source") == "measured":
         L.append(f"> 判定の出どころ: **実測値**（{result.get('measured_at')} に"
-                 "各区の公式サイトを取得し、AIに読ませた結果）。"
-                 "採点は 4項目×20点 + オンライン明示20点。")
+                 "各区の公式サイトを取得し、AIに読ませた回答観測）。"
+                 "正解点は共通Evaluatorの4条件が揃った項目だけ表示します。")
         if result.get("followed"):
             L.append(">")
             L.append(f"> 読んだ範囲: このページ + リンク先{len(result['followed'])}件")
     else:
         L.append("> 判定の出どころ: **この場で取得して判定**（robots.txt遵守・3秒間隔）。"
-                 "採点は 4項目×20点 + オンライン明示20点。")
+                 "Ground Truthが無い場合、回答は表示しても正解点は未検証です。")
     return "\n".join(L)
 
 

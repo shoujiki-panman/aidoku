@@ -181,6 +181,42 @@ class InvokeTest(ServerTestBase):
         self.assertEqual(m.call_args[0][1], [])
 
 
+class RenderMarkdownTest(unittest.TestCase):
+    def result(self, **over):
+        base = {
+            "municipality": "港区",
+            "found": {key: True for key in server.ITEM_LABELS},
+            "values": {key: "回答" for key in server.ITEM_LABELS},
+            "reasons": {key: "" for key in server.ITEM_LABELS},
+            "field_points": {key: None for key in server.ITEM_LABELS},
+            "clarity": "明記",
+            "clarity_pt": 20,
+            "total": None,
+            "mode": "score",
+            "source": "measured",
+            "measured_at": "2026-07-22",
+            "hops": 1,
+            "followed": [],
+        }
+        base.update(over)
+        return base
+
+    def test_回答ありを正解や20点にしない(self):
+        rendered = server.render_markdown("https://example.jp", self.result())
+        self.assertIn("4項目すべてに回答があります", rendered)
+        self.assertIn("AI判読度 未検証", rendered)
+        self.assertIn("| 必要書類 | 回答あり | 未検証 |", rendered)
+        self.assertNotIn("正しい答えが返ります", rendered)
+        self.assertNotIn("| 必要書類 | 伝わる | 20 / 20 |", rendered)
+
+    def test_検証済みだけ数値を表示する(self):
+        points = {key: 20 for key in server.ITEM_LABELS}
+        rendered = server.render_markdown(
+            "https://example.jp", self.result(field_points=points, total=100))
+        self.assertIn("AI判読度 100 / 100点", rendered)
+        self.assertIn("| 必要書類 | 回答あり | 20 / 20 |", rendered)
+
+
 class AsyncTest(ServerTestBase):
     """非同期実行（POST /requests → GET /status/<id>）。"""
 

@@ -21,6 +21,7 @@ sys.path.insert(0, str(ROOT))
 from htmlutil import parse  # noqa: E402
 from fact_types import EXTRACTOR_KEYS  # noqa: E402
 from failure_taxonomy import classify_experiment_failure  # noqa: E402
+from evaluator import evaluate_item  # noqa: E402
 from measurement_cases import TestCase, test_cases_for  # noqa: E402
 from extractor.fact_extract import (  # noqa: E402
     allowed_sources, call_claude, compose_input, validated_attempt,
@@ -97,20 +98,64 @@ def run_trial(prompts: list[ExperimentPrompt], model: str) -> dict:
     return result
 
 
+def _truth_contract(expected: object, value: str) -> tuple[bool | None, list[str], list[dict]]:
+    """実験Ground TruthをEvaluatorの必須要素へ変換する。"""
+    if expected is None:
+        return None, [], []
+    if not isinstance(expected, dict):
+        raise ValueError("ground_truthの項目がobjectでない")
+    explicit = expected.get("expected_found")
+    if explicit is not None and type(explicit) is not bool:
+        raise ValueError("ground_truth.expected_foundがbooleanでない")
+    raw = expected.get("must_include")
+    if raw is None:
+        raw = []
+    if not isinstance(raw, list) or any(
+            not isinstance(text, str) or not text for text in raw):
+        raise ValueError("ground_truth.must_includeが空でない文字列の配列でない")
+    expected_found = explicit if explicit is not None else (True if raw else None)
+    elements = [
+        {
+            "id": index,
+            "covered": "yes" if text in value else "no",
+            "why": "回答に含まれる" if text in value else "回答に含まれない",
+        }
+        for index, text in enumerate(raw, start=1)
+    ]
+    return expected_found, raw, elements
+
+
 def check(items: dict, truth: dict) -> dict:
-    """Ground Truthの期待文字列が抽出値にすべて含まれるかを見る。"""
+    """実験のGround Truth照合を4判定Evaluatorへ接続する。"""
+    if not isinstance(items, dict) or not isinstance(truth, dict):
+        raise ValueError("itemsとtruthはobjectでなければならない")
     out = {}
     for field in EXTRACTOR_KEYS:
         got = items.get(field) or {}
-        expected = truth.get(field) or {}
-        must_include = expected.get("must_include") or []
+        if not isinstance(got, dict):
+            raise ValueError(f"items.{field}がobjectでない")
         value = got.get("value") or ""
+        if not isinstance(value, str):
+            raise ValueError(f"items.{field}.valueが文字列でない")
+        expected_found, must_include, elements = _truth_contract(
+            truth.get(field), value)
+        evaluation = evaluate_item(
+            got,
+            expected_found=expected_found,
+            elements=elements if must_include else None,
+            required_count=len(must_include),
+        )
+        truth_status = evaluation["checks"]["ground_truth_matches"]["status"]
         out[field] = {
             "found": bool(got.get("found")),
             "value": value[:200],
-            "matches_truth": bool(got.get("found")) and all(
-                text in value for text in must_include),
+            "matches_truth": (
+                True if truth_status == "pass"
+                else False if truth_status == "fail"
+                else None
+            ),
             "must_include": must_include,
+            "evaluation": evaluation,
         }
     return out
 

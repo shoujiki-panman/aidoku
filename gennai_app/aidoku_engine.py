@@ -2,12 +2,13 @@
 
 スタブを置き換える。判定の出どころは2つ:
 
-  measured … 23区の実測結果（2026-07-22にクロール→claude -p で判定済み）を返す。
+  measured … 23区の実測結果（2026-07-21〜08-05にクロール→claude -p で抽出済み）を返す。
               即座に返るのでデモ向き。値は実測そのもの（作っていない）。
   live     … 未知のURLは、その場で取得して claude -p で判定する。
               1回30〜60秒かかるので非同期でしか使えない。
 
-スコア = 4項目 × 20点 + オンライン明示（明記20 / 曖昧10 / 記載なし0）
+4項目の点数は evaluator.py の4判定をすべて通った場合だけ付ける。
+過去の抽出結果とライブ抽出にはGround Truthが無いため、回答は表示しても点数は未検証になる。
 
 処方箋について（実測で分かったこと）:
   生成された文面を「そのまま貼る」だけでは点は上がらない（3区で検証・全部0点上昇）。
@@ -29,6 +30,10 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 EXTRACT_DIR = REPO / "extractor" / "out"
 MODEL = os.environ.get("AIDOKU_MODEL", "claude-sonnet-5")
+
+# server.py を直接実行した場合も、リポジトリ共通のEvaluatorを1つだけ使う。
+sys.path.insert(0, str(REPO))
+from evaluator import evaluate_item, evaluation_from_item  # noqa: E402
 
 ITEM_KEYS = {"documents": "必要書類", "online": "窓口オンライン可否",
              "deadline": "期限", "fee": "手数料"}
@@ -74,10 +79,14 @@ def load_measured() -> dict[str, dict]:
             # 「読めないから何？」に答えるため、判定時の記録をそのまま画面まで運ぶ。
             "reasons": {k: (items.get(jp, {}).get("failure_reason") or "")
                         for k, jp in ITEM_KEYS.items()},
+            "evaluations": {
+                k: evaluation_from_item(items.get(jp, {}))
+                for k, jp in ITEM_KEYS.items()
+            },
             "page_notes": (d.get("page_notes") or "").strip(),
             "clarity": (d.get("online_clarity") or "記載なし").strip(),
             "hops": page.get("hops"),
-            "measured_at": "2026-07-22",
+            "measured_at": "2026-07-21〜2026-08-05",
             "followed": d.get("followed_urls", []),
         }
     return table
@@ -134,6 +143,10 @@ def judge_live(url: str) -> dict:
     found = {k: bool((items.get(jp) or {}).get("found")) for k, jp in ITEM_KEYS.items()}
     values = {k: ((items.get(jp) or {}).get("value") or "")[:200] for k, jp in ITEM_KEYS.items()}
     reasons = {k: ((items.get(jp) or {}).get("failure_reason") or "") for k, jp in ITEM_KEYS.items()}
+    evaluations = {
+        k: evaluation_from_item(items.get(jp) or {"found": found[k]})
+        for k, jp in ITEM_KEYS.items()
+    }
     page_notes = (data.get("page_notes") or "").strip()
 
     # オンライン明示（別プロンプト。同居させると4項目の判定まで変わるため）
@@ -150,13 +163,32 @@ def judge_live(url: str) -> dict:
 
     return {"municipality": "", "found": found, "values": values,
             "reasons": reasons, "page_notes": page_notes,
-            "clarity": clarity, "hops": None, "measured_at": None, "followed": []}
+            "evaluations": evaluations, "clarity": clarity,
+            "hops": None, "measured_at": None, "followed": []}
 
 
-# ── 採点 ────────────────────────────────────────────
+# ── 回答観測と検証済み点数 ─────────────────────────────
+
+def _field_evaluation(base: dict, key: str) -> dict:
+    """記録済み評価を検証し、無ければ未検証評価を作る。"""
+    found = base["found"][key]
+    evaluations = base.get("evaluations")
+    if isinstance(evaluations, dict) and key in evaluations:
+        return evaluation_from_item({"found": found, "evaluation": evaluations[key]})
+    return evaluate_item({"found": found})
+
+
+def _evaluation_status(evaluations: dict[str, dict | None]) -> str:
+    """選択したfact typeの状態を、失敗・未検証・合格の順で集約する。"""
+    statuses = [value["overall"] for value in evaluations.values() if value is not None]
+    if "fail" in statuses:
+        return "fail"
+    if "not_checked" in statuses or not statuses:
+        return "not_checked"
+    return "pass"
 
 def score(url: str, checks: list[str] | None, allow_live: bool = True) -> dict:
-    """URLを判定して採点する。実測にあればそれを返し、無ければライブ判定。"""
+    """URLから回答を抽出し、検証済みの項目だけ点数にする。"""
     key = _norm_url(url)
     base = MEASURED.get(key)
     source = "measured"
@@ -168,7 +200,17 @@ def score(url: str, checks: list[str] | None, allow_live: bool = True) -> dict:
 
     targets = checks if checks else list(ITEM_KEYS.keys())
     found = {k: (base["found"][k] if k in targets else None) for k in ITEM_KEYS}
-    item_pt = sum(20 for v in found.values() if v)
+    evaluations = {
+        key: (_field_evaluation(base, key) if key in targets else None)
+        for key in ITEM_KEYS
+    }
+    field_points = {
+        key: (evaluation["points"] if evaluation is not None else None)
+        for key, evaluation in evaluations.items()
+    }
+    selected_points = [field_points[key] for key in targets]
+    item_pt = (sum(selected_points)
+               if all(point is not None for point in selected_points) else None)
     clarity = base["clarity"]
     clarity_pt = CLARITY_POINTS.get(clarity, 0)
 
@@ -176,13 +218,16 @@ def score(url: str, checks: list[str] | None, allow_live: bool = True) -> dict:
         "source": source,
         "municipality": base.get("municipality", ""),
         "found": found,
+        "evaluations": evaluations,
+        "field_points": field_points,
+        "evaluation_status": _evaluation_status(evaluations),
         "values": base.get("values", {}),
         "reasons": base.get("reasons", {}),
         "page_notes": base.get("page_notes", ""),
         "clarity": clarity,
         "clarity_pt": clarity_pt,
         "item_pt": item_pt,
-        "total": item_pt + clarity_pt,
+        "total": None if item_pt is None else item_pt + clarity_pt,
         "hops": base.get("hops"),
         "measured_at": base.get("measured_at"),
         "followed": base.get("followed", []),

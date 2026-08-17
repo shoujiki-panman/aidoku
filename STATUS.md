@@ -3,7 +3,7 @@
 > 最初に読む: [START-HERE.md](START-HERE.md)　／　経緯の全記録: [reports/](reports/)
 
 > ## 次の締切: **作品提出 2026-08-23（日）17:00**
-> （2026-08-17 01:29 JST 時点で残り約6日15時間30分）
+> （2026-08-17 18:42 JST 時点で残り約5日22時間17分）
 
 ### 📅 期日一覧
 
@@ -22,21 +22,22 @@
 
 **AI読（アイドク）** — あなたの区のサイトを、AIの愛読書に。
 
-自治体サイトのURLを入れると、AIがどこまで読めるかを採点し、**読めない箇所と「直す文面」まで出す**。
+自治体サイトのURLを入れると、AI回答の有無を測り、**回答・根拠・正解を4判定で検証する**。
 デジタル庁OSS「源内」のAIアプリ仕様に準拠し、職員が自分の区の源内で使える形。
 
 ## ✅ 動いているもの
 
 | | 状態 |
 |---|---|
-| 23区の実測（転入届4項目） | ✅ 完了。港区のみ4項目、5区がほぼ読めず、手数料22区で不記載 |
+| 23区の実測（転入届4項目） | ✅ 回答観測は完了。港区のみ4項目回答、5区がほぼ回答なし、手数料22区で回答なし。**正解点は未検証** |
 | 採点器 | ✅ 必須要素チェック方式。3自治体12行で測った最大ぶれは2点。**公開23区のぶれは未測定** |
 | Evidence Check | ✅ AIの引用を本文と照合。既存73出力は verified 104 / partial 23 / missing 0（この73件内のみ） |
 | Failure Taxonomy | ✅ 8種を共通化。既存73出力は到達済み284項目中、整合した失敗157（missing 134 / ambiguous 11 / not_retrieved 12）。未到達2実行はpage_not_discoverable。旧契約矛盾2項目は別記 |
+| 4判定Evaluator | ✅ 回答状態・Evidence実在・Evidence支持・Ground Truth一致を共通化。pass=20 / fail=0 / 未検証=null。旧69マスはGround Truth不足のため未検証 |
 | 判定エンジン `aidoku_engine.py` | ✅ 23区は実測値を即返す／未知URLはその場で取得して判定 |
 | 源内API `server.py` | ✅ 仕様準拠（同期・非同期・ポーリング・添付・認証） |
 | **源内Web本体がローカルで起動** | ✅ AWS不要（`web:dev`）。AI読が源内のAIアプリとして動作 |
-| 源内画面での動作 | ✅ 港区100点／世田谷0点／処方箋／23区のランキング履歴 |
+| 源内画面での動作 | ✅ AI回答文／未回答箇所／処方箋／23区の回答観測履歴。旧正解点は未検証表示へ変更 |
 | 動画台本 | ✅ [VIDEO-SCRIPT-aidoku.md](VIDEO-SCRIPT-aidoku.md)（全カット実物・9シーン） |
 | **門番の署名検証** [gatekeeper/](gatekeeper/) | ✅ Web Bot Auth (RFC 9421+Ed25519) の署名→検証 14/14 PASS。ChatGPT実鍵で形式互換を確認。[記録](reports/gatekeeper_sigverify_2026-07-31.md) |
 | 門番を本番ランタイム(workerd)で実行 | ✅ Ed25519 は標準名のまま動く。[記録](reports/gatekeeper_runtime_2026-08-02.md) |
@@ -49,7 +50,7 @@
 ## ⏭ 残り
 
 **ゴール**: 最初のAI段差を1件消すために必要なものから進める。
-本変更（#71）のマージ後、open issue は28件。そのうち提出マイルストーンは
+現在、open issue は28件。そのうち提出マイルストーンは
 [#55〜#75](https://github.com/shoujiki-panman/aidoku/issues?q=is%3Aissue+is%3Aopen+milestone%3A%22%E4%BD%9C%E5%93%81%E6%8F%90%E5%87%BA%22)
 のうち16件（#54・#55・#56・#67・#68・#71は完了）。古い課題も消していない。全件は
 [GitHub Issues](https://github.com/shoujiki-panman/aidoku/issues) を正とする。
@@ -61,7 +62,7 @@
 - [#67](https://github.com/shoujiki-panman/aidoku/issues/67) Page Normalizer — 実装・検証完了（PR [#79](https://github.com/shoujiki-panman/aidoku/pull/79)）
 - [#68](https://github.com/shoujiki-panman/aidoku/issues/68) Test Caseをfact_type単位に分ける — 最新mainへの統合・検証完了（PR [#80](https://github.com/shoujiki-panman/aidoku/pull/80)）
 - [#69](https://github.com/shoujiki-panman/aidoku/issues/69) 回答にconfidenceとevidence_locationを足す
-- [#70](https://github.com/shoujiki-panman/aidoku/issues/70) Evaluatorの4判定を揃える
+- [#70](https://github.com/shoujiki-panman/aidoku/issues/70) Evaluatorの4判定を揃える — 4判定契約・scorer/experiment/公開値への接続・未検証表示まで本変更で完了
 - [#71](https://github.com/shoujiki-panman/aidoku/issues/71) Failure Taxonomyを定義する — 8種の定義・新規出力への接続・既存結果の再分類まで本変更で完了
 
 ### 提出までに外せない確認
@@ -78,7 +79,7 @@
 - 源内のフロントは `createdDate` を**エポックミリ秒**で扱う。ISO文字列だと `Invalid time value`
 - 源内のチャット画面は動かない（Lambda直叩き構造）。**AIアプリ画面だけ見せる**
 - 認証は5行バイパスしている（本家に無い改変）。説明できる範囲に留めてある
-- 公開23区の点数は各1回しか測っておらず、ぶれ幅は未測定。**3自治体12行の最大2点と混ぜない**
+- 公開23区はAI回答有無を各1回観測した値。Ground Truth不足のため正解点は未検証。**3自治体12行の最大2点と混ぜない**
 - `web/assets/barrier.js` だけは `extractor_key` を使う。`display_label` に揃えると `barrier.html` が空欄になる
 - `fact_types.json` と `web/data/fact-types.json` は生成スクリプトがなく手動同期。片方だけ直さない
 

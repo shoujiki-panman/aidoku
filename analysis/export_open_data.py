@@ -34,14 +34,18 @@ def main() -> None:
 
     # ── CSV ──
     with OUT_CSV.open("w", encoding="utf-8-sig", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["手続き", "自治体", "合計点"] + ITEMS
-                   + ["トップからの到達クリック数", "診断したページのURL"])
+        # OS差分とdiff-checkの疑似「行末空白」を避け、公開CSVはLFへ固定する。
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["手続き", "自治体", "検証済み合計点"] + ITEMS
+                   + ["AI回答数", "評価状態", "トップからの到達クリック数",
+                      "診断したページのURL"])
         for m in munis:
             w.writerow(
-                [proc, m["name"], m["total"]]
-                + [m["breakdown"].get(k, 0) for k in ITEMS]
-                + [m.get("hops", ""), m.get("page_url", "")]
+                [proc, m["name"], "" if m["total"] is None else m["total"]]
+                + ["" if m["breakdown"].get(k) is None
+                   else m["breakdown"].get(k, 0) for k in ITEMS]
+                + [m["answered_count"], m["evaluation_status"],
+                   m.get("hops", ""), m.get("page_url", "")]
             )
     # Excelで開いても文字化けしないよう BOM つき(utf-8-sig)で出す
 
@@ -49,32 +53,34 @@ def main() -> None:
     s = d["summary"]
     lines = [
         f"AI読（アイドク） 調査結果の要約 — {d['phase']}の{proc}",
-        f"データ生成日: {d.get('generated_at','')[:10]}／各区の公式サイトの取得日: 2026-07-22",
+        f"データ生成日: {d.get('generated_at','')[:10]}／公式サイト取得: 2026-07-21〜2026-08-05（転入届）",
         "",
         "【調べたこと】",
         f"東京23区の{proc}のページを、住民が使うAIに読ませ、4項目（必要書類・窓口/オンライン可否・"
         "期限・手数料）とオンラインで完結できるかの明示を、そのページから読み取れるかを実測しました。",
         "",
         "【全体】",
-        f"・平均 {s['average']} 点（100点満点）",
-        f"・4項目すべて答えられた区: {s['full_marks']} 区",
-        f"・ほぼ「分かりません」になる区: {s['zero']} 区",
+        f"・4判定まで検証済み: {s['evaluated']} 区",
+        f"・未検証: {s['not_evaluated']} 区",
+        f"・4項目すべて回答が返った区: {s['answered_all_four']} 区",
+        f"・4項目とも回答が無い区: {s['answered_zero']} 区",
         f"・手数料が答えられない区: {s['fee_missing']} 区（実際には無料の区が多い）",
         "",
         "【区ごと】",
     ]
     for m in munis:
-        ng = [k for k in ITEMS if (m["breakdown"].get(k, 0) or 0) < 20]
+        ng = [field["field"] for field in m["fields"] if not field["answered"]]
+        score = "未検証" if m["total"] is None else f"{m['total']}点"
         lines.append(
-            f"・{m['name']}: {m['total']}点"
-            + ("／伝わらない項目: " + "、".join(ng) if ng else "／4項目とも伝わる")
+            f"・{m['name']}: 4判定の点数 {score}"
+            + ("／回答が無い項目: " + "、".join(ng) if ng else "／4項目とも回答あり")
         )
     lines += [
         "",
         "【採点方法】",
-        "4項目 × 20点 ＋ オンライン明示（明記20／曖昧10／記載なし0）＝ 100点。",
-        "判定はAIによります。各項目は「読めた／読めない」の2値で20点なので、判定が1つ変われば20点動きます。",
-        "この23区の点数は各1回の判定によるもので、ぶれ幅は測っていません。",
+        "4項目は、回答・Evidence実在・Evidence支持・Ground Truth一致の4判定をすべて通った場合だけ各20点。",
+        "必要な判定が未実施なら0点ではなく未検証。回答が返っただけでは加点しません。",
+        "現在の23区データはGround Truthが揃っていないため、回答文は実測、正解点は未検証です。",
         "",
         "【注意】",
         "これは個人が行った第三者調査であり、行政機関の公式発表ではありません。",

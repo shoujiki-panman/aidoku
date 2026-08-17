@@ -38,6 +38,7 @@ JUDGE_PROMPT = Path(__file__).parent / "judge_prompt.md"
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from fact_types import EXTRACTOR_KEYS  # noqa: E402
+from evaluator import evaluate_item  # noqa: E402
 
 FIELDS = EXTRACTOR_KEYS
 
@@ -108,21 +109,63 @@ def load_golden(procedure_id: str) -> dict[tuple[str, str], GoldenRow]:
     return rows
 
 
+def parse_judgment_reply(raw: str, required_count: int) -> dict:
+    """採点AIのJSONを厳格に読む。曖昧な応答を点にしない。"""
+    if not isinstance(raw, str) or not raw.strip():
+        raise ValueError("採点AIの応答が空または文字列でない")
+    if type(required_count) is not int or required_count < 1:
+        raise ValueError("required_countは正整数でなければならない")
+    text = raw.strip()
+    fence = re.fullmatch(r"```(?:json)?\s*(.*?)\s*```", text, re.S)
+    if fence:
+        text = fence.group(1)
+    data = json.loads(text)
+    if not isinstance(data, dict):
+        raise ValueError("採点AIの応答rootがobjectでない")
+    expected_keys = {"elements", "evidence_supports_answer", "support_reason"}
+    if set(data) != expected_keys:
+        raise ValueError("採点AIの応答キーが契約と一致しない")
+    elements = data["elements"]
+    if not isinstance(elements, list):
+        raise ValueError("elementsが配列でない")
+    if len(elements) != required_count:
+        raise ValueError(f"要素数が合わない: 返り {len(elements)} != 必須 {required_count}")
+    for index, element in enumerate(elements, start=1):
+        if not isinstance(element, dict):
+            raise ValueError(f"elements[{index - 1}]がobjectでない")
+        if set(element) != {"id", "covered", "why"}:
+            raise ValueError(f"elements[{index - 1}]のキーが契約と一致しない")
+        if element["id"] != index:
+            raise ValueError(f"elements[{index - 1}].idが{index}でない")
+        if element["covered"] not in ("yes", "no"):
+            raise ValueError(f"elements[{index - 1}].coveredがyes/noでない")
+        if not isinstance(element["why"], str) or not element["why"].strip():
+            raise ValueError(f"elements[{index - 1}].whyが空または文字列でない")
+    if data["evidence_supports_answer"] not in ("yes", "no"):
+        raise ValueError("evidence_supports_answerがyes/noでない")
+    if not isinstance(data["support_reason"], str) or not data["support_reason"].strip():
+        raise ValueError("support_reasonが空または文字列でない")
+    return data
+
+
 def judge(golden: GoldenRow, item: dict, muni: str, proc: str, model: str) -> dict:
     """ゴールデンとの突合を1件ぶん判定する。明らかな場合はLLMを呼ばない。"""
     if not golden.expected_found and not item["found"]:
         return {"verdict": "正解(記載なしが正しい)", "points": 10.0,
-                "reason": "正解側も記載なしで、正直に見つからないと報告した", "judged_by": "rule"}
+                "reason": "正解側も記載なしで、正直に見つからないと報告した",
+                "judged_by": "rule", "elements": [], "evidence_support": None}
     if not golden.expected_found and item["found"]:
         return {"verdict": "不正解(幻覚)", "points": 0.0,
-                "reason": "サイトに記載がないのに値を答えた", "judged_by": "rule"}
+                "reason": "サイトに記載がないのに値を答えた",
+                "judged_by": "rule", "elements": [], "evidence_support": None}
     if golden.expected_found and not item["found"]:
         return {"verdict": "不正解", "points": 0.0,
                 "reason": f"サイトには記載があるのに見つけられなかった（{item['failure_reason']}）",
-                "judged_by": "rule"}
+                "judged_by": "rule", "elements": [], "evidence_support": None}
     if not golden.required_elements:
         return {"verdict": "未採点", "points": 0.0,
-                "reason": "ゴールデンに required_elements が無い", "judged_by": "rule"}
+                "reason": "ゴールデンに required_elements が無い",
+                "judged_by": "rule", "elements": [], "evidence_support": None}
 
     els_txt = "\n".join(f"{i + 1}. [{s}] {b}"
                         for i, (s, b) in enumerate(golden.required_elements))
@@ -144,19 +187,9 @@ def judge(golden: GoldenRow, item: dict, muni: str, proc: str, model: str) -> di
     )
     if proc_res.returncode != 0:
         raise RuntimeError(f"claude -p failed: {proc_res.stderr[:300]}")
-    text = proc_res.stdout.strip()
-    fence = re.search(r"```(?:json)?\s*(.*?)```", text, re.S)
-    if fence:
-        text = fence.group(1).strip()
-    s, e = text.find("{"), text.rfind("}")
-    data = json.loads(text[s:e + 1])
+    data = parse_judgment_reply(proc_res.stdout, len(golden.required_elements))
 
     els = data["elements"]
-    # 要素数が合わない応答は黙って点にしない。数が違えば分母が変わり、点の意味が壊れる
-    if len(els) != len(golden.required_elements):
-        raise RuntimeError(
-            f"要素数が合わない: 返り {len(els)} != 必須 {len(golden.required_elements)}"
-            f"（{muni} / {golden.field}）")
     covered = sum(1 for x in els if x.get("covered") == "yes")
     total = len(els)
     missing = [golden.required_elements[i][0]
@@ -164,7 +197,9 @@ def judge(golden: GoldenRow, item: dict, muni: str, proc: str, model: str) -> di
     verdict = "正解" if covered == total else ("不正解" if covered == 0 else "部分正解")
     reason = f"{covered}/{total}要素" + (f"（欠落: {'、'.join(missing)}）" if missing else "")
     return {"verdict": verdict, "points": round(10 * covered / total, 1), "reason": reason,
-            "missing": missing, "elements": els, "judged_by": model}
+            "missing": missing, "elements": els, "judged_by": model,
+            "evidence_support": data["evidence_supports_answer"],
+            "evidence_support_reason": data["support_reason"]}
 
 
 def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -> dict:
@@ -176,15 +211,25 @@ def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -
     accuracy = 0.0
     for field in FIELDS:
         g = golden.get((mid, field))
-        if g is None:
-            results.append({"field": field, "verdict": "未採点", "reason": "ゴールデンセットに行がない",
-                            "points": 0.0, "judged_by": "rule", "missing": []})
-            continue
         item = ext["items"].get(field) or {"found": False, "value": "", "evidence": "",
                                            "failure_reason": "到達失敗", "source": None}
+        if g is None:
+            evaluation = evaluate_item(item, reached=reached)
+            results.append({"field": field, "verdict": "未採点", "reason": "ゴールデンセットに行がない",
+                            "points": 0.0, "judged_by": "rule", "missing": [],
+                            "evaluation": evaluation})
+            continue
         v = judge(g, item, ext["municipality"], ext["procedure"], model) if reached else {
             "verdict": "不正解", "points": 0.0, "reason": "ページに到達できなかった",
-            "judged_by": "rule"}
+            "judged_by": "rule", "elements": [], "evidence_support": None}
+        evaluation = evaluate_item(
+            item,
+            expected_found=g.expected_found,
+            support=v.get("evidence_support"),
+            elements=v.get("elements") if reached else None,
+            required_count=len(g.required_elements),
+            reached=reached,
+        )
         pts = v["points"]
         accuracy += pts
         results.append({
@@ -195,6 +240,8 @@ def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -
             "expected_found": g.expected_found, "expected_value": g.expected_value,
             "agent_found": item["found"], "agent_value": item["value"],
             "failure_reason": item.get("failure_reason"),
+            "evidence_support_reason": v.get("evidence_support_reason", ""),
+            "evaluation": evaluation,
         })
 
     accuracy = round(accuracy, 1)
