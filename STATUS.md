@@ -1,4 +1,4 @@
-# 進捗ボード — AI読（アイドク） 更新: 2026-08-17
+# 進捗ボード — AI読（アイドク） 更新: 2026-08-17（21:31 JST）
 
 > 最初に読む: [START-HERE.md](START-HERE.md)　／　経緯の全記録: [reports/](reports/)
 
@@ -45,6 +45,7 @@
 | **MCPの窓口 `POST /mcp`** | ✅ JSON-RPC 2.0・ツール `ask` 1本。[記録](reports/gatekeeper_mcp_2026-08-02.md) |
 | 門番のテスト | ✅ **78 PASS / 0 FAIL**（local 11 / worker 23 / nlweb 20 / mcp 24） |
 | データ画面 [web/demand.html](web/demand.html) | ⚠️ 画面は完成。ただし**本物のAIエージェントの来訪は0件**（`is_sample: true`）。デプロイしないと集まらない |
+| **公開画面の最上段「今やる1件」** [web/index.html](web/index.html) | ✅ 選んだ区について、読めなかった項目のうち見込み効果が最大の1件と、依頼文・再確認方法を出す（#9）。既存 `improvements` から決定的に選ぶ。**実ページで再測定するまで「未検証の提案」**と明示 |
 
 ## ⏭ 残り
 
@@ -63,6 +64,17 @@
 - [#69](https://github.com/shoujiki-panman/aidoku/issues/69) 回答にconfidenceとevidence_locationを足す
 - [#70](https://github.com/shoujiki-panman/aidoku/issues/70) Evaluatorの4判定を揃える
 - [#71](https://github.com/shoujiki-panman/aidoku/issues/71) Failure Taxonomyを定義する — 8種の定義・新規出力への接続・既存結果の再分類まで本変更で完了
+
+### プロダクトの方向（2026-08-17 本人と再確認）
+
+閲覧中心のダッシュボードではなく、**行政サイトをAIに読める状態へ保つ小さな保守エージェント**へ進める。
+完成像を一気に作らず、改善ループを1周ずつ足す。計画は
+[plans/feat-next-action.md](plans/feat-next-action.md)、引き継ぎは
+`outputs/handoff-aidoku-maintenance-agent-2026-08-17.md`（リポジトリ外）。
+
+- [#9](https://github.com/shoujiki-panman/aidoku/issues/9) **今やる1件** — 本変更で最上段に実装
+- 次: 提案→再測定まで閉じる（Before/After と測定条件をOpen Dataへ）／定期確認と通知／門番を需要センサーに／API・MCP
+- [#59](https://github.com/shoujiki-panman/aidoku/issues/59) URL入力は**作らない**（案3・提出本文を実物に合わせる）。既存対象を見張る道具なので毎回URLを入力させない
 
 ### 提出までに外せない確認
 
