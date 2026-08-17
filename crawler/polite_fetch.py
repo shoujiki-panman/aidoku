@@ -29,6 +29,11 @@ USER_AGENT = f"TokyoAgentReadinessBot/0.1 (+{CONTACT})"
 
 MIN_INTERVAL_SEC = 3.0
 
+# ページが無くなったと見なすHTTPステータス。
+# 404=見つからない / 410=意図的に削除した、とサーバーが明言している。
+# 5xx は相手側の一時的な事情のことが多いので、ここには入れない。
+GONE_STATUSES = frozenset({404, 410})
+
 
 def sha256_of(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
@@ -98,10 +103,11 @@ class CheckResult:
     """
 
     url: str
-    status: int           # 304=変わっていない / 200=変わった / 0=確かめられない
+    status: int           # 304=変わっていない / 200=変わった / 404=消えた / 0=確かめられない
     changed: bool | None  # None = 判定できなかった（前回の記録が無い・エラー等）
     checked_at: str
     reason: str           # なぜその判定になったか。人が読む
+    gone: bool = False    # ページ自体が無くなった。changed の中でも別扱いにする
     etag: str | None = None
     last_modified: str | None = None
     content_hash: str | None = None
@@ -197,6 +203,14 @@ class PoliteFetcher:
                 return CheckResult(url=url, status=304, changed=False, checked_at=_now(),
                                    reason="304 Not Modified（前回から変わっていない）",
                                    etag=prev.etag, last_modified=prev.last_modified)
+            if e.code in GONE_STATUSES:
+                # ページが消えた・移動したのは、いちばん重大な変化。
+                # 「判定できない」に混ぜると通知されずに見逃す。
+                return CheckResult(
+                    url=url, status=e.code, changed=True, gone=True, checked_at=_now(),
+                    reason=f"HTTP {e.code}（ページが無くなったか、移動した）",
+                    error=f"HTTP {e.code}")
+            # 5xx などは相手側の一時的な事情のことが多い。消えたと決めつけない
             return CheckResult(url=url, status=e.code, changed=None, checked_at=_now(),
                                reason=f"HTTP {e.code} が返り、変化を判定できない",
                                error=f"HTTP {e.code}")

@@ -91,12 +91,44 @@ class CheckTest(unittest.TestCase):
         self.assertIsNone(r.changed)
         self.assertIn("robots", r.reason)
 
-    def test_404は変化と断定しない(self):
+    def test_404はページが消えた変化として扱う(self):
+        """『判定できない』に混ぜると通知されず、根拠URLが切れたまま気づけない。"""
         def raise404(*a, **k):
             raise urllib.error.HTTPError(URL, 404, "Not Found", {}, None)
         r = self.check(prev=cached(), opener=raise404)
-        self.assertIsNone(r.changed)
+        self.assertIs(r.changed, True)
+        self.assertIs(r.gone, True)
         self.assertEqual(r.status, 404)
+        self.assertIn("無くなった", r.reason)
+
+    def test_410も消えた扱い(self):
+        def raise410(*a, **k):
+            raise urllib.error.HTTPError(URL, 410, "Gone", {}, None)
+        r = self.check(prev=cached(), opener=raise410)
+        self.assertIs(r.gone, True)
+
+    def test_5xxは消えたと決めつけない(self):
+        """相手側の一時的な事情のことが多い。"""
+        for code in (500, 502, 503):
+            def raise5xx(*a, _c=code, **k):
+                raise urllib.error.HTTPError(URL, _c, "Server Error", {}, None)
+            r = self.check(prev=cached(), opener=raise5xx)
+            self.assertIsNone(r.changed, code)
+            self.assertIs(r.gone, False, code)
+
+    def test_403も消えた扱いにしない(self):
+        """見せてもらえないだけで、ページが無いとは限らない。"""
+        def raise403(*a, **k):
+            raise urllib.error.HTTPError(URL, 403, "Forbidden", {}, None)
+        r = self.check(prev=cached(), opener=raise403)
+        self.assertIsNone(r.changed)
+        self.assertIs(r.gone, False)
+
+    def test_変化なしのときgoneは立たない(self):
+        def raise304(*a, **k):
+            raise urllib.error.HTTPError(URL, 304, "Not Modified", {}, None)
+        r = self.check(prev=cached(), opener=raise304)
+        self.assertIs(r.gone, False)
 
     def test_通信失敗でも落ちない(self):
         def boom(*a, **k):
@@ -238,7 +270,7 @@ class BodyHashTest(unittest.TestCase):
 
 class SummarizeTest(unittest.TestCase):
     def items(self, *changed):
-        return [{"changed": c} for c in changed]
+        return [{"changed": c, "gone": False} for c in changed]
 
     def test_3種類を数え分ける(self):
         s = check_pages.summarize(self.items(True, False, False, None))
@@ -254,6 +286,22 @@ class SummarizeTest(unittest.TestCase):
         s = check_pages.summarize([])
         self.assertEqual(s["total"], 0)
         self.assertIn("0ページ", s["headline"])
+
+    def test_消えたページは内数として別に数える(self):
+        s = check_pages.summarize([
+            {"changed": True, "gone": True},
+            {"changed": True, "gone": False},
+            {"changed": False, "gone": False},
+        ])
+        self.assertEqual((s["changed"], s["gone"], s["edited"]), (2, 1, 1))
+
+    def test_消えたページがあれば見出しの先頭で言う(self):
+        s = check_pages.summarize([{"changed": True, "gone": True}])
+        self.assertIn("1件が消えました", s["headline"])
+
+    def test_消えたページが無ければ見出しに出さない(self):
+        s = check_pages.summarize(self.items(True, False))
+        self.assertNotIn("消えました", s["headline"])
 
 
 class PrimeTest(unittest.TestCase):

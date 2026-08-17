@@ -66,6 +66,7 @@ def to_item(target: dict, result: CheckResult) -> dict:
         **target,
         "status": result.status,
         "changed": result.changed,
+        "gone": result.gone,
         "reason": result.reason,
         "checked_at": result.checked_at,
         "error": result.error,
@@ -76,14 +77,21 @@ def summarize(items: list[dict]) -> dict:
     changed = [i for i in items if i["changed"] is True]
     unchanged = [i for i in items if i["changed"] is False]
     unknown = [i for i in items if i["changed"] is None]
+    # 消えたページは changed の内数。いちばん重大なので別に数える
+    gone = [i for i in changed if i.get("gone")]
+    edited = [i for i in changed if not i.get("gone")]
     return {
         "total": len(items),
         "changed": len(changed),
+        "gone": len(gone),
+        "edited": len(edited),
         "unchanged": len(unchanged),
         "unknown": len(unknown),
         # 人が最初に読む1行。Mulmo Control の summary と同じ役割
         "headline": (
-            f"{len(items)}ページを確認。変わっていたのは {len(changed)}件"
+            f"{len(items)}ページを確認。"
+            + (f"**{len(gone)}件が消えました**。" if gone else "")
+            + f"変わっていたのは {len(edited)}件"
             f"（変化なし {len(unchanged)}件／判定できず {len(unknown)}件）"
         ),
     }

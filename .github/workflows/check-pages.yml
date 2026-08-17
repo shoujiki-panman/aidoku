@@ -56,6 +56,7 @@ jobs:
             python3 -c "import json;print(json.load(open('site-status.json'))['summary']['headline'])"
             echo "EOF"
             echo "changed=$(python3 -c "import json;print(json.load(open('site-status.json'))['summary']['changed'])")"
+            echo "gone=$(python3 -c "import json;print(json.load(open('site-status.json'))['summary']['gone'])")"
           } >> "$GITHUB_OUTPUT"
         shell: bash
 
@@ -76,23 +77,37 @@ jobs:
           python3 - <<'PY' > body.md
           import json
           d = json.load(open("site-status.json"))
-          changed = [i for i in d["items"] if i["changed"] is True]
+          gone = [i for i in d["items"] if i.get("gone")]
+          edited = [i for i in d["items"] if i["changed"] is True and not i.get("gone")]
           unknown = [i for i in d["items"] if i["changed"] is None]
           print(f"確認時刻: {d['checked_at']}\n")
           print(f"{d['summary']['headline']}\n")
-          print("## 変わっていたページ\n")
-          print("| 自治体 | 手続き | ページ | 判定の根拠 |")
-          print("|---|---|---|---|")
-          for i in changed:
-              print(f"| {i['municipality']} | {i['procedure']} | {i['url']} | {i['reason']} |")
+          if gone:
+              print("## 🚨 無くなったページ\n")
+              print("採点したページが返らなくなりました。**公開している点数の根拠URLが切れています。**\n")
+              print("| 自治体 | 手続き | ページ | 状態 |")
+              print("|---|---|---|---|")
+              for i in gone:
+                  print(f"| {i['municipality']} | {i['procedure']} | {i['url']} | {i['reason']} |")
+              print()
+          if edited:
+              print("## 変わっていたページ\n")
+              print("| 自治体 | 手続き | ページ | 判定の根拠 |")
+              print("|---|---|---|---|")
+              for i in edited:
+                  print(f"| {i['municipality']} | {i['procedure']} | {i['url']} | {i['reason']} |")
+              print()
           if unknown:
-              print("\n## 判定できなかったページ\n")
+              print("## 判定できなかったページ\n")
               for i in unknown:
                   print(f"- {i['municipality']}・{i['procedure']} — {i['reason']}")
-          print("\n---\n")
-          print("**これは「悪くなった」という意味ではありません。**「測り直しが必要」という意味です。")
+              print()
+          print("---\n")
+          print("**変わった＝悪くなった、ではありません。**「測り直しが必要」という意味です。")
           print("公開している点数は前回測ったときのままなので、必要なら抽出をやり直してください。")
           print("\n測り直し: `python3 extractor/extract.py -m <自治体ID> -p <手続きID> --follow`")
+          print("\n無くなったページは、まず探索からやり直してください（移動先を探す）:")
+          print("`python3 crawler/discover.py -m <自治体ID> -p <手続きID>`")
           PY
           gh issue create \
             --repo "${{ github.repository }}" \
