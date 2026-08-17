@@ -58,6 +58,7 @@
 
 - [#55](https://github.com/shoujiki-panman/aidoku/issues/55) **Evidence Check** — 既存73件の照合まで完了し、PR [#77](https://github.com/shoujiki-panman/aidoku/pull/77) をmainへマージ済み
 - [#56](https://github.com/shoujiki-panman/aidoku/issues/56) **測定条件を出力へ記録** — PR [#78](https://github.com/shoujiki-panman/aidoku/pull/78) をmainへマージ済み。既存73件は推測せず `legacy_unknown`
+- [#57](https://github.com/shoujiki-panman/aidoku/issues/57) **本番測定を複数回にする** — ローカル実装・検証完了。実AIの複数回測定はまだ実施していない
 - [#67](https://github.com/shoujiki-panman/aidoku/issues/67) Page Normalizer — 実装・検証完了（PR [#79](https://github.com/shoujiki-panman/aidoku/pull/79)）
 - [#68](https://github.com/shoujiki-panman/aidoku/issues/68) Test Caseをfact_type単位に分ける — 最新mainへの統合・検証完了（PR [#80](https://github.com/shoujiki-panman/aidoku/pull/80)）
 - [#69](https://github.com/shoujiki-panman/aidoku/issues/69) 回答にconfidenceとevidence_locationを足す

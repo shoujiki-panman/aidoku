@@ -221,6 +221,7 @@
       "id": "arakawa",
       "name": "荒川区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -236,25 +237,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)／申請者本人が加入している健康保険がわかるもの／申請者本人及び配偶者の個人番号(マイナンバー)が確認できるもの／申請者本人及び配偶者の所得証明書(該当年1月1日に荒川区に住民登録がなかった方のみ)"
+          "agent_value": "申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)／申請者本人が加入している健康保険がわかるもの／申請者本人及び配偶者の個人番号(マイナンバー)が確認できるもの／申請者本人及び配偶者の所得証明書(該当年1月1日に荒川区に住民登録がなかった方のみ)",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口(区役所2階16番窓口)、郵送、ぴったりサービスによる電子申請のいずれかで申請可能。電子申請にはマイナンバーカードによる電子署名が必要。"
+          "agent_value": "窓口(区役所2階16番窓口)、郵送、ぴったりサービスによる電子申請のいずれかで申請可能。電子申請にはマイナンバーカードによる電子署名が必要。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "出生日または前住所地の転出予定日の同月内に申請。月後半の場合は、その翌日から数えて15日以内(15日目が区役所閉庁日の場合はその翌開庁日)に申請すれば同月内申請の扱いになる。それを過ぎると申請月の翌月分からの支給となり遡及不可。"
+          "agent_value": "出生日または前住所地の転出予定日の同月内に申請。月後半の場合は、その翌日から数えて15日以内(15日目が区役所閉庁日の場合はその翌開庁日)に申請すれば同月内申請の扱いになる。それを過ぎると申請月の翌月分からの支給となり遡及不可。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -271,6 +292,7 @@
       "id": "chuo",
       "name": "中央区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -288,25 +310,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口申請の場合は本人確認書類と申請者・配偶者・対象児童のマイナンバーが分かるものが必要。手続きには児童手当認定請求書（PDF）の提出が必要で、代理人が別世帯から手続きする場合は委任状も必要。"
+          "agent_value": "窓口申請の場合は本人確認書類と申請者・配偶者・対象児童のマイナンバーが分かるものが必要。手続きには児童手当認定請求書（PDF）の提出が必要で、代理人が別世帯から手続きする場合は委任状も必要。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "オンライン申請・郵送・窓口のいずれの方法でも申請可能。窓口は区役所6階子ども子育て支援課子育て給付係、日本橋・月島・晴海の各特別出張所地域活動係。"
+          "agent_value": "オンライン申請・郵送・窓口のいずれの方法でも申請可能。窓口は区役所6階子ども子育て支援課子育て給付係、日本橋・月島・晴海の各特別出張所地域活動係。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "手当は申請日の翌月分から支給されるため異動日と同月中の申請が原則。ただし異動日が月末に近い場合は、異動日の翌日から15日以内に申請すれば、申請が翌月になっても異動日の翌月分から支給される。"
+          "agent_value": "手当は申請日の翌月分から支給されるため異動日と同月中の申請が原則。ただし異動日が月末に近い場合は、異動日の翌日から15日以内に申請すれば、申請が翌月になっても異動日の翌月分から支給される。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -323,6 +365,7 @@
       "id": "itabashi",
       "name": "板橋区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -341,25 +384,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "新規申請の場合、(1)児童手当認定請求書 (2)申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など） (3)申請者の本人確認書類（マイナンバーカード等）が必須。状況により監護事実の同意書等が追加で必要。"
+          "agent_value": "新規申請の場合、(1)児童手当認定請求書 (2)申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など） (3)申請者の本人確認書類（マイナンバーカード等）が必須。状況により監護事実の同意書等が追加で必要。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "区役所北館1階6番窓口、赤塚支所住民サービス係窓口、郵送申請、または電子申請（ぴったりサービス）でオンライン申請が可能。"
+          "agent_value": "区役所北館1階6番窓口、赤塚支所住民サービス係窓口、郵送申請、または電子申請（ぴったりサービス）でオンライン申請が可能。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "出生・転入などの事由発生日の翌日から起算して15日以内"
+          "agent_value": "出生・転入などの事由発生日の翌日から起算して15日以内",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -376,6 +439,7 @@
       "id": "koto",
       "name": "江東区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -394,25 +458,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "初めて児童が生まれた方・転入された方は「児童手当認定請求書」、申請者本人の口座番号が分かるもの、（厚生年金・共済年金加入者は）健康保険の資格情報を確認できるもの、マイナンバーカードの写し（申請者および配偶者）が必要。"
+          "agent_value": "初めて児童が生まれた方・転入された方は「児童手当認定請求書」、申請者本人の口座番号が分かるもの、（厚生年金・共済年金加入者は）健康保険の資格情報を確認できるもの、マイナンバーカードの写し（申請者および配偶者）が必要。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "郵送申請、窓口申請（区役所3階14番窓口または豊洲シビックセンター内豊洲特別出張所3階7番窓口）、マイナポータルでの電子申請の3方法があり、オンラインでも完結可能。"
+          "agent_value": "郵送申請、窓口申請（区役所3階14番窓口または豊洲シビックセンター内豊洲特別出張所3階7番窓口）、マイナポータルでの電子申請の3方法があり、オンラインでも完結可能。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "原則、申請月の翌月分から支給。出生・転入した日の翌日から15日以内に申請すれば要件発生月の申請とみなされる（15日特例）。"
+          "agent_value": "原則、申請月の翌月分から支給。出生・転入した日の翌日から15日以内に申請すれば要件発生月の申請とみなされる（15日特例）。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -429,6 +513,7 @@
       "id": "minato",
       "name": "港区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -444,25 +529,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "児童手当認定請求書に加え、請求者の本人確認書類、請求者及び配偶者の個人番号確認書類、請求者名義の預金口座がわかるもの、（該当者のみ）健康保険の資格情報がわかるもの・旅券の写し等。別居児童や大学生年代の子がいる場合等は追加書類が必要。"
+          "agent_value": "児童手当認定請求書に加え、請求者の本人確認書類、請求者及び配偶者の個人番号確認書類、請求者名義の預金口座がわかるもの、（該当者のみ）健康保険の資格情報がわかるもの・旅券の写し等。別居児童や大学生年代の子がいる場合等は追加書類が必要。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "港区役所子ども若者支援課子ども給付係への郵送、各総合支所区民課保健福祉係の窓口への持参、またはマイナポータルによる電子申請の3方法。電子申請にはマイナンバーカード等が必要。"
+          "agent_value": "港区役所子ども若者支援課子ども給付係への郵送、各総合支所区民課保健福祉係の窓口への持参、またはマイナポータルによる電子申請の3方法。電子申請にはマイナンバーカード等が必要。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "出生・転入日（前住地の転出予定日）の翌日から15日以内（15日目が閉庁日の場合は翌開庁日まで）。郵送の場合は港区役所への到着日が申請日となる。"
+          "agent_value": "出生・転入日（前住地の転出予定日）の翌日から15日以内（15日目が閉庁日の場合は翌開庁日まで）。郵送の場合は港区役所への到着日が申請日となる。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -479,6 +584,7 @@
       "id": "nakano",
       "name": "中野区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -497,25 +603,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）、申請者の加入保険が確認できるもの（3歳未満の児童を養育し各種共済組合員の場合のみ必要）、請求者名義の振込口座（普通預金）が確認できるもの（郵送申請時は認定請求書等の様式も必要）"
+          "agent_value": "個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）、申請者の加入保険が確認できるもの（3歳未満の児童を養育し各種共済組合員の場合のみ必要）、請求者名義の振込口座（普通預金）が確認できるもの（郵送申請時は認定請求書等の様式も必要）",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "電子申請（ぴったりサービス）・郵送・窓口（子ども総合窓口や地域事務所）のいずれでも申請可能"
+          "agent_value": "電子申請（ぴったりサービス）・郵送・窓口（子ども総合窓口や地域事務所）のいずれでも申請可能",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）"
+          "agent_value": "出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -532,6 +658,7 @@
       "id": "nerima",
       "name": "練馬区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -547,25 +674,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "①児童手当認定請求書（初めて申請する場合）②マイナンバーカードまたは個人番号確認書類＋身元確認書類③申請者名義の口座情報が分かるもの（通帳・キャッシュカード等）④3歳未満で共済組合員の場合は健康保険情報が分かるもの⑤2人目以降は額改定認定請求書⑥本人以外が申請する場合は委任状"
+          "agent_value": "①児童手当認定請求書（初めて申請する場合）②マイナンバーカードまたは個人番号確認書類＋身元確認書類③申請者名義の口座情報が分かるもの（通帳・キャッシュカード等）④3歳未満で共済組合員の場合は健康保険情報が分かるもの⑤2人目以降は額改定認定請求書⑥本人以外が申請する場合は委任状",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "電子申請（ぴったりサービス、マイナンバーカード必要）・郵送・窓口（練馬区役所本庁舎、光が丘/石神井/大泉の各総合福祉事務所）のいずれかで申請可能。区民事務所では受付不可。"
+          "agent_value": "電子申請（ぴったりサービス、マイナンバーカード必要）・郵送・窓口（練馬区役所本庁舎、光が丘/石神井/大泉の各総合福祉事務所）のいずれかで申請可能。区民事務所では受付不可。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "手当は原則申請日の翌月分から支給。ただし出生日や転入日（前住所地の転出予定日）の翌日から15日以内に申請すれば、出生・転入月の翌月分から支給される。"
+          "agent_value": "手当は原則申請日の翌月分から支給。ただし出生日や転入日（前住所地の転出予定日）の翌日から15日以内に申請すれば、出生・転入月の翌月分から支給される。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -582,6 +729,7 @@
       "id": "ota",
       "name": "大田区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -599,25 +747,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "請求者名義の普通預金口座のわかるもの（公金受取口座利用の場合は不要）。請求者が児童と別居している場合は「児童手当別居監護申立書」も必要。個々の状況により他の書類を求められる場合あり。"
+          "agent_value": "請求者名義の普通預金口座のわかるもの（公金受取口座利用の場合は不要）。請求者が児童と別居している場合は「児童手当別居監護申立書」も必要。個々の状況により他の書類を求められる場合あり。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "子育ち支援課子育ち支援担当の窓口（区役所3階24番）、郵送、または電子申請（マイナンバーカード必須）で申請可能。オンラインのみで完結できる（電子申請）。"
+          "agent_value": "子育ち支援課子育ち支援担当の窓口（区役所3階24番）、郵送、または電子申請（マイナンバーカード必須）で申請可能。オンラインのみで完結できる（電子申請）。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "異動日（出生日や転入日＝前住所地の転出予定日）の翌日から15日以内に申請すれば、申請月から支給される。15日を過ぎると支給を受けられない月が発生する場合がある。"
+          "agent_value": "異動日（出生日や転入日＝前住所地の転出予定日）の翌日から15日以内に申請すれば、申請月から支給される。15日を過ぎると支給を受けられない月が発生する場合がある。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -634,6 +802,7 @@
       "id": "shibuya",
       "name": "渋谷区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -649,25 +818,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "（同居の場合）(1)児童手当 認定請求書、(2)請求者名義の口座情報、(3)該当する健康保険に加入している場合は健康保険証などのコピー。別居の場合はこれに加えて(4)別居監護申立書が必要"
+          "agent_value": "（同居の場合）(1)児童手当 認定請求書、(2)請求者名義の口座情報、(3)該当する健康保険に加入している場合は健康保険証などのコピー。別居の場合はこれに加えて(4)別居監護申立書が必要",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口（区役所4階子ども政策課子育て給付係）、郵送、オンライン申請（外部サイトGrafferでのスマート申請）のいずれも可能。フォーム・電話予約・FAX・メール・コンビニ・LINE・マイナンバー・マイポータルは不可"
+          "agent_value": "窓口（区役所4階子ども政策課子育て給付係）、郵送、オンライン申請（外部サイトGrafferでのスマート申請）のいずれも可能。フォーム・電話予約・FAX・メール・コンビニ・LINE・マイナンバー・マイポータルは不可",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "出生・前住所の転出予定日の翌日から15日以内に申請"
+          "agent_value": "出生・前住所の転出予定日の翌日から15日以内に申請",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -684,6 +873,7 @@
       "id": "shinagawa",
       "name": "品川区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -699,25 +889,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "申請者名義の金融機関口座がわかる書類（増額申請時は不要）、申請者の健康保険情報がわかるもの（原則不要、共済組合加入者のみ）、本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）。代理人申請時はさらに委任状が必要。"
+          "agent_value": "申請者名義の金融機関口座がわかる書類（増額申請時は不要）、申請者の健康保険情報がわかるもの（原則不要、共済組合加入者のみ）、本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）。代理人申請時はさらに委任状が必要。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口は品川区役所本庁舎7階の子育て応援課手当医療助成担当（地域センターでの取扱いなし）。郵送も可。マイナンバーカードと電子署名が使える場合は品川区電子申請サービスまたはぴったりサービスでオンライン申請可能。"
+          "agent_value": "窓口は品川区役所本庁舎7階の子育て応援課手当医療助成担当（地域センターでの取扱いなし）。郵送も可。マイナンバーカードと電子署名が使える場合は品川区電子申請サービスまたはぴったりサービスでオンライン申請可能。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "出生や転入等により受給資格が生じた日（または前住地の転出予定日）の翌日から15日以内に申請（15日特例）。遅れるとその分の手当が受けられない。"
+          "agent_value": "出生や転入等により受給資格が生じた日（または前住地の転出予定日）の翌日から15日以内に申請（15日特例）。遅れるとその分の手当が受けられない。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -734,6 +944,7 @@
       "id": "suginami",
       "name": "杉並区",
       "total": 80,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -749,25 +960,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "児童手当 認定請求書、請求者名義の金融機関口座（普通口座）がわかるもの、（3歳未満で公務員共済等に加入の場合）請求者の健康保険情報がわかるもの、（児童が別居の場合）監護・生計同一申立書、（大学生年代の子を養育する場合）監護相当・生計費の負担についての確認書"
+          "agent_value": "児童手当 認定請求書、請求者名義の金融機関口座（普通口座）がわかるもの、（3歳未満で公務員共済等に加入の場合）請求者の健康保険情報がわかるもの、（児童が別居の場合）監護・生計同一申立書、（大学生年代の子を養育する場合）監護相当・生計費の負担についての確認書",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口（子ども家庭部管理課子ども医療・手当係、区民課区民係、区民事務所）で申請可。郵送申請も可（子ども家庭部管理課宛）。電子申請サービス「LoGoフォーム」（マイナンバーカード必須）でオンライン完結も可能"
+          "agent_value": "窓口（子ども家庭部管理課子ども医療・手当係、区民課区民係、区民事務所）で申請可。郵送申請も可（子ども家庭部管理課宛）。電子申請サービス「LoGoフォーム」（マイナンバーカード必須）でオンライン完結も可能",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "手当は請求のあった月の翌月分から支給。ただし出生日・転出予定日の翌日から数えて15日以内の請求であれば、同月内の請求と同じく翌月分から支給される（15日目が土日祝・年末年始の場合は次の平日が期限）。期限を過ぎると支給されない月が発生する"
+          "agent_value": "手当は請求のあった月の翌月分から支給。ただし出生日・転出予定日の翌日から数えて15日以内の請求であれば、同月内の請求と同じく翌月分から支給される（15日目が土日祝・年末年始の場合は次の平日が期限）。期限を過ぎると支給されない月が発生する",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -784,6 +1015,7 @@
       "id": "edogawa",
       "name": "江戸川区",
       "total": 70,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -799,25 +1031,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "①児童手当認定（額改定）請求書 ②身元確認書類（マイナンバーカード等の区分A、または区分Bを2種類） ③マイナンバー（個人番号）確認書類 ④申請者名義の普通預金通帳またはキャッシュカード。別居監護や兄姉等がいる場合は追加で「養育事実の同意書」「監護相当・生計費の負担についての確認書」が必要"
+          "agent_value": "①児童手当認定（額改定）請求書 ②身元確認書類（マイナンバーカード等の区分A、または区分Bを2種類） ③マイナンバー（個人番号）確認書類 ④申請者名義の普通預金通帳またはキャッシュカード。別居監護や兄姉等がいる場合は追加で「養育事実の同意書」「監護相当・生計費の負担についての確認書」が必要",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "「電子」（マイナポータル、ログイン・電子署名必須）・「郵送」・「窓口」のいずれかで申請可能。窓口は本庁舎東棟2階4番児童家庭課窓口でのみ受付（区内の各事務所では受付していない）"
+          "agent_value": "「電子」（マイナポータル、ログイン・電子署名必須）・「郵送」・「窓口」のいずれかで申請可能。窓口は本庁舎東棟2階4番児童家庭課窓口でのみ受付（区内の各事務所では受付していない）",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "通常の申請自体に一律の期限はないが、申請日の翌月からしか支給されず遡っての支給はできないため早めの申請が必要。出生・転入の場合は、その翌日から15日以内に申請すれば出生等のあった月の申請とみなされる（15日特例）"
+          "agent_value": "通常の申請自体に一律の期限はないが、申請日の翌月からしか支給されず遡っての支給はできないため早めの申請が必要。出生・転入の場合は、その翌日から15日以内に申請すれば出生等のあった月の申請とみなされる（15日特例）",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -839,6 +1091,7 @@
       "id": "adachi",
       "name": "足立区",
       "total": 60,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
@@ -857,25 +1110,45 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "認定請求書（新規申請の場合は児童手当・子ども医療費助成制度認定請求書）、申請者（保護者）名義の普通預金通帳、本人確認書類。別居監護の場合は別居監護申立書、18歳年度末〜22歳年度末の子を養育する場合は監護相当・生計費の負担についての確認書も必要。"
+          "agent_value": "認定請求書（新規申請の場合は児童手当・子ども医療費助成制度認定請求書）、申請者（保護者）名義の普通預金通帳、本人確認書類。別居監護の場合は別居監護申立書、18歳年度末〜22歳年度末の子を養育する場合は監護相当・生計費の負担についての確認書も必要。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "オンライン申請の案内はなし。郵送（推奨）または窓口（親子支援課児童手当係〈区役所中央館3階〉、足立福祉事務所各福祉課、転入時のみ区民事務所）で受付。"
+          "agent_value": "オンライン申請の案内はなし。郵送（推奨）または窓口（親子支援課児童手当係〈区役所中央館3階〉、足立福祉事務所各福祉課、転入時のみ区民事務所）で受付。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "出生・転入の同月内に申請するのが原則。月の後半に出生・転入した場合は、出生日・転入日の翌日から15日以内に申請すれば出生・転入月の翌月分から支給される（15日特例）。"
+          "agent_value": "出生・転入の同月内に申請するのが原則。月の後半に出生・転入した場合は、出生日・転入日の翌日から15日以内に申請すれば出生・転入月の翌月分から支給される（15日特例）。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -897,6 +1170,7 @@
       "id": "bunkyo",
       "name": "文京区",
       "total": 40,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 20,
@@ -914,25 +1188,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "郵送（こども若者支援課児童給付係宛て）で申請するか、マイナンバーカードがあれば外部リンクから電子申請が可能。区役所窓口への来庁申請については本文に記載なし。"
+          "agent_value": "郵送（こども若者支援課児童給付係宛て）で申請するか、マイナンバーカードがあれば外部リンクから電子申請が可能。区役所窓口への来庁申請については本文に記載なし。",
+          "success_rate": {
+            "successful_runs": 1,
+            "total_runs": 1,
+            "rate": 1.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -959,6 +1253,7 @@
       "id": "chiyoda",
       "name": "千代田区",
       "total": 0,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 0,
@@ -974,25 +1269,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -1029,6 +1344,7 @@
       "id": "katsushika",
       "name": "葛飾区",
       "total": 0,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 0,
@@ -1046,25 +1362,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -1101,6 +1437,7 @@
       "id": "kita",
       "name": "北区",
       "total": 0,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 0,
@@ -1116,25 +1453,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -1171,6 +1528,7 @@
       "id": "meguro",
       "name": "目黒区",
       "total": 0,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 0,
@@ -1188,25 +1546,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -1243,6 +1621,7 @@
       "id": "setagaya",
       "name": "世田谷区",
       "total": 0,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 0,
@@ -1258,25 +1637,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -1313,6 +1712,7 @@
       "id": "shinjuku",
       "name": "新宿区",
       "total": 0,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 0,
@@ -1328,25 +1728,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -1383,6 +1803,7 @@
       "id": "sumida",
       "name": "墨田区",
       "total": 0,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 0,
@@ -1398,25 +1819,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -1453,6 +1894,7 @@
       "id": "taito",
       "name": "台東区",
       "total": 0,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 0,
@@ -1468,25 +1910,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [
@@ -1523,6 +1985,7 @@
       "id": "toshima",
       "name": "豊島区",
       "total": 0,
+      "trial_count": 1,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 0,
@@ -1540,25 +2003,45 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "success_rate": {
+            "successful_runs": 0,
+            "total_runs": 1,
+            "rate": 0.0
+          }
         }
       ],
       "improvements": [

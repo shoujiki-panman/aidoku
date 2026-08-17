@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -87,17 +88,20 @@ SOURCES = [
 ]
 
 
-def build_fields(items: dict) -> tuple[list[dict], dict, list[dict]]:
+def build_fields(items: dict, success_rate: object = None,
+                 ) -> tuple[list[dict], dict, list[dict]]:
     """4項目の内訳・配点・処方箋を作る。"""
     fields, breakdown, fixes = [], {}, []
     for src_key, label in FIELD_KEYS:
         item = items.get(src_key) or {}
         found = bool(item.get("found"))
+        rate = public_success_rate(success_rate, src_key, found)
         fields.append({
             "field": label,
             "verdict": "読めた" if found else "読めない",
             "points": ITEM_POINTS if found else 0,
             "agent_value": (item.get("value") or "")[:MAX_VALUE_CHARS],
+            "success_rate": rate,
         })
         breakdown[label] = ITEM_POINTS if found else 0
         if not found:
@@ -105,9 +109,43 @@ def build_fields(items: dict) -> tuple[list[dict], dict, list[dict]]:
     return fields, breakdown, fixes
 
 
+def public_success_rate(success_rate: object, key: str, found: bool) -> dict:
+    """新しい複数回結果を検証し、旧結果は1回測定として明示する。"""
+    if success_rate is None:
+        successful = int(found)
+        return {"successful_runs": successful, "total_runs": 1,
+                "rate": float(successful)}
+    if not isinstance(success_rate, dict):
+        raise ValueError("success_rateがobjectでない")
+    value = success_rate.get(key)
+    if not isinstance(value, dict):
+        raise ValueError(f"success_rate.{key}がobjectでない")
+    successful = value.get("successful_runs")
+    total = value.get("total_runs")
+    rate = value.get("rate")
+    if type(successful) is not int or type(total) is not int:
+        raise ValueError(f"success_rate.{key}の回数が整数でない")
+    if total < 1 or successful < 0 or successful > total:
+        raise ValueError(f"success_rate.{key}の回数が範囲外")
+    if isinstance(rate, bool) or not isinstance(rate, (int, float)):
+        raise ValueError(f"success_rate.{key}.rateが数値でない")
+    try:
+        normalized = float(rate)
+    except (OverflowError, ValueError) as exc:
+        raise ValueError(
+            f"success_rate.{key}.rateを有限な数値へ変換できない") from exc
+    expected = round(successful / total, 4)
+    if not math.isfinite(normalized) or normalized != expected:
+        raise ValueError(f"success_rate.{key}.rateが回数と一致しない")
+    return {"successful_runs": successful, "total_runs": total,
+            "rate": normalized}
+
+
 def build_entry(data: dict) -> dict:
     """extractor の1ファイルから、ダッシュボード1件分を作る。"""
-    fields, breakdown, fixes = build_fields(data.get("items") or {})
+    fields, breakdown, fixes = build_fields(
+        data.get("items") or {}, data.get("success_rate"))
+    trial_count = _trial_count(data.get("trial_count"), fields)
     clarity = data.get("online_clarity")
     clarity_pt = CLARITY_POINTS.get(clarity, 0)
     breakdown["オンライン明示"] = clarity_pt
@@ -123,6 +161,7 @@ def build_entry(data: dict) -> dict:
         "id": data["municipality_id"],
         "name": data["municipality"],
         "total": sum(breakdown.values()),
+        "trial_count": trial_count,
         "breakdown": breakdown,
         "hops": page.get("hops"),
         "page_url": page.get("url"),
@@ -132,6 +171,18 @@ def build_entry(data: dict) -> dict:
         "improvements": fixes,
         "notes": data.get("page_notes") or "",
     }
+
+
+def _trial_count(recorded: object, fields: list[dict]) -> int:
+    totals = {field["success_rate"]["total_runs"] for field in fields}
+    if len(totals) != 1:
+        raise ValueError("項目ごとのtotal_runsが一致しない")
+    derived = totals.pop()
+    if recorded is None:
+        return derived
+    if type(recorded) is not int or recorded != derived:
+        raise ValueError("trial_countがsuccess_rateの分母と一致しない")
+    return recorded
 
 
 def summarize(entries: list[dict]) -> dict:

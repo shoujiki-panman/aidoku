@@ -13,12 +13,14 @@ LLM（`claude -p`）は呼ばない。呼ばずに決まる経路だけを対象
 
 from __future__ import annotations
 
+import io
 import json
 import stat
 import subprocess
 import sys
 import tempfile
 import unittest
+from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 from unittest import mock
 
@@ -558,6 +560,8 @@ class ExtractionFlowTest(unittest.TestCase):
             result = extract.extract_one(disc, FakeFetcher(), "model", False)
         run.assert_not_called()
         self.assertFalse(result["reached"])
+        self.assertEqual(result["trial_count"], 1)
+        self.assertEqual(result["trials"][0]["run_number"], 1)
         self.assertEqual(len(result["test_cases"]), 4)
         self.assertEqual(result["measurement"]["recording_status"], "recorded")
         self.assertEqual(result["evidence_summary"]["not_applicable"], 4)
@@ -621,6 +625,67 @@ class MainBatchTest(unittest.TestCase):
 
             self.assertEqual(sentinel.read_text(encoding="utf-8"), "SENTINEL")
             self.assertFalse((out_dir / "extract_nerima_tennyu.json").exists())
+
+    def test_trials回だけ実行して番号と成功率を1出力へ残す(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            discovery_dir, out_dir = root / "discovery", root / "out"
+            discovery_dir.mkdir()
+            out_dir.mkdir()
+            self.write_discovery(discovery_dir, "nerima")
+
+            def build(discovery_data, cases, *_args):
+                return unreachable_result(discovery_data, list(cases))
+
+            with mock.patch.object(extract, "DISCOVERY_DIR", discovery_dir), \
+                    mock.patch.object(extract, "OUT_DIR", out_dir), \
+                    mock.patch.object(extract, "PoliteFetcher", return_value=object()), \
+                    mock.patch.object(
+                        extract, "extract_prepared", side_effect=build) as run:
+                with redirect_stdout(io.StringIO()):
+                    extract.main(["--procedure", "tennyu", "--trials", "3"])
+
+            self.assertEqual(run.call_count, 3)
+            output = json.loads(
+                (out_dir / "extract_nerima_tennyu.json").read_text(encoding="utf-8"))
+            self.assertEqual(output["trial_count"], 3)
+            self.assertEqual(
+                [trial["run_number"] for trial in output["trials"]], [1, 2, 3])
+            self.assertTrue(all(
+                value == {"successful_runs": 0, "total_runs": 3, "rate": 0.0}
+                for value in output["success_rate"].values()))
+
+    def test_途中のtrial失敗では既存出力を変更しない(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            discovery_dir, out_dir = root / "discovery", root / "out"
+            discovery_dir.mkdir()
+            out_dir.mkdir()
+            self.write_discovery(discovery_dir, "nerima")
+            output = out_dir / "extract_nerima_tennyu.json"
+            output.write_text("SENTINEL", encoding="utf-8")
+            valid = unreachable_result(
+                discovery(), test_cases_for("tennyu", "練馬区"))
+
+            with mock.patch.object(extract, "DISCOVERY_DIR", discovery_dir), \
+                    mock.patch.object(extract, "OUT_DIR", out_dir), \
+                    mock.patch.object(extract, "PoliteFetcher", return_value=object()), \
+                    mock.patch.object(
+                        extract, "extract_prepared",
+                        side_effect=[valid, RuntimeError("trial 2 failed")]) as run:
+                with self.assertRaisesRegex(RuntimeError, "trial 2 failed"):
+                    extract.main(["--procedure", "tennyu", "--trials", "3"])
+
+            self.assertEqual(run.call_count, 2)
+            self.assertEqual(output.read_text(encoding="utf-8"), "SENTINEL")
+
+    def test_trialsの0以下をdiscovery確認前に拒否する(self):
+        for value in ("0", "-1"):
+            with self.subTest(value=value), \
+                    mock.patch.object(extract, "discovery_files") as files:
+                with redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+                    extract.main(["--trials", value])
+                files.assert_not_called()
 
     def test_後半の測定条件欠落はLLMとwrite前に拒否する(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -25,6 +25,7 @@ from export_dashboard import (  # noqa: E402
     build_entry,
     display_question,
     prepare_public_entries,
+    public_success_rate,
     summarize,
 )
 from measurement import (  # noqa: E402
@@ -94,6 +95,68 @@ class ScoringTest(unittest.TestCase):
         e = build_entry(extract(ALL_FOUND))
         self.assertIn("窓口/オンライン可否", e["breakdown"])
         self.assertNotIn("窓口オンライン可否", e["breakdown"])
+
+    def test_旧結果も1回測定として成功率を明示する(self):
+        items = dict(ALL_FOUND, 手数料=item(False))
+        entry = build_entry(extract(items))
+        self.assertEqual(entry["trial_count"], 1)
+        rates = {field["field"]: field["success_rate"]
+                 for field in entry["fields"]}
+        self.assertEqual(rates["必要書類"], {
+            "successful_runs": 1, "total_runs": 1, "rate": 1.0,
+        })
+        self.assertEqual(rates["手数料"], {
+            "successful_runs": 0, "total_runs": 1, "rate": 0.0,
+        })
+
+    def test_複数回の成功率を公開項目へ運ぶ(self):
+        rates = {
+            key: {"successful_runs": 3, "total_runs": 5, "rate": 0.6}
+            for key in ALL_FOUND
+        }
+        entry = build_entry(extract(
+            ALL_FOUND, trial_count=5, success_rate=rates))
+        self.assertEqual(entry["trial_count"], 5)
+        self.assertTrue(all(field["success_rate"] == {
+            "successful_runs": 3, "total_runs": 5, "rate": 0.6,
+        } for field in entry["fields"]))
+
+    def test_成功率の型_範囲_計算矛盾を拒否する(self):
+        invalid = (
+            None,
+            [],
+            {"successful_runs": True, "total_runs": 5, "rate": 0.2},
+            {"successful_runs": 6, "total_runs": 5, "rate": 1.2},
+            {"successful_runs": 1, "total_runs": 0, "rate": 0.0},
+            {"successful_runs": 1, "total_runs": 5, "rate": "0.2"},
+            {"successful_runs": 1, "total_runs": 5, "rate": float("nan")},
+            {"successful_runs": 1, "total_runs": 5, "rate": 10 ** 10000},
+            {"successful_runs": 1, "total_runs": 5, "rate": 0.3},
+        )
+        for value in invalid:
+            with self.subTest(value=value):
+                rates = {key: value for key in ALL_FOUND}
+                with self.assertRaises(ValueError):
+                    build_entry(extract(
+                        ALL_FOUND, trial_count=5, success_rate=rates))
+
+    def test_項目間の分母とrootのtrial_countを照合する(self):
+        rates = {
+            key: {"successful_runs": 1, "total_runs": 5, "rate": 0.2}
+            for key in ALL_FOUND
+        }
+        rates["手数料"] = {
+            "successful_runs": 1, "total_runs": 4, "rate": 0.25}
+        with self.assertRaisesRegex(ValueError, "total_runs"):
+            build_entry(extract(ALL_FOUND, trial_count=5, success_rate=rates))
+        rates["手数料"] = {
+            "successful_runs": 1, "total_runs": 5, "rate": 0.2}
+        with self.assertRaisesRegex(ValueError, "trial_count"):
+            build_entry(extract(ALL_FOUND, trial_count=4, success_rate=rates))
+
+    def test_個別成功率のキー欠落を0回へ丸めない(self):
+        with self.assertRaisesRegex(ValueError, "必要書類"):
+            public_success_rate({}, "必要書類", True)
 
 
 class SummaryTest(unittest.TestCase):
