@@ -26,8 +26,9 @@ import csv
 import json
 import re
 import subprocess
-from dataclasses import dataclass, field as dc_field
 import sys
+from dataclasses import dataclass
+from dataclasses import field as dc_field
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent

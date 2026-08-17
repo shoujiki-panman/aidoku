@@ -19,13 +19,16 @@ from polite_fetch import PoliteFetcher  # noqa: E402
 
 sys.path.insert(0, str(ROOT))
 from evidence_check import attach_checks_across_pages, truncate_page_text  # noqa: E402
+from extractor.response_contract import (  # noqa: E402
+    is_non_html_url,
+    normalize_item,
+    optional_text,
+    parse_json_reply,
+    requested_urls,
+)
 from fact_types import by_id  # noqa: E402
 from failure_taxonomy import annotate_result  # noqa: E402
 from measurement_cases import TestCase  # noqa: E402
-
-from extractor.response_contract import (  # noqa: E402
-    is_non_html_url, normalize_item, optional_text, parse_json_reply, requested_urls,
-)
 
 
 def build_input(page: dict, muni: str, proc: str, test_case: TestCase,

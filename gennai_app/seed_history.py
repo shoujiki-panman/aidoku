@@ -37,7 +37,7 @@ def main() -> None:
 
     rows.sort()  # 低い順に投げる → 履歴では高い順に見える
     ok = 0
-    for score, name, url in rows:
+    for _score, name, url in rows:  # 点は並べ替えにだけ使う
         body = json.dumps({"inputs": {"url": url}}).encode("utf-8")
         req = urllib.request.Request(f"{STUB}/exapps/invoke", data=body,
                                      headers={"Content-Type": "application/json"},

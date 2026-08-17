@@ -19,14 +19,18 @@ sys.path.insert(0, str(ROOT / "crawler"))
 sys.path.insert(0, str(ROOT))
 
 from htmlutil import parse  # noqa: E402
-from fact_types import EXTRACTOR_KEYS  # noqa: E402
-from failure_taxonomy import classify_experiment_failure  # noqa: E402
-from measurement_cases import TestCase, test_cases_for  # noqa: E402
+
 from extractor.fact_extract import (  # noqa: E402
-    allowed_sources, call_claude, compose_input, validated_attempt,
+    allowed_sources,
+    call_claude,
+    compose_input,
+    validated_attempt,
 )
 from extractor.response_contract import parse_json_reply, requested_urls  # noqa: E402
 from extractor.result_contract import failed_test_cases, legacy_items  # noqa: E402
+from fact_types import EXTRACTOR_KEYS  # noqa: E402
+from failure_taxonomy import classify_experiment_failure  # noqa: E402
+from measurement_cases import TestCase, test_cases_for  # noqa: E402
 
 MEASUREMENT_VERSION = "exp-0.2"
 MODEL = "claude-sonnet-5"

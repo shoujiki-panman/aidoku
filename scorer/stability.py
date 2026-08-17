@@ -124,7 +124,8 @@ def main() -> None:
          "同じ入力でも判定が揺れるのは LLM-as-a-judge の既知の問題（position bias 等）。",
          "対策を入れる前後で、この数字が下がったかどうかで効果を判断する。", "",
          "## 結論", "",
-         f"- LLMが判定した項目 {len(llm_items)}件 のうち **{len(unstable)}件で判定が割れた（ぶれ率 {flip_rate:.0f}%）**"]
+         f"- LLMが判定した項目 {len(llm_items)}件 のうち "
+         f"**{len(unstable)}件で判定が割れた（ぶれ率 {flip_rate:.0f}%）**"]
     if el_keys:
         L.append(f"- 必須要素 {len(el_keys)}個 のうち **{len(el_unstable)}個で判定が割れた"
                  f"（要素単位のぶれ率 {el_rate:.1f}%）**")

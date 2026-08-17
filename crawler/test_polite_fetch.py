@@ -187,7 +187,6 @@ class CacheTest(unittest.TestCase):
 
     def test_refreshを付けたときだけ取り直す(self):
         self._fetch_once()
-        _, m = self.f, None
         robots = "User-agent: *\nDisallow:\n"
 
         def _side_effect(req, *a, **kw):

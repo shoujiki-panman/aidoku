@@ -7,9 +7,9 @@ import os
 import re
 import shutil
 import tempfile
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Callable
 from urllib.parse import urlsplit
 
 from measurement_cases import TestCase, target_identity, test_cases_for
@@ -90,7 +90,7 @@ def _validate_candidate(candidate: dict) -> None:
         parts = urlsplit(url) if isinstance(url, str) else None
         hostname = parts.hostname if parts is not None else None
         if parts is not None:
-            parts.port
+            _ = parts.port  # 参照した時点で不正なポートは ValueError になる（これが検査）
     except ValueError as exc:
         raise ValueError(f"urlが不正: {url!r}") from exc
     if (parts is None or parts.scheme not in {"http", "https"}

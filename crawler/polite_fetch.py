@@ -20,7 +20,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import urllib.robotparser
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from pathlib import Path
 
 # 連絡先はユーザーが自分のものに差し替える。空のまま本番クロールしない。

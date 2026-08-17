@@ -117,7 +117,7 @@ def _valid_http_url(url: str) -> bool:
         return False
     try:
         hostname = parts.hostname
-        parts.port
+        _ = parts.port  # 参照した時点で不正なポートは ValueError になる（これが検査）
     except ValueError:
         return False
     return parts.scheme in {"http", "https"} and bool(hostname)

@@ -10,6 +10,7 @@ from __future__ import annotations
 import unittest
 
 from discover import discover, link_filter
+
 from measurement import build_discovery_measurement
 
 

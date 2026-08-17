@@ -6,6 +6,41 @@ on:
     branches: [main]
 
 jobs:
+  # AIにコードを書かせる以上、規約は人のレビューではなく機械で守る。
+  # 落とす設定にしてある（報告だけして誰も直さない状態にしない）。
+  # ルールを足すときは、既存コードも同じ変更で直して緑のまま増やす。
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 設定は pyproject.toml。作品本体は標準ライブラリのみという方針は変えない
+      # （ruff は開発時だけ使う）
+      - name: Lint（ruff）
+        run: |
+          pip install 'ruff==0.16.3'
+          ruff check .
+        shell: bash
+
+  duplication:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # 設定は .jscpd.json（ソースのみ・閾値5%）。
+      # 導入時の実測は Python 0.31% / JavaScript 3.53% / 全体 1.32%
+      - name: 重複コードの検出（jscpd）
+        run: npx --yes jscpd@4 .
+        shell: bash
+
   gatekeeper:
     runs-on: ubuntu-latest
     steps:

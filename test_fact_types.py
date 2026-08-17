@@ -10,8 +10,14 @@ from __future__ import annotations
 import unittest
 
 from fact_types import (
-    DISPLAY_KEYS, EXTRA_MEASURES, EXTRACTOR_KEYS, EXTRACTOR_TO_DISPLAY,
-    FACT_TYPES, FIX_TEXT, by_id, id_of,
+    DISPLAY_KEYS,
+    EXTRA_MEASURES,
+    EXTRACTOR_KEYS,
+    EXTRACTOR_TO_DISPLAY,
+    FACT_TYPES,
+    FIX_TEXT,
+    by_id,
+    id_of,
 )
 
 

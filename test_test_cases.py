@@ -6,7 +6,10 @@ import json
 import unittest
 
 from measurement_cases import (
-    TARGETS_PATH, TestCaseError, build_test_cases, test_cases_for,
+    TARGETS_PATH,
+    TestCaseError,
+    build_test_cases,
+    test_cases_for,
 )
 
 

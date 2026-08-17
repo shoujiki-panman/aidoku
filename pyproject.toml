@@ -1,0 +1,35 @@
+# Lint の設定。AIにコードを書かせる以上、規約は人のレビューではなく機械で守る。
+#
+# ここで固定しているのは「いまのコードが緑になる範囲」。報告だけして誰も直さない
+# 設定にはしない。CIで落とす前提なので、ルールを足すときは既存コードも同じ変更で直す。
+#
+# ruff だけを使う（flake8 / isort / pyupgrade を1本にまとめたもの）。
+# 作品本体は Python 標準ライブラリのみで動くという方針は変えない。ruff は開発時だけ。
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = [
+    "crawler/out",       # クロール結果（生成物）
+    "extractor/out",     # 抽出結果（生成物）
+    "analysis/out",      # 集計結果（生成物）
+    "web/vendor",        # デジタル庁デザインシステムの複製。上流を改変しない
+]
+
+[tool.ruff.lint]
+# E,F   … 構文・未使用・未定義（pyflakes / pycodestyle）
+# I     … import の並び
+# B     … bugbear（間違いやすい書き方）
+# UP    … 古い書き方
+# C4    … 内包表記の無駄
+select = ["E", "F", "I", "B", "UP", "C4"]
+
+[tool.ruff.lint.per-file-ignores]
+# sys.path を足してから自作モジュールを import する構造のため、
+# import が先頭に揃わないファイルがある（意図的）。
+"analysis/*.py" = ["E402"]
+"extractor/*.py" = ["E402"]
+"scorer/*.py" = ["E402"]
+"gennai_app/*.py" = ["E402"]
+"test_*.py" = ["E402"]
+"*/test_*.py" = ["E402"]

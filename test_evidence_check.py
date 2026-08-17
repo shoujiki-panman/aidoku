@@ -164,7 +164,10 @@ class itemsをまとめて照合する(unittest.TestCase):
     def setUp(self):
         self.items = {
             "必要書類": {"found": True, "evidence": "転出証明書(前住所の役所が発行)、届出する方の本人確認書類"},
-            "窓口オンライン可否": {"found": True, "evidence": "各総合支所くみん窓口、各出張所の受付窓口（10か所）で受付しています。"},
+            "窓口オンライン可否": {
+                "found": True,
+                "evidence": "各総合支所くみん窓口、各出張所の受付窓口（10か所）で受付しています。",
+            },
             "期限": {"found": True, "evidence": "手数料は1200円です。窓口でお支払いください。"},  # 捏造
             "手数料": {"found": False, "evidence": "記載が見当たらない"},
         }

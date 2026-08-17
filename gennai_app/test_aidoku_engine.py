@@ -63,8 +63,8 @@ def measured_row(**over) -> dict:
     base = {
         "municipality": "港区",
         "found": {"documents": True, "online": True, "deadline": True, "fee": True},
-        "values": {k: "値" for k in eng.ITEM_KEYS},
-        "reasons": {k: "" for k in eng.ITEM_KEYS},
+        "values": dict.fromkeys(eng.ITEM_KEYS, "値"),
+        "reasons": dict.fromkeys(eng.ITEM_KEYS, ""),
         "page_notes": "",
         "clarity": "明記",
         "hops": 3,
@@ -140,7 +140,8 @@ class ScoreTest(unittest.TestCase):
     def setUp(self):
         self.table = {eng._norm_url(self.URL): measured_row()}
         p = mock.patch.object(eng, "MEASURED", self.table)
-        p.start(); self.addCleanup(p.stop)
+        p.start()
+        self.addCleanup(p.stop)
 
     def test_実測にあれば実測を返す(self):
         r = eng.score(self.URL, None)

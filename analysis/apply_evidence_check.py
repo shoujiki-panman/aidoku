@@ -18,15 +18,16 @@ ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "crawler"))
 
+from htmlutil import parse  # noqa: E402
+from polite_fetch import CACHE_DIR, PoliteFetcher  # noqa: E402
+
 from evidence_check import (  # noqa: E402
     MAX_TEXT_CHARS_PER_PAGE,
-    attach_item_check,
     attach_checks_across_pages,
+    attach_item_check,
     summarize,
     truncate_page_text,
 )
-from htmlutil import parse  # noqa: E402
-from polite_fetch import CACHE_DIR, PoliteFetcher  # noqa: E402
 
 DEFAULT_EXTRACT_DIR = ROOT / "extractor" / "out"
 DEFAULT_OUT_DIR = Path(__file__).parent / "out" / "evidence-checked"
@@ -302,7 +303,8 @@ def run(extract_dir: Path, out_dir: Path, summary_path: Path,
 
     summary = aggregate(checked_results)
     out_dir.mkdir(parents=True, exist_ok=True)
-    for path, checked in zip(files, checked_results):
+    # strict=True: 1対1で対応しているので、数が食い違ったら黙って切り捨てず落とす
+    for path, checked in zip(files, checked_results, strict=True):
         (out_dir / path.name).write_text(
             json.dumps(checked, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
