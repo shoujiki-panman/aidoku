@@ -46,6 +46,7 @@
 | 門番のテスト | ✅ **78 PASS / 0 FAIL**（local 11 / worker 23 / nlweb 20 / mcp 24） |
 | データ画面 [web/demand.html](web/demand.html) | ⚠️ 画面は完成。ただし**本物のAIエージェントの来訪は0件**（`is_sample: true`）。デプロイしないと集まらない |
 | **公開画面の最上段「今やる1件」** [web/index.html](web/index.html) | ✅ 選んだ区について、読めなかった項目のうち見込み効果が最大の1件と、依頼文・再確認方法を出す（#9）。既存 `improvements` から決定的に選ぶ。**実ページで再測定するまで「未検証の提案」**と明示 |
+| **区あて依頼を出す条件** | ✅ 4項目が1つも読めない区へは**依頼文を出さない**（#86）。`page_status: target_unconfirmed` を付け、宛先をこちら側（測り直し）に変える |
 
 ## ⏭ 残り
 
@@ -72,7 +73,9 @@
 [plans/feat-next-action.md](plans/feat-next-action.md)、引き継ぎは
 `outputs/handoff-aidoku-maintenance-agent-2026-08-17.md`（リポジトリ外）。
 
-- [#9](https://github.com/shoujiki-panman/aidoku/issues/9) **今やる1件** — 本変更で最上段に実装
+- [#9](https://github.com/shoujiki-panman/aidoku/issues/9) **今やる1件** — 最上段に実装（PR #85・マージ済み）
+- [#86](https://github.com/shoujiki-panman/aidoku/issues/86) **対象ページと確認できない区へ依頼文を出さない** — PR #87・マージ済み。
+  #85 が、こちらの到達失敗を区の不備として通知していたのを止めた
 - 次: 提案→再測定まで閉じる（Before/After と測定条件をOpen Dataへ）／定期確認と通知／門番を需要センサーに／API・MCP
 - [#59](https://github.com/shoujiki-panman/aidoku/issues/59) URL入力は**作らない**（案3・提出本文を実物に合わせる）。既存対象を見張る道具なので毎回URLを入力させない
 
@@ -91,6 +94,9 @@
 - 源内のチャット画面は動かない（Lambda直叩き構造）。**AIアプリ画面だけ見せる**
 - 認証は5行バイパスしている（本家に無い改変）。説明できる範囲に留めてある
 - 公開23区の点数は各1回しか測っておらず、ぶれ幅は未測定。**3自治体12行の最大2点と混ぜない**
+- **公開3手続き69組のうち18組は、対象の手続きのページに着けていない可能性が高い**（`page_status: target_unconfirmed`。
+  転入届4・児童手当9・粗大ごみ5）。うち17組は `notes` に「別の手続きのページ」「索引ページ」と書かれている。
+  **この18組の0点を「その区が書いていない」と読まない**（#86）
 - `web/assets/barrier.js` だけは `extractor_key` を使う。`display_label` に揃えると `barrier.html` が空欄になる
 - `fact_types.json` と `web/data/fact-types.json` は生成スクリプトがなく手動同期。片方だけ直さない
 
