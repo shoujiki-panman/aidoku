@@ -126,6 +126,116 @@ class CheckTest(unittest.TestCase):
         self.assertEqual(before, after)
 
 
+class HashFallbackTest(unittest.TestCase):
+    """ETag も Last-Modified も返さないサイト（動的生成ページ）の判定。
+
+    2026-08-17に渋谷区・品川区で実測: どちらもCloudFront配下の動的生成で
+    ヘッダを返さないが、本文は2回取っても**バイト単位で同一**だった。
+    """
+
+    BODY = "<html>転入届は14日以内</html>"
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.dir = Path(self.tmp.name)
+        self.f = PoliteFetcher(cache_dir=self.dir, min_interval=0)
+        self.addCleanup(self.tmp.cleanup)
+
+    def prev_with_body(self, body: str, stored_hash: str | None = None):
+        p = self.dir / "prev.html"
+        p.write_text(body, encoding="utf-8")
+        return FetchResult(
+            url=URL, final_url=URL, status=200, content_type="text/html",
+            fetched_at="2026-08-01T00:00:00+00:00", from_cache=True,
+            blocked_by_robots=False, body_path=str(p),
+            last_modified=None, etag=None, content_hash=stored_hash)
+
+    def check(self, prev, served: str):
+        class Resp(_Resp):
+            def read(self_inner):
+                return served.encode("utf-8")
+
+            def get_content_charset(self_inner):
+                return "utf-8"
+        resp = Resp(200, {})
+        resp.headers = {}
+        with mock.patch.object(PoliteFetcher, "cached", return_value=prev), \
+             mock.patch.object(PoliteFetcher, "allowed", return_value=True), \
+             mock.patch.object(polite_fetch, "_decode", return_value=served), \
+             mock.patch.object(polite_fetch.urllib.request, "urlopen",
+                               side_effect=lambda *a, **k: resp):
+            return self.f.check(URL)
+
+    def test_本文が同じなら変わっていない(self):
+        r = self.check(self.prev_with_body(self.BODY), self.BODY)
+        self.assertIs(r.changed, False)
+        self.assertIn("ハッシュが前回と同じ", r.reason)
+
+    def test_本文が違えば変わった(self):
+        r = self.check(self.prev_with_body(self.BODY), self.BODY + "追記")
+        self.assertIs(r.changed, True)
+        self.assertIn("ハッシュが前回と違う", r.reason)
+
+    def test_記録済みハッシュがあればそれを使う(self):
+        """キャッシュ本文から計算し直さず、記録された指紋をそのまま使う。"""
+        fingerprint = polite_fetch.content_fingerprint(self.BODY, URL)
+        prev = self.prev_with_body("別の本文", stored_hash=fingerprint)
+        r = self.check(prev, self.BODY)
+        self.assertIs(r.changed, False)
+
+    def test_生HTMLだけが違っても本文が同じなら変わっていない(self):
+        """リクエストごとに変わるIDで偽陽性を出さない（2026-08-17 渋谷区の実測）。"""
+        old = '<html><script src="x.js" targetId="search-input-31748057"></script>'\
+              '<body><p>転入届は14日以内</p></body></html>'
+        new = old.replace("31748057", "31964550")
+        self.assertNotEqual(polite_fetch.sha256_of(old), polite_fetch.sha256_of(new))
+        r = self.check(self.prev_with_body(old), new)
+        self.assertIs(r.changed, False)
+
+    def test_本文もハッシュも無ければ判定しない(self):
+        prev = FetchResult(
+            url=URL, final_url=URL, status=200, content_type="", fetched_at="t",
+            from_cache=True, blocked_by_robots=False, body_path=None)
+        with mock.patch.object(PoliteFetcher, "cached", return_value=prev), \
+             mock.patch.object(PoliteFetcher, "allowed", return_value=True), \
+             mock.patch.object(polite_fetch.urllib.request, "urlopen",
+                               side_effect=AssertionError("通信してはいけない")):
+            r = self.f.check(URL)
+        self.assertIsNone(r.changed)
+        self.assertIn("どれも残っていない", r.reason)
+
+    def test_ヘッダがあるサイトではハッシュ経路に入らない(self):
+        """ETagがあるなら条件付きGETのまま。本文を落としに行かない。"""
+        prev = FetchResult(
+            url=URL, final_url=URL, status=200, content_type="", fetched_at="t",
+            from_cache=True, blocked_by_robots=False, body_path=None, etag='"v1"')
+
+        def raise304(*a, **k):
+            raise urllib.error.HTTPError(URL, 304, "Not Modified", {}, None)
+        with mock.patch.object(PoliteFetcher, "cached", return_value=prev), \
+             mock.patch.object(PoliteFetcher, "allowed", return_value=True), \
+             mock.patch.object(polite_fetch.urllib.request, "urlopen", side_effect=raise304):
+            r = self.f.check(URL)
+        self.assertEqual(r.status, 304)
+
+
+class BodyHashTest(unittest.TestCase):
+    def test_記録が無くてもキャッシュ本文から計算できる(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / "a.html"
+            p.write_text("本文", encoding="utf-8")
+            r = FetchResult(url=URL, final_url=URL, status=200, content_type="",
+                            fetched_at="t", from_cache=True, blocked_by_robots=False,
+                            body_path=str(p))
+            self.assertEqual(r.body_hash(), polite_fetch.sha256_of("本文"))
+
+    def test_ファイルが無ければNone(self):
+        r = FetchResult(url=URL, final_url=URL, status=200, content_type="",
+                        fetched_at="t", from_cache=True, blocked_by_robots=False,
+                        body_path="/存在しない/a.html")
+        self.assertIsNone(r.body_hash())
+
+
 class SummarizeTest(unittest.TestCase):
     def items(self, *changed):
         return [{"changed": c} for c in changed]

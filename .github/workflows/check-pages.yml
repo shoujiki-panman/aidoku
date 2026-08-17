@@ -1,0 +1,102 @@
+# 採点済みページが変わっていないかを定期的に見に行く。
+#
+# 見張りは安い（条件付きGET。変わっていなければ本文も転送されない）ので毎日回せる。
+# **LLMは呼ばない。**測り直しは変化を見つけてから人が判断して回す。
+#
+# Mulmo Control の形に倣い、静かに走らせて**変わったときだけ知らせる**。
+# 何も変わっていない日は Issue を作らない。
+name: check-pages
+
+on:
+  schedule:
+    # 毎日 JST 8:00（UTC 23:00）。区役所の更新は日中に入るので、翌朝に拾う
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+    inputs:
+      procedure:
+        description: "手続きID（空なら全部）"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      # 前回の確認結果を持ち越す。これが無いと毎回「初めて見た」になる。
+      # キャッシュはクロール結果（自治体サイトの著作物）なので、
+      # リポジトリには入れず Actions のキャッシュに置く。
+      - name: 前回のキャッシュを復元
+        uses: actions/cache@v4
+        with:
+          path: crawler/cache
+          key: crawler-cache-${{ github.run_id }}
+          restore-keys: crawler-cache-
+
+      - name: 変わったか確認する（LLMは呼ばない）
+        id: check
+        run: |
+          args=""
+          if [ -n "${{ inputs.procedure }}" ]; then
+            args="-p ${{ inputs.procedure }}"
+          fi
+          # 初回や新しいページは比較材料が無いので、その場で土台を作る
+          python3 crawler/check_pages.py $args --prime --out site-status.json
+          {
+            echo "headline<<EOF"
+            python3 -c "import json;print(json.load(open('site-status.json'))['summary']['headline'])"
+            echo "EOF"
+            echo "changed=$(python3 -c "import json;print(json.load(open('site-status.json'))['summary']['changed'])")"
+          } >> "$GITHUB_OUTPUT"
+        shell: bash
+
+      # 結果は常に残す。変化が無かった日も「いつ確認したか」が分かるようにする
+      - name: 結果を成果物として残す
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-status
+          path: site-status.json
+          retention-days: 90
+
+      # 変わったときだけ知らせる。毎日通知しない
+      - name: 変わっていたら Issue を立てる
+        if: steps.check.outputs.changed != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY' > body.md
+          import json
+          d = json.load(open("site-status.json"))
+          changed = [i for i in d["items"] if i["changed"] is True]
+          unknown = [i for i in d["items"] if i["changed"] is None]
+          print(f"確認時刻: {d['checked_at']}\n")
+          print(f"{d['summary']['headline']}\n")
+          print("## 変わっていたページ\n")
+          print("| 自治体 | 手続き | ページ | 判定の根拠 |")
+          print("|---|---|---|---|")
+          for i in changed:
+              print(f"| {i['municipality']} | {i['procedure']} | {i['url']} | {i['reason']} |")
+          if unknown:
+              print("\n## 判定できなかったページ\n")
+              for i in unknown:
+                  print(f"- {i['municipality']}・{i['procedure']} — {i['reason']}")
+          print("\n---\n")
+          print("**これは「悪くなった」という意味ではありません。**「測り直しが必要」という意味です。")
+          print("公開している点数は前回測ったときのままなので、必要なら抽出をやり直してください。")
+          print("\n測り直し: `python3 extractor/extract.py -m <自治体ID> -p <手続きID> --follow`")
+          PY
+          gh issue create \
+            --repo "${{ github.repository }}" \
+            --title "ページが変わりました（${{ steps.check.outputs.changed }}件）— $(date -u +%Y-%m-%d)" \
+            --label "自動検知" \
+            --body-file body.md
+        shell: bash
