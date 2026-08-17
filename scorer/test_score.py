@@ -25,6 +25,7 @@ from score import (  # noqa: E402
     GoldenRow,
     judge,
     parse_elements,
+    parse_judgment_reply,
     score_one,
 )
 
@@ -37,9 +38,18 @@ def golden(field: str, *, expected_found: bool = True, elements: str = "スロ�
     )
 
 
-def item(*, found: bool, value: str = "答え", failure_reason: str = "") -> dict:
-    return {"found": found, "value": value, "evidence": "", "failure_reason": failure_reason,
-            "source": None}
+def item(*, found: bool, value: str = "答え", failure_reason: str = "",
+         evidence_verdict: str | None = "exact") -> dict:
+    result = {
+        "found": found,
+        "value": value,
+        "evidence": "根拠の引用文です",
+        "failure_reason": failure_reason,
+        "source": "html" if found else None,
+    }
+    if evidence_verdict is not None:
+        result["evidence_check"] = {"verdict": evidence_verdict}
+    return result
 
 
 def extraction(**over) -> dict:
@@ -101,6 +111,71 @@ class JudgeRuleTest(unittest.TestCase):
         self.assertEqual(v["points"], 0.0)
 
 
+class ParseJudgmentReplyTest(unittest.TestCase):
+    VALID = (
+        '{"elements": [{"id": 1, "covered": "yes", "why": "明記"}], '
+        '"evidence_supports_answer": "yes", "support_reason": "根拠にある"}'
+    )
+
+    def test_厳格なJSONを読む(self):
+        parsed = parse_judgment_reply(self.VALID, 1)
+        self.assertEqual(parsed["elements"][0]["id"], 1)
+        self.assertEqual(parsed["evidence_supports_answer"], "yes")
+        self.assertEqual(
+            parse_judgment_reply(f"```json\n{self.VALID}\n```", 1), parsed)
+
+    def test_前置きや後置きを許さない(self):
+        for raw in ("前置き" + self.VALID, self.VALID + "後置き", "", None):
+            with self.subTest(raw=raw), self.assertRaises((ValueError, TypeError)):
+                parse_judgment_reply(raw, 1)
+
+    def test_rootとキーを厳格にする(self):
+        for raw in (
+            "[]",
+            '{"elements": [], "evidence_supports_answer": "yes"}',
+            self.VALID[:-1] + ', "extra": true}',
+        ):
+            with self.subTest(raw=raw), self.assertRaises(ValueError):
+                parse_judgment_reply(raw, 1)
+
+    def test_要素数_順序_ID_yesno_理由を厳格にする(self):
+        import json
+        bad_elements = (
+            [],
+            [{"id": 2, "covered": "yes", "why": "明記"}],
+            [{"id": 1, "covered": True, "why": "明記"}],
+            [{"id": 1, "covered": "maybe", "why": "明記"}],
+            [{"id": 1, "covered": "yes", "why": ""}],
+            [{"id": 1, "covered": "yes", "why": "明記", "extra": 1}],
+            ["yes"],
+        )
+        for elements in bad_elements:
+            raw = json.dumps({
+                "elements": elements,
+                "evidence_supports_answer": "yes",
+                "support_reason": "根拠にある",
+            }, ensure_ascii=False)
+            with self.subTest(elements=elements), self.assertRaises(ValueError):
+                parse_judgment_reply(raw, 1)
+
+    def test_Evidence支持値と理由を厳格にする(self):
+        import json
+        for support, reason in ((True, "理由"), ("pass", "理由"),
+                                ("yes", ""), ("no", None)):
+            raw = json.dumps({
+                "elements": [{"id": 1, "covered": "yes", "why": "明記"}],
+                "evidence_supports_answer": support,
+                "support_reason": reason,
+            }, ensure_ascii=False)
+            with self.subTest(support=support, reason=reason), self.assertRaises(ValueError):
+                parse_judgment_reply(raw, 1)
+
+    def test_required_countは正整数だけ(self):
+        for value in (0, -1, True, 1.0, "1", None):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                parse_judgment_reply(self.VALID, value)
+
+
 class ScoreOneTest(unittest.TestCase):
     """合計点の作り方。配点は 情報到達20＋抽出正確性40＋機械可読性20＋オンライン明示20。
 
@@ -113,7 +188,9 @@ class ScoreOneTest(unittest.TestCase):
         self._patch = mock.patch.object(
             score, "judge",
             return_value={"verdict": "正解", "points": 10.0, "reason": "",
-                          "judged_by": "stub", "missing": [], "elements": []})
+                          "judged_by": "stub", "missing": [],
+                          "elements": [{"id": 1, "covered": "yes", "why": "明記"}],
+                          "evidence_support": "yes"})
         self._patch.start()
         self.addCleanup(self._patch.stop)
 
@@ -183,6 +260,27 @@ class ScoreOneTest(unittest.TestCase):
     def test_項目は常に4つ返る(self):
         r = score_one(extraction(), self._all_golden(), "m")
         self.assertEqual([f["field"] for f in r["fields"]], FIELDS)
+
+    def test_各項目に4判定を保存する(self):
+        r = score_one(extraction(), self._all_golden(), "m")
+        for field in r["fields"]:
+            self.assertEqual(field["evaluation"]["overall"], "pass")
+            self.assertEqual(field["evaluation"]["points"], 20)
+
+    def test_found_trueだけでは検証済みにならない(self):
+        items = {f: item(found=True, evidence_verdict=None) for f in FIELDS}
+        r = score_one(extraction(items=items), self._all_golden(), "m")
+        for field in r["fields"]:
+            self.assertEqual(field["evaluation"]["overall"], "not_checked")
+            self.assertIsNone(field["evaluation"]["points"])
+
+    def test_ページ未到達なら記載なし正解でも評価fail(self):
+        r = score_one(
+            extraction(reached=False, items={f: item(found=False) for f in FIELDS}),
+            self._all_golden(expected_found=False), "m")
+        for field in r["fields"]:
+            self.assertEqual(field["evaluation"]["overall"], "fail")
+            self.assertEqual(field["evaluation"]["points"], 0)
 
 
 if __name__ == "__main__":

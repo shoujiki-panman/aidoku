@@ -5,26 +5,235 @@
   "question": "{muni}に引っ越します。転入届に必要なもの・期限・手数料を教えて。オンラインでできますか？",
   "phase": "23区",
   "n_municipalities": 23,
+  "measurement": {
+    "measurement_version": null,
+    "prompt_version": null,
+    "follow": null,
+    "max_follow": null,
+    "max_depth": null,
+    "beam": null,
+    "max_fetches": null,
+    "max_text_chars": null,
+    "max_links": null,
+    "model": null,
+    "model_version": null,
+    "run_at": [],
+    "discovery_run_at": [],
+    "recording_status": "legacy_unknown",
+    "comparison_status": "legacy_unknown",
+    "runs": [
+      {
+        "municipality_id": "minato",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "adachi",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "bunkyo",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "chiyoda",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "edogawa",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "itabashi",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "katsushika",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "kita",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "koto",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "meguro",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "nakano",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "nerima",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "ota",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "shibuya",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "shinagawa",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "suginami",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "taito",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "toshima",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "shinjuku",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "arakawa",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "chuo",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "setagaya",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      },
+      {
+        "municipality_id": "sumida",
+        "recording_status": "legacy_unknown",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": null,
+        "discovery_run_at": null
+      }
+    ]
+  },
   "summary": {
-    "average": 59.6,
-    "max": 100,
-    "min": 0,
-    "full_marks": 1,
-    "zero": 4,
-    "fee_missing": 22
+    "average": null,
+    "max": null,
+    "min": null,
+    "full_marks": 0,
+    "zero": 0,
+    "fee_missing": 22,
+    "answered_all_four": 1,
+    "answered_zero": 4,
+    "evaluated": 0,
+    "not_evaluated": 23
   },
   "municipalities": [
     {
       "id": "minato",
       "name": "港区",
-      "total": 100,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 20,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 4,
+      "evaluation_status": "not_checked",
       "hops": 3,
       "page_url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html",
       "followed": [],
@@ -32,42 +241,93 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "国内からの転入と国外からの転入で必要なものが異なる。共通:マイナンバーカード(持っている人全員分、暗証番号入力が必要)。国内転入:転出証明書(マイナンバーカードによる転出届をした人は不要)、窓口で手続きする人の本人確認書類、外国人住民は在留カード等。国外転入:転入者全員のパスポート、日本人のみ戸籍全部事項証明(戸籍謄本)と戸籍の附票(本籍が港区の場合は不要)、国民年金加入者は年金手帳、外国人住民は"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "オンライン完結の記載なし。届出窓口は各総合支所区民課窓口サービス係または台場分室。受付時間は午前8時30分から午後5時まで(水曜日は台場分室を除き午後7時まで)。「引越し手続オンラインサービス」はあるが来庁予約のみで、届出自体はオンライン完結できない。"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "港区に住み始めた日から14日以内(住み始める前の届出は不可)"
         },
         {
           "field": "手数料",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "無料"
         }
       ],
       "improvements": [],
-      "notes": "必要書類は国内転入/国外転入で別テーブルに分かれ条件分岐が多いが、本文中に明記されているためfound trueとした。オンライン完結の可否は明言されていないが「引越し手続オンラインサービス」は来庁予約機能のみと文脈から判断できる。"
+      "notes": "必要書類は国内転入/国外転入で別テーブルに分かれ条件分岐が多いが、本文中に明記されているためfound trueとした。オンライン完結の可否は明言されていないが「引越し手続オンラインサービス」は来庁予約機能のみと文脈から判断できる。",
+      "lg_code": "131032"
     },
     {
       "id": "adachi",
       "name": "足立区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 3,
       "page_url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html",
       "followed": [],
@@ -75,48 +335,99 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "他の市区町村から転入の場合：転出証明書、世帯全員分のマイナンバーカード（所持者のみ）、世帯全員分の在留カード等（外国人のみ）、国民健康保険資格確認書（該当者のみ）、本人確認書類、（代理人の場合は委任状）。海外からの転入の場合は別途パスポート・戸籍謄本等が必要。"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "オンライン不可・郵送不可。区内16ヶ所の区民事務所、または区役所南館1階戸籍住民課の窓口でのみ届出可能。"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "引っ越ししてから14日以内"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "届出場所・期限・持ち物（国内転入／海外転入で場合分け）・過料の注意まで本文に明記されているが、手数料についての記載はページ内に見当たらない。"
+      "notes": "届出場所・期限・持ち物（国内転入／海外転入で場合分け）・過料の注意まで本文に明記されているが、手数料についての記載はページ内に見当たらない。",
+      "lg_code": "131211"
     },
     {
       "id": "bunkyo",
       "name": "文京区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 3,
       "page_url": "https://www.city.bunkyo.lg.jp/b013/p000261/index.html",
       "followed": [
@@ -127,48 +438,99 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）、（お持ちの方は）マイナンバーカード、転出証明書（マイナンバーカードで特例転出した場合は不要）、代理人の場合は委任状など"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "窓口のみ（文京シビックセンター2階 戸籍住民課住民記録係）。郵送・メールでの受付は不可。オンライン手続き不可"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "引越した日から14日以内"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "トップページ自体には受付窓口の場所と担当課の情報しかなく、必要書類・受付方法・期限は1階層下の「他の区市町村から文京区へ転入する場合」ページに集約されていた。手数料についてはトップページ・リンク先2ページのいずれにも記載が見当たらない。"
+      "notes": "トップページ自体には受付窓口の場所と担当課の情報しかなく、必要書類・受付方法・期限は1階層下の「他の区市町村から文京区へ転入する場合」ページに集約されていた。手数料についてはトップページ・リンク先2ページのいずれにも記載が見当たらない。",
+      "lg_code": "131059"
     },
     {
       "id": "chiyoda",
       "name": "千代田区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 2,
       "page_url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tennyu.html",
       "followed": [],
@@ -176,48 +538,99 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "（転出証明書を添えて届ける場合）届出人の本人確認書類、転出証明書、引っ越す方全員のマイナンバーカード（お持ちの方）、在留カードまたは特別永住者証明書（外国人の方）、委任状（代理人時）。特例転入・ワンストップ事前通知・国外転入の場合は必要書類が異なる。"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "区役所総合窓口課または区内の出張所への来庁が必須。オンラインでは完結できない（マイナポータルの引越しワンストップは転出届のみ対象で、転入届は必ず来庁が必要）。"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "新しい住所に引っ越してから14日以内"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "転入届は届出方法が(1)転出証明書持参(2)特例転入(3)ワンストップ事前通知(4)国外転入の4パターンに分かれ、必要書類が方法ごとに異なるため単一の一覧としては提示されていない。手数料についてはページ内のどこにも言及がない。"
+      "notes": "転入届は届出方法が(1)転出証明書持参(2)特例転入(3)ワンストップ事前通知(4)国外転入の4パターンに分かれ、必要書類が方法ごとに異なるため単一の一覧としては提示されていない。手数料についてはページ内のどこにも言及がない。",
+      "lg_code": "131016"
     },
     {
       "id": "edogawa",
       "name": "江戸川区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 3,
       "page_url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
       "followed": [],
@@ -225,48 +638,99 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "パターンにより異なる：(1)引越しワンストップ/特例転出利用者は転入される方全員のマイナンバーカードのみ、(2)紙の転出証明書を持つ方は本人確認書類＋転出証明書＋（あれば）マイナンバーカード。外国人住民・国外転入者は在留カード等が別途必要"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "窓口のみ。区役所区民課または各事務所の戸籍住民係に来庁が必須で、転入届自体はオンラインで完結できない（転出手続きの一部のみオンライン対応）"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "住みはじめた日から14日以内"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "必要書類は前自治体での転出手続き方法（ワンストップ/特例転出/紙の証明書）によって3パターンに分岐しており、単一の正答が定まらない構成。手数料への言及はページ内に一切なく、無料か有料かも読み取れない。"
+      "notes": "必要書類は前自治体での転出手続き方法（ワンストップ/特例転出/紙の証明書）によって3パターンに分岐しており、単一の正答が定まらない構成。手数料への言及はページ内に一切なく、無料か有料かも読み取れない。",
+      "lg_code": "131237"
     },
     {
       "id": "itabashi",
       "name": "板橋区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 2,
       "page_url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
       "followed": [],
@@ -274,48 +738,626 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "前住所地で発行された転出証明書（マイナンバーカードで転出手続きをした場合は不要）、届出に来た方の本人確認資料（マイナンバーカード・運転免許証・パスポート等）、全員分のマイナンバーカード（お持ちの方）、在学証明書・教科書給与証明書（該当の小中学生がいる場合）、全員分の在留カードまたは特別永住者証明書（外国人の方）、居住実態を確認できる書類（異動日から届出日まで1年以上経過している場合）"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "窓口のみで完結。本庁舎1階または区内6か所の区民事務所（管轄区域なし・どこでも可）で受付。マイナポータル申請のみでは完結せず、必ず窓口への来庁が必要。"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "新住所に住み始めた日から14日以内（住み始める前の手続きはできません）"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "必要書類・届出期間・オンライン可否（窓口必須の明記）は本文に詳しく記載されているが、転入届自体の手数料についての言及は本文中に見当たらない（マイナンバーカード再交付の手数料1000円は別手続きの話）。"
+      "notes": "必要書類・届出期間・オンライン可否（窓口必須の明記）は本文に詳しく記載されているが、転入届自体の手数料についての言及は本文中に見当たらない（マイナンバーカード再交付の手数料1000円は別手続きの話）。",
+      "lg_code": "131199"
+    },
+    {
+      "id": "katsushika",
+      "name": "葛飾区",
+      "total": null,
+      "breakdown": {
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
+        "オンライン明示": 0
+      },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
+      "hops": 3,
+      "page_url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "マイナンバーカードまたは住民基本台帳カード（特例転入の届出時に持参）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "転入先の区市町村窓口での届出。このページにオンラインでの転入手続きの記載はない（関連リンクにあるマイナポータルのオンライン手続きは転出届のみ対象）"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "新しい住所地に住み始めてから14日以内かつ転出予定日から30日以内"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": null,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページはマイナンバーカード等を利用した「特例転出・転入」制度専用の説明であり、通常の転入届（一般的な必要書類・手数料）についての記載ではない。関連リンクに「住民異動届（転入・転出・転居など）」等の一般ページが挙げられているが、本文リンク一覧にURLが含まれていないため follow_urls には入れられない。",
+      "lg_code": "131229"
+    },
+    {
+      "id": "kita",
+      "name": "北区",
+      "total": null,
+      "breakdown": {
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
+        "オンライン明示": 0
+      },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
+      "hops": 2,
+      "page_url": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "マイナンバーカードや特定在留カードなど、本人確認書類(免許証など)"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "オンライン不可。ご本人または同じ世帯の方が窓口(戸籍住民課の各区民事務所)でカードと暗証番号を用いて手続き。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "転入日から14日以内"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": null,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "このページは一般的な「転入届」ではなく、マイナンバーカード等の所持者向けの特例(転入届の特例)に限定した解説ページ。手数料への言及が本文に一切なく、関連リンク「転入・転出の住所変更等の届出」のURLもリンク一覧に含まれていないため確認できなかった。リンク一覧の大半が多言語切替リンクで占められており、本文関連リンクの把握を妨げている。",
+      "lg_code": "131172"
+    },
+    {
+      "id": "koto",
+      "name": "江東区",
+      "total": null,
+      "breakdown": {
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
+        "オンライン明示": 0
+      },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
+      "hops": 3,
+      "page_url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "前住所の区市町村で発行した転出証明書、窓口に来られる方の本人確認書類、住民異動届（マイナンバーカードの特例転入の場合はマイナンバーカード等）。世帯主以外が届出る場合は委任状が必要"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "オンライン不可。窓口のみ（江東区役所2階3番窓口、豊洲特別出張所、区内7箇所の出張所）"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "新しい住所に住み始めてから14日以内（引越し前の届出は不可、14日目が閉庁日の場合は翌開庁日）"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": null,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "必要書類・届出先・届出期間は本文に詳細に明記されているが、手数料については本文中に一切言及がない。転入届自体は住民票の異動届であり無料の可能性が高いが、ページに明記がないため「記載なし」とする。",
+      "lg_code": "131083"
+    },
+    {
+      "id": "meguro",
+      "name": "目黒区",
+      "total": null,
+      "breakdown": {
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
+        "オンライン明示": 0
+      },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
+      "hops": 3,
+      "page_url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "引越しをした人全員のパスポート、戸籍謄本（戸籍全部事項証明書）および戸籍の附票、窓口で手続きする人の本人確認書類、（任意代理人の場合）委任状、（法定代理人の場合）権限確認ができる書類、在留カード等または特別永住者証明書等（外国人）、続柄を証明する書類の原本（外国人のみの世帯で続柄登録する場合）、（1年以上前の日付で手続きする場合）居住実績がわかる賃貸借契約書"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "窓口のみ。区役所戸籍住民課住民記録係、または北部・中央・南部・西部地区サービス事務所（いずれも月〜金の午前8時30分〜午後5時）。このページ内にオンライン手続きの記載はない"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "目黒区の新しい住所に住み始めてから14日以内"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": null,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "国外からの転入という特殊ケースに特化したページで、必要書類は非常に詳細（8項目）だが、手数料についてはページ内のどこにも言及がなく、オンライン申請についても明示的な記載がない（同カテゴリの別ページ「マイナポータルを利用したオンライン申請」は国内転入向けと見られ、本ケースへの適用は不明）。",
+      "lg_code": "131105"
+    },
+    {
+      "id": "nakano",
+      "name": "中野区",
+      "total": null,
+      "breakdown": {
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
+        "オンライン明示": 10
+      },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
+      "hops": 2,
+      "page_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+      "followed": [
+        "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "前住所地（または最終住民登録地）発行の転出証明書等、本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）。代理人の場合は委任状と代理人の本人確認書類も必要"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "戸籍住民課住民記録係窓口(本庁2階4番)または各地域事務所(区内5か所)での届出が必要。事前入力サービスで自宅からフォーム入力はできるが、印刷・提出は窓口で行うためオンライン完結は不可"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "新しい住所に住み始めてから14日以内（遅れると過料がかかる場合あり）"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": null,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 10,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "指定URLは『マイナンバーカードを利用する転入届』という特定手続きのページで、一般的な転入届は別ページ（転入届（区外から中野区へ））にある。両ページとも手数料の記載は一切なし。",
+      "lg_code": "131148"
     },
     {
       "id": "nerima",
       "name": "練馬区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 2,
       "page_url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
       "followed": [],
@@ -323,48 +1365,204 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "窓口に来所する方の本人確認書類、前住所地の区市町村が発行した転出証明書（マイナンバーカードを利用した転出手続きの場合は不要）。該当者のみ：マイナンバーカード、在留カード等、在学証明書"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "練馬区内6か所の区民事務所の窓口でのみ受付。オンライン不可（郵送も不可）"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "練馬区に住み始めてから14日以内（住み始める前の届出は不可）"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "1〜8の番号見出しで構成され本文は詳細だが、転入届自体の手数料についての明記は見当たらない（マイナンバーカード再交付手数料の記載はあるが別手続き）。届出方法は窓口来所のみでオンライン不可と明記されている。"
+      "notes": "1〜8の番号見出しで構成され本文は詳細だが、転入届自体の手数料についての明記は見当たらない（マイナンバーカード再交付手数料の記載はあるが別手続き）。届出方法は窓口来所のみでオンライン不可と明記されている。",
+      "lg_code": "131202"
+    },
+    {
+      "id": "ota",
+      "name": "大田区",
+      "total": null,
+      "breakdown": {
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
+        "オンライン明示": 0
+      },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
+      "hops": 3,
+      "page_url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "転出証明書（前住所の市区町村発行、マイナンバーカードでの転出届済みなら不要）、本人確認書類、委任状（本人・同一世帯員以外が届出する場合）、マイナンバーカード（所持者のみ）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "各特別出張所又は本庁舎1階戸籍住民窓口での届出（オンラインで完結できるとの記載なし。パソコン・スマートフォンからの窓口予約・届書作成は可能）"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "大田区に住み始めた日から14日以内（住み始める前の届出は不可）"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": null,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "必要書類・窓口・期限は本文に明記されているが手数料への言及は本文中に一切なく、関連リンクにも手数料専用ページは見当たらない。窓口予約・届書作成は「パソコン・スマートフォンから」可能だが、これは事前準備であって届出自体のオンライン完結を意味しない。",
+      "lg_code": "131113"
     },
     {
       "id": "shibuya",
       "name": "渋谷区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 2,
       "page_url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
       "followed": [],
@@ -372,48 +1570,204 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "本人確認書類（マイナンバーカード・運転免許証・パスポートなど）、転出証明書（前住所地発行）、マイナンバーカード（交付を受けている人）。同一世帯以外の続柄で転入する場合は世帯主の同意書、6か月以上経過後の届出は賃貸契約書等、代理人の場合は委任状も必要。"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "窓口のみ。オンライン・郵送・電話予約・FAX・メール・コンビニ・LINE・スマート申請・マイナンバー・マイポータルはいずれも利用不可。窓口は暮らしの手続きのフロア（庁舎3階）住民戸籍課・出張所（平日8:30-17:00）または区民サービスセンター（平日11:00-19:00、土曜9:00-17:00）。"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "渋谷区に住みはじめた日から14日以内（遅れると過料の場合あり）"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "届出期間・届出人・必要なもの・窓口/受付時間が見出しごとに整理され、利用可能な手続き方法（窓口/郵送/オンライン等）を一覧表示する定型ブロックもあり構造は明確。ただし手数料についてはこのページ・関連リンクのどこにも言及がない（転入届自体は無料と思われるが本文に明記なし）。"
+      "notes": "届出期間・届出人・必要なもの・窓口/受付時間が見出しごとに整理され、利用可能な手続き方法（窓口/郵送/オンライン等）を一覧表示する定型ブロックもあり構造は明確。ただし手数料についてはこのページ・関連リンクのどこにも言及がない（転入届自体は無料と思われるが本文に明記なし）。",
+      "lg_code": "131130"
+    },
+    {
+      "id": "shinagawa",
+      "name": "品川区",
+      "total": null,
+      "breakdown": {
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
+        "オンライン明示": 0
+      },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
+      "hops": 3,
+      "page_url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html",
+      "followed": [],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "本人が手続きする場合：転出証明書、本人確認書類、マイナンバーカード（お持ちの方のみ）。代理人が行う場合は委任状等が別途必要（本人以外の申請パターンごとに持ち物が異なる）。"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "品川区役所戸籍住民課（住民異動）、荏原第一地域センターほか5つの地域センターの窓口で手続き。オンラインで転入届自体を完結できるという記載はなし（オンラインは転出届側の「特例転入」を前提とする案内のみ）。"
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": "新しい住所地に住み始めてから14日以内。届出期間を大幅に過ぎると5万円以下の過料の可能性あり。"
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
+          "agent_value": ""
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": null,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "本人／同一世帯／法定代理人／任意代理人の4パターンで持ち物説明が並列され情報量が多いが、手数料への言及は本文中どこにも見当たらない。オンライン可否についても明示的な可否表明はなく、窓口の受付時間表のみが詳細に記載されている。",
+      "lg_code": "131091"
     },
     {
       "id": "suginami",
       "name": "杉並区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 3,
       "page_url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tennyuu/index.html",
       "followed": [
@@ -424,48 +1778,99 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "転出証明書、窓口で手続きを行う方の本人確認書類、引越しをする方全員のマイナンバーカード（お持ちの方）、在留カードまたは特別永住者証明書（外国人の方）、続柄を証明する書類の原本（世帯主との続柄が転出証明書で確認できない場合）"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "区民課区民係（区役所東棟1階）または区民事務所の窓口で手続き。マイナポータルで転出届をオンライン申請した場合でも、転入手続きは必ず窓口に来庁する必要があり、オンラインだけでは完結しない。"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "杉並区の新しい住所に住み始めてから14日以内（マイナポータル利用の場合はマイナポータルに入力した引越し日から30日以内という条件も付加）"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "トップページ（index.html）は届出パターンの一覧だけで詳細情報を持たず、必要書類・窓口・期限は「本人が手続き」「マイナポータル」など各サブページに分散している。手数料については追跡した2つのサブページ（996.html, 540.html）のいずれにも記載がなかった。"
+      "notes": "トップページ（index.html）は届出パターンの一覧だけで詳細情報を持たず、必要書類・窓口・期限は「本人が手続き」「マイナポータル」など各サブページに分散している。手数料については追跡した2つのサブページ（996.html, 540.html）のいずれにも記載がなかった。",
+      "lg_code": "131156"
     },
     {
       "id": "taito",
       "name": "台東区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 2,
       "page_url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
       "followed": [
@@ -476,48 +1881,99 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "前住所地発行の転出証明書、本人確認のできるもの、賃貸契約書等（外国人の場合は転入者全員の在留カードまたは特別永住者証明書、続柄を証する文書も必要）"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "戸籍住民サービス課または区民事務所・分室の窓口で提出。オンライン(マイナポータル等)で転出届を済ませていても、転入届自体は来庁予定先の窓口で提出する必要があり、オンラインだけでは完結しない。"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "住み始めてから14日以内"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "起点ページは転入届そのものではなく「電子証明書の発行手続き」の案内で、転入届の必要書類・期限は別ページ（jumintoroku.html）の表にあり、オンライン可否はさらに別ページ（onraintennyu.html）で「オンラインの転出届後も転入届自体は窓口必須」と分かった。手数料はどのページにも記載がなかった。"
+      "notes": "起点ページは転入届そのものではなく「電子証明書の発行手続き」の案内で、転入届の必要書類・期限は別ページ（jumintoroku.html）の表にあり、オンライン可否はさらに別ページ（onraintennyu.html）で「オンラインの転出届後も転入届自体は窓口必須」と分かった。手数料はどのページにも記載がなかった。",
+      "lg_code": "131067"
     },
     {
       "id": "toshima",
       "name": "豊島区",
-      "total": 80,
+      "total": null,
       "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 3,
+      "evaluation_status": "not_checked",
       "hops": 2,
       "page_url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
       "followed": [
@@ -528,428 +1984,99 @@
         {
           "field": "必要書類",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "転出証明書（前住所の区市町村で発行、マイナンバーカードで特例転出した場合は不要）、窓口へ来る人の本人確認書類、引越しをする方全員のマイナンバーカード（持っている場合）。法定代理人は戸籍謄本等、外国人は在留カード等・続柄証明書の原本が追加で必要。"
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "窓口のみで完結（豊島区役所3階総合窓口課／東部区民事務所／西部区民事務所）。マイナポータルの引越しワンストップサービスで転出届をオンライン申請した場合でも、転入の手続き自体はマイナンバーカードを持参して窓口で行う必要があり、オンラインだけでは完結しない。"
         },
         {
           "field": "期限",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "豊島区の新しい住所に住み始めてから14日以内（住み始める前は受付不可）"
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "トップページ自体は届出人の属性（本人/代理人/国外/マイナンバーカード/マイナポータル）ごとの案内へのリンク集にすぎず、必要書類・期限・窓口の詳細情報は子ページ側にのみ記載されている。手数料についてはどのページにも言及がなかった。"
-    },
-    {
-      "id": "nakano",
-      "name": "中野区",
-      "total": 70,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 10
-      },
-      "hops": 2,
-      "page_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
-      "followed": [
-        "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html"
-      ],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "前住所地（または最終住民登録地）発行の転出証明書等、本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）。代理人の場合は委任状と代理人の本人確認書類も必要"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "戸籍住民課住民記録係窓口(本庁2階4番)または各地域事務所(区内5か所)での届出が必要。事前入力サービスで自宅からフォーム入力はできるが、印刷・提出は窓口で行うためオンライン完結は不可"
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "新しい住所に住み始めてから14日以内（遅れると過料がかかる場合あり）"
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": ""
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 10,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "指定URLは『マイナンバーカードを利用する転入届』という特定手続きのページで、一般的な転入届は別ページ（転入届（区外から中野区へ））にある。両ページとも手数料の記載は一切なし。"
-    },
-    {
-      "id": "katsushika",
-      "name": "葛飾区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 3,
-      "page_url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "マイナンバーカードまたは住民基本台帳カード（特例転入の届出時に持参）"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "転入先の区市町村窓口での届出。このページにオンラインでの転入手続きの記載はない（関連リンクにあるマイナポータルのオンライン手続きは転出届のみ対象）"
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "新しい住所地に住み始めてから14日以内かつ転出予定日から30日以内"
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": ""
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "このページはマイナンバーカード等を利用した「特例転出・転入」制度専用の説明であり、通常の転入届（一般的な必要書類・手数料）についての記載ではない。関連リンクに「住民異動届（転入・転出・転居など）」等の一般ページが挙げられているが、本文リンク一覧にURLが含まれていないため follow_urls には入れられない。"
-    },
-    {
-      "id": "kita",
-      "name": "北区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 2,
-      "page_url": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "マイナンバーカードや特定在留カードなど、本人確認書類(免許証など)"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "オンライン不可。ご本人または同じ世帯の方が窓口(戸籍住民課の各区民事務所)でカードと暗証番号を用いて手続き。"
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "転入日から14日以内"
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": ""
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "このページは一般的な「転入届」ではなく、マイナンバーカード等の所持者向けの特例(転入届の特例)に限定した解説ページ。手数料への言及が本文に一切なく、関連リンク「転入・転出の住所変更等の届出」のURLもリンク一覧に含まれていないため確認できなかった。リンク一覧の大半が多言語切替リンクで占められており、本文関連リンクの把握を妨げている。"
-    },
-    {
-      "id": "koto",
-      "name": "江東区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 3,
-      "page_url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "前住所の区市町村で発行した転出証明書、窓口に来られる方の本人確認書類、住民異動届（マイナンバーカードの特例転入の場合はマイナンバーカード等）。世帯主以外が届出る場合は委任状が必要"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "オンライン不可。窓口のみ（江東区役所2階3番窓口、豊洲特別出張所、区内7箇所の出張所）"
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "新しい住所に住み始めてから14日以内（引越し前の届出は不可、14日目が閉庁日の場合は翌開庁日）"
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": ""
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "必要書類・届出先・届出期間は本文に詳細に明記されているが、手数料については本文中に一切言及がない。転入届自体は住民票の異動届であり無料の可能性が高いが、ページに明記がないため「記載なし」とする。"
-    },
-    {
-      "id": "meguro",
-      "name": "目黒区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 3,
-      "page_url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "引越しをした人全員のパスポート、戸籍謄本（戸籍全部事項証明書）および戸籍の附票、窓口で手続きする人の本人確認書類、（任意代理人の場合）委任状、（法定代理人の場合）権限確認ができる書類、在留カード等または特別永住者証明書等（外国人）、続柄を証明する書類の原本（外国人のみの世帯で続柄登録する場合）、（1年以上前の日付で手続きする場合）居住実績がわかる賃貸借契約書"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "窓口のみ。区役所戸籍住民課住民記録係、または北部・中央・南部・西部地区サービス事務所（いずれも月〜金の午前8時30分〜午後5時）。このページ内にオンライン手続きの記載はない"
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "目黒区の新しい住所に住み始めてから14日以内"
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": ""
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "国外からの転入という特殊ケースに特化したページで、必要書類は非常に詳細（8項目）だが、手数料についてはページ内のどこにも言及がなく、オンライン申請についても明示的な記載がない（同カテゴリの別ページ「マイナポータルを利用したオンライン申請」は国内転入向けと見られ、本ケースへの適用は不明）。"
-    },
-    {
-      "id": "ota",
-      "name": "大田区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 3,
-      "page_url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "転出証明書（前住所の市区町村発行、マイナンバーカードでの転出届済みなら不要）、本人確認書類、委任状（本人・同一世帯員以外が届出する場合）、マイナンバーカード（所持者のみ）"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "各特別出張所又は本庁舎1階戸籍住民窓口での届出（オンラインで完結できるとの記載なし。パソコン・スマートフォンからの窓口予約・届書作成は可能）"
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "大田区に住み始めた日から14日以内（住み始める前の届出は不可）"
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": ""
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "必要書類・窓口・期限は本文に明記されているが手数料への言及は本文中に一切なく、関連リンクにも手数料専用ページは見当たらない。窓口予約・届書作成は「パソコン・スマートフォンから」可能だが、これは事前準備であって届出自体のオンライン完結を意味しない。"
-    },
-    {
-      "id": "shinagawa",
-      "name": "品川区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 3,
-      "page_url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "本人が手続きする場合：転出証明書、本人確認書類、マイナンバーカード（お持ちの方のみ）。代理人が行う場合は委任状等が別途必要（本人以外の申請パターンごとに持ち物が異なる）。"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "品川区役所戸籍住民課（住民異動）、荏原第一地域センターほか5つの地域センターの窓口で手続き。オンラインで転入届自体を完結できるという記載はなし（オンラインは転出届側の「特例転入」を前提とする案内のみ）。"
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "新しい住所地に住み始めてから14日以内。届出期間を大幅に過ぎると5万円以下の過料の可能性あり。"
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": ""
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "本人／同一世帯／法定代理人／任意代理人の4パターンで持ち物説明が並列され情報量が多いが、手数料への言及は本文中どこにも見当たらない。オンライン可否についても明示的な可否表明はなく、窓口の受付時間表のみが詳細に記載されている。"
+      "notes": "トップページ自体は届出人の属性（本人/代理人/国外/マイナンバーカード/マイナポータル）ごとの案内へのリンク集にすぎず、必要書類・期限・窓口の詳細情報は子ページ側にのみ記載されている。手数料についてはどのページにも言及がなかった。",
+      "lg_code": "131164"
     },
     {
       "id": "shinjuku",
       "name": "新宿区",
-      "total": 40,
+      "total": null,
       "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 20,
-        "期限": 0,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 20
       },
+      "answered_count": 1,
+      "evaluation_status": "not_checked",
       "hops": 2,
       "page_url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
       "followed": [
@@ -959,58 +2086,109 @@
         {
           "field": "必要書類",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
-          "points": 20,
+          "answered": true,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_checked",
+              "evidence_supports_answer": "not_checked",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": "窓口(来庁)での届出が必要とされている。オンラインで完結できるとの記載はない"
         },
         {
           "field": "期限",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "必要書類",
-          "gain": 20,
+          "gain": null,
           "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
         },
         {
           "field": "期限",
-          "gain": 20,
+          "gain": null,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
         },
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "本ページは転入・転出の注意喚起の告知文のみで、手続き詳細（必要書類・期限・手数料）は掲載されていない。リンク先の「戸籍・住民票・印鑑登録・マイナンバーカード」トップページも項目一覧のハブに過ぎず、実際の転入届の詳細手続きページには本文中のURLが提示されておらず到達できなかった。"
+      "notes": "本ページは転入・転出の注意喚起の告知文のみで、手続き詳細（必要書類・期限・手数料）は掲載されていない。リンク先の「戸籍・住民票・印鑑登録・マイナンバーカード」トップページも項目一覧のハブに過ぎず、実際の転入届の詳細手続きページには本文中のURLが提示されておらず到達できなかった。",
+      "lg_code": "131041"
     },
     {
       "id": "arakawa",
       "name": "荒川区",
-      "total": 0,
+      "total": null,
       "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 0
       },
+      "answered_count": 0,
+      "evaluation_status": "not_checked",
       "hops": 1,
       "page_url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
       "followed": [
@@ -1021,47 +2199,95 @@
         {
           "field": "必要書類",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "期限",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "必要書類",
-          "gain": 20,
+          "gain": null,
           "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
         },
         {
           "field": "窓口/オンライン可否",
-          "gain": 20,
+          "gain": null,
           "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
         },
         {
           "field": "期限",
-          "gain": 20,
+          "gain": null,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
         },
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         },
         {
@@ -1070,19 +2296,22 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "このページ自体は転入届の詳細情報を持たず、外部の対話式ガイド（Graffer運営「くらしの手続きガイド」）へ誘導するポータル。リンク先のGrafferトップと届出・登録・証明の索引ページも見たが、いずれも質問に回答する多段階フォームへの入口・カテゴリ一覧のみで、必要書類・窓口・期限・手数料の具体的な記載は無い。"
+      "notes": "このページ自体は転入届の詳細情報を持たず、外部の対話式ガイド（Graffer運営「くらしの手続きガイド」）へ誘導するポータル。リンク先のGrafferトップと届出・登録・証明の索引ページも見たが、いずれも質問に回答する多段階フォームへの入口・カテゴリ一覧のみで、必要書類・窓口・期限・手数料の具体的な記載は無い。",
+      "lg_code": "131181"
     },
     {
       "id": "chuo",
       "name": "中央区",
-      "total": 0,
+      "total": null,
       "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 0
       },
+      "answered_count": 0,
+      "evaluation_status": "not_checked",
       "hops": 2,
       "page_url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
       "followed": [
@@ -1093,47 +2322,95 @@
         {
           "field": "必要書類",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "期限",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "必要書類",
-          "gain": 20,
+          "gain": null,
           "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
         },
         {
           "field": "窓口/オンライン可否",
-          "gain": 20,
+          "gain": null,
           "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
         },
         {
           "field": "期限",
-          "gain": 20,
+          "gain": null,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
         },
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         },
         {
@@ -1142,19 +2419,22 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "このページおよびリンク先の2ページ（マイナンバーカード有無別の入口）はいずれも案内用のハブページで、実際の項目（必要書類・期限・手数料）は「本人/同世帯」「代理人」「国外から」等さらに1階層下のページに分かれている模様だが、そのURLは本文中にテキストのみで記載されリンク化されていないため辿れなかった。"
+      "notes": "このページおよびリンク先の2ページ（マイナンバーカード有無別の入口）はいずれも案内用のハブページで、実際の項目（必要書類・期限・手数料）は「本人/同世帯」「代理人」「国外から」等さらに1階層下のページに分かれている模様だが、そのURLは本文中にテキストのみで記載されリンク化されていないため辿れなかった。",
+      "lg_code": "131024"
     },
     {
       "id": "setagaya",
       "name": "世田谷区",
-      "total": 0,
+      "total": null,
       "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 0
       },
+      "answered_count": 0,
+      "evaluation_status": "not_checked",
       "hops": 1,
       "page_url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
       "followed": [],
@@ -1162,47 +2442,95 @@
         {
           "field": "必要書類",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "期限",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "必要書類",
-          "gain": 20,
+          "gain": null,
           "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
         },
         {
           "field": "窓口/オンライン可否",
-          "gain": 20,
+          "gain": null,
           "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
         },
         {
           "field": "期限",
-          "gain": 20,
+          "gain": null,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
         },
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         },
         {
@@ -1211,19 +2539,22 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "このページは「戸籍・住民登録等」の目次（カテゴリ一覧）ページで、転入届自体の説明は本文に無い。目次内に「住所や世帯を変更したときの届け出」「お引越し手続きのご案内（総合支所くみん窓口）」という関連ページ名が見えるが、それらのURLは提供されたリンク一覧（最大40件、地域ナビゲーション等が中心）には含まれておらず、追跡不可。"
+      "notes": "このページは「戸籍・住民登録等」の目次（カテゴリ一覧）ページで、転入届自体の説明は本文に無い。目次内に「住所や世帯を変更したときの届け出」「お引越し手続きのご案内（総合支所くみん窓口）」という関連ページ名が見えるが、それらのURLは提供されたリンク一覧（最大40件、地域ナビゲーション等が中心）には含まれておらず、追跡不可。",
+      "lg_code": "131121"
     },
     {
       "id": "sumida",
       "name": "墨田区",
-      "total": 0,
+      "total": null,
       "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
+        "必要書類": null,
+        "窓口/オンライン可否": null,
+        "期限": null,
+        "手数料": null,
         "オンライン明示": 0
       },
+      "answered_count": 0,
+      "evaluation_status": "not_checked",
       "hops": 2,
       "page_url": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
       "followed": [
@@ -1233,47 +2564,95 @@
         {
           "field": "必要書類",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "期限",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         },
         {
           "field": "手数料",
           "verdict": "読めない",
-          "points": 0,
+          "answered": false,
+          "points": null,
+          "evaluation_status": "not_checked",
+          "evaluation": {
+            "evaluator_version": "1.0",
+            "overall": "not_checked",
+            "checks": {
+              "answer_correct": "not_checked",
+              "evidence_exists": "not_applicable",
+              "evidence_supports_answer": "not_applicable",
+              "ground_truth_matches": "not_checked"
+            }
+          },
           "agent_value": ""
         }
       ],
       "improvements": [
         {
           "field": "必要書類",
-          "gain": 20,
+          "gain": null,
           "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
         },
         {
           "field": "窓口/オンライン可否",
-          "gain": 20,
+          "gain": null,
           "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
         },
         {
           "field": "期限",
-          "gain": 20,
+          "gain": null,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
         },
         {
           "field": "手数料",
-          "gain": 20,
+          "gain": null,
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         },
         {
@@ -1282,8 +2661,35 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "指定URLのページは「転入届・転居届と併せて行う電子証明書発行の同一世帯員代理手続き」という付随手続きの説明であり、転入届本体の必要書類・窓口・期限・手数料は書かれていない。リンク先の「届出・登録・証明」ページも見出し一覧（住民登録の届出など）のみでURL付きのリンクが本文中に確認できず、これ以上辿れなかった。"
+      "notes": "指定URLのページは「転入届・転居届と併せて行う電子証明書発行の同一世帯員代理手続き」という付随手続きの説明であり、転入届本体の必要書類・窓口・期限・手数料は書かれていない。リンク先の「届出・登録・証明」ページも見出し一覧（住民登録の届出など）のみでURL付きのリンクが本文中に確認できず、これ以上辿れなかった。",
+      "lg_code": "131075"
     }
   ],
-  "disclaimer": "AIが自治体の公式サイトを読み取れたかの実測（2026-07-22）。自治体を評価するものではなく、どこを直せば伝わるかを示すためのもの。行政機関の公式発表ではありません。"
+  "disclaimer": "AIが自治体の公式サイトから回答できたかの実測（2026-07-21〜2026-08-11）。自治体を評価するものではなく、どこを直せば伝わるかを示すためのもの。行政機関の公式発表ではありません。",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "applies_to": "点数・集計・改善案など、この調査が作り出した部分",
+    "attribution": "正直パンマン「AI読（アイドク）」 https://github.com/shoujiki-panman/aidoku",
+    "not_covered": "fields[].agent_value は各自治体の公式サイトから抜き出した実際の文で、著作権は各自治体にあります。判定の根拠を示すための引用であり、出典は各レコードの page_url です。再利用の可否は各自治体の利用規約に従ってください。"
+  },
+  "sources": [
+    {
+      "name": "各自治体の公式サイト（手続きページ）",
+      "used_for": "回答観測と検証の対象。抜き出した文は fields[].agent_value、出典は page_url",
+      "license": "各自治体の利用規約による（個別には確認していない）"
+    },
+    {
+      "name": "デジタル庁デザインシステム",
+      "url": "https://design.digital.go.jp/",
+      "used_for": "公開画面のスタイル（コードスニペット）",
+      "license": "MIT"
+    },
+    {
+      "name": "総務省「都道府県コード及び市区町村コード」",
+      "url": "https://www.soumu.go.jp/denshijiti/code.html",
+      "used_for": "municipalities[].lg_code（全国地方公共団体コード）",
+      "license": "総務省サイトの利用規約による"
+    }
+  ]
 }

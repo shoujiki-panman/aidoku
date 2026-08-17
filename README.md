@@ -2,7 +2,7 @@
 
 **あなたの区のサイトを、AIの愛読書に。**
 
-自治体サイトのURLを入れると、AIがどこまで読めるかを採点し、**読めない箇所と「直す文面」まで出す**。
+自治体サイトのURLを入れると、AIがどこまで回答できるかを測り、**回答・根拠・正解を4判定で検証する**。
 デジタル庁OSS「源内」のAIアプリ仕様に準拠し、職員が自分の区の源内で使える形にしている。
 
 都知事杯オープンデータ・ハッカソン2026 応募作品（提出 2026-08-23）。
@@ -14,8 +14,8 @@
 **https://shoujiki-panman.github.io/aidoku/**
 
 東京23区の実測結果がそのまま見られます。自治体名を選ぶと、
-**AIが読み取った実際の文**と、**どこを直せば伝わるか（+N点）**が出ます。
-最初に出るのは最下位の区です（直す価値が一番大きいので）。
+**AIが読み取った実際の文**と、**どこを直せば回答が変わるか**が出ます。
+旧データはGround Truthが揃っていないため、回答文は表示し、正解点は「未検証」と明記します。
 
 ### 2. 手元で動かす
 
@@ -48,11 +48,12 @@ Claude Code が無い環境では、23区の実測結果のみ返ります。
 - いまの進捗 → [STATUS.md](STATUS.md)
 - 実測と調査の記録 → [reports/](reports/)
 
-## 実測でわかっていること（2026-07-22・東京23区・転入届）
+## 実測でわかっていること（2026-07-21〜08-05・東京23区・転入届）
 
-- 4項目（必要書類・窓口/オンライン可否・期限・手数料）すべて読み取れたのは **港区だけ**
-- **5区**（世田谷・中央・台東・墨田・荒川）はほとんど読み取れない
-- 手数料は **22区** で見つからない（実際は無料）
+- 4項目（必要書類・窓口/オンライン可否・期限・手数料）すべてAI回答が返ったのは **港区だけ**
+- **5区**（世田谷・中央・台東・墨田・荒川）はほとんど回答が返らない
+- 手数料は **22区** でAI回答が無い（実際は無料）
+- これは回答有無の観測で、正解確認済み件数ではない。4判定が未完了の値は点にしない
 
 ## 門番（gatekeeper）— 来たエージェントに答え、取れなかったものを記録する
 
@@ -118,7 +119,8 @@ Claude Code が無い環境では、23区の実測結果のみ返ります。
 | `gatekeeper/` | **門番**。自治体サイトの前に立ち、AIエージェントに答えを返して「取れずに帰った」を記録（[README](gatekeeper/README.md)） |
 | `crawler/` | 取得・正規化層。robots.txt遵守・3秒間隔・キャッシュ。title・meta・見出し・更新情報も構造化する。ここだけが外に触る |
 | `extractor/` | 読解層。`claude -p`をfact_typeごとに独立して呼び、4項目を抽出 |
-| `scorer/` | 採点層。人手で決めた必須要素と突合。ぶれ幅 ±2点 |
+| `evaluator.py` | 回答・Evidence実在・Evidence支持・Ground Truth一致の4判定を集約 |
+| `scorer/` | 人手で決めた必須要素との突合とEvidence支持判定。ぶれ幅 ±2点は既存3自治体だけ |
 | `web/` | ダッシュボード（デジタル庁デザインシステム） |
 | `reports/` | 実測・調査の全記録（崩れた探索も残してある） |
 
@@ -154,14 +156,14 @@ python3 analysis/failure_distribution.py
 # 4. 既存の抽出結果も、AIが読んだ本文と引用を照合（元ファイルは上書きしない）
 python3 analysis/apply_evidence_check.py
 
-# 5. ゴールデンセットと突合して採点
+# 5. ゴールデンセットと突合し、4判定Evaluatorを記録
 python3 scorer/score.py -p tennyu
 
-# 6. 1枚のレポートに出力
-python3 scorer/report.py -p tennyu
+# 6. 4判定を通った値だけ公開点へ変換（未判定はnull）
+python3 analysis/export_dashboard.py -p tennyu --out web/data/scores-tennyu.json
 
-# 7. ダッシュボード用のJSONを書き出す
-python3 analysis/export_web.py -p tennyu
+# 7. 1枚のレポートに出力
+python3 scorer/report.py -p tennyu
 ```
 
 ダッシュボードは `web/` の静的ファイル。ローカルで見るには `web/` を配信する。
@@ -183,6 +185,8 @@ python3 -m http.server 4173 --directory web
 失敗項目にはLLMの日本語`failure_reason`を残したまま、8種の共通`failure_type`を
 コードで付ける。定義と既存語彙の対応は
 [`docs/failure-taxonomy.md`](docs/failure-taxonomy.md)を参照。
+採点は `evaluator.py` の4判定をすべて通った項目だけ20点にする。1つでも失敗なら0点、
+必要な判定が未実施なら `null`（未検証）で、`found=true`だけでは点を付けない。
 
 ## クロールの作法（変更しないこと）
 
@@ -204,10 +208,11 @@ python3 -m http.server 4173 --directory web
 | `evidence_check.py` | AIの引用が、実際に渡した本文に存在するか照合 |
 | `measurement.py` | 測定条件を記録し、条件の違う結果が同じ集計へ混ざるのを防止 |
 | `failure_taxonomy.py` | 失敗を8種へ変換する共通のPure Function |
+| `evaluator.py` | 4判定を厳格に集約し、pass=20 / fail=0 / 未検証=nullを決めるPure Function |
 | `experiment/` | 再現実験。本測定と同じ1 fact_typeずつのpromptで手元HTMLを反復測定 |
 | `scorer/` | 採点層。`golden/*.csv` が人手の正解、`judge_prompt.md` が採点プロンプト |
 | `reports/` | 突合表つきレポート |
-| `analysis/` | 集計。`failure_distribution.py` が失敗分布、`export_web.py` がダッシュボード用JSONを作る |
+| `analysis/` | 集計。`failure_distribution.py` が失敗分布、`export_dashboard.py` が公開JSONを作る |
 | `web/` | ダッシュボード。`vendor/dads/` はデジタル庁デザインシステムの複製（[NOTICE](web/vendor/dads/NOTICE.md)） |
 | `personas/` `trust_check/` | Phase 2 以降。Phase 1 では触らない |
 

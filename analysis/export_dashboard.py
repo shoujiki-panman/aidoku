@@ -4,9 +4,9 @@
 いなかった（commit 612c1d9 は JSON だけを含む）。そのため1区を測り直すだけでも
 手で JSON を書き換えるしかなくなっていた。このスクリプトはその欠けを埋める。
 
-`scorer/` は通らない。scorer は人手のゴールデンセットと突き合わせる別方式で、
-正解データがあるのは3自治体だけ。ダッシュボードが出しているのは
-「抽出できた項目 × 20点 ＋ オンライン明示」であり、その式をここに置く。
+回答内容は extractor の実測を使い、点数は scorer が保存した4判定Evaluatorを使う。
+Evaluatorが無い旧結果やGround Truth未整備の結果は、`found=true`でも点にせず
+「未検証」として出す。
 
 出力: web/data/scores.json
 """
@@ -21,11 +21,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 EXTRACT_DIR = ROOT / "extractor" / "out"
+SCORE_DIR = ROOT / "scorer" / "out"
 TARGETS = ROOT / "crawler" / "targets.json"
 OUT = ROOT / "web" / "data" / "scores.json"
 
 sys.path.insert(0, str(ROOT))
 from fact_types import EXTRACTOR_TO_DISPLAY, FIX_TEXT  # noqa: E402
+from evaluator import CHECK_NAMES, evaluation_from_item  # noqa: E402
 from measurement import (  # noqa: E402
     MeasurementError,
     normalize_measurement,
@@ -44,7 +46,7 @@ MAX_VALUE_CHARS = 200
 # （import は上でまとめて済ませてある）
 
 DISCLAIMER = (
-    "AIが自治体の公式サイトを読み取れたかの実測（2026-07-22）。"
+    "AIが自治体の公式サイトから回答できたかの実測（2026-07-21〜2026-08-11）。"
     "自治体を評価するものではなく、どこを直せば伝わるかを示すためのもの。"
     "行政機関の公式発表ではありません。"
 )
@@ -69,7 +71,7 @@ LICENSE = {
 SOURCES = [
     {
         "name": "各自治体の公式サイト（手続きページ）",
-        "used_for": "採点の対象。抜き出した文は fields[].agent_value、出典は page_url",
+        "used_for": "回答観測と検証の対象。抜き出した文は fields[].agent_value、出典は page_url",
         "license": "各自治体の利用規約による（個別には確認していない）",
     },
     {
@@ -87,27 +89,104 @@ SOURCES = [
 ]
 
 
-def build_fields(items: dict) -> tuple[list[dict], dict, list[dict]]:
-    """4項目の内訳・配点・処方箋を作る。"""
+def field_evaluations(municipality_id: str, procedure_id: str) -> dict[str, dict]:
+    """scorer出力からfact_type別Evaluator結果を読む。旧形式は未検証にする。"""
+    path = SCORE_DIR / f"score_{municipality_id}_{procedure_id}.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError(f"scorer出力rootがobjectでない: {path}")
+    if data.get("municipality_id") != municipality_id:
+        raise ValueError(f"scorer出力のmunicipality_idが不一致: {path}")
+    if data.get("procedure_id") != procedure_id:
+        raise ValueError(f"scorer出力のprocedure_idが不一致: {path}")
+    records = data.get("fields")
+    if not isinstance(records, list):
+        raise ValueError(f"scorer出力fieldsが配列でない: {path}")
+    evaluations = {}
+    seen = set()
+    for index, record in enumerate(records):
+        if not isinstance(record, dict):
+            raise ValueError(f"scorer出力fields[{index}]がobjectでない: {path}")
+        key = record.get("field")
+        if key not in EXTRACTOR_TO_DISPLAY:
+            raise ValueError(f"scorer出力のfieldが未定義: {key!r}")
+        if key in seen:
+            raise ValueError(f"scorer出力のfieldが重複: {key}")
+        seen.add(key)
+        if "evaluation" in record:
+            evaluations[key] = record["evaluation"]
+    return evaluations
+
+
+def item_evaluation(item: dict, recorded: object = None) -> dict:
+    """scorerの記録を優先し、無ければitem内の記録か未検証を返す。"""
+    candidate = dict(item)
+    if recorded is not None:
+        candidate["evaluation"] = recorded
+    return evaluation_from_item(candidate)
+
+
+def public_evaluation(evaluation: dict) -> dict:
+    """公開JSONには4状態だけを出し、詳しい理由はscorer出力に残す。"""
+    return {
+        "evaluator_version": evaluation["evaluator_version"],
+        "overall": evaluation["overall"],
+        "checks": {
+            name: evaluation["checks"][name]["status"]
+            for name in CHECK_NAMES
+        },
+    }
+
+
+def build_fields(items: dict, evaluations: dict[str, dict] | None = None
+                 ) -> tuple[list[dict], dict, list[dict]]:
+    """4項目の回答観測・Evaluator配点・処方箋を作る。"""
+    if not isinstance(items, dict):
+        raise ValueError("itemsがobjectでない")
+    if evaluations is None:
+        evaluations = {}
+    if not isinstance(evaluations, dict):
+        raise ValueError("evaluationsがobjectでない")
     fields, breakdown, fixes = [], {}, []
     for src_key, label in FIELD_KEYS:
-        item = items.get(src_key) or {}
-        found = bool(item.get("found"))
+        item = items.get(src_key) or {
+            "found": False,
+            "value": "",
+            "evidence": "",
+            "failure_reason": "抽出エラー",
+        }
+        if not isinstance(item, dict):
+            raise ValueError(f"items.{src_key}がobjectでない")
+        found = item.get("found")
+        if type(found) is not bool:
+            raise ValueError(f"items.{src_key}.foundがbooleanでない")
+        evaluation = item_evaluation(item, evaluations.get(src_key))
+        points = evaluation["points"]
         fields.append({
             "field": label,
             "verdict": "読めた" if found else "読めない",
-            "points": ITEM_POINTS if found else 0,
+            "answered": found,
+            "points": points,
+            "evaluation_status": evaluation["overall"],
+            "evaluation": public_evaluation(evaluation),
             "agent_value": (item.get("value") or "")[:MAX_VALUE_CHARS],
         })
-        breakdown[label] = ITEM_POINTS if found else 0
+        breakdown[label] = points
         if not found:
-            fixes.append({"field": label, "gain": ITEM_POINTS, "reason": FIX_TEXT[label]})
+            fixes.append({
+                "field": label,
+                "gain": ITEM_POINTS if points == 0 else None,
+                "reason": FIX_TEXT[label],
+            })
     return fields, breakdown, fixes
 
 
 def build_entry(data: dict) -> dict:
     """extractor の1ファイルから、ダッシュボード1件分を作る。"""
-    fields, breakdown, fixes = build_fields(data.get("items") or {})
+    evaluations = field_evaluations(data["municipality_id"], data["procedure_id"])
+    fields, breakdown, fixes = build_fields(data.get("items") or {}, evaluations)
     clarity = data.get("online_clarity")
     clarity_pt = CLARITY_POINTS.get(clarity, 0)
     breakdown["オンライン明示"] = clarity_pt
@@ -119,11 +198,17 @@ def build_entry(data: dict) -> dict:
         })
     page = data.get("page") or {}
     measurement = normalize_measurement(data.get("measurement"), data.get("model"))
+    fact_points = [breakdown[label] for _, label in FIELD_KEYS]
+    total = None if any(points is None for points in fact_points) else sum(
+        points for points in breakdown.values() if points is not None)
+    answered_count = sum(field["answered"] for field in fields)
     return {
         "id": data["municipality_id"],
         "name": data["municipality"],
-        "total": sum(breakdown.values()),
+        "total": total,
         "breakdown": breakdown,
+        "answered_count": answered_count,
+        "evaluation_status": "evaluated" if total is not None else "not_checked",
         "hops": page.get("hops"),
         "page_url": page.get("url"),
         "followed": data.get("followed_urls") or [],
@@ -135,15 +220,24 @@ def build_entry(data: dict) -> dict:
 
 
 def summarize(entries: list[dict]) -> dict:
-    totals = [e["total"] for e in entries]
+    totals = [entry["total"] for entry in entries if entry["total"] is not None]
     return {
-        "average": round(sum(totals) / len(totals), 1),
-        "max": max(totals),
-        "min": min(totals),
+        "average": round(sum(totals) / len(totals), 1) if totals else None,
+        "max": max(totals) if totals else None,
+        "min": min(totals) if totals else None,
         "full_marks": sum(1 for e in entries
                           if all(e["breakdown"][label] == ITEM_POINTS for _, label in FIELD_KEYS)),
         "zero": sum(1 for t in totals if t == 0),
-        "fee_missing": sum(1 for e in entries if e["breakdown"]["手数料"] == 0),
+        "fee_missing": sum(
+            1 for entry in entries
+            if not next(field for field in entry["fields"]
+                        if field["field"] == "手数料")["answered"]
+        ),
+        "answered_all_four": sum(
+            entry["answered_count"] == len(FIELD_KEYS) for entry in entries),
+        "answered_zero": sum(entry["answered_count"] == 0 for entry in entries),
+        "evaluated": len(totals),
+        "not_evaluated": len(entries) - len(totals),
     }
 
 
@@ -187,8 +281,8 @@ def collect(procedure: str, only: set[str] | None, codes: dict[str, str]) -> lis
         # 未設定の自治体は落とさず null で残す（欠けていることが見えるように）。
         entry["lg_code"] = codes.get(mid)
         entries.append(entry)
-    # 点の高い順。同点は自治体IDの辞書順で固定する（実行ごとに並びが変わらないように）
-    entries.sort(key=lambda e: (-e["total"], e["id"]))
+    # 回答できた項目数の多い順。未検証を0点として並べない。
+    entries.sort(key=lambda e: (-e["answered_count"], e["id"]))
     return entries
 
 
@@ -236,7 +330,8 @@ def main(argv: list[str] | None = None) -> None:
         json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     s = doc["summary"]
     print(f"{args.out}（{len(entries)}件）"
-          f" 平均{s['average']} 満点{s['full_marks']} 0点{s['zero']} 手数料0点{s['fee_missing']}")
+          f" 検証済み{s['evaluated']} 未検証{s['not_evaluated']}"
+          f" 4項目回答{s['answered_all_four']} 手数料回答なし{s['fee_missing']}")
 
 
 if __name__ == "__main__":

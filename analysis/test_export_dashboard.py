@@ -32,11 +32,13 @@ from measurement import (  # noqa: E402
     build_discovery_measurement,
     build_measurement,
 )
+from evaluator import CHECK_NAMES, evaluate_item  # noqa: E402
 
 
 def extract(items: dict, clarity: str = "明記", **kw) -> dict:
     base = {
         "municipality": "テスト区", "municipality_id": "test",
+        "procedure": "転入届", "procedure_id": "tennyu",
         "page": {"url": "https://example.jp/a.html", "hops": 2},
         "followed_urls": [], "online_clarity": clarity, "items": items,
         "page_notes": "",
@@ -45,8 +47,32 @@ def extract(items: dict, clarity: str = "明記", **kw) -> dict:
     return base
 
 
-def item(found: bool, value: str = "") -> dict:
-    return {"found": found, "value": value}
+def evaluation(status: str, found: bool) -> dict:
+    source = {
+        "found": found,
+        "evidence_check": {"verdict": "exact"} if found else None,
+    }
+    if status == "not_checked":
+        return evaluate_item(source)
+    expected_found = found if status == "pass" else not found
+    return evaluate_item(
+        source,
+        expected_found=expected_found,
+        support="yes" if found else None,
+        elements=[{"id": 1, "covered": "yes"}] if expected_found else None,
+        required_count=1 if expected_found else 0,
+    )
+
+
+def item(found: bool, value: str = "", status: str | None = None) -> dict:
+    state = status or ("pass" if found else "fail")
+    return {
+        "found": found,
+        "value": value,
+        "evidence": "根拠の引用文です" if found else "",
+        "failure_reason": None if found else "記載なし",
+        "evaluation": evaluation(state, found),
+    }
 
 
 ALL_FOUND = {k: item(True, "あり") for k in
@@ -95,6 +121,74 @@ class ScoringTest(unittest.TestCase):
         self.assertIn("窓口/オンライン可否", e["breakdown"])
         self.assertNotIn("窓口オンライン可否", e["breakdown"])
 
+    def test_found_trueだけでは点を付けない(self):
+        items = {key: item(True, "あり", "not_checked") for key in ALL_FOUND}
+        entry = build_entry(extract(items))
+        self.assertIsNone(entry["total"])
+        self.assertEqual(entry["evaluation_status"], "not_checked")
+        self.assertEqual(entry["answered_count"], 4)
+        for field in entry["fields"]:
+            self.assertTrue(field["answered"])
+            self.assertIsNone(field["points"])
+            self.assertEqual(field["evaluation_status"], "not_checked")
+            self.assertEqual(set(field["evaluation"]["checks"]), set(CHECK_NAMES))
+            self.assertEqual(field["evaluation"]["checks"]["evidence_exists"], "pass")
+            self.assertEqual(
+                {field["evaluation"]["checks"][name] for name in CHECK_NAMES
+                 if name != "evidence_exists"}, {"not_checked"})
+
+
+class ScorerEvaluationTest(unittest.TestCase):
+    def test_scorerの4判定を公開点へ使う(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            score_dir = Path(temporary)
+            records = [{"field": key, "evaluation": evaluation("pass", True)}
+                       for key in ALL_FOUND]
+            (score_dir / "score_test_tennyu.json").write_text(json.dumps({
+                "municipality_id": "test",
+                "procedure_id": "tennyu",
+                "fields": records,
+            }, ensure_ascii=False), encoding="utf-8")
+            raw = {key: item(True, "あり", "not_checked") for key in ALL_FOUND}
+            with mock.patch.object(export_dashboard, "SCORE_DIR", score_dir):
+                entry = build_entry(extract(raw))
+            self.assertEqual(entry["total"], 100)
+            self.assertEqual(entry["evaluation_status"], "evaluated")
+
+    def test_旧scorer形式は推測せず未検証(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            score_dir = Path(temporary)
+            (score_dir / "score_test_tennyu.json").write_text(json.dumps({
+                "municipality_id": "test",
+                "procedure_id": "tennyu",
+                "fields": [{"field": key, "verdict": "正解"} for key in ALL_FOUND],
+            }, ensure_ascii=False), encoding="utf-8")
+            raw = {key: item(True, "あり", "not_checked") for key in ALL_FOUND}
+            with mock.patch.object(export_dashboard, "SCORE_DIR", score_dir):
+                entry = build_entry(extract(raw))
+            self.assertIsNone(entry["total"])
+
+    def test_scorerのidentity_型_重複_未知fieldを拒否する(self):
+        invalid = (
+            [],
+            {"municipality_id": "other", "procedure_id": "tennyu", "fields": []},
+            {"municipality_id": "test", "procedure_id": "other", "fields": []},
+            {"municipality_id": "test", "procedure_id": "tennyu", "fields": {}},
+            {"municipality_id": "test", "procedure_id": "tennyu", "fields": ["期限"]},
+            {"municipality_id": "test", "procedure_id": "tennyu",
+             "fields": [{"field": "unknown"}]},
+            {"municipality_id": "test", "procedure_id": "tennyu",
+             "fields": [{"field": "期限"}, {"field": "期限"}]},
+        )
+        for data in invalid:
+            with self.subTest(data=data), tempfile.TemporaryDirectory() as temporary:
+                score_dir = Path(temporary)
+                (score_dir / "score_test_tennyu.json").write_text(
+                    json.dumps(data, ensure_ascii=False), encoding="utf-8")
+                with mock.patch.object(export_dashboard, "SCORE_DIR", score_dir), \
+                        self.assertRaises(ValueError):
+                    export_dashboard.field_evaluations("test", "tennyu")
+
 
 class SummaryTest(unittest.TestCase):
     def test_counts(self):
@@ -114,6 +208,19 @@ class SummaryTest(unittest.TestCase):
         e = build_entry(extract(ALL_FOUND, "記載なし"))
         self.assertEqual(e["total"], 80)
         self.assertEqual(summarize([e])["full_marks"], 1)
+
+    def test_未検証を0点や平均へ混ぜない(self):
+        unverified = build_entry(extract({
+            key: item(True, "あり", "not_checked") for key in ALL_FOUND
+        }))
+        summary = summarize([unverified])
+        self.assertIsNone(summary["average"])
+        self.assertIsNone(summary["max"])
+        self.assertIsNone(summary["min"])
+        self.assertEqual(summary["zero"], 0)
+        self.assertEqual(summary["evaluated"], 0)
+        self.assertEqual(summary["not_evaluated"], 1)
+        self.assertEqual(summary["answered_all_four"], 1)
 
 
 class MeasurementTest(unittest.TestCase):

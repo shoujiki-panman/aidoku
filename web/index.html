@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI読（アイドク） — あなたの区のサイトを、AIの愛読書に。</title>
-<meta name="description" content="自治体サイトの手続きページが「AIに読めるか」を採点し、読めない箇所と直す文面まで示します。東京23区の実測つき。">
+<meta name="description" content="自治体サイトの手続きページからAI回答が返るかを観測し、正しさは4条件で検証します。読めない箇所と直す文面、東京23区の実測つき。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -50,7 +50,7 @@
       <span class="dads-notification-banner__heading-text" id="phase-note">読み込み中</span>
     </p>
     <div class="dads-notification-banner__body">
-      <p>個人による第三者調査です（行政機関の公式発表ではありません）。順位づけが目的ではなく、<strong>どこを直せば住民のAIに伝わるか</strong>を示すための調査です。</p>
+      <p>個人による第三者調査です（行政機関の公式発表ではありません）。順位づけが目的ではなく、<strong>どこを直せば住民のAIが回答しやすくなるか</strong>を示すための調査です。</p>
     </div>
   </div>
 
@@ -76,11 +76,11 @@
     <p class="section-note"><strong>自治体名を押すと、すぐ下にその区の詳しい結果が出ます。</strong></p>
     <div class="dads-table" data-size="dense">
       <table class="dads-table__table" id="ranking">
-        <caption class="dads-table__caption">住民のAIに伝わった項目（<span id="proc-name"></span>）</caption>
+        <caption class="dads-table__caption">住民のAIから回答が返った項目（<span id="proc-name"></span>）</caption>
         <thead>
           <tr class="dads-table__col-header">
             <th scope="col">自治体</th>
-            <th scope="col">住民のAIに伝わった項目</th>
+            <th scope="col">住民のAIから回答が返った項目</th>
             <th scope="col">到達</th>
           </tr>
         </thead>
@@ -104,7 +104,7 @@
     <dl class="dads-description-list">
       <div class="dads-description-list__item">
         <dt class="dads-description-list__term">4項目（各20点）</dt>
-        <dd class="dads-description-list__description">必要書類・窓口/オンライン可否・期限・手数料。<strong>ページに書かれていることだけ</strong>から読み取れるかを見ます。推測での補完は禁止しています。</dd>
+        <dd class="dads-description-list__description">必要書類・窓口/オンライン可否・期限・手数料。AI回答の有無と、回答・根拠・Ground Truthの4判定を分けます。<strong>回答が返っただけでは点を付けません。</strong></dd>
       </div>
       <div class="dads-description-list__item">
         <dt class="dads-description-list__term">到達</dt>
@@ -115,11 +115,11 @@
         <dd class="dads-description-list__description">その手続きがオンラインで完結するのかどうかが、迷わず読み取れるか。</dd>
       </div>
     </dl>
-    <p class="section-note">採点はAIによる判定です。各項目は「読めた／読めない」の2値で20点なので、判定が1つ変われば20点動きます。この23区の点数は各1回の判定によるもので、ぶれ幅は測っていません（人手の正解データと突き合わせる方式での採点のぶれ測定は、別途3自治体で行い最大2.0点。reports/ に記録があります）。クロールは robots.txt を守り、同一ドメインへのアクセスは3秒以上あけ、取得済みページは再取得していません。申請の送信は一切行っていません（読み取りのみ）。</p>
+    <p class="section-note">4判定は、①情報の有無を正しく答えたか、②引用が本文に実在するか、③引用が回答を支えるか、④回答が人手のGround Truthと一致するか、です。必要な判定が1つでも未実施なら「未検証」とし、0点や満点にはしません。現在の23区データはGround Truthが揃っていないため、回答文は実測として表示しますが、正解点は未検証です。クロールは robots.txt を守り、同一ドメインへのアクセスは3秒以上あけ、取得済みページは再取得していません。申請の送信は一切行っていません（読み取りのみ）。</p>
 
     <h3 class="dads-heading" data-size="s" id="data-heading">データの入手</h3>
     <ul class="datalist">
-      <li><a class="dads-link" href="data/scores.csv">scores.csv</a> — 23区 × 全項目の点数（Excelで開けます）</li>
+      <li><a class="dads-link" href="data/scores.csv">scores.csv</a> — 23区 × 回答観測・検証済み点数（Excelで開けます）</li>
       <li><a class="dads-link" href="data/scores-tennyu.json">scores-tennyu.json</a> — 転入届</li>
       <li><a class="dads-link" href="data/scores-jidouteate.json">scores-jidouteate.json</a> — 児童手当の申請</li>
       <li><a class="dads-link" href="data/scores-sodaigomi.json">scores-sodaigomi.json</a> — 粗大ごみ収集の申込</li>

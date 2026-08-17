@@ -26,18 +26,23 @@ async function loadJson(path) {
   return res.json();
 }
 
-// マスの状態: 4項目のうちいくつ届いているか
+// マスの状態: 4項目のうちいくつAI回答が返ったか。正解点とは分ける。
 function cellState(m) {
-  const got = ITEMS.filter((k) => (m.breakdown[k] ?? 0) >= 20).length;
-  if (got === ITEMS.length) return { tone: 'full', label: '4/4', title: '4項目とも住民のAIに届く', got };
-  if (got === 0) return { tone: 'none', label: '0/4', title: '4項目とも届かない', got };
-  return { tone: 'part', label: `${got}/4`, title: `${got}項目だけ届く`, got };
+  const got = ITEMS.filter((key) => {
+    const field = m.fields.find((item) => item.field === key);
+    return typeof field?.answered === 'boolean'
+      ? field.answered
+      : field?.verdict === '読めた';
+  }).length;
+  if (got === ITEMS.length) return { tone: 'full', label: '4/4', title: '4項目ともAI回答あり（正しさは別検証）', got };
+  if (got === 0) return { tone: 'none', label: '0/4', title: '4項目とも回答なし', got };
+  return { tone: 'part', label: `${got}/4`, title: `${got}項目でAI回答あり`, got };
 }
 
 const LEGEND = [
-  { tone: 'full', text: '4項目とも届く' },
-  { tone: 'part', text: '一部だけ届く' },
-  { tone: 'none', text: '届かない' },
+  { tone: 'full', text: '4項目ともAI回答あり' },
+  { tone: 'part', text: '一部だけAI回答あり' },
+  { tone: 'none', text: '回答なし' },
   { tone: 'gray', text: 'まだ調べていない' },
 ];
 
@@ -55,7 +60,7 @@ function indexByMuni(procs, docs) {
   return [...rows.values()];
 }
 
-// 並びは「届いた項目の合計が多い順 → ID昇順」。
+// 並びは「AI回答が返った項目の合計が多い順 → ID昇順」。
 // 1手続きの点で並べると、その手続きが得意なだけの区が上に来てしまう。
 function sortRows(rows, procs) {
   const score = (r) => procs.reduce((n, p) => n + (r.cells[p.id]?.got ?? 0), 0);
@@ -96,9 +101,9 @@ function renderSummary(rows, procs) {
     const c = { full: 0, part: 0, none: 0 };
     for (const r of rows) if (r.cells[p.id]) c[r.cells[p.id].tone]++;
     return `<li><b>${esc(p.name)}</b>：` +
-      `<b data-tone="green">4項目とも届く ${c.full}区</b>／` +
-      `<b data-tone="orange">一部だけ ${c.part}区</b>／` +
-      `<b data-tone="red">1つも届かない ${c.none}区</b></li>`;
+      `<b data-tone="green">4項目とも回答あり ${c.full}区</b>／` +
+      `<b data-tone="orange">一部だけ回答あり ${c.part}区</b>／` +
+      `<b data-tone="red">回答なし ${c.none}区</b></li>`;
   }).join('');
   $('board-summary').innerHTML = `<ul class="board-summary__list">${lines}</ul>`;
 }

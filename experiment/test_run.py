@@ -106,6 +106,75 @@ class ExperimentContractTest(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     run.normalized_failure(invalid)
 
+    def test_GroundTruth照合を4判定へ接続する(self):
+        items = {
+            field: {
+                "found": True,
+                "value": "転出証明書と14日以内",
+                "evidence": "引用",
+                "source": "html",
+                "failure_reason": None,
+            }
+            for field in EXTRACTOR_KEYS
+        }
+        truth = {
+            field: {"must_include": ["転出証明書"]}
+            for field in EXTRACTOR_KEYS
+        }
+        checked = run.check(items, truth)
+        for field in EXTRACTOR_KEYS:
+            self.assertTrue(checked[field]["matches_truth"])
+            evaluation = checked[field]["evaluation"]
+            self.assertEqual(
+                evaluation["checks"]["ground_truth_matches"]["status"], "pass")
+            self.assertEqual(evaluation["overall"], "not_checked")
+            self.assertIsNone(evaluation["points"])
+
+    def test_GroundTruth欠落を一致扱いにしない(self):
+        items = {
+            field: {
+                "found": True, "value": "答え", "evidence": "引用",
+                "source": "html", "failure_reason": None,
+            }
+            for field in EXTRACTOR_KEYS
+        }
+        checked = run.check(items, {})
+        for field in EXTRACTOR_KEYS:
+            self.assertIsNone(checked[field]["matches_truth"])
+            self.assertEqual(checked[field]["evaluation"]["overall"], "not_checked")
+
+    def test_GroundTruth不一致はfail(self):
+        items = {
+            field: {
+                "found": True, "value": "別の答え", "evidence": "引用",
+                "source": "html", "failure_reason": None,
+            }
+            for field in EXTRACTOR_KEYS
+        }
+        truth = {field: {"must_include": ["14日"]} for field in EXTRACTOR_KEYS}
+        checked = run.check(items, truth)
+        for field in EXTRACTOR_KEYS:
+            self.assertFalse(checked[field]["matches_truth"])
+            self.assertEqual(checked[field]["evaluation"]["overall"], "fail")
+
+    def test_GroundTruth契約の型違いを拒否する(self):
+        items = {
+            field: {
+                "found": True, "value": "答え", "evidence": "引用",
+                "source": "html", "failure_reason": None,
+            }
+            for field in EXTRACTOR_KEYS
+        }
+        invalid = (
+            {EXTRACTOR_KEYS[0]: []},
+            {EXTRACTOR_KEYS[0]: {"must_include": "14日"}},
+            {EXTRACTOR_KEYS[0]: {"must_include": [""]}},
+            {EXTRACTOR_KEYS[0]: {"expected_found": "true"}},
+        )
+        for truth in invalid:
+            with self.subTest(truth=truth), self.assertRaises(ValueError):
+                run.check(items, truth)
+
     def test_直接実行とmodule実行のhelpが動く(self):
         for command in (
                 [sys.executable, str(ROOT / "experiment" / "run.py"), "--help"],

@@ -1,4 +1,4 @@
-"""判定エンジンのテスト — 「実測を返す」「点を出す」「処方箋は埋めさせる」を固定する。
+"""判定エンジンのテスト — 回答観測と検証済み点数を混ぜないことを固定する。
 
 このエンジンは源内の画面から呼ばれる作品本体。2026-07-26 にスタブから差し替えたが、
 差し替えの正しさを機械で確かめていなかった。
@@ -68,7 +68,7 @@ def measured_row(**over) -> dict:
         "page_notes": "",
         "clarity": "明記",
         "hops": 3,
-        "measured_at": "2026-07-22",
+        "measured_at": "2026-07-21〜2026-08-05",
         "followed": [],
     }
     base.update(over)
@@ -133,7 +133,7 @@ class ParseJsonTest(unittest.TestCase):
 
 
 class ScoreTest(unittest.TestCase):
-    """採点。4項目×20点 ＋ オンライン明示（明記20/曖昧10/記載なし0）＝100点。"""
+    """回答があっても4条件が揃うまで点にしない。"""
 
     URL = "https://www.city.minato.tokyo.jp/a/b.html"
 
@@ -146,13 +146,15 @@ class ScoreTest(unittest.TestCase):
         r = eng.score(self.URL, None)
         self.assertEqual(r["source"], "measured")
         self.assertEqual(r["municipality"], "港区")
-        self.assertEqual(r["measured_at"], "2026-07-22")
+        self.assertEqual(r["measured_at"], "2026-07-21〜2026-08-05")
 
-    def test_満点は100(self):
+    def test_4項目すべて回答ありでも未検証(self):
         r = eng.score(self.URL, None)
-        self.assertEqual(r["item_pt"], 80)
+        self.assertIsNone(r["item_pt"])
         self.assertEqual(r["clarity_pt"], 20)
-        self.assertEqual(r["total"], 100)
+        self.assertIsNone(r["total"])
+        self.assertEqual(r["evaluation_status"], "not_checked")
+        self.assertTrue(all(point is None for point in r["field_points"].values()))
 
     def test_オンライン明示の配点(self):
         self.assertEqual(eng.CLARITY_POINTS, {"明記": 20, "曖昧": 10, "記載なし": 0})
@@ -162,22 +164,38 @@ class ScoreTest(unittest.TestCase):
                 r = eng.score(self.URL, None)
                 self.assertEqual(r["clarity_pt"], pt)
 
-    def test_読めない項目は点にならない(self):
+    def test_回答なしも検証前に0点と決めない(self):
         self.table[eng._norm_url(self.URL)] = measured_row(
             found={"documents": True, "online": True, "deadline": True, "fee": False})
         r = eng.score(self.URL, None)
-        self.assertEqual(r["item_pt"], 60)
+        self.assertIsNone(r["item_pt"])
         self.assertFalse(r["found"]["fee"])
 
-    def test_checksで絞ると絞った分だけ点になる(self):
+    def test_checksで絞っても未検証は点にならない(self):
         r = eng.score(self.URL, ["fee"])
-        self.assertEqual(r["item_pt"], 20)
+        self.assertIsNone(r["item_pt"])
 
     def test_絞った外の項目はNoneで返る(self):
         """False（読めなかった）と None（そもそも見ていない）を混ぜない。"""
         r = eng.score(self.URL, ["fee"])
         self.assertIsNone(r["found"]["documents"])
         self.assertTrue(r["found"]["fee"])
+        self.assertIsNone(r["evaluations"]["documents"])
+
+    def test_4条件を通った項目だけ20点(self):
+        passed = eng.evaluate_item(
+            {"found": True, "evidence_check": {"verdict": "exact"}},
+            expected_found=True,
+            support="yes",
+            elements=[{"id": 1, "covered": "yes"}],
+            required_count=1,
+        )
+        self.table[eng._norm_url(self.URL)] = measured_row(
+            evaluations={key: passed for key in eng.ITEM_KEYS})
+        r = eng.score(self.URL, None)
+        self.assertEqual(r["item_pt"], 80)
+        self.assertEqual(r["total"], 100)
+        self.assertEqual(r["evaluation_status"], "pass")
 
     def test_未知のURLはライブ判定に回る(self):
         with mock.patch.object(eng, "judge_live", return_value=measured_row(
