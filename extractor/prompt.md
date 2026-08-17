@@ -32,6 +32,8 @@ JSONのみを出力してください。前置き・説明・コードフェン�
     "found": true|false,
     "value": "答え",
     "evidence": "本文からの引用（30〜120字）",
+    "evidence_location": "引用箇所（見出し、JSONパス、またはリンク先URLと見出し）",
+    "confidence": 0.0,
     "source": "html|jsonld|linked_page|null",
     "failure_reason": null|"上記の理由"
   },
@@ -45,4 +47,9 @@ Test Caseで指定されていないfact_typeのためのURLは入れないで�
 
 `evidence`は必ずページ本文からそのまま引用してください。引用できないなら
 `found`はfalseです。`found=false`では`value`と`evidence`を空文字、`source`をnullに
-してください。
+してください。`evidence_location`は、HTMLなら最も近い見出し、JSON-LDならJSONパス、
+リンク先ならURLと最も近い見出しを書いてください。`found=false`ではnullにします。
+
+`confidence`は、渡された公式ページからこの答えを読み取れたことへの確信度を0.0〜1.0で
+必ず書いてください。これはAI自身の申告値であり、推測を許可するものではありません。
+正解の採点には使いません。

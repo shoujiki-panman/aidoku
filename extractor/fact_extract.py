@@ -161,6 +161,7 @@ def _attachment_observation(urls: list[str]) -> dict:
         "llm_called": False,
         "result": {
             "found": False, "value": "", "evidence": "", "source": None,
+            "evidence_location": None, "confidence": None,
             "failure_reason": "PDF内のみ",
         },
         "requested_urls": [],

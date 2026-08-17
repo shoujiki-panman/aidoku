@@ -94,6 +94,7 @@ def llm_reply(value: str = "値", *, source: str = "html",
     return json.dumps({
         "item": {
             "found": True, "value": value, "evidence": "本文からの引用です",
+            "evidence_location": "h1: 転入届", "confidence": 0.8,
             "source": source, "failure_reason": None,
         },
         "follow_urls": follow_urls or [],
@@ -105,6 +106,7 @@ def follow_request(url: str) -> str:
     return json.dumps({
         "item": {
             "found": False, "value": "", "evidence": "", "source": None,
+            "evidence_location": None, "confidence": 0.4,
             "failure_reason": "リンク先にあり",
         },
         "follow_urls": [url], "page_notes": "リンク先にあり",
@@ -115,6 +117,7 @@ def failure_reply(reason: str) -> str:
     return json.dumps({
         "item": {
             "found": False, "value": "", "evidence": "", "source": None,
+            "evidence_location": None, "confidence": 0.7,
             "failure_reason": reason,
         },
         "follow_urls": [], "page_notes": "",
@@ -135,6 +138,9 @@ class FactTypeCallTest(unittest.TestCase):
         self.assertIn('{"name":"転入届"}', prompt)
         self.assertNotIn("窓口オンライン可否", prompt)
         self.assertNotIn("items", prompt)
+        self.assertIn('"evidence_location"', prompt)
+        self.assertIn('"confidence": 0.0', prompt)
+        self.assertIn("採点", prompt)
         self.assertTrue(meta["has_jsonld"])
         self.assertEqual(allowed, {"https://example.jp/docs"})
 
@@ -158,6 +164,8 @@ class FactTypeCallTest(unittest.TestCase):
                 "found": True,
                 "value": "値",
                 "evidence": "本文には存在しない十分に長い捏造された引用文です。",
+                "evidence_location": "h2: 必要書類",
+                "confidence": 0.9,
                 "source": "html",
                 "failure_reason": None,
             },
@@ -256,6 +264,7 @@ class FactTypeCallTest(unittest.TestCase):
         fetcher = FakeFetcher(body)
         reply = json.dumps({
             "item": {"found": False, "value": "", "evidence": "", "source": None,
+                     "evidence_location": None, "confidence": 0.5,
                      "failure_reason": "リンク先にあり"},
             "follow_urls": urls, "page_notes": "",
         }, ensure_ascii=False)
@@ -349,6 +358,8 @@ class FactTypeCallTest(unittest.TestCase):
         self.assertEqual(extra, [])
         self.assertEqual(record["followed_urls"], [])
         self.assertEqual(record["result"]["failure_reason"], "PDF内のみ")
+        self.assertIsNone(record["result"]["confidence"])
+        self.assertIsNone(record["result"]["evidence_location"])
         self.assertEqual(record["attempts"][-1]["stage"], "follow_fetch")
         self.assertFalse(record["attempts"][-1]["llm_called"])
         self.assertEqual(record["result"], record["attempts"][-1]["result"])
@@ -415,16 +426,75 @@ class ResponseContractTest(unittest.TestCase):
         for item in invalid:
             with self.subTest(item=item):
                 with self.assertRaises(ValueError):
-                    normalize_item({"item": item})
+                    normalize_item({"item": {
+                        **item,
+                        "evidence_location": (
+                            "h2: 必要書類" if item.get("found") is True else None),
+                        "confidence": 0.5,
+                    }})
 
     def test_found_falseの正規応答は受理する(self):
         item = normalize_item({"item": {
             "found": False, "value": "", "evidence": "", "source": None,
+            "evidence_location": None, "confidence": 0.25,
             "failure_reason": "記載なし",
         }})
         self.assertFalse(item["found"])
+        self.assertEqual(item["confidence"], 0.25)
+        self.assertIsNone(item["evidence_location"])
         self.assertEqual(item["failure_reason"], "記載なし")
         self.assertEqual(item["failure_type"], "fact_missing")
+
+    def test_confidenceと引用箇所を結果へ残す(self):
+        item = normalize_item(json.loads(llm_reply()))
+        self.assertEqual(item["confidence"], 0.8)
+        self.assertEqual(item["evidence_location"], "h1: 転入届")
+
+    def test_confidenceは0以上1以下の有限な数値だけ受理する(self):
+        for value in (0, 1, 0.25):
+            with self.subTest(valid=value):
+                data = json.loads(llm_reply())
+                data["item"]["confidence"] = value
+                self.assertEqual(normalize_item(data)["confidence"], float(value))
+        for value in (None, True, False, "0.5", -0.01, 1.01,
+                      float("nan"), float("inf"), float("-inf"), 10 ** 10000):
+            with self.subTest(invalid=value):
+                data = json.loads(llm_reply())
+                data["item"]["confidence"] = value
+                with self.assertRaisesRegex(ValueError, "confidence"):
+                    normalize_item(data)
+
+    def test_confidenceの欠落を既定値で隠さない(self):
+        data = json.loads(llm_reply())
+        del data["item"]["confidence"]
+        with self.assertRaisesRegex(ValueError, "confidence"):
+            normalize_item(data)
+
+    def test_回答ありは引用箇所必須_回答なしは引用箇所禁止(self):
+        for location in (None, "", "  "):
+            with self.subTest(found=True, location=location):
+                data = json.loads(llm_reply())
+                data["item"]["evidence_location"] = location
+                with self.assertRaisesRegex(ValueError, "evidence_location"):
+                    normalize_item(data)
+        data = json.loads(failure_reply("記載なし"))
+        data["item"]["evidence_location"] = "h2: 必要書類"
+        with self.assertRaisesRegex(ValueError, "evidence_location"):
+            normalize_item(data)
+
+    def test_引用箇所のキーを省略できない(self):
+        for reply in (llm_reply(), failure_reply("記載なし")):
+            with self.subTest(reply=reply):
+                data = json.loads(reply)
+                del data["item"]["evidence_location"]
+                with self.assertRaisesRegex(ValueError, "evidence_location"):
+                    normalize_item(data)
+
+    def test_引用箇所は文字列だけ受理する(self):
+        data = json.loads(llm_reply())
+        data["item"]["evidence_location"] = ["h1"]
+        with self.assertRaisesRegex(ValueError, "evidence_location"):
+            normalize_item(data)
 
     def test_follow_urlsは配列とHTTP形式を要求する(self):
         for data in ({"follow_urls": "https://example.jp/"},
@@ -465,6 +535,9 @@ class ResponseContractTest(unittest.TestCase):
                             for item in items.values()))
         self.assertTrue(all(item["failure_type"] == "page_not_discoverable"
                             for item in items.values()))
+        self.assertTrue(all(item["confidence"] is None for item in items.values()))
+        self.assertTrue(all(item["evidence_location"] is None
+                            for item in items.values()))
         result = unreachable_result(discovery(), cases)
         self.assertFalse(result["reached"])
         self.assertEqual(result["failure_type"], "page_not_discoverable")
@@ -490,6 +563,9 @@ class ResponseContractTest(unittest.TestCase):
         self.assertIsNone(result["failure_type"])
         self.assertEqual(result["items"], legacy_items(records))
         self.assertEqual(result["items"]["期限"]["value"], "deadline")
+        self.assertEqual(result["items"]["期限"]["confidence"], 0.8)
+        self.assertEqual(
+            result["items"]["期限"]["evidence_location"], "h1: 転入届")
         self.assertEqual(len(result["followed_urls"]), 4)
         self.assertEqual(result["page_notes"].splitlines(), [
             "documents", "channel", "deadline", "fee"])

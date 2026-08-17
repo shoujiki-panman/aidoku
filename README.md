@@ -180,6 +180,9 @@ python3 -m http.server 4173 --directory web
 `attempts[]`へ残す。追従先がPDF等だった場合は本文を読まず`llm_called: false`の
 観測attemptとして区別する。各結果には質問と`test_case_version`も残す。従来の`items`は
 最後のattemptと同じ値から生成するため、採点・公開画面の入力形式は変わらない。
+AIが返す各結果には、引用箇所`evidence_location`と、AI自身が申告する0〜1の
+`confidence`も必須で残す。`confidence`は正解率ではなく、現時点では採点に使わない。
+到達失敗や添付ファイル判定など、AIが回答していない結果では両方を`null`にする。
 失敗項目にはLLMの日本語`failure_reason`を残したまま、8種の共通`failure_type`を
 コードで付ける。定義と既存語彙の対応は
 [`docs/failure-taxonomy.md`](docs/failure-taxonomy.md)を参照。

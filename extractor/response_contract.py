@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import math
 import re
 from urllib.parse import urlsplit
 
@@ -47,6 +48,9 @@ def normalize_item(data: dict,
         "found": item["found"],
         "value": optional_text(item, "value"),
         "evidence": optional_text(item, "evidence"),
+        "evidence_location": required_optional_text(
+            item, "evidence_location") or None,
+        "confidence": confidence_value(item),
         "source": optional_text(item, "source") or None,
         "failure_reason": optional_text(item, "failure_reason") or None,
     }
@@ -82,6 +86,27 @@ def optional_text(data: dict, key: str) -> str:
     return value.strip()
 
 
+def required_optional_text(data: dict, key: str) -> str:
+    """null可の文字列を読む。ただし応答からキー自体を省略させない。"""
+    if key not in data:
+        raise ValueError(f"{key}が無い")
+    return optional_text(data, key)
+
+
+def confidence_value(data: dict) -> float:
+    """AI自己申告の確信度を、有限な0〜1のfloatへ正規化する。"""
+    value = data.get("confidence")
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        raise ValueError("confidenceが数値でない")
+    try:
+        normalized = float(value)
+    except (OverflowError, ValueError) as exc:
+        raise ValueError("confidenceを有限な数値へ変換できない") from exc
+    if not math.isfinite(normalized) or not 0.0 <= normalized <= 1.0:
+        raise ValueError("confidenceは0以上1以下の有限な数値にする")
+    return normalized
+
+
 def is_non_html_url(url: str) -> bool:
     """URL pathがPDF/Office等の添付ファイルを指しているか。"""
     return urlsplit(url).path.lower().endswith(NON_HTML_SUFFIXES)
@@ -91,8 +116,10 @@ def _validate_item_state(item: dict, allowed_sources: frozenset[str]) -> None:
     if item["source"] is not None and item["source"] not in VALID_SOURCES:
         raise ValueError(f"item.sourceが不正: {item['source']}")
     if item["found"]:
-        if not item["value"] or not item["evidence"] or item["source"] is None:
-            raise ValueError("found=trueにはvalue/evidence/sourceが必要")
+        if (not item["value"] or not item["evidence"]
+                or item["evidence_location"] is None or item["source"] is None):
+            raise ValueError(
+                "found=trueにはvalue/evidence/evidence_location/sourceが必要")
         if item["failure_reason"] is not None:
             raise ValueError("found=trueでfailure_reasonが設定されている")
         if item["source"] not in allowed_sources:
@@ -102,8 +129,9 @@ def _validate_item_state(item: dict, allowed_sources: frozenset[str]) -> None:
             raise ValueError("found=falseでsourceが設定されている")
         if item["failure_reason"] is None:
             raise ValueError("found=falseにはfailure_reasonが必要")
-        if item["value"] or item["evidence"]:
-            raise ValueError("found=falseではvalue/evidenceを空にする")
+        if item["value"] or item["evidence"] or item["evidence_location"] is not None:
+            raise ValueError(
+                "found=falseではvalue/evidenceを空、evidence_locationをnullにする")
         if item["failure_reason"] not in VALID_FAILURE_REASONS:
             raise ValueError(f"failure_reasonが不正: {item['failure_reason']}")
 

@@ -60,7 +60,7 @@
 - [#56](https://github.com/shoujiki-panman/aidoku/issues/56) **測定条件を出力へ記録** — PR [#78](https://github.com/shoujiki-panman/aidoku/pull/78) をmainへマージ済み。既存73件は推測せず `legacy_unknown`
 - [#67](https://github.com/shoujiki-panman/aidoku/issues/67) Page Normalizer — 実装・検証完了（PR [#79](https://github.com/shoujiki-panman/aidoku/pull/79)）
 - [#68](https://github.com/shoujiki-panman/aidoku/issues/68) Test Caseをfact_type単位に分ける — 最新mainへの統合・検証完了（PR [#80](https://github.com/shoujiki-panman/aidoku/pull/80)）
-- [#69](https://github.com/shoujiki-panman/aidoku/issues/69) 回答にconfidenceとevidence_locationを足す
+- [#69](https://github.com/shoujiki-panman/aidoku/issues/69) 回答にconfidenceとevidence_locationを足す — ローカル実装・検証完了。既存結果は推測で補完しない
 - [#70](https://github.com/shoujiki-panman/aidoku/issues/70) Evaluatorの4判定を揃える
 - [#71](https://github.com/shoujiki-panman/aidoku/issues/71) Failure Taxonomyを定義する — 8種の定義・新規出力への接続・既存結果の再分類まで本変更で完了
 
