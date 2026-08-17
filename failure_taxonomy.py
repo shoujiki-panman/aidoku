@@ -103,7 +103,7 @@ def annotate_result(result: Mapping[str, object]) -> dict[str, object]:
 
 def empty_distribution() -> dict[str, int]:
     """0件の分類も省略しない分布を作る。"""
-    return {failure_type: 0 for failure_type in FAILURE_TYPES}
+    return dict.fromkeys(FAILURE_TYPES, 0)
 
 
 def count_failure_types(values: Iterable[str]) -> dict[str, int]:

@@ -11,3 +11,7 @@ __pycache__/
 
 # evidence check の既存出力コピーは再生成できるため入れない。集計JSONは追跡する。
 analysis/out/evidence-checked/
+
+# Lint / 重複検出のキャッシュ
+.ruff_cache/
+report/

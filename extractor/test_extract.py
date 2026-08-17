@@ -27,15 +27,21 @@ sys.path.insert(0, str(ROOT))
 from extractor import batch as extraction_batch  # noqa: E402
 from extractor import extract, fact_extract  # noqa: E402
 from extractor.extract import is_non_html, pick_page  # noqa: E402
-from fact_types import EXTRACTOR_KEYS  # noqa: E402
 from extractor.fact_extract import (  # noqa: E402
-    build_input, parse_json_reply, run_test_case, run_test_cases,
+    build_input,
+    parse_json_reply,
+    run_test_case,
+    run_test_cases,
 )
 from extractor.response_contract import normalize_item, requested_urls  # noqa: E402
 from extractor.result_contract import (  # noqa: E402
-    failed_test_cases, legacy_items, successful_result, unreachable_result,
+    failed_test_cases,
+    legacy_items,
+    successful_result,
+    unreachable_result,
 )
-from measurement import MeasurementError, build_discovery_measurement  # noqa: E402
+from fact_types import EXTRACTOR_KEYS  # noqa: E402
+from measurement import build_discovery_measurement  # noqa: E402
 from measurement_cases import TestCase, test_cases_for  # noqa: E402
 
 VALID_PROMPT_VERSION = "sha256:" + "0" * 64

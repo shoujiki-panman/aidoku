@@ -421,7 +421,7 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     srv = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
     print(f"AI読 源内互換エンドポイント listening on http://127.0.0.1:{PORT}", flush=True)
-    print(f"  POST /invoke   POST /requests   GET /status/<id>   GET /request-format", flush=True)
+    print("  POST /invoke   POST /requests   GET /status/<id>   GET /request-format", flush=True)
     srv.serve_forever()
 
 

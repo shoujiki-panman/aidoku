@@ -16,18 +16,26 @@ from htmlutil import parse  # noqa: E402
 from polite_fetch import PoliteFetcher  # noqa: E402
 
 sys.path.insert(0, str(ROOT))
-from measurement import (  # noqa: E402
-    MeasurementError, build_measurement, prompt_version, utc_timestamp,
-)
-from measurement_cases import TestCase, test_cases_for  # noqa: E402
-
 from extractor.batch import build_batch, load_jobs, write_batch  # noqa: E402
 from extractor.fact_extract import (  # noqa: E402
-    MAX_FOLLOW, MAX_LINKS, MAX_TEXT_CHARS, PROMPT,
-    call_claude, parse_json_reply, run_test_cases,
+    MAX_FOLLOW,
+    MAX_LINKS,
+    MAX_TEXT_CHARS,
+    PROMPT,
+    call_claude,
+    parse_json_reply,
+    run_test_cases,
 )
 from extractor.response_contract import is_non_html_url as is_non_html  # noqa: E402
 from extractor.result_contract import successful_result, unreachable_result  # noqa: E402
+from measurement import (  # noqa: E402
+    MeasurementError,
+    build_measurement,
+    prompt_version,
+    utc_timestamp,
+)
+from measurement_cases import TestCase, test_cases_for  # noqa: E402
+
 
 def pick_page(discovery: dict) -> dict | None:
     """探索結果から、抽出対象にするスコア最上位のHTMLページを選ぶ。"""

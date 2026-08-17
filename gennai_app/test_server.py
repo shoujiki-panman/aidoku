@@ -143,8 +143,10 @@ class InvokeTest(ServerTestBase):
     def setUp(self):
         self.p1 = mock.patch.object(server, "score_page", return_value={"dummy": True})
         self.p2 = mock.patch.object(server, "render_markdown", return_value="# 結果\n\n100点")
-        self.p1.start(); self.p2.start()
-        self.addCleanup(self.p1.stop); self.addCleanup(self.p2.stop)
+        self.p1.start()
+        self.p2.start()
+        self.addCleanup(self.p1.stop)
+        self.addCleanup(self.p2.stop)
 
     def test_200でoutputsを返す(self):
         code, body = self.call("POST", "/invoke",

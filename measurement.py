@@ -191,7 +191,7 @@ def build_measurement(discovery: object, *, prompt: str, follow: bool,
 
 def legacy_measurement(model_version: object = None) -> dict:
     """記録開始前の出力を、値を捏造せず明示する。"""
-    measurement = {key: None for key in MEASUREMENT_KEYS}
+    measurement = dict.fromkeys(MEASUREMENT_KEYS)
     measurement["recording_status"] = "legacy_unknown"
     if isinstance(model_version, str) and model_version:
         measurement["model"] = "claude-cli"

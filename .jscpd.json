@@ -1,0 +1,23 @@
+{
+  "//": "重複コードの検出。AIは同じコードを書き直しがちなので、機械で見張る。",
+  "//対象": "見るのはソースだけ。生成データ(web/data)・クロール結果・上流の複製(vendor)・文書は数えない。",
+  "//閾値": "導入時の実測は Python 0.31% / JavaScript 3.53%。5%を超えたら落とす。",
+  "threshold": 5,
+  "minLines": 8,
+  "minTokens": 60,
+  "reporters": ["console"],
+  "absolute": true,
+  "gitignore": true,
+  "pattern": "**/*.{py,mjs,js}",
+  "ignore": [
+    "**/node_modules/**",
+    "**/web/vendor/**",
+    "**/web/data/**",
+    "**/web/mock/**",
+    "**/crawler/out/**",
+    "**/extractor/out/**",
+    "**/analysis/out/**",
+    "**/.git/**",
+    "**/.ruff_cache/**"
+  ]
+}

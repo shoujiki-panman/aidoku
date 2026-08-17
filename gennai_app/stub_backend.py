@@ -20,8 +20,8 @@ import os
 import re
 import time
 import urllib.error
-import uuid
 import urllib.request
+import uuid
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse
@@ -55,8 +55,14 @@ EXAPP = {
     "exAppName": "AI読（アイドク）",
     "endpoint": AIDOKU_URL,
     "placeholder": PLACEHOLDER,
-    "description": "住民がAIに手続きを尋ねたとき、そのページから答えが返るかを実測します。答えられない項目とその理由、直す文面まで出します。",
-    "howToUse": "診断したいページのURLを入力して実行してください。\n\n※ローカル検証用のスタブ・バックエンド経由で動作しています。",
+    "description": (
+        "住民がAIに手続きを尋ねたとき、そのページから答えが返るかを実測します。"
+        "答えられない項目とその理由、直す文面まで出します。"
+    ),
+    "howToUse": (
+        "診断したいページのURLを入力して実行してください。\n\n"
+        "※ローカル検証用のスタブ・バックエンド経由で動作しています。"
+    ),
     "apiKey": AIDOKU_API_KEY,
     "copyable": True,
     "status": "published",
