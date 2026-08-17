@@ -28,6 +28,30 @@ CONTACT = "https://github.com/shoujiki-panman/aidoku"
 USER_AGENT = f"TokyoAgentReadinessBot/0.1 (+{CONTACT})"
 
 MIN_INTERVAL_SEC = 3.0
+
+
+def sha256_of(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def content_fingerprint(html_text: str, url: str) -> str:
+    """変化の判定に使う指紋。生HTMLではなく、**抜き出した本文**から作る。
+
+    生HTMLは中身が同じでも毎回変わることがある。2026-08-17の実測では、
+    渋谷区のページに Google 検索ウィジェットの `targetId="search-input-31748057"`
+    というリクエストごとに変わるIDが入っていて、生HTMLのハッシュは毎回別物になった
+    （差分はその1行だけ・本文は同一）。品川区も同様。
+
+    本文だけを見れば、両区とも別々の取得で完全に一致する。
+    """
+    import htmlutil  # 循環importを避けるため関数内で読む
+
+    try:
+        return sha256_of(htmlutil.parse(html_text, url).text)
+    except Exception:  # noqa: BLE001 — 解析できない場合は生HTMLに退避する
+        return sha256_of(html_text)
+
+
 CACHE_DIR = Path(__file__).parent / "cache"
 
 
@@ -43,7 +67,21 @@ class FetchResult:
     body_path: str | None
     last_modified: str | None = None
     etag: str | None = None
+    content_hash: str | None = None
     error: str | None = None
+
+    def body_hash(self) -> str | None:
+        """本文の指紋。記録が無ければキャッシュのファイルから計算する。
+
+        ETag も Last-Modified も返さないサイト（動的生成ページ）で、変化の有無を
+        見るために使う。古いキャッシュには記録が無いが、本文は残っているので
+        後から計算できる。
+        """
+        if self.content_hash:
+            return self.content_hash
+        if not self.body_path or not Path(self.body_path).exists():
+            return None
+        return content_fingerprint(self.body(), self.url)
 
     def body(self) -> str:
         if not self.body_path:
@@ -66,6 +104,7 @@ class CheckResult:
     reason: str           # なぜその判定になったか。人が読む
     etag: str | None = None
     last_modified: str | None = None
+    content_hash: str | None = None
     error: str | None = None
 
 
@@ -97,27 +136,19 @@ class PoliteFetcher:
     # --- 見張り（安い確認） ---
 
     def check(self, url: str) -> CheckResult:
-        """前回取得したときから変わったかだけを、条件付きGETで確かめる。
+        """前回取得したときから変わったかだけを確かめる。中身は読まない。
 
-        キャッシュに残した ETag / Last-Modified を送る。変わっていなければ
-        サーバーが 304 を返し、**本文は転送されない**。キャッシュも書き換えない。
+        1. キャッシュに ETag / Last-Modified があれば条件付きGET。変わっていなければ
+           サーバーが 304 を返し、**本文は転送されない**
+        2. どちらも無いサイト（CDN配下の動的生成ページ。2026-08-17時点で渋谷区・品川区）は
+           **本文のハッシュ**で比べる。本文は転送されるが、LLMは呼ばない
 
-        `fetch()` と違い、ここでは中身を読まないしLLMも呼ばない。
-        「見る」を安くするための入口。
+        どちらの経路でもキャッシュは書き換えない。測り直しは別の工程。
         """
         prev = self.cached(url)
         if prev is None:
             return CheckResult(url=url, status=0, changed=None, checked_at=_now(),
                                reason="前回の記録が無い（まだ一度も取得していない）")
-        if not (prev.etag or prev.last_modified):
-            # 2026-08-17時点のキャッシュ1,862件は、ヘッダを保存する前に取ったもので
-            # ETag も Last-Modified も持っていない。比べる土台が無いので、ここは
-            # 「変わった」と断定せず判定できないとして返す。土台作りは fetch(refresh=True)。
-            return CheckResult(
-                url=url, status=0, changed=None, checked_at=_now(),
-                reason="前回のETagもLast-Modifiedも記録が無いので比べられない"
-                       "（ヘッダを保存する前に取得したキャッシュ。一度取り直すと次から比べられる）")
-
         if not self.allowed(url):
             return CheckResult(url=url, status=0, changed=None, checked_at=_now(),
                                reason="robots.txt で許可されていない")
@@ -133,10 +164,28 @@ class PoliteFetcher:
         if prev.last_modified:
             headers["If-Modified-Since"] = prev.last_modified
 
+        # ヘッダで比べられないサイトは、本文のハッシュで比べる（動的生成ページ）。
+        # 条件付きGETより重い（本文が転送される）が、LLMは呼ばないので確認は安いまま。
+        by_hash = not (prev.etag or prev.last_modified)
+        prev_hash = prev.body_hash() if by_hash else None
+        if by_hash and prev_hash is None:
+            return CheckResult(
+                url=url, status=0, changed=None, checked_at=_now(),
+                reason="前回のETag・Last-Modified・本文のどれも残っていないので比べられない")
+
         self._wait(urllib.parse.urlparse(url).netloc)
         req = urllib.request.Request(url, headers=headers)
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
+                if by_hash:
+                    now_hash = content_fingerprint(_decode(resp), url)
+                    same = now_hash == prev_hash
+                    return CheckResult(
+                        url=url, status=resp.status, changed=not same, checked_at=_now(),
+                        reason=("本文のハッシュが前回と同じ（このサイトはETagもLast-Modifiedも返さない）"
+                                if same else
+                                "本文のハッシュが前回と違う（このサイトはETagもLast-Modifiedも返さない）"),
+                        content_hash=now_hash)
                 # 200 が返った = 変わった（本文は読まない。測り直しは別の工程）
                 return CheckResult(
                     url=url, status=resp.status, changed=True, checked_at=_now(),
@@ -263,6 +312,7 @@ class PoliteFetcher:
                     body_path=str(body_path),
                     last_modified=resp.headers.get("Last-Modified"),
                     etag=resp.headers.get("ETag"),
+                    content_hash=content_fingerprint(text, url),
                 )
                 body_path.write_text(text, encoding="utf-8")
         except urllib.error.HTTPError as e:
