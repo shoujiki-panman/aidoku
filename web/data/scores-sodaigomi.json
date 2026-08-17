@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T12:56:14+00:00",
+  "generated_at": "2026-08-17T15:10:26+00:00",
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "question": "{muni}で粗大ごみを出したいです。申込に必要なもの・期限・手数料を教えて。オンラインでできますか？",
@@ -236,25 +236,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口来庁は不要。粗大ごみ受付センターへインターネット（24時間受付）または電話（日曜・年末年始を除く午前8時から午後7時）で事前申込み。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "有料。品目により300円〜3,200円（有料粗大ごみ処理券をコンビニ等で購入し貼付）。減免制度あり（生活保護受給者等は免除、火災被災者は9割減額）。"
+          "agent_value": "",
+          "quote_withheld": true
         }
       ],
       "improvements": [
@@ -299,25 +303,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "電話・インターネット・チャットボットの3方法で「粗大ごみ受付センター」に申込む。インターネット申込みは24時間受付。出す場所は自宅前（集合住宅は1階出入口スペース等）。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "有料。有料粗大ごみ処理券（A券200円・B券300円）を品目ごとに組み合わせて購入。例：両袖机3,200円（A券1枚・B券10枚）。品目別の具体的な料金は粗大ごみ受付センターで案内される。"
+          "agent_value": "",
+          "quote_withheld": true
         }
       ],
       "improvements": [
@@ -359,25 +367,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口来庁は本文に記載なし。インターネット申し込み（外部サイト「千代田区 粗大ごみ収集受付」、年末年始12/29正午〜1/3 23:59を除き利用可）、チャットボット申し込み（ページ右下のバナー）、電話申し込み（粗大ごみ受付センター 03-6743-0603、月〜土 8時〜19時、日曜・年末年始休み）の3通りでオンライン完結可能。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "有料（有料粗大ごみ処理券方式）。区内コンビニ等でA券200円・B券300円を購入し組み合わせて貼付。例：布団・イス等300円（B券1枚）、自転車・1人用ソファ600円（B券2枚）、机・シングルベッド900円（B券3枚）、2人掛けソファ等1,600円（A券2枚+B券4枚）、大型家具2,200円（A券2枚+B券6枚）。その他品目は別途PDF一覧表参照。"
+          "agent_value": "",
+          "quote_withheld": true
         }
       ],
       "improvements": [
@@ -421,25 +433,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "電話（粗大ごみ受付センター 03-6747-9353、午前8時〜午後7時、月〜土）またはインターネット（https://ecolife.e-tumo.jp/itabashi_sodai-u/ 、24時間受付）で申込み可能。ファクスでの申込みも可。ただし手数料の減額・免除を受ける場合はインターネット申込みでは減免にならず、電話申込みが必要。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "品目ごとに手数料が異なり、一律の金額ではない（例：ふとん400円、扇風機400円、1人用ソファ900円）。西台粗大ごみセンターへの持ち込みの場合は収集時の半額（100円未満切捨て）。品目ごとの正確な金額は「板橋区粗大ごみ品目一覧」PDFまたはAIチャットボットで確認する必要がある。"
+          "agent_value": "",
+          "quote_withheld": true
         }
       ],
       "improvements": [
@@ -484,25 +500,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口来庁は不要。インターネット（粗大ごみ受付センターサイト、24時間受付・料金検索可）、LINEミニアプリ（24時間受付）、電話（03-6431-9997、月〜土 8:00〜19:00、年末年始を除く）のいずれかで申込可能。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "品目ごとに金額が異なる。処理料金分に応じて有料粗大ごみ処理券（粗大ごみシール、A券200円・B券300円）を組み合わせて購入・貼付する。具体的な品目別金額は粗大ごみ受付センターサイトでの検索、または品目別一覧表（PDF）で確認する。"
+          "agent_value": "",
+          "quote_withheld": true
         }
       ],
       "improvements": [
@@ -546,25 +566,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "みなと粗大ごみ受付センターのインターネット受付（「訪問収集申込」「直接持込申込（日曜日のみ受入）」）で随時申込可能。電話（03-6747-9253、8:00〜19:00、月〜土）でも受付。ただし粗大ごみ処理手数料の減免申請はインターネット不可で電話のみ。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "品目ごとに異なる有料（事前に「有料ごみ処理券」の購入が必要）。例：400円（布団、いすなど）、900円（ソファ1人用、卓上式ミシンなど）、1,300円（机、ベッドマット、たたみなど）、2,300円（ソファ2人以上用のものなど）、3,200円（両そで机など）。"
+          "agent_value": "",
+          "quote_withheld": true
         }
       ],
       "improvements": [
@@ -606,25 +630,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "来庁不要。電話・LINE・インターネットの3方法から選択可能で、インターネット申込（外部サイトgovtech-express）で完結できる。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "有料粗大ごみ処理券（コンビニ等で購入）にA券200円とB券300円があり、品目に応じて必要枚数を貼付する。品目ごとの具体的な手数料（必要枚数）は別紙PDF「粗大ごみ品目手数料一覧」に記載。"
+          "agent_value": "",
+          "quote_withheld": true
         }
       ],
       "improvements": [
@@ -666,25 +694,29 @@
           "field": "必要書類",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "収集を依頼する場合は必要書類は無く、必要な手数料分の「品川区有料粗大ごみ処理券」を購入し各粗大ごみに貼付する（電子決済の場合は必要事項を記入した任意の紙を貼付）。持ち込みの場合はこれに加え、氏名・住所を確認できるもの（運転免許証・保険証など）が必要。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口へは行かず、インターネット（品川区粗大ごみ受付センター、24時間受付）または電話（03-6733-5374、月〜土曜8時〜19時）で申込。オンラインのみで申込は完結できる（処理手数料も電子決済可）。持ち込みを選ぶ場合のみ品川区資源化センターへの来所が必要。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -729,25 +761,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "粗大ごみ受付センターへインターネット(24時間受付・https://ecolife.e-tumo.jp/toshima-sodai-u/)または電話(03-6633-2211、月〜土 午前8時〜午後7時)で申込み。ただし手数料の減額・免除を受ける場合はインターネット申込不可で、電話申込のみ。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "品目ごとに設定されており、有料粗大ごみ処理券（A券200円・B券300円）を金額に応じて組み合わせて購入・貼付する。品目別の具体的な金額は別リンクの品目別手数料一覧（PDF）に記載。"
+          "agent_value": "",
+          "quote_withheld": true
         }
       ],
       "improvements": [
@@ -792,25 +828,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "インターネット申込み可（ページ内のインターネット申込アイコンから）。ただしインターネット申込みに無い品目は粗大ごみ受付センター（電話03-5715-2255）へ電話で申込み。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "有料。処理券A（200円）と処理券B（300円）の2種類があり、粗大ごみの寸法等により購入する枚数・種類が異なる。"
+          "agent_value": "",
+          "quote_withheld": true
         }
       ],
       "improvements": [
@@ -857,25 +897,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "インターネットまたは電話で事前申し込み（収集・持ち込みとも）"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -925,25 +969,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "電話（目黒区粗大ごみ受付センター 03-5715-0053、月〜土 午前8時〜午後7時、祝日も受付）またはインターネット（目黒区粗大ごみ受付センターインターネット受付、24時間受付・メンテナンス時除く）で申込み可能。ただしインターネットは申込める品目に制限あり。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -992,25 +1040,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "粗大ごみ受付センターへの事前申込みが必要。インターネット申込み（24時間受付、クレジットカードまたはPayPayでのオンライン決済可）、または電話申込み（03-5703-5399）で完結できる。ただし持込みの場合はオンライン決済不可。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1057,25 +1109,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "大田区粗大ごみ受付センターへ電話（受付時間8時〜19時）またはインターネット（24時間受付）で申込み。インターネットは1回10個までで収集のみ、持ち込み希望は電話のみ。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1122,25 +1178,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "粗大ごみ受付センターへ電話（03-5304-8080、月〜土曜日 午前8時〜午後7時）、またはウェブサイト（https://www.shinjuku-sodai.com、24時間受付・メンテナンス等除く）で申込み"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1189,25 +1249,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "区役所窓口へ行く必要はなく、粗大ごみ受付センターへインターネット（24時間受付）またはチャットボット（24時間受付）で申し込み可能。電話・ファクスでも申し込み可。自己搬入を希望する場合のみ日曜日に指定場所へ持ち込み可（電話・ファクスで要事前申込）。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1254,25 +1318,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "窓口来�ち不要。インターネット申込み（24時間受付、オンライン決済で手数料支払いまで完結）または電話申込み（粗大ごみ受付センター、月〜土曜8時〜19時、祝日も可）の2方式。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1319,25 +1387,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めた",
           "points": 20,
-          "agent_value": "粗大ごみ受付センターへ電話（03-6747-5111、月〜土曜8:00-19:00）またはインターネット（https://ecolife.e-tumo.jp/taitosodai-u/、24時間受付）で申込。オンラインで申込は完結するが、手数料分の有料粗大ごみ処理券は別途購入して現物に貼付する必要がある。"
+          "agent_value": "",
+          "quote_withheld": true
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1386,25 +1458,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1461,25 +1537,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1536,25 +1616,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1611,25 +1695,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [
@@ -1686,25 +1774,29 @@
           "field": "必要書類",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "窓口/オンライン可否",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "期限",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         },
         {
           "field": "手数料",
           "verdict": "読めない",
           "points": 0,
-          "agent_value": ""
+          "agent_value": "",
+          "quote_withheld": false
         }
       ],
       "improvements": [

@@ -152,3 +152,6 @@
   .big b { font-size: calc(34 / 16 * 1rem); }
   .cf__row { flex-direction: column; align-items: flex-start; gap: .2em; }
 }
+
+/* 実文を伏せているときの表示（Issue #100） */
+.withheld { color: #5c5c66; }

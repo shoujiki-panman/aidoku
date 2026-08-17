@@ -40,6 +40,17 @@ CLARITY_POINTS = {"明記": 20, "曖昧": 10, "記載なし": 0}
 # 画面に出す「AIが読み取った実際の文」の上限。既存の scores.json もこの長さで切れている。
 MAX_VALUE_CHARS = 200
 
+# 区のサイトの実文（agent_value）を公開データに載せるか。
+#
+# **既定は False（載せない）。** 2026-08-17 の事務局案内「データの利用許諾についてのお願い」で、
+# 都庁以外の自治体のデータは参加者自身で利用規約の確認・許諾申請が必要とされ、また「引用」は
+# 「自分の作品が主役で、引用部分はあくまで補足」の関係が要ると示された。
+# AI読は124か所・10,708文字を載せており、各区の利用規約を確認できていない（Issue #100）。
+#
+# 事務局から「引用に当たる」と確認が取れたら True に戻す。**この1行だけで戻る。**
+# 抽出結果（extractor/out/）には実文が残っているので、失われるものは無い。
+PUBLISH_QUOTES = False
+
 # 「ここを直すと、AIの答えが変わる」に出す処方箋は fact_types.json の fix_hint。
 # （import は上でまとめて済ませてある）
 
@@ -87,8 +98,12 @@ SOURCES = [
 ]
 
 
-def build_fields(items: dict) -> tuple[list[dict], dict, list[dict]]:
-    """4項目の内訳・配点・処方箋を作る。"""
+def build_fields(items: dict, publish_quotes: bool = PUBLISH_QUOTES) -> tuple[list[dict], dict, list[dict]]:
+    """4項目の内訳・配点・処方箋を作る。
+
+    `publish_quotes` が False のとき、`agent_value`（区のサイトの実文）を出さない。
+    **点数・判定・改善案は一切変わらない。**作品の主張（何項目読めたか）も変わらない。
+    """
     fields, breakdown, fixes = [], {}, []
     for src_key, label in FIELD_KEYS:
         item = items.get(src_key) or {}
@@ -97,7 +112,8 @@ def build_fields(items: dict) -> tuple[list[dict], dict, list[dict]]:
             "field": label,
             "verdict": "読めた" if found else "読めない",
             "points": ITEM_POINTS if found else 0,
-            "agent_value": (item.get("value") or "")[:MAX_VALUE_CHARS],
+            "agent_value": (item.get("value") or "")[:MAX_VALUE_CHARS] if publish_quotes else "",
+            "quote_withheld": bool(found and not publish_quotes),
         })
         breakdown[label] = ITEM_POINTS if found else 0
         if not found:

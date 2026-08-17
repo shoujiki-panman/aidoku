@@ -87,9 +87,57 @@ class ScoringTest(unittest.TestCase):
         self.assertEqual([i["gain"] for i in e["improvements"]], [20, 20, 10])
 
     def test_agent_value_is_truncated(self):
+        """実文を載せる設定のときは、200文字で切る。"""
         items = dict(ALL_FOUND, 必要書類=item(True, "あ" * 500))
-        e = build_entry(extract(items))
-        self.assertEqual(len(e["fields"][0]["agent_value"]), MAX_VALUE_CHARS)
+        fields, _, _ = export_dashboard.build_fields(items, publish_quotes=True)
+        self.assertEqual(len(fields[0]["agent_value"]), MAX_VALUE_CHARS)
+
+
+class PublishQuotesTest(unittest.TestCase):
+    """区のサイトの実文を公開データに載せるかの切り替え（Issue #100）。
+
+    既定は載せない。**点数・判定・改善案は切り替えても一切変わらない。**
+    """
+
+    def test_既定では実文を載せない(self):
+        e = build_entry(extract(ALL_FOUND))
+        self.assertEqual([f["agent_value"] for f in e["fields"]], [""] * 4)
+
+    def test_読めた項目には伏せた印を付ける(self):
+        e = build_entry(extract(ALL_FOUND))
+        self.assertTrue(all(f["quote_withheld"] for f in e["fields"]))
+
+    def test_読めない項目には伏せた印を付けない(self):
+        """元々空なので、伏せたわけではない。"""
+        none_found = {k: item(False) for k in
+                      ("必要書類", "窓口オンライン可否", "期限", "手数料")}
+        e = build_entry(extract(none_found))
+        self.assertFalse(any(f["quote_withheld"] for f in e["fields"]))
+
+    def test_切り替えても点数と判定は変わらない(self):
+        on, _, fixes_on = export_dashboard.build_fields(ALL_FOUND, publish_quotes=True)
+        off, _, fixes_off = export_dashboard.build_fields(ALL_FOUND, publish_quotes=False)
+        self.assertEqual([f["verdict"] for f in on], [f["verdict"] for f in off])
+        self.assertEqual([f["points"] for f in on], [f["points"] for f in off])
+        self.assertEqual(fixes_on, fixes_off)
+
+    def test_載せる設定なら実文が入る(self):
+        fields, _, _ = export_dashboard.build_fields(ALL_FOUND, publish_quotes=True)
+        self.assertTrue(all(f["agent_value"] for f in fields))
+        self.assertFalse(any(f["quote_withheld"] for f in fields))
+
+    def test_公開JSONに区の実文が1文字も残っていない(self):
+        """実データでの確認。ここが本番。"""
+        import json
+        from pathlib import Path
+        root = Path(__file__).parent.parent / "web" / "data"
+        total = 0
+        for path in root.glob("scores-*.json"):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            for muni in data["municipalities"]:
+                for field in muni["fields"]:
+                    total += len(field.get("agent_value") or "")
+        self.assertEqual(total, 0, f"公開JSONに実文が {total}文字 残っている")
 
     def test_field_label_is_renamed_for_display(self):
         e = build_entry(extract(ALL_FOUND))
