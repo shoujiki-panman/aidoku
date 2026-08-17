@@ -51,6 +51,24 @@ class FetchResult:
         return Path(self.body_path).read_text(encoding="utf-8", errors="replace")
 
 
+@dataclass
+class CheckResult:
+    """「前回から変わったか」だけを見た結果。中身は読まない。
+
+    測り直し（重い・LLMを呼ぶ）と、見張り（安い・HTTPだけ）を分けるための型。
+    Mulmo Control が `npm view` でバージョンだけ見て中身を落とさないのと同じ考え方。
+    """
+
+    url: str
+    status: int           # 304=変わっていない / 200=変わった / 0=確かめられない
+    changed: bool | None  # None = 判定できなかった（前回の記録が無い・エラー等）
+    checked_at: str
+    reason: str           # なぜその判定になったか。人が読む
+    etag: str | None = None
+    last_modified: str | None = None
+    error: str | None = None
+
+
 class PoliteFetcher:
     def __init__(self, cache_dir: Path = CACHE_DIR, min_interval: float = MIN_INTERVAL_SEC):
         self.cache_dir = Path(cache_dir)
@@ -75,6 +93,68 @@ class PoliteFetcher:
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
         meta["from_cache"] = True
         return FetchResult(**meta)
+
+    # --- 見張り（安い確認） ---
+
+    def check(self, url: str) -> CheckResult:
+        """前回取得したときから変わったかだけを、条件付きGETで確かめる。
+
+        キャッシュに残した ETag / Last-Modified を送る。変わっていなければ
+        サーバーが 304 を返し、**本文は転送されない**。キャッシュも書き換えない。
+
+        `fetch()` と違い、ここでは中身を読まないしLLMも呼ばない。
+        「見る」を安くするための入口。
+        """
+        prev = self.cached(url)
+        if prev is None:
+            return CheckResult(url=url, status=0, changed=None, checked_at=_now(),
+                               reason="前回の記録が無い（まだ一度も取得していない）")
+        if not (prev.etag or prev.last_modified):
+            # 2026-08-17時点のキャッシュ1,862件は、ヘッダを保存する前に取ったもので
+            # ETag も Last-Modified も持っていない。比べる土台が無いので、ここは
+            # 「変わった」と断定せず判定できないとして返す。土台作りは fetch(refresh=True)。
+            return CheckResult(
+                url=url, status=0, changed=None, checked_at=_now(),
+                reason="前回のETagもLast-Modifiedも記録が無いので比べられない"
+                       "（ヘッダを保存する前に取得したキャッシュ。一度取り直すと次から比べられる）")
+
+        if not self.allowed(url):
+            return CheckResult(url=url, status=0, changed=None, checked_at=_now(),
+                               reason="robots.txt で許可されていない")
+
+        headers = {
+            "User-Agent": USER_AGENT,
+            "Accept": "text/html,application/xhtml+xml,*/*;q=0.5",
+            "Accept-Language": "ja",
+        }
+        # 両方あるときは両方送る。サーバーがどちらで判断してもよいようにする
+        if prev.etag:
+            headers["If-None-Match"] = prev.etag
+        if prev.last_modified:
+            headers["If-Modified-Since"] = prev.last_modified
+
+        self._wait(urllib.parse.urlparse(url).netloc)
+        req = urllib.request.Request(url, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                # 200 が返った = 変わった（本文は読まない。測り直しは別の工程）
+                return CheckResult(
+                    url=url, status=resp.status, changed=True, checked_at=_now(),
+                    reason=f"HTTP {resp.status}（前回から変わっている）",
+                    etag=resp.headers.get("ETag"),
+                    last_modified=resp.headers.get("Last-Modified"))
+        except urllib.error.HTTPError as e:
+            if e.code == 304:
+                return CheckResult(url=url, status=304, changed=False, checked_at=_now(),
+                                   reason="304 Not Modified（前回から変わっていない）",
+                                   etag=prev.etag, last_modified=prev.last_modified)
+            return CheckResult(url=url, status=e.code, changed=None, checked_at=_now(),
+                               reason=f"HTTP {e.code} が返り、変化を判定できない",
+                               error=f"HTTP {e.code}")
+        except Exception as e:  # noqa: BLE001 — 落とさず理由を残す
+            return CheckResult(url=url, status=0, changed=None, checked_at=_now(),
+                               reason="通信に失敗して判定できない",
+                               error=f"{type(e).__name__}: {e}")
 
     # --- レート制御 ---
 
