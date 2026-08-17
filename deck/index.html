@@ -67,7 +67,7 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
   <div class="lead">東京23区の転入届ページを、AIに読ませて実測した（2026-07-22）。</div>
   <div class="cols">
     <div class="card ok"><div class="n">4項目すべて読めた区</div><div class="v">港区だけ</div></div>
-    <div class="card ng"><div class="n">ほとんど読めない区</div><div class="v">5区</div></div>
+    <div class="card ng"><div class="n">ほとんど読めない区</div><div class="v">4区</div></div>
     <div class="card ng"><div class="n">手数料が見つからない</div><div class="v">22区</div></div>
   </div>
   <div class="lead" style="margin-top:40px;">
@@ -149,7 +149,7 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
 </section>
 
 <script>
-const D=[["港区",100],["千代田",80],["文京",80],["杉並",80],["板橋",80],["江戸川",80],["渋谷",80],["練馬",80],["豊島",80],["足立",80],["中野",70],["北",60],["品川",60],["大田",60],["江東",60],["目黒",60],["葛飾",60],["新宿",40],["世田谷",0],["中央",0],["台東",0],["墨田",0],["荒川",0]];
+const D=[["港区",100],["千代田",80],["文京",80],["杉並",80],["板橋",80],["江戸川",80],["渋谷",80],["練馬",80],["豊島",80],["足立",80],["台東",80],["中野",70],["北",60],["品川",60],["大田",60],["江東",60],["目黒",60],["葛飾",60],["新宿",40],["世田谷",0],["中央",0],["墨田",0],["荒川",0]];
 document.getElementById('rank').innerHTML = D.map(([n,s])=>{
   const h=Math.max(s*2.6, 4);
   const c = s>=100?'#0f7a3d': s>=60?'#0056b3': s>0?'#c98a00':'#b3261e';
