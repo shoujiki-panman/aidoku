@@ -119,6 +119,11 @@ Evidenceが正しいと一般化できるサンプルではない。**
 PDF等へのredirectは本文を読まず、`llm_called: false`の観測attemptとして残す。
 既存の`items`は`test_cases[].result`から機械的に復元し、採点・公開画面との互換性を保つ。
 
+AIが返す結果には、引用箇所を示す`evidence_location`と、AI自身の申告値である
+`confidence`（0〜1）を残す。`found=true`では引用箇所を必須とし、`found=false`では
+`evidence_location`を`null`にする。`confidence`は答えの正しさを保証する値ではなく、
+正解率や成功率の計算には使わない。AIを呼んでいない観測結果では両方を`null`にする。
+
 ### ③ 書き出し — `analysis/export_dashboard.py`
 
 `extractor/out/` の結果を、画面が読む `web/data/scores-<手続き>.json` にする。

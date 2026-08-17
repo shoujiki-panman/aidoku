@@ -20,6 +20,7 @@ def reply(value: str) -> str:
     return json.dumps({
         "item": {
             "found": True, "value": value, "evidence": "ページ本文からの引用です",
+            "evidence_location": "h1: 転入届", "confidence": 0.8,
             "source": "html", "failure_reason": None,
         },
         "follow_urls": [], "page_notes": "",
@@ -83,6 +84,9 @@ class ExperimentContractTest(unittest.TestCase):
         self.assertEqual(result["test_cases"][0]["result"]["failure_reason"], "抽出エラー")
         self.assertEqual(
             result["test_cases"][0]["result"]["failure_type"], "not_retrieved")
+        self.assertIsNone(result["test_cases"][0]["result"]["confidence"])
+        self.assertIsNone(
+            result["test_cases"][0]["result"]["evidence_location"])
         self.assertEqual(len(result["test_cases"][0]["attempts"]), 1)
         self.assertIn("tennyu/documents", result["test_cases"][0]["attempts"][0]["error"])
         for record in result["test_cases"]:

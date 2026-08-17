@@ -20,6 +20,7 @@ def failed_test_cases(cases: list[TestCase], reason: str) -> list[dict]:
         **asdict(test_case),
         "result": annotate_result({
             "found": False, "value": "", "evidence": "", "source": None,
+            "evidence_location": None, "confidence": None,
             "failure_reason": reason,
             "evidence_check": {
                 "verdict": "not_applicable", "run": 0,

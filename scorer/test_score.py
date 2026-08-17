@@ -100,6 +100,16 @@ class JudgeRuleTest(unittest.TestCase):
         self.assertEqual(v["verdict"], "未採点")
         self.assertEqual(v["points"], 0.0)
 
+    def test_confidenceは採点に使わない(self):
+        base = item(found=False)
+        low = judge(
+            golden("手数料", expected_found=False),
+            {**base, "confidence": 0.0}, "港区", "転入届", "m")
+        high = judge(
+            golden("手数料", expected_found=False),
+            {**base, "confidence": 1.0}, "港区", "転入届", "m")
+        self.assertEqual(low, high)
+
 
 class ScoreOneTest(unittest.TestCase):
     """合計点の作り方。配点は 情報到達20＋抽出正確性40＋機械可読性20＋オンライン明示20。
