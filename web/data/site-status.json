@@ -1,14 +1,14 @@
 {
   "_about": "採点済みページが前回取得時から変わったかを、条件付きGETだけで確かめた結果。本文は読んでおらず、点数の測り直しはしていない。changed=true は『測り直しが必要』という意味であって、悪くなったという意味ではない。",
-  "checked_at": "2026-08-17T23:13:17+00:00",
+  "checked_at": "2026-08-18T23:13:16+00:00",
   "summary": {
     "total": 68,
-    "changed": 5,
+    "changed": 18,
     "gone": 0,
-    "edited": 5,
-    "unchanged": 18,
-    "unknown": 45,
-    "headline": "68ページを確認。変わっていたのは 5件（変化なし 18件／判定できず 45件）"
+    "edited": 18,
+    "unchanged": 50,
+    "unknown": 0,
+    "headline": "68ページを確認。変わっていたのは 18件（変化なし 50件／判定できず 0件）"
   },
   "items": [
     {
@@ -21,7 +21,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:11:35+0000",
+      "checked_at": "2026-08-18T23:11:07+0000",
       "error": null
     },
     {
@@ -34,7 +34,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:11:39+0000",
+      "checked_at": "2026-08-18T23:11:11+0000",
       "error": null
     },
     {
@@ -47,7 +47,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:11:43+0000",
+      "checked_at": "2026-08-18T23:11:16+0000",
       "error": null
     },
     {
@@ -60,7 +60,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:11:46+0000",
+      "checked_at": "2026-08-18T23:11:20+0000",
       "error": null
     },
     {
@@ -73,7 +73,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:11:50+0000",
+      "checked_at": "2026-08-18T23:11:24+0000",
       "error": null
     },
     {
@@ -86,7 +86,7 @@
       "changed": true,
       "gone": false,
       "reason": "HTTP 200（前回から変わっている）",
-      "checked_at": "2026-08-17T23:11:53+0000",
+      "checked_at": "2026-08-18T23:11:27+0000",
       "error": null
     },
     {
@@ -99,7 +99,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:11:56+0000",
+      "checked_at": "2026-08-18T23:11:31+0000",
       "error": null
     },
     {
@@ -112,7 +112,7 @@
       "changed": false,
       "gone": false,
       "reason": "本文のハッシュが前回と同じ（このサイトはETagもLast-Modifiedも返さない）",
-      "checked_at": "2026-08-17T23:12:00+0000",
+      "checked_at": "2026-08-18T23:11:34+0000",
       "error": null
     },
     {
@@ -125,7 +125,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:03+0000",
+      "checked_at": "2026-08-18T23:11:40+0000",
       "error": null
     },
     {
@@ -138,7 +138,7 @@
       "changed": true,
       "gone": false,
       "reason": "HTTP 200（前回から変わっている）",
-      "checked_at": "2026-08-17T23:12:07+0000",
+      "checked_at": "2026-08-18T23:11:44+0000",
       "error": null
     },
     {
@@ -151,7 +151,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:10+0000",
+      "checked_at": "2026-08-18T23:11:47+0000",
       "error": null
     },
     {
@@ -164,7 +164,7 @@
       "changed": true,
       "gone": false,
       "reason": "HTTP 200（前回から変わっている）",
-      "checked_at": "2026-08-17T23:12:14+0000",
+      "checked_at": "2026-08-18T23:11:51+0000",
       "error": null
     },
     {
@@ -177,7 +177,7 @@
       "changed": true,
       "gone": false,
       "reason": "HTTP 200（前回から変わっている）",
-      "checked_at": "2026-08-17T23:12:17+0000",
+      "checked_at": "2026-08-18T23:11:54+0000",
       "error": null
     },
     {
@@ -190,7 +190,7 @@
       "changed": true,
       "gone": false,
       "reason": "HTTP 200（前回から変わっている）",
-      "checked_at": "2026-08-17T23:12:20+0000",
+      "checked_at": "2026-08-18T23:11:57+0000",
       "error": null
     },
     {
@@ -199,11 +199,11 @@
       "procedure_id": "tennyu",
       "procedure": "転入届",
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html",
-      "status": 304,
-      "changed": false,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:23+0000",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:12:01+0000",
       "error": null
     },
     {
@@ -216,7 +216,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:27+0000",
+      "checked_at": "2026-08-18T23:12:05+0000",
       "error": null
     },
     {
@@ -229,7 +229,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:31+0000",
+      "checked_at": "2026-08-18T23:12:09+0000",
       "error": null
     },
     {
@@ -242,7 +242,7 @@
       "changed": false,
       "gone": false,
       "reason": "本文のハッシュが前回と同じ（このサイトはETagもLast-Modifiedも返さない）",
-      "checked_at": "2026-08-17T23:12:35+0000",
+      "checked_at": "2026-08-18T23:12:13+0000",
       "error": null
     },
     {
@@ -255,7 +255,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:38+0000",
+      "checked_at": "2026-08-18T23:12:17+0000",
       "error": null
     },
     {
@@ -268,7 +268,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:42+0000",
+      "checked_at": "2026-08-18T23:12:21+0000",
       "error": null
     },
     {
@@ -281,7 +281,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:45+0000",
+      "checked_at": "2026-08-18T23:12:24+0000",
       "error": null
     },
     {
@@ -294,7 +294,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:49+0000",
+      "checked_at": "2026-08-18T23:12:28+0000",
       "error": null
     },
     {
@@ -307,7 +307,7 @@
       "changed": false,
       "gone": false,
       "reason": "304 Not Modified（前回から変わっていない）",
-      "checked_at": "2026-08-17T23:12:53+0000",
+      "checked_at": "2026-08-18T23:12:32+0000",
       "error": null
     },
     {
@@ -316,11 +316,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:53+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:33+0000",
       "error": null
     },
     {
@@ -329,11 +329,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:54+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:34+0000",
       "error": null
     },
     {
@@ -342,11 +342,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:54+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:12:35+0000",
       "error": null
     },
     {
@@ -355,11 +355,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:55+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:35+0000",
       "error": null
     },
     {
@@ -368,11 +368,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:55+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:36+0000",
       "error": null
     },
     {
@@ -381,11 +381,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:55+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:12:36+0000",
       "error": null
     },
     {
@@ -394,11 +394,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jidouteate20120401.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:56+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:12:38+0000",
       "error": null
     },
     {
@@ -407,11 +407,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:57+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:39+0000",
       "error": null
     },
     {
@@ -420,11 +420,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_t.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:58+00:00",
+      "reason": "本文のハッシュが前回と同じ（このサイトはETagもLast-Modifiedも返さない）",
+      "checked_at": "2026-08-18T23:12:40+0000",
       "error": null
     },
     {
@@ -433,11 +433,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000027168.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:58+00:00",
+      "reason": "本文のハッシュが前回と同じ（このサイトはETagもLast-Modifiedも返さない）",
+      "checked_at": "2026-08-18T23:12:41+0000",
       "error": null
     },
     {
@@ -446,11 +446,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.suginami.tokyo.jp/s053/1142.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:12:59+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:45+0000",
       "error": null
     },
     {
@@ -459,11 +459,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:00+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:46+0000",
       "error": null
     },
     {
@@ -472,11 +472,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/teate/jidouteate/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:00+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:48+0000",
       "error": null
     },
     {
@@ -485,11 +485,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:01+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:49+0000",
       "error": null
     },
     {
@@ -498,11 +498,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:01+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:50+0000",
       "error": null
     },
     {
@@ -511,11 +511,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.katsushika.lg.jp/kosodate/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:02+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:12:50+0000",
       "error": null
     },
     {
@@ -524,11 +524,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:02+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:12:50+0000",
       "error": null
     },
     {
@@ -537,11 +537,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:02+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:51+0000",
       "error": null
     },
     {
@@ -550,11 +550,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:03+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:52+0000",
       "error": null
     },
     {
@@ -563,11 +563,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:04+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:53+0000",
       "error": null
     },
     {
@@ -576,11 +576,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kteate/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:04+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:12:54+0000",
       "error": null
     },
     {
@@ -589,11 +589,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/azukari.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:05+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:56+0000",
       "error": null
     },
     {
@@ -602,11 +602,11 @@
       "procedure_id": "jidouteate",
       "procedure": "児童手当の申請",
       "url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/kodomokateicenter.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:05+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:57+0000",
       "error": null
     },
     {
@@ -615,11 +615,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:06+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:58+0000",
       "error": null
     },
     {
@@ -628,11 +628,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:06+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:12:59+0000",
       "error": null
     },
     {
@@ -641,11 +641,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:07+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:00+0000",
       "error": null
     },
     {
@@ -654,11 +654,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:07+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:13:00+0000",
       "error": null
     },
     {
@@ -667,11 +667,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:07+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:02+0000",
       "error": null
     },
     {
@@ -680,11 +680,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:08+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:02+0000",
       "error": null
     },
     {
@@ -693,11 +693,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:08+00:00",
+      "reason": "本文のハッシュが前回と同じ（このサイトはETagもLast-Modifiedも返さない）",
+      "checked_at": "2026-08-18T23:13:02+0000",
       "error": null
     },
     {
@@ -706,11 +706,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:09+00:00",
+      "reason": "本文のハッシュが前回と違う（このサイトはETagもLast-Modifiedも返さない）",
+      "checked_at": "2026-08-18T23:13:04+0000",
       "error": null
     },
     {
@@ -719,11 +719,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:10+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:04+0000",
       "error": null
     },
     {
@@ -732,11 +732,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:10+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:13:05+0000",
       "error": null
     },
     {
@@ -745,11 +745,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:11+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:13:06+0000",
       "error": null
     },
     {
@@ -758,11 +758,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:11+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:07+0000",
       "error": null
     },
     {
@@ -771,11 +771,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:12+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:09+0000",
       "error": null
     },
     {
@@ -784,11 +784,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:13+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:10+0000",
       "error": null
     },
     {
@@ -797,11 +797,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:13+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:10+0000",
       "error": null
     },
     {
@@ -810,11 +810,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:14+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:11+0000",
       "error": null
     },
     {
@@ -823,11 +823,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:15+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:13:12+0000",
       "error": null
     },
     {
@@ -836,11 +836,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:15+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:13+0000",
       "error": null
     },
     {
@@ -849,11 +849,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:16+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:14+0000",
       "error": null
     },
     {
@@ -862,11 +862,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:16+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:15+0000",
       "error": null
     },
     {
@@ -875,11 +875,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
-      "status": 0,
-      "changed": null,
+      "status": 200,
+      "changed": true,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:16+00:00",
+      "reason": "HTTP 200（前回から変わっている）",
+      "checked_at": "2026-08-18T23:13:15+0000",
       "error": null
     },
     {
@@ -888,11 +888,11 @@
       "procedure_id": "sodaigomi",
       "procedure": "粗大ごみ収集の申込",
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
-      "status": 0,
-      "changed": null,
+      "status": 304,
+      "changed": false,
       "gone": false,
-      "reason": "今回は土台作り（ヘッダを記録した）。次回から変化を判定できる",
-      "checked_at": "2026-08-17T23:13:17+00:00",
+      "reason": "304 Not Modified（前回から変わっていない）",
+      "checked_at": "2026-08-18T23:13:16+0000",
       "error": null
     }
   ]
