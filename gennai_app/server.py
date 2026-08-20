@@ -21,13 +21,18 @@ import base64
 import json
 import os
 import re
+import secrets
 import threading
 import time
 import uuid
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-API_KEY = os.environ.get("AIDOKU_API_KEY", "dev-local-key")
+# 既定の鍵を持たない。決め打ちの "dev-local-key" だと、環境変数を設定し忘れた
+# まま外に出したとき、鍵を知っている全員が /invoke を叩ける（= 任意URLの取得を
+# こちらに実行させられる）。未設定なら起動ごとにランダムな鍵を作り、標準出力に出す。
+API_KEY = os.environ.get("AIDOKU_API_KEY") or secrets.token_urlsafe(24)
+API_KEY_GENERATED = not os.environ.get("AIDOKU_API_KEY")
 import aidoku_engine as engine
 
 PORT = int(os.environ.get("AIDOKU_PORT", "8791"))
@@ -285,7 +290,9 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
     def _auth_ok(self):
-        if self.headers.get("x-api-key") == API_KEY:
+        # 定数時間で比べる。鍵の当てっこを1文字ずつ絞り込ませない
+        given = self.headers.get("x-api-key") or ""
+        if secrets.compare_digest(given, API_KEY):
             return True
         self._send(401, {"status": "ERROR", "error": {
             "message": "Unauthorized.",
@@ -422,6 +429,9 @@ def main():
     srv = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
     print(f"AI読 源内互換エンドポイント listening on http://127.0.0.1:{PORT}", flush=True)
     print("  POST /invoke   POST /requests   GET /status/<id>   GET /request-format", flush=True)
+    if API_KEY_GENERATED:
+        print(f"  x-api-key: {API_KEY}", flush=True)
+        print("  （AIDOKU_API_KEY が未設定なので、この起動だけの鍵を作りました）", flush=True)
     srv.serve_forever()
 
 

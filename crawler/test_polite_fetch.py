@@ -31,6 +31,12 @@ import polite_fetch  # noqa: E402
 from polite_fetch import CONTACT, USER_AGENT, PoliteFetcher  # noqa: E402
 
 
+# テストはネットワークに出ない。SSRFガードの名前解決だけ偽物を渡す
+# （example.lg.jp は実在しないので、素で通すとガードに弾かれる）。
+def _fake_resolve(host):
+    return ["93.184.216.34"]
+
+
 def _resp(body: str, *, status: int = 200, content_type: str = "text/html; charset=utf-8",
           extra_headers: dict[str, str] | None = None):
     """urlopen が返すコンテキストマネージャの最小の偽物。"""
@@ -63,7 +69,7 @@ class RobotsTest(unittest.TestCase):
     def setUp(self):
         self.tmp = TemporaryDirectory()
         # 間隔0にして待ち時間を消す。待ちの検証は IntervalTest で別に行う
-        self.f = PoliteFetcher(cache_dir=Path(self.tmp.name), min_interval=0)
+        self.f = PoliteFetcher(cache_dir=Path(self.tmp.name), min_interval=0, resolve=_fake_resolve)
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -128,7 +134,7 @@ class IntervalTest(unittest.TestCase):
         self.assertEqual(polite_fetch.MIN_INTERVAL_SEC, 3.0)
 
     def test_同一ドメインへの2回目は3秒待つ(self):
-        f = PoliteFetcher(cache_dir=Path(self.tmp.name))
+        f = PoliteFetcher(cache_dir=Path(self.tmp.name), resolve=_fake_resolve)
         robots = "User-agent: *\nDisallow:\n"
         slept: list[float] = []
         with mock.patch.object(urllib.request, "urlopen", return_value=_resp(robots)), \
@@ -139,13 +145,13 @@ class IntervalTest(unittest.TestCase):
         self.assertGreater(sum(slept), 0)
 
     def test_crawl_delayが長ければそちらに従う(self):
-        f = PoliteFetcher(cache_dir=Path(self.tmp.name))
+        f = PoliteFetcher(cache_dir=Path(self.tmp.name), resolve=_fake_resolve)
         robots = "User-agent: *\nCrawl-delay: 10\nDisallow:\n"
         with mock.patch.object(urllib.request, "urlopen", return_value=_resp(robots)):
             self.assertEqual(f.crawl_delay("https://example.lg.jp/a.html"), 10.0)
 
     def test_crawl_delayが短くても3秒は下回らない(self):
-        f = PoliteFetcher(cache_dir=Path(self.tmp.name))
+        f = PoliteFetcher(cache_dir=Path(self.tmp.name), resolve=_fake_resolve)
         robots = "User-agent: *\nCrawl-delay: 1\nDisallow:\n"
         with mock.patch.object(urllib.request, "urlopen", return_value=_resp(robots)):
             self.assertEqual(f.crawl_delay("https://example.lg.jp/a.html"), 3.0)
@@ -156,7 +162,7 @@ class CacheTest(unittest.TestCase):
 
     def setUp(self):
         self.tmp = TemporaryDirectory()
-        self.f = PoliteFetcher(cache_dir=Path(self.tmp.name), min_interval=0)
+        self.f = PoliteFetcher(cache_dir=Path(self.tmp.name), min_interval=0, resolve=_fake_resolve)
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -247,3 +253,51 @@ class UserAgentTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class SsrfGuard(unittest.TestCase):
+    """取得層がSSRFガードを通っているか。ここが抜けると url_guard があっても意味が無い。"""
+
+    def setUp(self):
+        self.tmp = TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+
+    def _fetcher(self, addr):
+        return PoliteFetcher(cache_dir=Path(self.tmp.name), min_interval=0,
+                             resolve=lambda host: [addr])
+
+    def test_内部に解決されるURLはfetchしない(self):
+        f = self._fetcher("169.254.169.254")
+        with mock.patch.object(urllib.request, "urlopen") as m:
+            r = f.fetch("https://evil.example/latest/meta-data/")
+        self.assertEqual(m.call_count, 0, "ガードを抜けて実際に取りに行っている")
+        self.assertIn("url guard", r.error)
+        self.assertFalse(r.blocked_by_robots, "robotsのせいにしない（別の理由）")
+
+    def test_内部に解決されるURLはcheckしない(self):
+        f = self._fetcher("127.0.0.1")
+        with mock.patch.object(urllib.request, "urlopen") as m:
+            r = f.check("https://evil.example/a.html")
+        self.assertEqual(m.call_count, 0)
+        self.assertIsNone(r.changed)
+        self.assertIn("取りに行ってよいURLではない", r.reason)
+
+    def test_robotsが404でも内部宛は通さない(self):
+        # robots.txt が404だと「robotsが無い＝全許可」に倒れる。
+        # クラウドのメタデータ宛はまさにこれに当たるので、ガードで先に止める。
+        f = self._fetcher("169.254.169.254")
+        with mock.patch.object(urllib.request, "urlopen",
+                               side_effect=_http_error(404)) as m:
+            self.assertFalse(f.allowed("http://169.254.169.254/latest/"))
+        self.assertEqual(m.call_count, 0, "robots.txt すら取りに行ってはいけない")
+
+    def test_公開アドレスなら従来どおり動く(self):
+        f = self._fetcher("93.184.216.34")
+        with mock.patch.object(urllib.request, "urlopen",
+                               side_effect=_http_error(404)):
+            self.assertTrue(f.allowed("https://example.lg.jp/a.html"))
+
+    def test_本文が大きすぎたら読まない(self):
+        big = b"x" * (polite_fetch.MAX_BODY_BYTES + 1)
+        with self.assertRaises(ValueError):
+            polite_fetch._decode(_resp(big.decode()))

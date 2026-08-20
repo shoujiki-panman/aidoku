@@ -51,6 +51,7 @@ console.log = (line) => {
 
 const store = new Map();
 const env = {
+  DEMAND_TOKEN: 'test-demand-token',
   ANSWERS: { get: async (key) => (key === `${HOST}${PAGE}` ? SHINJUKU : null) },
   DEMAND: {
     put: async (k, _v, o) => store.set(k, o?.metadata ?? null),
@@ -212,7 +213,7 @@ await rpc(
 check('署名なしは記録しない（住民のデータは集めない）', records.length === before, `${before} -> ${records.length}`);
 
 // 10. 集計は口が違っても同じ場所に貯まる
-const demand = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+const demand = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`, { headers: { authorization: `Bearer ${env.DEMAND_TOKEN}` } }), env)).json();
 check(
   'MCP で聞かれた分も更新依頼リストに出る',
   demand.unanswered.some((x) => x.looking_for === '転入届の手数料はいくらですか'),

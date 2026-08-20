@@ -40,6 +40,8 @@
 cd <repo>/gennai_app
 
 # 1) AI読API（判定エンジン）
+#   AIDOKU_API_KEY を設定しなければ、起動ごとにランダムな鍵を作って標準出力に出す
+#   （決め打ちの既定値は持たない）。x-api-key にその値を渡す
 AIDOKU_PORT=8791 python3 server.py &
 
 # 2) 源内バックエンドの代わり
