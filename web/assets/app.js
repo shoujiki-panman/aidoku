@@ -72,6 +72,7 @@ async function init() {
   // これが無いと、どの区を押しても同じ画面が出る。
   const q = new URLSearchParams(location.search);
   await loadProcedure(q.get('proc') || procs[0].id, q.get('muni'));
+  initLookup();
 }
 
 async function loadProcedure(id, muniId = null) {
@@ -372,3 +373,107 @@ init().catch((e) => {
   $('detail').innerHTML =
     `<p class="err">${esc(e.message)}<br><code>data/scores.json</code> があるか確認してください。</p>`;
 });
+
+// ---- 自分の区を調べる（#59 案2: 測定済みは即答、未測定は正直にそう言う）----
+// ★ここで新しく判定はしない。判定は claude -p をローカルで呼ぶ設計で、
+//   静的ホスティングからは動かせない。当てずっぽうを返さないことが仕様。
+//   盤面のグレーと同じ約束 — 測っていないものを、測ったように見せない。
+let lookupCells = null;
+
+async function loadLookupCells() {
+  if (lookupCells) return lookupCells;
+  const per = await Promise.all(procs.map(async (p) => {
+    const d = await loadJson(`data/${p.file}`);
+    return d.municipalities.map((m) => ({
+      procId: p.id, procName: p.name, muniId: m.id, muniName: m.name,
+      total: m.total, url: m.page_url, breakdown: m.breakdown, pageStatus: m.page_status,
+    }));
+  }));
+  lookupCells = per.flat();
+  return lookupCells;
+}
+
+const gotCount = (c) => FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) >= 20).length;
+
+function lookupCellRow(c) {
+  const st = c.pageStatus;
+  const unconfirmed = st !== null && typeof st === 'object' && st.code === 'target_unconfirmed';
+  return `<li class="lookup__cell">
+    <span class="lookup__proc">${esc(c.procName)}</span>
+    <span class="score-cell" data-tone="${tone(c.total)}">${gotCount(c)}/${FIELDS.length}項目</span>
+    <button type="button" class="dads-button lookup__open" data-variant="outline"
+            data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">結果を開く</button>
+    ${unconfirmed ? `<span class="lookup__warn">${esc(st.label)}</span>` : ''}
+  </li>`;
+}
+
+function renderLookup(res) {
+  const box = $('lookup-result');
+  if (res.kind === 'page') {
+    const c = res.cell;
+    box.innerHTML = `
+      <p class="lookup__title">このページは測ってあります — ${esc(c.muniName)}・${esc(c.procName)}</p>
+      <p class="lookup__sub">住民のAIが持ち帰れたのは <strong>${gotCount(c)}/${FIELDS.length}項目</strong>です。</p>
+      <ul class="lookup__list">${lookupCellRow(c)}</ul>
+      <p class="lookup__src">読んだページ: ${esc(c.url)}</p>`;
+    return;
+  }
+  if (res.kind === 'ward') {
+    const via = res.matchedBy === 'url-host'
+      ? `貼られたページそのものは測っていませんが、<strong>${esc(res.muniName)}</strong>は測ってあります。`
+      : `<strong>${esc(res.muniName)}</strong>で測ってある手続きです。`;
+    box.innerHTML = `
+      <p class="lookup__title">${esc(res.muniName)}</p>
+      <p class="lookup__sub">${via}</p>
+      <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>`;
+    return;
+  }
+  if (res.reason === 'empty') {
+    box.innerHTML = `<p class="lookup__sub">区名か、手続きページのURLを入れてください。</p>`;
+    return;
+  }
+  box.innerHTML = `
+    <div class="lookup__none">
+      <p class="lookup__title">まだ測っていません</p>
+      <p class="lookup__sub">
+        測ってあるのは<strong>東京23区 × 3手続き（転入届・児童手当の申請・粗大ごみ収集の申込）の69マス</strong>だけです。
+        多摩26市や、ここに無い手続きは未測定です。<br>
+        これは<strong>「AIに読めない」という意味ではありません。「まだ調べていない」</strong>です。
+      </p>
+      <p class="lookup__sub"><a href="board.html">盤面で、測ってある範囲を見る</a></p>
+    </div>`;
+}
+
+async function runLookup(q) {
+  $('lookup-result').innerHTML = '<p class="lookup__sub">探しています…</p>';
+  try {
+    const cells = await loadLookupCells();
+    renderLookup(AidokuLookup.lookup(q, cells, procs.map((p) => p.id)));
+  } catch (err) {
+    $('lookup-result').innerHTML =
+      '<p class="lookup__sub">データを読めませんでした。時間をおいて試してください。</p>';
+    console.error(err);
+  }
+}
+
+function initLookup() {
+  const form = $('lookup-form');
+  if (!form || typeof AidokuLookup === 'undefined') return;
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    runLookup($('lookup-input').value);
+  });
+  $('lookup-result').addEventListener('click', async (e) => {
+    const b = e.target.closest('.lookup__open');
+    if (!b) return;
+    await loadProcedure(b.dataset.proc, b.dataset.muni);
+    $('detail-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // ?q=世田谷区 で結果を直接開く。区が自分のリンクをブックマークできる。
+  const q0 = new URLSearchParams(location.search).get('q');
+  if (q0) {
+    $('lookup-input').value = q0;
+    runLookup(q0);
+  }
+}

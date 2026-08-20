@@ -44,6 +44,9 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
 .bar .b{width:100%;border-radius:6px 6px 0 0;}
 .bar .l{font-size:15px;color:var(--gray);white-space:nowrap;}
 .bar .s{font-size:17px;font-weight:700;}
+#od table{font-size:23px;margin-top:26px;}
+#od th,#od td{padding:11px 16px;}
+#od .note{margin-top:24px;font-size:23px;}
 </style></head><body>
 
 <!-- 1 表紙 -->
@@ -67,7 +70,7 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
   <div class="lead">東京23区の転入届ページを、AIに読ませて実測した（2026-07-22）。</div>
   <div class="cols">
     <div class="card ok"><div class="n">4項目すべて読めた区</div><div class="v">港区だけ</div></div>
-    <div class="card ng"><div class="n">ほとんど読めない区</div><div class="v">5区</div></div>
+    <div class="card ng"><div class="n">ほとんど読めない区</div><div class="v">4区</div></div>
     <div class="card ng"><div class="n">手数料が見つからない</div><div class="v">22区</div></div>
   </div>
   <div class="lead" style="margin-top:40px;">
@@ -82,7 +85,7 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
   <div class="kicker">解決</div>
   <h2>気づいて、直して、確かめられるようにする</h2>
   <div class="flow">
-    <div class="step"><div class="t">① 入れる</div><div class="b">手続きページの<br>URLを貼るだけ</div></div>
+    <div class="step"><div class="t">① 入れる</div><div class="b">源内の画面で<br>ページのURLを貼る</div></div>
     <div class="arrow">→</div>
     <div class="step"><div class="t">② 読む</div><div class="b">AIが4項目を<br>読み取る</div></div>
     <div class="arrow">→</div>
@@ -92,9 +95,12 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
       <div class="t" style="color:var(--ok);">④ 処方箋</div><div class="b">どこに何を書けば<br>伝わるかを提示</div></div>
   </div>
   <div class="note">
-    <strong>実測</strong>：世田谷区のページに<strong>303文字</strong>を追記したところ、<strong>0点 → 100点</strong>になった。<br>
-    ただし括弧を空欄のまま貼っても点は上がらない。<strong>埋めるのは職員。AIは穴の場所と書き方を示すに留める</strong>
-    ——AIが役所の情報を作り出さないための設計である。
+    <strong>実測</strong>：世田谷区の目次ページに本体ページの記載を移したところ、4項目そろう回が
+    <strong>5回中0回 → 5回中5回</strong>になった。さらに期限を「37日」に書き換えた版では<strong>5回とも37日</strong>を返した。
+    転入届の14日は法律で決まっておりモデルは知っているが、それでも現実にありえない値を返した——
+    <strong>AIは知識ではなく、渡されたページを読んでいる。</strong><br>
+    埋めるのは職員。<strong>AIは穴の場所と書き方を示すに留める</strong>——AIが役所の情報を作り出さないための設計である。<br>
+    <span style="font-size:20px;">※ 改変したのは手元の複製。区のサイトは1文字も変更していない。3条件×5回・測定版 exp-0.1</span>
   </div>
   <div class="foot"><span>外部が指摘する調査ではなく、自治体が自分で点検する道具</span><span>3</span></div>
 </section>
@@ -106,6 +112,7 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
   <div class="rank" id="rank"></div>
   <div class="lead" style="margin-top:34px;font-size:26px;">
     100点から0点まで並ぶ。差はサイトの書き方で決まっている。<br>
+    同じ手順で<strong>23区 × 3手続き（転入届・児童手当・粗大ごみ）＝69マス</strong>を測った（グラフは転入届）。<br>
     採点のぶれは当初±15点あったが、判定方法を改め<strong>±2点</strong>まで縮小した（測定記録あり）。
   </div>
   <div class="foot"><span>4項目×20点＋オンライン明示20点＝100点満点</span><span>4</span></div>
@@ -129,7 +136,32 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
   <div class="foot"><span>Python標準ライブラリのみ・外部依存なし</span><span>5</span></div>
 </section>
 
-<!-- 6 まとめ -->
+<!-- 6 オープンデータ -->
+<section class="slide" id="od">
+  <div class="kicker">利用オープンデータ</div>
+  <h2>「AIに読めない」の重さを、都の公式数値で測る</h2>
+  <table>
+    <tr><th style="width:330px;">データ</th><th style="width:270px;">使った数字</th><th>AI読での役割</th></tr>
+    <tr>
+      <td>東京都住民基本台帳人口移動報告（時系列）<br><span style="font-size:19px;">東京都総務局・CC BY</span></td>
+      <td>他道府県からの転入 <strong>451,843人</strong><br>都内間の移動 <strong>465,145人</strong><br><span style="font-size:19px;">令和7年・外国人を含む</span></td>
+      <td>転入届ページを測ることの規模。都内間だけで46万人が動くため、23区間の引越しも含まれる</td>
+    </tr>
+    <tr>
+      <td>区市町村清掃事業年報（ごみ排出量）<br><span style="font-size:19px;">東京都環境局・CC BY</span></td>
+      <td>23区の粗大ごみ <strong>62,207t</strong><br>最多は<strong>世田谷区 6,735t</strong></td>
+      <td>粗大ごみページの需要。排出量が最多の区で、AI読は対象ページに到達できていない</td>
+    </tr>
+  </table>
+  <div class="note">
+    オープンデータは<strong>採点には使わない</strong>。採点は区のページだけを見る。
+    オープンデータが担うのは「<strong>どの手続きが都民にとって重いか</strong>」で、
+    AI読の「AIから読めるか」と掛け合わせて<strong>直す順番</strong>を決める。
+  </div>
+  <div class="foot"><span>出典: 東京都オープンデータカタログサイト（2026-08-18 取得）</span><span>6</span></div>
+</section>
+
+<!-- 7 まとめ -->
 <section class="slide">
   <div class="kicker">これから</div>
   <h2>住民がAIに聞く時代は、もう来ている</h2>
@@ -139,17 +171,21 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
   <div class="cols" style="margin-top:50px;">
     <div class="card"><div class="n">住民にとって</div><div class="v" style="font-size:32px;">AIに聞いて<br>正しい答えが返る</div></div>
     <div class="card"><div class="n">自治体にとって</div><div class="v" style="font-size:32px;">追加開発なしで<br>自己点検できる</div></div>
-    <div class="card"><div class="n">これから</div><div class="v" style="font-size:32px;">児童手当・粗大ごみ<br>へ拡大</div></div>
+    <div class="card"><div class="n">これから</div><div class="v" style="font-size:32px;">多摩26市へ<br>同じ物差しを広げる</div></div>
   </div>
   <div class="lead" style="margin-top:46px;font-size:24px;">
     判定基準と、判定のぶれの測定結果を公開し続ける。基準を隠さないことで、<br>
     自治体が結果を検証でき、第三者が同じ物差しで再測定できる状態を保つ。
   </div>
-  <div class="foot"><span>AI読（アイドク）— あなたの区のサイトを、AIの愛読書に。</span><span>6</span></div>
+  <div class="lead" style="margin-top:30px;font-size:22px;">
+    チーム紹介：<strong>AI読</strong>（1名・正直パンマン）。企画・実測・実装・資料を1人＋AIで行った。
+    判定に使ったスクリプトとテストは公開している（コードはMIT／データはCC BY）。
+  </div>
+  <div class="foot"><span>AI読（アイドク）— あなたの区のサイトを、AIの愛読書に。</span><span>7</span></div>
 </section>
 
 <script>
-const D=[["港区",100],["千代田",80],["文京",80],["杉並",80],["板橋",80],["江戸川",80],["渋谷",80],["練馬",80],["豊島",80],["足立",80],["中野",70],["北",60],["品川",60],["大田",60],["江東",60],["目黒",60],["葛飾",60],["新宿",40],["世田谷",0],["中央",0],["台東",0],["墨田",0],["荒川",0]];
+const D=[["港区",100],["千代田",80],["文京",80],["杉並",80],["板橋",80],["江戸川",80],["渋谷",80],["練馬",80],["豊島",80],["足立",80],["台東",80],["中野",70],["北",60],["品川",60],["大田",60],["江東",60],["目黒",60],["葛飾",60],["新宿",40],["世田谷",0],["中央",0],["墨田",0],["荒川",0]];
 document.getElementById('rank').innerHTML = D.map(([n,s])=>{
   const h=Math.max(s*2.6, 4);
   const c = s>=100?'#0f7a3d': s>=60?'#0056b3': s>0?'#c98a00':'#b3261e';
