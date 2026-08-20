@@ -57,6 +57,27 @@
   <!-- サイトの見張り状態。普段は1行、知らせることがあるときだけ大きくなる -->
   <div id="site-status" class="site-status" aria-live="polite"></div>
 
+  <!-- 自分の区を引く。**その場でAIに読ませてはいない** — 判定は claude -p をローカルで
+       呼ぶ設計で、静的ホスティングからは動かせない（#59）。ここは測ってある69マスを引くだけ。
+       当たらなかったら当てずっぽうを返さず「まだ測っていない」と言う（盤面のグレーと同じ約束）。 -->
+  <section class="lookup" aria-labelledby="lookup-heading">
+    <h2 class="dads-heading" data-size="l" id="lookup-heading">自分の区を調べる</h2>
+    <p class="section-note">手続きページの<strong>URLを貼る</strong>か、<strong>区名を入れる</strong>と、測ってある結果を出します。</p>
+    <form class="lookup__form" id="lookup-form" role="search">
+      <label class="lookup__label" for="lookup-input">区名、または手続きページのURL</label>
+      <div class="lookup__row">
+        <input class="dads-input lookup__input" id="lookup-input" type="search" autocomplete="off"
+               placeholder="世田谷区　または　https://www.city.setagaya.lg.jp/..."
+               aria-describedby="lookup-hint">
+        <button class="dads-button lookup__submit" data-variant="solid" type="submit">調べる</button>
+      </div>
+      <p class="lookup__hint" id="lookup-hint">測ってあるのは <strong>東京23区 × 3手続き（転入届・児童手当の申請・粗大ごみ収集の申込）＝69マス</strong>です。ここで新しく判定はしません。</p>
+    </form>
+    <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
+  </section>
+
+  <hr class="dads-divider">
+
   <div class="proc-tabs" id="proc-tabs" role="tablist" aria-label="手続きを選ぶ"></div>
 
   <!-- 最上段は「今やる1件」。点数の一覧より先に、次の一手を1つだけ出す。
@@ -167,6 +188,7 @@
 
 <script src="assets/next-action.js"></script>
 <script src="assets/site-status.js"></script>
+<script src="assets/lookup.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

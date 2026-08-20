@@ -427,3 +427,33 @@ td.marks { white-space: nowrap; }
 
 /* 実文を伏せているときの表示（Issue #100・利用許諾の整理が済むまで） */
 .withheld { color: #5c5c66; font-style: normal; }
+
+/* 自分の区を調べる。DADSの input / button に寄せる。
+   新しい判定はしないので、押しても「読み込み中」以上のことは起きない。 */
+.lookup__form { margin-top: 12px; }
+.lookup__label {
+  display: block; font-size: .875rem; color: #4b5563; margin-bottom: 6px;
+}
+.lookup__row { display: flex; gap: 8px; flex-wrap: wrap; }
+.lookup__input {
+  flex: 1 1 22rem; min-width: 0; padding: 10px 12px; font-size: 1rem;
+  border: 1px solid #767676; border-radius: 6px; background: #fff;
+}
+.lookup__input:focus-visible { outline: 3px solid #0056b3; outline-offset: 1px; }
+.lookup__submit { flex: 0 0 auto; }
+.lookup__hint { margin-top: 8px; font-size: .8125rem; color: #4b5563; }
+.lookup__result:not(:empty) {
+  margin-top: 16px; border: 1px solid #d8dde3; border-radius: 10px; padding: 16px 18px;
+  background: #fff;
+}
+.lookup__title { font-weight: 700; font-size: 1.0625rem; }
+.lookup__sub { margin-top: 6px; font-size: .9375rem; color: #4b5563; }
+.lookup__list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.lookup__cell {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 8px;
+}
+.lookup__proc { font-weight: 700; min-width: 11rem; }
+.lookup__warn { font-size: .8125rem; color: #8a6d00; }
+.lookup__src { margin-top: 10px; font-size: .8125rem; color: #6b7280; word-break: break-all; }
+.lookup__none { border-left: 4px solid #8a6d00; padding-left: 12px; }
