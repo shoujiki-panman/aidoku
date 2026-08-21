@@ -32,6 +32,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from polite_fetch import CheckResult, PoliteFetcher  # noqa: E402
 
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from history import SITE_STATUS_KEY, append_snapshot, site_status_snapshot  # noqa: E402
+
 DEFAULT_OUT = ROOT / "web" / "data" / "site-status.json"
 
 
@@ -134,6 +137,10 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("-p", "--procedure", action="append", dest="procedures",
                         help="手続きID（繰り返し指定可。既定は公開中の全部）")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    parser.add_argument("--history", type=Path, default=None,
+                        help="見張りの履歴（JSON Lines・追記のみ）。"
+                             "既定は --out の隣の history/site-status.jsonl。"
+                             '"" を渡すと残さない')
     parser.add_argument("--cache-dir", type=Path, default=None,
                         help="取得済みキャッシュの場所（既定は crawler/cache）")
     parser.add_argument("--prime", action="store_true",
@@ -160,6 +167,16 @@ def main(argv: list[str] | None = None) -> None:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n",
                         encoding="utf-8")
+    # 履歴を残す。毎日1行、変化のあったものだけ。
+    # これが無いと「先週から悪くなった」が言えず、その日の状態しか分からない。
+    # 既定は --out の隣。実ファイルを直書きする既定にすると、テストが main() を
+    # 呼んだだけで本物の履歴が汚れる（実際に汚した）。出力先に追従させる。
+    history_path = (args.out.parent / "history" / "site-status.jsonl"
+                    if args.history is None else args.history)
+    if str(history_path):
+        added = append_snapshot(history_path, site_status_snapshot(report), SITE_STATUS_KEY)
+        print(f"{history_path}: " + ("1件追記" if added else "同じ checked_at が既にあるので追記なし"))
+
     print(report["summary"]["headline"])
     print(f"→ {args.out}")
 

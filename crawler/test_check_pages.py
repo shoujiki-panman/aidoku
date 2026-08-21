@@ -384,3 +384,27 @@ class ReportTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class HistoryDoesNotEscape(unittest.TestCase):
+    """履歴の既定が実ファイルを指していて、テストが本物を汚した回帰。
+
+    main() を --out だけで呼んだとき、履歴が --out の隣に出ること。
+    リポジトリの web/data/history/ に書かないこと。
+    """
+
+    def test_履歴はoutの隣に出る(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "site-status.json"
+            with mock.patch.object(check_pages, "run", side_effect=RuntimeError("boom")):
+                check_pages.main(["--out", str(out)])
+            hist = out.parent / "history" / "site-status.jsonl"
+            self.assertTrue(hist.exists(), "--out の隣に履歴が出ていない")
+            self.assertEqual(len(hist.read_text(encoding="utf-8").strip().splitlines()), 1)
+
+    def test_空文字なら履歴を残さない(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "site-status.json"
+            with mock.patch.object(check_pages, "run", side_effect=RuntimeError("boom")):
+                check_pages.main(["--out", str(out), "--history", ""])
+            self.assertFalse((out.parent / "history").exists())

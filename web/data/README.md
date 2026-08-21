@@ -237,3 +237,34 @@ robots.txt で許可されていない、5xx が返った、通信に失敗し�
 | [総務省「都道府県コード及び市区町村コード」](https://www.soumu.go.jp/denshijiti/code.html) | `lg_code` | 総務省サイトの利用規約による |
 
 **デジタル庁が本調査を提供・監修しているものではありません。**
+
+## history/ — 時系列（追記のみ・書き換えない）
+
+これまで `scores-*.json` も `site-status.json` も毎回上書きで、過去の値がどこにも
+残っていなかった（履歴は git のコミットにしかなかった）。ここに追記で貯める。
+
+| ファイル | 1行の単位 | 誰が書くか |
+|---|---|---|
+| `history/scores.jsonl` | 手続き1つぶんの測定1回 | `analysis/export_dashboard.py`（人が測り直したとき） |
+| `history/site-status.jsonl` | 見張り1回 | `crawler/check_pages.py`（毎朝 GitHub Actions） |
+
+`scores.jsonl` は点数と `page_status` だけを持ち、**生の引用は持たない**（公開データの
+方針に合わせる）。`site-status.jsonl` は **変化のあったものだけ**を持つ（変化なしは
+`summary` の数で足りる）。
+
+### ⚠️ 差を「良くなった」と読んでよい条件
+
+点数が動いたとき、それが**サイトが直ったから**なのか**こちらの測り方が変わったから**
+なのかは、区別しないと意味がない。各行が持つ `measurement_signature`（モデル・
+プロンプト・探索幅などの条件）が**一致し、両方とも条件が記録済み**のときだけ
+「差はサイト側」と言ってよい。
+
+`history.attribution()` がこれを判定し、`site` / `unknown` を返す。
+**数字は常に出すが、原因の断定だけを止める。**
+
+なお 2026-08-22 より前の測定は測定条件が復元できない（`recording_status:
+legacy_unknown`。METHOD.md §4-8）。したがって**既存データ同士の比較は必ず
+`unknown` になる。それが正しい挙動**で、バグではない。
+
+git に残っていた過去のコミットからの復元は `analysis/backfill_history.py`
+（冪等。何度流しても増えない）。
