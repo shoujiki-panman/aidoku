@@ -23,7 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT / "crawler"))
-from discover import NEGATIVE_HINTS  # noqa: E402
+from discover import NEGATIVE_HINTS  # noqa: E402, I001
 
 
 # URLに入っているローマ字。そのまま出すと読めないので、読みを添える。
