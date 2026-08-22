@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>盤面 — 住民のAIに、どこまで答えが届いているか | AI読（アイドク）</title>
-<meta name="description" content="東京23区 × 手続き のマス目。住民のAIが答えを持ち帰れるかを実測で塗り、まだ調べていないところはグレーのままにしています。">
+<title>23区 × 手続きの一覧 — どこまで調べたか | AI読（アイドク）</title>
+<meta name="description" content="東京23区 × 手続きの一覧。住民のAIが答えを持ち帰れるかを実測した結果と、まだ調べていない範囲を、区別して出しています。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
           </ul>
           <p class="menu__sec" id="menu-see">見る</p>
           <ul aria-labelledby="menu-see">
-            <li><a href="board.html" aria-current="page">23区の盤面</a></li>
+            <li><a href="board.html" aria-current="page">23区の一覧</a></li>
             <li><a href="journey.html">AIの道のり</a></li>
             <li><a href="trends.html">見張りと推移</a></li>
             <li><a href="data.html">測り方とデータ</a></li>
@@ -49,10 +49,10 @@
 <header class="site-header">
   <div class="wrap">
     <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
-    <h1 class="dads-heading" data-size="xl">盤面</h1>
+    <h1 class="dads-heading" data-size="xl">23区 × 手続きの一覧</h1>
     <p class="site-header__lead"><strong>住民のAIに、どこまで答えが届いているか。</strong><br>
-      東京23区 × 手続き のマス目です。実際にAIに読ませて確かめたところだけ色がつきます。<br>
-      <strong>グレーは「まだ調べていない」。</strong>塗りつぶすには人の手が要ります。</p>
+      東京23区 × 3手続きを1枚にしたものです。実際にAIに読ませて確かめたところだけ色がつきます。<br>
+      <strong>灰色は「未調査」</strong>で、これから増やしていきます。</p>
   </div>
 </header>
 
@@ -66,16 +66,16 @@
         <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
         <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
       </svg>
-      <span class="dads-notification-banner__heading-text">色がついているのは、実際にAIに読ませて確かめたマスだけです</span>
+      <span class="dads-notification-banner__heading-text">色がついているのは、実際にAIに読ませて確かめたところだけです</span>
     </p>
     <div class="dads-notification-banner__body">
-      <p>これは個人が行った第三者調査であり、行政機関の公式発表ではありません。<strong>グレーのマスは「読めない」ではなく「まだ調べていない」</strong>という意味です。憶測では塗りません。</p>
+      <p>これは個人が行った第三者調査であり、行政機関の公式発表ではありません。<strong>灰色は「読めない」ではなく「未調査」</strong>という意味です。調べていないものを、調べたようには書きません。</p>
     </div>
   </div>
 
   <section aria-labelledby="board-heading">
     <h2 class="dads-heading" data-size="l" id="board-heading">23区 × 手続き</h2>
-    <p class="section-note">1マス＝その区のその手続きのページを、住民のAIが読んだとき<strong>4項目（必要書類・窓口/オンライン可否・期限・手数料）を持ち帰れるか</strong>。<strong>マスを押すと、その区のその手続きで、住民のAIが実際にどう答えたかが出ます。</strong></p>
+    <p class="section-note">1つ＝その区のその手続きのページを、住民のAIが読んだとき<strong>4項目（必要書類・窓口/オンライン可否・期限・手数料）を持ち帰れるか</strong>。<strong>押すと、その区のその手続きで、住民のAIが実際にどう答えたかが出ます。</strong></p>
     <div id="board-progress"></div>
     <div class="board-summary" id="board-summary"></div>
     <div class="legend" id="legend"></div>
@@ -94,7 +94,7 @@
   <section aria-labelledby="visit-heading">
     <h2 class="dads-heading" data-size="l" id="visit-heading">どのAIが、何を探しに来たか</h2>
     <p class="section-note">
-      上の盤面は「AIが読んだら答えが返るか」を<strong>こちらから読ませて</strong>測ったものです。
+      上の一覧は「AIが読んだら答えが返るか」を<strong>こちらから読ませて</strong>測ったものです。
       その先にもう一枚あります——<strong>実際に住民のAIが来て、何を探して、取れずに帰ったか</strong>。
       これは自治体サイトの前に立つ<a class="dads-link" href="https://github.com/shoujiki-panman/aidoku/tree/main/gatekeeper">門番</a>が集めます。
     </p>

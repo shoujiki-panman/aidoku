@@ -90,9 +90,9 @@ function renderProgress(rows, procs, checkedAt) {
       </div>
       <div class="meter__bar"><span style="width:${pr.pct}%"></span></div>
       ${stale ? `<p class="meter__quest">
-          <b data-tone="amber">${stale}マス</b>が
-          <b>測り直し待ち</b>です — 毎朝の見張りが「ページが変わった」と見つけたマス。
-          <span class="meter__sub">盤面では枠が光っています。悪くなったという意味ではありません。</span>
+          <b data-tone="amber">${stale}件</b>が
+          <b>調べ直し待ち</b>です — 毎朝の見張りが「ページが変わった」と見つけたもの。
+          <span class="meter__sub">下の一覧では枠が光っています。悪くなったという意味ではありません。</span>
         </p>` : ''}
     </div>`;
 }
@@ -135,7 +135,7 @@ function renderBody(rows, procs) {
   $('board-body').innerHTML = rows.map((r) => {
     const measured = procs.map((p) => {
       const s = r.cells[p.id];
-      if (!s) return '<td><i class="cell" data-tone="gray" title="この区は測っていない"></i></td>';
+      if (!s) return '<td><i class="cell" data-tone="gray" title="この区は未調査"></i></td>';
       const stale = STALE.has(staleKey(r.id, p.id));
       const t = `${esc(r.name)}の${esc(p.name)}: ${esc(s.title)}`
         + (stale ? '｜ページが変わったので測り直しが要る' : '');
@@ -167,10 +167,10 @@ function renderNote(rows, procs) {
   const total = cols * rows.length;
   const done = procs.reduce((n, p) => n + rows.filter((r) => r.cells[p.id]).length, 0);
   $('board-note').innerHTML =
-    `埋まっているのは <strong>${done} / ${total} マス</strong>（${rows.length}区 × ${cols}手続き）。` +
-    `残りがグレーなのは、AIが読めなかったからではなく、<strong>まだ測っていないから</strong>です。<br>` +
-    `グレーを埋めるには、その手続きで「住民が知らないと困ること」を人が決める必要があります。` +
-    `そこはAIに任せられないので、マスは自動では埋まりません。`;
+    `調べてあるのは <strong>${done} / ${total} 件</strong>（${rows.length}区 × ${cols}手続き）。` +
+    `残りが灰色なのは、AIが読めなかったからではなく、<strong>まだ調べていないから</strong>です。<br>` +
+    `手続きを1つ増やすには、その手続きで「住民が知らないと困ること」を人が決める必要があります。` +
+    `そこはAIに任せられないので、自動では増えません。`;
 }
 
 async function init() {

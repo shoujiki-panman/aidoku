@@ -613,11 +613,11 @@ function renderLookup(res) {
     <div class="lookup__none">
       <p class="lookup__title">まだ測っていません</p>
       <p class="lookup__sub">
-        測ってあるのは<strong>東京23区 × 3手続き（転入届・児童手当の申請・粗大ごみ収集の申込）の69マス</strong>だけです。
+        調べてあるのは<strong>東京23区 × 3手続き（転入届・児童手当の申請・粗大ごみ収集の申込）の69件</strong>だけです。
         多摩26市や、ここに無い手続きは未測定です。<br>
         これは<strong>「AIに読めない」という意味ではありません。「まだ調べていない」</strong>です。
       </p>
-      <p class="lookup__sub"><a href="board.html">盤面で、測ってある範囲を見る</a></p>
+      <p class="lookup__sub"><a href="board.html">調べた範囲を一覧で見る</a></p>
     </div>`;
 }
 
@@ -693,7 +693,7 @@ async function renderWardMap() {
     <ul class="wardmap__legend">
       <li data-tone="high">9〜12項目</li><li data-tone="mid">6〜8</li>
       <li data-tone="low">1〜5</li><li data-tone="zero">0</li>
-      <li data-tone="unknown">測っていない</li>
+      <li data-tone="unknown">未調査</li>
     </ul>
     <p class="wardmap__credit">境界: <a class="dads-link" href="${esc(doc.source_url)}">${esc(doc.source)}</a>（${esc(doc.license)}）</p>`;
 
