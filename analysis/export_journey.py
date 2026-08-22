@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -172,6 +173,9 @@ def main(argv: list[str] | None = None) -> None:
     print(f"  うち「選ばれなかった扉に手続き名があった」= こちら側の取りこぼし: {ours}セル")
 
     doc = {
+        # ★いつ出したものかを持たせる。画面のフッターがこれを出す。
+        #   持っていなかったので、別のファイル（barriers.json）の日付が出ていた。
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "_about": "AIがどの選択肢を見て、なぜその道を選んだか。"
                   "点の付け方は crawler/discover.py の score_link と targets.json のキーワード。"
                   "ここで新しく点は作っていない。",
