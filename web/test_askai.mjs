@@ -33,6 +33,9 @@ for (const f of pages) {
   ok(`${f} が defer`, /\bdefer\b/.test(tag[0]));
   // 本文の範囲。6枚とも <main> で統一されている
   ok(`${f} の data-selector が main`, /data-selector="main"/.test(tag[0]));
+  // 上流の4つ（要約・解説・質問・英訳）は読み物向けで、ここの目的と違う。
+  // 出すのは AI読 が足した procedure だけ
+  ok(`${f} の行動が procedure だけ`, /data-actions="procedure"/.test(tag[0]), tag[0]);
   ok(`${f} に main がある`, /<main[\s>]/.test(s));
   // 読み込みは </body> の直前（本文より後）
   ok(`${f} はボタンを最後に読む`, s.indexOf('ask-ai-button.js') > s.lastIndexOf('</main>'));
@@ -60,6 +63,24 @@ ok('本体がある', lib.length > 10000, `${lib.length}byte`);
 ok('読み込み時に外へ出さない', !/\bfetch\s*\(|XMLHttpRequest|navigator\.sendBeacon/.test(lib));
 ok('APIキーを持たない', !/api[_-]?key/i.test(lib));
 ok('本文の範囲を data-ai-ignore で決める', lib.includes('data-ai-ignore'));
+
+// AI読 が足した1項目。上流を更新するときに落ちやすいので、中身まで見る。
+const block = lib.match(/▼▼▼ ここから AI読 の追加[\s\S]*?▲▲▲ ここまで AI読 の追加/);
+ok('追加ブロックが1つに固まっている', !!block);
+ok('上流の4つを消していない',
+  ['summary:', 'explain:', 'ask:', 'translate:'].every((k) => lib.includes(k)));
+if (block) {
+  const b = block[0];
+  ok('procedure がある', /procedure: \{/.test(b));
+  // この指示が落ちると、AIは「無料です」「通常14日以内です」と一般論で埋める。
+  // それを止めるために足したブロックなので、消えたら気づく必要がある
+  ok('推測での穴埋めを禁じている', /一般論や他の自治体の値で埋めない/.test(b));
+  ok('窓口確認へ案内している', /窓口に電話で確認/.test(b));
+  ok('記憶で答えさせない', /あなたの記憶で答えない/.test(b));
+  ok('公式発表ではないと言わせる', /公式発表ではありません/.test(b));
+  ok('出典と測定時期を書かせる', /実測がいつのもの/.test(b));
+  ok('持ち物までやらせる', /当日持っていくもの/.test(b));
+}
 
 console.log(`${pass} PASS / ${fail} FAIL`);
 process.exit(fail ? 1 : 0);
