@@ -724,3 +724,8 @@ td.marks { white-space: nowrap; }
 .nextstep__title { margin: 0 0 6px; font-weight: 700; font-size: .9375rem; }
 .nextstep__list { margin: 0; padding-left: 1.4em; font-size: .9375rem; line-height: 1.8; }
 .nextstep__list li + li { margin-top: 4px; }
+
+/* 結果へ送ったときに枠が出ると、押した先が分かる。
+   ただしマウスで押した人には出さない（:focus-visible） */
+.lookup__result:focus { outline: none; }
+.lookup__result:focus-visible { outline: 3px solid #0056b3; outline-offset: 4px; border-radius: 8px; }

@@ -631,6 +631,18 @@ function setStage(stage) {
   if (m) m.dataset.stage = stage;
 }
 
+// ★押したのに画面が動かないと、何も起きていないように見える。
+//   地図は縦に大きく、結果は画面の外に出るので必ず送る。
+//   キーボードで来た人のために、読み上げ位置も結果へ移す。
+function goToResult() {
+  const box = $('lookup-result');
+  if (!box) return;
+  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  box.scrollIntoView({ behavior: still ? 'auto' : 'smooth', block: 'start' });
+  box.setAttribute('tabindex', '-1');
+  box.focus({ preventScroll: true });
+}
+
 async function runLookup(q) {
   $('lookup-result').innerHTML = '<p class="lookup__sub">探しています…</p>';
   try {
@@ -639,7 +651,10 @@ async function runLookup(q) {
     renderLookup(res);
     renderAiPayload(res);
     // 当たったときだけ結果を出す。外したのに全部出てきたら、元の「最初から全部見える」に戻る
-    if (res.kind === 'page' || res.kind === 'ward') setStage('ward');
+    if (res.kind === 'page' || res.kind === 'ward') {
+      setStage('ward');
+      goToResult();
+    }
   } catch (err) {
     $('lookup-result').innerHTML =
       '<p class="lookup__sub">データを読めませんでした。時間をおいて試してください。</p>';
@@ -737,6 +752,15 @@ function initLookup() {
     await loadProcedure(b.dataset.proc, b.dataset.muni);
     $('detail-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
+
+  // 手続きを開いたとき、中身が画面の外に出ることがある。
+  // 「あなたが次にやること」まで見えるように送る。
+  $('lookup-result').addEventListener('toggle', (e) => {
+    const cell = e.target.closest && e.target.closest('.cell');
+    if (!cell || !cell.open) return;
+    const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    cell.scrollIntoView({ behavior: still ? 'auto' : 'smooth', block: 'nearest' });
+  }, true);
 
   renderAiPayload(null);
   renderWardMap();
