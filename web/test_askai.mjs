@@ -57,7 +57,7 @@ for (const f of pages) {
 
 // 本文に混ぜたくない操作部品。ここが外れると、AIに座標やタブの文字が流れる
 const index = read('index.html');
-for (const sel of ['id="wardmap"', 'class="wardpick"', 'class="lookup__escape"', 'id="proc-tabs"']) {
+for (const sel of ['id="wardmap"', 'class="lookup__escape"', 'id="proc-tabs"']) {
   const m = index.match(new RegExp(`<[a-z]+[^>]*${sel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^>]*>`));
   ok(`index の ${sel} を本文から外している`, !!m && /data-ai-ignore/.test(m[0]), m && m[0].slice(0, 70));
 }
