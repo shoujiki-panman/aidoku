@@ -6,6 +6,7 @@
   //                                   #   （個人アカウントだと特典のリソースに触れない）
   //   npx wrangler kv namespace create ANSWERS   # 出力の id を下の "id" に貼る
   //   node build_answers.mjs && ./put_answers.sh # 実測の答えをKVへ
+  //   npx wrangler secret put DEMAND_TOKEN   # ★集計画面の鍵。設定しないと /_aidoku/demand は404のまま
   //   npx wrangler deploy
   //
   // ★2026年9月末で権限が停止する（Final進出なら延長）。停止後はKVのデータを

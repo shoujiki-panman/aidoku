@@ -191,14 +191,48 @@ async function handleMcp(request, url, env, ctx, result) {
   return jsonResponse(reply);
 }
 
+// 集計画面の鍵。長さの違いも含めて定数時間で比べる
+// （WorkersにはcompareDigestが無いのでXORで自前）。
+function tokenMatches(given, expected) {
+  if (typeof given !== 'string' || typeof expected !== 'string') return false;
+  if (given.length !== expected.length) return false;
+  let diff = 0;
+  for (let i = 0; i < given.length; i += 1) diff |= given.charCodeAt(i) ^ expected.charCodeAt(i);
+  return diff === 0;
+}
+
+// 通してよければ null。だめならそのまま返す Response。
+export function denyDemand(request, env) {
+  const expected = env && env.DEMAND_TOKEN;
+  if (!expected) {
+    // 未設定＝まだ開けてよいと決めていない。開かない。
+    return new Response('demand endpoint is closed (DEMAND_TOKEN is not set)', { status: 404 });
+  }
+  const auth = request.headers.get('authorization') || '';
+  const given = auth.startsWith('Bearer ') ? auth.slice(7) : '';
+  if (!tokenMatches(given, expected)) {
+    return new Response('unauthorized', {
+      status: 401,
+      headers: { 'www-authenticate': 'Bearer' },
+    });
+  }
+  return null;
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const headers = Object.fromEntries(request.headers);
 
-    // 集めたデータの取り出し口。誰でも読める（中身は「AIが何を探しに来たか」だけで、
-    // 人の情報は入っていない）。新しいオープンデータとして自治体に返すための口。
+    // 集めたデータの取り出し口。
+    //
+    // ★ここには生の探し物の文字列が入る（README「置く前に直すこと」参照。
+    //   個人情報の選別をまだしていない）。選別が入るまでは鍵を要求する。
+    //   DEMAND_TOKEN が未設定なら閉じたまま（fail-closed）。設定し忘れて
+    //   全世界に開くより、動かないほうがよい。
     if (url.pathname === DEMAND_PATH) {
+      const denied = denyDemand(request, env);
+      if (denied) return denied;
       const data = await aggregate(env);
       if (!data) return new Response('demand store is not configured', { status: 503 });
       return new Response(JSON.stringify(data, null, 2), {

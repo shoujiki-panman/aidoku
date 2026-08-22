@@ -9,6 +9,12 @@ from apply_evidence_check import InvalidInput, aggregate, annotate_result, input
 from polite_fetch import PoliteFetcher
 
 
+# テストはネットワークに出ない。SSRFガードの名前解決だけ偽物を渡す
+# （example.lg.jp は実在しないので、素で通すとガードに弾かれる）。
+def _fake_resolve(host):
+    return ["93.184.216.34"]
+
+
 class FakeResult:
     def __init__(self, text: str):
         self.body_path = str(Path(__file__))
@@ -211,7 +217,7 @@ class 一括適用(unittest.TestCase):
         second = self.extract_dir / "second.json"
         second.write_text(json.dumps(sample_result(), ensure_ascii=False), encoding="utf-8")
         cache_dir = self.root / "cache"
-        real_fetcher = PoliteFetcher(cache_dir=cache_dir)
+        real_fetcher = PoliteFetcher(cache_dir=cache_dir, resolve=_fake_resolve)
         write_cached_page(real_fetcher, "https://example.test/base",
                           "<html><body>転入届の案内</body></html>")
         write_cached_page(real_fetcher, "https://example.test/detail",

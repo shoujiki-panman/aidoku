@@ -58,6 +58,7 @@ console.log = (line) => {
 
 const store = new Map();
 const env = {
+  DEMAND_TOKEN: 'test-demand-token',
   ANSWERS: { get: async (key) => (key === `${HOST}${PAGE}` ? SHINJUKU : null) },
   DEMAND: {
     put: async (k, _v, o) => store.set(k, o?.metadata ?? null),
@@ -178,7 +179,7 @@ const getRes = await worker.fetch(new Request(`${SITE}/ask`, { headers: signed }
 check('GET は 405 で INVALID_QUERY', getRes.status === 405, String(getRes.status));
 
 // 7. 集計に「聞き返した分」が別で出る
-const demand = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+const demand = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`, { headers: { authorization: `Bearer ${env.DEMAND_TOKEN}` } }), env)).json();
 check(
   '集計に undetermined（聞き返した分）が出る',
   demand.totals.undetermined === 1 && demand.totals.unanswered === 2,

@@ -23,16 +23,51 @@ import urllib.robotparser
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+import url_guard
+from url_guard import UrlNotAllowed
+
 # 連絡先はユーザーが自分のものに差し替える。空のまま本番クロールしない。
 CONTACT = "https://github.com/shoujiki-panman/aidoku"
 USER_AGENT = f"TokyoAgentReadinessBot/0.1 (+{CONTACT})"
 
 MIN_INTERVAL_SEC = 3.0
 
+# 1ページの上限。区の手続きページは大きくても数百KB。これを超えるものは
+# 読む相手を間違えている（動画・アーカイブ等）ので、途中で切って捨てる。
+MAX_BODY_BYTES = 8 * 1024 * 1024
+
 # ページが無くなったと見なすHTTPステータス。
 # 404=見つからない / 410=意図的に削除した、とサーバーが明言している。
 # 5xx は相手側の一時的な事情のことが多いので、ここには入れない。
 GONE_STATUSES = frozenset({404, 410})
+
+
+class GuardedRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """リダイレクト先を1ホップずつ SSRF ガードに通す。
+
+    urllib は 302 を黙って追う。入口のURLだけ調べても、
+    「公開ホスト → 169.254.169.254」と飛ばされたら意味が無い。
+    """
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        url_guard.check_url(newurl)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+_opener_installed = False
+
+
+def install_guarded_opener() -> None:
+    """既定の opener をガード付きに差し替える（プロセス内で一度だけ）。
+
+    urlopen() を呼ぶ側のコードは変えない。テストが urlopen を差し替える作りを
+    壊さずに、リダイレクト追跡だけを守れる。
+    """
+    global _opener_installed
+    if _opener_installed:
+        return
+    urllib.request.install_opener(urllib.request.build_opener(GuardedRedirectHandler))
+    _opener_installed = True
 
 
 def sha256_of(text: str) -> str:
@@ -115,12 +150,16 @@ class CheckResult:
 
 
 class PoliteFetcher:
-    def __init__(self, cache_dir: Path = CACHE_DIR, min_interval: float = MIN_INTERVAL_SEC):
+    def __init__(self, cache_dir: Path = CACHE_DIR, min_interval: float = MIN_INTERVAL_SEC,
+                 resolve=None):
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.min_interval = min_interval
         self._last_request_at: dict[str, float] = {}
         self._robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
+        # 名前解決の入口。テストはここを差し替えてネットワークに出ない。
+        self._resolve = resolve or url_guard.default_resolve
+        install_guarded_opener()
 
     # --- キャッシュ ---
 
@@ -151,6 +190,11 @@ class PoliteFetcher:
 
         どちらの経路でもキャッシュは書き換えない。測り直しは別の工程。
         """
+        # ガードが先。取りに行ってよいURLでないなら、キャッシュも見ない
+        blocked = self.guard(url)
+        if blocked is not None:
+            return CheckResult(url=url, status=0, changed=None, checked_at=_now(),
+                               reason=f"取りに行ってよいURLではない（{blocked}）")
         prev = self.cached(url)
         if prev is None:
             return CheckResult(url=url, status=0, changed=None, checked_at=_now(),
@@ -239,6 +283,9 @@ class PoliteFetcher:
 
         rp = urllib.robotparser.RobotFileParser()
         robots_url = f"{origin}/robots.txt"
+        if self.guard(robots_url) is not None:
+            self._robots[origin] = None
+            return None
         try:
             self._wait(parts.netloc)
             req = urllib.request.Request(robots_url, headers={"User-Agent": USER_AGENT})
@@ -259,7 +306,22 @@ class PoliteFetcher:
         self._robots[origin] = rp
         return rp
 
+    def guard(self, url: str) -> str | None:
+        """取りに行ってよければ None。だめなら理由の文字列。
+
+        robots の fail-closed が偶然この一部を塞いでいたが、robots.txt が 404 を
+        返す内部エンドポイントには通ってしまう（404＝robotsが無い＝全許可）。
+        だからここで明示的に見る。
+        """
+        try:
+            url_guard.check_url(url, resolve=self._resolve)
+            return None
+        except UrlNotAllowed as e:
+            return str(e)
+
     def allowed(self, url: str) -> bool:
+        if self.guard(url) is not None:
+            return False
         rp = self._robots_for(url)
         if rp is None:
             return False
@@ -284,6 +346,16 @@ class PoliteFetcher:
                 return hit
 
         body_path, meta_path = self._paths(url)
+
+        blocked = self.guard(url)
+        if blocked is not None:
+            result = FetchResult(
+                url=url, final_url=url, status=0, content_type="",
+                fetched_at=_now(), from_cache=False, blocked_by_robots=False,
+                body_path=None, error=f"blocked by url guard: {blocked}",
+            )
+            _write_meta(meta_path, result)
+            return result
 
         if not self.allowed(url):
             result = FetchResult(
@@ -347,7 +419,11 @@ class PoliteFetcher:
 
 
 def _decode(resp) -> str:
-    raw = resp.read()
+    # 上限より1バイト多く読む。ぴったりで切ると「上限ちょうど」と
+    # 「上限を超えた」を区別できない。
+    raw = resp.read(MAX_BODY_BYTES + 1)
+    if len(raw) > MAX_BODY_BYTES:
+        raise ValueError(f"本文が大きすぎる（上限 {MAX_BODY_BYTES} バイト）")
     if resp.headers.get("Content-Encoding") == "gzip":
         raw = gzip.decompress(raw)
     charset = resp.headers.get_content_charset()

@@ -22,6 +22,12 @@ from polite_fetch import CheckResult, FetchResult, PoliteFetcher  # noqa: E402
 URL = "https://example.lg.jp/tennyu.html"
 
 
+# テストはネットワークに出ない。SSRFガードの名前解決だけ偽物を渡す
+# （example.lg.jp は実在しないので、素で通すとガードに弾かれる）。
+def _fake_resolve(host):
+    return ["93.184.216.34"]
+
+
 def cached(etag: str | None = '"v1"', last_modified: str | None = None) -> FetchResult:
     return FetchResult(
         url=URL, final_url=URL, status=200, content_type="text/html",
@@ -45,7 +51,7 @@ class _Resp:
 class CheckTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
-        self.f = PoliteFetcher(cache_dir=Path(self.tmp.name), min_interval=0)
+        self.f = PoliteFetcher(cache_dir=Path(self.tmp.name), min_interval=0, resolve=_fake_resolve)
         self.addCleanup(self.tmp.cleanup)
 
     def check(self, *, prev, opener=None, allowed=True):
@@ -170,7 +176,7 @@ class HashFallbackTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.dir = Path(self.tmp.name)
-        self.f = PoliteFetcher(cache_dir=self.dir, min_interval=0)
+        self.f = PoliteFetcher(cache_dir=self.dir, min_interval=0, resolve=_fake_resolve)
         self.addCleanup(self.tmp.cleanup)
 
     def prev_with_body(self, body: str, stored_hash: str | None = None):
@@ -318,7 +324,7 @@ class PrimeTest(unittest.TestCase):
              mock.patch.object(PoliteFetcher, "check", return_value=self.NO_BASE), \
              mock.patch.object(PoliteFetcher, "fetch",
                                side_effect=lambda u, **k: fetched.append((u, k))):
-            report = check_pages.run(["tennyu"], PoliteFetcher(cache_dir=Path("/tmp/none")),
+            report = check_pages.run(["tennyu"], PoliteFetcher(cache_dir=Path("/tmp/none"), resolve=_fake_resolve),
                                      prime_missing=prime_missing)
         return report, fetched
 
@@ -344,7 +350,7 @@ class PrimeTest(unittest.TestCase):
              mock.patch.object(PoliteFetcher, "check", return_value=ok), \
              mock.patch.object(PoliteFetcher, "fetch",
                                side_effect=lambda u, **k: fetched.append(u)):
-            check_pages.run(["tennyu"], PoliteFetcher(cache_dir=Path("/tmp/none")),
+            check_pages.run(["tennyu"], PoliteFetcher(cache_dir=Path("/tmp/none"), resolve=_fake_resolve),
                             prime_missing=True)
         self.assertEqual(fetched, [])
 
@@ -371,14 +377,14 @@ class ReportTest(unittest.TestCase):
                                               "procedure_id": "tennyu", "procedure": "転入届",
                                               "url": URL}]), \
              mock.patch.object(PoliteFetcher, "check", return_value=fake):
-            report = check_pages.run(["tennyu"], PoliteFetcher(cache_dir=Path("/tmp/none")))
+            report = check_pages.run(["tennyu"], PoliteFetcher(cache_dir=Path("/tmp/none"), resolve=_fake_resolve))
         self.assertEqual(set(report) >= {"checked_at", "summary", "items", "_about"}, True)
         self.assertEqual(report["items"][0]["municipality"], "X区")
         self.assertIs(report["items"][0]["changed"], False)
 
     def test_changedはtrueでも悪化を意味しないと書いてある(self):
         with mock.patch.object(check_pages, "targets", return_value=[]):
-            report = check_pages.run([], PoliteFetcher(cache_dir=Path("/tmp/none")))
+            report = check_pages.run([], PoliteFetcher(cache_dir=Path("/tmp/none"), resolve=_fake_resolve))
         self.assertIn("悪くなったという意味ではない", report["_about"])
 
 

@@ -66,6 +66,7 @@ const HOST = 'www.city.setagaya.lg.jp';
 const EMPTY_PAGE = '/kurashi/kosekijuumin/11531.html'; // 実測で4項目とも読めなかったページ
 const PARTIAL_PAGE = '/todokede/partial.html'; // 一部の項目だけ書いてあるページ
 const env = {
+  DEMAND_TOKEN: 'test-demand-token',
   DEMAND,
   ANSWERS: {
     get: async (key) => {
@@ -192,7 +193,7 @@ check(
 );
 
 // F. 集めたものがデータになって取り出せるか（これが門番の成果物）
-const resF = await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env);
+const resF = await worker.fetch(new Request(`${SITE}/_aidoku/demand`, { headers: { authorization: `Bearer ${env.DEMAND_TOKEN}` } }), env);
 const demand = await resF.json();
 check(
   'データの取り出し口が集計を返す',
@@ -218,7 +219,7 @@ for (let i = 0; i < 2; i++) {
     env,
   );
 }
-const demand2 = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+const demand2 = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`, { headers: { authorization: `Bearer ${env.DEMAND_TOKEN}` } }), env)).json();
 const grown = demand2.unanswered.find((x) => x.looking_for === '戸籍謄本 手数料');
 check(
   '同じ探し物は表記ゆれを吸収して数が積み上がる',
@@ -243,7 +244,7 @@ const resH2 = await worker.fetch(
 );
 check('同じページでも、書いてある項目を聞かれたら answered=true', (await resH2.json()).answered === true);
 
-const demand3 = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+const demand3 = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`, { headers: { authorization: `Bearer ${env.DEMAND_TOKEN}` } }), env)).json();
 check(
   '一部だけ空のページも、空の項目だけが更新依頼リストに出る',
   demand3.unanswered.some((x) => x.path === PARTIAL_PAGE && x.looking_for === '転入届 手数料') &&
@@ -255,7 +256,7 @@ check(
 
 // I. 検証に失敗した名乗りは「どのAIが来たか」に入れない。
 //    他人の公開 keyid は誰でも書けるので、入れると「ChatGPTがN回来た」を誰でも作れてしまう。
-const demandBefore = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+const demandBefore = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`, { headers: { authorization: `Bearer ${env.DEMAND_TOKEN}` } }), env)).json();
 const beforeAsks = demandBefore.by_agent.find((a) => a.agent === AGENT_ORIGIN)?.asks ?? 0;
 
 const impostor = await generateKeyPair();
@@ -278,7 +279,7 @@ check(
   JSON.stringify(records[0]),
 );
 
-const demandAfter = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`), env)).json();
+const demandAfter = await (await worker.fetch(new Request(`${SITE}/_aidoku/demand`, { headers: { authorization: `Bearer ${env.DEMAND_TOKEN}` } }), env)).json();
 const afterAsks = demandAfter.by_agent.find((a) => a.agent === AGENT_ORIGIN)?.asks ?? 0;
 check('偽の名乗りでは by_agent の件数を増やせない', afterAsks === beforeAsks, `${beforeAsks} -> ${afterAsks}`);
 check(
@@ -330,6 +331,30 @@ check(
   big.coverage?.from === tsOf(500),
   `from=${big.coverage?.from} 期待=${tsOf(500)}`,
 );
+
+// ---- 集計画面の鍵 --------------------------------------------------------
+// ここには生の探し物の文字列が入る（個人情報の選別がまだ無い）。
+// 鍵が要ること・未設定なら閉じたままであることを固定する。
+{
+  const D = `${SITE}/_aidoku/demand`;
+  const withAuth = (t) => new Request(D, { headers: { authorization: `Bearer ${t}` } });
+
+  const noHeader = await worker.fetch(new Request(D), env);
+  check('鍵なしでは集計画面を読めない', noHeader.status === 401, `status=${noHeader.status}`);
+
+  const wrong = await worker.fetch(withAuth('wrong-token'), env);
+  check('違う鍵では読めない', wrong.status === 401, `status=${wrong.status}`);
+
+  const shorter = await worker.fetch(withAuth('test'), env);
+  check('前方一致では通らない', shorter.status === 401, `status=${shorter.status}`);
+
+  const right = await worker.fetch(withAuth(env.DEMAND_TOKEN), env);
+  check('正しい鍵なら読める', right.status === 200, `status=${right.status}`);
+
+  // 未設定＝まだ開けてよいと決めていない。開かない（fail-closed）
+  const noToken = await worker.fetch(withAuth('anything'), { ...env, DEMAND_TOKEN: undefined });
+  check('DEMAND_TOKEN未設定なら閉じたまま', noToken.status === 404, `status=${noToken.status}`);
+}
 
 console.log = realLog;
 realLog(`\n結果: ${pass} PASS / ${fail} FAIL`);
