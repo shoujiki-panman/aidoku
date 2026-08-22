@@ -26,25 +26,48 @@ sys.path.insert(0, str(ROOT / "crawler"))
 from discover import NEGATIVE_HINTS  # noqa: E402
 
 
+# URLに入っているローマ字。そのまま出すと読めないので、読みを添える。
+# ★ここに無い語はローマ字のまま出す（勝手な意味を付けない）。
+URL_READING = {
+    "tennyu": "転入", "tenyu": "転入", "hikkoshi": "引っ越し",
+    "juminhyo": "住民票", "jumin": "住民", "koseki": "戸籍",
+    "kurashi": "くらし", "todoke": "届け出", "ido": "異動",
+    "jidou": "児童", "teate": "手当", "kosodate": "子育て", "kodomo": "こども",
+    "sodai": "粗大", "gomi": "ごみ", "recycle": "リサイクル",
+}
+
+
+def url_why(w: str) -> str:
+    yomi = URL_READING.get(w)
+    return f"URLに {w}（{yomi}）" if yomi else f"URLに {w}"
+
+
 def reasons(link_text: str, url: str, kw: dict) -> list[dict]:
-    """その点数になった理由。score_link と同じ順で並べる。"""
+    """その点数になった理由。score_link と同じ順で並べる。
+
+    ★言い方は人が読む前提にする。strong語・weak語・除外語はこちらの内輪の呼び名で、
+      画面に出しても意味が通らない。
+    """
     out = []
     low = url.lower()
     blob = f"{link_text} {url}".lower()
     for w in kw["strong"]:
         if w in link_text:
-            out.append({"why": f"文言に「{w}」", "points": 10, "kind": "strong"})
+            out.append({"why": f"リンクの文字に「{w}」（手続きの名前そのもの）",
+                        "points": 10, "kind": "strong"})
     for w in kw["weak"]:
         if w in link_text:
-            out.append({"why": f"文言に「{w}」", "points": 3, "kind": "weak"})
+            out.append({"why": f"リンクの文字に「{w}」（関係のありそうな言葉）",
+                        "points": 3, "kind": "weak"})
     for w in kw["url_hints"]:
         if w in low:
-            out.append({"why": f"URLに {w}", "points": 4, "kind": "url"})
+            out.append({"why": url_why(w), "points": 4, "kind": "url"})
     for w in NEGATIVE_HINTS:
         if w in blob:
-            out.append({"why": f"除外語「{w}」", "points": -8, "kind": "negative"})
+            out.append({"why": f"「{w}」が入っていて、目的と違うページに見える",
+                        "points": -8, "kind": "negative"})
     if low.endswith(".pdf"):
-        out.append({"why": "PDF", "points": -2, "kind": "negative"})
+        out.append({"why": "PDFファイル", "points": -2, "kind": "negative"})
     return out
 
 
@@ -152,9 +175,10 @@ def main(argv: list[str] | None = None) -> None:
         "_about": "AIがどの選択肢を見て、なぜその道を選んだか。"
                   "点の付け方は crawler/discover.py の score_link と targets.json のキーワード。"
                   "ここで新しく点は作っていない。",
-        "scoring": "文言のstrong語+10 / weak語+3 / URLの手がかり+4 / 除外語-8 / PDF-2",
+        "scoring": "点の付け方 — 手続きの名前そのもの +10 ／ 関係のありそうな言葉 +3 ／ "
+                   "URLの手がかり +4 ／ 目的と違うページの印 −8 ／ PDF −2",
         "blame": {
-            "ours": "選ばれなかった候補に手続き名（strong語）があった。"
+            "ours": "選ばれなかった候補に手続きの名前があった。"
                     "サイトに道はあって、こちらの並べ方が外した",
             "site": "候補のどれにも手続き名が無かった。入口から辿れる場所に無い",
         },

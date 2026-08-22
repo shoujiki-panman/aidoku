@@ -38,19 +38,20 @@
           <span class="choice__text">「${esc(c.link_text)}」</span>
           ${c.chosen ? '<span class="choice__tag">これを選んだ</span>' : ''}
         </div>
-        <div class="choice__why">${bits || '<span class="rz">手がかりなし</span>'}</div>
+        <div class="choice__why">${bits || '<span class="rz">手がかりは無し（0点）</span>'}</div>
       </li>`;
     }).join('');
     const missed = (j.missed_with_strong_word || [])[0];
     return `<div class="choices" id="choices" hidden>
         <p class="choices__lead">AIはトップページで<strong>${j.choices.length}つの入口</strong>を見て、
-          文言とURLから点を付けて並べました。</p>
+          リンクの文字とURLから点を付けて、上から順に並べました。</p>
         <p class="choices__rule">${esc(window.__JOURNEY_SCORING__ || '')}</p>
         <ol class="choices__list">${rows}</ol>
         ${missed ? `<p class="choices__missed">
-          <strong>「${esc(missed.link_text)}」</strong>は手続き名そのもの（strong語）で <b>+10</b> を取っていましたが、
-          URLの手がかりを積んだ1位に <b>${j.choices[0].score - missed.score}点差</b> で負けました。
-          <strong>AIは正しい扉の隣を選びました。</strong></p>` : ''}
+          <strong>「${esc(missed.link_text)}」</strong>には<strong>手続きの名前そのもの</strong>が入っていて
+          <b>+10</b> でしたが、URLの手がかりを積み上げた1位に
+          <b>${j.choices[0].score - missed.score}点差</b>で負けました。
+          <strong>AIは、正しい入口のとなりを選んでしまいました。</strong></p>` : ''}
       </div>`;
   }
 
