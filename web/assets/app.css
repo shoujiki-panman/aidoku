@@ -449,11 +449,8 @@ td.marks { white-space: nowrap; }
 .lookup__title { font-weight: 700; font-size: 1.0625rem; }
 .lookup__sub { margin-top: 6px; font-size: .9375rem; color: #4b5563; }
 .lookup__list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
-.lookup__cell {
-  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
-  padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 8px;
-}
-.lookup__proc { font-weight: 700; min-width: 11rem; }
+.lookup__cell { display: block; }
+.lookup__proc { font-weight: 700; }
 .lookup__warn { font-size: .8125rem; color: #8a6d00; }
 .lookup__src { margin-top: 10px; font-size: .8125rem; color: #6b7280; word-break: break-all; }
 .lookup__none { border-left: 4px solid #8a6d00; padding-left: 12px; }
@@ -462,7 +459,13 @@ td.marks { white-space: nowrap; }
    「全部が最初から見えている」のをやめる。data-stage が empty のあいだは
    #results を出さない。検索して当たったとき／区を選んだとき／?muni= で
    直接来たとき／「結果を全部ひらく」を押したときに result へ変わる。 */
-#main[data-stage="empty"] #results { display: none; }
+#main[data-stage="empty"] #results,
+#main[data-stage="ward"] #results { display: none; }
+
+/* ★区と手続きを選んだときは、その区の結果だけ出す。
+   23区ぜんぶの話（見張り・今やる1件・全体・同じ質問を…）は、
+   選んだ区の話ではないので混ぜない。「まとめて見る」を押したときだけ出す。 */
+#main[data-stage="detail"] .whole-set { display: none; }
 
 .lookup--hero {
   margin-top: 8px;
@@ -687,3 +690,27 @@ td.marks { white-space: nowrap; }
   background: #f4f7fb; border-left: 4px solid #0056b3; border-radius: 0 8px 8px 0;
   font-size: .9375rem; line-height: 1.7;
 }
+
+/* 推移など、ここでは出さないものへの案内 */
+.lookup__more { margin-top: 12px; font-size: .875rem; color: #4e5255; }
+
+/* ── 手続きは1行にたたむ ────────────────────────────────
+   3手続きぶんの項目・ボタン・注記が全部開いていて、押す所を探せなかった。
+   開くまでは「名前と点だけ」にする。 */
+.cell { border: 1px solid #d8dde3; border-radius: 12px; background: #fff; }
+.lookup__list { gap: 10px; }
+.cell__head {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; cursor: pointer; list-style: none;
+  font-size: 1.0625rem; font-weight: 700;
+}
+.cell__head::-webkit-details-marker { display: none; }
+.cell__head:hover { background: #f7f9fc; border-radius: 12px; }
+.cell__head:focus-visible { outline: 3px solid #0056b3; outline-offset: 2px; }
+.cell__head .score-cell { margin-left: auto; }
+.cell__chev { color: #6b7280; transition: transform .15s ease; }
+.cell[open] > .cell__head .cell__chev { transform: rotate(180deg); }
+.cell[open] > .cell__head { border-bottom: 1px solid #eef0f4; border-radius: 12px 12px 0 0; }
+.cell__body { padding: 14px 16px 16px; }
+.cell__go { margin: 14px 0 0; }
+@media (prefers-reduced-motion: reduce) { .cell__chev { transition: none; } }

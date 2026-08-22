@@ -146,7 +146,7 @@ class PublishQuotesTest(unittest.TestCase):
 
 
 class PageStatusTest(unittest.TestCase):
-    """対象ページに着けたか確認できたかどうか（#86）。
+    """この手続きのページにたどり着けたかを確かめられたかどうか（#86）。
 
     4項目が1つも読めないとき、区のページに書かれていないのか、こちらが別の
     ページを採点したのかを区別できない。区別できないものを区への依頼にしない。
@@ -177,8 +177,13 @@ class PageStatusTest(unittest.TestCase):
     def test_unconfirmed_does_not_assert_wrong_page(self):
         """断定しない。こちらが確認できていないという状態だけを言う。"""
         e = build_entry(extract(self.NONE_FOUND, "記載なし"))
-        text = e["page_status"]["label"] + e["page_status"]["detail"]
-        self.assertIn("確認できていません", e["page_status"]["label"])
+        label = e["page_status"]["label"]
+        text = label + e["page_status"]["detail"]
+        # ★見たいのは言い回しではなく「断定していないこと」。
+        #   文言を直したときにここで落ちても、直すのは文言ではなく下の条件。
+        self.assertRegex(label, r"確かめられていません|確認できていません")
+        for asserted in ("別のページを採点しました", "間違ったページ", "書かれていません"):
+            self.assertNotIn(asserted, label)
         self.assertIn("区別できません", text)
 
     def test_status_has_label_and_detail(self):

@@ -88,8 +88,10 @@ async function loadProcedure(id, muniId = null) {
     b.setAttribute('aria-selected', String(b.dataset.proc === p.id));
   });
 
+  // 手続きタブは「まとめて見る」のときしか出さない。ここで
+  // 「転入届の結果です」と言い切ると、別の手続きを開いたときに嘘になる。
   $('phase-note').textContent =
-    `${data.phase}の${data.procedure}を、AIに読ませた結果です（${data.n_municipalities}自治体）`;
+    `${data.phase}を、住民のAIに読ませて測った結果です（${data.n_municipalities}自治体）`;
   setText('proc-name', data.procedure);
   $('generated-at').textContent = (data.generated_at || '').slice(0, 10);
 
@@ -231,7 +233,7 @@ function renderNextAction(m) {
     box.innerHTML = `
       <div class="next-action" data-kind="remeasure">
         <p class="next-action__head">
-          <span class="next-action__chip" data-kind="ours">こちら側の一手</span>
+          <span class="next-action__chip" data-kind="ours">原因はAI読側</span>
           <span class="next-action__where"><b>${esc(m.name)}</b>・${esc(data.procedure)}</span>
         </p>
         <p class="next-action__what">このページが${esc(data.procedure)}のページか確かめて、<b>測り直す</b></p>
@@ -248,7 +250,7 @@ function renderNextAction(m) {
         </div>` : ''}
         ${recheckCmd ? `
         <details class="next-action__recheck">
-          <summary>測り直しのコマンド</summary>
+          <summary>測り直す手順（開発者向け）</summary>
           <pre class="next-action__cmd"><code>${esc(recheckCmd)}</code></pre>
         </details>` : ''}
       </div>`;
@@ -364,15 +366,15 @@ function select(id) {
     <p class="detail-head">
       <b class="detail-name">${esc(m.name)}</b>
       <span class="detail-verdict" data-tone="${unread === 0 ? 'green' : 'red'}">
-        ${unread === 0 ? '4項目とも住民のAIに伝わります' : `4項目中${4 - unread}項目しか伝わりません`}
+        ${unread === 0 ? '4項目とも読み取れました' : `4項目のうち読み取れたのは${4 - unread}項目です`}
       </span>
       <span class="detail-src">トップページから ${m.hops ?? '-'} クリックで到達
-        ／ <a class="dads-link" href="${esc(m.page_url)}" target="_blank" rel="noopener">診断したページ</a></span>
+        ／ <a class="dads-link" href="${esc(m.page_url)}" target="_blank" rel="noopener">採点したページ</a></span>
     </p>
     <div class="chat">${chatBlock(m)}</div>
     ${why}
     ${fixes}
-    <p class="scoreline">参考: AI判読度 <b data-tone="${tone(m.total)}">${m.total}</b>/100点
+    <p class="scoreline">参考: 100点満点での点数 <b data-tone="${tone(m.total)}">${m.total}</b>/100点
       （4項目×20点＋オンライン明示20点。各項目は「読めた／読めない」の2値なので、判定が1つ変わると20点動きます）</p>`;
 }
 
@@ -386,7 +388,6 @@ init().catch((e) => {
 //   静的ホスティングからは動かせない。当てずっぽうを返さないことが仕様。
 //   盤面のグレーと同じ約束 — 測っていないものを、測ったように見せない。
 let lookupCells = null;
-let historySnaps = null;
 let archiveByUrl = null;
 
 // 過去の姿は Internet Archive / WARP が既に持っている（Issue #99）。
@@ -420,48 +421,9 @@ function archiveLine(rec) {
       <span class="fmp__note">※ 残っているのはHTMLだけで、当時AIが読めたかは記録されていません</span></p>`;
 }
 
-async function loadHistory() {
-  if (historySnaps) return historySnaps;
-  try {
-    const r = await fetch('data/history/scores.jsonl');
-    historySnaps = r.ok ? AidokuTrend.parseJsonl(await r.text()) : [];
-  } catch {
-    historySnaps = [];
-  }
-  return historySnaps;
-}
 
 // 前回からの差。★数字は出すが、原因の断定は測定条件が一致するときだけ。
 // いまの履歴は全部 legacy_unknown なので、必ず「原因は言えない」になる。それが正しい。
-function trendBox(series) {
-  if (!series || series.length < 2) {
-    return `<p class="trend trend--none">前回の記録がまだありません（この画面は
-      <a class="dads-link" href="data/history/scores.jsonl">履歴</a>から差を出します）。</p>`;
-  }
-  const c = AidokuTrend.lastChange(series);
-  const sign = c.delta > 0 ? `+${c.delta}` : String(c.delta);
-  const tone = c.delta > 0 ? 'up' : c.delta < 0 ? 'down' : 'flat';
-  const word = c.delta > 0 ? '増えました' : c.delta < 0 ? '減りました' : '変わっていません';
-  const dots = series.map((s) => {
-    const pct = s.total ? Math.round((s.got / s.total) * 100) : 0;
-    return `<span class="trend__dot" title="${esc(String(s.at).slice(0, 10))}  ${s.got}/${s.total}">
-        <b style="height:${Math.max(pct, 4)}%"></b>
-        <i>${esc(String(s.at).slice(5, 10))}</i></span>`;
-  }).join('');
-  return `<div class="trend" data-tone="${tone}">
-      <p class="trend__head">
-        <b class="trend__delta">${esc(sign)}</b>
-        前回（${esc(String(c.prev.at).slice(0, 10))}）から<b>${word}</b>
-        <span class="trend__nums">${c.prev.got}/${c.prev.total} → ${c.now.got}/${c.now.total}</span>
-      </p>
-      <div class="trend__spark">${dots}</div>
-      <p class="trend__why" data-how="${esc(c.how)}">
-        ${c.how === 'site'
-          ? 'この差はサイト側の変化と見てよい（測定条件が同じ）'
-          : `<b>この差の原因は言えない</b> — ${esc(c.why)}`}
-      </p>
-    </div>`;
-}
 
 async function loadLookupCells() {
   if (lookupCells) return lookupCells;
@@ -520,15 +482,22 @@ function lookupCellRow(c) {
       </div>`;
   }).join('');
   return `<li class="lookup__cell">
-    <div class="lookup__cellhead">
-      <span class="lookup__proc">${esc(c.procName)}</span>
-      <span class="score-cell" data-tone="${tone(c.total)}">${gotCount(c)}/${FIELDS.length}</span>
-      <button type="button" class="dads-button lookup__open" data-variant="outline"
-              data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">結果を開く</button>
-    </div>
-    <div class="fieldmarks">${marks}</div>
-    ${panels}
-    ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
+    <details class="cell">
+      <summary class="cell__head">
+        <span class="lookup__proc">${esc(c.procName)}</span>
+        <span class="score-cell" data-tone="${tone(c.total)}">${gotCount(c)}/${FIELDS.length}</span>
+        <span class="cell__chev" aria-hidden="true">▾</span>
+      </summary>
+      <div class="cell__body">
+        <div class="fieldmarks">${marks}</div>
+        ${panels}
+        ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
+        <p class="cell__go">
+          <button type="button" class="dads-button lookup__open"
+                  data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">この手続きの結果を開く</button>
+        </p>
+      </div>
+    </details>
   </li>`;
 }
 
@@ -540,25 +509,19 @@ function wardProgress(cells) {
 }
 
 function progressBar(p) {
-  const label = p.got === p.total ? '全部届いています'
-    : p.got === 0 ? 'ひとつも届いていません'
-    : `あと ${p.total - p.got} 項目`;
+  const label = p.got === p.total ? `${p.total}項目すべて読み取れました`
+    : p.got === 0 ? '1つも読み取れませんでした'
+    : `読み取れなかった項目が ${p.total - p.got} つあります`;
   return `<div class="progress" role="img"
                aria-label="${p.got} / ${p.total} 項目が住民のAIに届いています">
       <div class="progress__head">
         <b class="progress__num">${p.got} <span>/ ${p.total}</span></b>
-        <span class="progress__label">住民のAIに届いている項目 — ${esc(label)}</span>
+        <span class="progress__label">区のページから読み取れた項目 — ${esc(label)}</span>
       </div>
       <div class="progress__bar"><span style="width:${p.pct}%"></span></div>
     </div>`;
 }
 
-async function renderTrend(muniId) {
-  const box = $('lookup-trend');
-  if (!box || !muniId || typeof AidokuTrend === 'undefined') return;
-  const snaps = await loadHistory();
-  box.innerHTML = trendBox(AidokuTrend.wardSeries(snaps, muniId, FIELDS));
-}
 
 function renderLookup(res) {
   const box = $('lookup-result');
@@ -578,16 +541,17 @@ function renderLookup(res) {
     box.innerHTML = `
       <p class="lookup__title">${esc(res.muniName)}</p>
       <p class="lookup__sub">${via}</p>
+      <!-- 推移は trends.html に置く。ここに出すと、区を押した直後に
+           「この差の原因は言えない」と日付が並んで、手続きを探す邪魔になる。 -->
       <p class="lookup__do">
-        手続きを選ぶと、<strong>区の公式ページ</strong>と、そのページから読み取れなかった項目が出ます。
-        <strong>右下の「AIに渡して調べる」</strong>を押すと、自分のAIがその公式ページを読んで、
-        <strong>当日の持ち物と、行く前に確認すること</strong>を作ります。
-        読み取れなかった項目は、AIに推測させず区の窓口に確認するよう案内します。
+        手続きを開くと、<strong>区の公式ページ</strong>と、読み取れなかった項目が出ます。
+        <strong>右下の「AIに渡して調べる」</strong>で、自分のAIが<strong>当日の持ち物</strong>を作ります。
       </p>
       ${progressBar(wardProgress(res.cells))}
-      <div id="lookup-trend"></div>
-      <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>`;
-    renderTrend(res.cells[0] && res.cells[0].muniId);
+      <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>
+      <p class="lookup__more">
+        この区の点数の移り変わりは <a class="dads-link" href="trends.html">見張りと推移</a> にあります。
+      </p>`;
     return;
   }
   if (res.reason === 'empty') {
@@ -606,10 +570,14 @@ function renderLookup(res) {
     </div>`;
 }
 
-// 結果を出してよい状態にする。ここを通らずに #results が見えることは無い。
-function showResults() {
+// 画面の段階。ここを通らずに #results が見えることは無い。
+//   empty  … 地図だけ
+//   ward   … 押した区の3手続き（#results はまだ出さない）
+//   detail … その区・その手続きの結果だけ（23区ぜんぶの話は出さない）
+//   all    … 「23区ぶんの結果をまとめて見る」を押したとき
+function setStage(stage) {
   const m = $('main');
-  if (m) m.dataset.stage = 'result';
+  if (m) m.dataset.stage = stage;
 }
 
 async function runLookup(q) {
@@ -619,7 +587,7 @@ async function runLookup(q) {
     const res = AidokuLookup.lookup(q, cells, procs.map((p) => p.id));
     renderLookup(res);
     // 当たったときだけ結果を出す。外したのに全部出てきたら、元の「最初から全部見える」に戻る
-    if (res.kind === 'page' || res.kind === 'ward') showResults();
+    if (res.kind === 'page' || res.kind === 'ward') setStage('ward');
   } catch (err) {
     $('lookup-result').innerHTML =
       '<p class="lookup__sub">データを読めませんでした。時間をおいて試してください。</p>';
@@ -723,7 +691,7 @@ function initLookup() {
   $('lookup-result').addEventListener('click', async (e) => {
     const b = e.target.closest('.lookup__open');
     if (!b) return;
-    showResults();
+    setStage('detail');
     await loadProcedure(b.dataset.proc, b.dataset.muni);
     $('detail-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
@@ -735,7 +703,7 @@ function initLookup() {
   const showAll = $('show-all');
   if (showAll) {
     showAll.addEventListener('click', () => {
-      showResults();
+      setStage('all');
       $('phase-note').scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
@@ -746,5 +714,5 @@ function initLookup() {
     runLookup(q0);
   }
   // 盤面から ?muni=&proc= で来た人は、その区を見に来ているので最初から結果を出す
-  if (new URLSearchParams(location.search).get('muni')) showResults();
+  if (new URLSearchParams(location.search).get('muni')) setStage('detail');
 }
