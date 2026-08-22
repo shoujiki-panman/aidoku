@@ -386,6 +386,50 @@ init().catch((e) => {
 //   静的ホスティングからは動かせない。当てずっぽうを返さないことが仕様。
 //   盤面のグレーと同じ約束 — 測っていないものを、測ったように見せない。
 let lookupCells = null;
+let historySnaps = null;
+
+async function loadHistory() {
+  if (historySnaps) return historySnaps;
+  try {
+    const r = await fetch('data/history/scores.jsonl');
+    historySnaps = r.ok ? AidokuTrend.parseJsonl(await r.text()) : [];
+  } catch {
+    historySnaps = [];
+  }
+  return historySnaps;
+}
+
+// 前回からの差。★数字は出すが、原因の断定は測定条件が一致するときだけ。
+// いまの履歴は全部 legacy_unknown なので、必ず「原因は言えない」になる。それが正しい。
+function trendBox(series) {
+  if (!series || series.length < 2) {
+    return `<p class="trend trend--none">前回の記録がまだありません（この画面は
+      <a class="dads-link" href="data/history/scores.jsonl">履歴</a>から差を出します）。</p>`;
+  }
+  const c = AidokuTrend.lastChange(series);
+  const sign = c.delta > 0 ? `+${c.delta}` : String(c.delta);
+  const tone = c.delta > 0 ? 'up' : c.delta < 0 ? 'down' : 'flat';
+  const word = c.delta > 0 ? '増えました' : c.delta < 0 ? '減りました' : '変わっていません';
+  const dots = series.map((s) => {
+    const pct = s.total ? Math.round((s.got / s.total) * 100) : 0;
+    return `<span class="trend__dot" title="${esc(String(s.at).slice(0, 10))}  ${s.got}/${s.total}">
+        <b style="height:${Math.max(pct, 4)}%"></b>
+        <i>${esc(String(s.at).slice(5, 10))}</i></span>`;
+  }).join('');
+  return `<div class="trend" data-tone="${tone}">
+      <p class="trend__head">
+        <b class="trend__delta">${esc(sign)}</b>
+        前回（${esc(String(c.prev.at).slice(0, 10))}）から<b>${word}</b>
+        <span class="trend__nums">${c.prev.got}/${c.prev.total} → ${c.now.got}/${c.now.total}</span>
+      </p>
+      <div class="trend__spark">${dots}</div>
+      <p class="trend__why" data-how="${esc(c.how)}">
+        ${c.how === 'site'
+          ? 'この差はサイト側の変化と見てよい（測定条件が同じ）'
+          : `<b>この差の原因は言えない</b> — ${esc(c.why)}`}
+      </p>
+    </div>`;
+}
 
 async function loadLookupCells() {
   if (lookupCells) return lookupCells;
@@ -394,6 +438,9 @@ async function loadLookupCells() {
     return d.municipalities.map((m) => ({
       procId: p.id, procName: p.name, muniId: m.id, muniName: m.name,
       total: m.total, url: m.page_url, breakdown: m.breakdown, pageStatus: m.page_status,
+      // 項目ごとに「どこに何を書くか」を出すために持つ
+      improvements: m.improvements || [],
+      fields: m.fields || [],
     }));
   }));
   lookupCells = per.flat();
@@ -406,10 +453,35 @@ function lookupCellRow(c) {
   const st = c.pageStatus;
   const unconfirmed = st !== null && typeof st === 'object' && st.code === 'target_unconfirmed';
   // 項目ごとに ✓ / ✕ を出す。「3/4」より「どれが欠けているか」のほうが次の手が決まる
-  const marks = FIELDS.map((f) => {
+  const marks = FIELDS.map((f, idx) => {
     const ok = ((c.breakdown || {})[f] ?? 0) >= 20;
-    return `<span class="fieldmark" data-ok="${ok}" title="${esc(f)}">
-              <b>${ok ? '✓' : '✕'}</b><i>${esc(f)}</i></span>`;
+    const id = `fm-${esc(c.muniId)}-${esc(c.procId)}-${idx}`;
+    return `<button type="button" class="fieldmark" data-ok="${ok}"
+              aria-expanded="false" aria-controls="${id}"
+              data-target="${id}">
+              <b>${ok ? '✓' : '✕'}</b><i>${esc(f)}</i>
+              <span class="fieldmark__chev" aria-hidden="true">▾</span>
+            </button>`;
+  }).join('');
+
+  // 押したときに出る中身。何を書けばいいかまで出す
+  const panels = FIELDS.map((f, idx) => {
+    const ok = ((c.breakdown || {})[f] ?? 0) >= 20;
+    const id = `fm-${esc(c.muniId)}-${esc(c.procId)}-${idx}`;
+    const imp = (c.improvements || []).find((x) => x && x.field === f);
+    const fld = (c.fields || []).find((x) => x && x.field === f);
+    const value = fld && fld.agent_value ? fld.agent_value : '';
+    const body = ok
+      ? `<p class="fmp__line"><b>いまの答え</b>${value
+          ? esc(value) : '読み取れました（本文は区の公式ページでご覧ください）'}</p>`
+      : `<p class="fmp__line"><b>いまの答え</b><span class="fmp__none">このページからは分かりません</span></p>
+         ${imp ? `<p class="fmp__line"><b>直し方</b>${esc(imp.reason)}</p>
+                  <p class="fmp__gain">直ると <b>+${esc(String(imp.gain))}点</b>（実ページでの再測定はまだ）</p>` : ''}`;
+    return `<div class="fieldmark__panel" id="${id}" hidden>
+        <p class="fmp__where"><b>どのページの話か</b>
+          <a class="dads-link" href="${esc(c.url || '')}" target="_blank" rel="noopener">${esc(c.url || '')}</a></p>
+        ${body}
+      </div>`;
   }).join('');
   return `<li class="lookup__cell">
     <div class="lookup__cellhead">
@@ -419,6 +491,7 @@ function lookupCellRow(c) {
               data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">結果を開く</button>
     </div>
     <div class="fieldmarks">${marks}</div>
+    ${panels}
     ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
   </li>`;
 }
@@ -444,6 +517,13 @@ function progressBar(p) {
     </div>`;
 }
 
+async function renderTrend(muniId) {
+  const box = $('lookup-trend');
+  if (!box || !muniId || typeof AidokuTrend === 'undefined') return;
+  const snaps = await loadHistory();
+  box.innerHTML = trendBox(AidokuTrend.wardSeries(snaps, muniId, FIELDS));
+}
+
 function renderLookup(res) {
   const box = $('lookup-result');
   if (res.kind === 'page') {
@@ -463,7 +543,9 @@ function renderLookup(res) {
       <p class="lookup__title">${esc(res.muniName)}</p>
       <p class="lookup__sub">${via}</p>
       ${progressBar(wardProgress(res.cells))}
+      <div id="lookup-trend"></div>
       <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>`;
+    renderTrend(res.cells[0] && res.cells[0].muniId);
     return;
   }
   if (res.reason === 'empty') {
@@ -510,6 +592,16 @@ function initLookup() {
     e.preventDefault();
     runLookup($('lookup-input').value);
   });
+  $('lookup-result').addEventListener('click', (e) => {
+    const fm = e.target.closest('.fieldmark');
+    if (!fm) return;
+    const panel = $(fm.dataset.target);
+    if (!panel) return;
+    const open = fm.getAttribute('aria-expanded') === 'true';
+    fm.setAttribute('aria-expanded', String(!open));
+    panel.hidden = open;
+  });
+
   $('lookup-result').addEventListener('click', async (e) => {
     const b = e.target.closest('.lookup__open');
     if (!b) return;

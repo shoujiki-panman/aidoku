@@ -527,3 +527,66 @@ td.marks { white-space: nowrap; }
 .fieldmark[data-ok="true"] > b  { color: #0f7a3d; }
 .fieldmark[data-ok="false"] { border-color: #f0c8c4; background: #fdf3f2; }
 .fieldmark[data-ok="false"] > b { color: #b3261e; }
+
+/* ── 前回からの差 ─────────────────────────────────────────────
+   ★数字は必ず出すが、原因の断定は測定条件が一致するときだけ。
+     いまの履歴は全部 legacy_unknown（METHOD.md §4-8）なので、
+     実データでは必ず「原因は言えない」になる。それが正しい挙動。 */
+.trend {
+  margin: 14px 0; padding: 14px 16px;
+  border: 1px solid #e5e7eb; border-radius: 12px; background: #fbfcfe;
+}
+.trend--none { color: #6b7280; font-size: .875rem; background: #fbfcfe; }
+.trend__head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-size: .9375rem; }
+.trend__delta {
+  font-size: 1.5rem; font-weight: 800; line-height: 1;
+  padding: 0 10px; border-radius: 8px;
+}
+.trend[data-tone="up"]   .trend__delta { background: #f0f9f3; color: #0f7a3d; }
+.trend[data-tone="down"] .trend__delta { background: #fdf3f2; color: #b3261e; }
+.trend[data-tone="flat"] .trend__delta { background: #eef1f5; color: #4b5563; }
+.trend__nums { color: #6b7280; font-size: .8125rem; }
+
+/* 推移。棒の高さが「12項目のうち何項目届いているか」 */
+.trend__spark { display: flex; align-items: flex-end; gap: 10px; height: 56px; margin-top: 10px; }
+.trend__dot { display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; }
+.trend__dot > b {
+  width: 26px; border-radius: 4px 4px 0 0; background: #0f7a3d; margin-top: auto;
+}
+.trend__dot > i { font-style: normal; font-size: .6875rem; color: #6b7280; }
+
+.trend__why { margin-top: 10px; font-size: .8125rem; }
+.trend__why[data-how="site"]    { color: #0f7a3d; }
+.trend__why[data-how="unknown"] { color: #6b5500; }
+.trend__why[data-how="unknown"] b { color: #6b5500; }
+
+/* ── 項目の札を押したら「どこに何があるか」が出る ──────────────────
+   ✓/✕ を出すだけでは「どの項目もどこに何があるか分からん」ままだった。
+   札そのものをボタンにして、押した場所で答える。 */
+.fieldmark {
+  cursor: pointer; font-family: inherit;
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 3px 9px; border-radius: 999px; font-size: .8125rem;
+  border: 1px solid #e5e7eb; background: #fff;
+}
+.fieldmark:hover { filter: brightness(.97); }
+.fieldmark:focus-visible { outline: 3px solid #0056b3; outline-offset: 1px; }
+.fieldmark__chev { font-size: .625rem; color: #9ca3af; transition: transform .15s ease; }
+.fieldmark[aria-expanded="true"] .fieldmark__chev { transform: rotate(180deg); }
+
+.fieldmark__panel {
+  margin-top: 8px; padding: 12px 14px;
+  border: 1px solid #e5e7eb; border-radius: 10px; background: #fbfcfe;
+  font-size: .875rem; max-width: 46rem;
+}
+.fmp__where, .fmp__line { margin-bottom: 6px; word-break: break-all; }
+.fmp__where > b, .fmp__line > b {
+  display: inline-block; min-width: 8.5rem; margin-right: 8px;
+  font-size: .75rem; color: #4b5563;
+}
+.fmp__none { color: #b3261e; }
+.fmp__gain {
+  margin-top: 8px; padding: 6px 10px; border-radius: 8px;
+  background: #f0f9f3; color: #0f7a3d; font-size: .8125rem; width: fit-content;
+}
+.fmp__gain b { font-size: .9375rem; }
