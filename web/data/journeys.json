@@ -1,8 +1,8 @@
 {
   "_about": "AIがどの選択肢を見て、なぜその道を選んだか。点の付け方は crawler/discover.py の score_link と targets.json のキーワード。ここで新しく点は作っていない。",
-  "scoring": "文言のstrong語+10 / weak語+3 / URLの手がかり+4 / 除外語-8 / PDF-2",
+  "scoring": "点の付け方 — 手続きの名前そのもの +10 ／ 関係のありそうな言葉 +3 ／ URLの手がかり +4 ／ 目的と違うページの印 −8 ／ PDF −2",
   "blame": {
-    "ours": "選ばれなかった候補に手続き名（strong語）があった。サイトに道はあって、こちらの並べ方が外した",
+    "ours": "選ばれなかった候補に手続きの名前があった。サイトに道はあって、こちらの並べ方が外した",
     "site": "候補のどれにも手続き名が無かった。入口から辿れる場所に無い"
   },
   "n": 69,
@@ -54,12 +54,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -74,7 +74,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -89,7 +89,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -149,12 +149,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -169,12 +169,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -189,7 +189,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -204,7 +204,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -219,7 +219,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -234,7 +234,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -294,17 +294,17 @@
           "score_check": 16,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -319,12 +319,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -339,7 +339,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -399,27 +399,27 @@
           "score_check": 18,
           "reasons": [
             {
-              "why": "文言に「住民登録」",
+              "why": "リンクの文字に「住民登録」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに jumin",
+              "why": "URLに jumin（住民）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -434,12 +434,12 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「転入」",
+              "why": "リンクの文字に「転入」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに tennyu",
+              "why": "URLに tennyu（転入）",
               "points": 4,
               "kind": "url"
             }
@@ -454,12 +454,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -474,12 +474,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -494,7 +494,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -509,7 +509,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -527,12 +527,12 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「転入」",
+              "why": "リンクの文字に「転入」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに tennyu",
+              "why": "URLに tennyu（転入）",
               "points": 4,
               "kind": "url"
             }
@@ -590,17 +590,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -615,12 +615,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -680,22 +680,22 @@
           "score_check": 13,
           "reasons": [
             {
-              "why": "文言に「住民票」",
+              "why": "リンクの文字に「住民票」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「届出」",
+              "why": "リンクの文字に「届出」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -710,7 +710,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -725,12 +725,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -745,7 +745,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -760,7 +760,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -775,7 +775,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -793,7 +793,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -851,17 +851,17 @@
           "score_check": 18,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに hikkoshi",
+              "why": "URLに hikkoshi（引っ越し）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -876,12 +876,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -896,7 +896,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -911,7 +911,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -926,7 +926,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -941,7 +941,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1001,17 +1001,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「住民票」",
+              "why": "リンクの文字に「住民票」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1026,12 +1026,12 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「引っ越し」",
+              "why": "リンクの文字に「引っ越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに hikkoshi",
+              "why": "URLに hikkoshi（引っ越し）",
               "points": 4,
               "kind": "url"
             }
@@ -1046,7 +1046,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「転入」",
+              "why": "リンクの文字に「転入」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -1061,12 +1061,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -1081,7 +1081,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1096,7 +1096,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1114,12 +1114,12 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「引っ越し」",
+              "why": "リンクの文字に「引っ越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに hikkoshi",
+              "why": "URLに hikkoshi（引っ越し）",
               "points": 4,
               "kind": "url"
             }
@@ -1134,7 +1134,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「転入」",
+              "why": "リンクの文字に「転入」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -1192,12 +1192,12 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「引っ越し」",
+              "why": "リンクの文字に「引っ越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに hikkoshi",
+              "why": "URLに hikkoshi（引っ越し）",
               "points": 4,
               "kind": "url"
             }
@@ -1212,17 +1212,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1237,17 +1237,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「住民票」",
+              "why": "リンクの文字に「住民票」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -1262,7 +1262,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1277,7 +1277,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1337,22 +1337,22 @@
           "score_check": 15,
           "reasons": [
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -1367,12 +1367,12 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに hikkoshi",
+              "why": "URLに hikkoshi（引っ越し）",
               "points": 4,
               "kind": "url"
             }
@@ -1387,17 +1387,17 @@
           "score_check": 12,
           "reasons": [
             {
-              "why": "URLに hikkoshi",
+              "why": "URLに hikkoshi（引っ越し）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -1412,12 +1412,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -1432,12 +1432,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -1452,12 +1452,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「届出」",
+              "why": "リンクの文字に「届出」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -1475,12 +1475,12 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに hikkoshi",
+              "why": "URLに hikkoshi（引っ越し）",
               "points": 4,
               "kind": "url"
             }
@@ -1538,22 +1538,22 @@
           "score_check": 13,
           "reasons": [
             {
-              "why": "文言に「住民票」",
+              "why": "リンクの文字に「住民票」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「届出」",
+              "why": "リンクの文字に「届出」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -1568,12 +1568,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「届出」",
+              "why": "リンクの文字に「届出」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -1588,7 +1588,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1603,7 +1603,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1618,7 +1618,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1633,7 +1633,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -1693,12 +1693,12 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに hikkoshi",
+              "why": "URLに hikkoshi（引っ越し）",
               "points": 4,
               "kind": "url"
             }
@@ -1713,17 +1713,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1738,12 +1738,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1758,7 +1758,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1773,7 +1773,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1788,7 +1788,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1848,17 +1848,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1873,17 +1873,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「住民票」",
+              "why": "リンクの文字に「住民票」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1898,7 +1898,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引っ越し」",
+              "why": "リンクの文字に「引っ越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -1913,7 +1913,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1928,7 +1928,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1943,7 +1943,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -1961,7 +1961,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引っ越し」",
+              "why": "リンクの文字に「引っ越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -2019,7 +2019,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -2034,12 +2034,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2054,7 +2054,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「届出」",
+              "why": "リンクの文字に「届出」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2069,7 +2069,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2129,12 +2129,12 @@
           "score_check": 13,
           "reasons": [
             {
-              "why": "文言に「引っ越し」",
+              "why": "リンクの文字に「引っ越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2149,12 +2149,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2169,7 +2169,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2184,7 +2184,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2199,7 +2199,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2214,7 +2214,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2274,12 +2274,12 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「引っ越し」",
+              "why": "リンクの文字に「引っ越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "URLに hikkoshi",
+              "why": "URLに hikkoshi（引っ越し）",
               "points": 4,
               "kind": "url"
             }
@@ -2294,17 +2294,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2319,17 +2319,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2344,12 +2344,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2364,12 +2364,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2384,7 +2384,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2444,17 +2444,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「住民票」",
+              "why": "リンクの文字に「住民票」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -2469,7 +2469,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -2484,7 +2484,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2499,7 +2499,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2559,12 +2559,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             }
@@ -2579,12 +2579,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「届出」",
+              "why": "リンクの文字に「届出」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2599,12 +2599,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「住所」",
+              "why": "リンクの文字に「住所」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2619,7 +2619,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -2634,7 +2634,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -2649,7 +2649,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2709,17 +2709,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「住民票」",
+              "why": "リンクの文字に「住民票」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -2734,7 +2734,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -2749,12 +2749,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -2769,7 +2769,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2784,7 +2784,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2799,7 +2799,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -2817,7 +2817,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -2875,27 +2875,27 @@
           "score_check": 24,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -2910,12 +2910,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「届出」",
+              "why": "リンクの文字に「届出」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -2930,7 +2930,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -2990,17 +2990,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3015,12 +3015,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「手続き」",
+              "why": "リンクの文字に「手続き」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3035,12 +3035,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「住民票」",
+              "why": "リンクの文字に「住民票」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -3055,7 +3055,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3070,7 +3070,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3085,7 +3085,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3145,22 +3145,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「住民登録」",
+              "why": "リンクの文字に「住民登録」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3175,17 +3175,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3200,7 +3200,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引っ越し」",
+              "why": "リンクの文字に「引っ越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -3215,12 +3215,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに koseki",
+              "why": "URLに koseki（戸籍）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3235,7 +3235,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに ido",
+              "why": "URLに ido（異動）",
               "points": 4,
               "kind": "url"
             }
@@ -3250,7 +3250,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3268,7 +3268,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引っ越し」",
+              "why": "リンクの文字に「引っ越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -3326,22 +3326,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「住民票」",
+              "why": "リンクの文字に「住民票」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「戸籍」",
+              "why": "リンクの文字に「戸籍」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -3356,7 +3356,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -3371,12 +3371,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに todoke",
+              "why": "URLに todoke（届け出）",
               "points": 4,
               "kind": "url"
             }
@@ -3391,12 +3391,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「くらし」",
+              "why": "リンクの文字に「くらし」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3411,7 +3411,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3426,7 +3426,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kurashi",
+              "why": "URLに kurashi（くらし）",
               "points": 4,
               "kind": "url"
             }
@@ -3444,7 +3444,7 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「引越し」",
+              "why": "リンクの文字に「引越し」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             }
@@ -3491,12 +3491,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3511,7 +3511,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3526,7 +3526,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3541,7 +3541,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに jidou",
+              "why": "URLに jidou（児童）",
               "points": 4,
               "kind": "url"
             }
@@ -3590,12 +3590,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3610,7 +3610,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3625,7 +3625,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -3674,17 +3674,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「手当」",
+              "why": "リンクの文字に「手当」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに teate",
+              "why": "URLに teate（手当）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3699,12 +3699,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3719,12 +3719,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3739,12 +3739,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3759,7 +3759,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3774,7 +3774,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3823,12 +3823,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「こども」",
+              "why": "リンクの文字に「こども」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -3843,12 +3843,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3863,7 +3863,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -3912,12 +3912,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -3932,7 +3932,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -3947,7 +3947,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -3962,7 +3962,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -3977,7 +3977,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4026,12 +4026,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4046,12 +4046,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4066,7 +4066,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4081,7 +4081,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4096,7 +4096,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4111,7 +4111,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4160,12 +4160,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4180,7 +4180,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4229,12 +4229,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4249,12 +4249,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4269,7 +4269,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「申請」",
+              "why": "リンクの文字に「申請」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -4284,7 +4284,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「申請」",
+              "why": "リンクの文字に「申請」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -4333,17 +4333,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「手当」",
+              "why": "リンクの文字に「手当」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに teate",
+              "why": "URLに teate（手当）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4358,17 +4358,17 @@
           "score_check": 10,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手当」",
+              "why": "リンクの文字に「手当」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4383,12 +4383,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4403,12 +4403,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4423,7 +4423,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4438,7 +4438,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「申請」",
+              "why": "リンクの文字に「申請」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -4487,12 +4487,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「手当」",
+              "why": "リンクの文字に「手当」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4507,12 +4507,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4527,12 +4527,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4547,7 +4547,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4562,7 +4562,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4577,7 +4577,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4626,12 +4626,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4646,12 +4646,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4666,7 +4666,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4681,7 +4681,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「手当」",
+              "why": "リンクの文字に「手当」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -4730,12 +4730,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4784,7 +4784,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -4799,12 +4799,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4819,7 +4819,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -4834,7 +4834,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -4849,7 +4849,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「申請」",
+              "why": "リンクの文字に「申請」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -4898,12 +4898,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -4918,7 +4918,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「こども」",
+              "why": "リンクの文字に「こども」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -4933,7 +4933,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「こども」",
+              "why": "リンクの文字に「こども」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -4982,12 +4982,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5002,12 +5002,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5022,12 +5022,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「こども」",
+              "why": "リンクの文字に「こども」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5042,12 +5042,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「手当」",
+              "why": "リンクの文字に「手当」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに teate",
+              "why": "URLに teate（手当）",
               "points": 4,
               "kind": "url"
             }
@@ -5062,12 +5062,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5082,7 +5082,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5131,12 +5131,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5151,12 +5151,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5171,12 +5171,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5191,12 +5191,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「こども」",
+              "why": "リンクの文字に「こども」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5211,7 +5211,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5226,7 +5226,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5275,12 +5275,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「手当」",
+              "why": "リンクの文字に「手当」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -5295,7 +5295,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -5310,7 +5310,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -5325,7 +5325,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「申請」",
+              "why": "リンクの文字に「申請」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -5340,7 +5340,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -5389,17 +5389,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに jidou",
+              "why": "URLに jidou（児童）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5414,12 +5414,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5434,12 +5434,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「申請」",
+              "why": "リンクの文字に「申請」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5454,12 +5454,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「こども」",
+              "why": "リンクの文字に「こども」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5474,12 +5474,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5494,12 +5494,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5548,17 +5548,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5573,7 +5573,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5588,7 +5588,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5603,7 +5603,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「こども」",
+              "why": "リンクの文字に「こども」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -5652,7 +5652,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5667,7 +5667,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5682,7 +5682,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5697,7 +5697,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「申請」",
+              "why": "リンクの文字に「申請」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -5712,7 +5712,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「申請」",
+              "why": "リンクの文字に「申請」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -5727,7 +5727,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -5776,17 +5776,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5801,12 +5801,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5821,12 +5821,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5841,12 +5841,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5861,12 +5861,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5881,7 +5881,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -5930,17 +5930,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「こども」",
+              "why": "リンクの文字に「こども」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5955,12 +5955,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5975,12 +5975,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -5995,12 +5995,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「手当」",
+              "why": "リンクの文字に「手当」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに teate",
+              "why": "URLに teate（手当）",
               "points": 4,
               "kind": "url"
             }
@@ -6015,12 +6015,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「こども」",
+              "why": "リンクの文字に「こども」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kodomo",
+              "why": "URLに kodomo（こども）",
               "points": 4,
               "kind": "url"
             }
@@ -6035,12 +6035,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -6089,12 +6089,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -6109,12 +6109,12 @@
           "score_check": 7,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -6129,7 +6129,7 @@
           "score_check": 4,
           "reasons": [
             {
-              "why": "URLに kosodate",
+              "why": "URLに kosodate（子育て）",
               "points": 4,
               "kind": "url"
             }
@@ -6144,7 +6144,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「申請」",
+              "why": "リンクの文字に「申請」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -6159,7 +6159,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「子育て」",
+              "why": "リンクの文字に「子育て」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -6209,22 +6209,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6274,12 +6274,12 @@
           "score_check": 13,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -6294,12 +6294,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -6314,12 +6314,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「収集」",
+              "why": "リンクの文字に「収集」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -6369,22 +6369,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6399,17 +6399,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6424,12 +6424,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6479,22 +6479,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6509,12 +6509,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6564,27 +6564,27 @@
           "score_check": 25,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに sodai",
+              "why": "URLに sodai（粗大）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6599,22 +6599,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「収集」",
+              "why": "リンクの文字に「収集」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6664,22 +6664,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6729,27 +6729,27 @@
           "score_check": 25,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに sodai",
+              "why": "URLに sodai（粗大）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6764,7 +6764,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -6814,27 +6814,27 @@
           "score_check": 25,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに sodai",
+              "why": "URLに sodai（粗大）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6849,22 +6849,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6879,12 +6879,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6934,22 +6934,22 @@
           "score_check": 21,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6964,22 +6964,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -6994,22 +6994,22 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "除外語「/foreign」",
+              "why": "「/foreign」が入っていて、目的と違うページに見える",
               "points": -8,
               "kind": "negative"
             }
@@ -7059,32 +7059,32 @@
           "score_check": 28,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「申込」",
+              "why": "リンクの文字に「申込」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに sodai",
+              "why": "URLに sodai（粗大）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7099,17 +7099,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7124,12 +7124,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7179,12 +7179,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -7234,22 +7234,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「収集」",
+              "why": "リンクの文字に「収集」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7264,17 +7264,17 @@
           "score_check": 12,
           "reasons": [
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに recycle",
+              "why": "URLに recycle（リサイクル）",
               "points": 4,
               "kind": "url"
             }
@@ -7324,22 +7324,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7354,12 +7354,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7409,27 +7409,27 @@
           "score_check": 25,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに sodai",
+              "why": "URLに sodai（粗大）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7444,22 +7444,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「収集」",
+              "why": "リンクの文字に「収集」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7474,22 +7474,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7504,17 +7504,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7564,7 +7564,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -7579,7 +7579,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -7629,22 +7629,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7694,32 +7694,32 @@
           "score_check": 29,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに sodai",
+              "why": "URLに sodai（粗大）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに recycle",
+              "why": "URLに recycle（リサイクル）",
               "points": 4,
               "kind": "url"
             }
@@ -7734,27 +7734,27 @@
           "score_check": 18,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに recycle",
+              "why": "URLに recycle（リサイクル）",
               "points": 4,
               "kind": "url"
             }
@@ -7804,27 +7804,27 @@
           "score_check": 25,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに sodai",
+              "why": "URLに sodai（粗大）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7839,17 +7839,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7864,17 +7864,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7889,12 +7889,12 @@
           "score_check": 8,
           "reasons": [
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -7909,12 +7909,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「収集」",
+              "why": "リンクの文字に「収集」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -7964,17 +7964,17 @@
           "score_check": 11,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -8024,22 +8024,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -8123,12 +8123,12 @@
           "score_check": 6,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
@@ -8178,22 +8178,22 @@
           "score_check": 21,
           "reasons": [
             {
-              "why": "文言に「粗大ごみ」",
+              "why": "リンクの文字に「粗大ごみ」（手続きの名前そのもの）",
               "points": 10,
               "kind": "strong"
             },
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -8208,22 +8208,22 @@
           "score_check": 14,
           "reasons": [
             {
-              "why": "文言に「ごみ」",
+              "why": "リンクの文字に「ごみ」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "文言に「リサイクル」",
+              "why": "リンクの文字に「リサイクル」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             },
             {
-              "why": "URLに gomi",
+              "why": "URLに gomi（ごみ）",
               "points": 4,
               "kind": "url"
             }
@@ -8238,7 +8238,7 @@
           "score_check": 3,
           "reasons": [
             {
-              "why": "文言に「申込」",
+              "why": "リンクの文字に「申込」（関係のありそうな言葉）",
               "points": 3,
               "kind": "weak"
             }
