@@ -16,30 +16,64 @@
 <link rel="stylesheet" href="vendor/dads/components/chip-label/chip-label.css">
 <link rel="stylesheet" href="vendor/dads/components/notification-banner/notification-banner.css">
 <link rel="stylesheet" href="vendor/dads/components/description-list/description-list.css">
+<link rel="stylesheet" href="assets/shell.css">
 <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap">
-    <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品</p>
-    <h1 class="dads-heading" data-size="xl">AI読<span style="font-size:.5em;font-weight:400;margin-left:.5em;">アイドク</span></h1>
-    <p class="site-header__lead"><strong>あなたの区のサイトを、AIの愛読書に。</strong><br>引越しの手続きをAIに聞く人が増えています。区のサイトをAIが読めないと、住民に返ってくる答えは「分かりません」。<br>東京23区の手続きページをAIに読ませ、<strong>住民のAIが実際にどう答えるか</strong>を実測しました。</p>
-  </div>
-</header>
-
 <!-- ナビはページを3つ並べるだけにする。ページ内の見出しへの飛び先を混ぜると、
      「別のページへ行く」のか「同じページの中で動く」のかが区別できない。 -->
-<nav class="site-nav" aria-label="ページの案内">
-  <ul class="wrap site-nav__list">
-    <li><a href="barrier.html">つまずいた段差</a></li>
-    <li><a href="index.html" aria-current="page">結果を見る</a></li>
-    <li><a href="board.html">盤面</a></li>
-    <li><a href="demand.html">取れずに帰ったもの</a></li>
-  </ul>
-</nav>
+<div class="shell">
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="index.html"><b>AI読</b><span>アイドク</span></a>
+      <details class="menu">
+        <summary aria-label="メニュー"><span aria-hidden="true">☰</span> メニュー</summary>
+        <ul class="menu__list">
+          <li><a href="index.html" aria-current="page">ホーム</a></li>
+          <li><a href="board.html">23区の盤面</a></li>
+          <li><a href="journey.html">AIの道のり</a></li>
+          <li><a href="trends.html">見張りと推移</a></li>
+          <li><a href="index.html#method-heading">測り方とデータ</a></li>
+          <li><a href="index.html#use-heading">自分のAIに持たせる</a></li>
+          <li><a href="https://github.com/shoujiki-panman/aidoku">GitHub</a></li>
+        </ul>
+      </details>
+    </div>
+  </header>
+  <div class="shell__main">
 
-<main class="wrap" id="main">
+<header class="site-header">
+    <div class="wrap">
+      <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品</p>
+      <h1 class="dads-heading" data-size="xl">あなたの区のサイトを、AIの愛読書に。</h1>
+      <p class="site-header__lead">東京23区の手続きページをAIに読ませ、<strong>住民のAIが実際にどう答えるか</strong>を実測しました。</p>
+    </div>
+  </header>
+
+
+
+<main class="wrap" id="main" data-stage="empty">
+
+  <!-- ★検索が主役。ここより下は、検索するか区を選ぶまで出さない（data-stage="empty"）。
+       「全部が最初から見えている」のをやめるための構造。 -->
+  <section class="lookup lookup--hero" aria-labelledby="lookup-heading">
+    <h2 class="dads-heading" data-size="l" id="lookup-heading">自分の区を押す</h2>
+    <p class="section-note"><strong>地図から自分の区を押してください。</strong>
+      色は、住民のAIに届いている項目の数です（3手続き × 4項目 = 12項目）。</p>
+    <div class="wardmap" id="wardmap" aria-label="東京23区の地図。区を押すとその区の結果が出ます"></div>
+    <!-- 地図が押しにくい人・キーボードだけの人の道。文字を打たせる欄は置かない。 -->
+    <p class="wardpick">
+      <label class="wardpick__label" for="ward-select">一覧から選ぶ</label>
+      <select class="wardpick__select" id="ward-select"><option value="">区を選ぶ</option></select>
+    </p>
+    <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
+    <p class="lookup__escape">
+      <button type="button" class="linkish" id="show-all">23区ぶんの結果をまとめて見る</button>
+    </p>
+  </section>
+
+  <div id="results">
 
   <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
     <p class="dads-notification-banner__heading">
@@ -60,24 +94,6 @@
   <!-- 自分の区を引く。**その場でAIに読ませてはいない** — 判定は claude -p をローカルで
        呼ぶ設計で、静的ホスティングからは動かせない（#59）。ここは測ってある69マスを引くだけ。
        当たらなかったら当てずっぽうを返さず「まだ測っていない」と言う（盤面のグレーと同じ約束）。 -->
-  <section class="lookup" aria-labelledby="lookup-heading">
-    <h2 class="dads-heading" data-size="l" id="lookup-heading">自分の区を調べる</h2>
-    <p class="section-note">手続きページの<strong>URLを貼る</strong>か、<strong>区名を入れる</strong>と、測ってある結果を出します。</p>
-    <form class="lookup__form" id="lookup-form" role="search">
-      <label class="lookup__label" for="lookup-input">区名、または手続きページのURL</label>
-      <div class="lookup__row">
-        <input class="dads-input lookup__input" id="lookup-input" type="search" autocomplete="off"
-               placeholder="世田谷区　または　https://www.city.setagaya.lg.jp/..."
-               aria-describedby="lookup-hint">
-        <button class="dads-button lookup__submit" data-variant="solid" type="submit">調べる</button>
-      </div>
-      <p class="lookup__hint" id="lookup-hint">測ってあるのは <strong>東京23区 × 3手続き（転入届・児童手当の申請・粗大ごみ収集の申込）＝69マス</strong>です。ここで新しく判定はしません。</p>
-    </form>
-    <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
-  </section>
-
-  <hr class="dads-divider">
-
   <div class="proc-tabs" id="proc-tabs" role="tablist" aria-label="手続きを選ぶ"></div>
 
   <!-- 最上段は「今やる1件」。点数の一覧より先に、次の一手を1つだけ出す。
@@ -105,31 +121,13 @@
 
   <hr class="dads-divider">
 
-  <section aria-labelledby="ranking-heading">
-    <h2 class="dads-heading" data-size="l" id="ranking-heading">① 23区の一覧 — 見たい区を選ぶ</h2>
-    <p class="section-note"><strong>自治体名を押すと、すぐ下にその区の詳しい結果が出ます。</strong></p>
-    <div class="dads-table" data-size="dense">
-      <table class="dads-table__table" id="ranking">
-        <caption class="dads-table__caption">住民のAIに伝わった項目（<span id="proc-name"></span>）</caption>
-        <thead>
-          <tr class="dads-table__col-header">
-            <th scope="col">自治体</th>
-            <th scope="col">住民のAIに伝わった項目</th>
-            <th scope="col">到達</th>
-          </tr>
-        </thead>
-        <tbody id="ranking-body"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <hr class="dads-divider">
-
   <section aria-labelledby="detail-heading">
-    <h2 class="dads-heading" data-size="l" id="detail-heading">② 選んだ区の結果 — 住民のAIの答えと、直す箇所</h2>
+    <h2 class="dads-heading" data-size="l" id="detail-heading">選んだ区の結果 — 住民のAIの答えと、直す箇所</h2>
     <p class="section-note">上の一覧で選んだ区について、そのページを読ませたAIの答え・<strong>読めない理由</strong>・直す箇所が出ます。</p>
     <div id="detail" aria-live="polite"></div>
   </section>
+
+  </div><!-- /#results -->
 
   <hr class="dads-divider">
 
@@ -150,6 +148,12 @@
       </div>
     </dl>
     <p class="section-note">採点はAIによる判定です。各項目は「読めた／読めない」の2値で20点なので、判定が1つ変われば20点動きます。この23区の点数は各1回の判定によるもので、ぶれ幅は測っていません（人手の正解データと突き合わせる方式での採点のぶれ測定は、別途3自治体で行い最大2.0点。reports/ に記録があります）。クロールは robots.txt を守り、同一ドメインへのアクセスは3秒以上あけ、取得済みページは再取得していません。申請の送信は一切行っていません（読み取りのみ）。</p>
+
+    <p class="section-note">
+      門番が集める「AIが取れずに帰ったもの」は
+      <a class="dads-link" href="demand.html">こちら</a>。
+      <strong>まだ本物のAIエージェントの来訪は0件</strong>で、画面の数字は見本です。
+    </p>
 
     <h3 class="dads-heading" data-size="s" id="data-heading">データの入手</h3>
     <ul class="datalist">
@@ -175,6 +179,29 @@
     </p>
   </section>
 
+  <!-- 測って終わりにしない。読めない理由が分かっているなら、その分だけAIを賢くできる。 -->
+  <section aria-labelledby="use-heading">
+    <h2 class="dads-heading" data-size="l" id="use-heading">自分のAIに持たせる</h2>
+    <p>
+      自治体サイトをそのままAIに読ませると、<strong>書かれていないことを書かれているかのように答えます</strong>。
+      手数料の記載が無ければ「無料です」、期限が無ければ「通常14日以内です」と一般論で埋める。
+      住民はそれを信じて窓口で差し戻されます。
+    </p>
+    <p>
+      AI読は<strong>どのページの何が読み取れないかを実測で知っている</strong>ので、その一手前で止められます。
+      下のスキルを自分のAIに読み込ませると、AIは答える前にAI読の実測を引き、
+      <strong>書かれていない項目を推測で埋めずに「ページに記載がありませんでした」と言う</strong>ようになります。
+    </p>
+    <p>
+      <a class="dads-link" href="skill/SKILL.md" download>スキルを取得する（SKILL.md・CC BY 4.0）</a>
+    </p>
+    <p class="use__note">
+      Claude なら <code>.claude/skills/aidoku-gyosei/SKILL.md</code> に置くだけです。
+      他のAIでも、この1枚をそのまま指示として貼れば同じように動きます。
+      対象は東京23区 × 3手続き（転入届・児童手当・粗大ごみ）で、それ以外は「対象外」と言ってから通常どおり答えます。
+    </p>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -186,9 +213,14 @@
   </div>
 </footer>
 
+  </div>
+</div>
+
 <script src="assets/next-action.js"></script>
 <script src="assets/site-status.js"></script>
 <script src="assets/lookup.js"></script>
+<script src="assets/wardmap.js"></script>
+<script src="assets/trend.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

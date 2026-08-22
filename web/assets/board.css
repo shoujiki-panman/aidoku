@@ -104,3 +104,64 @@ a.cell:focus-visible { outline: 3px solid #0056b3; outline-offset: 2px; }
 @media (max-width: 600px) {
   .cell { width: 2.2em; }
 }
+
+/* ── 踏破メーターと「測り直し待ち」 ─────────────────────────────
+   盤面で唯一きちんと動くのは、毎朝の見張りが見つける「変わったページ」。
+   そこを光らせると、盤面が毎日変わる面になる。
+   ★「変わった」は「悪くなった」ではない（site-status.json の _about）。 */
+.meter {
+  margin: 4px 0 18px; padding: 18px 20px;
+  border: 1px solid #d8dde3; border-radius: 14px; background: #fff;
+}
+.meter__head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.meter__num { font-size: 2.5rem; line-height: 1; font-weight: 800; color: #0f7a3d; }
+.meter__num span { font-size: 1.125rem; }
+.meter__label { font-size: .9375rem; color: #1a1a1c; }
+.meter__sub { color: #6b7280; font-size: .8125rem; }
+.meter__bar {
+  margin-top: 12px; height: 12px; border-radius: 999px;
+  background: #e5e7eb; overflow: hidden;
+}
+.meter__bar > span {
+  display: block; height: 100%; border-radius: 999px;
+  background: linear-gradient(90deg, #0f7a3d, #38a169);
+  transition: width .8s ease;
+}
+.meter__quest { margin-top: 12px; font-size: .9375rem; }
+.meter__quest [data-tone="amber"] { color: #8a6d00; }
+
+/* 測り直し待ちのマス。
+   ★最初は box-shadow のリングだけにしたが、2.6em のマスでは弱すぎて
+     「どこが変わったか分からない」と言われた。印そのものを載せる。 */
+.cell[data-stale="true"] {
+  position: relative;
+  outline: 3px solid #8a6d00;
+  outline-offset: 1px;
+}
+/* マスの右上に「!」の丸を置く。色ではなく形で分かるようにする
+   （色は「届いたか」に使い切っているので重ねられない） */
+.cell[data-stale="true"]::after {
+  content: "!";
+  position: absolute;
+  top: -8px; right: -9px;
+  width: 15px; height: 15px;
+  border-radius: 50%;
+  background: #8a6d00;
+  color: #fff;
+  font-size: 11px; font-weight: 800; line-height: 15px;
+  text-align: center;
+  box-shadow: 0 0 0 2px #fff;
+  animation: staleBlink 1.8s ease-in-out infinite;
+}
+.board td { position: relative; }
+.legend__item .cell[data-tone="stale"] {
+  background: #fff8e6; outline: 3px solid #8a6d00; outline-offset: 1px;
+}
+@keyframes staleBlink {
+  0%, 100% { transform: scale(1);    opacity: 1; }
+  50%      { transform: scale(1.25); opacity: .75; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cell[data-stale="true"]::after { animation: none; }
+  .meter__bar > span { transition: none; }
+}
