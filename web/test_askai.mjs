@@ -31,8 +31,18 @@ for (const f of pages) {
   //   src="/ask-ai-button.js" と絶対で書くとドメイン直下を指して 404 になる。
   ok(`${f} の src が相対`, /src="ask-ai-button\.js"/.test(tag[0]), tag[0]);
   ok(`${f} が defer`, /\bdefer\b/.test(tag[0]));
-  // 本文の範囲。6枚とも <main> で統一されている
-  ok(`${f} の data-selector が main`, /data-selector="main"/.test(tag[0]));
+  // 渡す範囲。index だけは「渡す用の中身」に絞る。
+  // ページ全体を渡すと 10,000字を超えてURLに載らず、クリップボード経由になって
+  // 本人が手で貼らないと動かない（実測 10,354字 → エンコード後 46,361）。
+  const sel = (tag[0].match(/data-selector="([^"]+)"/) || [])[1];
+  if (f === 'index.html') {
+    ok(`${f} は #ai-payload だけを渡す`, sel === '#ai-payload', sel);
+    ok(`${f} に #ai-payload がある`, /id="ai-payload"/.test(s));
+    ok(`${f} の #ai-payload は画面に出さない`,
+      /id="ai-payload"[^>]*dads-u-visually-hidden/.test(s));
+  } else {
+    ok(`${f} の data-selector が main`, sel === 'main', sel);
+  }
   // 上流の4つ（要約・解説・質問・英訳）は読み物向けで、ここの目的と違う。
   // 出すのは AI読 が足した procedure だけ
   ok(`${f} の行動が procedure だけ`, /data-actions="procedure"/.test(tag[0]), tag[0]);

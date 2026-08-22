@@ -78,6 +78,9 @@
       <select class="wardpick__select" id="ward-select"><option value="">区を選ぶ</option></select>
     </p>
     <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
+    <!-- 右下の「AIに渡して調べる」が渡す中身。画面には出さない。
+         細かい判定は描かず、AI読のデータURLを渡して取りに行かせる。 -->
+    <div id="ai-payload" class="dads-u-visually-hidden" aria-hidden="true"></div>
     <p class="lookup__escape" data-ai-ignore>
       <button type="button" class="linkish" id="show-all">23区ぶんの結果をまとめて見る</button>
     </p>
@@ -159,7 +162,8 @@
 <script src="assets/lookup.js"></script>
 <script src="assets/wardmap.js"></script>
 <script src="assets/app.js"></script>
-<script src="ask-ai-button.js" defer data-selector="main"
-        data-actions="procedure" data-label="AIに渡して調べる"></script>
+<script src="ask-ai-button.js" defer data-selector="#ai-payload"
+        data-actions="procedure" data-label="AIに渡して調べる"
+        data-max-url-chars="10000"></script>
 </body>
 </html>
