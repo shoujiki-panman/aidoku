@@ -64,9 +64,13 @@
   <!-- ★検索が主役。ここより下は、検索するか区を選ぶまで出さない（data-stage="empty"）。
        「全部が最初から見えている」のをやめるための構造。 -->
   <section class="lookup lookup--hero" aria-labelledby="lookup-heading">
-    <h2 class="dads-heading" data-size="l" id="lookup-heading">自分の区を押す</h2>
+    <h2 class="dads-heading" data-size="l" id="lookup-heading">自分の区の手続きを調べる</h2>
     <p class="section-note"><strong>地図から自分の区を押してください。</strong>
-      色は、住民のAIに届いている項目の数です（3手続き × 4項目 = 12項目）。</p>
+      その区の手続きページと、<strong>AIに聞いても分からない項目</strong>が出ます。</p>
+    <p class="section-note lookup__scope">
+      いま測ってあるのは<strong>転入届・児童手当の申請・粗大ごみ収集の申込</strong>の3つです。
+      転出届など、ここに無い手続きは<strong>まだ調べていません</strong>（読めないという意味ではありません）。
+      地図の色は、その区で読み取れた項目の数です。</p>
     <div class="wardmap" id="wardmap" data-ai-ignore aria-label="東京23区の地図。区を押すとその区の結果が出ます"></div>
     <!-- 地図が押しにくい人・キーボードだけの人の道。文字を打たせる欄は置かない。 -->
     <p class="wardpick" data-ai-ignore>

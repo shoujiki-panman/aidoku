@@ -578,6 +578,12 @@ function renderLookup(res) {
     box.innerHTML = `
       <p class="lookup__title">${esc(res.muniName)}</p>
       <p class="lookup__sub">${via}</p>
+      <p class="lookup__do">
+        手続きを選ぶと、<strong>区の公式ページ</strong>と、そのページから読み取れなかった項目が出ます。
+        <strong>右下の「AIに渡して調べる」</strong>を押すと、自分のAIがその公式ページを読んで、
+        <strong>当日の持ち物と、行く前に確認すること</strong>を作ります。
+        読み取れなかった項目は、AIに推測させず区の窓口に確認するよう案内します。
+      </p>
       ${progressBar(wardProgress(res.cells))}
       <div id="lookup-trend"></div>
       <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>`;
