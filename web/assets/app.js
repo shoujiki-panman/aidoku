@@ -699,8 +699,6 @@ async function renderWardMap() {
 
   const pick = (el) => {
     if (!el || !el.dataset.name) return;
-    const sel = $('ward-select');
-    if (sel) sel.value = '';
     box.querySelectorAll('path').forEach((p) => p.removeAttribute('aria-current'));
     el.setAttribute('aria-current', 'true');
     runLookup(el.dataset.name);
@@ -711,29 +709,6 @@ async function renderWardMap() {
   });
 }
 
-// 区のプルダウン。★23区しかないので打たせない。中身はデータから作るので、
-//   区が増えても手で足す必要が無い（画面と実測がずれない）。
-async function renderWardSelect() {
-  const sel = $('ward-select');
-  if (!sel) return;
-  const cells = await loadLookupCells();
-  // ★並びは全国地方公共団体コード順（千代田・中央・港…）。
-  //   漢字の文字コード順だと「葛飾→江戸川→江東」のように、誰の頭にも無い順になる。
-  const by = new Map();
-  for (const c of cells) {
-    if (!c.muniName || by.has(c.muniName)) continue;
-    by.set(c.muniName, String(c.lgCode ?? '99999'));
-  }
-  const names = [...by.entries()]
-    .sort((a, b) => a[1].localeCompare(b[1]) || a[0].localeCompare(b[0], 'ja'))
-    .map(([nm]) => nm);
-  sel.insertAdjacentHTML('beforeend',
-    names.map((nm) => `<option value="${esc(nm)}">${esc(nm)}</option>`).join(''));
-  sel.addEventListener('change', () => {
-    if (!sel.value) return;
-    runLookup(sel.value);
-  });
-}
 
 function initLookup() {
   if (typeof AidokuLookup === 'undefined') return;
@@ -764,7 +739,6 @@ function initLookup() {
 
   renderAiPayload(null);
   renderWardMap();
-  renderWardSelect();
 
   // 区名が分からない人の逃げ道。押したら全部出す（従来どおりの画面になる）
   const showAll = $('show-all');
