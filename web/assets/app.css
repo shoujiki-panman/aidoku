@@ -720,3 +720,25 @@ td.marks { white-space: nowrap; }
    ただしマウスで押した人には出さない（:focus-visible） */
 .lookup__result:focus { outline: none; }
 .lookup__result:focus-visible { outline: 3px solid #0056b3; outline-offset: 4px; border-radius: 8px; }
+
+/* ── 紺色の帯の中のリンク ─────────────────────────────
+   DADS のリンク色は帯の背景色と同じ変数なので、置くと消える。
+   帯の中だけ白にする。 */
+.site-header a,
+.site-header .dads-link:any-link,
+.site-header .dads-link:visited { color: #fff; text-decoration-thickness: 2px; }
+.site-header .dads-link:hover { color: #dbe6f7; }
+.site-header .dads-link:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+
+/* ── 測り方の一覧 ────────────────────────────────
+   dt と dd が8pxしか離れておらず、項目名と説明が地続きに見えて読めなかった。
+   広い画面では左に項目名、右に説明を置く。 */
+.methodlist { gap: 18px 0; }
+.methodlist .dads-description-list__description { margin-left: 0; }
+@media (min-width: 720px) {
+  .methodlist .dads-description-list__item {
+    display: grid; grid-template-columns: 12rem 1fr; gap: 0 20px;
+    padding-bottom: 14px; border-bottom: 1px solid #eef0f4;
+  }
+  .methodlist .dads-description-list__item:last-child { border-bottom: 0; padding-bottom: 0; }
+}
