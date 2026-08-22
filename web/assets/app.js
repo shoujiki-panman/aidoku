@@ -512,6 +512,7 @@ function lookupCellRow(c) {
                   <p class="fmp__gain">直ると <b>+${esc(String(imp.gain))}点</b>（実ページでの再測定はまだ）</p>` : ''}`;
     const arc = archiveByUrl ? archiveByUrl.get(c.url) : null;
     return `<div class="fieldmark__panel" id="${id}" hidden>
+        <p class="dads-u-visually-hidden">項目: ${esc(f)}</p>
         <p class="fmp__where"><b>どのページの話か</b>
           <a class="dads-link" href="${esc(c.url || '')}" target="_blank" rel="noopener">${esc(c.url || '')}</a></p>
         ${body}
