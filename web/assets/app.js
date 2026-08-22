@@ -619,6 +619,50 @@ async function runLookup(q) {
   }
 }
 
+// ── 23区の地図 ──────────────────────────────────────────────
+// ★URLや区名を打たせない。押すのが一番速い。
+//   地図ライブラリは足していない（SVGパスは analysis/export_map.py が用意済み）。
+async function renderWardMap() {
+  const box = $('wardmap');
+  if (!box || typeof AidokuWardMap === 'undefined') return;
+  let doc;
+  try {
+    const r = await fetch('data/tokyo23.json');
+    if (!r.ok) throw new Error(String(r.status));
+    doc = await r.json();
+  } catch {
+    box.remove();          // 地図が無くても、下の検索で使える
+    return;
+  }
+  const cells = await loadLookupCells();
+  const wards = AidokuWardMap.decorate(doc.wards, AidokuWardMap.wardProgress(cells, FIELDS));
+  const paths = wards.map((w) => `
+    <path d="${esc(w.d)}" data-name="${esc(w.name)}" data-tone="${esc(w.tone)}"
+          tabindex="0" role="button" aria-label="${esc(w.label)}">
+      <title>${esc(w.label)}</title>
+    </path>`).join('');
+  box.innerHTML = `
+    <svg viewBox="${esc(doc.viewBox)}" class="wardmap__svg" role="group">${paths}</svg>
+    <ul class="wardmap__legend">
+      <li data-tone="high">9〜12項目</li><li data-tone="mid">6〜8</li>
+      <li data-tone="low">1〜5</li><li data-tone="zero">0</li>
+      <li data-tone="unknown">測っていない</li>
+    </ul>
+    <p class="wardmap__credit">境界: <a class="dads-link" href="${esc(doc.source_url)}">${esc(doc.source)}</a>（${esc(doc.license)}）</p>`;
+
+  const pick = (el) => {
+    if (!el || !el.dataset.name) return;
+    $('lookup-input').value = el.dataset.name;
+    box.querySelectorAll('path').forEach((p) => p.removeAttribute('aria-current'));
+    el.setAttribute('aria-current', 'true');
+    runLookup(el.dataset.name);
+  };
+  box.addEventListener('click', (e) => pick(e.target.closest('path')));
+  box.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(e.target.closest('path')); }
+  });
+}
+
 function initLookup() {
   const form = $('lookup-form');
   if (!form || typeof AidokuLookup === 'undefined') return;
@@ -643,6 +687,8 @@ function initLookup() {
     await loadProcedure(b.dataset.proc, b.dataset.muni);
     $('detail-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
+
+  renderWardMap();
 
   // 区名が分からない人の逃げ道。押したら全部出す（従来どおりの画面になる）
   const showAll = $('show-all');

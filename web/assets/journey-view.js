@@ -25,6 +25,35 @@
     } catch { return u; }
   };
 
+  // AIがその場で見ていた選択肢と、点の内訳。★歩く様子ではなく「判断」を見せる。
+  function choicesPanel(j) {
+    if (!j || !j.choices || !j.choices.length) return '';
+    const rows = j.choices.map((c) => {
+      const bits = (c.reasons || []).map((r) =>
+        `<span class="rz" data-kind="${esc(r.kind)}">${esc(r.why)} <b>${r.points > 0 ? '+' : ''}${r.points}</b></span>`).join('');
+      return `<li class="choice" data-chosen="${c.chosen}">
+        <div class="choice__head">
+          <span class="choice__rank">${c.rank}位</span>
+          <span class="choice__score">${c.score}点</span>
+          <span class="choice__text">「${esc(c.link_text)}」</span>
+          ${c.chosen ? '<span class="choice__tag">これを選んだ</span>' : ''}
+        </div>
+        <div class="choice__why">${bits || '<span class="rz">手がかりなし</span>'}</div>
+      </li>`;
+    }).join('');
+    const missed = (j.missed_with_strong_word || [])[0];
+    return `<div class="choices" id="choices" hidden>
+        <p class="choices__lead">AIはトップページで<strong>${j.choices.length}つの入口</strong>を見て、
+          文言とURLから点を付けて並べました。</p>
+        <p class="choices__rule">${esc(window.__JOURNEY_SCORING__ || '')}</p>
+        <ol class="choices__list">${rows}</ol>
+        ${missed ? `<p class="choices__missed">
+          <strong>「${esc(missed.link_text)}」</strong>は手続き名そのもの（strong語）で <b>+10</b> を取っていましたが、
+          URLの手がかりを積んだ1位に <b>${j.choices[0].score - missed.score}点差</b> で負けました。
+          <strong>AIは正しい扉の隣を選びました。</strong></p>` : ''}
+      </div>`;
+  }
+
   function stageNode(s, i) {
     const url = s.url
       ? `<a class="stage__url" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(shortUrl(s.url))}</a>`
@@ -47,6 +76,12 @@
         <p class="stage__label">${esc(s.label || '')}</p>
         ${url}
         ${fields}
+        ${s.kind === 'start' ? `
+          <button type="button" class="dads-button choices__btn" data-variant="solid"
+                  id="show-choices" aria-expanded="false" aria-controls="choices">
+            ▶ AIが何を見て、どう選んだか
+          </button>
+          ${choicesPanel(window.__JOURNEY__)}` : ''}
         ${why}
       </div>
     </li>`;
@@ -78,6 +113,63 @@
     </div>`;
   }
 
+  // ── 再生 ──────────────────────────────────────────────
+  // 動きを見せないと、AIに慣れていない人には伝わらない。
+  // ただし動きが唯一の手段にはしない: 再生し終わった状態＝いつもの静止画で、
+  // prefers-reduced-motion のときは最初から最後の状態にする。
+  let timers = [];
+  const clearTimers = () => { timers.forEach(clearTimeout); timers = []; };
+  const prefersStill = () =>
+    window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function setStep(el, on) {
+    if (el) el.dataset.played = String(on);
+  }
+
+  function resetPlayback(root, on) {
+    // on=false: 再生前（全部伏せる） / on=true: 再生後（全部出す）
+    root.querySelectorAll('.stage__node, .stage__link').forEach((el) => setStep(el, on));
+    root.querySelectorAll('.stage__item').forEach((el) => setStep(el, on));
+    const tok = $('token');
+    if (tok) tok.dataset.at = on ? 'end' : '0';
+  }
+
+  function playTimeline(tl, root) {
+    clearTimers();
+    resetPlayback(root, false);
+    const nodes = [...root.querySelectorAll('.stage__node')];
+    const links = [...root.querySelectorAll('.stage__link')];
+    const items = [...root.querySelectorAll('.stage__item')];
+    const tok = $('token');
+
+    for (const beat of tl) {
+      timers.push(setTimeout(() => {
+        if (beat.type === 'enter') {
+          setStep(nodes[beat.index], true);
+          if (tok && nodes[beat.index]) {
+            // 歩いている印を、着いたマスの高さへ動かす
+            tok.style.transform = `translateY(${nodes[beat.index].offsetTop}px)`;
+          }
+        } else if (beat.type === 'sign' || beat.type === 'walk') {
+          setStep(links[Math.max(beat.index - 1, 0)], true);
+        } else if (beat.type === 'read') {
+          setStep(items[beat.order], true);
+        } else if (beat.type === 'exhausted') {
+          root.dataset.state = 'exhausted';
+        } else if (beat.type === 'blocked') {
+          root.dataset.state = 'blocked';
+        } else if (beat.type === 'reveal-goal') {
+          links.forEach((l) => setStep(l, true));
+          nodes.forEach((nd) => setStep(nd, true));
+          items.forEach((it) => setStep(it, true));
+          root.dataset.state = 'goal';
+        } else if (beat.type === 'end') {
+          root.dataset.state = 'end';
+        }
+      }, beat.at));
+    }
+  }
+
   function renderMap(stages, barrier, ex) {
     const html = [];
     stages.forEach((s, i) => {
@@ -86,7 +178,10 @@
     });
     $('map').innerHTML = renderExplorer(ex,
       '各社の公式ロゴは使っていません（自前の記号です）。モデル名は測定条件の実測値です。')
-      + `<ol class="stage__list">${html.join('')}</ol>`;
+      + `<div class="stage__wrap">
+           <span class="stage__token" id="token" aria-hidden="true">${esc(ex.mark)}</span>
+           <ol class="stage__list">${html.join('')}</ol>
+         </div>`;
 
     const clicks = barrier?.failure?.clicks_to_official_page;
     $('map-note').innerHTML =
@@ -126,11 +221,15 @@
 
   async function init() {
     try {
-      const [bs, sc, ft] = await Promise.all([
+      const [bs, sc, ft, jj] = await Promise.all([
         loadJson('data/barriers.json'),
         loadJson('data/scores-tennyu.json'),
         loadJson('data/fact-types.json'),
+        loadJson('data/journeys.json').catch(() => ({ journeys: [] })),
       ]);
+      // 描くときに読むので、先に置く
+      window.__JOURNEY__ = (jj.journeys || [])[0] || null;
+      window.__JOURNEY_SCORING__ = jj.scoring || '';
       const barrier = (bs.barriers || [])[0];
       if (!barrier) { $('map').innerHTML = '<p>記録がありません。</p>'; return; }
 
@@ -162,6 +261,28 @@
         };
       }
       renderMap(stages, barrier, ex);
+
+      const root = $('map').querySelector('.stage__wrap');
+      const tl = AidokuJourney.buildTimeline(stages, cell ? cell.fields : []);
+      resetPlayback(root, true);
+      root.dataset.state = 'end';
+
+      // ★ボタンはスタートのマスの中。前は上に離して置いていて気付けなかった。
+      //   押すと「何を見て、どう選んだか」が開き、続けて道のりを再生する。
+      const btn = $('show-choices');
+      const panel = $('choices');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          const open = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!open));
+          if (panel) panel.hidden = open;
+          btn.textContent = open ? '▶ AIが何を見て、どう選んだか' : '▼ 判断を閉じる';
+          if (!open && !prefersStill()) {
+            root.dataset.state = 'playing';
+            playTimeline(tl, root);
+          }
+        });
+      }
       renderProof(barrier);
       renderSame(barrier);
       const g = $('generated-at');

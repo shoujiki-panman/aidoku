@@ -593,3 +593,55 @@ td.marks { white-space: nowrap; }
 
 /* 過去の姿（Internet Archive）。コピーは持たず、いつの版があるかだけ出す（#99） */
 .fmp__note { display: block; margin-top: 4px; font-size: .75rem; color: #6b7280; }
+
+/* ── 23区の地図 ──────────────────────────────────────────────
+   ★URLや区名を打たせない。押すのが一番速い。
+   ★色だけに頼らない。押すと数字が出て、下の一覧にも同じ情報がある。
+     読み上げ用に各区へ aria-label（区名と項目数）を付けている。 */
+.wardmap { margin: 14px 0 6px; }
+.wardmap__svg {
+  width: 100%; max-width: 560px; height: auto; display: block;
+  background: #f6f8fb; border: 1px solid #d8dde3; border-radius: 12px;
+}
+.wardmap__svg path {
+  stroke: #fff; stroke-width: 2.5; cursor: pointer;
+  transition: filter .12s ease;
+}
+.wardmap__svg path:hover { filter: brightness(1.12); }
+.wardmap__svg path:focus-visible { outline: 3px solid #0056b3; outline-offset: 2px; }
+.wardmap__svg path[aria-current="true"] { stroke: #1a1a1c; stroke-width: 4; }
+
+.wardmap__svg path[data-tone="high"]    { fill: #0f7a3d; }
+.wardmap__svg path[data-tone="mid"]     { fill: #58a55c; }
+.wardmap__svg path[data-tone="low"]     { fill: #c58a00; }
+.wardmap__svg path[data-tone="zero"]    { fill: #b3261e; }
+.wardmap__svg path[data-tone="unknown"] { fill: #dfe3e9; }
+
+.wardmap__legend {
+  list-style: none; display: flex; gap: 12px; flex-wrap: wrap;
+  margin: 10px 0 0; padding: 0; font-size: .75rem; color: #4b5563;
+}
+.wardmap__legend li { display: flex; align-items: center; gap: 5px; }
+.wardmap__legend li::before {
+  content: ""; width: 13px; height: 13px; border-radius: 3px; background: #dfe3e9;
+}
+.wardmap__legend li[data-tone="high"]::before { background: #0f7a3d; }
+.wardmap__legend li[data-tone="mid"]::before  { background: #58a55c; }
+.wardmap__legend li[data-tone="low"]::before  { background: #c58a00; }
+.wardmap__legend li[data-tone="zero"]::before { background: #b3261e; }
+.wardmap__credit { margin-top: 8px; font-size: .6875rem; color: #6b7280; }
+
+/* 打って探すほうは畳んでおく */
+.lookup__typed { margin-top: 14px; }
+.lookup__typed > summary {
+  cursor: pointer; font-size: .875rem; color: #0056b3;
+  text-decoration: underline; width: fit-content;
+}
+.lookup__typed > summary:hover { text-decoration: none; }
+
+/* カードを主役にする。ヘッダーは主張しすぎない */
+.site-header { padding: 26px 0 22px; }
+.site-header .dads-heading { font-size: 1.75rem; line-height: 1.35; }
+.site-header__lead { margin-top: 8px; font-size: .9375rem; }
+.lookup--hero { padding: 26px 28px 22px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+@media (min-width: 960px) { .site-header .dads-heading { font-size: 2rem; } }

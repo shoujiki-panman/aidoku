@@ -16,34 +16,53 @@
 <link rel="stylesheet" href="vendor/dads/components/chip-label/chip-label.css">
 <link rel="stylesheet" href="vendor/dads/components/notification-banner/notification-banner.css">
 <link rel="stylesheet" href="vendor/dads/components/description-list/description-list.css">
+<link rel="stylesheet" href="assets/shell.css">
 <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap">
-    <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品</p>
-    <h1 class="dads-heading" data-size="xl">AI読<span style="font-size:.5em;font-weight:400;margin-left:.5em;">アイドク</span></h1>
-    <p class="site-header__lead"><strong>あなたの区のサイトを、AIの愛読書に。</strong><br>引越しの手続きをAIに聞く人が増えています。区のサイトをAIが読めないと、住民に返ってくる答えは「分かりません」。<br>東京23区の手続きページをAIに読ませ、<strong>住民のAIが実際にどう答えるか</strong>を実測しました。</p>
-  </div>
-</header>
-
 <!-- ナビはページを3つ並べるだけにする。ページ内の見出しへの飛び先を混ぜると、
      「別のページへ行く」のか「同じページの中で動く」のかが区別できない。 -->
-<nav class="site-nav" aria-label="ページの案内">
-    <ul class="wrap site-nav__list">
-      <li><a href="index.html" aria-current="page">結果を見る</a></li>
-      <li><a href="board.html">盤面</a></li>
-    </ul>
-  </nav>
+<div class="shell">
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="topbar__brand" href="index.html"><b>AI読</b><span>アイドク</span></a>
+      <details class="menu">
+        <summary aria-label="メニュー"><span aria-hidden="true">☰</span> メニュー</summary>
+        <ul class="menu__list">
+          <li><a href="index.html" aria-current="page">ホーム</a></li>
+          <li><a href="board.html">23区の盤面</a></li>
+          <li><a href="journey.html">AIの道のり</a></li>
+          <li><a href="trends.html">見張りと推移</a></li>
+          <li><a href="index.html#method-heading">測り方とデータ</a></li>
+          <li><a href="https://github.com/shoujiki-panman/aidoku">GitHub</a></li>
+        </ul>
+      </details>
+    </div>
+  </header>
+  <div class="shell__main">
+
+<header class="site-header">
+    <div class="wrap">
+      <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品</p>
+      <h1 class="dads-heading" data-size="xl">あなたの区のサイトを、AIの愛読書に。</h1>
+      <p class="site-header__lead">東京23区の手続きページをAIに読ませ、<strong>住民のAIが実際にどう答えるか</strong>を実測しました。</p>
+    </div>
+  </header>
+
+
 
 <main class="wrap" id="main" data-stage="empty">
 
   <!-- ★検索が主役。ここより下は、検索するか区を選ぶまで出さない（data-stage="empty"）。
        「全部が最初から見えている」のをやめるための構造。 -->
   <section class="lookup lookup--hero" aria-labelledby="lookup-heading">
-    <h2 class="dads-heading" data-size="l" id="lookup-heading">あなたの区は、住民のAIに読めていますか</h2>
-    <p class="section-note">区名を入れるか、手続きページのURLを貼ってください。</p>
+    <h2 class="dads-heading" data-size="l" id="lookup-heading">自分の区を押す</h2>
+    <p class="section-note"><strong>地図から自分の区を押してください。</strong>
+      色は、住民のAIに届いている項目の数です（3手続き × 4項目 = 12項目）。</p>
+    <div class="wardmap" id="wardmap" aria-label="東京23区の地図。区を押すとその区の結果が出ます"></div>
+    <details class="lookup__typed">
+    <summary>区名やURLで探す</summary>
     <form class="lookup__form" id="lookup-form" role="search">
       <label class="lookup__label" for="lookup-input">区名、または手続きページのURL</label>
       <div class="lookup__row">
@@ -54,18 +73,10 @@
       </div>
       <p class="lookup__hint" id="lookup-hint">測ってあるのは <strong>東京23区 × 3手続き＝69マス</strong>です。ここで新しく判定はしません。</p>
     </form>
+    </details>
     <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
     <p class="lookup__escape">
-      区名が分からないときは <a href="board.html">23区の盤面をひらく</a>
-      ／ <button type="button" class="linkish" id="show-all">結果を全部ひらく</button>
-    </p>
-    <p class="lookup__escape">
-      <a href="journey.html">AIがどこから入って、どこで力尽きたかを見る</a>
-      — 世田谷区・転入届。答えのあるページまで3クリック、導線の看板が一字違いでした。
-    </p>
-    <p class="lookup__escape">
-      <a href="barrier.html">その段差を、直して測り直すまで通した記録を読む</a>
-      — 直したら4項目そろう回が5回中0回→5回になった実測です。
+      <button type="button" class="linkish" id="show-all">23区ぶんの結果をまとめて見る</button>
     </p>
   </section>
 
@@ -186,9 +197,13 @@
   </div>
 </footer>
 
+  </div>
+</div>
+
 <script src="assets/next-action.js"></script>
 <script src="assets/site-status.js"></script>
 <script src="assets/lookup.js"></script>
+<script src="assets/wardmap.js"></script>
 <script src="assets/trend.js"></script>
 <script src="assets/app.js"></script>
 </body>

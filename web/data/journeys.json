@@ -1,0 +1,181 @@
+{
+  "_about": "AIがどの選択肢を見て、なぜその道を選んだか。点の付け方は crawler/discover.py の score_link と targets.json のキーワード。ここで新しく点は作っていない。",
+  "scoring": "文言のstrong語+10 / weak語+3 / URLの手がかり+4 / 除外語-8 / PDF-2",
+  "journeys": [
+    {
+      "municipality": "世田谷区",
+      "procedure": "転入届",
+      "top_url": "https://www.city.setagaya.lg.jp/",
+      "keywords": {
+        "strong": [
+          "転入届",
+          "転入",
+          "引越し",
+          "引っ越し"
+        ],
+        "weak": [
+          "住民票",
+          "住民登録",
+          "住所",
+          "異動",
+          "届出",
+          "戸籍",
+          "くらし",
+          "手続き"
+        ],
+        "url_hints": [
+          "tennyu",
+          "tenyu",
+          "hikkoshi",
+          "juminhyo",
+          "jumin",
+          "koseki",
+          "kurashi",
+          "todoke",
+          "ido"
+        ]
+      },
+      "choices": [
+        {
+          "rank": 1,
+          "link_text": "戸籍・住民登録",
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+          "score": 14,
+          "score_check": 14,
+          "reasons": [
+            {
+              "why": "文言に「住民登録」",
+              "points": 3,
+              "kind": "weak"
+            },
+            {
+              "why": "文言に「戸籍」",
+              "points": 3,
+              "kind": "weak"
+            },
+            {
+              "why": "URLに koseki",
+              "points": 4,
+              "kind": "url"
+            },
+            {
+              "why": "URLに kurashi",
+              "points": 4,
+              "kind": "url"
+            }
+          ],
+          "chosen": true
+        },
+        {
+          "rank": 2,
+          "link_text": "戸籍",
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11660.html",
+          "score": 11,
+          "score_check": 11,
+          "reasons": [
+            {
+              "why": "文言に「戸籍」",
+              "points": 3,
+              "kind": "weak"
+            },
+            {
+              "why": "URLに koseki",
+              "points": 4,
+              "kind": "url"
+            },
+            {
+              "why": "URLに kurashi",
+              "points": 4,
+              "kind": "url"
+            }
+          ],
+          "chosen": false
+        },
+        {
+          "rank": 3,
+          "link_text": "住宅・引っ越し",
+          "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/index.html",
+          "score": 10,
+          "score_check": 10,
+          "reasons": [
+            {
+              "why": "文言に「引っ越し」",
+              "points": 10,
+              "kind": "strong"
+            }
+          ],
+          "chosen": false
+        },
+        {
+          "rank": 4,
+          "link_text": "コンビニ交付",
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11665.html",
+          "score": 8,
+          "score_check": 8,
+          "reasons": [
+            {
+              "why": "URLに koseki",
+              "points": 4,
+              "kind": "url"
+            },
+            {
+              "why": "URLに kurashi",
+              "points": 4,
+              "kind": "url"
+            }
+          ],
+          "chosen": false
+        },
+        {
+          "rank": 5,
+          "link_text": "太子堂地区",
+          "url": "https://www.city.setagaya.lg.jp/setagayachiiki/taishidou/index.html",
+          "score": 4,
+          "score_check": 4,
+          "reasons": [
+            {
+              "why": "URLに ido",
+              "points": 4,
+              "kind": "url"
+            }
+          ],
+          "chosen": false
+        },
+        {
+          "rank": 6,
+          "link_text": "ごみ・リサイクル",
+          "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/11535.html",
+          "score": 4,
+          "score_check": 4,
+          "reasons": [
+            {
+              "why": "URLに kurashi",
+              "points": 4,
+              "kind": "url"
+            }
+          ],
+          "chosen": false
+        }
+      ],
+      "chosen_is_stop_page": true,
+      "missed_with_strong_word": [
+        {
+          "rank": 3,
+          "link_text": "住宅・引っ越し",
+          "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/index.html",
+          "score": 10,
+          "score_check": 10,
+          "reasons": [
+            {
+              "why": "文言に「引っ越し」",
+              "points": 10,
+              "kind": "strong"
+            }
+          ],
+          "chosen": false
+        }
+      ],
+      "barrier_id": "setagaya-tennyu-index-2026-08"
+    }
+  ]
+}

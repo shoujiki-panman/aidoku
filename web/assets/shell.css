@@ -1,0 +1,57 @@
+/* 上に細いバー、あとは大きなカード。
+   ★以前は左に16項目のサイドバーを出していたが「ごちゃついている」ため畳んだ。
+     都知事杯のチームマッチングと同じ形（上バー＋ハンバーガー）。
+   ★JSを使わない（details/summary）。開閉はブラウザの機能。 */
+
+.shell { display: block; }
+
+.topbar {
+  position: sticky; top: 0; z-index: 20;
+  background: #fff; border-bottom: 1px solid #e5e7eb;
+}
+.topbar__inner {
+  max-width: 1100px; margin: 0 auto; padding: 12px 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.topbar__brand {
+  display: flex; align-items: baseline; gap: 7px;
+  color: #1a1a1c; text-decoration: none;
+}
+.topbar__brand b { font-size: 1.125rem; letter-spacing: .02em; }
+.topbar__brand span { font-size: .6875rem; color: #6b7280; }
+
+.menu { position: relative; }
+.menu > summary {
+  list-style: none; cursor: pointer;
+  padding: 7px 14px; border-radius: 8px;
+  font-size: .875rem; color: #1a1a1c;
+  border: 1px solid #d8dde3; background: #fff;
+}
+.menu > summary::-webkit-details-marker { display: none; }
+.menu > summary:hover { background: #f3f5f8; }
+.menu > summary:focus-visible { outline: 3px solid #0056b3; outline-offset: 1px; }
+.menu__list {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 30;
+  list-style: none; margin: 0; padding: 6px;
+  min-width: 220px; background: #fff;
+  border: 1px solid #d8dde3; border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+}
+.menu__list a {
+  display: block; padding: 9px 12px; border-radius: 8px;
+  color: #1a1a1c; text-decoration: none; font-size: .9375rem;
+}
+.menu__list a:hover { background: #f3f5f8; }
+.menu__list a[aria-current="page"] { color: #0056b3; font-weight: 700; }
+
+/* 本文は中央に、ゆったり */
+.shell__main .wrap { max-width: 1100px; padding-left: 24px; padding-right: 24px; }
+
+/* ドット絵ページ */
+body.pixel .topbar { background: #1d1f30; border-bottom: 4px solid #000; }
+body.pixel .topbar__brand b { color: #ffcc2f; }
+body.pixel .topbar__brand span { color: #9aa0b5; }
+body.pixel .menu > summary { background: #2b2d42; color: #f2f4f8; border: 2px solid #000; border-radius: 0; }
+body.pixel .menu__list { background: #1d1f30; border: 3px solid #000; border-radius: 0; }
+body.pixel .menu__list a { color: #f2f4f8; }
+body.pixel .menu__list a:hover { background: #2b2d42; }

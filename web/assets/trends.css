@@ -1,0 +1,38 @@
+/* 見張りと推移。数字を並べるだけの画面なので、余計な装飾はしない。 */
+.panel {
+  margin: 14px 0; padding: 16px 18px;
+  border: 1px solid #d8dde3; border-radius: 12px; background: #fff;
+}
+.panel__head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; font-size: .9375rem; }
+.panel__num { font-size: 2rem; line-height: 1; font-weight: 800; color: #0056b3; }
+.panel__sub { color: #6b7280; font-size: .8125rem; }
+.panel__note { margin-top: 10px; font-size: .8125rem; color: #4b5563; }
+.panel__why { margin-top: 10px; font-size: .8125rem; }
+.panel__why[data-how="site"]    { color: #0f7a3d; }
+.panel__why[data-how="unknown"] { color: #6b5500; }
+.panel__delta {
+  font-weight: 800; padding: 1px 9px; border-radius: 8px; font-size: .9375rem;
+}
+.panel__delta[data-tone="up"]   { background: #f0f9f3; color: #0f7a3d; }
+.panel__delta[data-tone="down"] { background: #fdf3f2; color: #b3261e; }
+.panel__delta[data-tone="flat"] { background: #eef1f5; color: #4b5563; }
+
+/* 見張りの棒 */
+.bars { list-style: none; display: flex; align-items: flex-end; gap: 12px; height: 120px; margin: 14px 0 0; padding: 0; }
+.bar { display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; }
+.bar__fill { width: 34px; margin-top: auto; border-radius: 4px 4px 0 0; background: #c58a00; }
+.bar__n { font-size: .8125rem; font-weight: 700; }
+.bar__d { font-style: normal; font-size: .6875rem; color: #6b7280; }
+
+/* 点数の推移 */
+.pts { list-style: none; display: flex; gap: 18px; margin: 12px 0 0; padding: 0; flex-wrap: wrap; }
+.pt { display: flex; flex-direction: column; align-items: center; }
+.pt > b { font-size: 1.25rem; font-weight: 800; }
+.pt > i { font-style: normal; font-size: .6875rem; color: #6b7280; }
+
+/* 過去の姿 */
+.arch { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 6px; }
+.arch li { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-size: .9375rem;
+  padding: 8px 10px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.arch__n { font-weight: 700; }
+.arch__d { color: #6b7280; font-size: .8125rem; }

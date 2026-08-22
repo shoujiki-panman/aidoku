@@ -157,3 +157,93 @@
   font-size: .8125rem; color: #4b5563;
 }
 .why__notes > b { display: block; margin-bottom: 4px; color: #1a1a1c; }
+
+/* ── 再生 ────────────────────────────────────────────────────
+   ★静止画では「AIがどうやって読んで、どこで読めなかったか」が伝わらない。
+     AIに慣れていない人が使うので、順番に見せる。
+   ★ただし動きを唯一の手段にしない。既定は「全部見えている」状態で、
+     押したときだけ再生する。prefers-reduced-motion なら再生させない。 */
+.playbar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 12px 0; }
+.playbar__note { font-size: .8125rem; color: #4b5563; }
+
+.stage__wrap { position: relative; }
+
+/* 歩いている印。ステージの左端を上下に動く */
+.stage__token {
+  position: absolute; left: -6px; top: 22px;
+  width: 26px; height: 26px; display: grid; place-items: center;
+  border-radius: 6px; font-size: 15px; font-weight: 800;
+  background: #0056b3; color: #fff; z-index: 2;
+  transition: transform .8s cubic-bezier(.2, .8, .3, 1);
+  opacity: 0;
+}
+.stage__wrap[data-state="playing"] .stage__token { opacity: 1; }
+
+/* 再生中は、まだ来ていないところを伏せる */
+.stage__wrap[data-state="playing"] .stage__node[data-played="false"],
+.stage__wrap[data-state="playing"] .stage__link[data-played="false"] {
+  opacity: .18;
+  filter: grayscale(1);
+}
+.stage__wrap[data-state="playing"] .stage__item[data-played="false"] { opacity: .18; }
+.stage__node, .stage__link, .stage__item { transition: opacity .25s ease, filter .25s ease; }
+
+/* 力尽きた瞬間だけ、止まったマスを目立たせる */
+.stage__wrap[data-state="exhausted"] .stage__node[data-kind="stop"] .stage__badge,
+.stage__wrap[data-state="blocked"]   .stage__node[data-kind="stop"] .stage__badge {
+  animation: stopShake .5s ease-in-out 2;
+}
+@keyframes stopShake {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-4px); }
+  75%      { transform: translateX(4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stage__token { transition: none; }
+  .stage__wrap[data-state] .stage__node,
+  .stage__wrap[data-state] .stage__link,
+  .stage__wrap[data-state] .stage__item { opacity: 1 !important; filter: none !important; }
+  .stage__wrap .stage__badge { animation: none !important; }
+}
+
+/* ── AIが何を見て、どう選んだか ─────────────────────────────
+   ★歩く様子だけでは「どういう考えで見に行って、どう進もうとして、やめたのか」が
+     分からない。判断そのものを出す。点の付け方は crawler/discover.py の
+     score_link と targets.json のキーワードで、ここで新しく作っていない。
+   ★ボタンはスタートのマスの中に置く。上に離すと気付かれない（実際に気付かれなかった）。*/
+.choices__btn { margin-top: 12px; }
+.choices {
+  margin-top: 12px; padding: 14px 16px; max-width: 52rem;
+  border: 1px solid #d8dde3; border-radius: 12px; background: #fbfcfe;
+}
+.choices__lead { font-size: .9375rem; }
+.choices__rule {
+  margin-top: 6px; font-size: .75rem; color: #6b7280;
+  padding: 5px 9px; background: #eef1f5; border-radius: 6px; width: fit-content;
+}
+.choices__list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.choice {
+  padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 10px; background: #fff;
+}
+.choice[data-chosen="true"] { border-color: #0056b3; border-width: 2px; background: #f4f8ff; }
+.choice__head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.choice__rank { font-size: .75rem; color: #6b7280; min-width: 2.5rem; }
+.choice__score { font-weight: 800; font-size: 1.0625rem; min-width: 3.5rem; }
+.choice__text { font-size: .9375rem; }
+.choice__tag {
+  padding: 1px 9px; border-radius: 999px; background: #0056b3; color: #fff; font-size: .75rem;
+}
+.choice__why { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; }
+.rz {
+  font-size: .75rem; padding: 2px 8px; border-radius: 999px;
+  background: #eef1f5; color: #4b5563;
+}
+.rz > b { font-weight: 800; }
+.rz[data-kind="strong"]   { background: #f0f9f3; color: #0f7a3d; }
+.rz[data-kind="url"]      { background: #e8f0fb; color: #0056b3; }
+.rz[data-kind="negative"] { background: #fdf3f2; color: #b3261e; }
+.choices__missed {
+  margin-top: 12px; padding: 10px 12px; border-radius: 10px;
+  background: #fff8e6; border: 1px solid #e6c866; color: #6b5500; font-size: .875rem;
+}

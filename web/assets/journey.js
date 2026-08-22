@@ -105,5 +105,55 @@
     };
   }
 
-  return { parseStep, nearlySame, buildStages, explorer };
+  // ── 再生の台本 ────────────────────────────────────────────
+  // ★AIに慣れていない人には「どうやって読んで、どこで読めなかったか」が
+  //   静止画では伝わらない。歩く → 項目をひとつずつ試す → 進めずに止まる、を
+  //   順番に見せる。台本はここで作り、動かすのは view 側。
+  //
+  //   at はミリ秒（先頭からの経過）。テストで順番と間隔を固定できるようにする。
+  const BEAT = {
+    move: 900,    // 1歩ぶん歩く
+    read: 550,    // 1項目ぶん読む
+    pause: 700,   // 溜め
+  };
+
+  function buildTimeline(stages, fields) {
+    if (!Array.isArray(stages) || !stages.length) return [];
+    const out = [];
+    let at = 0;
+    const push = (type, payload, hold) => {
+      out.push({ at, type, ...payload });
+      at += hold;
+    };
+
+    push('enter', { index: 0 }, BEAT.pause);
+
+    for (let i = 1; i < stages.length; i += 1) {
+      const s = stages[i];
+      // 看板を読む → 歩く → 着く
+      if (s.via || (stages[i - 1] && stages[i - 1].exitVia)) {
+        push('sign', { index: i, text: s.via || stages[i - 1].exitVia }, BEAT.pause);
+      }
+      push('walk', { index: i, blocked: s.kind === 'unreached' || s.kind === 'goal' }, BEAT.move);
+      push('enter', { index: i }, BEAT.pause);
+
+      if (s.kind === 'stop') {
+        // 4項目をひとつずつ試して、ひとつずつ落とす
+        (fields || []).forEach((f, k) => {
+          push('read', { index: i, field: f.name, ok: f.ok, order: k }, BEAT.read);
+        });
+        push('exhausted', { index: i }, BEAT.pause);
+        // ここから先へ行こうとして、行けない
+        push('blocked', { index: i }, BEAT.pause);
+        // 「この先に答えがあった」を最後に見せる。ここが一番効く
+        const goal = stages.findIndex((x) => x.kind === 'goal');
+        if (goal !== -1) push('reveal-goal', { index: goal }, BEAT.pause);
+        break;
+      }
+    }
+    push('end', {}, 0);
+    return out;
+  }
+
+  return { parseStep, nearlySame, buildStages, explorer, buildTimeline, BEAT };
 });

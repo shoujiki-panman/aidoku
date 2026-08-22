@@ -66,5 +66,35 @@ check('pathが無くても落ちない', buildStages({ failure: {} }, null).leng
   check('model しか無いときはそれを使う', explorer(null, 'claude-cli').family === 'claude');
 }
 
-console.log(`\n  ${pass} PASS / ${fail} FAIL（explorer を含む）`);
+// --- buildTimeline（再生の台本）---
+{
+  const { buildTimeline, BEAT } = require('./assets/journey.js');
+  const F = [
+    { name: '必要書類', ok: false }, { name: '窓口', ok: false },
+    { name: '期限', ok: false }, { name: '手数料', ok: false },
+  ];
+  const st = buildStages(barrier, { got: 0, total: 4, fields: F });
+  const tl = buildTimeline(st, F);
+  const types = tl.map((t) => t.type);
+
+  check('★スタートから始まる', types[0] === 'enter' && tl[0].index === 0);
+  check('★歩いてから着く', types.indexOf('walk') < types.indexOf('enter', 1));
+  check('★項目を1つずつ読む', types.filter((t) => t === 'read').length === 4);
+  check('読む順は項目の順', tl.filter((t) => t.type === 'read').map((t) => t.field).join(',')
+    === '必要書類,窓口,期限,手数料');
+  check('★読み切ったあとに力尽きる', types.indexOf('exhausted') > types.lastIndexOf('read'));
+  check('★力尽きたあとに進めなくなる', types.indexOf('blocked') > types.indexOf('exhausted'));
+  check('★最後にゴールを見せる', types.indexOf('reveal-goal') > types.indexOf('blocked'));
+  check('end で終わる', types[types.length - 1] === 'end');
+  check('時刻は単調に増える', tl.every((t, i) => i === 0 || t.at >= tl[i - 1].at));
+  check('止まった先へは歩かない',
+    !tl.some((t) => t.type === 'walk' && st[t.index] && st[t.index].kind === 'unreached'));
+  check('全体が短い（10秒以内）', tl[tl.length - 1].at <= 10000, `${tl[tl.length - 1].at}ms`);
+  check('間隔は定数から来る', BEAT.move > 0 && BEAT.read > 0 && BEAT.pause > 0);
+  check('stagesが空なら台本も空', buildTimeline([], F).length === 0);
+  check('配列でなければ空', buildTimeline(null, F).length === 0);
+  check('項目が無くても落ちない', buildTimeline(st, null).length > 0);
+}
+
+console.log(`\n  ${pass} PASS / ${fail} FAIL（台本を含む）`);
 process.exit(fail === 0 ? 0 : 1);
