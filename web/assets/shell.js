@@ -5,6 +5,15 @@
 // 外を押す・Escape・項目を選ぶ、のどれでも閉じるようにする。
 (function () {
   'use strict';
+  // 日付を入れないページでは、その行ごと出さない
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const g = document.getElementById('generated-at');
+      const row = g && g.closest('.site-footer__generated');
+      if (row && !g.textContent.trim()) row.hidden = true;
+    }, 1200);
+  });
+
   const menu = document.querySelector('.menu');
   if (!menu) return;
 

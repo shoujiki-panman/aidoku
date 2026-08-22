@@ -89,7 +89,28 @@
       <li><a class="dads-link" href="data/README.md">README.md</a> — <strong>列の意味・取りうる値・欠損の扱い</strong></li>
     </ul>
 
-    <h3 class="dads-heading" data-size="s" id="license-heading">使っていいデータです（CC BY 4.0）</h3>
+    <h3 class="dads-heading" data-size="s" id="opendata-heading">使ったオープンデータ</h3>
+    <p class="section-note">AI読が調査に使った公開データです。
+      <strong>採点そのものには使いません</strong>（採点は区のページの記載だけを見ます）。
+      使い道は「<strong>どの手続きが都民にとって重いか</strong>」と、地図の境界です。</p>
+    <ul class="datalist">
+      <li><a class="dads-link" href="https://catalog.data.metro.tokyo.lg.jp/dataset/t000003d0000000561">東京都住民基本台帳人口移動報告（時系列）</a>
+        — 東京都総務局・CC BY。他道府県からの転入 <strong>451,843人</strong>／都内間の移動 <strong>465,145人</strong>（令和7年）。
+        転入届のページを測ることの規模を示す</li>
+      <li><a class="dads-link" href="https://catalog.data.metro.tokyo.lg.jp/dataset/t000009d0000000014">東京都区市町村清掃事業年報（ごみ排出量）</a>
+        — 東京都環境局・CC BY。23区の粗大ごみ <strong>64,506t</strong>／最多は<strong>世田谷区 7,482t</strong>（令和元年度）。
+        粗大ごみのページの需要を示す</li>
+      <li><a class="dads-link" href="https://geoshape.ex.nii.ac.jp/city/">『歴史的行政区域データセットβ版』（CODH作成）</a>
+        — ROIS-DS 人文学オープンデータ共同利用センター・CC BY 4.0・doi:10.20676/00000447。
+        元データは国土交通省 国土数値情報。<strong>地図から自分の区を押す画面</strong>は、この境界から作った</li>
+      <li>総務省「都道府県コード及び市区町村コード」 — 全国地方公共団体コードの付与に使用</li>
+    </ul>
+    <p class="section-note">上2件は東京都オープンデータカタログサイトのデータです。
+      3件目は研究機関が公開する別のオープンデータで、都のカタログの収録データではありません。</p>
+
+    <hr class="dads-divider">
+
+    <h3 class="dads-heading" data-size="s" id="license-heading">AI読が出したデータの使い方（CC BY 4.0）</h3>
     <p class="section-note">
       <strong>点数・集計・改善案は <a class="dads-link" href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" rel="noopener">CC BY 4.0</a> です。</strong>
       クレジットは <code>正直パンマン「AI読（アイドク）」 https://github.com/shoujiki-panman/aidoku</code>。
@@ -121,7 +142,10 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>調査・実装: 正直パンマン（個人）。<strong>行政機関の公式発表ではありません。</strong></p>
-    <p>誤りの指摘を歓迎します → <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku">GitHub</a></p>
+    <p>判定基準（必須要素）を公開しています。誤りの指摘を歓迎します → <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku">GitHub</a></p>
+    <p>使ったオープンデータ: 東京都住民基本台帳人口移動報告／東京都区市町村清掃事業年報／『歴史的行政区域データセットβ版』（CODH作成） → <a class="dads-link" href="data.html#opendata-heading">出典と使い道</a></p>
+    <p class="site-footer__credit">画面のスタイルに <a class="dads-link" href="https://design.digital.go.jp/">デジタル庁デザインシステム</a> のコードスニペット（MIT）を利用しています。デジタル庁が本調査を提供・監修しているものではありません。</p>
+    <p class="site-footer__generated">データ生成日: <span id="generated-at"></span></p>
   </div>
 </footer>
 
