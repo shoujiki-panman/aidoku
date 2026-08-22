@@ -31,15 +31,45 @@
 <!-- ナビはページを3つ並べるだけにする。ページ内の見出しへの飛び先を混ぜると、
      「別のページへ行く」のか「同じページの中で動く」のかが区別できない。 -->
 <nav class="site-nav" aria-label="ページの案内">
-  <ul class="wrap site-nav__list">
-    <li><a href="barrier.html">つまずいた段差</a></li>
-    <li><a href="index.html" aria-current="page">結果を見る</a></li>
-    <li><a href="board.html">盤面</a></li>
-    <li><a href="demand.html">取れずに帰ったもの</a></li>
-  </ul>
-</nav>
+    <ul class="wrap site-nav__list">
+      <li><a href="index.html" aria-current="page">結果を見る</a></li>
+      <li><a href="board.html">盤面</a></li>
+    </ul>
+  </nav>
 
-<main class="wrap" id="main">
+<main class="wrap" id="main" data-stage="empty">
+
+  <!-- ★検索が主役。ここより下は、検索するか区を選ぶまで出さない（data-stage="empty"）。
+       「全部が最初から見えている」のをやめるための構造。 -->
+  <section class="lookup lookup--hero" aria-labelledby="lookup-heading">
+    <h2 class="dads-heading" data-size="l" id="lookup-heading">あなたの区は、住民のAIに読めていますか</h2>
+    <p class="section-note">区名を入れるか、手続きページのURLを貼ってください。</p>
+    <form class="lookup__form" id="lookup-form" role="search">
+      <label class="lookup__label" for="lookup-input">区名、または手続きページのURL</label>
+      <div class="lookup__row">
+        <input class="dads-input lookup__input" id="lookup-input" type="search" autocomplete="off"
+               placeholder="世田谷区　または　https://www.city.setagaya.lg.jp/..."
+               aria-describedby="lookup-hint">
+        <button class="dads-button lookup__submit" data-variant="solid" type="submit">調べる</button>
+      </div>
+      <p class="lookup__hint" id="lookup-hint">測ってあるのは <strong>東京23区 × 3手続き＝69マス</strong>です。ここで新しく判定はしません。</p>
+    </form>
+    <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
+    <p class="lookup__escape">
+      区名が分からないときは <a href="board.html">23区の盤面をひらく</a>
+      ／ <button type="button" class="linkish" id="show-all">結果を全部ひらく</button>
+    </p>
+    <p class="lookup__escape">
+      <a href="journey.html">AIがどこから入って、どこで力尽きたかを見る</a>
+      — 世田谷区・転入届。答えのあるページまで3クリック、導線の看板が一字違いでした。
+    </p>
+    <p class="lookup__escape">
+      <a href="barrier.html">その段差を、直して測り直すまで通した記録を読む</a>
+      — 直したら4項目そろう回が5回中0回→5回になった実測です。
+    </p>
+  </section>
+
+  <div id="results">
 
   <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
     <p class="dads-notification-banner__heading">
@@ -60,24 +90,6 @@
   <!-- 自分の区を引く。**その場でAIに読ませてはいない** — 判定は claude -p をローカルで
        呼ぶ設計で、静的ホスティングからは動かせない（#59）。ここは測ってある69マスを引くだけ。
        当たらなかったら当てずっぽうを返さず「まだ測っていない」と言う（盤面のグレーと同じ約束）。 -->
-  <section class="lookup" aria-labelledby="lookup-heading">
-    <h2 class="dads-heading" data-size="l" id="lookup-heading">自分の区を調べる</h2>
-    <p class="section-note">手続きページの<strong>URLを貼る</strong>か、<strong>区名を入れる</strong>と、測ってある結果を出します。</p>
-    <form class="lookup__form" id="lookup-form" role="search">
-      <label class="lookup__label" for="lookup-input">区名、または手続きページのURL</label>
-      <div class="lookup__row">
-        <input class="dads-input lookup__input" id="lookup-input" type="search" autocomplete="off"
-               placeholder="世田谷区　または　https://www.city.setagaya.lg.jp/..."
-               aria-describedby="lookup-hint">
-        <button class="dads-button lookup__submit" data-variant="solid" type="submit">調べる</button>
-      </div>
-      <p class="lookup__hint" id="lookup-hint">測ってあるのは <strong>東京23区 × 3手続き（転入届・児童手当の申請・粗大ごみ収集の申込）＝69マス</strong>です。ここで新しく判定はしません。</p>
-    </form>
-    <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
-  </section>
-
-  <hr class="dads-divider">
-
   <div class="proc-tabs" id="proc-tabs" role="tablist" aria-label="手続きを選ぶ"></div>
 
   <!-- 最上段は「今やる1件」。点数の一覧より先に、次の一手を1つだけ出す。
@@ -105,31 +117,13 @@
 
   <hr class="dads-divider">
 
-  <section aria-labelledby="ranking-heading">
-    <h2 class="dads-heading" data-size="l" id="ranking-heading">① 23区の一覧 — 見たい区を選ぶ</h2>
-    <p class="section-note"><strong>自治体名を押すと、すぐ下にその区の詳しい結果が出ます。</strong></p>
-    <div class="dads-table" data-size="dense">
-      <table class="dads-table__table" id="ranking">
-        <caption class="dads-table__caption">住民のAIに伝わった項目（<span id="proc-name"></span>）</caption>
-        <thead>
-          <tr class="dads-table__col-header">
-            <th scope="col">自治体</th>
-            <th scope="col">住民のAIに伝わった項目</th>
-            <th scope="col">到達</th>
-          </tr>
-        </thead>
-        <tbody id="ranking-body"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <hr class="dads-divider">
-
   <section aria-labelledby="detail-heading">
-    <h2 class="dads-heading" data-size="l" id="detail-heading">② 選んだ区の結果 — 住民のAIの答えと、直す箇所</h2>
+    <h2 class="dads-heading" data-size="l" id="detail-heading">選んだ区の結果 — 住民のAIの答えと、直す箇所</h2>
     <p class="section-note">上の一覧で選んだ区について、そのページを読ませたAIの答え・<strong>読めない理由</strong>・直す箇所が出ます。</p>
     <div id="detail" aria-live="polite"></div>
   </section>
+
+  </div><!-- /#results -->
 
   <hr class="dads-divider">
 
@@ -150,6 +144,12 @@
       </div>
     </dl>
     <p class="section-note">採点はAIによる判定です。各項目は「読めた／読めない」の2値で20点なので、判定が1つ変われば20点動きます。この23区の点数は各1回の判定によるもので、ぶれ幅は測っていません（人手の正解データと突き合わせる方式での採点のぶれ測定は、別途3自治体で行い最大2.0点。reports/ に記録があります）。クロールは robots.txt を守り、同一ドメインへのアクセスは3秒以上あけ、取得済みページは再取得していません。申請の送信は一切行っていません（読み取りのみ）。</p>
+
+    <p class="section-note">
+      門番が集める「AIが取れずに帰ったもの」は
+      <a class="dads-link" href="demand.html">こちら</a>。
+      <strong>まだ本物のAIエージェントの来訪は0件</strong>で、画面の数字は見本です。
+    </p>
 
     <h3 class="dads-heading" data-size="s" id="data-heading">データの入手</h3>
     <ul class="datalist">

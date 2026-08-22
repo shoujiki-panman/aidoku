@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIの道のり — どこから入って、どこでつまづいたか | AI読（アイドク）</title>
+<meta name="description" content="住民のAIが区のトップページから手続きページを探して歩いた道のりと、力尽きた場所。世田谷区・転入届は本体ページまで3クリック、導線の文言が一字違いでした。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="vendor/dads/global.css">
+<link rel="stylesheet" href="vendor/dads/components/heading/heading.css">
+<link rel="stylesheet" href="vendor/dads/components/link/link.css">
+<link rel="stylesheet" href="vendor/dads/components/divider/divider.css">
+<link rel="stylesheet" href="vendor/dads/components/notification-banner/notification-banner.css">
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/journey.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
+    <h1 class="dads-heading" data-size="xl">AIの道のり</h1>
+    <p class="site-header__lead"><strong>区のトップページから入って、住民の問いの答えを探す。</strong><br>
+      どこまで進めて、どこで力尽きたか。</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="ページの案内">
+  <ul class="wrap site-nav__list">
+    <li><a href="index.html">結果を見る</a></li>
+    <li><a href="board.html">盤面</a></li>
+  </ul>
+</nav>
+
+<main class="wrap" id="main">
+
+  <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
+    <p class="dads-notification-banner__heading">
+      <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="情報">
+        <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
+        <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
+      </svg>
+      <span class="dads-notification-banner__heading-text">道のりはすべて実測です</span>
+    </p>
+    <div class="dads-notification-banner__body">
+      <p>区のトップページから、検索エンジンを使わずにリンクだけを辿った記録です。文言・URL・クリック数はすべて
+        <a class="dads-link" href="data/barriers.json">barriers.json</a> の実測値で、ここで作った数字はありません。</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="map-heading">
+    <h2 class="dads-heading" data-size="l" id="map-heading">ステージ</h2>
+    <p class="section-note" id="map-note"></p>
+    <div id="map" class="stage"></div>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="proof-heading">
+    <h2 class="dads-heading" data-size="l" id="proof-heading">ここは本当に「読んでいる」のか</h2>
+    <p class="section-note">AIが答えられたとき、それが<strong>ページを読んだから</strong>なのか
+      <strong>学習で知っていたから</strong>なのかを区別しないと、この測定に意味がありません。</p>
+    <div id="proof"></div>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="same-heading">
+    <h2 class="dads-heading" data-size="l" id="same-heading">同じ段差は、ほかにもある</h2>
+    <div id="same"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>調査・実装: 正直パンマン（個人）。<strong>行政機関の公式発表ではありません。</strong></p>
+    <p>誤りの指摘を歓迎します → <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku">GitHub</a></p>
+    <p class="site-footer__generated">記録日: <span id="generated-at"></span></p>
+  </div>
+</footer>
+
+<script src="assets/journey.js"></script>
+<script src="assets/journey-view.js"></script>
+</body>
+</html>

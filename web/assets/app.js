@@ -12,6 +12,8 @@ let FIELDS = [];
 const REPORT_URL = 'https://github.com/shoujiki-panman/aidoku/blob/main/reports/aidoku_feasibility_2026-07-26.md';
 
 const $ = (id) => document.getElementById(id);
+// 要素が無くても落とさない。画面から節を外したときに JS が道連れにならないようにする
+const setText = (id, text) => { const el = $(id); if (el) el.textContent = text; };
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const trunc = (s, n) => (s.length > n ? s.slice(0, n) + '…' : s);
@@ -57,7 +59,10 @@ async function renderSiteStatus() {
       ${when ? `<span class="site-status__when">最終確認 ${esc(when)}</span>` : ''}
     </p>
     ${s.detail ? `<p class="site-status__detail">${esc(s.detail)}</p>` : ''}
-    ${rows ? `<ul class="site-status__list">${rows}</ul>` : ''}`;
+    ${rows ? `<details class="site-status__more">
+                <summary>どのページが変わったか（${s.items.length}件）</summary>
+                <ul class="site-status__list">${rows}</ul>
+              </details>` : ''}`;
 }
 
 async function init() {
@@ -85,7 +90,7 @@ async function loadProcedure(id, muniId = null) {
 
   $('phase-note').textContent =
     `${data.phase}の${data.procedure}を、AIに読ませた結果です（${data.n_municipalities}自治体）`;
-  $('proc-name').textContent = data.procedure;
+  setText('proc-name', data.procedure);
   $('generated-at').textContent = (data.generated_at || '').slice(0, 10);
 
   renderHero();
@@ -181,6 +186,8 @@ function renderSummary() {
 // 内訳（どの項目が伝わらなかったか）は記号を横に並べて1列に収め、
 // 詳しい中身は区を選んだあとに出す（全体 → 部分）。
 function renderRanking() {
+  // ①23区の一覧は画面から外した（盤面が上位互換）。要素が無ければ何もしない
+  if (!$('ranking-body')) return;
   $('ranking-body').innerHTML = data.municipalities.map((m) => {
     const got = FIELDS.filter((k) => (m.breakdown[k] ?? 0) >= 20).length;
     const marks = ITEMS.map((k) => {
@@ -398,13 +405,43 @@ const gotCount = (c) => FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) >= 20
 function lookupCellRow(c) {
   const st = c.pageStatus;
   const unconfirmed = st !== null && typeof st === 'object' && st.code === 'target_unconfirmed';
+  // 項目ごとに ✓ / ✕ を出す。「3/4」より「どれが欠けているか」のほうが次の手が決まる
+  const marks = FIELDS.map((f) => {
+    const ok = ((c.breakdown || {})[f] ?? 0) >= 20;
+    return `<span class="fieldmark" data-ok="${ok}" title="${esc(f)}">
+              <b>${ok ? '✓' : '✕'}</b><i>${esc(f)}</i></span>`;
+  }).join('');
   return `<li class="lookup__cell">
-    <span class="lookup__proc">${esc(c.procName)}</span>
-    <span class="score-cell" data-tone="${tone(c.total)}">${gotCount(c)}/${FIELDS.length}項目</span>
-    <button type="button" class="dads-button lookup__open" data-variant="outline"
-            data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">結果を開く</button>
-    ${unconfirmed ? `<span class="lookup__warn">${esc(st.label)}</span>` : ''}
+    <div class="lookup__cellhead">
+      <span class="lookup__proc">${esc(c.procName)}</span>
+      <span class="score-cell" data-tone="${tone(c.total)}">${gotCount(c)}/${FIELDS.length}</span>
+      <button type="button" class="dads-button lookup__open" data-variant="outline"
+              data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">結果を開く</button>
+    </div>
+    <div class="fieldmarks">${marks}</div>
+    ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
   </li>`;
+}
+
+// その区が住民のAIに届けられている項目の数。3手続き × 4項目 = 12 が満点
+function wardProgress(cells) {
+  const total = cells.length * FIELDS.length;
+  const got = cells.reduce((a, c) => a + gotCount(c), 0);
+  return { got, total, pct: total ? Math.round((got / total) * 100) : 0 };
+}
+
+function progressBar(p) {
+  const label = p.got === p.total ? '全部届いています'
+    : p.got === 0 ? 'ひとつも届いていません'
+    : `あと ${p.total - p.got} 項目`;
+  return `<div class="progress" role="img"
+               aria-label="${p.got} / ${p.total} 項目が住民のAIに届いています">
+      <div class="progress__head">
+        <b class="progress__num">${p.got} <span>/ ${p.total}</span></b>
+        <span class="progress__label">住民のAIに届いている項目 — ${esc(label)}</span>
+      </div>
+      <div class="progress__bar"><span style="width:${p.pct}%"></span></div>
+    </div>`;
 }
 
 function renderLookup(res) {
@@ -413,7 +450,7 @@ function renderLookup(res) {
     const c = res.cell;
     box.innerHTML = `
       <p class="lookup__title">このページは測ってあります — ${esc(c.muniName)}・${esc(c.procName)}</p>
-      <p class="lookup__sub">住民のAIが持ち帰れたのは <strong>${gotCount(c)}/${FIELDS.length}項目</strong>です。</p>
+      ${progressBar(wardProgress([c]))}
       <ul class="lookup__list">${lookupCellRow(c)}</ul>
       <p class="lookup__src">読んだページ: ${esc(c.url)}</p>`;
     return;
@@ -425,6 +462,7 @@ function renderLookup(res) {
     box.innerHTML = `
       <p class="lookup__title">${esc(res.muniName)}</p>
       <p class="lookup__sub">${via}</p>
+      ${progressBar(wardProgress(res.cells))}
       <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>`;
     return;
   }
@@ -444,11 +482,20 @@ function renderLookup(res) {
     </div>`;
 }
 
+// 結果を出してよい状態にする。ここを通らずに #results が見えることは無い。
+function showResults() {
+  const m = $('main');
+  if (m) m.dataset.stage = 'result';
+}
+
 async function runLookup(q) {
   $('lookup-result').innerHTML = '<p class="lookup__sub">探しています…</p>';
   try {
     const cells = await loadLookupCells();
-    renderLookup(AidokuLookup.lookup(q, cells, procs.map((p) => p.id)));
+    const res = AidokuLookup.lookup(q, cells, procs.map((p) => p.id));
+    renderLookup(res);
+    // 当たったときだけ結果を出す。外したのに全部出てきたら、元の「最初から全部見える」に戻る
+    if (res.kind === 'page' || res.kind === 'ward') showResults();
   } catch (err) {
     $('lookup-result').innerHTML =
       '<p class="lookup__sub">データを読めませんでした。時間をおいて試してください。</p>';
@@ -466,9 +513,19 @@ function initLookup() {
   $('lookup-result').addEventListener('click', async (e) => {
     const b = e.target.closest('.lookup__open');
     if (!b) return;
+    showResults();
     await loadProcedure(b.dataset.proc, b.dataset.muni);
     $('detail-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
+
+  // 区名が分からない人の逃げ道。押したら全部出す（従来どおりの画面になる）
+  const showAll = $('show-all');
+  if (showAll) {
+    showAll.addEventListener('click', () => {
+      showResults();
+      $('phase-note').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
 
   // ?q=世田谷区 で結果を直接開く。区が自分のリンクをブックマークできる。
   const q0 = new URLSearchParams(location.search).get('q');
@@ -476,4 +533,6 @@ function initLookup() {
     $('lookup-input').value = q0;
     runLookup(q0);
   }
+  // 盤面から ?muni=&proc= で来た人は、その区を見に来ているので最初から結果を出す
+  if (new URLSearchParams(location.search).get('muni')) showResults();
 }

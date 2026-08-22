@@ -1,0 +1,159 @@
+/* AIの道のり ── ステージのマップ。
+   マリオのワールドマップのように「入口 → 通った道 → 力尽きた場所 → 未踏 → ゴール」
+   を1本の線で見せる。通れた道は実線、通れなかった道は点線。
+   色は状態を表すが、色だけに頼らない（形と文字でも分かるようにする）。 */
+
+.stage { margin-top: 18px; }
+.stage__list {
+  list-style: none; margin: 0; padding: 22px 20px;
+  border: 1px solid #d8dde3; border-radius: 14px;
+  background:
+    repeating-linear-gradient(90deg, #fbfcfe 0 22px, #f6f8fb 22px 44px);
+}
+
+/* --- ステージ（点） --- */
+.stage__node { display: flex; gap: 14px; align-items: flex-start; }
+.stage__badge {
+  flex: 0 0 auto; width: 42px; height: 42px; border-radius: 12px;
+  display: grid; place-items: center;
+  font-size: 20px; font-weight: 800; color: #fff;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .18);
+}
+.stage__node[data-kind="start"]     .stage__badge { background: #0056b3; }
+.stage__node[data-kind="stop"]      .stage__badge { background: #b3261e; }
+.stage__node[data-kind="unreached"] .stage__badge { background: #b9bfc7; color: #fff; }
+.stage__node[data-kind="goal"]      .stage__badge { background: #0f7a3d; }
+
+.stage__body { padding-top: 2px; min-width: 0; }
+.stage__kind { font-size: .8125rem; font-weight: 700; color: #4b5563; }
+.stage__node[data-kind="stop"] .stage__kind { color: #b3261e; }
+.stage__node[data-kind="goal"] .stage__kind { color: #0f7a3d; }
+.stage__score {
+  margin-left: 8px; padding: 1px 8px; border-radius: 999px;
+  background: #b3261e; color: #fff; font-size: .75rem;
+}
+.stage__label { font-size: 1.0625rem; font-weight: 700; margin-top: 2px; }
+.stage__url {
+  display: inline-block; margin-top: 2px;
+  font-size: .8125rem; color: #4b5563; word-break: break-all;
+}
+
+/* 止まった場所の下に、4項目の取れ高を並べる */
+.stage__items { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+.stage__item {
+  padding: 2px 9px; border-radius: 999px; font-size: .75rem;
+  border: 1px solid #f0c8c4; background: #fdf3f2; color: #b3261e;
+}
+.stage__item[data-ok="true"] { border-color: #bfe3cd; background: #f0f9f3; color: #0f7a3d; }
+
+/* --- 道（線） --- */
+.stage__link { display: flex; gap: 14px; align-items: flex-start; padding: 2px 0; }
+.stage__arrow {
+  flex: 0 0 auto; width: 42px; align-self: stretch; min-height: 46px;
+  position: relative;
+}
+.stage__arrow::before {
+  content: ""; position: absolute; left: 50%; top: 0; bottom: 0;
+  width: 4px; transform: translateX(-50%); border-radius: 2px;
+  background: #0056b3;
+}
+.stage__link[data-dashed="true"] .stage__arrow::before {
+  background: none;
+  border-left: 4px dashed #b9bfc7;
+  width: 0;
+}
+.stage__via {
+  display: inline-block; margin-top: 12px;
+  padding: 4px 12px; border-radius: 8px;
+  background: #fff; border: 1px solid #d8dde3;
+  font-size: .875rem;
+}
+.stage__link[data-dashed="true"] .stage__via { color: #6b7280; border-style: dashed; }
+
+/* 罠（看板が一字違い） */
+.stage__trap {
+  margin-top: 8px; padding: 10px 12px;
+  border-radius: 10px; background: #fff8e6; border: 1px solid #e6c866;
+  font-size: .875rem; color: #6b5500; max-width: 46rem;
+}
+.stage__trap b {
+  display: inline-block; margin-right: 6px; padding: 0 8px;
+  border-radius: 999px; background: #8a6d00; color: #fff; font-size: .75rem;
+}
+
+/* --- 反実仮想（読んでいることの裏取り） --- */
+.proof {
+  margin-top: 14px; padding: 18px 20px;
+  border: 1px solid #d8dde3; border-radius: 14px; background: #fff;
+}
+.proof__what { font-weight: 700; }
+.proof__cols { display: flex; gap: 14px; margin-top: 14px; flex-wrap: wrap; }
+.proof__col {
+  flex: 1 1 12rem; padding: 14px 16px; border-radius: 12px;
+  border: 1px solid #e5e7eb; background: #f9fafb; text-align: center;
+}
+.proof__col b { display: block; font-size: 2.25rem; line-height: 1; font-weight: 800; color: #6b7280; }
+.proof__col span { display: block; margin-top: 6px; font-size: .8125rem; color: #4b5563; }
+.proof__col[data-hit="true"] { border-color: #bfe3cd; background: #f0f9f3; }
+.proof__col[data-hit="true"] b { color: #0f7a3d; }
+.proof__conc { margin-top: 14px; font-size: 1.0625rem; font-weight: 700; }
+.proof__note { margin-top: 6px; font-size: .8125rem; color: #6b7280; }
+
+/* --- 同じ段差のマス --- */
+.same__list { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 6px; }
+.same__list li {
+  padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; background: #fff;
+  font-size: .9375rem;
+}
+.same__hops { margin-left: 8px; font-size: .8125rem; color: #6b7280; }
+
+@media (min-width: 900px) {
+  .stage__label { font-size: 1.125rem; }
+}
+
+/* ── 道を歩いたAI ──────────────────────────────────────────────
+   ★各社の公式ロゴは置かない。公開作品に他社の商標をそのまま載せると
+     「公認である」と読まれかねない。自前の記号と色で系統を示し、
+     モデル名は measurement の実測値をそのまま文字で出す。 */
+.explorer {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 14px; padding: 12px 16px;
+  border: 1px solid #d8dde3; border-radius: 12px; background: #fff;
+}
+.explorer__mark {
+  width: 38px; height: 38px; border-radius: 10px;
+  display: grid; place-items: center;
+  font-size: 20px; font-weight: 800; color: #fff; background: #6b7280;
+}
+.explorer[data-family="claude"] .explorer__mark { background: #c96442; }
+.explorer[data-family="gpt"]    .explorer__mark { background: #10a37f; }
+.explorer[data-family="gemini"] .explorer__mark { background: #1a73e8; }
+.explorer[data-family="llama"]  .explorer__mark { background: #0064e0; }
+.explorer__body { display: flex; flex-direction: column; line-height: 1.35; }
+.explorer__body > b { font-size: .75rem; color: #4b5563; }
+.explorer__model { font-size: 1rem; font-weight: 700; }
+.explorer__vendor { font-size: .75rem; color: #6b7280; }
+.explorer__note { flex: 1 1 16rem; font-size: .75rem; color: #6b7280; }
+
+/* ── どうやって力尽きたか ────────────────────────────────────── */
+.why {
+  margin-top: 12px; padding: 14px 16px;
+  border: 1px solid #e5e7eb; border-radius: 12px; background: #fbfcfe;
+  max-width: 52rem;
+}
+.why__title { font-size: .8125rem; font-weight: 700; color: #4b5563; }
+.why__steps { margin: 8px 0 0; padding-left: 1.25rem; display: grid; gap: 6px; }
+.why__steps li { font-size: .9375rem; }
+.why__steps li > b {
+  display: inline-block; margin-right: 6px; padding: 1px 8px;
+  border-radius: 999px; font-size: .6875rem; font-weight: 700;
+}
+/* こちらの都合か、区のページの作りかを分ける。区のせいだけに見せない */
+.why__steps li[data-whose="ours"] > b { background: #e8f0fb; color: #0056b3; }
+.why__steps li[data-whose="site"] > b { background: #fdf3f2; color: #b3261e; }
+.why__notes {
+  margin-top: 10px; padding: 10px 12px; border-radius: 8px;
+  background: #fff; border: 1px solid #e5e7eb;
+  font-size: .8125rem; color: #4b5563;
+}
+.why__notes > b { display: block; margin-bottom: 4px; color: #1a1a1c; }

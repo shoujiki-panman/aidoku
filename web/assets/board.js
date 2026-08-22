@@ -39,7 +39,63 @@ const LEGEND = [
   { tone: 'part', text: '一部だけ届く' },
   { tone: 'none', text: '届かない' },
   { tone: 'gray', text: 'まだ調べていない' },
+  { tone: 'stale', text: 'ページが変わった（測り直しが要る）' },
 ];
+
+// 見張りが「変わった」と言ったマス。毎朝の確認で入れ替わるので、盤面はここだけ動く。
+// ★これは「悪くなった」ではなく「測り直しが必要」の意味（site-status.json の _about）。
+let STALE = new Set();
+const staleKey = (muniId, procId) => `${muniId}:${procId}`;
+
+async function loadStale() {
+  try {
+    const r = await fetch('data/site-status.json');
+    if (!r.ok) return { set: new Set(), checkedAt: null };
+    const d = await r.json();
+    const set = new Set((d.items || [])
+      .filter((i) => i && i.changed === true)
+      .map((i) => staleKey(i.municipality_id, i.procedure_id)));
+    return { set, checkedAt: d.checked_at || null };
+  } catch {
+    return { set: new Set(), checkedAt: null };
+  }
+}
+
+// 盤面ぜんぶで、住民のAIに届いている項目の数。23区 × 3手続き × 4項目 が満点
+function totalProgress(rows, procs) {
+  let got = 0;
+  let total = 0;
+  for (const r of rows) {
+    for (const p of procs) {
+      const c = r.cells[p.id];
+      if (!c) continue;
+      got += c.got;
+      total += ITEMS.length;
+    }
+  }
+  return { got, total, pct: total ? Math.round((got / total) * 100) : 0 };
+}
+
+function renderProgress(rows, procs, checkedAt) {
+  const pr = totalProgress(rows, procs);
+  const stale = [...STALE].length;
+  $('board-progress').innerHTML = `
+    <div class="meter">
+      <div class="meter__head">
+        <b class="meter__num">${pr.pct}<span>%</span></b>
+        <span class="meter__label">
+          住民のAIに届いている項目 <b>${pr.got} / ${pr.total}</b>
+          <span class="meter__sub">（23区 × 3手続き × 4項目）</span>
+        </span>
+      </div>
+      <div class="meter__bar"><span style="width:${pr.pct}%"></span></div>
+      ${stale ? `<p class="meter__quest">
+          <b data-tone="amber">${stale}マス</b>が
+          <b>測り直し待ち</b>です — 毎朝の見張りが「ページが変わった」と見つけたマス。
+          <span class="meter__sub">盤面では枠が光っています。悪くなったという意味ではありません。</span>
+        </p>` : ''}
+    </div>`;
+}
 
 // 手続きごとの scores-*.json を、自治体IDで引ける形にまとめる。
 // 手続きによって測った区が違っても崩れないよう、行は全手続きの和集合で作る。
@@ -80,8 +136,11 @@ function renderBody(rows, procs) {
     const measured = procs.map((p) => {
       const s = r.cells[p.id];
       if (!s) return '<td><i class="cell" data-tone="gray" title="この区は測っていない"></i></td>';
-      return `<td><a class="cell" data-tone="${s.tone}" href="${detailUrl(r.id, p.id)}"
-        title="${esc(r.name)}の${esc(p.name)}: ${esc(s.title)}"><span class="sr-only">${esc(r.name)}の${esc(p.name)}: </span>${s.label}</a></td>`;
+      const stale = STALE.has(staleKey(r.id, p.id));
+      const t = `${esc(r.name)}の${esc(p.name)}: ${esc(s.title)}`
+        + (stale ? '｜ページが変わったので測り直しが要る' : '');
+      return `<td><a class="cell" data-tone="${s.tone}"${stale ? ' data-stale="true"' : ''}
+        href="${detailUrl(r.id, p.id)}" title="${t}"><span class="sr-only">${esc(r.name)}の${esc(p.name)}: </span>${s.label}</a></td>`;
     }).join('');
     const gray = UNMEASURED.map(() =>
       '<td><i class="cell" data-tone="gray" title="まだ調べていない"></i></td>').join('');
@@ -129,7 +188,11 @@ async function init() {
   $('legend').innerHTML = LEGEND.map((l) =>
     `<span class="legend__item"><i class="cell" data-tone="${l.tone}"></i>${esc(l.text)}</span>`).join('');
 
+  const st = await loadStale();
+  STALE = st.set;
+
   const rows = sortRows(indexByMuni(procs, docs), procs);
+  renderProgress(rows, procs, st.checkedAt);
   renderHead(procs);
   renderBody(rows, procs);
   renderSummary(rows, procs);
