@@ -61,14 +61,14 @@
     <h2 class="dads-heading" data-size="l" id="lookup-heading">自分の区を押す</h2>
     <p class="section-note"><strong>地図から自分の区を押してください。</strong>
       色は、住民のAIに届いている項目の数です（3手続き × 4項目 = 12項目）。</p>
-    <div class="wardmap" id="wardmap" aria-label="東京23区の地図。区を押すとその区の結果が出ます"></div>
+    <div class="wardmap" id="wardmap" data-ai-ignore aria-label="東京23区の地図。区を押すとその区の結果が出ます"></div>
     <!-- 地図が押しにくい人・キーボードだけの人の道。文字を打たせる欄は置かない。 -->
-    <p class="wardpick">
+    <p class="wardpick" data-ai-ignore>
       <label class="wardpick__label" for="ward-select">一覧から選ぶ</label>
       <select class="wardpick__select" id="ward-select"><option value="">区を選ぶ</option></select>
     </p>
     <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
-    <p class="lookup__escape">
+    <p class="lookup__escape" data-ai-ignore>
       <button type="button" class="linkish" id="show-all">23区ぶんの結果をまとめて見る</button>
     </p>
   </section>
@@ -94,7 +94,7 @@
   <!-- 自分の区を引く。**その場でAIに読ませてはいない** — 判定は claude -p をローカルで
        呼ぶ設計で、静的ホスティングからは動かせない（#59）。ここは測ってある69マスを引くだけ。
        当たらなかったら当てずっぽうを返さず「まだ測っていない」と言う（盤面のグレーと同じ約束）。 -->
-  <div class="proc-tabs" id="proc-tabs" role="tablist" aria-label="手続きを選ぶ"></div>
+  <div class="proc-tabs" id="proc-tabs" data-ai-ignore role="tablist" aria-label="手続きを選ぶ"></div>
 
   <!-- 最上段は「今やる1件」。点数の一覧より先に、次の一手を1つだけ出す。
        選び方は plans/feat-next-action.md で固定（gain降順→fact-types定義順→field順）。 -->
@@ -222,5 +222,7 @@
 <script src="assets/wardmap.js"></script>
 <script src="assets/trend.js"></script>
 <script src="assets/app.js"></script>
+<script src="ask-ai-button.js" defer data-selector="main"
+        data-actions="ask" data-label="AIに渡して調べる"></script>
 </body>
 </html>
