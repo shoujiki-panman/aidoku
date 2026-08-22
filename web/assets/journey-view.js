@@ -184,10 +184,17 @@
          </div>`;
 
     const clicks = barrier?.failure?.clicks_to_official_page;
+    const j = window.__JOURNEY__ || {};
+    const done = j.total && j.got === j.total;
+    const tail = done
+      ? `AIは4項目とも読み取れました。`
+      : j.blame === 'ours'
+        ? `同じ画面に手続き名の入ったリンクが出ていたのに、AIはそれを選びませんでした。`
+        : `見えていた候補のどれにも、手続きの名前がありませんでした。`;
     $('map-note').innerHTML =
-      `<strong>${esc(barrier.municipality)}・${esc(barrier.procedure)}</strong>。` +
-      (clicks ? `答えのあるページまで<strong>${clicks}クリック</strong>。` : '') +
-      `AIが採点したのは、その手前の目次ページでした。`;
+      `<strong>${esc(barrier.municipality)}・${esc(barrier.procedure)}</strong>` +
+      (j.total ? `（${j.got}/${j.total}）` : '') + '。' +
+      (clicks ? `答えのあるページまで<strong>${clicks}クリック</strong>。` : '') + tail;
   }
 
   function renderProof(barrier) {
@@ -219,47 +226,88 @@
       <p class="section-note">${esc(p.caveat || '')}</p>`;
   }
 
+  // 人手で書いた barrier が無いセルのために、道のりの記録から同じ形を作る。
+  // 途中の導線（failure.path）は世田谷の1件にしかないので、そこは空でよい。
+  function barrierFrom(j, hand) {
+    if (hand) return hand;
+    return {
+      municipality: j.municipality,
+      procedure: j.procedure,
+      failure: { observed_at_url: j.stop_url, path: [], summary: '' },
+      evidence: {},
+    };
+  }
+
+  // 力尽きた理由。区のせいだけに見せない。
+  // 選ばれなかった候補に手続き名があったなら、原因はこちら側。
+  function whyStopped(j, notes) {
+    const ours = j.blame === 'ours';
+    const near = (j.missed_with_strong_word || [])[0];
+    return {
+      notes: notes || '',
+      steps: [
+        { whose: 'ours', text: '：探索が候補を集め、このページを1位に選んだ' },
+        { whose: 'ours', text: '：採点のとき、本文とリンク一覧（上限40件）だけをAIに渡した' },
+        ours && near
+          ? { whose: 'ours',
+              text: `：同じ画面に「${near.link_text}」（${near.score}点）が出ていたのに選ばなかった。道はあった` }
+          : { whose: 'site', text: '：見えていた候補のどれにも、手続きの名前が無かった' },
+        { whose: 'site', text: '：このページの本文に4項目が書かれていなかった' },
+      ],
+    };
+  }
+
   async function init() {
     try {
-      const [bs, sc, ft, jj] = await Promise.all([
+      const [bs, ft, jj, ...scores] = await Promise.all([
         loadJson('data/barriers.json'),
-        loadJson('data/scores-tennyu.json'),
         loadJson('data/fact-types.json'),
         loadJson('data/journeys.json').catch(() => ({ journeys: [] })),
+        loadJson('data/scores-tennyu.json'),
+        loadJson('data/scores-jidouteate.json'),
+        loadJson('data/scores-sodaigomi.json'),
       ]);
-      // 描くときに読むので、先に置く
-      window.__JOURNEY__ = (jj.journeys || [])[0] || null;
       window.__JOURNEY_SCORING__ = jj.scoring || '';
-      const barrier = (bs.barriers || [])[0];
-      if (!barrier) { $('map').innerHTML = '<p>記録がありません。</p>'; return; }
-
+      const journeys = jj.journeys || [];
+      if (!journeys.length) { $('map').innerHTML = '<p>記録がありません。</p>'; return; }
+      const byProc = { tennyu: scores[0], jidouteate: scores[1], sodaigomi: scores[2] };
       const names = ft.fact_types.map((f) => f.display_label);
-      const muni = (sc.municipalities || []).find((m) => m.name === barrier.municipality);
-      const cell = muni ? {
-        got: names.filter((n) => (muni.breakdown[n] ?? 0) >= 20).length,
-        total: names.length,
-        fields: names.map((n) => ({ name: n, ok: (muni.breakdown[n] ?? 0) >= 20 })),
-      } : null;
+      const hand = (bs.barriers || []);
 
-      const run = (sc.measurement?.runs || [])
-        .find((r) => r.municipality_id === (muni && muni.id));
-      const ex = AidokuJourney.explorer(
-        run?.model_version || barrier.measurement?.model, run?.model);
-
-      const stages = AidokuJourney.buildStages(barrier, cell);
-      // 「力尽きた」の中身。どこがこちらの都合かを分けて書く（区のせいだけに見せない）
-      const stop = stages.find((s) => s.kind === 'stop');
-      if (stop) {
-        stop.why = {
-          notes: muni?.notes || '',
-          steps: [
-            { whose: 'ours', text: '：探索が候補を集め、この目次ページを1位に選んだ' },
-            { whose: 'ours', text: `：採点のとき、本文とリンク一覧（上限40件）だけをAIに渡した` },
-            { whose: 'site', text: '：本文に4項目が無く、目次に関連ページ名の文字だけが見えた' },
-            { whose: 'ours', text: '：そのURLが渡した40件に入っておらず（地域ナビで埋まっていた）、AIは追えなかった' },
-          ],
-        };
+      const pick = $('journey-pick');
+      // 力尽きたところから先に見せる。全部そろっている区を先頭にしない
+      const sorted = [...journeys].sort((a, b) => a.got - b.got
+        || a.municipality.localeCompare(b.municipality, 'ja'));
+      if (pick) {
+        pick.innerHTML = sorted.map((j, i) => `<option value="${i}">`
+          + `${esc(j.municipality)}・${esc(j.procedure)}（${j.got}/${j.total}）</option>`).join('');
+        pick.addEventListener('change', () => show(sorted[Number(pick.value)]));
       }
+      show(sorted[0]);
+
+      function show(j) {
+        window.__JOURNEY__ = j;
+        const sc = byProc[j.procedure_id] || {};
+        const muni = (sc.municipalities || []).find((m) => m.id === j.municipality_id);
+        const cell = muni ? {
+          got: names.filter((n) => (muni.breakdown[n] ?? 0) >= 20).length,
+          total: names.length,
+          fields: names.map((n) => ({ name: n, ok: (muni.breakdown[n] ?? 0) >= 20 })),
+        } : null;
+        const barrier = barrierFrom(j, hand.find(
+          (b) => b.municipality === j.municipality && b.procedure === j.procedure));
+        const run = (sc.measurement?.runs || [])
+          .find((r) => r.municipality_id === j.municipality_id);
+        const ex = AidokuJourney.explorer(
+          run?.model_version || barrier.measurement?.model, run?.model);
+
+        const stages = AidokuJourney.buildStages(barrier, cell);
+        const stop = stages.find((s) => s.kind === 'stop');
+        if (stop) stop.why = whyStopped(j, muni?.notes);
+        draw(stages, barrier, ex, cell);
+      }
+
+      function draw(stages, barrier, ex, cell) {
       renderMap(stages, barrier, ex);
 
       const root = $('map').querySelector('.stage__wrap');
@@ -285,6 +333,7 @@
       }
       renderProof(barrier);
       renderSame(barrier);
+      }
       const g = $('generated-at');
       if (g) g.textContent = (bs.generated_at || '').slice(0, 10);
     } catch (e) {

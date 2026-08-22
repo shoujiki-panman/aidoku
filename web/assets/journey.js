@@ -57,9 +57,11 @@
 
     const stages = [];
     stages.push({ kind: 'start', label: '区のトップページ', url: origin ? origin + '/' : null });
+    const reached = cell && cell.got === cell.total;
     stages.push({
       kind: 'stop',
-      label: 'AIはここで力尽きた',
+      // 4項目そろった区に「力尽きた」は嘘になる
+      label: reached ? 'AIはここで4項目そろえた' : 'AIはここで力尽きた',
       url: stopUrl,
       via: null,
       score: cell ? `${cell.got}/${cell.total}` : null,
