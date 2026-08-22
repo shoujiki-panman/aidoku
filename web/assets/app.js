@@ -473,6 +473,7 @@ async function loadLookupCells() {
       // 項目ごとに「どこに何を書くか」を出すために持つ
       improvements: m.improvements || [],
       fields: m.fields || [],
+      lgCode: m.lg_code || null,
     }));
   }));
   lookupCells = per.flat();
@@ -641,8 +642,12 @@ async function renderWardMap() {
           tabindex="0" role="button" aria-label="${esc(w.label)}">
       <title>${esc(w.label)}</title>
     </path>`).join('');
+  // 区名。押す対象は path なので、文字はクリックを透過させる（pointer-events: none）
+  const labels = wards.filter((w) => w.lx != null).map((w) => `
+    <text class="wardmap__name" x="${w.lx}" y="${w.ly}" data-tone="${esc(w.tone)}"
+          text-anchor="middle" aria-hidden="true">${esc(w.short)}</text>`).join('');
   box.innerHTML = `
-    <svg viewBox="${esc(doc.viewBox)}" class="wardmap__svg" role="group">${paths}</svg>
+    <svg viewBox="${esc(doc.viewBox)}" class="wardmap__svg" role="group">${paths}${labels}</svg>
     <ul class="wardmap__legend">
       <li data-tone="high">9〜12項目</li><li data-tone="mid">6〜8</li>
       <li data-tone="low">1〜5</li><li data-tone="zero">0</li>
@@ -652,7 +657,8 @@ async function renderWardMap() {
 
   const pick = (el) => {
     if (!el || !el.dataset.name) return;
-    $('lookup-input').value = el.dataset.name;
+    const sel = $('ward-select');
+    if (sel) sel.value = '';
     box.querySelectorAll('path').forEach((p) => p.removeAttribute('aria-current'));
     el.setAttribute('aria-current', 'true');
     runLookup(el.dataset.name);
@@ -663,13 +669,40 @@ async function renderWardMap() {
   });
 }
 
-function initLookup() {
-  const form = $('lookup-form');
-  if (!form || typeof AidokuLookup === 'undefined') return;
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    runLookup($('lookup-input').value);
+// 区のプルダウン。★23区しかないので打たせない。中身はデータから作るので、
+//   区が増えても手で足す必要が無い（画面と実測がずれない）。
+async function renderWardSelect() {
+  const sel = $('ward-select');
+  if (!sel) return;
+  const cells = await loadLookupCells();
+  // ★並びは全国地方公共団体コード順（千代田・中央・港…）。
+  //   漢字の文字コード順だと「葛飾→江戸川→江東」のように、誰の頭にも無い順になる。
+  const by = new Map();
+  for (const c of cells) {
+    if (!c.muniName || by.has(c.muniName)) continue;
+    by.set(c.muniName, String(c.lgCode ?? '99999'));
+  }
+  const names = [...by.entries()]
+    .sort((a, b) => a[1].localeCompare(b[1]) || a[0].localeCompare(b[0], 'ja'))
+    .map(([nm]) => nm);
+  sel.insertAdjacentHTML('beforeend',
+    names.map((nm) => `<option value="${esc(nm)}">${esc(nm)}</option>`).join(''));
+  sel.addEventListener('change', () => {
+    if (!sel.value) return;
+    runLookup(sel.value);
   });
+}
+
+function initLookup() {
+  if (typeof AidokuLookup === 'undefined') return;
+  // 入力欄は廃止した（地図とプルダウンで選ぶ）。残っている場合だけつなぐ。
+  const form = $('lookup-form');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      runLookup($('lookup-input').value);
+    });
+  }
   $('lookup-result').addEventListener('click', (e) => {
     const fm = e.target.closest('.fieldmark');
     if (!fm) return;
@@ -689,6 +722,7 @@ function initLookup() {
   });
 
   renderWardMap();
+  renderWardSelect();
 
   // 区名が分からない人の逃げ道。押したら全部出す（従来どおりの画面になる）
   const showAll = $('show-all');
@@ -702,7 +736,6 @@ function initLookup() {
   // ?q=世田谷区 で結果を直接開く。区が自分のリンクをブックマークできる。
   const q0 = new URLSearchParams(location.search).get('q');
   if (q0) {
-    $('lookup-input').value = q0;
     runLookup(q0);
   }
   // 盤面から ?muni=&proc= で来た人は、その区を見に来ているので最初から結果を出す

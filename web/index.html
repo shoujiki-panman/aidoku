@@ -61,19 +61,11 @@
     <p class="section-note"><strong>地図から自分の区を押してください。</strong>
       色は、住民のAIに届いている項目の数です（3手続き × 4項目 = 12項目）。</p>
     <div class="wardmap" id="wardmap" aria-label="東京23区の地図。区を押すとその区の結果が出ます"></div>
-    <details class="lookup__typed">
-    <summary>区名やURLで探す</summary>
-    <form class="lookup__form" id="lookup-form" role="search">
-      <label class="lookup__label" for="lookup-input">区名、または手続きページのURL</label>
-      <div class="lookup__row">
-        <input class="dads-input lookup__input" id="lookup-input" type="search" autocomplete="off"
-               placeholder="世田谷区　または　https://www.city.setagaya.lg.jp/..."
-               aria-describedby="lookup-hint">
-        <button class="dads-button lookup__submit" data-variant="solid" type="submit">調べる</button>
-      </div>
-      <p class="lookup__hint" id="lookup-hint">測ってあるのは <strong>東京23区 × 3手続き＝69マス</strong>です。ここで新しく判定はしません。</p>
-    </form>
-    </details>
+    <!-- 地図が押しにくい人・キーボードだけの人の道。文字を打たせる欄は置かない。 -->
+    <p class="wardpick">
+      <label class="wardpick__label" for="ward-select">一覧から選ぶ</label>
+      <select class="wardpick__select" id="ward-select"><option value="">区を選ぶ</option></select>
+    </p>
     <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
     <p class="lookup__escape">
       <button type="button" class="linkish" id="show-all">23区ぶんの結果をまとめて見る</button>

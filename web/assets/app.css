@@ -645,3 +645,32 @@ td.marks { white-space: nowrap; }
 .site-header__lead { margin-top: 8px; font-size: .9375rem; }
 .lookup--hero { padding: 26px 28px 22px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
 @media (min-width: 960px) { .site-header .dads-heading { font-size: 2rem; } }
+
+/* 区のプルダウン。23区しかないので打たせない */
+.lookup__pick { margin-top: 10px; }
+.lookup__select {
+  width: 100%; max-width: 22rem; padding: 9px 12px; font-size: 1rem;
+  border: 1px solid #767676; border-radius: 8px; background: #fff;
+}
+.lookup__select:focus-visible { outline: 3px solid #0056b3; outline-offset: 1px; }
+.lookup__form { margin-top: 14px; }
+
+/* 区名。押す対象は path なので、文字は当たり判定を持たせない */
+.wardmap__name {
+  pointer-events: none;
+  font-size: 26px; font-weight: 700;
+  fill: #fff;
+  paint-order: stroke; stroke: rgba(0, 0, 0, .35); stroke-width: 4px; stroke-linejoin: round;
+}
+/* 薄い色の上では、白抜きだと読めない */
+.wardmap__name[data-tone="unknown"] { fill: #1a1a1c; stroke: rgba(255, 255, 255, .8); }
+
+/* 地図の下の「一覧から選ぶ」。1行に収めて、地図の邪魔をしない */
+.wardpick { display: flex; align-items: center; gap: 8px; margin: 12px 0 0; }
+.wardpick__label { font-size: .875rem; color: #4e5255; }
+.wardpick__select {
+  max-width: 15em; padding: 8px 10px;
+  font-size: 1rem; font-family: inherit; color: #1a1a1c;
+  background: #fff; border: 1px solid #767676; border-radius: 6px;
+}
+.wardpick__select:focus-visible { outline: 3px solid #264af4; outline-offset: 1px; }

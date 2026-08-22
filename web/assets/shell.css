@@ -46,12 +46,3 @@
 
 /* 本文は中央に、ゆったり */
 .shell__main .wrap { max-width: 1100px; padding-left: 24px; padding-right: 24px; }
-
-/* ドット絵ページ */
-body.pixel .topbar { background: #1d1f30; border-bottom: 4px solid #000; }
-body.pixel .topbar__brand b { color: #ffcc2f; }
-body.pixel .topbar__brand span { color: #9aa0b5; }
-body.pixel .menu > summary { background: #2b2d42; color: #f2f4f8; border: 2px solid #000; border-radius: 0; }
-body.pixel .menu__list { background: #1d1f30; border: 3px solid #000; border-radius: 0; }
-body.pixel .menu__list a { color: #f2f4f8; }
-body.pixel .menu__list a:hover { background: #2b2d42; }

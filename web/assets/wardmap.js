@@ -41,7 +41,11 @@
       return {
         code: w.code,
         name: w.name,
+        // 地図に書くのは「区」を落とした短い名前。狭いマスでも読めるようにする
+        short: String(w.name || '').replace(/区$/, ''),
         d: w.d,
+        lx: w.lx,
+        ly: w.ly,
         got: p ? p.got : null,
         total: p ? p.total : null,
         tone: p ? p.tone : 'unknown',

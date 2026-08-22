@@ -50,6 +50,31 @@ def ring(arc_ids: list[int], arcs: list) -> list[tuple[float, float]]:
     return pts
 
 
+def label_point(rings: list[list[tuple[float, float]]]) -> tuple[float, float]:
+    """区名を置く場所。一番大きい輪郭の重心を使う。
+
+    ★単純な平均だと、島や埋立地を持つ区（大田・江東など）で海の上に出る。
+      面積が最大の輪郭だけを見て、そのポリゴンの重心を取る。
+    """
+    def area_centroid(r):
+        a = cx = cy = 0.0
+        for i in range(len(r) - 1):
+            x0, y0 = r[i]
+            x1, y1 = r[i + 1]
+            cross = x0 * y1 - x1 * y0
+            a += cross
+            cx += (x0 + x1) * cross
+            cy += (y0 + y1) * cross
+        a *= 0.5
+        if abs(a) < 1e-12:
+            xs = [q[0] for q in r]; ys = [q[1] for q in r]
+            return abs(a), sum(xs) / len(xs), sum(ys) / len(ys)
+        return abs(a), cx / (6 * a), cy / (6 * a)
+
+    best = max((area_centroid(r) for r in rings), key=lambda t: t[0])
+    return best[1], best[2]
+
+
 def project(lon: float, lat: float, box: tuple, scale: float, lat0: float) -> tuple[float, float]:
     """正距円筒に、緯度による横縮みの補正だけ入れる。23区の範囲なら十分。"""
     import math
@@ -93,11 +118,16 @@ def main(argv: list[str] | None = None) -> None:
     out = []
     for w in wards:
         d = []
+        outer = []
         for poly in w["rings"]:
-            for r in poly:
+            for j, r in enumerate(poly):
                 xy = [project(x, y, (minx, miny, maxx, maxy), scale, lat0) for x, y in r]
                 d.append("M" + "L".join(f"{x},{y}" for x, y in xy) + "Z")
-        out.append({"code": w["code"], "name": w["name"], "d": "".join(d)})
+                if j == 0:
+                    outer.append(xy)
+        lx, ly = label_point(outer)
+        out.append({"code": w["code"], "name": w["name"], "d": "".join(d),
+                    "lx": round(lx, 1), "ly": round(ly, 1)})
 
     out.sort(key=lambda w: w["code"])
     height = round((maxy - miny) * scale, 1)
