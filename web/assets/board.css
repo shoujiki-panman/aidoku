@@ -83,23 +83,6 @@ a.cell:focus-visible { outline: 3px solid #0056b3; outline-offset: 2px; }
 .board tbody th { text-align: left; font-weight: 400; white-space: nowrap; padding-right: 1em; }
 .board tbody tr:nth-child(odd) { background: #fafbfc; }
 
-.visit-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin: 1em 0;
-}
-.visit-card {
-  background: #fff;
-  border: 1px solid #d8dde3;
-  border-radius: 8px;
-  padding: 1em;
-}
-.visit-card[data-state="gray"] { background: #f6f7f9; border-style: dashed; }
-.visit-card__name { margin: 0; font-weight: 700; }
-.visit-card__count { margin: .3em 0; font-size: 1.8rem; font-weight: 700; color: #9aa2ab; }
-.visit-card__note { margin: 0; font-size: .85rem; color: #5c5c66; line-height: 1.7; }
-.visit-card__sub { color: #8a929b; }
 
 @media (max-width: 600px) {
   .cell { width: 2.2em; }
