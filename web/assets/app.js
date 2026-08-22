@@ -388,6 +388,7 @@ init().catch((e) => {
 //   静的ホスティングからは動かせない。当てずっぽうを返さないことが仕様。
 //   盤面のグレーと同じ約束 — 測っていないものを、測ったように見せない。
 let lookupCells = null;
+let muniTop = null;   // 区id → 区の公式サイト
 let archiveByUrl = null;
 
 // 過去の姿は Internet Archive / WARP が既に持っている（Issue #99）。
@@ -425,8 +426,22 @@ function archiveLine(rec) {
 // 前回からの差。★数字は出すが、原因の断定は測定条件が一致するときだけ。
 // いまの履歴は全部 legacy_unknown なので、必ず「原因は言えない」になる。それが正しい。
 
+// 読めなかった項目の行き先は「区の公式サイト」しかない。
+// AI読は答えの本文を持っていないので、ここを出さないと住民は手ぶらで終わる。
+async function loadMuniTop() {
+  if (muniTop) return muniTop;
+  try {
+    const d = await loadJson('data/municipalities.json');
+    muniTop = new Map(d.municipalities.map((m) => [m.id, m]));
+  } catch {
+    muniTop = new Map();   // 出せないだけで、他は動かす
+  }
+  return muniTop;
+}
+
 async function loadLookupCells() {
   if (lookupCells) return lookupCells;
+  await loadMuniTop();
   const per = await Promise.all(procs.map(async (p) => {
     const d = await loadJson(`data/${p.file}`);
     return d.municipalities.map((m) => ({
@@ -443,6 +458,32 @@ async function loadLookupCells() {
 }
 
 const gotCount = (c) => FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) >= 20).length;
+
+// 住民が次にやること。ここが無いと、画面に残るのは職員向けの助言だけになる。
+// 電話番号は持っていないので作らない。案内先は区の公式サイトまで。
+function nextStepForResident(c) {
+  const top = muniTop && muniTop.get(c.muniId);
+  const page = c.url
+    ? `<li>区の<a class="dads-link" href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.procName)}のページ</a>を見る</li>`
+    : '';
+  if (gotCount(c) === FIELDS.length) {
+    return `<div class="nextstep"><p class="nextstep__title">あなたが次にやること</p>
+      <ol class="nextstep__list">${page}</ol></div>`;
+  }
+  const ask = top
+    ? `<li><b>書かれていない項目は、区に直接たしかめる</b> —
+        <a class="dads-link" href="${esc(top.top_url)}" target="_blank" rel="noopener">${esc(top.name)}の公式サイト</a>の問い合わせ先へ。
+        金額・期限・持ち物は、間違えると窓口で差し戻されます</li>`
+    : '<li><b>書かれていない項目は、区に直接たしかめてください</b></li>';
+  return `<div class="nextstep">
+      <p class="nextstep__title">あなたが次にやること</p>
+      <ol class="nextstep__list">
+        ${page}
+        ${ask}
+        <li>右下の<b>「AIに渡して調べる」</b>で、自分のAIに持ち物リストを作らせる</li>
+      </ol>
+    </div>`;
+}
 
 function lookupCellRow(c) {
   const st = c.pageStatus;
@@ -492,6 +533,7 @@ function lookupCellRow(c) {
         <div class="fieldmarks">${marks}</div>
         ${panels}
         ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
+        ${nextStepForResident(c)}
         <p class="cell__go">
           <button type="button" class="dads-button lookup__open"
                   data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">この手続きの結果を開く</button>

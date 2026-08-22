@@ -2,7 +2,7 @@
   "_about": "AI読（アイドク）の公開データの目次。人間向けの説明は README.md、機械向けはこのファイル。まずここを読めば、どこに何があり、どこまで測ってあるかが分かる。",
   "name": "AI読（アイドク）公開データ",
   "schema_version": 1,
-  "generated_at": "2026-08-22T12:40:23+00:00",
+  "generated_at": "2026-08-22T14:02:20+00:00",
   "homepage": "https://shoujiki-panman.github.io/aidoku/web/",
   "repository": "https://github.com/shoujiki-panman/aidoku",
   "base_url": "https://shoujiki-panman.github.io/aidoku/web/data/",
@@ -283,6 +283,21 @@
         "path": "wards",
         "count": 23
       },
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "municipalities",
+      "title": "東京23区の基本情報",
+      "description": "区のIDと名前、全国地方公共団体コード、区の公式サイト。読めなかった項目を住民が確かめに行く先として使う。",
+      "path": "municipalities.json",
+      "bytes": 3730,
+      "sha256": "dcf609857afd8f51b3d7e3929b58ff6fbc20ed281a5e9754fecd8d66bf9e206c",
+      "generated_at": "2026-08-22T13:39:56+00:00",
+      "records": {
+        "path": "municipalities",
+        "count": 23
+      },
+      "join": "id で scores-*.json の municipalities[].id と突き合わせる",
       "license": "CC-BY-4.0"
     },
     {

@@ -56,3 +56,21 @@
   font-size: .75rem; font-weight: 700; letter-spacing: .04em; color: #6b7280;
 }
 .menu__sec:first-child { margin-top: 2px; padding-top: 4px; border-top: 0; }
+
+/* ── ボタン ────────────────────────────────────────────
+   DADS のボタン部品は vendor に入れていない（.dads-button は素のまま
+   だった）。押す所が素のボタンに見えていたので、最低限だけ自前で当てる。
+   色は DADS の primary（#0056b3）に合わせる。 */
+.dads-button {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 10px 20px; border-radius: 8px; border: 1px solid transparent;
+  background: #0056b3; color: #fff;
+  font-family: inherit; font-size: .9375rem; font-weight: 700;
+  cursor: pointer; text-decoration: none;
+}
+.dads-button:hover { background: #00448f; }
+.dads-button:focus-visible { outline: 3px solid #0056b3; outline-offset: 2px; }
+.dads-button[data-variant="outline"] {
+  background: #fff; color: #0056b3; border-color: #0056b3;
+}
+.dads-button[data-variant="outline"]:hover { background: #eef4fb; }
