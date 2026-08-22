@@ -29,15 +29,21 @@
       <a class="topbar__brand" href="index.html"><b>AI読</b><span>アイドク</span></a>
       <details class="menu">
         <summary aria-label="メニュー"><span aria-hidden="true">☰</span> メニュー</summary>
-        <ul class="menu__list">
-          <li><a href="index.html" aria-current="page">ホーム</a></li>
-          <li><a href="board.html">23区の盤面</a></li>
-          <li><a href="journey.html">AIの道のり</a></li>
-          <li><a href="trends.html">見張りと推移</a></li>
-          <li><a href="index.html#method-heading">測り方とデータ</a></li>
-          <li><a href="index.html#use-heading">自分のAIに持たせる</a></li>
-          <li><a href="https://github.com/shoujiki-panman/aidoku">GitHub</a></li>
-        </ul>
+        <div class="menu__list">
+          <p class="menu__sec" id="menu-use">使う</p>
+          <ul aria-labelledby="menu-use">
+            <li><a href="index.html" aria-current="page">自分の区を調べる</a></li>
+            <li><a href="skill.html">自分のAIに持たせる</a></li>
+          </ul>
+          <p class="menu__sec" id="menu-see">見る</p>
+          <ul aria-labelledby="menu-see">
+            <li><a href="board.html">23区の盤面</a></li>
+            <li><a href="journey.html">AIの道のり</a></li>
+            <li><a href="trends.html">見張りと推移</a></li>
+            <li><a href="data.html">測り方とデータ</a></li>
+            <li><a href="https://github.com/shoujiki-panman/aidoku">GitHub</a></li>
+          </ul>
+        </div>
       </details>
     </div>
   </header>
@@ -129,79 +135,6 @@
 
   </div><!-- /#results -->
 
-  <hr class="dads-divider">
-
-  <section aria-labelledby="method-heading">
-    <h2 class="dads-heading" data-size="l" id="method-heading">測り方</h2>
-    <dl class="dads-description-list">
-      <div class="dads-description-list__item">
-        <dt class="dads-description-list__term">4項目（各20点）</dt>
-        <dd class="dads-description-list__description">必要書類・窓口/オンライン可否・期限・手数料。<strong>ページに書かれていることだけ</strong>から読み取れるかを見ます。推測での補完は禁止しています。</dd>
-      </div>
-      <div class="dads-description-list__item">
-        <dt class="dads-description-list__term">到達</dt>
-        <dd class="dads-description-list__description">自治体トップページから、検索エンジンを使わずリンクだけを辿って手続きページに着くまでのクリック数（深さ3まで探索）。</dd>
-      </div>
-      <div class="dads-description-list__item">
-        <dt class="dads-description-list__term">オンライン明示</dt>
-        <dd class="dads-description-list__description">その手続きがオンラインで完結するのかどうかが、迷わず読み取れるか。</dd>
-      </div>
-    </dl>
-    <p class="section-note">採点はAIによる判定です。各項目は「読めた／読めない」の2値で20点なので、判定が1つ変われば20点動きます。この23区の点数は各1回の判定によるもので、ぶれ幅は測っていません（人手の正解データと突き合わせる方式での採点のぶれ測定は、別途3自治体で行い最大2.0点。reports/ に記録があります）。クロールは robots.txt を守り、同一ドメインへのアクセスは3秒以上あけ、取得済みページは再取得していません。申請の送信は一切行っていません（読み取りのみ）。</p>
-
-    <p class="section-note">
-      門番が集める「AIが取れずに帰ったもの」は
-      <a class="dads-link" href="demand.html">こちら</a>。
-      <strong>まだ本物のAIエージェントの来訪は0件</strong>で、画面の数字は見本です。
-    </p>
-
-    <h3 class="dads-heading" data-size="s" id="data-heading">データの入手</h3>
-    <ul class="datalist">
-      <li><a class="dads-link" href="data/index.json">index.json</a> — <strong>機械可読な目次</strong>。どこに何があり、どこまで測ってあるか。AIにはまずこれを読ませてください</li>
-      <li><a class="dads-link" href="data/scores.csv">scores.csv</a> — 23区 × 全項目の点数（Excelで開けます）</li>
-      <li><a class="dads-link" href="data/scores-tennyu.json">scores-tennyu.json</a> — 転入届</li>
-      <li><a class="dads-link" href="data/scores-jidouteate.json">scores-jidouteate.json</a> — 児童手当の申請</li>
-      <li><a class="dads-link" href="data/scores-sodaigomi.json">scores-sodaigomi.json</a> — 粗大ごみ収集の申込</li>
-      <li><a class="dads-link" href="data/summary.txt">summary.txt</a> — 調査結果の要約（テキスト）</li>
-      <li><a class="dads-link" href="data/README.md">README.md</a> — <strong>列の意味・取りうる値・欠損の扱い</strong></li>
-    </ul>
-
-    <h3 class="dads-heading" data-size="s" id="license-heading">使っていいデータです（CC BY 4.0）</h3>
-    <p class="section-note">
-      <strong>点数・集計・改善案は <a class="dads-link" href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" rel="noopener">CC BY 4.0</a> です。</strong>
-      クレジットは <code>正直パンマン「AI読（アイドク）」 https://github.com/shoujiki-panman/aidoku</code>。
-    </p>
-    <p class="section-note">
-      ただし<strong>「住民のAIの答え」として出している文だけは別</strong>です。
-      あれは各自治体の公式サイトに書かれている文そのもので、<strong>著作権は各自治体にあります。</strong>
-      判定の根拠を示すために引用しているもので、出典は各区の「診断したページ」です。
-      再利用の可否は<strong>各自治体の利用規約に従ってください。</strong>
-      こちらのライセンスで再配布を許可することはできません。
-    </p>
-  </section>
-
-  <!-- 測って終わりにしない。読めない理由が分かっているなら、その分だけAIを賢くできる。 -->
-  <section aria-labelledby="use-heading">
-    <h2 class="dads-heading" data-size="l" id="use-heading">自分のAIに持たせる</h2>
-    <p>
-      自治体サイトをそのままAIに読ませると、<strong>書かれていないことを書かれているかのように答えます</strong>。
-      手数料の記載が無ければ「無料です」、期限が無ければ「通常14日以内です」と一般論で埋める。
-      住民はそれを信じて窓口で差し戻されます。
-    </p>
-    <p>
-      AI読は<strong>どのページの何が読み取れないかを実測で知っている</strong>ので、その一手前で止められます。
-      下のスキルを自分のAIに読み込ませると、AIは答える前にAI読の実測を引き、
-      <strong>書かれていない項目を推測で埋めずに「ページに記載がありませんでした」と言う</strong>ようになります。
-    </p>
-    <p>
-      <a class="dads-link" href="skill/SKILL.md" download>スキルを取得する（SKILL.md・CC BY 4.0）</a>
-    </p>
-    <p class="use__note">
-      Claude なら <code>.claude/skills/aidoku-gyosei/SKILL.md</code> に置くだけです。
-      他のAIでも、この1枚をそのまま指示として貼れば同じように動きます。
-      対象は東京23区 × 3手続き（転入届・児童手当・粗大ごみ）で、それ以外は「対象外」と言ってから通常どおり答えます。
-    </p>
-  </section>
 
 </main>
 
