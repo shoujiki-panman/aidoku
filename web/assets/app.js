@@ -47,7 +47,7 @@ async function renderSiteStatus() {
   const when = AidokuSiteStatus.formatCheckedAt(s.checkedAt);
   const rows = s.items.slice(0, 10).map((i) => `
     <li><b>${esc(i.municipality ?? '')}</b>・${esc(i.procedure ?? '')}
-        <a class="dads-link" href="${esc(i.url ?? '')}" target="_blank" rel="noopener">ページ</a>
+        <a class="dads-link" href="${esc(i.url ?? '')}" target="_blank" rel="noopener">区の公式ページ</a>
         <span class="site-status__why">${esc(i.reason ?? '')}</span></li>`).join('');
 
   box.hidden = false;

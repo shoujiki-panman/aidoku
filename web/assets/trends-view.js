@@ -94,11 +94,14 @@
         <p class="panel__head"><b class="panel__num">${total}</b>
           <span>版が残っている（${withSnap.length} / ${doc.pages.length} ページ）
             <span class="panel__sub">／ 一番古い版 ${esc(ymd(oldest))}</span></span></p>
+        <p class="panel__lead">「見る」を押すと、<b>Internet Archive</b>（第三者が保存している
+          過去のWebページ）が開きます。AI読のページではありません。</p>
         <ul class="arch">${top.map((p) => `
           <li><b>${esc(p.municipality)}</b>・${esc(p.procedure)}
             <span class="arch__n">${p.snapshots}版</span>
             <span class="arch__d">${esc(ymd(p.first))} 〜 ${esc(ymd(p.last))}</span>
-            <a class="dads-link" href="${esc(p.wayback)}" target="_blank" rel="noopener">見る</a></li>`).join('')}
+            <a class="dads-link" href="${esc(p.wayback)}" target="_blank" rel="noopener">
+              Internet Archive で見る（外部サイト）</a></li>`).join('')}
         </ul>
         <p class="panel__note">⚠️ 残っているのは<strong>HTMLだけ</strong>で、
           当時AIが読めたかは記録されていません。それは
