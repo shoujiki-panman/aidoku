@@ -247,3 +247,12 @@
   margin-top: 12px; padding: 10px 12px; border-radius: 10px;
   background: #fff8e6; border: 1px solid #e6c866; color: #6b5500; font-size: .875rem;
 }
+
+/* どの区のどの手続きの道のりを見るか */
+.jpick { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 16px; }
+.jpick__label { font-size: .875rem; color: #4e5255; }
+.jpick__select {
+  padding: 9px 12px; font-size: 1rem; font-family: inherit; color: #1a1a1c;
+  background: #fff; border: 1px solid #767676; border-radius: 6px; max-width: 24em;
+}
+.jpick__select:focus-visible { outline: 3px solid #0056b3; outline-offset: 1px; }

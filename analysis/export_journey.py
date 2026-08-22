@@ -68,22 +68,56 @@ def choices_at(discovery: dict, kw: dict, hops: int, top: int = 6) -> list[dict]
     return out
 
 
-def build(barrier: dict, discovery: dict, kw: dict) -> dict:
-    stop_url = (barrier.get("failure") or {}).get("observed_at_url")
-    chosen = next((c for c in choices_at(discovery, kw, 1) if c["url"] == stop_url), None)
+def build(cell: dict, discovery: dict, kw: dict) -> dict:
+    """1セル（自治体 × 手続き）ぶんの道のり。
+
+    ★止まった場所は「採点したページ」（scores の page_url）。
+      barriers.json は人手で書いた1件しか無く、そこを基準にすると
+      69セルのうち1セルしか出せなかった。
+    """
+    stop_url = cell.get("page_url")
     near = choices_at(discovery, kw, 1)
-    # 選ばれなかったが strong 語を持っていたもの（惜しかった扉）
+    chosen = next((c for c in near if c["url"] == stop_url), None)
+    # 選ばれなかったが strong 語を持っていたもの（惜しかった扉）。
+    # ここが1件でもあれば、サイトに道はあって、こちらの並べ方が外した。
     missed = [c for c in near if not c["chosen"]
               and any(r["kind"] == "strong" for r in c["reasons"])]
     return {
-        "municipality": barrier.get("municipality"),
-        "procedure": barrier.get("procedure"),
+        "municipality": cell["name"],
+        "municipality_id": cell["id"],
+        "procedure": cell["procedure"],
+        "procedure_id": cell["procedure_id"],
         "top_url": discovery.get("top_url"),
+        "stop_url": stop_url,
+        "got": cell["got"],
+        "total": cell["total_fields"],
         "keywords": kw,
         "choices": near,
         "chosen_is_stop_page": bool(chosen),
         "missed_with_strong_word": missed,
+        # 死なずに済んだ道があったか。あれば、原因はサイトではなくこちら側。
+        "blame": "ours" if missed else "site",
     }
+
+
+def cells() -> list[dict]:
+    """測ってあるセルを全部。道のりは1件だけ見せるものではない。"""
+    web = ROOT / "web/data"
+    out = []
+    for p in json.loads((web / "procedures.json").read_text(encoding="utf-8"))["procedures"]:
+        doc = json.loads((web / p["file"]).read_text(encoding="utf-8"))
+        fields = list(doc["municipalities"][0].get("breakdown") or {})
+        four = [k for k in fields if k != "オンライン明示"]
+        for m in doc["municipalities"]:
+            bd = m.get("breakdown") or {}
+            out.append({
+                "id": m["id"], "name": m["name"],
+                "procedure": p["name"], "procedure_id": p["id"],
+                "page_url": m.get("page_url"),
+                "got": sum(1 for k in four if bd.get(k, 0) >= 20),
+                "total_fields": len(four),
+            })
+    return out
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -91,30 +125,40 @@ def main(argv: list[str] | None = None) -> None:
     ap.add_argument("--out", default=str(ROOT / "web/data/journeys.json"))
     args = ap.parse_args(argv)
 
-    barriers = json.loads((ROOT / "web/data/barriers.json").read_text(encoding="utf-8"))
     targets = json.loads((ROOT / "crawler/targets.json").read_text(encoding="utf-8"))
     procs = {p["id"]: p for p in targets["procedures"]}
-    munis = {m["name"]: m["id"] for m in targets["municipalities"]}
+    barrier_of = {(b.get("municipality"), b.get("procedure")): b.get("id")
+                  for b in json.loads(
+                      (ROOT / "web/data/barriers.json").read_text(encoding="utf-8")
+                  ).get("barriers", [])}
 
-    out = []
-    for b in barriers.get("barriers", []):
-        mid = munis.get(b.get("municipality"))
-        pid = next((p["id"] for p in targets["procedures"] if p["name"] == b.get("procedure")), None)
-        f = ROOT / f"crawler/out/discovery_{mid}_{pid}.json"
-        if not (mid and pid and f.exists()):
-            print(f"  探索の記録が無い: {b.get('municipality')} {b.get('procedure')}")
+    out, missing = [], []
+    for cell in cells():
+        f = ROOT / f'crawler/out/discovery_{cell["id"]}_{cell["procedure_id"]}.json'
+        if not f.exists():
+            missing.append(f'{cell["name"]}・{cell["procedure"]}')
             continue
-        rec = build(b, json.loads(f.read_text(encoding="utf-8")), procs[pid]["keywords"])
-        rec["barrier_id"] = b.get("id")
+        kw = procs[cell["procedure_id"]]["keywords"]
+        rec = build(cell, json.loads(f.read_text(encoding="utf-8")), kw)
+        rec["barrier_id"] = barrier_of.get((cell["name"], cell["procedure"]))
         out.append(rec)
-        print(f"  {rec['municipality']}・{rec['procedure']}: 選択肢 {len(rec['choices'])}件 "
-              f"／ strong語を持ちながら選ばれなかった扉 {len(rec['missed_with_strong_word'])}件")
+    ours = sum(1 for r in out if r["blame"] == "ours")
+    print(f"  道のりを出せた: {len(out)}セル / 出せなかった: {len(missing)}セル")
+    if missing:
+        print(f"    探索の記録が無い: {', '.join(missing[:6])}{' ほか' if len(missing) > 6 else ''}")
+    print(f"  うち「選ばれなかった扉に手続き名があった」= こちら側の取りこぼし: {ours}セル")
 
     doc = {
         "_about": "AIがどの選択肢を見て、なぜその道を選んだか。"
                   "点の付け方は crawler/discover.py の score_link と targets.json のキーワード。"
                   "ここで新しく点は作っていない。",
         "scoring": "文言のstrong語+10 / weak語+3 / URLの手がかり+4 / 除外語-8 / PDF-2",
+        "blame": {
+            "ours": "選ばれなかった候補に手続き名（strong語）があった。"
+                    "サイトに道はあって、こちらの並べ方が外した",
+            "site": "候補のどれにも手続き名が無かった。入口から辿れる場所に無い",
+        },
+        "n": len(out),
         "journeys": out,
     }
     Path(args.out).write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
