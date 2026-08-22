@@ -99,41 +99,41 @@
   </div>
 
   <!-- サイトの見張り状態。普段は1行、知らせることがあるときだけ大きくなる -->
-  <div id="site-status" class="site-status" aria-live="polite"></div>
+  <div id="site-status" class="site-status whole-set" aria-live="polite"></div>
 
   <!-- 自分の区を引く。**その場でAIに読ませてはいない** — 判定は claude -p をローカルで
        呼ぶ設計で、静的ホスティングからは動かせない（#59）。ここは測ってある69マスを引くだけ。
        当たらなかったら当てずっぽうを返さず「まだ測っていない」と言う（盤面のグレーと同じ約束）。 -->
-  <div class="proc-tabs" id="proc-tabs" data-ai-ignore role="tablist" aria-label="手続きを選ぶ"></div>
+  <div class="proc-tabs whole-set" id="proc-tabs" data-ai-ignore role="tablist" aria-label="手続きを選ぶ"></div>
 
   <!-- 最上段は「今やる1件」。点数の一覧より先に、次の一手を1つだけ出す。
        選び方は plans/feat-next-action.md で固定（gain降順→fact-types定義順→field順）。 -->
-  <section aria-labelledby="next-action-heading">
+  <section class="whole-set" aria-labelledby="next-action-heading">
     <h2 class="dads-heading" data-size="l" id="next-action-heading">今やる1件</h2>
     <p class="section-note">下の一覧で選んだ区について、<strong>読めなかった項目のうち見込み効果が最大の1件</strong>を出します。改善案は、実ページでの再測定が済むまで<strong>未検証の提案</strong>です。</p>
     <div id="next-action" aria-live="polite"></div>
   </section>
 
-  <hr class="dads-divider">
+  <hr class="dads-divider whole-set">
 
-  <section aria-labelledby="summary-heading">
+  <section class="whole-set" aria-labelledby="summary-heading">
     <h2 class="dads-heading" data-size="l" id="summary-heading">全体</h2>
     <dl class="stat-row" id="summary"></dl>
   </section>
 
-  <hr class="dads-divider">
+  <hr class="dads-divider whole-set">
 
-  <section aria-labelledby="hero-heading">
+  <section class="whole-set" aria-labelledby="hero-heading">
     <h2 class="dads-heading" data-size="l" id="hero-heading">同じ質問を、住民のAIにしてみると</h2>
     <p class="section-note">答えはすべて実測です（ページから取り出せた実文のみ。推測での補完はしていません）。</p>
     <div id="hero"></div>
   </section>
 
-  <hr class="dads-divider">
+  <hr class="dads-divider whole-set">
 
   <section aria-labelledby="detail-heading">
     <h2 class="dads-heading" data-size="l" id="detail-heading">選んだ区の結果 — 住民のAIの答えと、直す箇所</h2>
-    <p class="section-note">上の一覧で選んだ区について、そのページを読ませたAIの答え・<strong>読めない理由</strong>・直す箇所が出ます。</p>
+    <p class="section-note">押した区のページを読ませたAIの答え・<strong>読めない理由</strong>・直す箇所です。</p>
     <div id="detail" aria-live="polite"></div>
   </section>
 
@@ -158,7 +158,6 @@
 <script src="assets/site-status.js"></script>
 <script src="assets/lookup.js"></script>
 <script src="assets/wardmap.js"></script>
-<script src="assets/trend.js"></script>
 <script src="assets/app.js"></script>
 <script src="ask-ai-button.js" defer data-selector="main"
         data-actions="procedure" data-label="AIに渡して調べる"></script>

@@ -141,7 +141,7 @@ def build_page_status(fields: list[dict]) -> dict:
         }
     return {
         "code": "target_unconfirmed",
-        "label": "対象ページに着けたか確認できていません",
+        "label": "この手続きのページにたどり着けたか、確かめられていません",
         "detail": (
             "4項目が1つも読み取れませんでした。区のページに書かれていないのか、"
             "こちらが別のページを採点したのかを、この結果からは区別できません。"
