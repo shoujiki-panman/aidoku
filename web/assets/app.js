@@ -47,7 +47,7 @@ async function renderSiteStatus() {
   const when = AidokuSiteStatus.formatCheckedAt(s.checkedAt);
   const rows = s.items.slice(0, 10).map((i) => `
     <li><b>${esc(i.municipality ?? '')}</b>・${esc(i.procedure ?? '')}
-        <a class="dads-link" href="${esc(i.url ?? '')}" target="_blank" rel="noopener">ページ</a>
+        <a class="dads-link" href="${esc(i.url ?? '')}" target="_blank" rel="noopener">区の公式ページ</a>
         <span class="site-status__why">${esc(i.reason ?? '')}</span></li>`).join('');
 
   box.hidden = false;
@@ -485,43 +485,57 @@ function nextStepForResident(c) {
     </div>`;
 }
 
+// ── AIに渡す中身 ────────────────────────────────────────
+// ★右下のボタンは「画面のDOMにあるもの」を渡す。だから画面から細かい判定を
+//   外したぶんは、ここに（人には見せない形で）置く。
+//   ただし全部は持たせない。長くなるとURLに載らず、クリップボード経由になって
+//   **本人が手で貼らないと動かない**（実測 10,354字 → エンコード後 46,361）。
+//   事実は最小限にして、詳細は AI読 のデータURLを渡し、AIに取りに行かせる。
+const DATA_BASE = new URL('data/', location.href).href;
+const SKILL_URL = new URL('skill/SKILL.md', location.href).href;
+
+function payloadDoc(inner) {
+  return `<h1>AI読の実測</h1>
+    ${inner}
+    <p>項目ごとの直し方と見込み点は、次のデータにあります。</p>
+    <ul>
+      <li>${esc(DATA_BASE)}index.json — 目次</li>
+      <li>${esc(SKILL_URL)} — 使い方</li>
+    </ul>`;
+}
+
+function renderAiPayload(res) {
+  const box = $('ai-payload');
+  if (!box) return;
+  if (!res || res.kind !== 'ward' || !res.cells.length) {
+    box.innerHTML = payloadDoc('<p>まだ区が選ばれていません。</p>');
+    return;
+  }
+  const top = muniTop && muniTop.get(res.cells[0].muniId);
+  const rows = res.cells.map((c) => {
+    const miss = FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) < 20);
+    const got = FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) >= 20);
+    return `<li>${esc(c.procName)}｜区の公式ページ ${esc(c.url || '不明')}
+      ｜読み取れた: ${esc(got.join('・') || 'なし')}
+      ｜読み取れなかった: ${esc(miss.join('・') || 'なし')}</li>`;
+  }).join('');
+  box.innerHTML = payloadDoc(`
+    <p>対象: ${esc(res.muniName)}${top ? `（区の公式サイト ${esc(top.top_url)}）` : ''}</p>
+    <ul>${rows}</ul>
+    <p>「読み取れなかった」＝その項目が区のページに書かれていない。埋めないこと。</p>`);
+}
+
+// 読めなかった項目を1行で言う。✕の札4つと開閉パネル4つの代わり。
+function missingLine(c) {
+  const miss = FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) < 20);
+  if (!miss.length) return `4項目とも、このページから読み取れました。`;
+  return `このページからは <b>${esc(miss.join('・'))}</b> が読み取れませんでした。`;
+}
+
 function lookupCellRow(c) {
   const st = c.pageStatus;
   const unconfirmed = st !== null && typeof st === 'object' && st.code === 'target_unconfirmed';
-  // 項目ごとに ✓ / ✕ を出す。「3/4」より「どれが欠けているか」のほうが次の手が決まる
-  const marks = FIELDS.map((f, idx) => {
-    const ok = ((c.breakdown || {})[f] ?? 0) >= 20;
-    const id = `fm-${esc(c.muniId)}-${esc(c.procId)}-${idx}`;
-    return `<button type="button" class="fieldmark" data-ok="${ok}"
-              aria-expanded="false" aria-controls="${id}"
-              data-target="${id}">
-              <b>${ok ? '✓' : '✕'}</b><i>${esc(f)}</i>
-              <span class="fieldmark__chev" aria-hidden="true">▾</span>
-            </button>`;
-  }).join('');
 
-  // 押したときに出る中身。何を書けばいいかまで出す
-  const panels = FIELDS.map((f, idx) => {
-    const ok = ((c.breakdown || {})[f] ?? 0) >= 20;
-    const id = `fm-${esc(c.muniId)}-${esc(c.procId)}-${idx}`;
-    const imp = (c.improvements || []).find((x) => x && x.field === f);
-    const fld = (c.fields || []).find((x) => x && x.field === f);
-    const value = fld && fld.agent_value ? fld.agent_value : '';
-    const body = ok
-      ? `<p class="fmp__line"><b>いまの答え</b>${value
-          ? esc(value) : '読み取れました（本文は区の公式ページでご覧ください）'}</p>`
-      : `<p class="fmp__line"><b>いまの答え</b><span class="fmp__none">このページからは分かりません</span></p>
-         ${imp ? `<p class="fmp__line"><b>直し方</b>${esc(imp.reason)}</p>
-                  <p class="fmp__gain">直ると <b>+${esc(String(imp.gain))}点</b>（実ページでの再測定はまだ）</p>` : ''}`;
-    const arc = archiveByUrl ? archiveByUrl.get(c.url) : null;
-    return `<div class="fieldmark__panel" id="${id}" hidden>
-        <p class="dads-u-visually-hidden">項目: ${esc(f)}</p>
-        <p class="fmp__where"><b>どのページの話か</b>
-          <a class="dads-link" href="${esc(c.url || '')}" target="_blank" rel="noopener">${esc(c.url || '')}</a></p>
-        ${body}
-        ${archiveLine(arc)}
-      </div>`;
-  }).join('');
   return `<li class="lookup__cell">
     <details class="cell">
       <summary class="cell__head">
@@ -530,14 +544,9 @@ function lookupCellRow(c) {
         <span class="cell__chev" aria-hidden="true">▾</span>
       </summary>
       <div class="cell__body">
-        <div class="fieldmarks">${marks}</div>
-        ${panels}
+        <p class="cell__miss">${missingLine(c)}</p>
         ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
         ${nextStepForResident(c)}
-        <p class="cell__go">
-          <button type="button" class="dads-button lookup__open"
-                  data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">この手続きの結果を開く</button>
-        </p>
       </div>
     </details>
   </li>`;
@@ -604,11 +613,11 @@ function renderLookup(res) {
     <div class="lookup__none">
       <p class="lookup__title">まだ測っていません</p>
       <p class="lookup__sub">
-        測ってあるのは<strong>東京23区 × 3手続き（転入届・児童手当の申請・粗大ごみ収集の申込）の69マス</strong>だけです。
+        調べてあるのは<strong>東京23区 × 3手続き（転入届・児童手当の申請・粗大ごみ収集の申込）の69件</strong>だけです。
         多摩26市や、ここに無い手続きは未測定です。<br>
         これは<strong>「AIに読めない」という意味ではありません。「まだ調べていない」</strong>です。
       </p>
-      <p class="lookup__sub"><a href="board.html">盤面で、測ってある範囲を見る</a></p>
+      <p class="lookup__sub"><a href="board.html">調べた範囲を一覧で見る</a></p>
     </div>`;
 }
 
@@ -622,14 +631,30 @@ function setStage(stage) {
   if (m) m.dataset.stage = stage;
 }
 
+// ★押したのに画面が動かないと、何も起きていないように見える。
+//   地図は縦に大きく、結果は画面の外に出るので必ず送る。
+//   キーボードで来た人のために、読み上げ位置も結果へ移す。
+function goToResult() {
+  const box = $('lookup-result');
+  if (!box) return;
+  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  box.scrollIntoView({ behavior: still ? 'auto' : 'smooth', block: 'start' });
+  box.setAttribute('tabindex', '-1');
+  box.focus({ preventScroll: true });
+}
+
 async function runLookup(q) {
   $('lookup-result').innerHTML = '<p class="lookup__sub">探しています…</p>';
   try {
     const [cells] = await Promise.all([loadLookupCells(), loadArchive()]);
     const res = AidokuLookup.lookup(q, cells, procs.map((p) => p.id));
     renderLookup(res);
+    renderAiPayload(res);
     // 当たったときだけ結果を出す。外したのに全部出てきたら、元の「最初から全部見える」に戻る
-    if (res.kind === 'page' || res.kind === 'ward') setStage('ward');
+    if (res.kind === 'page' || res.kind === 'ward') {
+      setStage('ward');
+      goToResult();
+    }
   } catch (err) {
     $('lookup-result').innerHTML =
       '<p class="lookup__sub">データを読めませんでした。時間をおいて試してください。</p>';
@@ -668,14 +693,12 @@ async function renderWardMap() {
     <ul class="wardmap__legend">
       <li data-tone="high">9〜12項目</li><li data-tone="mid">6〜8</li>
       <li data-tone="low">1〜5</li><li data-tone="zero">0</li>
-      <li data-tone="unknown">測っていない</li>
+      <li data-tone="unknown">未調査</li>
     </ul>
     <p class="wardmap__credit">境界: <a class="dads-link" href="${esc(doc.source_url)}">${esc(doc.source)}</a>（${esc(doc.license)}）</p>`;
 
   const pick = (el) => {
     if (!el || !el.dataset.name) return;
-    const sel = $('ward-select');
-    if (sel) sel.value = '';
     box.querySelectorAll('path').forEach((p) => p.removeAttribute('aria-current'));
     el.setAttribute('aria-current', 'true');
     runLookup(el.dataset.name);
@@ -686,29 +709,6 @@ async function renderWardMap() {
   });
 }
 
-// 区のプルダウン。★23区しかないので打たせない。中身はデータから作るので、
-//   区が増えても手で足す必要が無い（画面と実測がずれない）。
-async function renderWardSelect() {
-  const sel = $('ward-select');
-  if (!sel) return;
-  const cells = await loadLookupCells();
-  // ★並びは全国地方公共団体コード順（千代田・中央・港…）。
-  //   漢字の文字コード順だと「葛飾→江戸川→江東」のように、誰の頭にも無い順になる。
-  const by = new Map();
-  for (const c of cells) {
-    if (!c.muniName || by.has(c.muniName)) continue;
-    by.set(c.muniName, String(c.lgCode ?? '99999'));
-  }
-  const names = [...by.entries()]
-    .sort((a, b) => a[1].localeCompare(b[1]) || a[0].localeCompare(b[0], 'ja'))
-    .map(([nm]) => nm);
-  sel.insertAdjacentHTML('beforeend',
-    names.map((nm) => `<option value="${esc(nm)}">${esc(nm)}</option>`).join(''));
-  sel.addEventListener('change', () => {
-    if (!sel.value) return;
-    runLookup(sel.value);
-  });
-}
 
 function initLookup() {
   if (typeof AidokuLookup === 'undefined') return;
@@ -720,16 +720,6 @@ function initLookup() {
       runLookup($('lookup-input').value);
     });
   }
-  $('lookup-result').addEventListener('click', (e) => {
-    const fm = e.target.closest('.fieldmark');
-    if (!fm) return;
-    const panel = $(fm.dataset.target);
-    if (!panel) return;
-    const open = fm.getAttribute('aria-expanded') === 'true';
-    fm.setAttribute('aria-expanded', String(!open));
-    panel.hidden = open;
-  });
-
   $('lookup-result').addEventListener('click', async (e) => {
     const b = e.target.closest('.lookup__open');
     if (!b) return;
@@ -738,8 +728,17 @@ function initLookup() {
     $('detail-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
+  // 手続きを開いたとき、中身が画面の外に出ることがある。
+  // 「あなたが次にやること」まで見えるように送る。
+  $('lookup-result').addEventListener('toggle', (e) => {
+    const cell = e.target.closest && e.target.closest('.cell');
+    if (!cell || !cell.open) return;
+    const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    cell.scrollIntoView({ behavior: still ? 'auto' : 'smooth', block: 'nearest' });
+  }, true);
+
+  renderAiPayload(null);
   renderWardMap();
-  renderWardSelect();
 
   // 区名が分からない人の逃げ道。押したら全部出す（従来どおりの画面になる）
   const showAll = $('show-all');

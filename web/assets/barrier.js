@@ -107,7 +107,7 @@ function renderFlow(b, doc) {
     step({
       n: 8, kind: 'many', title: '同じ段差は、ほかにもあった',
       body: `<p class="big"><b>${pv.same_barrier_cells}</b><span>件。0点${pv.zero_score_cells}件のうち${esc(pv.share_of_zeros)}</span></p>
-        <p class="lead-note">採点したページに<strong>手続きの名前が1度も出てこない</strong>マスを、既存の記録から数えました（新しく取りに行っていません）。</p>
+        <p class="lead-note">採点したページに<strong>手続きの名前が1度も出てこない</strong>ものを、既存の記録から数えました（新しく取りに行っていません）。</p>
         <ul class="cells">${pv.cells.map((c) =>
           `<li><b>${esc(c.municipality)}</b> ${esc(c.procedure)} <span>トップから${esc(c.hops)}クリック</span></li>`).join('')}</ul>`,
     }),

@@ -31,19 +31,33 @@ for (const f of pages) {
   //   src="/ask-ai-button.js" と絶対で書くとドメイン直下を指して 404 になる。
   ok(`${f} の src が相対`, /src="ask-ai-button\.js"/.test(tag[0]), tag[0]);
   ok(`${f} が defer`, /\bdefer\b/.test(tag[0]));
-  // 本文の範囲。6枚とも <main> で統一されている
-  ok(`${f} の data-selector が main`, /data-selector="main"/.test(tag[0]));
+  // 渡す範囲。index だけは「渡す用の中身」に絞る。
+  // ページ全体を渡すと 10,000字を超えてURLに載らず、クリップボード経由になって
+  // 本人が手で貼らないと動かない（実測 10,354字 → エンコード後 46,361）。
+  const sel = (tag[0].match(/data-selector="([^"]+)"/) || [])[1];
+  if (f === 'index.html') {
+    ok(`${f} は #ai-payload だけを渡す`, sel === '#ai-payload', sel);
+    ok(`${f} に #ai-payload がある`, /id="ai-payload"/.test(s));
+    ok(`${f} の #ai-payload は画面に出さない`,
+      /id="ai-payload"[^>]*dads-u-visually-hidden/.test(s));
+  } else {
+    ok(`${f} の data-selector が main`, sel === 'main', sel);
+  }
   // 上流の4つ（要約・解説・質問・英訳）は読み物向けで、ここの目的と違う。
   // 出すのは AI読 が足した procedure だけ
   ok(`${f} の行動が procedure だけ`, /data-actions="procedure"/.test(tag[0]), tag[0]);
   ok(`${f} に main がある`, /<main[\s>]/.test(s));
+  // 上のメニューは <details>。素のままだと外を押しても閉じず、
+  // 押した本人は閉じたつもりで次を押すので、画面に残って邪魔になる。
+  ok(`${f} が shell.js を読む`, /<script src="assets\/shell\.js" defer><\/script>/.test(s));
+
   // 読み込みは </body> の直前（本文より後）
   ok(`${f} はボタンを最後に読む`, s.indexOf('ask-ai-button.js') > s.lastIndexOf('</main>'));
 }
 
 // 本文に混ぜたくない操作部品。ここが外れると、AIに座標やタブの文字が流れる
 const index = read('index.html');
-for (const sel of ['id="wardmap"', 'class="wardpick"', 'class="lookup__escape"', 'id="proc-tabs"']) {
+for (const sel of ['id="wardmap"', 'class="lookup__escape"', 'id="proc-tabs"']) {
   const m = index.match(new RegExp(`<[a-z]+[^>]*${sel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^>]*>`));
   ok(`index の ${sel} を本文から外している`, !!m && /data-ai-ignore/.test(m[0]), m && m[0].slice(0, 70));
 }

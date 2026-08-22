@@ -668,15 +668,6 @@ td.marks { white-space: nowrap; }
 /* 薄い色の上では、白抜きだと読めない */
 .wardmap__name[data-tone="unknown"] { fill: #1a1a1c; stroke: rgba(255, 255, 255, .8); }
 
-/* 地図の下の「一覧から選ぶ」。1行に収めて、地図の邪魔をしない */
-.wardpick { display: flex; align-items: center; gap: 8px; margin: 12px 0 0; }
-.wardpick__label { font-size: .875rem; color: #4e5255; }
-.wardpick__select {
-  max-width: 15em; padding: 8px 10px;
-  font-size: 1rem; font-family: inherit; color: #1a1a1c;
-  background: #fff; border: 1px solid #767676; border-radius: 6px;
-}
-.wardpick__select:focus-visible { outline: 3px solid #264af4; outline-offset: 1px; }
 
 /* 「自分のAIに持たせる」の補足。本文より一段落として読ませる */
 .use__note { font-size: .875rem; color: #4e5255; }
@@ -724,3 +715,8 @@ td.marks { white-space: nowrap; }
 .nextstep__title { margin: 0 0 6px; font-weight: 700; font-size: .9375rem; }
 .nextstep__list { margin: 0; padding-left: 1.4em; font-size: .9375rem; line-height: 1.8; }
 .nextstep__list li + li { margin-top: 4px; }
+
+/* 結果へ送ったときに枠が出ると、押した先が分かる。
+   ただしマウスで押した人には出さない（:focus-visible） */
+.lookup__result:focus { outline: none; }
+.lookup__result:focus-visible { outline: 3px solid #0056b3; outline-offset: 4px; border-radius: 8px; }

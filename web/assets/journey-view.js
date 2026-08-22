@@ -212,9 +212,9 @@
       `<li><b>${esc(c.municipality)}</b>・${esc(c.procedure)}
          <span class="same__hops">${esc(String(c.hops))}クリック目で止まった</span></li>`).join('');
     $('same').innerHTML = `
-      <p class="section-note">同じ段差（目次で止まる）が見つかったマス:
+      <p class="section-note">同じ段差（目次で止まる）が見つかった件数:
         <strong>${esc(String(p.same_barrier_cells))} / ${esc(String(p.total_cells))}</strong>
-        （0点だった${esc(String(p.zero_score_cells))}マスのうち ${esc(p.share_of_zeros)}）</p>
+        （0点だった${esc(String(p.zero_score_cells))}件のうち ${esc(p.share_of_zeros)}）</p>
       <ul class="same__list">${cells}</ul>
       <p class="section-note">${esc(p.caveat || '')}</p>`;
   }
