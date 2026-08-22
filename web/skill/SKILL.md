@@ -99,6 +99,7 @@ https://shoujiki-panman.github.io/aidoku/data/scores-<procId>.json
 
 | ファイル | 中身 |
 |---|---|
+| `index.json` | **機械可読な目次。まずこれを読む。** 件数・生成日時・被覆・較正の有無 |
 | `procedures.json` | 3手続きの一覧と平均点 |
 | `scores-<procId>.json` | 23区 × 手続きの実測（項目別・到達クリック数・改善案） |
 | `barriers.json` | AIがどこでつまずいたかの記録 |
