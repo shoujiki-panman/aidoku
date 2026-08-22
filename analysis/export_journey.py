@@ -106,7 +106,7 @@ def cells() -> list[dict]:
     out = []
     for p in json.loads((web / "procedures.json").read_text(encoding="utf-8"))["procedures"]:
         doc = json.loads((web / p["file"]).read_text(encoding="utf-8"))
-        fields = list((doc["municipalities"][0].get("breakdown") or {}))
+        fields = list(doc["municipalities"][0].get("breakdown") or {})
         four = [k for k in fields if k != "オンライン明示"]
         for m in doc["municipalities"]:
             bd = m.get("breakdown") or {}
