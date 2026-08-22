@@ -35,6 +35,7 @@
           <li><a href="journey.html">AIの道のり</a></li>
           <li><a href="trends.html">見張りと推移</a></li>
           <li><a href="index.html#method-heading">測り方とデータ</a></li>
+          <li><a href="index.html#use-heading">自分のAIに持たせる</a></li>
           <li><a href="https://github.com/shoujiki-panman/aidoku">GitHub</a></li>
         </ul>
       </details>
@@ -175,6 +176,29 @@
       判定の根拠を示すために引用しているもので、出典は各区の「診断したページ」です。
       再利用の可否は<strong>各自治体の利用規約に従ってください。</strong>
       こちらのライセンスで再配布を許可することはできません。
+    </p>
+  </section>
+
+  <!-- 測って終わりにしない。読めない理由が分かっているなら、その分だけAIを賢くできる。 -->
+  <section aria-labelledby="use-heading">
+    <h2 class="dads-heading" data-size="l" id="use-heading">自分のAIに持たせる</h2>
+    <p>
+      自治体サイトをそのままAIに読ませると、<strong>書かれていないことを書かれているかのように答えます</strong>。
+      手数料の記載が無ければ「無料です」、期限が無ければ「通常14日以内です」と一般論で埋める。
+      住民はそれを信じて窓口で差し戻されます。
+    </p>
+    <p>
+      AI読は<strong>どのページの何が読み取れないかを実測で知っている</strong>ので、その一手前で止められます。
+      下のスキルを自分のAIに読み込ませると、AIは答える前にAI読の実測を引き、
+      <strong>書かれていない項目を推測で埋めずに「ページに記載がありませんでした」と言う</strong>ようになります。
+    </p>
+    <p>
+      <a class="dads-link" href="skill/SKILL.md" download>スキルを取得する（SKILL.md・CC BY 4.0）</a>
+    </p>
+    <p class="use__note">
+      Claude なら <code>.claude/skills/aidoku-gyosei/SKILL.md</code> に置くだけです。
+      他のAIでも、この1枚をそのまま指示として貼れば同じように動きます。
+      対象は東京23区 × 3手続き（転入届・児童手当・粗大ごみ）で、それ以外は「対象外」と言ってから通常どおり答えます。
     </p>
   </section>
 

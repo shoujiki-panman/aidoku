@@ -674,3 +674,7 @@ td.marks { white-space: nowrap; }
   background: #fff; border: 1px solid #767676; border-radius: 6px;
 }
 .wardpick__select:focus-visible { outline: 3px solid #264af4; outline-offset: 1px; }
+
+/* 「自分のAIに持たせる」の補足。本文より一段落として読ませる */
+.use__note { font-size: .875rem; color: #4e5255; }
+.use__note code { background: #f0f0f0; padding: 2px 5px; border-radius: 4px; font-size: .95em; }
