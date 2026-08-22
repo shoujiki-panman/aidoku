@@ -387,6 +387,38 @@ init().catch((e) => {
 //   盤面のグレーと同じ約束 — 測っていないものを、測ったように見せない。
 let lookupCells = null;
 let historySnaps = null;
+let archiveByUrl = null;
+
+// 過去の姿は Internet Archive / WARP が既に持っている（Issue #99）。
+// こちらはコピーを持たず、「いつの版があるか」だけを出してリンクで渡す。
+// ファイルが無くても画面は壊さない（提出前に生成していない場合がある）。
+async function loadArchive() {
+  if (archiveByUrl) return archiveByUrl;
+  archiveByUrl = new Map();
+  try {
+    const r = await fetch('data/archive.json');
+    if (r.ok) {
+      const d = await r.json();
+      for (const p of d.pages || []) if (p && p.url) archiveByUrl.set(p.url, p);
+    }
+  } catch { /* 無ければ出さないだけ */ }
+  return archiveByUrl;
+}
+
+const ymd = (ts) => (typeof ts === 'string' && ts.length >= 8
+  ? `${ts.slice(0, 4)}-${ts.slice(4, 6)}-${ts.slice(6, 8)}` : '');
+
+function archiveLine(rec) {
+  if (!rec) return '';
+  if (!rec.snapshots) {
+    return `<p class="fmp__line"><b>過去の姿</b>
+      <span class="fmp__none">Internet Archive に版がありません</span></p>`;
+  }
+  return `<p class="fmp__line"><b>過去の姿</b>
+      <b>${rec.snapshots}版</b>（${esc(ymd(rec.first))} 〜 ${esc(ymd(rec.last))}）
+      <a class="dads-link" href="${esc(rec.wayback)}" target="_blank" rel="noopener">Internet Archive で見る</a>
+      <span class="fmp__note">※ 残っているのはHTMLだけで、当時AIが読めたかは記録されていません</span></p>`;
+}
 
 async function loadHistory() {
   if (historySnaps) return historySnaps;
@@ -477,10 +509,12 @@ function lookupCellRow(c) {
       : `<p class="fmp__line"><b>いまの答え</b><span class="fmp__none">このページからは分かりません</span></p>
          ${imp ? `<p class="fmp__line"><b>直し方</b>${esc(imp.reason)}</p>
                   <p class="fmp__gain">直ると <b>+${esc(String(imp.gain))}点</b>（実ページでの再測定はまだ）</p>` : ''}`;
+    const arc = archiveByUrl ? archiveByUrl.get(c.url) : null;
     return `<div class="fieldmark__panel" id="${id}" hidden>
         <p class="fmp__where"><b>どのページの話か</b>
           <a class="dads-link" href="${esc(c.url || '')}" target="_blank" rel="noopener">${esc(c.url || '')}</a></p>
         ${body}
+        ${archiveLine(arc)}
       </div>`;
   }).join('');
   return `<li class="lookup__cell">
@@ -573,7 +607,7 @@ function showResults() {
 async function runLookup(q) {
   $('lookup-result').innerHTML = '<p class="lookup__sub">探しています…</p>';
   try {
-    const cells = await loadLookupCells();
+    const [cells] = await Promise.all([loadLookupCells(), loadArchive()]);
     const res = AidokuLookup.lookup(q, cells, procs.map((p) => p.id));
     renderLookup(res);
     // 当たったときだけ結果を出す。外したのに全部出てきたら、元の「最初から全部見える」に戻る
