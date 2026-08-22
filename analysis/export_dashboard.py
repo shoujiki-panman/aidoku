@@ -26,6 +26,7 @@ OUT = ROOT / "web" / "data" / "scores.json"
 
 sys.path.insert(0, str(ROOT))
 from fact_types import EXTRACTOR_TO_DISPLAY, FIX_TEXT  # noqa: E402
+from history import append_snapshot, snapshot_from_doc  # noqa: E402
 from measurement import (  # noqa: E402
     MeasurementError,
     normalize_measurement,
@@ -245,6 +246,10 @@ def main(argv: list[str] | None = None) -> None:
     ap.add_argument("--generated-at", default=None,
                     help="生成時刻を固定したいとき（既存ファイルの再現確認用）")
     ap.add_argument("--out", default=str(OUT))
+    ap.add_argument("--history", default=None,
+                    help="点数の履歴（JSON Lines・追記のみ）。"
+                         "既定は --out の隣の history/scores.jsonl。"
+                         '"" を渡すと残さない')
     args = ap.parse_args(argv)
 
     targets = json.loads(TARGETS.read_text(encoding="utf-8"))
@@ -278,6 +283,21 @@ def main(argv: list[str] | None = None) -> None:
     }
     Path(args.out).write_text(
         json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # 履歴を残す。上書きしかしていなかったので「前回から良くなったか」を言えなかった。
+    # 同じ generated_at は二重に入らない（測り直していないのに流しても水増ししない）。
+    # 既定は --out の隣。実ファイル固定の既定は、テストや試し打ちが
+    # 本物の履歴を汚す（check_pages 側で実際に汚した）。出力先に追従させる。
+    if args.history is None:
+        history_path = str(Path(args.out).parent / "history" / "scores.jsonl")
+    elif args.history == "":
+        history_path = None          # 明示的に「残さない」
+    else:
+        history_path = args.history
+    if history_path is not None:
+        snapshot = snapshot_from_doc(doc, datetime.now(timezone.utc).isoformat(timespec="seconds"))
+        added = append_snapshot(history_path, snapshot)
+        print(f"{history_path}: " + ("1件追記" if added else "同じ generated_at が既にあるので追記なし"))
+
     s = doc["summary"]
     print(f"{args.out}（{len(entries)}件）"
           f" 平均{s['average']} 満点{s['full_marks']} 0点{s['zero']} 手数料0点{s['fee_missing']}")
