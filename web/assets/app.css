@@ -678,3 +678,12 @@ td.marks { white-space: nowrap; }
 /* 「自分のAIに持たせる」の補足。本文より一段落として読ませる */
 .use__note { font-size: .875rem; color: #4e5255; }
 .use__note code { background: #f0f0f0; padding: 2px 5px; border-radius: 4px; font-size: .95em; }
+
+/* 測ってある範囲。探させて見つからない、が一番よくない */
+.lookup__scope { color: #4e5255; font-size: .875rem; }
+/* 区を選んだ直後の「次にやること」。点数を見せて終わりにしないための一節 */
+.lookup__do {
+  margin: 10px 0 14px; padding: 12px 14px;
+  background: #f4f7fb; border-left: 4px solid #0056b3; border-radius: 0 8px 8px 0;
+  font-size: .9375rem; line-height: 1.7;
+}
