@@ -287,9 +287,13 @@ def main(argv: list[str] | None = None) -> None:
     # 同じ generated_at は二重に入らない（測り直していないのに流しても水増ししない）。
     # 既定は --out の隣。実ファイル固定の既定は、テストや試し打ちが
     # 本物の履歴を汚す（check_pages 側で実際に汚した）。出力先に追従させる。
-    history_path = (str(Path(args.out).parent / "history" / "scores.jsonl")
-                    if args.history is None else args.history)
-    if history_path:
+    if args.history is None:
+        history_path = str(Path(args.out).parent / "history" / "scores.jsonl")
+    elif args.history == "":
+        history_path = None          # 明示的に「残さない」
+    else:
+        history_path = args.history
+    if history_path is not None:
         snapshot = snapshot_from_doc(doc, datetime.now(timezone.utc).isoformat(timespec="seconds"))
         added = append_snapshot(history_path, snapshot)
         print(f"{history_path}: " + ("1件追記" if added else "同じ generated_at が既にあるので追記なし"))

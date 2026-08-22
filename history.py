@@ -72,6 +72,8 @@ def snapshot_from_doc(doc: dict, recorded_at: str) -> dict:
 def load_snapshots(path: str | Path, procedure_id: str | None = None) -> list[dict]:
     """壊れた行は黙って飛ばす。履歴は「読めるところまで読む」ほうが安全。"""
     p = Path(path)
+    if p.is_dir():
+        raise ValueError(f"履歴の置き場がディレクトリになっている: {p}")
     if not p.exists():
         return []
     out = []

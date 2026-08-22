@@ -137,7 +137,10 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("-p", "--procedure", action="append", dest="procedures",
                         help="手続きID（繰り返し指定可。既定は公開中の全部）")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
-    parser.add_argument("--history", type=Path, default=None,
+    # ★ type=Path にしない。Path("") は Python 3.10 で PosixPath(".") に化け、
+    #   「履歴を残さない」つもりの空文字がカレントディレクトリへの追記になる。
+    #   （手元の 3.14 では通り CI の 3.10 で落ちた。文字列で受けて明示的に分岐する）
+    parser.add_argument("--history", default=None,
                         help="見張りの履歴（JSON Lines・追記のみ）。"
                              "既定は --out の隣の history/site-status.jsonl。"
                              '"" を渡すと残さない')
@@ -171,9 +174,13 @@ def main(argv: list[str] | None = None) -> None:
     # これが無いと「先週から悪くなった」が言えず、その日の状態しか分からない。
     # 既定は --out の隣。実ファイルを直書きする既定にすると、テストが main() を
     # 呼んだだけで本物の履歴が汚れる（実際に汚した）。出力先に追従させる。
-    history_path = (args.out.parent / "history" / "site-status.jsonl"
-                    if args.history is None else args.history)
-    if str(history_path):
+    if args.history is None:
+        history_path = args.out.parent / "history" / "site-status.jsonl"
+    elif args.history == "":
+        history_path = None          # 明示的に「残さない」
+    else:
+        history_path = Path(args.history)
+    if history_path is not None:
         added = append_snapshot(history_path, site_status_snapshot(report), SITE_STATUS_KEY)
         print(f"{history_path}: " + ("1件追記" if added else "同じ checked_at が既にあるので追記なし"))
 
