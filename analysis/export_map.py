@@ -67,7 +67,8 @@ def label_point(rings: list[list[tuple[float, float]]]) -> tuple[float, float]:
             cy += (y0 + y1) * cross
         a *= 0.5
         if abs(a) < 1e-12:
-            xs = [q[0] for q in r]; ys = [q[1] for q in r]
+            xs = [q[0] for q in r]
+            ys = [q[1] for q in r]
             return abs(a), sum(xs) / len(xs), sum(ys) / len(ys)
         return abs(a), cx / (6 * a), cy / (6 * a)
 
