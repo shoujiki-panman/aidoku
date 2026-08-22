@@ -46,3 +46,13 @@
 
 /* 本文は中央に、ゆったり */
 .shell__main .wrap { max-width: 1100px; padding-left: 24px; padding-right: 24px; }
+
+/* メニューの見出し。「使う」ものと「見る」ものを分けないと、
+   7項目が同列に並んで、どれが機能でどれが資料か読み取れない */
+.menu__list ul { list-style: none; margin: 0; padding: 0; }
+.menu__sec {
+  margin: 10px 0 2px; padding: 10px 12px 0;
+  border-top: 1px solid #eef0f4;
+  font-size: .75rem; font-weight: 700; letter-spacing: .04em; color: #6b7280;
+}
+.menu__sec:first-child { margin-top: 2px; padding-top: 4px; border-top: 0; }
