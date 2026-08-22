@@ -47,6 +47,10 @@ for (const f of pages) {
   // 出すのは AI読 が足した procedure だけ
   ok(`${f} の行動が procedure だけ`, /data-actions="procedure"/.test(tag[0]), tag[0]);
   ok(`${f} に main がある`, /<main[\s>]/.test(s));
+  // 上のメニューは <details>。素のままだと外を押しても閉じず、
+  // 押した本人は閉じたつもりで次を押すので、画面に残って邪魔になる。
+  ok(`${f} が shell.js を読む`, /<script src="assets\/shell\.js" defer><\/script>/.test(s));
+
   // 読み込みは </body> の直前（本文より後）
   ok(`${f} はボタンを最後に読む`, s.indexOf('ask-ai-button.js') > s.lastIndexOf('</main>'));
 }
