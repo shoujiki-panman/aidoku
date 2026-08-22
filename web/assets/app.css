@@ -714,3 +714,13 @@ td.marks { white-space: nowrap; }
 .cell__body { padding: 14px 16px 16px; }
 .cell__go { margin: 14px 0 0; }
 @media (prefers-reduced-motion: reduce) { .cell__chev { transition: none; } }
+
+/* 住民が次にやること。職員向けの「+20点／こう書く」だけでは、
+   引っ越す本人が「で、何を持っていけば？」のまま終わる */
+.nextstep {
+  margin-top: 14px; padding: 12px 14px;
+  background: #f4f7fb; border-left: 4px solid #0056b3; border-radius: 0 8px 8px 0;
+}
+.nextstep__title { margin: 0 0 6px; font-weight: 700; font-size: .9375rem; }
+.nextstep__list { margin: 0; padding-left: 1.4em; font-size: .9375rem; line-height: 1.8; }
+.nextstep__list li + li { margin-top: 4px; }

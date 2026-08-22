@@ -1,0 +1,146 @@
+{
+  "_about": "東京23区の基本情報。読めなかった項目があったとき、住民に「区の公式サイトで確かめてください」と案内するために使う。AI読は答えの本文を持っていないので、案内先は必ず区の公式サイトになる。",
+  "generated_at": "2026-08-22T13:39:56+00:00",
+  "source": "crawler/targets.json の top_url をそのまま使う（組み立てない）",
+  "n": 23,
+  "municipalities": [
+    {
+      "id": "chiyoda",
+      "name": "千代田区",
+      "lg_code": "131016",
+      "top_url": "https://www.city.chiyoda.lg.jp/"
+    },
+    {
+      "id": "chuo",
+      "name": "中央区",
+      "lg_code": "131024",
+      "top_url": "https://www.city.chuo.lg.jp/"
+    },
+    {
+      "id": "minato",
+      "name": "港区",
+      "lg_code": "131032",
+      "top_url": "https://www.city.minato.tokyo.jp/"
+    },
+    {
+      "id": "shinjuku",
+      "name": "新宿区",
+      "lg_code": "131041",
+      "top_url": "https://www.city.shinjuku.lg.jp/"
+    },
+    {
+      "id": "bunkyo",
+      "name": "文京区",
+      "lg_code": "131059",
+      "top_url": "https://www.city.bunkyo.lg.jp/"
+    },
+    {
+      "id": "taito",
+      "name": "台東区",
+      "lg_code": "131067",
+      "top_url": "https://www.city.taito.lg.jp/"
+    },
+    {
+      "id": "sumida",
+      "name": "墨田区",
+      "lg_code": "131075",
+      "top_url": "https://www.city.sumida.lg.jp/"
+    },
+    {
+      "id": "koto",
+      "name": "江東区",
+      "lg_code": "131083",
+      "top_url": "https://www.city.koto.lg.jp/"
+    },
+    {
+      "id": "shinagawa",
+      "name": "品川区",
+      "lg_code": "131091",
+      "top_url": "https://www.city.shinagawa.tokyo.jp/"
+    },
+    {
+      "id": "meguro",
+      "name": "目黒区",
+      "lg_code": "131105",
+      "top_url": "https://www.city.meguro.tokyo.jp/"
+    },
+    {
+      "id": "ota",
+      "name": "大田区",
+      "lg_code": "131113",
+      "top_url": "https://www.city.ota.tokyo.jp/"
+    },
+    {
+      "id": "setagaya",
+      "name": "世田谷区",
+      "lg_code": "131121",
+      "top_url": "https://www.city.setagaya.lg.jp/"
+    },
+    {
+      "id": "shibuya",
+      "name": "渋谷区",
+      "lg_code": "131130",
+      "top_url": "https://www.city.shibuya.tokyo.jp/"
+    },
+    {
+      "id": "nakano",
+      "name": "中野区",
+      "lg_code": "131148",
+      "top_url": "https://www.city.tokyo-nakano.lg.jp/"
+    },
+    {
+      "id": "suginami",
+      "name": "杉並区",
+      "lg_code": "131156",
+      "top_url": "https://www.city.suginami.tokyo.jp/"
+    },
+    {
+      "id": "toshima",
+      "name": "豊島区",
+      "lg_code": "131164",
+      "top_url": "https://www.city.toshima.lg.jp/"
+    },
+    {
+      "id": "kita",
+      "name": "北区",
+      "lg_code": "131172",
+      "top_url": "https://www.city.kita.lg.jp/"
+    },
+    {
+      "id": "arakawa",
+      "name": "荒川区",
+      "lg_code": "131181",
+      "top_url": "https://www.city.arakawa.tokyo.jp/"
+    },
+    {
+      "id": "itabashi",
+      "name": "板橋区",
+      "lg_code": "131199",
+      "top_url": "https://www.city.itabashi.tokyo.jp/"
+    },
+    {
+      "id": "nerima",
+      "name": "練馬区",
+      "lg_code": "131202",
+      "top_url": "https://www.city.nerima.tokyo.jp/"
+    },
+    {
+      "id": "adachi",
+      "name": "足立区",
+      "lg_code": "131211",
+      "top_url": "https://www.city.adachi.tokyo.jp/"
+    },
+    {
+      "id": "katsushika",
+      "name": "葛飾区",
+      "lg_code": "131229",
+      "top_url": "https://www.city.katsushika.lg.jp/"
+    },
+    {
+      "id": "edogawa",
+      "name": "江戸川区",
+      "lg_code": "131237",
+      "top_url": "https://www.city.edogawa.tokyo.jp/"
+    }
+  ]
+}

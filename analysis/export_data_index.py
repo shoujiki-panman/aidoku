@@ -271,6 +271,11 @@ def datasets(procs: list[dict]) -> list[dict]:
                 "地図用のSVGパス。出典は『歴史的行政区域データセットβ版』（CODH作成）で、"
                 "この部分のライセンスは CC BY 4.0（作成者は当方ではない）。",
                 record_path="wards"),
+        dataset("municipalities.json", "東京23区の基本情報",
+                "区のIDと名前、全国地方公共団体コード、区の公式サイト。"
+                "読めなかった項目を住民が確かめに行く先として使う。",
+                record_path="municipalities",
+                join="id で scores-*.json の municipalities[].id と突き合わせる"),
         dataset("fact-types.json", "測っている項目の定義",
                 "4項目それぞれについて、何を必須要素とみなすか。判定の基準そのもの。",
                 record_path="fact_types"),
