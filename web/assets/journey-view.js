@@ -353,7 +353,7 @@
       renderProof(barrier);
       }
       const g = $('generated-at');
-      if (g) g.textContent = (bs.generated_at || '').slice(0, 10);
+      if (g) g.textContent = (jj.generated_at || bs.generated_at || '').slice(0, 10);
     } catch (e) {
       $('map').innerHTML = '<p>データを読めませんでした。</p>';
       console.error(e);
