@@ -39,3 +39,9 @@
 
 /* 外部サイトに飛ぶ一覧。押す前に、どこへ行くかを言う */
 .panel__lead { margin: 6px 0 10px; font-size: .875rem; color: #4e5255; }
+
+/* 何の点数かを、数字のすぐ上に書く */
+.panel__unit { margin: 2px 0 8px; font-size: .875rem; color: #4e5255; }
+.panel__same { margin: 8px 0 0; font-size: .875rem; color: #4e5255; }
+.panel__delta { font-size: .875rem; font-weight: 700; }
+.panel__delta[data-tone="flat"] { color: #4e5255; font-weight: 400; }

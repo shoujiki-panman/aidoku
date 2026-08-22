@@ -58,23 +58,30 @@
     }
     const blocks = [...byProc.values()].map((p) => {
       const rows = p.rows.sort((a, b) => String(a.generated_at).localeCompare(String(b.generated_at)));
-      const pts = rows.map((r) => `
+      // 同じ点が続くと、同じ数字が並ぶだけで読む意味がなくなる。
+      // 変わった回だけ出す（最初の回は必ず出す）。
+      const shown = rows.filter((r, i) => i === 0
+        || (r.summary?.average) !== (rows[i - 1].summary?.average));
+      const pts = shown.map((r) => `
         <li class="pt">
           <b>${esc(String((r.summary && r.summary.average) ?? '-'))}</b>
           <i>${esc(d10(r.generated_at))}</i>
         </li>`).join('');
+      const same = shown.length === 1 && rows.length > 1;
       const a = rows[rows.length - 2];
       const b = rows[rows.length - 1];
       const at = a && b ? AidokuTrend.attribution(a, b) : null;
       const da = a && b
         ? Math.round(((b.summary?.average ?? 0) - (a.summary?.average ?? 0)) * 10) / 10 : null;
+      const badge = da === null ? ''
+        : da === 0 ? '<span class="panel__delta" data-tone="flat">変わっていません</span>'
+          : `<span class="panel__delta" data-tone="${da > 0 ? 'up' : 'down'}">前回から ${da > 0 ? '+' : ''}${da}点</span>`;
       return `<div class="panel">
-        <p class="panel__head"><b>${esc(p.name)}</b>
-          ${da !== null ? `<span class="panel__delta" data-tone="${da > 0 ? 'up' : da < 0 ? 'down' : 'flat'}">
-            ${da > 0 ? '+' : ''}${da}</span>` : ''}
-        </p>
+        <p class="panel__head"><b>${esc(p.name)}</b>${badge}</p>
+        <p class="panel__unit">23区の平均（100点満点）</p>
         <ol class="pts">${pts}</ol>
-        ${at ? `<p class="panel__why" data-how="${esc(at.how)}">
+        ${same ? `<p class="panel__same">${rows.length}回とも同じ点でした。</p>` : ''}
+        ${at && da !== 0 ? `<p class="panel__why" data-how="${esc(at.how)}">
           ${at.how === 'site'
             ? 'この差はサイト側の変化と見てよい（測定条件が同じ）'
             : `<b>この差の原因は言えない</b> — ${esc(at.why)}`}</p>` : ''}
