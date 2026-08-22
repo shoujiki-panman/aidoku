@@ -213,18 +213,28 @@
       </div>`;
   }
 
-  function renderSame(barrier) {
-    const p = barrier?.prevalence;
-    if (!p) { $('same').innerHTML = ''; return; }
-    const cells = (p.cells || []).map((c) =>
-      `<li><b>${esc(c.municipality)}</b>・${esc(c.procedure)}
-         <span class="same__hops">${esc(String(c.hops))}クリック目で止まった</span></li>`).join('');
+  function renderSame(journeys, onPick) {
+    const ours = journeys.filter((j) => j.blame === 'ours');
+    if (!ours.length) { $('same').innerHTML = ''; return; }
+    const rows = ours.map((j) => {
+      const near = j.missed_with_strong_word[0];
+      return `<li><button type="button" class="same__go" data-cell="${esc(j.municipality_id)}/${esc(j.procedure_id)}">
+          <b>${esc(j.municipality)}</b>・${esc(j.procedure)}
+          <span class="same__got">${j.got}/${j.total}</span>
+          <span class="same__near">選ばなかったリンク「${esc(near.link_text)}」${near.score}点</span>
+        </button></li>`;
+    }).join('');
     $('same').innerHTML = `
-      <p class="section-note">同じ段差（目次で止まる）が見つかった件数:
-        <strong>${esc(String(p.same_barrier_cells))} / ${esc(String(p.total_cells))}</strong>
-        （0点だった${esc(String(p.zero_score_cells))}件のうち ${esc(p.share_of_zeros)}）</p>
-      <ul class="same__list">${cells}</ul>
-      <p class="section-note">${esc(p.caveat || '')}</p>`;
+      <p class="section-note">測った<strong>${journeys.length}件</strong>のうち、
+        <strong>${ours.length}件</strong>で、選ばれなかったリンクに<strong>手続きの名前</strong>が入っていました。
+        サイトに道はあって、AIの選び方が外しています。押すと、その区の道のりに切り替わります。</p>
+      <ul class="same__list">${rows}</ul>
+      <p class="section-note">残りは、見えていた候補のどれにも手続きの名前がなく、
+        入口から辿れる場所に無いものです。</p>`;
+    $('same').addEventListener('click', (e) => {
+      const b = e.target.closest('.same__go');
+      if (b) onPick(b.dataset.cell);
+    });
   }
 
   // 人手で書いた barrier が無いセルのために、道のりの記録から同じ形を作る。
@@ -285,6 +295,14 @@
         pick.addEventListener('change', () => show(sorted[Number(pick.value)]));
       }
       show(sorted[0]);
+      // 一覧はページに1つ。道のりの選択欄と同じ数字・同じ数え方にする
+      renderSame(sorted, (key) => {
+        const i = sorted.findIndex((j) => `${j.municipality_id}/${j.procedure_id}` === key);
+        if (i < 0) return;
+        if (pick) pick.value = String(i);
+        show(sorted[i]);
+        $('map').scrollIntoView({ behavior: prefersStill() ? 'auto' : 'smooth', block: 'start' });
+      });
 
       function show(j) {
         window.__JOURNEY__ = j;
@@ -333,7 +351,6 @@
         });
       }
       renderProof(barrier);
-      renderSame(barrier);
       }
       const g = $('generated-at');
       if (g) g.textContent = (bs.generated_at || '').slice(0, 10);

@@ -256,3 +256,15 @@
   background: #fff; border: 1px solid #767676; border-radius: 6px; max-width: 24em;
 }
 .jpick__select:focus-visible { outline: 3px solid #0056b3; outline-offset: 1px; }
+
+/* 同じ取りこぼしが起きた区。押すと上の道のりが切り替わる */
+.same__go {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  width: 100%; text-align: left; cursor: pointer;
+  padding: 12px 14px; border: 1px solid #d8dde3; border-radius: 10px;
+  background: #fff; font-family: inherit; font-size: 1rem; color: #1a1a1c;
+}
+.same__go:hover { background: #f7f9fc; }
+.same__go:focus-visible { outline: 3px solid #0056b3; outline-offset: 2px; }
+.same__got { font-weight: 700; color: #b32b2b; }
+.same__near { font-size: .875rem; color: #4e5255; }
