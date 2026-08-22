@@ -1,0 +1,302 @@
+{
+  "_about": "AI読（アイドク）の公開データの目次。人間向けの説明は README.md、機械向けはこのファイル。まずここを読めば、どこに何があり、どこまで測ってあるかが分かる。",
+  "name": "AI読（アイドク）公開データ",
+  "schema_version": 1,
+  "generated_at": "2026-08-22T10:17:22+00:00",
+  "homepage": "https://shoujiki-panman.github.io/aidoku/web/",
+  "repository": "https://github.com/shoujiki-panman/aidoku",
+  "base_url": "https://shoujiki-panman.github.io/aidoku/web/data/",
+  "publisher": {
+    "name": "正直パンマン（個人）",
+    "official": false,
+    "note": "行政機関の公式発表ではない。個人による第三者調査。"
+  },
+  "license": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "attribution": "正直パンマン「AI読（アイドク）」 https://github.com/shoujiki-panman/aidoku",
+    "covers": "点数・集計・改善案・到達クリック数・観察記録（このリポジトリが作った部分）",
+    "does_not_cover": "自治体サイトの実文。著作権は各自治体にあり、2026-08-18 以降は fields[].agent_value を空にして配信していない（quote_withheld: true）"
+  },
+  "provenance": {
+    "condition_keys": [
+      "measurement_version",
+      "prompt_version",
+      "follow",
+      "max_follow",
+      "max_depth",
+      "beam",
+      "max_fetches",
+      "max_text_chars",
+      "max_links",
+      "model",
+      "model_version"
+    ],
+    "by_procedure": {
+      "tennyu": {
+        "recording_status": "legacy_unknown",
+        "runs": 23,
+        "models": [
+          "claude-cli/claude-sonnet-5"
+        ],
+        "conditions": {
+          "comparison_status": "legacy_unknown"
+        }
+      },
+      "jidouteate": {
+        "recording_status": "legacy_unknown",
+        "runs": 23,
+        "models": [
+          "claude-cli/claude-sonnet-5"
+        ],
+        "conditions": {
+          "comparison_status": "legacy_unknown"
+        }
+      },
+      "sodaigomi": {
+        "recording_status": "legacy_unknown",
+        "runs": 23,
+        "models": [
+          "claude-cli/claude-sonnet-5",
+          "未記録"
+        ],
+        "conditions": {
+          "comparison_status": "legacy_unknown"
+        }
+      }
+    },
+    "unrecorded": [
+      "tennyu",
+      "jidouteate",
+      "sodaigomi"
+    ],
+    "note": "いま配信している実測は、測定条件（モデル・プロンプト版・探索の上限）が記録されていない回のもの。したがって過去との差が出ても、サイトが変わったのか判定器が変わったのかを断定できない。history/ の差分もこの場合、自治体のせいにしない。"
+  },
+  "calibration": {
+    "what": "人手で作った正解データ。判定器のぶれを測るために使う",
+    "by_procedure": {
+      "tennyu": {
+        "rows": 12,
+        "municipalities": 3
+      },
+      "jidouteate": {
+        "rows": 0,
+        "municipalities": 0
+      },
+      "sodaigomi": {
+        "rows": 0,
+        "municipalities": 0
+      }
+    },
+    "missing": [
+      "jidouteate",
+      "sodaigomi"
+    ],
+    "note": "較正の無い手続きでは、点が動いたときに「サイトが変わった」と「判定器が変わった」を区別できない。差を見るときはここを先に見ること。"
+  },
+  "coverage": {
+    "unit": "自治体 × 手続き（1セル）",
+    "measured_cells": 69,
+    "municipalities": 23,
+    "procedures": [
+      "tennyu",
+      "jidouteate",
+      "sodaigomi"
+    ],
+    "area": "東京都特別区（23区）のみ",
+    "japan": {
+      "municipalities": 1741,
+      "cells": 5223,
+      "measured_ratio": 0.0132
+    },
+    "note": "測っていない自治体は「読めない」ではなく「まだ調べていない」。画面でも灰色で区別し、0点とは別に扱う。"
+  },
+  "self_description": {
+    "path": "index.json",
+    "note": "この目次自身。datasets[] の path は base_url からの相対。"
+  },
+  "skill": {
+    "path": "../skill/SKILL.md",
+    "note": "このデータを使って行政の質問に答えるときの手順。読み取れなかった項目を推測で埋めないための指示が入っている。"
+  },
+  "datasets": [
+    {
+      "id": "procedures",
+      "title": "手続きの一覧",
+      "description": "測った3手続きと、その平均点・満点の数・0点の数。procedures[].file が各手続きの実測ファイル名。",
+      "path": "procedures.json",
+      "bytes": 593,
+      "sha256": "1d046898b5f24c82955b92f13eaec319e8b28e7df56d4d824bbd5c66b453d1ff",
+      "records": {
+        "path": "procedures",
+        "count": 3
+      },
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "scores-tennyu",
+      "title": "転入届の実測（23区）",
+      "description": "東京23区の「転入届」のページを住民のAIに読ませ、4項目を読み取れたかを測った結果。",
+      "path": "scores-tennyu.json",
+      "bytes": 60745,
+      "sha256": "9bf83a94209ed47b59674b46926b8b44f12860210ddbb84b63c9020b678f9a96",
+      "generated_at": "2026-08-17T15:10:26+00:00",
+      "records": {
+        "path": "municipalities",
+        "count": 23
+      },
+      "fields": {
+        "id": "自治体の識別子（英字）。ファイル間の突き合わせに使う",
+        "name": "自治体名",
+        "lg_code": "全国地方公共団体コード。並び順の正はこれ（漢字の文字コード順にしない）",
+        "total": "100点満点の合計",
+        "breakdown": "項目ごとの点。必要書類・窓口/オンライン可否・期限・手数料は 20（読めた）か 0（読めなかった）の2値。オンライン明示だけ 20（明記）/ 10（曖昧）/ 0（記載なし）の3値",
+        "hops": "自治体トップページから、検索エンジンを使わずリンクだけで到達したクリック数",
+        "page_url": "実際に採点したページ",
+        "fields": "項目ごとの判定（verdict は「読めた」「読めない」）",
+        "improvements": "読めなかった項目について、何をどこに書けば読めるようになるか",
+        "page_status": "そのページが採点対象として妥当だったか",
+        "notes": "判定者（LLM）の所見。散文であり、点の根拠そのものではない"
+      },
+      "join": "municipalities[].id / lg_code で他のファイルと突き合わせる",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "scores-jidouteate",
+      "title": "児童手当の申請の実測（23区）",
+      "description": "東京23区の「児童手当の申請」のページを住民のAIに読ませ、4項目を読み取れたかを測った結果。",
+      "path": "scores-jidouteate.json",
+      "bytes": 64441,
+      "sha256": "2eea74d79d8a4d24740f0dee18ee19af8918c401f4a25ca77fb1e53aafed50f9",
+      "generated_at": "2026-08-17T15:10:26+00:00",
+      "records": {
+        "path": "municipalities",
+        "count": 23
+      },
+      "fields": {
+        "id": "自治体の識別子（英字）。ファイル間の突き合わせに使う",
+        "name": "自治体名",
+        "lg_code": "全国地方公共団体コード。並び順の正はこれ（漢字の文字コード順にしない）",
+        "total": "100点満点の合計",
+        "breakdown": "項目ごとの点。必要書類・窓口/オンライン可否・期限・手数料は 20（読めた）か 0（読めなかった）の2値。オンライン明示だけ 20（明記）/ 10（曖昧）/ 0（記載なし）の3値",
+        "hops": "自治体トップページから、検索エンジンを使わずリンクだけで到達したクリック数",
+        "page_url": "実際に採点したページ",
+        "fields": "項目ごとの判定（verdict は「読めた」「読めない」）",
+        "improvements": "読めなかった項目について、何をどこに書けば読めるようになるか",
+        "page_status": "そのページが採点対象として妥当だったか",
+        "notes": "判定者（LLM）の所見。散文であり、点の根拠そのものではない"
+      },
+      "join": "municipalities[].id / lg_code で他のファイルと突き合わせる",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "scores-sodaigomi",
+      "title": "粗大ごみ収集の申込の実測（23区）",
+      "description": "東京23区の「粗大ごみ収集の申込」のページを住民のAIに読ませ、4項目を読み取れたかを測った結果。",
+      "path": "scores-sodaigomi.json",
+      "bytes": 65336,
+      "sha256": "5669cf8b1c1cb4bb57ab3da074671ec2f876d8c8ad3a984797b321aee2a7b8dd",
+      "generated_at": "2026-08-17T15:10:26+00:00",
+      "records": {
+        "path": "municipalities",
+        "count": 23
+      },
+      "fields": {
+        "id": "自治体の識別子（英字）。ファイル間の突き合わせに使う",
+        "name": "自治体名",
+        "lg_code": "全国地方公共団体コード。並び順の正はこれ（漢字の文字コード順にしない）",
+        "total": "100点満点の合計",
+        "breakdown": "項目ごとの点。必要書類・窓口/オンライン可否・期限・手数料は 20（読めた）か 0（読めなかった）の2値。オンライン明示だけ 20（明記）/ 10（曖昧）/ 0（記載なし）の3値",
+        "hops": "自治体トップページから、検索エンジンを使わずリンクだけで到達したクリック数",
+        "page_url": "実際に採点したページ",
+        "fields": "項目ごとの判定（verdict は「読めた」「読めない」）",
+        "improvements": "読めなかった項目について、何をどこに書けば読めるようになるか",
+        "page_status": "そのページが採点対象として妥当だったか",
+        "notes": "判定者（LLM）の所見。散文であり、点の根拠そのものではない"
+      },
+      "join": "municipalities[].id / lg_code で他のファイルと突き合わせる",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "barriers",
+      "title": "AIがつまずいた段差",
+      "description": "点数ではなく、どこで読めなくなったかと、何を変えるとどれだけ改善するか。",
+      "path": "barriers.json",
+      "bytes": 5921,
+      "sha256": "b5d5a24d4c7c7258124057363c2c9b10d706156d825c75a5da66aa70b1dfbf0e",
+      "generated_at": "2026-08-15T09:20:15+00:00",
+      "records": {
+        "path": "barriers",
+        "count": 1
+      },
+      "join": "municipality と procedure で scores-*.json と突き合わせる",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "journeys",
+      "title": "AIの道のり",
+      "description": "自治体トップページから、AIがどのリンクを選んで、どこで力尽きたか。選択の点数の内訳まで入っている。",
+      "path": "journeys.json",
+      "bytes": 4840,
+      "sha256": "da24ed0142a72d3872d4f0edaa6341db4d129d8501763fbba1cf0c337b8fa3ee",
+      "records": {
+        "path": "journeys",
+        "count": 1
+      },
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "site-status",
+      "title": "ページの見張り",
+      "description": "採点済みページが変わっていないかの毎日の確認（LLMは呼ばない）。変わっていれば測り直しが必要という意味で、悪くなったという意味ではない。",
+      "path": "site-status.json",
+      "bytes": 31925,
+      "sha256": "0cdf900174c947fb4506c768d03deac48adf2b37d9f8d4e40940a7a200079aad",
+      "records": {
+        "path": "items",
+        "count": 68
+      },
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "archive",
+      "title": "過去の版",
+      "description": "Internet Archive にいつの版が残っているか。HTMLの写しは持っていない。",
+      "path": "archive.json",
+      "bytes": 64419,
+      "sha256": "68b6066c18017e53eb3e5288120380686eaef91a146f5200d1882a6104b73b1e",
+      "generated_at": "2026-08-22T05:38:34+00:00",
+      "records": {
+        "path": "pages",
+        "count": 68
+      },
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "tokyo23",
+      "title": "23区の境界",
+      "description": "地図用のSVGパス。出典は『歴史的行政区域データセットβ版』（CODH作成）で、この部分のライセンスは CC BY 4.0（作成者は当方ではない）。",
+      "path": "tokyo23.json",
+      "bytes": 19573,
+      "sha256": "87a08d24adfde7050f20529439cb28b7191985940f477636f70a92071a90694c",
+      "records": {
+        "path": "wards",
+        "count": 23
+      },
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "fact-types",
+      "title": "測っている項目の定義",
+      "description": "4項目それぞれについて、何を必須要素とみなすか。判定の基準そのもの。",
+      "path": "fact-types.json",
+      "bytes": 2909,
+      "sha256": "2eac2bba77d64c4dd351fbd11f7f8901d1ab8134139957f3ab388e99cc62e689",
+      "records": {
+        "path": "fact_types",
+        "count": 4
+      },
+      "license": "CC-BY-4.0"
+    }
+  ]
+}
