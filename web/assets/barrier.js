@@ -115,7 +115,7 @@ function renderFlow(b, doc) {
       n: 9, kind: 'open', title: '記録を公開する',
       body: `<p>ここまでの<strong>失敗・証拠・改善効果・再現方法</strong>をまとめて公開しています。
           点数だけでは、誰も直せません。</p>
-        <p class="src"><a class="dads-link" href="data/barriers.json">barriers.json</a> ／
+        <p class="src"><a class="dads-link" href="data/barriers.json">元のデータ</a> ／
           再現: <code>${esc(b.measurement.reproduce)}</code></p>`,
     }),
   ];
@@ -151,5 +151,5 @@ function renderData(b, doc) {
 }
 
 init().catch((e) => {
-  $('flow').innerHTML = `<li class="err">${esc(e.message)}<br><code>data/barriers.json</code> があるか確認してください。</li>`;
+  $('flow').innerHTML = '<li class="err">記録を読めませんでした。時間をおいて開き直してください。</li>';
 });

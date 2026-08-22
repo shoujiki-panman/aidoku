@@ -380,7 +380,7 @@ function select(id) {
 
 init().catch((e) => {
   $('detail').innerHTML =
-    `<p class="err">${esc(e.message)}<br><code>data/scores.json</code> があるか確認してください。</p>`;
+    `<p class="err">結果を読めませんでした。時間をおいて開き直してください。</p>`;
 });
 
 // ---- 自分の区を調べる（#59 案2: 測定済みは即答、未測定は正直にそう言う）----
