@@ -197,26 +197,9 @@ async function init() {
   renderBody(rows, procs);
   renderSummary(rows, procs);
   renderNote(rows, procs);
-  renderVisits();
 }
 
-// 門番が集める「どのAIが来たか」。まだ門番を自治体サイトの前に立てていないので、
-// ここは全部グレー。実データが入ったら差し替える（憶測の数字は置かない）。
-const AGENTS = [
-  { name: 'ChatGPT', origin: 'chatgpt.com', note: '公開鍵を配布中（確認済み）' },
-  { name: 'Claude', origin: 'claude.com', note: '未確認' },
-  { name: 'Perplexity', origin: 'perplexity.ai', note: '未確認' },
-  { name: 'Gemini', origin: 'google.com', note: '未確認' },
-];
 
-function renderVisits() {
-  $('visit').innerHTML = AGENTS.map((a) => `
-    <div class="visit-card" data-state="gray">
-      <p class="visit-card__name">${esc(a.name)}</p>
-      <p class="visit-card__count">— 回</p>
-      <p class="visit-card__note">まだ来ていません<br><span class="visit-card__sub">${esc(a.note)}</span></p>
-    </div>`).join('');
-}
 
 init().catch((e) => {
   $('board-note').innerHTML = `<span class="err">${esc(e.message)}</span>`;
