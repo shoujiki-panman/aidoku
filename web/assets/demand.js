@@ -1,7 +1,7 @@
-// 門番が集めたデータの画面。
+// AI窓口が集めたデータの画面。
 // 並びはデジタル庁ガイドブックに合わせて 全体 → 部分 → 定義・入手。
 // いちばん上に置くのは「本物のAIはまだ来ていない」という事実。見本を本物に見せない。
-// ?src=https://... を付けると、公開した門番の /_aidoku/demand を直接読む。
+// ?src=https://... を付けると、公開したAI窓口の /_aidoku/demand を直接読む。
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
@@ -48,7 +48,7 @@ function renderSampleBanner(data) {
     $('sample-note').textContent = String(data.sample_note ?? '').replace(/^⚠️ /, '');
     return;
   }
-  $('sample-heading').textContent = '公開中の門番から読み込んだ実データです';
+  $('sample-heading').textContent = '公開中のAI窓口から読み込んだ実データです';
   $('sample-note').textContent =
     '署名で身元が確認できたAIエージェントの来訪だけを記録しています。人（ブラウザ）のアクセスは記録していません。';
   document.querySelector('.dads-notification-banner').dataset.type = 'info';
@@ -60,7 +60,7 @@ function renderHeadline(data) {
   $('headline').dataset.state = real === 0 ? 'empty' : 'has';
   $('headline-note').textContent = real === 0
     ? (data.is_sample
-      ? '門番はまだ公開していません。公開すると、ここに実際の来訪が入ります。'
+      ? 'AI窓口はまだ公開していません。公開すると、ここに実際の来訪が入ります。'
       : '公開していますが、まだ署名つきのAIは来ていません。')
     : 'すべて署名で身元を確かめた来訪です。';
 }
