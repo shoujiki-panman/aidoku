@@ -35,11 +35,16 @@ ok('指示文が上限の7割を超えていない', headCost < limit * 0.7, `${
 const FIELDS = ['必要書類', '窓口/オンライン可否', '期限', '手数料'];
 const BASE = 'https://shoujiki-panman.github.io/aidoku/web/';
 const tops = new Map(data('municipalities.json').municipalities.map((m) => [m.id, m]));
+// AIが選ばなかった扉のURLも渡すようになったので、その分も測る
+const missed = new Map(data('journeys.json').journeys
+  .filter((j) => j.blame === 'ours' && j.missed_with_strong_word.length)
+  .map((j) => [`${j.municipality_id}/${j.procedure_id}`, j.missed_with_strong_word[0].url]));
 const byWard = new Map();
 for (const p of data('procedures.json').procedures) {
   for (const m of data(p.file).municipalities) {
     if (!byWard.has(m.id)) byWard.set(m.id, []);
-    byWard.get(m.id).push({ proc: p.name, url: m.page_url || '', bd: m.breakdown || {} });
+    byWard.get(m.id).push({ proc: p.name, url: m.page_url || '', bd: m.breakdown || {},
+      near: missed.get(`${m.id}/${p.id}`) || '' });
   }
 }
 ok('23区ぶんある', byWard.size === 23, String(byWard.size));
@@ -52,7 +57,8 @@ for (const [id, rows] of byWard) {
     const got = FIELDS.filter((k) => (r.bd[k] ?? 0) >= 20);
     const miss = FIELDS.filter((k) => (r.bd[k] ?? 0) < 20);
     return `- ${r.proc}｜区の公式ページ ${r.url}｜読み取れた: ${got.join('・') || 'なし'}`
-      + `｜読み取れなかった: ${miss.join('・') || 'なし'}`;
+      + `｜読み取れなかった: ${miss.join('・') || 'なし'}`
+      + (r.near ? `｜同じ画面に出ていた別の入口（未確認）: ${r.near}` : '');
   }).join('\n');
   const body = `# AI読の実測\n対象: ${t.name || ''}（区の公式サイト ${t.top_url || ''}）\n${lines}\n`
     + '「読み取れなかった」＝その項目が区のページに書かれていない。埋めないこと。\n'

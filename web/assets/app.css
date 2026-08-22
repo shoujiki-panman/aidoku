@@ -742,3 +742,10 @@ td.marks { white-space: nowrap; }
   }
   .methodlist .dads-description-list__item:last-child { border-bottom: 0; padding-bottom: 0; }
 }
+
+/* 誰に向けた節かを、見出しの横に小さく出す */
+.forwhom {
+  margin-left: 10px; padding: 3px 10px; border-radius: 999px;
+  background: #eef0f4; color: #4e5255;
+  font-size: .75rem; font-weight: 700; vertical-align: middle;
+}

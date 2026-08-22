@@ -351,7 +351,7 @@ function select(id) {
     : '';
 
   const fixes = m.improvements.length
-    ? `<h3 class="dads-heading" data-size="s">ここを直すと、AIの答えが変わる</h3>
+    ? `<h3 class="dads-heading" data-size="s">区のページをこう直すと、AIの答えが変わる<span class="forwhom">自治体の担当者向け</span></h3>
        <ul class="fixlist">${m.improvements.map((w) => `
          <li><span class="gain">+${esc(w.gain)}点</span><b>${esc(w.field)}</b>
              <span class="fixnote">${esc(w.reason)}</span></li>`).join('')}</ul>
@@ -389,6 +389,7 @@ init().catch((e) => {
 //   盤面のグレーと同じ約束 — 測っていないものを、測ったように見せない。
 let lookupCells = null;
 let muniTop = null;   // 区id → 区の公式サイト
+let journeyOf = null; // 区id/手続きid → AIの道のり
 let archiveByUrl = null;
 
 // 過去の姿は Internet Archive / WARP が既に持っている（Issue #99）。
@@ -439,9 +440,22 @@ async function loadMuniTop() {
   return muniTop;
 }
 
+// ★AIが選ばなかった扉。区に直してもらうのを待たなくても、
+//   こちらが「本当の入口はこちらかもしれません」と出せる。
+async function loadJourneys() {
+  if (journeyOf) return journeyOf;
+  try {
+    const d = await loadJson('data/journeys.json');
+    journeyOf = new Map(d.journeys.map((j) => [`${j.municipality_id}/${j.procedure_id}`, j]));
+  } catch {
+    journeyOf = new Map();
+  }
+  return journeyOf;
+}
+
 async function loadLookupCells() {
   if (lookupCells) return lookupCells;
-  await loadMuniTop();
+  await Promise.all([loadMuniTop(), loadJourneys()]);
   const per = await Promise.all(procs.map(async (p) => {
     const d = await loadJson(`data/${p.file}`);
     return d.municipalities.map((m) => ({
@@ -470,6 +484,14 @@ function nextStepForResident(c) {
     return `<div class="nextstep"><p class="nextstep__title">あなたが次にやること</p>
       <ol class="nextstep__list">${page}</ol></div>`;
   }
+  // AIが同じ画面で見落としたリンク。区の修正を待たずに、ここで渡せる
+  const j = journeyOf && journeyOf.get(`${c.muniId}/${c.procId}`);
+  const near = j && j.blame === 'ours' && j.missed_with_strong_word[0];
+  const shortcut = near
+    ? `<li><b>AIが選ばなかったページを見る</b> —
+        同じ画面に<a class="dads-link" href="${esc(near.url)}" target="_blank" rel="noopener">「${esc(near.link_text)}」</a>
+        が出ていました。<b>こちらが本当の入口かもしれません</b></li>`
+    : '';
   const ask = top
     ? `<li><b>書かれていない項目は、区に直接たしかめる</b> —
         <a class="dads-link" href="${esc(top.top_url)}" target="_blank" rel="noopener">${esc(top.name)}の公式サイト</a>の問い合わせ先へ。
@@ -478,6 +500,7 @@ function nextStepForResident(c) {
   return `<div class="nextstep">
       <p class="nextstep__title">あなたが次にやること</p>
       <ol class="nextstep__list">
+        ${shortcut}
         ${page}
         ${ask}
         <li>右下の<b>「AIに渡して調べる」</b>で、自分のAIに持ち物リストを作らせる</li>
@@ -515,9 +538,12 @@ function renderAiPayload(res) {
   const rows = res.cells.map((c) => {
     const miss = FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) < 20);
     const got = FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) >= 20);
+    const jj = journeyOf && journeyOf.get(`${c.muniId}/${c.procId}`);
+    const nr = jj && jj.blame === 'ours' && jj.missed_with_strong_word[0];
     return `<li>${esc(c.procName)}｜区の公式ページ ${esc(c.url || '不明')}
       ｜読み取れた: ${esc(got.join('・') || 'なし')}
-      ｜読み取れなかった: ${esc(miss.join('・') || 'なし')}</li>`;
+      ｜読み取れなかった: ${esc(miss.join('・') || 'なし')}${nr
+        ? `｜同じ画面に出ていた別の入口（未確認）: ${esc(nr.url)}` : ''}</li>`;
   }).join('');
   box.innerHTML = payloadDoc(`
     <p>対象: ${esc(res.muniName)}${top ? `（区の公式サイト ${esc(top.top_url)}）` : ''}</p>
