@@ -16,8 +16,12 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from measurement import CONDITION_KEYS  # noqa: E402
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "web" / "data"
 
@@ -188,11 +192,9 @@ def provenance(procs: list[dict]) -> dict:
         }
     unrecorded = [k for k, v in per.items() if v["recording_status"] != "recorded"]
     out = {
-        "condition_keys": [
-            "measurement_version", "prompt_version", "follow", "max_follow",
-            "max_depth", "beam", "max_fetches", "max_text_chars", "max_links",
-            "model", "model_version",
-        ],
+        # 条件キーは measurement.py が持つ1つの定義から取る。
+        # ★以前はここにベタ書きしていて、link_order を足した日に目次だけ取りこぼした。
+        "condition_keys": list(CONDITION_KEYS),
         "by_procedure": per,
         "unrecorded": unrecorded,
     }

@@ -2,7 +2,7 @@
   "_about": "AI読（アイドク）の公開データの目次。人間向けの説明は README.md、機械向けはこのファイル。まずここを読めば、どこに何があり、どこまで測ってあるかが分かる。",
   "name": "AI読（アイドク）公開データ",
   "schema_version": 1,
-  "generated_at": "2026-08-23T06:03:04+00:00",
+  "generated_at": "2026-08-23T06:15:31+00:00",
   "homepage": "https://shoujiki-panman.github.io/aidoku/web/",
   "repository": "https://github.com/shoujiki-panman/aidoku",
   "base_url": "https://shoujiki-panman.github.io/aidoku/web/data/",
@@ -29,6 +29,7 @@
       "max_fetches",
       "max_text_chars",
       "max_links",
+      "link_order",
       "model",
       "model_version"
     ],
