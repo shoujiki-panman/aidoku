@@ -244,6 +244,42 @@ def build() -> dict:
     }
 
 
+def timeseries() -> dict:
+    """時系列。1行1観測のCSVで、表計算にも統計ソフトにもそのまま入る。"""
+    path = DATA_DIR / "history" / "measurements.csv"
+    raw = path.read_bytes()
+    rows = raw.decode("utf-8").count("\n") - 1
+    return {
+        "id": "history/measurements",
+        "title": "測定の時系列（1行1観測）",
+        "description": (
+            "いつ・どの自治体の・どの手続きの・どの項目が何点だったかを、1行1観測で並べたCSV。"
+            "1セル1データ、日付は YYYY-MM-DD、数値に単位を混ぜない。"
+            "hops の空欄は「そのページに到達できなかった」の意味で、0 とは違う。"
+        ),
+        "path": "history/measurements.csv",
+        "media_type": "text/csv",
+        "bytes": len(raw),
+        "sha256": hashlib.sha256(raw).hexdigest(),
+        "records": {"path": "row", "count": rows},
+        "columns": {
+            "measured_on": "測った日（YYYY-MM-DD）",
+            "recorded_on": "記録に残した日",
+            "lg_code": "全国地方公共団体コード",
+            "municipality": "自治体名",
+            "procedure_id": "手続きの識別子",
+            "procedure": "手続き名",
+            "field": "項目名",
+            "points": "その項目の点（0 / 10 / 20）",
+            "readable": "読み取れたか（1 / 0）",
+            "total": "その自治体・手続きの合計点",
+            "hops": "トップページからのクリック数。空欄は到達できなかった回",
+            "recording_status": "測定条件が記録されているか",
+        },
+        "license": LICENSE["id"],
+    }
+
+
 def datasets(procs: list[dict]) -> list[dict]:
     out = [dataset(
         "procedures.json", "手続きの一覧",
@@ -271,6 +307,7 @@ def datasets(procs: list[dict]) -> list[dict]:
                 "地図用のSVGパス。出典は『歴史的行政区域データセットβ版』（CODH作成）で、"
                 "この部分のライセンスは CC BY 4.0（作成者は当方ではない）。",
                 record_path="wards"),
+        timeseries(),
         dataset("municipalities.json", "東京23区の基本情報",
                 "区のIDと名前、全国地方公共団体コード、区の公式サイト。"
                 "読めなかった項目を住民が確かめに行く先として使う。",

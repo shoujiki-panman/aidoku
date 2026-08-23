@@ -2,7 +2,7 @@
   "_about": "AI読（アイドク）の公開データの目次。人間向けの説明は README.md、機械向けはこのファイル。まずここを読めば、どこに何があり、どこまで測ってあるかが分かる。",
   "name": "AI読（アイドク）公開データ",
   "schema_version": 1,
-  "generated_at": "2026-08-23T02:45:08+00:00",
+  "generated_at": "2026-08-23T03:34:53+00:00",
   "homepage": "https://shoujiki-panman.github.io/aidoku/web/",
   "repository": "https://github.com/shoujiki-panman/aidoku",
   "base_url": "https://shoujiki-panman.github.io/aidoku/web/data/",
@@ -283,6 +283,34 @@
       "records": {
         "path": "wards",
         "count": 23
+      },
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "history/measurements",
+      "title": "測定の時系列（1行1観測）",
+      "description": "いつ・どの自治体の・どの手続きの・どの項目が何点だったかを、1行1観測で並べたCSV。1セル1データ、日付は YYYY-MM-DD、数値に単位を混ぜない。hops の空欄は「そのページに到達できなかった」の意味で、0 とは違う。",
+      "path": "history/measurements.csv",
+      "media_type": "text/csv",
+      "bytes": 113855,
+      "sha256": "56e62168b809d9c487758c12438f3f0a48fceb19f76c16b4b0ed3c9539046f3a",
+      "records": {
+        "path": "row",
+        "count": 1035
+      },
+      "columns": {
+        "measured_on": "測った日（YYYY-MM-DD）",
+        "recorded_on": "記録に残した日",
+        "lg_code": "全国地方公共団体コード",
+        "municipality": "自治体名",
+        "procedure_id": "手続きの識別子",
+        "procedure": "手続き名",
+        "field": "項目名",
+        "points": "その項目の点（0 / 10 / 20）",
+        "readable": "読み取れたか（1 / 0）",
+        "total": "その自治体・手続きの合計点",
+        "hops": "トップページからのクリック数。空欄は到達できなかった回",
+        "recording_status": "測定条件が記録されているか"
       },
       "license": "CC-BY-4.0"
     },
