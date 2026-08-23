@@ -86,5 +86,26 @@
     return { kind: 'none', reason: 'unmeasured' };
   }
 
-  return { normalizeUrl, normalizeName, lookup, wardCells };
+  // 住民に見せる言い方。点数（7/12）と棒グラフはここには出さない。
+  // ★本人の指摘:「住民側にこれいらないでしょ。一切説明もない」。
+  //   住民が知りたいのは「自分のAIが何を知れないか」であって、区の成績ではない。
+  //   点数と推移は archive.html（調査データ一覧）に置く。
+  function missingSummary(missing, procedures, fieldsPerProc) {
+    const m = Number(missing);
+    const p = Number(procedures);
+    if (!Number.isFinite(m) || !Number.isFinite(p) || p <= 0) return '';
+    const all = p * Number(fieldsPerProc);
+    if (m === 0) return `測った${p}つの手続きは、どれも${fieldsPerProc}項目すべてを読み取れました。`;
+    if (m === all) return `測った${p}つの手続きは、どれも1項目も読み取れませんでした。`;
+    return `測った${p}つの手続きのうち、AIが区のページから読み取れなかった項目が${m}つあります。`;
+  }
+
+  // 手続き1行の見出しに出す短い札。0/4 のような点数はやめる
+  function cellChip(missing, fields) {
+    const m = Number(missing);
+    if (!Number.isFinite(m)) return '';
+    return m === 0 ? `${fields}項目とも読めた` : `読めない ${m}項目`;
+  }
+
+  return { normalizeUrl, normalizeName, lookup, wardCells, missingSummary, cellChip };
 });

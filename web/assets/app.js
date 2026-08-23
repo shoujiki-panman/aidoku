@@ -576,7 +576,8 @@ function lookupCellRow(c) {
     <details class="cell">
       <summary class="cell__head">
         <span class="lookup__proc">${esc(c.procName)}</span>
-        <span class="score-cell" data-tone="${tone(c.total)}">${gotCount(c)}/${FIELDS.length}</span>
+        <span class="cell__state" data-missing="${FIELDS.length - gotCount(c)}">${
+            esc(AidokuLookup.cellChip(FIELDS.length - gotCount(c), FIELDS.length))}</span>
         <span class="cell__chev" aria-hidden="true">▾</span>
       </summary>
       <div class="cell__body">
@@ -598,28 +599,12 @@ function wardProgress(cells) {
   return { got, total, pct: total ? Math.round((got / total) * 100) : 0 };
 }
 
-function progressBar(p) {
-  const label = p.got === p.total ? `${p.total}項目すべて読み取れました`
-    : p.got === 0 ? '1つも読み取れませんでした'
-    : `読み取れなかった項目が ${p.total - p.got} つあります`;
-  return `<div class="progress" role="img"
-               aria-label="${p.got} / ${p.total} 項目が住民のAIに届いています">
-      <div class="progress__head">
-        <b class="progress__num">${p.got} <span>/ ${p.total}</span></b>
-        <span class="progress__label">区のページから読み取れた項目 — ${esc(label)}</span>
-      </div>
-      <div class="progress__bar"><span style="width:${p.pct}%"></span></div>
-    </div>`;
-}
-
-
 function renderLookup(res) {
   const box = $('lookup-result');
   if (res.kind === 'page') {
     const c = res.cell;
     box.innerHTML = `
       <p class="lookup__title">このページは測ってあります — ${esc(c.muniName)}・${esc(c.procName)}</p>
-      ${progressBar(wardProgress([c]))}
       <ul class="lookup__list">${lookupCellRow(c)}</ul>
       <p class="lookup__src">読んだページ: ${esc(c.url)}</p>`;
     return;
@@ -637,11 +622,10 @@ function renderLookup(res) {
         手続きを開くと、<strong>区の公式ページ</strong>と、読み取れなかった項目が出ます。
         <strong>右下の「AIに渡す」</strong>で、自分のAIが<strong>当日の持ち物</strong>を作ります。
       </p>
-      ${progressBar(wardProgress(res.cells))}
-      <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>
-      <p class="lookup__more">
-        この区の点数の移り変わりは <a class="dads-link" href="trends.html">見張りと推移</a> にあります。
-      </p>`;
+      <p class="lookup__miss">${esc(AidokuLookup.missingSummary(
+        wardProgress(res.cells).total - wardProgress(res.cells).got,
+        res.cells.length, FIELDS.length))}</p>
+      <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>`;
     return;
   }
   if (res.reason === 'empty') {

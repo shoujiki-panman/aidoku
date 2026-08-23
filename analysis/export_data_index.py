@@ -308,6 +308,11 @@ def datasets(procs: list[dict]) -> list[dict]:
                 "この部分のライセンスは CC BY 4.0（作成者は当方ではない）。",
                 record_path="wards"),
         timeseries(),
+        dataset("surveys.json", "調査の回の一覧",
+                "いつ何を測ったかを回ごとにまとめたもの。"
+                "same_as_previous が true の回は、測り直しではなく書き出しをやり直したもの。",
+                record_path="runs",
+                join="measured_at で history/scores.jsonl の generated_at と突き合わせる"),
         dataset("municipalities.json", "東京23区の基本情報",
                 "区のIDと名前、全国地方公共団体コード、区の公式サイト。"
                 "読めなかった項目を住民が確かめに行く先として使う。",

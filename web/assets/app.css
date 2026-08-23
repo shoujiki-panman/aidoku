@@ -169,11 +169,6 @@ tr[data-selected="true"] {
   background-color: var(--color-primitive-blue-50);
 }
 
-.score-cell {
-  font-weight: bold;
-  font-variant-numeric: tabular-nums;
-}
-
 .sub-cell {
   font-variant-numeric: tabular-nums;
   color: var(--color-neutral-solid-gray-800);
@@ -497,25 +492,6 @@ td.marks { white-space: nowrap; }
 .site-status__more > summary:hover { text-decoration: none; }
 .site-status__more[open] > summary { margin-bottom: 6px; }
 
-/* ── 進捗メーター ───────────────────────────────────────────────
-   ★区どうしのランキングにはしない。画面が繰り返し「順位づけが目的ではない」と
-   書いており、晒し上げにすると区への接点が作れなくなる（#13）。
-   出すのは「自分の区の12項目をどれだけ埋めたか」という一人ぶんの進捗だけ。 */
-.progress { margin: 14px 0 4px; }
-.progress__head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
-.progress__num { font-size: 1.75rem; line-height: 1; font-weight: 800; }
-.progress__num span { font-size: 1rem; font-weight: 400; color: #6b7280; }
-.progress__label { font-size: .875rem; color: #4b5563; }
-.progress__bar {
-  margin-top: 8px; height: 10px; border-radius: 999px;
-  background: #e5e7eb; overflow: hidden;
-}
-.progress__bar > span {
-  display: block; height: 100%; border-radius: 999px;
-  background: linear-gradient(90deg, #0f7a3d, #38a169);
-  transition: width .5s ease;
-}
-
 /* 項目ごとの ✓ / ✕。どれが欠けているかが一目で分かるようにする */
 .lookup__cellhead { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .fieldmarks { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
@@ -680,7 +656,16 @@ td.marks { white-space: nowrap; }
 }
 
 /* 推移など、ここでは出さないものへの案内 */
-.lookup__more { margin-top: 12px; font-size: .875rem; color: #4e5255; }
+/* 区の1文。点数（7/12）と棒グラフの代わり。
+   ★住民が知りたいのは自分のAIが何を知れないかで、区の成績ではない（本人の指摘）。 */
+.lookup__miss { margin: 12px 0 4px; font-size: 1rem; color: #1a1a1c; font-weight: 700; }
+/* 手続き1行の札。0/4 のような点数はやめ、状態を言葉で出す */
+.cell__state {
+  font-size: .8125rem; font-weight: 700; white-space: nowrap;
+  padding: 3px 9px; border-radius: 999px;
+  background: #fdecea; color: #8c1d18;
+}
+.cell__state[data-missing="0"] { background: #e8f4ec; color: #0f5c31; }
 
 /* ── 手続きは1行にたたむ ────────────────────────────────
    3手続きぶんの項目・ボタン・注記が全部開いていて、押す所を探せなかった。
@@ -695,7 +680,7 @@ td.marks { white-space: nowrap; }
 .cell__head::-webkit-details-marker { display: none; }
 .cell__head:hover { background: #f7f9fc; border-radius: 12px; }
 .cell__head:focus-visible { outline: 3px solid #0056b3; outline-offset: 2px; }
-.cell__head .score-cell { margin-left: auto; }
+.cell__head .cell__state { margin-left: auto; }
 .cell__chev { color: #6b7280; transition: transform .15s ease; }
 .cell[open] > .cell__head .cell__chev { transform: rotate(180deg); }
 .cell[open] > .cell__head { border-bottom: 1px solid #eef0f4; border-radius: 12px 12px 0 0; }
@@ -784,3 +769,35 @@ td.marks { white-space: nowrap; }
 
 /* スキルへの道。メニューから外したので、本文に置く */
 .lookup__toskill { margin-top: 14px; }
+
+/* ── 調査データ一覧（archive.html）─────────────────────────────
+   ★住民の画面から外した点数と推移は、ここに置く。年月日で引けるようにする。 */
+.survey { border: 1px solid #d8dde3; border-radius: 10px; margin: 12px 0; background: #fff; }
+.survey__head {
+  cursor: pointer; padding: 14px 16px; display: flex; flex-wrap: wrap;
+  align-items: baseline; gap: 10px; list-style: none;
+}
+.survey__head::-webkit-details-marker { display: none; }
+.survey__date { font-weight: 700; font-size: 1rem; }
+.survey__sub { font-size: .875rem; color: #4e5255; }
+.survey__tag {
+  font-size: .75rem; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+  background: #eef1f5; color: #4b5563;
+}
+/* 札と ▾ は右端にまとめる。札の有無で ▾ の位置が動かないように */
+.survey__right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.survey__chev { color: #6b7280; font-size: .875rem; display: inline-block; }
+.survey[open] .survey__chev { transform: rotate(180deg); }
+.survey__body { padding: 0 16px 16px; }
+.survey__note {
+  margin: 0 0 10px; padding: 10px 12px; border-radius: 8px;
+  background: #fff8e6; color: #6b4f00; font-size: .875rem;
+}
+.survey__meta { margin: 0 0 12px; font-size: .8125rem; color: #4e5255; }
+.survey__table { width: 100%; border-collapse: collapse; font-size: .875rem; }
+.survey__table th, .survey__table td {
+  text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e7eb;
+}
+.survey__table thead th { color: #4e5255; font-weight: 700; white-space: nowrap; }
+.survey__table td { font-variant-numeric: tabular-nums; }
+.filelist { margin: 8px 0 0; padding-left: 1.2em; line-height: 2; }

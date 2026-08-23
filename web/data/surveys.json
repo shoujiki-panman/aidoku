@@ -1,0 +1,143 @@
+{
+  "_about": "AI読が実施した調査の一覧。1件が1回の調査で、測った日ごとに並べてある。値が前回と同じ回は same_as_previous を true にしている。",
+  "schema": "aidoku-surveys-1",
+  "runs": [
+    {
+      "measured_at": "2026-08-11T13:52:32+00:00",
+      "measured_on": "2026-08-11",
+      "recorded_at": [
+        "2026-08-17T01:02:39+09:00"
+      ],
+      "recorded_on": [
+        "2026-08-17"
+      ],
+      "recording_status": "legacy_unknown",
+      "procedures": [
+        {
+          "procedure_id": "jidouteate",
+          "procedure": "児童手当の申請",
+          "municipalities": 23,
+          "average": 45.7,
+          "full_marks": 0,
+          "zero": 9
+        },
+        {
+          "procedure_id": "sodaigomi",
+          "procedure": "粗大ごみ収集の申込",
+          "municipalities": 23,
+          "average": 39.6,
+          "full_marks": 0,
+          "zero": 5
+        },
+        {
+          "procedure_id": "tennyu",
+          "procedure": "転入届",
+          "municipalities": 23,
+          "average": 59.6,
+          "full_marks": 1,
+          "zero": 4
+        }
+      ],
+      "observations": 69,
+      "same_as_previous": false
+    },
+    {
+      "measured_at": "2026-08-17T12:56:14+00:00",
+      "measured_on": "2026-08-17",
+      "recorded_at": [
+        "2026-08-17T22:01:07+09:00"
+      ],
+      "recorded_on": [
+        "2026-08-17"
+      ],
+      "recording_status": "legacy_unknown",
+      "procedures": [
+        {
+          "procedure_id": "jidouteate",
+          "procedure": "児童手当の申請",
+          "municipalities": 23,
+          "average": 45.7,
+          "full_marks": 0,
+          "zero": 9
+        },
+        {
+          "procedure_id": "sodaigomi",
+          "procedure": "粗大ごみ収集の申込",
+          "municipalities": 23,
+          "average": 39.6,
+          "full_marks": 0,
+          "zero": 5
+        },
+        {
+          "procedure_id": "tennyu",
+          "procedure": "転入届",
+          "municipalities": 23,
+          "average": 59.6,
+          "full_marks": 1,
+          "zero": 4
+        }
+      ],
+      "observations": 69,
+      "same_as_previous": true
+    },
+    {
+      "measured_at": "2026-08-17T15:10:26+00:00",
+      "measured_on": "2026-08-17",
+      "recorded_at": [
+        "2026-08-18T00:59:18+09:00"
+      ],
+      "recorded_on": [
+        "2026-08-18"
+      ],
+      "recording_status": "legacy_unknown",
+      "procedures": [
+        {
+          "procedure_id": "jidouteate",
+          "procedure": "児童手当の申請",
+          "municipalities": 23,
+          "average": 45.7,
+          "full_marks": 0,
+          "zero": 9
+        },
+        {
+          "procedure_id": "sodaigomi",
+          "procedure": "粗大ごみ収集の申込",
+          "municipalities": 23,
+          "average": 39.6,
+          "full_marks": 0,
+          "zero": 5
+        },
+        {
+          "procedure_id": "tennyu",
+          "procedure": "転入届",
+          "municipalities": 23,
+          "average": 59.6,
+          "full_marks": 1,
+          "zero": 4
+        }
+      ],
+      "observations": 69,
+      "same_as_previous": true
+    }
+  ],
+  "n_runs": 3,
+  "n_distinct": 1,
+  "files": [
+    {
+      "label": "1行1観測のCSV（全期間）",
+      "path": "data/history/measurements.csv"
+    },
+    {
+      "label": "回ごとのスナップショット（JSONL）",
+      "path": "data/history/scores.jsonl"
+    },
+    {
+      "label": "毎日の見張り（JSONL）",
+      "path": "data/history/site-status.jsonl"
+    },
+    {
+      "label": "データの目次（測定条件・sha256）",
+      "path": "data/index.json"
+    }
+  ]
+}

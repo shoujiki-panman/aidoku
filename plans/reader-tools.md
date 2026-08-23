@@ -71,3 +71,6 @@ Bridge CLI / Slack Bridge を差し込む形）と同じ構成にする。
 - 2026-08-23 `link_order` を CONDITION_KEYS に追加。入れないと道具の効果がサイト改善に見える。決定は plans/decisions/link-order.md
 - 2026-08-23 公開済み scores-*.json を再生成（差分は `"link_order": null` の1行のみ・他は完全一致）。index.json も再生成。
 - 2026-08-23 点数への効果は未測定。再測定は claude -p が要るため未実施。武器②表読み・③PDF読みは未着手。
+- 2026-08-23 住民の画面から点数（7/12）・棒グラフ・推移リンクを外し、1文に置き換えた。決定は plans/decisions/resident-vs-data.md
+- 2026-08-23 archive.html（調査データ一覧）を追加。回ごとに測定日・手続き・平均・条件記録の有無を出す。
+- 2026-08-23 **history/scores.jsonl は測定ではなく書き出し実行を記録していた**（measured_on の元が generated_at）。3回ぶんの記録の中身が同一。same_as_previous で明示して回避したが、日付の出所は直っていない。
