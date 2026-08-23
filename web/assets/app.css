@@ -757,3 +757,33 @@ td.marks { white-space: nowrap; }
 /* 開いた手続きの末尾。道のりと、直し方の持ち帰り */
 .cell__more { margin: 12px 0 0; font-size: .875rem; color: #4e5255; }
 .cell__more .linkish { color: #0056b3; }
+
+/* ── 自治体の方向けの画面 ───────────────────────────── */
+.fixpick { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.fixpick__label { font-size: .875rem; color: #4e5255; }
+.fixpick__select {
+  padding: 9px 12px; font-size: 1rem; font-family: inherit; color: #1a1a1c;
+  background: #fff; border: 1px solid #767676; border-radius: 6px; max-width: 16em;
+}
+.fixpick__select:focus-visible { outline: 3px solid #0056b3; outline-offset: 1px; }
+.fixhead { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 0 0 18px; }
+.fixhead b { font-size: 1.25rem; }
+.fixhead__sum { color: #4e5255; font-size: .9375rem; }
+.fixcell {
+  margin-top: 16px; padding: 16px 18px;
+  border: 1px solid #d8dde3; border-radius: 12px; background: #fff;
+}
+.fixcell h3 { display: flex; align-items: baseline; gap: 10px; }
+.fixcell__score { font-weight: 700; color: #b32b2b; }
+.fixcell__score[data-ok="true"] { color: #197a4b; }
+.fixcell__page { font-size: .8125rem; color: #6b7280; word-break: break-all; margin: 6px 0 10px; }
+.fixcell__miss { margin: 0 0 10px; }
+.fixcell__ok { margin: 0 0 10px; color: #197a4b; }
+.fixcell__why { margin: 10px 0; font-size: .9375rem; }
+.fixcell__why summary { cursor: pointer; color: #4e5255; }
+.fixcell__why p { margin: 8px 0 0; color: #1a1a1c; }
+.fixcell__lead { margin: 14px 0 6px; font-weight: 700; }
+.fixcell__acts { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin: 14px 0 0; }
+
+/* スキルへの道。メニューから外したので、本文に置く */
+.lookup__toskill { margin-top: 14px; }
