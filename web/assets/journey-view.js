@@ -294,7 +294,13 @@
           + `${esc(j.municipality)}・${esc(j.procedure)}（${j.got}/${j.total}）</option>`).join('');
         pick.addEventListener('change', () => show(sorted[Number(pick.value)]));
       }
-      show(sorted[0]);
+      // ?muni=setagaya&proc=tennyu で、その1件を開いた状態にする
+      const q = new URLSearchParams(location.search);
+      const want = `${q.get('muni')}/${q.get('proc')}`;
+      const at = sorted.findIndex((j) => `${j.municipality_id}/${j.procedure_id}` === want);
+      const start = at >= 0 ? at : 0;
+      if (pick) pick.value = String(start);
+      show(sorted[start]);
       // 一覧はページに1つ。道のりの選択欄と同じ数字・同じ数え方にする
       renderSame(sorted, (key) => {
         const i = sorted.findIndex((j) => `${j.municipality_id}/${j.procedure_id}` === key);

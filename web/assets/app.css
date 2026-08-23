@@ -753,3 +753,7 @@ td.marks { white-space: nowrap; }
 /* 職員向けの入口。住民の導線の邪魔をしないよう、たたんだ中の末尾に小さく置く */
 .cell__staff { margin: 12px 0 0; font-size: .875rem; }
 .cell__staff .linkish { color: #4e5255; }
+
+/* 開いた手続きの末尾。道のりと、直し方の持ち帰り */
+.cell__more { margin: 12px 0 0; font-size: .875rem; color: #4e5255; }
+.cell__more .linkish { color: #0056b3; }
