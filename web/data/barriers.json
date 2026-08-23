@@ -62,11 +62,11 @@
         "raw": "experiment/out/setagaya-tennyu_2026-08-15.json"
       },
       "counterfactual": {
-        "purpose": "AIがページを読んでいるか、学習済み知識で答えているかの区別",
+        "purpose": "AIが答えられたとき、ページを読んだのか、もともと知っていたのか。それを分けるための実験です。",
         "changed": "期限 14日以内 → 37日以内（他は同一）",
         "returned_original_14": 0,
         "returned_modified_37": 5,
-        "conclusion": "5回とも改変値を返した。ページを読んでいる"
+        "conclusion": "5回とも、書き換えた37日を返した。AIはページを読んでいる。"
       },
       "intervention_tested": {
         "what": "本体ページ /02233/88.html に書かれている実文を、目次ページにも載せた。新しい情報は足していない（要約と項目の抜粋のみ）",
