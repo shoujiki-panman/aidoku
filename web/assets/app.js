@@ -573,6 +573,11 @@ function lookupCellRow(c) {
         <p class="cell__miss">${missingLine(c)}</p>
         ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
         ${nextStepForResident(c)}
+        ${(c.improvements || []).length ? `<p class="cell__staff">
+          <button type="button" class="linkish lookup__open"
+                  data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">
+            区の担当者の方へ — このページをどう直せば届くか（${(c.improvements || []).length}項目）</button>
+        </p>` : ''}
       </div>
     </details>
   </li>`;

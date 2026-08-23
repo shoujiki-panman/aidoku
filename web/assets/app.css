@@ -749,3 +749,7 @@ td.marks { white-space: nowrap; }
   background: #eef0f4; color: #4e5255;
   font-size: .75rem; font-weight: 700; vertical-align: middle;
 }
+
+/* 職員向けの入口。住民の導線の邪魔をしないよう、たたんだ中の末尾に小さく置く */
+.cell__staff { margin: 12px 0 0; font-size: .875rem; }
+.cell__staff .linkish { color: #4e5255; }
