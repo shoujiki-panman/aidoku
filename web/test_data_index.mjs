@@ -37,7 +37,16 @@ for (const d of idx.datasets) {
   ok(`${d.path} の bytes が実体と一致`, d.bytes === statSync(p).size, `${d.bytes} vs ${statSync(p).size}`);
   ok(`${d.path} の sha256 が実体と一致`, d.sha256 === createHash('sha256').update(raw).digest('hex'));
   ok(`${d.path} に説明がある`, (d.description || '').length >= 10);
-  if (d.records) {
+  if (d.records && d.records.path === 'row') {
+    // CSV は1行1観測。見出し行を除いた行数で数える
+    const text = raw.toString('utf8');
+    const rows = text.split('\n').filter((l) => l.trim()).length - 1;
+    ok(`${d.path} の行数が実体と一致`, rows === d.records.count, `${d.records.count} vs ${rows}`);
+    ok(`${d.path} に列の説明がある`, Object.keys(d.columns || {}).length >= 5);
+    const head = text.split('\n')[0].replace(/\r$/, '').split(',');
+    ok(`${d.path} の見出しと列の説明が一致`,
+      head.every((h) => h in (d.columns || {})), head.join('|'));
+  } else if (d.records) {
     const doc = JSON.parse(raw.toString('utf8'));
     const got = doc[d.records.path];
     ok(`${d.path} の件数が実体と一致`, Array.isArray(got) && got.length === d.records.count,
