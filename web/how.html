@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AIがつまずいた段差 #1 — 世田谷区・転入届 | AI読（アイドク）</title>
-<meta name="description" content="住民のAIが世田谷区の転入届ページでつまずいた段差を、発見から再検証まで通した記録。直したら5回中5回取れるようになりました。">
+<title>この数字はどう作られたか — 測り方の中身 | AI読（アイドク）</title>
+<meta name="description" content="AI読が実施した調査を、測った日ごとに並べた一覧。各回の手続き・自治体数・平均点と、そのときのファイルへのリンクを置いています。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -15,10 +15,8 @@
 <link rel="stylesheet" href="vendor/dads/components/notification-banner/notification-banner.css">
 <link rel="stylesheet" href="assets/shell.css">
 <link rel="stylesheet" href="assets/app.css">
-<link rel="stylesheet" href="assets/barrier.css">
 </head>
 <body>
-
 <div class="shell">
   <header class="topbar">
     <div class="topbar__inner">
@@ -28,63 +26,71 @@
         <ul class="menu__list">
           <li><a href="index.html">住民の方 — 自分の区を調べる</a></li>
           <li><a href="fix.html">自治体の方 — 自分の区を直す</a></li>
-          <li><a href="data.html" aria-current="page">調べ方とデータ</a></li>
+          <li><a href="data.html">調べ方とデータ</a></li>
         </ul>
       </details>
     </div>
   </header>
   <div class="shell__main">
 
-<header class="site-header">
-  <div class="wrap">
-    <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
-    <h1 class="dads-heading" data-size="xl">AIがつまずいた段差</h1>
-    <p class="site-header__lead"><strong>見つけて、直して、本当に直ったか測って、記録を公開するまで。</strong><br>
-      1件を最後まで通した記録です。</p>
-  </div>
-</header>
-
-
+  <header class="site-header">
+    <div class="wrap">
+      <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
+      <h1 class="dads-heading" data-size="xl">この数字はどう作られたか</h1>
+      <p class="site-header__lead" id="lead"></p>
+    </div>
+  </header>
 
 <main class="wrap" id="main">
 
-  <p class="section-note"><a class="dads-link" href="journey.html">▶ AIがどこから入って、どこで力尽きたかのマップを見る</a></p>
-
   <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
-    <!-- アイコンの svg を省略してはいけない。DADS のバナー見出しは
-         「アイコン36px / 本文1fr / auto」の3カラムグリッドなので、
-         svg を抜くと本文が36pxの列に入って1文字ずつ縦に並ぶ。 -->
     <p class="dads-notification-banner__heading">
       <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="情報">
         <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
         <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
       </svg>
-      <span class="dads-notification-banner__heading-text" id="banner-head">読み込み中</span>
+      <span class="dads-notification-banner__heading-text">ここは参照用です</span>
     </p>
     <div class="dads-notification-banner__body">
-      <p id="banner-body"></p>
+      <p>自分の区の手続きを調べたいだけなら、<a class="dads-link" href="index.html">住民の方の入口</a>へ。
+        このページは、点数の作られ方を確かめたい方のためのものです。
+        このページの数字はすべて<a class="dads-link" href="data/pipeline.json">実ファイルを数えた値</a>です。</p>
     </div>
   </div>
 
-  <!-- 段差1件を、住民の質問から Open Data まで縦に1本で見せる。
-       点数を並べるのではなく「何が起きて、何を変えたら、どうなったか」を追える形にする。 -->
-  <ol class="flow" id="flow" aria-label="段差を見つけてから記録を公開するまで"></ol>
-
-  <hr class="dads-divider">
-
-  <section aria-labelledby="honest-heading">
-    <h2 class="dads-heading" data-size="l" id="honest-heading">まだ言えないこと</h2>
-    <p class="section-note">ここを隠すと、この記録の意味が無くなります。</p>
-    <ul class="honest" id="honest"></ul>
+  <section aria-labelledby="layers-heading">
+    <h2 class="dads-heading" data-size="l" id="layers-heading">外に出るのは1層だけ</h2>
+    <p class="section-note">外部に接続するのは取得層だけです。読解層と採点層は保存済みのページしか読まないので、
+      何度作り直しても自治体サイトに負荷をかけません。</p>
+    <div id="layers"></div>
   </section>
 
   <hr class="dads-divider">
 
-  <section aria-labelledby="data-heading">
-    <h2 class="dads-heading" data-size="l" id="data-heading">この記録を使う</h2>
-    <p class="section-note">点数ではなく<strong>「どこでつまずき、何を変えたら改善したか」</strong>をデータにしています。誰でも再現・再利用できます。</p>
-    <ul class="datalist" id="datalist"></ul>
-    <p class="section-note" id="license-note"></p>
+  <section aria-labelledby="scoring-heading">
+    <h2 class="dads-heading" data-size="l" id="scoring-heading">AIには点を出させない</h2>
+    <p class="section-note">当初は同じ入力でも点数が15点揺れました。「正解か、惜しいか」の線引きをAIに委ねていたためです。
+      いまは人が必須要素をあらかじめ決め、AIには<strong>項目ごとの有無だけ</strong>を答えさせ、点は機械的に計算します。</p>
+    <p class="pipe__fact" id="calibration"></p>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="cond-heading">
+    <h2 class="dads-heading" data-size="l" id="cond-heading">条件が違うデータは、比べさせない</h2>
+    <p class="section-note">道具を良くして点が上がったものを「サイトが直った」と読ませないための仕組みです。
+      測定条件をまとめて署名にし、署名が違う記録どうしは比較を拒否します。</p>
+    <p class="pipe__fact" id="cond"></p>
+    <ul class="condlist" id="condkeys"></ul>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="exp-heading">
+    <h2 class="dads-heading" data-size="l" id="exp-heading">ページを書き換えて確かめた</h2>
+    <p class="section-note" id="exp"></p>
+    <p class="pipe__fact" id="cf"></p>
+    <p class="section-note">記録は <a class="dads-link" href="journey.html#proof-heading">AIの道のり</a> にもあります。</p>
   </section>
 
 </main>
@@ -103,9 +109,10 @@
   </div>
 </div>
 
-<script src="assets/barrier.js"></script>
 <script src="ask-ai-button.js" defer data-selector="main"
         data-actions="procedure" data-label="AIに渡す"></script>
+<script src="assets/pipeline-list.js"></script>
+<script src="assets/pipeline-view.js"></script>
 <script src="assets/shell.js" defer></script>
 </body>
 </html>

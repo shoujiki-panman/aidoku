@@ -801,3 +801,26 @@ td.marks { white-space: nowrap; }
 .survey__table thead th { color: #4e5255; font-weight: 700; white-space: nowrap; }
 .survey__table td { font-variant-numeric: tabular-nums; }
 .filelist { margin: 8px 0 0; padding-left: 1.2em; line-height: 2; }
+
+
+/* ── この数字はどう作られたか（how.html）───────────────────────
+   ★「優れた技術要素あるんかな、ただのサイトみたいになってしまった」と言われた。
+     コードの7割が画面に出ていなかったので、出す。数字はすべて実ファイル由来。 */
+.layerlist { list-style: none; margin: 12px 0 0; padding: 0; }
+.layer { border: 1px solid #d8dde3; border-radius: 10px; padding: 14px 16px; margin: 10px 0; background: #fff; }
+.layer[data-net="true"] { border-color: #0056b3; border-width: 2px; }
+.layer__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+.layer__name { font-size: 1rem; }
+.layer__dir { font-size: .75rem; color: #4e5255; background: #f0f2f5; padding: 2px 6px; border-radius: 4px; }
+.layer__tag {
+  font-size: .75rem; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+  background: #e8f0fb; color: #0056b3;
+}
+.layer__lines { margin-left: auto; font-size: .8125rem; color: #4e5255; font-variant-numeric: tabular-nums; }
+.layer__bar { margin-top: 8px; height: 6px; border-radius: 999px; background: #eef1f5; overflow: hidden; }
+.layer__bar > span { display: block; height: 100%; background: #8fb4d0; border-radius: 999px; }
+.layer[data-net="true"] .layer__bar > span { background: #0056b3; }
+.layer__what { margin: 8px 0 0; font-size: .875rem; color: #4e5255; }
+.pipe__fact { margin: 12px 0 0; font-size: 1rem; font-weight: 700; color: #1a1a1c; }
+.condlist { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; padding: 0; }
+.condlist code { font-size: .75rem; background: #f0f2f5; padding: 3px 8px; border-radius: 4px; color: #4e5255; }

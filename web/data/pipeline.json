@@ -1,0 +1,119 @@
+{
+  "_about": "この数字がどう作られたか。行数・テスト数・較正の件数は実ファイルを数えた値。",
+  "schema": "aidoku-pipeline-1",
+  "layers": [
+    {
+      "dir": "crawler",
+      "name": "取得層",
+      "what": "外部に接続するのはここだけ。robots.txt を守り、同じドメインへの間隔を3秒以上あけ、取得したページを保存する。",
+      "files": 5,
+      "lines": 1270,
+      "test_files": 5
+    },
+    {
+      "dir": "extractor",
+      "name": "読解層",
+      "what": "保存済みのページだけを読む。AIに渡すのは本文とリンク一覧で、リンクは手続きに近い順に並べ替えてから上限40件で切る。",
+      "files": 5,
+      "lines": 976,
+      "test_files": 1
+    },
+    {
+      "dir": "scorer",
+      "name": "採点層",
+      "what": "AIには点を出させない。項目ごとの有無だけを答えさせ、点は決められた配点で機械的に計算する。",
+      "files": 3,
+      "lines": 567,
+      "test_files": 1
+    },
+    {
+      "dir": "analysis",
+      "name": "集計・検証",
+      "what": "公開するJSON/CSVを組み立て、出したデータ自身を検査する。",
+      "files": 17,
+      "lines": 2910,
+      "test_files": 7
+    },
+    {
+      "dir": "gatekeeper",
+      "name": "AI窓口",
+      "what": "デジタル庁OSS「源内」のAIアプリAPI仕様に準拠した独立API。",
+      "files": 12,
+      "lines": 1855,
+      "test_files": 4
+    },
+    {
+      "dir": "web/assets",
+      "name": "画面",
+      "what": "静的ファイルのみ。ビルドを持たない。",
+      "files": 17,
+      "lines": 2912,
+      "test_files": 11
+    }
+  ],
+  "condition_keys": [
+    "measurement_version",
+    "prompt_version",
+    "follow",
+    "max_follow",
+    "max_depth",
+    "beam",
+    "max_fetches",
+    "max_text_chars",
+    "max_links",
+    "link_order",
+    "model",
+    "model_version"
+  ],
+  "calibration": {
+    "what": "人手で作った正解データ。判定器のぶれを測るために使う",
+    "by_procedure": {
+      "tennyu": {
+        "rows": 12,
+        "municipalities": 3
+      },
+      "jidouteate": {
+        "rows": 0,
+        "municipalities": 0
+      },
+      "sodaigomi": {
+        "rows": 0,
+        "municipalities": 0
+      }
+    },
+    "missing": [
+      "jidouteate",
+      "sodaigomi"
+    ],
+    "note": "較正の無い手続きでは、点が動いたときに「サイトが変わった」と「判定器が変わった」を区別できない。差を見るときはここを先に見ること。"
+  },
+  "experiment": {
+    "file": "../experiment/out/setagaya-tennyu_2026-08-15.json",
+    "trials": 5,
+    "model": "claude-sonnet-5",
+    "run_at": "2026-08-15T09:20:15+00:00",
+    "variants": [
+      {
+        "key": "before",
+        "label": "現状の目次ページ（区の公式サイトそのまま・2026-07-22 取得）",
+        "all_four": 0
+      },
+      {
+        "key": "after",
+        "label": "目次ページに4項目を書き足した版",
+        "all_four": 5
+      },
+      {
+        "key": "counterfactual",
+        "label": "反実仮想（期限だけ 14日→37日 に変えた版）",
+        "all_four": 5
+      }
+    ]
+  },
+  "counterfactual": {
+    "changed": "期限 14日以内 → 37日以内（他は同一）",
+    "returned_original": 0,
+    "returned_modified": 5,
+    "conclusion": "5回とも、書き換えた37日を返した。AIはページを読んでいる。"
+  }
+}
