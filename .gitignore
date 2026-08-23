@@ -16,3 +16,7 @@ analysis/out/evidence-checked/
 .ruff_cache/
 report/
 
+# クラウド同期ソフトが競合したときに作る複製（「journey 2.js」「archive 2.json」）。
+# 本体を古い版に巻き戻す事故のもとなので、git には載せない。
+* [2-9].*
+

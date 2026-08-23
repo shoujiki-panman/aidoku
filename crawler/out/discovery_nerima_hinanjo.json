@@ -1,0 +1,468 @@
+{
+  "municipality": "練馬区",
+  "municipality_id": "nerima",
+  "procedure": "避難所",
+  "procedure_id": "hinanjo",
+  "top_url": "https://www.city.nerima.tokyo.jp/",
+  "candidates": [
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/kaisetuhinanjo.html",
+      "link_text": "避難所（風水害）の開設状況",
+      "hops": 2,
+      "score": 24,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1411,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/suigaizinohinannzyo.html",
+      "link_text": "風水害時の避難所一覧",
+      "hops": 3,
+      "score": 24,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/kaisetuhinanjo.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4220,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/suigaikansenshou.html",
+      "link_text": "避難所における感染症対策",
+      "hops": 3,
+      "score": 17,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/kaisetuhinanjo.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1502,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/hinannzyouhou.html",
+      "link_text": "発令中の避難情報",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1153,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/bousaigakusyuu.html",
+      "link_text": "防災学習",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1104,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/jishinokitara/hinanjo/hinanjyoitiran.html",
+      "link_text": "避難拠点（地震）の開設状況",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5469,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/jishinsonae/bousai_chizu.html",
+      "link_text": "防災地図・避難拠点一覧",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1911,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/suigaihinan.html",
+      "link_text": "風水害時の避難",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2800,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/index.html",
+      "link_text": "ねりま災害ポータル",
+      "hops": 1,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1843,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/hazardmap.html",
+      "link_text": "練馬区水害ハザードマップ",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4362,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/johohasshin/bousainotebiki.html",
+      "link_text": "防災の手引",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1533,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/aratana_bousaikisyou.html",
+      "link_text": "気象庁が発表する新たな防災気象情報の運用開始について",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/kaisetuhinanjo.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1540,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/huusuigaihen.html",
+      "link_text": "風水害編",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/hinannzyouhou.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1092,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/zisinhen.html",
+      "link_text": "地震編",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/hinannzyouhou.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 973,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/index.html",
+      "link_text": "防災・安全安心情報",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1952,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/neltutyuusyou.html",
+      "link_text": "ねりま情報メール配信項目に【熱中症警戒情報（熱中症警戒アラート）】が追加されます",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/hinannzyouhou.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1707,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/suiboutyannneru.html",
+      "link_text": "東京都水防チャンネル（YouTube）【河川の定点映像】",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/bousaigakusyuu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1100,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/kasennsuiizyouhou.html",
+      "link_text": "河川の水位情報（定点映像など）",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/bousaigakusyuu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1397,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/koukyou-jouhou.html",
+      "link_text": "公共情報（鉄道・バス・ライフライン・通信・道路）",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/bousaigakusyuu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1429,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/index.html",
+      "link_text": "安全・安心（防犯・防火）",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1293,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/patrolcar/index.html",
+      "link_text": "安全・安心パトロールカー",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1037,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/network.html",
+      "link_text": "ねりま安全・安心パトロールネットワーク",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1891,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/volunteer.html",
+      "link_text": "学校安全安心ボランティア",
+      "hops": 2,
+      "score": 7,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1384,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
+      "link_text": "区内で特殊詐欺が多発しています",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3334,
+      "has_jsonld": false
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kusei/koho/publication/index.html",
+      "link_text": "便利帳・くらしガイド（For Foreign Residents）",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1009,
+      "has_jsonld": false
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kusei/koho/publication/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/kaisetuhinanjo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/hinannzyouhou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/bousaigakusyuu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/jishinokitara/hinanjo/hinanjyoitiran.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/jishinsonae/bousai_chizu.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/suigaihinan.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/hazardmap.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/johohasshin/bousainotebiki.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/patrolcar/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/network.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/volunteer.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/suigaizinohinannzyo.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/suigaikansenshou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/suigai/aratana_bousaikisyou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/huusuigaihen.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/zisinhen.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/neltutyuusyou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/suiboutyannneru.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/kasennsuiizyouhou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/saigaipotal/koukyou-jouhou.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "error": null
+    }
+  ]
+}

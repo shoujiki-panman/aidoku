@@ -3,6 +3,11 @@
 // ★「3回ぶんの記録がある」と「3回調べた」は違う。いまの履歴は、書き出しを
 //   走らせた回を記録していて、345観測すべて値が同じ。ここで言い分けないと、
 //   画面が勝手に「3回調べました」と言うことになる。
+//
+// ★日付も同じ。surveys.json が持つ exported_at は書き出しを走らせた時刻で、
+//   measured_at（実際に測った時刻）は記録が無ければ null。**null を exported_at で
+//   埋めない。** 埋めた表示が「3回調べました」の正体だった。
+//   → plans/decisions/resident-vs-data.md
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) module.exports = factory();
   else root.AidokuArchive = factory();
@@ -60,5 +65,23 @@
     return typeof a === 'number' ? `${a}点` : '記録なし';
   }
 
-  return { jpDateTime, jpDate, headline, runSummary, conditionLabel, repeatNote, averageText };
+  // その回の見出しに出す日時。★出せるのは「書き出した時刻」であって測定時刻ではない。
+  // 以前はこれを「◯月◯日に測定」と書いていた。書き出しを流し直しただけの回まで
+  // 「その日に測った」ことになるので、言い方を実態に合わせる。
+  function exportedLabel(run) {
+    const t = jpDateTime((run || {}).exported_at);
+    return t ? `${t} に書き出し` : '書き出し時刻の記録なし';
+  }
+
+  // 実際に測った日時。記録が無いなら「無い」と書く。書き出し時刻で代用しない
+  function measuredLabel(run) {
+    const t = jpDateTime((run || {}).measured_at);
+    if (t) return `測った日時: ${t}`;
+    return '測った日時: 記録なし（この回の日付は書き出しを走らせた時刻です）';
+  }
+
+  return {
+    jpDateTime, jpDate, headline, runSummary, conditionLabel, repeatNote, averageText,
+    exportedLabel, measuredLabel,
+  };
 });

@@ -23,7 +23,10 @@ from pathlib import Path
 from unittest import mock
 
 ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(ROOT / "crawler"))
 sys.path.insert(0, str(ROOT))
+from htmlutil import parse  # noqa: E402
+
 from extractor import batch as extraction_batch  # noqa: E402
 from extractor import extract, fact_extract  # noqa: E402
 from extractor.extract import is_non_html, pick_page  # noqa: E402
@@ -292,6 +295,66 @@ class FactTypeCallTest(unittest.TestCase):
                 json.loads(llm_reply(source="jsonld")),
                 fact_extract.allowed_sources(meta),
             )
+
+    def test_表を見出しつきでpromptへ渡す(self):
+        case = TestCase("tennyu", "documents", "質問", "1.0")
+        fetcher = FakeFetcher(
+            "<p>本文</p><table>"
+            "<tr><th>区分</th><th>必要書類</th></tr>"
+            "<tr><th>国内転入</th><td>転出証明書</td></tr></table>")
+        prompt, meta, _ = build_input(page(), "練馬区", "転入届", case, fetcher)
+        self.assertIn("## このページの表", prompt)
+        self.assertIn("【国内転入】必要書類: 転出証明書", prompt)
+        self.assertGreater(meta["table_chars"], 0)
+
+    def test_表の無いページには表の節を足さない(self):
+        case = TestCase("tennyu", "documents", "質問", "1.0")
+        prompt, meta, _ = build_input(
+            page(), "練馬区", "転入届", case, FakeFetcher())
+        self.assertNotIn("## このページの表", prompt)
+        self.assertEqual(meta["table_chars"], 0)
+
+    def test_本文と表の合計がMAX_TEXT_CHARSを超えない(self):
+        row = "<tr><th>区分</th><td>転出証明書</td></tr>"
+        tables = parse(f"<table>{row * 200}</table>", "https://example.jp/").tables
+        text = "あ" * (fact_extract.MAX_TEXT_CHARS - 100)
+        section = fact_extract.table_section(text, tables)
+        self.assertEqual(len(section), 100)
+        self.assertLessEqual(
+            len(text[:fact_extract.MAX_TEXT_CHARS]) + len(section),
+            fact_extract.MAX_TEXT_CHARS)
+
+    def test_本文が上限を埋めているときは表を渡さない(self):
+        # ★本文を削ってまで表を入れない。減った側の損は測りようがない
+        tables = parse(
+            "<table><tr><th>手数料</th><td>無料</td></tr></table>",
+            "https://example.jp/").tables
+        long_text = "あ" * (fact_extract.MAX_TEXT_CHARS + 1)
+        self.assertEqual(fact_extract.table_section(long_text, tables), "")
+
+    def test_表の字数はMAX_TABLE_CHARSで打ち切る(self):
+        row = f"<tr><th>区分</th><td>{'書' * 100}</td></tr>"
+        tables = parse(f"<table>{row * 80}</table>", "https://example.jp/").tables
+        self.assertEqual(
+            len(fact_extract.table_section("本文", tables)),
+            fact_extract.MAX_TABLE_CHARS)
+
+    def test_表から引いた根拠を捏造扱いにしない(self):
+        case = TestCase("tennyu", "documents", "質問", "1.0")
+        fetcher = FakeFetcher(
+            "<table><tr><th>必要書類</th><td>転出証明書と本人確認書類</td></tr></table>")
+        reply = json.dumps({
+            "item": {
+                "found": True, "value": "転出証明書",
+                "evidence": "【必要書類】転出証明書と本人確認書類",
+                "source": "html", "failure_reason": None,
+            },
+            "follow_urls": [], "page_notes": "",
+        }, ensure_ascii=False)
+        with mock.patch.object(fact_extract, "call_claude", return_value=reply):
+            record, _, _ = run_test_case(
+                page(), "練馬区", "転入届", case, fetcher, "model", False)
+        self.assertEqual(record["result"]["evidence_check"]["verdict"], "exact")
 
     def test_found_trueでfollow要求を出したら取得前に拒否する(self):
         case = TestCase("tennyu", "documents", "質問", "1.0")

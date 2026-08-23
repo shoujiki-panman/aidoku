@@ -22,6 +22,7 @@ CONDITION_KEYS = (
     "max_text_chars",
     "max_links",
     "link_order",
+    "table_reading",
     "model",
     "model_version",
 )
@@ -37,6 +38,7 @@ POSITIVE_INT_KEYS = (
 STRING_KEYS = (
     "measurement_version",
     "link_order",
+    "table_reading",
     "prompt_version",
     "model",
     "model_version",
@@ -166,7 +168,8 @@ def require_discovery_measurement(value: object) -> dict:
 
 def build_measurement(discovery: object, *, prompt: str, follow: bool,
                       max_follow: int, max_text_chars: int, max_links: int,
-                      link_order: str, model_version: str, run_at: str) -> dict:
+                      link_order: str, table_reading: str,
+                      model_version: str, run_at: str) -> dict:
     """探索時の実測値と抽出時の設定を1つの記録へまとめる。"""
     source = require_discovery_measurement(discovery)
     measurement = {
@@ -181,6 +184,7 @@ def build_measurement(discovery: object, *, prompt: str, follow: bool,
         "max_text_chars": max_text_chars,
         "max_links": max_links,
         "link_order": link_order,
+        "table_reading": table_reading,
         "model": "claude-cli",
         "model_version": model_version,
         "run_at": run_at,

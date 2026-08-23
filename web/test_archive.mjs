@@ -50,6 +50,27 @@ check('条件を記録した回はそう書く', A.conditionLabel('recorded').in
 check('混在も言い分ける', A.conditionLabel('mixed').includes('違います'));
 check('知らない値は不明と書く', A.conditionLabel('なにか').includes('不明'));
 
+// --- 日付の言い方。★書き出し時刻を「測定」と呼ばない ---
+{
+  const run = { exported_at: '2026-08-17T12:56:14+00:00', measured_at: null };
+  check('★見出しは「書き出し」と言う', A.exportedLabel(run) === '2026年8月17日 12:56 に書き出し',
+        A.exportedLabel(run));
+  check('★見出しに「測定」と書かない', !A.exportedLabel(run).includes('測定'), A.exportedLabel(run));
+  check('★実測時刻が無ければ「記録なし」と書く',
+        A.measuredLabel(run).includes('記録なし'), A.measuredLabel(run));
+  check('★実測時刻の欄に書き出し時刻を出さない',
+        !A.measuredLabel(run).includes('12:56'), A.measuredLabel(run));
+
+  const measured = {
+    exported_at: '2026-08-17T12:56:14+00:00',
+    measured_at: '2026-07-22T04:05:06+00:00',
+  };
+  check('実測時刻があればそれを出す',
+        A.measuredLabel(measured) === '測った日時: 2026年7月22日 04:05', A.measuredLabel(measured));
+  check('書き出し時刻の記録が無い回も落ちない',
+        A.exportedLabel({}).includes('記録なし') && A.measuredLabel().includes('記録なし'));
+}
+
 // --- 同じ値の但し書き ---
 check('同じ値の回に但し書きが付く', A.repeatNote({ same_as_previous: true }).includes('測り直した結果ではなく'));
 check('違う値の回には付かない', A.repeatNote({ same_as_previous: false }) === '');
@@ -62,9 +83,27 @@ check('引数無しでも落ちない', A.repeatNote() === '');
   check('★指紋は公開データに残っていない',
         doc.runs.every((r) => r.procedures.every((p) => !('fingerprint' in p))));
   check('全期間のファイルが並んでいる', Array.isArray(doc.files) && doc.files.length >= 3);
-  check('各回に測定日がある', doc.runs.every((r) => /^\d{4}-\d{2}-\d{2}$/.test(r.measured_on)));
+  check('各回に書き出し日がある', doc.runs.every((r) => /^\d{4}-\d{2}-\d{2}$/.test(r.exported_on)));
+  check('★書き出し時刻を measured_at という名前で出していない',
+        doc.runs.every((r) => r.measured_at !== r.exported_at));
+  check('★実測時刻が無い回は null のまま（それらしい日付を作らない）',
+        doc.runs.every((r) => r.measured_at_status === 'recorded'
+          ? /^\d{4}-\d{2}-\d{2}$/.test(r.measured_on)
+          : r.measured_at === null && r.measured_on === null));
+  check('★いまの公開データは実測時刻が全件不明', doc.n_measured_unknown === doc.n_runs,
+        `${doc.n_measured_unknown}/${doc.n_runs}`);
+  check('★説明文が「書き出し時刻であって測定時刻ではない」と言っている',
+        String(doc._about).includes('測定した時刻ではない'), doc._about);
   check('★いまの記録は3回・値が違うのは1回', doc.n_runs === 3 && doc.n_distinct === 1,
         `${doc.n_runs}/${doc.n_distinct}`);
+}
+
+// --- 画面が測定時刻を騙らないこと（DOM組み立て側の文字列を直接見る） ---
+{
+  const view = readFileSync(new URL('./assets/archive-view.js', import.meta.url), 'utf8');
+  check('★カードの見出しに「に測定」を戻していない', !view.includes('に測定'), 'archive-view.js');
+  check('カードは exportedLabel を使う', view.includes('A.exportedLabel(run)'));
+  check('カードは measuredLabel を使う', view.includes('A.measuredLabel(run)'));
 }
 
 // --- 画面から点数を外したこと ---

@@ -185,5 +185,67 @@ class ScoreOneTest(unittest.TestCase):
         self.assertEqual([f["field"] for f in r["fields"]], FIELDS)
 
 
+class GoldenFilesTest(unittest.TestCase):
+    """置いてあるゴールデンセットそのものを検査する。
+
+    ⚠️ これは「採点器のコード」ではなく「人手で書いた正解データ」のテスト。
+    ここが崩れると、点が動いたときに *サイトが変わった* と *判定器が変わった* を
+    切り分けられなくなる（較正の穴）。手続きを増やしたら CSV を足すだけで検査対象に入る。
+    """
+
+    @staticmethod
+    def _procedures() -> list[str]:
+        return sorted(p.stem for p in (Path(__file__).parent / "golden").glob("*.csv"))
+
+    def test_ゴールデンセットが1つ以上ある(self):
+        self.assertTrue(self._procedures(), "golden/*.csv が1つも無い")
+
+    def test_全部読める(self):
+        for proc in self._procedures():
+            with self.subTest(procedure=proc):
+                self.assertTrue(score.load_golden(proc), f"{proc}.csv に行が無い")
+
+    def test_記載ありの行には必須要素がある(self):
+        """要素が無いと judge() が「未採点」で止まり、0点として合計に混ざる。"""
+        for proc in self._procedures():
+            for key, row in score.load_golden(proc).items():
+                if not row.expected_found:
+                    continue
+                with self.subTest(procedure=proc, row=key):
+                    self.assertTrue(row.required_elements, "expected_found=true なのに要素が空")
+
+    def test_記載なしの行には必須要素を書かない(self):
+        """記載なしはルールだけで判定する。要素を書いても使われず、分母を誤解させる。"""
+        for proc in self._procedures():
+            for key, row in score.load_golden(proc).items():
+                if row.expected_found:
+                    continue
+                with self.subTest(procedure=proc, row=key):
+                    self.assertEqual(row.required_elements, [])
+
+    def test_スロット名が行の中で重複しない(self):
+        """重複すると stability.py の要素集計が同じキーに潰れ、ぶれ幅を取りこぼす。"""
+        for proc in self._procedures():
+            for key, row in score.load_golden(proc).items():
+                names = [s for s, _ in row.required_elements]
+                with self.subTest(procedure=proc, row=key):
+                    self.assertEqual(len(names), len(set(names)), f"スロット名が重複: {names}")
+
+    def test_出典URLが必ず書いてある(self):
+        """どのページを読んで書いたかが辿れないゴールデンは、後から検証できない。"""
+        for proc in self._procedures():
+            for key, row in score.load_golden(proc).items():
+                with self.subTest(procedure=proc, row=key):
+                    self.assertTrue(row.source_url.startswith("http"))
+
+    def test_自治体ごとに4項目そろっている(self):
+        """1項目でも欠けると、その自治体の合計点が他と比べられなくなる。"""
+        for proc in self._procedures():
+            rows = score.load_golden(proc)
+            for mid in sorted({m for m, _ in rows}):
+                with self.subTest(procedure=proc, municipality=mid):
+                    self.assertEqual(sorted(f for m, f in rows if m == mid), sorted(FIELDS))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

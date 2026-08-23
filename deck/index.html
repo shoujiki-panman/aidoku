@@ -32,22 +32,30 @@ th,td{text-align:left;padding:15px 18px;border-bottom:1px solid var(--line);}
 th{background:var(--paper);font-size:22px;color:var(--gray);}
 .pill{display:inline-block;background:#e8f0fb;color:var(--blue);border-radius:999px;
       padding:5px 18px;font-size:20px;font-weight:700;}
-.flow{display:flex;align-items:stretch;gap:0;margin-top:46px;}
-.step{flex:1;border:1px solid var(--line);border-radius:14px;padding:26px 24px;}
-.step .t{font-size:20px;color:var(--blue);font-weight:700;}
-.step .b{font-size:27px;margin-top:10px;line-height:1.45;}
-.arrow{display:flex;align-items:center;padding:0 14px;font-size:34px;color:#b9c0c9;}
+.flow{display:flex;align-items:stretch;gap:0;margin-top:26px;}
+.step{flex:1;border:1px solid var(--line);border-radius:12px;padding:16px 16px;}
+.step .t{font-size:19px;color:var(--blue);font-weight:700;}
+.step .b{font-size:22px;margin-top:6px;line-height:1.4;}
+.arrow{display:flex;align-items:center;padding:0 10px;font-size:28px;color:#b9c0c9;}
 .note{margin-top:32px;background:var(--amberbg);border:1px solid #e6c866;border-radius:12px;
       padding:22px 26px;font-size:25px;line-height:1.6;color:#6b5500;}
-.rank{display:flex;gap:12px;margin-top:44px;align-items:flex-end;height:300px;}
+.rank{display:flex;gap:12px;margin-top:26px;align-items:flex-end;height:186px;}
 .bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:8px;}
 .bar .b{width:100%;border-radius:6px 6px 0 0;}
 .bar .l{font-size:15px;color:var(--gray);white-space:nowrap;}
 .bar .s{font-size:17px;font-weight:700;}
+/* 実画面のキャプチャ。1600×900の原寸から必要な部分だけを切り出し、読める縮尺で見せる */
+.shots{display:flex;gap:26px;margin-top:22px;align-items:flex-start;}
+.shot{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#fff;}
+.shot img{position:absolute;left:0;top:0;transform-origin:0 0;}
+.cap{font-size:19px;color:var(--gray);line-height:1.5;margin-top:9px;}
+.cap b{color:var(--ink);}
 #od table{font-size:22px;margin-top:18px;}
-#od th,#od td{padding:8px 16px;line-height:1.45;}
-  #od .note{margin-top:14px;font-size:21px;}
-#od .note{margin-top:24px;font-size:23px;}
+#od th,#od td{padding:6px 16px;line-height:1.42;}
+#od .note{margin-top:12px;font-size:21px;padding:14px 22px;}
+#tech table{font-size:23px;margin-top:0;}
+#tech th,#tech td{padding:6px 14px;line-height:1.42;}
+#tech .note{margin-top:12px;font-size:21px;padding:14px 22px;line-height:1.5;}
 </style></head><body>
 
 <!-- 1 表紙 -->
@@ -58,7 +66,7 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
     あなたの区のサイトを、AIの愛読書に。
   </div>
   <div class="lead">
-    自治体サイトが「AIに読めるか」を採点し、<strong>読めない箇所と直す文面まで</strong>返す。<br>
+    自治体サイトが「AIに読めるか」を実測し、<strong>読めなかった項目と直す文面まで</strong>返す。<br>
     デジタル庁OSS「源内」のAIアプリとして、職員がいつも使う場所で動く。
   </div>
   <div class="foot"><span>AI読（1名のチーム）</span><span>自由課題</span></div>
@@ -71,12 +79,12 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
   <div class="lead">東京23区の転入届ページを、AIに読ませて実測した（2026-07-22）。</div>
   <div class="cols">
     <div class="card ok"><div class="n">4項目すべて読めた区</div><div class="v">港区だけ</div></div>
-    <div class="card ng"><div class="n">ほとんど読めない区</div><div class="v">4区</div></div>
-    <div class="card ng"><div class="n">手数料が見つからない</div><div class="v">22区</div></div>
+    <div class="card ng"><div class="n">4項目とも読めなかった区</div><div class="v">4区</div></div>
+    <div class="card ng"><div class="n">手数料が読めない区</div><div class="v">22区</div></div>
   </div>
   <div class="lead" style="margin-top:40px;">
     住民がAIに尋ねても、正しい答えが返らない区がある。<br>
-    原因はサイトの書き方にあるが、<strong>担当者はそれに気づく手段を持たない。</strong>
+    原因はページの書き方にあるが、<strong>担当者はそれに気づく手段を持たない。</strong>
   </div>
   <div class="foot"><span>読ませた4項目：必要書類／窓口・オンライン可否／期限／手数料</span><span>2</span></div>
 </section>
@@ -84,27 +92,33 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
 <!-- 3 解決 -->
 <section class="slide">
   <div class="kicker">解決</div>
-  <h2>気づいて、直して、確かめられるようにする</h2>
+  <h2>住民には点数を出さない。読めなかった項目を出す</h2>
   <div class="flow">
-    <div class="step"><div class="t">① 選ぶ</div><div class="b">地図から<br>自分の区を押す</div></div>
+    <div class="step"><div class="t">① 選ぶ</div><div class="b">地図から自分の区を押す</div></div>
     <div class="arrow">→</div>
-    <div class="step"><div class="t">② 読む</div><div class="b">AIが4項目を<br>読み取る</div></div>
+    <div class="step"><div class="t">② 読む</div><div class="b">AIが4項目を読み取る</div></div>
     <div class="arrow">→</div>
-    <div class="step"><div class="t">③ 採点</div><div class="b">100点満点で<br>どこが読めないか</div></div>
+    <div class="step"><div class="t">③ 示す</div><div class="b">読めなかった項目と、次にやること</div></div>
     <div class="arrow">→</div>
     <div class="step" style="border-color:var(--ok);background:#f0f9f3;">
-      <div class="t" style="color:var(--ok);">④ 処方箋</div><div class="b">どこに何を書けば<br>伝わるかを提示</div></div>
+      <div class="t" style="color:var(--ok);">④ 処方箋</div><div class="b">どこに何を書けば伝わるか（自治体）</div></div>
     <div class="arrow">→</div>
     <div class="step" style="border-color:#0056b3;background:#f4f7fb;">
-      <div class="t" style="color:#0056b3;">⑤ 住民側</div><div class="b">実測を自分のAIに渡し<br>推測で埋めさせない</div></div>
+      <div class="t" style="color:#0056b3;">⑤ 渡す</div><div class="b">実測を自分のAIに渡し、推測で埋めさせない</div></div>
   </div>
-  <div class="note">
-    <strong>実測</strong>：世田谷区の目次ページに本体ページの記載を移したところ、4項目そろう回が
-    <strong>5回中0回 → 5回中5回</strong>になった。さらに期限を「37日」に書き換えた版では<strong>5回とも37日</strong>を返した。
-    転入届の14日は法律で決まっておりモデルは知っているが、それでも現実にありえない値を返した——
-    <strong>AIは知識ではなく、渡されたページを読んでいる。</strong><br>
-    埋めるのは職員。<strong>AIは穴の場所と書き方を示すに留める</strong>——AIが役所の情報を作り出さないための設計である。<br>
-    <span style="font-size:20px;">※ 改変したのは手元の複製。区のサイトは1文字も変更していない。3条件×5回・測定版 exp-0.1</span>
+  <div class="shots">
+    <div>
+      <div class="shot" style="width:413px;height:280px;">
+        <img src="captures/cap_map.png" style="transform:scale(.7) translate(-270px,-500px);">
+      </div>
+      <div class="cap"><b>トップ画面。</b>色は青の濃淡ひとつ。説明は<br>「色が濃い区ほど、AIが読み取れた項目が多い」の1行だけ</div>
+    </div>
+    <div>
+      <div class="shot" style="width:735px;height:308px;">
+        <img src="captures/poster.png" style="transform:scale(.7) translate(-290px,-240px);">
+      </div>
+      <div class="cap"><b>区を押した結果。点数も棒グラフも出さない。</b>読めなかった項目と「次にやること」だけを出し、<br>手続きのページに到達できたか確かめられていないことも、そのまま書く</div>
+    </div>
   </div>
   <div class="foot"><span>外部が指摘する調査ではなく、自治体が自分で点検する道具</span><span>3</span></div>
 </section>
@@ -114,30 +128,53 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
   <div class="kicker">実測</div>
   <h2>同じ物差しで、23区ぜんぶ測った</h2>
   <div class="rank" id="rank"></div>
-  <div class="lead" style="margin-top:34px;font-size:26px;">
-    100点から0点まで並ぶ。差はサイトの書き方で決まっている。<br>
-    同じ手順で<strong>23区 × 3手続き（転入届・児童手当・粗大ごみ）＝69件</strong>を測った（グラフは転入届）。<br>
+  <div class="lead" style="margin-top:26px;font-size:25px;">
+    100点から0点まで並ぶ。同じ手順で<strong>23区 × 3手続き（転入届・児童手当・粗大ごみ）＝69セル</strong>を測った（グラフは転入届）。
+    4項目そろったのは<strong>1セル</strong>、4項目とも読めなかったのは<strong>18セル</strong>。<br>
+    <strong>その18セルを「その区が書いていない」とは読まない。</strong>
+    取得済みの別の候補ページを、こちらが採点していなかった可能性がある（確定には再抽出が要る）。<br>
     <strong>採点器の</strong>ぶれは当初±15点あったが、判定方法を改め、3自治体12行の正解データで<strong>±2点</strong>まで縮小した（23区の点数は各1回の判定で、ぶれ幅は測っていない）。
   </div>
-  <div class="foot"><span>4項目×20点＋オンライン明示20点＝100点満点</span><span>4</span></div>
+  <div class="note" style="margin-top:12px;padding:13px 20px;font-size:21px;line-height:1.5;">
+    <strong>書き換えて確かめた。</strong>世田谷区の目次ページ（<strong>手元の複製</strong>）に本体ページの記載を移すと、4項目そろう回が<strong>5回中0回 → 5回中5回</strong>に。
+    期限を「37日」に書き換えた版では<strong>5回とも37日</strong>を返した——<strong>AIは知識ではなく、渡されたページを読んでいる。</strong>
+    <span style="font-size:18px;">3条件×5回・測定版 exp-0.1。改変したのは手元の複製で、区のサイトは1文字も変更していない。</span>
+  </div>
+  <div class="foot"><span>4項目×20点＋オンライン明示20点＝100点満点。点数は自治体向けの画面と参照ページに置いている</span><span>4</span></div>
 </section>
 
 <!-- 5 技術 -->
-<section class="slide">
+<section class="slide" id="tech">
   <div class="kicker">技術</div>
-  <h2>源内のAIアプリとして動く</h2>
-  <table>
-    <tr><th style="width:230px;">層</th><th>役割</th><th style="width:400px;">設計の理由</th></tr>
-    <tr><td>取得</td><td>robots.txt遵守・3秒以上の間隔・取得結果を保存</td><td>ここだけが外部に接続する</td></tr>
-    <tr><td>読解</td><td>Claudeが4項目を読み取る</td><td rowspan="2">保存済みページのみを読むため、<br>何度作り直してもサイトに負荷をかけない</td></tr>
-    <tr><td>採点</td><td>人が定めた必須要素と突合し機械的に算出</td></tr>
-  </table>
-  <div class="note" style="background:#eef4fd;border-color:#a9c9ef;color:#123a6b;">
-    配布形態は、デジタル庁OSS<strong>「源内」のAIアプリAPI仕様に準拠した独立API</strong>。
-    自治体が既に運用する源内へGUI操作で追加登録でき、こちら側の配布網を必要としない。<br>
-    <span style="font-size:21px;">手元で起動した源内の画面に登録し、採点と処方箋が表示されることを確認済み（源内本体に採用されたものではない）。</span>
+  <h2>3層に分け、条件が違う記録は比べさせない</h2>
+  <div style="display:flex;gap:26px;margin-top:26px;align-items:flex-start;">
+    <div style="width:700px;">
+      <table>
+        <tr><th style="width:96px;">層</th><th>役割</th></tr>
+        <tr><td>取得</td><td>robots.txt遵守・3秒以上の間隔・取得結果を保存。<strong>ここだけが外部に接続する</strong></td></tr>
+        <tr><td>読解</td><td>Claudeが4項目を読み取る。渡すリンクは<strong>手続きに近い順</strong>に並べ替えてから上限40件で切る</td></tr>
+        <tr><td>採点</td><td>人が定めた必須要素と突合し機械的に算出。<strong>AIには点を出させない</strong></td></tr>
+      </table>
+      <div class="cap" style="font-size:20px;margin-top:12px;">
+        読解層と採点層は保存済みページしか読まない。何度作り直してもサイトに負荷をかけない。
+      </div>
+    </div>
+    <div style="width:616px;">
+      <div class="shot" style="width:616px;height:204px;">
+        <img src="captures/cap_journey.png" style="transform:scale(.8) translate(-320px,-555px);">
+      </div>
+      <div class="cap" style="font-size:20px;"><b>「AIが歩いた道のり」。</b>どの入口を、何点で、なぜ選んだかを画面に出す。<br>
+        並べ替えで<b>27セルに手続き名つきリンク110件を新たに渡せた（渡せなくなったものは0件）。</b>
+        LLMを1回も呼ばず、保存済みページだけで比べた値。点数がどう動くかは、再測定するまで言わない。</div>
+    </div>
   </div>
-  <div class="foot"><span>Python標準ライブラリのみ・外部依存なし</span><span>5</span></div>
+  <div class="note" style="background:#eef4fd;border-color:#a9c9ef;color:#123a6b;">
+    <strong>測定条件12項目</strong>（探索の深さ・ビーム幅・本文とリンクの上限・リンクの並べ方・プロンプト版・モデル…）を署名にし、
+    <strong>署名が違う記録どうしは比較を拒否する</strong>——道具を良くして点が上がったものを「サイトが直った」と読ませないため。<br>
+    配布形態は、デジタル庁OSS<strong>「源内」のAIアプリAPI仕様に準拠した独立API</strong>。自治体が既に運用する源内へGUI操作で追加登録できる。
+    <span style="font-size:19px;">手元で起動した源内に登録し、採点と処方箋が出ることを確認済み（源内本体に採用されたものではない）。</span>
+  </div>
+  <div class="foot"><span>Python標準ライブラリのみ・外部依存なし。測り方と対照実験は「この数字はどう作られたか」に置いた</span><span>5</span></div>
 </section>
 
 <!-- 6 オープンデータ -->
@@ -175,16 +212,17 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
   <div class="lead" style="font-size:32px;">
     区のサイトがAIに読めること。それが、これからの窓口である。
   </div>
-  <div class="cols" style="margin-top:50px;">
+  <div class="cols" style="margin-top:44px;">
     <div class="card"><div class="n">住民にとって</div><div class="v" style="font-size:32px;">AIに聞いて<br>正しい答えが返る</div></div>
     <div class="card"><div class="n">自治体にとって</div><div class="v" style="font-size:32px;">追加開発なしで<br>自己点検できる</div></div>
     <div class="card"><div class="n">これから</div><div class="v" style="font-size:32px;">多摩26市へ<br>同じ物差しを広げる</div></div>
   </div>
-  <div class="lead" style="margin-top:46px;font-size:24px;">
-    判定基準と、判定のぶれの測定結果を公開し続ける。基準を隠さないことで、<br>
-    自治体が結果を検証でき、第三者が同じ物差しで再測定できる状態を保つ。
+  <div class="lead" style="margin-top:40px;font-size:24px;">
+    判定基準・測定条件・測定日を公開し続ける。<strong>いつ何を測ったか</strong>は「調査データ一覧」に、
+    <strong>点数がどう作られたか</strong>は「この数字はどう作られたか」に置いた。<br>
+    基準を隠さないことで、自治体が結果を検証でき、第三者が同じ物差しで再測定できる状態を保つ。
   </div>
-  <div class="lead" style="margin-top:30px;font-size:22px;">
+  <div class="lead" style="margin-top:26px;font-size:22px;">
     チーム紹介：<strong>AI読</strong>（1名・正直パンマン）。企画・実測・実装・資料を1人＋AIで行った。
     判定に使ったスクリプトとテストは公開している（コードはMIT／データはCC BY）。
   </div>
@@ -194,7 +232,7 @@ th{background:var(--paper);font-size:22px;color:var(--gray);}
 <script>
 const D=[["港区",100],["千代田",80],["文京",80],["杉並",80],["板橋",80],["江戸川",80],["渋谷",80],["練馬",80],["豊島",80],["足立",80],["台東",80],["中野",70],["北",60],["品川",60],["大田",60],["江東",60],["目黒",60],["葛飾",60],["新宿",40],["世田谷",0],["中央",0],["墨田",0],["荒川",0]];
 document.getElementById('rank').innerHTML = D.map(([n,s])=>{
-  const h=Math.max(s*2.6, 4);
+  const h=Math.max(s*1.59, 4);
   const c = s>=100?'#0f7a3d': s>=60?'#0056b3': s>0?'#c98a00':'#b3261e';
   return `<div class="bar"><div class="s" style="color:${c}">${s}</div><div class="b" style="height:${h}px;background:${c}"></div><div class="l">${n}</div></div>`;
 }).join('');

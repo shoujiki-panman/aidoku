@@ -249,12 +249,34 @@ robots.txt で許可されていない、5xx が返った、通信に失敗し�
 
 | ファイル | 1行の単位 | 誰が書くか |
 |---|---|---|
-| `history/scores.jsonl` | 手続き1つぶんの測定1回 | `analysis/export_dashboard.py`（人が測り直したとき） |
+| `history/scores.jsonl` | 手続き1つぶんの書き出し1回 | `analysis/export_dashboard.py`（人が測り直したとき） |
 | `history/site-status.jsonl` | 見張り1回 | `crawler/check_pages.py`（毎朝 GitHub Actions） |
+| `history/measurements.csv` | 1観測（自治体 × 手続き × 項目） | `analysis/export_timeseries.py` |
 
 `scores.jsonl` は点数と `page_status` だけを持ち、**生の引用は持たない**（公開データの
 方針に合わせる）。`site-status.jsonl` は **変化のあったものだけ**を持つ（変化なしは
 `summary` の数で足りる）。
+
+### ⚠️ 日付は3つあり、意味が違う
+
+| 名前 | 意味 |
+|---|---|
+| `measured_at` / `measured_on` | **実際に測った時刻**。記録が無ければ `null`（CSVでは空欄） |
+| `generated_at` / `exported_at` / `exported_on` | `scores-*.json` を**書き出した**時刻 |
+| `recorded_at` / `recorded_on` | その履歴行を**記録に残した**時刻 |
+
+**いま配信しているデータの `measured_at` は全件 `null` です。** 測定条件を記録し始める
+前に測ったもので、実際に測った時刻がどこにも残っていないためです
+（`extractor/out/*.json` は全件 `recording_status: legacy_unknown` で `run_at` が `null`、
+`crawler/out/*.json` には `measurement` そのものがありません。2026-08-23 に確認）。
+
+以前はここに書き出し時刻を入れて `measured_on` と呼んでいました。書き出しを流し直す
+だけで「別の日に測った」記録が増えるため、**測り直した瞬間に日付が嘘になります。**
+分からない時刻は空欄／`null` のまま出します。**それらしい値を入れません。**
+
+測定条件を記録した回（`recording_status: recorded`）では `measurement.run_at` から
+実測時刻が入り、`measured_at` が埋まります。`surveys.json` の
+`measured_at_status`（`recorded` / `unknown`）でどちらかが分かります。
 
 ### ⚠️ 差を「良くなった」と読んでよい条件
 

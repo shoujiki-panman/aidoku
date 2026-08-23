@@ -7,7 +7,15 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from htmlutil import Heading, extract_jsonld_dates, parse
+from htmlutil import (
+    MAX_SPAN,
+    MAX_TABLE_ROWS,
+    Heading,
+    extract_jsonld_dates,
+    extract_tables,
+    parse,
+    tables_text,
+)
 
 
 class PageMetadataTest(unittest.TestCase):
@@ -212,6 +220,117 @@ class JsonLdDateTest(unittest.TestCase):
             "https://example.jp/",
         )
         self.assertEqual(page.date_published, ["2026-08-01"])
+
+
+def table_text(html_text: str) -> str:
+    """表だけを取り出して「見出し: 値」へ直す。テストの見通し用。"""
+    return tables_text(extract_tables(html_text))
+
+
+class 表読みTest(unittest.TestCase):
+    """自治体ページの表の壊れ方を、ここで固定する。
+
+    必要書類・手数料・期限は表に入っていることがあり、本文として平らに渡すと
+    「どの見出しの列の値か」が消える。消さずに読めることを1つずつ止める。
+    """
+
+    def test_見出し行のある表を行ごとの見出しと値にする(self):
+        text = table_text(
+            "<table><caption>転入の手続き</caption>"
+            "<tr><th>区分</th><th>手数料</th><th>期限</th></tr>"
+            "<tr><th>国内転入</th><td>無料</td><td>14日以内</td></tr>"
+            "</table>")
+        self.assertEqual(text, "表1\n（転入の手続き）\n"
+                               "- 【国内転入】手数料: 無料 / 期限: 14日以内")
+
+    def test_見出しのcolspanは覆う列ぶんに広げる(self):
+        # 広げないと列が1つずれ、「14日以内」が手数料の値として読まれる
+        text = table_text(
+            "<table>"
+            "<tr><th colspan='2'>手数料</th><th>期限</th></tr>"
+            "<tr><td>国内転入</td><td>無料</td><td>14日以内</td></tr>"
+            "</table>")
+        self.assertEqual(
+            text, "表1\n- 手数料: 国内転入 / 手数料: 無料 / 期限: 14日以内")
+
+    def test_値のcolspanは同じ値を繰り返さない(self):
+        text = table_text(
+            "<table>"
+            "<tr><th>区分</th><th>手数料</th><th>期限</th></tr>"
+            "<tr><th>国外転入</th><td colspan='2'>窓口へお問い合わせください</td></tr>"
+            "</table>")
+        self.assertEqual(
+            text, "表1\n- 【国外転入】手数料: 窓口へお問い合わせください")
+
+    def test_rowspanは次の行へ持ち越す(self):
+        text = table_text(
+            "<table>"
+            "<tr><th>区分</th><th>手数料</th></tr>"
+            "<tr><th>国内転入</th><td rowspan='2'>無料</td></tr>"
+            "<tr><th>国外転入</th></tr>"
+            "</table>")
+        self.assertEqual(text, "表1\n"
+                               "- 【国内転入】手数料: 無料\n"
+                               "- 【国外転入】手数料: 無料")
+
+    def test_見出し行の無い表は値だけを並べる(self):
+        text = table_text(
+            "<table><tr><td>粗大ごみ</td><td>400円</td></tr></table>")
+        self.assertEqual(text, "表1\n- 粗大ごみ / 400円")
+
+    def test_空のセルは行から落とす(self):
+        text = table_text(
+            "<table>"
+            "<tr><th>区分</th><th>手数料</th><th>期限</th></tr>"
+            "<tr><th>国内転入</th><td></td><td>14日以内</td></tr>"
+            "</table>")
+        self.assertEqual(text, "表1\n- 【国内転入】期限: 14日以内")
+
+    def test_中身の無い表は番号ごと落とす(self):
+        text = table_text(
+            "<table><tr><td></td><td></td></tr></table>"
+            "<table><tr><td>粗大ごみ</td></tr></table>")
+        self.assertEqual(text, "表1\n- 粗大ごみ")
+
+    def test_入れ子の表は別の表として読む(self):
+        # 外側のセルへ内側の行を混ぜない。混ぜると見出しの対応が壊れる
+        text = table_text(
+            "<table><tr><td>案内"
+            "<table><tr><th>手数料</th><td>無料</td></tr></table>"
+            "つづき</td></tr></table>")
+        self.assertEqual(text, "表1\n- 【手数料】無料\n\n表2\n- 案内 つづき")
+
+    def test_閉じていない表も取れたところまで返す(self):
+        text = table_text("<table><tr><th>手数料</th><td>無料</td>")
+        self.assertEqual(text, "表1\n- 【手数料】無料")
+
+    def test_巨大なcolspanで格子を膨らませない(self):
+        cells = extract_tables(
+            "<table><tr><td colspan='9999'>爆</td></tr></table>")[0].rows[0]
+        self.assertEqual(cells[0].colspan, MAX_SPAN)
+
+    def test_壊れたcolspanは1として扱う(self):
+        cells = extract_tables(
+            "<table><tr><td colspan='いち'>壊れ</td><td colspan=''>空</td>"
+            "</tr></table>")[0].rows[0]
+        self.assertEqual([cell.colspan for cell in cells], [1, 1])
+
+    def test_scriptの中身を表へ入れない(self):
+        text = table_text(
+            "<table><tr><td>無料<script>混ぜない</script></td></tr></table>")
+        self.assertEqual(text, "表1\n- 無料")
+
+    def test_長すぎる表はMAX_TABLE_ROWS行で切る(self):
+        rows = "<tr><td>行</td></tr>" * (MAX_TABLE_ROWS + 10)
+        text = table_text(f"<table>{rows}</table>")
+        self.assertEqual(text.count("\n- 行"), MAX_TABLE_ROWS)
+
+    def test_parseは表も一緒に返す(self):
+        page = parse(
+            "<p>本文</p><table><tr><th>手数料</th><td>無料</td></tr></table>",
+            "https://example.jp/")
+        self.assertEqual(tables_text(page.tables), "表1\n- 【手数料】無料")
+        self.assertIn("無料", page.text)  # 本文側の見え方は変えない
 
 
 if __name__ == "__main__":
