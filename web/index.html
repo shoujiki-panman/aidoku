@@ -74,7 +74,7 @@
       地図の色は、その区で読み取れた項目の数です。</p>
     <div class="wardmap" id="wardmap" data-ai-ignore aria-label="東京23区の地図。区を押すとその区の結果が出ます"></div>
     <div id="lookup-result" class="lookup__result" aria-live="polite"></div>
-    <!-- 右下の「AIに渡して調べる」が渡す中身。画面には出さない。
+    <!-- 右下の「AIに渡す」が渡す中身。画面には出さない。
          細かい判定は描かず、AI読のデータURLを渡して取りに行かせる。 -->
     <div id="ai-payload" class="dads-u-visually-hidden" aria-hidden="true"></div>
     <p class="lookup__escape" data-ai-ignore>
@@ -109,7 +109,7 @@
        選び方は plans/feat-next-action.md で固定（gain降順→fact-types定義順→field順）。 -->
   <section class="whole-set" aria-labelledby="next-action-heading">
     <h2 class="dads-heading" data-size="l" id="next-action-heading">今やる1件</h2>
-    <p class="section-note">下の一覧で選んだ区について、<strong>読めなかった項目のうち見込み効果が最大の1件</strong>を出します。改善案は、実ページでの再測定が済むまで<strong>未検証の提案</strong>です。</p>
+    <p class="section-note"><span id="na-scope"></span><strong>読めなかった項目のうち見込み効果が最大の1件</strong>です。改善案は、実ページでの再測定が済むまで<strong>未検証の提案</strong>です。</p>
     <div id="next-action" aria-live="polite"></div>
   </section>
 
@@ -132,7 +132,7 @@
 
   <section aria-labelledby="detail-heading">
     <h2 class="dads-heading" data-size="l" id="detail-heading">選んだ区の結果 — 住民のAIの答えと、直す箇所</h2>
-    <p class="section-note">押した区のページを読ませたAIの答え・<strong>読めない理由</strong>・直す箇所です。</p>
+    <p class="section-note"><span id="detail-scope"></span>そのページを読ませたAIの答え・<strong>読めない理由</strong>・直す箇所です。</p>
     <div id="detail" aria-live="polite"></div>
   </section>
 
@@ -160,7 +160,7 @@
 <script src="assets/wardmap.js"></script>
 <script src="assets/app.js"></script>
 <script src="ask-ai-button.js" defer data-selector="#ai-payload"
-        data-actions="procedure" data-label="AIに渡して調べる"
+        data-actions="procedure" data-label="AIに渡す"
         data-max-url-chars="10000"></script>
 <script src="assets/shell.js" defer></script>
 </body>

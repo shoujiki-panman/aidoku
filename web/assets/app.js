@@ -14,6 +14,7 @@ const REPORT_URL = 'https://github.com/shoujiki-panman/aidoku/blob/main/reports/
 const $ = (id) => document.getElementById(id);
 // 要素が無くても落とさない。画面から節を外したときに JS が道連れにならないようにする
 const setText = (id, text) => { const el = $(id); if (el) el.textContent = text; };
+const setHtml = (id, html) => { const el = $(id); if (el) el.innerHTML = html; };
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const trunc = (s, n) => (s.length > n ? s.slice(0, n) + '…' : s);
@@ -99,7 +100,12 @@ async function loadProcedure(id, muniId = null) {
   renderSummary();
   renderRanking();
   // 指定が無ければ一番低い区。「情報はあるのに、入口からたどり着けない」の実例
-  const target = muniId && data.municipalities.some((m) => m.id === muniId) ? muniId : worstMuni().id;
+  // ★押していないのに「押した区」と書くと嘘になる。どちらなのかを言い分ける
+  const chosen = muniId && data.municipalities.some((m) => m.id === muniId);
+  const target = chosen ? muniId : worstMuni().id;
+  setHtml('na-scope', chosen ? '選んだ区について、'
+    : 'この手続きで<strong>いちばん点が低い区</strong>を例として出しています。');
+  setHtml('detail-scope', chosen ? '選んだ区の、' : '例として出している区の、');
   select(target);
 }
 
@@ -503,7 +509,7 @@ function nextStepForResident(c) {
         ${shortcut}
         ${page}
         ${ask}
-        <li>右下の<b>「AIに渡して調べる」</b>で、自分のAIに持ち物リストを作らせる</li>
+        <li>右下の<b>「AIに渡す」</b>で、自分のAIに持ち物リストを作らせる</li>
       </ol>
     </div>`;
 }
@@ -627,7 +633,7 @@ function renderLookup(res) {
            「この差の原因は言えない」と日付が並んで、手続きを探す邪魔になる。 -->
       <p class="lookup__do">
         手続きを開くと、<strong>区の公式ページ</strong>と、読み取れなかった項目が出ます。
-        <strong>右下の「AIに渡して調べる」</strong>で、自分のAIが<strong>当日の持ち物</strong>を作ります。
+        <strong>右下の「AIに渡す」</strong>で、自分のAIが<strong>当日の持ち物</strong>を作ります。
       </p>
       ${progressBar(wardProgress(res.cells))}
       <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>
