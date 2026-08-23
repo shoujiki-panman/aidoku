@@ -20,6 +20,23 @@
     return 'zero';
   }
 
+  // 色の説明は1行で言う。
+  // ★以前は5区分の凡例だった。だが「9〜12項目」も「未調査」も該当0区で、
+  //   無い区分を宣伝していた。しかも23区中19区が同じ色で、色はほぼ情報を運んでいない。
+  //   数字のほうが強い: 最大でも6/12で、半分を超えた区が1つも無い。
+  function scaleLine(wards) {
+    const got = (wards || []).map((w) => w.got).filter((v) => typeof v === 'number');
+    const first = (wards || []).find((w) => typeof w.total === 'number');
+    const plain = '色が濃い区ほど、AIが読み取れた項目が多い。';
+    if (!got.length || !first) return plain;
+    const max = Math.max(...got);
+    const line = `色が濃い区ほど、AIが読み取れた項目が多い（${first.total}項目中）。`;
+    // 半分を「超えた」区が1つでもあれば、この言い切りはできない。
+    // ★ちょうど半分（6/12）は「届いていない」ではない。>= で切ると事実を言い間違える。
+    if (max * 2 > first.total) return line;
+    return `${line}いちばん多い区でも${max}項目で、半分を超えた区はありません。`;
+  }
+
   // 区ごとの到達度をまとめる。cells は lookup と同じ形
   function wardProgress(cells, fields) {
     const by = new Map();
@@ -54,5 +71,5 @@
     });
   }
 
-  return { tone, wardProgress, decorate };
+  return { tone, wardProgress, decorate, scaleLine };
 });

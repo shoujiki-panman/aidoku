@@ -614,24 +614,18 @@ td.marks { white-space: nowrap; }
 .wardmap__svg path:focus-visible { outline: 3px solid #0056b3; outline-offset: 2px; }
 .wardmap__svg path[aria-current="true"] { stroke: #1a1a1c; stroke-width: 4; }
 
-.wardmap__svg path[data-tone="high"]    { fill: #0f7a3d; }
-.wardmap__svg path[data-tone="mid"]     { fill: #58a55c; }
-.wardmap__svg path[data-tone="low"]     { fill: #c58a00; }
-.wardmap__svg path[data-tone="zero"]    { fill: #b3261e; }
-.wardmap__svg path[data-tone="unknown"] { fill: #dfe3e9; }
+/* 1色の濃淡。濃い＝AIが読み取れた項目が多い。
+   ★以前は 緑/薄緑/黄/赤 だった。9〜12項目を緑にすると、3項目読めていない区を
+     「良い」と言うことになり、このサイトの主張と矛盾する。良し悪しの色は使わない。 */
+.wardmap__svg path[data-tone="high"]    { fill: #14507e; }
+.wardmap__svg path[data-tone="mid"]     { fill: #3f7fae; }
+.wardmap__svg path[data-tone="low"]     { fill: #8fb4d0; }
+.wardmap__svg path[data-tone="zero"]    { fill: #dbe6ee; }
+.wardmap__svg path[data-tone="unknown"] { fill: #eceff3; }
 
-.wardmap__legend {
-  list-style: none; display: flex; gap: 12px; flex-wrap: wrap;
-  margin: 10px 0 0; padding: 0; font-size: .75rem; color: #4b5563;
-}
-.wardmap__legend li { display: flex; align-items: center; gap: 5px; }
-.wardmap__legend li::before {
-  content: ""; width: 13px; height: 13px; border-radius: 3px; background: #dfe3e9;
-}
-.wardmap__legend li[data-tone="high"]::before { background: #0f7a3d; }
-.wardmap__legend li[data-tone="mid"]::before  { background: #58a55c; }
-.wardmap__legend li[data-tone="low"]::before  { background: #c58a00; }
-.wardmap__legend li[data-tone="zero"]::before { background: #b3261e; }
+/* 5区分の凡例は捨てた。該当0区の区分を2つ出していたうえ、
+   23区中19区が同じ色で、色そのものがほとんど情報を運んでいなかった。 */
+.wardmap__scale { margin: 10px 0 0; font-size: .8125rem; color: #4b5563; }
 .wardmap__credit { margin-top: 8px; font-size: .6875rem; color: #6b7280; }
 
 /* 打って探すほうは畳んでおく */
@@ -665,8 +659,11 @@ td.marks { white-space: nowrap; }
   fill: #fff;
   paint-order: stroke; stroke: rgba(0, 0, 0, .35); stroke-width: 4px; stroke-linejoin: round;
 }
-/* 薄い色の上では、白抜きだと読めない */
-.wardmap__name[data-tone="unknown"] { fill: #1a1a1c; stroke: rgba(255, 255, 255, .8); }
+/* 薄い色の上では、白抜きだと読めない。
+   ★単色の濃淡にしたので、薄いのは unknown だけではなくなった（low / zero も薄い）。 */
+.wardmap__name[data-tone="unknown"],
+.wardmap__name[data-tone="zero"],
+.wardmap__name[data-tone="low"] { fill: #1a1a1c; stroke: rgba(255, 255, 255, .85); }
 
 
 /* 「自分のAIに持たせる」の補足。本文より一段落として読ませる */

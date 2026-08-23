@@ -729,11 +729,7 @@ async function renderWardMap() {
           text-anchor="middle" aria-hidden="true">${esc(w.short)}</text>`).join('');
   box.innerHTML = `
     <svg viewBox="${esc(doc.viewBox)}" class="wardmap__svg" role="group">${paths}${labels}</svg>
-    <ul class="wardmap__legend">
-      <li data-tone="high">9〜12項目</li><li data-tone="mid">6〜8</li>
-      <li data-tone="low">1〜5</li><li data-tone="zero">0</li>
-      <li data-tone="unknown">未調査</li>
-    </ul>
+    <p class="wardmap__scale">${esc(AidokuWardMap.scaleLine(wards))}</p>
     <p class="wardmap__credit">境界: <a class="dads-link" href="${esc(doc.source_url)}">${esc(doc.source)}</a>（${esc(doc.license)}）</p>`;
 
   const pick = (el) => {
