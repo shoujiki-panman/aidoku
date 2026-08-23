@@ -559,46 +559,7 @@ function renderAiPayload(res) {
     <p>「読み取れなかった」＝その項目が区のページに書かれていない。埋めないこと。</p>`);
 }
 
-// 直し方を1枚のMarkdownにする。区の担当者がそのまま持ち帰れる形。
-// ★値は書かない。AIが役所の情報を作り出さないための線引きは、ここでも同じ。
-function fixMarkdown(c) {
-  const miss = FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) < 20);
-  const base = new URL('.', location.href).href;
-  const lines = [
-    `# ${c.muniName}・${c.procName} — AIが読み取れなかった項目と、直し方`, '',
-    `対象ページ: ${c.url || '不明'}`,
-    `測定日: ${c.generatedAt || '不明'}`,
-    'AI読（アイドク）による第三者調査です。行政機関の公式発表ではありません。', '',
-    '## 読み取れなかった項目', '',
-    ...(miss.length ? miss.map((f) => `- ${f}`) : ['- なし（4項目とも読み取れました）']), '',
-    '## どう書けば届くか', '',
-  ];
-  (c.improvements || []).forEach((w) => {
-    lines.push(`### ${w.field}（直ると +${w.gain}点）`, '', w.reason, '');
-  });
-  if (c.notes) lines.push('## なぜ読み取れなかったか（判定したAIの観察記録）', '', c.notes, '');
-  lines.push(
-    '## 値はこちらでは埋めません', '',
-    'AIが役所の情報を作り出さないよう、金額・期限・持ち物などの値は埋めていません。',
-    'そこは職員の方が入れてください。AI読が示すのは「穴の場所」と「書き方」までです。', '',
-    '---', '',
-    `判定の基準: ${base}data/fact-types.json`,
-    `元データの目次: ${base}data/index.json`,
-    `画面: ${base}`,
-  );
-  return lines.join('\n');
-}
 
-function downloadFix(c) {
-  const blob = new Blob([fixMarkdown(c)], { type: 'text/markdown;charset=utf-8' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = `AI読_${c.muniName}_${c.procName}_直し方.md`;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-}
 
 // 読めなかった項目を1行で言う。✕の札4つと開閉パネル4つの代わり。
 function missingLine(c) {
@@ -623,9 +584,7 @@ function lookupCellRow(c) {
         ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
         ${nextStepForResident(c)}
         <p class="cell__more">
-          <a class="dads-link" href="journey.html?muni=${esc(c.muniId)}&proc=${esc(c.procId)}">AIがどう歩いたか</a>${(c.improvements || []).length ? `
-          ／ <button type="button" class="linkish cell__dl"
-                     data-proc="${esc(c.procId)}" data-muni="${esc(c.muniId)}">直し方をダウンロード（${(c.improvements || []).length}項目・区の担当者向け）</button>` : ''}
+          <a class="dads-link" href="journey.html?muni=${esc(c.muniId)}&proc=${esc(c.procId)}">AIがどう歩いたか</a>
         </p>
       </div>
     </details>
@@ -806,15 +765,6 @@ function initLookup() {
     setStage('detail');
     await loadProcedure(b.dataset.proc, b.dataset.muni);
     $('detail-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-
-  // 直し方は .md で落とす。画面に並べないぶん、渡すものはそろえる。
-  $('lookup-result').addEventListener('click', (e) => {
-    const b = e.target.closest('.cell__dl');
-    if (!b) return;
-    const c = (lookupCells || []).find(
-      (x) => x.muniId === b.dataset.muni && x.procId === b.dataset.proc);
-    if (c) downloadFix(c);
   });
 
   // 手続きを開いたとき、中身が画面の外に出ることがある。

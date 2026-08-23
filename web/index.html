@@ -30,8 +30,8 @@
       <details class="menu">
         <summary aria-label="メニュー"><span aria-hidden="true">☰</span> メニュー</summary>
         <ul class="menu__list">
-          <li><a href="index.html" aria-current="page">自分の区を調べる</a></li>
-          <li><a href="skill.html">自分のAIに持たせる</a></li>
+          <li><a href="index.html" aria-current="page">住民の方 — 自分の区を調べる</a></li>
+          <li><a href="fix.html">自治体の方 — 自分の区を直す</a></li>
           <li><a href="data.html">調べ方とデータ</a></li>
         </ul>
       </details>
@@ -66,6 +66,9 @@
     <!-- 右下の「AIに渡す」が渡す中身。画面には出さない。
          細かい判定は描かず、AI読のデータURLを渡して取りに行かせる。 -->
     <div id="ai-payload" class="dads-u-visually-hidden" aria-hidden="true"></div>
+    <p class="section-note lookup__toskill">
+      毎回ここに来なくても、<a class="dads-link" href="skill.html">実測を自分のAIに持たせる</a>ことができます。
+      そのAIは、区のページに書かれていない項目を推測で埋めなくなります。</p>
     <p class="lookup__escape" data-ai-ignore>
       <button type="button" class="linkish" id="show-all">23区ぶんの結果をまとめて見る</button>
     </p>

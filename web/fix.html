@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>自分のAIに持たせる — 推測で埋めさせないスキル | AI読（アイドク）</title>
-<meta name="description" content="自治体ページをそのままAIに読ませると、書かれていないことを一般論で埋めます。AI読の実測を使って、その一手前で止めるスキル。">
+<title>自分の区を直す — 読めなかった項目と、書き方 | AI読（アイドク）</title>
+<meta name="description" content="自治体の担当者向け。区を選ぶと、住民のAIが読み取れなかった項目と、どう書けば届くかが出ます。直し方は1枚のMarkdownで持ち帰れます。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -24,8 +24,8 @@
       <details class="menu">
         <summary aria-label="メニュー"><span aria-hidden="true">☰</span> メニュー</summary>
         <ul class="menu__list">
-          <li><a href="index.html" aria-current="page">住民の方 — 自分の区を調べる</a></li>
-          <li><a href="fix.html">自治体の方 — 自分の区を直す</a></li>
+          <li><a href="index.html">住民の方 — 自分の区を調べる</a></li>
+          <li><a href="fix.html" aria-current="page">自治体の方 — 自分の区を直す</a></li>
           <li><a href="data.html">調べ方とデータ</a></li>
         </ul>
       </details>
@@ -36,36 +36,39 @@
   <header class="site-header">
     <div class="wrap">
       <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
-      <h1 class="dads-heading" data-size="xl">自分のAIに持たせる</h1>
-      <p class="site-header__lead"><strong>AIに「書かれていません」と言わせるための1枚です。</strong><br>サーバーもAPIキーも要りません。</p>
+      <h1 class="dads-heading" data-size="xl">自分の区を直す</h1>
+      <p class="site-header__lead"><strong>自治体の担当者の方へ。</strong><br>区を選ぶと、住民のAIが読み取れなかった項目と、どう書けば届くかが出ます。</p>
     </div>
   </header>
 
 <main class="wrap" id="main">
 
-  <!-- 測って終わりにしない。読めない理由が分かっているなら、その分だけAIを賢くできる。 -->
-  <section>
-    <p>
-      自治体サイトをそのままAIに読ませると、<strong>書かれていないことを書かれているかのように答えます</strong>。
-      手数料の記載が無ければ「無料です」、期限が無ければ「通常14日以内です」と一般論で埋める。
-      住民はそれを信じて窓口で差し戻されます。
+  <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
+    <p class="dads-notification-banner__heading">
+      <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="情報">
+        <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
+        <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
+      </svg>
+      <span class="dads-notification-banner__heading-text">値はこちらでは埋めません</span>
     </p>
-    <p>
-      AI読は<strong>どのページの何が読み取れないかを実測で知っている</strong>ので、その一手前で止められます。
-      下のスキルを自分のAIに読み込ませると、AIは答える前にAI読の実測を引き、
-      <strong>書かれていない項目を推測で埋めずに「ページに記載がありませんでした」と言う</strong>ようになります。
+    <div class="dads-notification-banner__body">
+      <p>AI読が示すのは<strong>穴の場所と書き方</strong>までです。金額・期限・持ち物の値は、
+        AIが役所の情報を作り出さないよう、あえて埋めていません。
+        個人による第三者調査であり、行政機関の公式発表ではありません。</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="fix-heading">
+    <h2 class="dads-heading" data-size="l" id="fix-heading">区を選ぶ</h2>
+    <p class="fixpick">
+      <label class="fixpick__label" for="fix-ward">自治体</label>
+      <select class="fixpick__select" id="fix-ward"><option value="">区を選ぶ</option></select>
     </p>
-    <p>
-      <a class="dads-link" href="skill/SKILL.md" download>スキルを取得する（SKILL.md・CC BY 4.0）</a>
-    </p>
-    <p class="use__note">
-      Claude なら <code>.claude/skills/aidoku-gyosei/SKILL.md</code> に置くだけです。
-      他のAIでも、この1枚をそのまま指示として貼れば同じように動きます。
-      対象は東京23区 × 3手続き（転入届・児童手当・粗大ごみ）で、それ以外は「対象外」と言ってから通常どおり答えます。
-    </p>
+    <div id="fix-result" aria-live="polite"></div>
   </section>
 
 </main>
+
 
 <footer class="site-footer">
   <div class="wrap">
@@ -82,6 +85,7 @@
 
 <script src="ask-ai-button.js" defer data-selector="main"
         data-actions="procedure" data-label="AIに渡す"></script>
+<script src="assets/fix.js"></script>
 <script src="assets/shell.js" defer></script>
 </body>
 </html>
