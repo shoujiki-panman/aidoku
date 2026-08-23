@@ -43,3 +43,25 @@ node shoot.mjs <出力先ディレクトリ>
 
 **注意**: `pkill -f vite` は使わない。同じマシンの別のViteアプリを巻き添えにする。
 必ず `lsof -ti tcp:<port>` でPIDを特定して止める。
+
+## 公開画面（web/）のキャプチャ — 2026-08-23 撮り直し
+
+`shoot_web.mjs` / `record_web.mjs` が撮影スクリプト。どちらもローカルの静的サーバを見る。
+
+```bash
+cd web && python3 -m http.server 4199 &     # 止めるときは lsof -ti tcp:4199 で PID を特定
+node deck/captures/shoot_web.mjs  deck/captures      # cap_map / poster / cap_journey
+node deck/captures/record_web.mjs /tmp/aidoku_vid    # webm が出る
+ffmpeg -i /tmp/aidoku_vid/*.webm -an -c:v libx264 -pix_fmt yuv420p \
+       -preset slow -crf 22 -movflags +faststart -y deck/captures/demo.mp4
+```
+
+| ファイル | 何の画面か |
+|---|---|
+| `cap_map.png` | トップ画面。ヘッダー＋23区の地図（**青の濃淡1色**。以前の緑/薄緑/黄/赤の4色ではない） |
+| `poster.png` | 世田谷区を押し、転入届を開いた状態。「読めない 4項目」の札と「あなたが次にやること」 |
+| `cap_journey.png` | `journey.html`「AIが歩いた道のり」。判断（点の付け方と候補の並び）を開いた状態 |
+| `demo.mp4` | **52.6秒・1600×900・無音**。地図 → 世田谷区 → 転入届 → AIの道のり → 調査データ一覧 → 自分のAIに持たせる |
+
+**注意**: `scrollIntoView` は使わない。headless で真っ白なフレームになったことがある。
+位置は `getBoundingClientRect` で測って `window.scrollTo` で送る（両スクリプトの `glideTo` / `topOf`）。
