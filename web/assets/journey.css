@@ -23,15 +23,19 @@
 .stage__node[data-kind="stop"]      .stage__badge { background: #b3261e; }
 .stage__node[data-kind="unreached"] .stage__badge { background: #b9bfc7; color: #fff; }
 .stage__node[data-kind="goal"]      .stage__badge { background: #0f7a3d; }
+/* ★4項目そろった回。赤い✖を出していた（本人の指摘: 港区の場合、届けられたのでは？）*/
+.stage__node[data-kind="done"]      .stage__badge { background: #0f7a3d; }
 
 .stage__body { padding-top: 2px; min-width: 0; }
 .stage__kind { font-size: .8125rem; font-weight: 700; color: #4b5563; }
 .stage__node[data-kind="stop"] .stage__kind { color: #b3261e; }
 .stage__node[data-kind="goal"] .stage__kind { color: #0f7a3d; }
+.stage__node[data-kind="done"] .stage__kind { color: #0f7a3d; }
 .stage__score {
   margin-left: 8px; padding: 1px 8px; border-radius: 999px;
   background: #b3261e; color: #fff; font-size: .75rem;
 }
+.stage__node[data-kind="done"] .stage__score { background: #0f7a3d; }
 .stage__label { font-size: 1.0625rem; font-weight: 700; margin-top: 2px; }
 .stage__url {
   display: inline-block; margin-top: 2px;
@@ -151,6 +155,8 @@
 /* こちらの都合か、区のページの作りかを分ける。区のせいだけに見せない */
 .why__steps li[data-whose="ours"] > b { background: #e8f0fb; color: #0056b3; }
 .why__steps li[data-whose="site"] > b { background: #fdf3f2; color: #b3261e; }
+/* 区が書けていた回。良い知らせに赤い札を付けない */
+.why__steps li[data-good="true"] > b { background: #e8f4ec; color: #0f5c31; }
 .why__notes {
   margin-top: 10px; padding: 10px 12px; border-radius: 8px;
   background: #fff; border: 1px solid #e5e7eb;

@@ -2,7 +2,7 @@
 // 実行: node web/test_journey.mjs
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const { parseStep, nearlySame, buildStages } = require('./assets/journey.js');
+const { parseStep, nearlySame, buildStages, whyLines } = require('./assets/journey.js');
 
 let pass = 0, fail = 0;
 const check = (n, c, d = '') => c ? (pass++, console.log(`  PASS  ${n}`))
@@ -94,6 +94,55 @@ check('pathが無くても落ちない', buildStages({ failure: {} }, null).leng
   check('stagesが空なら台本も空', buildTimeline([], F).length === 0);
   check('配列でなければ空', buildTimeline(null, F).length === 0);
   check('項目が無くても落ちない', buildTimeline(st, null).length > 0);
+}
+
+// --- 4項目そろった回。ここを間違えると画面の上下で矛盾する ---
+// ★本人の指摘:「港区の場合、届けられたのでは？」
+//   4項目そろっているのに 赤い✖・「ここで力尽きた」・
+//   「このページの本文に4項目が書かれていなかった」を出していた。
+{
+  const done = whyLines({ got: 4, total: 4, blame: 'site' });
+  check('★そろった回は見出しを変える', done.title === 'どうやってそろえたか', done.title);
+  const t = done.steps.map((s) => s.text).join('|');
+  check('★「書かれていなかった」と言わない', !t.includes('書かれていなかった'), t);
+  check('書かれていたと言う', t.includes('4項目とも書かれていた'), t);
+  check('★「手続きの名前が無かった」も言わない', !t.includes('手続きの名前が無かった'), t);
+
+  const half = whyLines({ got: 2, total: 4, blame: 'site' });
+  check('力尽きた回は見出しがそのまま', half.title === 'どうやって力尽きたか');
+  check('★足りない数を実際の数で言う',
+    half.steps.some((s) => s.text.includes('2項目が書かれていなかった')),
+    half.steps.map((s) => s.text).join('|'));
+
+  const ours = whyLines({ got: 0, total: 4, blame: 'ours',
+    missed_with_strong_word: [{ link_text: '転入届の手続き', score: 30 }] });
+  check('こちらの都合なら、選ばなかったリンクを出す',
+    ours.steps.some((s) => s.whose === 'ours' && s.text.includes('転入届の手続き')));
+  check('その場合「手続きの名前が無かった」は出さない',
+    !ours.steps.map((s) => s.text).join('|').includes('手続きの名前が無かった'));
+
+  check('点数が不明でも落ちない', typeof whyLines({}).title === 'string');
+  check('引数が無くても落ちない', Array.isArray(whyLines().steps));
+  check('観察記録はそのまま持つ', whyLines({ got: 4, total: 4 }, 'メモ').notes === 'メモ');
+}
+
+// --- そろった回の見た目と再生 ---
+{
+  const cell = { got: 4, total: 4, fields: [
+    { name: '必要書類', ok: true }, { name: '窓口/オンライン可否', ok: true },
+    { name: '期限', ok: true }, { name: '手数料', ok: true }] };
+  const stages = buildStages({ failure: { observed_at_url: 'https://x.example/a.html', path: [] } }, cell);
+  const node = stages.find((s) => s.kind === 'done' || s.kind === 'stop');
+  check('★そろった回は stop ではない', node.kind === 'done', node.kind);
+  check('ラベルもそろえた側', node.label === 'AIはここで4項目そろえた');
+
+  const { buildTimeline } = require('./assets/journey.js');
+  const tl = buildTimeline(stages, cell.fields);
+  const kinds = tl.map((b) => b.type);
+  check('★そろった回でも4項目を1つずつ読む', kinds.filter((k) => k === 'read').length === 4, kinds.join(','));
+  check('★そろった回に「力尽きた」の演出を出さない',
+    !kinds.includes('exhausted') && !kinds.includes('blocked'), kinds.join(','));
+  check('再生はちゃんと終わる', kinds[kinds.length - 1] === 'end');
 }
 
 console.log(`\n  ${pass} PASS / ${fail} FAIL（台本を含む）`);

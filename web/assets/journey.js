@@ -59,8 +59,9 @@
     stages.push({ kind: 'start', label: '区のトップページ', url: origin ? origin + '/' : null });
     const reached = cell && cell.got === cell.total;
     stages.push({
-      kind: 'stop',
-      // 4項目そろった区に「力尽きた」は嘘になる
+      // ★4項目そろった区に「力尽きた」の赤い✖を出していた（本人の指摘）。
+      //   ラベルだけ直しても、印と見出しと理由の文が「力尽きた」のままだった。
+      kind: reached ? 'done' : 'stop',
       label: reached ? 'AIはここで4項目そろえた' : 'AIはここで力尽きた',
       url: stopUrl,
       via: null,
@@ -139,17 +140,21 @@
       push('walk', { index: i, blocked: s.kind === 'unreached' || s.kind === 'goal' }, BEAT.move);
       push('enter', { index: i }, BEAT.pause);
 
-      if (s.kind === 'stop') {
-        // 4項目をひとつずつ試して、ひとつずつ落とす
+      // ★4項目そろった回（done）も、ここで4項目を読む。
+      //   以前は stop だけを見ていたので、そろった区は再生が何も起きずに終わっていた。
+      if (s.kind === 'stop' || s.kind === 'done') {
+        // 4項目をひとつずつ試す
         (fields || []).forEach((f, k) => {
           push('read', { index: i, field: f.name, ok: f.ok, order: k }, BEAT.read);
         });
-        push('exhausted', { index: i }, BEAT.pause);
-        // ここから先へ行こうとして、行けない
-        push('blocked', { index: i }, BEAT.pause);
-        // 「この先に答えがあった」を最後に見せる。ここが一番効く
-        const goal = stages.findIndex((x) => x.kind === 'goal');
-        if (goal !== -1) push('reveal-goal', { index: goal }, BEAT.pause);
+        if (s.kind === 'stop') {
+          push('exhausted', { index: i }, BEAT.pause);
+          // ここから先へ行こうとして、行けない
+          push('blocked', { index: i }, BEAT.pause);
+          // 「この先に答えがあった」を最後に見せる。ここが一番効く
+          const goal = stages.findIndex((x) => x.kind === 'goal');
+          if (goal !== -1) push('reveal-goal', { index: goal }, BEAT.pause);
+        }
         break;
       }
     }
@@ -157,5 +162,43 @@
     return out;
   }
 
-  return { parseStep, nearlySame, buildStages, explorer, buildTimeline, BEAT };
+  // その1件がどうなったかを、事実のまま並べる。
+  // ★以前は結果によらず「このページの本文に4項目が書かれていなかった」を出していた。
+  //   4項目そろった港区でもそう出るので、画面の上下で矛盾していた。
+  function whyLines(journey, notes) {
+    const j = journey || {};
+    const got = Number(j.got);
+    const total = Number(j.total);
+    const known = Number.isFinite(got) && Number.isFinite(total) && total > 0;
+    const reached = known && got === total;
+    const missing = known ? total - got : null;
+    const near = (j.missed_with_strong_word || [])[0];
+    const steps = [
+      { whose: 'ours', text: '：探索が候補を集め、このページを1位に選んだ' },
+      { whose: 'ours', text: '：採点のとき、本文とリンク一覧（上限40件）だけをAIに渡した' },
+    ];
+    // 選ばれなかった候補に手続き名があったなら、原因はこちら側
+    if (j.blame === 'ours' && near) {
+      steps.push({ whose: 'ours',
+        text: `：同じ画面に「${near.link_text}」（${near.score}点）が出ていたのに選ばなかった。道はあった` });
+    } else if (!reached) {
+      steps.push({ whose: 'site', text: '：見えていた候補のどれにも、手続きの名前が無かった' });
+    }
+    if (reached) {
+      // ★良い知らせなので、区に赤い札を付けない
+      steps.push({ whose: 'site', good: true,
+                   text: '：このページの本文に、4項目とも書かれていた' });
+    } else if (missing !== null) {
+      steps.push({ whose: 'site', text: `：このページの本文に、${missing}項目が書かれていなかった` });
+    } else {
+      steps.push({ whose: 'site', text: '：このページの本文に、4項目が書かれていなかった' });
+    }
+    return {
+      title: reached ? 'どうやってそろえたか' : 'どうやって力尽きたか',
+      notes: notes || '',
+      steps,
+    };
+  }
+
+  return { parseStep, nearlySame, buildStages, explorer, buildTimeline, whyLines, BEAT };
 });

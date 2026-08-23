@@ -6,9 +6,10 @@
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-  const ICON = { start: '▶', stop: '✖', unreached: '·', goal: '★' };
+  const ICON = { start: '▶', stop: '✖', done: '✓', unreached: '·', goal: '★' };
   const KIND_LABEL = {
-    start: 'スタート', stop: 'ここで力尽きた', unreached: '辿り着けなかった', goal: 'ゴール',
+    start: 'スタート', stop: 'ここで力尽きた', done: 'ここで4項目そろえた',
+    unreached: '辿り着けなかった', goal: 'ゴール',
   };
 
   async function loadJson(p) {
@@ -65,9 +66,10 @@
       : '';
     const score = s.score ? `<span class="stage__score">${esc(s.score)}</span>` : '';
     const why = s.why ? `<div class="why">
-        <p class="why__title">どうやって力尽きたか</p>
+        <p class="why__title">${esc(s.why.title || 'どうやって力尽きたか')}</p>
         <ol class="why__steps">${s.why.steps.map((w) =>
-          `<li data-whose="${w.whose}"><b>${esc(w.whose === 'ours' ? 'こちらの都合' : '区のページ')}</b>${esc(w.text)}</li>`).join('')}</ol>
+          `<li data-whose="${w.whose}" data-good="${!!w.good}"><b>${
+            esc(w.whose === 'ours' ? 'こちらの都合' : '区のページ')}</b>${esc(w.text)}</li>`).join('')}</ol>
         ${s.why.notes ? `<p class="why__notes"><b>判定AIの観察記録</b>${esc(s.why.notes)}</p>` : ''}
       </div>` : '';
     return `<li class="stage__node" data-kind="${s.kind}">
@@ -249,25 +251,6 @@
     };
   }
 
-  // 力尽きた理由。区のせいだけに見せない。
-  // 選ばれなかった候補に手続き名があったなら、原因はこちら側。
-  function whyStopped(j, notes) {
-    const ours = j.blame === 'ours';
-    const near = (j.missed_with_strong_word || [])[0];
-    return {
-      notes: notes || '',
-      steps: [
-        { whose: 'ours', text: '：探索が候補を集め、このページを1位に選んだ' },
-        { whose: 'ours', text: '：採点のとき、本文とリンク一覧（上限40件）だけをAIに渡した' },
-        ours && near
-          ? { whose: 'ours',
-              text: `：同じ画面に「${near.link_text}」（${near.score}点）が出ていたのに選ばなかった。道はあった` }
-          : { whose: 'site', text: '：見えていた候補のどれにも、手続きの名前が無かった' },
-        { whose: 'site', text: '：このページの本文に4項目が書かれていなかった' },
-      ],
-    };
-  }
-
   async function init() {
     try {
       const [bs, ft, jj, ...scores] = await Promise.all([
@@ -327,8 +310,8 @@
           run?.model_version || barrier.measurement?.model, run?.model);
 
         const stages = AidokuJourney.buildStages(barrier, cell);
-        const stop = stages.find((s) => s.kind === 'stop');
-        if (stop) stop.why = whyStopped(j, muni?.notes);
+        const stop = stages.find((s) => s.kind === 'stop' || s.kind === 'done');
+        if (stop) stop.why = AidokuJourney.whyLines(j, muni?.notes);
         draw(stages, barrier, ex, cell);
       }
 
