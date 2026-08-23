@@ -243,6 +243,7 @@ class MeasurementTest(unittest.TestCase):
             max_follow=2,
             max_text_chars=18000,
             max_links=40,
+            link_order="score_desc",
             model_version="claude-sonnet-5",
             run_at="2026-08-16T01:00:00+00:00",
         )
@@ -273,6 +274,7 @@ class MeasurementTest(unittest.TestCase):
                 max_follow=2,
                 max_text_chars=18000,
                 max_links=40,
+                link_order="score_desc",
                 model_version="claude-sonnet-5",
                 run_at="2026-08-16T01:00:00+00:00",
             )

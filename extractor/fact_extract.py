@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import subprocess
 import sys
 from dataclasses import asdict
@@ -11,9 +12,12 @@ ROOT = Path(__file__).parent.parent
 PROMPT = Path(__file__).parent / "prompt.md"
 MAX_TEXT_CHARS = 18000
 MAX_LINKS = 40
+# 渡すリンクの選び方。測定条件として記録する（並べ替えの有無で結果が変わる）
+LINK_ORDER = "score_desc"
 MAX_FOLLOW = 2
 
 sys.path.insert(0, str(ROOT / "crawler"))
+from discover import score_link  # noqa: E402
 from htmlutil import parse  # noqa: E402
 from polite_fetch import PoliteFetcher  # noqa: E402
 
@@ -51,7 +55,7 @@ def compose_input(page: dict, muni: str, proc: str, test_case: TestCase,
                   ) -> tuple[str, dict, set[str]]:
     """解析済み内容から、本測定・再現実験で共通の1項目promptを作る。"""
     truncated = len(text) > MAX_TEXT_CHARS
-    link_lines, allowed_urls = _prompt_links(links)
+    link_lines, allowed_urls = _prompt_links(links, keywords_for(proc))
     usable_jsonld = _usable_jsonld(jsonld)
     fact = by_id(test_case.fact_type)
     parts = [
@@ -191,16 +195,48 @@ def run_test_cases(page: dict, muni: str, proc: str, cases: list[TestCase],
     return records, page_meta or {}, list(extra_by_url.items())
 
 
-def _prompt_links(links: list) -> tuple[list[str], set[str]]:
-    lines, allowed_urls = [], set()
+_TARGETS: dict | None = None
+
+
+def _targets() -> dict:
+    """targets.json を1度だけ読む。並べ替えのたびに開かない。"""
+    global _TARGETS
+    if _TARGETS is None:
+        _TARGETS = json.loads(
+            (ROOT / "crawler" / "targets.json").read_text(encoding="utf-8"))
+    return _TARGETS
+
+
+def keywords_for(proc_name: str) -> dict | None:
+    """手続き名からキーワードを引く。並べ替えの点は discover と同じものを使う。"""
+    for p in _targets().get("procedures", []):
+        if p.get("name") == proc_name:
+            return p.get("keywords")
+    return None
+
+
+def _prompt_links(links: list, kw: dict | None = None) -> tuple[list[str], set[str]]:
+    """AIに渡すリンク一覧。
+
+    ★ページに出てきた順で MAX_LINKS 件で打ち切ると、地域ナビゲーションや
+      共通メニューで埋まって本命が入らない。68セルの観察記録のうち
+      30セルが「答えはリンクの先にあるのに、そのURLを渡していない」だった。
+
+    手続きページらしい順に並べ替えてから打ち切る。点の付け方は
+    `crawler/discover.py` の `score_link` と同じで、ここで新しく点は作らない。
+    同点はページに出てきた順を保つ（安定ソート）。
+    """
+    seen, uniq = set(), []
     for link in links:
-        if not link.text or link.href in allowed_urls:
+        if not link.text or link.href in seen:
             continue
-        allowed_urls.add(link.href)
-        lines.append(f"- {link.text} → {link.href}")
-        if len(lines) >= MAX_LINKS:
-            break
-    return lines, allowed_urls
+        seen.add(link.href)
+        uniq.append(link)
+    if kw:
+        uniq.sort(key=lambda link: -score_link(link.text, link.href, kw))
+    picked = uniq[:MAX_LINKS]
+    return ([f"- {link.text} → {link.href}" for link in picked],
+            {link.href for link in picked})
 
 
 def _jsonld_section(jsonld: list[str]) -> str:

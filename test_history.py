@@ -10,7 +10,7 @@ import history
 COND = {
     "measurement_version": "aidoku-1.0", "prompt_version": "p1", "follow": True,
     "max_follow": 3, "max_depth": 3, "beam": {"1": {"take": 8, "of": 40}},
-    "max_fetches": 40, "max_text_chars": 60000, "max_links": 40,
+    "max_fetches": 40, "max_text_chars": 60000, "max_links": 40, "link_order": "score_desc",
     "model": "claude-cli", "model_version": "claude-sonnet-5",
 }
 

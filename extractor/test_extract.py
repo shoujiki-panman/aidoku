@@ -848,5 +848,56 @@ class MainBatchTest(unittest.TestCase):
                 self.assertIn("--procedure", completed.stdout)
 
 
+class PromptLinksOrderTest(unittest.TestCase):
+    """AIに渡すリンク40件を、どう選ぶか。
+
+    ★ページに出てきた順で切ると、地域ナビゲーションで埋まって本命が入らない。
+      68セルのうち30セルが「答えはリンクの先にあるのに渡していない」だった。
+    """
+
+    KW = {"strong": ["転入届"], "weak": ["住民票"], "url_hints": ["tennyu"]}
+
+    def links(self, n: int) -> list:
+        from htmlutil import Link
+        # ナビゲーションを先に並べ、本命を打ち切りの外に置く
+        out = [Link(href=f"https://x.example/nav{i}", text=f"地域のご案内{i}") for i in range(n)]
+        out.append(Link(href="https://x.example/tennyu.html", text="転入届の手続き"))
+        return out
+
+    def test_打ち切りの外にあった本命が渡るようになる(self):
+        links = self.links(fact_extract.MAX_LINKS + 5)
+        before, _ = fact_extract._prompt_links(links)          # 並べ替えなし
+        after, allowed = fact_extract._prompt_links(links, self.KW)
+        self.assertNotIn("https://x.example/tennyu.html", "".join(before))
+        self.assertIn("https://x.example/tennyu.html", "".join(after))
+        self.assertIn("https://x.example/tennyu.html", allowed)
+
+    def test_渡す件数はMAX_LINKSを超えない(self):
+        lines, allowed = fact_extract._prompt_links(self.links(200), self.KW)
+        self.assertEqual(len(lines), fact_extract.MAX_LINKS)
+        self.assertEqual(len(allowed), fact_extract.MAX_LINKS)
+
+    def test_同点はページに出てきた順を保つ(self):
+        from htmlutil import Link
+        links = [Link(href=f"https://x.example/a{i}", text=f"案内{i}") for i in range(5)]
+        lines, _ = fact_extract._prompt_links(links, self.KW)
+        self.assertEqual([l.split(" → ")[1] for l in lines],
+                         [l.href for l in links])
+
+    def test_同じURLは1度しか渡さない(self):
+        from htmlutil import Link
+        links = [Link(href="https://x.example/a", text="案内"),
+                 Link(href="https://x.example/a", text="別の文言")]
+        lines, allowed = fact_extract._prompt_links(links, self.KW)
+        self.assertEqual(len(lines), 1)
+        self.assertEqual(len(allowed), 1)
+
+    def test_キーワードが無い手続きでも落ちない(self):
+        # targets.json に無い手続き名。並べ替えずに、出てきた順で渡す
+        self.assertIsNone(fact_extract.keywords_for("存在しない手続き"))
+        lines, _ = fact_extract._prompt_links(self.links(3), None)
+        self.assertEqual(len(lines), 4)
+
+
 if __name__ == "__main__":
     unittest.main()

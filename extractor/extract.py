@@ -18,6 +18,7 @@ from polite_fetch import PoliteFetcher  # noqa: E402
 sys.path.insert(0, str(ROOT))
 from extractor.batch import build_batch, load_jobs, write_batch  # noqa: E402
 from extractor.fact_extract import (  # noqa: E402
+    LINK_ORDER,
     MAX_FOLLOW,
     MAX_LINKS,
     MAX_TEXT_CHARS,
@@ -119,6 +120,7 @@ def measurement_for(discovery: dict, *, follow: bool, model: str,
         max_follow=MAX_FOLLOW,
         max_text_chars=MAX_TEXT_CHARS,
         max_links=MAX_LINKS,
+        link_order=LINK_ORDER,
         model_version=model,
         run_at=run_at,
     )
