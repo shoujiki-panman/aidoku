@@ -23,9 +23,10 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "crawler"))
 sys.path.insert(0, str(ROOT))
 from discover import score_link  # noqa: E402
-from extractor.fact_extract import MAX_LINKS, keywords_for  # noqa: E402
 from htmlutil import parse  # noqa: E402
 from polite_fetch import PoliteFetcher  # noqa: E402
+
+from extractor.fact_extract import MAX_LINKS, keywords_for  # noqa: E402
 
 
 def uniq_links(links: list) -> list:

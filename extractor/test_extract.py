@@ -944,8 +944,8 @@ class PromptLinksOrderTest(unittest.TestCase):
         from htmlutil import Link
         links = [Link(href=f"https://x.example/a{i}", text=f"案内{i}") for i in range(5)]
         lines, _ = fact_extract._prompt_links(links, self.KW)
-        self.assertEqual([l.split(" → ")[1] for l in lines],
-                         [l.href for l in links])
+        self.assertEqual([line.split(" → ")[1] for line in lines],
+                         [link.href for link in links])
 
     def test_同じURLは1度しか渡さない(self):
         from htmlutil import Link
