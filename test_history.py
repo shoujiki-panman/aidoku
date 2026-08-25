@@ -12,6 +12,8 @@ COND = {
     "max_follow": 3, "max_depth": 3, "beam": {"1": {"take": 8, "of": 40}},
     "max_fetches": 40, "max_text_chars": 60000, "max_links": 40, "link_order": "score_desc",
     "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
     "model": "claude-cli", "model_version": "claude-sonnet-5",
 }
 

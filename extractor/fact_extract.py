@@ -20,6 +20,14 @@ TABLE_READING = "heading_value"
 # 表テキストの上限。本文を削ってまで表を入れないための枠
 MAX_TABLE_CHARS = 4000
 MAX_FOLLOW = 2
+# 読解に渡すページの決め方。測定条件として記録する。
+#   agent_pick  AIが一覧から max_follow 本を選ぶ（いまのやり方）
+#   strong_all  手続きに該当する候補を、こちらから全部渡す
+# ★本数は max_follow が持っているので、ここには書かない（2箇所に書くとずれる）
+READ_BREADTH = "agent_pick"
+# HTML以外（PDF/Word/Excel）の扱い。none は「弾いている」ことを記録するための値で、
+# 「そんな候補は無かった」ではない。転入届では実測10本を弾いている。
+NON_HTML_READING = "none"
 
 sys.path.insert(0, str(ROOT / "crawler"))
 from discover import score_link  # noqa: E402
