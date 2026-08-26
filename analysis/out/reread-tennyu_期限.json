@@ -1,0 +1,1752 @@
+{
+  "_about": "読ませていなかった本命ページを読ませ直した追試。測定のやり直しではないので scores-*.json には混ぜられない。",
+  "version": "reread-field-0.1",
+  "procedure": "tennyu",
+  "field": "期限",
+  "conditions": {
+    "read_breadth": "strong_all",
+    "model": "claude-sonnet-5",
+    "strong_score": 10,
+    "hint": "以内に|までに|期限|いつまで|日以内"
+  },
+  "summary": {
+    "municipalities": 24,
+    "pages_read": 108,
+    "already_readable": 18,
+    "newly_found": 2,
+    "newly_found_names": [
+      "中央区",
+      "墨田区"
+    ],
+    "unverified_claims": 0
+  },
+  "before": {
+    "minato": "読めた",
+    "adachi": "読めた",
+    "bunkyo": "読めた",
+    "chiyoda": "読めた",
+    "edogawa": "読めた",
+    "itabashi": "読めた",
+    "nerima": "読めた",
+    "shibuya": "読めた",
+    "suginami": "読めた",
+    "taito": "読めた",
+    "toshima": "読めた",
+    "nakano": "読めた",
+    "katsushika": "読めた",
+    "kita": "読めた",
+    "koto": "読めた",
+    "meguro": "読めた",
+    "ota": "読めた",
+    "shinagawa": "読めた",
+    "shinjuku": "読めない",
+    "arakawa": "読めない",
+    "chuo": "読めない",
+    "setagaya": "読めない",
+    "sumida": "読めない"
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "municipality_id": "adachi",
+      "pages": [
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/hikkoshi-oss.html",
+          "link_text": "引越しワンストップサービス",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文にある14日の期間は、①「足立区からの転出」の項での新住所地（足立区以外の自治体）における転入手続きの一般的な期間、②「足立区への転入・足立区内での転居」の項での引越しワンストップサービスの『来庁予定の申請ができる期間』（マイナポータル経由でオンライン予約できる期間）であり、いずれも足立区の転入届そのものの提出期限を直接述べたものではない。転入届自体のページは本文中で別リンク（▶転入届）として案内されているのみ。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
+          "link_text": "戸籍関係の届出一覧（7月17日）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍関係の届出一覧（出生届・婚姻届・離婚届・死亡届など）を扱っており、転入届についての記載自体がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/index.html",
+          "link_text": "届け出・証明 （戸籍・住民票など）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「届け出・証明」の一覧・リンク集で、転入届へのリンク（見出し）はあるが本文中に期限の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
+          "link_text": "",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文ははてなブックマークの足立区関連エントリー一覧ページで、転入届の期限どころか戸籍・くらしの届出ページ自体の内容が含まれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "荒川区",
+      "municipality_id": "arakawa",
+      "pages": [],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "文京区",
+      "municipality_id": "bunkyo",
+      "pages": [
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000271.html",
+          "link_text": "「引越しワンストップサービス」",
+          "found": true,
+          "value": "引越し日から14日以内",
+          "evidence": "来庁期間\n\n引越し日から14日以内",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 17,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000268/index.html",
+          "link_text": "転居届(文京区内で引越しされる方)",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（文京区内で引越しされる方）」の内容で、届出期間『引越した日（新しい住所に住み始めた日）から14日以内』は転居届のもの。転入届（区外や国外から文京区へ引越す場合）の期限はこのページには書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "引越し日から14日以内"
+    },
+    {
+      "municipality": "千代田区",
+      "municipality_id": "chiyoda",
+      "pages": [
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/mainambadenshi/card-keizoku.html",
+          "link_text": "引越し等に伴うマイナンバーカードの住所・氏名等変更手続き（継続利用・券面更新）および電子証明書の発行",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文はマイナンバーカードの住所・氏名等変更手続き（継続利用・券面更新）の届出期限（変更があった日から14日以内）と、転入手続き後90日を過ぎるとカードが失効する旨を述べているだけで、転入届そのものの提出期限は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenshutsu.html",
+          "link_text": "転出届（千代田区から他の市区町村または国外に住所を異動するとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは千代田区の「転出届」（千代田区から他の市区町村・国外へ出るときの届出）について書かれたページであり、千代田区の「転入届」（他の市区町村から千代田区へ入るときの届出）の期限は書かれていない。文中に「転入先市区町村で転入届を行う必要があります」という記述はあるが、これは転出先（千代田区ではない別の市区町村）で行う転入届についての言及であり、千代田区自身の転入届の期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenkyo.html",
+          "link_text": "転居届（千代田区内で住所を異動するとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（千代田区内で住所を異動するとき）」についてのページで、転入届の期限は書かれていない。本文中の「引っ越してから14日以内」は転居届の届出時期であり、転入届については別ページへのリンクがあるのみ。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/koseki/todokede.html",
+          "link_text": "戸籍の届出",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出（出生届・婚姻届・離婚届・死亡届・養子縁組届・養子離縁届・転籍届・分籍届・入籍届）についての案内で、転入届（住民異動の届出）自体の記載がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/kyuuji-furigana.html",
+          "link_text": "住民票に旧氏の振り仮名が記載されます",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票への旧氏の振り仮名記載制度についての説明で、転入届自体の期限には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tokkyuhakko.html",
+          "link_text": "マイナンバーカードの特急発行",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはマイナンバーカードの特急発行に関する申請期限（出生届・紛失届等からの30日以内など）の説明であり、千代田区への転入届そのものの提出期限については記載されていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "中央区",
+      "municipality_id": "chuo",
+      "pages": [
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html",
+          "link_text": "引越しワンストップサービスの利用",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は転入届の「来庁予定日として設定できる期間（引越しをする日から14日以内）」と、転入手続き未了時のマイナンバーカード失効に関する期限（引越しをした日から14日以内かつ転出予定日から30日以内）を述べているが、これらはマイナポータル経由の来庁予約・失効回避のための期限であり、転入届そのものの提出期限を明記した記述ではない。転出届の期限（30日前〜10日以内）は転入届とは別の届出のため除外。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/zyushohenkoutodokede.html",
+          "link_text": "住所変更の届出を忘れずに",
+          "found": true,
+          "value": "住み始めた日から14日以内",
+          "evidence": "届出期間\n\n住み始めた日から14日以内",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 19,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/syusseitodoke/index.html",
+          "link_text": "出生届",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「出生届の提出方法」についてで、転入届には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/furigana.html",
+          "link_text": "戸籍に振り仮名を記録する取り組みが始まります",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍への氏名の振り仮名記載制度に関する内容で、転入届やその期限についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "住み始めた日から14日以内"
+    },
+    {
+      "municipality": "江戸川区",
+      "municipality_id": "edogawa",
+      "pages": [
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/ido_todoke/kakunin.html",
+          "link_text": "戸籍届出や証明書請求、住所異動等の際の本人確認書類",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍届出・住所異動・証明書請求の際の「本人確認書類」の種類を説明するページで、転入届そのものの提出期限には触れていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenkyo.html",
+          "link_text": "転居届（江戸川区内で引越した方）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページの本文は「転居届（江戸川区内で引越した方）」について書かれており、区内転居の届出期限（住みはじめた日から14日以内）が記載されている。これは転入届（区外から江戸川区への転入）とは別の届出。ページ下部に「転入届（区外から江戸川区へ引越した方）」へのリンクはあるが、その本文（期限を含む）はこのページには含まれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/koikikofu.html",
+          "link_text": "広域交付（住民票のある市区町村以外での交付）による交付申請",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは広域交付(住民票のある市区町村以外での交付)の説明で、転入届については触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/madoguchi.html",
+          "link_text": "戸籍の届出受付窓口",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出（婚姻届・出生届・離婚届・死亡届など）の受付窓口・受付時間の案内であり、転入届の期限には言及していない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/kihondaicho.html",
+          "link_text": "住民基本台帳の閲覧",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民基本台帳の閲覧（第三者による閲覧申出）に関する内容で、転入届そのものについては書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "八王子市",
+      "municipality_id": "hachioji",
+      "pages": [],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "板橋区",
+      "municipality_id": "itabashi",
+      "pages": [
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+          "link_text": "転入届 （国外から板橋区に転入した方）",
+          "found": true,
+          "value": "新住所に住み始めた日から14日以内",
+          "evidence": "新住所に住み始めた日から14日以内（住み始める前の手続きはできません）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 35,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
+          "link_text": "転居届 （板橋区内で引越しの方）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（板橋区内で引越しの方）」のページであり、区内での住所異動に関する届出。転入届（他市区町村から板橋区への引越し）とは別の手続きのページで、本文の「新住所に住み始めた日から14日以内」という届出期間は転居届のものであり、転入届の期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
+          "link_text": "団体での住民異動届出について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは団体（概ね5世帯・5名以上）での住民異動届出における来庁日時の事前連絡や代理人申請の案内であり、転入届そのものの提出期限（例：引越し後14日以内など）についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
+          "link_text": "旧氏（旧姓）の住民票などへの併記",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「旧氏（旧姓）の住民票などへの併記」に関する説明で、転入届そのものの期限には触れていない。ページ下部に転入届（板橋区外から板橋区に転入した方）へのリンクはあるが、本文中に期限の記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kenko/kourei/kouki/tetsuduki/1003527.html",
+          "link_text": "転入転出等に係わる手続き（後期高齢者医療制度）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは後期高齢者医療制度における転入・転出等の手続き案内で、転入届自体の期限は述べられていない。触れられているのは資格確認書の有効期限（転出日の前日まで）や、手続き後「1週間前程度」で資格確認書を郵送するという処理期間であり、転入届の提出期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "新住所に住み始めた日から14日以内"
+    },
+    {
+      "municipality": "葛飾区",
+      "municipality_id": "katsushika",
+      "pages": [
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+          "link_text": "転入届",
+          "found": true,
+          "value": "葛飾区に住み始めてから14日以内",
+          "evidence": "葛飾区に住み始めてから14日以内に届出をしてください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 27,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
+          "link_text": "マイナポータルによるオンラインでの転出届（引越しワンストップサービス）",
+          "found": true,
+          "value": "新しい住所地に住み始めてから14日間以内かつ転出する自治体に届け出た転出予定日から30日以内",
+          "evidence": "転入届は、マイナポータルによるオンライン申請のみでは完結しません。新しい住所地に住み始めてから14日間以内かつ転出する自治体に届け出た転出予定日から30日以内に窓口で転入手続きを行ってください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 97,
+            "note": ""
+          },
+          "verified": true
+        }
+      ],
+      "now_found": true,
+      "value": "葛飾区に住み始めてから14日以内"
+    },
+    {
+      "municipality": "北区",
+      "municipality_id": "kita",
+      "pages": [
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+          "link_text": "転入届、転居届に伴うマイナンバーカードや特定在留カードなどの手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文にあるのは転入手続きに付随するマイナンバーカード等の券面事項変更・継続利用の期限（引越し日から14日以内）であり、転入届そのものの期限を述べた記載ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "link_text": "転入・転出の住所変更等の届出",
+          "found": true,
+          "value": "引越してきた日から14日以内",
+          "evidence": "引越してきた日から14日以内に、本人または世帯主の方が区民事務所までお届けください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 42,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001566.html",
+          "link_text": "転入時の手続き",
+          "found": true,
+          "value": "引っ越してきた日から14日以内",
+          "evidence": "窓口にお越しいただく方の本人確認書類・転出証明書（※）、代理人の方は転入された方からの委任状もお持ちのうえ、引っ越してきた日から14日以内に手続きをしてください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 81,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001573.html",
+          "link_text": "留学などに伴い、北区への転入手続きを団体で行う方へ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "留学などに伴う団体での転入手続きページ。必要書類・持ち物・問い合わせ先の案内のみで、転入届自体の提出期限（異動から何日以内等）についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001571.html",
+          "link_text": "オンラインによる転出届・転入（転居）予定連絡",
+          "found": true,
+          "value": "引越しした日から14日以内またはマイナポータルに入力した引越す日から30日以内のいずれか早い日",
+          "evidence": "届出期間\n\n引越しした日から14日以内またはマイナポータルに入力した引越す日から30日以内のいずれか早い日",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 53,
+            "note": ""
+          },
+          "verified": true
+        }
+      ],
+      "now_found": true,
+      "value": "引越してきた日から14日以内"
+    },
+    {
+      "municipality": "江東区",
+      "municipality_id": "koto",
+      "pages": [
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5021.html",
+          "link_text": "国外への転出届・国外からの転入届",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「国外からの転入届」（外国からの引っ越し）の期限を説明しており、対象の「他の市区町村から江東区への転入届」とは別の手続きページ。後者は関連ページの「転入届（江東区以外の区市町村からのお引越し）」に別途ある。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5015.html",
+          "link_text": "転出届（江東区以外の区市町村へのお引越し）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは江東区『転出届』（区外への引っ越し）の説明であり、転入届の期限には触れていない。文中の『転入届』への言及は、江東区から転出する人が新住所地の市区町村で転入届をする際の期限（14日以内）であり、江東区自体の転入届の期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5017.html",
+          "link_text": "転居届（江東区内でのお引越し）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページの本文は「転居届（江東区内でのお引越し）」についてで、転入届（江東区以外の区市町村からのお引越し）のページではない。届出期間の記載（新しい住所に住み始めてから14日以内）は転居届のものであり、転入届の期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
+          "link_text": "住民異動届",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は住民異動届（転入届・転出届・転居届など）のメニュー一覧のみで、転入届の期限に関する記述はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
+          "link_text": "住所・戸籍の手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文はメニュー・リンク一覧のみで、転入届の期限に関する記述はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
+          "link_text": "",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは区役所本庁舎区民課・出張所の混雑状況について書かれており、転入届の提出期限（例:引っ越し日から14日以内など）は記載されていない。「転入手続きはお時間を要するため、午後3時までに来所いただきますようお願いいたします」という記述はあるが、これは混雑対策としての来庁時間の目安であり、転入届そのものの届出期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5018.html",
+          "link_text": "世帯変更",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「世帯変更届」（住所異動を伴わない世帯構成の変更）についてのページで、転入届のページではない。期限として書かれている「変更のあった日から14日以内」は世帯変更届の期限であり、転入届の期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/koseki/index.html",
+          "link_text": "戸籍関係届",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍関係届（婚姻届・離婚届・出生届など）の案内ページで、住民異動届（転入届）は別分類として名前が挙がっているのみ。本文には転入届の期限に関する記載がない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/gaikoku/index.html",
+          "link_text": "外国人の方の手続き（旧外国人登録）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは外国人の方の手続き（旧外国人登録）の案内一覧で、転入届そのものの期限についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "目黒区",
+      "municipality_id": "meguro",
+      "pages": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html",
+          "link_text": "転入届：本人または新しく同じ世帯になるかたが手続きをするとき",
+          "found": true,
+          "value": "住み始めてから14日以内",
+          "evidence": "目黒区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 43,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuudairi.html",
+          "link_text": "転入届：代理人が手続きをするとき",
+          "found": true,
+          "value": "住み始めてから14日以内",
+          "evidence": "届出期限\n\n目黒区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 49,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/ido.html",
+          "link_text": "転入届：マイナンバーカード等を使って本人または同じ世帯になるかたが窓口で手続きをするとき",
+          "found": true,
+          "value": "引越した日から14日以内、かつ前住所地で転出手続きの際に届け出た引越し予定日（転出予定日）から30日以内",
+          "evidence": "引越した日から14日以内、かつ前住所地で転出手続きの際に届け出た引越し予定日（転出予定日）から30日以内です。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 55,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
+          "link_text": "転入届",
+          "found": true,
+          "value": "引越した日から14日以内、かつマイナポータルに入力した引越す日から30日以内",
+          "evidence": "引越した日から14日以内、かつマイナポータルに入力した引越す日から30日以内です。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 41,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+          "link_text": "転入届",
+          "found": true,
+          "value": "引越した日から14日以内、かつ前住所地で転出手続きの際に届け出た引越し予定日（転出予定日）から30日以内",
+          "evidence": "引越した日から14日以内、かつ前住所地で転出手続きの際に届け出た引越し予定日（転出予定日）から30日以内です。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 55,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
+          "link_text": "引越しワンストップサービス",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は「引越しワンストップサービス」の説明で、マイナポータル経由の転出届オンライン申請の申請可能期間（引越し予定日の30日前から／引越し日から10日以内まで）や、児童手当認定請求の申請期限（転出日の翌日から15日以内）など関連手続きの期限は書かれているが、目黒区の転入届そのものの提出期限は本文中に記載されていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/honninkakunin-junin.html",
+          "link_text": "本人確認を実施しています（住所変更の手続き、住民票の取得、印鑑登録に関する手続き）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は本人確認書類（証明書の有効期限など)についての説明で、転入届そのものの提出期限には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/kyuuuzikisai.html",
+          "link_text": "住民票、マイナンバーカード等への旧氏（旧姓）記載",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「住民票、マイナンバーカード等への旧氏（旧姓）記載」に関するもので、転入届の期限についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "住み始めてから14日以内"
+    },
+    {
+      "municipality": "港区",
+      "municipality_id": "minato",
+      "pages": [
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tenkyo.html",
+          "link_text": "転居届（港区内で引越しするとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転居届（港区内で引越しするとき）の内容で、転入届（港区外から港区へ引越しするとき）とは別の手続きのページのため、転入届の期限はここには書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tenshutsu.html",
+          "link_text": "転出届（港区外へ引越しするとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転出届（港区外へ引越しするとき）についての内容で、転入届のページではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/todokede/kosekitodokede.html",
+          "link_text": "戸籍の届出",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は戸籍の届出（出生届・婚姻届・離婚届・死亡届など）の一覧表であり、転入届についての記載はない。転入届は住民票関連の別ページ（住民票の請求・閲覧の手続き等)の話であり、このページには含まれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/shomesho/yubin/index.html",
+          "link_text": "郵送でできる手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「郵送でできる手続き」の説明で、転出届の郵送提出や証明書の郵送請求（申請書類・本人確認書類・手数料・返信用封筒など）について書かれており、転入届自体の期限には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/todokede/index.html",
+          "link_text": "戸籍の証明書の請求",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の証明書の請求について説明しており、転入届そのものの期限には言及していない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/kurashi/todokede/honnsekitikosekisyoumeisyokouhusabisu.html",
+          "link_text": "本籍地戸籍証明書コンビニ交付サービス",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「本籍地戸籍証明書コンビニ交付サービス」についての説明で、転入届そのものの期限には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "中野区",
+      "municipality_id": "nakano",
+      "pages": [
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kokugaikara.html",
+          "link_text": "国外からの転入",
+          "found": true,
+          "value": "住み始めてから14日以内",
+          "evidence": "住み始めてから14日以内（届け出が遅れると過料がかかる場合があります）。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 36,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/hikkoshi.html",
+          "link_text": "引越し・印鑑登録をされる方へ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "転入届は「新しいところに住み始めてから2週間以内に来庁してください」と書かれているのは中野区内での引越し（転居届）と国外からの転入についての記載であり、区外から中野区への転入届自体には期限の明記がない。近い記述として『中野区内での引越し（転居届）、中野区への転入の手続きは、新しいところに住み始めてから2週間以内に来庁してください』はあるが、これは転居届と一括りにした記述で、転入届固有の期限として引用できる独立した文ではない。また『2週間前から手続きができます』は転出届の期限であり除外対象。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tenkyo-kunai.html",
+          "link_text": "転居届（中野区内で引越しをしたとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページの本文は「転居届（中野区内の引越し）」についてで、転入届（区外から中野区へ）の期限は書かれていない。転入届は別ページ。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240211143306245.html",
+          "link_text": "外国人の方の在留期間延長に伴うマイナンバーカードの手続きについて",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは外国人の在留期間延長に伴うマイナンバーカードの有効期間延長手続きについての案内であり、転入届やその期限には言及していない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は中野区くらし・手続きのトップページのメニュー一覧であり、転入届そのものの期限（提出期限日数など）についての記載は見当たらない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/faq/koseki/index.html",
+          "link_text": "戸籍・住民票・マイナンバー",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "戸籍・住民票・マイナンバーのFAQ一覧ページで、転入届自体の期限についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "住み始めてから14日以内"
+    },
+    {
+      "municipality": "練馬区",
+      "municipality_id": "nerima",
+      "pages": [
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyukokugai.html",
+          "link_text": "転入届（国外から練馬区に引越したとき）",
+          "found": true,
+          "value": "練馬区に住み始めてから14日以内",
+          "evidence": "練馬区に住み始めてから14日以内（住み始める前の届出はできません）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 33,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
+          "link_text": "転入・転出に伴う区役所以外の手続き（電気・水道・ガス等）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転入・転出に伴う区役所以外の手続き（電気・水道・ガス等の外部事業者への連絡）についての案内であり、転入届そのものの期限についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenshutsu.html",
+          "link_text": "転出届 （練馬区外に引っ越しするとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは練馬区からの「転出届」（練馬区外へ引っ越すとき）のページであり、転入届のページではない。本文中の「転入届は引越し後14日以内に行う必要があります」は、転出後に引っ越し先の（練馬区ではない）新しい市区町村の窓口で行う転入届についての一般的な説明であり、練馬区の転入届そのものの期限を述べたものではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenkyo.html",
+          "link_text": "転居届 （練馬区内で引っ越ししたとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは練馬区の「転居届（練馬区内で引越ししたとき）」のページであり、転入届（他市区町村から練馬区への転入）のページではない。届出期間として書かれているのは転居届の「新しい住所に住み始めてからから14日以内」であり、転入届の期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tensyutsukokugai.html",
+          "link_text": "転出届 （国外へ引越しするとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転出届（国外へ引越しするとき）」についてで、転入届の期限は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/shomei/honninkakunin25.html",
+          "link_text": "戸籍、住民票の申請・届出の本人確認方法について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は戸籍・住民票の申請・届出時の本人確認方法についてのページで、転入届の期限には言及していない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html",
+          "link_text": "区役所に行かずにできる手続き（戸籍・住民登録）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍・住民登録の手続き案内（郵送・オンライン・コンビニ交付等）の一覧で、転入届そのものの期限には触れていない。ページ内にあるのは転出届のオンライン・郵送提出の案内であり、転入届の期限記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
+          "link_text": "7月17日から7月21日までに戸籍のお届をされる方へ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "戸籍のお届出（婚姻届等）の連休期間中の処理遅延に関する案内で、練馬区の転入届の期限についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyoka/index.html",
+          "link_text": "みどりに関する届出・手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはみどり・緑化に関する届出（風致地区許可申請、樹木伐採届出など）についての案内であり、転入届やその期限に関する記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/index.html",
+          "link_text": "お知らせ一覧（戸籍・住民登録）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍・住民登録関連のお知らせ一覧であり、転入届の期限についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "練馬区に住み始めてから14日以内"
+    },
+    {
+      "municipality": "大田区",
+      "municipality_id": "ota",
+      "pages": [
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu-tenshutu_jyuuki-card.html",
+          "link_text": "マイナンバーカードをお持ちの方の転出届・転入届",
+          "found": true,
+          "value": "14日以内",
+          "evidence": "引越しが終わったら、14日以内に窓口で転入届をしてください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 30,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tenkyo.html",
+          "link_text": "転居届（大田区内の引越し）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（大田区内の引越し）」の内容で、転入届（区外から大田区へ）のページではない。本文の「届出期間：引越した日から14日以内」は転居届の期限であり、転入届の期限はこのページに書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/jyuusyo-henkou_mynumber-card.html",
+          "link_text": "住所変更に伴うマイナンバーカードの手続きについて",
+          "found": true,
+          "value": "転入した日から14日以内",
+          "evidence": "・転入した日から14日以内に転入届を行わなかった場合。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 27,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/donichi_jyushohenkou.html",
+          "link_text": "3月・4月の休日窓口で住民異動届の受付、マイナンバーカードの住所等の変更手続きをいたします",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは休日窓口の開設日程（3月・4月の特定の日曜・土曜に住民異動届を受け付ける）を案内しているだけで、転入届そのものの提出期限（例:引っ越しから14日以内）については書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/oshirase/mokutekibetsu/koseki/kosekijuminka_service.html",
+          "link_text": "来庁せずにできるお手続きなどのお知らせ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは来庁不要の各種手続き案内（転出届のオンライン/郵送、証明書の郵送・コンビニ交付、窓口予約、待ち人数確認など）を列挙したものであり、転入届そのものの期限についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "14日以内"
+    },
+    {
+      "municipality": "世田谷区",
+      "municipality_id": "setagaya",
+      "pages": [
+        {
+          "url": "https://www.city.setagaya.lg.jp/02312/18274.html",
+          "link_text": "お引越し手続きのご案内（総合支所くみん窓口）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは総合支所くみん窓口の移転案内・混雑状況・受付時間・窓口一覧についての説明であり、転入届そのものの提出期限（例：引越し後14日以内など）についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/11524.html",
+          "link_text": "くらし・手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は「くらし・手続き」トップページのメニュー一覧で、転入届そのものの期限に関する記述はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "渋谷区",
+      "municipality_id": "shibuya",
+      "pages": [
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu_kaigai.html",
+          "link_text": "国外転入届（国外から渋谷区へ）",
+          "found": true,
+          "value": "渋谷区に住み始めた日から14日以内",
+          "evidence": "渋谷区に住み始めた日から14日以内（届出が遅れると過料がかかる場合があります）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 39,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/f_t_tennyu.html",
+          "link_text": "転入届（外国人住民）",
+          "found": true,
+          "value": "渋谷区に住みはじめた日から14日以内",
+          "evidence": "渋谷区に住みはじめた日から14日以内（届出が遅れると過料がかかる場合があります）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 40,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/out_postal_fuki.html",
+          "link_text": "転入届の特例による転入",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文の「届出期間」はいずれも転出届（前住所地への転出届／転入届の特例による転出届）の期限であり、転入届そのものの期限は本文に書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenkyo.html",
+          "link_text": "転居届（渋谷区内の引っ越し）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（渋谷区内の引っ越し）」についてのページで、転入届（他区市町村から渋谷区への転入）のページではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/nenkin/shikaku-menjo/nenkin_tetsuzuki_todokede.html",
+          "link_text": "国民年金（手続き・届出）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは渋谷区の国民年金の手続き・届出窓口案内で、転入届自体は扱っていない。「国外から転入したとき」という国民年金加入のきっかけへの言及はあるが期限の記載はなく、本文中の「有効期限内」は本人確認書類の話。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/nimpu-info/tennyuu_ninpu.html",
+          "link_text": "渋谷区へ転入した妊婦の皆さまへ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は「妊婦転入届」（転入した妊婦向けの手続き）についての説明で、必要書類・届出窓口・面接の案内はあるが、転入届（住民登録上の届出）そのものの期限に関する記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/mynumber/mynumber-tsuchi/mynumber_keizokuriyou.html",
+          "link_text": "マイナンバーカードの継続利用について（他区市町村からの転入の場合）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはマイナンバーカードの継続利用手続きの案内で、転入届自体の期限は書かれていない。本文中の「転出予定日から30日以内」「転入届を出した日から90日以内」は継続利用手続きの条件であり、転入届の期限は別ページ（転入届（区外から渋谷区へ）のページ）を参照するよう案内されている。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu.html",
+          "link_text": "転出届（渋谷区から区外へ）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転出届（渋谷区から区外へ）」のページであり、渋谷区の転入届のページではない。本文中の「新しい住所に住み始めてから14日以内に引越し先の区市町村で転入届をしてください」は、渋谷区から他区市町村へ引っ越す人向けの案内で、転居先（渋谷区外)の市区町村における転入届の期限を述べたものであり、渋谷区の転入届の期限ではない。また「届出期間」欄（引越し予定日の14日前から）は転出届の期限であり、除外対象。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu_kaigai.html",
+          "link_text": "国外転出届（渋谷区から国外へ）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「国外転出届（渋谷区から国外へ）」の内容で、転出届（国外転出）の期限のみが書かれている。転入届については記載がない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "渋谷区に住み始めた日から14日以内"
+    },
+    {
+      "municipality": "品川区",
+      "municipality_id": "shinagawa",
+      "pages": [
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/20220309142208.html",
+          "link_text": "【団体での国外からの転入】団体で国外から品川区への転入届を行う方へ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は団体での国外からの転入手続きの持ち物・受付時間・窓口案内のみで、転入届自体の提出期限の記載はない（記載されている期限は書類の有効期限「3カ月以内に発行されたもの」のみ）",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "新宿区",
+      "municipality_id": "shinjuku",
+      "pages": [
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
+          "link_text": "住民票等の証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「住民票等の証明」（住民票の写し・除票の請求方法、手数料、受付時間等）についての内容であり、転入届そのものやその提出期限についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "杉並区",
+      "municipality_id": "suginami",
+      "pages": [
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s018/536.html",
+          "link_text": "杉並区に転入する方へ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文に転入届そのものの期限の記載はない。「14日以内」は介護保険の認定申請、「15日を過ぎると」は児童手当の申請についての期限で、転入届の期限ではない。転入届の手続き自体は別ページへのリンク案内のみ。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "墨田区",
+      "municipality_id": "sumida",
+      "pages": [
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+          "link_text": "引越しワンストップサービスが始まりました（墨田区から転出の場合、来庁不要に）",
+          "found": true,
+          "value": "引越し後14日以内",
+          "evidence": "来庁申込できる期間\n\n引越し後14日以内",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 20,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
+          "link_text": "戸籍の届出",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出（出生・死亡・婚姻・離婚・転籍・分籍・養子縁組）の一覧で、住民異動の転入届については触れていない。出生届などの届出期間の記載はあるが、転入届の期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
+          "link_text": "戸籍の証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍証明書（戸籍謄本・抄本等）の請求・発行手続きに関する内容で、転入届そのものについては書かれていない。本人確認や請求方法、手数料、開庁時間などの記載はあるが、転入届の期限に関する言及はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
+          "link_text": "住民登録の届出",
+          "found": true,
+          "value": "引っ越し後14日以内",
+          "evidence": "実際に墨田区に住み始めてから14日以内に転入の届出をしてください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 33,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/konzatsu-kanwa.html",
+          "link_text": "区役所1階及び2階窓口（住民登録やマイナンバーカード等）の混雑緩和対策について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは区役所窓口の混雑緩和対策（混雑予想日、来庁予約、郵送手続、転出手続の案内など）についてで、転入届そのものの期限には言及していない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "引越し後14日以内"
+    },
+    {
+      "municipality": "台東区",
+      "municipality_id": "taito",
+      "pages": [
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
+          "link_text": "転入したとき",
+          "found": true,
+          "value": "14日以内",
+          "evidence": "【日本人の方】転出証明書、本人確認できるものを持参して、住み始めてから、14日以内に手続きをしてください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 53,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/honninkakunin.html",
+          "link_text": "戸籍・住民登録関係の請求や届出の際には本人確認書類の提示が必要です",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本人確認書類の一覧ページで、届出・請求時に必要な本人確認書類の種類を説明しているのみ。転入届の期限についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kouikikoufu_koseki.html",
+          "link_text": "戸籍の広域交付",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍証明書等の広域交付についての案内であり、転入届の期限については触れられていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kosekiyuusouseikyuu.html",
+          "link_text": "戸籍の証明書を郵送で取得する",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は戸籍証明書の郵送請求の手続き(必要書類・手数料・送付先)についてであり、転入届やその期限には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+          "link_text": "転出するとき（マイナンバーカードを利用したオンラインでの手続き）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは台東区から他自治体へ転出する際の「オンラインによる転出届」の手続きについてのページで、台東区への転入届の期限は書かれていない。本文中の「引越し後14日以内」等はいずれも転出届や転入先市区町村での手続きに関する期限であり、台東区の転入届そのものの期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenshutsumado.html",
+          "link_text": "転出するとき（オンライン以外での手続き）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは台東区の「転出に関連する手続き」のページであり、転出届および転出に伴う各種手続き（印鑑登録、国民健康保険、介護保険など）について書かれている。転入届そのもの、またはその期限についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+          "link_text": "",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは台東区からの「オンラインによる転出届」についてのページであり、台東区が受け付ける転入届（他市区町村から台東区へ引っ越す際の届出）の期限は書かれていない。文中に「引越し後14日以内にマイナンバーカードをお持ちの上、転入先市区町村の窓口で転入届を行ってください」とあるが、これは台東区から転出する人が転入先の自治体で行う転入届についての一般的な期限説明であり、台東区自身への転入届の期限ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenkyo.html",
+          "link_text": "転居するとき",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届」（区内での住所変更）についてのページで、14日以内という期限も転居届のもの。転入届（他市区町村からの引っ越し）そのものの期限はこの本文には書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/setaihennkou.html",
+          "link_text": "世帯に変更があったとき",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「世帯に変更があったとき」の届出（世帯主変更・世帯分離・世帯合併など）の期限（変更日から14日以内）についてのみ記載しており、転入届そのものの期限は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/kuminjimusho.html",
+          "link_text": "最寄の区民事務所・分室をご活用ください",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは区民事務所・分室の利用案内で、転入届の期限には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "14日以内"
+    },
+    {
+      "municipality": "豊島区",
+      "municipality_id": "toshima",
+      "pages": [
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
+          "link_text": "転入届：代理人が手続きをするとき",
+          "found": true,
+          "value": "14日以内",
+          "evidence": "他の区市町村から豊島区に引越しをしたときは、14日以内に豊島区の窓口で転入の手続きが必要です。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 47,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html",
+          "link_text": "転入・転出の特例（住民基本台帳カードまたはマイナンバーカードを利用した転入届・転出届）",
+          "found": true,
+          "value": "引越した日から14日以内、かつ前住所地で転出手続きの際に届け出た引越し予定日（転出予定日）から30日以内",
+          "evidence": "引越した日から14日以内、かつ前住所地で転出手続きの際に届け出た引越し予定日（転出予定日）から30日以内です。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 55,
+            "note": ""
+          },
+          "verified": true
+        }
+      ],
+      "now_found": true,
+      "value": "14日以内"
+    }
+  ]
+}
