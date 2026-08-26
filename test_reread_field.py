@@ -7,7 +7,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "analysis"))
-from reread_field import ASK, HINTS, NOT_THIS, safe_name, summarize  # noqa: E402
+from reread_field import (  # noqa: E402
+    ASK,
+    HINTS,
+    NOT_THIS,
+    already_done,
+    safe_name,
+    summarize,
+)
 
 
 def published_fields() -> set[str]:
@@ -128,3 +135,67 @@ class ファイル名(unittest.TestCase):
 
     def test_普通の名前は変えない(self):
         self.assertEqual(safe_name("必要書類"), "必要書類")
+
+
+def page(url: str, *, error: str | None = None, found: bool = False,
+         verified: bool = False) -> dict:
+    p = {"url": url, "found": found, "verified": verified}
+    if error:
+        p["error"] = error
+    return p
+
+
+class 失敗を成功に混ぜない(unittest.TestCase):
+    """★利用上限で71ページが落ち、7区の「見つからない」が嘘になった。
+
+    墨田区は11本すべて失敗していたのに「見つからない」と出ていた。
+    1ページでも読めていない区の「見つからない」は結論にならない。
+    """
+
+    def test_読めなかったページを別に数える(self):
+        rows = [{"municipality_id": "a", "municipality": "A区", "now_found": False,
+                 "pages": [page("u1"), page("u2", error="rc=1")]}]
+        got = summarize(rows, {"a": "読めない"})
+        self.assertEqual(got["pages_read"], 1)
+        self.assertEqual(got["pages_failed"], 1)
+
+    def test_全部失敗した区は結論を出せない扱い(self):
+        rows = [{"municipality_id": "a", "municipality": "A区", "now_found": False,
+                 "pages": [page("u1", error="rc=1"), page("u2", error="rc=1")]}]
+        got = summarize(rows, {"a": "読めない"})
+        self.assertEqual(got["inconclusive"], 1)
+        self.assertEqual(got["inconclusive_names"], ["A区"])
+        self.assertEqual(got["newly_found"], 0)
+
+    def test_見つかった区は失敗があっても結論扱い(self):
+        # 1本でも verified があれば「書いてある」は言える。失敗は残りの話。
+        rows = [{"municipality_id": "a", "municipality": "A区", "now_found": True,
+                 "pages": [page("u1", found=True, verified=True), page("u2", error="rc=1")]}]
+        got = summarize(rows, {"a": "読めない"})
+        self.assertEqual(got["inconclusive"], 0)
+        self.assertEqual(got["newly_found"], 1)
+
+    def test_全部読めた区は結論を出せる(self):
+        rows = [{"municipality_id": "a", "municipality": "A区", "now_found": False,
+                 "pages": [page("u1"), page("u2")]}]
+        self.assertEqual(summarize(rows, {"a": "読めない"})["inconclusive"], 0)
+
+    def test_1本も対象が無い区は結論を出せる(self):
+        rows = [{"municipality_id": "a", "municipality": "A区", "now_found": False, "pages": []}]
+        self.assertEqual(summarize(rows, {"a": "読めない"})["inconclusive"], 0)
+
+
+class 再開(unittest.TestCase):
+    def test_エラー無しのページだけ引き継ぐ(self):
+        import json as _json
+        import tempfile as _tf
+        doc = {"rows": [{"municipality_id": "a", "pages": [
+            page("ok", found=True, verified=True), page("ng", error="rc=1")]}]}
+        with _tf.TemporaryDirectory() as d:
+            p = Path(d) / "x.json"
+            p.write_text(_json.dumps(doc), encoding="utf-8")
+            got = already_done(p)
+        self.assertEqual(set(got["a"]), {"ok"})     # 失敗した ng は呼び直す
+
+    def test_出力がまだ無ければ空(self):
+        self.assertEqual(already_done(Path("/nonexistent/x.json")), {})

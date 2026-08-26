@@ -151,24 +151,47 @@ def load_pairs(procedure: str) -> list[tuple[dict, dict]]:
     return pairs
 
 
+def errored(row: dict) -> int:
+    """読めなかったページ数。**「読んで無かった」と混ぜない。**"""
+    return sum(1 for p in row["pages"] if p.get("error"))
+
+
 def summarize(rows: list[dict], before: dict[str, str]) -> dict:
     changed = [r for r in rows if r["now_found"] and before.get(r["municipality_id"]) != "読めた"]
+    # ★1ページでも読めていない区の「見つからない」は結論にならない。
+    #   実際に利用上限で71ページが落ち、7区の「見つからない」が嘘になった。
+    #   墨田区は11本すべて失敗していたのに「見つからない」と出ていた。
+    incomplete = [r for r in rows if errored(r) and not r["now_found"]]
     return {
         "municipalities": len(rows),
-        "pages_read": sum(len(r["pages"]) for r in rows),
+        "pages_read": sum(len(r["pages"]) - errored(r) for r in rows),
+        "pages_failed": sum(errored(r) for r in rows),
         "already_readable": sum(1 for r in rows if before.get(r["municipality_id"]) == "読めた"),
         "newly_found": len(changed),
         "newly_found_names": [r["municipality"] for r in changed],
+        # ★この区の「見つからない」は信用できない。再実行が要る
+        "inconclusive": len(incomplete),
+        "inconclusive_names": [r["municipality"] for r in incomplete],
         "unverified_claims": sum(
-            len([p for p in r["pages"] if p["found"] and not p["verified"]]) for r in rows),
+            len([p for p in r["pages"] if p.get("found") and not p.get("verified")])
+            for r in rows),
     }
 
 
 def run_one(discovery: dict, extract: dict, kw: dict, field: str,
-            proc: str, model: str) -> dict:
+            proc: str, model: str, done: dict[str, dict] | None = None) -> dict:
+    """1自治体ぶん。`done` に読めているページがあれば呼び直さない。
+
+    ★再開できないと、利用上限に当たった時点までの結果が無駄になる。
+      実際に71ページ落ちた。エラーのページだけ呼び直す。
+    """
     targets = targets_for(discovery, extract, kw, HINTS[field])
     pages = []
     for target in targets:
+        prev = (done or {}).get(target["url"])
+        if prev and not prev.get("error"):
+            pages.append(prev)
+            continue
         try:
             pages.append(ask_page(target, extract["municipality"], proc, field, model))
         except Exception as exc:                          # noqa: BLE001
@@ -180,6 +203,15 @@ def run_one(discovery: dict, extract: dict, kw: dict, field: str,
             "municipality_id": extract["municipality_id"],
             "pages": pages, "now_found": hit is not None,
             "value": hit["value"] if hit else ""}
+
+
+def already_done(out: Path) -> dict[str, dict[str, dict]]:
+    """前回の出力から、エラー無しで読めているページを拾う。自治体ID→URL→結果。"""
+    if not out.exists():
+        return {}
+    doc = json.loads(out.read_text(encoding="utf-8"))
+    return {row["municipality_id"]: {p["url"]: p for p in row["pages"] if not p.get("error")}
+            for row in doc.get("rows", [])}
 
 
 def safe_name(field: str) -> str:
@@ -237,9 +269,11 @@ def main(argv: list[str] | None = None) -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out = OUT_DIR / f"reread-{args.procedure}_{safe_name(args.field)}.json"
 
+    done = already_done(out)
     rows = []
     for discovery, extract in pairs:
-        row = run_one(discovery, extract, kw, args.field, proc, args.model)
+        row = run_one(discovery, extract, kw, args.field, proc, args.model,
+                      done.get(extract["municipality_id"]))
         rows.append(row)
         was = before.get(row["municipality_id"], "不明")
         mark = "★読み落としだった" if row["now_found"] and was != "読めた" else ""
@@ -252,7 +286,10 @@ def main(argv: list[str] | None = None) -> None:
     doc = write_out(out, args, rows, before, complete=True)
     s = doc["summary"]
     print(f"\n→ {out}")
-    print(f"  {s['municipalities']}自治体 / {s['pages_read']}ページ")
+    print(f"  {s['municipalities']}自治体 / 読めた {s['pages_read']}ページ / "
+          f"読めなかった {s['pages_failed']}ページ")
+    if s["inconclusive"]:
+        print(f"  ★結論を出せない区: {s['inconclusive']}  {s['inconclusive_names']}")
     print(f"  ★読み落としだった区: {s['newly_found']}  {s['newly_found_names']}")
     print(f"  引用が本文に無く数えなかった回: {s['unverified_claims']}")
 
