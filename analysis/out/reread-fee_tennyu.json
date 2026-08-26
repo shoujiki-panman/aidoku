@@ -1,0 +1,1588 @@
+{
+  "_about": "読ませていなかった本命ページを読ませ直した追試の記録。手数料1項目のみ。測定のやり直しではないので scores-*.json には混ぜられない。",
+  "reread_version": "reread-fee-0.1",
+  "procedure": "tennyu",
+  "field": "手数料",
+  "conditions": {
+    "read_breadth": "strong_all",
+    "model": "claude-sonnet-5",
+    "strong_score": 10,
+    "fee_words": "手数料|費用|無料|かかりません"
+  },
+  "summary": {
+    "municipalities": 24,
+    "pages_read": 90,
+    "already_readable": 1,
+    "newly_found": 0,
+    "newly_found_names": [],
+    "still_not_found": 24,
+    "unverified_claims": 0
+  },
+  "before": {
+    "minato": "読めた",
+    "adachi": "読めない",
+    "bunkyo": "読めない",
+    "chiyoda": "読めない",
+    "edogawa": "読めない",
+    "itabashi": "読めない",
+    "nerima": "読めない",
+    "shibuya": "読めない",
+    "suginami": "読めない",
+    "taito": "読めない",
+    "toshima": "読めない",
+    "nakano": "読めない",
+    "katsushika": "読めない",
+    "kita": "読めない",
+    "koto": "読めない",
+    "meguro": "読めない",
+    "ota": "読めない",
+    "shinagawa": "読めない",
+    "shinjuku": "読めない",
+    "arakawa": "読めない",
+    "chuo": "読めない",
+    "setagaya": "読めない",
+    "sumida": "読めない"
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "municipality_id": "adachi",
+      "pages": [
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/index.html",
+          "link_text": "届け出・証明 （戸籍・住民票など）",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「届け出・証明」の一覧・案内ページで、転入届本文へのリンク名があるのみ。手数料の金額・「無料」等の記載は本文に無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
+          "link_text": "",
+          "score": 12,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "はてなブックマークの足立区関連エントリー一覧ページで、転入届や住民異動届の手数料に関する記述は本文に存在しない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "荒川区",
+      "municipality_id": "arakawa",
+      "pages": [
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
+          "link_text": "住民票関連の証明書",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写し等「証明書」の交付手数料についてのみ書かれており、転入届そのものの手数料には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
+          "link_text": "住民票の写しの電話予約",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "住民票の写しの交付手数料（1通300円）のみで、転入届そのものの手数料の記載は無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a012/todokede/shoumeisho/online_manyuaru.html",
+          "link_text": "住民票の写し・戸籍証明書のオンライン申請",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "住民票の写し・戸籍証明書・身分証明書の交付手数料のみで、転入届そのものの手数料の記載は無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
+          "link_text": "住民票の写し・戸籍証明書の郵送請求におけるキャッシュレス決済",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "証明書交付手数料のキャッシュレス決済に関するページで、転入届そのものの手数料は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "文京区",
+      "municipality_id": "bunkyo",
+      "pages": [
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/index.html",
+          "link_text": "届出・登録・証明（戸籍・住民票など）",
+          "score": 13,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは届出・証明の一覧（目次）で「転入届」へのリンク名があるだけで、手数料の金額や無料である旨の記載は本文に無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/shoumeisho/index.html",
+          "link_text": "各種証明書（戸籍・住民票の写し・印鑑登録証明書等）",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは証明書交付（住民票の写し・戸籍謄本等）に関する案内で、転入届自体の手数料についての記載はない。転入届は別ページ「住民票の異動関係（転入・転出・転居届等）」へのリンクのみで、本文に金額等の記載なし",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "千代田区",
+      "municipality_id": "chiyoda",
+      "pages": [
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/mainambadenshi/card-keizoku.html",
+          "link_text": "引越し等に伴うマイナンバーカードの住所・氏名等変更手続き（継続利用・券面更新）および電子証明書の発行",
+          "score": 24,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはマイナンバーカードの住所・氏名等変更手続き（継続利用・券面更新）と電子証明書発行についてのページで、転入届そのものの手数料の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/juminhyo/index.html",
+          "link_text": "住民票の写し等の請求・閲覧",
+          "score": 19,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "住民票の写し等の交付手数料のページで、転入届そのものの手数料は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenshutsu.html",
+          "link_text": "転出届（千代田区から他の市区町村または国外に住所を異動するとき）",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転出届（千代田区から他の市区町村または国外へ異動するとき）の説明で、転入届の手数料についての記載がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenkyo.html",
+          "link_text": "転居届（千代田区内で住所を異動するとき）",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（千代田区内で住所を異動するとき）」の案内であり、転入届のページではない。本文にも転入届の手数料についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/koseki/todokede.html",
+          "link_text": "戸籍の届出",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出（出生・婚姻・離婚・死亡・養子縁組・養子離縁・転籍・分籍・入籍）のみを扱っており、転入届（住民登録の異動届）についての記載も手数料の記載もない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/jyuminhyo-heiki.html",
+          "link_text": "旧氏（旧姓）等の住民票等への併記",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「旧氏（旧姓）等の住民票等への併記」に関するもので、転入届の手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/yoshikihenko.html",
+          "link_text": "システム標準化に伴い、令和8年1月から住民票の写しと印鑑登録証明書の様式が変更されます",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "住民票の写し・印鑑登録証明書の様式変更のお知らせページで、転入届そのものの手数料の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tokkyuhakko.html",
+          "link_text": "マイナンバーカードの特急発行",
+          "score": 12,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはマイナンバーカードの特急発行に関するもので、記載されている手数料（再交付手数料2,000円）はマイナンバーカードの交付手数料。転入届そのものの手数料は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "中央区",
+      "municipality_id": "chuo",
+      "pages": [
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminhyou/shoumeisho/kosekitohu.html",
+          "link_text": "戸籍謄本・抄本",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の証明書（謄本・抄本など）の交付手数料一覧であり、転入届そのものの手数料には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文はナビゲーション項目の一覧のみで、「住民の異動の届出（転入・転出など）」というリンク名があるだけで、手数料についての金額・無料等の記載が本文に存在しない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "江戸川区",
+      "municipality_id": "edogawa",
+      "pages": [
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/hikkoshi_info.html",
+          "link_text": "【マイナンバーカードをお持ちの方】引越しワンストップサービス",
+          "score": 26,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "転入届に関する手続き一覧はあるが、手数料・金額についての記載が本文中に一切ない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/hyojunka.html",
+          "link_text": "令和7年1月6日から住民票の写し等と印鑑登録証明書の様式が変わります。",
+          "score": 19,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "住民票の写し・印鑑登録証明書の様式変更に関するページで、証明書の交付手数料についても言及がなく、転入届そのものの手数料の記載も無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/seikyu.html",
+          "link_text": "江戸川区の住民票の請求",
+          "score": 19,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写しの交付手数料（1通300円等）についてのみで、転入届そのものの手数料への言及は無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/koikikofu.html",
+          "link_text": "広域交付（住民票のある市区町村以外での交付）による交付申請",
+          "score": 19,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは広域交付（住民票の写しの交付）の説明で、転入届そのものではない。記載の「1通300円」は住民票の写しの交付手数料であり、証明書交付手数料に該当するため対象外",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/kihondaicho.html",
+          "link_text": "住民基本台帳の閲覧",
+          "score": 16,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民基本台帳の閲覧・住民票等の請求に関するページで、転入届そのものへの言及がない。記載されている手数料「30分：1,000円」は住民基本台帳の閲覧手数料であり、転入届の手数料ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
+          "link_text": "届出・証明",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "転入届へのリンク名があるだけで、本文中に手数料の金額や「無料」等の記載が一切ない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文はメニュー・リンク一覧のみで、転入届の手数料に関する記述（金額や無料の明示）が本文中に存在しない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "八王子市",
+      "municipality_id": "hachioji",
+      "pages": [
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/index.html",
+          "link_text": "戸籍・住民登録",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文はナビゲーションのリンク一覧のみで、転入届の手数料についての記述（金額や無料の言及）が本文中に存在しない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/index.html",
+          "link_text": "住民票の写し・戸籍証明の請求",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写し・戸籍証明の請求（証明書交付手数料）についてで、転入届そのものの手数料の記載は無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/p037367.html",
+          "link_text": "住民票の写し・戸籍証明書などの交付手数料の改定に関するお知らせ（令和8（2026）年7月1日から）",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写し・戸籍証明書などの交付手数料の改定についての告知であり、転入届そのものの手数料には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/index.html",
+          "link_text": "住民票の写し等の請求",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写し・戸籍証明書の交付手数料についてのみで、転入届自体の手数料や転入届への言及がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/index.html",
+          "link_text": "窓口での請求（住民票の写し等）",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写し・戸籍証明書の交付請求（窓口での請求）についてのページで、証明書の交付手数料改定の案内はあるが、転入届そのものの手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/yuusou/index.html",
+          "link_text": "郵送での請求（住民票の写し等）",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は住民票の写し・戸籍証明書の郵送請求に関するページで、転入届そのものの手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/002/index.html",
+          "link_text": "戸籍証明（戸籍謄本・抄本）等の請求",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "戸籍証明書等の交付手数料に関するページで、転入届そのものの手数料の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "板橋区",
+      "municipality_id": "itabashi",
+      "pages": [
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+          "link_text": "転入届 （国外から板橋区に転入した方）",
+          "score": 32,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文には転入届の必要書類・届出期間・届出方法の説明はあるが、手数料についての記載自体が存在しない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
+          "link_text": "転居届 （板橋区内で引越しの方）",
+          "score": 22,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転居届（板橋区内での引越し）のページで、転入届のページではない。本文中に手数料の記載はなく、「無料」はAdobe Readerのダウンロードについてのみ",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
+          "link_text": "団体での住民異動届出について",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは団体での住民異動届出の案内で、転入届自体の手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
+          "link_text": "旧氏（旧姓）の住民票などへの併記",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「旧氏（旧姓）の住民票などへの併記」の手続きであり、転入届そのものの手数料は本文に記載がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
+          "link_text": "同じ住所に戸建建物が複数あり誤配等でお困りの方へ",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「補助番号制度」に関するページで、転入届の手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "葛飾区",
+      "municipality_id": "katsushika",
+      "pages": [
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+          "link_text": "転入届",
+          "score": 24,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "転入届の手続き内容や必要書類は書かれているが、手数料（金額や「無料」等の記載）についての言及が本文中に無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
+          "link_text": "マイナポータルによるオンラインでの転出届（引越しワンストップサービス）",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転出届のオンライン手続き（マイナポータル）についての説明で、転入届は「転入先の区市町村の窓口でのお手続きが必要」とだけ書かれており、転入届の手数料についての記載は本文中に無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html",
+          "link_text": "住所の届出・証明（住民票）",
+          "score": 13,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転入届を含む住民異動届・証明書発行の案内一覧で、手数料の金額そのものは本文中に記載がない（各リンク先の子ページで案内されている可能性はあるが、この本文には無い）",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "北区",
+      "municipality_id": "kita",
+      "pages": [
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+          "link_text": "転入届、転居届に伴うマイナンバーカードや特定在留カードなどの手続き",
+          "score": 23,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は転入届に伴うマイナンバーカード・特定在留カード等の継続利用/券面事項変更/署名用電子証明書発行の手続きのみを扱っており、これらの手数料についての記載もない。転入届そのものの手数料の記載は本文中に存在しない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "link_text": "転入・転出の住所変更等の届出",
+          "score": 16,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "手数料の記載がない（マイナンバーカード再交付の「紛失した場合は手数料がかかります」のみで、転入届自体の手数料は本文中に記載されていない）",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001573.html",
+          "link_text": "留学などに伴い、北区への転入手続きを団体で行う方へ",
+          "score": 13,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は団体での転入手続き案内であり、記載されているのは必要書類・添付書類（PDF）のみ。転入届の手数料についての記述は無い。「無料」の記載はAdobe Readerのダウンロードに関するもの",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001571.html",
+          "link_text": "オンラインによる転出届・転入（転居）予定連絡",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転出届・転入（転居）予定連絡のオンライン手続きの説明で、転入届の手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "江東区",
+      "municipality_id": "koto",
+      "pages": [
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5015.html",
+          "link_text": "転出届（江東区以外の区市町村へのお引越し）",
+          "score": 26,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転出届（江東区以外の区市町村へのお引越し）についてのページで、転入届の手続き自体やその手数料には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
+          "link_text": "住所・戸籍の手続き",
+          "score": 17,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は住民・戸籍の手続きの目次ページで、転入届の項目名（リンク）はあるが手数料の金額や「無料」の記載は本文中に無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "目黒区",
+      "municipality_id": "meguro",
+      "pages": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kurashi/kosekitodokede/index.html",
+          "link_text": "戸籍の届出（出生、死亡など）",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出（出生届・死亡届など）の案内で、転入届自体の手数料の記載はない。「引越しの手続き（転入・転出など）」への同分類リンクがあるのみで金額の記載なし",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
+          "link_text": "引越しワンストップサービス",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は引越しワンストップサービス（マイナポータル経由の転出届オンライン申請と転入時来庁予約）の説明で、転入届自体の手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
+          "link_text": "マイナンバー入り住民票の写しの発行",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「マイナンバー入りの住民票がほしいとき」に関する証明書交付手数料（住民票1通300円）の説明であり、転入届そのものの手数料は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "港区",
+      "municipality_id": "minato",
+      "pages": [
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tenkyo.html",
+          "link_text": "転居届（港区内で引越しするとき）",
+          "score": 22,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転居届（港区内で引越しするとき）についてのページで、転入届（港区外から港区へ引越しするとき）とは別の手続き。本文の「手数料は無料です」は転居届の手数料であり、転入届の手数料ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tenshutsu.html",
+          "link_text": "転出届（港区外へ引越しするとき）",
+          "score": 22,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転出届（港区外へ引越しするとき）のページであり、本文の「手数料は無料です」は転出届（転出証明書発行）の手数料。転入届についての記載はページ下部のリンク一覧に名称があるのみで、転入届自体の手数料の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kurashi/todokede/index-todokede02.html",
+          "link_text": "引越しに関する手続き",
+          "score": 21,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは各種届出への案内リンク一覧のみで、転入届の手数料の金額や「無料」等の記載が本文中に無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/kurashi/todokede/juminhyo.html",
+          "link_text": "申請書ダウンロード",
+          "score": 16,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは申請書ダウンロード一覧で、住民票・戸籍・印鑑登録証明書等の交付手数料や「手数料一覧」へのリンクはあるが、転入届そのものの手数料（金額や無料である旨）は本文中に書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/shomesho/yubin/index.html",
+          "link_text": "郵送でできる手続き",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は転出届の郵送手続きと証明書（住民票・戸籍等）の郵送請求手数料についてで、転入届自体の手数料の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/todokede/index.html",
+          "link_text": "戸籍の証明書の請求",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の証明書請求に関するもので、転入届そのものの手数料は書かれていない（手数料一覧ページへの案内のみ）",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/kurashi/todokede/honnsekitikosekisyoumeisyokouhusabisu.html",
+          "link_text": "本籍地戸籍証明書コンビニ交付サービス",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は「本籍地戸籍証明書コンビニ交付サービス」のページで、記載されているのはコンビニ交付の証明書手数料（戸籍事項証明書350円、戸籍の附票の写し200円）と利用登録申請の手数料（無料）のみ。転入届そのものの手数料は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kurashi/todokede/index.html",
+          "link_text": "届出・証明・住民の手続き",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "「転入届」はリンク名として挙がっているだけで、手数料の記載は無い。「手数料一覧」というリンク名があるのみで金額そのものは本文に無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kurashi/todokede/index-todokede04.html",
+          "link_text": "住民票・戸籍・印鑑登録など",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票・戸籍・印鑑登録の証明書手数料一覧へのリンク集で、転入届そのものの手数料についての記述がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/kurashi/todokede/utsushi.html",
+          "link_text": "住民票の請求・閲覧の手続き",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票・戸籍・印鑑登録証明書などの証明書交付手数料についてのみ書かれており、転入届そのものの手数料は記載されていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/madoguchikonzatsujyoukyouhaishin.html",
+          "link_text": "お引越し等の手続き窓口の混雑状況",
+          "score": 13,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは窓口の混雑状況・混雑予想と、各地区総合支所の案内が本文で、転入届の手数料についての記載は無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "中野区",
+      "municipality_id": "nakano",
+      "pages": [
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/nichiyo.html",
+          "link_text": "2階戸籍住民課日曜窓口のご案内【9月20日、9月27日、10月4日、10月25日は休止します】",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転入届の日曜窓口開設案内で、届出の手続き方法や注意事項は書かれているが、転入届そのものの手数料額には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/kayoencyo.html",
+          "link_text": "2階戸籍住民課での火曜延長窓口のご案内",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "火曜延長窓口の案内ページで、転入届は取扱業務として名前が挙がっているだけで、手数料の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240211143306245.html",
+          "link_text": "外国人の方の在留期間延長に伴うマイナンバーカードの手続きについて",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "マイナンバーカードの在留期間延長・再交付手数料に関するページで、転入届の手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文はメニュー・リンク一覧のみで、転入届やその手数料についての記述が無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "練馬区",
+      "municipality_id": "nerima",
+      "pages": [
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
+          "link_text": "転入・転出に伴う区役所以外の手続き（電気・水道・ガス等）",
+          "score": 21,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは電気・水道・ガス等の区役所以外の手続き案内で、転入届の手数料についての記載自体が無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html",
+          "link_text": "区役所に行かずにできる手続き（戸籍・住民登録）",
+          "score": 17,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページには「区役所に行かずにできる手続き」として転出届・住民票の写し・印鑑登録証明書・戸籍謄本抄本・個人番号カード交付申請書の各手数料（コンビニ交付が窓口より100円安い等）は書かれているが、転入届そのものの手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
+          "link_text": "7月17日から7月21日までに戸籍のお届をされる方へ",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "戸籍謄本・受理証明書等の交付手数料の記載のみで、転入届そのものの手数料は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/index.html",
+          "link_text": "お知らせ一覧（戸籍・住民登録）",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "お知らせ一覧のページで、転入届の手数料についての記載自体が無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "大田区",
+      "municipality_id": "ota",
+      "pages": [
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/jyuusyo-henkou_mynumber-card.html",
+          "link_text": "住所変更に伴うマイナンバーカードの手続きについて",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "転入届に伴うマイナンバーカードの手続き案内のみで、転入届自体の手数料の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/kosekijyuminyuso.html",
+          "link_text": "戸籍・住民票の郵送請求",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍・住民票の郵送請求（証明書の交付手数料）についてのみ扱っており、転入届そのものの手数料の記載は無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "世田谷区",
+      "municipality_id": "setagaya",
+      "pages": [
+        {
+          "url": "https://www.city.setagaya.lg.jp/02233/84.html",
+          "link_text": "転入・転居届に伴う関連手続きの案内について",
+          "score": 13,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転入・転居届に伴う関連手続き（印鑑登録、マイナンバーカード、国民健康保険等）の案内であり、転入届そのものの手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "渋谷区",
+      "municipality_id": "shibuya",
+      "pages": [
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/",
+          "link_text": "住民票・戸籍",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文はカテゴリ一覧・新着情報のみで、転入届（住所の異動）の手数料についての記載がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/nimpu-info/tennyuu_ninpu.html",
+          "link_text": "渋谷区へ転入した妊婦の皆さまへ",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは妊婦転入届（妊娠中の人の届出）についてのみ記載しており、住民異動の転入届の手数料には触れていない。手数料の記載自体が本文に無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "品川区",
+      "municipality_id": "shinagawa",
+      "pages": [],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "新宿区",
+      "municipality_id": "shinjuku",
+      "pages": [
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
+          "link_text": "住民票等の証明",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写し・除票・住民票記載事項証明書・住民基本台帳一覧表の閲覧の交付手数料のみを扱っており、転入届そのものの手数料についての記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "杉並区",
+      "municipality_id": "suginami",
+      "pages": [
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは各種手続きへのリンク一覧のみで、転入届の手数料に関する金額や「無料」等の記述は本文中に存在しない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s018/536.html",
+          "link_text": "杉並区に転入する方へ",
+          "score": 10,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文には転入届の手続き案内があるのみで、手数料に関する記載自体が存在しない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "墨田区",
+      "municipality_id": "sumida",
+      "pages": [
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
+          "link_text": "戸籍の届出・証明",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文はカテゴリメニューと「戸籍の届出・証明」ページのリンク一覧のみで、転入届（住民登録の届出）の手数料も金額も記載されていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
+          "link_text": "戸籍の届出",
+          "score": 18,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出（出生・死亡・婚姻・離婚・転籍・分籍・養子縁組）の説明で、転入届自体の記載も手数料の記載もない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
+          "link_text": "戸籍の証明",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の証明書（謄本・抄本など）の交付手数料についてのみ書かれており、転入届そのものの手数料は記載されていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/mado-yuso_taisaku.html",
+          "link_text": "転出届出書（郵送用）",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは郵送・電子申請で請求できる証明書（戸籍謄本・住民票の写し等）や転出届出書の郵送請求について書かれているが、転入届そのものの手数料については記載がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
+          "link_text": "住民票等の証明書",
+          "score": 11,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票等の証明書（交付手数料コンビニ200円等）についてで、転入届そのものの手数料には触れていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "台東区",
+      "municipality_id": "taito",
+      "pages": [
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
+          "link_text": "転入したとき",
+          "score": 22,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文には転入届に関する各種手続き一覧があるが、転入届そのものの手数料（金額や無料の記載）は書かれていない。印鑑登録や住民票関連の案内はあるが手数料額の記載なし",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
+          "link_text": "転入・転居・転出について",
+          "score": 22,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "「手数料一覧」へのリンク名があるだけで、転入届の金額そのものの記載は本文に無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/honninkakunin.html",
+          "link_text": "戸籍・住民登録関係の請求や届出の際には本人確認書類の提示が必要です",
+          "score": 17,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本人確認書類についての案内ページで、転入届の手数料の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kouikikoufu_koseki.html",
+          "link_text": "戸籍の広域交付",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍証明書の広域交付についてで、記載の手数料（戸籍謄本450円・除籍謄本750円・改製原戸籍謄本750円・独身証明書300円）は全て証明書の交付手数料。転入届そのものの手数料は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/index.html",
+          "link_text": "戸籍",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "「手数料一覧（戸籍）」というリンク名があるだけで金額そのものの記載が無く、転入届についての記述も無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/index.html",
+          "link_text": "戸籍に関する証明",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "戸籍に関する証明のページで、転入届への言及がない。「手数料一覧（戸籍）」へのリンク名があるのみで金額本体は無く、戸籍の証明手数料についてのページである",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/index.html",
+          "link_text": "戸籍に関する証明の取得について",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍に関する証明書（謄本等）の交付手数料についてのみで、転入届そのものの手数料の記載は無い",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kosekiyuusouseikyuu.html",
+          "link_text": "戸籍の証明書を郵送で取得する",
+          "score": 15,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍証明書の郵送請求手続きであり、記載の手数料は戸籍証明書等の交付手数料。転入届そのものの手数料は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/index.html",
+          "link_text": "戸籍・住民登録等",
+          "score": 14,
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は戸籍・住民登録等のページ目次のみで、転入届の手数料に関する金額や「無料」等の記載自体が存在しない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "豊島区",
+      "municipality_id": "toshima",
+      "pages": [],
+      "now_found": false,
+      "value": ""
+    }
+  ]
+}
