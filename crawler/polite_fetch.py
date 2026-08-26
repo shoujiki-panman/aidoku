@@ -124,9 +124,21 @@ class FetchResult:
         return content_fingerprint(self.body(), self.url)
 
     def body(self) -> str:
-        if not self.body_path:
+        """テキスト本文。**テキストでない応答には空を返す。**
+
+        ★PDF や Word のバイト列を文字として返すと、呼ぶ側が化けた文字列を
+          「本文」として読んでしまう。読めないものは空にして、
+          `body_bytes()` を使わせる。
+        """
+        if not self.body_path or not is_text_type(self.content_type):
             return ""
         return Path(self.body_path).read_text(encoding="utf-8", errors="replace")
+
+    def body_bytes(self) -> bytes:
+        """保存したままのバイト列。PDF / Word を読むのはこちら。"""
+        if not self.body_path or not Path(self.body_path).exists():
+            return b""
+        return Path(self.body_path).read_bytes()
 
 
 @dataclass
@@ -386,21 +398,30 @@ class PoliteFetcher:
         )
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
-                text = _decode(resp)
+                content_type = resp.headers.get("Content-Type", "")
+                raw = _read_raw(resp)
+                # ★HTMLはこれまでどおり文字で保存する（既存キャッシュと互換）。
+                #   PDF/Word はバイト列のまま保存する。往復で壊れるため。
+                as_text = is_text_type(content_type)
+                text = decode_body(raw, resp.headers.get_content_charset()) if as_text else ""
                 result = FetchResult(
                     url=url,
                     final_url=resp.geturl(),
                     status=resp.status,
-                    content_type=resp.headers.get("Content-Type", ""),
+                    content_type=content_type,
                     fetched_at=_now(),
                     from_cache=False,
                     blocked_by_robots=False,
                     body_path=str(body_path),
                     last_modified=resp.headers.get("Last-Modified"),
                     etag=resp.headers.get("ETag"),
-                    content_hash=content_fingerprint(text, url),
+                    content_hash=(content_fingerprint(text, url) if as_text
+                                  else "sha256:" + hashlib.sha256(raw).hexdigest()),
                 )
-                body_path.write_text(text, encoding="utf-8")
+                if as_text:
+                    body_path.write_text(text, encoding="utf-8")
+                else:
+                    body_path.write_bytes(raw)
         except urllib.error.HTTPError as e:
             result = FetchResult(
                 url=url, final_url=url, status=e.code, content_type="",
@@ -418,7 +439,30 @@ class PoliteFetcher:
         return result
 
 
-def _decode(resp) -> str:
+# 本文をテキストとして保存してよい Content-Type。ここに無いものはバイト列で保存する。
+TEXT_TYPES = frozenset({
+    "application/xhtml+xml", "application/xml", "application/json",
+    "application/rss+xml", "application/atom+xml", "application/javascript",
+})
+
+
+def is_text_type(content_type: str) -> bool:
+    """テキストとして保存してよいか。
+
+    ★ここを誤ると、PDF や Word のバイト列が decode→encode の往復で壊れる。
+      **実際に壊れていた**（29KBのdocxがキャッシュでは51,927バイトに膨らんでいた。
+      不正なバイトが U+FFFD 3バイトに置き換わったため）。
+      非HTMLを一度も読んでいなかったので、誰も気づかなかった。
+
+    Content-Type が空のときはテキスト扱いにする。古いキャッシュを壊さないため。
+    """
+    head = content_type.split(";")[0].strip().lower()
+    if not head:
+        return True
+    return head.startswith("text/") or head in TEXT_TYPES
+
+
+def _read_raw(resp) -> bytes:
     # 上限より1バイト多く読む。ぴったりで切ると「上限ちょうど」と
     # 「上限を超えた」を区別できない。
     raw = resp.read(MAX_BODY_BYTES + 1)
@@ -426,13 +470,21 @@ def _decode(resp) -> str:
         raise ValueError(f"本文が大きすぎる（上限 {MAX_BODY_BYTES} バイト）")
     if resp.headers.get("Content-Encoding") == "gzip":
         raw = gzip.decompress(raw)
-    charset = resp.headers.get_content_charset()
+    return raw
+
+
+def decode_body(raw: bytes, charset: str | None) -> str:
+    """テキスト本文を文字に直す。文字コードは宣言→utf-8→cp932→euc-jp の順に試す。"""
     for enc in filter(None, [charset, "utf-8", "cp932", "euc-jp"]):
         try:
             return raw.decode(enc)
         except (UnicodeDecodeError, LookupError):
             continue
     return raw.decode("utf-8", errors="replace")
+
+
+def _decode(resp) -> str:
+    return decode_body(_read_raw(resp), resp.headers.get_content_charset())
 
 
 def _write_meta(path: Path, result: FetchResult) -> None:

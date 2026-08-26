@@ -17,6 +17,7 @@ from __future__ import annotations
 import io
 import json
 import sys
+import tempfile
 import unittest
 import urllib.error
 import urllib.request
@@ -301,3 +302,81 @@ class SsrfGuard(unittest.TestCase):
         big = b"x" * (polite_fetch.MAX_BODY_BYTES + 1)
         with self.assertRaises(ValueError):
             polite_fetch._decode(_resp(big.decode()))
+
+
+class バイナリ本文の保存(unittest.TestCase):
+    """★PDF/Word をテキストで保存すると decode→encode の往復で壊れる。
+
+    実際に壊れていた（29KB の docx がキャッシュでは 51,927 バイトに膨らんでいた）。
+    非HTMLを一度も読んでいなかったので、誰も気づかなかった。
+    """
+
+    def test_HTMLはテキスト扱い(self):
+        for ct in ("text/html", "text/html; charset=utf-8", "TEXT/HTML", "text/plain"):
+            with self.subTest(ct=ct):
+                self.assertTrue(polite_fetch.is_text_type(ct))
+
+    def test_XMLやJSONもテキスト扱い(self):
+        for ct in ("application/xhtml+xml", "application/json", "application/xml"):
+            with self.subTest(ct=ct):
+                self.assertTrue(polite_fetch.is_text_type(ct))
+
+    def test_PDFとWordはテキストではない(self):
+        for ct in ("application/pdf",
+                   "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                   "application/vnd.ms-excel", "image/png", "application/zip"):
+            with self.subTest(ct=ct):
+                self.assertFalse(polite_fetch.is_text_type(ct))
+
+    def test_Content_Typeが空ならテキスト扱い(self):
+        # 古いキャッシュを壊さないため。空欄は「HTMLだった」とみなす。
+        self.assertTrue(polite_fetch.is_text_type(""))
+
+    def test_バイト列が往復で壊れないこと(self):
+        # ZIP の先頭とランダムなバイトを含む列。テキスト経由だと必ず壊れる。
+        raw = b"PK\x03\x04\x14\x00\x06\x00\xff\xfe\x00\x81\x40\x00"
+        broken = polite_fetch.decode_body(raw, None).encode("utf-8")
+        self.assertNotEqual(broken, raw)          # 往復すると変わる（これが元のバグ）
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "body.bin"
+            path.write_bytes(raw)
+            self.assertEqual(path.read_bytes(), raw)
+
+    def test_バイナリ応答のbodyは空文字を返す(self):
+        # 化けた文字列を「本文」として読ませない。
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "a.pdf"
+            path.write_bytes(b"%PDF-1.7\x00\xff")
+            result = polite_fetch.FetchResult(
+                url="https://x.example/a.pdf", final_url="https://x.example/a.pdf",
+                status=200, content_type="application/pdf", fetched_at="2026-08-27T00:00:00+00:00",
+                from_cache=False, blocked_by_robots=False, body_path=str(path))
+            self.assertEqual(result.body(), "")
+            self.assertEqual(result.body_bytes(), b"%PDF-1.7\x00\xff")
+
+    def test_テキスト応答のbodyはこれまでどおり(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "a.html"
+            path.write_text("<html>あ</html>", encoding="utf-8")
+            result = polite_fetch.FetchResult(
+                url="https://x.example/a", final_url="https://x.example/a",
+                status=200, content_type="text/html; charset=utf-8",
+                fetched_at="2026-08-27T00:00:00+00:00",
+                from_cache=False, blocked_by_robots=False, body_path=str(path))
+            self.assertEqual(result.body(), "<html>あ</html>")
+
+    def test_body_pathが無ければ空(self):
+        result = polite_fetch.FetchResult(
+            url="https://x.example/a", final_url="https://x.example/a", status=0,
+            content_type="application/pdf", fetched_at="2026-08-27T00:00:00+00:00",
+            from_cache=False, blocked_by_robots=False, body_path=None)
+        self.assertEqual(result.body(), "")
+        self.assertEqual(result.body_bytes(), b"")
+
+    def test_文字コードの順に試す(self):
+        self.assertEqual(polite_fetch.decode_body("あ".encode("cp932"), "cp932"), "あ")
+        self.assertEqual(polite_fetch.decode_body("あ".encode(), None), "あ")
+
+    def test_どの文字コードでも読めなければ置換して返す(self):
+        # ここで例外を投げると、1ページのために探索全体が止まる。
+        self.assertTrue(polite_fetch.decode_body(b"\xff\xfe\xff", "utf-8"))
