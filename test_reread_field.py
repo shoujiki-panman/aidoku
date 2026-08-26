@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "analysis"))
-from reread_field import ASK, HINTS, NOT_THIS, summarize  # noqa: E402
+from reread_field import ASK, HINTS, NOT_THIS, safe_name, summarize  # noqa: E402
 
 
 def published_fields() -> set[str]:
@@ -98,3 +98,33 @@ class 集計(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ファイル名(unittest.TestCase):
+    """★項目名を公開データに合わせて `窓口/オンライン可否` にしたら、
+    スラッシュがパスの区切りになって **284回ぶんのLLM呼び出しが捨てられた。**
+    名前をデータに合わせるのは正しかったが、そのままファイル名にしたのが誤り。
+    """
+
+    def test_全項目がファイル名に使える(self):
+        for field in HINTS:
+            with self.subTest(field=field):
+                name = safe_name(field)
+                self.assertNotIn("/", name)
+                self.assertEqual(Path(name).name, name)   # パスにならないこと
+                self.assertTrue(name)
+
+    def test_スラッシュを潰す(self):
+        self.assertEqual(safe_name("窓口/オンライン可否"), "窓口-オンライン可否")
+
+    def test_他の禁止文字も潰す(self):
+        self.assertEqual(safe_name('a\\b:c*d?e"f<g>h|i'), "a-b-c-d-e-f-g-h-i")
+
+    def test_空白も潰す(self):
+        self.assertEqual(safe_name("窓口 と オンライン"), "窓口-と-オンライン")
+
+    def test_端のハイフンは残さない(self):
+        self.assertEqual(safe_name("/窓口/"), "窓口")
+
+    def test_普通の名前は変えない(self):
+        self.assertEqual(safe_name("必要書類"), "必要書類")

@@ -182,6 +182,32 @@ def run_one(discovery: dict, extract: dict, kw: dict, field: str,
             "value": hit["value"] if hit else ""}
 
 
+def safe_name(field: str) -> str:
+    """項目名をファイル名にする。
+
+    ★項目名を公開データに合わせて `窓口/オンライン可否` にした結果、
+      **スラッシュがパスの区切りになって 284回ぶんの結果が捨てられた。**
+      名前をデータに合わせるのは正しかったが、そのままファイル名にしたのが誤り。
+    """
+    return re.sub(r"[/\\:*?\"<>|\s]+", "-", field).strip("-")
+
+
+def write_out(out: Path, args, rows: list[dict], before: dict[str, str],
+              complete: bool = False) -> dict:
+    """途中でも書く。**溜めてから最後に書くと、落ちた瞬間に全部消える。**"""
+    doc = {
+        "_about": "読ませていなかった本命ページを読ませ直した追試。"
+                  "測定のやり直しではないので scores-*.json には混ぜられない。",
+        "version": VERSION, "procedure": args.procedure, "field": args.field,
+        "conditions": {"read_breadth": READ_BREADTH, "model": args.model,
+                       "strong_score": STRONG_SCORE, "hint": HINTS[args.field].pattern},
+        "complete": complete,
+        "summary": summarize(rows, before), "before": before, "rows": rows,
+    }
+    out.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return doc
+
+
 def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--procedure", "-p", default="tennyu")
@@ -208,6 +234,9 @@ def main(argv: list[str] | None = None) -> None:
         print(f"\n{args.field}: 読ませる対象 {total}本")
         return
 
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out = OUT_DIR / f"reread-{args.procedure}_{safe_name(args.field)}.json"
+
     rows = []
     for discovery, extract in pairs:
         row = run_one(discovery, extract, kw, args.field, proc, args.model)
@@ -216,18 +245,11 @@ def main(argv: list[str] | None = None) -> None:
         mark = "★読み落としだった" if row["now_found"] and was != "読めた" else ""
         print(f"  {row['municipality']:6} {len(row['pages']):2}本 → "
               f"{'書いてある' if row['now_found'] else '見つからない'} {mark}")
+        # ★1自治体ごとに書く。最後にまとめて書いていたら、284回のLLM呼び出しが
+        #   最後の1行（ファイル名にスラッシュが入っていた）で全部消えた。実際に消えた。
+        write_out(out, args, rows, before)
 
-    doc = {
-        "_about": "読ませていなかった本命ページを読ませ直した追試。"
-                  "測定のやり直しではないので scores-*.json には混ぜられない。",
-        "version": VERSION, "procedure": args.procedure, "field": args.field,
-        "conditions": {"read_breadth": READ_BREADTH, "model": args.model,
-                       "strong_score": STRONG_SCORE, "hint": HINTS[args.field].pattern},
-        "summary": summarize(rows, before), "before": before, "rows": rows,
-    }
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    out = OUT_DIR / f"reread-{args.procedure}_{args.field}.json"
-    out.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    doc = write_out(out, args, rows, before, complete=True)
     s = doc["summary"]
     print(f"\n→ {out}")
     print(f"  {s['municipalities']}自治体 / {s['pages_read']}ページ")
