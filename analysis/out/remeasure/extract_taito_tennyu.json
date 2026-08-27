@@ -1,0 +1,62 @@
+{
+  "municipality": "台東区",
+  "municipality_id": "taito",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
+    "hops": 2,
+    "link_text": "転入届、転居届、海外転出届に伴う電子証明書の発行手続きについて",
+    "has_jsonld": false,
+    "text_len": 1635,
+    "truncated": false,
+    "n_links": 31
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "転出の際に設定した来庁予定日に、来庁予定先として設定した窓口で転入届を提出する。",
+  "online_clarity_pages": [
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "前住所地発行の転出証明書、本人確認のできるもの、賃貸契約書等（外国人の場合は転入者全員の在留カードまたは特別永住者証明書、続柄を証する文書も必要）",
+      "evidence": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "戸籍住民サービス課または区民事務所・分室の窓口で提出。オンライン(マイナポータル等)で転出届を済ませていても、転入届自体は来庁予定先の窓口で提出する必要があり、オンラインだけでは完結しない。",
+      "evidence": "来庁予定日に、来庁予定先として設定した窓口で転入届を提出する。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "住み始めてから14日以内",
+      "evidence": "住み始めてから14日以内に戸籍住民サービス課、区民事務所・分室へ",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "起点ページは転入届そのものではなく「電子証明書の発行手続き」の案内で、転入届の必要書類・期限は別ページ（jumintoroku.html）の表にあり、オンライン可否はさらに別ページ（onraintennyu.html）で「オンラインの転出届後も転入届自体は窓口必須」と分かった。手数料はどのページにも記載がなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

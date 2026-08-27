@@ -1,0 +1,57 @@
+{
+  "municipality": "練馬区",
+  "municipality_id": "nerima",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+    "hops": 2,
+    "link_text": "転入届 （練馬区に引っ越してきたとき）",
+    "has_jsonld": false,
+    "text_len": 7637,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "練馬区内6か所の区民事務所の窓口で届出を受付しています。（郵送やインターネットではお手続きできません）",
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "窓口に来所する方の本人確認書類、前住所地の区市町村が発行した転出証明書（マイナンバーカードを利用した転出手続きの場合は不要）。該当者のみ：マイナンバーカード、在留カード等、在学証明書",
+      "evidence": "窓口に来所する方の本人確認書類（詳しくは「戸籍、住民票の申請・届出の本人確認方法について」をご覧ください。）／前住所地の区市町村が発行した転出証明書",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "練馬区内6か所の区民事務所の窓口でのみ受付。オンライン不可（郵送も不可）",
+      "evidence": "練馬区内6か所の区民事務所の窓口で届出を受付しています。（郵送やインターネットではお手続きできません）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "練馬区に住み始めてから14日以内（住み始める前の届出は不可）",
+      "evidence": "練馬区に住み始めてから14日以内（住み始める前の届出はできません）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "1〜8の番号見出しで構成され本文は詳細だが、転入届自体の手数料についての明記は見当たらない（マイナンバーカード再交付手数料の記載はあるが別手続き）。届出方法は窓口来所のみでオンライン不可と明記されている。",
+  "online_clarity_pages": [
+    "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html"
+  ],
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

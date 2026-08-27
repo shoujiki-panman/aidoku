@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.nerima.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
@@ -14,7 +35,99 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7637,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届 （練馬区外（国内）から練馬区に引越したとき）：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届 （練馬区外（国内）から練馬区に引越したとき）"
+        },
+        {
+          "level": 2,
+          "text": "区民事務所の地図"
+        },
+        {
+          "level": 2,
+          "text": "1.届出方法"
+        },
+        {
+          "level": 2,
+          "text": "2.届出ができる方"
+        },
+        {
+          "level": 2,
+          "text": "3.届出期間"
+        },
+        {
+          "level": 2,
+          "text": "4.届出に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "5.マイナンバーカードの継続利用について"
+        },
+        {
+          "level": 3,
+          "text": "継続利用の手続きができる期間"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカード用署名用電子証明書の発行手続き"
+        },
+        {
+          "level": 2,
+          "text": "6.窓口および受付時間"
+        },
+        {
+          "level": 2,
+          "text": "7.転入予定連絡の電子申請について"
+        },
+        {
+          "level": 3,
+          "text": "申請が行えない場合の例"
+        },
+        {
+          "level": 3,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "来庁予定連絡の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "8.転入に伴う各種手続きの案内"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "住民記録の届出"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyukokugai.html",
@@ -25,7 +138,79 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3887,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届 （国外から練馬区に引越したとき）：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届 （国外から練馬区に引越したとき）"
+        },
+        {
+          "level": 2,
+          "text": "1.届出方法"
+        },
+        {
+          "level": 2,
+          "text": "2.届出ができる方"
+        },
+        {
+          "level": 2,
+          "text": "3.届出期間"
+        },
+        {
+          "level": 2,
+          "text": "4.届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "別世帯の代理人が手続きをする場合"
+        },
+        {
+          "level": 2,
+          "text": "5.窓口および受付時間"
+        },
+        {
+          "level": 3,
+          "text": "区民事務所の地図"
+        },
+        {
+          "level": 2,
+          "text": "6.区民事務所の混雑状況を確認できます"
+        },
+        {
+          "level": 2,
+          "text": "7.転入に伴う各種手続きの案内"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "住民記録の届出"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
@@ -36,7 +221,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1307,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入・転出に伴う区役所以外の手続き（電気・水道・ガス等）：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入・転出に伴う区役所以外の手続き（電気・水道・ガス等）"
+        },
+        {
+          "level": 2,
+          "text": "電気"
+        },
+        {
+          "level": 2,
+          "text": "水道"
+        },
+        {
+          "level": 2,
+          "text": "ガス"
+        },
+        {
+          "level": 2,
+          "text": "電話"
+        },
+        {
+          "level": 2,
+          "text": "郵便"
+        },
+        {
+          "level": 2,
+          "text": "NHK"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ一覧（戸籍・住民登録）"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/bamen/hikkoshi.html",
@@ -47,7 +284,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1535,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越し：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越し"
+        },
+        {
+          "level": 2,
+          "text": "転入（区外から練馬区へ）"
+        },
+        {
+          "level": 2,
+          "text": "転居（練馬区内の引っ越し）"
+        },
+        {
+          "level": 2,
+          "text": "転出（練馬区から区外へ）"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "場面から探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenshutsu.html",
@@ -58,7 +339,143 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 8111,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転出届 （練馬区外（国内）へ引越しするとき）：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "転出届 （練馬区外（国内）へ引越しするとき）"
+        },
+        {
+          "level": 2,
+          "text": "届出方法"
+        },
+        {
+          "level": 2,
+          "text": "1.マイナポータル（オンライン）で届出"
+        },
+        {
+          "level": 3,
+          "text": "マイナポータルから転出届を提出できない場合の例"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方（マイナポータル）"
+        },
+        {
+          "level": 3,
+          "text": "届出方法（マイナポータル）"
+        },
+        {
+          "level": 3,
+          "text": "届出期間（マイナポータル）"
+        },
+        {
+          "level": 3,
+          "text": "手続完了までに要する期間（マイナポータル）"
+        },
+        {
+          "level": 3,
+          "text": "注意事項（マイナポータル）"
+        },
+        {
+          "level": 3,
+          "text": "リーフレット（デジタル庁作成）"
+        },
+        {
+          "level": 2,
+          "text": "2.窓口で転出届を行う場合"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方（窓口）"
+        },
+        {
+          "level": 3,
+          "text": "届出期間（窓口）"
+        },
+        {
+          "level": 3,
+          "text": "届出に必要なもの（窓口）"
+        },
+        {
+          "level": 3,
+          "text": "注意事項（窓口）"
+        },
+        {
+          "level": 3,
+          "text": "窓口および受付時間"
+        },
+        {
+          "level": 3,
+          "text": "区民事務所の混雑状況を確認できます"
+        },
+        {
+          "level": 2,
+          "text": "3.郵送で転出届を行う場合 （下記の担当区民事務所宛に郵送してください）"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方（郵送）"
+        },
+        {
+          "level": 3,
+          "text": "届出期間（郵送）"
+        },
+        {
+          "level": 3,
+          "text": "届出に必要なもの（郵送するもの）"
+        },
+        {
+          "level": 3,
+          "text": "注意事項（郵送）"
+        },
+        {
+          "level": 3,
+          "text": "郵送先"
+        },
+        {
+          "level": 3,
+          "text": "手続完了までに要する期間（目安） 10日"
+        },
+        {
+          "level": 2,
+          "text": "4.転出に伴う各種手続きの案内"
+        },
+        {
+          "level": 2,
+          "text": "5.申請書のダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "住民記録の届出"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenkyo.html",
@@ -69,7 +486,75 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4748,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転居届 （練馬区内で引越ししたとき）：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "転居届 （練馬区内で引越ししたとき）"
+        },
+        {
+          "level": 2,
+          "text": "1.届出方法"
+        },
+        {
+          "level": 2,
+          "text": "2.届出ができる方"
+        },
+        {
+          "level": 2,
+          "text": "3.届出期間"
+        },
+        {
+          "level": 2,
+          "text": "4.届出に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "5.マイナンバーカードの住所変更について"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカード用署名用電子証明書の発行手続き"
+        },
+        {
+          "level": 2,
+          "text": "6.窓口および受付時間"
+        },
+        {
+          "level": 2,
+          "text": "7.区民事務所の混雑状況を確認できます"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "住民記録の届出"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tensyutsukokugai.html",
@@ -80,7 +565,115 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 8839,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転出届 （国外へ引越しするとき）：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "転出届 （国外へ引越しするとき）"
+        },
+        {
+          "level": 2,
+          "text": "届出方法"
+        },
+        {
+          "level": 2,
+          "text": "窓口で転出届を行う場合"
+        },
+        {
+          "level": 3,
+          "text": "届出人"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "国外転出する本人が窓口に来所できないとき"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "窓口および受付時間"
+        },
+        {
+          "level": 3,
+          "text": "区民事務所の混雑状況を確認できます"
+        },
+        {
+          "level": 2,
+          "text": "郵送で転出届を行う場合"
+        },
+        {
+          "level": 3,
+          "text": "届出人"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出に必要なもの（郵送するもの）"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "郵送先"
+        },
+        {
+          "level": 3,
+          "text": "手続き完了までに要する期間（目安） 5日"
+        },
+        {
+          "level": 2,
+          "text": "転出に伴う各種手続きの案内"
+        },
+        {
+          "level": 2,
+          "text": "申請書のダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "住民記録の届出"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/shomei/honninkakunin25.html",
@@ -91,7 +684,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3279,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍、住民票の申請・届出の本人確認方法について：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍、住民票の申請・届出の本人確認方法について"
+        },
+        {
+          "level": 2,
+          "text": "1．戸籍、住民票の申請・届出には本人確認ができる証明書をお持ちください。"
+        },
+        {
+          "level": 3,
+          "text": "本人確認を行う申請・届出"
+        },
+        {
+          "level": 3,
+          "text": "本人確認ができる証明書"
+        },
+        {
+          "level": 2,
+          "text": "2．第三者による申請には正当な理由が必要です。"
+        },
+        {
+          "level": 2,
+          "text": "3．戸籍謄本・抄本や住民票の写しなどを不正に取得した場合の罰則が強化されました。"
+        },
+        {
+          "level": 3,
+          "text": "問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の証明"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html",
@@ -102,7 +755,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2183,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区役所に行かずにできる手続き（戸籍・住民登録）：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "区役所に行かずにできる手続き（戸籍・住民登録）"
+        },
+        {
+          "level": 2,
+          "text": "区役所や区民事務所に行かずにできる手続き"
+        },
+        {
+          "level": 3,
+          "text": "転出届（練馬区外（国内）へ引越し）"
+        },
+        {
+          "level": 3,
+          "text": "住民票の写し等の請求"
+        },
+        {
+          "level": 3,
+          "text": "印鑑登録証明書の請求"
+        },
+        {
+          "level": 3,
+          "text": "戸籍謄本・抄本等の請求"
+        },
+        {
+          "level": 3,
+          "text": "個人番号カード交付申請書の請求"
+        },
+        {
+          "level": 2,
+          "text": "証明書のコンビニ交付サービス"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ一覧（戸籍・住民登録）"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
@@ -113,7 +826,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2124,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "7月17日から7月21日までに戸籍のお届をされる方へ：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "7月17日から7月21日までに戸籍のお届をされる方へ"
+        },
+        {
+          "level": 2,
+          "text": "休日夜間の郵送申込に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "受理証明書のできあがり予定日"
+        },
+        {
+          "level": 2,
+          "text": "練馬区が本籍地の方の戸籍謄抄本のできあがり予定日"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ一覧（戸籍・住民登録）"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/juminkiroku.html",
@@ -124,18 +885,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1007,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyoka/index.html",
-      "link_text": "みどりに関する届出・手続き",
-      "hops": 2,
-      "score": 14,
-      "parent": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1065,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民記録の届出について：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民記録の届出について"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "住民記録の届出"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/index.html",
@@ -146,7 +928,96 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1158,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍・住民登録：練馬区公式ホームページ",
+      "meta": {
+        "description": "婚姻届や出生届などの戸籍の届出、戸籍の各種証明、転入や転出に関すること、住民票や印鑑登録などに関する内容を掲載してます。"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍・住民登録"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "手続き窓口"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の届出・証明"
+        },
+        {
+          "level": 2,
+          "text": "住民記録の届出・証明"
+        },
+        {
+          "level": 2,
+          "text": "印鑑登録・印鑑登録証明書"
+        },
+        {
+          "level": 2,
+          "text": "外国人住民"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyoka/index.html",
+      "link_text": "みどりに関する届出・手続き",
+      "hops": 2,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1065,
+      "has_jsonld": false,
+      "title": "みどりに関する届出・手続き：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "みどりに関する届出・手続き"
+        },
+        {
+          "level": 2,
+          "text": "みどり・緑化"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/index.html",
@@ -157,29 +1028,232 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1158,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お知らせ一覧（戸籍・住民登録）：練馬区公式ホームページ",
+      "meta": {
+        "description": "戸籍（届出・証明）や住民登録（住民票・印鑑証明など）に関する「お知らせ」を掲載しています。"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お知らせ一覧（戸籍・住民登録）"
+        },
+        {
+          "level": 2,
+          "text": "戸籍・住民登録"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
+      "link_text": "くらし・手続き",
+      "hops": 1,
+      "score": 10,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1031,
+      "has_jsonld": false,
+      "title": "くらし・手続き：練馬区公式ホームページ",
+      "meta": {
+        "description": "区のサービスや各種の手続に関する説明などを掲載しています。"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "暮らしのガイド"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "広告ADVERTISEMENT"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
-      "link_text": "",
+      "link_text": "みどり・緑化",
       "hops": 1,
       "score": 8,
       "parent": "https://www.city.nerima.tokyo.jp/",
       "status": 200,
       "is_pdf": false,
       "text_len": 1726,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "みどり・緑化：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "みどり・緑化"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "今月のイベント情報"
+        },
+        {
+          "level": 3,
+          "text": "その他のイベントはこちら"
+        },
+        {
+          "level": 2,
+          "text": "練馬のみどりスポット"
+        },
+        {
+          "level": 3,
+          "text": "その他のスポットはこちら"
+        },
+        {
+          "level": 2,
+          "text": "みどりのボランティア"
+        },
+        {
+          "level": 2,
+          "text": "近くのみどりを見つけてみよう（ねりまのみどりマップ）"
+        },
+        {
+          "level": 2,
+          "text": "ご自宅の緑化を応援（区の支援制度のご紹介）"
+        },
+        {
+          "level": 2,
+          "text": "みどりを守り増やすための支援や手続きなどはこちら"
+        },
+        {
+          "level": 2,
+          "text": "みどりを守り増やすための支援や助成"
+        },
+        {
+          "level": 2,
+          "text": "みどりに関する届出・手続き"
+        },
+        {
+          "level": 2,
+          "text": "計画・調査・会議"
+        },
+        {
+          "level": 2,
+          "text": "みどりの役割を学ぶ（画像をクリック）"
+        },
+        {
+          "level": 2,
+          "text": "練馬みどりの葉っぴい基金は皆様からの応援をお待ちしています"
+        },
+        {
+          "level": 3,
+          "text": "下記のバナーをクリックすると外部サイトに移動します"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "仕事・生活・環境"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/photoguide.html",
-      "link_text": "",
+      "link_text": "igashirakobushi",
       "hops": 2,
       "score": 8,
       "parent": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 1345,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ぴいちゃんのフォトガイド：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ぴいちゃんのフォトガイド"
+        },
+        {
+          "level": 2,
+          "text": "どこにあるのかな？"
+        },
+        {
+          "level": 2,
+          "text": "「ぴいちゃん」って？"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "みどり・緑化"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/midori_network.html",
@@ -190,7 +1264,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1598,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "みどりのネットワークの形成：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "みどりのネットワークの形成"
+        },
+        {
+          "level": 2,
+          "text": "拠点となる大規模で特色のある公園を整備し、軸となる幹線道路や河川をつなぎます。"
+        },
+        {
+          "level": 3,
+          "text": "公園や道路のみどりを増やします"
+        },
+        {
+          "level": 3,
+          "text": "武蔵野の面影を伝えるみどりを増やします"
+        },
+        {
+          "level": 3,
+          "text": "宅地や事業所のみどりを増やします"
+        },
+        {
+          "level": 3,
+          "text": "緑視率が高い場所を増やします"
+        },
+        {
+          "level": 2,
+          "text": "練馬区みどりの総合計画（令和5年度改定）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "みどり・緑化"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyodo/index.html",
@@ -201,18 +1331,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1332,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
-      "link_text": "",
-      "hops": 1,
-      "score": 4,
-      "parent": "https://www.city.nerima.tokyo.jp/",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1031,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区民協働によるみどりの活動：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "区民協働によるみどりの活動"
+        },
+        {
+          "level": 2,
+          "text": "ボランティア活動"
+        },
+        {
+          "level": 2,
+          "text": "ボランティア登録はこちら（区内個人）"
+        },
+        {
+          "level": 2,
+          "text": "ボランティア登録はこちら（区内団体）"
+        },
+        {
+          "level": 2,
+          "text": "ボランティア講座（つながるカレッジねりま・みどり分野）"
+        },
+        {
+          "level": 2,
+          "text": "その他の活動"
+        },
+        {
+          "level": 2,
+          "text": "寄付で活動を応援！"
+        },
+        {
+          "level": 2,
+          "text": "みどり・緑化"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
@@ -223,7 +1390,83 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3334,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区内で特殊詐欺が多発しています：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "区内で特殊詐欺が多発しています"
+        },
+        {
+          "level": 2,
+          "text": "ニセ警察詐欺に注意！"
+        },
+        {
+          "level": 2,
+          "text": "音声ガイダンスを使った詐欺に注意！"
+        },
+        {
+          "level": 2,
+          "text": "還付金詐欺に注意！"
+        },
+        {
+          "level": 2,
+          "text": "架空料金請求詐欺（サポート詐欺）に注意！"
+        },
+        {
+          "level": 2,
+          "text": "犯人からの電話に出ない対策をしましょう！"
+        },
+        {
+          "level": 3,
+          "text": "国際電話の利用休止"
+        },
+        {
+          "level": 4,
+          "text": "固定電話"
+        },
+        {
+          "level": 4,
+          "text": "スマートフォン"
+        },
+        {
+          "level": 3,
+          "text": "自動通話録音機の設置"
+        },
+        {
+          "level": 3,
+          "text": "在宅中も常に留守番電話に設定"
+        },
+        {
+          "level": 2,
+          "text": "詳しい内容について"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "安全・安心（防犯・防火）"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/chisui/shisuiban.html",
@@ -234,7 +1477,79 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2757,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "止水板設置の助成について：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "止水板設置の助成について"
+        },
+        {
+          "level": 2,
+          "text": "止水板設置助成制度のご案内"
+        },
+        {
+          "level": 2,
+          "text": "助成対象の止水板"
+        },
+        {
+          "level": 2,
+          "text": "助成対象者"
+        },
+        {
+          "level": 2,
+          "text": "助成対象の経費"
+        },
+        {
+          "level": 2,
+          "text": "助成額"
+        },
+        {
+          "level": 2,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 2,
+          "text": "申請に必要な書類"
+        },
+        {
+          "level": 2,
+          "text": "提出方法"
+        },
+        {
+          "level": 2,
+          "text": "ダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "総合治水"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kifu/kifu/kifu0701.html",
@@ -245,7 +1560,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2493,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "寄付実績と活用事例：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "寄付実績と活用事例"
+        },
+        {
+          "level": 2,
+          "text": "4月の寄付"
+        },
+        {
+          "level": 3,
+          "text": "練馬区への寄付"
+        },
+        {
+          "level": 3,
+          "text": "ご寄付いただいた皆さま"
+        },
+        {
+          "level": 3,
+          "text": "練馬区社会福祉協議会への寄付"
+        },
+        {
+          "level": 2,
+          "text": "令和6年度の寄付"
+        },
+        {
+          "level": 2,
+          "text": "ご寄付の活用事例"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "寄付"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/aratanakotsu.html",
@@ -256,7 +1627,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1633,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "バスに代わる新たな交通：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "バスに代わる新たな交通"
+        },
+        {
+          "level": 2,
+          "text": "バスに代わる交通について考えるオープンハウスを開催します（大泉町・大泉学園町地域）"
+        },
+        {
+          "level": 3,
+          "text": "開催日時・会場"
+        },
+        {
+          "level": 3,
+          "text": "意見交換会について"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "住まい・交通・道路"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/nerimakyodorabo/jisshijigyo/miraichallenge/komaneri/index.html",
@@ -267,7 +1686,111 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2761,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「それぞれの居場所」届ける情報・繋がる練馬【こまねり】（協働期間：令和7年度～）：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "「それぞれの居場所」届ける情報・繋がる練馬【こまねり】（協働期間：令和7年度～）"
+        },
+        {
+          "level": 2,
+          "text": "団体概要"
+        },
+        {
+          "level": 3,
+          "text": "団体名・基本情報"
+        },
+        {
+          "level": 3,
+          "text": "設立の経緯"
+        },
+        {
+          "level": 3,
+          "text": "活動内容"
+        },
+        {
+          "level": 2,
+          "text": "事業概要"
+        },
+        {
+          "level": 3,
+          "text": "事業名"
+        },
+        {
+          "level": 3,
+          "text": "事業内容"
+        },
+        {
+          "level": 2,
+          "text": "令和7年度の取り組み"
+        },
+        {
+          "level": 3,
+          "text": "トークセッション"
+        },
+        {
+          "level": 3,
+          "text": "成果報告会"
+        },
+        {
+          "level": 2,
+          "text": "登録団体の紹介"
+        },
+        {
+          "level": 3,
+          "text": "プレーパーク"
+        },
+        {
+          "level": 3,
+          "text": "不登校"
+        },
+        {
+          "level": 3,
+          "text": "居場所"
+        },
+        {
+          "level": 3,
+          "text": "学習支援"
+        },
+        {
+          "level": 3,
+          "text": "子育て支援"
+        },
+        {
+          "level": 3,
+          "text": "子ども食堂"
+        },
+        {
+          "level": 3,
+          "text": "障害・発達"
+        },
+        {
+          "level": 3,
+          "text": "体験・子どもの権利など"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "未来創造チャレンジ"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/nenkinhoken/oshirase/koureisyou_kousin.html",
@@ -278,7 +1801,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2210,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "新しい高齢受給者証または資格情報のお知らせを7月16日（木）に発送：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "新しい高齢受給者証または資格情報のお知らせを7月16日（木）に発送"
+        },
+        {
+          "level": 2,
+          "text": "マイナ保険証をお持ちでない方"
+        },
+        {
+          "level": 2,
+          "text": "マイナ保険証をお持ちの方"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ一覧（国保・後期高齢者医療・年金）"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,6 +1854,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -294,13 +1863,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
-      "status": 200,
-      "from_cache": true,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -308,6 +1872,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -315,6 +1890,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -322,13 +1899,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kifu/kifu/kifu0701.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -336,6 +1917,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -343,6 +1926,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -350,41 +1935,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenkyo.html",
       "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyoka/index.html",
-      "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/photoguide.html",
-      "status": 200,
-      "from_cache": true,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/midori_network.html",
-      "status": 200,
-      "from_cache": true,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyodo/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -392,6 +1953,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -399,6 +1962,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -406,62 +1971,116 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/nenkinhoken/oshirase/koureisyou_kousin.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyoka/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/photoguide.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/midori_network.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyodo/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyukokugai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tensyutsukokugai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/shomei/honninkakunin25.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/juminkiroku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.arakawa.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
@@ -14,7 +35,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1760,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "くらしの手続きガイド／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "くらしの手続きガイド",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらしの手続きガイド"
+        },
+        {
+          "level": 2,
+          "text": "使い方"
+        },
+        {
+          "level": 2,
+          "text": "ライフイベントの種類"
+        },
+        {
+          "level": 3,
+          "text": "転出、転入、転居"
+        },
+        {
+          "level": 3,
+          "text": "結婚、離婚"
+        },
+        {
+          "level": 3,
+          "text": "氏名変更"
+        },
+        {
+          "level": 3,
+          "text": "出生"
+        },
+        {
+          "level": 3,
+          "text": "死亡"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/tennyuutenshutsu/index.html",
@@ -25,7 +101,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1015,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入・転出・転居／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "転入・転出・転居",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/tennyuutenshutsu/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入・転出・転居"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/index.html",
@@ -36,7 +135,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1671,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍・住民票／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "戸籍・住民票",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍・住民票"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/tenseki.html",
@@ -47,7 +169,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1839,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転籍(戸籍を移す)に関する届出／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "転籍(戸籍を移す)に関する届出",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/tenseki.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転籍(戸籍を移す)に関する届出"
+        },
+        {
+          "level": 2,
+          "text": "名称"
+        },
+        {
+          "level": 2,
+          "text": "転籍届とは"
+        },
+        {
+          "level": 2,
+          "text": "届出先"
+        },
+        {
+          "level": 2,
+          "text": "届出人"
+        },
+        {
+          "level": 2,
+          "text": "添付書類"
+        },
+        {
+          "level": 2,
+          "text": "書き方の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "その他注意事項"
+        },
+        {
+          "level": 2,
+          "text": "転籍届のダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
@@ -58,7 +239,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1059,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍に関する手続き／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "戸籍に関する手続き",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍に関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
@@ -69,7 +273,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 906,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "住民票",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/yuusouseikyuu/index.html",
@@ -80,7 +307,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 930,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票に関する証明書等の窓口・郵送請求／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "住民票に関する証明書等の窓口・郵送請求",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/yuusouseikyuu/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票に関する証明書等の窓口・郵送請求"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
@@ -91,7 +337,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3368,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票関連の証明書／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "住民票関連の証明書",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票関連の証明書"
+        },
+        {
+          "level": 2,
+          "text": "窓口での交付申請"
+        },
+        {
+          "level": 3,
+          "text": "窓口での交付申請ができる時間・場所"
+        },
+        {
+          "level": 3,
+          "text": "住民票の写しの広域交付"
+        },
+        {
+          "level": 2,
+          "text": "窓口以外での交付申請"
+        },
+        {
+          "level": 2,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
@@ -102,7 +403,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1400,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票の写しの電話予約／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "住民票の写しの電話予約",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票の写しの電話予約"
+        },
+        {
+          "level": 2,
+          "text": "予約と受け取りができる方"
+        },
+        {
+          "level": 2,
+          "text": "予約受付"
+        },
+        {
+          "level": 2,
+          "text": "受け取り場所"
+        },
+        {
+          "level": 2,
+          "text": "受け取り時間"
+        },
+        {
+          "level": 2,
+          "text": "受け取りに必要な書類"
+        },
+        {
+          "level": 2,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/ininjou/koronayuusou.html",
@@ -113,7 +469,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1421,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "郵送による住民票の写し、戸籍に関する証明書等の交付申請／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "郵送による住民票の写し、戸籍に関する証明書等の交付申請",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a010/todokede/ininjou/koronayuusou.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "郵送による住民票の写し、戸籍に関する証明書等の交付申請"
+        },
+        {
+          "level": 2,
+          "text": "郵送請求に係る注意点について"
+        },
+        {
+          "level": 2,
+          "text": "郵送請求の方法"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a012/todokede/shoumeisho/online_manyuaru.html",
@@ -124,7 +515,100 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2531,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票の写し・戸籍証明書のオンライン申請／荒川区公式サイト",
+      "meta": {
+        "description": "荒川区ではスマートフォンとマイナンバーカードを用いて、オンラインで住民票の写しや戸籍証明書の交付申請ができる『オンライン申請』を導入しております。",
+        "og:type": "article",
+        "og:title": "住民票の写し・戸籍証明書のオンライン申請",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a012/todokede/shoumeisho/online_manyuaru.html",
+        "og:description": "荒川区ではスマートフォンとマイナンバーカードを用いて、オンラインで住民票の写しや戸籍証明書の交付申請ができる『オンライン申請』を導入しております。",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票の写し・戸籍証明書のオンライン申請"
+        },
+        {
+          "level": 2,
+          "text": "ご利用いただける方"
+        },
+        {
+          "level": 3,
+          "text": "住民票"
+        },
+        {
+          "level": 3,
+          "text": "戸籍証明書"
+        },
+        {
+          "level": 2,
+          "text": "事前に準備いただくもの"
+        },
+        {
+          "level": 2,
+          "text": "利用手順"
+        },
+        {
+          "level": 3,
+          "text": "1.申請フォームより仮申請を行う"
+        },
+        {
+          "level": 3,
+          "text": "2.交付手数料を支払う"
+        },
+        {
+          "level": 3,
+          "text": "3.証明書を受け取る"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "処理日数"
+        },
+        {
+          "level": 3,
+          "text": "発行手数料"
+        },
+        {
+          "level": 3,
+          "text": "郵送方法・郵送料"
+        },
+        {
+          "level": 3,
+          "text": "各種証明書の郵送先"
+        },
+        {
+          "level": 3,
+          "text": "電話確認"
+        },
+        {
+          "level": 3,
+          "text": "領収書"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
@@ -135,7 +619,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2066,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票の写し・戸籍証明書の郵送請求におけるキャッシュレス決済／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "住民票の写し・戸籍証明書の郵送請求におけるキャッシュレス決済",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票の写し・戸籍証明書の郵送請求におけるキャッシュレス決済"
+        },
+        {
+          "level": 2,
+          "text": "利用手順"
+        },
+        {
+          "level": 3,
+          "text": "1.オンラインにより申請番号を取得する"
+        },
+        {
+          "level": 3,
+          "text": "2.請求書類を郵送する"
+        },
+        {
+          "level": 3,
+          "text": "3.交付手数料を支払う"
+        },
+        {
+          "level": 3,
+          "text": "4.証明書を受け取る"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
@@ -146,7 +681,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1593,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "届出・登録・証明／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "届出・登録・証明",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "届出・登録・証明"
+        },
+        {
+          "level": 2,
+          "text": "最新ニュース"
+        },
+        {
+          "level": 2,
+          "text": "トピックスPR"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/gaikokujintouroku/index.html",
@@ -157,7 +723,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 847,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "外国人住民の方の手続き／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "外国人住民の方の手続き",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/gaikokujintouroku/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "外国人住民の方の手続き"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
@@ -168,7 +753,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1187,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手続き・よく利用される届出等／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "手続き・よく利用される届出等",
+        "og:url": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手続き・よく利用される届出等"
+        },
+        {
+          "level": 2,
+          "text": "便利なサービス"
+        },
+        {
+          "level": 2,
+          "text": "よく利用される届け出"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
@@ -179,7 +795,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1471,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～"
+        },
+        {
+          "level": 2,
+          "text": "開催日"
+        },
+        {
+          "level": 2,
+          "text": "場所"
+        },
+        {
+          "level": 2,
+          "text": "内容"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "出演者（講師）"
+        },
+        {
+          "level": 2,
+          "text": "定員"
+        },
+        {
+          "level": 2,
+          "text": "託児"
+        },
+        {
+          "level": 2,
+          "text": "費用"
+        },
+        {
+          "level": 2,
+          "text": "持ち物"
+        },
+        {
+          "level": 2,
+          "text": "申し込み"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/index.html",
@@ -190,7 +869,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 869,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "電子申請・電子納付サービス等／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "電子申請・電子納付サービス等",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "電子申請・電子納付サービス等"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
@@ -201,7 +899,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 913,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "電子申請／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "電子申請",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "電子申請"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/denshinoufu/index.html",
@@ -212,7 +937,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 758,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "電子納付サービス／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "電子納付サービス",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/denshinoufu/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "電子納付サービス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/mynumbercard/index.html",
@@ -223,7 +967,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1437,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "マイナンバーカード／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "マイナンバーカード",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/mynumbercard/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "マイナンバーカード"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/inkantouroku/index.html",
@@ -234,7 +997,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 868,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "印鑑登録／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "印鑑登録",
+        "og:url": "https://www.city.arakawa.tokyo.jp/todokede/inkantouroku/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "印鑑登録"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/howtodenshi.html",
@@ -245,7 +1027,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2073,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "電子申請とは／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "電子申請とは",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/howtodenshi.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "電子申請とは"
+        },
+        {
+          "level": 2,
+          "text": "電子申請サービスについて"
+        },
+        {
+          "level": 3,
+          "text": "電子申請サービスを初めてご利用になる方へ"
+        },
+        {
+          "level": 3,
+          "text": "動作環境について"
+        },
+        {
+          "level": 3,
+          "text": "LoGoフォームのシステムメンテナンスおよびシステム障害に伴うサービスの停止"
+        },
+        {
+          "level": 3,
+          "text": "電子署名の利用"
+        },
+        {
+          "level": 3,
+          "text": "セキュリティ対策"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinsei-riyou.html",
@@ -256,176 +1089,267 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1389,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "電子申請の利用状況／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "電子申請の利用状況",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinsei-riyou.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "電子申請の利用状況"
+        },
+        {
+          "level": 2,
+          "text": "令和7年度 電子申請申込み件数（手続別）"
+        },
+        {
+          "level": 2,
+          "text": "令和6年度 電子申請申込み件数（手続別）"
+        },
+        {
+          "level": 2,
+          "text": "令和5年度 電子申請申込み件数（手続別）"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.arakawa.tokyo.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/denshinoufu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/mynumbercard/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/inkantouroku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/tennyuutenshutsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/tenseki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/yuusouseikyuu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/ininjou/koronayuusou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a012/todokede/shoumeisho/online_manyuaru.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/todokede/gaikokujintouroku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/howtodenshi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinsei-riyou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

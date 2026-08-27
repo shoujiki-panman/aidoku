@@ -1,0 +1,57 @@
+{
+  "municipality": "渋谷区",
+  "municipality_id": "shibuya",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+    "hops": 2,
+    "link_text": "転入届",
+    "has_jsonld": true,
+    "text_len": 2585,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "他の区市町村から渋谷区に引っ越ししてきたときにする届出です。転入届は郵送では受付できませんのでご注意ください。",
+  "online_clarity_pages": [
+    "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "本人確認書類（マイナンバーカード・運転免許証・パスポートなど）、転出証明書（前住所地発行）、マイナンバーカード（交付を受けている人）。同一世帯以外の続柄で転入する場合は世帯主の同意書、6か月以上経過後の届出は賃貸契約書等、代理人の場合は委任状も必要。",
+      "evidence": "窓口で手続きする人の本人確認ができるもの（マイナンバーカード・運転免許証・パスポートなど）転出証明書（前住所地の区市町村が発行したもの）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口のみ。オンライン・郵送・電話予約・FAX・メール・コンビニ・LINE・スマート申請・マイナンバー・マイポータルはいずれも利用不可。窓口は暮らしの手続きのフロア（庁舎3階）住民戸籍課・出張所（平日8:30-17:00）または区民サービスセンター（平日11:00-19:00、土曜9:00-17:00）。",
+      "evidence": "転入届は郵送では受付できませんのでご注意ください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "渋谷区に住みはじめた日から14日以内（遅れると過料の場合あり）",
+      "evidence": "渋谷区に住みはじめた日から14日以内（届出が遅れると過料がかかる場合があります）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "届出期間・届出人・必要なもの・窓口/受付時間が見出しごとに整理され、利用可能な手続き方法（窓口/郵送/オンライン等）を一覧表示する定型ブロックもあり構造は明確。ただし手数料についてはこのページ・関連リンクのどこにも言及がない（転入届自体は無料と思われるが本文に明記なし）。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

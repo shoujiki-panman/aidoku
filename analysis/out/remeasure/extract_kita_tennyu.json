@@ -1,0 +1,57 @@
+{
+  "municipality": "北区",
+  "municipality_id": "kita",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+    "hops": 2,
+    "link_text": "マイナンバーカードや特定在留カードなどをお持ちの方の転出転入手続き(転入届の特例)",
+    "has_jsonld": true,
+    "text_len": 5777,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "マイナンバーカードや特定在留カードなど、本人確認書類(免許証など)",
+      "evidence": "マイナンバーカードや特定在留カードなど、本人確認書類(免許証など)",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "オンライン不可。ご本人または同じ世帯の方が窓口(戸籍住民課の各区民事務所)でカードと暗証番号を用いて手続き。",
+      "evidence": "ご本人または同じ世帯の方が上記のカードをお持ちの上、窓口で手続きをしてください。また、その際にカードの暗証番号の入力をしていただきます。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "転入日から14日以内",
+      "evidence": "転入日から14日以内に転入手続きをしてください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページは一般的な「転入届」ではなく、マイナンバーカード等の所持者向けの特例(転入届の特例)に限定した解説ページ。手数料への言及が本文に一切なく、関連リンク「転入・転出の住所変更等の届出」のURLもリンク一覧に含まれていないため確認できなかった。リンク一覧の大半が多言語切替リンクで占められており、本文関連リンクの把握を妨げている。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

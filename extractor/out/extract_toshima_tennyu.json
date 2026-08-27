@@ -10,53 +10,415 @@
     "has_jsonld": false,
     "text_len": 1151,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T16:05:24+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [
     "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
     "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html"
   ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "必ずマイナンバーカードをお持ちの上、豊島区の窓口で転入手続きを行ってください。",
+  "online_clarity_evidence": "オンライン申請（引越しワンストップサービス）にて転出届を行った方は、必ずマイナンバーカードをお持ちの上、豊島区の窓口で転入手続きを行ってください",
   "online_clarity_pages": [
     "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
     "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+    "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
     "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "豊島区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "1 転出証明書、2 窓口で手続きを行う方の本人確認書類（運転免許証など）、3 引越しをする方全員のマイナンバーカード（お持ちの方）、4 権限確認ができる書類（法定代理人の方：戸籍謄抄本や成年後見登記事項証明書など）、5 在留カードまたは特別永住者証明書（外国人の方）、6 続柄を証明する書類の原本（外国人の世帯で続柄を変更される方）",
+        "evidence": "届出に必要なもの\n\n1 転出証明書\n\n豊島区に引越してくる前の住所の区市町村で転出届を行い、「転出証明書」または「転出証明書に準ずる証明書」の交付を受けてください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 82,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+            "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html"
+          ],
+          "page_notes": "このページは「転入届」の入口で、届出人の状況（本人・代理人・国外から・マイナンバーカード利用等）ごとにサブページへ振り分けるリンク一覧のみで構成されており、持ち物・必要書類そのものは本文に記載がない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "1 転出証明書、2 窓口で手続きを行う方の本人確認書類（運転免許証など）、3 引越しをする方全員のマイナンバーカード（お持ちの方）、4 権限確認ができる書類（法定代理人の方：戸籍謄抄本や成年後見登記事項証明書など）、5 在留カードまたは特別永住者証明書（外国人の方）、6 続柄を証明する書類の原本（外国人の世帯で続柄を変更される方）",
+            "evidence": "届出に必要なもの\n\n1 転出証明書\n\n豊島区に引越してくる前の住所の区市町村で転出届を行い、「転出証明書」または「転出証明書に準ずる証明書」の交付を受けてください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 82,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "対象ページ（index.html）自体には本文がなく、届出人の類型（本人／代理人／国外からなど）ごとにリンクが分かれているだけだった。必要書類は「転入届：本人または新しく同じ世帯になる方が手続きをするとき」ページに番号付きリストで記載されており、該当者限定の持ち物（法定代理人・外国人）も同じリストの中に明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+        "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html"
+      ],
+      "page_notes": "対象ページ（index.html）自体には本文がなく、届出人の類型（本人／代理人／国外からなど）ごとにリンクが分かれているだけだった。必要書類は「転入届：本人または新しく同じ世帯になる方が手続きをするとき」ページに番号付きリストで記載されており、該当者限定の持ち物（法定代理人・外国人）も同じリストの中に明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "豊島区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "オンラインでは完結できず、窓口のみ。マイナポータルでの転出届はできるが、転入手続きは必ずマイナンバーカードを持参して窓口で行う必要がある",
+        "evidence": "マイナポータルを利用したオンライン申請（引越しワンストップサービス）にて転出届を行った方は、必ずマイナンバーカードをお持ちの上、豊島区の窓口で転入手続きを行ってください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 71,
+          "note": "連続71文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html",
+            "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html"
+          ],
+          "page_notes": "本ページは「本人窓口」「代理人」「国外」「マイナンバーカード」「マイナポータル」の状況別に転入届の手続きページへ振り分けるハブになっており、窓口のみかオンラインで完結できるかを本文中で直接説明していない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "オンラインでは完結できず、窓口のみ。マイナポータルでの転出届はできるが、転入手続きは必ずマイナンバーカードを持参して窓口で行う必要がある",
+            "evidence": "マイナポータルを利用したオンライン申請（引越しワンストップサービス）にて転出届を行った方は、必ずマイナンバーカードをお持ちの上、豊島区の窓口で転入手続きを行ってください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 71,
+              "note": "連続71文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "トップページ本文には窓口/オンラインの可否そのものの記述はなく、「マイナポータルを利用したオンライン申請をしたとき」というリンク先で、転出側はオンライン申請可能だが転入手続き自体は窓口必須と明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html",
+        "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html"
+      ],
+      "page_notes": "トップページ本文には窓口/オンラインの可否そのものの記述はなく、「マイナポータルを利用したオンライン申請をしたとき」というリンク先で、転出側はオンライン申請可能だが転入手続き自体は窓口必須と明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "豊島区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "豊島区の新しい住所に住み始めてから14日以内（区役所の休日が14日目に当たる場合はその日以後の最初の開庁日）",
+        "evidence": "豊島区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 43,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html"
+          ],
+          "page_notes": "このページは転入届の入口（分岐）ページで、手続き主体別（本人/代理人/国外から/マイナンバーカード/マイナポータル）のリンク一覧のみが本文にあり、期限についての記述は本文中に見当たらない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "豊島区の新しい住所に住み始めてから14日以内（区役所の休日が14日目に当たる場合はその日以後の最初の開庁日）",
+            "evidence": "豊島区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 43,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "index.htmlの本文には期限の記載がなく、リンク先の「転入届：本人または新しく同じ世帯になる方が手続きをするとき」ページの「届出期限」見出しに起算点つきで明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html"
+      ],
+      "page_notes": "index.htmlの本文には期限の記載がなく、リンク先の「転入届：本人または新しく同じ世帯になる方が手続きをするとき」ページの「届出期限」見出しに起算点つきで明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "豊島区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+            "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html"
+          ],
+          "page_notes": "このページは転入届の手続きパターン別リンク一覧のみで、手数料についての記述は本文中に見当たらない。本人/代理人向けの個別ページに手続き詳細（手数料含む）がある可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届の各パターン別ページ（本人/世帯員、代理人）を確認したが、必要書類・届出期限・場所の説明はあっても手数料についての記載は見当たらなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+        "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html"
+      ],
+      "page_notes": "転入届の各パターン別ページ（本人/世帯員、代理人）を確認したが、必要書類・届出期限・場所の説明はあっても手数料についての記載は見当たらなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "転出証明書（前住所の区市町村で発行、マイナンバーカードで特例転出した場合は不要）、窓口へ来る人の本人確認書類、引越しをする方全員のマイナンバーカード（持っている場合）。法定代理人は戸籍謄本等、外国人は在留カード等・続柄証明書の原本が追加で必要。",
-      "evidence": "1 転出証明書 豊島区に引越してくる前の住所の区市町村で転出届を行い、「転出証明書」または「転出証明書に準ずる証明書」の交付を受けてください。",
+      "value": "1 転出証明書、2 窓口で手続きを行う方の本人確認書類（運転免許証など）、3 引越しをする方全員のマイナンバーカード（お持ちの方）、4 権限確認ができる書類（法定代理人の方：戸籍謄抄本や成年後見登記事項証明書など）、5 在留カードまたは特別永住者証明書（外国人の方）、6 続柄を証明する書類の原本（外国人の世帯で続柄を変更される方）",
+      "evidence": "届出に必要なもの\n\n1 転出証明書\n\n豊島区に引越してくる前の住所の区市町村で転出届を行い、「転出証明書」または「転出証明書に準ずる証明書」の交付を受けてください。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 82,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみで完結（豊島区役所3階総合窓口課／東部区民事務所／西部区民事務所）。マイナポータルの引越しワンストップサービスで転出届をオンライン申請した場合でも、転入の手続き自体はマイナンバーカードを持参して窓口で行う必要があり、オンラインだけでは完結しない。",
+      "value": "オンラインでは完結できず、窓口のみ。マイナポータルでの転出届はできるが、転入手続きは必ずマイナンバーカードを持参して窓口で行う必要がある",
       "evidence": "マイナポータルを利用したオンライン申請（引越しワンストップサービス）にて転出届を行った方は、必ずマイナンバーカードをお持ちの上、豊島区の窓口で転入手続きを行ってください。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 71,
+        "note": "連続71文字だけ一致。引用全体は確認できない"
+      }
     },
     "期限": {
       "found": true,
-      "value": "豊島区の新しい住所に住み始めてから14日以内（住み始める前は受付不可）",
+      "value": "豊島区の新しい住所に住み始めてから14日以内（区役所の休日が14日目に当たる場合はその日以後の最初の開庁日）",
       "evidence": "豊島区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 43,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "トップページ自体は届出人の属性（本人/代理人/国外/マイナンバーカード/マイナポータル）ごとの案内へのリンク集にすぎず、必要書類・期限・窓口の詳細情報は子ページ側にのみ記載されている。手数料についてはどのページにも言及がなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "対象ページ（index.html）自体には本文がなく、届出人の類型（本人／代理人／国外からなど）ごとにリンクが分かれているだけだった。必要書類は「転入届：本人または新しく同じ世帯になる方が手続きをするとき」ページに番号付きリストで記載されており、該当者限定の持ち物（法定代理人・外国人）も同じリストの中に明記されていた。\nトップページ本文には窓口/オンラインの可否そのものの記述はなく、「マイナポータルを利用したオンライン申請をしたとき」というリンク先で、転出側はオンライン申請可能だが転入手続き自体は窓口必須と明記されていた。\nindex.htmlの本文には期限の記載がなく、リンク先の「転入届：本人または新しく同じ世帯になる方が手続きをするとき」ページの「届出期限」見出しに起算点つきで明記されていた。\n転入届の各パターン別ページ（本人/世帯員、代理人）を確認したが、必要書類・届出期限・場所の説明はあっても手数料についての記載は見当たらなかった。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
+      "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+      "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
+      "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

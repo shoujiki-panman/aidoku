@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 7637,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 897
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:55:27+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
   "online_clarity_evidence": "練馬区内6か所の区民事務所の窓口で届出を受付しています。（郵送やインターネットではお手続きできません）",
+  "online_clarity_pages": [
+    "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "練馬区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口に来所する方の本人確認書類、前住所地の区市町村が発行した転出証明書（マイナンバーカードで転出手続き済みの場合は転出証明書不要、代わりに転入者のマイナンバーカードが必要）。該当者のみ：マイナンバーカード（お持ちの方全員分）、在留カード・特別永住者証明書等（外国人住民のみ）、在学証明書（練馬区立小中学校へ転校する方のみ）。別世帯の代理人が届出る場合は法定代理人であることを確認できる書類または委任状も必要。",
+        "evidence": "窓口に来所する方の本人確認書類前住所地の区市町村が発行した転出証明書（注釈）以下は、該当する方のみ必要です。マイナンバーカード【お持ちの方のみ】",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 31,
+          "note": "連続31文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口に来所する方の本人確認書類、前住所地の区市町村が発行した転出証明書（マイナンバーカードで転出手続き済みの場合は転出証明書不要、代わりに転入者のマイナンバーカードが必要）。該当者のみ：マイナンバーカード（お持ちの方全員分）、在留カード・特別永住者証明書等（外国人住民のみ）、在学証明書（練馬区立小中学校へ転校する方のみ）。別世帯の代理人が届出る場合は法定代理人であることを確認できる書類または委任状も必要。",
+            "evidence": "窓口に来所する方の本人確認書類前住所地の区市町村が発行した転出証明書（注釈）以下は、該当する方のみ必要です。マイナンバーカード【お持ちの方のみ】",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 31,
+              "note": "連続31文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「4.届出に必要なもの」に本人確認書類・転出証明書に加え、マイナンバーカード・外国人住民向け書類・在学証明書などの該当者限定書類、代理人の場合の委任状まで箇条書きで明記されており、本文だけで完結している。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「4.届出に必要なもの」に本人確認書類・転出証明書に加え、マイナンバーカード・外国人住民向け書類・在学証明書などの該当者限定書類、代理人の場合の委任状まで箇条書きで明記されており、本文だけで完結している。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "練馬区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ（オンライン・郵送は不可）",
+        "evidence": "練馬区内6か所の区民事務所の窓口で届出を受付しています。（郵送やインターネットではお手続きできません）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 51,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ（オンライン・郵送は不可）",
+            "evidence": "練馬区内6か所の区民事務所の窓口で届出を受付しています。（郵送やインターネットではお手続きできません）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 51,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「1.届出方法」の見出し直下に窓口限定・郵送/インターネット不可の記述が本文に明記されており、他ページを見に行く必要はなかった。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「1.届出方法」の見出し直下に窓口限定・郵送/インターネット不可の記述が本文に明記されており、他ページを見に行く必要はなかった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "練馬区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "練馬区に住み始めてから14日以内",
+        "evidence": "練馬区に住み始めてから14日以内（住み始める前の届出はできません）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 33,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "練馬区に住み始めてから14日以内",
+            "evidence": "練馬区に住み始めてから14日以内（住み始める前の届出はできません）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 33,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「3.届出期間」の見出し直後に起算点（住み始めてから）と期限（14日以内）が本文に明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「3.届出期間」の見出し直後に起算点（住み始めてから）と期限（14日以内）が本文に明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "練馬区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届の手続き自体の手数料への言及は本文になく、金額が出てくるのはマイナンバーカード再交付手数料（1,000円/800円）のみで対象外。リンク一覧にも手数料に触れそうな項目はない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "転入届の手続き自体の手数料への言及は本文になく、金額が出てくるのはマイナンバーカード再交付手数料（1,000円/800円）のみで対象外。リンク一覧にも手数料に触れそうな項目はない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "窓口に来所する方の本人確認書類、前住所地の区市町村が発行した転出証明書（マイナンバーカードを利用した転出手続きの場合は不要）。該当者のみ：マイナンバーカード、在留カード等、在学証明書",
-      "evidence": "窓口に来所する方の本人確認書類（詳しくは「戸籍、住民票の申請・届出の本人確認方法について」をご覧ください。）／前住所地の区市町村が発行した転出証明書",
+      "value": "窓口に来所する方の本人確認書類、前住所地の区市町村が発行した転出証明書（マイナンバーカードで転出手続き済みの場合は転出証明書不要、代わりに転入者のマイナンバーカードが必要）。該当者のみ：マイナンバーカード（お持ちの方全員分）、在留カード・特別永住者証明書等（外国人住民のみ）、在学証明書（練馬区立小中学校へ転校する方のみ）。別世帯の代理人が届出る場合は法定代理人であることを確認できる書類または委任状も必要。",
+      "evidence": "窓口に来所する方の本人確認書類前住所地の区市町村が発行した転出証明書（注釈）以下は、該当する方のみ必要です。マイナンバーカード【お持ちの方のみ】",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 31,
+        "note": "連続31文字だけ一致。引用全体は確認できない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "練馬区内6か所の区民事務所の窓口でのみ受付。オンライン不可（郵送も不可）",
+      "value": "窓口のみ（オンライン・郵送は不可）",
       "evidence": "練馬区内6か所の区民事務所の窓口で届出を受付しています。（郵送やインターネットではお手続きできません）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 51,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
-      "value": "練馬区に住み始めてから14日以内（住み始める前の届出は不可）",
+      "value": "練馬区に住み始めてから14日以内",
       "evidence": "練馬区に住み始めてから14日以内（住み始める前の届出はできません）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 33,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "1〜8の番号見出しで構成され本文は詳細だが、転入届自体の手数料についての明記は見当たらない（マイナンバーカード再交付手数料の記載はあるが別手続き）。届出方法は窓口来所のみでオンライン不可と明記されている。",
-  "online_clarity_pages": [
-    "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html"
-  ],
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「4.届出に必要なもの」に本人確認書類・転出証明書に加え、マイナンバーカード・外国人住民向け書類・在学証明書などの該当者限定書類、代理人の場合の委任状まで箇条書きで明記されており、本文だけで完結している。\n「1.届出方法」の見出し直下に窓口限定・郵送/インターネット不可の記述が本文に明記されており、他ページを見に行く必要はなかった。\n「3.届出期間」の見出し直後に起算点（住み始めてから）と期限（14日以内）が本文に明記されている。\n転入届の手続き自体の手数料への言及は本文になく、金額が出てくるのはマイナンバーカード再交付手数料（1,000円/800円）のみで対象外。リンク一覧にも手数料に触れそうな項目はない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

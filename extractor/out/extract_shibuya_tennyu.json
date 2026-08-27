@@ -10,48 +10,349 @@
     "has_jsonld": true,
     "text_len": 2585,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 140
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:55:27+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html"
+  ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "他の区市町村から渋谷区に引っ越ししてきたときにする届出です。転入届は郵送では受付できませんのでご注意ください。",
+  "online_clarity_evidence": "フォーム 利用不可能 窓口 利用可能 郵送 利用不可能 スマート申請 利用不可能 マイナンバー 利用不可能 マイポータル 利用不可能",
   "online_clarity_pages": [
-    "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html"
+    "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+    "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "渋谷区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口で手続きする人の本人確認書類（マイナンバーカード・運転免許証・パスポート等）、転出証明書（前住所地発行。マイナンバーカード特例転入の場合は不要）、マイナンバーカード（交付済みの人）、渋谷区内で同居人・妻（未届）・夫（未届）・縁故者として転入する場合は世帯主の同意書、渋谷区転入から6か月以上経過して届け出る場合は賃貸契約書や公共料金の領収書など、代理人が届け出る場合は委任状と代理人の本人確認書類",
+        "evidence": "窓口で手続きする人の本人確認ができるもの（マイナンバーカード・運転免許証・パスポートなど）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 45,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口で手続きする人の本人確認書類（マイナンバーカード・運転免許証・パスポート等）、転出証明書（前住所地発行。マイナンバーカード特例転入の場合は不要）、マイナンバーカード（交付済みの人）、渋谷区内で同居人・妻（未届）・夫（未届）・縁故者として転入する場合は世帯主の同意書、渋谷区転入から6か月以上経過して届け出る場合は賃貸契約書や公共料金の領収書など、代理人が届け出る場合は委任状と代理人の本人確認書類",
+            "evidence": "窓口で手続きする人の本人確認ができるもの（マイナンバーカード・運転免許証・パスポートなど）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 45,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「届出の際に必要なもの」の見出し下に本人確認書類・転出証明書・マイナンバーカード・該当者のみの同意書／賃貸契約書等／委任状が箇条書きで明記されており、リンク先を辿る必要はなかった。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「届出の際に必要なもの」の見出し下に本人確認書類・転出証明書・マイナンバーカード・該当者のみの同意書／賃貸契約書等／委任状が箇条書きで明記されており、リンク先を辿る必要はなかった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "渋谷区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ（オンライン等での完結は不可）",
+        "evidence": "転入届（区外から渋谷区へ） の ご利用いただける手続き方法　フォーム 利用不可能　窓口 利用可能　郵送 利用不可能",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 46,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ（オンライン等での完結は不可）",
+            "evidence": "転入届（区外から渋谷区へ） の ご利用いただける手続き方法　フォーム 利用不可能　窓口 利用可能　郵送 利用不可能",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 46,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文に「転入届は郵送では受付できませんのでご注意ください」と明記され、末尾の「ご利用いただける手続き方法」表でも窓口のみ利用可能・フォーム/郵送/電話予約/FAX/メール/コンビニ/LINE/スマート申請/マイナンバー/マイポータルは全て利用不可能と一覧化されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文に「転入届は郵送では受付できませんのでご注意ください」と明記され、末尾の「ご利用いただける手続き方法」表でも窓口のみ利用可能・フォーム/郵送/電話予約/FAX/メール/コンビニ/LINE/スマート申請/マイナンバー/マイポータルは全て利用不可能と一覧化されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "渋谷区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "渋谷区に住みはじめた日から14日以内",
+        "evidence": "渋谷区に住みはじめた日から14日以内（届出が遅れると過料がかかる場合があります）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 40,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "渋谷区に住みはじめた日から14日以内",
+            "evidence": "渋谷区に住みはじめた日から14日以内（届出が遅れると過料がかかる場合があります）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 40,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「届出期間」の見出し直後に起算点付きの期限が本文中に明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「届出期間」の見出し直後に起算点付きの期限が本文中に明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "渋谷区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html"
+          ],
+          "page_notes": "本文は「届出期間」「届出人」「届出の際に必要なもの」「届出窓口・受付時間」の4項目立てで構成されており、手数料についての記載や見出しは無い。関連コンテンツの「転入（渋谷区外から引越し）する人」ページに手数料情報がまとめられている可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届のページには届出期間・届出人・必要なもの・窓口の情報はあるが、手数料に関する記載は本文になく、リンク先の「転入（渋谷区外から引っ越し）する時」ページにも手数料の記載は見当たらなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html"
+      ],
+      "page_notes": "転入届のページには届出期間・届出人・必要なもの・窓口の情報はあるが、手数料に関する記載は本文になく、リンク先の「転入（渋谷区外から引っ越し）する時」ページにも手数料の記載は見当たらなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "本人確認書類（マイナンバーカード・運転免許証・パスポートなど）、転出証明書（前住所地発行）、マイナンバーカード（交付を受けている人）。同一世帯以外の続柄で転入する場合は世帯主の同意書、6か月以上経過後の届出は賃貸契約書等、代理人の場合は委任状も必要。",
-      "evidence": "窓口で手続きする人の本人確認ができるもの（マイナンバーカード・運転免許証・パスポートなど）転出証明書（前住所地の区市町村が発行したもの）",
+      "value": "窓口で手続きする人の本人確認書類（マイナンバーカード・運転免許証・パスポート等）、転出証明書（前住所地発行。マイナンバーカード特例転入の場合は不要）、マイナンバーカード（交付済みの人）、渋谷区内で同居人・妻（未届）・夫（未届）・縁故者として転入する場合は世帯主の同意書、渋谷区転入から6か月以上経過して届け出る場合は賃貸契約書や公共料金の領収書など、代理人が届け出る場合は委任状と代理人の本人確認書類",
+      "evidence": "窓口で手続きする人の本人確認ができるもの（マイナンバーカード・運転免許証・パスポートなど）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 45,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみ。オンライン・郵送・電話予約・FAX・メール・コンビニ・LINE・スマート申請・マイナンバー・マイポータルはいずれも利用不可。窓口は暮らしの手続きのフロア（庁舎3階）住民戸籍課・出張所（平日8:30-17:00）または区民サービスセンター（平日11:00-19:00、土曜9:00-17:00）。",
-      "evidence": "転入届は郵送では受付できませんのでご注意ください。",
+      "value": "窓口のみ（オンライン等での完結は不可）",
+      "evidence": "転入届（区外から渋谷区へ） の ご利用いただける手続き方法　フォーム 利用不可能　窓口 利用可能　郵送 利用不可能",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 46,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": true,
-      "value": "渋谷区に住みはじめた日から14日以内（遅れると過料の場合あり）",
+      "value": "渋谷区に住みはじめた日から14日以内",
       "evidence": "渋谷区に住みはじめた日から14日以内（届出が遅れると過料がかかる場合があります）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 40,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "届出期間・届出人・必要なもの・窓口/受付時間が見出しごとに整理され、利用可能な手続き方法（窓口/郵送/オンライン等）を一覧表示する定型ブロックもあり構造は明確。ただし手数料についてはこのページ・関連リンクのどこにも言及がない（転入届自体は無料と思われるが本文に明記なし）。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「届出の際に必要なもの」の見出し下に本人確認書類・転出証明書・マイナンバーカード・該当者のみの同意書／賃貸契約書等／委任状が箇条書きで明記されており、リンク先を辿る必要はなかった。\n本文に「転入届は郵送では受付できませんのでご注意ください」と明記され、末尾の「ご利用いただける手続き方法」表でも窓口のみ利用可能・フォーム/郵送/電話予約/FAX/メール/コンビニ/LINE/スマート申請/マイナンバー/マイポータルは全て利用不可能と一覧化されている。\n「届出期間」の見出し直後に起算点付きの期限が本文中に明記されている。\n転入届のページには届出期間・届出人・必要なもの・窓口の情報はあるが、手数料に関する記載は本文になく、リンク先の「転入（渋谷区外から引っ越し）する時」ページにも手数料の記載は見当たらなかった。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+      "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

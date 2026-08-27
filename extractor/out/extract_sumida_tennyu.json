@@ -10,10 +10,45 @@
     "has_jsonld": false,
     "text_len": 4295,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 149
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T16:05:24+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [
     "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
   ],
@@ -23,38 +58,355 @@
     "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
     "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
   ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "墨田区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+          ],
+          "page_notes": "このページは転入届本体の持ち物一覧ではなく、転入届・転居届と併せて電子証明書を発行する際の代理手続き（同一世帯員向け）に限定した持ち物案内。転入届自体の必要書類は「届出・登録・証明」カテゴリページなど別ページにありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページは「転入届・転居届と併せて行う電子証明書発行の代理手続き」専用ページで、記載されている持ち物（代理人の本人確認書類・委任状等）は電子証明書の代理発行手続きのものであり、転入届自体の必要書類ではない。追従した「届出・登録・証明」一覧ページも「住民登録の届出」等のカテゴリ見出しの羅列に留まり、転入届の持ち物そのものへの記載はなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+      ],
+      "page_notes": "このページは「転入届・転居届と併せて行う電子証明書発行の代理手続き」専用ページで、記載されている持ち物（代理人の本人確認書類・委任状等）は電子証明書の代理発行手続きのものであり、転入届自体の必要書類ではない。追従した「届出・登録・証明」一覧ページも「住民登録の届出」等のカテゴリ見出しの羅列に留まり、転入届の持ち物そのものへの記載はなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "墨田区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "リンク先にあり",
+        "failure_type": "not_retrieved",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+          ],
+          "page_notes": "このページは転入届・転居届と併せて行う電子証明書発行の代理手続きに関する説明で、転入届本体の窓口/オンライン可否には触れていない。関連情報は「届出・登録・証明」カテゴリのリンク先にありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "元ページは電子証明書の代理手続きに関する内容で転入届自体の窓口/オンライン可否には触れていない。リンク先の「届出・登録・証明」トップにも「住民登録の届出」という項目名はあるが、そこへのURLは本文中に示されておらず、これ以上追従できなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+      ],
+      "page_notes": "元ページは電子証明書の代理手続きに関する内容で転入届自体の窓口/オンライン可否には触れていない。リンク先の「届出・登録・証明」トップにも「住民登録の届出」という項目名はあるが、そこへのURLは本文中に示されておらず、これ以上追従できなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "墨田区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "リンク先にあり",
+        "failure_type": "not_retrieved",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+          ],
+          "page_notes": "このページは「転入届・転居届と併せて行う電子証明書発行の代理手続き」に特化した内容で、転入届自体の届出期限には触れていない。届出・登録・証明のカテゴリページにたどれば転入届本体の手続きページが見つかる可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "元ページは転入届と併せて行う電子証明書発行の代理手続きに特化しており、転入届自体の期限は記載なし。リンク先の「届出・登録・証明」一覧ページも各手続きへのリンク集（「住民登録の届出」など）のみで、期限の本文記述は無かった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+      ],
+      "page_notes": "元ページは転入届と併せて行う電子証明書発行の代理手続きに特化しており、転入届自体の期限は記載なし。リンク先の「届出・登録・証明」一覧ページも各手続きへのリンク集（「住民登録の届出」など）のみで、期限の本文記述は無かった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "墨田区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "リンク先にあり",
+        "failure_type": "not_retrieved",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+          ],
+          "page_notes": "このページはマイナンバーカード電子証明書の代理手続きに関する案内で、転入届自体の手数料には触れていない。転入届の情報は「届出・登録・証明」カテゴリページにありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "遷移先の「届出・登録・証明」ページは見出しとリンクの一覧のみで、手数料の記載は無い。「住民登録の届出」というリンクがあり、転入届の手数料はさらにその先のページに載っていると見られる。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+      ],
+      "page_notes": "遷移先の「届出・登録・証明」ページは見出しとリンクの一覧のみで、手数料の記載は無い。「住民登録の届出」というリンクがあり、転入届の手数料はさらにその先のページに載っていると見られる。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": false,
       "value": "",
       "evidence": "",
-      "source": "html",
-      "failure_reason": "記載なし"
+      "source": null,
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "窓口オンライン可否": {
       "found": false,
       "value": "",
       "evidence": "",
-      "source": "html",
-      "failure_reason": "記載なし"
+      "source": null,
+      "failure_reason": "リンク先にあり",
+      "failure_type": "not_retrieved",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
-      "source": "html",
-      "failure_reason": "記載なし"
+      "source": null,
+      "failure_reason": "リンク先にあり",
+      "failure_type": "not_retrieved",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
-      "source": "html",
-      "failure_reason": "記載なし"
+      "source": null,
+      "failure_reason": "リンク先にあり",
+      "failure_type": "not_retrieved",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "指定URLのページは「転入届・転居届と併せて行う電子証明書発行の同一世帯員代理手続き」という付随手続きの説明であり、転入届本体の必要書類・窓口・期限・手数料は書かれていない。リンク先の「届出・登録・証明」ページも見出し一覧（住民登録の届出など）のみでURL付きのリンクが本文中に確認できず、これ以上辿れなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "このページは「転入届・転居届と併せて行う電子証明書発行の代理手続き」専用ページで、記載されている持ち物（代理人の本人確認書類・委任状等）は電子証明書の代理発行手続きのものであり、転入届自体の必要書類ではない。追従した「届出・登録・証明」一覧ページも「住民登録の届出」等のカテゴリ見出しの羅列に留まり、転入届の持ち物そのものへの記載はなかった。\n元ページは電子証明書の代理手続きに関する内容で転入届自体の窓口/オンライン可否には触れていない。リンク先の「届出・登録・証明」トップにも「住民登録の届出」という項目名はあるが、そこへのURLは本文中に示されておらず、これ以上追従できなかった。\n元ページは転入届と併せて行う電子証明書発行の代理手続きに特化しており、転入届自体の期限は記載なし。リンク先の「届出・登録・証明」一覧ページも各手続きへのリンク集（「住民登録の届出」など）のみで、期限の本文記述は無かった。\n遷移先の「届出・登録・証明」ページは見出しとリンクの一覧のみで、手数料の記載は無い。「住民登録の届出」というリンクがあり、転入届の手数料はさらにその先のページに載っていると見られる。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+      "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 0,
+    "verified": 0,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 4
   }
 }

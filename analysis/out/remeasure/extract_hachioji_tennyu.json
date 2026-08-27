@@ -1,0 +1,62 @@
+{
+  "municipality": "八王子市",
+  "municipality_id": "hachioji",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
+    "hops": 3,
+    "link_text": "転入届",
+    "has_jsonld": false,
+    "text_len": 778,
+    "truncated": false,
+    "n_links": 35
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+  ],
+  "online_clarity": "曖昧",
+  "online_clarity_evidence": "手続によってはオンライン申請に対応していますので、ぜひご利用ください。",
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ、全員分）、住民基本台帳カード（所有者のみ、全員分）、委任状（代理人の場合）。外国人住民は在留カード等・続柄を証する文書も必要",
+      "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口のみ。市役所本庁舎1階市民課（7番窓口）、八王子駅南口総合事務所、南大沢事務所、各市民部事務所で受付。オンライン申請の記載なし（案内サービスは他手続きの一部でオンライン対応と案内するのみ）",
+      "evidence": "受付窓口・受付時間一覧表 受付窓口 市役所本庁舎1階市民課（7番窓口） 午前8時30分から午後5時",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "八王子市に住み始めてから14日以内（遅れると5万円以下の過料の可能性）",
+      "evidence": "八王子市に住み始めてから14日以内（注意1） 届出が遅れますと、5万円以下の過料に科せられる場合があります",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "index.htmlのページ本文はナビゲーションのみで、転入届の具体的な要件（必要書類・窓口・期限）は一階層下の「市外からの引っ越し（転出証明書での手続き）」等のページに存在する。同一階層に「マイナンバーカードでの手続き」という別ルートのページもあり、どちらを正解とするか手続き名だけでは一意に定まらない構成。",
+  "online_clarity_pages": [
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+  ],
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

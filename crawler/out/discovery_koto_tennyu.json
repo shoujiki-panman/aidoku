@@ -4,50 +4,639 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.koto.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html",
       "link_text": "転入届（江東区以外の区市町村からのお引越し）",
       "hops": 3,
       "score": 46,
-      "parent": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
+      "parent": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 6315,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届（江東区以外の区市町村からのお引越し）｜江東区",
+      "meta": {
+        "description": "江東区以外の区市町村から、江東区に住所を移したときの手続きです。",
+        "og:title": "転入届（江東区以外の区市町村からのお引越し）",
+        "og:type": "article",
+        "og:description": "江東区以外の区市町村から、江東区に住所を移したときの手続きです。",
+        "og:url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届（江東区以外の区市町村からのお引越し）"
+        },
+        {
+          "level": 2,
+          "text": "窓口混雑について（3月29日、4月5日、4月12日曜窓口実施）"
+        },
+        {
+          "level": 2,
+          "text": "住所を変更したときは"
+        },
+        {
+          "level": 2,
+          "text": "転入届（転出証明書の発行を受けた方）"
+        },
+        {
+          "level": 3,
+          "text": "対象の方"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出先"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 3,
+          "text": "状況により必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカード（個人番号カード）を使用した転入届（転入届の特例による転入届）"
+        },
+        {
+          "level": 3,
+          "text": "対象の方"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方"
+        },
+        {
+          "level": 4,
+          "text": "届け出における注意点"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出先"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 3,
+          "text": "状況により必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 3,
+          "text": "住民異動届"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "関連施設"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5021.html",
       "link_text": "国外への転出届・国外からの転入届",
       "hops": 3,
       "score": 36,
-      "parent": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
+      "parent": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 4679,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "国外への転出届・国外からの転入届｜江東区",
+      "meta": {
+        "description": "江東区から国外へお引越しするとき、国外から江東区にお引越したときの手続きです。",
+        "og:title": "国外への転出届・国外からの転入届",
+        "og:type": "article",
+        "og:description": "江東区から国外へお引越しするとき、国外から江東区にお引越したときの手続きです。",
+        "og:url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5021.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "国外への転出届・国外からの転入届"
+        },
+        {
+          "level": 2,
+          "text": "国外への転出届（江東区から国外へのお引越し）"
+        },
+        {
+          "level": 3,
+          "text": "対象の方"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出先"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 3,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "国外からの転入届（国外から江東区へのお引越し）"
+        },
+        {
+          "level": 3,
+          "text": "対象の方"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出先"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 3,
+          "text": "状況により必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 3,
+          "text": "住民異動届"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5015.html",
       "link_text": "転出届（江東区以外の区市町村へのお引越し）",
       "hops": 3,
       "score": 26,
-      "parent": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
+      "parent": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 7135,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転出届（江東区以外の区市町村へのお引越し）｜江東区",
+      "meta": {
+        "description": "江東区から江東区以外の区市町村に住所を移すときの手続きです。",
+        "og:title": "転出届（江東区以外の区市町村へのお引越し）",
+        "og:type": "article",
+        "og:description": "江東区から江東区以外の区市町村に住所を移すときの手続きです。",
+        "og:url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5015.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転出届（江東区以外の区市町村へのお引越し）"
+        },
+        {
+          "level": 2,
+          "text": "住所を変更したときは"
+        },
+        {
+          "level": 2,
+          "text": "転出届は、窓口に行かずに届出できます！"
+        },
+        {
+          "level": 2,
+          "text": "マイナポータルでの転出"
+        },
+        {
+          "level": 3,
+          "text": "サービスを利用できる方"
+        },
+        {
+          "level": 2,
+          "text": "郵送での転出届"
+        },
+        {
+          "level": 3,
+          "text": "対象の方"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 4,
+          "text": "国内へ転出される方"
+        },
+        {
+          "level": 4,
+          "text": "国外へ転出される方"
+        },
+        {
+          "level": 5,
+          "text": "国外転出継続利用申請（令和6年5月27日～）"
+        },
+        {
+          "level": 3,
+          "text": "送付先"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 3,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "窓口での転出届"
+        },
+        {
+          "level": 3,
+          "text": "対象の方"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出先"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 3,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカード（個人番号カード）を使用した転出届（転入届の特例による転出届）"
+        },
+        {
+          "level": 3,
+          "text": "対象の方"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出方法"
+        },
+        {
+          "level": 4,
+          "text": "郵送"
+        },
+        {
+          "level": 5,
+          "text": "送付先"
+        },
+        {
+          "level": 5,
+          "text": "必要書類"
+        },
+        {
+          "level": 5,
+          "text": "ご案内"
+        },
+        {
+          "level": 4,
+          "text": "窓口"
+        },
+        {
+          "level": 5,
+          "text": "届出先"
+        },
+        {
+          "level": 5,
+          "text": "必要書類"
+        },
+        {
+          "level": 5,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 3,
+          "text": "住民異動届"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5017.html",
       "link_text": "転居届（江東区内でのお引越し）",
       "hops": 3,
       "score": 26,
-      "parent": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
+      "parent": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 3223,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転居届（江東区内でのお引越し）｜江東区",
+      "meta": {
+        "description": "江東区内で住所を移したときの手続きです。",
+        "og:title": "転居届（江東区内でのお引越し）",
+        "og:type": "article",
+        "og:description": "江東区内で住所を移したときの手続きです。",
+        "og:url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5017.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転居届（江東区内でのお引越し）"
+        },
+        {
+          "level": 2,
+          "text": "住所を変更したときは"
+        },
+        {
+          "level": 2,
+          "text": "転居届"
+        },
+        {
+          "level": 3,
+          "text": "対象の方"
+        },
+        {
+          "level": 3,
+          "text": "届出ができる方"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出先"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 3,
+          "text": "状況により必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 3,
+          "text": "住民異動届"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
+      "link_text": "手続き案内（混雑状況バナー）",
+      "hops": 2,
+      "score": 19,
+      "parent": "https://www.city.koto.lg.jp/tetsuduki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2806,
+      "has_jsonld": false,
+      "title": "区役所本庁舎区民課・豊洲特別出張所・各出張所の混雑状況｜江東区",
+      "meta": {
+        "description": "区役所本庁舎2階3番窓口・豊洲特別出張所・各出張所の混雑状況をリアルタイムでご覧になれます",
+        "og:title": "区役所本庁舎区民課・豊洲特別出張所・各出張所の混雑状況",
+        "og:type": "article",
+        "og:description": "区役所本庁舎2階3番窓口・豊洲特別出張所・各出張所の混雑状況をリアルタイムでご覧になれます",
+        "og:url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区役所本庁舎区民課・豊洲特別出張所・各出張所の混雑状況"
+        },
+        {
+          "level": 2,
+          "text": "混雑の傾向および待ち時間の目安について"
+        },
+        {
+          "level": 3,
+          "text": "混雑が予想される時期・時間帯等"
+        },
+        {
+          "level": 3,
+          "text": "区役所に行かなくてもできる手続き"
+        },
+        {
+          "level": 3,
+          "text": "待ち時間の目安"
+        },
+        {
+          "level": 2,
+          "text": "現在の混雑状況の確認について"
+        },
+        {
+          "level": 2,
+          "text": "受付後の呼び出し状況の確認について"
+        },
+        {
+          "level": 3,
+          "text": "区役所本庁舎区民課・豊洲特別出張所"
+        },
+        {
+          "level": 3,
+          "text": "各出張所"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
@@ -58,7 +647,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 911,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民異動届｜江東区",
+      "meta": {
+        "og:title": "住民異動届",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民異動届"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060302/kurashi/jumin/koseki/r080808.html",
@@ -69,18 +681,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1867,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.koto.lg.jp/060302/kurashi/jumin/koseki/5060.html",
-      "link_text": "戸籍の届出、本人確認、受付窓口について",
-      "hops": 3,
-      "score": 18,
-      "parent": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 3962,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年8月8日に戸籍の届出をされる方へ｜江東区",
+      "meta": {
+        "og:title": "令和8年8月8日に戸籍の届出をされる方へ",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/060302/kurashi/jumin/koseki/r080808.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年8月8日に戸籍の届出をされる方へ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
@@ -91,29 +719,154 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2149,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
-      "link_text": "",
-      "hops": 2,
-      "score": 16,
-      "parent": "https://www.city.koto.lg.jp/tetsuduki/index.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 2806,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民・戸籍の手続き｜江東区",
+      "meta": {
+        "og:title": "住民・戸籍の手続き",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民・戸籍の手続き"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "住民異動届"
+        },
+        {
+          "level": 2,
+          "text": "戸籍関係届"
+        },
+        {
+          "level": 2,
+          "text": "印鑑登録"
+        },
+        {
+          "level": 2,
+          "text": "各種証明"
+        },
+        {
+          "level": 2,
+          "text": "住民基本台帳ネットワーク"
+        },
+        {
+          "level": 2,
+          "text": "外国人の方の手続き（旧外国人登録）"
+        },
+        {
+          "level": 2,
+          "text": "自動交付機・コンビニ交付"
+        },
+        {
+          "level": 2,
+          "text": "旧氏(旧姓)併記"
+        },
+        {
+          "level": 2,
+          "text": "出張所・特別出張所"
+        },
+        {
+          "level": 2,
+          "text": "水曜延長窓口・日曜窓口・臨時窓口"
+        },
+        {
+          "level": 2,
+          "text": "電子証明書（公的個人認証サービス）有効期限到達による更新"
+        },
+        {
+          "level": 2,
+          "text": "公的個人認証サービスとは"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5018.html",
       "link_text": "世帯変更",
       "hops": 3,
       "score": 16,
-      "parent": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
+      "parent": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 1881,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "世帯変更｜江東区",
+      "meta": {
+        "description": "住所の異動を伴わずに、その属する世帯に変更があったときの手続きです。",
+        "og:title": "世帯変更",
+        "og:type": "article",
+        "og:description": "住所の異動を伴わずに、その属する世帯に変更があったときの手続きです。",
+        "og:url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5018.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "世帯変更"
+        },
+        {
+          "level": 2,
+          "text": "世帯とは"
+        },
+        {
+          "level": 2,
+          "text": "世帯主とは"
+        },
+        {
+          "level": 2,
+          "text": "世帯変更とは"
+        },
+        {
+          "level": 3,
+          "text": "住所の異動を伴わずにその属する世帯に変更のあった場合。"
+        },
+        {
+          "level": 3,
+          "text": "手続きに必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "手続きできる方"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/koseki/index.html",
@@ -124,7 +877,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1096,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍関係届｜江東区",
+      "meta": {
+        "og:title": "戸籍関係届",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/jumin/koseki/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍関係届"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/hikkoshi.html",
@@ -135,7 +911,162 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2196,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引っ越し｜江東区",
+      "meta": {
+        "og:title": "引っ越し",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/hikkoshi.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引っ越し"
+        },
+        {
+          "level": 2,
+          "text": "江東区外から江東区へ引越す方"
+        },
+        {
+          "level": 3,
+          "text": "住民異動の手続き"
+        },
+        {
+          "level": 3,
+          "text": "国民年金"
+        },
+        {
+          "level": 3,
+          "text": "国民健康保険の手続き"
+        },
+        {
+          "level": 3,
+          "text": "後期高齢者医療制度"
+        },
+        {
+          "level": 3,
+          "text": "障害者福祉"
+        },
+        {
+          "level": 3,
+          "text": "子育てに関する手続き"
+        },
+        {
+          "level": 3,
+          "text": "介護保険に関する手続き"
+        },
+        {
+          "level": 3,
+          "text": "原付・二輪車・軽自動車等の手続き"
+        },
+        {
+          "level": 3,
+          "text": "ペットに関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "江東区から江東区外へ引越す方"
+        },
+        {
+          "level": 3,
+          "text": "住民異動の手続き"
+        },
+        {
+          "level": 3,
+          "text": "国民健康保険の手続き"
+        },
+        {
+          "level": 3,
+          "text": "後期高齢者医療制度"
+        },
+        {
+          "level": 3,
+          "text": "子育てに関する手続き"
+        },
+        {
+          "level": 3,
+          "text": "介護保険に関する手続き"
+        },
+        {
+          "level": 3,
+          "text": "住民税に関するお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "原付・二輪車・軽自動車等の手続き"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみに関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "江東区内で引越す方"
+        },
+        {
+          "level": 3,
+          "text": "住民異動の手続き"
+        },
+        {
+          "level": 3,
+          "text": "国民年金"
+        },
+        {
+          "level": 3,
+          "text": "国民健康保険の手続き"
+        },
+        {
+          "level": 3,
+          "text": "後期高齢者医療制度"
+        },
+        {
+          "level": 3,
+          "text": "障害者福祉"
+        },
+        {
+          "level": 3,
+          "text": "子育てに関する手続き"
+        },
+        {
+          "level": 3,
+          "text": "介護保険に関する手続き"
+        },
+        {
+          "level": 3,
+          "text": "ペットに関する手続き"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみに関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "江東区から海外へ引越す方"
+        },
+        {
+          "level": 3,
+          "text": "国民年金"
+        },
+        {
+          "level": 3,
+          "text": "住民税（特別区民税・都民税）に関する手続き"
+        },
+        {
+          "level": 3,
+          "text": "原付・二輪車・軽自動車等の手続き"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみに関する手続き"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/tetsuduki/index.html",
@@ -146,7 +1077,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1000,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手続き案内｜江東区",
+      "meta": {
+        "og:title": "手続き案内",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/tetsuduki/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手続き案内"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/gaikoku/index.html",
@@ -157,7 +1111,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 866,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "外国人の方の手続き（旧外国人登録）｜江東区",
+      "meta": {
+        "og:title": "外国人の方の手続き（旧外国人登録）",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/jumin/gaikoku/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "外国人の方の手続き（旧外国人登録）"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/madoguchi/index.html",
@@ -168,7 +1145,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 856,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "水曜延長窓口・日曜窓口・臨時窓口｜江東区",
+      "meta": {
+        "og:title": "水曜延長窓口・日曜窓口・臨時窓口",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/jumin/madoguchi/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "水曜延長窓口・日曜窓口・臨時窓口"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/oshirase/index.html",
@@ -179,7 +1179,64 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 838,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お知らせ｜江東区",
+      "meta": {
+        "og:title": "お知らせ",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/jumin/oshirase/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.koto.lg.jp/kurashi/jumin/inkan/index.html",
+      "link_text": "印鑑登録",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 840,
+      "has_jsonld": false,
+      "title": "印鑑登録｜江東区",
+      "meta": {
+        "og:title": "印鑑登録",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/jumin/inkan/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "印鑑登録"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Wed, 01 Apr 2026 04:19:15 GMT",
+      "etag": "W/\"2c82-64e5e630976c1\""
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/index.html",
@@ -190,7 +1247,90 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2217,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "くらし・地域｜江東区",
+      "meta": {
+        "og:title": "くらし・地域",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらし・地域"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "住民・戸籍の手続き"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバー制度"
+        },
+        {
+          "level": 2,
+          "text": "年金"
+        },
+        {
+          "level": 2,
+          "text": "税金"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "交通"
+        },
+        {
+          "level": 2,
+          "text": "住まい"
+        },
+        {
+          "level": 2,
+          "text": "ペット・動物"
+        },
+        {
+          "level": 2,
+          "text": "消費生活（消費者センター）"
+        },
+        {
+          "level": 2,
+          "text": "コミュニティ"
+        },
+        {
+          "level": 2,
+          "text": "人権・男女共同参画"
+        },
+        {
+          "level": 2,
+          "text": "区民保養施設"
+        },
+        {
+          "level": 2,
+          "text": "くらしの相談"
+        },
+        {
+          "level": 2,
+          "text": "こうとう伝統と未来の応援寄附金（ふるさと納税等）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/index.html",
@@ -201,7 +1341,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1093,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの出し方・分別検索｜江東区",
+      "meta": {
+        "og:title": "ごみの出し方・分別検索",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの出し方・分別検索"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ受付センター"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集日"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分別案内（LINEアプリ）"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分別案内（WEBチャットボット）"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分け方早見表"
+        },
+        {
+          "level": 2,
+          "text": "ごみの出し方・分別"
+        },
+        {
+          "level": 2,
+          "text": "ごみの減量への取り組み"
+        },
+        {
+          "level": 2,
+          "text": "関連メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060609/kurashi/zekin/nohusoudan.html",
@@ -212,7 +1407,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1441,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民税の夜間電話相談を実施します｜江東区",
+      "meta": {
+        "description": "都民税区民税（住民税）のお支払いが困難な方を対象に夜間電話相談を実施します。",
+        "og:title": "住民税の夜間電話相談を実施します",
+        "og:type": "article",
+        "og:description": "都民税区民税（住民税）のお支払いが困難な方を対象に夜間電話相談を実施します。",
+        "og:url": "https://www.city.koto.lg.jp/060609/kurashi/zekin/nohusoudan.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民税の夜間電話相談を実施します"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/250201/kurashi/sodan/sekatsu/7132.html",
@@ -223,7 +1451,100 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2861,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "女性相談｜江東区",
+      "meta": {
+        "description": "女性の問題一般に関する相談（DV、性暴力、妊娠・出産期の相談など）に女性相談支援員が応じます。",
+        "og:title": "女性相談",
+        "og:type": "article",
+        "og:description": "女性の問題一般に関する相談（DV、性暴力、妊娠・出産期の相談など）に女性相談支援員が応じます。",
+        "og:url": "https://www.city.koto.lg.jp/250201/kurashi/sodan/sekatsu/7132.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "女性相談"
+        },
+        {
+          "level": 2,
+          "text": "相談日時"
+        },
+        {
+          "level": 2,
+          "text": "相談方法"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 1,
+          "text": "女性の居場所を支援します！"
+        },
+        {
+          "level": 2,
+          "text": "居場所の紹介"
+        },
+        {
+          "level": 3,
+          "text": "ポラリス"
+        },
+        {
+          "level": 3,
+          "text": "ママリングス"
+        },
+        {
+          "level": 3,
+          "text": "ACTO亀戸"
+        },
+        {
+          "level": 3,
+          "text": "ながれる"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 1,
+          "text": "生理用品無料提供システム「OiTr（オイテル）」設置しています"
+        },
+        {
+          "level": 2,
+          "text": "設置場所"
+        },
+        {
+          "level": 2,
+          "text": "利用方法"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
@@ -234,7 +1555,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1232,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ｜江東区",
+      "meta": {
+        "og:title": "粗大ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/index.html",
@@ -245,7 +1589,110 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2852,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル｜江東区",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/gomi/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "ごみの出し方・分別検索"
+        },
+        {
+          "level": 2,
+          "text": "リチウムイオン電池(充電式電池)等の出し方について"
+        },
+        {
+          "level": 2,
+          "text": "令和5年10月「プラスチックの日」スタート"
+        },
+        {
+          "level": 2,
+          "text": "令和5年2月6日（月曜日）より粗大ごみのお申込み先が変わりました"
+        },
+        {
+          "level": 2,
+          "text": "ごみ分別検索サービス「江東ごみナビ」"
+        },
+        {
+          "level": 2,
+          "text": "家庭ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "区の資源回収"
+        },
+        {
+          "level": 2,
+          "text": "事業系ごみ"
+        },
+        {
+          "level": 2,
+          "text": "集団回収"
+        },
+        {
+          "level": 2,
+          "text": "食品ロス削減"
+        },
+        {
+          "level": 2,
+          "text": "フードドライブ"
+        },
+        {
+          "level": 2,
+          "text": "生ごみ減量・堆肥化"
+        },
+        {
+          "level": 2,
+          "text": "電動式生ごみ処理機購入費助成"
+        },
+        {
+          "level": 2,
+          "text": "資源の店頭回収"
+        },
+        {
+          "level": 2,
+          "text": "リペア（修理）・リサイクルショップ情報"
+        },
+        {
+          "level": 2,
+          "text": "ごみの減量（5Rをすすめましょう）"
+        },
+        {
+          "level": 2,
+          "text": "一般廃棄物処理の基本方針"
+        },
+        {
+          "level": 2,
+          "text": "一般廃棄物処理業及び浄化槽清掃業の申請・届出方法について"
+        },
+        {
+          "level": 2,
+          "text": "浄化槽の設置・維持管理"
+        },
+        {
+          "level": 2,
+          "text": "よくあるご質問"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/43735.html",
@@ -256,18 +1703,134 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1935,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "地区別資源回収・ごみ収集日一覧｜江東区",
+      "meta": {
+        "description": "地区別の資源回収・ごみ収集日を紹介するページです。燃やさないごみの収集日は隔週です。本ページで収集日をご確認ください。また、お住まいの地区番号をご確認ください。",
+        "og:title": "地区別資源回収・ごみ収集日一覧",
+        "og:type": "article",
+        "og:description": "地区別の資源回収・ごみ収集日を紹介するページです。燃やさないごみの収集日は隔週です。本ページで収集日をご確認ください。また、お住まいの地区番号をご確認ください。",
+        "og:url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/43735.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "地区別資源回収・ごみ収集日一覧"
+        },
+        {
+          "level": 3,
+          "text": "令和8年度（2026年度）地区別収集日一覧"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/381104/kurashi/gomi/kotogominavi.html",
-      "link_text": "",
+      "link_text": "江東区家庭ごみLINEアプリ",
       "hops": 2,
       "score": 4,
       "parent": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/index.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 3025,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ分別検索サービス「江東ごみナビ」｜江東区",
+      "meta": {
+        "og:title": "ごみ分別検索サービス「江東ごみナビ」",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/381104/kurashi/gomi/kotogominavi.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ分別検索サービス「江東ごみナビ」"
+        },
+        {
+          "level": 2,
+          "text": "塩浜1丁目、豊洲1・3丁目にお住いの皆様への重要なお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "令和8年1月21日から、AI(人工知能)によるごみの分別検索サービス「江東ごみナビ」の運用を開始しました。"
+        },
+        {
+          "level": 2,
+          "text": "便利な機能"
+        },
+        {
+          "level": 2,
+          "text": "江東ごみナビの使い方"
+        },
+        {
+          "level": 3,
+          "text": "ステップ1：友だち追加"
+        },
+        {
+          "level": 3,
+          "text": "ステップ2：言語設定・地域設定"
+        },
+        {
+          "level": 3,
+          "text": "ステップ3：品目を入力"
+        },
+        {
+          "level": 3,
+          "text": "ステップ4：案内を確認"
+        },
+        {
+          "level": 3,
+          "text": "江東ごみナビをもっと使いやすく！LINEピン留め機能"
+        },
+        {
+          "level": 4,
+          "text": "ピン留め方法"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "利用規約"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/shigen/43451.html",
@@ -278,190 +1841,291 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5293,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの分け方早見表五十音一覧-あ行-｜江東区",
+      "meta": {
+        "description": "平成28年9月19日からの資源とごみの分別50音（品目表）",
+        "og:title": "ごみの分け方早見表五十音一覧-あ行-",
+        "og:type": "article",
+        "og:description": "平成28年9月19日からの資源とごみの分別50音（品目表）",
+        "og:url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/shigen/43451.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの分け方早見表五十音一覧-あ行-"
+        },
+        {
+          "level": 2,
+          "text": "ごみ品目-あ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ品目-い"
+        },
+        {
+          "level": 2,
+          "text": "ごみ品目-う"
+        },
+        {
+          "level": 2,
+          "text": "ごみ品目-え"
+        },
+        {
+          "level": 2,
+          "text": "ごみ品目-お"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.koto.lg.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/tetsuduki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060609/kurashi/zekin/nohusoudan.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/250201/kurashi/sodan/sekatsu/7132.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/hikkoshi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/madoguchi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/gaikoku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/jumin/oshirase/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/43735.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/381104/kurashi/gomi/kotogominavi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/shigen/43451.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5021.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5015.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5017.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.koto.lg.jp/060302/kurashi/jumin/koseki/r080808.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.koto.lg.jp/060302/kurashi/jumin/koseki/5060.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5018.html",
       "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.koto.lg.jp/kurashi/jumin/inkan/index.html",
+      "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Wed, 01 Apr 2026 04:19:15 GMT",
+      "etag": "W/\"2c82-64e5e630976c1\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.koto.lg.jp/060302/kurashi/jumin/koseki/r080808.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

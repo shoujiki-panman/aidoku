@@ -4,61 +4,189 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.taito.lg.jp/",
-  "candidates": [
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tennyu-inin-denshi.docx",
-      "link_text": "・「委任状 転入届（台東区外からのお引越し）、電子証明書の発行」(ワード:29KB)",
-      "hops": 3,
-      "score": 46,
-      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 21992,
-      "has_jsonld": false
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
     },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
+  "candidates": [
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
       "link_text": "転入届、転居届、海外転出届に伴う電子証明書の発行手続きについて",
-      "hops": 2,
+      "hops": 3,
       "score": 39,
-      "parent": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 1635,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届、転居届、海外転出届に伴う電子証明書の発行手続きについて 台東区ホームページ",
+      "meta": {
+        "og:title": "転入届、転居届、海外転出届に伴う電子証明書の発行手続きについて",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届、転居届、海外転出届に伴う電子証明書の発行手続きについて"
+        },
+        {
+          "level": 2,
+          "text": "本人が申請する場合"
+        },
+        {
+          "level": 3,
+          "text": "必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "本人と同一世帯の代理人が申請する場合"
+        },
+        {
+          "level": 3,
+          "text": "必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "本人と別世帯の代理人が申請する場合"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "転入・転居・転出について"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
       "link_text": "オンライン(マイナポータル等)で転出届をされた方の転入手続き・オンラインからの転居予定連絡",
-      "hops": 2,
+      "hops": 3,
       "score": 29,
-      "parent": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 2348,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tenkyo-inin-denshi.docx",
-      "link_text": "・「委任状 転居届（台東区内のお引越し）、電子証明書の発行」(ワード:29KB)",
-      "hops": 3,
-      "score": 26,
-      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 23195,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/kaigai-inin-denshi.docx",
-      "link_text": "・「委任状 海外転出届（海外へのお引越し）、電子証明書の発行」（日本国籍の方）(ワード:29KB)",
-      "hops": 3,
-      "score": 26,
-      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 22827,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "オンライン(マイナポータル等)で転出届をされた方の転入手続き・オンラインからの転居予定連絡 台東区ホームページ",
+      "meta": {
+        "og:title": "オンライン(マイナポータル等)で転出届をされた方の転入手続き・オンラインからの転居予定連絡",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "オンライン(マイナポータル等)で転出届をされた方の転入手続き・オンラインからの転居予定連絡"
+        },
+        {
+          "level": 2,
+          "text": "オンラインで転出届を出された方の転入手続き（他自治体→台東区）"
+        },
+        {
+          "level": 3,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 3,
+          "text": "窓口での転入手続きに必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "窓口への転入届出期間"
+        },
+        {
+          "level": 2,
+          "text": "オンラインからの転居予定連絡（台東区→台東区）"
+        },
+        {
+          "level": 3,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 3,
+          "text": "オンラインでの転居予定連絡に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "転居予定連絡を申請可能な期間"
+        },
+        {
+          "level": 3,
+          "text": "窓口での転居手続きに必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "窓口への転居届出期間"
+        },
+        {
+          "level": 2,
+          "text": "転入・転居届出可能な窓口"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "転入・転居・転出について"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
@@ -69,18 +197,100 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2799,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越しガイド 台東区ホームページ",
+      "meta": {
+        "og:title": "引越しガイド",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越しガイド"
+        },
+        {
+          "level": 2,
+          "text": "台東区に転入した方へ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "住民登録"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
       "link_text": "転入・転居・転出について",
-      "hops": 2,
+      "hops": 3,
       "score": 22,
-      "parent": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 832,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入・転居・転出について 台東区ホームページ",
+      "meta": {
+        "og:title": "転入・転居・転出について",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入・転居・転出について"
+        },
+        {
+          "level": 2,
+          "text": "住民登録"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.files/20251223jumin_ido_ininjo.xlsx",
+      "link_text": "委任状（エクセル）（エクセル：74KB）",
+      "hops": 3,
+      "score": 20,
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Tue, 23 Dec 2025 05:55:38 GMT",
+      "etag": "\"12a1a-6469831721ddc\""
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
@@ -91,7 +301,82 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4171,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入・転居・転出・世帯変更の届出 台東区ホームページ",
+      "meta": {
+        "og:title": "転入・転居・転出・世帯変更の届出",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入・転居・転出・世帯変更の届出"
+        },
+        {
+          "level": 2,
+          "text": "各種届出"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "転入・転居・転出について"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/kosekitodokede/index.html",
+      "link_text": "戸籍に関する届出",
+      "hops": 3,
+      "score": 18,
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 580,
+      "has_jsonld": false,
+      "title": "戸籍に関する届出 台東区ホームページ",
+      "meta": {
+        "og:title": "戸籍に関する届出",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/kosekitodokede/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍に関する届出"
+        },
+        {
+          "level": 2,
+          "text": "戸籍"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 15:04:11 GMT",
+      "etag": "W/\"3eb0-65a08a60499d0\""
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/honninkakunin.html",
@@ -102,7 +387,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1931,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍・住民登録関係の請求や届出の際には本人確認書類の提示が必要です 台東区ホームページ",
+      "meta": {
+        "og:title": "戸籍・住民登録関係の請求や届出の際には本人確認書類の提示が必要です",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/honninkakunin.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍・住民登録関係の請求や届出の際には本人確認書類の提示が必要です"
+        },
+        {
+          "level": 2,
+          "text": "本人確認書類一覧"
+        },
+        {
+          "level": 3,
+          "text": "1種類のみの提示で良いもの"
+        },
+        {
+          "level": 3,
+          "text": "2種類の提示が必要なもの（次のイ、ロから1種類ずつ又はイから2種類）"
+        },
+        {
+          "level": 3,
+          "text": "上記の書類をやむを得ない理由により提示できない場合(戸籍の届出においては不可）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "住民登録"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kouikikoufu_koseki.html",
@@ -113,7 +450,115 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2759,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍証明書等の広域交付について 台東区ホームページ",
+      "meta": {
+        "og:title": "戸籍証明書等の広域交付について",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kouikikoufu_koseki.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍証明書等の広域交付について"
+        },
+        {
+          "level": 2,
+          "text": "【お知らせ】"
+        },
+        {
+          "level": 2,
+          "text": "広域交付について"
+        },
+        {
+          "level": 3,
+          "text": "1.請求方法"
+        },
+        {
+          "level": 5,
+          "text": "※郵送請求、電子申請等での請求はできません。また、他自治体の戸籍を取り扱う関係上、請求受付は16時00分までとなります。"
+        },
+        {
+          "level": 5,
+          "text": "※区民事務所・分室では、戸籍全部事項証明（戸籍謄本）のみ請求できます。"
+        },
+        {
+          "level": 3,
+          "text": "2.請求できる人"
+        },
+        {
+          "level": 3,
+          "text": "3.必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "4.手数料"
+        },
+        {
+          "level": 3,
+          "text": "5.注意事項"
+        },
+        {
+          "level": 4,
+          "text": "水曜延長及び、日曜開庁時はお取り扱いできません。"
+        },
+        {
+          "level": 4,
+          "text": "顔写真付きの本人確認書類が必要です。"
+        },
+        {
+          "level": 4,
+          "text": "法定代理人、委任状での交付はできません。"
+        },
+        {
+          "level": 4,
+          "text": "交付までお時間がかかります。（後日交付となることがあります。）"
+        },
+        {
+          "level": 4,
+          "text": "以下の戸籍は全て、後日交付となります。"
+        },
+        {
+          "level": 4,
+          "text": "家系図作成等を目的とした請求は制限があります。"
+        },
+        {
+          "level": 4,
+          "text": "戸籍の附票、個人事項証明、一部事項証明、身分証明などの行政証明は取得できません。"
+        },
+        {
+          "level": 4,
+          "text": "本籍地でないと取得できない戸籍もあります。（廃棄証明や町名変更などの告知書）"
+        },
+        {
+          "level": 4,
+          "text": "発行制限のかかっている対象者がいる戸籍は交付できません。"
+        },
+        {
+          "level": 4,
+          "text": "システム障害について"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "戸籍に関する証明の取得について"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/index.html",
@@ -124,7 +569,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 462,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍 台東区ホームページ",
+      "meta": {
+        "og:title": "戸籍",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍"
+        },
+        {
+          "level": 2,
+          "text": "戸籍・住民登録等"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/index.html",
@@ -135,7 +604,37 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 560,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍に関する証明 台東区ホームページ",
+      "meta": {
+        "og:title": "戸籍に関する証明",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/index.html",
+        "og:description": "戸籍に関する証明や届出について掲載しています。",
+        "description": "戸籍に関する証明や届出について掲載しています。"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍に関する証明"
+        },
+        {
+          "level": 2,
+          "text": "戸籍"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/index.html",
@@ -146,7 +645,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2279,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍に関する証明の取得について 台東区ホームページ",
+      "meta": {
+        "og:title": "戸籍に関する証明の取得について",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍に関する証明の取得について"
+        },
+        {
+          "level": 2,
+          "text": "マイナポータルにおけるパスポートのオンライン申請時は戸籍謄本の提出が不要です。"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードを利用した電子申請サービスが便利です"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の証明書の取得方法"
+        },
+        {
+          "level": 2,
+          "text": "主な戸籍に関する証明の種類と手数料"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の証明書の請求上の注意点（必ずお読みください）"
+        },
+        {
+          "level": 3,
+          "text": "証明したい具体的な内容は必ず提出先にご確認ください"
+        },
+        {
+          "level": 3,
+          "text": "相続関係で戸籍の証明書を請求する場合の注意点"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の附票の写し等の記載事項についての注意点"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の証明に関するよくあるご質問のFAQ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "戸籍に関する証明"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kosekiyuusouseikyuu.html",
@@ -157,7 +720,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3365,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の証明書を郵送で取得する 台東区ホームページ",
+      "meta": {
+        "og:title": "戸籍の証明書を郵送で取得する",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kosekiyuusouseikyuu.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の証明書を郵送で取得する"
+        },
+        {
+          "level": 2,
+          "text": "お送りいただくもの"
+        },
+        {
+          "level": 5,
+          "text": "法人の場合は、以下の書類も併せて送付してください。"
+        },
+        {
+          "level": 3,
+          "text": "委任状が必要になる場合"
+        },
+        {
+          "level": 2,
+          "text": "請求書の送り先"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の証明に関するよくある質問のFAQ"
+        },
+        {
+          "level": 2,
+          "text": "申請書ダウンロードサービスについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "戸籍に関する証明の取得について"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
@@ -168,7 +787,83 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4142,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "オンラインによる転出届 台東区ホームページ",
+      "meta": {
+        "og:title": "オンラインによる転出届",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "オンラインによる転出届"
+        },
+        {
+          "level": 2,
+          "text": "オンラインによる転出届とは"
+        },
+        {
+          "level": 2,
+          "text": "手続きについて"
+        },
+        {
+          "level": 3,
+          "text": "手続きに必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "手続きの手順（スマートフォンから）"
+        },
+        {
+          "level": 3,
+          "text": "手続き可能な期間"
+        },
+        {
+          "level": 3,
+          "text": "手続き対象外となる場合"
+        },
+        {
+          "level": 3,
+          "text": "転入届の来庁予定日の設定"
+        },
+        {
+          "level": 3,
+          "text": "転出届の申請完了後"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "転出届に関連する手続き"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "転入・転居・転出について"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenshutsumado.html",
@@ -179,7 +874,193 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2735,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転出に関連する手続き 台東区ホームページ",
+      "meta": {
+        "og:title": "転出に関連する手続き",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenshutsumado.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転出に関連する手続き"
+        },
+        {
+          "level": 2,
+          "text": "転出届について"
+        },
+        {
+          "level": 5,
+          "text": "窓口での手続き"
+        },
+        {
+          "level": 5,
+          "text": "郵送での手続き"
+        },
+        {
+          "level": 5,
+          "text": "オンラインでの手続き"
+        },
+        {
+          "level": 2,
+          "text": "転出に関連する手続き"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "転入・転居・転出について"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/juminutusi/index.html",
+      "link_text": "住民票の写しについて",
+      "hops": 3,
+      "score": 15,
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1641,
+      "has_jsonld": false,
+      "title": "住民票の写しについて 台東区ホームページ",
+      "meta": {
+        "og:title": "住民票の写しについて",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/juminutusi/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票の写しについて"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードを利用したコンビニ交付サービスが便利です"
+        },
+        {
+          "level": 2,
+          "text": "住民票の取得方法について"
+        },
+        {
+          "level": 2,
+          "text": "住民票に関する証明の種類"
+        },
+        {
+          "level": 2,
+          "text": "住民票の写し等に関するよくあるご質問のFAQ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "住民登録"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 15:04:11 GMT",
+      "etag": "W/\"5674-65a08a602d896\""
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
+      "link_text": "マイナンバーカードをお持ちの方へ 来庁不要で戸籍・住民票の写し等を受け取ることができます新規ウィンドウで開きます。",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.taito.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1323,
+      "has_jsonld": false,
+      "title": "証明書のコンビニ交付 台東区ホームページ",
+      "meta": {
+        "og:title": "証明書のコンビニ交付",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "証明書のコンビニ交付"
+        },
+        {
+          "level": 2,
+          "text": "コンビニ交付を利用するためには"
+        },
+        {
+          "level": 2,
+          "text": "取得可能な証明書"
+        },
+        {
+          "level": 3,
+          "text": "住民票の写し"
+        },
+        {
+          "level": 3,
+          "text": "印鑑登録証明書"
+        },
+        {
+          "level": 2,
+          "text": "交付手数料"
+        },
+        {
+          "level": 2,
+          "text": "サービス利用時間"
+        },
+        {
+          "level": 2,
+          "text": "利用可能なコンビニエンスストア等"
+        },
+        {
+          "level": 2,
+          "text": "証明書の取得方法"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "コンビニエンスストアでの住民票写し・印鑑登録証明書の取得"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/lifeevent/hikkoshi.html",
@@ -190,73 +1071,244 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 724,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越し 台東区ホームページ",
+      "meta": {
+        "og:title": "引越し",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/lifeevent/hikkoshi.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越し"
+        },
+        {
+          "level": 2,
+          "text": "手続き"
+        },
+        {
+          "level": 2,
+          "text": "行政サービス"
+        },
+        {
+          "level": 2,
+          "text": "相談"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "人生の出来事からさがす"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/index.html",
       "link_text": "戸籍・住民登録等",
       "hops": 2,
       "score": 14,
-      "parent": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 1315,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍・住民登録等 台東区ホームページ",
+      "meta": {
+        "og:title": "戸籍・住民登録等",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍・住民登録等"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "窓口案内"
+        },
+        {
+          "level": 2,
+          "text": "戸籍"
+        },
+        {
+          "level": 2,
+          "text": "住民登録"
+        },
+        {
+          "level": 2,
+          "text": "印鑑登録"
+        },
+        {
+          "level": 2,
+          "text": "窓口以外の手続き"
+        },
+        {
+          "level": 2,
+          "text": "外国人の方に必要な届出"
+        },
+        {
+          "level": 2,
+          "text": "住民基本台帳カード"
+        },
+        {
+          "level": 2,
+          "text": "各種申請書のダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "暮らし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
-      "link_text": "",
+      "link_text": "自宅からできるオンライン転出届新規ウィンドウで開きます。",
       "hops": 1,
       "score": 12,
       "parent": "https://www.city.taito.lg.jp/",
       "status": 200,
       "is_pdf": false,
       "text_len": 4142,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "オンラインによる転出届 台東区ホームページ",
+      "meta": {
+        "og:title": "オンラインによる転出届",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "オンラインによる転出届"
+        },
+        {
+          "level": 2,
+          "text": "オンラインによる転出届とは"
+        },
+        {
+          "level": 2,
+          "text": "手続きについて"
+        },
+        {
+          "level": 3,
+          "text": "手続きに必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "手続きの手順（スマートフォンから）"
+        },
+        {
+          "level": 3,
+          "text": "手続き可能な期間"
+        },
+        {
+          "level": 3,
+          "text": "手続き対象外となる場合"
+        },
+        {
+          "level": 3,
+          "text": "転入届の来庁予定日の設定"
+        },
+        {
+          "level": 3,
+          "text": "転出届の申請完了後"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "転出届に関連する手続き"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "転入・転居・転出について"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenkyo.html",
-      "link_text": "転居するとき",
-      "hops": 3,
-      "score": 12,
-      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/index.html",
+      "link_text": "コンビニエンスストアでの住民票写し・印鑑登録証明書の取得",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 1223,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/setaihennkou.html",
-      "link_text": "世帯に変更があったとき",
-      "hops": 3,
-      "score": 12,
-      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 960,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/kuminjimusho.html",
-      "link_text": "最寄の区民事務所・分室をご活用ください",
-      "hops": 3,
-      "score": 12,
-      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1544,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
-      "link_text": "",
-      "hops": 1,
-      "score": 8,
-      "parent": "https://www.city.taito.lg.jp/",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1323,
-      "has_jsonld": false
+      "text_len": 534,
+      "has_jsonld": false,
+      "title": "コンビニエンスストアでの住民票写し・印鑑登録証明書の取得 台東区ホームページ",
+      "meta": {
+        "og:title": "コンビニエンスストアでの住民票写し・印鑑登録証明書の取得",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "コンビニエンスストアでの住民票写し・印鑑登録証明書の取得"
+        },
+        {
+          "level": 2,
+          "text": "窓口案内"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 15:04:11 GMT",
+      "etag": "W/\"3a5d-65a08a6046320\""
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/mado-haishin.html",
@@ -267,201 +1319,555 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3346,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍住民サービス課（区役所1階）窓口の受付順番等お知らせメール・手続き予約について 台東区ホームページ",
+      "meta": {
+        "og:title": "戸籍住民サービス課（区役所1階）窓口の受付順番等お知らせメール・手続き予約について",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/mado-haishin.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍住民サービス課（区役所1階）窓口の受付順番等お知らせメール・手続き予約について"
+        },
+        {
+          "level": 2,
+          "text": "戸籍住民サービス課（区役所1階）窓口の混雑状況をリアルタイム配信"
+        },
+        {
+          "level": 2,
+          "text": "受付後の呼出状況の確認について"
+        },
+        {
+          "level": 3,
+          "text": "【受付 窓口情報案内】"
+        },
+        {
+          "level": 3,
+          "text": "【交付・手続完了 窓口情報案内】"
+        },
+        {
+          "level": 2,
+          "text": "順番等お知らせメール機能について"
+        },
+        {
+          "level": 4,
+          "text": "窓口受付等に係る留意事項"
+        },
+        {
+          "level": 2,
+          "text": "事前web予約について"
+        },
+        {
+          "level": 3,
+          "text": "事前web予約が可能な窓口及び時間帯"
+        },
+        {
+          "level": 3,
+          "text": "事前web予約の利用方法"
+        },
+        {
+          "level": 5,
+          "text": "1.専用ページから予約する"
+        },
+        {
+          "level": 5,
+          "text": "2.書類への記入"
+        },
+        {
+          "level": 5,
+          "text": "3.番号札の発券"
+        },
+        {
+          "level": 5,
+          "text": "4.窓口受付"
+        },
+        {
+          "level": 4,
+          "text": "事前web予約の留意事項"
+        },
+        {
+          "level": 2,
+          "text": "各種案内"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "窓口案内"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
-      "url": "https://www.city.taito.lg.jp/jigyosha/todokede/index.html",
-      "link_text": "区・保健所への申請と届出",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/index.html",
+      "link_text": "窓口案内",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 539,
+      "has_jsonld": false,
+      "title": "窓口案内 台東区ホームページ",
+      "meta": {
+        "og:title": "窓口案内",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "窓口案内"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "戸籍・住民登録等"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 15:04:12 GMT",
+      "etag": "W/\"3b4b-65a08a607a32b\""
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/shomei-copy.html",
+      "link_text": "こちら",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1276,
+      "has_jsonld": false,
+      "title": "区役所1階に証明書交付機を設置しています 台東区ホームページ",
+      "meta": {
+        "og:title": "区役所1階に証明書交付機を設置しています",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/shomei-copy.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区役所1階に証明書交付機を設置しています"
+        },
+        {
+          "level": 3,
+          "text": "設置場所"
+        },
+        {
+          "level": 3,
+          "text": "設置時間"
+        },
+        {
+          "level": 3,
+          "text": "発行できる証明書"
+        },
+        {
+          "level": 3,
+          "text": "発行手数料"
+        },
+        {
+          "level": 3,
+          "text": "発行手順"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 5,
+          "text": "・本証明書交付機は証明書発行機能のみとなります。"
+        },
+        {
+          "level": 5,
+          "text": "・他自治体の証明書は発行できません。"
+        },
+        {
+          "level": 5,
+          "text": "・お支払いは現金のみです。"
+        },
+        {
+          "level": 5,
+          "text": "・顔認証マイナンバーカードは利用できません。"
+        },
+        {
+          "level": 5,
+          "text": "・印刷不良の場合は「（1）発行された全ての証明書及び（2）領収書」と引き換えに返金いたします。必ず当日中に9番窓口までお越しください。発行当日以外の返金やご自身の選択誤りによる返金は致しかねます。"
+        },
+        {
+          "level": 3,
+          "text": "窓口開庁時間以外にも取得ができる！コンビニ交付もオススメです。"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "窓口案内"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Mon, 01 Jun 2026 15:03:52 GMT",
+      "etag": "W/\"4dc4-6533280a5dc16\""
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/index.html",
+      "link_text": "暮らし・手続き",
       "hops": 1,
       "score": 7,
       "parent": "https://www.city.taito.lg.jp/",
       "status": 200,
       "is_pdf": false,
-      "text_len": 556,
-      "has_jsonld": false
+      "text_len": 1432,
+      "has_jsonld": false,
+      "title": "暮らし・手続き 台東区ホームページ",
+      "meta": {
+        "og:title": "暮らし・手続き",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "暮らし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "戸籍・住民登録等"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "キャッシュレス決済について"
+        },
+        {
+          "level": 2,
+          "text": "相談窓口"
+        },
+        {
+          "level": 2,
+          "text": "税金・保険・年金"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "ペット"
+        },
+        {
+          "level": 2,
+          "text": "消費生活"
+        },
+        {
+          "level": 2,
+          "text": "地域活動・協働"
+        },
+        {
+          "level": 2,
+          "text": "外国人の方へ"
+        },
+        {
+          "level": 2,
+          "text": "お亡くなりになったときに"
+        },
+        {
+          "level": 2,
+          "text": "人権・男女平等"
+        },
+        {
+          "level": 2,
+          "text": "平和関連事業"
+        },
+        {
+          "level": 2,
+          "text": "トップページ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "広告"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 15:03:55 GMT",
+      "etag": "W/\"6122-65a08a50f20fd\""
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.taito.lg.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kouikikoufu_koseki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/lifeevent/hikkoshi.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/lifeevent/hikkoshi.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/mado-haishin.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
-      "url": "https://www.city.taito.lg.jp/jigyosha/todokede/index.html",
+      "url": "https://www.city.taito.lg.jp/kurashi/index.html",
       "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 15:03:55 GMT",
+      "etag": "W/\"6122-65a08a50f20fd\"",
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kosekiyuusouseikyuu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenshutsumado.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tennyu-inin-denshi.docx",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/index.html",
       "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 15:04:11 GMT",
+      "etag": "W/\"3a5d-65a08a6046320\"",
       "error": null
     },
     {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tenkyo-inin-denshi.docx",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/index.html",
       "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 15:04:12 GMT",
+      "etag": "W/\"3b4b-65a08a607a32b\"",
       "error": null
     },
     {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/kaigai-inin-denshi.docx",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/shomei-copy.html",
       "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Mon, 01 Jun 2026 15:03:52 GMT",
+      "etag": "W/\"4dc4-6533280a5dc16\"",
       "error": null
     },
     {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenkyo.html",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/setaihennkou.html",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
-      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/kuminjimusho.html",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenshutsumado.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/honninkakunin.html",
       "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/juminutusi/index.html",
+      "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 15:04:11 GMT",
+      "etag": "W/\"5674-65a08a602d896\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.files/20251223jumin_ido_ininjo.xlsx",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Tue, 23 Dec 2025 05:55:38 GMT",
+      "etag": "\"12a1a-6469831721ddc\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/kosekitodokede/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 15:04:11 GMT",
+      "etag": "W/\"3eb0-65a08a60499d0\"",
       "error": null
     }
   ]

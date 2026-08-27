@@ -1,0 +1,57 @@
+{
+  "municipality": "大田区",
+  "municipality_id": "ota",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html",
+    "hops": 3,
+    "link_text": "転入届（区外から大田区へ）",
+    "has_jsonld": false,
+    "text_len": 1658,
+    "truncated": false,
+    "n_links": 35
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "転出証明書（前住所の市区町村発行、マイナンバーカードでの転出届済みなら不要）、本人確認書類、委任状（本人・同一世帯員以外が届出する場合）、マイナンバーカード（所持者のみ）",
+      "evidence": "転出証明書（前住所の市区町村で発行したもの。マイナンバーカードを利用した転出届を届出済みの方は不要です。）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "各特別出張所又は本庁舎1階戸籍住民窓口での届出（オンラインで完結できるとの記載なし。パソコン・スマートフォンからの窓口予約・届書作成は可能）",
+      "evidence": "各特別出張所又は本庁舎1階戸籍住民窓口（本庁舎1階戸籍住民窓口は大変混み合います。特別出張所でも受け付けておりますのでご利用ください。）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "大田区に住み始めた日から14日以内（住み始める前の届出は不可）",
+      "evidence": "大田区に住み始めた日から14日以内（住み始める前の届出はできません。）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "必要書類・窓口・期限は本文に明記されているが手数料への言及は本文中に一切なく、関連リンクにも手数料専用ページは見当たらない。窓口予約・届書作成は「パソコン・スマートフォンから」可能だが、これは事前準備であって届出自体のオンライン完結を意味しない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

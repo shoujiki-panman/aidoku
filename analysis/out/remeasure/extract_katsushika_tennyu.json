@@ -1,0 +1,57 @@
+{
+  "municipality": "葛飾区",
+  "municipality_id": "katsushika",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
+    "hops": 3,
+    "link_text": "「転入届の特例」による転出と転入手続き",
+    "has_jsonld": false,
+    "text_len": 2657,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "マイナンバーカードまたは住民基本台帳カード（特例転入の届出時に持参）",
+      "evidence": "窓口にて転入の手続を行う際、マイナンバーカードを持参し「特例転出」を行った旨をお伝えください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "転入先の区市町村窓口での届出。このページにオンラインでの転入手続きの記載はない（関連リンクにあるマイナポータルのオンライン手続きは転出届のみ対象）",
+      "evidence": "2.転入先の区市町村窓口にて「特例転入」の届出を行う",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "新しい住所地に住み始めてから14日以内かつ転出予定日から30日以内",
+      "evidence": "新しい住所地に住み始めてから14日以内かつ転出予定日から30日以内に、転入届に行けること",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページはマイナンバーカード等を利用した「特例転出・転入」制度専用の説明であり、通常の転入届（一般的な必要書類・手数料）についての記載ではない。関連リンクに「住民異動届（転入・転出・転居など）」等の一般ページが挙げられているが、本文リンク一覧にURLが含まれていないため follow_urls には入れられない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

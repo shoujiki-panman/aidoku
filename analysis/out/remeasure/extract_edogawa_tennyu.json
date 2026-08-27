@@ -1,0 +1,57 @@
+{
+  "municipality": "江戸川区",
+  "municipality_id": "edogawa",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
+    "hops": 3,
+    "link_text": "転入届（区外から江戸川区へ引越した方）",
+    "has_jsonld": false,
+    "text_len": 3259,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "他の市区町村から江戸川区にお引っ越しされた方は、必ず窓口に来て転入の届出をしていただく必要があります。",
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "パターンにより異なる：(1)引越しワンストップ/特例転出利用者は転入される方全員のマイナンバーカードのみ、(2)紙の転出証明書を持つ方は本人確認書類＋転出証明書＋（あれば）マイナンバーカード。外国人住民・国外転入者は在留カード等が別途必要",
+      "evidence": "窓口にお越しになる方の本人確認できるもの／転出証明書（前住所地の市区町村で発行を受けたもの）／転入される方全員分のマイナンバーカード（お持ちの方のみ）",
+      "source": "html",
+      "failure_reason": "曖昧"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口のみ。区役所区民課または各事務所の戸籍住民係に来庁が必須で、転入届自体はオンラインで完結できない（転出手続きの一部のみオンライン対応）",
+      "evidence": "他の市区町村から江戸川区にお引っ越しされた方は、必ず窓口に来て転入の届出をしていただく必要があります。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "住みはじめた日から14日以内",
+      "evidence": "届出期間：住みはじめた日から14日以内",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "必要書類は前自治体での転出手続き方法（ワンストップ/特例転出/紙の証明書）によって3パターンに分岐しており、単一の正答が定まらない構成。手数料への言及はページ内に一切なく、無料か有料かも読み取れない。",
+  "online_clarity_pages": [
+    "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html"
+  ],
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

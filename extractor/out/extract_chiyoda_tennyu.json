@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 6527,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:34:41+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
-  "online_clarity_evidence": "「転入届」「転居届」の際は必ず転入先・転居先の市区町村役所にご来庁いただく必要があります。",
+  "online_clarity_evidence": "ワンストップサービスにより市区町村役所への来庁が不要となるのは「転出届」のみです。「転入届」「転居届」の際は必ず転入先・転居先の市区町村役所にご来庁いただく必要があります。",
   "online_clarity_pages": [
     "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tennyu.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "千代田区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "共通で必要:届出人の本人確認書類(マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など)。(1)通常の転入届:転出証明書/引っ越す方全員のマイナンバーカード(お持ちの方)/外国人は在留カードまたは特別永住者証明書/代理人が届出する場合は委任状(別世帯の親族も代理人扱いで委任状が必要)。(2)特例転入(マイナンバーカード提出):転出証明書は「お持ちの方」のみ、他は(1)と同様。(3)ワンストップサービス事前通知:転出証明書は不要、他は(1)と同様。(4)国外からの転入:日本人は戸籍の全部/個人事項証明書、戸籍の全部/個人事項附票、パスポート(入国日スタンプがなければ航空券の半券等)、マイナンバーカード(お持ちの方)。外国人は在留カードまたは特別永住者証明書、パスポート、家族での転入時は本国発行の家族構成証明書(日本語訳付き)。いずれの場合も、区が居住確認できていない物件(商業ビル・シェアハウス等)への転入では契約書または居住証明書の提出を求められることがある。",
+        "evidence": "届出人の本人確認書類（マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 47,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "共通で必要:届出人の本人確認書類(マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など)。(1)通常の転入届:転出証明書/引っ越す方全員のマイナンバーカード(お持ちの方)/外国人は在留カードまたは特別永住者証明書/代理人が届出する場合は委任状(別世帯の親族も代理人扱いで委任状が必要)。(2)特例転入(マイナンバーカード提出):転出証明書は「お持ちの方」のみ、他は(1)と同様。(3)ワンストップサービス事前通知:転出証明書は不要、他は(1)と同様。(4)国外からの転入:日本人は戸籍の全部/個人事項証明書、戸籍の全部/個人事項附票、パスポート(入国日スタンプがなければ航空券の半券等)、マイナンバーカード(お持ちの方)。外国人は在留カードまたは特別永住者証明書、パスポート、家族での転入時は本国発行の家族構成証明書(日本語訳付き)。いずれの場合も、区が居住確認できていない物件(商業ビル・シェアハウス等)への転入では契約書または居住証明書の提出を求められることがある。",
+            "evidence": "届出人の本人確認書類（マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 47,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "1ページに(1)通常/(2)特例転入/(3)ワンストップ事前通知/(4)国外転入の4手続きが併記され、必要書類がそれぞれ別リストになっている。共通項目と各手続き固有の条件（外国人・代理人・物件種別など）が本文中に明記されており、PDFへの誘導は委任状・居住証明書のひな形のみ。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "1ページに(1)通常/(2)特例転入/(3)ワンストップ事前通知/(4)国外転入の4手続きが併記され、必要書類がそれぞれ別リストになっている。共通項目と各手続き固有の条件（外国人・代理人・物件種別など）が本文中に明記されており、PDFへの誘導は委任状・居住証明書のひな形のみ。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "千代田区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ（オンラインでは完結不可）。マイナポータルでの事前通知は可能だが、転入届自体は必ず来庁が必要",
+        "evidence": "ワンストップサービスにより市区町村役所への来庁が不要となるのは「転出届」のみです。「転入届」「転居届」の際は必ず転入先・転居先の市区町村役所にご来庁いただく必要があります。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 86,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ（オンラインでは完結不可）。マイナポータルでの事前通知は可能だが、転入届自体は必ず来庁が必要",
+            "evidence": "ワンストップサービスにより市区町村役所への来庁が不要となるのは「転出届」のみです。「転入届」「転居届」の際は必ず転入先・転居先の市区町村役所にご来庁いただく必要があります。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 86,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文中に「必ず窓口にご来庁いただく必要があります」という記述が複数箇所（(3)の説明文中および注意書き）にあり、オンライン完結不可であることが明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文中に「必ず窓口にご来庁いただく必要があります」という記述が複数箇所（(3)の説明文中および注意書き）にあり、オンライン完結不可であることが明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "千代田区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "新しい住所に引っ越してから14日以内",
+        "evidence": "届ける時期 新しい住所に引っ越してから14日以内",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 23,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "新しい住所に引っ越してから14日以内",
+            "evidence": "届ける時期 新しい住所に引っ越してから14日以内",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 23,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「届ける時期」という見出しが4つの届出方法それぞれに繰り返し登場し、いずれも同一の「新しい住所に引っ越してから14日以内」という期限を示している。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「届ける時期」という見出しが4つの届出方法それぞれに繰り返し登場し、いずれも同一の「新しい住所に引っ越してから14日以内」という期限を示している。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "千代田区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手続きの届出場所・必要書類・注意事項は詳細に記載されているが、手数料・費用に関する記述は本文中に見当たらない。リンク一覧（住民登録に関する手続き一覧、転出届・転居届・世帯変更届など）にも手数料を扱うページへの案内はなかった。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "手続きの届出場所・必要書類・注意事項は詳細に記載されているが、手数料・費用に関する記述は本文中に見当たらない。リンク一覧（住民登録に関する手続き一覧、転出届・転居届・世帯変更届など）にも手数料を扱うページへの案内はなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "（転出証明書を添えて届ける場合）届出人の本人確認書類、転出証明書、引っ越す方全員のマイナンバーカード（お持ちの方）、在留カードまたは特別永住者証明書（外国人の方）、委任状（代理人時）。特例転入・ワンストップ事前通知・国外転入の場合は必要書類が異なる。",
-      "evidence": "届出人の本人確認書類（マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など）／転出証明書／引っ越す方全員のマイナンバーカード（お持ちの方）",
+      "value": "共通で必要:届出人の本人確認書類(マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など)。(1)通常の転入届:転出証明書/引っ越す方全員のマイナンバーカード(お持ちの方)/外国人は在留カードまたは特別永住者証明書/代理人が届出する場合は委任状(別世帯の親族も代理人扱いで委任状が必要)。(2)特例転入(マイナンバーカード提出):転出証明書は「お持ちの方」のみ、他は(1)と同様。(3)ワンストップサービス事前通知:転出証明書は不要、他は(1)と同様。(4)国外からの転入:日本人は戸籍の全部/個人事項証明書、戸籍の全部/個人事項附票、パスポート(入国日スタンプがなければ航空券の半券等)、マイナンバーカード(お持ちの方)。外国人は在留カードまたは特別永住者証明書、パスポート、家族での転入時は本国発行の家族構成証明書(日本語訳付き)。いずれの場合も、区が居住確認できていない物件(商業ビル・シェアハウス等)への転入では契約書または居住証明書の提出を求められることがある。",
+      "evidence": "届出人の本人確認書類（マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 47,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "区役所総合窓口課または区内の出張所への来庁が必須。オンラインでは完結できない（マイナポータルの引越しワンストップは転出届のみ対象で、転入届は必ず来庁が必要）。",
+      "value": "窓口のみ（オンラインでは完結不可）。マイナポータルでの事前通知は可能だが、転入届自体は必ず来庁が必要",
       "evidence": "ワンストップサービスにより市区町村役所への来庁が不要となるのは「転出届」のみです。「転入届」「転居届」の際は必ず転入先・転居先の市区町村役所にご来庁いただく必要があります。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 86,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
       "value": "新しい住所に引っ越してから14日以内",
-      "evidence": "新しい住所に引っ越してから14日以内",
+      "evidence": "届ける時期 新しい住所に引っ越してから14日以内",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 23,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "転入届は届出方法が(1)転出証明書持参(2)特例転入(3)ワンストップ事前通知(4)国外転入の4パターンに分かれ、必要書類が方法ごとに異なるため単一の一覧としては提示されていない。手数料についてはページ内のどこにも言及がない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "1ページに(1)通常/(2)特例転入/(3)ワンストップ事前通知/(4)国外転入の4手続きが併記され、必要書類がそれぞれ別リストになっている。共通項目と各手続き固有の条件（外国人・代理人・物件種別など）が本文中に明記されており、PDFへの誘導は委任状・居住証明書のひな形のみ。\n本文中に「必ず窓口にご来庁いただく必要があります」という記述が複数箇所（(3)の説明文中および注意書き）にあり、オンライン完結不可であることが明記されている。\n「届ける時期」という見出しが4つの届出方法それぞれに繰り返し登場し、いずれも同一の「新しい住所に引っ越してから14日以内」という期限を示している。\n手続きの届出場所・必要書類・注意事項は詳細に記載されているが、手数料・費用に関する記述は本文中に見当たらない。リンク一覧（住民登録に関する手続き一覧、転出届・転居届・世帯変更届など）にも手数料を扱うページへの案内はなかった。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tennyu.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.chuo.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
@@ -14,7 +35,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1005,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／転入",
+      "meta": {
+        "og:title": "転入",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/index.html",
@@ -25,7 +65,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1132,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／住民の異動の届出（転入・転出など）",
+      "meta": {
+        "og:title": "住民の異動の届出（転入・転出など）",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民の異動の届出（転入・転出など）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html",
@@ -36,7 +95,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2837,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／引越しワンストップサービスの利用",
+      "meta": {
+        "og:title": "引越しワンストップサービスの利用",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越しワンストップサービスの利用"
+        },
+        {
+          "level": 2,
+          "text": "サービスを利用できる方"
+        },
+        {
+          "level": 2,
+          "text": "中央区からの転出手続き"
+        },
+        {
+          "level": 3,
+          "text": "転出手続きの申請期間"
+        },
+        {
+          "level": 2,
+          "text": "中央区への転入手続き（来庁予定の連絡）"
+        },
+        {
+          "level": 3,
+          "text": "来庁予定日として設定できる期間"
+        },
+        {
+          "level": 3,
+          "text": "受付時間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/zyushohenkoutodokede.html",
@@ -47,7 +157,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2060,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／住所変更の届出を忘れずに",
+      "meta": {
+        "og:title": "住所変更の届出を忘れずに",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/zyushohenkoutodokede.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住所変更の届出を忘れずに"
+        },
+        {
+          "level": 2,
+          "text": "届出期間"
+        },
+        {
+          "level": 2,
+          "text": "届出する人"
+        },
+        {
+          "level": 3,
+          "text": "中央区に引っ越しをしてきた方（転入）"
+        },
+        {
+          "level": 3,
+          "text": "中央区内で引っ越しをした方（転居）"
+        },
+        {
+          "level": 3,
+          "text": "中央区から引っ越しをする方（転出）"
+        },
+        {
+          "level": 2,
+          "text": "受付窓口"
+        },
+        {
+          "level": 2,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "区役所区民生活課住民記録係"
+        },
+        {
+          "level": 3,
+          "text": "日本橋・月島・晴海特別出張所"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
@@ -58,7 +231,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 963,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／マイナンバーカードを使わずに手続きをする場合",
+      "meta": {
+        "og:title": "マイナンバーカードを使わずに手続きをする場合",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "マイナンバーカードを使わずに手続きをする場合"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/koseki/index.html",
@@ -69,7 +261,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1114,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／戸籍の届出（出生、死亡など）",
+      "meta": {
+        "og:title": "戸籍の届出（出生、死亡など）",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/touroku/koseki/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の届出（出生、死亡など）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0004/kurashi/touroku/denshishinsei/hikkoshioss.html",
@@ -80,7 +291,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1291,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／住民の異動の届出（転出届など）",
+      "meta": {
+        "og:title": "住民の異動の届出（転出届など）",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0004/kurashi/touroku/denshishinsei/hikkoshioss.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民の異動の届出（転出届など）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/syusseitodoke/index.html",
@@ -91,7 +329,106 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4415,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／出生届の提出方法",
+      "meta": {
+        "og:title": "出生届の提出方法",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/syusseitodoke/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "出生届の提出方法"
+        },
+        {
+          "level": 2,
+          "text": "お子さまの名に使える文字"
+        },
+        {
+          "level": 2,
+          "text": "お子さまの名の振り仮名について"
+        },
+        {
+          "level": 3,
+          "text": "振り仮名の基本的な考え方"
+        },
+        {
+          "level": 3,
+          "text": "社会を混乱させるものとして認められない読み方の例"
+        },
+        {
+          "level": 3,
+          "text": "子の利益に反するなど社会通念上相当とはいえないものの例"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "1.出生届、出生証明書"
+        },
+        {
+          "level": 3,
+          "text": "2.母子健康手帳"
+        },
+        {
+          "level": 2,
+          "text": "戸籍届書の押印義務の廃止について"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出ができる方（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出場所（届出地）"
+        },
+        {
+          "level": 2,
+          "text": "中央区に提出する場合の届出場所・届出時間"
+        },
+        {
+          "level": 3,
+          "text": "休日・夜間に届出される方"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の証明書が必要な方"
+        },
+        {
+          "level": 2,
+          "text": "生まれたお子さまのマイナンバー（個人番号）について"
+        },
+        {
+          "level": 2,
+          "text": "出生届に伴う区役所の手続きの案内"
+        },
+        {
+          "level": 3,
+          "text": "出生届に伴う区役所での主な手続き"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminhyou/shoumeisho/kosekitohu.html",
@@ -102,7 +439,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2985,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／戸籍の証明書がほしいとき",
+      "meta": {
+        "og:title": "戸籍の証明書がほしいとき",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminhyou/shoumeisho/kosekitohu.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の証明書がほしいとき"
+        },
+        {
+          "level": 2,
+          "text": "戸籍とは"
+        },
+        {
+          "level": 2,
+          "text": "戸籍証明書の種類"
+        },
+        {
+          "level": 3,
+          "text": "戸籍証明書の種類について"
+        },
+        {
+          "level": 2,
+          "text": "申請場所・申請時間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0018/kurashi/touroku/juuminidou/harumimadoguchi.html",
@@ -113,7 +493,92 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2273,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／【晴海特別出張所のみ】スマホ等で事前に住民異動届等を作成できます",
+      "meta": {
+        "description": "【晴海特別出張所のみ】スマホやタブレットから事前に入力し、入力後に表示されるQRコードを持参すると、申請書を記載しなくても手続きできます",
+        "og:title": "【晴海特別出張所のみ】スマホ等で事前に住民異動届等を作成できます",
+        "og:type": "article",
+        "og:description": "【晴海特別出張所のみ】スマホやタブレットから事前に入力し、入力後に表示されるQRコードを持参すると、申請書を記載しなくても手続きできます",
+        "og:url": "https://www.city.chuo.lg.jp/a0018/kurashi/touroku/juuminidou/harumimadoguchi.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "スマホ等で事前に住民異動届等を作成できます【晴海特別出張所のみ】"
+        },
+        {
+          "level": 2,
+          "text": "スマート引越サポートシステム（スマホ等で事前入力）"
+        },
+        {
+          "level": 3,
+          "text": "対象となる手続き"
+        },
+        {
+          "level": 3,
+          "text": "受付窓口"
+        },
+        {
+          "level": 3,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "スマート引越サポートシステムはこちらから"
+        },
+        {
+          "level": 2,
+          "text": "引越に伴い、晴海特別出張所で取り扱いできる手続き"
+        },
+        {
+          "level": 3,
+          "text": "（1）住民基本台帳事務、戸籍事務"
+        },
+        {
+          "level": 3,
+          "text": "（2）国民健康保険"
+        },
+        {
+          "level": 3,
+          "text": "（3）後期高齢者医療制度"
+        },
+        {
+          "level": 3,
+          "text": "（4）年金"
+        },
+        {
+          "level": 3,
+          "text": "（5）介護保険"
+        },
+        {
+          "level": 3,
+          "text": "（6）子育て関係"
+        },
+        {
+          "level": 3,
+          "text": "（7）特別区民税・都民税"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tenkyo/index.html",
@@ -124,7 +589,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1031,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／転居届：中央区内で住所を変更するとき",
+      "meta": {
+        "og:title": "転居届：中央区内で住所を変更するとき",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tenkyo/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転居届：中央区内で住所を変更するとき"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/user_kumin_time_20191030.html",
@@ -135,7 +619,126 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4654,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／住民票、マイナンバーカード等へ「旧氏」の記載を希望する方へ",
+      "meta": {
+        "og:title": "住民票、マイナンバーカード等へ「旧氏」の記載を希望する方へ",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/user_kumin_time_20191030.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票、マイナンバーカード等へ「旧氏」の記載を希望する方へ"
+        },
+        {
+          "level": 2,
+          "text": "「旧氏」とは"
+        },
+        {
+          "level": 2,
+          "text": "住民票に記載できる「旧氏」の考え方"
+        },
+        {
+          "level": 3,
+          "text": "初めて「旧氏」を記載する場合"
+        },
+        {
+          "level": 3,
+          "text": "「旧氏」を変更する場合"
+        },
+        {
+          "level": 3,
+          "text": "「旧氏」を消除する場合"
+        },
+        {
+          "level": 3,
+          "text": "「旧氏」を再記載する場合"
+        },
+        {
+          "level": 2,
+          "text": "住民票に「旧氏」を記載するには"
+        },
+        {
+          "level": 2,
+          "text": "住民票に「旧氏」が記載された場合"
+        },
+        {
+          "level": 3,
+          "text": "住民票や印鑑登録証明書には必ず「旧氏」が記載されます。"
+        },
+        {
+          "level": 3,
+          "text": "「旧氏」または「旧氏の振り仮名」での印鑑登録が可能となります。"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードに「旧氏」および「旧氏の振り仮名」が記載されます。"
+        },
+        {
+          "level": 2,
+          "text": "「旧氏」の記載請求の届出方法"
+        },
+        {
+          "level": 3,
+          "text": "届出できる人"
+        },
+        {
+          "level": 3,
+          "text": "必要な書類"
+        },
+        {
+          "level": 4,
+          "text": "手続きをする方の本人確認書類"
+        },
+        {
+          "level": 5,
+          "text": "手続きを本人がする場合"
+        },
+        {
+          "level": 5,
+          "text": "手続きを代理人がする場合"
+        },
+        {
+          "level": 4,
+          "text": "委任状等"
+        },
+        {
+          "level": 4,
+          "text": "申請書"
+        },
+        {
+          "level": 4,
+          "text": "旧氏の振り仮名を証明する書類"
+        },
+        {
+          "level": 3,
+          "text": "受付場所等"
+        },
+        {
+          "level": 4,
+          "text": "区役所区民生活課住民記録係"
+        },
+        {
+          "level": 4,
+          "text": "日本橋・月島・晴海特別出張所区民係"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/furigana.html",
@@ -146,7 +749,98 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3247,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／戸籍に振り仮名を記録する取り組みが始まります",
+      "meta": {
+        "og:title": "戸籍に振り仮名を記録する取り組みが始まります",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/furigana.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍に振り仮名を記録する取り組みが始まります"
+        },
+        {
+          "level": 2,
+          "text": "記載までの流れ"
+        },
+        {
+          "level": 3,
+          "text": "(1)本籍地の自治体から振り仮名を通知"
+        },
+        {
+          "level": 3,
+          "text": "(2)振り仮名の届出（届出期間は終了しました）"
+        },
+        {
+          "level": 3,
+          "text": "(3)区市町村長による氏名の振り仮名の記載"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の記載イメージ"
+        },
+        {
+          "level": 2,
+          "text": "住民票への振り仮名の記録"
+        },
+        {
+          "level": 2,
+          "text": "氏名の振り仮名の変更"
+        },
+        {
+          "level": 5,
+          "text": "パターン1【令和8年5月25日までに振り仮名の届出をされた方（戸籍法第107条の3、107条の4）】"
+        },
+        {
+          "level": 5,
+          "text": "パターン2【令和8年5月25日までに振り仮名の届出をしていない場合で、本籍地区市町村長による振り仮名の記載がなされた方（令和5年法律第48条附則第10条、第11条、第12条）】"
+        },
+        {
+          "level": 3,
+          "text": "届出人"
+        },
+        {
+          "level": 4,
+          "text": "氏の振り仮名の変更"
+        },
+        {
+          "level": 4,
+          "text": "名の振り仮名の変更"
+        },
+        {
+          "level": 3,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "届出期間"
+        },
+        {
+          "level": 4,
+          "text": "届出先"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/index.html",
@@ -157,7 +851,82 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2073,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／くらし・手続き",
+      "meta": {
+        "og:title": "くらし・手続き",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "登録・届出・証明"
+        },
+        {
+          "level": 2,
+          "text": "保険・年金"
+        },
+        {
+          "level": 2,
+          "text": "税金"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "住まい"
+        },
+        {
+          "level": 2,
+          "text": "交通"
+        },
+        {
+          "level": 2,
+          "text": "ペット・動物"
+        },
+        {
+          "level": 2,
+          "text": "葬儀・おくやみコーナー"
+        },
+        {
+          "level": 2,
+          "text": "地域活動・コミュニティ"
+        },
+        {
+          "level": 2,
+          "text": "人権・男女共同参画"
+        },
+        {
+          "level": 2,
+          "text": "消費生活"
+        },
+        {
+          "level": 2,
+          "text": "相談窓口"
+        },
+        {
+          "level": 2,
+          "text": "オンライン手続き・デジタル化"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminhyou/index.html",
@@ -168,7 +937,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 978,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／住民票・戸籍の証明書",
+      "meta": {
+        "og:title": "住民票・戸籍の証明書",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminhyou/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票・戸籍の証明書"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/sumai/mansion_seido/index.html",
@@ -179,7 +967,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 886,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／分譲マンションの管理支援",
+      "meta": {
+        "og:title": "分譲マンションの管理支援",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/sumai/mansion_seido/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "分譲マンションの管理支援"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tenshutsu/index.html",
@@ -190,7 +997,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1099,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／転出",
+      "meta": {
+        "og:title": "転出",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tenshutsu/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転出"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0004/kurashi/online/onlineshinsei.html",
@@ -201,7 +1027,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1786,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／中央区オンライン手続きポータル",
+      "meta": {
+        "og:title": "中央区オンライン手続きポータル",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0004/kurashi/online/onlineshinsei.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中央区オンライン手続きポータル"
+        },
+        {
+          "level": 2,
+          "text": "利用規約等"
+        },
+        {
+          "level": 2,
+          "text": "オンライン手続きの使い方・ご案内"
+        },
+        {
+          "level": 2,
+          "text": "東京共同電子申請・届出サービス（令和7年2月末終了）"
+        },
+        {
+          "level": 2,
+          "text": "メンテナンス情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/online/index.html",
@@ -212,7 +1081,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1011,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／オンライン手続き・デジタル化",
+      "meta": {
+        "og:title": "オンライン手続き・デジタル化",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/online/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "オンライン手続き・デジタル化"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0004/kurashi/touroku/denshishinsei/kanounatetsuduki.html",
@@ -223,7 +1111,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 961,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／オンラインで可能な手続き一覧",
+      "meta": {
+        "og:title": "オンラインで可能な手続き一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0004/kurashi/touroku/denshishinsei/kanounatetsuduki.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "オンラインで可能な手続き一覧"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/resident_procedures/index.html",
@@ -234,29 +1141,158 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 889,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／住民票・戸籍",
+      "meta": {
+        "og:title": "住民票・戸籍",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/resident_procedures/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票・戸籍"
+        },
+        {
+          "level": 2,
+          "text": "よく見られているページ"
+        },
+        {
+          "level": 2,
+          "text": "サービスから探す"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0035/kurashi/koutsuu/koukyoukoutsuu/edobasu/kuseihatijussyuunenn.html?utm_source=kotu_top&utm_medium=ba&utm_campaign=18378_260601",
-      "link_text": "",
+      "link_text": "edobusrapping",
       "hops": 1,
       "score": 4,
       "parent": "https://www.city.chuo.lg.jp/",
       "status": 200,
       "is_pdf": false,
       "text_len": 1952,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／区制施行80周年記念「江戸バス」事業",
+      "meta": {
+        "og:title": "区制施行80周年記念「江戸バス」事業",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0035/kurashi/koutsuu/koukyoukoutsuu/edobasu/kuseihatijussyuunenn.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区制施行80周年記念「江戸バス」事業"
+        },
+        {
+          "level": 2,
+          "text": "1.記念ラッピング"
+        },
+        {
+          "level": 2,
+          "text": "2.記念乗車券"
+        },
+        {
+          "level": 3,
+          "text": "販売場所"
+        },
+        {
+          "level": 3,
+          "text": "販売価格"
+        },
+        {
+          "level": 3,
+          "text": "販売時期"
+        },
+        {
+          "level": 2,
+          "text": "3.オリジナルトミカ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0009/kurashi/zeikin/nouzei/zeinouhuannaidenwa.html",
-      "link_text": "",
+      "link_text": "税相談",
       "hops": 1,
       "score": 4,
       "parent": "https://www.city.chuo.lg.jp/",
       "status": 200,
       "is_pdf": false,
       "text_len": 1905,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／特別区民税・都民税・森林環境税の納付案内電話を実施しています",
+      "meta": {
+        "og:title": "特別区民税・都民税・森林環境税の納付案内電話を実施しています",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0009/kurashi/zeikin/nouzei/zeinouhuannaidenwa.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "特別区民税・都民税・森林環境税の納付案内電話を実施しています"
+        },
+        {
+          "level": 2,
+          "text": "中央区納付案内センター"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "電話をかける時間(業務時間)"
+        },
+        {
+          "level": 2,
+          "text": "中央区納付案内センター電話番号"
+        },
+        {
+          "level": 2,
+          "text": "振り込め詐欺等にご注意ください"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/oshirase/hakkenki.html",
@@ -267,7 +1303,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1550,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／混雑状況発信・当日順番予約サービス",
+      "meta": {
+        "og:title": "混雑状況発信・当日順番予約サービス",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/oshirase/hakkenki.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "混雑状況発信・当日順番予約サービス"
+        },
+        {
+          "level": 2,
+          "text": "予約可能時間"
+        },
+        {
+          "level": 2,
+          "text": "留意事項"
+        },
+        {
+          "level": 2,
+          "text": "対象部署・混雑情報配信サイト"
+        },
+        {
+          "level": 3,
+          "text": "1.区役所本庁舎（外部サイトへリンク）"
+        },
+        {
+          "level": 3,
+          "text": "2.日本橋特別出張所（外部サイトへリンク）"
+        },
+        {
+          "level": 3,
+          "text": "3.月島特別出張所（外部サイトへリンク）"
+        },
+        {
+          "level": 3,
+          "text": "4.晴海特別出張所（外部サイトへリンク）"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0004/kurashi/online/riyoukiyaku.html",
@@ -278,190 +1365,269 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1460,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／電子申請サービス利用規約等",
+      "meta": {
+        "og:title": "電子申請サービス利用規約等",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0004/kurashi/online/riyoukiyaku.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "電子申請サービス利用規約等"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.chuo.lg.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0004/kurashi/online/onlineshinsei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/resident_procedures/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0035/kurashi/koutsuu/koukyoukoutsuu/edobasu/kuseihatijussyuunenn.html?utm_source=kotu_top&utm_medium=ba&utm_campaign=18378_260601",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0009/kurashi/zeikin/nouzei/zeinouhuannaidenwa.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/oshirase/hakkenki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminhyou/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/sumai/mansion_seido/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0004/kurashi/touroku/denshishinsei/hikkoshioss.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/online/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0004/kurashi/touroku/denshishinsei/kanounatetsuduki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0004/kurashi/online/riyoukiyaku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/syusseitodoke/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminhyou/shoumeisho/kosekitohu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tenshutsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/zyushohenkoutodokede.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0018/kurashi/touroku/juuminidou/harumimadoguchi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tenkyo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/user_kumin_time_20191030.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/furigana.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

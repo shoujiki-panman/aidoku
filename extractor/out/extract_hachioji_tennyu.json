@@ -10,53 +10,420 @@
     "has_jsonld": false,
     "text_len": 778,
     "truncated": false,
-    "n_links": 35
+    "n_links": 36,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:45:14+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [
     "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
-    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
+    "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
+    "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
   ],
   "online_clarity": "曖昧",
   "online_clarity_evidence": "手続によってはオンライン申請に対応していますので、ぜひご利用ください。",
+  "online_clarity_pages": [
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
+    "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
+    "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "八王子市の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ、暗証番号入力要）、住民基本台帳カード（所有者のみ、パスワード入力要）、委任状（代理人が届出する場合）。外国人住民は在留カード又は特別永住者証明書、世帯主との続柄を証する文書も必要。",
+        "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 55,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+            "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+          ],
+          "page_notes": "この転入届ページは案内の入口で、本文には持ち物の記載がなく、「市外からの引っ越し（転出証明書での手続き）」「市外からの引っ越し（マイナンバーカードでの手続き）」などケース別のリンクに分岐している。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ、暗証番号入力要）、住民基本台帳カード（所有者のみ、パスワード入力要）、委任状（代理人が届出する場合）。外国人住民は在留カード又は特別永住者証明書、世帯主との続柄を証する文書も必要。",
+            "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 55,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届の索引ページ自体には持ち物の記載がなく、実際のリストは手続き種別ごとの子ページ（転出証明書での手続き／マイナンバーカードでの手続き）に分かれていた。転出証明書ベースの手続きページに、該当者のみ必要な書類（マイナンバーカード・外国人住民の追加書類等）を含む一覧があった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+      ],
+      "page_notes": "転入届の索引ページ自体には持ち物の記載がなく、実際のリストは手続き種別ごとの子ページ（転出証明書での手続き／マイナンバーカードでの手続き）に分かれていた。転出証明書ベースの手続きページに、該当者のみ必要な書類（マイナンバーカード・外国人住民の追加書類等）を含む一覧があった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "八王子市の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口来庁が必須。マイナポータルでオンライン申請しても、完了後に窓口へ来庁する必要があり、オンラインのみで完結はしない",
+        "evidence": "引っ越し前、引っ越し後のそれぞれの自治体で、申請状況が完了になってから窓口にお越しください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 46,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
+            "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
+          ],
+          "page_notes": "このページは転入届の入口（ページID：C0416600）で、本文には窓口・オンラインの可否についての記述がなく、関連手続き（マイナポータル、手続案内サービス等）へのリンク一覧のみで構成されている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口来庁が必須。マイナポータルでオンライン申請しても、完了後に窓口へ来庁する必要があり、オンラインのみで完結はしない",
+            "evidence": "引っ越し前、引っ越し後のそれぞれの自治体で、申請状況が完了になってから窓口にお越しください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 46,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届のページ自体には窓口/オンラインの可否は書かれておらず、「マイナポータルで引っ越し手続きをした方へ」のリンク先で、オンライン申請後も来庁が必須であることが分かる。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
+        "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
+      ],
+      "page_notes": "転入届のページ自体には窓口/オンラインの可否は書かれておらず、「マイナポータルで引っ越し手続きをした方へ」のリンク先で、オンライン申請後も来庁が必須であることが分かる。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "八王子市の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "八王子市に住み始めてから14日以内",
+        "evidence": "八王子市に住み始めてから14日以内（注意1）",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 22,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+            "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+          ],
+          "page_notes": "このページは転入届の分類一覧・案内リンクのみで、手続き内容（期限・必要書類等）は「市外からの引っ越し（転出証明書での手続き）」等のリンク先ページに委ねられている構成。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "八王子市に住み始めてから14日以内",
+            "evidence": "八王子市に住み始めてから14日以内（注意1）",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 22,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届トップページ自体には期限の記載がなく、「市外からの引っ越し（転出証明書での手続き）」の届出期間欄に記載されていた。マイナンバーカード特例のページには別の期限（転出予定日から30日以内かつ住み始めてから14日以内）があり、手続き方法によって起算点・期限が分岐する構成だった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+      ],
+      "page_notes": "転入届トップページ自体には期限の記載がなく、「市外からの引っ越し（転出証明書での手続き）」の届出期間欄に記載されていた。マイナンバーカード特例のページには別の期限（転出予定日から30日以内かつ住み始めてから14日以内）があり、手続き方法によって起算点・期限が分岐する構成だった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "八王子市の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+            "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+          ],
+          "page_notes": "このページは転入届の入口（案内・分類一覧）で、手数料を含む手続きの詳細記述は無く、「市外からの引っ越し（転出証明書での手続き）」等の手続き別ページへの導線のみが本文にある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届のページおよびリンク先の「転出証明書での手続き」「マイナンバーカードでの手続き」の両ページとも、届出に必要なもの・受付窓口・期限（14日以内、遅れると5万円以下の過料）は詳しく書かれているが、手数料・無料の別についての記載は本文中に見当たらなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
+      ],
+      "page_notes": "転入届のページおよびリンク先の「転出証明書での手続き」「マイナンバーカードでの手続き」の両ページとも、届出に必要なもの・受付窓口・期限（14日以内、遅れると5万円以下の過料）は詳しく書かれているが、手数料・無料の別についての記載は本文中に見当たらなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ、全員分）、住民基本台帳カード（所有者のみ、全員分）、委任状（代理人の場合）。外国人住民は在留カード等・続柄を証する文書も必要",
-      "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です",
+      "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ、暗証番号入力要）、住民基本台帳カード（所有者のみ、パスワード入力要）、委任状（代理人が届出する場合）。外国人住民は在留カード又は特別永住者証明書、世帯主との続柄を証する文書も必要。",
+      "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 55,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみ。市役所本庁舎1階市民課（7番窓口）、八王子駅南口総合事務所、南大沢事務所、各市民部事務所で受付。オンライン申請の記載なし（案内サービスは他手続きの一部でオンライン対応と案内するのみ）",
-      "evidence": "受付窓口・受付時間一覧表 受付窓口 市役所本庁舎1階市民課（7番窓口） 午前8時30分から午後5時",
+      "value": "窓口来庁が必須。マイナポータルでオンライン申請しても、完了後に窓口へ来庁する必要があり、オンラインのみで完結はしない",
+      "evidence": "引っ越し前、引っ越し後のそれぞれの自治体で、申請状況が完了になってから窓口にお越しください。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 46,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
-      "value": "八王子市に住み始めてから14日以内（遅れると5万円以下の過料の可能性）",
-      "evidence": "八王子市に住み始めてから14日以内（注意1） 届出が遅れますと、5万円以下の過料に科せられる場合があります",
+      "value": "八王子市に住み始めてから14日以内",
+      "evidence": "八王子市に住み始めてから14日以内（注意1）",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 22,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "index.htmlのページ本文はナビゲーションのみで、転入届の具体的な要件（必要書類・窓口・期限）は一階層下の「市外からの引っ越し（転出証明書での手続き）」等のページに存在する。同一階層に「マイナンバーカードでの手続き」という別ルートのページもあり、どちらを正解とするか手続き名だけでは一意に定まらない構成。",
-  "online_clarity_pages": [
-    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
-    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
-    "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
-  ],
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "転入届の索引ページ自体には持ち物の記載がなく、実際のリストは手続き種別ごとの子ページ（転出証明書での手続き／マイナンバーカードでの手続き）に分かれていた。転出証明書ベースの手続きページに、該当者のみ必要な書類（マイナンバーカード・外国人住民の追加書類等）を含む一覧があった。\n転入届のページ自体には窓口/オンラインの可否は書かれておらず、「マイナポータルで引っ越し手続きをした方へ」のリンク先で、オンライン申請後も来庁が必須であることが分かる。\n転入届トップページ自体には期限の記載がなく、「市外からの引っ越し（転出証明書での手続き）」の届出期間欄に記載されていた。マイナンバーカード特例のページには別の期限（転出予定日から30日以内かつ住み始めてから14日以内）があり、手続き方法によって起算点・期限が分岐する構成だった。\n転入届のページおよびリンク先の「転出証明書での手続き」「マイナンバーカードでの手続き」の両ページとも、届出に必要なもの・受付窓口・期限（14日以内、遅れると5万円以下の過料）は詳しく書かれているが、手数料・無料の別についての記載は本文中に見当たらなかった。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
+      "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+      "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
+      "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
+      "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

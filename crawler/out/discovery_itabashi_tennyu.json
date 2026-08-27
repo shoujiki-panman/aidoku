@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.itabashi.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
@@ -14,7 +35,107 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4449,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届 （板橋区外から板橋区に転入した方）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "転入届　（板橋区外から板橋区に転入した方）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届 （板橋区外から板橋区に転入した方）"
+        },
+        {
+          "level": 2,
+          "text": "届出される方へ"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方"
+        },
+        {
+          "level": 3,
+          "text": "必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "備考"
+        },
+        {
+          "level": 2,
+          "text": "マイナポータルを利用した方"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードをお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "継続利用"
+        },
+        {
+          "level": 3,
+          "text": "継続利用ができる条件"
+        },
+        {
+          "level": 3,
+          "text": "署名用電子証明書"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードの特急発行"
+        },
+        {
+          "level": 2,
+          "text": "転入に伴う手続き"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "住民登録(引越し等の手続き)"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
@@ -25,7 +146,95 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3680,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届 （国外から板橋区に転入した方）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "転入届　（国外から板橋区に転入した方）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届 （国外から板橋区に転入した方）"
+        },
+        {
+          "level": 2,
+          "text": "届出される方へ"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "国外転入届"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方"
+        },
+        {
+          "level": 3,
+          "text": "必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "日本人の方"
+        },
+        {
+          "level": 4,
+          "text": "外国人の方"
+        },
+        {
+          "level": 3,
+          "text": "備考"
+        },
+        {
+          "level": 2,
+          "text": "国外転入に伴う手続き"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "住民登録(引越し等の手続き)"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/index.html",
@@ -36,7 +245,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1212,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民登録(引越し等の手続き)｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "住民登録(引越し等の手続き)｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民登録(引越し等の手続き)"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1041451/index.html",
@@ -47,7 +292,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1271,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越しワンストップサービス（オンラインでの引越し手続き）について｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "引越しワンストップサービス（オンラインでの引越し手続き）について｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1041451/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越しワンストップサービス（オンラインでの引越し手続き）について"
+        },
+        {
+          "level": 2,
+          "text": "引越しワンストップサービス（マイナポータル）を利用して手続きをされる方へ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "住民登録(引越し等の手続き)"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
@@ -58,7 +347,107 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3820,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転居届 （板橋区内で引越しの方）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "転居届　（板橋区内で引越しの方）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転居届 （板橋区内で引越しの方）"
+        },
+        {
+          "level": 2,
+          "text": "届出される方へ"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "転居届"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "備考"
+        },
+        {
+          "level": 2,
+          "text": "マイナポータルを利用した方"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードをお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "券面事項変更"
+        },
+        {
+          "level": 3,
+          "text": "署名用電子証明書"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードの特急発行"
+        },
+        {
+          "level": 2,
+          "text": "転居に伴う手続き"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "住民登録(引越し等の手続き)"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
@@ -69,7 +458,87 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2878,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "団体での住民異動届出について｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "団体での住民異動届出について｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "団体での住民異動届出について"
+        },
+        {
+          "level": 2,
+          "text": "団体での住民異動届出"
+        },
+        {
+          "level": 3,
+          "text": "来庁日時の事前連絡について"
+        },
+        {
+          "level": 3,
+          "text": "『住民異動届』の事前記入について"
+        },
+        {
+          "level": 3,
+          "text": "代理人申請について"
+        },
+        {
+          "level": 3,
+          "text": "受付窓口"
+        },
+        {
+          "level": 3,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 4,
+          "text": "住民異動届出（来庁日時の事前連絡や板橋区ガイド配布希望数）に関する問い合わせ先"
+        },
+        {
+          "level": 4,
+          "text": "国民健康保険に関する問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "住民登録(引越し等の手続き)"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
@@ -80,7 +549,115 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4502,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "旧氏（旧姓）の住民票などへの併記｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "旧氏（旧姓）の住民票などへの併記｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "旧氏（旧姓）の住民票などへの併記"
+        },
+        {
+          "level": 2,
+          "text": "届出される方へ"
+        },
+        {
+          "level": 2,
+          "text": "旧氏（旧姓）の併記"
+        },
+        {
+          "level": 3,
+          "text": "旧氏（旧姓）について"
+        },
+        {
+          "level": 3,
+          "text": "旧氏の振り仮名記載について"
+        },
+        {
+          "level": 3,
+          "text": "旧氏が記載される書類"
+        },
+        {
+          "level": 3,
+          "text": "旧氏の変更と削除"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方"
+        },
+        {
+          "level": 3,
+          "text": "必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "備考"
+        },
+        {
+          "level": 2,
+          "text": "印鑑登録について"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードをお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "券面事項変更"
+        },
+        {
+          "level": 3,
+          "text": "署名用電子証明書"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードの特急発行"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "住民登録(引越し等の手続き)"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
@@ -91,7 +668,91 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4502,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "同じ住所に戸建建物が複数あり誤配等でお困りの方へ｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "同じ住所に戸建建物が複数あり誤配等でお困りの方へ｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "同じ住所に戸建建物が複数あり誤配等でお困りの方へ"
+        },
+        {
+          "level": 2,
+          "text": "補助番号制度"
+        },
+        {
+          "level": 2,
+          "text": "申請できる方"
+        },
+        {
+          "level": 2,
+          "text": "申請時にご持参いただくもの"
+        },
+        {
+          "level": 3,
+          "text": "板橋区役所リアルタイム窓口情報"
+        },
+        {
+          "level": 2,
+          "text": "申請に際しての注意事項"
+        },
+        {
+          "level": 2,
+          "text": "補助番号が付定されると"
+        },
+        {
+          "level": 2,
+          "text": "補助番号制度についてのお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 3,
+          "text": "補助番号付定に伴う区役所での主な手続き"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "住民登録(引越し等の手続き)"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
@@ -102,7 +763,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1048,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kenko/kourei/kouki/tetsuduki/1003527.html",
@@ -113,40 +802,197 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2736,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入転出等に係わる手続き（後期高齢者医療制度）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "転入転出等に係わる手続き（後期高齢者医療制度）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kenko/kourei/kouki/tetsuduki/1003527.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入転出等に係わる手続き（後期高齢者医療制度）"
+        },
+        {
+          "level": 2,
+          "text": "手続きができる窓口"
+        },
+        {
+          "level": 2,
+          "text": "板橋区からの転出"
+        },
+        {
+          "level": 3,
+          "text": "東京都外の市町村へ転出する場合"
+        },
+        {
+          "level": 4,
+          "text": "板橋区での手続き"
+        },
+        {
+          "level": 5,
+          "text": "注意"
+        },
+        {
+          "level": 4,
+          "text": "必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "新住所地での手続き"
+        },
+        {
+          "level": 3,
+          "text": "東京都内の区市町村へ転出する場合"
+        },
+        {
+          "level": 4,
+          "text": "板橋区での手続き"
+        },
+        {
+          "level": 4,
+          "text": "新住所地での手続き"
+        },
+        {
+          "level": 2,
+          "text": "板橋区への転入"
+        },
+        {
+          "level": 3,
+          "text": "板橋区での手続き"
+        },
+        {
+          "level": 4,
+          "text": "注意"
+        },
+        {
+          "level": 3,
+          "text": "東京都外の市町村から転入する場合"
+        },
+        {
+          "level": 4,
+          "text": "手続きに必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "東京都内の区市町村から転入する場合"
+        },
+        {
+          "level": 4,
+          "text": "手続きに必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "板橋区内での転居の場合"
+        },
+        {
+          "level": 3,
+          "text": "板橋区での手続き"
+        },
+        {
+          "level": 4,
+          "text": "注意"
+        },
+        {
+          "level": 3,
+          "text": "手続きに必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "健康・医療・福祉"
+        },
+        {
+          "level": 3,
+          "text": "高齢者のかたへ"
+        },
+        {
+          "level": 4,
+          "text": "後期高齢者医療制度"
+        },
+        {
+          "level": 5,
+          "text": "住所の変更、資格確認書に関すること"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html",
-      "link_text": "",
+      "link_text": "このページの情報をXでポストできます",
       "hops": 3,
       "score": 12,
       "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html&t=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
-      "link_text": "",
+      "link_text": "このページの情報をフェイスブックでシェアできます",
       "hops": 3,
       "score": 12,
       "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E4%BD%8F%E6%B0%91%E7%99%BB%E9%8C%B2%28%E5%BC%95%E8%B6%8A%E3%81%97%E7%AD%89%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%29%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2Findex.html",
-      "link_text": "",
+      "link_text": "このページの情報をXでポストできます",
       "hops": 3,
       "score": 12,
       "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/index.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
@@ -157,7 +1003,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1132,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越し｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "引越し｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越し"
+        },
+        {
+          "level": 2,
+          "text": "届け出"
+        },
+        {
+          "level": 2,
+          "text": "手続き"
+        },
+        {
+          "level": 2,
+          "text": "生活関連"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "くらしの情報"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/1001687.html",
@@ -168,7 +1058,119 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2381,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "くらしの各種手続・届出｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "くらしの各種手続・届出｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/1001687.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらしの各種手続・届出"
+        },
+        {
+          "level": 2,
+          "text": "窓口のご案内"
+        },
+        {
+          "level": 2,
+          "text": "戸籍住民課で取扱う業務のご案内"
+        },
+        {
+          "level": 2,
+          "text": "区民事務所で扱っているそのほかのお手続き"
+        },
+        {
+          "level": 3,
+          "text": "住民税・軽自動車税の納税"
+        },
+        {
+          "level": 3,
+          "text": "国民健康保険・国民年金の加入や喪失の手続き"
+        },
+        {
+          "level": 3,
+          "text": "国民健康保険、介護保険、後期高齢者医療制度の保険料のお支払い"
+        },
+        {
+          "level": 3,
+          "text": "飼い犬の登録、狂犬病予防注射済票の交付"
+        },
+        {
+          "level": 3,
+          "text": "児童、生徒の転入学通知書の発行 (転入・転居時）"
+        },
+        {
+          "level": 3,
+          "text": "区立体育施設、集会施設の利用申込"
+        },
+        {
+          "level": 3,
+          "text": "死亡届の受付"
+        },
+        {
+          "level": 2,
+          "text": "郵送サービスをご活用ください"
+        },
+        {
+          "level": 3,
+          "text": "戸籍住民課郵送サービス"
+        },
+        {
+          "level": 2,
+          "text": "休日・夜間サービスをご活用ください"
+        },
+        {
+          "level": 3,
+          "text": "休日・夜間の窓口開庁サービス（本庁舎のみ）"
+        },
+        {
+          "level": 3,
+          "text": "戸籍届出の休日・夜間受付（本庁舎のみ）"
+        },
+        {
+          "level": 2,
+          "text": "本人確認にご協力ください"
+        },
+        {
+          "level": 3,
+          "text": "本人確認の実施(届出等)"
+        },
+        {
+          "level": 3,
+          "text": "本人確認の実施(証明発行)"
+        },
+        {
+          "level": 2,
+          "text": "板橋富士見・板橋徳丸・板橋向原 郵便局における各種証明書の発行"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koseki/index.html",
@@ -179,7 +1181,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1237,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "戸籍｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koseki/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍"
+        },
+        {
+          "level": 2,
+          "text": "届出"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の電子化"
+        },
+        {
+          "level": 2,
+          "text": "氏名の振り仮名法制化"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/koseki/koseki/index.html",
@@ -190,7 +1240,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1416,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "戸籍｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/koseki/koseki/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の届出"
+        },
+        {
+          "level": 2,
+          "text": "戸籍証明"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の届出用紙（婚姻届、転籍届など）"
+        },
+        {
+          "level": 2,
+          "text": "外国人との婚姻届"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の附票"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問と回答"
+        },
+        {
+          "level": 3,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 4,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバーカード"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1001605.html",
@@ -201,7 +1311,115 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3273,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お墓を移す手続きについて｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "お墓を移す手続きについて｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1001605.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お墓を移す手続きについて"
+        },
+        {
+          "level": 2,
+          "text": "混雑予想日のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "お墓を移す手続きには申請が必要です"
+        },
+        {
+          "level": 2,
+          "text": "必要書類"
+        },
+        {
+          "level": 3,
+          "text": "(1)改葬許可申請書"
+        },
+        {
+          "level": 3,
+          "text": "（2）遺骨の受入証明書（原本）"
+        },
+        {
+          "level": 3,
+          "text": "（3）遺骨の埋蔵・収蔵証明書"
+        },
+        {
+          "level": 3,
+          "text": "（4）墓地使用名義人の承諾書（必要な方のみ）"
+        },
+        {
+          "level": 2,
+          "text": "戸籍住民課の一部業務では、区民の皆様からのお電話によるお問い合わせに対応するため、AIを活用した自動応答システムを導入いたしました"
+        },
+        {
+          "level": 3,
+          "text": "板橋区役所リアルタイム窓口情報"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "証明書発行ほか"
+        },
+        {
+          "level": 5,
+          "text": "戸籍"
+        },
+        {
+          "level": 5,
+          "text": "住民票"
+        },
+        {
+          "level": 5,
+          "text": "印鑑登録"
+        },
+        {
+          "level": 5,
+          "text": "個人住民税 課税（非課税）・納税証明書"
+        },
+        {
+          "level": 5,
+          "text": "改葬許可"
+        },
+        {
+          "level": 5,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
@@ -212,7 +1430,107 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3123,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手続き・くらし｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "手続き・くらし｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 2,
+          "text": "書かない窓口（手続ナビ）"
+        },
+        {
+          "level": 2,
+          "text": "Web口座振替受付サービス"
+        },
+        {
+          "level": 2,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "税金"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "住まい"
+        },
+        {
+          "level": 2,
+          "text": "くらしの相談"
+        },
+        {
+          "level": 2,
+          "text": "地域コミュニティ・町会・自治会"
+        },
+        {
+          "level": 2,
+          "text": "区民協働・ボランティア・NPO"
+        },
+        {
+          "level": 2,
+          "text": "男女平等参画・人権"
+        },
+        {
+          "level": 2,
+          "text": "ペット・野生動物・外来生物"
+        },
+        {
+          "level": 2,
+          "text": "冠婚葬祭"
+        },
+        {
+          "level": 2,
+          "text": "外国人のかたへ"
+        },
+        {
+          "level": 2,
+          "text": "ふるさと納税・寄附"
+        },
+        {
+          "level": 2,
+          "text": "宿泊・保養施設"
+        },
+        {
+          "level": 2,
+          "text": "行政不服審査法に基づく審査請求"
+        },
+        {
+          "level": 2,
+          "text": "窓口事務等の標準処理期間"
+        },
+        {
+          "level": 2,
+          "text": "電子掲示場"
+        },
+        {
+          "level": 2,
+          "text": "広告欄"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koufu/1001666.html",
@@ -223,7 +1541,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1265,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "コンビニ交付の休止について｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "コンビニ交付の休止について｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koufu/1001666.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "コンビニ交付の休止について"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "証明書のコンビニ交付サービス"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1053497.html",
@@ -234,7 +1600,107 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3208,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "オンライン申請（LoGoフォーム）による証明書の請求｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "オンライン申請（LoGoフォーム）による証明書の請求｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1053497.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "オンライン申請（LoGoフォーム）による証明書の請求"
+        },
+        {
+          "level": 2,
+          "text": "各種証明書のオンライン申請"
+        },
+        {
+          "level": 3,
+          "text": "申請フォーム"
+        },
+        {
+          "level": 3,
+          "text": "証明書発行までの一般的な流れ"
+        },
+        {
+          "level": 3,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "交付方法"
+        },
+        {
+          "level": 3,
+          "text": "手数料"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "証明書発行ほか"
+        },
+        {
+          "level": 5,
+          "text": "戸籍"
+        },
+        {
+          "level": 5,
+          "text": "住民票"
+        },
+        {
+          "level": 5,
+          "text": "印鑑登録"
+        },
+        {
+          "level": 5,
+          "text": "個人住民税 課税（非課税）・納税証明書"
+        },
+        {
+          "level": 5,
+          "text": "改葬許可"
+        },
+        {
+          "level": 5,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/mynumber/1045073/1001657.html",
@@ -245,18 +1711,77 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1409,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "法人番号について｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "法人番号について｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/mynumber/1045073/1001657.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "法人番号について"
+        },
+        {
+          "level": 2,
+          "text": "法人番号とは"
+        },
+        {
+          "level": 2,
+          "text": "板橋区の法人番号"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 4,
+          "text": "マイナンバー（社会保障・税番号制度）"
+        },
+        {
+          "level": 5,
+          "text": "マイナンバー制度とは"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E6%88%B8%E7%B1%8D%E3%83%BB%E4%BD%8F%E6%B0%91%E7%A5%A8%E3%83%BB%E5%8D%B0%E9%91%91%E7%99%BB%E9%8C%B2%E3%83%BB%E5%B1%8A%E5%87%BA%E3%83%BB%E8%A8%BC%E6%98%8E%E3%83%BB%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Findex.html",
-      "link_text": "",
+      "link_text": "このページの情報をXでポストできます",
       "hops": 2,
       "score": 4,
       "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/madoguchi/index.html",
@@ -267,7 +1792,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1082,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "受付窓口(区役所・区民事務所)｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "受付窓口(区役所・区民事務所)｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/madoguchi/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "受付窓口(区役所・区民事務所)"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/inkan/index.html",
@@ -278,190 +1839,278 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1104,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "印鑑登録｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "印鑑登録｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/inkan/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "印鑑登録"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.itabashi.tokyo.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koufu/1001666.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1053497.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/mynumber/1045073/1001657.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/1001687.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E6%88%B8%E7%B1%8D%E3%83%BB%E4%BD%8F%E6%B0%91%E7%A5%A8%E3%83%BB%E5%8D%B0%E9%91%91%E7%99%BB%E9%8C%B2%E3%83%BB%E5%B1%8A%E5%87%BA%E3%83%BB%E8%A8%BC%E6%98%8E%E3%83%BB%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Findex.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kenko/kourei/kouki/tetsuduki/1003527.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/koseki/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1001605.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/madoguchi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/inkan/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1041451/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html&t=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E4%BD%8F%E6%B0%91%E7%99%BB%E9%8C%B2%28%E5%BC%95%E8%B6%8A%E3%81%97%E7%AD%89%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%29%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2Findex.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     }
   ]

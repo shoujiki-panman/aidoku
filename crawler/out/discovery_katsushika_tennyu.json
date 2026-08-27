@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.katsushika.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
@@ -14,7 +35,64 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2657,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届の特例（マイナンバーカード等を利用した転出・転入届）｜葛飾区公式サイト",
+      "meta": {
+        "description": "マイナンバーカードや住民基本台帳カードを利用し、転出証明書の交付を受けることなく転入手続きができる制度です。（転出届・転入届の手続きは必要です。）",
+        "og:title": "転入届の特例（マイナンバーカード等を利用した転出・転入届）｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "マイナンバーカードや住民基本台帳カードを利用し、転出証明書の交付を受けることなく転入手続きができる制度です。（転出届・転入届の手続きは必要です。）",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届の特例（マイナンバーカード等を利用した転出・転入届）"
+        },
+        {
+          "level": 2,
+          "text": "手続き手順"
+        },
+        {
+          "level": 2,
+          "text": "特例手続の条件等"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
@@ -25,7 +103,120 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5375,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民異動届（転入・転出・転居など）｜葛飾区公式サイト",
+      "meta": {
+        "description": "住所や世帯構成が変わるときは、区役所（戸籍住民課）や区民事務所に届出が必要です。",
+        "og:title": "住民異動届（転入・転出・転居など）｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "住所や世帯構成が変わるときは、区役所（戸籍住民課）や区民事務所に届出が必要です。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民異動届（転入・転出・転居など）"
+        },
+        {
+          "level": 6,
+          "text": "混雑緩和のため、外国の方で5名以上同時に届出をされる場合は、事前にご連絡をいただくようお願いいたします。"
+        },
+        {
+          "level": 2,
+          "text": "届出人・本人確認書類について"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方"
+        },
+        {
+          "level": 3,
+          "text": "本人確認書類"
+        },
+        {
+          "level": 2,
+          "text": "転入届（新たに葛飾区に引っ越してきた方）"
+        },
+        {
+          "level": 3,
+          "text": "転入の届出に必要な証明書類"
+        },
+        {
+          "level": 4,
+          "text": "他自治体からの転入"
+        },
+        {
+          "level": 4,
+          "text": "国外からの転入"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 2,
+          "text": "転出届（葛飾区外に引っ越しをされる方）"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 2,
+          "text": "転居届（葛飾区内で引っ越しをされる方）"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 2,
+          "text": "世帯変更届（世帯合併・世帯分離・世帯主変更 等）"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 2,
+          "text": "受付窓口"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "よくいただくお問い合わせリンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/faq/1030270/1007654/1007705/1007826.html",
@@ -36,7 +227,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2133,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "郵送で転入届を届け出ることは可能でしょうか。｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "郵送で転入届を届け出ることは可能でしょうか。｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/faq/1030270/1007654/1007705/1007826.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "質問郵送で転入届を届け出ることは可能でしょうか。"
+        },
+        {
+          "level": 2,
+          "text": "回答"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 3,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
@@ -47,7 +291,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3039,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越し等の手続きができる窓口一覧｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "引越し等の手続きができる窓口一覧｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越し等の手続きができる窓口一覧"
+        },
+        {
+          "level": 2,
+          "text": "各種手続きのお問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
@@ -58,7 +347,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3569,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "マイナポータルによるオンラインでの転出届（引越しワンストップサービス）｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "マイナポータルによるオンラインでの転出届（引越しワンストップサービス）｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "マイナポータルによるオンラインでの転出届（引越しワンストップサービス）"
+        },
+        {
+          "level": 3,
+          "text": "サービスを利用できる方"
+        },
+        {
+          "level": 3,
+          "text": "オンラインで転出の申請ができる期間"
+        },
+        {
+          "level": 3,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 3,
+          "text": "転入届について"
+        },
+        {
+          "level": 3,
+          "text": "届出場所・受付時間（葛飾区へ転入時）"
+        },
+        {
+          "level": 6,
+          "text": "区民事務所（金町・亀有・高砂・堀切・水元）"
+        },
+        {
+          "level": 6,
+          "text": "区民事務所（新小岩）"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html",
@@ -69,7 +431,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3512,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住所の届出・証明（住民票）｜葛飾区公式サイト",
+      "meta": {
+        "description": "転入・転出・転居・世帯変更の届け出、住民票の写しの交付について",
+        "og:title": "住所の届出・証明（住民票）｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "転入・転出・転居・世帯変更の届け出、住民票の写しの交付について",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住所の届出・証明（住民票）"
+        },
+        {
+          "level": 2,
+          "text": "証明書の発行"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/faq/1030270/1007654/1007705/1007828.html",
@@ -80,7 +483,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2336,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入・転出・転居の届出はどこでできますか｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "転入・転出・転居の届出はどこでできますか｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/faq/1030270/1007654/1007705/1007828.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "質問転入・転出・転居の届出はどこでできますか"
+        },
+        {
+          "level": 2,
+          "text": "回答"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 3,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/index.html",
@@ -91,7 +547,76 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2780,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "くらし・手続き｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "くらし・手続き｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "税金"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "国保・後期高齢・年金"
+        },
+        {
+          "level": 2,
+          "text": "住まい"
+        },
+        {
+          "level": 2,
+          "text": "環境"
+        },
+        {
+          "level": 2,
+          "text": "安全・安心"
+        },
+        {
+          "level": 2,
+          "text": "各種相談"
+        },
+        {
+          "level": 2,
+          "text": "テキスト広告"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/index.html",
@@ -102,7 +627,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1967,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍・住民票など｜葛飾区公式サイト",
+      "meta": {
+        "description": "戸籍の届け出、戸籍謄抄本の交付の手続き、転入・転出・転居の届け出について",
+        "og:title": "戸籍・住民票など｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "戸籍の届け出、戸籍謄抄本の交付の手続き、転入・転出・転居の届け出について",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/lifeevent/lifeevent3.html",
@@ -113,7 +675,68 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1837,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越し｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "引越し｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/lifeevent/lifeevent3.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越し"
+        },
+        {
+          "level": 2,
+          "text": "引越しに関する届け出"
+        },
+        {
+          "level": 2,
+          "text": "社会保険に関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "福祉に関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "学校に関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "印鑑登録に関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "自動車等に関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "その他の手続き"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001400/index.html",
@@ -124,7 +747,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2912,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の届出・証明｜葛飾区公式サイト",
+      "meta": {
+        "description": "戸籍の届け出、戸籍謄抄本の交付について",
+        "og:title": "戸籍の届出・証明｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "戸籍の届け出、戸籍謄抄本の交付について",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001400/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の届出・証明"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の届出"
+        },
+        {
+          "level": 2,
+          "text": "証明書の発行"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001406/index.html",
@@ -135,7 +803,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2278,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "届出・申請窓口のご案内｜葛飾区公式サイト",
+      "meta": {
+        "description": "区民事務所などのご案内",
+        "og:title": "届出・申請窓口のご案内｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "区民事務所などのご案内",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001406/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "届出・申請窓口のご案内"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1030169/index.html",
@@ -146,7 +851,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1792,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "郵送による届出・申請｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "郵送による届出・申請｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1030169/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "郵送による届出・申請"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001404/index.html",
@@ -157,7 +899,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1909,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "外国人（がいこくじん）のみなさんへ（手続き）｜葛飾区公式サイト",
+      "meta": {
+        "description": "外国人住民の方へのご案内",
+        "og:title": "外国人（がいこくじん）のみなさんへ（手続き）｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "外国人住民の方へのご案内",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001404/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "外国人（がいこくじん）のみなさんへ（手続き）"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001406/1015241.html",
@@ -168,7 +947,68 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3116,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍住民課（本庁舎）・区民事務所の混雑状況｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "戸籍住民課（本庁舎）・区民事務所の混雑状況｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001406/1015241.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍住民課（本庁舎）・区民事務所の混雑状況"
+        },
+        {
+          "level": 3,
+          "text": "戸籍住民課（本庁舎）・新小岩区民事務所の混雑状況をリアルタイムで確認いただけます"
+        },
+        {
+          "level": 3,
+          "text": "混雑予想カレンダー"
+        },
+        {
+          "level": 2,
+          "text": "休日・夜間窓口のご案内"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先とアクセス"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍・住民票など"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000047/index.html",
@@ -179,7 +1019,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1737,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "税金｜葛飾区公式サイト",
+      "meta": {
+        "description": "特別区民税（都民税）・軽自動車税の納付、バイク・小型特殊自動車の登録など",
+        "og:title": "税金｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "特別区民税（都民税）・軽自動車税の納付、バイク・小型特殊自動車の登録など",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000047/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "税金"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "税金"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/index.html",
@@ -190,7 +1067,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1887,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル｜葛飾区公式サイト",
+      "meta": {
+        "description": "資源・ ごみの出し方や収集日のご案内、ごみの減量や3つのRの実践に役立つ情報など",
+        "og:title": "ごみ・リサイクル｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "資源・ ごみの出し方や収集日のご案内、ごみの減量や3つのRの実践に役立つ情報など",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000049/index.html",
@@ -201,7 +1115,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1710,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "国保・後期高齢・年金｜葛飾区公式サイト",
+      "meta": {
+        "description": "国民健康保険、後期高齢者医療保険、国民年金の加入・届出・申請などについて",
+        "og:title": "国保・後期高齢・年金｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "国民健康保険、後期高齢者医療保険、国民年金の加入・届出・申請などについて",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000049/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "国保・後期高齢・年金"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "国保・後期高齢・年金"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/index.html",
@@ -212,7 +1163,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/index.html",
@@ -223,7 +1181,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1003399/index.html",
@@ -234,7 +1199,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2094,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住まい｜葛飾区公式サイト",
+      "meta": {
+        "description": "住まいや土地を購入する場合の融資や、区営住宅・都営住宅など",
+        "og:title": "住まい｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "住まいや土地を購入する場合の融資や、区営住宅・都営住宅など",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1003399/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住まい"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "住まい"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000062/index.html",
@@ -245,7 +1247,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1700,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "環境｜葛飾区公式サイト",
+      "meta": {
+        "description": "地球温暖化対策、緑化の推進、環境美化、融資・助成、大気汚染などの公害、害虫駆除など",
+        "og:title": "環境｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "地球温暖化対策、緑化の推進、環境美化、融資・助成、大気汚染などの公害、害虫駆除など",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000062/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "環境"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "環境"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
@@ -256,7 +1295,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
@@ -267,7 +1313,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
@@ -278,190 +1331,249 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.katsushika.lg.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/lifeevent/lifeevent3.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000047/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000049/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001400/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001406/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1030169/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001404/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1003399/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000062/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/faq/1030270/1007654/1007705/1007826.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/faq/1030270/1007654/1007705/1007828.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001406/1015241.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     }
   ]

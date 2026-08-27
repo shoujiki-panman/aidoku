@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.meguro.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
@@ -14,7 +35,98 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3966,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：国外から目黒区へ住所を変更したとき | 目黒区",
+      "meta": {
+        "og:title": "転入届：国外から目黒区へ住所を変更したとき",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：国外から目黒区へ住所を変更したとき"
+        },
+        {
+          "level": 2,
+          "text": "届出ができるかた（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの（日本国外からの転入）"
+        },
+        {
+          "level": 3,
+          "text": "1引越しをされたかた全員のパスポート"
+        },
+        {
+          "level": 3,
+          "text": "2戸籍謄本（戸籍全部事項証明書）および戸籍の附票"
+        },
+        {
+          "level": 3,
+          "text": "3窓口で手続きを行うかたの本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "4委任状（任意代理人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "5権限確認ができる書類（法定代理人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "6在留カード等または特別永住者証明書等（外国人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "7続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "8一年以上前の日付で転入手続きをするかた"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバー（個人番号）およびマイナンバーカード等について"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html",
@@ -25,7 +137,86 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3653,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：本人または新しく同じ世帯になるかたが手続きをするとき | 目黒区",
+      "meta": {
+        "og:title": "転入届：本人または新しく同じ世帯になるかたが手続きをするとき",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：本人または新しく同じ世帯になるかたが手続きをするとき"
+        },
+        {
+          "level": 2,
+          "text": "届出ができるかた（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの（日本国内からの転入）"
+        },
+        {
+          "level": 3,
+          "text": "1転出証明書"
+        },
+        {
+          "level": 3,
+          "text": "2窓口で手続きを行うかたの本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "3引越しをするかた全員のマイナンバーカード等（お持ちのかた）"
+        },
+        {
+          "level": 3,
+          "text": "4権限確認ができる書類（法定代理人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "5在留カード等または特別永住者証明書等（外国人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "6続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "7一年以上前の日付で転入手続きをするかた"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuudairi.html",
@@ -36,7 +227,90 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3721,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：代理人が手続きをするとき | 目黒区",
+      "meta": {
+        "og:title": "転入届：代理人が手続きをするとき",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuudairi.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：代理人が手続きをするとき"
+        },
+        {
+          "level": 2,
+          "text": "届出ができるかた（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの（日本国内からの転入）"
+        },
+        {
+          "level": 3,
+          "text": "1転出証明書"
+        },
+        {
+          "level": 3,
+          "text": "2引越しをするかたが記入した委任状"
+        },
+        {
+          "level": 3,
+          "text": "3窓口で手続きを行うかたの本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "4引越しをするかた全員のマイナンバーカード等（お持ちのかた）"
+        },
+        {
+          "level": 3,
+          "text": "5在留カード等または特別永住者証明書等（外国人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "6続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "7一年以上前の日付で転入手続きをするかた"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/ido.html",
@@ -47,7 +321,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3373,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：マイナンバーカード等を使って本人または同じ世帯になるかたが窓口で手続きをするとき | 目黒区",
+      "meta": {
+        "og:title": "転入届：マイナンバーカード等を使って本人または同じ世帯になるかたが窓口で手続きをするとき",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/ido.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：マイナンバーカード等を使って本人または同じ世帯になるかたが窓口で手続きをするとき"
+        },
+        {
+          "level": 2,
+          "text": "届出ができるかた（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "1引越しをするかた全員のマイナンバーカード等"
+        },
+        {
+          "level": 3,
+          "text": "2窓口で手続きを行うかたの本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "3権限確認ができる書類（法定代理人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "4在留カード等または特別永住者証明書等（外国人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "5続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
@@ -58,7 +403,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3075,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：マイナポータルを利用したオンライン申請をしたかた | 目黒区",
+      "meta": {
+        "og:title": "転入届：マイナポータルを利用したオンライン申請をしたかた",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：マイナポータルを利用したオンライン申請をしたかた"
+        },
+        {
+          "level": 2,
+          "text": "届出ができるかた（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "1引越しをするかた全員のマイナンバーカード等"
+        },
+        {
+          "level": 3,
+          "text": "2窓口で手続きを行うかたの本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "3在留カード等または特別永住者証明書等（外国人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "4引越しをするかたが記入した委任状（代理人による手続きの場合）"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
@@ -69,7 +477,82 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3304,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：マイナンバーカード等を使って代理人が窓口で手続きをするとき | 目黒区",
+      "meta": {
+        "og:title": "転入届：マイナンバーカード等を使って代理人が窓口で手続きをするとき",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：マイナンバーカード等を使って代理人が窓口で手続きをするとき"
+        },
+        {
+          "level": 2,
+          "text": "届出ができるかた（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "1引越しをするかた全員のマイナンバーカード等"
+        },
+        {
+          "level": 3,
+          "text": "2窓口で手続きを行うかたの本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "3引越しをするかたが記入した委任状"
+        },
+        {
+          "level": 3,
+          "text": "4在留カード等または特別永住者証明書等（外国人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "5続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
@@ -80,7 +563,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1168,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：目黒区外から目黒区に住所を変更したとき | 目黒区",
+      "meta": {
+        "og:title": "転入届：目黒区外から目黒区に住所を変更したとき",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：目黒区外から目黒区に住所を変更したとき"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/index.html",
@@ -91,7 +597,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1327,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越しの手続き（転入・転出など） | 目黒区",
+      "meta": {
+        "og:title": "引越しの手続き（転入・転出など）",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越しの手続き（転入・転出など）"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tenkyo/index.html",
@@ -102,7 +631,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1146,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転居届：目黒区内で住所を変更するとき | 目黒区",
+      "meta": {
+        "og:title": "転居届：目黒区内で住所を変更するとき",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tenkyo/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転居届：目黒区内で住所を変更するとき"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/kosekitodokede/index.html",
@@ -113,7 +665,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1255,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の届出（出生、死亡など） | 目黒区",
+      "meta": {
+        "og:title": "戸籍の届出（出生、死亡など）",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/kosekitodokede/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の届出（出生、死亡など）"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
@@ -124,7 +699,122 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 8203,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越しワンストップサービス | 目黒区",
+      "meta": {
+        "og:title": "引越しワンストップサービス",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越しワンストップサービス"
+        },
+        {
+          "level": 2,
+          "text": "サービスを利用される方へ"
+        },
+        {
+          "level": 3,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 3,
+          "text": "サービスを利用できる方"
+        },
+        {
+          "level": 3,
+          "text": "申請の方法"
+        },
+        {
+          "level": 3,
+          "text": "マイナポータル（ぴったりサービス）のメンテナンス情報等"
+        },
+        {
+          "level": 3,
+          "text": "申請可能期間"
+        },
+        {
+          "level": 3,
+          "text": "申請後の通知"
+        },
+        {
+          "level": 3,
+          "text": "申請時の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "国の問合せ窓口"
+        },
+        {
+          "level": 3,
+          "text": "電話によるお問合せ"
+        },
+        {
+          "level": 3,
+          "text": "Webサイトによるお問合せ"
+        },
+        {
+          "level": 2,
+          "text": "本サービスを利用して、目黒区に転出届をされる方へ"
+        },
+        {
+          "level": 2,
+          "text": "本サービスを利用して、目黒区への来庁予定の連絡（転入・転居予約）の届け出をされる方へ"
+        },
+        {
+          "level": 3,
+          "text": "受付窓口"
+        },
+        {
+          "level": 3,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "休日窓口について"
+        },
+        {
+          "level": 3,
+          "text": "転入または転居に伴うお手続き（マイナポータルの「関連手続」）"
+        },
+        {
+          "level": 3,
+          "text": "転入または転居に伴うお手続き（その他の手続き）"
+        },
+        {
+          "level": 2,
+          "text": "関連するページ"
+        },
+        {
+          "level": 3,
+          "text": "引越しワンストップサービスの概要とよくある質問"
+        },
+        {
+          "level": 3,
+          "text": "転入・転出・転居"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/honninkakunin-junin.html",
@@ -135,7 +825,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2087,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "本人確認を実施しています（住所変更の手続き、住民票の取得、印鑑登録に関する手続き） | 目黒区",
+      "meta": {
+        "og:title": "本人確認を実施しています（住所変更の手続き、住民票の取得、印鑑登録に関する手続き）",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/honninkakunin-junin.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "本人確認を実施しています（住所変更の手続き、住民票の取得、印鑑登録に関する手続き）"
+        },
+        {
+          "level": 2,
+          "text": "本人確認書類が必要な手続き"
+        },
+        {
+          "level": 2,
+          "text": "本人確認書類一覧"
+        },
+        {
+          "level": 3,
+          "text": "1点で確認可能なもの"
+        },
+        {
+          "level": 3,
+          "text": "2点で確認可能なもの"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
@@ -146,7 +883,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 205,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
@@ -157,7 +901,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 205,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/kyuuuzikisai.html",
@@ -168,7 +919,114 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4486,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票、マイナンバーカード等への旧氏（旧姓）記載 | 目黒区",
+      "meta": {
+        "og:title": "住民票、マイナンバーカード等への旧氏（旧姓）記載",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/kyuuuzikisai.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票、マイナンバーカード等への旧氏（旧姓）記載"
+        },
+        {
+          "level": 2,
+          "text": "住民票、マイナンバーカード等に記載できる旧氏"
+        },
+        {
+          "level": 3,
+          "text": "初めて旧氏記載をする場合"
+        },
+        {
+          "level": 4,
+          "text": "住民票に旧氏の振り仮名が記載されます"
+        },
+        {
+          "level": 4,
+          "text": "既に旧氏が記載されている方の旧氏の振り仮名について"
+        },
+        {
+          "level": 3,
+          "text": "旧氏を変更する場合"
+        },
+        {
+          "level": 3,
+          "text": "旧氏を消除する場合"
+        },
+        {
+          "level": 3,
+          "text": "旧氏を再記載する場合"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "旧氏記載の手続きについて"
+        },
+        {
+          "level": 3,
+          "text": "届出ができるかた"
+        },
+        {
+          "level": 3,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "1 窓口で手続きを行うかたの本人確認書類"
+        },
+        {
+          "level": 4,
+          "text": "2 旧氏の読み方が通用していることを証する書類"
+        },
+        {
+          "level": 4,
+          "text": "3 マイナンバーカード（お持ちのかた）"
+        },
+        {
+          "level": 4,
+          "text": "4 旧氏併記をするかたが記入した委任状（任意代理人のかた）"
+        },
+        {
+          "level": 4,
+          "text": "5 権限確認ができる書類（法定代理人のかた）"
+        },
+        {
+          "level": 3,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "旧氏を印鑑登録にも使用できます"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードの取得について"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
@@ -179,7 +1037,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1198,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引っ越し | 目黒区",
+      "meta": {
+        "og:title": "引っ越し",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引っ越し"
+        },
+        {
+          "level": 2,
+          "text": "引越しの手続き"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカード/マイナポータルを使った手続き"
+        },
+        {
+          "level": 3,
+          "text": "マイナポータルを利用したオンライン申請"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードを使った代理人による手続き"
+        },
+        {
+          "level": 2,
+          "text": "関連する手続き・証明書"
+        },
+        {
+          "level": 2,
+          "text": "窓口に関するご案内"
+        },
+        {
+          "level": 2,
+          "text": "こんなときに・こんなかたには"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
@@ -190,7 +1095,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2648,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "マイナンバーカードに関する手続きは一部を除いて地区サービス事務所でも行えます | 目黒区",
+      "meta": {
+        "og:title": "マイナンバーカードに関する手続きは一部を除いて地区サービス事務所でも行えます",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "マイナンバーカードに関する手続きは一部を除いて地区サービス事務所でも行えます"
+        },
+        {
+          "level": 2,
+          "text": "本庁舎でのマイナンバーカードに関する手続きは現在、非常に混雑しております"
+        },
+        {
+          "level": 3,
+          "text": "地区サービス事務所一覧"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードの手続き"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
@@ -201,7 +1149,126 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3237,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "マイナンバー入りの住民票がほしいとき | 目黒区",
+      "meta": {
+        "og:title": "マイナンバー入りの住民票がほしいとき",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "マイナンバー入りの住民票がほしいとき"
+        },
+        {
+          "level": 2,
+          "text": "請求できる方"
+        },
+        {
+          "level": 2,
+          "text": "請求する前に提出先等に確認しておくこと"
+        },
+        {
+          "level": 2,
+          "text": "1.本人または同じ世帯の方による請求"
+        },
+        {
+          "level": 3,
+          "text": "必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "1 住民票の写し等申請書"
+        },
+        {
+          "level": 4,
+          "text": "2 窓口にお越しになる方の本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "交付方法"
+        },
+        {
+          "level": 2,
+          "text": "2.任意代理人（委任を受けた方）による請求"
+        },
+        {
+          "level": 3,
+          "text": "必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "1 住民票の写し等申請書"
+        },
+        {
+          "level": 4,
+          "text": "2 窓口にお越しになる方の本人確認書類"
+        },
+        {
+          "level": 4,
+          "text": "3 マイナンバー入りの住民票が必要な方が記入した委任状"
+        },
+        {
+          "level": 3,
+          "text": "交付方法"
+        },
+        {
+          "level": 2,
+          "text": "3.法定代理人による請求"
+        },
+        {
+          "level": 3,
+          "text": "必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "1 住民票の写し等申請書"
+        },
+        {
+          "level": 4,
+          "text": "2 窓口にお越しになる方の本人確認書類"
+        },
+        {
+          "level": 4,
+          "text": "3 権限確認ができる書類"
+        },
+        {
+          "level": 3,
+          "text": "交付方法"
+        },
+        {
+          "level": 2,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "申請場所・申請時間"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/mynumber_rinji_madoguchi.html",
@@ -212,7 +1279,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3117,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "マイナンバーカードに関する手続きの休日開庁日 | 目黒区",
+      "meta": {
+        "og:title": "マイナンバーカードに関する手続きの休日開庁日",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/mynumber_rinji_madoguchi.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "マイナンバーカードに関する手続きの休日開庁日"
+        },
+        {
+          "level": 2,
+          "text": "休日窓口開設日時"
+        },
+        {
+          "level": 2,
+          "text": "「目黒区なう」で混雑状況を確認"
+        },
+        {
+          "level": 2,
+          "text": "場所"
+        },
+        {
+          "level": 2,
+          "text": "対応可能な手続き"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードに関する手続きは一部を除いて地区サービス事務所でも行えます（平日のみ）"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカード受け取りには事前予約が必要です"
+        },
+        {
+          "level": 3,
+          "text": "交付予約の注意点"
+        },
+        {
+          "level": 2,
+          "text": "目黒区マイナンバーカードコールセンター（通話料がかかります）"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター受付時間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
@@ -223,7 +1357,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4177,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "くらし・手続き | 目黒区",
+      "meta": {
+        "og:title": "くらし・手続き",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "ピックアップ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/holiday_kohu.html",
@@ -234,7 +1395,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2700,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "休日（土曜日・原則第2日曜日）の証明書交付窓口 | 目黒区",
+      "meta": {
+        "og:title": "休日（土曜日・原則第2日曜日）の証明書交付窓口",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/holiday_kohu.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "休日（土曜日・原則第2日曜日）の証明書交付窓口"
+        },
+        {
+          "level": 2,
+          "text": "受付時間"
+        },
+        {
+          "level": 2,
+          "text": "取扱業務"
+        },
+        {
+          "level": 2,
+          "text": "取扱っていない業務"
+        },
+        {
+          "level": 2,
+          "text": "開設場所"
+        },
+        {
+          "level": 2,
+          "text": "証明書交付窓口の休業日"
+        },
+        {
+          "level": 2,
+          "text": "休日窓口開設日"
+        },
+        {
+          "level": 2,
+          "text": "目黒駅行政サービス窓口の業務は、令和4年12月28日で終了しました。"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/konbinikoufu.html",
@@ -245,7 +1469,110 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5579,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "証明書のコンビニ交付サービス | 目黒区",
+      "meta": {
+        "og:title": "証明書のコンビニ交付サービス",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/konbinikoufu.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "証明書のコンビニ交付サービス"
+        },
+        {
+          "level": 2,
+          "text": "コンビニ交付サービスとは"
+        },
+        {
+          "level": 2,
+          "text": "取得できる証明書"
+        },
+        {
+          "level": 2,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "利用できるかた"
+        },
+        {
+          "level": 2,
+          "text": "利用時間"
+        },
+        {
+          "level": 2,
+          "text": "停止日"
+        },
+        {
+          "level": 2,
+          "text": "利用できるコンビニエンスストア等店舗"
+        },
+        {
+          "level": 2,
+          "text": "マルチコピー機（キオスク端末）の利用方法"
+        },
+        {
+          "level": 2,
+          "text": "コンビニエンスストア等店舗の店員による証明書交付対応はできません"
+        },
+        {
+          "level": 2,
+          "text": "コンビニ交付サービスに関する証明書ごとの問い合わせ先"
+        },
+        {
+          "level": 3,
+          "text": "住民票の写し、印鑑登録証明書に関するお問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "戸籍（全部・個人）事項証明書、戸籍の附票の写しに関するお問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "課税証明書、非課税証明書に関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "コンビニ交付サービス利用にあたっての注意事項"
+        },
+        {
+          "level": 3,
+          "text": "スマートフォンのマイナンバーカード"
+        },
+        {
+          "level": 4,
+          "text": "マイナンバーカード総合フリーダイヤル"
+        },
+        {
+          "level": 2,
+          "text": "セキュリティ対策"
+        },
+        {
+          "level": 2,
+          "text": "関連するページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
@@ -256,7 +1583,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 210,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
@@ -267,7 +1601,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 210,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
@@ -278,190 +1619,289 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1602,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源とごみの収集日・分別検索 | 目黒区",
+      "meta": {
+        "og:title": "資源とごみの収集日・分別検索",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの収集日・分別検索"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集日を確認"
+        },
+        {
+          "level": 2,
+          "text": "ごみ分別案内"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分別方法"
+        },
+        {
+          "level": 2,
+          "text": "見つからない時には"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        },
+        {
+          "level": 2,
+          "text": "ごみを減らすには"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.meguro.tokyo.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/holiday_kohu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/konbinikoufu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tenkyo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/kosekitodokede/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/mynumber_rinji_madoguchi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/honninkakunin-junin.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuudairi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/ido.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/kyuuuzikisai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

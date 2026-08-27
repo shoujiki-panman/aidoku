@@ -1,0 +1,1047 @@
+{
+  "municipality": "東京都",
+  "municipality_id": "tokyo-metro",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "top_url": "https://www.metro.tokyo.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
+  "candidates": [
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kurashi?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "link_text": "くらし・住まい",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kurashi",
+      "link_text": "くらし・住まい",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6833,
+      "has_jsonld": false,
+      "title": "くらし・住まい|暮らし・健康・福祉|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページのくらし・住まい(暮らし・健康・福祉)のページです。",
+        "og:description": "都庁総合ホームページのくらし・住まい(暮らし・健康・福祉)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "くらし・住まい|暮らし・健康・福祉|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/kurashi",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat2_kurashi.jpg/30b9836d-819f-80d9-2627-6f8112930144?version=1.1&t=1764164287502&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat2_kurashi.jpg/30b9836d-819f-80d9-2627-6f8112930144?version=1.1&t=1764164287502&imagePreview=1",
+        "og:image:type": "image/jpeg",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat2_kurashi.jpg/30b9836d-819f-80d9-2627-6f8112930144?version=1.1&t=1764164287502&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらし・住まい"
+        },
+        {
+          "level": 2,
+          "text": "報道発表"
+        },
+        {
+          "level": 2,
+          "text": "主な取り組み"
+        },
+        {
+          "level": 2,
+          "text": "くらし・住まいについての新着記事"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "link_text": "防災",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "link_text": "健康・医療",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "link_text": "高齢者・福祉",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kankyo/jogesuido?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "link_text": "水道・下水道",
+      "hops": 1,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi",
+      "link_text": "暮らし・健康・福祉",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/kurashi",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4386,
+      "has_jsonld": false,
+      "title": "暮らし・健康・福祉|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの暮らし・健康・福祉のページです。",
+        "og:description": "都庁総合ホームページの暮らし・健康・福祉のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "暮らし・健康・福祉|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "暮らし・健康・福祉"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "都全体 関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan",
+      "link_text": "防災",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/kurashi",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6397,
+      "has_jsonld": false,
+      "title": "防災|暮らし・健康・福祉|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの防災(暮らし・健康・福祉)のページです。",
+        "og:description": "都庁総合ホームページの防災(暮らし・健康・福祉)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "防災|暮らし・健康・福祉|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat1_bousai.jpg/4a289132-f61c-0b5e-4c21-a4f08fa32fbb?version=1.1&t=1764164287604&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat1_bousai.jpg/4a289132-f61c-0b5e-4c21-a4f08fa32fbb?version=1.1&t=1764164287604&imagePreview=1",
+        "og:image:type": "image/jpeg",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat1_bousai.jpg/4a289132-f61c-0b5e-4c21-a4f08fa32fbb?version=1.1&t=1764164287604&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "防災"
+        },
+        {
+          "level": 2,
+          "text": "報道発表"
+        },
+        {
+          "level": 2,
+          "text": "主な取り組み"
+        },
+        {
+          "level": 2,
+          "text": "防災についての新着記事"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo",
+      "link_text": "健康・医療",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/kurashi",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5579,
+      "has_jsonld": false,
+      "title": "健康・医療|暮らし・健康・福祉|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの健康・医療(暮らし・健康・福祉)のページです。",
+        "og:description": "都庁総合ホームページの健康・医療(暮らし・健康・福祉)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "健康・医療|暮らし・健康・福祉|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat3_kenko.jpg/b62d8fb4-6204-132c-9f2f-11ec9b6246b4?version=1.1&t=1764164287404&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat3_kenko.jpg/b62d8fb4-6204-132c-9f2f-11ec9b6246b4?version=1.1&t=1764164287404&imagePreview=1",
+        "og:image:type": "image/jpeg",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat3_kenko.jpg/b62d8fb4-6204-132c-9f2f-11ec9b6246b4?version=1.1&t=1764164287404&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "健康・医療"
+        },
+        {
+          "level": 2,
+          "text": "報道発表"
+        },
+        {
+          "level": 2,
+          "text": "主な取り組み"
+        },
+        {
+          "level": 2,
+          "text": "健康・医療についての新着記事"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi",
+      "link_text": "高齢者・福祉",
+      "hops": 2,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/kurashi",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6165,
+      "has_jsonld": false,
+      "title": "高齢者・福祉|暮らし・健康・福祉|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの高齢者・福祉(暮らし・健康・福祉)のページです。",
+        "og:description": "都庁総合ホームページの高齢者・福祉(暮らし・健康・福祉)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "高齢者・福祉|暮らし・健康・福祉|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat4_fukushi.jpg/9023d9bc-f135-cb8e-28b5-0f0be3fd6d71?version=1.1&t=1764164287306&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat4_fukushi.jpg/9023d9bc-f135-cb8e-28b5-0f0be3fd6d71?version=1.1&t=1764164287306&imagePreview=1",
+        "og:image:type": "image/jpeg",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat4_fukushi.jpg/9023d9bc-f135-cb8e-28b5-0f0be3fd6d71?version=1.1&t=1764164287306&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "福祉"
+        },
+        {
+          "level": 2,
+          "text": "報道発表"
+        },
+        {
+          "level": 2,
+          "text": "主な取り組み"
+        },
+        {
+          "level": 2,
+          "text": "福祉についての新着記事"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kankyo/jogesuido",
+      "link_text": "上下水道",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5252,
+      "has_jsonld": false,
+      "title": "上下水道|環境・都市基盤|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの上下水道(環境・都市基盤)のページです。",
+        "og:description": "都庁総合ホームページの上下水道(環境・都市基盤)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "上下水道|環境・都市基盤|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kankyo/jogesuido",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat4_suido.jpg/ddcba119-a692-a050-bc3c-07f65fe7f131?version=1.1&t=1764164287947&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat4_suido.jpg/ddcba119-a692-a050-bc3c-07f65fe7f131?version=1.1&t=1764164287947&imagePreview=1",
+        "og:image:type": "image/jpeg",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/45925314/46118100/cat4_suido.jpg/ddcba119-a692-a050-bc3c-07f65fe7f131?version=1.1&t=1764164287947&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "水道・下水道"
+        },
+        {
+          "level": 2,
+          "text": "報道発表"
+        },
+        {
+          "level": 2,
+          "text": "主な取り組み"
+        },
+        {
+          "level": 2,
+          "text": "水道・下水道についての新着記事"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan/kikikanri",
+      "link_text": "防災・危機管理",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6356,
+      "has_jsonld": false,
+      "title": "防災・危機管理|防災|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの防災・危機管理(防災)のページです。",
+        "og:description": "都庁総合ホームページの防災・危機管理(防災)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "防災・危機管理|防災|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan/kikikanri",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "防災・危機管理"
+        },
+        {
+          "level": 2,
+          "text": "防災情報"
+        },
+        {
+          "level": 2,
+          "text": "東日本大震災関連情報"
+        },
+        {
+          "level": 2,
+          "text": "防災・危機管理についての新着記事​"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan/kesatsu",
+      "link_text": "警察",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4553,
+      "has_jsonld": false,
+      "title": "警察|防災|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの警察(防災)のページです。",
+        "og:description": "都庁総合ホームページの警察(防災)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "警察|防災|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan/kesatsu",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "警察"
+        },
+        {
+          "level": 2,
+          "text": "警察についての新着記事​"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan/shobo",
+      "link_text": "消防",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6088,
+      "has_jsonld": false,
+      "title": "消防|防災|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの消防(防災)のページです。",
+        "og:description": "都庁総合ホームページの消防(防災)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "消防|防災|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan/shobo",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "消防"
+        },
+        {
+          "level": 2,
+          "text": "消防についての新着記事​"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo/shokunoanzen",
+      "link_text": "食の安全",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6034,
+      "has_jsonld": false,
+      "title": "食の安全|健康・医療|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの食の安全(健康・医療)のページです。",
+        "og:description": "都庁総合ホームページの食の安全(健康・医療)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "食の安全|健康・医療|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo/shokunoanzen",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "食の安全"
+        },
+        {
+          "level": 2,
+          "text": "食の安全"
+        },
+        {
+          "level": 2,
+          "text": "食の安全についての新着記事​"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo/kafunsho",
+      "link_text": "アレルギー疾患",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6034,
+      "has_jsonld": false,
+      "title": "アレルギー疾患|健康・医療|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページのアレルギー疾患(健康・医療)のページです。",
+        "og:description": "都庁総合ホームページのアレルギー疾患(健康・医療)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "アレルギー疾患|健康・医療|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo/kafunsho",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "アレルギー疾患"
+        },
+        {
+          "level": 2,
+          "text": "アレルギー疾患"
+        },
+        {
+          "level": 2,
+          "text": "アレルギー疾患についての新着記事​"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo/hokenjo",
+      "link_text": "保健所",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6115,
+      "has_jsonld": false,
+      "title": "保健所|健康・医療|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの保健所(健康・医療)のページです。",
+        "og:description": "都庁総合ホームページの保健所(健康・医療)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "保健所|健康・医療|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo/hokenjo",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "保健所"
+        },
+        {
+          "level": 2,
+          "text": "保健所"
+        },
+        {
+          "level": 2,
+          "text": "保健所についての新着記事​"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi/fukushiippan",
+      "link_text": "福祉一般",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/fukushi",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 6570,
+      "has_jsonld": false,
+      "title": "福祉一般|高齢者・福祉|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの福祉一般(高齢者・福祉)のページです。",
+        "og:description": "都庁総合ホームページの福祉一般(高齢者・福祉)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "福祉一般|高齢者・福祉|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi/fukushiippan",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "福祉一般"
+        },
+        {
+          "level": 2,
+          "text": "福祉一般についての新着記事​"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi/koresha",
+      "link_text": "高齢者",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/fukushi",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5582,
+      "has_jsonld": false,
+      "title": "高齢者|高齢者・福祉|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの高齢者(高齢者・福祉)のページです。",
+        "og:description": "都庁総合ホームページの高齢者(高齢者・福祉)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "高齢者|高齢者・福祉|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi/koresha",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "高齢者"
+        },
+        {
+          "level": 2,
+          "text": "高齢者についての新着記事​"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi/shogaisha",
+      "link_text": "障害者",
+      "hops": 3,
+      "score": 4,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi/fukushi",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 5464,
+      "has_jsonld": false,
+      "title": "障害者|高齢者・福祉|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページの障害者(高齢者・福祉)のページです。",
+        "og:description": "都庁総合ホームページの障害者(高齢者・福祉)のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "障害者|高齢者・福祉|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi/shogaisha",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "障害者"
+        },
+        {
+          "level": 2,
+          "text": "障害者についての新着記事​"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/purpose/apply?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "link_text": "手続き・申請",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi",
+      "status": 0,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/search?keyword=&category=163908",
+      "link_text": "申請・届出",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.metro.tokyo.lg.jp/kurashi",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 7420,
+      "has_jsonld": false,
+      "title": "タグ詳細検索|都庁総合ホームページ",
+      "meta": {
+        "description": "都庁総合ホームページのタグ詳細検索のページです。",
+        "og:description": "都庁総合ホームページのタグ詳細検索のページです。",
+        "og:locale": "ja_JP",
+        "og:locale:alternate": "ja_JP",
+        "og:site_name": "都庁総合",
+        "og:title": "タグ詳細検索|都庁総合ホームページ",
+        "og:type": "website",
+        "og:url": "https://www.metro.tokyo.lg.jp/search",
+        "og:image": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:secure_url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1",
+        "og:image:type": "image/png",
+        "og:image:url": "https://www.metro.tokyo.lg.jp/documents/158990/5052145/opg.png/3c79ba89-ab16-4589-4fad-b5b411615b25?version=1.1&t=1764164520819&imagePreview=1"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "お探しのページは見つかりませんか？"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.metro.tokyo.lg.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kurashi?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "status": 0,
+      "from_cache": true,
+      "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kurashi",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kankyo/jogesuido?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "status": 0,
+      "from_cache": false,
+      "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kankyo/jogesuido",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/purpose/apply?utm_source=search&utm_medium=internal&utm_id=sidebar",
+      "status": 0,
+      "from_cache": true,
+      "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
+      "error": "disallowed by robots.txt"
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/search?keyword=&category=163908",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan/kikikanri",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan/kesatsu",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/bosai-bohan/shobo",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo/shokunoanzen",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo/kafunsho",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/kenko-iryo/hokenjo",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi/fukushiippan",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi/koresha",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/kurashi/fukushi/shogaisha",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    }
+  ]
+}

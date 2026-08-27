@@ -1,0 +1,57 @@
+{
+  "municipality": "千代田区",
+  "municipality_id": "chiyoda",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tennyu.html",
+    "hops": 2,
+    "link_text": "転入届（他の市区町村または国外から千代田区に住所を異動するとき）",
+    "has_jsonld": false,
+    "text_len": 6527,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "「転入届」「転居届」の際は必ず転入先・転居先の市区町村役所にご来庁いただく必要があります。",
+  "online_clarity_pages": [
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tennyu.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "（転出証明書を添えて届ける場合）届出人の本人確認書類、転出証明書、引っ越す方全員のマイナンバーカード（お持ちの方）、在留カードまたは特別永住者証明書（外国人の方）、委任状（代理人時）。特例転入・ワンストップ事前通知・国外転入の場合は必要書類が異なる。",
+      "evidence": "届出人の本人確認書類（マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など）／転出証明書／引っ越す方全員のマイナンバーカード（お持ちの方）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "区役所総合窓口課または区内の出張所への来庁が必須。オンラインでは完結できない（マイナポータルの引越しワンストップは転出届のみ対象で、転入届は必ず来庁が必要）。",
+      "evidence": "ワンストップサービスにより市区町村役所への来庁が不要となるのは「転出届」のみです。「転入届」「転居届」の際は必ず転入先・転居先の市区町村役所にご来庁いただく必要があります。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "新しい住所に引っ越してから14日以内",
+      "evidence": "新しい住所に引っ越してから14日以内",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "転入届は届出方法が(1)転出証明書持参(2)特例転入(3)ワンストップ事前通知(4)国外転入の4パターンに分かれ、必要書類が方法ごとに異なるため単一の一覧としては提示されていない。手数料についてはページ内のどこにも言及がない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "municipality": "新宿区",
+  "municipality_id": "shinjuku",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
+    "hops": 2,
+    "link_text": "引越しで住所を異動される方は、窓口での「正確な住所の届出」が必要です",
+    "has_jsonld": false,
+    "text_len": 2432,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.shinjuku.lg.jp/todokede/index.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "引越しで住所を異動される方は、窓口での「正確な住所の届出」が必要です",
+  "online_clarity_pages": [
+    "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
+    "https://www.city.shinjuku.lg.jp/todokede/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口(来庁)での届出が必要とされている。オンラインで完結できるとの記載はない",
+      "evidence": "引越しで住所を異動される方は、窓口での「正確な住所の届出」が必要です",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "本ページは転入・転出の注意喚起の告知文のみで、手続き詳細（必要書類・期限・手数料）は掲載されていない。リンク先の「戸籍・住民票・印鑑登録・マイナンバーカード」トップページも項目一覧のハブに過ぎず、実際の転入届の詳細手続きページには本文中のURLが提示されておらず到達できなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

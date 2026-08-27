@@ -1,0 +1,57 @@
+{
+  "municipality": "港区",
+  "municipality_id": "minato",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html",
+    "hops": 3,
+    "link_text": "転入届（港区外から港区へ引越しするとき）",
+    "has_jsonld": false,
+    "text_len": 3260,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "国外や国内で港区外から港区へ引越ししたときに必要な届出です。窓口へ届出をしてください。手数料は無料です。",
+  "online_clarity_pages": [
+    "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "国内からの転入と国外からの転入で必要なものが異なる。共通:マイナンバーカード(持っている人全員分、暗証番号入力が必要)。国内転入:転出証明書(マイナンバーカードによる転出届をした人は不要)、窓口で手続きする人の本人確認書類、外国人住民は在留カード等。国外転入:転入者全員のパスポート、日本人のみ戸籍全部事項証明(戸籍謄本)と戸籍の附票(本籍が港区の場合は不要)、国民年金加入者は年金手帳、外国人住民は在留カード等、2人以上の世帯の外国人住民は家族関係を確認できる書類。",
+      "evidence": "国内からの転入と国外からの転入で必要なものが異なりますので、ご注意ください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "オンライン完結の記載なし。届出窓口は各総合支所区民課窓口サービス係または台場分室。受付時間は午前8時30分から午後5時まで(水曜日は台場分室を除き午後7時まで)。「引越し手続オンラインサービス」はあるが来庁予約のみで、届出自体はオンライン完結できない。",
+      "evidence": "届出窓口 各総合支所区民課窓口サービス係 台場分室 受付時間 午前8時30分から午後5時まで（水曜日は台場分室を除き午前8時30分から午後7時まで）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "港区に住み始めた日から14日以内(住み始める前の届出は不可)",
+      "evidence": "港区に住み始めた日から14日以内",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": true,
+      "value": "無料",
+      "evidence": "手数料は無料です。",
+      "source": "html",
+      "failure_reason": null
+    }
+  },
+  "page_notes": "必要書類は国内転入/国外転入で別テーブルに分かれ条件分岐が多いが、本文中に明記されているためfound trueとした。オンライン完結の可否は明言されていないが「引越し手続オンラインサービス」は来庁予約機能のみと文脈から判断できる。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

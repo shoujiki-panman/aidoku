@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.sumida.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
@@ -14,7 +35,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4295,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届・転居届と併せて行う「電子証明書の発行」の同一世帯員による代理手続きについて 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "転入届・転居届と併せて行う「電子証明書の発行」の同一世帯員による代理手続きについて",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届・転居届と併せて行う「電子証明書の発行」の同一世帯員による代理手続きについて"
+        },
+        {
+          "level": 2,
+          "text": "転入届・転居届と併せて行う「電子証明書の発行」の同一世帯員による代理手続きについて"
+        },
+        {
+          "level": 3,
+          "text": "手続きの際にお持ちいただくもの"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
@@ -25,7 +95,100 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6587,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越しワンストップサービスが始まりました（墨田区から転出の場合、来庁不要に） 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "引越しワンストップサービスが始まりました（墨田区から転出の場合、来庁不要に）",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越しワンストップサービスが始まりました（墨田区から転出の場合、来庁不要に）"
+        },
+        {
+          "level": 2,
+          "text": "引越しワンストップサービスとは"
+        },
+        {
+          "level": 2,
+          "text": "引越しワンストップサービスを利用できる方"
+        },
+        {
+          "level": 2,
+          "text": "引越しワンストップサービス手続きの流れ"
+        },
+        {
+          "level": 2,
+          "text": "墨田区からの転出手続"
+        },
+        {
+          "level": 3,
+          "text": "転出手続きの申請期間"
+        },
+        {
+          "level": 2,
+          "text": "墨田区への転入・転居手続"
+        },
+        {
+          "level": 3,
+          "text": "来庁申込できる期間"
+        },
+        {
+          "level": 3,
+          "text": "来庁場所"
+        },
+        {
+          "level": 3,
+          "text": "受付方法"
+        },
+        {
+          "level": 2,
+          "text": "手続の際の注意"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "窓口課問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "各担当課問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
@@ -36,7 +199,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3084,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の届出・証明 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "戸籍の届出・証明",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の届出・証明"
+        },
+        {
+          "level": 2,
+          "text": "窓口の混雑状況・呼び出し番号"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
@@ -47,7 +239,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6602,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の届出 墨田区公式ホームページ",
+      "meta": {
+        "description": "出生届、死亡届、婚姻届、離婚届、転籍届、分籍届、養子縁組届等について",
+        "og:title": "戸籍の届出",
+        "og:type": "article",
+        "og:description": "出生届、死亡届、婚姻届、離婚届、転籍届、分籍届、養子縁組届等について",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の届出"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の届出"
+        },
+        {
+          "level": 3,
+          "text": "届出人・申出人の本人確認"
+        },
+        {
+          "level": 3,
+          "text": "戸籍届出の時間外受付"
+        },
+        {
+          "level": 3,
+          "text": "毎月第2日曜開庁日及び毎月第1・3水曜夜間延長時の取扱い"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/index.html",
@@ -58,7 +309,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3084,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民登録の届出・証明（住民票）・閲覧 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "住民登録の届出・証明（住民票）・閲覧",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民登録の届出・証明（住民票）・閲覧"
+        },
+        {
+          "level": 2,
+          "text": "窓口の混雑状況・呼び出し番号"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
@@ -69,7 +349,184 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7784,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の証明 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "戸籍の証明",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の証明"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードを利用した便利な請求方法があります"
+        },
+        {
+          "level": 3,
+          "text": "コンビニ交付サービス"
+        },
+        {
+          "level": 3,
+          "text": "LoGoフォームによる電子申請"
+        },
+        {
+          "level": 2,
+          "text": "窓口で請求される場合"
+        },
+        {
+          "level": 3,
+          "text": "請求の際に明らかにしなければならない事項"
+        },
+        {
+          "level": 3,
+          "text": "請求できる方"
+        },
+        {
+          "level": 4,
+          "text": "戸籍に記載されている方、その方の配偶者、直系尊属（父母・祖父母）、直系卑属（子・孫）及び相続人の場合"
+        },
+        {
+          "level": 4,
+          "text": "代理人の場合"
+        },
+        {
+          "level": 4,
+          "text": "第三者が請求する場合"
+        },
+        {
+          "level": 5,
+          "text": "(1)個人の場合"
+        },
+        {
+          "level": 5,
+          "text": "(2)会社の場合"
+        },
+        {
+          "level": 4,
+          "text": "職務上の請求の場合"
+        },
+        {
+          "level": 5,
+          "text": "(1)資格者本人が請求する場合"
+        },
+        {
+          "level": 5,
+          "text": "(2)補助者が請求する場合"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の請求の際、本人確認を行います"
+        },
+        {
+          "level": 4,
+          "text": "本人確認に必要な身分証明書一覧"
+        },
+        {
+          "level": 5,
+          "text": "1点の提示でよいもの"
+        },
+        {
+          "level": 5,
+          "text": "2点以上（イ欄から2点以上またはイ欄とロ欄から1点ずつ以上）の提示が必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "取扱い窓口と証明の種類について"
+        },
+        {
+          "level": 3,
+          "text": "墨田区役所 窓口課 現在の呼出し番号・待ち人数"
+        },
+        {
+          "level": 3,
+          "text": "窓口の受付時間"
+        },
+        {
+          "level": 4,
+          "text": "開庁日（月曜日から金曜日※毎月第1・3水曜日を除く）"
+        },
+        {
+          "level": 4,
+          "text": "水曜夜間延長"
+        },
+        {
+          "level": 4,
+          "text": "第2日曜開庁（祝日の場合も開庁します。）"
+        },
+        {
+          "level": 3,
+          "text": "最近、戸籍の届出をされた方へ"
+        },
+        {
+          "level": 2,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "様式ダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "郵送による請求の場合"
+        },
+        {
+          "level": 3,
+          "text": "請求方法"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の附票の電話予約（夜間休日窓口受け取り）"
+        },
+        {
+          "level": 3,
+          "text": "電話予約窓口"
+        },
+        {
+          "level": 2,
+          "text": "時間外・休日の申請書の取次ぎ"
+        },
+        {
+          "level": 3,
+          "text": "取次ぎ内容"
+        },
+        {
+          "level": 3,
+          "text": "取次ぎ場所"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
@@ -80,7 +537,72 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4309,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "届出・登録・証明 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "届出・登録・証明",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "届出・登録・証明"
+        },
+        {
+          "level": 2,
+          "text": "受付時間・混雑状況"
+        },
+        {
+          "level": 2,
+          "text": "（届出・登録・証明）郵送・電子申請（オンライン）等でできる手続き"
+        },
+        {
+          "level": 2,
+          "text": "住民登録の届出・証明（住民票）・閲覧"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の届出・証明"
+        },
+        {
+          "level": 2,
+          "text": "印鑑登録・証明書"
+        },
+        {
+          "level": 2,
+          "text": "コンビニ交付サービス"
+        },
+        {
+          "level": 2,
+          "text": "キャッシュレス決済"
+        },
+        {
+          "level": 2,
+          "text": "住民基本台帳ネットワークシステム"
+        },
+        {
+          "level": 2,
+          "text": "外国人登録"
+        },
+        {
+          "level": 2,
+          "text": "住居表示、自動車臨時運行（仮ナンバー）、り災証明書"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
@@ -91,7 +613,96 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7564,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民登録の届出 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "住民登録の届出",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民登録の届出"
+        },
+        {
+          "level": 2,
+          "text": "混雑が予想される日"
+        },
+        {
+          "level": 3,
+          "text": "混雑状況はこちらから確認"
+        },
+        {
+          "level": 2,
+          "text": "各手続き"
+        },
+        {
+          "level": 3,
+          "text": "転入（他市区町村から墨田区への引っ越し）"
+        },
+        {
+          "level": 3,
+          "text": "国外からの転入（国外から墨田区への引っ越し）"
+        },
+        {
+          "level": 3,
+          "text": "転出（墨田区から他市区町村への引っ越し）"
+        },
+        {
+          "level": 3,
+          "text": "国外への転出（墨田区から国外への引っ越し）"
+        },
+        {
+          "level": 3,
+          "text": "転居（墨田区内での引っ越し）"
+        },
+        {
+          "level": 3,
+          "text": "世帯変更届（世帯合併、世帯分離、世帯変更など）"
+        },
+        {
+          "level": 2,
+          "text": "各種様式"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先・提出先"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "他部署での手続き"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/tetudukihayami.html",
@@ -102,7 +713,72 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4943,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "（届出・登録・証明）郵送・電子申請（オンライン）等でできる手続の早見表 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "（届出・登録・証明）郵送・電子申請（オンライン）等でできる手続の早見表",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/tetudukihayami.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "（届出・登録・証明）郵送・電子申請（オンライン）等でできる手続の早見表"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "1 住所の異動（届出）"
+        },
+        {
+          "level": 2,
+          "text": "2 住民異動関係（証明）"
+        },
+        {
+          "level": 2,
+          "text": "3 戸籍関係（証明）"
+        },
+        {
+          "level": 2,
+          "text": "4 印鑑登録関係（証明・届出）"
+        },
+        {
+          "level": 2,
+          "text": "5 住居表示（届出・証明）"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/konzatsu-kanwa.html",
@@ -113,7 +789,92 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4475,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区役所1階及び2階窓口（住民登録やマイナンバーカード等）の混雑緩和対策について 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "区役所1階及び2階窓口（住民登録やマイナンバーカード等）の混雑緩和対策について",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/konzatsu-kanwa.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区役所1階及び2階窓口（住民登録やマイナンバーカード等）の混雑緩和対策について"
+        },
+        {
+          "level": 2,
+          "text": "混雑予想日"
+        },
+        {
+          "level": 2,
+          "text": "現在の窓口混雑状況（区役所1階及び2階）"
+        },
+        {
+          "level": 2,
+          "text": "各出張所のご案内"
+        },
+        {
+          "level": 2,
+          "text": "来庁予約の手続"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードの受取や電子証明書の手続"
+        },
+        {
+          "level": 2,
+          "text": "来庁しない手続"
+        },
+        {
+          "level": 3,
+          "text": "郵送での手続"
+        },
+        {
+          "level": 3,
+          "text": "墨田区から転出（マイナンバーカードをお持ちの方）"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードの電子証明書の暗証番号初期化（ロック解除）"
+        },
+        {
+          "level": 3,
+          "text": "証明書コンビニ交付サービス"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードに関する様々な手続動画"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/mado-yuso_taisaku.html",
@@ -124,7 +885,68 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4267,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "窓口課の郵送等で請求できる主な業務 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "窓口課の郵送等で請求できる主な業務",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/mado-yuso_taisaku.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "窓口課の郵送等で請求できる主な業務"
+        },
+        {
+          "level": 2,
+          "text": "住所の異動"
+        },
+        {
+          "level": 2,
+          "text": "戸籍関係"
+        },
+        {
+          "level": 2,
+          "text": "住民票関係"
+        },
+        {
+          "level": 2,
+          "text": "住居表示"
+        },
+        {
+          "level": 2,
+          "text": "コンビニ交付"
+        },
+        {
+          "level": 2,
+          "text": "電子申請サービス（LoGoフォーム）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
@@ -135,7 +957,128 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5231,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票等の証明書 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "住民票等の証明書",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票等の証明書"
+        },
+        {
+          "level": 2,
+          "text": "以下の方法で取得できます"
+        },
+        {
+          "level": 2,
+          "text": "コンビニ交付サービス"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアで証明書を即時取得できます"
+        },
+        {
+          "level": 3,
+          "text": "ご利用に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "詳細はこちら"
+        },
+        {
+          "level": 2,
+          "text": "自宅にいながら住民票が取れるサービス（LoGoフォーム)"
+        },
+        {
+          "level": 3,
+          "text": "窓口に行くことなく手続きができます"
+        },
+        {
+          "level": 3,
+          "text": "ご利用に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "請求はこちら"
+        },
+        {
+          "level": 3,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "郵送による請求"
+        },
+        {
+          "level": 2,
+          "text": "電話予約による夜間休日窓口受け取り"
+        },
+        {
+          "level": 2,
+          "text": "窓口での請求"
+        },
+        {
+          "level": 3,
+          "text": "請求の際に必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "本人または同一世帯の世帯員からの請求の場合"
+        },
+        {
+          "level": 4,
+          "text": "代理人による請求の場合"
+        },
+        {
+          "level": 4,
+          "text": "第三者の方からの請求の場合"
+        },
+        {
+          "level": 3,
+          "text": "取得できる場所"
+        },
+        {
+          "level": 3,
+          "text": "関連リンク"
+        },
+        {
+          "level": 3,
+          "text": "毎月第1・3水曜日の窓口の延長開設・第2日曜日の窓口の開設"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
@@ -146,7 +1089,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3305,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越し 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "引越し",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越し"
+        },
+        {
+          "level": 2,
+          "text": "手続き・届け出"
+        },
+        {
+          "level": 2,
+          "text": "住宅"
+        },
+        {
+          "level": 2,
+          "text": "飼い犬に関する届け出"
+        },
+        {
+          "level": 2,
+          "text": "家庭から発生する資源とごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "区役所への行き方・開庁時間"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
@@ -157,7 +1153,116 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5265,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和7年12月1日から墨田区役所庁舎一部窓口の受付時間を変更しました（平日は午前9時から午後4時30分までに変更ほか） 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "令和7年12月1日から墨田区役所庁舎一部窓口の受付時間を変更しました（平日は午前9時から午後4時30分までに変更ほか）",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和7年12月1日から墨田区役所庁舎一部窓口の受付時間を変更しました（平日は午前9時から午後4時30分までに変更ほか）"
+        },
+        {
+          "level": 2,
+          "text": "受付時間の変更対象窓口（課）"
+        },
+        {
+          "level": 3,
+          "text": "区役所1階"
+        },
+        {
+          "level": 3,
+          "text": "区役所2階"
+        },
+        {
+          "level": 3,
+          "text": "区役所4階"
+        },
+        {
+          "level": 4,
+          "text": "注意 ※対象窓口以外の部署および各出張所については受付時間の変更はありません。"
+        },
+        {
+          "level": 2,
+          "text": "変更点"
+        },
+        {
+          "level": 2,
+          "text": "案内チラシ（過去にご案内したもの）"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 3,
+          "text": "Q1:なぜ受付時間を見直すのですか"
+        },
+        {
+          "level": 3,
+          "text": "Q2:電話もつながらないのですか"
+        },
+        {
+          "level": 3,
+          "text": "Q3:出勤前後に手続できなくなるのでサービスの低下です。さらに混雑しませんか"
+        },
+        {
+          "level": 3,
+          "text": "Q4:なぜ9時から16時30分になったのですか"
+        },
+        {
+          "level": 3,
+          "text": "Q5:受付時間の短縮により、職員の勤務時間も短縮されるのですか"
+        },
+        {
+          "level": 3,
+          "text": "Q6:夜間、土曜日、日曜日、祝日に手続をしたいのですが"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 3,
+          "text": "郵送・電子申請（オンライン）等でできる手続きの一覧"
+        },
+        {
+          "level": 3,
+          "text": "墨田区役所に関すること"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/zyuutau_zyosei_seido.html",
@@ -168,7 +1273,104 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3378,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住宅に関する助成制度 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "住宅に関する助成制度",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/zyuutau_zyosei_seido.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住宅に関する助成制度"
+        },
+        {
+          "level": 2,
+          "text": "◎子育て世帯・若年夫婦世帯の住まい応援"
+        },
+        {
+          "level": 3,
+          "text": "住宅を購入したとき"
+        },
+        {
+          "level": 2,
+          "text": "◎住まいの長寿命化を応援（安心して自宅に住み続けられるために）"
+        },
+        {
+          "level": 3,
+          "text": "建物の状況を調べる"
+        },
+        {
+          "level": 2,
+          "text": "◎バリアフリー改修をする"
+        },
+        {
+          "level": 3,
+          "text": "障害のある方"
+        },
+        {
+          "level": 3,
+          "text": "65歳以上の方"
+        },
+        {
+          "level": 2,
+          "text": "◎災害に備えて住まいを改修する"
+        },
+        {
+          "level": 3,
+          "text": "地震に強い住まいに改修する"
+        },
+        {
+          "level": 3,
+          "text": "燃えにくい住まいに改修する"
+        },
+        {
+          "level": 2,
+          "text": "◎環境に配慮した住まいづくり"
+        },
+        {
+          "level": 3,
+          "text": "建物を緑化する、生垣や植込みをつくる"
+        },
+        {
+          "level": 3,
+          "text": "自然エネルギーを使う、省エネルギーに配慮する"
+        },
+        {
+          "level": 2,
+          "text": "◎その他"
+        },
+        {
+          "level": 3,
+          "text": "改修費用を借りる"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/kasituke_seido/index.html",
@@ -179,7 +1381,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2744,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住宅に関する貸付制度 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "住宅に関する貸付制度",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/kasituke_seido/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住宅に関する貸付制度"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/index.html",
@@ -190,7 +1417,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2939,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "受付時間・混雑状況 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "受付時間・混雑状況",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "受付時間・混雑状況"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/suiyou_mado.html",
@@ -201,7 +1453,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5458,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "毎月第1・3水曜日に区役所の一部窓口を延長しています 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "毎月第1・3水曜日に区役所の一部窓口を延長しています",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/suiyou_mado.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "毎月第1・3水曜日に区役所の一部窓口を延長しています"
+        },
+        {
+          "level": 2,
+          "text": "受付時間"
+        },
+        {
+          "level": 2,
+          "text": "取扱業務"
+        },
+        {
+          "level": 2,
+          "text": "注意事項等"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/index.html",
@@ -212,7 +1517,104 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3304,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "くらし 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "くらし",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらし"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "届出・登録・証明"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "おくやみコーナー・ハンドブック・葬儀"
+        },
+        {
+          "level": 2,
+          "text": "税金"
+        },
+        {
+          "level": 2,
+          "text": "国民年金"
+        },
+        {
+          "level": 2,
+          "text": "健康保険"
+        },
+        {
+          "level": 2,
+          "text": "資源物・ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "環境・緑・雨水・生物・地球温暖化"
+        },
+        {
+          "level": 2,
+          "text": "墨田区内循環バス"
+        },
+        {
+          "level": 2,
+          "text": "自転車・交通安全"
+        },
+        {
+          "level": 2,
+          "text": "住宅"
+        },
+        {
+          "level": 2,
+          "text": "火事・地震に強い建物"
+        },
+        {
+          "level": 2,
+          "text": "消費生活に関すること"
+        },
+        {
+          "level": 2,
+          "text": "地域活動・ボランティア"
+        },
+        {
+          "level": 2,
+          "text": "多文化共生"
+        },
+        {
+          "level": 2,
+          "text": "スポーツ"
+        },
+        {
+          "level": 2,
+          "text": "生涯学習"
+        },
+        {
+          "level": 2,
+          "text": "相談窓口"
+        },
+        {
+          "level": 2,
+          "text": "オンラインサービス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/kenkouhoken/kokuminkenkouhoken/hokensyou/kokuhokisaihenkou.html",
@@ -223,7 +1625,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3328,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "世帯主・住所等に変更があったときの手続き 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "世帯主・住所等に変更があったときの手続き",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/kenkouhoken/kokuminkenkouhoken/hokensyou/kokuhokisaihenkou.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "世帯主・住所等に変更があったときの手続き"
+        },
+        {
+          "level": 2,
+          "text": "世帯主・住所等に変更があったとき"
+        },
+        {
+          "level": 2,
+          "text": "手続きに必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "届出期間"
+        },
+        {
+          "level": 2,
+          "text": "申請先（所管課担当・問い合わせ先）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/uketori/mainayoyaku.html",
@@ -234,7 +1689,76 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5510,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【予約をお願いします】マイナンバーカードに関する手続きの予約について（受け取り・電子証明書に関する手続き） 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "【予約をお願いします】マイナンバーカードに関する手続きの予約について（受け取り・電子証明書に関する手続き）",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/mynumber/uketori/mainayoyaku.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【予約をお願いします】マイナンバーカードに関する手続きの予約について（受け取り・電子証明書に関する手続き）"
+        },
+        {
+          "level": 2,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカード受取予約に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "電子証明書に関する手続きの予約に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "予約はこちらから"
+        },
+        {
+          "level": 3,
+          "text": "スマートフォン・パソコンから"
+        },
+        {
+          "level": 3,
+          "text": "電話から"
+        },
+        {
+          "level": 2,
+          "text": "予約の変更について"
+        },
+        {
+          "level": 2,
+          "text": "交付時の本人確認書類、注意点など"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/index.html",
@@ -245,7 +1769,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4503,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "マイナンバー 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "マイナンバー",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/mynumber/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "区からのお願い"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードを申請された方へ"
+        },
+        {
+          "level": 2,
+          "text": "【手続きは予約優先】マイナンバーカードに関する手続きの予約ができます"
+        },
+        {
+          "level": 2,
+          "text": "【1～4分で分かる！】マイナンバーカードに関する各種手続き解説動画"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせの多い内容"
+        },
+        {
+          "level": 2,
+          "text": "目的別一覧"
+        },
+        {
+          "level": 2,
+          "text": "案内・問合せ"
+        },
+        {
+          "level": 2,
+          "text": "カードの申請・発行"
+        },
+        {
+          "level": 2,
+          "text": "カードの受け取り"
+        },
+        {
+          "level": 2,
+          "text": "カードの電子証明書に関すること"
+        },
+        {
+          "level": 2,
+          "text": "カードの更新・変更・紛失・再交付"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバー制度"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/okuyami/okuyami.html",
@@ -256,7 +1853,116 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6364,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "おくやみコーナー・ハンドブックのご案内・葬儀 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "おくやみコーナー・ハンドブックのご案内・葬儀",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/okuyami/okuyami.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "おくやみコーナー・ハンドブックのご案内・葬儀"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "1 おくやみハンドブック"
+        },
+        {
+          "level": 2,
+          "text": "2 おくやみコーナーのご案内"
+        },
+        {
+          "level": 2,
+          "text": "おくやみコーナーの利用方法（事前予約制）"
+        },
+        {
+          "level": 2,
+          "text": "受付時間・受付場所について"
+        },
+        {
+          "level": 3,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "受付場所"
+        },
+        {
+          "level": 2,
+          "text": "予約について"
+        },
+        {
+          "level": 3,
+          "text": "インターネット予約"
+        },
+        {
+          "level": 3,
+          "text": "電話予約"
+        },
+        {
+          "level": 2,
+          "text": "利用形態について"
+        },
+        {
+          "level": 3,
+          "text": "1 案内型"
+        },
+        {
+          "level": 3,
+          "text": "2 ワンストップ型（職員直参型）"
+        },
+        {
+          "level": 2,
+          "text": "申請書等の作成補助"
+        },
+        {
+          "level": 2,
+          "text": "おくやみコーナーにお持ちいただくもの"
+        },
+        {
+          "level": 3,
+          "text": "来庁される方の代表的な持ち物"
+        },
+        {
+          "level": 3,
+          "text": "亡くなられた方の物で代表的な持ち物"
+        },
+        {
+          "level": 2,
+          "text": "3 葬儀に関すること（区民葬儀・助成制度、都立霊園など）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/zeikin/index.html",
@@ -267,7 +1973,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4222,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "税金 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "税金",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/zeikin/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "税金"
+        },
+        {
+          "level": 2,
+          "text": "窓口の混雑状況・呼び出し番号"
+        },
+        {
+          "level": 2,
+          "text": "【税務課】郵送・電子申請（オンライン）等でできる手続一覧"
+        },
+        {
+          "level": 2,
+          "text": "税に関するお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "住民税"
+        },
+        {
+          "level": 2,
+          "text": "軽自動車税"
+        },
+        {
+          "level": 2,
+          "text": "納税"
+        },
+        {
+          "level": 2,
+          "text": "税金の減免・還付"
+        },
+        {
+          "level": 2,
+          "text": "税金の証明"
+        },
+        {
+          "level": 2,
+          "text": "税制改正"
+        },
+        {
+          "level": 2,
+          "text": "特別区たばこ税・入湯税"
+        },
+        {
+          "level": 2,
+          "text": "その他の税金"
+        },
+        {
+          "level": 2,
+          "text": "区税の問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/kokuminnenkin/index.html",
@@ -278,190 +2057,291 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3061,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "国民年金 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "国民年金",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/kokuminnenkin/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "国民年金"
+        },
+        {
+          "level": 2,
+          "text": "窓口の混雑状況・呼び出し番号"
+        },
+        {
+          "level": 2,
+          "text": "【国保年金課】郵送・電子申請（オンライン）等でできる手続一覧"
+        },
+        {
+          "level": 2,
+          "text": "国民年金とは"
+        },
+        {
+          "level": 2,
+          "text": "受けられる給付"
+        },
+        {
+          "level": 2,
+          "text": "年金保険料納付の減免・猶予"
+        },
+        {
+          "level": 2,
+          "text": "そのほかの年金"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.sumida.lg.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/okuyami/okuyami.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/zyuutau_zyosei_seido.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/kasituke_seido/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/kenkouhoken/kokuminkenkouhoken/hokensyou/kokuhokisaihenkou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/tetudukihayami.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/konzatsu-kanwa.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/suiyou_mado.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/uketori/mainayoyaku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/zeikin/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/kokuminnenkin/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/mado-yuso_taisaku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

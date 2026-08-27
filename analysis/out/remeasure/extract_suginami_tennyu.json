@@ -1,0 +1,62 @@
+{
+  "municipality": "杉並区",
+  "municipality_id": "suginami",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tennyuu/index.html",
+    "hops": 3,
+    "link_text": "転入届：杉並区外から杉並区に住所を変更したとき",
+    "has_jsonld": false,
+    "text_len": 1166,
+    "truncated": false,
+    "n_links": 34
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.suginami.tokyo.jp/s018/996.html",
+    "https://www.city.suginami.tokyo.jp/s018/540.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "他の区市町村から杉並区に引越しをしたときは、14日以内に杉並区の窓口で転入の手続きが必要です。",
+  "online_clarity_pages": [
+    "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tennyuu/index.html",
+    "https://www.city.suginami.tokyo.jp/s018/996.html",
+    "https://www.city.suginami.tokyo.jp/s018/540.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "転出証明書、窓口で手続きを行う方の本人確認書類、引越しをする方全員のマイナンバーカード（お持ちの方）、在留カードまたは特別永住者証明書（外国人の方）、続柄を証明する書類の原本（世帯主との続柄が転出証明書で確認できない場合）",
+      "evidence": "前住所地の区市町村で転出届を行い、「転出証明書」または「転出証明書に準ずる証明書」の交付を受けてください。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "区民課区民係（区役所東棟1階）または区民事務所の窓口で手続き。マイナポータルで転出届をオンライン申請した場合でも、転入手続きは必ず窓口に来庁する必要があり、オンラインだけでは完結しない。",
+      "evidence": "杉並区の新しい住所に住み始めてから、14日以内に必ずマイナンバーカードをお持ちの上、杉並区の窓口で転入手続きを行ってください。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "杉並区の新しい住所に住み始めてから14日以内（マイナポータル利用の場合はマイナポータルに入力した引越し日から30日以内という条件も付加）",
+      "evidence": "杉並区の新しい住所に住み始めてから14日以内です。住み始める前に受付はできません。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "トップページ（index.html）は届出パターンの一覧だけで詳細情報を持たず、必要書類・窓口・期限は「本人が手続き」「マイナポータル」など各サブページに分散している。手数料については追跡した2つのサブページ（996.html, 540.html）のいずれにも記載がなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}
