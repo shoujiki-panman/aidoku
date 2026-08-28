@@ -135,6 +135,37 @@ def failure_reply(reason: str) -> str:
     }, ensure_ascii=False)
 
 
+class 追従後の指示(unittest.TestCase):
+    """★プロンプトに足した「記載なしにする前に必ずリンクを入れる」規則が、
+    追従後の2回目にも効いて `follow_urlsは最大0件: 1件ある` で落ちた（粗大ごみ・実測）。
+
+    2回目は「ここで終わり」でなければならない。打ち消しが消えたら落ちるようにする。
+    """
+
+    def build(self, *, with_extra: bool):
+        case = TestCase("sodaigomi", "fee", "質問", "1.0")
+        extra = [("https://example.jp/next", "リンク先の本文")] if with_extra else None
+        prompt, _, _ = build_input(
+            page(), "練馬区", "粗大ごみ", case, FakeFetcher(), extra_pages=extra)
+        return prompt
+
+    def test_初回はリンクを入れるよう求める(self):
+        self.assertIn("記載なし", self.build(with_extra=False))
+        self.assertNotIn("ここで終わりです", self.build(with_extra=False))
+
+    def test_追従後は打ち消す(self):
+        prompt = self.build(with_extra=True)
+        self.assertIn("ここで終わりです", prompt)
+        self.assertIn("空配列", prompt)
+        self.assertIn("ここでは適用しません", prompt)
+
+    def test_打ち消しは本文の後に置く(self):
+        # 先に置くと、後ろの規則に上書きされる。順序が意味を持つ。
+        prompt = self.build(with_extra=True)
+        self.assertGreater(prompt.index("ここで終わりです"),
+                           prompt.index("リンク先ページの本文"))
+
+
 class FactTypeCallTest(unittest.TestCase):
     def test_promptは1つのfact_typeだけを指定する(self):
         case = TestCase("tennyu", "documents", "練馬区の必要書類は何か", "1.0")
