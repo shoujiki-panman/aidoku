@@ -4,17 +4,147 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.tokyo-nakano.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+      "link_text": "児童手当・助成",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 775,
+      "has_jsonld": false,
+      "title": "児童手当・助成 | 中野区",
+      "meta": {
+        "og:title": "児童手当・助成",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "児童手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "小学生～"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 13:00:14 GMT",
+      "etag": null
+    },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
       "link_text": "児童手当・助成",
       "hops": 2,
       "score": 21,
-      "parent": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 1500,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当・助成 | 中野区",
+      "meta": {
+        "og:title": "児童手当・助成",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "児童手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "子どもの手当・給付金"
+        },
+        {
+          "level": 2,
+          "text": "窓口に来庁されなくてもできる手続き（子ども総合窓口）"
+        },
+        {
+          "level": 2,
+          "text": "児童手当など"
+        },
+        {
+          "level": 2,
+          "text": "医療費助成"
+        },
+        {
+          "level": 2,
+          "text": "妊娠期・乳幼児期の支援"
+        },
+        {
+          "level": 2,
+          "text": "その他の給付"
+        },
+        {
+          "level": 2,
+          "text": "保育料・就学援助"
+        },
+        {
+          "level": 2,
+          "text": "妊娠を望む方へ"
+        },
+        {
+          "level": 2,
+          "text": "小児慢性特定疾病医療機関・小児慢性特定疾病指定医の指定等の申請について（医療機関関係者用）"
+        },
+        {
+          "level": 2,
+          "text": "目的別から探す"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
@@ -25,7 +155,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 917,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当など | 中野区",
+      "meta": {
+        "og:title": "児童手当など",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "児童手当など"
+        },
+        {
+          "level": 2,
+          "text": "児童手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
@@ -36,7 +199,72 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2741,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当の制度改正(令和6年10月分以降) | 中野区",
+      "meta": {
+        "og:title": "児童手当の制度改正(令和6年10月分以降)",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "児童手当の制度改正(令和6年10月分以降)"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "制度改正（拡充）の内容"
+        },
+        {
+          "level": 2,
+          "text": "申請手続きの要否確認について"
+        },
+        {
+          "level": 3,
+          "text": "申請が必要な方"
+        },
+        {
+          "level": 3,
+          "text": "申請が不要な方の例"
+        },
+        {
+          "level": 2,
+          "text": "申請方法（電子/郵送/窓口）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ・提出先/申請受付窓口"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "児童手当など"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
@@ -47,40 +275,252 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 9800,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
-      "link_text": "中野区子どもと子育て家庭の実態調査",
-      "hops": 2,
-      "score": 11,
-      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 768,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/r6kodomojittaityousa.html",
-      "link_text": "令和6年度中野区子どもと子育て家庭の実態調査報告書",
-      "hops": 3,
-      "score": 11,
-      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1438,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/kosodate.html",
-      "link_text": "令和元年度中野区子どもと子育て家庭の実態調査報告書",
-      "hops": 3,
-      "score": 11,
-      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1493,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当 | 中野区",
+      "meta": {
+        "og:title": "児童手当",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "児童手当"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 3,
+          "text": "多子加算の算定を受けている児童手当受給者の方へ"
+        },
+        {
+          "level": 2,
+          "text": "児童手当（国制度）"
+        },
+        {
+          "level": 2,
+          "text": "令和6年度児童手当制度改正について"
+        },
+        {
+          "level": 2,
+          "text": "支給対象者"
+        },
+        {
+          "level": 2,
+          "text": "手当額と支給方法"
+        },
+        {
+          "level": 2,
+          "text": "手当を受けるためには"
+        },
+        {
+          "level": 3,
+          "text": "認定請求手続き（初めて児童手当の申請をする方）"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 4,
+          "text": "郵送による申請（様式は関連ファイルをご確認ください。）"
+        },
+        {
+          "level": 4,
+          "text": "窓口での申請"
+        },
+        {
+          "level": 5,
+          "text": "申請時の注意事項"
+        },
+        {
+          "level": 3,
+          "text": "額改定認定請求手続き（すでに中野区で児童手当を受給している方）"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 4,
+          "text": "郵送による申請（様式は関連ファイルをご確認ください。）"
+        },
+        {
+          "level": 4,
+          "text": "窓口での申請"
+        },
+        {
+          "level": 2,
+          "text": "現況届"
+        },
+        {
+          "level": 2,
+          "text": "その他手続き（振込口座の変更、手当受給証明書の発行 等）"
+        },
+        {
+          "level": 3,
+          "text": "児童手当 口座振込依頼（変更）書"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 4,
+          "text": "郵送による申請（様式は関連ファイルをご確認ください。）"
+        },
+        {
+          "level": 3,
+          "text": "児童手当受給証明書交付願"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 3,
+          "text": "児童手当 受給事由消滅届"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 4,
+          "text": "郵送による申請（様式は関連ファイルをご確認ください。）"
+        },
+        {
+          "level": 3,
+          "text": "児童手当 氏名・住所等変更届"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 4,
+          "text": "郵送による申請（様式は関連ファイルをご確認ください。）"
+        },
+        {
+          "level": 3,
+          "text": "児童手当 別居監護同意書"
+        },
+        {
+          "level": 4,
+          "text": "郵送による申請（様式は関連ファイルをご確認ください。）"
+        },
+        {
+          "level": 3,
+          "text": "児童手当 認定請求取下書"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 4,
+          "text": "郵送による申請（様式は関連ファイルをご確認ください。）"
+        },
+        {
+          "level": 3,
+          "text": "未支払 児童手当 請求書"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 4,
+          "text": "郵送による申請（様式は関連ファイルをご確認ください。）"
+        },
+        {
+          "level": 3,
+          "text": "児童手当の寄附を行いたいとき"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 3,
+          "text": "中野区から他自治体へ転出した場合"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "令和6年9月分までの児童手当における所得制限について"
+        },
+        {
+          "level": 3,
+          "text": "所得額"
+        },
+        {
+          "level": 3,
+          "text": "所得から控除できる額"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先・郵送による提出先/申請受付窓口"
+        },
+        {
+          "level": 3,
+          "text": "児童手当に関する問い合わせ先"
+        },
+        {
+          "level": 3,
+          "text": "郵送による提出先/申請受付窓口"
+        },
+        {
+          "level": 4,
+          "text": "郵送による提出先"
+        },
+        {
+          "level": 4,
+          "text": "申請受付窓口"
+        },
+        {
+          "level": 2,
+          "text": "関連ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "児童手当など"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
@@ -91,18 +531,464 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2141,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども・若者支援センターのご案内 | 中野区",
+      "meta": {
+        "og:title": "子ども・若者支援センターのご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "子ども・若者支援センターのご案内"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "子ども・若者支援センターの主な機能"
+        },
+        {
+          "level": 3,
+          "text": "総合相談"
+        },
+        {
+          "level": 3,
+          "text": "児童虐待相談"
+        },
+        {
+          "level": 3,
+          "text": "若者相談"
+        },
+        {
+          "level": 3,
+          "text": "就学相談"
+        },
+        {
+          "level": 2,
+          "text": "施設概要"
+        },
+        {
+          "level": 3,
+          "text": "所在地"
+        },
+        {
+          "level": 3,
+          "text": "アクセス"
+        },
+        {
+          "level": 3,
+          "text": "みらいステップなかのフロア案内"
+        },
+        {
+          "level": 2,
+          "text": "関連ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・家庭の相談"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/index.html",
       "link_text": "小学生～",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1028,
+      "has_jsonld": false,
+      "title": "小学生～ | 中野区",
+      "meta": {
+        "og:title": "小学生～",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "小学生～"
+        },
+        {
+          "level": 2,
+          "text": "【18歳以下のお子さんへ】敬老カードに使用するイラストを募集します"
+        },
+        {
+          "level": 2,
+          "text": "相談"
+        },
+        {
+          "level": 2,
+          "text": "児童手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "学ぶ"
+        },
+        {
+          "level": 2,
+          "text": "遊ぶ"
+        },
+        {
+          "level": 2,
+          "text": "放課後の居場所"
+        },
+        {
+          "level": 2,
+          "text": "年齢別から探す"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/keyword/kodomosoudansitu/index.html",
+      "link_text": "子ども相談室",
+      "hops": 2,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 871,
+      "has_jsonld": false,
+      "title": "子ども相談室 | 中野区",
+      "meta": {
+        "og:title": "子ども相談室",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/keyword/kodomosoudansitu/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "子ども相談室"
+        },
+        {
+          "level": 2,
+          "text": "気になるキーワード"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 13:00:12 GMT",
+      "etag": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/azukari/kodomoshortstay.html",
+      "link_text": "子どもショートステイ・トワイライトステイ",
       "hops": 3,
       "score": 8,
       "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 1028,
-      "has_jsonld": false
+      "text_len": 5762,
+      "has_jsonld": false,
+      "title": "子どもショートステイ・トワイライトステイ | 中野区",
+      "meta": {
+        "og:title": "子どもショートステイ・トワイライトステイ",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/azukari/kodomoshortstay.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "子どもショートステイ・トワイライトステイ"
+        },
+        {
+          "level": 2,
+          "text": "令和8年度の利用者登録は3月1日から申請できます！"
+        },
+        {
+          "level": 2,
+          "text": "令和7年10月1日に新しい子どもショートステイ・トワイライトステイ実施施設がオープンしました！"
+        },
+        {
+          "level": 2,
+          "text": "事業について"
+        },
+        {
+          "level": 3,
+          "text": "子どもショートステイ"
+        },
+        {
+          "level": 4,
+          "text": "対象児童"
+        },
+        {
+          "level": 4,
+          "text": "利用要件"
+        },
+        {
+          "level": 4,
+          "text": "実施施設と定員"
+        },
+        {
+          "level": 4,
+          "text": "利用日数"
+        },
+        {
+          "level": 4,
+          "text": "申請期間"
+        },
+        {
+          "level": 4,
+          "text": "利用料金"
+        },
+        {
+          "level": 4,
+          "text": "送迎サービス(聖オディリアホーム乳児院を除く)"
+        },
+        {
+          "level": 5,
+          "text": "料金"
+        },
+        {
+          "level": 3,
+          "text": "トワイライトステイ"
+        },
+        {
+          "level": 4,
+          "text": "対象児童"
+        },
+        {
+          "level": 4,
+          "text": "利用要件"
+        },
+        {
+          "level": 4,
+          "text": "実施施設と定員"
+        },
+        {
+          "level": 4,
+          "text": "利用日数"
+        },
+        {
+          "level": 4,
+          "text": "申請期間"
+        },
+        {
+          "level": 4,
+          "text": "利用料金"
+        },
+        {
+          "level": 4,
+          "text": "お迎えサービス"
+        },
+        {
+          "level": 5,
+          "text": "対象年齢"
+        },
+        {
+          "level": 5,
+          "text": "料金"
+        },
+        {
+          "level": 2,
+          "text": "施設の様子"
+        },
+        {
+          "level": 3,
+          "text": "聖オディリアホーム乳児院"
+        },
+        {
+          "level": 3,
+          "text": "中野区さつき寮"
+        },
+        {
+          "level": 3,
+          "text": "あしたbase東中野"
+        },
+        {
+          "level": 2,
+          "text": "利用の流れ(子どもショートステイ・トワイライトステイ)"
+        },
+        {
+          "level": 3,
+          "text": "年度初めての利用の場合"
+        },
+        {
+          "level": 4,
+          "text": "(1)利用者登録(年度ごとの利用者登録が必要）"
+        },
+        {
+          "level": 4,
+          "text": "(2)利用予約・面談予約"
+        },
+        {
+          "level": 4,
+          "text": "(3)面談(年度初めてのみ)"
+        },
+        {
+          "level": 4,
+          "text": "(4)予約の確定"
+        },
+        {
+          "level": 4,
+          "text": "(5)支払い"
+        },
+        {
+          "level": 4,
+          "text": "(6)アンケートの回答"
+        },
+        {
+          "level": 3,
+          "text": "年度2回目以降の利用の場合"
+        },
+        {
+          "level": 4,
+          "text": "(1)利用予約"
+        },
+        {
+          "level": 4,
+          "text": "(2)予約の確定"
+        },
+        {
+          "level": 4,
+          "text": "(3)支払い"
+        },
+        {
+          "level": 4,
+          "text": "(4)アンケートの回答"
+        },
+        {
+          "level": 3,
+          "text": "協力家庭利用を希望する場合"
+        },
+        {
+          "level": 3,
+          "text": "利用者登録の変更について"
+        },
+        {
+          "level": 3,
+          "text": "利用案内"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "一時的な預かり"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 17:30:13 GMT",
+      "etag": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/shisetsu/kosodate/soudan/nakanoku-jidousoudan.html",
+      "link_text": "中野区児童相談所",
+      "hops": 3,
+      "score": 8,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1210,
+      "has_jsonld": false,
+      "title": "中野区児童相談所 | 中野区",
+      "meta": {
+        "og:title": "中野区児童相談所",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/shisetsu/kosodate/soudan/nakanoku-jidousoudan.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区児童相談所"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て等に関する相談"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 17:00:47 GMT",
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
@@ -113,7 +999,108 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1129,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育 | 中野区",
+      "meta": {
+        "og:title": "子育て・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "中野区子育てサイト「おひるね」"
+        },
+        {
+          "level": 2,
+          "text": "教育委員会"
+        },
+        {
+          "level": 2,
+          "text": "若者支援"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
+      "link_text": "中野区子育てサイト おひるね",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.tokyo-nakano.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 944,
+      "has_jsonld": false,
+      "title": "中野区子育てサイト「おひるね」 | 中野区",
+      "meta": {
+        "og:title": "中野区子育てサイト「おひるね」",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 2,
+          "text": "情報を探す"
+        },
+        {
+          "level": 3,
+          "text": "年齢別から探す"
+        },
+        {
+          "level": 3,
+          "text": "目的別から探す"
+        },
+        {
+          "level": 2,
+          "text": "こそだてインフォ"
+        },
+        {
+          "level": 3,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "おすすめの記事"
+        },
+        {
+          "level": 2,
+          "text": "気になるキーワード"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
@@ -124,62 +1111,232 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 622,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て | 中野区",
+      "meta": {
+        "og:title": "子育て",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て"
+        },
+        {
+          "level": 2,
+          "text": "こんなとき"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/index.html",
-      "link_text": "子育て・教育",
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/syogai/news_event/parentmentor_youseikouza.html",
+      "link_text": "子育てが楽しくなる「ペアレント・プログラム」に参加者してみませんか？",
       "hops": 2,
       "score": 7,
-      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 1100,
-      "has_jsonld": false
+      "text_len": 1902,
+      "has_jsonld": false,
+      "title": "子育てが楽しくなる「ペアレント・プログラム」参加者募集 | 中野区",
+      "meta": {
+        "og:title": "子育てが楽しくなる「ペアレント・プログラム」参加者募集",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/syogai/news_event/parentmentor_youseikouza.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "子育てが楽しくなる「ペアレント・プログラム」参加者募集"
+        },
+        {
+          "level": 2,
+          "text": "ペアレント・プログラムに参加しませんか？"
+        },
+        {
+          "level": 3,
+          "text": "日時"
+        },
+        {
+          "level": 3,
+          "text": "会場"
+        },
+        {
+          "level": 3,
+          "text": "対象"
+        },
+        {
+          "level": 3,
+          "text": "定員"
+        },
+        {
+          "level": 3,
+          "text": "費用"
+        },
+        {
+          "level": 3,
+          "text": "一時保育"
+        },
+        {
+          "level": 3,
+          "text": "申込み方法"
+        },
+        {
+          "level": 3,
+          "text": "申込み期限"
+        },
+        {
+          "level": 3,
+          "text": "問合せ・申込み先"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ・イベント"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 17:30:14 GMT",
+      "etag": null
     },
     {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/0237315720240701181428935.html",
-      "link_text": "令和5年度中野区子ども・子育てアンケート調査結果報告書について",
-      "hops": 2,
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/index.html",
+      "link_text": "子育て・家庭の相談",
+      "hops": 3,
       "score": 7,
-      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+      "parent": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 1549,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/h30-kosodate-anketo.html",
-      "link_text": "【再掲】平成30年度「中野区子ども・子育てアンケート調査」の結果報告について",
-      "hops": 2,
-      "score": 7,
-      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1591,
-      "has_jsonld": false
+      "text_len": 834,
+      "has_jsonld": false,
+      "title": "子育て・家庭の相談 | 中野区",
+      "meta": {
+        "og:title": "子育て・家庭の相談",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "子育て・家庭の相談"
+        },
+        {
+          "level": 2,
+          "text": "相談"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 13:00:15 GMT",
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
-      "link_text": "",
+      "link_text": "中野区若者実態調査を実施中！",
       "hops": 1,
       "score": 4,
       "parent": "https://www.city.tokyo-nakano.lg.jp/",
       "status": 200,
       "is_pdf": false,
       "text_len": 1605,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
-      "link_text": "",
-      "hops": 1,
-      "score": 4,
-      "parent": "https://www.city.tokyo-nakano.lg.jp/",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 944,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中野区若者実態調査を実施しています | 中野区",
+      "meta": {
+        "og:title": "中野区若者実態調査を実施しています",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区若者実態調査を実施しています"
+        },
+        {
+          "level": 2,
+          "text": "対象者の方へ調査票を郵送しました(調査期間：7月23日(木曜日)まで)"
+        },
+        {
+          "level": 2,
+          "text": "調査の目的"
+        },
+        {
+          "level": 2,
+          "text": "調査の概要"
+        },
+        {
+          "level": 3,
+          "text": "調査期間"
+        },
+        {
+          "level": 3,
+          "text": "調査対象"
+        },
+        {
+          "level": 3,
+          "text": "調査対象数"
+        },
+        {
+          "level": 3,
+          "text": "調査方法"
+        },
+        {
+          "level": 2,
+          "text": "やさしい日本語（にほんご）で 説明（せつめい）している ページがあります"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/hoikuen/goannnai/hoikushisetsuichiran.html",
@@ -190,7 +1347,148 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 12767,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中野区の保育施設一覧 | 中野区",
+      "meta": {
+        "og:title": "中野区の保育施設一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/hoikuen/goannnai/hoikushisetsuichiran.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "中野区の保育施設一覧"
+        },
+        {
+          "level": 2,
+          "text": "中野区公式LINEから保育施設を検索"
+        },
+        {
+          "level": 2,
+          "text": "保育施設の新規開設・閉園・変更のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "中野区の保育施設（地図）"
+        },
+        {
+          "level": 2,
+          "text": "認可保育園"
+        },
+        {
+          "level": 3,
+          "text": "認可保育園とは"
+        },
+        {
+          "level": 3,
+          "text": "利用申し込み"
+        },
+        {
+          "level": 3,
+          "text": "施設一覧（2026年4月1日時点）"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園"
+        },
+        {
+          "level": 3,
+          "text": "認定こども園とは"
+        },
+        {
+          "level": 3,
+          "text": "利用申し込み"
+        },
+        {
+          "level": 2,
+          "text": "地域型保育事業"
+        },
+        {
+          "level": 3,
+          "text": "地域型保育事業とは"
+        },
+        {
+          "level": 3,
+          "text": "利用申し込み"
+        },
+        {
+          "level": 4,
+          "text": "認可家庭的保育事業"
+        },
+        {
+          "level": 4,
+          "text": "認可小規模保育事業"
+        },
+        {
+          "level": 4,
+          "text": "認可居宅訪問型保育事業"
+        },
+        {
+          "level": 2,
+          "text": "認証保育所"
+        },
+        {
+          "level": 3,
+          "text": "認証保育所とは"
+        },
+        {
+          "level": 3,
+          "text": "利用"
+        },
+        {
+          "level": 2,
+          "text": "企業主導型保育事業"
+        },
+        {
+          "level": 3,
+          "text": "企業主導型保育事業とは"
+        },
+        {
+          "level": 3,
+          "text": "利用"
+        },
+        {
+          "level": 2,
+          "text": "その他認可外保育施設（ベビーホテル・その他）"
+        },
+        {
+          "level": 3,
+          "text": "その他認可外保育施設とは"
+        },
+        {
+          "level": 3,
+          "text": "利用・施設一覧について"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "認可保育施設のご案内"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/ninshin/kouza/0236162120240202111253211.html",
@@ -201,7 +1499,96 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1631,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "北部すこやか福祉センター妊婦さんの歯っぴいお食事講座 | 中野区",
+      "meta": {
+        "og:title": "北部すこやか福祉センター妊婦さんの歯っぴいお食事講座",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/ninshin/kouza/0236162120240202111253211.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "北部すこやか福祉センター妊婦さんの歯っぴいお食事講座"
+        },
+        {
+          "level": 2,
+          "text": "妊娠中から産後のお食事のポイントや、離乳食づくりにも応用できるレシピをご紹介します。また妊娠中の口腔ケアなどもご紹介します。"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "日時"
+        },
+        {
+          "level": 2,
+          "text": "会場"
+        },
+        {
+          "level": 2,
+          "text": "持ち物"
+        },
+        {
+          "level": 2,
+          "text": "定員"
+        },
+        {
+          "level": 2,
+          "text": "申込み期間"
+        },
+        {
+          "level": 2,
+          "text": "参加費"
+        },
+        {
+          "level": 2,
+          "text": "講習会当日のお願い"
+        },
+        {
+          "level": 2,
+          "text": "申込み方法"
+        },
+        {
+          "level": 3,
+          "text": "電子申請の場合"
+        },
+        {
+          "level": 3,
+          "text": "電話または窓口の場合"
+        },
+        {
+          "level": 2,
+          "text": "離乳食動画 配信中"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "講座"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/gakko/syuugakuzikensin.html",
@@ -212,7 +1599,72 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3271,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "就学時健康診断のご案内 | 中野区",
+      "meta": {
+        "og:title": "就学時健康診断のご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/gakko/syuugakuzikensin.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "就学時健康診断のご案内"
+        },
+        {
+          "level": 2,
+          "text": "来年4月に小学校へ入学する予定のお子さまの保護者の方へ"
+        },
+        {
+          "level": 3,
+          "text": "検査項目"
+        },
+        {
+          "level": 3,
+          "text": "受診場所"
+        },
+        {
+          "level": 3,
+          "text": "指定された日時では受診できない場合"
+        },
+        {
+          "level": 3,
+          "text": "国立・私立・インターナショナルスクールの学校への入学が決定している方"
+        },
+        {
+          "level": 3,
+          "text": "当日お持ちいただくもの"
+        },
+        {
+          "level": 3,
+          "text": "受診月日・受付時間"
+        },
+        {
+          "level": 3,
+          "text": "令和8年度就学時健康診断実施日程一覧表"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "小学校・中学校"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kyoikuiinkai/shisetsu/library/event-202608.html",
@@ -223,7 +1675,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1267,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区立図書館のイベント情報【8月】 | 中野区",
+      "meta": {
+        "og:title": "区立図書館のイベント情報【8月】",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kyoikuiinkai/shisetsu/library/event-202608.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区立図書館のイベント情報【8月】"
+        },
+        {
+          "level": 2,
+          "text": "夏の思い出に中野区立図書館へ"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "中野区立図書館"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/nakano-teensbase.html",
@@ -234,7 +1719,100 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2462,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中高生年代の居場所（（仮称）ナカノティーンズベース）の開設について | 中野区",
+      "meta": {
+        "og:title": "中高生年代の居場所（（仮称）ナカノティーンズベース）の開設について",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/nakano-teensbase.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "中高生年代の居場所（（仮称）ナカノティーンズベース）の開設について"
+        },
+        {
+          "level": 2,
+          "text": "令和8年8月1日（土曜日）から中高生年代の居場所事業（（仮称）ナカノティーンズベース）を開設します！"
+        },
+        {
+          "level": 2,
+          "text": "（仮称）ナカノティーンズベースとは？"
+        },
+        {
+          "level": 2,
+          "text": "ここでの過ごし方は自分で選べる"
+        },
+        {
+          "level": 3,
+          "text": "過ごし方の一例"
+        },
+        {
+          "level": 2,
+          "text": "愛称について"
+        },
+        {
+          "level": 2,
+          "text": "開館日・開館時間について"
+        },
+        {
+          "level": 3,
+          "text": "開館日"
+        },
+        {
+          "level": 3,
+          "text": "開館時間"
+        },
+        {
+          "level": 3,
+          "text": "休館日"
+        },
+        {
+          "level": 2,
+          "text": "利用方法について"
+        },
+        {
+          "level": 2,
+          "text": "どこにあるの？"
+        },
+        {
+          "level": 3,
+          "text": "住所"
+        },
+        {
+          "level": 3,
+          "text": "アクセス"
+        },
+        {
+          "level": 2,
+          "text": "最新情報は専用ホームページや公式SNS等へ"
+        },
+        {
+          "level": 2,
+          "text": "中高生年代の居場所（（仮称）ナカノティーンズベース）ホームページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "でかける・居場所"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/index.html",
@@ -245,7 +1823,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1198,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "育児支援・家事援助 | 中野区",
+      "meta": {
+        "og:title": "育児支援・家事援助",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "育児支援・家事援助"
+        },
+        {
+          "level": 2,
+          "text": "一時的な預かり"
+        },
+        {
+          "level": 2,
+          "text": "家事援助"
+        },
+        {
+          "level": 2,
+          "text": "目的別から探す"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/index.html",
@@ -256,7 +1875,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1108,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "でかける・居場所 | 中野区",
+      "meta": {
+        "og:title": "でかける・居場所",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "でかける・居場所"
+        },
+        {
+          "level": 2,
+          "text": "目的別から探す"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/index.html",
@@ -267,18 +1919,116 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1862,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "保育園・幼稚園 | 中野区",
+      "meta": {
+        "og:title": "保育園・幼稚園",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "保育園・幼稚園"
+        },
+        {
+          "level": 2,
+          "text": "認可保育園・認定こども園（保育園的利用）"
+        },
+        {
+          "level": 2,
+          "text": "幼稚園・認定こども園（幼稚園的利用）"
+        },
+        {
+          "level": 2,
+          "text": "認可外保育施設等"
+        },
+        {
+          "level": 2,
+          "text": "中野区内の保育施設を探す"
+        },
+        {
+          "level": 2,
+          "text": "食育・遊び"
+        },
+        {
+          "level": 2,
+          "text": "保育園で働きたい方・事業者の方"
+        },
+        {
+          "level": 2,
+          "text": "取組み"
+        },
+        {
+          "level": 2,
+          "text": "目的別から探す"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa_yasasii.html",
-      "link_text": "やさしいにほんごでこたえる中野区若者実態調査（なかのくわかものじったいちょうさ）",
-      "hops": 3,
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/kyuukyuu/index.html",
+      "link_text": "急病・救急",
+      "hops": 2,
       "score": 4,
-      "parent": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
+      "parent": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 3500,
-      "has_jsonld": false
+      "text_len": 851,
+      "has_jsonld": false,
+      "title": "急病・救急 | 中野区",
+      "meta": {
+        "og:title": "急病・救急",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/kyuukyuu/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区子育てサイト：おひるねトップページへ"
+        },
+        {
+          "level": 1,
+          "text": "急病・救急"
+        },
+        {
+          "level": 2,
+          "text": "外部サイト"
+        },
+        {
+          "level": 2,
+          "text": "中野区子育てサイト「おひるね」"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "中野区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 13:00:12 GMT",
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +2037,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/hoikuen/goannnai/hoikushisetsuichiran.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/ninshin/kouza/0236162120240202111253211.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/gakko/syuugakuzikensin.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kyoikuiinkai/shisetsu/library/event-202608.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/nakano-teensbase.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/0237315720240701181428935.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/h30-kosodate-anketo.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/r6kodomojittaityousa.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/kodomojittaityousa/kosodate.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa_yasasii.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/index.html",
       "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/keyword/kodomosoudansitu/index.html",
+      "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 13:00:12 GMT",
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/syogai/news_event/parentmentor_youseikouza.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 17:30:14 GMT",
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/kyuukyuu/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 13:00:12 GMT",
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/azukari/kodomoshortstay.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 17:30:13 GMT",
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/shisetsu/kosodate/soudan/nakanoku-jidousoudan.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 17:00:47 GMT",
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 13:00:15 GMT",
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 13:00:14 GMT",
+      "etag": null,
       "error": null
     }
   ]

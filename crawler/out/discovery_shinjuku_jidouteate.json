@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.shinjuku.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
@@ -14,7 +35,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1896,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/jidoikusei01_000001_00004.html",
@@ -25,7 +58,158 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 8044,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "《申請受付は終了しました》物価高対応子育て応援手当：新宿区",
+      "meta": {
+        "og:title": "《申請受付は終了しました》物価高対応子育て応援手当",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kodomo/jidoikusei01_000001_00004.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "《申請受付は終了しました》物価高対応子育て応援手当"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 3,
+          "text": "支給対象者"
+        },
+        {
+          "level": 3,
+          "text": "対象児童"
+        },
+        {
+          "level": 2,
+          "text": "支給額"
+        },
+        {
+          "level": 2,
+          "text": "申請手続等"
+        },
+        {
+          "level": 3,
+          "text": "⑴ 令和7年9月分の児童手当を受給している方（公務員を除く）"
+        },
+        {
+          "level": 4,
+          "text": "支給日等"
+        },
+        {
+          "level": 4,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "⑵ 令和7年9月1日から令和8年3月31日までに生まれた児童（新生児）分の児童手当を受給している方（公務員を除く）"
+        },
+        {
+          "level": 4,
+          "text": "支給日等"
+        },
+        {
+          "level": 4,
+          "text": "支給を希望しない場合"
+        },
+        {
+          "level": 4,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "⑶及び⑷ 所属庁から児童手当を受給している公務員の方"
+        },
+        {
+          "level": 4,
+          "text": "申請方法"
+        },
+        {
+          "level": 4,
+          "text": "支給日等"
+        },
+        {
+          "level": 4,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "⑸ 施設に入所していた児童が令和7年10月1日以降施設を退所し、対象児童の児童手当を受給している方"
+        },
+        {
+          "level": 4,
+          "text": "支給日等"
+        },
+        {
+          "level": 4,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "⑹ 令和7年9月分の児童手当の受給者ではなかったが、配偶者からの暴力を理由に児童手当を受給している方"
+        },
+        {
+          "level": 3,
+          "text": "⑺ 令和7年9月分の児童手当の受給者ではなかったが、離婚等により児童手当の受給者になった方で配偶者と別居している方"
+        },
+        {
+          "level": 4,
+          "text": "支給日等"
+        },
+        {
+          "level": 4,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "⑻ 令和7年9月分の児童手当を受給していないが、受給要件をみたす方"
+        },
+        {
+          "level": 4,
+          "text": "支給日等"
+        },
+        {
+          "level": 4,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "申請書等の提出先"
+        },
+        {
+          "level": 2,
+          "text": "「物価高対応子育て応援手当｣に関する“振り込め詐欺”や“個人情報の詐取”にご注意ください。"
+        },
+        {
+          "level": 2,
+          "text": "制度に関する問合せ"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_06.html",
@@ -36,7 +220,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1986,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・相談：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・相談"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_0405.html",
@@ -47,7 +243,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2031,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手当・助成（子ども・教育）：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・助成（子ども・教育）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index12.html",
@@ -58,7 +266,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1901,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども・子育てに関する会議：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども・子育てに関する会議"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_20.html",
@@ -69,7 +289,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2196,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てに関する相談：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てに関する相談"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_21.html",
@@ -80,7 +312,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1981,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "地域の子育て支援：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "地域の子育て支援"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_13.html",
@@ -91,7 +335,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1900,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童扶養手当・児童育成手当：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童扶養手当・児童育成手当"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index26_01.html",
@@ -102,7 +358,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1896,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども・子育て会議：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども・子育て会議"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index.html",
@@ -113,7 +381,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1993,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "出産・子ども・教育：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "出産・子ども・教育"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002040.html",
@@ -124,7 +404,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4864,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "新宿区子ども未来基金助成活動の募集について：新宿区",
+      "meta": {
+        "og:title": "新宿区子ども未来基金助成活動の募集について",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002040.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "新宿区子ども未来基金助成活動の募集について～二次募集のご案内～"
+        },
+        {
+          "level": 2,
+          "text": "対象活動"
+        },
+        {
+          "level": 2,
+          "text": "対象団体"
+        },
+        {
+          "level": 2,
+          "text": "対象期間"
+        },
+        {
+          "level": 2,
+          "text": "助成金の額"
+        },
+        {
+          "level": 2,
+          "text": "助成金の交付"
+        },
+        {
+          "level": 2,
+          "text": "相談・申請"
+        },
+        {
+          "level": 2,
+          "text": "過去の新宿区子ども未来基金助成活動一覧"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/kyoshido01_002049_00077.html",
@@ -135,7 +470,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2592,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年度新宿区教育委員会会計年度任用講師（学習指導支援員）募集 ：新宿区",
+      "meta": {
+        "og:title": "令和8年度新宿区教育委員会会計年度任用講師（学習指導支援員）募集",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kodomo/kyoshido01_002049_00077.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度新宿区教育委員会会計年度任用講師（学習指導支援員）募集"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index02.html",
@@ -146,7 +508,23 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1993,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "妊娠・出産：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問と回答"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index13.html",
@@ -157,7 +535,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1897,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "基金（子ども・教育）：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "基金（子ども・教育）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index10_0821.html",
@@ -168,7 +558,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2034,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "新宿区子ども未来基金：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "新宿区子ども未来基金"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002037.html",
@@ -179,7 +581,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4090,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "新宿区子ども未来基金にご支援を：新宿区",
+      "meta": {
+        "og:title": "新宿区子ども未来基金にご支援を",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002037.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "新宿区子ども未来基金にご支援を～すべての子どもの安心と希望の実現を目指して～"
+        },
+        {
+          "level": 2,
+          "text": "新宿区子ども未来基金について"
+        },
+        {
+          "level": 3,
+          "text": "基金の概要"
+        },
+        {
+          "level": 3,
+          "text": "寄附の使い道"
+        },
+        {
+          "level": 2,
+          "text": "新宿区子ども未来基金への寄附（ふるさと納税）について"
+        },
+        {
+          "level": 3,
+          "text": "寄附の方法"
+        },
+        {
+          "level": 2,
+          "text": "寄附にご協力いただくと税制上の優遇措置があります"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002040_00001.html",
@@ -190,7 +643,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4237,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "新宿区子ども未来基金を活用した地域活動支援の募集について：新宿区",
+      "meta": {
+        "og:title": "新宿区子ども未来基金を活用した地域活動支援の募集について",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002040_00001.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "新宿区子ども未来基金を活用した地域活動支援の募集について～区内の育成支援活動を行う地域団体等にコンサルティングを活用した支援を行います～"
+        },
+        {
+          "level": 2,
+          "text": "コンサルティングの内容"
+        },
+        {
+          "level": 2,
+          "text": "コンサルティングの進め方"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "相談・申請"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_23.html",
@@ -201,7 +697,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1991,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども向け相談：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども向け相談"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index12_01.html",
@@ -212,7 +720,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1890,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "次世代育成協議会：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "次世代育成協議会"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index02_02.html",
@@ -223,7 +743,23 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2082,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "妊娠：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "妊娠"
+        },
+        {
+          "level": 3,
+          "text": "妊婦の皆様へ新型コロナウイルス感染予防に関するお知らせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index02_01.html",
@@ -234,7 +770,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1992,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "出産・誕生：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "出産・誕生"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index02_03.html",
@@ -245,7 +793,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2122,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "母子の健康：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "母子の健康"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kusei/index15.html",
@@ -256,7 +816,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2208,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "電子申請サービス：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "電子申請サービス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/jigyo/index03.html",
@@ -267,7 +839,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1805,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "事業別申請・手続き：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業別申請・手続き"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/living_07.html",
@@ -278,7 +862,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2244,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育に関する情報"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育に関する「よくある質問と回答」"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,34 +891,44 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002040.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/kyoshido01_002049_00077.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kusei/index15.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -322,146 +936,188 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/living_07.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_06.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_0405.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index12.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index02.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index13.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index10_0821.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002037.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002040_00001.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_20.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_21.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_23.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/jidoikusei01_000001_00004.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_13.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index26_01.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index12_01.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index02_02.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index02_01.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kodomo/index02_03.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.ota.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html",
@@ -14,7 +35,112 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6369,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：児童手当（電子申請・郵送申請が可能です）",
+      "meta": {
+        "og:title": "児童手当（電子申請・郵送申請が可能です）",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当（電子申請・郵送申請が可能です）"
+        },
+        {
+          "level": 2,
+          "text": "最新情報"
+        },
+        {
+          "level": 3,
+          "text": "（1）児童手当の令和8年8月の振込みについて"
+        },
+        {
+          "level": 3,
+          "text": "(2) 18歳年度末を経過後22歳年度末までにある子を養育している方について"
+        },
+        {
+          "level": 3,
+          "text": "（3）児童手当令和6年度制度改正について"
+        },
+        {
+          "level": 3,
+          "text": "（4）公金受取口座について"
+        },
+        {
+          "level": 2,
+          "text": "1 支給対象"
+        },
+        {
+          "level": 2,
+          "text": "2 所得の基準額、手当額"
+        },
+        {
+          "level": 3,
+          "text": "所得制限、所得上限"
+        },
+        {
+          "level": 3,
+          "text": "手当額（月額）"
+        },
+        {
+          "level": 2,
+          "text": "3 支給時期等"
+        },
+        {
+          "level": 2,
+          "text": "4 申請方法"
+        },
+        {
+          "level": 3,
+          "text": "郵送申請"
+        },
+        {
+          "level": 3,
+          "text": "電子申請"
+        },
+        {
+          "level": 3,
+          "text": "申請時に用意するもの"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "その他の手続き"
+        },
+        {
+          "level": 2,
+          "text": "5 その他"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "児童に関する手当"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninnteiseikyuu.pdf",
@@ -25,7 +151,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninteiseikyuukisairei.pdf",
@@ -36,7 +169,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.html",
@@ -47,7 +187,108 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4682,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：児童手当（令和6年度制度改正後）について",
+      "meta": {
+        "og:title": "児童手当（令和6年度制度改正後）について",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当（令和6年度制度改正後）について"
+        },
+        {
+          "level": 2,
+          "text": "最新情報"
+        },
+        {
+          "level": 3,
+          "text": "(1)第3子加算についてのお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "1 改正内容"
+        },
+        {
+          "level": 3,
+          "text": "（1）改正内容の概要"
+        },
+        {
+          "level": 3,
+          "text": "（2）対象者について"
+        },
+        {
+          "level": 3,
+          "text": "（3）支給額について"
+        },
+        {
+          "level": 3,
+          "text": "（4）第3子以降の算定方法の見直し"
+        },
+        {
+          "level": 3,
+          "text": "（5）支給月について"
+        },
+        {
+          "level": 2,
+          "text": "2 申請が必要な方"
+        },
+        {
+          "level": 3,
+          "text": "（1）申請書の発送について"
+        },
+        {
+          "level": 3,
+          "text": "（2）申請方法等について"
+        },
+        {
+          "level": 3,
+          "text": "（3）申請期限について"
+        },
+        {
+          "level": 3,
+          "text": "（4）18歳年度末を経過後22歳年度末までにある子を養育している方について"
+        },
+        {
+          "level": 3,
+          "text": "（5）改正前の制度による現況審査の結果、資格が消滅となった方"
+        },
+        {
+          "level": 2,
+          "text": "3 申請が不要な方"
+        },
+        {
+          "level": 2,
+          "text": "4 その他"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "児童に関する手当"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.html",
@@ -58,7 +299,88 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4690,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：物価高対応子育て応援手当",
+      "meta": {
+        "og:title": "物価高対応子育て応援手当",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "物価高対応子育て応援手当"
+        },
+        {
+          "level": 2,
+          "text": "最新情報"
+        },
+        {
+          "level": 2,
+          "text": "対象児童"
+        },
+        {
+          "level": 2,
+          "text": "支給対象者"
+        },
+        {
+          "level": 3,
+          "text": "1 申請不要で受給できる方"
+        },
+        {
+          "level": 3,
+          "text": "2 申請が必要な方"
+        },
+        {
+          "level": 2,
+          "text": "支給・申請方法"
+        },
+        {
+          "level": 3,
+          "text": "支給・申請方法（1）（「支給対象者 1 」にあてはまる方）"
+        },
+        {
+          "level": 3,
+          "text": "支給・申請方法（2）（「支給対象者 2の（1）」にあてはまる方）"
+        },
+        {
+          "level": 3,
+          "text": "支給・申請方法（3）（「支給対象者 2の（2）」にあてはまる方）"
+        },
+        {
+          "level": 2,
+          "text": "支給額"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "児童に関する手当"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/ouennteatetirashipdf.pdf",
@@ -69,7 +391,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_kouzatouroku_todokedesho.pdf",
@@ -80,7 +409,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_jukyukyohi_todokedesho.pdf",
@@ -91,7 +427,146 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/topics/kosodateprbrochure.html",
+      "link_text": "画像リンク：「安心」「わくわく」大田区の子育てのページへ",
+      "hops": 1,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3251,
+      "has_jsonld": false,
+      "title": "大田区ホームページ：子育てNo.1都市へ！「子育て」するならぜったい大田区",
+      "meta": {
+        "og:title": "子育てNo.1都市へ！「子育て」するならぜったい大田区",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/topics/kosodateprbrochure.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てNo.1都市へ！「子育て」するならぜったい大田区"
+        },
+        {
+          "level": 2,
+          "text": "数字でわかる！圧倒的な住みやすさ"
+        },
+        {
+          "level": 3,
+          "text": "都内有数の公園数！570か所！"
+        },
+        {
+          "level": 2,
+          "text": "家計に直結！大田区の子育て"
+        },
+        {
+          "level": 3,
+          "text": "東京都制度"
+        },
+        {
+          "level": 2,
+          "text": "働きながら安心して子育てができるまち"
+        },
+        {
+          "level": 3,
+          "text": "毎日の「困った」を全力バックアップ！"
+        },
+        {
+          "level": 3,
+          "text": "どんな時でも安心！「預け先」と「こどもの居場所」が充実！"
+        },
+        {
+          "level": 3,
+          "text": "区内で子育てしてるママの声"
+        },
+        {
+          "level": 2,
+          "text": "特別じゃない毎日が、一番わくわくする！大田区の心地よい暮らし"
+        },
+        {
+          "level": 3,
+          "text": "圧倒的なアクセスと快適な暮らし"
+        },
+        {
+          "level": 3,
+          "text": "こどもの知的好奇心を育む教育環境と体験"
+        },
+        {
+          "level": 3,
+          "text": "文化・歴史に触れる日常"
+        },
+        {
+          "level": 3,
+          "text": "遠出しなくでも充実！大田区の休日ライフ"
+        },
+        {
+          "level": 3,
+          "text": "商店街と銭湯が育む「あたたかなつながり」"
+        },
+        {
+          "level": 3,
+          "text": "地域の力で守るこどもたちの安全"
+        },
+        {
+          "level": 2,
+          "text": "わくわくがいっぱい！家族の思い出が刻まれる「おおたの3大イベント」"
+        },
+        {
+          "level": 3,
+          "text": "私のわくわくおすすめスポット"
+        },
+        {
+          "level": 2,
+          "text": "大田区で賢く子育て！知っておきたい「3つのツール」"
+        },
+        {
+          "level": 3,
+          "text": "おおた子育ちナビHug(はぐ)くみ"
+        },
+        {
+          "level": 3,
+          "text": "子育てハンドブック（デジタル版）"
+        },
+        {
+          "level": 3,
+          "text": "大田区公式LINE"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "トピックス"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/kosodate_handbook.html",
@@ -102,7 +577,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1673,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：【デジタル版】子育てハンドブック（令和8年度版）",
+      "meta": {
+        "og:title": "【デジタル版】子育てハンドブック（令和8年度版）",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/kosodate_handbook.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【デジタル版】子育てハンドブック（令和8年度版）"
+        },
+        {
+          "level": 2,
+          "text": "子育てハンドブック（デジタルブック）を更新しました（令和8年度版）"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て、こどもに関する支援"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/topics/ouchi_kosodate-hoiku.html",
@@ -113,7 +629,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1543,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：おうちで楽しむ子育て・保育 ～おうち時間を楽しもう～",
+      "meta": {
+        "og:title": "おうちで楽しむ子育て・保育 ～おうち時間を楽しもう～",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/topics/ouchi_kosodate-hoiku.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "おうちで楽しむ子育て・保育 ～おうち時間を楽しもう～"
+        },
+        {
+          "level": 2,
+          "text": "親子ふれあい遊び"
+        },
+        {
+          "level": 2,
+          "text": "ツナとえのきの炊き込みご飯の作り方"
+        },
+        {
+          "level": 2,
+          "text": "馬込ピクルスの作り方"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "トピックス"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/index.html",
@@ -124,7 +689,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 507,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：手当・医療費助成",
+      "meta": {
+        "og:title": "手当・医療費助成",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・医療費助成"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産・子育て"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/kosodatehiroba/index.html",
@@ -135,7 +729,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 557,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：子育てひろば",
+      "meta": {
+        "og:title": "子育てひろば",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/kosodatehiroba/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てひろば"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産・子育て"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/t_kosodate_handbook.html",
@@ -146,7 +769,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1994,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：体罰などによらない子育てハンドブック",
+      "meta": {
+        "og:title": "体罰などによらない子育てハンドブック",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/t_kosodate_handbook.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "体罰などによらない子育てハンドブック"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て、こどもに関する支援"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidousoudanjyo_kaisetsu.html",
@@ -157,7 +817,96 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4528,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：大田区こども未来総合センターの開設に向けて",
+      "meta": {
+        "og:title": "大田区こども未来総合センターの開設に向けて",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidousoudanjyo_kaisetsu.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "大田区こども未来総合センターの開設に向けて"
+        },
+        {
+          "level": 2,
+          "text": "施設名称は「大田区こども未来総合センター」に決定しました【令和7年12月8日更新】"
+        },
+        {
+          "level": 3,
+          "text": "開設年月日（予定）"
+        },
+        {
+          "level": 3,
+          "text": "住所"
+        },
+        {
+          "level": 2,
+          "text": "「新たな児童相談体制構築に係る基本協定」を東京都と締結しました【令和8年5月8日更新】"
+        },
+        {
+          "level": 3,
+          "text": "おおた児童虐待対応ダイヤルの設置について"
+        },
+        {
+          "level": 2,
+          "text": "東京都品川児童相談所のサテライトオフィスの設置について【令和7年7月15日更新】"
+        },
+        {
+          "level": 2,
+          "text": "大田区こども未来総合センター開設までのこどもと家庭の相談窓口"
+        },
+        {
+          "level": 2,
+          "text": "大田区こども未来総合センター開設準備状況について"
+        },
+        {
+          "level": 3,
+          "text": "（仮称）大田区子ども家庭総合支援センターの今後の整備の方向について"
+        },
+        {
+          "level": 2,
+          "text": "大田区児童相談所基本構想・基本計画の策定について"
+        },
+        {
+          "level": 2,
+          "text": "過去の説明会等について"
+        },
+        {
+          "level": 3,
+          "text": "●（仮称）大田区子ども家庭総合支援センターの整備に関する説明会の開催"
+        },
+        {
+          "level": 3,
+          "text": "●（仮称）大田区子ども家庭総合支援センター新築その他工事説明会の開催"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て、こどもに関する支援"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/index.html",
@@ -168,18 +917,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1281,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/topics/kosodateprbrochure.html",
-      "link_text": "",
-      "hops": 1,
-      "score": 8,
-      "parent": "https://www.city.ota.tokyo.jp/",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 3251,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：子育て、こどもに関する支援",
+      "meta": {
+        "og:title": "子育て、こどもに関する支援",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て、こどもに関する支援"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産・子育て"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/index.html",
@@ -190,7 +957,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1452,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：児童館・学童保育",
+      "meta": {
+        "og:title": "児童館・学童保育",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童館・学童保育"
+        },
+        {
+          "level": 2,
+          "text": "トピックス"
+        },
+        {
+          "level": 2,
+          "text": "メニュー"
+        },
+        {
+          "level": 2,
+          "text": "子育て、こどもに関する支援"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/doukyo-jidou.html",
@@ -201,7 +1001,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2082,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：同居児童の届出（同居児童に関する届出書・同居児童の解消に関する届出書）",
+      "meta": {
+        "og:title": "同居児童の届出（同居児童に関する届出書・同居児童の解消に関する届出書）",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/doukyo-jidou.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "同居児童の届出（同居児童に関する届出書・同居児童の解消に関する届出書）"
+        },
+        {
+          "level": 2,
+          "text": "同居児童に関する届出"
+        },
+        {
+          "level": 3,
+          "text": "届出対象者"
+        },
+        {
+          "level": 3,
+          "text": "届出期間"
+        },
+        {
+          "level": 3,
+          "text": "届出人"
+        },
+        {
+          "level": 3,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "届出先"
+        },
+        {
+          "level": 3,
+          "text": "様式"
+        },
+        {
+          "level": 2,
+          "text": "同居児童の解消に関する届出"
+        },
+        {
+          "level": 3,
+          "text": "様式"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て、こどもに関する支援"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/R8gakudousinnsei.html",
@@ -212,7 +1085,84 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2431,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：令和8年度 学童保育利用募集のご案内",
+      "meta": {
+        "og:title": "令和8年度　学童保育利用募集のご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/R8gakudousinnsei.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度 学童保育利用募集のご案内"
+        },
+        {
+          "level": 2,
+          "text": "【対象】"
+        },
+        {
+          "level": 2,
+          "text": "【学童保育利用期間】"
+        },
+        {
+          "level": 2,
+          "text": "【保育時間】"
+        },
+        {
+          "level": 2,
+          "text": "【休室日】"
+        },
+        {
+          "level": 2,
+          "text": "【申請書類（学童保育のしおり）】"
+        },
+        {
+          "level": 2,
+          "text": "【一次申請受付期間・時間】"
+        },
+        {
+          "level": 2,
+          "text": "【提出先】"
+        },
+        {
+          "level": 2,
+          "text": "【申請方法を動画でご紹介】"
+        },
+        {
+          "level": 2,
+          "text": "【区教育委員会へ指定校変更を申請される方へ】"
+        },
+        {
+          "level": 2,
+          "text": "【その他】"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "児童館・学童保育"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/houkagonosugoshikata.html",
@@ -223,7 +1173,64 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1998,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：放課後の過ごし方を【動画】でご紹介しています！",
+      "meta": {
+        "og:title": "放課後の過ごし方を【動画】でご紹介しています！",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/houkagonosugoshikata.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "放課後の過ごし方を【動画】でご紹介しています！"
+        },
+        {
+          "level": 2,
+          "text": "1 放課後の過ごし方のご紹介【動画】"
+        },
+        {
+          "level": 2,
+          "text": "2 放課後の過ごし方を比較"
+        },
+        {
+          "level": 2,
+          "text": "3 学童保育とは？"
+        },
+        {
+          "level": 2,
+          "text": "4 児童館の一般利用（自由来館）とは？"
+        },
+        {
+          "level": 2,
+          "text": "5 放課後こども教室とは？"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "児童館・学童保育"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/tetsuzuki/kosodate/jidoukan/gakudou-hoiku_nyushitsu-go.html",
@@ -234,7 +1241,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1418,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：学童保育入室後の各種手続きについて（必要書類のダウンロードができます）",
+      "meta": {
+        "og:title": "学童保育入室後の各種手続きについて（必要書類のダウンロードができます）",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/tetsuzuki/kosodate/jidoukan/gakudou-hoiku_nyushitsu-go.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "学童保育入室後の各種手続きについて（必要書類のダウンロードができます）"
+        },
+        {
+          "level": 2,
+          "text": "（1）届出事項（申請内容）に変更があった場合"
+        },
+        {
+          "level": 2,
+          "text": "（2）学童保育の利用を辞退する場合"
+        },
+        {
+          "level": 2,
+          "text": "（3）学童保育料の納付額証明書を発行する場合"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "児童館・学童保育"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/index.html",
@@ -245,7 +1297,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 791,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：妊娠・出産・子育て",
+      "meta": {
+        "og:title": "妊娠・出産・子育て",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "妊娠・出産・子育て"
+        },
+        {
+          "level": 2,
+          "text": "トピックス"
+        },
+        {
+          "level": 2,
+          "text": "メニュー"
+        },
+        {
+          "level": 2,
+          "text": "窓口状況のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "もしものとき"
+        },
+        {
+          "level": 2,
+          "text": "広告"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/download/kodomo/index.html",
@@ -256,7 +1349,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 382,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：子ども・教育",
+      "meta": {
+        "og:title": "子ども・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/download/kodomo/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども・教育"
+        },
+        {
+          "level": 2,
+          "text": "申請書ダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/download/index.html",
@@ -267,7 +1385,28 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 956,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：申請書ダウンロード",
+      "meta": {
+        "og:title": "申請書ダウンロード",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/download/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "申請書ダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/denshishinsei/index.html",
@@ -278,7 +1417,28 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 408,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：電子申請・マイナンバー",
+      "meta": {
+        "og:title": "電子申請・マイナンバー",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/denshishinsei/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "電子申請・マイナンバー"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1447,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/topics/kosodateprbrochure.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/download/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/denshishinsei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/kosodate_handbook.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/topics/ouchi_kosodate-hoiku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/kosodatehiroba/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/download/kodomo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninnteiseikyuu.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninteiseikyuukisairei.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/ouennteatetirashipdf.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_kouzatouroku_todokedesho.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_jukyukyohi_todokedesho.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/t_kosodate_handbook.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidousoudanjyo_kaisetsu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/doukyo-jidou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/R8gakudousinnsei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/houkagonosugoshikata.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/tetsuzuki/kosodate/jidoukan/gakudou-hoiku_nyushitsu-go.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

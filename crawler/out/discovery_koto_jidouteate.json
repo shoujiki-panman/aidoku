@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.koto.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
@@ -14,7 +35,92 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4172,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当・子ども医療費等の郵送受付｜江東区",
+      "meta": {
+        "description": "児童手当・子ども医療費等の郵送受付について",
+        "og:title": "児童手当・子ども医療費等の郵送受付",
+        "og:type": "article",
+        "og:description": "児童手当・子ども医療費等の郵送受付について",
+        "og:url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当・子ども医療費等の郵送受付"
+        },
+        {
+          "level": 2,
+          "text": "郵送受付取扱事業（事業の内容についてはこのページ下にある「関連ページ」を参照してください）"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "（1）新規・増額"
+        },
+        {
+          "level": 4,
+          "text": "添付書類"
+        },
+        {
+          "level": 3,
+          "text": "（2）変更≪住所≫"
+        },
+        {
+          "level": 3,
+          "text": "（3）変更≪保険≫"
+        },
+        {
+          "level": 3,
+          "text": "（4）変更≪年金加入等≫"
+        },
+        {
+          "level": 4,
+          "text": "添付書類"
+        },
+        {
+          "level": 3,
+          "text": "（5）変更≪口座≫"
+        },
+        {
+          "level": 3,
+          "text": "（6）再交付"
+        },
+        {
+          "level": 3,
+          "text": "（7）還付申請"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ・送付先"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/2024jidou.html",
@@ -25,7 +131,166 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6823,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当について｜江東区",
+      "meta": {
+        "og:title": "児童手当について",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/281011/2024jidou.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当について"
+        },
+        {
+          "level": 2,
+          "text": "1.支給対象"
+        },
+        {
+          "level": 2,
+          "text": "2.手当額"
+        },
+        {
+          "level": 2,
+          "text": "3.支給月"
+        },
+        {
+          "level": 2,
+          "text": "4.申請に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "（申請書）児童手当認定請求書"
+        },
+        {
+          "level": 3,
+          "text": "その他、別途書類が必要となる場合（主な例は以下の通り）"
+        },
+        {
+          "level": 4,
+          "text": "児童と別居している方"
+        },
+        {
+          "level": 4,
+          "text": "養育している19～22歳の児童（算定児童）がおり、その児童含め児童が3人以上いる方"
+        },
+        {
+          "level": 4,
+          "text": "令和8年1月1日現在、児童の父または母が海外に居住していた場合"
+        },
+        {
+          "level": 4,
+          "text": "既に離婚しているまたは、離婚協議中で別居中の場合（ただし、児童扶養手当等のひとり親手当を受給されている方は除く）"
+        },
+        {
+          "level": 4,
+          "text": "児童が海外に留学している場合"
+        },
+        {
+          "level": 4,
+          "text": "父母以外が養育している場合"
+        },
+        {
+          "level": 2,
+          "text": "5.申請方法"
+        },
+        {
+          "level": 3,
+          "text": "郵送による申請"
+        },
+        {
+          "level": 3,
+          "text": "窓口での申請"
+        },
+        {
+          "level": 3,
+          "text": "マイナポータルでの電子申請"
+        },
+        {
+          "level": 3,
+          "text": "15日特例について（ご注意）"
+        },
+        {
+          "level": 2,
+          "text": "6.現況届"
+        },
+        {
+          "level": 2,
+          "text": "7.その他届出について"
+        },
+        {
+          "level": 3,
+          "text": "江東区外に転出する場合"
+        },
+        {
+          "level": 3,
+          "text": "受給者が海外に転出する場合"
+        },
+        {
+          "level": 3,
+          "text": "区外で別居している配偶者や児童の住所が変更した場合"
+        },
+        {
+          "level": 3,
+          "text": "ご加入されている年金が変更した場合"
+        },
+        {
+          "level": 3,
+          "text": "受給者が公務員になった場合、公務員でなくなった場合"
+        },
+        {
+          "level": 3,
+          "text": "振込口座の変更をする場合"
+        },
+        {
+          "level": 4,
+          "text": "窓口での手続き"
+        },
+        {
+          "level": 4,
+          "text": "郵送での手続き"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "8.配偶者の暴力により江東区に避難をしている方へ"
+        },
+        {
+          "level": 2,
+          "text": "9.高校生年代の児童が入所する児童福祉施設等の設置者または高校生年代の児童を養育する里親の方へ"
+        },
+        {
+          "level": 2,
+          "text": "10.寄附制度について"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/20171121.html",
@@ -36,7 +301,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3002,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当・子ども医療費助成の電子申請｜江東区",
+      "meta": {
+        "description": "政府が運営するオンラインサービス「マイナポータル」内において、子育てに関する行政手続きの一部がワンストップでできる「子育てワンストップサービス」の電子申請サービスが始まりました。",
+        "og:title": "児童手当・子ども医療費助成の電子申請",
+        "og:type": "article",
+        "og:description": "政府が運営するオンラインサービス「マイナポータル」内において、子育てに関する行政手続きの一部がワンストップでできる「子育てワンストップサービス」の電子申請サービスが始まりました。",
+        "og:url": "https://www.city.koto.lg.jp/281011/20171121.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当・子ども医療費助成の電子申請"
+        },
+        {
+          "level": 2,
+          "text": "電子申請の概要"
+        },
+        {
+          "level": 2,
+          "text": "必要な物"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 2,
+          "text": "電子申請できる手続き（児童手当・子ども医療費助成）"
+        },
+        {
+          "level": 3,
+          "text": "児童手当"
+        },
+        {
+          "level": 3,
+          "text": "子ども医療費助成"
+        },
+        {
+          "level": 3,
+          "text": "児童扶養手当"
+        },
+        {
+          "level": 3,
+          "text": "児童育成手当"
+        },
+        {
+          "level": 3,
+          "text": "ひとり親家庭等医療費助成"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ・送付先"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/teate/index.html",
@@ -47,7 +385,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 965,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手当・医療助成｜江東区",
+      "meta": {
+        "og:title": "手当・医療助成",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kodomo/kosodate/teate/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・医療助成"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/96043.html",
@@ -58,7 +419,132 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4633,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手当と医療費助成制度について｜江東区",
+      "meta": {
+        "description": "児童手当や子ども医療費助成等の制度や手続きについて",
+        "og:title": "手当と医療費助成制度について",
+        "og:type": "article",
+        "og:description": "児童手当や子ども医療費助成等の制度や手続きについて",
+        "og:url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/96043.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当と医療費助成制度について"
+        },
+        {
+          "level": 2,
+          "text": "制度のご案内"
+        },
+        {
+          "level": 3,
+          "text": "制度の概要と所得制限について"
+        },
+        {
+          "level": 3,
+          "text": "18歳到達後最初の3月31日を迎えるまでの児童がいる家庭への制度"
+        },
+        {
+          "level": 4,
+          "text": "児童手当"
+        },
+        {
+          "level": 4,
+          "text": "子ども医療費助成"
+        },
+        {
+          "level": 3,
+          "text": "ひとり親家庭等への制度"
+        },
+        {
+          "level": 4,
+          "text": "児童育成手当（育成手当）"
+        },
+        {
+          "level": 4,
+          "text": "児童扶養手当"
+        },
+        {
+          "level": 4,
+          "text": "ひとり親家庭等医療費助成"
+        },
+        {
+          "level": 3,
+          "text": "児童に障害がある家庭への制度"
+        },
+        {
+          "level": 4,
+          "text": "児童育成手当（障害手当）"
+        },
+        {
+          "level": 4,
+          "text": "特別児童扶養手当"
+        },
+        {
+          "level": 2,
+          "text": "申請手続きについて"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバー（社会保障・税番号）制度について"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーが必要な手続き"
+        },
+        {
+          "level": 4,
+          "text": "代理申請できる制度"
+        },
+        {
+          "level": 3,
+          "text": "代理申請できない制度"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバー利用の必要書類"
+        },
+        {
+          "level": 3,
+          "text": "1.申請者本人が申請する場合"
+        },
+        {
+          "level": 3,
+          "text": "2.代理人が申請する場合"
+        },
+        {
+          "level": 3,
+          "text": "3.郵送申請する場合"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6028.html",
@@ -69,7 +555,108 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4739,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童扶養手当｜江東区",
+      "meta": {
+        "description": "母子家庭・父子家庭または同様の家庭で、児童を養育している方に手当を支給いたします。",
+        "og:title": "児童扶養手当",
+        "og:type": "article",
+        "og:description": "母子家庭・父子家庭または同様の家庭で、児童を養育している方に手当を支給いたします。",
+        "og:url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6028.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童扶養手当"
+        },
+        {
+          "level": 2,
+          "text": "児童扶養手当の支給対象"
+        },
+        {
+          "level": 2,
+          "text": "手当額"
+        },
+        {
+          "level": 3,
+          "text": "手当額詳細"
+        },
+        {
+          "level": 4,
+          "text": "一部支給手当額の計算式"
+        },
+        {
+          "level": 2,
+          "text": "所得制限"
+        },
+        {
+          "level": 3,
+          "text": "所得制限限度額表"
+        },
+        {
+          "level": 3,
+          "text": "養育費の加算"
+        },
+        {
+          "level": 2,
+          "text": "児童扶養手当と公的年金給付等との併給制限の見直しについて"
+        },
+        {
+          "level": 3,
+          "text": "令和3年3月からの児童扶養手当法一部改正について"
+        },
+        {
+          "level": 3,
+          "text": "平成26年12月1日からの児童扶養手当法一部改正について"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 4,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "支払時期"
+        },
+        {
+          "level": 2,
+          "text": "優遇制度について"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "現況届について"
+        },
+        {
+          "level": 3,
+          "text": "一部支給停止適用除外届について"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6029.html",
@@ -80,7 +667,84 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3733,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童育成手当（育成手当）｜江東区",
+      "meta": {
+        "description": "母子・父子家庭または同様の家庭で児童を養育している方に手当を支給いたします。（注釈）所得制限があります。",
+        "og:title": "児童育成手当（育成手当）",
+        "og:type": "article",
+        "og:description": "母子・父子家庭または同様の家庭で児童を養育している方に手当を支給いたします。（注釈）所得制限があります。",
+        "og:url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6029.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童育成手当（育成手当）"
+        },
+        {
+          "level": 2,
+          "text": "児童育成手当（育成手当）の支給対象"
+        },
+        {
+          "level": 3,
+          "text": "支給対象外"
+        },
+        {
+          "level": 2,
+          "text": "手当額"
+        },
+        {
+          "level": 2,
+          "text": "所得限度額表"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "【認定請求に必要な書類（一部）】"
+        },
+        {
+          "level": 2,
+          "text": "支払時期"
+        },
+        {
+          "level": 2,
+          "text": "手当の更新について（現況届）"
+        },
+        {
+          "level": 2,
+          "text": "必要な届出について"
+        },
+        {
+          "level": 2,
+          "text": "資格の喪失または減額について"
+        },
+        {
+          "level": 2,
+          "text": "手当の再申請について"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6011.html",
@@ -91,7 +755,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2658,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童育成手当（障害手当）｜江東区",
+      "meta": {
+        "description": "障害のある児童を養育している家庭に手当を支給いたします。",
+        "og:title": "児童育成手当（障害手当）",
+        "og:type": "article",
+        "og:description": "障害のある児童を養育している家庭に手当を支給いたします。",
+        "og:url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6011.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童育成手当（障害手当）"
+        },
+        {
+          "level": 2,
+          "text": "児童育成手当（障害手当）の支給対象"
+        },
+        {
+          "level": 3,
+          "text": "支給対象外"
+        },
+        {
+          "level": 2,
+          "text": "手当額"
+        },
+        {
+          "level": 2,
+          "text": "所得限度額表"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "認定請求に必要な書類"
+        },
+        {
+          "level": 2,
+          "text": "支払時期"
+        },
+        {
+          "level": 2,
+          "text": "手当の更新について（現況届）"
+        },
+        {
+          "level": 2,
+          "text": "必要な届出について"
+        },
+        {
+          "level": 2,
+          "text": "手当の再申請について"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/katsudo/index.html",
@@ -102,7 +839,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 827,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こども・子育て支援活動｜江東区",
+      "meta": {
+        "og:title": "こども・子育て支援活動",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kodomo/kosodate/katsudo/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こども・子育て支援活動"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281000/documents/kodomokosodatekaigi/r7/documents/kosodatedanntaishien.html",
@@ -113,7 +873,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2346,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こども・子育て支援活動を行う団体｜江東区",
+      "meta": {
+        "og:title": "こども・子育て支援活動を行う団体",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/281000/documents/kodomokosodatekaigi/r7/documents/kosodatedanntaishien.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こども・子育て支援活動を行う団体"
+        },
+        {
+          "level": 2,
+          "text": "こども・子育て支援団体一覧"
+        },
+        {
+          "level": 3,
+          "text": "1.社会福祉法人のびのび福祉会第2乳幼児親子教室（外部サイトへリンク）（別ウィンドウで開きます）"
+        },
+        {
+          "level": 3,
+          "text": "2.NPO法人江東子ども劇場（外部サイトへリンク）（別ウィンドウで開きます）"
+        },
+        {
+          "level": 3,
+          "text": "3.NPO法人子育てサロンすくすく（外部サイトへリンク）（別ウィンドウで開きます）"
+        },
+        {
+          "level": 3,
+          "text": "4.BeACTO亀戸まちのリビング（外部サイトへリンク）（別ウィンドウで開きます）"
+        },
+        {
+          "level": 3,
+          "text": "5.深川あそび隊"
+        },
+        {
+          "level": 3,
+          "text": "6.NPO法人リンク・スマイル（外部サイトへリンク）（別ウィンドウで開きます）"
+        },
+        {
+          "level": 3,
+          "text": "7.特定非営利活動法人BMKGスポーツプロダクション（外部サイトへリンク）（別ウィンドウで開きます）"
+        },
+        {
+          "level": 3,
+          "text": "8.木場プレーパークぼうけん隊（外部サイトへリンク）（別ウィンドウで開きます）"
+        },
+        {
+          "level": 3,
+          "text": "9.公益財団法人東京YMCA（外部サイトへリンク）（別ウィンドウで開きます）"
+        },
+        {
+          "level": 3,
+          "text": "10.子ども時間（砂町よっちゃん家）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/search/result.html?q=%E5%85%90%E7%AB%A5%E6%89%8B%E5%BD%93&sa=%E6%A4%9C%E7%B4%A2&cx=006317087180884836016%3Ac-iuyduhxj8&ie=UTF-8&cof=FORID%3A9",
@@ -124,7 +951,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 626,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "検索結果｜江東区",
+      "meta": {
+        "og:title": "検索結果",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/search/result.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "検索結果"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/index.html",
@@ -135,7 +981,90 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2179,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援｜江東区",
+      "meta": {
+        "og:title": "子育て支援",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kodomo/kosodate/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援"
+        },
+        {
+          "level": 2,
+          "text": "こども家庭センター・地域子育て相談機関のご案内"
+        },
+        {
+          "level": 2,
+          "text": "児童相談体制の充実に向けて"
+        },
+        {
+          "level": 2,
+          "text": "困ったときのQ＆A"
+        },
+        {
+          "level": 2,
+          "text": "こども食堂"
+        },
+        {
+          "level": 2,
+          "text": "こども・子育て支援活動"
+        },
+        {
+          "level": 2,
+          "text": "手当・医療助成"
+        },
+        {
+          "level": 2,
+          "text": "子育てサービス"
+        },
+        {
+          "level": 2,
+          "text": "ひとり親家庭支援"
+        },
+        {
+          "level": 2,
+          "text": "こどもの虐待防止"
+        },
+        {
+          "level": 2,
+          "text": "子育て相談"
+        },
+        {
+          "level": 2,
+          "text": "江東区こどもの権利に関する条例"
+        },
+        {
+          "level": 2,
+          "text": "計画等"
+        },
+        {
+          "level": 2,
+          "text": "子育て便利情報"
+        },
+        {
+          "level": 2,
+          "text": "養育家庭（ほっとファミリー）"
+        },
+        {
+          "level": 2,
+          "text": "ヤングケアラーの支援"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281012/kodomo/kosodate/benri/4911.html",
@@ -146,7 +1075,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2700,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てハンドブック｜江東区",
+      "meta": {
+        "description": "本区では、子育て中の皆さんが安心して子育てができるように、多分野にわたる子育て情報を一冊にまとめた「江東区子育てハンドブック2020」を作成しました。",
+        "og:title": "子育てハンドブック",
+        "og:type": "article",
+        "og:description": "本区では、子育て中の皆さんが安心して子育てができるように、多分野にわたる子育て情報を一冊にまとめた「江東区子育てハンドブック2020」を作成しました。",
+        "og:url": "https://www.city.koto.lg.jp/281012/kodomo/kosodate/benri/4911.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てハンドブック"
+        },
+        {
+          "level": 2,
+          "text": "スマートフォン用アプリ「マチイロ」で「江東区子育てハンドブック」をご覧いただけます"
+        },
+        {
+          "level": 2,
+          "text": "江東区子育てハンドブック2025（2025年9月発行）"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/282011/kodomo/kosodate/service/5874.html",
@@ -157,7 +1127,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2643,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども家庭支援センター｜江東区",
+      "meta": {
+        "description": "子ども家庭支援センターはみなさんの子育てひろばです。お子さんと遊ぶときはもちろんですが、子育てに疲れたときや一緒に子育てする仲間が欲しいときにもここへお越しください。また、子育ての悩みや不安、子どもの育ちについて心配などがありましたら、いつでもお電話、あるいはスタッフに声をかけて下さい。",
+        "og:title": "子ども家庭支援センター",
+        "og:type": "article",
+        "og:description": "子ども家庭支援センターはみなさんの子育てひろばです。お子さんと遊ぶときはもちろんですが、子育てに疲れたときや一緒に子育てする仲間が欲しいときにもここへお越しください。また、子育ての悩みや不安、子どもの育ちについて心配などがありましたら、いつでもお電話、あるいはスタッフに声をかけて下さい。",
+        "og:url": "https://www.city.koto.lg.jp/282011/kodomo/kosodate/service/5874.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども家庭支援センター"
+        },
+        {
+          "level": 2,
+          "text": "あなたの子育てをみんなで応援します！"
+        },
+        {
+          "level": 3,
+          "text": "子育てひろば"
+        },
+        {
+          "level": 3,
+          "text": "子育て相談"
+        },
+        {
+          "level": 3,
+          "text": "リフレッシュひととき保育"
+        },
+        {
+          "level": 2,
+          "text": "関連施設"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/260552/kodomo/kosodate/sodan/6901.html",
@@ -168,7 +1191,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1286,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て相談・ママのためのほっとタイム｜江東区",
+      "meta": {
+        "description": "子育てについて不安や悩みなどのある保護者の方に対して、相談を行っています。",
+        "og:title": "子育て相談・ママのためのほっとタイム",
+        "og:type": "article",
+        "og:description": "子育てについて不安や悩みなどのある保護者の方に対して、相談を行っています。",
+        "og:url": "https://www.city.koto.lg.jp/260552/kodomo/kosodate/sodan/6901.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て相談・ママのためのほっとタイム"
+        },
+        {
+          "level": 2,
+          "text": "子育て中の保護者の方のための相談（予約制）"
+        },
+        {
+          "level": 3,
+          "text": "問合先"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/shokudo/index.html",
@@ -179,7 +1247,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 808,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こども食堂｜江東区",
+      "meta": {
+        "og:title": "こども食堂",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kodomo/kosodate/shokudo/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こども食堂"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/service/index.html",
@@ -190,7 +1281,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1106,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てサービス｜江東区",
+      "meta": {
+        "og:title": "子育てサービス",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kodomo/kosodate/service/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てサービス"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/index.html",
@@ -201,7 +1315,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1884,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こども・教育｜江東区",
+      "meta": {
+        "og:title": "こども・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kodomo/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こども・教育"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "こどもの医療"
+        },
+        {
+          "level": 2,
+          "text": "子育て支援"
+        },
+        {
+          "level": 2,
+          "text": "保育園・保育施設"
+        },
+        {
+          "level": 2,
+          "text": "放課後支援"
+        },
+        {
+          "level": 2,
+          "text": "まつり・イベント"
+        },
+        {
+          "level": 2,
+          "text": "学校教育"
+        },
+        {
+          "level": 2,
+          "text": "教育委員会"
+        },
+        {
+          "level": 2,
+          "text": "地域・家庭教育"
+        },
+        {
+          "level": 2,
+          "text": "青少年の育成"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kosodate.html",
@@ -212,7 +1393,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1183,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てに便利｜江東区",
+      "meta": {
+        "og:title": "子育てに便利",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kosodate.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てに便利"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "注目キーワード"
+        },
+        {
+          "level": 2,
+          "text": "お役立ち情報"
+        },
+        {
+          "level": 2,
+          "text": "小児科・急病"
+        },
+        {
+          "level": 2,
+          "text": "施設情報"
+        },
+        {
+          "level": 2,
+          "text": "相談したいときは"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/hoiku/ninka/index.html",
@@ -223,7 +1447,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1004,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "保育園等の申込をされる方へ｜江東区",
+      "meta": {
+        "og:title": "保育園等の申込をされる方へ",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kodomo/hoiku/ninka/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "保育園等の申込をされる方へ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/hoiku/index.html",
@@ -234,7 +1481,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2498,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "保育園・保育施設｜江東区",
+      "meta": {
+        "og:title": "保育園・保育施設",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kodomo/hoiku/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "保育園・保育施設"
+        },
+        {
+          "level": 2,
+          "text": "保育園等の申込をされる方へ"
+        },
+        {
+          "level": 2,
+          "text": "保育園等に在園されている方へ"
+        },
+        {
+          "level": 2,
+          "text": "事業者の方へ"
+        },
+        {
+          "level": 2,
+          "text": "区立保育園の紹介"
+        },
+        {
+          "level": 2,
+          "text": "認可外保育施設"
+        },
+        {
+          "level": 2,
+          "text": "保育のしごと"
+        },
+        {
+          "level": 2,
+          "text": "保育政策"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/280308/kodomo/hoiku/ninka/akijyohou_r8_5kara.html",
@@ -245,7 +1543,68 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3249,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "空き人員一覧（認可保育所等、居宅訪問型保育（待機児童））｜江東区",
+      "meta": {
+        "description": "認可保育園等の空き状況の一覧です。",
+        "og:title": "空き人員一覧（認可保育所等、居宅訪問型保育（待機児童））",
+        "og:type": "article",
+        "og:description": "認可保育園等の空き状況の一覧です。",
+        "og:url": "https://www.city.koto.lg.jp/280308/kodomo/hoiku/ninka/akijyohou_r8_5kara.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "空き人員一覧（認可保育所等、居宅訪問型保育（待機児童））"
+        },
+        {
+          "level": 2,
+          "text": "認可保育所等（令和8年9月入園）募集について"
+        },
+        {
+          "level": 3,
+          "text": "受付期間"
+        },
+        {
+          "level": 3,
+          "text": "受付の注意点"
+        },
+        {
+          "level": 3,
+          "text": "令和8年度認可保育園募集予定人員一覧バックナンバー"
+        },
+        {
+          "level": 3,
+          "text": "令和7年度認可保育園募集予定人員一覧バックナンバー"
+        },
+        {
+          "level": 2,
+          "text": "居宅訪問型保育（待機児童向け）募集について​"
+        },
+        {
+          "level": 3,
+          "text": "令和8年10月の居宅訪問型保育（待機児童向け）の募集人員一覧"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ（各事業の詳細、お申込み方法について）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/280308/kodomo/hoiku/ninka/hoikunohitsuyouseinonintei.html",
@@ -256,7 +1615,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7447,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "保育の必要性の認定について｜江東区",
+      "meta": {
+        "og:title": "保育の必要性の認定について",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/280308/kodomo/hoiku/ninka/hoikunohitsuyouseinonintei.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "保育の必要性の認定について"
+        },
+        {
+          "level": 2,
+          "text": "認定の種類"
+        },
+        {
+          "level": 2,
+          "text": "認定の申請手続き"
+        },
+        {
+          "level": 2,
+          "text": "保育を必要とする証明"
+        },
+        {
+          "level": 2,
+          "text": "状況が変わる際の手続きについて"
+        },
+        {
+          "level": 3,
+          "text": "離婚等による保護者の変更がある場合"
+        },
+        {
+          "level": 3,
+          "text": "「就労」事由の保護者の状況が変わる場合"
+        },
+        {
+          "level": 3,
+          "text": "「求職」及び「就学」事由の保護者の状況が変わる場合"
+        },
+        {
+          "level": 2,
+          "text": "現況調査について"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/280502/kodomo/hoiku/ninka/kaitikukaisyuukeikaku.html",
@@ -267,7 +1693,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1505,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区立保育園（公設民営含む）の改築・改修計画について【令和8年2月現在】｜江東区",
+      "meta": {
+        "description": "本区では、施設の老朽化に伴う改築・改修工事や、都営住宅の耐震補強工事に合わせた改修工事を予定しております。改修・改築期間中、一定期間仮設園舎で保育を実施する園、あるいは、改築に伴い移転を予定している園もございますのでご留意願います。",
+        "og:title": "区立保育園（公設民営含む）の改築・改修計画について【令和8年2月現在】",
+        "og:type": "article",
+        "og:description": "本区では、施設の老朽化に伴う改築・改修工事や、都営住宅の耐震補強工事に合わせた改修工事を予定しております。改修・改築期間中、一定期間仮設園舎で保育を実施する園、あるいは、改築に伴い移転を予定している園もございますのでご留意願います。",
+        "og:url": "https://www.city.koto.lg.jp/280502/kodomo/hoiku/ninka/kaitikukaisyuukeikaku.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区立保育園（公設民営含む）の改築・改修計画について【令和8年2月現在】"
+        },
+        {
+          "level": 2,
+          "text": "改築・改修計画について"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -276,174 +1739,224 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kosodate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/hoiku/ninka/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/2024jidou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/katsudo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/search/result.html?q=%E5%85%90%E7%AB%A5%E6%89%8B%E5%BD%93&sa=%E6%A4%9C%E7%B4%A2&cx=006317087180884836016%3Ac-iuyduhxj8&ie=UTF-8&cof=FORID%3A9",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281012/kodomo/kosodate/benri/4911.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/282011/kodomo/kosodate/service/5874.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/260552/kodomo/kosodate/sodan/6901.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/hoiku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/280308/kodomo/hoiku/ninka/akijyohou_r8_5kara.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/280308/kodomo/hoiku/ninka/hoikunohitsuyouseinonintei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/280502/kodomo/hoiku/ninka/kaitikukaisyuukeikaku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/20171121.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/96043.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6028.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6029.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6011.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/281000/documents/kodomokosodatekaigi/r7/documents/kosodatedanntaishien.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/shokudo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kodomo/kosodate/service/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.taito.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/azukari.html",
@@ -14,7 +35,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1245,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年度より石浜橋場こども園の預かり保育事業を拡充しました 台東区ホームページ",
+      "meta": {
+        "og:title": "令和8年度より石浜橋場こども園の預かり保育事業を拡充しました",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/azukari.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度より石浜橋場こども園の預かり保育事業を拡充しました"
+        },
+        {
+          "level": 2,
+          "text": "令和8年度より石浜橋場こども園の預かり保育事業を拡充しました"
+        },
+        {
+          "level": 3,
+          "text": "拡充内容"
+        },
+        {
+          "level": 3,
+          "text": "拡充後の時間及び料金区分"
+        },
+        {
+          "level": 3,
+          "text": "利用対象者"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "預かり保育の無償化"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "石浜橋場こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/index.html",
@@ -25,7 +102,73 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 791,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "認定こども園 台東区ホームページ",
+      "meta": {
+        "og:title": "認定こども園",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/index.html",
+        "og:description": "発達段階に応じて一貫した教育と保育を担う「認定こども園」に関する情報を掲載しています。",
+        "description": "発達段階に応じて一貫した教育と保育を担う「認定こども園」に関する情報を掲載しています。"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "私立認定こども園児入園料等補助金のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "区立幼稚園及び認定こども園（短時間クラス）における医療的ケアが必要なお子さまの受入れについて"
+        },
+        {
+          "level": 2,
+          "text": "幼児教育・保育の無償化（認定こども園に関する概要）"
+        },
+        {
+          "level": 2,
+          "text": "「認定こども園」とは"
+        },
+        {
+          "level": 2,
+          "text": "台東区の認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "令和8年度 認定こども園園児募集について"
+        },
+        {
+          "level": 2,
+          "text": "令和8年度区立幼稚園及び区立こども園（短時間保育）募集人数のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "令和8年度区立幼稚園及び区立こども園（短時間保育）園児募集等の最終申込状況について"
+        },
+        {
+          "level": 2,
+          "text": "区立幼稚園及び区立こども園（短時間保育）の随時入園及び補欠登録申込について"
+        },
+        {
+          "level": 2,
+          "text": "こども園の第三者評価について"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/index.html",
@@ -36,7 +179,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1386,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "台東区の認定こども園 台東区ホームページ",
+      "meta": {
+        "og:title": "台東区の認定こども園",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "台東区の認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "台東区の取り組み"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園の教育・保育"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園の理念・目標"
+        },
+        {
+          "level": 3,
+          "text": "理念"
+        },
+        {
+          "level": 3,
+          "text": "目標"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/index.html",
@@ -47,7 +238,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 450,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "石浜橋場こども園 台東区ホームページ",
+      "meta": {
+        "og:title": "石浜橋場こども園",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "石浜橋場こども園"
+        },
+        {
+          "level": 2,
+          "text": "台東区の認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
@@ -58,7 +273,95 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3081,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "幼児教育・保育の無償化（認定こども園に関する概要） 台東区ホームページ",
+      "meta": {
+        "og:title": "幼児教育・保育の無償化（認定こども園に関する概要）",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "幼児教育・保育の無償化（認定こども園に関する概要）"
+        },
+        {
+          "level": 2,
+          "text": "実施時期"
+        },
+        {
+          "level": 2,
+          "text": "対象・内容"
+        },
+        {
+          "level": 3,
+          "text": "長時間保育"
+        },
+        {
+          "level": 3,
+          "text": "短時間保育"
+        },
+        {
+          "level": 4,
+          "text": "(1)こども園保育料が全額無償"
+        },
+        {
+          "level": 4,
+          "text": "(2)預かり保育月額最大12,300円まで無償"
+        },
+        {
+          "level": 4,
+          "text": "（3）認可外保育施設等"
+        },
+        {
+          "level": 2,
+          "text": "預かり保育無償化の認定手続きについて"
+        },
+        {
+          "level": 4,
+          "text": "書面申請"
+        },
+        {
+          "level": 4,
+          "text": "電子申請"
+        },
+        {
+          "level": 2,
+          "text": "預かり保育が無償化されるまで"
+        },
+        {
+          "level": 3,
+          "text": "預かり保育無償化の請求手続き"
+        },
+        {
+          "level": 3,
+          "text": "保育の必要性の現況確認について"
+        },
+        {
+          "level": 2,
+          "text": "幼児教育・保育無償化の担当課の変更"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/01588621000.html",
@@ -69,7 +372,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1529,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "私立認定こども園児入園料等補助金のお知らせ 台東区ホームページ",
+      "meta": {
+        "og:title": "私立認定こども園児入園料等補助金のお知らせ",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/01588621000.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "私立認定こども園児入園料等補助金のお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "対象者"
+        },
+        {
+          "level": 3,
+          "text": "上限額"
+        },
+        {
+          "level": 3,
+          "text": "手続き方法"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/iryoutekikea.html",
@@ -80,7 +427,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1545,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区立幼稚園及び認定こども園（短時間クラス）における医療的ケアが必要なお子さまの受入れについて 台東区ホームページ",
+      "meta": {
+        "og:title": "区立幼稚園及び認定こども園（短時間クラス）における医療的ケアが必要なお子さまの受入れについて",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/iryoutekikea.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区立幼稚園及び認定こども園（短時間クラス）における医療的ケアが必要なお子さまの受入れについて"
+        },
+        {
+          "level": 3,
+          "text": "対象となる医療的ケアとは"
+        },
+        {
+          "level": 3,
+          "text": "対象者"
+        },
+        {
+          "level": 3,
+          "text": "実施するための条件"
+        },
+        {
+          "level": 3,
+          "text": "医療的ケアの実施者"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/ninteikodomoen.html",
@@ -91,7 +486,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1570,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「認定こども園」とは 台東区ホームページ",
+      "meta": {
+        "og:title": "「認定こども園」とは",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/ninteikodomoen.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「認定こども園」とは"
+        },
+        {
+          "level": 2,
+          "text": "「認定こども園」とは"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園の4つの形態"
+        },
+        {
+          "level": 2,
+          "text": "幼児教育・保育の無償化について"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/kotobuki/index.html",
@@ -102,7 +541,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 455,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ことぶきこども園 台東区ホームページ",
+      "meta": {
+        "og:title": "ことぶきこども園",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/kotobuki/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ことぶきこども園"
+        },
+        {
+          "level": 2,
+          "text": "台東区の認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/taito/index.html",
@@ -113,7 +576,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 434,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "たいとうこども園 台東区ホームページ",
+      "meta": {
+        "og:title": "たいとうこども園",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/taito/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "たいとうこども園"
+        },
+        {
+          "level": 2,
+          "text": "台東区の認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html",
@@ -124,7 +611,83 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3345,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年度 認定こども園園児募集について 台東区ホームページ",
+      "meta": {
+        "og:title": "令和8年度 認定こども園園児募集について",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度 認定こども園園児募集について"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 3,
+          "text": "短時間保育（3歳児～5歳児）"
+        },
+        {
+          "level": 3,
+          "text": "長時間保育（0歳児～5歳児）"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 3,
+          "text": "短時間保育（3歳児～5歳児）"
+        },
+        {
+          "level": 3,
+          "text": "長時間保育（0歳児～5歳児）"
+        },
+        {
+          "level": 2,
+          "text": "募集案内"
+        },
+        {
+          "level": 2,
+          "text": "申込時期"
+        },
+        {
+          "level": 3,
+          "text": "4月入園"
+        },
+        {
+          "level": 3,
+          "text": "途中入園"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/isihamahasiba.html",
@@ -135,7 +698,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2160,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "石浜橋場こども園で遊びませんか 台東区ホームページ",
+      "meta": {
+        "og:title": "石浜橋場こども園で遊びませんか",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/isihamahasiba.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "石浜橋場こども園で遊びませんか"
+        },
+        {
+          "level": 2,
+          "text": "子育てひろば"
+        },
+        {
+          "level": 3,
+          "text": "なかよしひろば（未就園児の会）"
+        },
+        {
+          "level": 3,
+          "text": "子育て相談"
+        },
+        {
+          "level": 3,
+          "text": "赤ちゃんの駅"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "石浜橋場こども園"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/houkago_kodomokurabu.pdf",
@@ -146,7 +757,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.html",
@@ -157,7 +775,107 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5313,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの予防接種 台東区ホームページ",
+      "meta": {
+        "og:title": "子どもの予防接種",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの予防接種"
+        },
+        {
+          "level": 2,
+          "text": "予防接種スケジュール"
+        },
+        {
+          "level": 2,
+          "text": "定期予防接種一覧"
+        },
+        {
+          "level": 3,
+          "text": "日本脳炎予防接種特例措置"
+        },
+        {
+          "level": 2,
+          "text": "任意予防接種一覧"
+        },
+        {
+          "level": 2,
+          "text": "定期・任意予防接種実施医療機関"
+        },
+        {
+          "level": 3,
+          "text": "定期予防接種実施医療機関"
+        },
+        {
+          "level": 3,
+          "text": "任意予防接種実施医療機関"
+        },
+        {
+          "level": 2,
+          "text": "定期予防接種の保護者(親権者)以外の同伴について"
+        },
+        {
+          "level": 2,
+          "text": "予診票"
+        },
+        {
+          "level": 3,
+          "text": "予診票がお手元にない方へ"
+        },
+        {
+          "level": 4,
+          "text": "窓口での発行をご希望の場合"
+        },
+        {
+          "level": 4,
+          "text": "郵便での発行をご希望の場合"
+        },
+        {
+          "level": 3,
+          "text": "台東区外へお引越しの予定がある方へ"
+        },
+        {
+          "level": 2,
+          "text": "23区以外の市町村で定期予防接種を受けるには"
+        },
+        {
+          "level": 2,
+          "text": "長期にわたる療養等により定期予防接種の機会を逃した方へ"
+        },
+        {
+          "level": 2,
+          "text": "骨髄移植手術等による予防接種費用の助成"
+        },
+        {
+          "level": 2,
+          "text": "予防接種による健康被害救済制度"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "予防接種"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.html",
@@ -168,7 +886,142 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2430,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "放課後子供教室のご案内 台東区ホームページ",
+      "meta": {
+        "og:title": "放課後子供教室のご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "放課後子供教室のご案内"
+        },
+        {
+          "level": 2,
+          "text": "放課後子供教室とは"
+        },
+        {
+          "level": 3,
+          "text": "令和8年度実施小学校"
+        },
+        {
+          "level": 3,
+          "text": "今後の新規実施予定"
+        },
+        {
+          "level": 3,
+          "text": "放課後対策事業 関連資料"
+        },
+        {
+          "level": 3,
+          "text": "【外国語版】放課後子供教室のご案内"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "放課後子供教室"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/index.html",
+      "link_text": "子育て・教育",
+      "hops": 1,
+      "score": 7,
+      "parent": "https://www.city.taito.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1327,
+      "has_jsonld": false,
+      "title": "子育て・教育 台東区ホームページ",
+      "meta": {
+        "og:title": "子育て・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "こどもまんなかへの取組"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "台東いきいき子育て"
+        },
+        {
+          "level": 2,
+          "text": "保育・学童"
+        },
+        {
+          "level": 2,
+          "text": "園児募集"
+        },
+        {
+          "level": 2,
+          "text": "幼稚園のご案内"
+        },
+        {
+          "level": 2,
+          "text": "認定こども園"
+        },
+        {
+          "level": 2,
+          "text": "区立小中学校のご案内"
+        },
+        {
+          "level": 2,
+          "text": "子ども・青少年の健全育成"
+        },
+        {
+          "level": 2,
+          "text": "教育委員会"
+        },
+        {
+          "level": 2,
+          "text": "幼児教育の無償化"
+        },
+        {
+          "level": 2,
+          "text": "多様な集団活動事業"
+        },
+        {
+          "level": 2,
+          "text": "広告"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/benri/teate-josei.html",
@@ -179,7 +1032,107 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2173,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手当・助成 台東区ホームページ",
+      "meta": {
+        "og:title": "手当・助成",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/benri/teate-josei.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "子育て"
+        },
+        {
+          "level": 3,
+          "text": "手当"
+        },
+        {
+          "level": 3,
+          "text": "医療・健康"
+        },
+        {
+          "level": 3,
+          "text": "保育"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "教育"
+        },
+        {
+          "level": 2,
+          "text": "安心安全"
+        },
+        {
+          "level": 3,
+          "text": "個人向け"
+        },
+        {
+          "level": 3,
+          "text": "団体等向け"
+        },
+        {
+          "level": 2,
+          "text": "障害のある方"
+        },
+        {
+          "level": 2,
+          "text": "医療・健康"
+        },
+        {
+          "level": 2,
+          "text": "住まい"
+        },
+        {
+          "level": 2,
+          "text": "環境・まちづくり"
+        },
+        {
+          "level": 2,
+          "text": "福祉"
+        },
+        {
+          "level": 2,
+          "text": "道路"
+        },
+        {
+          "level": 2,
+          "text": "地域協働"
+        },
+        {
+          "level": 2,
+          "text": "事業者向け"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "便利情報"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/hoikuen/kodomoenhijokin30.html",
@@ -190,29 +1143,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1982,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/graffer.html",
-      "link_text": "子育て手続きガイドをご利用ください！",
-      "hops": 1,
-      "score": 7,
-      "parent": "https://www.city.taito.lg.jp/",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1313,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/index.html",
-      "link_text": "子育て・教育",
-      "hops": 2,
-      "score": 7,
-      "parent": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1327,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年度 石浜橋場こども園保育士（会計年度任用職員）の募集について 台東区ホームページ",
+      "meta": {
+        "og:title": "令和8年度　石浜橋場こども園保育士（会計年度任用職員）の募集について",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/hoikuen/kodomoenhijokin30.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度 石浜橋場こども園保育士（会計年度任用職員）の募集について"
+        },
+        {
+          "level": 2,
+          "text": "下記のとおり会計年度任用職員を募集します。"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "保育園や認定こども園等の募集案内"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/index.html",
@@ -223,7 +1190,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 621,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "台東いきいき子育て 台東区ホームページ",
+      "meta": {
+        "og:title": "台東いきいき子育て",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "台東 いきいき子育て 子どもの笑顔でにぎわうまち！"
+        },
+        {
+          "level": 2,
+          "text": "年齢別に探す"
+        },
+        {
+          "level": 2,
+          "text": "目的別に探す"
+        },
+        {
+          "level": 2,
+          "text": "よく見られているページ"
+        },
+        {
+          "level": 2,
+          "text": "イベントカレンダー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/mr_kutan_20260624.pdf",
@@ -234,7 +1233,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otahuku_20260624.pdf",
@@ -245,7 +1251,32 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otokoHPV_20260624.pdf",
+      "link_text": "男性HPV実施医療機関名簿（令和8年6月24日時点）（PDF：259KB）",
+      "hops": 2,
+      "score": 6,
+      "parent": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 25 Jun 2026 00:58:13 GMT",
+      "etag": "W/\"40ff4-655097c90f20c\""
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8_houkago_pamphlet.pdf",
@@ -256,7 +1287,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8_houkago_ichiran.pdf.pdf",
@@ -267,7 +1305,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8shiori.pdf",
@@ -278,7 +1323,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1339,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/azukari.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/benri/teate-josei.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/hoikuen/kodomoenhijokin30.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/graffer.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/benri/teate-josei.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/hoikuen/kodomoenhijokin30.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/mr_kutan_20260624.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otahuku_20260624.pdf",
       "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otokoHPV_20260624.pdf",
+      "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Thu, 25 Jun 2026 00:58:13 GMT",
+      "etag": "W/\"40ff4-655097c90f20c\"",
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/houkago_kodomokurabu.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8_houkago_pamphlet.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8_houkago_ichiran.pdf.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8shiori.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/01588621000.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/iryoutekikea.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/ninteikodomoen.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/kotobuki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/taito/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/isihamahasiba.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

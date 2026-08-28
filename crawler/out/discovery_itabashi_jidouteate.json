@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.itabashi.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
@@ -14,7 +35,75 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1809,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当 総合案内｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "児童手当　総合案内｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当 総合案内"
+        },
+        {
+          "level": 2,
+          "text": "児童手当は、18歳までのお子さんを養育している方に支給される手当です。申請が必要な制度ですので、ご注意ください。"
+        },
+        {
+          "level": 3,
+          "text": "状況・目的別ナビ"
+        },
+        {
+          "level": 3,
+          "text": "児童手当に関するページ"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 4,
+          "text": "子どもの手当"
+        },
+        {
+          "level": 5,
+          "text": "高校生年代までの子どもがいる方の手当"
+        },
+        {
+          "level": 5,
+          "text": "ひとり親家庭等の場合／保護者に障がいがある場合の手当"
+        },
+        {
+          "level": 5,
+          "text": "子どもに障がいがある場合の手当"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/index.html",
@@ -25,7 +114,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 871,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの手当・助成・支援｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの手当・助成・支援｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/index.html",
@@ -36,7 +153,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 982,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て情報ブック｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "子育て情報ブック｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て情報ブック"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/index.html",
@@ -47,7 +204,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1082,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの手当｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの手当｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの手当"
+        },
+        {
+          "level": 3,
+          "text": "高校生年代までの子どもがいる方の手当"
+        },
+        {
+          "level": 3,
+          "text": "ひとり親家庭等の場合／保護者に障がいがある場合の手当"
+        },
+        {
+          "level": 3,
+          "text": "子どもに障がいがある場合の手当"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/shogai/index.html",
@@ -58,7 +263,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 879,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "障がいのある子どもの手当・医療の助成｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "障がいのある子どもの手当・医療の助成｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/shogai/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "障がいのある子どもの手当・医療の助成"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/oyakudachi/1004610.html",
@@ -69,7 +310,87 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2662,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「いたばし子育て応援アプリ」配信中！｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "「いたばし子育て応援アプリ」配信中！｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/oyakudachi/1004610.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「いたばし子育て応援アプリ」配信中！"
+        },
+        {
+          "level": 2,
+          "text": "いたばし子育て応援アプリ"
+        },
+        {
+          "level": 3,
+          "text": "利用方法"
+        },
+        {
+          "level": 3,
+          "text": "対応デバイス・環境"
+        },
+        {
+          "level": 3,
+          "text": "画面イメージ"
+        },
+        {
+          "level": 2,
+          "text": "オンライン相談（いたばし子育て応援アプリ）について"
+        },
+        {
+          "level": 3,
+          "text": "利用に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "予約方法"
+        },
+        {
+          "level": 4,
+          "text": "子育て相談 CAP'S児童館職員"
+        },
+        {
+          "level": 4,
+          "text": "子育て相談・栄養相談・歯科相談 各専門職員"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 4,
+          "text": "子ども関連情報"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065179.html",
@@ -80,7 +401,144 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5332,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「児童扶養手当現況届のお知らせ（郵送手続き）」が届いた方へ｜板橋区公式ホームページ",
+      "meta": {
+        "description": "「児童扶養手当現況届のお知らせ（郵送手続き）」が届いた方が「何をすればよいか」などが分かります。",
+        "og:title": "「児童扶養手当現況届のお知らせ（郵送手続き）」が届いた方へ｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "「児童扶養手当現況届のお知らせ（郵送手続き）」が届いた方が「何をすればよいか」などが分かります。",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065179.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「児童扶養手当現況届のお知らせ（郵送手続き）」が届いた方へ"
+        },
+        {
+          "level": 2,
+          "text": "1．「児童扶養手当現況届のお知らせ（郵送手続き）」が届いた理由"
+        },
+        {
+          "level": 3,
+          "text": "毎年8月1日時点における児童の養育状況などを確認するために提出が必要です。"
+        },
+        {
+          "level": 2,
+          "text": "2．「児童扶養手当現況届のお知らせ（郵送手続き）」が届いたら"
+        },
+        {
+          "level": 2,
+          "text": "3．提出に関する注意事項"
+        },
+        {
+          "level": 2,
+          "text": "4．よくある問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "（1）提出期限に間に合わなかった"
+        },
+        {
+          "level": 3,
+          "text": "（2）記入時に書き損じた"
+        },
+        {
+          "level": 3,
+          "text": "（3）税の申告は、どのように手続きすればよいですか"
+        },
+        {
+          "level": 3,
+          "text": "（4）扶養義務者とは何ですか"
+        },
+        {
+          "level": 3,
+          "text": "（5）所得制限超過で手当をもらっていなくても現況届の提出が必要なのか"
+        },
+        {
+          "level": 2,
+          "text": "5．区担当窓口・郵送提出時の提出先"
+        },
+        {
+          "level": 3,
+          "text": "郵送提出時の注意事項"
+        },
+        {
+          "level": 3,
+          "text": "窓口の混雑状況"
+        },
+        {
+          "level": 2,
+          "text": "6.「児童扶養手当現況届のお知らせ（郵送手続き）」以外のお知らせをお持ちの方へ"
+        },
+        {
+          "level": 3,
+          "text": "（1）「児童扶養手当現況届のお知らせ（除外届なし）」をお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "（2）「児童扶養手当現況届のお知らせ（除外届あり-A）」をお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "（3）「児童扶養手当現況届のお知らせ（除外届あり-B）」をお持ちの方"
+        },
+        {
+          "level": 2,
+          "text": "7．児童扶養手当受給者に向けたPR"
+        },
+        {
+          "level": 3,
+          "text": "（1）いたばしひとり親家庭相談窓口"
+        },
+        {
+          "level": 3,
+          "text": "（2）ひとり親家庭等の制度一覧"
+        },
+        {
+          "level": 3,
+          "text": "（3）ひとり親家庭サポートブック"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 4,
+          "text": "子どもの手当"
+        },
+        {
+          "level": 5,
+          "text": "児童扶養手当 総合案内"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065176.html",
@@ -91,7 +549,136 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5093,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いた方へ｜板橋区公式ホームページ",
+      "meta": {
+        "description": "「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いた方が「何をすればよいか」などが分かります。",
+        "og:title": "「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いた方へ｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いた方が「何をすればよいか」などが分かります。",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065176.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いた方へ"
+        },
+        {
+          "level": 2,
+          "text": "1．「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いた理由"
+        },
+        {
+          "level": 3,
+          "text": "毎年8月1日時点における児童の養育状況などを確認するために提出が必要です。"
+        },
+        {
+          "level": 2,
+          "text": "2．「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いたら"
+        },
+        {
+          "level": 2,
+          "text": "3．提出に関する注意事項"
+        },
+        {
+          "level": 2,
+          "text": "4．よくある問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "（1）お知らせに書かれている「除外届あり-B」とは何ですか"
+        },
+        {
+          "level": 3,
+          "text": "（2）提出期限に間に合わなかった"
+        },
+        {
+          "level": 3,
+          "text": "（3）税の申告は、どのように手続きすればよいですか"
+        },
+        {
+          "level": 3,
+          "text": "（4）扶養義務者とは何ですか"
+        },
+        {
+          "level": 2,
+          "text": "5．二次元コードが読み取れない、またはURLにアクセスできない場合"
+        },
+        {
+          "level": 3,
+          "text": "（1）「児童扶養手当現況届のお知らせ（除外届なし）」をお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "（2）「児童扶養手当現況届のお知らせ（除外届あり-A）」をお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "（3）「児童扶養手当現況届のお知らせ（除外届あり-B）」をお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "（4）「児童扶養手当現況届のお知らせ（郵送手続き）」をお持ちの方"
+        },
+        {
+          "level": 2,
+          "text": "6．区担当窓口"
+        },
+        {
+          "level": 2,
+          "text": "7．児童扶養手当受給者に向けたPR"
+        },
+        {
+          "level": 3,
+          "text": "（1）いたばしひとり親家庭相談窓口"
+        },
+        {
+          "level": 3,
+          "text": "（2）ひとり親家庭等の制度一覧"
+        },
+        {
+          "level": 3,
+          "text": "（3）ひとり親家庭サポートブック"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 4,
+          "text": "子どもの手当"
+        },
+        {
+          "level": 5,
+          "text": "児童扶養手当 総合案内"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065172.html",
@@ -102,7 +689,136 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5093,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いた方へ｜板橋区公式ホームページ",
+      "meta": {
+        "description": "「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いた方が「何をすればよいか」などが分かります。",
+        "og:title": "「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いた方へ｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いた方が「何をすればよいか」などが分かります。",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065172.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いた方へ"
+        },
+        {
+          "level": 2,
+          "text": "1．「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いた理由"
+        },
+        {
+          "level": 3,
+          "text": "毎年8月1日時点における児童の養育状況などを確認するために提出が必要です。"
+        },
+        {
+          "level": 2,
+          "text": "2．「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いたら"
+        },
+        {
+          "level": 2,
+          "text": "3．提出に関する注意事項"
+        },
+        {
+          "level": 2,
+          "text": "4．よくある問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "（1）お知らせに書かれている「除外届あり-A」とは何ですか"
+        },
+        {
+          "level": 3,
+          "text": "（2）提出期限に間に合わなかった"
+        },
+        {
+          "level": 3,
+          "text": "（3）税の申告は、どのように手続きすればよいですか"
+        },
+        {
+          "level": 3,
+          "text": "（4）扶養義務者とは何ですか"
+        },
+        {
+          "level": 2,
+          "text": "5．二次元コードが読み取れない、またはURLにアクセスできない場合"
+        },
+        {
+          "level": 3,
+          "text": "（1）「児童扶養手当現況届のお知らせ（除外届なし）」をお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "（2）「児童扶養手当現況届のお知らせ（除外届あり-A）」をお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "（3）「児童扶養手当現況届のお知らせ（除外届あり-B）」をお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "（4）「児童扶養手当現況届のお知らせ（郵送手続き）」をお持ちの方"
+        },
+        {
+          "level": 2,
+          "text": "6．区担当窓口"
+        },
+        {
+          "level": 2,
+          "text": "7．児童扶養手当受給者に向けたPR"
+        },
+        {
+          "level": 3,
+          "text": "（1）いたばしひとり親家庭相談窓口"
+        },
+        {
+          "level": 3,
+          "text": "（2）ひとり親家庭等の制度一覧"
+        },
+        {
+          "level": 3,
+          "text": "（3）ひとり親家庭サポートブック"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 4,
+          "text": "子どもの手当"
+        },
+        {
+          "level": 5,
+          "text": "児童扶養手当 総合案内"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/1004606.html",
@@ -113,7 +829,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1626,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "いたばし子育て情報ブック｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "いたばし子育て情報ブック｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/1004606.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "いたばし子育て情報ブック"
+        },
+        {
+          "level": 2,
+          "text": "配布方法"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 4,
+          "text": "子育て情報ブック"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/index.html",
@@ -124,7 +892,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1834,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童扶養手当 総合案内｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "児童扶養手当　総合案内｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童扶養手当 総合案内"
+        },
+        {
+          "level": 2,
+          "text": "児童扶養手当は、ひとり親家庭や両親のどちらかが重度の障がいがある家庭で、18歳までの子どもを養育している方に支給する手当です。"
+        },
+        {
+          "level": 3,
+          "text": "状況・目的別ナビ"
+        },
+        {
+          "level": 3,
+          "text": "児童扶養手当に関するページ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 4,
+          "text": "子どもの手当"
+        },
+        {
+          "level": 5,
+          "text": "高校生年代までの子どもがいる方の手当"
+        },
+        {
+          "level": 5,
+          "text": "ひとり親家庭等の場合／保護者に障がいがある場合の手当"
+        },
+        {
+          "level": 5,
+          "text": "子どもに障がいがある場合の手当"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1004635.html",
@@ -135,7 +967,144 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4355,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童育成手当｜板橋区公式ホームページ",
+      "meta": {
+        "description": "18歳になった最初の3月31日までの児童を養育しているひとり親家庭や重度の障がいがある保護者に支給される手当",
+        "og:title": "児童育成手当｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "18歳になった最初の3月31日までの児童を養育しているひとり親家庭や重度の障がいがある保護者に支給される手当",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1004635.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童育成手当"
+        },
+        {
+          "level": 2,
+          "text": "児童育成手当の制度改正（令和7年6月分以降）について"
+        },
+        {
+          "level": 3,
+          "text": "所得限度額一覧表"
+        },
+        {
+          "level": 2,
+          "text": "育成手当について"
+        },
+        {
+          "level": 3,
+          "text": "支給対象者"
+        },
+        {
+          "level": 3,
+          "text": "次の方は資格対象外です"
+        },
+        {
+          "level": 3,
+          "text": "所得制限額について"
+        },
+        {
+          "level": 3,
+          "text": "支給額・支給月"
+        },
+        {
+          "level": 4,
+          "text": "支給月額"
+        },
+        {
+          "level": 4,
+          "text": "支給月"
+        },
+        {
+          "level": 3,
+          "text": "申請・手続き方法"
+        },
+        {
+          "level": 3,
+          "text": "申請に必要なもの（支給要件により、別途書類が必要な場合もしくは書類の省略が可能な場合があります）"
+        },
+        {
+          "level": 3,
+          "text": "申請受付窓口"
+        },
+        {
+          "level": 3,
+          "text": "支給開始月"
+        },
+        {
+          "level": 3,
+          "text": "受給中の方の手続き"
+        },
+        {
+          "level": 4,
+          "text": "申請内容の変更"
+        },
+        {
+          "level": 4,
+          "text": "資格の喪失または減額"
+        },
+        {
+          "level": 3,
+          "text": "現況届"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所リアルタイム窓口情報"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 4,
+          "text": "子どもの手当"
+        },
+        {
+          "level": 5,
+          "text": "高校生年代までの子どもがいる方の手当"
+        },
+        {
+          "level": 5,
+          "text": "ひとり親家庭等の場合／保護者に障がいがある場合の手当"
+        },
+        {
+          "level": 5,
+          "text": "子どもに障がいがある場合の手当"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/shogai/1004642.html",
@@ -146,40 +1115,145 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2058,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "障がいのある子どもの手当・医療の助成｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "障がいのある子どもの手当・医療の助成｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/shogai/1004642.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "障がいのある子どもの手当・医療の助成"
+        },
+        {
+          "level": 2,
+          "text": "心身障がい者の手当"
+        },
+        {
+          "level": 3,
+          "text": "心身障がい者福祉手当（区制度）"
+        },
+        {
+          "level": 3,
+          "text": "重度心身障がい者手当（都制度）"
+        },
+        {
+          "level": 3,
+          "text": "障がい児福祉手当"
+        },
+        {
+          "level": 3,
+          "text": "特別児童扶養手当（国の制度）"
+        },
+        {
+          "level": 3,
+          "text": "児童育成手当（障害手当）（区の制度）"
+        },
+        {
+          "level": 2,
+          "text": "心身障がい者（児）医療費の助成"
+        },
+        {
+          "level": 2,
+          "text": "精神障がい者（児）医療費の助成"
+        },
+        {
+          "level": 2,
+          "text": "心身障がい児（者）歯科診療"
+        },
+        {
+          "level": 2,
+          "text": "自立支援医療（育成医療）"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 4,
+          "text": "障がいのある子どもの手当・医療の助成"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E3%81%A9%E3%82%82%E3%81%AE%E6%89%8B%E5%BD%93%E3%83%BB%E5%8A%A9%E6%88%90%E3%83%BB%E6%94%AF%E6%8F%B4%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fteate%2Findex.html",
-      "link_text": "",
+      "link_text": "このページの情報をXでポストできます",
       "hops": 2,
       "score": 8,
       "parent": "https://www.city.itabashi.tokyo.jp/kosodate/teate/index.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E8%82%B2%E3%81%A6%E6%83%85%E5%A0%B1%E3%83%96%E3%83%83%E3%82%AF%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fteate%2Fbook%2Findex.html",
-      "link_text": "",
+      "link_text": "このページの情報をXでポストできます",
       "hops": 3,
       "score": 8,
       "parent": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/index.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fteate%2Fbook%2Findex.html&t=%E5%AD%90%E8%82%B2%E3%81%A6%E6%83%85%E5%A0%B1%E3%83%96%E3%83%83%E3%82%AF%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
-      "link_text": "",
+      "link_text": "このページの情報をフェイスブックでシェアできます",
       "hops": 3,
       "score": 8,
       "parent": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/index.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/index.html",
@@ -190,7 +1264,99 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1096,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育・生涯学習｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "子育て・教育・生涯学習｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "いたばし子育て情報サイト"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "新着更新情報"
+        },
+        {
+          "level": 2,
+          "text": "こども性暴力防止法に関すること"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "子どもの健康"
+        },
+        {
+          "level": 2,
+          "text": "子どもを預ける"
+        },
+        {
+          "level": 2,
+          "text": "子どもの遊び場"
+        },
+        {
+          "level": 2,
+          "text": "ひとり親家庭等への支援"
+        },
+        {
+          "level": 2,
+          "text": "子育て相談窓口"
+        },
+        {
+          "level": 2,
+          "text": "子どもの手当・助成・支援"
+        },
+        {
+          "level": 2,
+          "text": "いたばし子どもワークショップ"
+        },
+        {
+          "level": 2,
+          "text": "子育て関連施設"
+        },
+        {
+          "level": 2,
+          "text": "子どもの安全・安心"
+        },
+        {
+          "level": 2,
+          "text": "ヤングケアラー対策"
+        },
+        {
+          "level": 2,
+          "text": "板橋区立図書館 児童向けイベント"
+        },
+        {
+          "level": 2,
+          "text": "各種計画（子ども関連）"
+        },
+        {
+          "level": 2,
+          "text": "広告欄"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/index.html",
@@ -201,7 +1367,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 829,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て相談窓口｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "子育て相談窓口｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て相談窓口"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/shisetsu/index.html",
@@ -212,7 +1406,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 889,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て関連施設｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "子育て関連施設｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/shisetsu/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て関連施設"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/kosodate/index.html",
@@ -223,7 +1445,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1042,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てに関する相談｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "子育てに関する相談｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/kosodate/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てに関する相談"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 3,
+          "text": "子育て相談窓口"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/1064645/index.html",
@@ -234,7 +1492,75 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3232,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こども性暴力防止法に関すること｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "こども性暴力防止法に関すること｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/1064645/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こども性暴力防止法に関すること"
+        },
+        {
+          "level": 2,
+          "text": "こども性暴力防止法について"
+        },
+        {
+          "level": 3,
+          "text": "法の概要"
+        },
+        {
+          "level": 3,
+          "text": "「性暴力」とは？"
+        },
+        {
+          "level": 3,
+          "text": "「不適切な行為」とは？"
+        },
+        {
+          "level": 2,
+          "text": "保護者のみなさまへ"
+        },
+        {
+          "level": 3,
+          "text": "公的機関等が設置する主な相談窓口について"
+        },
+        {
+          "level": 2,
+          "text": "事業者・従事者のみなさまへ"
+        },
+        {
+          "level": 2,
+          "text": "参考資料"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/ninshin/index.html",
@@ -245,7 +1571,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 798,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "妊娠・出産｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "妊娠・出産｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/ninshin/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/kenko/index.html",
@@ -256,29 +1610,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 810,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの健康｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの健康｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/kosodate/kenko/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの健康"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育・生涯学習"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E8%82%B2%E3%81%A6%E7%9B%B8%E8%AB%87%E7%AA%93%E5%8F%A3%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fsoudan%2Findex.html",
-      "link_text": "",
+      "link_text": "このページの情報をXでポストできます",
       "hops": 2,
       "score": 4,
       "parent": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/index.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fsoudan%2Findex.html&t=%E5%AD%90%E8%82%B2%E3%81%A6%E7%9B%B8%E8%AB%87%E7%AA%93%E5%8F%A3%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
-      "link_text": "",
+      "link_text": "このページの情報をフェイスブックでシェアできます",
       "hops": 2,
       "score": 4,
       "parent": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/index.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1683,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/shisetsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/ninshin/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/kenko/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/shogai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E3%81%A9%E3%82%82%E3%81%AE%E6%89%8B%E5%BD%93%E3%83%BB%E5%8A%A9%E6%88%90%E3%83%BB%E6%94%AF%E6%8F%B4%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fteate%2Findex.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/oyakudachi/1004610.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065179.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065176.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065172.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/1064645/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E8%82%B2%E3%81%A6%E7%9B%B8%E8%AB%87%E7%AA%93%E5%8F%A3%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fsoudan%2Findex.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fsoudan%2Findex.html&t=%E5%AD%90%E8%82%B2%E3%81%A6%E7%9B%B8%E8%AB%87%E7%AA%93%E5%8F%A3%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/1004606.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E8%82%B2%E3%81%A6%E6%83%85%E5%A0%B1%E3%83%96%E3%83%83%E3%82%AF%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fteate%2Fbook%2Findex.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fteate%2Fbook%2Findex.html&t=%E5%AD%90%E8%82%B2%E3%81%A6%E6%83%85%E5%A0%B1%E3%83%96%E3%83%83%E3%82%AF%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1004635.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/shogai/1004642.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

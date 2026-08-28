@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.setagaya.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
@@ -14,7 +35,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf",
@@ -25,7 +53,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
@@ -36,7 +71,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1267,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育に関する手当 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "子育て・教育に関する手当",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育に関する手当"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
@@ -47,7 +101,150 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 8665,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当のご案内 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "児童手当のご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当のご案内"
+        },
+        {
+          "level": 2,
+          "text": "1.申請に関する注意点"
+        },
+        {
+          "level": 2,
+          "text": "2.対象となる方"
+        },
+        {
+          "level": 2,
+          "text": "3.請求者について"
+        },
+        {
+          "level": 2,
+          "text": "4.必要書類"
+        },
+        {
+          "level": 3,
+          "text": "4-1.添付書類"
+        },
+        {
+          "level": 2,
+          "text": "5.申請方法"
+        },
+        {
+          "level": 3,
+          "text": "5-1.郵送での申請をご希望の場合"
+        },
+        {
+          "level": 3,
+          "text": "5-2.窓口での申請をご希望の場合"
+        },
+        {
+          "level": 3,
+          "text": "5-3.電子申請をご希望の場合"
+        },
+        {
+          "level": 2,
+          "text": "6.支給額"
+        },
+        {
+          "level": 2,
+          "text": "7.支給月"
+        },
+        {
+          "level": 2,
+          "text": "8.その他"
+        },
+        {
+          "level": 3,
+          "text": "8-1.申請や支給に関すること"
+        },
+        {
+          "level": 4,
+          "text": "（1） 申請日及び支給（又は増額）開始月について"
+        },
+        {
+          "level": 4,
+          "text": "（2） 外国人の方について"
+        },
+        {
+          "level": 3,
+          "text": "8-2.届け出が必要な場合"
+        },
+        {
+          "level": 3,
+          "text": "8-3.受給後のご注意"
+        },
+        {
+          "level": 3,
+          "text": "8-4.児童手当の振込口座を変更したい場合"
+        },
+        {
+          "level": 4,
+          "text": "(1).郵送での変更をご希望の場合"
+        },
+        {
+          "level": 4,
+          "text": "(2).窓口での変更をご希望の場合"
+        },
+        {
+          "level": 4,
+          "text": "(3).電子での変更をご希望の場合"
+        },
+        {
+          "level": 3,
+          "text": "8-5.児童手当に関する受給証明の発行をご希望の場合"
+        },
+        {
+          "level": 4,
+          "text": "(1).郵送での申請をご希望の場合"
+        },
+        {
+          "level": 4,
+          "text": "(2).窓口での申請をご希望の場合"
+        },
+        {
+          "level": 4,
+          "text": "(3).電子での申請をご希望の場合"
+        },
+        {
+          "level": 3,
+          "text": "8-6.同居優先制度について"
+        },
+        {
+          "level": 2,
+          "text": "9.よくある質問と回答(FAQ)"
+        },
+        {
+          "level": 2,
+          "text": "10.【その他】018（ゼロイチハチ）サポートについて"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
@@ -58,7 +255,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3292,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当現況届のご案内 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "児童手当現況届のご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02413/1310.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当現況届のご案内"
+        },
+        {
+          "level": 2,
+          "text": "児童手当現況届について"
+        },
+        {
+          "level": 2,
+          "text": "現況届の提出が不要な方"
+        },
+        {
+          "level": 2,
+          "text": "現況届の提出が必要な方"
+        },
+        {
+          "level": 3,
+          "text": "提出書類（必ず提出するもの）"
+        },
+        {
+          "level": 3,
+          "text": "提出書類（場合によって提出するもの）"
+        },
+        {
+          "level": 3,
+          "text": "提出方法"
+        },
+        {
+          "level": 3,
+          "text": "提出期限"
+        },
+        {
+          "level": 2,
+          "text": "通知について"
+        },
+        {
+          "level": 2,
+          "text": "その他届け出が必要な場合"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/11545.html",
@@ -69,7 +329,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2145,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "育児・子育て | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "育児・子育て",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/11545.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "育児・子育て"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "「ひととき保育者バンク」登録者を募集します！（終了しました）"
+        },
+        {
+          "level": 2,
+          "text": "親子の交流・子どもとおでかけ"
+        },
+        {
+          "level": 2,
+          "text": "子育ての区情報誌・メールマガジン等"
+        },
+        {
+          "level": 2,
+          "text": "子どもの健康"
+        },
+        {
+          "level": 2,
+          "text": "子どもの安全・安心"
+        },
+        {
+          "level": 2,
+          "text": "子育て支援"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11726.html",
@@ -80,7 +391,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1355,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育ての区情報誌・メールマガジン等 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "子育ての区情報誌・メールマガジン等",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11726.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育ての区情報誌・メールマガジン等"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "世田谷区妊娠・出産・子育てガイド"
+        },
+        {
+          "level": 2,
+          "text": "せたがや子育て応援ブック"
+        },
+        {
+          "level": 2,
+          "text": "電子地図情報「かるがもスペース（授乳等希望者対応施設/旧あかちゃんスペース）」"
+        },
+        {
+          "level": 2,
+          "text": "パパ・プレパパ向け子育てイベント・講座"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11729.html",
@@ -91,7 +445,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2388,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "子育て支援",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11729.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "2026(令和8)年度ペアレント・トレーニング参加者募集について"
+        },
+        {
+          "level": 2,
+          "text": "子ども食堂"
+        },
+        {
+          "level": 2,
+          "text": "見守り訪問事業『せたがや0→1(ぜろいち)子育てエール』"
+        },
+        {
+          "level": 2,
+          "text": "子ども配食事業「KODOMOぱくぱく便」"
+        },
+        {
+          "level": 2,
+          "text": "世田谷区バースデーサポート事業"
+        },
+        {
+          "level": 2,
+          "text": "短時間・短期間の預かり"
+        },
+        {
+          "level": 2,
+          "text": "子育てステーション"
+        },
+        {
+          "level": 2,
+          "text": "手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "ひとり親家庭への支援"
+        },
+        {
+          "level": 2,
+          "text": "発達障害児支援"
+        },
+        {
+          "level": 2,
+          "text": "地域の子育て活動への支援"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12400.html",
@@ -102,7 +523,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1265,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てステーション | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "子育てステーション",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12400.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てステーション"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
@@ -113,7 +553,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1212,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手当・助成 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "手当・助成",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・助成"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13019.html",
@@ -124,7 +583,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1364,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育に関する助成 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "子育て・教育に関する助成",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13019.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育に関する助成"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
@@ -135,7 +617,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1272,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ひとり親家庭への手当、助成、貸付 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "ひとり親家庭への手当、助成、貸付",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ひとり親家庭への手当、助成、貸付"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11725.html",
@@ -146,7 +647,90 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2702,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "親子の交流・子どもとおでかけ | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "親子の交流・子どもとおでかけ",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11725.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "親子の交流・子どもとおでかけ"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "令和8年度おでかけひろば・ほっとステイの整備・運営事業者募集について"
+        },
+        {
+          "level": 2,
+          "text": "子育て支援WEB予約サービス「ジモイク世田谷」のご案内"
+        },
+        {
+          "level": 2,
+          "text": "子ども・子育て総合センター"
+        },
+        {
+          "level": 2,
+          "text": "親子のつどいの場「おでかけひろば」"
+        },
+        {
+          "level": 2,
+          "text": "おでかけひろばでほっとひと息「らっこルーム・らっこスペース」"
+        },
+        {
+          "level": 2,
+          "text": "子どもの近くで働くことのできる「ワークスペースひろば型」"
+        },
+        {
+          "level": 2,
+          "text": "世田谷区の児童館について"
+        },
+        {
+          "level": 2,
+          "text": "親子で児童館に行ってみよう！（乳幼児向け）"
+        },
+        {
+          "level": 2,
+          "text": "プレーリヤカー・プレーカーであそぼう！（実施日程・場所について）"
+        },
+        {
+          "level": 2,
+          "text": "わくわくおやこひろばのお知らせ ～子どもの発達がちょっと心配というママ・パパへ～"
+        },
+        {
+          "level": 2,
+          "text": "わくわくタイムのお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "わくわくおやこひろば 卒業生保護者の会"
+        },
+        {
+          "level": 2,
+          "text": "子育て応援とうきょうパスポートをご活用ください！"
+        },
+        {
+          "level": 2,
+          "text": "おでかけひろば・ほっとステイ運営団体向けご案内"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11727.html",
@@ -157,7 +741,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1484,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの健康 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの健康",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11727.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの健康"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "3歳以降に転入した未就学児を対象に屈折検査等眼科検診を実施します"
+        },
+        {
+          "level": 2,
+          "text": "小児初期救急啓発事業（小児科医コラム）"
+        },
+        {
+          "level": 2,
+          "text": "フッ素塗布"
+        },
+        {
+          "level": 2,
+          "text": "「マイナポータル」で乳幼児健診などの健診結果を確認できます"
+        },
+        {
+          "level": 2,
+          "text": "弱視の早期発見・早期治療のために、3歳児健康診査でスポットビジョンスクリーナーを用いたスクリーニング検査を実施します"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11728.html",
@@ -168,7 +799,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1673,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの安全・安心 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの安全・安心",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11728.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの安全・安心"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "子どもの危険回避プログラムを実施しています（初めてのいってきます！）"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/joureikeikaku/category/34503.html",
@@ -179,7 +841,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1142,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども・子育て応援都市宣言 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "子ども・子育て応援都市宣言",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/joureikeikaku/category/34503.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども・子育て応援都市宣言"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/11525.html",
@@ -190,7 +871,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2468,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども・教育・若者支援 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "子ども・教育・若者支援",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/11525.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども・教育・若者支援"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "育児・子育て"
+        },
+        {
+          "level": 2,
+          "text": "保育園・幼稚園など"
+        },
+        {
+          "level": 2,
+          "text": "教育委員会"
+        },
+        {
+          "level": 2,
+          "text": "学校外での交流・遊びの場"
+        },
+        {
+          "level": 2,
+          "text": "青少年活動・子ども・若者支援"
+        },
+        {
+          "level": 2,
+          "text": "子どもに関する条例・計画等"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育に関する相談、施設等における虐待通報窓口"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/11544.html",
@@ -201,7 +941,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2264,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "妊娠・出産 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "妊娠・出産",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/11544.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "妊娠"
+        },
+        {
+          "level": 2,
+          "text": "出産"
+        },
+        {
+          "level": 2,
+          "text": "産前・産後のお母さんのサポート"
+        },
+        {
+          "level": 2,
+          "text": "産前・産後と家族の食事"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11721.html",
@@ -212,7 +991,150 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2528,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "妊娠 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "妊娠",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11721.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "妊娠"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "1か月児健康診査について［令和8年9月30日以前に受診する場合］"
+        },
+        {
+          "level": 2,
+          "text": "世田谷区妊産婦および乳幼児健康診査電話対応等に係る業務委託におけるプロポーザルの実施について"
+        },
+        {
+          "level": 2,
+          "text": "産婦健康診査について"
+        },
+        {
+          "level": 2,
+          "text": "世田谷区両親学級事業運営委託における公募型プロポーザル実施について"
+        },
+        {
+          "level": 2,
+          "text": "妊婦のための支援給付の申請書類について"
+        },
+        {
+          "level": 2,
+          "text": "妊婦のための支援給付について"
+        },
+        {
+          "level": 2,
+          "text": "1か月児健康診査について［令和8年10月1日以降に受診する場合］"
+        },
+        {
+          "level": 2,
+          "text": "出産・子育て応援事業（国の出産・子育て応援給付金）について"
+        },
+        {
+          "level": 2,
+          "text": "マイナポータルの「ぴったりサービス」で妊娠の届出ができます"
+        },
+        {
+          "level": 2,
+          "text": "多胎児を育てるご家庭向け子育てイベント・講座"
+        },
+        {
+          "level": 2,
+          "text": "多胎妊婦健康診査費用助成制度について"
+        },
+        {
+          "level": 2,
+          "text": "ネウボラ面接（妊娠期面接・産後面接）"
+        },
+        {
+          "level": 2,
+          "text": "母子保健事業の一部の事業をオンラインで実施しています"
+        },
+        {
+          "level": 2,
+          "text": "将来の妊娠・出産を望む方々へのサポート「世田谷区妊活オンライン相談事業」のご案内"
+        },
+        {
+          "level": 2,
+          "text": "妊娠したら（妊娠届から出産まで）"
+        },
+        {
+          "level": 2,
+          "text": "妊娠SOS相談"
+        },
+        {
+          "level": 2,
+          "text": "世田谷版ネウボラ（妊娠期から就学前までの切れ目のない支援）"
+        },
+        {
+          "level": 2,
+          "text": "せたがや子育て利用券"
+        },
+        {
+          "level": 2,
+          "text": "母子健康手帳（親子健康手帳）と母と子の保健バッグについて"
+        },
+        {
+          "level": 2,
+          "text": "妊婦の方向け子育てイベント・講座"
+        },
+        {
+          "level": 2,
+          "text": "両親学級へのおさそい"
+        },
+        {
+          "level": 2,
+          "text": "おなかの赤ちゃんと一緒に児童館へ行ってみよう！（マタニティの方向け）"
+        },
+        {
+          "level": 2,
+          "text": "妊婦健康診査について"
+        },
+        {
+          "level": 2,
+          "text": "妊娠高血圧症候群等医療費助成について"
+        },
+        {
+          "level": 2,
+          "text": "流産・死産などでお子さんを亡くされたご家族へ"
+        },
+        {
+          "level": 2,
+          "text": "産前・産後歯科健康診査"
+        },
+        {
+          "level": 2,
+          "text": "「せたがや子育て利用券」サービス提供事業者募集及び登録事業者向けのご案内"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産・育児（世田谷地域）"
+        },
+        {
+          "level": 2,
+          "text": "新生児聴覚検査について"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11722.html",
@@ -223,7 +1145,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1596,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "出産 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "出産",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11722.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "出産"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "児童手当のご案内"
+        },
+        {
+          "level": 2,
+          "text": "乳幼児の健康診査・予防接種のスケジュール"
+        },
+        {
+          "level": 2,
+          "text": "入院助産（出産費用の援助）"
+        },
+        {
+          "level": 2,
+          "text": "自立支援医療（育成医療）について"
+        },
+        {
+          "level": 2,
+          "text": "未熟児養育医療給付について"
+        },
+        {
+          "level": 2,
+          "text": "育児に関するサービス"
+        },
+        {
+          "level": 2,
+          "text": "世田谷区出産費助成制度"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11723.html",
@@ -234,7 +1211,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1693,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "産前・産後のお母さんのサポート | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "産前・産後のお母さんのサポート",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11723.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "産前・産後のお母さんのサポート"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "産前・産後のセルフケア講座のご案内"
+        },
+        {
+          "level": 2,
+          "text": "ツインズプラスサポート事業のご案内"
+        },
+        {
+          "level": 2,
+          "text": "多胎児家庭タクシー料金助成のご案内"
+        },
+        {
+          "level": 2,
+          "text": "産後ケア事業「産後ケア事業クーポン」をご利用いただけます"
+        },
+        {
+          "level": 2,
+          "text": "妊娠中、子育て中のみなさまへ 助産師に相談してみませんか？"
+        },
+        {
+          "level": 2,
+          "text": "多胎児を育てるご家庭へ"
+        },
+        {
+          "level": 2,
+          "text": "【産後ケア事業】産後のお母さんを応援します"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02243/29576.html",
@@ -245,7 +1277,158 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 9307,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "世田谷版こども誰でも通園制度（乳児等通園支援事業）について | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "世田谷版こども誰でも通園制度（乳児等通園支援事業）について",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02243/29576.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "世田谷版こども誰でも通園制度（乳児等通園支援事業）について"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 4,
+          "text": "認証保育所との併用について"
+        },
+        {
+          "level": 4,
+          "text": "生後6か月となる日について"
+        },
+        {
+          "level": 2,
+          "text": "実施内容（概要）"
+        },
+        {
+          "level": 4,
+          "text": "実施方法"
+        },
+        {
+          "level": 4,
+          "text": "定期利用と柔軟利用"
+        },
+        {
+          "level": 2,
+          "text": "実施施設一覧（令和8年（2026年）7月23日更新）"
+        },
+        {
+          "level": 2,
+          "text": "利用枠には限りがあります"
+        },
+        {
+          "level": 2,
+          "text": "利用可能時間"
+        },
+        {
+          "level": 2,
+          "text": "利用料金"
+        },
+        {
+          "level": 2,
+          "text": "利用までの流れ"
+        },
+        {
+          "level": 3,
+          "text": "１ 認定申請"
+        },
+        {
+          "level": 3,
+          "text": "２ 初回面談の申込"
+        },
+        {
+          "level": 4,
+          "text": "世田谷区内の施設"
+        },
+        {
+          "level": 4,
+          "text": "世田谷区外の施設"
+        },
+        {
+          "level": 4,
+          "text": "システムログインページ"
+        },
+        {
+          "level": 3,
+          "text": "３ 面談・契約"
+        },
+        {
+          "level": 3,
+          "text": "４ 利用"
+        },
+        {
+          "level": 2,
+          "text": "初回面談（定期的な利用）の申込受付期間 ※世田谷区内の施設"
+        },
+        {
+          "level": 4,
+          "text": "私立保育園、私立認定こども園、地域型保育事業"
+        },
+        {
+          "level": 4,
+          "text": "認証保育所、私立幼稚園"
+        },
+        {
+          "level": 2,
+          "text": "キャンセル及び延長利用に関するポリシー"
+        },
+        {
+          "level": 2,
+          "text": "一時預かり事業との違い"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問と回答"
+        },
+        {
+          "level": 3,
+          "text": "制度に関すること"
+        },
+        {
+          "level": 3,
+          "text": "システムに関すること"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 3,
+          "text": "制度全般に関すること"
+        },
+        {
+          "level": 3,
+          "text": "認定に関すること"
+        },
+        {
+          "level": 3,
+          "text": "実施施設に関すること"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/21570.html",
@@ -256,7 +1439,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1624,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "世田谷区妊娠・出産・子育てガイド | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "世田谷区妊娠・出産・子育てガイド",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02413/21570.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "世田谷区妊娠・出産・子育てガイド"
+        },
+        {
+          "level": 2,
+          "text": "配布対象"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/1273.html",
@@ -267,7 +1485,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2123,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "せたがや子育て応援ブック | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "せたがや子育て応援ブック",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02413/1273.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "せたがや子育て応援ブック"
+        },
+        {
+          "level": 2,
+          "text": "配布対象"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/1275.html",
@@ -278,7 +1527,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1950,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "パパ・プレパパ向け子育てイベント・講座 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "パパ・プレパパ向け子育てイベント・講座",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02413/1275.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "パパ・プレパパ向け子育てイベント・講座"
+        },
+        {
+          "level": 2,
+          "text": "お子さんが産まれる前"
+        },
+        {
+          "level": 3,
+          "text": "両親学級"
+        },
+        {
+          "level": 3,
+          "text": "ぷれパパママ講座"
+        },
+        {
+          "level": 2,
+          "text": "お子さんが産まれたら"
+        },
+        {
+          "level": 3,
+          "text": "児童館でのイベント"
+        },
+        {
+          "level": 3,
+          "text": "おでかけひろばでのイベント"
+        },
+        {
+          "level": 2,
+          "text": "世田谷版ネウボラ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1587,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/11545.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/11525.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/11544.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02243/29576.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11726.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11729.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12400.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11725.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11727.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11728.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/joureikeikaku/category/34503.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11721.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11722.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11723.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/21570.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/1273.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02413/1275.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13019.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.bunkyo.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
@@ -14,7 +35,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1236,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こどもの手当・助成など | 文京区",
+      "meta": {
+        "og:title": "こどもの手当・助成など",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こどもの手当・助成など"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b022/p001469/index.html",
@@ -25,7 +77,194 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7507,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当 | 文京区",
+      "meta": {
+        "og:title": "児童手当",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/b022/p001469/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当"
+        },
+        {
+          "level": 2,
+          "text": "児童手当の概要"
+        },
+        {
+          "level": 3,
+          "text": "支給要件"
+        },
+        {
+          "level": 4,
+          "text": "文京区在住で高校修了前（18歳に到達した日以降最初の3月31日まで）の児童を養育している父母等のうち、主に生計を維持している方(原則、所得が高い方)に支給します。"
+        },
+        {
+          "level": 3,
+          "text": "支給金額"
+        },
+        {
+          "level": 4,
+          "text": "児童一人あたりの支給月額"
+        },
+        {
+          "level": 5,
+          "text": "多子加算について"
+        },
+        {
+          "level": 3,
+          "text": "所得額について（父母のうち所得が高い者を決定する際に使用します。）"
+        },
+        {
+          "level": 4,
+          "text": "児童手当で使用する所得は、以下の所得です。"
+        },
+        {
+          "level": 3,
+          "text": "控除額一覧（父母のうち所得が高い者を決定する際に使用します。）"
+        },
+        {
+          "level": 4,
+          "text": "児童手当で使用する控除は、以下の控除です。"
+        },
+        {
+          "level": 3,
+          "text": "支給月および支給日"
+        },
+        {
+          "level": 4,
+          "text": "児童手当の定例支給日は、以下のとおりです。"
+        },
+        {
+          "level": 3,
+          "text": "所得が超過した方の再申請について（令和6年9月分までの児童手当についてのみ）"
+        },
+        {
+          "level": 2,
+          "text": "制度改正について"
+        },
+        {
+          "level": 3,
+          "text": "令和6年度制度改正について"
+        },
+        {
+          "level": 4,
+          "text": "★電子申請について★"
+        },
+        {
+          "level": 4,
+          "text": "●ご連絡事項等"
+        },
+        {
+          "level": 4,
+          "text": "●以下に該当する方は、申請が必要です。"
+        },
+        {
+          "level": 5,
+          "text": "(1)(2)に該当する方"
+        },
+        {
+          "level": 5,
+          "text": "【申請方法】"
+        },
+        {
+          "level": 6,
+          "text": "郵送の場合"
+        },
+        {
+          "level": 6,
+          "text": "電子申請の場合※マイナンバーカードをお持ちの方のみ可。"
+        },
+        {
+          "level": 5,
+          "text": "(3)に該当する方"
+        },
+        {
+          "level": 6,
+          "text": "郵送の場合"
+        },
+        {
+          "level": 4,
+          "text": "●以下に該当する方は、原則、申請不要です。（変更処理完了後『児童手当額改定決定通知書』を郵送します。）"
+        },
+        {
+          "level": 4,
+          "text": "●主な改正点について"
+        },
+        {
+          "level": 5,
+          "text": "1所得制限の撤廃"
+        },
+        {
+          "level": 5,
+          "text": "2支給対象年齢児童の拡大"
+        },
+        {
+          "level": 5,
+          "text": "3第3子以降の児童に関する支給加算額の増額"
+        },
+        {
+          "level": 5,
+          "text": "4支給月の変更(支給回数の増加)"
+        },
+        {
+          "level": 5,
+          "text": "5第3子加算対象児童の数え方(カウント方法)の変更"
+        },
+        {
+          "level": 6,
+          "text": "【例】"
+        },
+        {
+          "level": 6,
+          "text": "【制度改正前】"
+        },
+        {
+          "level": 6,
+          "text": "【制度改正後】"
+        },
+        {
+          "level": 6,
+          "text": "＜申請が必要な方＞"
+        },
+        {
+          "level": 3,
+          "text": "令和4年度制度改正について"
+        },
+        {
+          "level": 4,
+          "text": "1所得上限限度額の新設"
+        },
+        {
+          "level": 4,
+          "text": "2現況届の提出が原則不要"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています。"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/iryouhi/index.html",
@@ -36,7 +275,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1062,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こどもの医療費助成 | 文京区",
+      "meta": {
+        "og:title": "こどもの医療費助成",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/iryouhi/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こどもの医療費助成"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
@@ -47,7 +313,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1083,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お子さんの安全について | 文京区",
+      "meta": {
+        "og:title": "お子さんの安全について",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お子さんの安全について"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
@@ -58,7 +351,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1153,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童館 | 文京区",
+      "meta": {
+        "og:title": "児童館",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童館"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
@@ -69,7 +393,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
@@ -80,7 +411,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
@@ -91,7 +429,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/honkomagomeminami/index.html",
@@ -102,7 +447,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1070,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "本駒込南児童館 | 文京区",
+      "meta": {
+        "og:title": "本駒込南児童館",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/honkomagomeminami/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "本駒込南児童館"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/yanagimachi/index.html",
@@ -113,7 +485,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1107,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "柳町児童館 | 文京区",
+      "meta": {
+        "og:title": "柳町児童館",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/yanagimachi/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "柳町児童館"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
@@ -124,7 +523,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2198,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育 | 文京区",
+      "meta": {
+        "og:title": "子育て・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "ピックアップ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
@@ -135,7 +561,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 903,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援サービス検索 | 文京区",
+      "meta": {
+        "og:title": "子育て支援サービス検索",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援サービス検索"
+        },
+        {
+          "level": 2,
+          "text": "サービスをさがす"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/index.html",
@@ -146,7 +595,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1976,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て | 文京区",
+      "meta": {
+        "og:title": "子育て",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kenri/index.html",
@@ -157,7 +637,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1147,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こどもの権利 | 文京区",
+      "meta": {
+        "og:title": "こどもの権利",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kenri/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こどもの権利"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kosodatejouhou/index.html",
@@ -168,7 +671,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1329,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て情報 | 文京区",
+      "meta": {
+        "og:title": "子育て情報",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kosodatejouhou/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て情報"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_chirashikakutei.pdf",
@@ -179,7 +709,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_youkoukakutei.pdf",
@@ -190,7 +727,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/hitorioya/index.html",
@@ -201,7 +745,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1114,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ひとり親支援 | 文京区",
+      "meta": {
+        "og:title": "ひとり親支援",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/hitorioya/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ひとり親支援"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/index.html",
@@ -212,7 +783,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2038,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "保育園・幼稚園・一時預かり | 文京区",
+      "meta": {
+        "og:title": "保育園・幼稚園・一時預かり",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "保育園・幼稚園・一時預かり"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/hoikushisetsu/index.html",
@@ -223,7 +821,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1059,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "保育施設等 | 文京区",
+      "meta": {
+        "og:title": "保育施設等",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/hoikushisetsu/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "保育施設等"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
@@ -234,7 +859,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
@@ -245,7 +877,178 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6650,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "『こども宅食プロジェクト』にご協力ください。～こどもたちに笑顔を届けよう～ | 文京区",
+      "meta": {
+        "og:title": "『こども宅食プロジェクト』にご協力ください。～こどもたちに笑顔を届けよう～",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "『こども宅食プロジェクト』にご協力ください。～こどもたちに笑顔を届けよう～"
+        },
+        {
+          "level": 5,
+          "text": "寄附はこちら"
+        },
+        {
+          "level": 5,
+          "text": "注目情報"
+        },
+        {
+          "level": 6,
+          "text": "寄附方法について、このページの下部でご案内しています。（このページの下部にジャンプします。）"
+        },
+        {
+          "level": 6,
+          "text": "「子ども宅食プロジェクト基金」積立・取崩状況について、更新しました。"
+        },
+        {
+          "level": 6,
+          "text": "こども宅食プロジェクトの事業進捗状況など、最新情報は以下リンクから発信しています。"
+        },
+        {
+          "level": 2,
+          "text": "事業内容"
+        },
+        {
+          "level": 2,
+          "text": "対象世帯"
+        },
+        {
+          "level": 2,
+          "text": "コンソーシアム構成団体"
+        },
+        {
+          "level": 2,
+          "text": "寄附について（ふるさと納税による ガバメント・クラウドファンディング）"
+        },
+        {
+          "level": 3,
+          "text": "寄附（ふるさと納税）の方法"
+        },
+        {
+          "level": 4,
+          "text": "インターネットからの申込"
+        },
+        {
+          "level": 4,
+          "text": "対応している決済方法"
+        },
+        {
+          "level": 4,
+          "text": "文京区への申込（納付書払い、現金持参、現金書留）"
+        },
+        {
+          "level": 5,
+          "text": "寄附の流れ"
+        },
+        {
+          "level": 4,
+          "text": "ふるさと納税の税制上の優遇措置について"
+        },
+        {
+          "level": 2,
+          "text": "寄附金総額【令和8年5月31日現在】"
+        },
+        {
+          "level": 3,
+          "text": "寄附者一覧【令和8年5月31日現在】"
+        },
+        {
+          "level": 4,
+          "text": "事業者・企業の方もご協力ください。"
+        },
+        {
+          "level": 3,
+          "text": "「子ども宅食プロジェクト基金」について"
+        },
+        {
+          "level": 4,
+          "text": "みなさまからいただいた寄附金は文京区が積立、管理しています"
+        },
+        {
+          "level": 2,
+          "text": "配送について"
+        },
+        {
+          "level": 3,
+          "text": "頻度"
+        },
+        {
+          "level": 3,
+          "text": "申込実績"
+        },
+        {
+          "level": 3,
+          "text": "その他支援策"
+        },
+        {
+          "level": 6,
+          "text": "令和元年度その他支援"
+        },
+        {
+          "level": 6,
+          "text": "令和2年度その他支援"
+        },
+        {
+          "level": 6,
+          "text": "令和3年度その他支援"
+        },
+        {
+          "level": 6,
+          "text": "令和4年度その他支援"
+        },
+        {
+          "level": 6,
+          "text": "令和5年度その他支援"
+        },
+        {
+          "level": 6,
+          "text": "令和7年度その他支援"
+        },
+        {
+          "level": 2,
+          "text": "報告書"
+        },
+        {
+          "level": 3,
+          "text": "活動報告"
+        },
+        {
+          "level": 3,
+          "text": "成果報告"
+        },
+        {
+          "level": 3,
+          "text": "会計報告"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています。"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b003/p006119/p000002.html",
@@ -256,7 +1059,82 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2136,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【募集終了】こどもメディアパートナー | 文京区",
+      "meta": {
+        "og:title": "【募集終了】こどもメディアパートナー",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/b003/p006119/p000002.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【募集終了】こどもメディアパートナー"
+        },
+        {
+          "level": 3,
+          "text": "目次"
+        },
+        {
+          "level": 3,
+          "text": "事業概要"
+        },
+        {
+          "level": 3,
+          "text": "募集概要"
+        },
+        {
+          "level": 4,
+          "text": "文京区こどもメディアパートナー募集要項"
+        },
+        {
+          "level": 4,
+          "text": "募集対象"
+        },
+        {
+          "level": 4,
+          "text": "募集人数"
+        },
+        {
+          "level": 3,
+          "text": "応募方法（募集は終了いたしました）"
+        },
+        {
+          "level": 4,
+          "text": "応募方法（募集は終了いたしました）"
+        },
+        {
+          "level": 4,
+          "text": "募集期間"
+        },
+        {
+          "level": 3,
+          "text": "活動日程"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています。"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b003/p008237.html",
@@ -267,7 +1145,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 961,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こどもメディアパートナー | 文京区",
+      "meta": {
+        "og:title": "こどもメディアパートナー",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/b003/p008237.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こどもメディアパートナー"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -276,174 +1177,224 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b003/p006119/p000002.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kenri/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kosodatejouhou/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/hitorioya/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_chirashikakutei.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_youkoukakutei.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b003/p008237.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b022/p001469/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/iryouhi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/hoikushisetsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/honkomagomeminami/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/yanagimachi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     }
   ]

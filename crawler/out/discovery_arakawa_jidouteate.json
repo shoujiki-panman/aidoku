@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.arakawa.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
@@ -14,7 +35,98 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4343,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "児童手当",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "窓口"
+        },
+        {
+          "level": 3,
+          "text": "郵送"
+        },
+        {
+          "level": 3,
+          "text": "ぴったりサービスによる電子申請"
+        },
+        {
+          "level": 4,
+          "text": "手順"
+        },
+        {
+          "level": 2,
+          "text": "手当額（月額）"
+        },
+        {
+          "level": 2,
+          "text": "支給方法"
+        },
+        {
+          "level": 2,
+          "text": "現況届の提出"
+        },
+        {
+          "level": 2,
+          "text": "申請に関する質問と回答"
+        },
+        {
+          "level": 3,
+          "text": "いつまでに手続きをすればよいですか"
+        },
+        {
+          "level": 3,
+          "text": "荒川区から転出する場合、手続きが必要ですか"
+        },
+        {
+          "level": 3,
+          "text": "振込先の口座を変更することはできますか"
+        },
+        {
+          "level": 2,
+          "text": "各種様式（ダウンロード）"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/teate/index.html",
@@ -25,7 +137,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1108,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手当・助成／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "手当・助成",
+        "og:url": "https://www.city.arakawa.tokyo.jp/kosodate/teate/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・助成"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/iryohijyoseikanpu.html",
@@ -36,7 +167,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2197,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "乳幼児・子ども・高校生等及びひとり親家庭医療費助成費の支給申請（自己負担分を支払ったとき）／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "乳幼児・子ども・高校生等及びひとり親家庭医療費助成費の支給申請（自己負担分を支払ったとき）",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/iryohijyoseikanpu.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "乳幼児・子ども・高校生等及びひとり親家庭医療費助成費の支給申請（自己負担分を支払ったとき）"
+        },
+        {
+          "level": 2,
+          "text": "自己負担分の医療費を支払ったとき"
+        },
+        {
+          "level": 3,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "受付窓口"
+        },
+        {
+          "level": 2,
+          "text": "各種様式（ダウンロード）"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/teate/manseishippei_shinsei.html",
@@ -47,7 +225,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2777,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "小児慢性特定疾病医療費支給の申請について（対象児童保護者の方）／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "小児慢性特定疾病医療費支給の申請について（対象児童保護者の方）",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/teate/manseishippei_shinsei.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "小児慢性特定疾病医療費支給の申請について（対象児童保護者の方）"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "新規申請"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 4,
+          "text": "参考資料"
+        },
+        {
+          "level": 2,
+          "text": "更新申請"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 2,
+          "text": "変更申請"
+        },
+        {
+          "level": 2,
+          "text": "再交付申請"
+        },
+        {
+          "level": 2,
+          "text": "荒川区以外の自治体に転出された場合"
+        },
+        {
+          "level": 2,
+          "text": "小児慢性特定疾病登録者証"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/kodomo_hotline.html",
@@ -58,7 +303,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1932,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "荒川区子どもの権利擁護相談事業「あらかわ子どもほっとらいん」／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "荒川区子どもの権利擁護相談事業「あらかわ子どもほっとらいん」",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/kodomo_hotline.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "荒川区子どもの権利擁護相談事業「あらかわ子どもほっとらいん」"
+        },
+        {
+          "level": 2,
+          "text": "荒川区子どもの権利擁護相談事業「あらかわ子どもほっとらいん」とは"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "相談受付時間"
+        },
+        {
+          "level": 2,
+          "text": "相談方法"
+        },
+        {
+          "level": 3,
+          "text": "電話"
+        },
+        {
+          "level": 3,
+          "text": "メールフォーム"
+        },
+        {
+          "level": 3,
+          "text": "チャット（LINE）"
+        },
+        {
+          "level": 2,
+          "text": "チラシ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/jidougyakutai/index.html",
@@ -69,7 +373,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 908,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童虐待／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "児童虐待",
+        "og:url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/jidougyakutai/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童虐待"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hisotijidoutougyakutai.html",
@@ -80,7 +403,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1986,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "施設職員や里親等による虐待（被措置児童等虐待）／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "施設職員や里親等による虐待（被措置児童等虐待）",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hisotijidoutougyakutai.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "施設職員や里親等による虐待（被措置児童等虐待）"
+        },
+        {
+          "level": 2,
+          "text": "被措置児童等とは"
+        },
+        {
+          "level": 2,
+          "text": "被措置児童等虐待とは"
+        },
+        {
+          "level": 2,
+          "text": "被措置児童等虐待かなと思ったら"
+        },
+        {
+          "level": 2,
+          "text": "被措置児童等虐待の状況等の公表"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/kodomo_center.html",
@@ -91,7 +457,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2330,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども家庭総合センター（児童相談所）／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "子ども家庭総合センター（児童相談所）",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/kodomo_center.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども家庭総合センター（児童相談所）"
+        },
+        {
+          "level": 2,
+          "text": "相談のすすめ方"
+        },
+        {
+          "level": 2,
+          "text": "相談窓口"
+        },
+        {
+          "level": 3,
+          "text": "荒川区子ども家庭総合センター"
+        },
+        {
+          "level": 3,
+          "text": "児童相談所虐待対応ダイヤル189（いちはやく）"
+        },
+        {
+          "level": 3,
+          "text": "あらかわキッズ・ファミリーコール24"
+        },
+        {
+          "level": 2,
+          "text": "アクセス"
+        },
+        {
+          "level": 2,
+          "text": "子ども家庭総合センターの取組み"
+        },
+        {
+          "level": 3,
+          "text": "事業概要"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
@@ -102,7 +527,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1468,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども・子育て／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "子ども・子育て",
+        "og:url": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども・子育て"
+        },
+        {
+          "level": 2,
+          "text": "年齢別で探す"
+        },
+        {
+          "level": 2,
+          "text": "目的別で探す"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/shisetsuannai/kosodate/index.html",
@@ -113,7 +569,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1103,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育施設／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "子育て・教育施設",
+        "og:url": "https://www.city.arakawa.tokyo.jp/shisetsuannai/kosodate/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育施設"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "ステップ1：施設種別を選択"
+        },
+        {
+          "level": 2,
+          "text": "ステップ2：施設を選択"
+        },
+        {
+          "level": 2,
+          "text": "ステップ3：地図から詳細を選択"
+        },
+        {
+          "level": 2,
+          "text": "その他のカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/sodan.html",
@@ -124,7 +623,118 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2757,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こんな時はどこに相談したらいい?／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "こんな時はどこに相談したらいい?",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/sodan.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こんな時はどこに相談したらいい?"
+        },
+        {
+          "level": 2,
+          "text": "子育てと家庭のことならなんでも"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子どもの健康や発達ついての相談"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "就学前のお子さんに関する相談"
+        },
+        {
+          "level": 3,
+          "text": "子育て交流サロン"
+        },
+        {
+          "level": 4,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "保育園"
+        },
+        {
+          "level": 4,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "幼稚園児・小学生・中学生のお子さんに関する相談"
+        },
+        {
+          "level": 3,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お子さんの発達の遅れなど"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "地域での子どもに関する相談"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "インターネットや携帯電話のトラブル"
+        },
+        {
+          "level": 2,
+          "text": "ママのこころの相談"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭やDV、女性に関する相談"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/index.html",
@@ -135,7 +745,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2354,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "子育て",
+        "og:url": "https://www.city.arakawa.tokyo.jp/kosodate/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て"
+        },
+        {
+          "level": 2,
+          "text": "最新ニュース"
+        },
+        {
+          "level": 2,
+          "text": "トピックスPR"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a036/kosodate/ikujisoudan/counselor.html",
@@ -146,7 +787,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1348,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援カウンセラーが相談に応じます／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "子育て支援カウンセラーが相談に応じます",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a036/kosodate/ikujisoudan/counselor.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援カウンセラーが相談に応じます"
+        },
+        {
+          "level": 2,
+          "text": "開催日時"
+        },
+        {
+          "level": 2,
+          "text": "個別相談予約・申込先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/index.html",
@@ -157,7 +833,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1506,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "子育て支援",
+        "og:url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/odekakemap.html",
@@ -168,7 +863,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1753,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "あらかわ子育て応援ブック（令和7年8月発行）／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "あらかわ子育て応援ブック（令和7年8月発行）",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/odekakemap.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "あらかわ子育て応援ブック（令和7年8月発行）"
+        },
+        {
+          "level": 2,
+          "text": "配付方法"
+        },
+        {
+          "level": 2,
+          "text": "配付場所"
+        },
+        {
+          "level": 2,
+          "text": "掲載内容(PDF)"
+        },
+        {
+          "level": 3,
+          "text": "表紙と本文"
+        },
+        {
+          "level": 3,
+          "text": "章ごと"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/gakkyu_koza/index.html",
@@ -179,7 +921,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1065,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てハッピー講座／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "子育てハッピー講座",
+        "og:url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/gakkyu_koza/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てハッピー講座"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
@@ -190,7 +951,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1949,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもを虐待から守ろう！／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "子どもを虐待から守ろう！",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもを虐待から守ろう！"
+        },
+        {
+          "level": 2,
+          "text": "～あらかわの子どもはあらかわで守る！～"
+        },
+        {
+          "level": 2,
+          "text": "こんなときにはすぐお電話ください"
+        },
+        {
+          "level": 3,
+          "text": "相談通告先"
+        },
+        {
+          "level": 4,
+          "text": "児童相談所虐待対応ダイヤル 電話：189"
+        },
+        {
+          "level": 4,
+          "text": "荒川区子ども家庭総合センター 電話：03-3802-3765"
+        },
+        {
+          "level": 2,
+          "text": "子どもへの虐待って、どんなこと?"
+        },
+        {
+          "level": 3,
+          "text": "身体的虐待"
+        },
+        {
+          "level": 3,
+          "text": "性的虐待"
+        },
+        {
+          "level": 3,
+          "text": "ネグレクト（養育の放棄・怠慢）"
+        },
+        {
+          "level": 3,
+          "text": "心理的虐待"
+        },
+        {
+          "level": 2,
+          "text": "子どもを虐待から守るための5か条"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
@@ -201,7 +1033,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1246,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "あらかわキッズ・ファミリーコール24／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "あらかわキッズ・ファミリーコール24",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "あらかわキッズ・ファミリーコール24"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "電話番号"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
@@ -212,7 +1079,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1471,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～"
+        },
+        {
+          "level": 2,
+          "text": "開催日"
+        },
+        {
+          "level": 2,
+          "text": "場所"
+        },
+        {
+          "level": 2,
+          "text": "内容"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "出演者（講師）"
+        },
+        {
+          "level": 2,
+          "text": "定員"
+        },
+        {
+          "level": 2,
+          "text": "託児"
+        },
+        {
+          "level": 2,
+          "text": "費用"
+        },
+        {
+          "level": 2,
+          "text": "持ち物"
+        },
+        {
+          "level": 2,
+          "text": "申し込み"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/index.html",
@@ -223,7 +1153,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1087,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭に関する相談／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "家庭に関する相談",
+        "og:url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭に関する相談"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/kateisodan.html",
@@ -234,7 +1183,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1360,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭相談／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "家庭相談",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/kateisodan.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭相談"
+        },
+        {
+          "level": 2,
+          "text": "相談時間・場所"
+        },
+        {
+          "level": 3,
+          "text": "面接もしくは電話による相談（ご希望に応じます）"
+        },
+        {
+          "level": 2,
+          "text": "相談内容"
+        },
+        {
+          "level": 2,
+          "text": "申込み"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/ikujisoudan/i-space.html",
@@ -245,7 +1237,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1337,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "母親グループミーティング 「I・スペース」／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "母親グループミーティング　「I・スペース」",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/ikujisoudan/i-space.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "母親グループミーティング 「I・スペース」"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "開催"
+        },
+        {
+          "level": 2,
+          "text": "場所"
+        },
+        {
+          "level": 2,
+          "text": "持ち物"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hoikutougyakutai.html",
@@ -256,7 +1295,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1856,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "保育所等における虐待等に関する相談窓口／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "保育所等における虐待等に関する相談窓口",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hoikutougyakutai.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "保育所等における虐待等に関する相談窓口"
+        },
+        {
+          "level": 2,
+          "text": "保育所等における虐待"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 3,
+          "text": "私立幼稚園"
+        },
+        {
+          "level": 3,
+          "text": "学童クラブ・にこにこすくーる"
+        },
+        {
+          "level": 3,
+          "text": "保育所等、認可外保育施設、家庭的保育事業（保育ママ）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/satooyaseido/index.html",
@@ -267,7 +1353,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 924,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "里親制度／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "里親制度",
+        "og:url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/satooyaseido/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "里親制度"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/youngcarer.html",
@@ -278,7 +1383,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2658,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ヤングケアラー～家事や介護などを過度に行っている子ども・若者／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ヤングケアラー～家事や介護などを過度に行っている子ども・若者",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/youngcarer.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ヤングケアラー～家事や介護などを過度に行っている子ども・若者"
+        },
+        {
+          "level": 2,
+          "text": "ヤングケアラーとは？"
+        },
+        {
+          "level": 2,
+          "text": "ヤングケアラーかも、と思ったら"
+        },
+        {
+          "level": 3,
+          "text": "当事者（ヤングケアラー）の方へ"
+        },
+        {
+          "level": 3,
+          "text": "周囲の大人の方へ"
+        },
+        {
+          "level": 2,
+          "text": "相談窓口"
+        },
+        {
+          "level": 3,
+          "text": "子ども家庭総合センター"
+        },
+        {
+          "level": 3,
+          "text": "あらかわ子どもほっとらいん"
+        },
+        {
+          "level": 3,
+          "text": "子どもの悩み110番（教育センター）"
+        },
+        {
+          "level": 3,
+          "text": "若者相談「わっか」"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,27 +1459,35 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -315,153 +1495,197 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/kodomo_hotline.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/shisetsuannai/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/sodan.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/jidougyakutai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hisotijidoutougyakutai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/kodomo_center.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a036/kosodate/ikujisoudan/counselor.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/kateisodan.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/ikujisoudan/i-space.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/iryohijyoseikanpu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/teate/manseishippei_shinsei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/odekakemap.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/gakkyu_koza/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hoikutougyakutai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/satooyaseido/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/youngcarer.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

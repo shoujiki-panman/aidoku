@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.minato.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html",
@@ -14,7 +35,131 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 9345,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／児童手当",
+      "meta": {
+        "og:title": "児童手当",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当"
+        },
+        {
+          "level": 2,
+          "text": "支給対象者"
+        },
+        {
+          "level": 3,
+          "text": "以下に該当する方はご注意ください。"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 2,
+          "text": "必要書類"
+        },
+        {
+          "level": 3,
+          "text": "以下に該当する場合は追加で書類が必要となります。"
+        },
+        {
+          "level": 2,
+          "text": "申請の際の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "公務員の方"
+        },
+        {
+          "level": 2,
+          "text": "支給について"
+        },
+        {
+          "level": 3,
+          "text": "支給月額（1人あたりの月額）"
+        },
+        {
+          "level": 3,
+          "text": "支給時期"
+        },
+        {
+          "level": 2,
+          "text": "児童の数え方（算定児童について）"
+        },
+        {
+          "level": 2,
+          "text": "届け出が必要な時"
+        },
+        {
+          "level": 2,
+          "text": "現況届について"
+        },
+        {
+          "level": 4,
+          "text": "現況届が必要な受給者"
+        },
+        {
+          "level": 2,
+          "text": "様式ダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "制度改正の主な内容"
+        },
+        {
+          "level": 3,
+          "text": "児童手当における令和6年10月分（12月支給分）からの変更点"
+        },
+        {
+          "level": 3,
+          "text": "制度改正により、申請が必要となる方"
+        },
+        {
+          "level": 3,
+          "text": "所得限度額表 令和６年１０月の制度改正により所得制限は撤廃されました。"
+        },
+        {
+          "level": 3,
+          "text": "控除額一覧"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手当て・助成"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/bukkadakataioukosodateouenteate.html",
@@ -25,7 +170,111 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3987,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／物価高対応子育て応援手当",
+      "meta": {
+        "og:title": "物価高対応子育て応援手当",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/bukkadakataioukosodateouenteate.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "物価高対応子育て応援手当"
+        },
+        {
+          "level": 3,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "支給額"
+        },
+        {
+          "level": 2,
+          "text": "支給予定日"
+        },
+        {
+          "level": 2,
+          "text": "公務員の方へ"
+        },
+        {
+          "level": 3,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 4,
+          "text": "提出先"
+        },
+        {
+          "level": 4,
+          "text": "申請開始日"
+        },
+        {
+          "level": 4,
+          "text": "申請期限"
+        },
+        {
+          "level": 2,
+          "text": "辞退を希望する場合"
+        },
+        {
+          "level": 2,
+          "text": "振込口座について"
+        },
+        {
+          "level": 2,
+          "text": "国外に転出された方へ"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手当て・助成"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/index-shisetsu.html",
@@ -36,7 +285,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1630,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／子育て支援施設",
+      "meta": {
+        "og:title": "子育て支援施設",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/index-shisetsu.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援施設"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・家庭支援"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/kate/teate/index.html",
@@ -47,7 +336,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1467,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／手当て・助成",
+      "meta": {
+        "og:title": "手当て・助成",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomo/kate/teate/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当て・助成"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・家庭支援"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomokatei/minatokosodateouen/20260805.html",
@@ -58,7 +387,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2733,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／港区みなと子育て応援プラザ事業運営事業候補者をプロポーザル方式により募集します",
+      "meta": {
+        "og:title": "港区みなと子育て応援プラザ事業運営事業候補者をプロポーザル方式により募集します",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomokatei/minatokosodateouen/20260805.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "港区みなと子育て応援プラザ事業運営事業候補者をプロポーザル方式により募集します"
+        },
+        {
+          "level": 2,
+          "text": "件名"
+        },
+        {
+          "level": 2,
+          "text": "審査方法"
+        },
+        {
+          "level": 2,
+          "text": "審査スケジュール"
+        },
+        {
+          "level": 2,
+          "text": "募集要項等"
+        },
+        {
+          "level": 2,
+          "text": "提出書類関係"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "プロポーザル（募集中）"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/bousai/kosodatekatei-bousai-techo.html",
@@ -69,7 +462,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1489,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／子育て家庭の防災手帳",
+      "meta": {
+        "og:title": "子育て家庭の防災手帳",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/bousai/kosodatekatei-bousai-techo.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て家庭の防災手帳"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "役立つ読みもの"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/ai-port.html",
@@ -80,7 +517,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1956,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／子育てひろば「あい・ぽーと」",
+      "meta": {
+        "description": "親子でたのしめる子育てひろば「あい・ぽーと」。区外在住者も利用できます。",
+        "og:title": "子育てひろば「あい・ぽーと」",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/ai-port.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てひろば「あい・ぽーと」"
+        },
+        {
+          "level": 2,
+          "text": "あい・ぽーと"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て支援施設"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kate/teate/jidofuyo.html",
@@ -91,7 +577,103 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4337,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／児童扶養手当",
+      "meta": {
+        "og:title": "児童扶養手当",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kate/teate/jidofuyo.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童扶養手当"
+        },
+        {
+          "level": 2,
+          "text": "事業の目的"
+        },
+        {
+          "level": 2,
+          "text": "手当受給対象"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 2,
+          "text": "手当額（月額）"
+        },
+        {
+          "level": 2,
+          "text": "所得制限限度額"
+        },
+        {
+          "level": 2,
+          "text": "手当の支給開始"
+        },
+        {
+          "level": 2,
+          "text": "手当の支給月"
+        },
+        {
+          "level": 2,
+          "text": "手当の支給が停止されるとき"
+        },
+        {
+          "level": 2,
+          "text": "受給資格がなくなるとき"
+        },
+        {
+          "level": 2,
+          "text": "年度更新"
+        },
+        {
+          "level": 3,
+          "text": "児童扶養手当の受給者は次のサービスがご利用いただけます"
+        },
+        {
+          "level": 3,
+          "text": "児童扶養手当と障害基礎年金等を併せて受給する場合の児童扶養手当額の算出方法"
+        },
+        {
+          "level": 3,
+          "text": "児童扶養手当証書を紛失された方へ"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手当て・助成"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/chiikihoken/kodomo/syusankosodate07.html",
@@ -102,7 +684,76 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1886,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／妊婦のための支援給付",
+      "meta": {
+        "description": "妊婦のための支援給付",
+        "og:title": "妊婦のための支援給付",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/chiikihoken/kodomo/syusankosodate07.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "妊婦のための支援給付"
+        },
+        {
+          "level": 1,
+          "text": "事業開始日"
+        },
+        {
+          "level": 1,
+          "text": "支給内容"
+        },
+        {
+          "level": 1,
+          "text": "支給方法"
+        },
+        {
+          "level": 1,
+          "text": "対象者"
+        },
+        {
+          "level": 1,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/sodan/index.html",
@@ -113,7 +764,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1202,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／相談",
+      "meta": {
+        "og:title": "相談",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/sodan/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "相談"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "子育て・家庭支援"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kate/kodomoiryo.html",
@@ -124,7 +815,147 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6403,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／子ども医療費助成",
+      "meta": {
+        "og:title": "子ども医療費助成",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kate/kodomoiryo.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども医療費助成"
+        },
+        {
+          "level": 2,
+          "text": "子ども医療費助成制度とは？"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 4,
+          "text": "高校生相当世代の児童を保護者とできる例"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 2,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "乳幼児・子ども・高校生等医療証"
+        },
+        {
+          "level": 2,
+          "text": "届出が必要な場合"
+        },
+        {
+          "level": 2,
+          "text": "子ども医療証を返却する場合"
+        },
+        {
+          "level": 2,
+          "text": "助成方法"
+        },
+        {
+          "level": 2,
+          "text": "助成の範囲及び対象とならないもの"
+        },
+        {
+          "level": 4,
+          "text": "助成の対象とならないもの"
+        },
+        {
+          "level": 2,
+          "text": "子ども医療証を使わずに受診した場合"
+        },
+        {
+          "level": 4,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "健康保険資格確認書等と子ども医療証を使わず全額自己負担した場合"
+        },
+        {
+          "level": 4,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "補装具を作成した場合"
+        },
+        {
+          "level": 4,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "入院時の食事療養標準負担額を支払った場合"
+        },
+        {
+          "level": 4,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "都外の国民健康保険及び都外の国民健康保険組合加入者"
+        },
+        {
+          "level": 4,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "適正受診にご協力ください"
+        },
+        {
+          "level": 2,
+          "text": "子供の健康相談室（小児救急相談）東京都福祉局等"
+        },
+        {
+          "level": 2,
+          "text": "申請窓口及び郵送先"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手当て・助成"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/shien.html",
@@ -135,7 +966,135 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3829,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／子ども家庭支援センター（みなとキッズサポートセンター）",
+      "meta": {
+        "og:title": "子ども家庭支援センター（みなとキッズサポートセンター）",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/shien.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども家庭支援センター（みなとキッズサポートセンター）"
+        },
+        {
+          "level": 2,
+          "text": "子どもと家庭の総合相談"
+        },
+        {
+          "level": 3,
+          "text": "相談員への相談"
+        },
+        {
+          "level": 4,
+          "text": "18歳未満の子どもや子育てに関する相談"
+        },
+        {
+          "level": 4,
+          "text": "18歳未満の子どもの相談"
+        },
+        {
+          "level": 3,
+          "text": "ヤングケアラー支援に関するご相談"
+        },
+        {
+          "level": 3,
+          "text": "保健師、心理士への専門相談"
+        },
+        {
+          "level": 3,
+          "text": "子育てコーディネーターへの相談"
+        },
+        {
+          "level": 3,
+          "text": "みなと相談ねっと"
+        },
+        {
+          "level": 3,
+          "text": "家庭相談（配偶者暴力相談支援センター）"
+        },
+        {
+          "level": 3,
+          "text": "相談関連情報"
+        },
+        {
+          "level": 2,
+          "text": "子ども・子育て支援サービス"
+        },
+        {
+          "level": 3,
+          "text": "親子ふれあいひろば・地域交流室・多目的室の運営"
+        },
+        {
+          "level": 3,
+          "text": "子ども・子育て支援事業"
+        },
+        {
+          "level": 4,
+          "text": "産前産後家事・育児支援事業"
+        },
+        {
+          "level": 4,
+          "text": "乳幼児一時預かり事業"
+        },
+        {
+          "level": 4,
+          "text": "乳幼児ショートステイ事業"
+        },
+        {
+          "level": 4,
+          "text": "出産・子育て応援メール事業"
+        },
+        {
+          "level": 3,
+          "text": "ひとり親家庭等の支援事業"
+        },
+        {
+          "level": 3,
+          "text": "子育て支援のネットワークづくり"
+        },
+        {
+          "level": 3,
+          "text": "地域との協働の取り組み"
+        },
+        {
+          "level": 2,
+          "text": "アクセス"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て支援施設"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/kodomo/shienshisetsu/jidoushisetsu.html",
@@ -146,7 +1105,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1900,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／子ども中高生プラザ・児童高齢者交流プラザ",
+      "meta": {
+        "og:title": "子ども中高生プラザ・児童高齢者交流プラザ",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/kodomo/shienshisetsu/jidoushisetsu.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども中高生プラザ・児童高齢者交流プラザ"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "子育て支援施設"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.city.minato.tokyo.jp/kodomokatei/minatokosodateouen/20260805.html&src=sdkpreparse",
@@ -157,7 +1160,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/index.html",
@@ -168,7 +1178,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1943,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／子育て・教育",
+      "meta": {
+        "og:title": "子育て・教育",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomo/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "子育て・家庭支援"
+        },
+        {
+          "level": 2,
+          "text": "若者支援"
+        },
+        {
+          "level": 2,
+          "text": "学校・教育"
+        },
+        {
+          "level": 2,
+          "text": "生涯学習"
+        },
+        {
+          "level": 2,
+          "text": "図書館"
+        },
+        {
+          "level": 2,
+          "text": "保育園・幼稚園"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/kihonhou.html",
@@ -179,7 +1249,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2520,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／「こども基本法」って知ってる？",
+      "meta": {
+        "og:title": "「こども基本法」って知ってる？",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/kihonhou.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「こども基本法」って知ってる？"
+        },
+        {
+          "level": 2,
+          "text": "どんなことが書いてあるの？"
+        },
+        {
+          "level": 2,
+          "text": "なんのために「こどもきほんほう」はつくられたの？"
+        },
+        {
+          "level": 3,
+          "text": "こどもしさくとは？"
+        },
+        {
+          "level": 2,
+          "text": "そもそも「こども」って何さいまで？"
+        },
+        {
+          "level": 2,
+          "text": "どうして大切なの？"
+        },
+        {
+          "level": 3,
+          "text": "どうやってこどもたちの声を届けるの？"
+        },
+        {
+          "level": 3,
+          "text": "こどもたちから聞いたいけんはどうなるの？"
+        },
+        {
+          "level": 2,
+          "text": "こどもきほんほうをまもるために"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/index.html",
@@ -190,7 +1312,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4521,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／子育て・家庭支援",
+      "meta": {
+        "og:title": "子育て・家庭支援",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・家庭支援"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesuppot/20260805.html",
@@ -201,7 +1355,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2897,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／港区みなと子育てサポートハウス事業運営事業候補者をプロポーザル方式により募集します",
+      "meta": {
+        "og:title": "港区みなと子育てサポートハウス事業運営事業候補者をプロポーザル方式により募集します",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kosodatesuppot/20260805.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "港区みなと子育てサポートハウス事業運営事業候補者をプロポーザル方式により募集します"
+        },
+        {
+          "level": 2,
+          "text": "件名"
+        },
+        {
+          "level": 2,
+          "text": "審査方法"
+        },
+        {
+          "level": 2,
+          "text": "審査スケジュール（予定）"
+        },
+        {
+          "level": 2,
+          "text": "募集要項等"
+        },
+        {
+          "level": 2,
+          "text": "提出書類関係"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "プロポーザル（募集中）"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kosodate/index.html",
@@ -212,7 +1430,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1976,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／子ども",
+      "meta": {
+        "og:title": "子ども",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kosodatesien/kosodate/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "年齢別に探す"
+        },
+        {
+          "level": 2,
+          "text": "施設やサービスを探す"
+        },
+        {
+          "level": 2,
+          "text": "子ども向けイベント"
+        },
+        {
+          "level": 2,
+          "text": "目的別に探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/index.html",
@@ -223,7 +1481,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 401,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／みなとく 小学生ページ",
+      "meta": {
+        "og:title": "みなとく 小学生ページ",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "みなとく 小学生ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/birudo/index.html",
@@ -234,7 +1512,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 367,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／みなとく 中高生ページ",
+      "meta": {
+        "og:title": "みなとく 中高生ページ",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/birudo/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "みなとく 中高生ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomosoudan/20140610.html",
@@ -245,7 +1543,127 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4249,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／みなと相談ねっと",
+      "meta": {
+        "og:title": "みなと相談ねっと",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kodomosoudan/20140610.html",
+        "og:image": "https://www.city.minato.tokyo.jp/images/39327/kodomosoudan-logo-2.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "みなと相談ねっと"
+        },
+        {
+          "level": 2,
+          "text": "こどももおとなも使える「みなと相談ねっと」があります"
+        },
+        {
+          "level": 2,
+          "text": "そうだんをするみなさんへ（こども）"
+        },
+        {
+          "level": 4,
+          "text": "電話や会って相談するには・・・"
+        },
+        {
+          "level": 4,
+          "text": "「みなと相談ねっと」の使い方"
+        },
+        {
+          "level": 2,
+          "text": "相談をするみなさんへ（おとな）"
+        },
+        {
+          "level": 4,
+          "text": "電話や会って相談するには・・・"
+        },
+        {
+          "level": 4,
+          "text": "「みなと相談ねっと」の使い方"
+        },
+        {
+          "level": 2,
+          "text": "きんきゅうの時の電話番号（こども）"
+        },
+        {
+          "level": 5,
+          "text": "（0）しせつ、相談先の名前＜話ができる方法＞"
+        },
+        {
+          "level": 5,
+          "text": "（1）港区子ども家庭支援センター＜電話＞＜会って＞"
+        },
+        {
+          "level": 5,
+          "text": "（2）港区子ども家庭支援センター＜電話＞＜会って＞"
+        },
+        {
+          "level": 5,
+          "text": "（3）港区立教育センター＜電話＞＜会って＞"
+        },
+        {
+          "level": 5,
+          "text": "（4）港区児童相談所＜電話＞"
+        },
+        {
+          "level": 5,
+          "text": "（5）東京都いじめホットライン＜電話＞"
+        },
+        {
+          "level": 5,
+          "text": "（6）24時間子供SOSダイヤル（文部科学省）＜電話＞"
+        },
+        {
+          "level": 5,
+          "text": "（7）子どもの人権110番（法務省）＜電話＞"
+        },
+        {
+          "level": 5,
+          "text": "（8）警視庁大森少年センター＜電話＞＜会って＞"
+        },
+        {
+          "level": 5,
+          "text": "（9）警視庁少年相談室ヤングテレホンコーナー＜電話＞"
+        },
+        {
+          "level": 5,
+          "text": "（10）東京若者ヘルスサポート（わかさぽ）＜電話＞"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "相談"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/quiz/index.html",
@@ -256,7 +1674,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 512,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／クイズ・ゲームで遊ぼう",
+      "meta": {
+        "og:title": "クイズ・ゲームで遊ぼう",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/quiz/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "クイズ・ゲームにチャレンジ！！"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/video/index.html",
@@ -267,7 +1705,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 628,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／ビデオでみよう 港区のこと",
+      "meta": {
+        "og:title": "ビデオでみよう　港区のこと",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/video/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ビデオでみよう 港区のこと"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/watashitachinominatoku/index.html",
@@ -278,7 +1736,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 418,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／わたしたちの港区",
+      "meta": {
+        "og:title": "わたしたちの港区",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/watashitachinominatoku/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "わたしたちの港区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1765,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/birudo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomosoudan/20140610.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/index-shisetsu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/kate/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/chiikihoken/kodomo/syusankosodate07.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/sodan/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomokatei/minatokosodateouen/20260805.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/bousai/kosodatekatei-bousai-techo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kate/kodomoiryo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/shien.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/kihonhou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/quiz/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/video/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/watashitachinominatoku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/ai-port.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/kodomo/shienshisetsu/jidoushisetsu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/bukkadakataioukosodateouenteate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kate/teate/jidofuyo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.city.minato.tokyo.jp/kodomokatei/minatokosodateouen/20260805.html&src=sdkpreparse",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kosodatesuppot/20260805.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]
