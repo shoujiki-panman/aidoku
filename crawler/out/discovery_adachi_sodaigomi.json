@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.adachi.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
@@ -14,7 +35,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1846,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみを資源化（リサイクル）しています｜足立区",
+      "meta": {
+        "og:title": "粗大ごみを資源化（リサイクル）しています",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみを資源化（リサイクル）しています"
+        },
+        {
+          "level": 2,
+          "text": "資源化（リサイクル）をしている粗大ごみ"
+        },
+        {
+          "level": 3,
+          "text": "金属・小型家電類"
+        },
+        {
+          "level": 3,
+          "text": "木製家具"
+        },
+        {
+          "level": 3,
+          "text": "布団"
+        },
+        {
+          "level": 3,
+          "text": "衣装ケース（硬質プラスチック製の収納ケース類）"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ資源化の流れ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの資源化量・資源化率"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/kaden_sodai.html",
@@ -25,7 +93,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1958,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家電（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）、粗大ごみの出し方に注意しましょう｜足立区",
+      "meta": {
+        "og:title": "家電（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）、粗大ごみの出し方に注意しましょう",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/gomi/kaden_sodai.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家電（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）、粗大ごみの出し方に注意しましょう"
+        },
+        {
+          "level": 2,
+          "text": "家電の出し方"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみは事前申込（予約）制です。「収集（有料）」と「指定場所への持ち込み（無料）」がありますが、いずれも粗大ごみ受付センターに申し込みが必要です。"
+        },
+        {
+          "level": 2,
+          "text": "悪質な不用品回収業者に注意！"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/recycle/index.html",
@@ -36,7 +139,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1319,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "リサイクル｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "リサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/recycle-box.html",
@@ -47,7 +162,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1530,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "自動販売機横リサイクルボックスの適正利用について｜足立区",
+      "meta": {
+        "og:title": "自動販売機横リサイクルボックスの適正利用について",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/recycle-box.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "自動販売機横リサイクルボックスの適正利用について"
+        },
+        {
+          "level": 2,
+          "text": "自動販売機横のリサイクルボックスはごみ箱ではありません！！"
+        },
+        {
+          "level": 2,
+          "text": "異物の削減でリサイクルの促進！"
+        },
+        {
+          "level": 2,
+          "text": "減らそう「食品ロス」×減らそう「飲み残し」"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "http://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-wakekata.html",
@@ -58,7 +204,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1212,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源の出し方・ごみの出し方｜足立区",
+      "meta": {
+        "og:title": "資源の出し方・ごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-wakekata.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみの出し方 資源・ごみの「正しい処分」が早分かり！"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "資源の回収日・ごみの収集日、粗大ごみの料金"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "3R活動を推進しています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/seso/2023riyu-sukyoutei.html",
@@ -69,7 +250,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2208,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみリユース事業｜足立区",
+      "meta": {
+        "og:title": "粗大ごみリユース事業",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/seso/2023riyu-sukyoutei.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみリユース事業"
+        },
+        {
+          "level": 2,
+          "text": "リユース促進に向け株式会社マーケットエンタープライズと連携協定を締結"
+        },
+        {
+          "level": 3,
+          "text": "「おいくら」で不要品をリユース（再利用）してみませんか？"
+        },
+        {
+          "level": 3,
+          "text": "事業連携の背景"
+        },
+        {
+          "level": 5,
+          "text": "「おいくら」の一括査定へ申込む（外部サイトへリンク）"
+        },
+        {
+          "level": 5,
+          "text": "足立区LINE公式アカウントから申込む"
+        },
+        {
+          "level": 3,
+          "text": "連携事業者"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
@@ -80,7 +304,163 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 13850,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "足立区[B!]新着記事・評価 - はてなブックマーク",
+      "meta": {},
+      "headings": [
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 1,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "『足立区』"
+        },
+        {
+          "level": 3,
+          "text": "区立小中学校の学校メールセキュリティサービスに対する不正アクセスについて（4月22日18時現在情報）"
+        },
+        {
+          "level": 3,
+          "text": "八潮市の下水道管破損に伴い下水道使用制限地域の方に足立区内の公衆浴場の入浴料を無料にします"
+        },
+        {
+          "level": 3,
+          "text": "ワケあり区を始めるワケ"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて（詳細）"
+        },
+        {
+          "level": 3,
+          "text": "「Fujitsu MICJET コンビニ交付」における新たな印刷障害について|富士通Japan株式会社"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて"
+        },
+        {
+          "level": 3,
+          "text": "足立はばたき塾"
+        },
+        {
+          "level": 3,
+          "text": "[PDF] イラストでわかる「みんなが働きやすい！」カタチ。 発達障がいのある方の雇用Ｑ＆Ａ｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "B-29のタイヤが残っています"
+        },
+        {
+          "level": 3,
+          "text": "新型コロナウイルス対策 自宅療養セットの支給しています｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "特殊詐欺の本物の予兆電話(アポ電)が聞ける「アポ電体験ダイヤル」をご利用ください"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～ 芸人・映画監督 北野武さん"
+        },
+        {
+          "level": 3,
+          "text": "江東5区広域避難推進協議会の検討結果について"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館資料長期未返却者への訪問を行います（5月9日から8月31日まで）"
+        },
+        {
+          "level": 3,
+          "text": "郷土博物館所蔵資料データベースの公開"
+        },
+        {
+          "level": 3,
+          "text": "足立区画像・動画オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館利用の3大悪さ撲滅標語大募集！"
+        },
+        {
+          "level": 3,
+          "text": "足立区オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～淑徳大学教授 北野大さん"
+        },
+        {
+          "level": 3,
+          "text": "おいしい給食レシピ集"
+        },
+        {
+          "level": 3,
+          "text": "足立区／ギャラクシティリニューアルオープン"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑（一覧）"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑「エラビ→」の巻"
+        },
+        {
+          "level": 3,
+          "text": "資源の出し方・ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "足立区／区制80周年記念企画展 「タイムスリップ・昭和家電 増田健一コレクション」"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "足立区洪水・内水・高潮ハザードマップ（令和4年4月改訂）"
+        },
+        {
+          "level": 3,
+          "text": "足立区 コンビニ前にはジャージ姿のヤンキーが"
+        },
+        {
+          "level": 2,
+          "text": "このページはまだブックマークされていません"
+        },
+        {
+          "level": 3,
+          "text": "キーボードショートカット一覧"
+        },
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "公式Twitter"
+        },
+        {
+          "level": 2,
+          "text": "はてなのサービス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kaden_sodai.html",
@@ -91,7 +471,163 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 13850,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "足立区[B!]新着記事・評価 - はてなブックマーク",
+      "meta": {},
+      "headings": [
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 1,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "『足立区』"
+        },
+        {
+          "level": 3,
+          "text": "区立小中学校の学校メールセキュリティサービスに対する不正アクセスについて（4月22日18時現在情報）"
+        },
+        {
+          "level": 3,
+          "text": "八潮市の下水道管破損に伴い下水道使用制限地域の方に足立区内の公衆浴場の入浴料を無料にします"
+        },
+        {
+          "level": 3,
+          "text": "ワケあり区を始めるワケ"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて（詳細）"
+        },
+        {
+          "level": 3,
+          "text": "「Fujitsu MICJET コンビニ交付」における新たな印刷障害について|富士通Japan株式会社"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて"
+        },
+        {
+          "level": 3,
+          "text": "足立はばたき塾"
+        },
+        {
+          "level": 3,
+          "text": "[PDF] イラストでわかる「みんなが働きやすい！」カタチ。 発達障がいのある方の雇用Ｑ＆Ａ｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "B-29のタイヤが残っています"
+        },
+        {
+          "level": 3,
+          "text": "新型コロナウイルス対策 自宅療養セットの支給しています｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "特殊詐欺の本物の予兆電話(アポ電)が聞ける「アポ電体験ダイヤル」をご利用ください"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～ 芸人・映画監督 北野武さん"
+        },
+        {
+          "level": 3,
+          "text": "江東5区広域避難推進協議会の検討結果について"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館資料長期未返却者への訪問を行います（5月9日から8月31日まで）"
+        },
+        {
+          "level": 3,
+          "text": "郷土博物館所蔵資料データベースの公開"
+        },
+        {
+          "level": 3,
+          "text": "足立区画像・動画オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館利用の3大悪さ撲滅標語大募集！"
+        },
+        {
+          "level": 3,
+          "text": "足立区オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～淑徳大学教授 北野大さん"
+        },
+        {
+          "level": 3,
+          "text": "おいしい給食レシピ集"
+        },
+        {
+          "level": 3,
+          "text": "足立区／ギャラクシティリニューアルオープン"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑（一覧）"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑「エラビ→」の巻"
+        },
+        {
+          "level": 3,
+          "text": "資源の出し方・ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "足立区／区制80周年記念企画展 「タイムスリップ・昭和家電 増田健一コレクション」"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "足立区洪水・内水・高潮ハザードマップ（令和4年4月改訂）"
+        },
+        {
+          "level": 3,
+          "text": "足立区 コンビニ前にはジャージ姿のヤンキーが"
+        },
+        {
+          "level": 2,
+          "text": "このページはまだブックマークされていません"
+        },
+        {
+          "level": 3,
+          "text": "キーボードショートカット一覧"
+        },
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "公式Twitter"
+        },
+        {
+          "level": 2,
+          "text": "はてなのサービス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/recycle-box.html",
@@ -102,7 +638,163 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 13850,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "足立区[B!]新着記事・評価 - はてなブックマーク",
+      "meta": {},
+      "headings": [
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 1,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "『足立区』"
+        },
+        {
+          "level": 3,
+          "text": "区立小中学校の学校メールセキュリティサービスに対する不正アクセスについて（4月22日18時現在情報）"
+        },
+        {
+          "level": 3,
+          "text": "八潮市の下水道管破損に伴い下水道使用制限地域の方に足立区内の公衆浴場の入浴料を無料にします"
+        },
+        {
+          "level": 3,
+          "text": "ワケあり区を始めるワケ"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて（詳細）"
+        },
+        {
+          "level": 3,
+          "text": "「Fujitsu MICJET コンビニ交付」における新たな印刷障害について|富士通Japan株式会社"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて"
+        },
+        {
+          "level": 3,
+          "text": "足立はばたき塾"
+        },
+        {
+          "level": 3,
+          "text": "[PDF] イラストでわかる「みんなが働きやすい！」カタチ。 発達障がいのある方の雇用Ｑ＆Ａ｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "B-29のタイヤが残っています"
+        },
+        {
+          "level": 3,
+          "text": "新型コロナウイルス対策 自宅療養セットの支給しています｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "特殊詐欺の本物の予兆電話(アポ電)が聞ける「アポ電体験ダイヤル」をご利用ください"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～ 芸人・映画監督 北野武さん"
+        },
+        {
+          "level": 3,
+          "text": "江東5区広域避難推進協議会の検討結果について"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館資料長期未返却者への訪問を行います（5月9日から8月31日まで）"
+        },
+        {
+          "level": 3,
+          "text": "郷土博物館所蔵資料データベースの公開"
+        },
+        {
+          "level": 3,
+          "text": "足立区画像・動画オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館利用の3大悪さ撲滅標語大募集！"
+        },
+        {
+          "level": 3,
+          "text": "足立区オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～淑徳大学教授 北野大さん"
+        },
+        {
+          "level": 3,
+          "text": "おいしい給食レシピ集"
+        },
+        {
+          "level": 3,
+          "text": "足立区／ギャラクシティリニューアルオープン"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑（一覧）"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑「エラビ→」の巻"
+        },
+        {
+          "level": 3,
+          "text": "資源の出し方・ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "足立区／区制80周年記念企画展 「タイムスリップ・昭和家電 増田健一コレクション」"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "足立区洪水・内水・高潮ハザードマップ（令和4年4月改訂）"
+        },
+        {
+          "level": 3,
+          "text": "足立区 コンビニ前にはジャージ姿のヤンキーが"
+        },
+        {
+          "level": 2,
+          "text": "このページはまだブックマークされていません"
+        },
+        {
+          "level": 3,
+          "text": "キーボードショートカット一覧"
+        },
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "公式Twitter"
+        },
+        {
+          "level": 2,
+          "text": "はてなのサービス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
@@ -113,7 +805,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1972,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみとリサイクル｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみとリサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/reusesyokki.html",
@@ -124,7 +828,118 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2899,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "リユース食器を使用してごみを削減しましょう！｜足立区",
+      "meta": {
+        "og:title": "リユース食器を使用してごみを削減しましょう！",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/gomi/reusesyokki.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "リユース食器を使用してごみを削減しましょう！"
+        },
+        {
+          "level": 2,
+          "text": "リユース食器貸出事業"
+        },
+        {
+          "level": 2,
+          "text": "貸出条件"
+        },
+        {
+          "level": 3,
+          "text": "（１）貸出対象"
+        },
+        {
+          "level": 3,
+          "text": "（２）貸出費用"
+        },
+        {
+          "level": 3,
+          "text": "（３）貸出内容"
+        },
+        {
+          "level": 3,
+          "text": "（４）貸出期間（4月20日から翌年3月15日）"
+        },
+        {
+          "level": 2,
+          "text": "利用の流れ"
+        },
+        {
+          "level": 3,
+          "text": "（１）貸出申請"
+        },
+        {
+          "level": 3,
+          "text": "（２）食器の受け取り"
+        },
+        {
+          "level": 3,
+          "text": "（３）イベント等での利用・回収"
+        },
+        {
+          "level": 3,
+          "text": "（４）食器の返却"
+        },
+        {
+          "level": 3,
+          "text": "（５）利用報告書の提出"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "（１）インターネットによる申請"
+        },
+        {
+          "level": 3,
+          "text": "（２）窓口・郵送による申請"
+        },
+        {
+          "level": 4,
+          "text": "必要書類"
+        },
+        {
+          "level": 4,
+          "text": "提出先"
+        },
+        {
+          "level": 2,
+          "text": "キャンセル方法"
+        },
+        {
+          "level": 3,
+          "text": "（１）インターネットによる申請"
+        },
+        {
+          "level": 3,
+          "text": "（２）窓口・郵送による申請"
+        },
+        {
+          "level": 4,
+          "text": "必要書類"
+        },
+        {
+          "level": 4,
+          "text": "提出先"
+        },
+        {
+          "level": 2,
+          "text": "関連ファイル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-namagomishoriki.html",
@@ -135,7 +950,106 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3691,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【令和８年度】生ごみ処理機・コンポスト化容器購入費補助金について｜足立区",
+      "meta": {
+        "og:title": "【令和８年度】生ごみ処理機・コンポスト化容器購入費補助金について",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-namagomishoriki.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【令和８年度】生ごみ処理機・コンポスト化容器購入費補助金について"
+        },
+        {
+          "level": 3,
+          "text": "【実機展示のお知らせ】"
+        },
+        {
+          "level": 2,
+          "text": "制度概要"
+        },
+        {
+          "level": 2,
+          "text": "生ごみ処理機・コンポスト化容器について"
+        },
+        {
+          "level": 5,
+          "text": "生ごみ処理機とは"
+        },
+        {
+          "level": 5,
+          "text": "コンポスト化容器とは"
+        },
+        {
+          "level": 4,
+          "text": "機器導入によるメリット"
+        },
+        {
+          "level": 2,
+          "text": "補助金額"
+        },
+        {
+          "level": 2,
+          "text": "利用できる方"
+        },
+        {
+          "level": 2,
+          "text": "申請に必要な書類"
+        },
+        {
+          "level": 2,
+          "text": "申請・手続きの流れ"
+        },
+        {
+          "level": 4,
+          "text": "１.生ごみ処理機・コンポスト化容器の購入"
+        },
+        {
+          "level": 4,
+          "text": "２.申請方法"
+        },
+        {
+          "level": 5,
+          "text": "オンライン申請（以下のバナーから申請できます）"
+        },
+        {
+          "level": 5,
+          "text": "郵送・窓口"
+        },
+        {
+          "level": 4,
+          "text": "３.補助金交付決定通知"
+        },
+        {
+          "level": 4,
+          "text": "４.「補助金交付請求書兼口座振替依頼書」及び「使用報告書」の提出"
+        },
+        {
+          "level": 4,
+          "text": "５.補助金の支給"
+        },
+        {
+          "level": 2,
+          "text": "申請書"
+        },
+        {
+          "level": 5,
+          "text": "申請書（PDF：574KB）"
+        },
+        {
+          "level": 5,
+          "text": "記入例（PDF：555KB）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "http://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-kaden-r.html",
@@ -146,7 +1060,122 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5830,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家電4品目（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）の出し方｜足立区",
+      "meta": {
+        "og:title": "家電4品目（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）の出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-kaden-r.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家電4品目（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）の出し方"
+        },
+        {
+          "level": 2,
+          "text": "不要品をごみとして出す前に、売却してリユースにつなげてみませんか？処分費用や搬出の手間を無くせるかもしれません。"
+        },
+        {
+          "level": 3,
+          "text": "「おいくら」は複数のショップの買取り価格を比較し、手間なく売却ができるサービスです。"
+        },
+        {
+          "level": 5,
+          "text": "「おいくら」への一括査定の申し込みは専用サイトへ（外部サイトへリンク）"
+        },
+        {
+          "level": 2,
+          "text": "１ 対象となる家電"
+        },
+        {
+          "level": 2,
+          "text": "２ 処分方法"
+        },
+        {
+          "level": 3,
+          "text": "買い替えの場合"
+        },
+        {
+          "level": 3,
+          "text": "買い替え以外の場合"
+        },
+        {
+          "level": 3,
+          "text": "その他の場合"
+        },
+        {
+          "level": 4,
+          "text": "（１）引き取りを依頼する場合"
+        },
+        {
+          "level": 4,
+          "text": "（２）持ち込みをする場合"
+        },
+        {
+          "level": 5,
+          "text": "指定引取場所と受付時間等"
+        },
+        {
+          "level": 6,
+          "text": "１ 上昇運輸株式会社"
+        },
+        {
+          "level": 6,
+          "text": "２ センコー株式会社 川口指定引取場所"
+        },
+        {
+          "level": 6,
+          "text": "３【受付終了】 白井エコセンター株式会社"
+        },
+        {
+          "level": 2,
+          "text": "3家電リサイクル料金・収集運搬料金"
+        },
+        {
+          "level": 2,
+          "text": "4家電リサイクル法Q＆A"
+        },
+        {
+          "level": 3,
+          "text": "Q1.「家電リサイクル券」とは？"
+        },
+        {
+          "level": 3,
+          "text": "Q2.なぜ消費者がリサイクル料金を負担しなければならないの？"
+        },
+        {
+          "level": 3,
+          "text": "Q3.まだ使用できるが、不用となったものは？"
+        },
+        {
+          "level": 3,
+          "text": "Q4.こんな場合は対象になりますか？"
+        },
+        {
+          "level": 2,
+          "text": "5もっと詳しいことが知りたい"
+        },
+        {
+          "level": 3,
+          "text": "家電製品協会（家電リサイクル券センター）"
+        },
+        {
+          "level": 3,
+          "text": "制度全般についてのお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -155,6 +1184,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -162,90 +1193,116 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/kaden_sodai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/recycle/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/recycle-box.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "http://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-wakekata.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kaden_sodai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "http://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-kaden-r.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/seso/2023riyu-sukyoutei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/reusesyokki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-namagomishoriki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/recycle-box.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

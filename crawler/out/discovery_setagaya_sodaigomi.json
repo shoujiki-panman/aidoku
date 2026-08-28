@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.setagaya.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
@@ -14,7 +35,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1457,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理手数料のオンライン決済が始まりました"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの持ち込みについて"
+        },
+        {
+          "level": 2,
+          "text": "リユース事業を実施しています"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの処理手数料について"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券について（券の種類・購入場所）"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ・臨時ごみ処理手数料等の減免"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみなどの処分に違法な不用品回収業者を利用しないでください"
+        },
+        {
+          "level": 2,
+          "text": "有料ごみ処理券取扱所一覧"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/11535.html",
@@ -25,7 +105,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2882,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kurashi/gomi/11535.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "区民の皆様へのお知らせ、お願い"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの収集日"
+        },
+        {
+          "level": 2,
+          "text": "ごみ減量・リサイクルに向けた取り組み"
+        },
+        {
+          "level": 2,
+          "text": "浄化槽・工事用仮設トイレ"
+        },
+        {
+          "level": 2,
+          "text": "事業者向け情報（公募情報等も含む）"
+        },
+        {
+          "level": 2,
+          "text": "清掃・リサイクル行政情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11684.html",
@@ -36,7 +171,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1335,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみの収集日 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "資源・ごみの収集日",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11684.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみの収集日"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "令和8年(2026年)版資源とごみの収集カレンダー（PDF）"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみ収集日(一覧)"
+        },
+        {
+          "level": 2,
+          "text": "区公式LINE（ライン）の資源・ごみ収集日お知らせ機能をご活用ください"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみ分別アプリ「さんあ～る」をご活用ください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11685.html",
@@ -47,7 +221,130 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2868,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ減量・リサイクルに向けた取り組み | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "ごみ減量・リサイクルに向けた取り組み",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11685.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ減量・リサイクルに向けた取り組み"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "3R促進ポスターコンクール作品募集について"
+        },
+        {
+          "level": 2,
+          "text": "ごみ減量化ゲームで分別を楽しく学ぼう！"
+        },
+        {
+          "level": 2,
+          "text": "【区内事業者の皆様へ】世田谷区オリジナルの分別表・分別ポップをご活用ください"
+        },
+        {
+          "level": 2,
+          "text": "フードシェアリングアプリで食品ロスを削減しましょう"
+        },
+        {
+          "level": 2,
+          "text": "使用済み油で…空を飛ぶ？！家庭から出た食用油を回収をしています！"
+        },
+        {
+          "level": 2,
+          "text": "バッグ型コンポストで生ごみの減量に取り組んでみませんか"
+        },
+        {
+          "level": 2,
+          "text": "さらなるごみの減量に向けた取組み"
+        },
+        {
+          "level": 2,
+          "text": "持続可能な社会の実現（SDGs）に向けた世田谷区の取り組み"
+        },
+        {
+          "level": 2,
+          "text": "Reduce（リデュース）の取り組み ～フードドライブ・食品ロス対策など～"
+        },
+        {
+          "level": 2,
+          "text": "Reuse（リユース）の取り組み ～リユースショップ情報・古着古布の回収など～"
+        },
+        {
+          "level": 2,
+          "text": "Recycle（リサイクル）の取り組み ～金属の資源化・資源の集団回収など～"
+        },
+        {
+          "level": 2,
+          "text": "「食品ロス」を減らす取り組み"
+        },
+        {
+          "level": 2,
+          "text": "食品ロス削減推進ポップ（てまえどり）を配布しています"
+        },
+        {
+          "level": 2,
+          "text": "フードドライブ（未使用食品等の回収）情報"
+        },
+        {
+          "level": 2,
+          "text": "株式会社ファミリーマートと連携したフードドライブについて"
+        },
+        {
+          "level": 2,
+          "text": "生ごみ堆肥づくり"
+        },
+        {
+          "level": 2,
+          "text": "せたがやエコフレンドリーショップ"
+        },
+        {
+          "level": 2,
+          "text": "リユースショップ情報"
+        },
+        {
+          "level": 2,
+          "text": "エコプラザ用賀とリサイクル千歳台に古着の回収ボックスを設置しています！"
+        },
+        {
+          "level": 2,
+          "text": "環境学習"
+        },
+        {
+          "level": 2,
+          "text": "大学・事業者等と連携したごみ減量の取り組み"
+        },
+        {
+          "level": 2,
+          "text": "区内事業者の取り組み"
+        },
+        {
+          "level": 2,
+          "text": "ごみ減量・リサイクル推進委員会について"
+        },
+        {
+          "level": 2,
+          "text": "区役所本庁舎にマイボトルで給水可能な浄水器を設置中！"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/27658.html",
@@ -58,7 +355,96 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3272,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ処理手数料のオンライン決済が始まりました | 世田谷区公式ホームページ",
+      "meta": {
+        "description": "令和7年10月1日より、インターネットで粗大ごみの申込を行うと粗大ごみの処理手数料をオンライン決済で支払うことができるようになりました。",
+        "og:title": "粗大ごみ処理手数料のオンライン決済が始まりました",
+        "og:type": "article",
+        "og:description": "令和7年10月1日より、インターネットで粗大ごみの申込を行うと粗大ごみの処理手数料をオンライン決済で支払うことができるようになりました。",
+        "og:url": "https://www.city.setagaya.lg.jp/02239/27658.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ処理手数料のオンライン決済が始まりました"
+        },
+        {
+          "level": 2,
+          "text": "開始日"
+        },
+        {
+          "level": 2,
+          "text": "利用可能な決済方法"
+        },
+        {
+          "level": 2,
+          "text": "オンライン決済利用の粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "1粗大ごみを申し込む"
+        },
+        {
+          "level": 4,
+          "text": "インターネット申込の場合"
+        },
+        {
+          "level": 4,
+          "text": "電話申込の場合"
+        },
+        {
+          "level": 3,
+          "text": "2決済を実行する"
+        },
+        {
+          "level": 4,
+          "text": "決済手続きの注意事項"
+        },
+        {
+          "level": 3,
+          "text": "3粗大ごみを出す（排出方法）"
+        },
+        {
+          "level": 5,
+          "text": "(1)縦横10cm以上の紙（メモ帳、色紙、チラシなど）を用意する"
+        },
+        {
+          "level": 5,
+          "text": "(2)「収集日」と「受付番号または氏名」を、油性ペン等で大きくわかりやすく記入する"
+        },
+        {
+          "level": 5,
+          "text": "(3)粗大ごみ1点ずつの見やすい所に、ガムテープやセロテープで四辺をしっかりと貼り付ける"
+        },
+        {
+          "level": 5,
+          "text": "(4)収集日当日の朝8時までに指定された場所に排出する"
+        },
+        {
+          "level": 4,
+          "text": "排出時の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "オンライン決済利用の変更・キャンセルについて"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/381.html",
@@ -69,7 +455,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2780,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの持ち込みについて | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみの持ち込みについて",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/381.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの持ち込みについて"
+        },
+        {
+          "level": 2,
+          "text": "申込可能な申請方法"
+        },
+        {
+          "level": 2,
+          "text": "リユースをご検討ください"
+        },
+        {
+          "level": 2,
+          "text": "民間のリユースショップでは、便利な自宅引き取りに対応している場合があります"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみを持ち込む際の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "持ち込みの流れ"
+        },
+        {
+          "level": 3,
+          "text": "持ち込み場所"
+        },
+        {
+          "level": 4,
+          "text": "持ち込む日"
+        },
+        {
+          "level": 4,
+          "text": "持ち込み時間"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
@@ -80,7 +529,142 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4802,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "申込可能な申請方法"
+        },
+        {
+          "level": 2,
+          "text": "リユースをご検討ください"
+        },
+        {
+          "level": 2,
+          "text": "民間のリユースショップでは、便利な自宅引き取りに対応している場合があります"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 3,
+          "text": "インターネット"
+        },
+        {
+          "level": 4,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "電話"
+        },
+        {
+          "level": 4,
+          "text": "お申し込み先"
+        },
+        {
+          "level": 4,
+          "text": "受付時間"
+        },
+        {
+          "level": 5,
+          "text": "受付日"
+        },
+        {
+          "level": 5,
+          "text": "受付時間"
+        },
+        {
+          "level": 4,
+          "text": "外国語について"
+        },
+        {
+          "level": 4,
+          "text": "お電話でのお申し込みに際してのお願い"
+        },
+        {
+          "level": 3,
+          "text": "チャット"
+        },
+        {
+          "level": 4,
+          "text": "オペレーター対応時間"
+        },
+        {
+          "level": 5,
+          "text": "受付日"
+        },
+        {
+          "level": 5,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "ファクシミリ（聴覚や言語に障害がある方のみ）"
+        },
+        {
+          "level": 4,
+          "text": "お申し込み先"
+        },
+        {
+          "level": 4,
+          "text": "申し込み方法"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとは"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理券について"
+        },
+        {
+          "level": 3,
+          "text": "手数料の減免について"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/382.html",
@@ -91,7 +675,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2383,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの処理手数料について | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみの処理手数料について",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02239/382.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの処理手数料について"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "処理手数料の確認"
+        },
+        {
+          "level": 3,
+          "text": "インターネットでの確認"
+        },
+        {
+          "level": 3,
+          "text": "電話での確認"
+        },
+        {
+          "level": 2,
+          "text": "収集と持ち込みの処理手数料"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理手数料の減免"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/383.html",
@@ -102,7 +737,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2664,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料粗大ごみ処理券について（券の種類・購入場所） | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "有料粗大ごみ処理券について（券の種類・購入場所）",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02239/383.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料粗大ごみ処理券について（券の種類・購入場所）"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券の種類"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券の購入場所"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページにはオープンデータを掲載しています"
+        },
+        {
+          "level": 2,
+          "text": "ライセンスの取扱い"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/384.html",
@@ -113,7 +795,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3651,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ・臨時ごみ処理手数料等の減免 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ・臨時ごみ処理手数料等の減免",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02239/384.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ・臨時ごみ処理手数料等の減免"
+        },
+        {
+          "level": 2,
+          "text": "制度の概要"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "申し込み方法"
+        },
+        {
+          "level": 2,
+          "text": "申し込み先"
+        },
+        {
+          "level": 3,
+          "text": "1.粗大ごみ（一辺の長さが30センチメートルを超える物）を出す場合"
+        },
+        {
+          "level": 3,
+          "text": "2.一度に大量（概ね45リットルの袋で4袋以上）または臨時にごみを出す場合"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/22586.html",
@@ -124,7 +853,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2067,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "まだ使える粗大ごみをリユース品として回収しています | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "まだ使える粗大ごみをリユース品として回収しています",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02241/22586.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "まだ使える粗大ごみをリユース品として回収しています"
+        },
+        {
+          "level": 2,
+          "text": "事業の内容"
+        },
+        {
+          "level": 2,
+          "text": "ご注意"
+        },
+        {
+          "level": 2,
+          "text": "リユース品として回収しないもの"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/385.html",
@@ -135,7 +899,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2766,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみなどの処分に違法な不用品回収業者を利用しないでください | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみなどの処分に違法な不用品回収業者を利用しないでください",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02241/385.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみなどの処分に違法な不用品回収業者を利用しないでください"
+        },
+        {
+          "level": 2,
+          "text": "廃棄する前にリユースをご検討ください。"
+        },
+        {
+          "level": 2,
+          "text": "ご家庭から出る不用品の処理方法"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 3,
+          "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・乾燥機"
+        },
+        {
+          "level": 3,
+          "text": "パソコン"
+        },
+        {
+          "level": 2,
+          "text": "リユースショップの利用"
+        },
+        {
+          "level": 2,
+          "text": "トラブルの相談"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/12334.html",
@@ -146,7 +961,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1400,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "生ごみ堆肥づくり | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "生ごみ堆肥づくり",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/12334.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "生ごみ堆肥づくり"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/documents/27658/harigami.pdf",
@@ -157,7 +991,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/documents/381/annai.pdf",
@@ -168,7 +1009,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/12333.html",
@@ -179,7 +1027,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1343,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "せたがやエコフレンドリーショップ | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "せたがやエコフレンドリーショップ",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/12333.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "せたがやエコフレンドリーショップ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/27859.html",
@@ -190,7 +1057,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5483,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年(2026年)版資源とごみの収集カレンダー（PDF） | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "令和8年(2026年)版資源とごみの収集カレンダー（PDF）",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02241/27859.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年(2026年)版資源とごみの収集カレンダー（PDF）"
+        },
+        {
+          "level": 2,
+          "text": "申込可能な申請方法"
+        },
+        {
+          "level": 2,
+          "text": "令和7年(2025年)12月から令和8年(2026年)12月の資源とごみの収集日を、町丁目別にカレンダー形式でご覧になれます"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 4,
+          "text": "建物名・住所"
+        },
+        {
+          "level": 3,
+          "text": "令和8年(2026年)版「資源とごみの収集カレンダー」(分け方・出し方編、9～23ページ)"
+        },
+        {
+          "level": 4,
+          "text": "内容"
+        },
+        {
+          "level": 2,
+          "text": "紙冊子版の送付をご希望の方はこちらから"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/416.html",
@@ -201,7 +1123,98 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 10065,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみ収集日(一覧) | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "資源・ごみ収集日(一覧)",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02241/416.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみ収集日(一覧)"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの収集日はLINE（ライン）・アプリでも確認できます"
+        },
+        {
+          "level": 3,
+          "text": "区公式LINEアカウント"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ分別アプリケーション「さんあ～る」"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみ収集日一覧"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ収集日一覧（あ行）"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ収集日一覧（か行）"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ収集日一覧（さ行）"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ収集日一覧（た行）"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ収集日一覧（な行）"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ収集日一覧（は行）"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ収集日一覧（ま行）"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ収集日一覧（や行）"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみ収集日一覧（わ行）"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページにはオープンデータを掲載しています"
+        },
+        {
+          "level": 2,
+          "text": "ライセンスの取扱い"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/414.html",
@@ -212,7 +1225,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1920,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区公式LINE（ライン）の資源・ごみ収集日お知らせ機能をご活用ください | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "区公式LINE（ライン）の資源・ごみ収集日お知らせ機能をご活用ください",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02241/414.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区公式LINE（ライン）の資源・ごみ収集日お知らせ機能をご活用ください"
+        },
+        {
+          "level": 2,
+          "text": "LINEとは"
+        },
+        {
+          "level": 2,
+          "text": "ご利用までの手順"
+        },
+        {
+          "level": 3,
+          "text": "友だちに追加"
+        },
+        {
+          "level": 3,
+          "text": "受信設定"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02083/24343.html",
@@ -223,7 +1283,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1942,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【申込終了】世田谷区手話言語条例制定1周年・東京2025デフリンピック開催記念事業 ＮＨＫ手話ニュースキャスターがやってきたin世田谷 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "【申込終了】世田谷区手話言語条例制定1周年・東京2025デフリンピック開催記念事業　ＮＨＫ手話ニュースキャスターがやってきたin世田谷",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02083/24343.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【申込終了】世田谷区手話言語条例制定1周年・東京2025デフリンピック開催記念事業 ＮＨＫ手話ニュースキャスターがやってきたin世田谷"
+        },
+        {
+          "level": 2,
+          "text": "日程"
+        },
+        {
+          "level": 2,
+          "text": "時間"
+        },
+        {
+          "level": 2,
+          "text": "場所・会場"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "費用・料金"
+        },
+        {
+          "level": 2,
+          "text": "申し込み方法"
+        },
+        {
+          "level": 2,
+          "text": "申込可能な申請方法"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/386.html",
@@ -234,7 +1353,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6177,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料ごみ処理券取扱所一覧 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "有料ごみ処理券取扱所一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02239/386.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料ごみ処理券取扱所一覧"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページにはオープンデータを掲載しています"
+        },
+        {
+          "level": 2,
+          "text": "ライセンスの取扱い"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/387.html",
@@ -245,7 +1403,250 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6646,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの出し方 | 世田谷区公式ホームページ",
+      "meta": {
+        "og:title": "ごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.setagaya.lg.jp/02241/387.html",
+        "og:image": "https://www.city.setagaya.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "世田谷区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "ごみを出すときのお願い"
+        },
+        {
+          "level": 2,
+          "text": "ごみの種類"
+        },
+        {
+          "level": 3,
+          "text": "可燃ごみ（週2回）"
+        },
+        {
+          "level": 4,
+          "text": "生ごみ・廃食用油"
+        },
+        {
+          "level": 4,
+          "text": "少量の植木の枝葉"
+        },
+        {
+          "level": 5,
+          "text": "お願い"
+        },
+        {
+          "level": 4,
+          "text": "紙類（資源回収にだせないもの）"
+        },
+        {
+          "level": 5,
+          "text": "具体例（一部）"
+        },
+        {
+          "level": 4,
+          "text": "衣類・布類"
+        },
+        {
+          "level": 5,
+          "text": "お願い"
+        },
+        {
+          "level": 4,
+          "text": "衛生用品"
+        },
+        {
+          "level": 5,
+          "text": "お願い"
+        },
+        {
+          "level": 4,
+          "text": "プラスチック類"
+        },
+        {
+          "level": 5,
+          "text": "具体例（一部）"
+        },
+        {
+          "level": 5,
+          "text": "お願い"
+        },
+        {
+          "level": 4,
+          "text": "ゴム・皮革類"
+        },
+        {
+          "level": 5,
+          "text": "具体例（一部）"
+        },
+        {
+          "level": 4,
+          "text": "マイクロビーズ製品（最大辺30cm以下）"
+        },
+        {
+          "level": 5,
+          "text": "お願い"
+        },
+        {
+          "level": 3,
+          "text": "不燃ごみ（月2回）"
+        },
+        {
+          "level": 4,
+          "text": "ガラス・陶磁器・刃物類"
+        },
+        {
+          "level": 5,
+          "text": "お願い"
+        },
+        {
+          "level": 4,
+          "text": "資源として回収できないガラスびん・缶"
+        },
+        {
+          "level": 5,
+          "text": "具体例"
+        },
+        {
+          "level": 4,
+          "text": "充電式電池・充電式電池内蔵製品"
+        },
+        {
+          "level": 5,
+          "text": "お願い"
+        },
+        {
+          "level": 4,
+          "text": "スプレー缶・カセットボンベ・ライター"
+        },
+        {
+          "level": 5,
+          "text": "お願い"
+        },
+        {
+          "level": 4,
+          "text": "蛍光管・電球"
+        },
+        {
+          "level": 5,
+          "text": "お願い"
+        },
+        {
+          "level": 4,
+          "text": "小型家電・金属製品"
+        },
+        {
+          "level": 5,
+          "text": "小型家電"
+        },
+        {
+          "level": 5,
+          "text": "金属製品"
+        },
+        {
+          "level": 6,
+          "text": "お願い"
+        },
+        {
+          "level": 4,
+          "text": "その他不燃ごみ"
+        },
+        {
+          "level": 5,
+          "text": "具体例"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ（事前申込制）"
+        },
+        {
+          "level": 4,
+          "text": "リユースの取組み"
+        },
+        {
+          "level": 2,
+          "text": "水銀を含む製品の処分方法について"
+        },
+        {
+          "level": 2,
+          "text": "区では収集できないもの"
+        },
+        {
+          "level": 3,
+          "text": "具体例（一部）と処分方法"
+        },
+        {
+          "level": 4,
+          "text": "石・砂・土・ブロック・レンガ・タイル・石こうボード"
+        },
+        {
+          "level": 4,
+          "text": "耐火金庫"
+        },
+        {
+          "level": 4,
+          "text": "注射針"
+        },
+        {
+          "level": 4,
+          "text": "消火器"
+        },
+        {
+          "level": 4,
+          "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機、衣類乾燥機"
+        },
+        {
+          "level": 4,
+          "text": "パソコン"
+        },
+        {
+          "level": 4,
+          "text": "自動車・自動車用バッテリー・オートバイ・二輪車用バッテリー・タイヤ"
+        },
+        {
+          "level": 4,
+          "text": "薬品類（農薬・劇薬）"
+        },
+        {
+          "level": 4,
+          "text": "有害性・危険性のあるもの"
+        },
+        {
+          "level": 4,
+          "text": "アスベスト含有物"
+        },
+        {
+          "level": 4,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "在宅医療廃棄物の処理について"
+        },
+        {
+          "level": 2,
+          "text": "ごみ散乱防止ネットの助成"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -254,13 +1655,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -268,146 +1673,188 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02083/24343.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/27658.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/381.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/382.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11684.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11685.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/383.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/384.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/27859.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/416.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/414.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/22586.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/12334.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/12333.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/385.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/documents/27658/harigami.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02239/386.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/documents/381/annai.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.setagaya.lg.jp/02241/387.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

@@ -10,53 +10,397 @@
     "has_jsonld": false,
     "text_len": 1665,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 224
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:58:06+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
   "followed_urls": [
     "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+    "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
     "https://www2.sodai-web.jp/meguro/index.html"
   ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "インターネットで24時間受付けます（メンテナンス時は除きます。）。ただし、申し込みできる品目に制限があります。",
+  "online_clarity_evidence": "インターネットによるお申し込み インターネットで24時間受付けます（メンテナンス時は除きます。）。ただし、申し込みできる品目に制限があります。",
   "online_clarity_pages": [
     "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
     "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+    "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
     "https://www2.sodai-web.jp/meguro/index.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "目黒区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "通常の申込みでは持ち物・書類の提示は不要（電話またはインターネットで申込み後、金額に応じた「有料粗大ごみ処理券」を購入して粗大ごみに貼付するのみ）。ただし、処理手数料の減額・免除をオンライン申請する場合は該当者のみ、受給者証等の画像データのアップロードが必要。",
+        "evidence": "申請情報の入力および受給者証等の画像データのアップロードが必要になります。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 37,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+            "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html"
+          ],
+          "page_notes": "このページは収集曜日と受付センターの連絡先のみを扱っており、必要書類・持ち物についての記述はない。手続きの詳細は別ページ「粗大ごみ処理の手続き」に案内されている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "通常の申込みでは持ち物・書類の提示は不要（電話またはインターネットで申込み後、金額に応じた「有料粗大ごみ処理券」を購入して粗大ごみに貼付するのみ）。ただし、処理手数料の減額・免除をオンライン申請する場合は該当者のみ、受給者証等の画像データのアップロードが必要。",
+            "evidence": "申請情報の入力および受給者証等の画像データのアップロードが必要になります。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 37,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "収集曜日ページ自体には持ち物・必要書類の記載はなく、同じ分類の「粗大ごみ処理の手続き」ページに申込み方法と、減免該当者向けの必要書類（受給者証等の画像データ）の記載があった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+        "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html"
+      ],
+      "page_notes": "収集曜日ページ自体には持ち物・必要書類の記載はなく、同じ分類の「粗大ごみ処理の手続き」ページに申込み方法と、減免該当者向けの必要書類（受給者証等の画像データ）の記載があった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "目黒区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "インターネット受付でオンライン申込みが完結できる（電話申込みも可、本文に窓口申込みの記載はなし）",
+        "evidence": "粗大ごみの申込みインターネットによるお申込み目黒区粗大ごみ受付センターインターネット受付電話による申込み",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 49,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "インターネット受付でオンライン申込みが完結できる（電話申込みも可、本文に窓口申込みの記載はなし）",
+            "evidence": "粗大ごみの申込みインターネットによるお申込み目黒区粗大ごみ受付センターインターネット受付電話による申込み",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 49,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文に「インターネットによるお申込み」と「電話による申込み」の2手段が明記されており、窓口（対面）申込みへの言及はない。インターネット受付は外部サイト（www2.sodai-web.jp）へのリンクのみで、申込みフォーム自体はこのページには埋め込まれていない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文に「インターネットによるお申込み」と「電話による申込み」の2手段が明記されており、窓口（対面）申込みへの言及はない。インターネット受付は外部サイト（www2.sodai-web.jp）へのリンクのみで、申込みフォーム自体はこのページには埋め込まれていない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "目黒区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+            "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html"
+          ],
+          "page_notes": "このページは収集曜日の地域一覧と申込方法（電話・インターネット）が中心で、申込期限（何日前までに等）についての記述は本文中に見当たらない。期限は別ページの「粗大ごみ処理の手続き」に載っている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文・リンク先2ページ（粗大ごみ処理の手続き／粗大ごみの出し方）を確認したが、粗大ごみ収集の申込自体に「収集日の何日前までに申し込むこと」という起算点付きの期限は記載がなかった。「申込みから収集まで2週間程度お待ちいただく場合があります」という処理日数の目安のみで、申込の締切ではない。なお減額・免除のオンライン申請には「収集予定日の1週間前まで」という別の期限があるが、これは別手続き（手数料減免）であり本件の対象外。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+        "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html"
+      ],
+      "page_notes": "本文・リンク先2ページ（粗大ごみ処理の手続き／粗大ごみの出し方）を確認したが、粗大ごみ収集の申込自体に「収集日の何日前までに申し込むこと」という起算点付きの期限は記載がなかった。「申込みから収集まで2週間程度お待ちいただく場合があります」という処理日数の目安のみで、申込の締切ではない。なお減額・免除のオンライン申請には「収集予定日の1週間前まで」という別の期限があるが、これは別手続き（手数料減免）であり本件の対象外。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "目黒区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "曖昧",
+        "failure_type": "fact_ambiguous",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+            "https://www2.sodai-web.jp/meguro/index.html"
+          ],
+          "page_notes": "このページは収集曜日の一覧が主題で、手数料額の記載はない。「新規お申し込み、品目・手数料等の確認につきましては、インターネット受付の積極的なご利用をお願いします」とあり、手数料は別ページ（粗大ごみ処理の手続き、またはインターネット受付サイト）に委ねられている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "曖昧",
+            "failure_type": "fact_ambiguous",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「粗大ごみ処理の手続き」ページと申込サイトでは、収集が有料・事前申込制であること、手数料が品目やサイズ（収納家具類は2辺合計）によって異なることまでは書かれているが、具体的な金額表は別ページ（有料粗大ごみ処理券A券・B券）にリンクされているのみで、この階層には一意の金額が示されていなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+        "https://www2.sodai-web.jp/meguro/index.html"
+      ],
+      "page_notes": "「粗大ごみ処理の手続き」ページと申込サイトでは、収集が有料・事前申込制であること、手数料が品目やサイズ（収納家具類は2辺合計）によって異なることまでは書かれているが、具体的な金額表は別ページ（有料粗大ごみ処理券A券・B券）にリンクされているのみで、この階層には一意の金額が示されていなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "記載なし"
+      "found": true,
+      "value": "通常の申込みでは持ち物・書類の提示は不要（電話またはインターネットで申込み後、金額に応じた「有料粗大ごみ処理券」を購入して粗大ごみに貼付するのみ）。ただし、処理手数料の減額・免除をオンライン申請する場合は該当者のみ、受給者証等の画像データのアップロードが必要。",
+      "evidence": "申請情報の入力および受給者証等の画像データのアップロードが必要になります。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 37,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "電話（目黒区粗大ごみ受付センター 03-5715-0053、月〜土 午前8時〜午後7時、祝日も受付）またはインターネット（目黒区粗大ごみ受付センターインターネット受付、24時間受付・メンテナンス時除く）で申込み可能。ただしインターネットは申込める品目に制限あり。",
-      "evidence": "インターネットによるお申込み 目黒区粗大ごみ受付センターインターネット受付 電話による申込み 電話番号（粗大ごみ受付センター） 03-5715-0053",
+      "value": "インターネット受付でオンライン申込みが完結できる（電話申込みも可、本文に窓口申込みの記載はなし）",
+      "evidence": "粗大ごみの申込みインターネットによるお申込み目黒区粗大ごみ受付センターインターネット受付電話による申込み",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 49,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
-      "evidence": "手数料は、粗大ごみの種類によって金額が違います。金額にあわせて必ず目黒区の「有料粗大ごみ処理券」をお買い求めください。",
+      "evidence": "",
       "source": null,
-      "failure_reason": "曖昧"
+      "failure_reason": "曖昧",
+      "failure_type": "fact_ambiguous",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "収集曜日ページ（youbi.html）は申込方法（電話・インターネット）は明記しているが、手数料は品目ごとに異なるとしか書かれておらず金額表は別ページに分散、必要書類・提出期限にあたる記載はどのページにも見当たらなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "収集曜日ページ自体には持ち物・必要書類の記載はなく、同じ分類の「粗大ごみ処理の手続き」ページに申込み方法と、減免該当者向けの必要書類（受給者証等の画像データ）の記載があった。\n本文に「インターネットによるお申込み」と「電話による申込み」の2手段が明記されており、窓口（対面）申込みへの言及はない。インターネット受付は外部サイト（www2.sodai-web.jp）へのリンクのみで、申込みフォーム自体はこのページには埋め込まれていない。\n本文・リンク先2ページ（粗大ごみ処理の手続き／粗大ごみの出し方）を確認したが、粗大ごみ収集の申込自体に「収集日の何日前までに申し込むこと」という起算点付きの期限は記載がなかった。「申込みから収集まで2週間程度お待ちいただく場合があります」という処理日数の目安のみで、申込の締切ではない。なお減額・免除のオンライン申請には「収集予定日の1週間前まで」という別の期限があるが、これは別手続き（手数料減免）であり本件の対象外。\n「粗大ごみ処理の手続き」ページと申込サイトでは、収集が有料・事前申込制であること、手数料が品目やサイズ（収納家具類は2辺合計）によって異なることまでは書かれているが、具体的な金額表は別ページ（有料粗大ごみ処理券A券・B券）にリンクされているのみで、この階層には一意の金額が示されていなかった。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
+      "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+      "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
+      "https://www2.sodai-web.jp/meguro/index.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 2,
+    "verified": 2,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 2
   }
 }

@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.shibuya.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
@@ -14,7 +35,157 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5421,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "粗大ごみ | 家庭から出るごみ・資源 | 渋谷区ポータル",
+      "meta": {
+        "description": "粗大ごみの申し込みや手数料、当日の出し方についてのページです。",
+        "og:title": "粗大ごみ | 家庭から出るごみ・資源 | 渋谷区ポータル",
+        "og:description": "粗大ごみの申し込みや手数料、当日の出し方についてのページです。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとは"
+        },
+        {
+          "level": 2,
+          "text": "品目および手数料一覧"
+        },
+        {
+          "level": 3,
+          "text": "手数料の減額または免除"
+        },
+        {
+          "level": 2,
+          "text": "「リユース（再使用）」を検討しませんか？"
+        },
+        {
+          "level": 3,
+          "text": "一括査定サービス「おいくら」について"
+        },
+        {
+          "level": 3,
+          "text": "一括査定の流れ"
+        },
+        {
+          "level": 3,
+          "text": "廃棄物処理量の削減を目指す協定を締結しました"
+        },
+        {
+          "level": 2,
+          "text": "申し込み方法"
+        },
+        {
+          "level": 3,
+          "text": "電話"
+        },
+        {
+          "level": 3,
+          "text": "LINE"
+        },
+        {
+          "level": 3,
+          "text": "インターネット"
+        },
+        {
+          "level": 2,
+          "text": "申し込み後の変更・取り消し"
+        },
+        {
+          "level": 3,
+          "text": "電話"
+        },
+        {
+          "level": 3,
+          "text": "LINE、インターネットで変更が可能な項目"
+        },
+        {
+          "level": 3,
+          "text": "LINE"
+        },
+        {
+          "level": 3,
+          "text": "インターネット"
+        },
+        {
+          "level": 2,
+          "text": "収集までの手順"
+        },
+        {
+          "level": 3,
+          "text": "1. 申し込み"
+        },
+        {
+          "level": 3,
+          "text": "2. 有料粗大ごみ処理券を購入またはキャッシュレス決済にてお支払い"
+        },
+        {
+          "level": 3,
+          "text": "3. 粗大ごみを出す"
+        },
+        {
+          "level": 2,
+          "text": "高齢者・障がい者の粗大ごみの運び出し"
+        },
+        {
+          "level": 3,
+          "text": "対象"
+        },
+        {
+          "level": 4,
+          "text": "申し込み"
+        },
+        {
+          "level": 4,
+          "text": "実施方法"
+        },
+        {
+          "level": 4,
+          "text": "注意"
+        },
+        {
+          "level": 2,
+          "text": "シルバー人材センターによる運び出し（有料）"
+        },
+        {
+          "level": 2,
+          "text": "パンフレット"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課清掃事務所"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課リサイクル推進係"
+        },
+        {
+          "level": 2,
+          "text": "関連コンテンツ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/kyasshuresu_sodaigomi.html",
@@ -25,7 +196,69 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2458,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "粗大ごみ処理手数料のキャッシュレス決済について | 家庭から出るごみ・資源 | 渋谷区ポータル",
+      "meta": {
+        "description": "粗大ごみ処理手数料をキャッシュレス決済で支払う際に、ご確認をお願いします。",
+        "og:title": "粗大ごみ処理手数料のキャッシュレス決済について | 家庭から出るごみ・資源 | 渋谷区ポータル",
+        "og:description": "粗大ごみ処理手数料をキャッシュレス決済で支払う際に、ご確認をお願いします。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/kyasshuresu_sodaigomi.html",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "粗大ごみ処理手数料のキャッシュレス決済について"
+        },
+        {
+          "level": 3,
+          "text": "利用可能な決済方法"
+        },
+        {
+          "level": 3,
+          "text": "申込方法"
+        },
+        {
+          "level": 4,
+          "text": "LINE"
+        },
+        {
+          "level": 4,
+          "text": "インターネット"
+        },
+        {
+          "level": 3,
+          "text": "当日の出し方"
+        },
+        {
+          "level": 3,
+          "text": "受付変更・取り消し申込み期間"
+        },
+        {
+          "level": 3,
+          "text": "期間外の品目変更や取り消しについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課清掃事務所"
+        },
+        {
+          "level": 2,
+          "text": "関連コンテンツ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html",
@@ -36,7 +269,69 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 17750,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "粗大ごみ品目手数料一覧 | 家庭から出るごみ・資源 | 渋谷区ポータル",
+      "meta": {
+        "description": "粗大ごみの品目および手数料一覧です。手数料は粗大ごみの種類によって金額が違います。",
+        "og:title": "粗大ごみ品目手数料一覧 | 家庭から出るごみ・資源 | 渋谷区ポータル",
+        "og:description": "粗大ごみの品目および手数料一覧です。手数料は粗大ごみの種類によって金額が違います。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "粗大ごみ品目手数料一覧"
+        },
+        {
+          "level": 2,
+          "text": "あ行"
+        },
+        {
+          "level": 2,
+          "text": "か行"
+        },
+        {
+          "level": 2,
+          "text": "さ行"
+        },
+        {
+          "level": 2,
+          "text": "た行"
+        },
+        {
+          "level": 2,
+          "text": "な行"
+        },
+        {
+          "level": 2,
+          "text": "は行"
+        },
+        {
+          "level": 2,
+          "text": "ま行"
+        },
+        {
+          "level": 2,
+          "text": "や行"
+        },
+        {
+          "level": 2,
+          "text": "ら行"
+        },
+        {
+          "level": 2,
+          "text": "わ行"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
@@ -47,7 +342,81 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3219,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "有料ごみ処理手数料 | 有料ごみ手数料 | 渋谷区ポータル",
+      "meta": {
+        "description": "有料ごみ処理券に関する案内ページです。",
+        "og:title": "有料ごみ処理手数料 | 有料ごみ手数料 | 渋谷区ポータル",
+        "og:description": "有料ごみ処理券に関する案内ページです。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "有料ごみ処理手数料"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券"
+        },
+        {
+          "level": 4,
+          "text": "有料粗大ごみ処理券の料金表"
+        },
+        {
+          "level": 2,
+          "text": "事業系有料ごみ処理券"
+        },
+        {
+          "level": 4,
+          "text": "事業系有料ごみ処理券の料金表"
+        },
+        {
+          "level": 2,
+          "text": "有料ごみ処理券（有料粗大ごみ処理券、事業系有料ごみ処理券）の還付"
+        },
+        {
+          "level": 3,
+          "text": "還付の要件"
+        },
+        {
+          "level": 3,
+          "text": "手続き"
+        },
+        {
+          "level": 4,
+          "text": "必要書類"
+        },
+        {
+          "level": 4,
+          "text": "その他"
+        },
+        {
+          "level": 4,
+          "text": "あて先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課リサイクル推進係"
+        },
+        {
+          "level": 2,
+          "text": "関連コンテンツ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
@@ -58,7 +427,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1068,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ減量・リサイクルに関する取り組み | ごみ・資源 | 渋谷区ポータル",
+      "meta": {
+        "og:title": "ごみ減量・リサイクルに関する取り組み | ごみ・資源 | 渋谷区ポータル",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "ごみ減量・リサイクルに関する取り組み"
+        },
+        {
+          "level": 2,
+          "text": "カテゴリ一覧"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/application.html",
@@ -69,7 +462,69 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2176,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "渋谷区ごみ・資源分別アプリ | リサイクル意識啓発 | 渋谷区ポータル",
+      "meta": {
+        "description": "ごみ・資源の分け方、出し方や地域別の収集日のカレンダー機能などを備えたアプリを配信しています。",
+        "og:title": "渋谷区ごみ・資源分別アプリ | リサイクル意識啓発 | 渋谷区ポータル",
+        "og:description": "ごみ・資源の分け方、出し方や地域別の収集日のカレンダー機能などを備えたアプリを配信しています。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/application.html",
+        "og:image": "https://images.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/d35d28963bc248caad1accc2712ff92b/assets_kurashi_000067249.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "渋谷区ごみ・資源分別アプリ"
+        },
+        {
+          "level": 2,
+          "text": "利用方法"
+        },
+        {
+          "level": 3,
+          "text": "渋谷区公式LINEから利用する場合"
+        },
+        {
+          "level": 3,
+          "text": "スマートフォンアプリを利用する場合"
+        },
+        {
+          "level": 2,
+          "text": "主な機能"
+        },
+        {
+          "level": 3,
+          "text": "渋谷区公式LINEから利用する場合"
+        },
+        {
+          "level": 3,
+          "text": "スマートフォンアプリを利用する場合"
+        },
+        {
+          "level": 2,
+          "text": "プライバシーポリシー"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課リサイクル推進係"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/",
@@ -80,7 +535,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1125,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "リサイクル | ごみ・資源 | 渋谷区ポータル",
+      "meta": {
+        "og:title": "リサイクル | ごみ・資源 | 渋谷区ポータル",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "カテゴリ一覧"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/",
@@ -91,7 +570,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1027,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "リサイクルイベント | ごみ・資源 | 渋谷区ポータル",
+      "meta": {
+        "og:title": "リサイクルイベント | ごみ・資源 | 渋谷区ポータル",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "リサイクルイベント"
+        },
+        {
+          "level": 2,
+          "text": "カテゴリ一覧"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/",
@@ -102,7 +605,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1100,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "リサイクル意識啓発 | ごみ・資源 | 渋谷区ポータル",
+      "meta": {
+        "og:title": "リサイクル意識啓発 | ごみ・資源 | 渋谷区ポータル",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "リサイクル意識啓発"
+        },
+        {
+          "level": 2,
+          "text": "カテゴリ一覧"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/r_shop.html",
@@ -113,7 +640,77 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1691,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "委託販売 （リサイクルショップ） | ごみ減量・リサイクルに関する取り組み | 渋谷区ポータル",
+      "meta": {
+        "description": "家庭で不用になった日用雑貨品などを、必要とする人へ販売しています。",
+        "og:title": "委託販売 （リサイクルショップ） | ごみ減量・リサイクルに関する取り組み | 渋谷区ポータル",
+        "og:description": "家庭で不用になった日用雑貨品などを、必要とする人へ販売しています。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/r_shop.html",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "委託販売 （リサイクルショップ）"
+        },
+        {
+          "level": 2,
+          "text": "場所"
+        },
+        {
+          "level": 2,
+          "text": "登録・出品するには"
+        },
+        {
+          "level": 3,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "休業日"
+        },
+        {
+          "level": 3,
+          "text": "登録するには"
+        },
+        {
+          "level": 3,
+          "text": "出品するには"
+        },
+        {
+          "level": 3,
+          "text": "出品できる品"
+        },
+        {
+          "level": 2,
+          "text": "購入するには（展示・販売）"
+        },
+        {
+          "level": 3,
+          "text": "展示・販売時間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課リサイクル推進係"
+        },
+        {
+          "level": 2,
+          "text": "関連コンテンツ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/ku_syusyu.html",
@@ -124,7 +721,53 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2061,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "区の収集に事業系ごみを出すとき | 廃棄物 | 渋谷区ポータル",
+      "meta": {
+        "description": "区の収集に事業系ごみを出すときのページです。",
+        "og:title": "区の収集に事業系ごみを出すとき | 廃棄物 | 渋谷区ポータル",
+        "og:description": "区の収集に事業系ごみを出すときのページです。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/ku_syusyu.html",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "区の収集に事業系ごみを出すとき"
+        },
+        {
+          "level": 2,
+          "text": "区の収集を利用する場合"
+        },
+        {
+          "level": 2,
+          "text": "1回の排出量の上限は135リットル（45リットルで3袋）までです"
+        },
+        {
+          "level": 3,
+          "text": "ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課清掃事務所"
+        },
+        {
+          "level": 2,
+          "text": "関連コンテンツ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kaisyu.html",
@@ -135,7 +778,81 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1829,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "集団回収 | ごみ減量・リサイクルに関する取り組み | 渋谷区ポータル",
+      "meta": {
+        "description": "地域で資源回収に取り組む「集団回収」に関する案内ページです。",
+        "og:title": "集団回収 | ごみ減量・リサイクルに関する取り組み | 渋谷区ポータル",
+        "og:description": "地域で資源回収に取り組む「集団回収」に関する案内ページです。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kaisyu.html",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "集団回収"
+        },
+        {
+          "level": 2,
+          "text": "集団回収活動"
+        },
+        {
+          "level": 3,
+          "text": "集団回収のよいところ"
+        },
+        {
+          "level": 3,
+          "text": "どうすればいいの？"
+        },
+        {
+          "level": 4,
+          "text": "参加者を集め団体を作りましょう"
+        },
+        {
+          "level": 4,
+          "text": "回収品目を決めます"
+        },
+        {
+          "level": 4,
+          "text": "役割分担を決めましょう"
+        },
+        {
+          "level": 4,
+          "text": "回収業者を決めます"
+        },
+        {
+          "level": 4,
+          "text": "回収場所と日時を決めましょう"
+        },
+        {
+          "level": 4,
+          "text": "区へ団体登録しましょう"
+        },
+        {
+          "level": 4,
+          "text": "審査後、団体へ「登録証」を交付します"
+        },
+        {
+          "level": 3,
+          "text": "代表者などが変わったら？"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課リサイクル推進係"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kagu.html",
@@ -146,7 +863,53 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1245,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "再生木製家具の販売 | ごみ減量・リサイクルに関する取り組み | 渋谷区ポータル",
+      "meta": {
+        "description": "美竹リユースコーナーと本町リサイクルセンターで再生木製家具の販売を行っています。",
+        "og:title": "再生木製家具の販売 | ごみ減量・リサイクルに関する取り組み | 渋谷区ポータル",
+        "og:description": "美竹リユースコーナーと本町リサイクルセンターで再生木製家具の販売を行っています。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kagu.html",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "再生木製家具の販売"
+        },
+        {
+          "level": 2,
+          "text": "通常販売"
+        },
+        {
+          "level": 2,
+          "text": "美竹リユースコーナー 展示例"
+        },
+        {
+          "level": 2,
+          "text": "購入に関する問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課リサイクル推進係"
+        },
+        {
+          "level": 2,
+          "text": "関連コンテンツ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/",
@@ -157,7 +920,135 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1988,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "くらし | 渋谷区ポータル",
+      "meta": {
+        "og:title": "くらし | 渋谷区ポータル",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "くらし"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "カテゴリ一覧"
+        },
+        {
+          "level": 3,
+          "text": "住民票"
+        },
+        {
+          "level": 3,
+          "text": "印鑑登録"
+        },
+        {
+          "level": 3,
+          "text": "戸籍"
+        },
+        {
+          "level": 3,
+          "text": "外国人住民の手続き"
+        },
+        {
+          "level": 3,
+          "text": "証明書自動交付"
+        },
+        {
+          "level": 3,
+          "text": "住民基本台帳ネットワークシステム"
+        },
+        {
+          "level": 3,
+          "text": "窓口での本人確認・委任状"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバー"
+        },
+        {
+          "level": 3,
+          "text": "住民税"
+        },
+        {
+          "level": 3,
+          "text": "その他の税・公売情報"
+        },
+        {
+          "level": 3,
+          "text": "国民健康保険"
+        },
+        {
+          "level": 3,
+          "text": "国民年金"
+        },
+        {
+          "level": 3,
+          "text": "後期高齢者医療"
+        },
+        {
+          "level": 3,
+          "text": "税・保険料の納付方法"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・資源"
+        },
+        {
+          "level": 3,
+          "text": "住宅"
+        },
+        {
+          "level": 3,
+          "text": "仕事"
+        },
+        {
+          "level": 3,
+          "text": "動物・ペット"
+        },
+        {
+          "level": 3,
+          "text": "地域交通（自転車・自動車・バス）"
+        },
+        {
+          "level": 3,
+          "text": "旅行支援"
+        },
+        {
+          "level": 3,
+          "text": "公衆浴場"
+        },
+        {
+          "level": 3,
+          "text": "寄附"
+        },
+        {
+          "level": 3,
+          "text": "外国人向け情報"
+        },
+        {
+          "level": 3,
+          "text": "くらしに関する情報"
+        },
+        {
+          "level": 3,
+          "text": "くらしの相談窓口"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/",
@@ -168,7 +1059,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1621,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭から出るごみ・資源 | ごみ・資源 | 渋谷区ポータル",
+      "meta": {
+        "og:title": "家庭から出るごみ・資源 | ごみ・資源 | 渋谷区ポータル",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "家庭から出るごみ・資源"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "カテゴリ一覧"
+        },
+        {
+          "level": 2,
+          "text": "関連コンテンツ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/",
@@ -179,7 +1106,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 985,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料ごみ手数料 | ごみ・資源 | 渋谷区ポータル",
+      "meta": {
+        "og:title": "有料ごみ手数料 | ごみ・資源 | 渋谷区ポータル",
+        "og:url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "有料ごみ手数料"
+        },
+        {
+          "level": 2,
+          "text": "カテゴリ一覧"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/h_jigyo.html",
@@ -190,7 +1141,81 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2291,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "事業者のごみ処理 | 廃棄物 | 渋谷区ポータル",
+      "meta": {
+        "description": "事業者のごみ処理のページです。",
+        "og:title": "事業者のごみ処理 | 廃棄物 | 渋谷区ポータル",
+        "og:description": "事業者のごみ処理のページです。",
+        "og:url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/h_jigyo.html",
+        "og:image": "https://www.city.shibuya.tokyo.jp/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちがいをちからに変える街。渋谷区"
+        },
+        {
+          "level": 1,
+          "text": "事業者のごみ処理"
+        },
+        {
+          "level": 2,
+          "text": "根拠となる法律・条例（抜粋）"
+        },
+        {
+          "level": 3,
+          "text": "「廃棄物の処理及び清掃に関する法律」"
+        },
+        {
+          "level": 3,
+          "text": "「渋谷区清掃及びリサイクルに関する条例」"
+        },
+        {
+          "level": 2,
+          "text": "処理の方法"
+        },
+        {
+          "level": 3,
+          "text": "事業系一般廃棄物の処理委託"
+        },
+        {
+          "level": 3,
+          "text": "し尿混じりのビルピット汚でい、事業系の仮設トイレのし尿処理委託"
+        },
+        {
+          "level": 3,
+          "text": "浄化槽汚でいの処理委託"
+        },
+        {
+          "level": 4,
+          "text": "許可業者名簿および一覧"
+        },
+        {
+          "level": 3,
+          "text": "産業廃棄物の処理委託"
+        },
+        {
+          "level": 3,
+          "text": "処理施設への自己持込"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 4,
+          "text": "清掃リサイクル課清掃事務所"
+        },
+        {
+          "level": 2,
+          "text": "関連コンテンツ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -199,6 +1224,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -206,6 +1233,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -213,111 +1242,143 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/kyasshuresu_sodaigomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/application.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/ku_syusyu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/h_jigyo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/r_shop.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kaisyu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kagu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

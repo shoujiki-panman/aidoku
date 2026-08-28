@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.katsushika.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/index.html",
@@ -14,7 +35,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2238,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ・家電など｜葛飾区公式サイト",
+      "meta": {
+        "description": "処理の際に料金や申込みが必要となる「粗大ごみ、家電、パソコン、自動車、オートバイ」の排出方法について",
+        "og:title": "粗大ごみ・家電など｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "処理の際に料金や申込みが必要となる「粗大ごみ、家電、パソコン、自動車、オートバイ」の排出方法について",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ・家電など"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1023514.html",
@@ -25,7 +83,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2259,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料粗大ごみ処理券の還付手続きについて｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "有料粗大ごみ処理券の還付手続きについて｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1023514.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料粗大ごみ処理券の還付手続きについて"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券の還付手続きについて"
+        },
+        {
+          "level": 3,
+          "text": "有料粗大ごみ処理券の還付申請"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1016343.html",
@@ -36,7 +147,112 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7545,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方｜葛飾区公式サイト",
+      "meta": {
+        "description": "家庭から出るごみのうち、高さ・幅・奥行のいずれか一辺が30センチメートルを超えるもの（布団、家具、寝具、自転車など）が「粗大ごみ」です。一日に処理できる量には限りがありますので、粗大ごみの収集及び持ち込みは、品物のサイズや個数をご確認のうえ、事前にインターネットか電話でお申し込みをお願いします。",
+        "og:title": "粗大ごみの出し方｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "家庭から出るごみのうち、高さ・幅・奥行のいずれか一辺が30センチメートルを超えるもの（布団、家具、寝具、自転車など）が「粗大ごみ」です。\n一日に処理できる量には限りがありますので、粗大ごみの収集及び持ち込みは、品物のサイズや個数をご確認のうえ、事前にインターネットか電話でお申し込みをお願いします。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1016343.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみとして出す前に"
+        },
+        {
+          "level": 2,
+          "text": "申込方法（インターネット又は電話）"
+        },
+        {
+          "level": 3,
+          "text": "インターネット申し込み"
+        },
+        {
+          "level": 3,
+          "text": "電話申し込み"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理手数料"
+        },
+        {
+          "level": 4,
+          "text": "処理手数料の減額免除について"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "収集"
+        },
+        {
+          "level": 5,
+          "text": "粗大ごみの運び出しが困難な方への支援について"
+        },
+        {
+          "level": 3,
+          "text": "持ち込み"
+        },
+        {
+          "level": 4,
+          "text": "持込ステーションでの流れ"
+        },
+        {
+          "level": 2,
+          "text": "ご注意ください"
+        },
+        {
+          "level": 5,
+          "text": "石綿（アスベスト）が含まれている可能性のある珪藻土バスマットは区では収集できません"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "よくいただくお問い合わせリンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/index.html",
@@ -47,7 +263,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1887,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル｜葛飾区公式サイト",
+      "meta": {
+        "description": "資源・ ごみの出し方や収集日のご案内、ごみの減量や3つのRの実践に役立つ情報など",
+        "og:title": "ごみ・リサイクル｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "資源・ ごみの出し方や収集日のご案内、ごみの減量や3つのRの実践に役立つ情報など",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1017199/index.html",
@@ -58,7 +311,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1759,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源とごみの収集カレンダー｜葛飾区公式サイト",
+      "meta": {
+        "description": "資源とごみの収集日がわかるカレンダーについて掲載しています。",
+        "og:title": "資源とごみの収集カレンダー｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "資源とごみの収集日がわかるカレンダーについて掲載しています。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1017199/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの収集カレンダー"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1017199/1020038.html",
@@ -69,7 +359,200 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4605,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "2026年度版「資源とごみの収集カレンダー」｜葛飾区公式サイト",
+      "meta": {
+        "description": "2026年4月から2027年3月までの、資源とごみの収集日がわかるカレンダーです。見たい地区のカレンダーを添付ファイルからご確認ください。また地区ごとの1年間の収集曜日がわかる簡易版カレンダーもございますのでこちらもご利用ください。",
+        "og:title": "2026年度版「資源とごみの収集カレンダー」｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "2026年4月から2027年3月までの、資源とごみの収集日がわかるカレンダーです。\n見たい地区のカレンダーを添付ファイルからご確認ください。\n\nまた地区ごとの1年間の収集曜日がわかる簡易版カレンダーもございますので\nこちらもご利用ください。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1017199/1020038.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "2026年度版「資源とごみの収集カレンダー」"
+        },
+        {
+          "level": 2,
+          "text": "あ"
+        },
+        {
+          "level": 3,
+          "text": "青戸"
+        },
+        {
+          "level": 3,
+          "text": "奥戸"
+        },
+        {
+          "level": 3,
+          "text": "お花茶屋"
+        },
+        {
+          "level": 2,
+          "text": "か"
+        },
+        {
+          "level": 3,
+          "text": "金町"
+        },
+        {
+          "level": 3,
+          "text": "鎌倉"
+        },
+        {
+          "level": 3,
+          "text": "亀有"
+        },
+        {
+          "level": 3,
+          "text": "小菅"
+        },
+        {
+          "level": 2,
+          "text": "さ"
+        },
+        {
+          "level": 3,
+          "text": "柴又"
+        },
+        {
+          "level": 3,
+          "text": "白鳥"
+        },
+        {
+          "level": 3,
+          "text": "新小岩"
+        },
+        {
+          "level": 2,
+          "text": "た"
+        },
+        {
+          "level": 3,
+          "text": "高砂"
+        },
+        {
+          "level": 3,
+          "text": "宝町"
+        },
+        {
+          "level": 3,
+          "text": "立石"
+        },
+        {
+          "level": 2,
+          "text": "な"
+        },
+        {
+          "level": 3,
+          "text": "新宿"
+        },
+        {
+          "level": 3,
+          "text": "西亀有"
+        },
+        {
+          "level": 3,
+          "text": "西新小岩"
+        },
+        {
+          "level": 3,
+          "text": "西水元"
+        },
+        {
+          "level": 2,
+          "text": "は"
+        },
+        {
+          "level": 3,
+          "text": "東金町"
+        },
+        {
+          "level": 3,
+          "text": "東新小岩"
+        },
+        {
+          "level": 3,
+          "text": "東立石"
+        },
+        {
+          "level": 3,
+          "text": "東堀切"
+        },
+        {
+          "level": 3,
+          "text": "東水元"
+        },
+        {
+          "level": 3,
+          "text": "東四つ木"
+        },
+        {
+          "level": 3,
+          "text": "細田"
+        },
+        {
+          "level": 3,
+          "text": "堀切"
+        },
+        {
+          "level": 2,
+          "text": "ま"
+        },
+        {
+          "level": 3,
+          "text": "水元"
+        },
+        {
+          "level": 3,
+          "text": "南水元"
+        },
+        {
+          "level": 2,
+          "text": "や"
+        },
+        {
+          "level": 3,
+          "text": "四つ木"
+        },
+        {
+          "level": 2,
+          "text": "地区別（簡易版）"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/1001651.html",
@@ -80,7 +563,84 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3175,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ出しが困難な世帯への訪問収集｜葛飾区公式サイト",
+      "meta": {
+        "description": "ごみを集積所まで運び出すことが困難なひとり暮らしなどの高齢者・障害者の方を対象に、玄関先までごみの収集に伺う無料サービスを行っています。",
+        "og:title": "ごみ出しが困難な世帯への訪問収集｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "ごみを集積所まで運び出すことが困難なひとり暮らしなどの高齢者・障害者の方を対象に、玄関先までごみの収集に伺う無料サービスを行っています。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/1001651.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ出しが困難な世帯への訪問収集"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "ごみの出し方と訪問収集日"
+        },
+        {
+          "level": 2,
+          "text": "申し込みから収集開始まで"
+        },
+        {
+          "level": 3,
+          "text": "1 電話でお申し込みください"
+        },
+        {
+          "level": 3,
+          "text": "2 調査と書類"
+        },
+        {
+          "level": 3,
+          "text": "3 収集開始"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "よくいただくお問い合わせリンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/1001658.html",
@@ -91,7 +651,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2154,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "雪や台風接近時などの場合の資源・ごみ収集について｜葛飾区公式サイト",
+      "meta": {
+        "description": "雪や台風接近時などであっても、原則、資源・ごみの収集は行います。　粗大ごみの収集・持込業務についても、申し込みいただいた分については予定どおり行います。　ただし、積雪や冠水による道路の通行止めや災害が予測される状況などで、収集ができない場合があります。　集積所への排出にあたっては、下記のとおりご協力をお願いします。",
+        "og:title": "雪や台風接近時などの場合の資源・ごみ収集について｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "雪や台風接近時などであっても、原則、資源・ごみの収集は行います。\n　粗大ごみの収集・持込業務についても、申し込みいただいた分については予定どおり行います。\n　ただし、積雪や冠水による道路の通行止めや災害が予測される状況などで、収集ができない場合があります。\n\n　集積所への排出にあたっては、下記のとおりご協力をお願いします。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/1001658.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "雪や台風接近時などの場合の資源・ごみ収集について"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区からのお願い"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/1001681.html",
@@ -102,7 +711,104 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3182,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区が行う事業系ごみの収集｜葛飾区公式サイト",
+      "meta": {
+        "description": "事業系ごみは、許可をもつ処理業者へ委託するなどの自己処理が原則ですが、排出量が少ないなどの理由から委託先が見つからない場合、かつ、1回の排出量が90L以内であれば、有料で区が収集します。",
+        "og:title": "区が行う事業系ごみの収集｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "事業系ごみは、許可をもつ処理業者へ委託するなどの自己処理が原則ですが、排出量が少ないなどの理由から委託先が見つからない場合、かつ、1回の排出量が90L以内であれば、有料で区が収集します。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/1001681.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区が行う事業系ごみの収集"
+        },
+        {
+          "level": 2,
+          "text": "区の収集を利用するには"
+        },
+        {
+          "level": 3,
+          "text": "プラマーク、資源（古紙・びん・缶・ペットボトル・食品トレイ）、燃やすごみ、燃やさないごみに分別し、収集日当日の朝8時までに集積所へお出しください。"
+        },
+        {
+          "level": 3,
+          "text": "事業系ごみはすべて有料です。「事業系有料ごみ処理券」を貼ってお出しください。"
+        },
+        {
+          "level": 3,
+          "text": "事業系有料ごみ処理券の貼り方"
+        },
+        {
+          "level": 4,
+          "text": "資源"
+        },
+        {
+          "level": 5,
+          "text": "古紙"
+        },
+        {
+          "level": 5,
+          "text": "びん、缶、ペットボトル、食品トレイ"
+        },
+        {
+          "level": 4,
+          "text": "プラマーク、燃やすごみ、燃やさないごみ"
+        },
+        {
+          "level": 5,
+          "text": "容器で出す場合"
+        },
+        {
+          "level": 5,
+          "text": "袋で出す場合"
+        },
+        {
+          "level": 5,
+          "text": "袋に入りにくいもの"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "よくいただくお問い合わせリンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/index.html",
@@ -113,7 +819,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3351,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭ごみ｜葛飾区公式サイト",
+      "meta": {
+        "description": "資源・ ごみの出し方や収集日のご案内",
+        "og:title": "家庭ごみ｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "資源・ ごみの出し方や収集日のご案内",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭ごみ"
+        },
+        {
+          "level": 2,
+          "text": "家庭の資源とごみ 収集曜日と分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "集積所の管理・美化"
+        },
+        {
+          "level": 2,
+          "text": "集合住宅や事業用建築物の廃棄物保管場所の設置等"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/index.html",
@@ -124,7 +879,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2930,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "事業系ごみ・廃棄物｜葛飾区公式サイト",
+      "meta": {
+        "description": "事業所の資源とごみの分け方・出し方、事業用大規模建築物の廃棄物管理について",
+        "og:title": "事業系ごみ・廃棄物｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "事業所の資源とごみの分け方・出し方、事業用大規模建築物の廃棄物管理について",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業系ごみ・廃棄物"
+        },
+        {
+          "level": 2,
+          "text": "事業所の資源とごみの分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1001672.html",
@@ -135,7 +931,72 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2461,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家電リサイクル法｜葛飾区公式サイト",
+      "meta": {
+        "description": "家電リサイクル法は、消費者、家電小売店、家電メーカー等が協力して、廃棄物の減量化や資源の有効な利用を促進することを目的としています。",
+        "og:title": "家電リサイクル法｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "家電リサイクル法は、消費者、家電小売店、家電メーカー等が協力して、廃棄物の減量化や資源の有効な利用を促進することを目的としています。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1001672.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家電リサイクル法"
+        },
+        {
+          "level": 2,
+          "text": "家電リサイクル法の概要"
+        },
+        {
+          "level": 3,
+          "text": "対象機器"
+        },
+        {
+          "level": 3,
+          "text": "関係者の役割"
+        },
+        {
+          "level": 3,
+          "text": "エアコン・テレビ・冷蔵庫及び冷凍庫・洗濯機及び衣類乾燥機のリサイクルの流れ"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "よくいただくお問い合わせリンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1026424/index.html",
@@ -146,7 +1007,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1615,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "災害時のごみ｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "災害時のごみ｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1026424/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "災害時のごみ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001534/index.html",
@@ -157,7 +1055,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7328,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ減量・3Rの取り組み｜葛飾区公式サイト",
+      "meta": {
+        "description": "ごみの減量や3つのRの実践に役立つ情報（不用品交換、リサイクル品情報、環境学習、古布の拠点回収など）",
+        "og:title": "ごみ減量・3Rの取り組み｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "ごみの減量や3つのRの実践に役立つ情報\n（不用品交換、リサイクル品情報、環境学習、古布の拠点回収など）",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001534/index.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ減量・3Rの取り組み"
+        },
+        {
+          "level": 2,
+          "text": "ごみ減量・3Rの取り組み（不用品交換、リサイクル品情報など）"
+        },
+        {
+          "level": 2,
+          "text": "環境学習、絵本、紙芝居、動画"
+        },
+        {
+          "level": 2,
+          "text": "こんにちは！かつしかごみ減量・リサイクル推進協議会です"
+        },
+        {
+          "level": 2,
+          "text": "店頭・区施設等の資源回収、集団回収"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/1001643.html",
@@ -168,7 +1119,96 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3958,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみの正しい分け方・出し方｜葛飾区公式サイト",
+      "meta": {
+        "description": "自宅前のスペースなどをごみの集積所として提供していただいている方の気持ちを考えて、正しいごみの出し方にご協力をお願いいたします。",
+        "og:title": "資源・ごみの正しい分け方・出し方｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "自宅前のスペースなどをごみの集積所として提供していただいている方の気持ちを考えて、正しいごみの出し方にご協力をお願いいたします。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/1001643.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみの正しい分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "プラマーク（プラスチック製容器包装） 週1回"
+        },
+        {
+          "level": 2,
+          "text": "資源 週1回"
+        },
+        {
+          "level": 3,
+          "text": "回収曜日を気にせずに出すことができますので、こちらもご利用ください。"
+        },
+        {
+          "level": 2,
+          "text": "燃やすごみ 週2回"
+        },
+        {
+          "level": 2,
+          "text": "燃やさないごみ 月2回"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ 申し込み制"
+        },
+        {
+          "level": 2,
+          "text": "清掃事務所では収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "特に引火性・爆発性のあるものはごみ袋に入れないでください"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "よくいただくお問い合わせリンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/1031281.html",
@@ -179,7 +1219,64 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2914,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住宅宿泊事業（民泊）から出るごみの処理について｜葛飾区公式サイト",
+      "meta": {
+        "description": "葛飾区公式サイトです。各種手続きのご案内、イベント情報、観光情報、行政情報をお知らせします。",
+        "og:title": "住宅宿泊事業（民泊）から出るごみの処理について｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "葛飾区公式サイト",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/1031281.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住宅宿泊事業（民泊）から出るごみの処理について"
+        },
+        {
+          "level": 2,
+          "text": "許可をもつ廃棄物処理業者に収集を依頼する"
+        },
+        {
+          "level": 2,
+          "text": "区の収集を利用する"
+        },
+        {
+          "level": 3,
+          "text": "民泊を始める際には、葛飾区清掃事務所に必ずご連絡ください"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/1024262.html",
@@ -190,7 +1287,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2356,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "事業系ごみの適正処理・減量ハンドブックを作成しました！｜葛飾区公式サイト",
+      "meta": {
+        "description": "事業系ごみの適正処理や減量に役立つ情報や、資源とごみの正しい分け方・出し方の情報などを掲載しています。ぜひご覧ください。",
+        "og:title": "事業系ごみの適正処理・減量ハンドブックを作成しました！｜葛飾区公式サイト",
+        "og:type": "article",
+        "og:description": "事業系ごみの適正処理や減量に役立つ情報や、資源とごみの正しい分け方・出し方の情報などを掲載しています。ぜひご覧ください。",
+        "og:url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/1024262.html",
+        "og:image": "https://www.city.katsushika.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.gif",
+        "og:site_name": "葛飾区公式サイト",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業系ごみの適正処理・減量ハンドブックを作成しました！"
+        },
+        {
+          "level": 2,
+          "text": "内容"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "葛飾区役所"
+        },
+        {
+          "level": 3,
+          "text": "コールセンター(はなしょうぶコール)"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -199,6 +1345,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -206,118 +1354,152 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1017199/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1023514.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1016343.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1001672.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1017199/1020038.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1026424/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001534/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/1001651.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/1001658.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001535/1001643.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/1001681.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/1031281.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001537/1024262.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

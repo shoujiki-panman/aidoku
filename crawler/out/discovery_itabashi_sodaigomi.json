@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.itabashi.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
@@ -14,7 +35,111 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5459,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ（申込制／有料）・料金検索（AIチャットボット）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ（申込制／有料）・料金検索（AIチャットボット）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ（申込制／有料）・料金検索（AIチャットボット）"
+        },
+        {
+          "level": 2,
+          "text": "令和8年4月1日（水曜日）より、リユース（再使用）可能な毛布について、区の拠点回収事業で資源として無料回収をはじめました。"
+        },
+        {
+          "level": 2,
+          "text": "AIチャットボットから、粗大ごみの料金、収集日、持ち込み日、一部の可燃ごみや不燃ごみの分別方法などを確認できます。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとは"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ受付センター(粗大ごみの収集及び持ち込みはともに事前申込制)"
+        },
+        {
+          "level": 3,
+          "text": "電話受付 03-6747-9353(申込先)"
+        },
+        {
+          "level": 3,
+          "text": "インターネット受付(申込先)"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方及び申し込み手順"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "［手順1］申し込みの前に"
+        },
+        {
+          "level": 3,
+          "text": "［手順2］粗大ごみ受付センターに申し込む（「収集」「持ち込み」とも）"
+        },
+        {
+          "level": 4,
+          "text": "申込先"
+        },
+        {
+          "level": 3,
+          "text": "［手順3］粗大ごみ処理券を購入する"
+        },
+        {
+          "level": 3,
+          "text": "［手順4］粗大ごみを出す"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみの運び出しについて"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/index.html",
@@ -25,7 +150,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1437,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
@@ -36,7 +201,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2026,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ処理手数料（料金）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ処理手数料（料金）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ処理手数料（料金）"
+        },
+        {
+          "level": 2,
+          "text": "区に収集を依頼する場合の手数料"
+        },
+        {
+          "level": 2,
+          "text": "西台粗大ごみセンターに持ち込む場合の手数料（持ち込む場合も事前申し込みが必要です）"
+        },
+        {
+          "level": 3,
+          "text": "持込み計算例1"
+        },
+        {
+          "level": 3,
+          "text": "持込み計算例2"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001870.html",
@@ -47,7 +272,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1903,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ処理手数料（料金）の減免｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ処理手数料（料金）の減免｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001870.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ処理手数料（料金）の減免"
+        },
+        {
+          "level": 2,
+          "text": "ごみ処理手数料の減免"
+        },
+        {
+          "level": 3,
+          "text": "生活保護、児童扶養手当、特別児童扶養手当、老齢福祉年金、中国残留邦人等支援給付の支給を受けている場合の粗大ごみ"
+        },
+        {
+          "level": 3,
+          "text": "暴風、豪雨、地震等大規模な災害及び火災に見舞われた場合などの粗大ごみ、可燃不燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/index.html",
@@ -58,7 +339,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1244,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "ごみ・リサイクル｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1065533.html",
@@ -69,7 +378,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1613,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "夏期のごみ収集作業についてご理解をお願いいたします｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "夏期のごみ収集作業についてご理解をお願いいたします｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1065533.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "夏期のごみ収集作業についてご理解をお願いいたします"
+        },
+        {
+          "level": 2,
+          "text": "収集時間が前後する可能性があります"
+        },
+        {
+          "level": 2,
+          "text": "熱中症予防などのために休憩をとります"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kaishu/index.html",
@@ -80,7 +437,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1460,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源回収・ごみ収集地域別曜日表｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "資源回収・ごみ収集地域別曜日表｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kaishu/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源回収・ごみ収集地域別曜日表"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集曜日カレンダー（令和7年度版）"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/index.html",
@@ -91,7 +496,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1639,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "キッズ学習ページ ごみ・リサイクルを学ぼう｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "キッズ学習ページ　ごみ・リサイクルを学ぼう｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "キッズ学習ページ ごみ・リサイクルを学ぼう"
+        },
+        {
+          "level": 2,
+          "text": "楽しく学べるキッズ学習コーナー"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1045124/index.html",
@@ -102,7 +551,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1581,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "計画・審議会・部会（ごみ・リサイクル）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "計画・審議会・部会（ごみ・リサイクル）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1045124/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "計画・審議会・部会（ごみ・リサイクル）"
+        },
+        {
+          "level": 2,
+          "text": "審議会・部会"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kaishu/1038152.html",
@@ -113,7 +606,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5280,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "地域別 資源回収・ごみ収集曜日カレンダー（令和8年度版）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "地域別　資源回収・ごみ収集曜日カレンダー（令和8年度版）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kaishu/1038152.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "地域別 資源回収・ごみ収集曜日カレンダー（令和8年度版）"
+        },
+        {
+          "level": 2,
+          "text": "収集日確認手順"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "資源回収・ごみ収集地域別曜日表"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/shigen/1001855.html",
@@ -124,7 +665,75 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2047,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源とごみの収集に関する板橋区からのお願い｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "資源とごみの収集に関する板橋区からのお願い｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/shigen/1001855.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの収集に関する板橋区からのお願い"
+        },
+        {
+          "level": 2,
+          "text": "排出時間について"
+        },
+        {
+          "level": 2,
+          "text": "袋でごみを出す際の注意とお願い"
+        },
+        {
+          "level": 2,
+          "text": "資源（びん・缶・ペットボトル）回収コンテナの管理について"
+        },
+        {
+          "level": 2,
+          "text": "ごみ集積所付近の違法駐車などについて"
+        },
+        {
+          "level": 2,
+          "text": "資源の持ち去り行為を発見した場合"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "資源とごみの分け方・出し方"
+        },
+        {
+          "level": 5,
+          "text": "資源の持ち去り"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/index.html",
@@ -135,7 +744,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2905,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "生ごみ減量・食品ロス削減｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "生ごみ減量・食品ロス削減｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "生ごみ減量・食品ロス削減"
+        },
+        {
+          "level": 2,
+          "text": "生ごみと食品ロスについて"
+        },
+        {
+          "level": 2,
+          "text": "生ごみや食品ロスの現状"
+        },
+        {
+          "level": 2,
+          "text": "生ごみ減量・食品ロス削減のために"
+        },
+        {
+          "level": 3,
+          "text": "生ごみを出さないようにしましょう"
+        },
+        {
+          "level": 3,
+          "text": "食品を有効活用しましょう"
+        },
+        {
+          "level": 3,
+          "text": "生ごみをリサイクルしましょう"
+        },
+        {
+          "level": 3,
+          "text": "生ごみの水切りましょう"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1064244/index.html",
@@ -146,7 +819,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2339,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "廃食用油及びリサイクルに関する事業連携協定を締結しました｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "廃食用油及びリサイクルに関する事業連携協定を締結しました｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1064244/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "廃食用油及びリサイクルに関する事業連携協定を締結しました"
+        },
+        {
+          "level": 2,
+          "text": "協定の概要"
+        },
+        {
+          "level": 2,
+          "text": "座談会"
+        },
+        {
+          "level": 2,
+          "text": "廃食用油の出し方"
+        },
+        {
+          "level": 2,
+          "text": "イベント情報"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/bunbetsu/index.html",
@@ -157,7 +890,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1358,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【分別に迷ったら】資源・ごみの主な品目別分別一覧｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "【分別に迷ったら】資源・ごみの主な品目別分別一覧｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/bunbetsu/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【分別に迷ったら】資源・ごみの主な品目別分別一覧"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1053969/index.html",
@@ -168,7 +941,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1247,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "災害時のごみの出し方（台風・地震・洪水など）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "災害時のごみの出し方（台風・地震・洪水など）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1053969/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "災害時のごみの出し方（台風・地震・洪水など）"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/1059103.html",
@@ -179,7 +988,79 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2007,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ減量化ゲームで遊んで学ぼう｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "ごみ減量化ゲームで遊んで学ぼう｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/1059103.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ減量化ゲームで遊んで学ぼう"
+        },
+        {
+          "level": 2,
+          "text": "遊んで学べる！ごみ減量化ゲーム"
+        },
+        {
+          "level": 2,
+          "text": "ゲームのあそびかた"
+        },
+        {
+          "level": 2,
+          "text": "攻略（こうりゃく）コーナー"
+        },
+        {
+          "level": 3,
+          "text": "めざせ！分別（ぶんべつ）マスター！"
+        },
+        {
+          "level": 2,
+          "text": "作ってくださった会社のご紹介"
+        },
+        {
+          "level": 3,
+          "text": "株式会社福島情報処理センターについて"
+        },
+        {
+          "level": 3,
+          "text": "注意書き"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "キッズ学習ページ ごみ・リサイクルを学ぼう"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/1001941.html",
@@ -190,7 +1071,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1366,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "親子でチャレンジ！生ごみ変身大作戦｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "親子でチャレンジ！生ごみ変身大作戦｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/1001941.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "親子でチャレンジ！生ごみ変身大作戦"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "キッズ学習ページ ごみ・リサイクルを学ぼう"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/1039454.html",
@@ -201,7 +1134,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1412,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "しげんとごみのおはなし～りんりんちゃんたちといっしょにまなぼう～（動画）｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "しげんとごみのおはなし～りんりんちゃんたちといっしょにまなぼう～（動画）｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/1039454.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "しげんとごみのおはなし～りんりんちゃんたちといっしょにまなぼう～（動画）"
+        },
+        {
+          "level": 2,
+          "text": "しげんとごみのおはなし（動画）"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "キッズ学習ページ ごみ・リサイクルを学ぼう"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/1064467/1058606.html",
@@ -212,7 +1193,87 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2174,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【募集】いたばし食べきりレシピコンテスト｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "【募集】いたばし食べきりレシピコンテスト｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/1064467/1058606.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【募集】いたばし食べきりレシピコンテスト"
+        },
+        {
+          "level": 2,
+          "text": "募集内容"
+        },
+        {
+          "level": 2,
+          "text": "応募要件"
+        },
+        {
+          "level": 2,
+          "text": "賞品及び参加賞"
+        },
+        {
+          "level": 3,
+          "text": "入賞者への賞品"
+        },
+        {
+          "level": 3,
+          "text": "応募者への参加賞"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "生ごみ減量・食品ロス削減"
+        },
+        {
+          "level": 5,
+          "text": "いたばし食べきりレシピコンテスト"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/1064467/index.html",
@@ -223,29 +1284,83 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 964,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "いたばし食べきりレシピコンテスト｜板橋区公式ホームページ",
+      "meta": {
+        "og:title": "いたばし食べきりレシピコンテスト｜板橋区公式ホームページ",
+        "og:type": "article",
+        "og:description": "板橋区公式ホームページ",
+        "og:url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/1064467/index.html",
+        "og:image": "https://www.city.itabashi.tokyo.jp/_template_/_site_/_default_/_res/images/sns/ogimage2.png",
+        "og:site_name": "板橋区公式ホームページ",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "いたばし食べきりレシピコンテスト"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするために、ページのご感想をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "手続き・くらし"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "生ごみ減量・食品ロス削減"
+        },
+        {
+          "level": 2,
+          "text": "板橋区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E3%80%90%E5%8B%9F%E9%9B%86%E3%80%91%E3%81%84%E3%81%9F%E3%81%B0%E3%81%97%E9%A3%9F%E3%81%B9%E3%81%8D%E3%82%8A%E3%83%AC%E3%82%B7%E3%83%94%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fgomi%2Floss%2F1064467%2F1058606.html",
-      "link_text": "",
+      "link_text": "このページの情報をXでポストできます",
       "hops": 2,
       "score": 8,
       "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/1064467/1058606.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fgomi%2Floss%2F1064467%2F1058606.html&t=%E3%80%90%E5%8B%9F%E9%9B%86%E3%80%91%E3%81%84%E3%81%9F%E3%81%B0%E3%81%97%E9%A3%9F%E3%81%B9%E3%81%8D%E3%82%8A%E3%83%AC%E3%82%B7%E3%83%94%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
-      "link_text": "",
+      "link_text": "このページの情報をフェイスブックでシェアできます",
       "hops": 2,
       "score": 8,
       "parent": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/1064467/1058606.html",
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -254,160 +1369,206 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/1064467/1058606.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1065533.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kaishu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/1064467/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://twitter.com/intent/tweet?text=%E3%80%90%E5%8B%9F%E9%9B%86%E3%80%91%E3%81%84%E3%81%9F%E3%81%B0%E3%81%97%E9%A3%9F%E3%81%B9%E3%81%8D%E3%82%8A%E3%83%AC%E3%82%B7%E3%83%94%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fgomi%2Floss%2F1064467%2F1058606.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fgomi%2Floss%2F1064467%2F1058606.html&t=%E3%80%90%E5%8B%9F%E9%9B%86%E3%80%91%E3%81%84%E3%81%9F%E3%81%B0%E3%81%97%E9%A3%9F%E3%81%B9%E3%81%8D%E3%82%8A%E3%83%AC%E3%82%B7%E3%83%94%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001870.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1045124/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1064244/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/bunbetsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kaishu/1038152.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/shigen/1001855.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1053969/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/1059103.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/1001941.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/kids/1039454.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.chuo.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
@@ -14,7 +35,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2325,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／ごみ・リサイクル",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分別・出し方"
+        },
+        {
+          "level": 2,
+          "text": "拠点回収"
+        },
+        {
+          "level": 2,
+          "text": "資源の回収"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分け方・出し方一覧表"
+        },
+        {
+          "level": 2,
+          "text": "ごみ減量・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集日カレンダー"
+        },
+        {
+          "level": 2,
+          "text": "廃棄物"
+        },
+        {
+          "level": 2,
+          "text": "事業者向け"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/how_to_dispose_corona.html",
@@ -25,7 +97,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2192,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／新型コロナウイルス感染症対策としてのごみの収集と資源回収について",
+      "meta": {
+        "og:title": "新型コロナウイルス感染症対策としてのごみの収集と資源回収について",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/how_to_dispose_corona.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "新型コロナウイルス感染症対策としてのごみの収集と資源回収について"
+        },
+        {
+          "level": 2,
+          "text": "ごみと資源の収集について"
+        },
+        {
+          "level": 2,
+          "text": "プラスチック製容器包装、資源（ペットボトル、びん、缶）の出し方について"
+        },
+        {
+          "level": 2,
+          "text": "マスク等は密閉してお出しください"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集作業への応援メッセージについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/genryou/index.html",
@@ -36,7 +155,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1254,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／ごみ減量・リサイクル",
+      "meta": {
+        "og:title": "ごみ減量・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/gomi/genryou/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ減量・リサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/gominoshori.html",
@@ -47,7 +185,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2145,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／ごみの処理とリサイクルのしくみについて知ろう！",
+      "meta": {
+        "og:title": "ごみの処理とリサイクルのしくみについて知ろう！",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/gominoshori.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの処理とリサイクルのしくみについて知ろう！"
+        },
+        {
+          "level": 2,
+          "text": "「ごみのゆくえ」ご存知ですか？"
+        },
+        {
+          "level": 2,
+          "text": "リサイクルのしくみ「循環型社会」"
+        },
+        {
+          "level": 3,
+          "text": "「循環型社会」とは"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/calendar/index.html",
@@ -58,7 +235,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 893,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／ごみ収集日カレンダー",
+      "meta": {
+        "og:title": "ごみ収集日カレンダー",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/gomi/calendar/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ収集日カレンダー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/calendar/syuusyuuyoubi.html",
@@ -69,7 +265,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3452,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／あなたの町のごみ・資源収集曜日",
+      "meta": {
+        "og:title": "あなたの町のごみ・資源収集曜日",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/calendar/syuusyuuyoubi.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "あなたの町のごみ・資源収集曜日"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kdseiso_recycle.html",
@@ -80,7 +303,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3026,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／3R（スリーアール）に取り組もう！",
+      "meta": {
+        "og:title": "3R（スリーアール）に取り組もう！",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kdseiso_recycle.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "3R（スリーアール）に取り組もう！"
+        },
+        {
+          "level": 2,
+          "text": "実践してみよう！"
+        },
+        {
+          "level": 3,
+          "text": "Reduce（リデュース） ごみの発生抑制"
+        },
+        {
+          "level": 3,
+          "text": "Reuse（リユース） 再使用"
+        },
+        {
+          "level": 3,
+          "text": "Recycle（リサイクル） 再生利用"
+        },
+        {
+          "level": 2,
+          "text": "ごみ減量のために～捨てる前にもうひと工夫～"
+        },
+        {
+          "level": 3,
+          "text": "紙袋や菓子箱などは「資源」の日に！"
+        },
+        {
+          "level": 3,
+          "text": "「もうひとしぼり」で生ごみ減量！"
+        },
+        {
+          "level": 3,
+          "text": "食品ロスを減らそう！"
+        },
+        {
+          "level": 3,
+          "text": "正しい分別でごみが資源に変わります！"
+        },
+        {
+          "level": 3,
+          "text": "調理器具もリサイクルできます！"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/kunooshirasequiz.html",
@@ -91,7 +381,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2371,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／区のおしらせ ちゅうおう 令和７年（2025年）9月1日号 「ごみと資源の分別クイズ」回答・解説",
+      "meta": {
+        "og:title": "区のおしらせ ちゅうおう 令和７年（2025年）9月1日号 「ごみと資源の分別クイズ」回答・解説",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/kunooshirasequiz.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区のおしらせ ちゅうおう 令和７年（2025年）9月1日号 「ごみと資源の分別クイズ」回答・解説"
+        },
+        {
+          "level": 2,
+          "text": "Q1.①燃やすごみの日の集積所"
+        },
+        {
+          "level": 2,
+          "text": "Q2.③公共施設や小学校などの拠点回収場所"
+        },
+        {
+          "level": 2,
+          "text": "Q3.②資源の日の集積所"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/index.html",
@@ -102,7 +431,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1227,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／ごみの正しい分け方、出し方",
+      "meta": {
+        "og:title": "ごみの正しい分け方、出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの正しい分け方、出し方"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/50onjyun230401.html",
@@ -113,7 +461,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2282,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／分別のわかりにくいごみ・資源など",
+      "meta": {
+        "og:title": "分別のわかりにくいごみ・資源など",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/50onjyun230401.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "分別のわかりにくいごみ・資源など"
+        },
+        {
+          "level": 2,
+          "text": "注意"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源の分別等についてチャットボットをご利用ください"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kouenkai2026.html",
@@ -124,7 +507,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1909,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／清掃リサイクル講演会",
+      "meta": {
+        "og:title": "清掃リサイクル講演会",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kouenkai2026.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "清掃リサイクル講演会"
+        },
+        {
+          "level": 2,
+          "text": "リチウムイオン電池の安全な使い方・捨て方～火災事故を防ぐには？～"
+        },
+        {
+          "level": 3,
+          "text": "日時"
+        },
+        {
+          "level": 3,
+          "text": "会場"
+        },
+        {
+          "level": 3,
+          "text": "対象"
+        },
+        {
+          "level": 3,
+          "text": "講師"
+        },
+        {
+          "level": 3,
+          "text": "定員"
+        },
+        {
+          "level": 3,
+          "text": "費用"
+        },
+        {
+          "level": 3,
+          "text": "申し込み方法"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kuchoukanshajoujushousha.html",
@@ -135,7 +577,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1803,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／令和7年度環境分野の功労事業者（事業用大規模建築物所有者等）のごみ減量・3Rへの取り組み",
+      "meta": {
+        "og:title": "令和7年度環境分野の功労事業者（事業用大規模建築物所有者等）のごみ減量・3Rへの取り組み",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kuchoukanshajoujushousha.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和7年度環境分野の功労事業者（事業用大規模建築物所有者等）のごみ減量・3Rへの取り組み"
+        },
+        {
+          "level": 2,
+          "text": "令和7年度受賞者の紹介"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/user_kdseiso_time_2019082209091.html",
@@ -146,7 +619,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3377,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／家電リサイクル法対象品目",
+      "meta": {
+        "og:title": "家電リサイクル法対象品目",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/user_kdseiso_time_2019082209091.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家電リサイクル法対象品目"
+        },
+        {
+          "level": 2,
+          "text": "おいくらで不用品を売却しリユースしましょう"
+        },
+        {
+          "level": 2,
+          "text": "処分方法"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "家電4品目の指定引取場所"
+        },
+        {
+          "level": 3,
+          "text": "家電リサイクル券センター"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/genryou/huyohinrisaikuru/index.html",
@@ -157,7 +677,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1278,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／不用品の販売、交換・土のリサイクル",
+      "meta": {
+        "og:title": "不用品の販売、交換・土のリサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/gomi/genryou/huyohinrisaikuru/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "不用品の販売、交換・土のリサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/index.html",
@@ -168,7 +707,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1191,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／ごみの分別・出し方",
+      "meta": {
+        "og:title": "ごみの分別・出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの分別・出し方"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html",
@@ -179,7 +737,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1103,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／ごみの分け方・出し方一覧表",
+      "meta": {
+        "og:title": "ごみの分け方・出し方一覧表",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの分け方・出し方一覧表"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/seisouitikumiosirase.html",
@@ -190,7 +767,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1875,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／【清掃一組からのお知らせ】大田清掃工場で「区民との意見交換会」を開催します！",
+      "meta": {
+        "og:title": "【清掃一組からのお知らせ】大田清掃工場で「区民との意見交換会」を開催します！",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/seisouitikumiosirase.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【清掃一組からのお知らせ】大田清掃工場で「区民との意見交換会」を開催します！"
+        },
+        {
+          "level": 2,
+          "text": "日時"
+        },
+        {
+          "level": 2,
+          "text": "会場"
+        },
+        {
+          "level": 2,
+          "text": "テーマ"
+        },
+        {
+          "level": 2,
+          "text": "参加対象者"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 2,
+          "text": "東京二十三区清掃一部事務組合ホームページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -199,125 +827,161 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/how_to_dispose_corona.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/genryou/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/gominoshori.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/calendar/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/kunooshirasequiz.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/50onjyun230401.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kdseiso_recycle.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kouenkai2026.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kuchoukanshajoujushousha.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/user_kdseiso_time_2019082209091.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/genryou/huyohinrisaikuru/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/seisouitikumiosirase.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/calendar/syuusyuuyoubi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

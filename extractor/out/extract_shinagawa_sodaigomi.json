@@ -10,48 +10,349 @@
     "has_jsonld": false,
     "text_len": 6656,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T19:21:32+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/hpg000005620.html"
+  ],
   "online_clarity": "明記",
   "online_clarity_evidence": "インターネットまたは電話で、「品川区粗大ごみ受付センター」に日数を余裕をもってお申し込みください。",
   "online_clarity_pages": [
-    "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html"
+    "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
+    "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/hpg000005620.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "品川区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "持ち込みで出す場合のみ、持ち込む方の氏名・住所を確認できるもの（運転免許証・保険証など）が必要。収集を依頼する場合は本文中に持ち物の記載なし。",
+        "evidence": "持ち込む方の氏名・住所を確認できるもの(運転免許証・保険証など)をご持参ください。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 41,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "持ち込みで出す場合のみ、持ち込む方の氏名・住所を確認できるもの（運転免許証・保険証など）が必要。収集を依頼する場合は本文中に持ち物の記載なし。",
+            "evidence": "持ち込む方の氏名・住所を確認できるもの(運転免許証・保険証など)をご持参ください。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 41,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文は申込方法・出し方・手数料減免が中心で「必要書類」という独立項目はない。身分証の持参は『持ち込みをする場合』の注意書きの中にだけ出てくる。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文は申込方法・出し方・手数料減免が中心で「必要書類」という独立項目はない。身分証の持参は『持ち込みをする場合』の注意書きの中にだけ出てくる。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "品川区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "オンラインで完結可能（インターネット申込み24時間受付、手数料の電子決済〈クレジットカード〉も選択可）",
+        "evidence": "インターネットまたは電話で、「品川区粗大ごみ受付センター」に日数を余裕をもってお申し込みください。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 49,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "オンラインで完結可能（インターネット申込み24時間受付、手数料の電子決済〈クレジットカード〉も選択可）",
+            "evidence": "インターネットまたは電話で、「品川区粗大ごみ受付センター」に日数を余裕をもってお申し込みください。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 49,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「申し込み方法」に窓口の記載はなく、インターネット（24時間受付）と電話の2経路のみが明記されている。処理手数料も電子決済（クレジットカード）で完結でき、窓口来訪が必須の記述は見当たらない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「申し込み方法」に窓口の記載はなく、インターネット（24時間受付）と電話の2経路のみが明記されている。処理手数料も電子決済（クレジットカード）で完結でき、窓口来訪が必須の記述は見当たらない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "品川区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "曖昧",
+        "failure_type": "fact_ambiguous",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "曖昧",
+            "failure_type": "fact_ambiguous",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申し込み方法の節に「日数を余裕をもってお申し込みください」「なるべく早めにお申し込みください」という記述はあるが、収集日の何日前までといった具体的な起算点付きの期限は本文中に示されていない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申し込み方法の節に「日数を余裕をもってお申し込みください」「なるべく早めにお申し込みください」という記述はあるが、収集日の何日前までといった具体的な起算点付きの期限は本文中に示されていない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "品川区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "曖昧",
+        "failure_type": "fact_ambiguous",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/hpg000005620.html"
+          ],
+          "page_notes": "本ページは申込方法・出し方の説明が中心で、手数料額そのものは「粗大ごみ処理手数料についてはこちらのページをご覧ください」として別ページ（hpg000005620.html）に案内されている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "曖昧",
+            "failure_type": "fact_ambiguous",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「粗大ごみ処理手数料」ページは金額表を持たず、外部の「粗大ごみ品目手数料検索」ツールへ誘導するのみで、品目・大きさにより手数料が異なるため単一の金額としては記載されていない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/hpg000005620.html"
+      ],
+      "page_notes": "「粗大ごみ処理手数料」ページは金額表を持たず、外部の「粗大ごみ品目手数料検索」ツールへ誘導するのみで、品目・大きさにより手数料が異なるため単一の金額としては記載されていない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "収集を依頼する場合は必要書類は無く、必要な手数料分の「品川区有料粗大ごみ処理券」を購入し各粗大ごみに貼付する（電子決済の場合は必要事項を記入した任意の紙を貼付）。持ち込みの場合はこれに加え、氏名・住所を確認できるもの（運転免許証・保険証など）が必要。",
-      "evidence": "必要な手数料分の「品川区有料粗大ごみ処理券」を購入する「有料粗大ごみ処理券(電子決済の場合は必要事項を記入した任意の紙)」を当日までにそれぞれの粗大ごみに貼る",
+      "value": "持ち込みで出す場合のみ、持ち込む方の氏名・住所を確認できるもの（運転免許証・保険証など）が必要。収集を依頼する場合は本文中に持ち物の記載なし。",
+      "evidence": "持ち込む方の氏名・住所を確認できるもの(運転免許証・保険証など)をご持参ください。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 41,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口へは行かず、インターネット（品川区粗大ごみ受付センター、24時間受付）または電話（03-6733-5374、月〜土曜8時〜19時）で申込。オンラインのみで申込は完結できる（処理手数料も電子決済可）。持ち込みを選ぶ場合のみ品川区資源化センターへの来所が必要。",
+      "value": "オンラインで完結可能（インターネット申込み24時間受付、手数料の電子決済〈クレジットカード〉も選択可）",
       "evidence": "インターネットまたは電話で、「品川区粗大ごみ受付センター」に日数を余裕をもってお申し込みください。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 49,
+        "note": ""
+      }
     },
     "期限": {
       "found": false,
       "value": "",
-      "evidence": "収集日はご希望に添えない場合がありますので、なるべく早めにお申し込みください。",
-      "source": "html",
-      "failure_reason": "記載なし"
+      "evidence": "",
+      "source": null,
+      "failure_reason": "曖昧",
+      "failure_type": "fact_ambiguous",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
-      "evidence": "粗大ごみ処理手数料についてはこちらのページをご覧ください。",
-      "source": "html",
-      "failure_reason": "リンク先にあり"
+      "evidence": "",
+      "source": null,
+      "failure_reason": "曖昧",
+      "failure_type": "fact_ambiguous",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "手数料は本文中に金額の記載が無く「こちらのページをご覧ください」と別ページへ誘導されているが、そのリンクのURLは提供されたリンク一覧（ナビゲーション・多言語リンクのみ）に含まれておらず特定できなかった。期限も「日数を余裕をもって」「なるべく早めに」という表現のみで具体的な日数の記載はない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "本文は申込方法・出し方・手数料減免が中心で「必要書類」という独立項目はない。身分証の持参は『持ち込みをする場合』の注意書きの中にだけ出てくる。\n「申し込み方法」に窓口の記載はなく、インターネット（24時間受付）と電話の2経路のみが明記されている。処理手数料も電子決済（クレジットカード）で完結でき、窓口来訪が必須の記述は見当たらない。\n申し込み方法の節に「日数を余裕をもってお申し込みください」「なるべく早めにお申し込みください」という記述はあるが、収集日の何日前までといった具体的な起算点付きの期限は本文中に示されていない。\n「粗大ごみ処理手数料」ページは金額表を持たず、外部の「粗大ごみ品目手数料検索」ツールへ誘導するのみで、品目・大きさにより手数料が異なるため単一の金額としては記載されていない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
+      "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/hpg000005620.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 2,
+    "verified": 2,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 2
   }
 }

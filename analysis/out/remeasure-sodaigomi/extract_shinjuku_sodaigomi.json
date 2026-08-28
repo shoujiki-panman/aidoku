@@ -1,0 +1,57 @@
+{
+  "municipality": "新宿区",
+  "municipality_id": "shinjuku",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
+    "hops": 2,
+    "link_text": "令和5年1月4日（水）から粗大ごみ収集のお申込み先が変わります",
+    "has_jsonld": false,
+    "text_len": 2471,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "ホームページURL https://www.shinjuku-sodai.com 24時間受付（メンテナンス等除く）",
+  "online_clarity_pages": [
+    "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "粗大ごみ受付センターへ電話（03-5304-8080、月〜土曜日 午前8時〜午後7時）、またはウェブサイト（https://www.shinjuku-sodai.com、24時間受付・メンテナンス等除く）で申込み",
+      "evidence": "電話番号 03-5304-8080 （月～土曜日、午前8時～午後7時） ホームページURL https://www.shinjuku-sodai.com 24時間受付（メンテナンス等除く）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページは粗大ごみ収集の手続き詳細ではなく、申込先「粗大ごみ受付センター」の電話番号・URLが変更された旨のお知らせのみ。本文に「粗大ごみの出し方は、こちらからご確認ください」という誘導リンクがあるが、そのリンク先URLは抽出済みリンク一覧（ナビゲーションメニューのみ）に含まれておらず追跡できない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

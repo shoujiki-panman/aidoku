@@ -1,0 +1,1147 @@
+{
+  "municipality": "三鷹市",
+  "municipality_id": "mitaka",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "top_url": "https://www.city.mitaka.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
+  "candidates": [
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/060/060998.html",
+      "link_text": "粗大ごみ受付",
+      "hops": 1,
+      "score": 13,
+      "parent": "https://www.city.mitaka.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 3537,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜粗大ごみインターネット受付",
+      "meta": {
+        "description": "インターネットから24時間お申し込みいただけます（https://www2.sodai-web.jp/mitaka/index.html）三鷹市粗大ごみ受付センターインターネット受付（外部リンク）のページをご覧いただきお申し込みください。申し込…"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみインターネット受付"
+        },
+        {
+          "level": 2,
+          "text": "インターネットから24時間お申し込みいただけます"
+        },
+        {
+          "level": 3,
+          "text": "市で収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "申し込み手順"
+        },
+        {
+          "level": 3,
+          "text": "（1）出す品物の大きさ（幅・高さ・奥行）・重量・個数を確認する"
+        },
+        {
+          "level": 4,
+          "text": "品目の料金はこちらでご確認ください"
+        },
+        {
+          "level": 3,
+          "text": "（2）インターネットで粗大ごみ受付センターへ申し込む"
+        },
+        {
+          "level": 4,
+          "text": "ご利用いただけるブラウザ"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 4,
+          "text": "申し込みの品目が一覧にないときは"
+        },
+        {
+          "level": 5,
+          "text": "電話がつながりにくい場合"
+        },
+        {
+          "level": 3,
+          "text": "（3）粗大ごみ処理券を購入する"
+        },
+        {
+          "level": 3,
+          "text": "（4）収集日の朝8時までに出す"
+        },
+        {
+          "level": 3,
+          "text": "インターネット受付はこちらからお手続きください"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページの作成・発信部署"
+        },
+        {
+          "level": 2,
+          "text": "あなたが審査員！"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "イベント・講座"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 16:35:00 GMT",
+      "etag": "\"6b83-65a09eac13500-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001006.html",
+      "link_text": "粗大ごみ・多量ごみの出し方",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/060/060998.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 655,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜粗大ごみ・多量ごみの出し方",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ・多量ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 12:01:54 GMT",
+      "etag": "\"352d-65a1a37ea1080-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/000/000521.html",
+      "link_text": "粗大ごみ・多量ごみ （有料・予約必要）",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/060/060998.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 4108,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜粗大ごみ・多量ごみ （有料・予約必要）",
+      "meta": {
+        "description": "粗大・多量ごみの出し方は以下のとおりです。1.出す品物の数量・大きさを調べる。2.「粗大ごみ受付センター」（電話03-5715-1212）に電話で申し込む。3.収集日までに手数料に相当する粗大ごみ処理券を、三鷹市内の…"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ・多量ごみ （有料・予約必要）"
+        },
+        {
+          "level": 2,
+          "text": "「粗大ごみ」・「多量ごみ」とは"
+        },
+        {
+          "level": 3,
+          "text": "市で収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "申し込み手順"
+        },
+        {
+          "level": 3,
+          "text": "（1）出す品物の大きさ（幅・高さ・奥行）・重量・個数を確認する"
+        },
+        {
+          "level": 3,
+          "text": "（2）粗大ごみ受付センターへ申し込む"
+        },
+        {
+          "level": 4,
+          "text": "電話での申し込み"
+        },
+        {
+          "level": 4,
+          "text": "インターネットでの申し込み"
+        },
+        {
+          "level": 5,
+          "text": "ご利用いただけるブラウザ"
+        },
+        {
+          "level": 5,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "（3）粗大ごみ処理券を購入する"
+        },
+        {
+          "level": 3,
+          "text": "（4）収集日の朝8時までに出す"
+        },
+        {
+          "level": 2,
+          "text": "必ずご確認ください"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ処理券取扱店を地図で探す方はこちらをご覧ください"
+        },
+        {
+          "level": 2,
+          "text": "このページの作成・発信部署"
+        },
+        {
+          "level": 2,
+          "text": "あなたが審査員！"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "イベント・講座"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 16:06:02 GMT",
+      "etag": "\"77d2-65a0983296e80-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/090/090156.html",
+      "link_text": "粗大ごみ料金表（50音順・あ～し)",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/060/060998.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 8017,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜粗大ごみ料金表（50音順・あ～し)",
+      "meta": {
+        "description": "粗大ごみの品目の料金表です。表にないものについては、粗大ごみ受付センター（電話番号03-5715-1212）までお問い合わせください。お問い合わせ粗大ごみ受付センター：電話03-5715-1212生活環境部ごみ対策課：電話0…"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ料金表（50音順・あ～し)"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみを出すときの留意点"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページの作成・発信部署"
+        },
+        {
+          "level": 2,
+          "text": "あなたが審査員！"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "イベント・講座"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 16:55:00 GMT",
+      "etag": "\"22bb4-65a0a3247c100-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/090/090162.html",
+      "link_text": "粗大ごみ料金表（50音順・す～わ)",
+      "hops": 2,
+      "score": 13,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/060/060998.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 8953,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜粗大ごみ料金表（50音順・す～わ)",
+      "meta": {
+        "description": "粗大ごみの品目の料金表です。表にないものなどは粗大ごみ受付センター（電話番号03-5715-1212）までお問い合わせください。お問い合わせ粗大ごみ受付センター：電話番号03-5715-1212"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ料金表（50音順・す～わ)"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみを出すときの留意点"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページの作成・発信部署"
+        },
+        {
+          "level": 2,
+          "text": "あなたが審査員！"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "イベント・講座"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 16:55:01 GMT",
+      "etag": "\"278d5-65a0a32570340-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/000/000527.html",
+      "link_text": "粗大ごみ・多量ごみの減免申請",
+      "hops": 3,
+      "score": 13,
+      "parent": "https://www.city.mitaka.lg.jp/c_categories/index01004001006.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2821,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜粗大ごみ・多量ごみの減免申請",
+      "meta": {
+        "description": "市で収集している粗大ごみ・多量ごみは有料ですが、天災・火災等を受けた場合や生活保護法による保護や中国残留邦人等により支援を受けている場合、児童扶養手当の受給者、特別児童扶養手当の受給者、身体障害者手…"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ・多量ごみの減免申請"
+        },
+        {
+          "level": 2,
+          "text": "お申込みの方法"
+        },
+        {
+          "level": 3,
+          "text": "お電話で申し込む場合"
+        },
+        {
+          "level": 4,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "インターネットで申し込む場合"
+        },
+        {
+          "level": 4,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "窓口で申し込む場合"
+        },
+        {
+          "level": 4,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "減免事由を証明する書類及び特記事項"
+        },
+        {
+          "level": 3,
+          "text": "天災・火災等を受けた場合"
+        },
+        {
+          "level": 3,
+          "text": "生活保護法（昭和25年法律第144号）による保護を受けている場合"
+        },
+        {
+          "level": 3,
+          "text": "中国残留邦人等の円滑な帰国の促進及び永住帰国後の自立の支援に関する法律"
+        },
+        {
+          "level": 3,
+          "text": "児童扶養手当法（昭和36年法律第283号）に基づく児童扶養手当の受給者"
+        },
+        {
+          "level": 3,
+          "text": "特別児童扶養手当の支給に関する法律（昭和39年法律第134号）に基づく特別児童扶養手当の受給者"
+        },
+        {
+          "level": 3,
+          "text": "身体障害者手帳所持者"
+        },
+        {
+          "level": 3,
+          "text": "精神障害者保健福祉手帳所持者"
+        },
+        {
+          "level": 3,
+          "text": "愛の手帳所持者"
+        },
+        {
+          "level": 3,
+          "text": "自治会等の各種団体または個人が道路、公園その他公共的な施設等の清掃活動によるごみ"
+        },
+        {
+          "level": 3,
+          "text": "学生・生徒等による校外活動で通学路の清掃によるごみ（学校敷地内を除く）"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページの作成・発信部署"
+        },
+        {
+          "level": 2,
+          "text": "あなたが審査員！"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "イベント・講座"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 16:06:06 GMT",
+      "etag": "\"60ab-65a0983667780-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/000/images/img_521_1_1.jpg.html",
+      "link_text": "画像：イラスト：ベッドや机など粗大ごみとなる品目が描かれたイラスト（拡大画像へのリンク）",
+      "hops": 3,
+      "score": 13,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/000/000521.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 588,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜画像拡大1:粗大ごみ・多量ごみ （有料・予約必要）",
+      "meta": {
+        "description": "粗大・多量ごみの出し方は以下のとおりです。1.出す品物の数量・大きさを調べる。2.「粗大ごみ受付センター」（電話03-5715-1212）に電話で申し込む。3.収集日までに手数料に相当する粗大ごみ処理券を、三鷹市内の…"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "画像拡大1:粗大ごみ・多量ごみ （有料・予約必要）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 16:06:03 GMT",
+      "etag": "\"27d6-65a098338b0c0-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/000/images/img_521_3_1.jpg.html",
+      "link_text": "画像：粗大ごみ処理券200円券です（拡大画像へのリンク）",
+      "hops": 3,
+      "score": 13,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/000/000521.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 586,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜画像拡大3:粗大ごみ・多量ごみ （有料・予約必要）",
+      "meta": {
+        "description": "粗大・多量ごみの出し方は以下のとおりです。1.出す品物の数量・大きさを調べる。2.「粗大ごみ受付センター」（電話03-5715-1212）に電話で申し込む。3.収集日までに手数料に相当する粗大ごみ処理券を、三鷹市内の…"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "画像拡大3:粗大ごみ・多量ごみ （有料・予約必要）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 16:06:04 GMT",
+      "etag": "\"279a-65a098347f300-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/027/027329.html",
+      "link_text": "粗大ごみ処理券取扱店",
+      "hops": 3,
+      "score": 13,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/000/000521.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1433,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜ごみ袋等取扱店一覧",
+      "meta": {
+        "description": "三鷹市ごみ指定収集袋・粗大ごみ取扱店一覧がPDFファイルでご覧いただけます。三鷹市生活環境部ごみ対策課電話0422-29-9613"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ袋等取扱店一覧"
+        },
+        {
+          "level": 2,
+          "text": "三鷹市ごみ指定収集袋・粗大ごみ処理券取扱店一覧"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページの作成・発信部署"
+        },
+        {
+          "level": 2,
+          "text": "あなたが審査員！"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "イベント・講座"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 16:20:33 GMT",
+      "etag": "\"4e33-65a09b713d640-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_sections/gomi/index.html",
+      "link_text": "生活環境部 ごみ対策課",
+      "hops": 2,
+      "score": 11,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/119/119134.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1320,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜ごみ対策課",
+      "meta": {
+        "description": "ごみ(ゴミ)・し尿の収集処理、ごみの減量・資源化の計画と啓発、空地雑草・衛生害虫"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ対策課"
+        },
+        {
+          "level": 2,
+          "text": "仕事紹介"
+        },
+        {
+          "level": 2,
+          "text": "この課の作成したページ"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 3,
+          "text": "近隣自治体など"
+        },
+        {
+          "level": 3,
+          "text": "国・都など"
+        },
+        {
+          "level": 2,
+          "text": "このページの作成・発信部署"
+        },
+        {
+          "level": 2,
+          "text": "あなたが審査員！"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 16:09:00 GMT",
+      "etag": "\"4943-65a098dc57f00-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index08005002003.html",
+      "link_text": "ごみ・リサイクル関連届出様式",
+      "hops": 2,
+      "score": 6,
+      "parent": "https://www.city.mitaka.lg.jp/c_categories/index01004001.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 612,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜ごみ・リサイクル関連届出様式",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル関連届出様式"
+        },
+        {
+          "level": 2,
+          "text": "環境関連"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 12:15:57 GMT",
+      "etag": "\"305b-65a1a6a293940-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_faq/index01004001.html",
+      "link_text": "よくある質問と回答：ごみ・リサイクル",
+      "hops": 2,
+      "score": 6,
+      "parent": "https://www.city.mitaka.lg.jp/c_categories/index01004001.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 722,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜よくある質問と回答：ごみ・リサイクル",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "よくある質問と回答：ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "ページリスト"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・環境・衛生"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 12:33:03 GMT",
+      "etag": "\"3070-65a1aa750bdc0-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001.html",
+      "link_text": "ごみ",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.city.mitaka.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 660,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜ごみ・リサイクル",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "こんな情報もあります"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・環境・衛生"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 12:01:45 GMT",
+      "etag": "\"3624-65a1a3760bc40-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/119/119134.html",
+      "link_text": "三鷹ごみナビ",
+      "hops": 1,
+      "score": 3,
+      "parent": "https://www.city.mitaka.lg.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2018,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜「三鷹ごみナビ」をご利用ください",
+      "meta": {
+        "description": "「三鷹ごみナビ」とはAI（人工知能）を活用して写真からごみの分別方法を案内したり、位置情報を利用して、最寄りの粗大ごみ処理券の取扱店を地図上で案内することのできるLINE上のサービスです。主な機能・文字・…"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「三鷹ごみナビ」をご利用ください"
+        },
+        {
+          "level": 2,
+          "text": "「三鷹ごみナビ」とは"
+        },
+        {
+          "level": 3,
+          "text": "友だち登録をお願いします"
+        },
+        {
+          "level": 3,
+          "text": "主な機能"
+        },
+        {
+          "level": 4,
+          "text": "文字・写真でごみの分別を案内"
+        },
+        {
+          "level": 4,
+          "text": "最寄りの指定収集袋・粗大ごみ処理券の取扱店を案内"
+        },
+        {
+          "level": 4,
+          "text": "拠点回収場所の案内"
+        },
+        {
+          "level": 4,
+          "text": "カレンダー機能"
+        },
+        {
+          "level": 4,
+          "text": "13か国語対応"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページの作成・発信部署"
+        },
+        {
+          "level": 2,
+          "text": "あなたが審査員！"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "イベント・講座"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 27 Aug 2026 17:18:11 GMT",
+      "etag": "\"57b5-65a0a8530bac0-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004.html",
+      "link_text": "ごみ・環境・衛生",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.mitaka.lg.jp/c_categories/index01004001.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 592,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜ごみ・環境・衛生",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・環境・衛生"
+        },
+        {
+          "level": 2,
+          "text": "こんな情報もあります"
+        },
+        {
+          "level": 2,
+          "text": "暮らし・手続き"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 12:01:43 GMT",
+      "etag": "\"341e-65a1a374237c0-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001000.html",
+      "link_text": "生活ごみの出し方",
+      "hops": 2,
+      "score": 3,
+      "parent": "https://www.city.mitaka.lg.jp/c_categories/index01004001.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 867,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜生活ごみの出し方",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "生活ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "ページリスト"
+        },
+        {
+          "level": 2,
+          "text": "こんな情報もあります"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 12:01:47 GMT",
+      "etag": "\"41a5-65a1a377f40c0-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001011.html",
+      "link_text": "ごみの分別表（50音順）",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.mitaka.lg.jp/c_categories/index01004001006.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 677,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜ごみの分別表（50音順）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの分別表（50音順）"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 12:01:52 GMT",
+      "etag": "\"35a6-65a1a37cb8c00-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001001.html",
+      "link_text": "収集日程",
+      "hops": 3,
+      "score": 3,
+      "parent": "https://www.city.mitaka.lg.jp/c_categories/index01004001006.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 853,
+      "has_jsonld": false,
+      "title": "三鷹市 ｜収集日程",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "収集日程"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 12:01:56 GMT",
+      "etag": "\"3aa4-65a1a38089500-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/119/attached/attach_119134_1.pdf",
+      "link_text": "三鷹ごみナビ利用規約（PDF 163KB）",
+      "hops": 2,
+      "score": 1,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/119/119134.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 09 Jul 2026 05:00:01 GMT",
+      "etag": "\"28f97-656267f139640-gzip\""
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/119/attached/attach_119134_2.pdf",
+      "link_text": "三鷹ごみナビでできること（PDF 1444KB）",
+      "hops": 2,
+      "score": 1,
+      "parent": "https://www.city.mitaka.lg.jp/c_service/119/119134.html",
+      "status": 200,
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 09 Jul 2026 05:00:01 GMT",
+      "etag": "\"1691b4-656267f139640-gzip\""
+    }
+  ],
+  "fetch_log": [
+    {
+      "url": "https://www.city.mitaka.lg.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/060/060998.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 16:35:00 GMT",
+      "etag": "\"6b83-65a09eac13500-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 12:01:45 GMT",
+      "etag": "\"3624-65a1a3760bc40-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/119/119134.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 17:18:11 GMT",
+      "etag": "\"57b5-65a0a8530bac0-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001006.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 12:01:54 GMT",
+      "etag": "\"352d-65a1a37ea1080-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/000/000521.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 16:06:02 GMT",
+      "etag": "\"77d2-65a0983296e80-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/090/090156.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 16:55:00 GMT",
+      "etag": "\"22bb4-65a0a3247c100-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/090/090162.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 16:55:01 GMT",
+      "etag": "\"278d5-65a0a32570340-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index08005002003.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 12:15:57 GMT",
+      "etag": "\"305b-65a1a6a293940-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_faq/index01004001.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 12:33:03 GMT",
+      "etag": "\"3070-65a1aa750bdc0-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 12:01:43 GMT",
+      "etag": "\"341e-65a1a374237c0-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001000.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 12:01:47 GMT",
+      "etag": "\"41a5-65a1a377f40c0-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_sections/gomi/index.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 16:09:00 GMT",
+      "etag": "\"4943-65a098dc57f00-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/119/attached/attach_119134_1.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 09 Jul 2026 05:00:01 GMT",
+      "etag": "\"28f97-656267f139640-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/119/attached/attach_119134_2.pdf",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 09 Jul 2026 05:00:01 GMT",
+      "etag": "\"1691b4-656267f139640-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/000/000527.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 16:06:06 GMT",
+      "etag": "\"60ab-65a0983667780-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001011.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 12:01:52 GMT",
+      "etag": "\"35a6-65a1a37cb8c00-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_categories/index01004001001.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 12:01:56 GMT",
+      "etag": "\"3aa4-65a1a38089500-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/000/images/img_521_1_1.jpg.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 16:06:03 GMT",
+      "etag": "\"27d6-65a098338b0c0-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/000/images/img_521_3_1.jpg.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 16:06:04 GMT",
+      "etag": "\"279a-65a098347f300-gzip\"",
+      "error": null
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/027/027329.html",
+      "status": 200,
+      "from_cache": false,
+      "blocked_by_robots": false,
+      "last_modified": "Thu, 27 Aug 2026 16:20:33 GMT",
+      "etag": "\"4e33-65a09b713d640-gzip\"",
+      "error": null
+    }
+  ]
+}

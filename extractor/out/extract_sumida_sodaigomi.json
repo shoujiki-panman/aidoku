@@ -10,48 +10,389 @@
     "has_jsonld": false,
     "text_len": 5808,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T19:21:32+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html",
+    "https://www2.sodai-web.jp/sumida/index.html"
+  ],
   "online_clarity": "明記",
   "online_clarity_evidence": "インターネット申込みであれば、オンライン決済（キャッシュレス決済）が利用可能で、有料粗大ごみ処理券を購入する必要がありません。",
   "online_clarity_pages": [
-    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html"
+    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
+    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html",
+    "https://www2.sodai-web.jp/sumida/index.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "墨田区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "通常の申込み（インターネット・電話）では持ち物の記載なし。手数料の減額・免除に該当する場合のみ、粗大ごみ受付センターから郵送される「手数料減免申請書」に必要事項を記入し、添付書類を添えて提出する必要がある（添付書類の具体的な内容はページに記載なし）",
+        "evidence": "必要事項を記入し、添付書類を添えてすみだ清掃事務所まで郵送またはご持参ください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 40,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html"
+          ],
+          "page_notes": "本文には申込手続き自体に必要な書類・持ち物の記載はなく、有料粗大ごみ処理券の購入・貼付が案内されているのみ。「該当者だけに必要なもの」に該当しそうな減額・免除の申請要件は別ページ（genmensinsei.html）に案内されている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "通常の申込み（インターネット・電話）では持ち物の記載なし。手数料の減額・免除に該当する場合のみ、粗大ごみ受付センターから郵送される「手数料減免申請書」に必要事項を記入し、添付書類を添えて提出する必要がある（添付書類の具体的な内容はページに記載なし）",
+            "evidence": "必要事項を記入し、添付書類を添えてすみだ清掃事務所まで郵送またはご持参ください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 40,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "元ページの申込手順4段階には持ち物の言及が一切なく、減免対象者向けリンク先（genmensinsei.html）にのみ「手数料減免申請書」と「添付書類」への言及がある。添付書類の具体的な中身（罹災証明書等）は明記されていない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html"
+      ],
+      "page_notes": "元ページの申込手順4段階には持ち物の言及が一切なく、減免対象者向けリンク先（genmensinsei.html）にのみ「手数料減免申請書」と「添付書類」への言及がある。添付書類の具体的な中身（罹災証明書等）は明記されていない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "墨田区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "オンラインで完結可（インターネット申込み＋オンライン決済で処理券購入不要）",
+        "evidence": "インターネット申込みであれば、オンライン決済（キャッシュレス決済）が利用可能で、有料粗大ごみ処理券を購入する必要がありません。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 63,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "オンラインで完結可（インターネット申込み＋オンライン決済で処理券購入不要）",
+            "evidence": "インターネット申込みであれば、オンライン決済（キャッシュレス決済）が利用可能で、有料粗大ごみ処理券を購入する必要がありません。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 63,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手順が【手順1】〜【手順4】の見出しで整理されており、手順2の申込み方法にインターネット／電話の2択とオンライン決済の可否が明記されていた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "手順が【手順1】〜【手順4】の見出しで整理されており、手順2の申込み方法にインターネット／電話の2択とオンライン決済の可否が明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "墨田区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www2.sodai-web.jp/sumida/index.html"
+          ],
+          "page_notes": "本文には「当日の朝（午前8時まで）に出す」という排出時刻の案内はあるが、収集日の何日前までに申し込む必要があるかという申込期限は明記されていない。インターネット申込みの実受付システム（外部サイト）に空き状況・申込締切の情報がある可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込から収集日決定までの流れは詳しいが、「申込は収集希望日の何日前までに」という起算点付きの申込期限は本文・リンク先本文のいずれにも見当たらない。記載があるのは「収集日の3日前からは追加・変更・キャンセルができない」という逆方向の期限のみ。"
+        }
+      ],
+      "followed_urls": [
+        "https://www2.sodai-web.jp/sumida/index.html"
+      ],
+      "page_notes": "申込から収集日決定までの流れは詳しいが、「申込は収集希望日の何日前までに」という起算点付きの申込期限は本文・リンク先本文のいずれにも見当たらない。記載があるのは「収集日の3日前からは追加・変更・キャンセルができない」という逆方向の期限のみ。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "墨田区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "PDF内のみ",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        },
+        "failure_type": "not_retrieved"
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf"
+          ],
+          "page_notes": "本文は「有料」であることと申込手順のみを説明し、具体的な手数料額は品目ごとに異なるため「粗大ごみ手数料一覧」PDFへ誘導している。チャットボットの回答例（布団400円）は個別品目の例示であり、一般的な手数料額として引用できない。"
+        },
+        {
+          "stage": "follow_fetch",
+          "llm_called": false,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "PDF内のみ",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            },
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [],
+          "attachment_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf（本文のストリームが無い（画像PDFかアウトライン化））"
+          ],
+          "page_notes": "添付を開いたが本文を取り出せなかった（理由はURLに併記）"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "添付を開いたが本文を取り出せなかった（理由はURLに併記）",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "記載なし"
+      "found": true,
+      "value": "通常の申込み（インターネット・電話）では持ち物の記載なし。手数料の減額・免除に該当する場合のみ、粗大ごみ受付センターから郵送される「手数料減免申請書」に必要事項を記入し、添付書類を添えて提出する必要がある（添付書類の具体的な内容はページに記載なし）",
+      "evidence": "必要事項を記入し、添付書類を添えてすみだ清掃事務所まで郵送またはご持参ください。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 40,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口来�ち不要。インターネット申込み（24時間受付、オンライン決済で手数料支払いまで完結）または電話申込み（粗大ごみ受付センター、月〜土曜8時〜19時、祝日も可）の2方式。",
-      "evidence": "24時間申込可能なインターネット申込みをご利用ください。（システムメンテナンス時は利用できません）",
+      "value": "オンラインで完結可（インターネット申込み＋オンライン決済で処理券購入不要）",
+      "evidence": "インターネット申込みであれば、オンライン決済（キャッシュレス決済）が利用可能で、有料粗大ごみ処理券を購入する必要がありません。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 63,
+        "note": ""
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
-      "evidence": "粗大ごみ手数料一覧（R7.3.1更新）（PDF：123KB）",
-      "source": "html",
-      "failure_reason": "PDF内のみ"
+      "evidence": "",
+      "source": null,
+      "failure_reason": "PDF内のみ",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      },
+      "failure_type": "not_retrieved"
     }
   },
-  "page_notes": "手順1〜4の見出しで構成され、具体的な料金はPDF一覧かチャットボット回答に誘導される形で本文には数字が出ない。必要書類や申込期限（いつまでに申し込むか）についての記載は見当たらず、申込方法（インターネット／電話）と支払い方法の説明が中心。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "元ページの申込手順4段階には持ち物の言及が一切なく、減免対象者向けリンク先（genmensinsei.html）にのみ「手数料減免申請書」と「添付書類」への言及がある。添付書類の具体的な中身（罹災証明書等）は明記されていない。\n手順が【手順1】〜【手順4】の見出しで整理されており、手順2の申込み方法にインターネット／電話の2択とオンライン決済の可否が明記されていた。\n申込から収集日決定までの流れは詳しいが、「申込は収集希望日の何日前までに」という起算点付きの申込期限は本文・リンク先本文のいずれにも見当たらない。記載があるのは「収集日の3日前からは追加・変更・キャンセルができない」という逆方向の期限のみ。\n添付を開いたが本文を取り出せなかった（理由はURLに併記）",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
+      "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html",
+      "https://www2.sodai-web.jp/sumida/index.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 2,
+    "verified": 2,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 2
   }
 }

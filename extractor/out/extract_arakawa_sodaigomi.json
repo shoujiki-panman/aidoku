@@ -10,48 +10,349 @@
     "has_jsonld": false,
     "text_len": 4934,
     "truncated": false,
-    "n_links": 32
+    "n_links": 37,
+    "table_chars": 2070
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:44:57+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
+  "followed_urls": [
+    "https://www2.sodai-web.jp/arakawa/index.html"
+  ],
   "online_clarity": "明記",
   "online_clarity_evidence": "インターネットからの申込みは24時間受付けております。",
   "online_clarity_pages": [
-    "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html"
+    "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html",
+    "https://www2.sodai-web.jp/arakawa/index.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "荒川区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "通常の申込みでは特別な書類は不要（インターネットまたは電話で申込み、荒川区有料粗大ごみ処理券を用意して品物に貼付するのみ）。ただし処理手数料の減額・減免を受ける場合は該当する証明書が必要で、内容は事由により異なる：暴風・豪雨・地震等の天災を受けた方は区または消防署発行の「罹災証明書」、生活保護受給者は保護証明書の原本、児童扶養手当受給者は児童扶養手当証書の写し（表面のすべて。更新手続き中は受給者証明書の原本）、特別児童扶養手当受給者は特別児童扶養手当証書の写し（表面と住所の記載部分。更新手続き中は受給者証明書の原本）、老齢福祉年金受給者は老齢福祉年金証書の写し、火災等の災害を受けた方は消防署発行の「罹災証明書」、中国残留邦人等支援給付を受けている方は支援給付受給証明書の原本。なお減免を受ける場合はインターネット申込み不可で、必ず電話での申込みが必要。",
+        "evidence": "児童扶養手当証書の写し（表面のすべて） ※ただし、更新手続き中の方は児童扶養手当受給者証明書の原本",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 49,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "通常の申込みでは特別な書類は不要（インターネットまたは電話で申込み、荒川区有料粗大ごみ処理券を用意して品物に貼付するのみ）。ただし処理手数料の減額・減免を受ける場合は該当する証明書が必要で、内容は事由により異なる：暴風・豪雨・地震等の天災を受けた方は区または消防署発行の「罹災証明書」、生活保護受給者は保護証明書の原本、児童扶養手当受給者は児童扶養手当証書の写し（表面のすべて。更新手続き中は受給者証明書の原本）、特別児童扶養手当受給者は特別児童扶養手当証書の写し（表面と住所の記載部分。更新手続き中は受給者証明書の原本）、老齢福祉年金受給者は老齢福祉年金証書の写し、火災等の災害を受けた方は消防署発行の「罹災証明書」、中国残留邦人等支援給付を受けている方は支援給付受給証明書の原本。なお減免を受ける場合はインターネット申込み不可で、必ず電話での申込みが必要。",
+            "evidence": "児童扶養手当証書の写し（表面のすべて） ※ただし、更新手続き中の方は児童扶養手当受給者証明書の原本",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 49,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "通常申込みの必要書類は本文になく、減免（免除・減額）を受ける場合の必要書類のみが表形式で示されている。表は元HTML上では列対応が崩れているが、「見出し：値」再構成版で正しく読める。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "通常申込みの必要書類は本文になく、減免（免除・減額）を受ける場合の必要書類のみが表形式で示されている。表は元HTML上では列対応が崩れているが、「見出し：値」再構成版で正しく読める。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "荒川区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "オンライン申込み可（窓口訪問不要、24時間受付。ただし処理券は店舗で別途購入が必要）",
+        "evidence": "インターネットからの申込みは24時間受付けております。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 27,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "オンライン申込み可（窓口訪問不要、24時間受付。ただし処理券は店舗で別途購入が必要）",
+            "evidence": "インターネットからの申込みは24時間受付けております。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 27,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込み自体はインターネット（外部サイト）または電話の二択で、区役所窓口へ行く選択肢は本文中に示されていない。ただし処理券購入は区内の取扱店（コンビニ等）での対面購入が必要と明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申込み自体はインターネット（外部サイト）または電話の二択で、区役所窓口へ行く選択肢は本文中に示されていない。ただし処理券購入は区内の取扱店（コンビニ等）での対面購入が必要と明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "荒川区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www2.sodai-web.jp/arakawa/index.html"
+          ],
+          "page_notes": "このページは「事前に申込み→処理券用意→収集日朝8時までに出す」という手順は書かれているが、申込み自体の期限（収集日の何日前までに申込むべきか）は明記されていない。外部の粗大ごみ受付センターのサイトに記載がある可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込み自体の期限（起算点つきの「いつまでに申し込むか」）は本文にもリンク先の受付センターページにも記載がない。近い記述は「収集日の3日前からはインターネットでの追加・変更・キャンセルができない」だが、これは変更・キャンセルの期限であり、新規申込みの期限ではない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www2.sodai-web.jp/arakawa/index.html"
+      ],
+      "page_notes": "申込み自体の期限（起算点つきの「いつまでに申し込むか」）は本文にもリンク先の受付センターページにも記載がない。近い記述は「収集日の3日前からはインターネットでの追加・変更・キャンセルができない」だが、これは変更・キャンセルの期限であり、新規申込みの期限ではない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "荒川区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "品目により300円から3,200円まで異なる（有料粗大ごみ処理券を購入して支払う。均一料金ではない）",
+        "evidence": "粗大ごみ処理料金の一例（令和5年10月1日から） 料金 家電製品・ガス器具等 家具・寝具 趣味用品 その他 300円 B券 1枚",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 30,
+          "note": "連続30文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "品目により300円から3,200円まで異なる（有料粗大ごみ処理券を購入して支払う。均一料金ではない）",
+            "evidence": "粗大ごみ処理料金の一例（令和5年10月1日から） 料金 家電製品・ガス器具等 家具・寝具 趣味用品 その他 300円 B券 1枚",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 30,
+              "note": "連続30文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手数料は一律の金額としては書かれておらず、「粗大ごみ処理料金の一例」という表に品目ごとの単価（300円〜3,200円、有料処理券の枚数）が並んでいる。本文中では表の列対応が崩れて読みにくく、金額の一意な特定には表構造の復元が必要だった。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "手数料は一律の金額としては書かれておらず、「粗大ごみ処理料金の一例」という表に品目ごとの単価（300円〜3,200円、有料処理券の枚数）が並んでいる。本文中では表の列対応が崩れて読みにくく、金額の一意な特定には表構造の復元が必要だった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    }
   ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "記載なし"
+      "found": true,
+      "value": "通常の申込みでは特別な書類は不要（インターネットまたは電話で申込み、荒川区有料粗大ごみ処理券を用意して品物に貼付するのみ）。ただし処理手数料の減額・減免を受ける場合は該当する証明書が必要で、内容は事由により異なる：暴風・豪雨・地震等の天災を受けた方は区または消防署発行の「罹災証明書」、生活保護受給者は保護証明書の原本、児童扶養手当受給者は児童扶養手当証書の写し（表面のすべて。更新手続き中は受給者証明書の原本）、特別児童扶養手当受給者は特別児童扶養手当証書の写し（表面と住所の記載部分。更新手続き中は受給者証明書の原本）、老齢福祉年金受給者は老齢福祉年金証書の写し、火災等の災害を受けた方は消防署発行の「罹災証明書」、中国残留邦人等支援給付を受けている方は支援給付受給証明書の原本。なお減免を受ける場合はインターネット申込み不可で、必ず電話での申込みが必要。",
+      "evidence": "児童扶養手当証書の写し（表面のすべて） ※ただし、更新手続き中の方は児童扶養手当受給者証明書の原本",
+      "source": "html",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 49,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口来庁は不要。粗大ごみ受付センターへインターネット（24時間受付）または電話（日曜・年末年始を除く午前8時から午後7時）で事前申込み。",
-      "evidence": "粗大ごみの収集は有料で、事前に粗大ごみ受付センターへの申込みが必要です。インターネットからの申込みは24時間受付けております。",
+      "value": "オンライン申込み可（窓口訪問不要、24時間受付。ただし処理券は店舗で別途購入が必要）",
+      "evidence": "インターネットからの申込みは24時間受付けております。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 27,
+        "note": ""
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": true,
-      "value": "有料。品目により300円〜3,200円（有料粗大ごみ処理券をコンビニ等で購入し貼付）。減免制度あり（生活保護受給者等は免除、火災被災者は9割減額）。",
-      "evidence": "粗大ごみの収集は有料で、事前に粗大ごみ受付センターへの申込みが必要です。",
+      "value": "品目により300円から3,200円まで異なる（有料粗大ごみ処理券を購入して支払う。均一料金ではない）",
+      "evidence": "粗大ごみ処理料金の一例（令和5年10月1日から） 料金 家電製品・ガス器具等 家具・寝具 趣味用品 その他 300円 B券 1枚",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 30,
+        "note": "連続30文字だけ一致。引用全体は確認できない"
+      }
     }
   },
-  "page_notes": "申込み手順・料金表は本文に詳細に書かれているが、標準申込みに必要な持参書類（本人確認書類等）や申込み期限についての明記はなく、減免申請用の書類のみが個別に記載されている。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "通常申込みの必要書類は本文になく、減免（免除・減額）を受ける場合の必要書類のみが表形式で示されている。表は元HTML上では列対応が崩れているが、「見出し：値」再構成版で正しく読める。\n申込み自体はインターネット（外部サイト）または電話の二択で、区役所窓口へ行く選択肢は本文中に示されていない。ただし処理券購入は区内の取扱店（コンビニ等）での対面購入が必要と明記されている。\n申込み自体の期限（起算点つきの「いつまでに申し込むか」）は本文にもリンク先の受付センターページにも記載がない。近い記述は「収集日の3日前からはインターネットでの追加・変更・キャンセルができない」だが、これは変更・キャンセルの期限であり、新規申込みの期限ではない。\n手数料は一律の金額としては書かれておらず、「粗大ごみ処理料金の一例」という表に品目ごとの単価（300円〜3,200円、有料処理券の枚数）が並んでいる。本文中では表の列対応が崩れて読みにくく、金額の一意な特定には表構造の復元が必要だった。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html",
+      "https://www2.sodai-web.jp/arakawa/index.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

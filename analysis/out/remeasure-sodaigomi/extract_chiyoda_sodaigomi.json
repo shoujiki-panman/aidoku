@@ -1,0 +1,57 @@
+{
+  "municipality": "千代田区",
+  "municipality_id": "chiyoda",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html",
+    "hops": 2,
+    "link_text": "粗大ごみの出し方と料金（区民が日常生活で使用したもの）",
+    "has_jsonld": false,
+    "text_len": 3298,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "粗大ごみ受付センターのインターネット申し込み先メールアドレスと電話番号等は次のとおりです。インターネットでの申し込み",
+  "online_clarity_pages": [
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口来庁は本文に記載なし。インターネット申し込み（外部サイト「千代田区 粗大ごみ収集受付」、年末年始12/29正午〜1/3 23:59を除き利用可）、チャットボット申し込み（ページ右下のバナー）、電話申し込み（粗大ごみ受付センター 03-6743-0603、月〜土 8時〜19時、日曜・年末年始休み）の3通りでオンライン完結可能。",
+      "evidence": "粗大ごみの収集は、事前申込制で有料です。粗大ごみ受付センターへお申し込みください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": true,
+      "value": "有料（有料粗大ごみ処理券方式）。区内コンビニ等でA券200円・B券300円を購入し組み合わせて貼付。例：布団・イス等300円（B券1枚）、自転車・1人用ソファ600円（B券2枚）、机・シングルベッド900円（B券3枚）、2人掛けソファ等1,600円（A券2枚+B券4枚）、大型家具2,200円（A券2枚+B券6枚）。その他品目は別途PDF一覧表参照。",
+      "evidence": "粗大ごみ処理手数料の支払いは、有料粗大ごみ処理券方式です。申し込み後、区内の主なコンビニエンスストアか千代田区有料粗大ごみ処理券取扱所で購入し、粗大ごみに貼って出してください。",
+      "source": "html",
+      "failure_reason": null
+    }
+  },
+  "page_notes": "料金は本文の表に主要品目が明記され、それ以外はPDF一覧表に誘導される二段構成。必要書類や申込期限（何日前までに申し込むか）についての記載は本文中に見当たらない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

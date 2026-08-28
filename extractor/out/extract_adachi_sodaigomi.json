@@ -10,18 +10,335 @@
     "has_jsonld": false,
     "text_len": 1846,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 270
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:44:57+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
   "followed_urls": [
-    "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+    "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
+    "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/recycle/index.html"
   ],
   "online_clarity": "記載なし",
   "online_clarity_evidence": "",
   "online_clarity_pages": [
     "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
-    "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+    "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
+    "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/recycle/index.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "足立区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
+            "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/recycle/index.html"
+          ],
+          "page_notes": "このページは粗大ごみの資源化（リサイクル）実績・仕組みの紹介のみで、収集申込の手続きや持ち物についての記載はない。ごみ全般のトップページへのリンクがあり、そこから申込ページに辿れる可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "元ページは「粗大ごみを資源化（リサイクル）しています」という取り組み紹介記事で、申込手続きや必要書類には触れていない。リンク先の2つの一覧ページ（ごみとリサイクル／リサイクル）も記事一覧のみで、申込方法や持ち物を説明する個別ページへの直接リンクは見当たらなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
+        "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/recycle/index.html"
+      ],
+      "page_notes": "元ページは「粗大ごみを資源化（リサイクル）しています」という取り組み紹介記事で、申込手続きや必要書類には触れていない。リンク先の2つの一覧ページ（ごみとリサイクル／リサイクル）も記事一覧のみで、申込方法や持ち物を説明する個別ページへの直接リンクは見当たらなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "足立区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+          ],
+          "page_notes": "このページは粗大ごみの資源化（リサイクル）実績を説明するもので、申込方法（窓口かオンラインか）には触れていない。上位カテゴリの「ごみとリサイクル」一覧ページに申込手続きの案内がある可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページは粗大ごみの資源化（リサイクル）実績を説明する統計ページで、申込方法自体には触れていない。リンク先の「ごみとリサイクル」一覧ページにも受付窓口やオンライン申込を指す個別リンクは見当たらなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+      ],
+      "page_notes": "このページは粗大ごみの資源化（リサイクル）実績を説明する統計ページで、申込方法自体には触れていない。リンク先の「ごみとリサイクル」一覧ページにも受付窓口やオンライン申込を指す個別リンクは見当たらなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "足立区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+          ],
+          "page_notes": "このページは粗大ごみの資源化（リサイクル）実績を説明する記事で、申込方法や期限には触れていない。申込に関する情報は上位の「ごみとリサイクル」一覧ページ側にありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "対象ページは粗大ごみの資源化（リサイクル）実績を説明する記事で、申込手続きの案内ではない。リンク先の「ごみとリサイクル」一覧ページもお知らせ・リンク集のみで、収集申込の期限には触れていない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+      ],
+      "page_notes": "対象ページは粗大ごみの資源化（リサイクル）実績を説明する記事で、申込手続きの案内ではない。リンク先の「ごみとリサイクル」一覧ページもお知らせ・リンク集のみで、収集申込の期限には触れていない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "足立区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+          ],
+          "page_notes": "このページは粗大ごみの資源化（リサイクル）実績を説明する記事で、申込方法や手数料には触れていない。手数料情報は「ごみとリサイクル」の上位カテゴリページに別途あると思われる。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "対象ページ（mokuseisodai.html）は粗大ごみの資源化（リサイクル）実績を説明する記事で、申込・手数料には触れていない。追従したリンク先（ごみとリサイクル一覧ページ）も個別記事へのリンク一覧のみで、手数料額を含む本文はなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+      ],
+      "page_notes": "対象ページ（mokuseisodai.html）は粗大ごみの資源化（リサイクル）実績を説明する記事で、申込・手数料には触れていない。追従したリンク先（ごみとリサイクル一覧ページ）も個別記事へのリンク一覧のみで、手数料額を含む本文はなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
@@ -29,32 +346,72 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "窓口オンライン可否": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "このページは粗大ごみの資源化（リサイクル）実績・推移を説明する統計ページであり、粗大ごみ収集の申込方法（受付窓口・オンライン可否・手数料など）には触れていない。リンク先の「ごみとリサイクル」一覧ページにも申込手続きへの直接リンクは見当たらず、申込専用ページ（受付センター等）はこの階層のリンク一覧に含まれていない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "元ページは「粗大ごみを資源化（リサイクル）しています」という取り組み紹介記事で、申込手続きや必要書類には触れていない。リンク先の2つの一覧ページ（ごみとリサイクル／リサイクル）も記事一覧のみで、申込方法や持ち物を説明する個別ページへの直接リンクは見当たらなかった。\nこのページは粗大ごみの資源化（リサイクル）実績を説明する統計ページで、申込方法自体には触れていない。リンク先の「ごみとリサイクル」一覧ページにも受付窓口やオンライン申込を指す個別リンクは見当たらなかった。\n対象ページは粗大ごみの資源化（リサイクル）実績を説明する記事で、申込手続きの案内ではない。リンク先の「ごみとリサイクル」一覧ページもお知らせ・リンク集のみで、収集申込の期限には触れていない。\n対象ページ（mokuseisodai.html）は粗大ごみの資源化（リサイクル）実績を説明する記事で、申込・手数料には触れていない。追従したリンク先（ごみとリサイクル一覧ページ）も個別記事へのリンク一覧のみで、手数料額を含む本文はなかった。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
+      "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
+      "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/recycle/index.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 0,
+    "verified": 0,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 4
   }
 }

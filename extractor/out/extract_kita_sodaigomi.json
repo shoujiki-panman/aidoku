@@ -10,48 +10,408 @@
     "has_jsonld": true,
     "text_len": 3198,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
-  "online_clarity": "記載なし",
-  "online_clarity_evidence": "",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:58:06+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
+    "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "お申し込みは、お電話またはインターネットで受け付けています。",
   "online_clarity_pages": [
-    "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html"
+    "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
+    "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
+    "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "北区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "収集の場合は北区指定の有料粗大ごみ処理券（シール、A券200円・B券300円）を購入して品物に貼る。区内在住者が指定場所へ自分で持ち込む場合は、本人確認のため身分証明書（免許証等）の持参が必要。",
+        "evidence": "持込の際には身分証明書（免許証等）を確認させていただきますので、必ずご用意の上でお越しください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 48,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html"
+          ],
+          "page_notes": "このページは粗大ごみの出し方の入口（インデックス）で、本文には「粗大ごみについて」「有料ごみ処理券の販売店一覧」等のリンク一覧のみが並び、持ち物・必要書類に関する記述は本文中にない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "収集の場合は北区指定の有料粗大ごみ処理券（シール、A券200円・B券300円）を購入して品物に貼る。区内在住者が指定場所へ自分で持ち込む場合は、本人確認のため身分証明書（免許証等）の持参が必要。",
+            "evidence": "持込の際には身分証明書（免許証等）を確認させていただきますので、必ずご用意の上でお越しください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 48,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "トップページ（index.html）には持ち物・必要書類の記載はなく、リンク先「粗大ごみについて」ページに、処理券の購入・貼付という共通の必要物と、持込利用者だけに必要な身分証明書の提示という条件付きの必要物が分けて書かれていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html"
+      ],
+      "page_notes": "トップページ（index.html）には持ち物・必要書類の記載はなく、リンク先「粗大ごみについて」ページに、処理券の購入・貼付という共通の必要物と、持込利用者だけに必要な身分証明書の提示という条件付きの必要物が分けて書かれていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "北区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口(電話)不要。粗大ごみ受付センターへ電話またはインターネットで申込み可能（インターネットは24時間受付）",
+        "evidence": "お申し込みは、お電話またはインターネットで受け付けています。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 30,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html"
+          ],
+          "page_notes": "このページは目次的な入口で、申込方法（窓口・電話・オンライン等）の具体的な記述は本文になく、「粗大ごみについて」のリンク先に案内されている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口(電話)不要。粗大ごみ受付センターへ電話またはインターネットで申込み可能（インターネットは24時間受付）",
+            "evidence": "お申し込みは、お電話またはインターネットで受け付けています。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 30,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "トップページには申込方法の記載がなく、「粗大ごみについて」というリンク先ページに電話・インターネット両方の申込方法が明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html"
+      ],
+      "page_notes": "トップページには申込方法の記載がなく、「粗大ごみについて」というリンク先ページに電話・インターネット両方の申込方法が明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "北区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html"
+          ],
+          "page_notes": "このページは「粗大ごみの出し方」の入口ページで、申込方法・料金・還付・料金改定などのリンク一覧のみが本文にあり、申込期限に関する記述は本文にもJSON-LDにも無い。「粗大ごみについて」のリンク先に詳細（申込〜収集までの流れや期限）が載っている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「粗大ごみについて」ページに申込〜収集の全手順（電話・ネット申込→処理券購入→貼付→収集日朝8時までに出す）は詳しく書かれているが、申込自体を収集日の何日前までに行う必要があるかという期限（リードタイム）は明記されていなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html"
+      ],
+      "page_notes": "「粗大ごみについて」ページに申込〜収集の全手順（電話・ネット申込→処理券購入→貼付→収集日朝8時までに出す）は詳しく書かれているが、申込自体を収集日の何日前までに行う必要があるかという期限（リードタイム）は明記されていなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "北区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "品目により異なる（無料ではない）。有料粗大ごみ処理券A券（200円）・B券（300円）を組み合わせて購入し支払う。例：布団・いす等400円、自転車900円、机1,300円、ソファー2,300円、箱物家具（特大）3,200円",
+        "evidence": "有料粗大ごみ処理券には、A券（200円）とB券（300円）の2種類があります。組み合わせて必要な料金分を購入してください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 56,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
+            "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html"
+          ],
+          "page_notes": "本文には料金の具体額は書かれておらず、「粗大ごみについて」「粗大ごみ料金改定（令和5年10月1日以降）」への案内リンクのみが並ぶ入口ページになっている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "品目により異なる（無料ではない）。有料粗大ごみ処理券A券（200円）・B券（300円）を組み合わせて購入し支払う。例：布団・いす等400円、自転車900円、机1,300円、ソファー2,300円、箱物家具（特大）3,200円",
+            "evidence": "有料粗大ごみ処理券には、A券（200円）とB券（300円）の2種類があります。組み合わせて必要な料金分を購入してください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 56,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "トップページ自体には料金の記載がなく、リンク先「粗大ごみについて」に処理券の単価（A券200円・B券300円）、「粗大ごみ料金改定」ページに品目別の具体的な料金表があった。品目ごとに料金が異なるため単一の定額では答えられない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
+        "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html"
+      ],
+      "page_notes": "トップページ自体には料金の記載がなく、リンク先「粗大ごみについて」に処理券の単価（A券200円・B券300円）、「粗大ごみ料金改定」ページに品目別の具体的な料金表があった。品目ごとに料金が異なるため単一の定額では答えられない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    }
   ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "粗大ごみについて",
-      "source": "html",
-      "failure_reason": "リンク先にあり"
+      "found": true,
+      "value": "収集の場合は北区指定の有料粗大ごみ処理券（シール、A券200円・B券300円）を購入して品物に貼る。区内在住者が指定場所へ自分で持ち込む場合は、本人確認のため身分証明書（免許証等）の持参が必要。",
+      "evidence": "持込の際には身分証明書（免許証等）を確認させていただきますので、必ずご用意の上でお越しください。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 48,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
-      "found": false,
-      "value": "",
-      "evidence": "粗大ごみについて",
-      "source": "html",
-      "failure_reason": "リンク先にあり"
+      "found": true,
+      "value": "窓口(電話)不要。粗大ごみ受付センターへ電話またはインターネットで申込み可能（インターネットは24時間受付）",
+      "evidence": "お申し込みは、お電話またはインターネットで受け付けています。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 30,
+        "note": ""
+      }
     },
     "期限": {
       "found": false,
       "value": "",
-      "evidence": "粗大ごみについて",
-      "source": "html",
-      "failure_reason": "リンク先にあり"
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
-      "found": false,
-      "value": "",
-      "evidence": "粗大ごみ料金改定（令和5年10月1日以降）",
-      "source": "html",
-      "failure_reason": "リンク先にあり"
+      "found": true,
+      "value": "品目により異なる（無料ではない）。有料粗大ごみ処理券A券（200円）・B券（300円）を組み合わせて購入し支払う。例：布団・いす等400円、自転車900円、机1,300円、ソファー2,300円、箱物家具（特大）3,200円",
+      "evidence": "有料粗大ごみ処理券には、A券（200円）とB券（300円）の2種類があります。組み合わせて必要な料金分を購入してください。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 56,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     }
   },
-  "page_notes": "このページは「粗大ごみの出し方」という見出し1つと、「粗大ごみについて」「有料ごみ処理券の販売店一覧」「有料粗大ごみ処理券の還付手続き」「粗大ごみ料金改定」という4件のリンク見出しのみで構成された索引ページで、申込方法・必要書類・期限・料金の具体的な記述は本文中に一切ない。これらのリンク先URLはページ内リンク一覧（言語切替リンクが大半を占め上限40件を占有）に含まれておらず、follow_urls に確認済みのURLとして挙げられなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "トップページ（index.html）には持ち物・必要書類の記載はなく、リンク先「粗大ごみについて」ページに、処理券の購入・貼付という共通の必要物と、持込利用者だけに必要な身分証明書の提示という条件付きの必要物が分けて書かれていた。\nトップページには申込方法の記載がなく、「粗大ごみについて」というリンク先ページに電話・インターネット両方の申込方法が明記されていた。\n「粗大ごみについて」ページに申込〜収集の全手順（電話・ネット申込→処理券購入→貼付→収集日朝8時までに出す）は詳しく書かれているが、申込自体を収集日の何日前までに行う必要があるかという期限（リードタイム）は明記されていなかった。\nトップページ自体には料金の記載がなく、リンク先「粗大ごみについて」に処理券の単価（A券200円・B券300円）、「粗大ごみ料金改定」ページに品目別の具体的な料金表があった。品目ごとに料金が異なるため単一の定額では答えられない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
+      "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
+      "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

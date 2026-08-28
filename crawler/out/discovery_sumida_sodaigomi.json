@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.sumida.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
@@ -14,7 +35,164 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5808,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 3,
+          "text": "手順"
+        },
+        {
+          "level": 2,
+          "text": "【手順1】 大きさ・重さ・料金の確認"
+        },
+        {
+          "level": 2,
+          "text": "【手順2】 収集の申込み（インターネット／電話）"
+        },
+        {
+          "level": 2,
+          "text": "【手順3】 手数料の支払い"
+        },
+        {
+          "level": 2,
+          "text": "【手順4】 収集日当日の出し方"
+        },
+        {
+          "level": 3,
+          "text": "その他ご案内"
+        },
+        {
+          "level": 2,
+          "text": "【案内1】 粗大ごみを処分する前にご検討ください（売却・リユース・リサイクル）"
+        },
+        {
+          "level": 2,
+          "text": "【案内2】 粗大ごみの運び出し収集"
+        },
+        {
+          "level": 2,
+          "text": "【手順1】 大きさ・重さ・料金の確認"
+        },
+        {
+          "level": 3,
+          "text": "処分したいものの大きさや重さを確認してください"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみの品目・料金を事前に調べる場合"
+        },
+        {
+          "level": 4,
+          "text": "1.手数料一覧PDFファイルで調べる"
+        },
+        {
+          "level": 4,
+          "text": "2.チャットボットで調べる"
+        },
+        {
+          "level": 2,
+          "text": "【手順2】 収集の申込み（インターネット／電話）"
+        },
+        {
+          "level": 3,
+          "text": "1.インターネットで申込み"
+        },
+        {
+          "level": 2,
+          "text": "インターネットでの申込はこちら（墨田区 粗大ごみ受付センター）"
+        },
+        {
+          "level": 3,
+          "text": "2.電話で申込み"
+        },
+        {
+          "level": 2,
+          "text": "【手順3】 手数料の支払い"
+        },
+        {
+          "level": 3,
+          "text": "1.インターネット申込み時にキャッシュレス決済で手数料をお支払いされた場合"
+        },
+        {
+          "level": 3,
+          "text": "2.有料ごみ処理券でお支払いされる場合"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券に関する詳細説明ページ"
+        },
+        {
+          "level": 2,
+          "text": "【手順4】 収集日当日の出し方"
+        },
+        {
+          "level": 2,
+          "text": "その他ご案内"
+        },
+        {
+          "level": 2,
+          "text": "【案内1】 粗大ごみを処分する前にご検討ください（売却・リユース・リサイクル）"
+        },
+        {
+          "level": 3,
+          "text": "1.墨田区のリユースプラットフォーム「おいくら」（売却型のリユースサービス）"
+        },
+        {
+          "level": 2,
+          "text": "「おいくら」をご利用される方はこちら（外部サイト）"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "2.自転車のリユース・リサイクル（海外供与）と羽毛布団のリサイクル事業"
+        },
+        {
+          "level": 2,
+          "text": "【申込み】 自転車のリユース・リサイクル（海外供与）と羽毛布団のリサイクル"
+        },
+        {
+          "level": 2,
+          "text": "【案内2】 粗大ごみの運び出し収集"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの運び出し収集"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.html",
@@ -25,7 +203,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4338,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ処理手数料はオンライン決済（キャッシュレス決済）ができます 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ処理手数料はオンライン決済（キャッシュレス決済）ができます",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ処理手数料はオンライン決済（キャッシュレス決済）ができます"
+        },
+        {
+          "level": 2,
+          "text": "墨田区の粗大ごみの出し方について"
+        },
+        {
+          "level": 2,
+          "text": "オンライン決済で利用可能な決済方法"
+        },
+        {
+          "level": 2,
+          "text": "領収書について"
+        },
+        {
+          "level": 3,
+          "text": "【方法1】オンライン決済ではなく、有料粗大ごみ処理券を購入してお支払いする方法"
+        },
+        {
+          "level": 3,
+          "text": "【方法2】オンライン決済の後、すみだ清掃事務所へ別途領収書の発行手続きを行う方法"
+        },
+        {
+          "level": 2,
+          "text": "オンライン決済をした場合の粗大ごみ排出方法（収集日当日の出し方）"
+        },
+        {
+          "level": 3,
+          "text": "任意の用紙等の貼付けが必要です"
+        },
+        {
+          "level": 4,
+          "text": "（ご活用ください）任意の貼付け用紙のひな型"
+        },
+        {
+          "level": 4,
+          "text": "貼付け見本"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/sodai_reuse.html",
@@ -36,7 +287,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5002,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみリユース事業 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみリユース事業",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/sodai_reuse.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみリユース事業"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして処分する前に「リユース（再使用）」検討してみませんか？"
+        },
+        {
+          "level": 3,
+          "text": "リユースプラットフォーム「おいくら」"
+        },
+        {
+          "level": 4,
+          "text": "申込先"
+        },
+        {
+          "level": 4,
+          "text": "一括査定の流れ"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "これまでの経緯"
+        },
+        {
+          "level": 3,
+          "text": "令和4年4月から粗大ごみリユース事業を本格実施しました"
+        },
+        {
+          "level": 3,
+          "text": "事業連携の背景"
+        },
+        {
+          "level": 3,
+          "text": "連携事業者"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/hakobidasi.html",
@@ -47,7 +371,68 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3665,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの運び出し収集 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみの運び出し収集",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/hakobidasi.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの運び出し収集"
+        },
+        {
+          "level": 2,
+          "text": "該当する世帯"
+        },
+        {
+          "level": 2,
+          "text": "ご利用までの流れ"
+        },
+        {
+          "level": 3,
+          "text": "（1）申し込み"
+        },
+        {
+          "level": 3,
+          "text": "（2）下見"
+        },
+        {
+          "level": 3,
+          "text": "（3）運び出し"
+        },
+        {
+          "level": 2,
+          "text": "申し込み先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf",
@@ -58,7 +443,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html",
@@ -69,7 +461,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3716,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ処理手数料の減免申請受付 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "ごみ処理手数料の減免申請受付",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ処理手数料の減免申請受付"
+        },
+        {
+          "level": 2,
+          "text": "提出書類様式"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/index.html",
@@ -80,7 +517,28 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3558,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみ・リサイクル 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "資源・ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.html",
@@ -91,7 +549,68 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4060,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年度（2026年度）版「資源とごみの収集カレンダー」 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "令和8年度（2026年度）版「資源とごみの収集カレンダー」",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度（2026年度）版「資源とごみの収集カレンダー」"
+        },
+        {
+          "level": 2,
+          "text": "わが家の資源とごみの収集曜日・資源とごみの収集カレンダー"
+        },
+        {
+          "level": 3,
+          "text": "年間収集日カレンダーイメージ画像"
+        },
+        {
+          "level": 3,
+          "text": "年間収集日カレンダーファイルダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "【地域別】資源・ごみの収集日カレンダー"
+        },
+        {
+          "level": 3,
+          "text": "地域別収集日カレンダーイメージ画像"
+        },
+        {
+          "level": 3,
+          "text": "地域別収集日カレンダーファイルダウンロード（2026年4月から2026年9月まで）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/volunteer-gomi.html",
@@ -102,7 +621,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3448,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ボランティアごみの収集 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "ボランティアごみの収集",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/volunteer-gomi.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ボランティアごみの収集"
+        },
+        {
+          "level": 2,
+          "text": "申し込み案内"
+        },
+        {
+          "level": 2,
+          "text": "申し込み先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.files/ryousyuusyohakkouiraisyo.docx",
@@ -112,8 +676,15 @@
       "parent": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 12335,
-      "has_jsonld": false
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.files/youshi.docx",
@@ -123,8 +694,15 @@
       "parent": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 12585,
-      "has_jsonld": false
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.files/01syusyucalender_0804.pdf",
@@ -135,7 +713,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.files/02syusyucalender_0804.pdf",
@@ -146,7 +731,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/event_info/mukoujima-jitensya.html",
@@ -157,7 +749,84 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4715,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【すみだ清掃事務所分室】自転車のリユース・リサイクル（海外供与） 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "【すみだ清掃事務所分室】自転車のリユース・リサイクル（海外供与）",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/event_info/mukoujima-jitensya.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【すみだ清掃事務所分室】自転車のリユース・リサイクル（海外供与）"
+        },
+        {
+          "level": 2,
+          "text": "事業概要"
+        },
+        {
+          "level": 3,
+          "text": "回収品目"
+        },
+        {
+          "level": 3,
+          "text": "回収日時"
+        },
+        {
+          "level": 3,
+          "text": "回収場所"
+        },
+        {
+          "level": 3,
+          "text": "対象"
+        },
+        {
+          "level": 3,
+          "text": "費用"
+        },
+        {
+          "level": 3,
+          "text": "申込み"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "自転車の海外供与先一覧"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/moyasanaigomi.html",
@@ -168,7 +837,76 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4435,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "燃やさないごみの出し方 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "燃やさないごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/moyasanaigomi.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "燃やさないごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "燃やさないごみの出し方【月2回収集】"
+        },
+        {
+          "level": 3,
+          "text": "燃やさないごみの出し方"
+        },
+        {
+          "level": 4,
+          "text": "各地域の収集日【ご確認ください】"
+        },
+        {
+          "level": 3,
+          "text": "ピックアップ回収について"
+        },
+        {
+          "level": 3,
+          "text": "小型充電式電池、モバイルバッテリー、内蔵バッテリーの分離が困難な小型家電製品について"
+        },
+        {
+          "level": 2,
+          "text": "燃やさないごみの主な品目"
+        },
+        {
+          "level": 2,
+          "text": "スプレー缶の出し方について"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/index.html",
@@ -179,7 +917,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2894,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの分け方・出し方 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "ごみの分け方・出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "ご案内"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/index.html",
@@ -190,7 +957,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2897,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭から発生する資源とごみの出し方 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "家庭から発生する資源とごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭から発生する資源とごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/index.html",
@@ -201,7 +993,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2915,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "その他収集に関すること 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "その他収集に関すること",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "その他収集に関すること"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/hureai.html",
@@ -212,7 +1029,76 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3578,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ふれあい収集 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "ふれあい収集",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/hureai.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ふれあい収集"
+        },
+        {
+          "level": 2,
+          "text": "該当する世帯"
+        },
+        {
+          "level": 2,
+          "text": "ご利用までの流れ"
+        },
+        {
+          "level": 3,
+          "text": "(1)申し込み"
+        },
+        {
+          "level": 3,
+          "text": "(2)面談"
+        },
+        {
+          "level": 3,
+          "text": "(3)決定"
+        },
+        {
+          "level": 3,
+          "text": "(4)収集開始"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源物の収集日"
+        },
+        {
+          "level": 2,
+          "text": "申し込み先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/boutyou-net.html",
@@ -223,7 +1109,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4121,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみ飛散防止ネットの無料貸し出し 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "資源・ごみ飛散防止ネットの無料貸し出し",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/boutyou-net.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみ飛散防止ネットの無料貸し出し"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "ネットの種類・サイズ"
+        },
+        {
+          "level": 3,
+          "text": "集積所用ネット"
+        },
+        {
+          "level": 3,
+          "text": "戸別収集用ネット"
+        },
+        {
+          "level": 2,
+          "text": "貸出し場所"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "電子申請"
+        },
+        {
+          "level": 3,
+          "text": "窓口申請"
+        },
+        {
+          "level": 2,
+          "text": "強風対策"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/rinji-tairyou-gomi.html",
@@ -234,7 +1193,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3343,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "臨時ごみ・大量ごみとして出す場合 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "臨時ごみ・大量ごみとして出す場合",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/rinji-tairyou-gomi.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "臨時ごみ・大量ごみとして出す場合"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-50onbunbetu.html",
@@ -245,7 +1245,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 17758,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源とごみの分別一覧表（50音順） 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "資源とごみの分別一覧表（50音順）",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-50onbunbetu.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの分別一覧表（50音順）"
+        },
+        {
+          "level": 2,
+          "text": "分別のポイント"
+        },
+        {
+          "level": 3,
+          "text": "燃やすごみ"
+        },
+        {
+          "level": 3,
+          "text": "燃やさないごみ"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 3,
+          "text": "資源（プラスチック）"
+        },
+        {
+          "level": 3,
+          "text": "資源（古紙）"
+        },
+        {
+          "level": 3,
+          "text": "資源（缶・びん・ペットボトル）"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの分別一覧表"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -254,160 +1327,206 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/hakobidasi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/event_info/mukoujima-jitensya.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/moyasanaigomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/sodai_reuse.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.files/ryousyuusyohakkouiraisyo.docx",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.files/youshi.docx",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/volunteer-gomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/hureai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/boutyou-net.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/rinji-tairyou-gomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.files/01syusyucalender_0804.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.files/02syusyucalender_0804.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-50onbunbetu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

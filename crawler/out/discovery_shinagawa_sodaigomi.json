@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.shinagawa.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
@@ -14,7 +35,103 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6656,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみを出す前にとして廃棄する前にご検討ください"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみとして出す前にリユースしませんか"
+        },
+        {
+          "level": 3,
+          "text": "「おいくら」で不要品を売却する場合"
+        },
+        {
+          "level": 3,
+          "text": "「ジモティー」で不要品を譲渡する場合"
+        },
+        {
+          "level": 5,
+          "text": "申し込む前に"
+        },
+        {
+          "level": 3,
+          "text": "申し込み方法"
+        },
+        {
+          "level": 5,
+          "text": "インターネット (24時間受付)"
+        },
+        {
+          "level": 5,
+          "text": "インターネットでお申し込みされる場合の注意事項"
+        },
+        {
+          "level": 5,
+          "text": "電話 (受付時間：午前8時～午後7時)"
+        },
+        {
+          "level": 5,
+          "text": "電話でお申し込みされる場合の注意事項"
+        },
+        {
+          "level": 3,
+          "text": "出し方"
+        },
+        {
+          "level": 5,
+          "text": "区に収集を依頼する場合"
+        },
+        {
+          "level": 5,
+          "text": "持ち込みをする場合【事前申し込みが必要】"
+        },
+        {
+          "level": 5,
+          "text": "廃棄物処理手数料の減額・免除の手続き"
+        },
+        {
+          "level": 3,
+          "text": "注意・その他"
+        },
+        {
+          "level": 5,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/index.html",
@@ -25,7 +142,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2790,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみに関すること｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみに関すること"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/hpg000005620.html",
@@ -36,7 +185,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3195,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ処理手数料｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理手数料"
+        },
+        {
+          "level": 5,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/20231225115000.html",
@@ -47,7 +232,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2976,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみのリサイクル・リユースを新たに開始｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみのリサイクル・リユースを新たに開始"
+        },
+        {
+          "level": 5,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/SODAIHARIGAMI.pdf",
@@ -58,7 +279,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/SODAIHARIGAMI_KINYUREI.pdf",
@@ -69,7 +297,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/20240320135858.html",
@@ -80,7 +315,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3333,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和6年4月から粗大ごみ処理手数料の電子決済を開始｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "令和6年4月から粗大ごみ処理手数料の電子決済を開始"
+        },
+        {
+          "level": 5,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-recycle/gomi-recycle-kankou/hpg000018889.html",
@@ -91,7 +362,53 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3869,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル通信(令和8年7月号を発行しました)｜品川区",
+      "meta": {
+        "description": "リサイクル　情報　ごみ　エコクイズ"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル通信(令和8年7月号を発行しました)"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル通信を発行しています"
+        },
+        {
+          "level": 4,
+          "text": "過去2年間のごみ・リサイクル通信一覧"
+        },
+        {
+          "level": 5,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-recycle/gomi-recycle-kankou/hpg000027173.html",
@@ -102,7 +419,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3286,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年版ごみ・リサイクルカレンダー｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "令和8年版ごみ・リサイクルカレンダー"
+        },
+        {
+          "level": 3,
+          "text": "令和8年版ごみ・リサイクルカレンダーのダウンロード"
+        },
+        {
+          "level": 5,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/index.html",
@@ -113,7 +470,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3674,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 4,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "環境・まちづくり"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-recycle/gomi-recycle-kankou/hpg000008141.html",
@@ -124,7 +525,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3824,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "リサイクル情報紙「くるくる」｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル情報紙「くるくる」"
+        },
+        {
+          "level": 3,
+          "text": "リサイクル情報紙「くるくる」の申込み"
+        },
+        {
+          "level": 4,
+          "text": "「ゆずります」「ゆずってください」"
+        },
+        {
+          "level": 4,
+          "text": "「くるくる」の発行"
+        },
+        {
+          "level": 4,
+          "text": "交渉・成立"
+        },
+        {
+          "level": 5,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-recycle/gomi-recycle-dashikata/hpg000010542.html",
@@ -135,7 +588,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4469,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家電（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）の出し方｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "家電（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）の出し方"
+        },
+        {
+          "level": 3,
+          "text": "家電（エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機）はメーカーがリサイクルします"
+        },
+        {
+          "level": 3,
+          "text": "処分方法"
+        },
+        {
+          "level": 3,
+          "text": "リサイクル料金（目安）"
+        },
+        {
+          "level": 5,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-keihatu/20260218133625.html",
@@ -146,7 +647,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3289,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【清掃一組からのお知らせ】大田清掃工場で「区民との意見交換会」開催｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "【清掃一組からのお知らせ】大田清掃工場で「区民との意見交換会」開催"
+        },
+        {
+          "level": 3,
+          "text": "イベント情報"
+        },
+        {
+          "level": 5,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-keihatu/index.html",
@@ -157,7 +698,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2889,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "啓発活動｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "啓発活動"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/index.html",
@@ -168,7 +741,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3209,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "トピックス｜品川区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 1,
+          "text": "品川区のホームページです。品川区"
+        },
+        {
+          "level": 5,
+          "text": "グローバルナビゲーション"
+        },
+        {
+          "level": 2,
+          "text": "トピックス"
+        },
+        {
+          "level": 3,
+          "text": "フッター"
+        },
+        {
+          "level": 3,
+          "text": "品川区"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -177,111 +782,143 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-keihatu/20260218133625.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/hpg000005620.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-recycle/gomi-recycle-kankou/hpg000008141.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-recycle/gomi-recycle-dashikata/hpg000010542.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/20231225115000.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/20240320135858.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-recycle/gomi-recycle-kankou/hpg000018889.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-recycle/gomi-recycle-kankou/hpg000027173.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-keihatu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/SODAIHARIGAMI.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/SODAIHARIGAMI_KINYUREI.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

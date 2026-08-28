@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.toshima.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
@@ -14,7 +35,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 921,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ（一辺が30センチメートルを超えるもの）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ（一辺が30センチメートルを超えるもの）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ（一辺が30センチメートルを超えるもの）"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
@@ -25,7 +69,136 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4508,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方｜豊島区公式ホームページ",
+      "meta": {
+        "description": "粗大ごみに関する情報を掲載しています",
+        "og:title": "粗大ごみの出し方",
+        "og:type": "article",
+        "og:description": "粗大ごみに関する情報を掲載しています",
+        "og:url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 5,
+          "text": "「おいくら」で不用品を売却する場合"
+        },
+        {
+          "level": 5,
+          "text": "「ジモティー」で不用品を譲渡する場合"
+        },
+        {
+          "level": 5,
+          "text": "粗大ごみとして出すときの手順"
+        },
+        {
+          "level": 5,
+          "text": "減免の申請"
+        },
+        {
+          "level": 5,
+          "text": "運び出し"
+        },
+        {
+          "level": 5,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "リユース"
+        },
+        {
+          "level": 4,
+          "text": "「おいくら」で不用品を売却する場合"
+        },
+        {
+          "level": 4,
+          "text": "「ジモティー」で不用品を譲渡する場合"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして出すときの手順"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ受付センター"
+        },
+        {
+          "level": 4,
+          "text": "インターネットでの申し込み（24時間受付）"
+        },
+        {
+          "level": 4,
+          "text": "電話での申し込み"
+        },
+        {
+          "level": 3,
+          "text": "有料粗大ごみ処理券"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ収集曜日表"
+        },
+        {
+          "level": 3,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "手数料の減免"
+        },
+        {
+          "level": 3,
+          "text": "対象"
+        },
+        {
+          "level": 3,
+          "text": "手続き"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ処理手数料の減免のオンライン申請（LoGoフォーム）"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの運び出し"
+        },
+        {
+          "level": 3,
+          "text": "対象"
+        },
+        {
+          "level": 3,
+          "text": "手続き"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 5,
+          "text": "一部サービス利用停止のお知らせ（令和8年7月）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/index.html",
@@ -36,7 +209,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1639,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/jigyosha/index.html",
@@ -47,7 +243,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1035,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "事業者のかたへ（ごみ・リサイクル）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "事業者のかたへ（ごみ・リサイクル）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/jigyosha/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業者のかたへ（ごみ・リサイクル）"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2303021832.html",
@@ -58,7 +277,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1728,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源回収・ごみ収集カレンダー｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "資源回収・ごみ収集カレンダー",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2303021832.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源回収・ごみ収集カレンダー"
+        },
+        {
+          "level": 3,
+          "text": "資源回収・ごみ収集カレンダーの使い方"
+        },
+        {
+          "level": 4,
+          "text": "1.地域を選択する"
+        },
+        {
+          "level": 4,
+          "text": "2.確認する月を選択"
+        },
+        {
+          "level": 4,
+          "text": "3.印刷するときは…"
+        },
+        {
+          "level": 2,
+          "text": "資源やごみを出すときのお願い"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2211020850.html",
@@ -69,7 +335,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2873,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "年末年始の資源回収・ごみ収集について｜豊島区公式ホームページ",
+      "meta": {
+        "description": "資源回収・ごみ収集は令和7年12月31日（水曜日）から令和8年1月4日（日曜日）までお休みします。",
+        "og:title": "年末年始の資源回収・ごみ収集について",
+        "og:type": "article",
+        "og:description": "資源回収・ごみ収集は令和7年12月31日（水曜日）から令和8年1月4日（日曜日）までお休みします。",
+        "og:url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2211020850.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "年末年始の資源回収・ごみ収集について"
+        },
+        {
+          "level": 2,
+          "text": "1.年末年始の資源回収・ごみ収集"
+        },
+        {
+          "level": 3,
+          "text": "年末年始の資源回収・ごみ収集日は表のとおりです"
+        },
+        {
+          "level": 2,
+          "text": "2.年末年始の粗大ごみ受付センターの受付"
+        },
+        {
+          "level": 2,
+          "text": "3.年末年始の家電リサイクル法対象品目の受付"
+        },
+        {
+          "level": 3,
+          "text": "対象品目"
+        },
+        {
+          "level": 4,
+          "text": "エアコン・テレビ・冷蔵庫・冷凍庫・洗濯機・衣類乾燥機"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/155/kurashi/gomi/jigyosha/009048.html",
@@ -80,7 +399,110 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3030,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "事業者の資源・ごみの出し方（事業者で現在、区の収集を利用している場合）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "事業者の資源・ごみの出し方（事業者で現在、区の収集を利用している場合）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/155/kurashi/gomi/jigyosha/009048.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業者の資源・ごみの出し方（事業者で現在、区の収集を利用している場合）"
+        },
+        {
+          "level": 2,
+          "text": "事業活動に伴って生じたごみ（事業系ごみ）を排出する場合"
+        },
+        {
+          "level": 2,
+          "text": "事業系ごみを区の収集に出す場合"
+        },
+        {
+          "level": 2,
+          "text": "分別を徹底しましょう"
+        },
+        {
+          "level": 3,
+          "text": "家庭ごみと分別をしましょう"
+        },
+        {
+          "level": 3,
+          "text": "適正な分別しましょう"
+        },
+        {
+          "level": 2,
+          "text": "事業系ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "袋で出す場合"
+        },
+        {
+          "level": 3,
+          "text": "袋以外で出す場合"
+        },
+        {
+          "level": 3,
+          "text": "一斗缶の出し方"
+        },
+        {
+          "level": 3,
+          "text": "蛍光灯の出し方"
+        },
+        {
+          "level": 2,
+          "text": "事業系資源の出し方"
+        },
+        {
+          "level": 3,
+          "text": "（1）びん・かん・ペットボトルの出し方"
+        },
+        {
+          "level": 3,
+          "text": "（2）新聞・雑誌の出し方"
+        },
+        {
+          "level": 3,
+          "text": "（3）段ボールの出し方"
+        },
+        {
+          "level": 3,
+          "text": "（4）発泡スチロールの出し方"
+        },
+        {
+          "level": 2,
+          "text": "事業系有料ごみ処理券について"
+        },
+        {
+          "level": 3,
+          "text": "事業系有料ごみ処理券の料金"
+        },
+        {
+          "level": 3,
+          "text": "事業系有料ごみ処理券の取扱店"
+        },
+        {
+          "level": 2,
+          "text": "事業者の粗大ごみの扱い"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/155/kurashi/gomi/jigyosha/005558.html",
@@ -91,7 +513,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1291,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "[申請書ダウンロード] ごみ処理・リサイクルフロー図｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "[申請書ダウンロード] ごみ処理・リサイクルフロー図",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/155/kurashi/gomi/jigyosha/005558.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "[申請書ダウンロード] ごみ処理・リサイクルフロー図"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/2012181541.html",
@@ -102,7 +551,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1154,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ処理手数料（料金）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ処理手数料（料金）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/151/2012181541.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ処理手数料（料金）"
+        },
+        {
+          "level": 2,
+          "text": "品目別の手数料"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/index.html",
@@ -113,7 +593,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 943,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭からでる資源・ごみ｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "家庭からでる資源・ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭からでる資源・ごみ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013329.html",
@@ -124,7 +627,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2263,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみ パンフレット｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "資源・ごみ パンフレット",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013329.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみパンフレット"
+        },
+        {
+          "level": 3,
+          "text": "お知らせ"
+        },
+        {
+          "level": 4,
+          "text": "リチウムイオン電池の集積所回収の開始に伴い、「資源回収・ごみ収集のお知らせ」を改訂しました。"
+        },
+        {
+          "level": 6,
+          "text": "外国人住民等向けに多言語表記した「豊島区のごみ・資源の分け方・出し方」および「資源回収・ごみ収集のお知らせ（簡易版）」の確認はこちらから。"
+        },
+        {
+          "level": 2,
+          "text": "資源回収・ごみ収集のお知らせ保存版 令和8年4月発行"
+        },
+        {
+          "level": 2,
+          "text": "資源回収・ごみ収集のお知らせ簡易版(令和8年4月発行)"
+        },
+        {
+          "level": 2,
+          "text": "集団回収のご案内"
+        },
+        {
+          "level": 2,
+          "text": "清掃事務所からのお願い"
+        },
+        {
+          "level": 2,
+          "text": "資源回収・ごみ収集のお知らせ（翻訳版）"
+        },
+        {
+          "level": 2,
+          "text": "事業者向けパンフレット"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/gomi/index.html",
@@ -135,7 +701,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 947,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/gomi/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/shushu/index.html",
@@ -146,7 +739,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 936,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区では収集できないもの｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "区では収集できないもの",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/shushu/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区では収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/gomishoriken/index.html",
@@ -157,7 +773,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 804,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料ごみ処理券｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "有料ごみ処理券",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/gomishoriken/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料ごみ処理券"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/shigen/003060.html",
@@ -168,7 +807,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 946,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "豊島区有料ごみ処理券取扱所｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "豊島区有料ごみ処理券取扱所",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/shigen/003060.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "豊島区有料ごみ処理券取扱所"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/jigyosha/009044.html",
@@ -179,7 +845,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2358,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "事業者の責務・事業系廃棄物の処理委託（事業者で新規にごみを出す場合）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "事業者の責務・事業系廃棄物の処理委託（事業者で新規にごみを出す場合）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/jigyosha/009044.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業者の責務・事業系廃棄物の処理委託（事業者で新規にごみを出す場合）"
+        },
+        {
+          "level": 2,
+          "text": "法令上の事業者の責務"
+        },
+        {
+          "level": 3,
+          "text": "根拠となる法律・条例（抜粋）"
+        },
+        {
+          "level": 3,
+          "text": "事業系ごみの収集について"
+        },
+        {
+          "level": 2,
+          "text": "事業系廃棄物の処理委託"
+        },
+        {
+          "level": 3,
+          "text": "事業系一般廃棄物の処理委託"
+        },
+        {
+          "level": 3,
+          "text": "産業廃棄物の処理委託"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/oshirase/index.html",
@@ -190,7 +907,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1041,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お知らせ｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "お知らせ",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/oshirase/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/oshirase/asbestos/index.html",
@@ -201,7 +941,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1069,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "石綿（アスベスト）含有品に関する注意喚起｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "石綿（アスベスト）含有品に関する注意喚起",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/oshirase/asbestos/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "石綿（アスベスト）含有品に関する注意喚起"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/dobutsu/index.html",
@@ -212,7 +975,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 881,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "防鳥ネットの貸し出し・動物死体｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "防鳥ネットの貸し出し・動物死体",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/dobutsu/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "防鳥ネットの貸し出し・動物死体"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/shigen/index.html",
@@ -223,7 +1009,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 855,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "資源",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/shigen/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/015891.html",
@@ -234,7 +1043,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1806,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源の持ち去り行為は禁止です｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "資源の持ち去り行為は禁止です",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/015891.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源の持ち去り行為は禁止です"
+        },
+        {
+          "level": 2,
+          "text": "禁止される行為について"
+        },
+        {
+          "level": 2,
+          "text": "持ち去り行為への罰則について"
+        },
+        {
+          "level": 2,
+          "text": "資源の持ち去り行為に対する防止対策について"
+        },
+        {
+          "level": 3,
+          "text": "区民の皆さまへのお願い"
+        },
+        {
+          "level": 4,
+          "text": "持ち去り防止警告チラシ（英語版、中国語版、韓国語版）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/2209211425.html",
@@ -245,7 +1101,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2859,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "排出抑制・適正分別にご協力ください｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "排出抑制・適正分別にご協力ください",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/2209211425.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "排出抑制・適正分別にご協力ください"
+        },
+        {
+          "level": 2,
+          "text": "1.リチウムイオン電池などの小型充電式電池やスプレー缶等の排出・分別にご注意ください"
+        },
+        {
+          "level": 2,
+          "text": "2.布団や金属・陶器・ガラスごみが含まれるごみは、絶対に燃やすごみに出さないでください"
+        },
+        {
+          "level": 2,
+          "text": "3.生ごみは水切りを十分に行ってください"
+        },
+        {
+          "level": 2,
+          "text": "4.雑がみ（包装紙など）は、可燃ごみではなく資源「段ボール・紙・布類の日」に出してください"
+        },
+        {
+          "level": 3,
+          "text": "〈参考〉段ボール・紙・布類の分け方"
+        },
+        {
+          "level": 2,
+          "text": "5.プラスチック製ボトル容器や食品用トレーは「資源（プラスチック）の日」に出してください"
+        },
+        {
+          "level": 3,
+          "text": "〈参考〉資源（びん・かん・ペットボトル類）の分け方"
+        },
+        {
+          "level": 2,
+          "text": "6.食品ロスを削減しましょう"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/2010101045.html",
@@ -256,7 +1171,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1766,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "台風・大雪等荒天時の資源回収・ごみ収集について｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "台風・大雪等荒天時の資源回収・ごみ収集について",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/151/2010101045.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "台風・大雪等荒天時の資源回収・ごみ収集について"
+        },
+        {
+          "level": 2,
+          "text": "資源回収・ごみ収集を中止または時間変更することがあります"
+        },
+        {
+          "level": 2,
+          "text": "中止基準"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ方法"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お願い"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/documents/42508/20251006112929.pdf",
@@ -267,7 +1229,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/gomi-fl/foreignlanguage.html",
@@ -278,7 +1247,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1566,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "外国人住民向けごみの分別について｜豊島区公式ホームページ",
+      "meta": {
+        "description": "このページでは豊島区での資源やごみの分け方・出し方を日本語以外の言語で確認できます。",
+        "og:title": "外国人住民向けごみの分別について",
+        "og:type": "article",
+        "og:description": "このページでは豊島区での資源やごみの分け方・出し方を日本語以外の言語で確認できます。",
+        "og:url": "https://www.city.toshima.lg.jp/gomi-fl/foreignlanguage.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "外国人住民向けごみの分別について"
+        },
+        {
+          "level": 2,
+          "text": "豊島区のごみ・資源の分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "資源回収・ごみ収集のお知らせ日本語・英語・中国語・韓国語併記版・ベトナム語版・ミャンマー語版・ネパール語版・タイ語版・ヒンディー語版"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,6 +1293,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -294,6 +1302,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -301,34 +1311,44 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/gomi-fl/foreignlanguage.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/jigyosha/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/2012181541.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -336,6 +1356,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -343,125 +1365,161 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/shushu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/gomishoriken/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2303021832.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2211020850.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/oshirase/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/oshirase/asbestos/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/shigen/003060.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/dobutsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/shigen/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/155/kurashi/gomi/jigyosha/009048.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/155/kurashi/gomi/jigyosha/005558.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/jigyosha/009044.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/015891.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/2209211425.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/151/2010101045.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/documents/42508/20251006112929.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

@@ -1,0 +1,60 @@
+{
+  "municipality": "杉並区",
+  "municipality_id": "suginami",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+    "hops": 1,
+    "link_text": "ごみ・リサイクル",
+    "has_jsonld": false,
+    "text_len": 2047,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.suginami.tokyo.jp/s105/727.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "インターネット・チャットボット・電話・ファクスいずれかの方法で申し込む。（注）電子決済も可能です。",
+  "online_clarity_pages": [
+    "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+    "https://www.city.suginami.tokyo.jp/s105/727.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "当日は、運転免許証等の本人確認（区内住所・氏名）ができるものを必ずご持参ください。",
+      "source": "linked_page",
+      "failure_reason": "曖昧"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "区役所窓口へ行く必要はなく、粗大ごみ受付センターへインターネット（24時間受付）またはチャットボット（24時間受付）で申し込み可能。電話・ファクスでも申し込み可。自己搬入を希望する場合のみ日曜日に指定場所へ持ち込み可（電話・ファクスで要事前申込）。",
+      "evidence": "インターネット 粗大ごみ受付インターネット窓口（24時間受付・但しシステムメンテナンスを除く）",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "下記の手数料一覧表は目安です。主な品目の手数料 粗大ごみ処理手数料一覧表（主な品目）を参照ください。",
+      "source": "linked_page",
+      "failure_reason": "PDF内のみ"
+    }
+  },
+  "page_notes": "申込ページ自体（index.html）は品目リンク集のみで手続き情報が無く、実質的な手続きページはリンク先の「粗大ごみの出し方・申し込み方法」（s105/727.html）だった。手数料は品目ごとに異なり、具体額は本文中のPDF一覧表に依存するため単一の数値としては本文から確定できない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}
