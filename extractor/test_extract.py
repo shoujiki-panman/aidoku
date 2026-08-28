@@ -25,6 +25,7 @@ from unittest import mock
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT / "crawler"))
 sys.path.insert(0, str(ROOT))
+import officedoc  # noqa: E402
 from htmlutil import parse  # noqa: E402
 
 from extractor import batch as extraction_batch  # noqa: E402
@@ -71,6 +72,10 @@ class CachedPage:
 
     def body(self) -> str:
         return self._body
+
+    def body_bytes(self) -> bytes:
+        """保存したままのバイト列。PDF / Word を読むのはこちら。"""
+        return self._body.encode("utf-8", "surrogateescape")
 
 
 class FakeFetcher:
@@ -386,21 +391,55 @@ class FactTypeCallTest(unittest.TestCase):
         self.assertEqual(fetcher.fetched, [])
         self.assertEqual(record["result"]["failure_reason"], "PDF内のみ")
 
-    def test_PDFのURLをfollow指定した応答は取得前に拒否する(self):
+    def test_PDFのURLをfollow指定したら開いて読む(self):
+        """★以前はここで例外にしていた。読めなかった時代の名残。
+
+        住民のAIはPDFを読む。読めなかったのはこちらの読み取り器だけで、
+        区の落ち度ではなくこちらの落ち度を測っていた
+        （plans/decisions/non-html-reading.md）。いまは開く。
+        """
         case = TestCase("tennyu", "documents", "質問", "1.0")
         fetcher = FakeFetcher('<a href="/guide.pdf">必要書類PDF</a>')
         with mock.patch.object(
                 fact_extract, "call_claude",
                 return_value=follow_request("https://example.jp/guide.pdf")):
-            with self.assertRaisesRegex(RuntimeError, "PDF/Office"):
-                run_test_case(
-                    page(), "練馬区", "転入届", case, fetcher, "model", True)
-        self.assertEqual(fetcher.fetched, [])
+            record, _, _extra = run_test_case(
+                page(), "練馬区", "転入届", case, fetcher, "model", True)
+        # 取得を試みる（以前は取得前に拒否していた）
+        self.assertEqual(fetcher.fetched, ["https://example.jp/guide.pdf"])
+        # 中身はPDFではないので読めない。理由つきで添付に落ちる
+        self.assertEqual(record["result"]["failure_reason"], "PDF内のみ")
+        attached = record["attempts"][-1]["attachment_urls"]
+        self.assertEqual(len(attached), 1)
+        self.assertIn("guide.pdf", attached[0])
+        self.assertIn("（", attached[0])          # 読めない理由が併記される
 
-    def test_HTMLリンクがPDFへredirectしたら本文をparseしない(self):
+    def test_PDFを読めたら本文として渡す(self):
+        # ★読めた添付は「PDF内のみ」で終わらせない。本文として読解に渡す。
+        case = TestCase("tennyu", "documents", "質問", "1.0")
+        fetcher = FakeFetcher('<a href="/guide.pdf">必要書類PDF</a>')
+        got = officedoc.DocText("pdf", "必要なものは本人確認書類です。" * 3, True, "")
+        with mock.patch.object(fact_extract, "read_document", return_value=got), \
+                mock.patch.object(
+                    fact_extract, "call_claude",
+                    side_effect=[follow_request("https://example.jp/guide.pdf"),
+                                 llm_reply("本人確認書類", source="linked_page")]):
+            record, _, extra = run_test_case(
+                page(), "練馬区", "転入届", case, fetcher, "model", True)
+        self.assertEqual(len(extra), 1)
+        self.assertIn("本人確認書類", extra[0][1])
+        self.assertIn("pdf", extra[0][0])        # どの形式で読んだかを残す
+        self.assertEqual(len(record["followed_urls"]), 1)
+
+    def test_拡張子が無くてもContent_TypeでPDFと分かる(self):
+        """★リダイレクト先が /download のように拡張子を持たないことがある。
+
+        拡張子だけ見て「対応していない形式」と記録すると、中身がPDFなのに
+        形式不明として残る。Content-Type も見る。
+        """
         case = TestCase("tennyu", "documents", "質問", "1.0")
         fetcher = FakeFetcher('<a href="/guide">必要書類</a>')
-        redirected = CachedPage("PDF binary")
+        redirected = CachedPage("PDF binary")   # 中身はPDFではないので読めない
         redirected.final_url = "https://example.jp/download"
         redirected.content_type = "application/pdf"
 
@@ -423,7 +462,7 @@ class FactTypeCallTest(unittest.TestCase):
         self.assertEqual(record["result"], record["attempts"][-1]["result"])
         self.assertEqual(
             record["attempts"][-1]["attachment_urls"],
-            ["https://example.jp/guide"],
+            ["https://example.jp/guide（ストリームが無い（暗号化か壊れている））"],
         )
 
     def test_follow応答のURL拡張子とMIMEを独立に検証する(self):

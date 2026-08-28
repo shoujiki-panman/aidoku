@@ -25,13 +25,15 @@ MAX_FOLLOW = 2
 #   strong_all  手続きに該当する候補を、こちらから全部渡す
 # ★本数は max_follow が持っているので、ここには書かない（2箇所に書くとずれる）
 READ_BREADTH = "agent_pick"
-# HTML以外（PDF/Word/Excel）の扱い。none は「弾いている」ことを記録するための値で、
-# 「そんな候補は無かった」ではない。転入届では実測10本を弾いている。
-NON_HTML_READING = "none"
+# HTML以外（PDF/Word/Excel）の扱い。測定条件として記録する。
+#   none      弾く（2026-08-28 以前）
+#   cmap_text 字形の対応表を使って本文を取り出す。読めなければ理由を残す
+NON_HTML_READING = "cmap_text"
 
 sys.path.insert(0, str(ROOT / "crawler"))
 from discover import score_link  # noqa: E402
 from htmlutil import Table, parse, tables_text  # noqa: E402
+from officedoc import read_document  # noqa: E402
 from polite_fetch import PoliteFetcher  # noqa: E402
 
 sys.path.insert(0, str(ROOT))
@@ -134,9 +136,8 @@ def run_test_case(page: dict, muni: str, proc: str, test_case: TestCase,
             page, muni, proc, test_case, fetcher)
         data = parse_json_reply(call_claude(prompt, model))
         urls = requested_urls(data, allowed_urls, MAX_FOLLOW)
-        if any(is_non_html_url(url) for url in urls):
-            raise ValueError(
-                "PDF/Office等の添付はfollow_urlsにせずfailure_reason=PDF内のみにする")
+        # ★以前はここで「PDFを要求したら失敗」にしていた。読めなかった時代の名残。
+        #   いまは読めるので、要求されたら開く。読めなければ理由を残して添付に落とす。
         attempts = [validated_attempt(
             data, allowed_sources(meta), "initial", urls)]
         followed, extra, attachments = (
@@ -194,6 +195,12 @@ def allowed_sources(meta: dict, linked: bool = False) -> frozenset[str]:
 
 
 def _attachment_observation(urls: list[str]) -> dict:
+    """開いてみたが読めなかった添付。**読まなかったのではない。**
+
+    ★以前は「添付ファイルのため本文を開かなかった」と書いていた。
+      いまは開く。ここに来るのは**開いた上で読めなかった**もの（画像PDF等）だけで、
+      `urls` には理由が付いている。
+    """
     return {
         "stage": "follow_fetch",
         "llm_called": False,
@@ -203,7 +210,7 @@ def _attachment_observation(urls: list[str]) -> dict:
         },
         "requested_urls": [],
         "attachment_urls": urls,
-        "page_notes": "添付ファイルのため本文を開かなかった",
+        "page_notes": "添付を開いたが本文を取り出せなかった（理由はURLに併記）",
     }
 
 
@@ -307,13 +314,29 @@ def _extra_page_sections(pages: list[tuple[str, str]]) -> list[str]:
 
 def _fetch_followed_urls(urls: list[str], fetcher: PoliteFetcher,
                          ) -> tuple[list[str], list[tuple[str, str]], list[str]]:
+    """要求されたリンクを開く。**添付も読めるなら読む。**
+
+    ★以前は非HTMLを一律で `attachments` に落とし、`failure_reason: PDF内のみ` で
+      終わらせていた。だが住民のAI（ChatGPT / Claude）はPDFを読む。
+      読めなかったのはこちらの読み取り器だけで、**区の落ち度ではなく
+      こちらの落ち度を測っていた**（plans/decisions/non-html-reading.md）。
+
+      いまは字形の対応表を使って読める（PDF 6/7）。読めたものは本文として渡し、
+      読めなかったものだけを添付として残す。**読めない理由も一緒に残す。**
+    """
     followed, extra, attachments = [], [], []
     for url in urls[:MAX_FOLLOW]:
         fetched = fetcher.fetch(url)
         if not fetched.body_path:
             continue
         if _fetched_non_html(fetched, url):
-            attachments.append(url)
+            got = read_document(fetched.body_bytes(), url,
+                                getattr(fetched, "content_type", "") or "")
+            if got.ok:
+                followed.append(url)
+                extra.append((f"{url}（{got.kind}）", got.text))
+            else:
+                attachments.append(f"{url}（{got.reason}）")
             continue
         page_text = parse(fetched.body(), url).text
         followed.append(url)
