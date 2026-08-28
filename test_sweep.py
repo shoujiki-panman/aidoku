@@ -14,8 +14,16 @@ from sweep import (  # noqa: E402
     key,
     load_visits,
     missing_fields,
+    reached,
     summarize,
 )
+
+PAGE = {"url": "https://x.example/service"}
+
+
+def extract(items: dict, *, page=PAGE) -> dict:
+    """抽出結果の形。★`page` を省くと、到達できなかった区と同じ形になる。"""
+    return {"page": page, "items": items}
 
 
 def cand(url: str, score: int = 20) -> dict:
@@ -24,21 +32,36 @@ def cand(url: str, score: int = 20) -> dict:
 
 class 足りない項目(unittest.TestCase):
     def test_取れていない項目だけ返す(self):
-        extract = {"items": {"必要書類": {"found": True}, "手数料": {"found": False}}}
-        self.assertEqual(missing_fields(extract), ["手数料"])
+        got = extract({"必要書類": {"found": True}, "手数料": {"found": False}})
+        self.assertEqual(missing_fields(got), ["手数料"])
 
     def test_公開データの項目名に直す(self):
         # ★抽出結果は「窓口オンライン可否」、公開データは「窓口/オンライン可否」。
         #   この取り違えを3回やっている。
-        extract = {"items": {"窓口オンライン可否": {"found": False}}}
-        self.assertEqual(missing_fields(extract), ["窓口/オンライン可否"])
+        got = extract({"窓口オンライン可否": {"found": False}})
+        self.assertEqual(missing_fields(got), ["窓口/オンライン可否"])
 
     def test_対応表に無いキーは無視する(self):
-        extract = {"items": {"謎の項目": {"found": False}}}
-        self.assertEqual(missing_fields(extract), [])
+        self.assertEqual(missing_fields(extract({"謎の項目": {"found": False}})), [])
 
     def test_itemsが無くても落ちない(self):
         self.assertEqual(missing_fields({}), [])
+        self.assertEqual(missing_fields(extract({})), [])
+
+    def test_到達できなかった区は対象外(self):
+        """★`reached: false` の区は page が null で、読むページが1本も無い。
+
+        実測で2区あった（粗大ごみ・江戸川区/八王子市）。ここで落ちていた。
+        「書いていない」ではなく「探索が届かなかった」。混ぜてはいけない。
+        """
+        self.assertEqual(missing_fields({"page": None, "reached": False,
+                                         "items": {"手数料": {"found": False}}}), [])
+
+    def test_到達判定(self):
+        self.assertTrue(reached({"page": {"url": "https://x.example/a"}}))
+        self.assertFalse(reached({"page": None}))
+        self.assertFalse(reached({"page": {}}))
+        self.assertFalse(reached({}))
 
     def test_対応表は公開データの項目名を持つ(self):
         doc = json.loads((ROOT / "web/data/scores-tennyu.json").read_text(encoding="utf-8"))

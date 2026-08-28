@@ -65,8 +65,21 @@ ITEM_TO_FIELD = {
 }
 
 
+def reached(extract: dict) -> bool:
+    """起点ページにたどり着けた抽出結果か。
+
+    ★`reached: false` の区は `page` が null で、読むページが1本も無い。
+      実測で2区あった（粗大ごみ・江戸川区/八王子市）。
+      **これは「書いていない」ではなく「探索が届かなかった」。** 虱潰しの対象外。
+      黙って落ちると、その区が結果から消えて母数が変わる。
+    """
+    return bool(extract.get("page") and extract["page"].get("url"))
+
+
 def missing_fields(extract: dict) -> list[str]:
     """まだ取れていない項目（公開データの項目名で返す）。"""
+    if not reached(extract):
+        return []
     return [ITEM_TO_FIELD[name] for name, item in (extract.get("items") or {}).items()
             if not item.get("found") and name in ITEM_TO_FIELD]
 
@@ -220,10 +233,17 @@ def main(argv: list[str] | None = None) -> None:
                 total += n
                 if n:
                     print(f"  {extract['municipality']:6} {field:14} 残り{n}本")
+        skipped = [e["municipality"] for _, e in pairs if not reached(e)]
+        if skipped:
+            print(f"  起点ページに到達できず対象外: {skipped}")
         print(f"\n読む対象 {total}本（上限{BUDGET}本/項目）。記録済み {len(visits)}件")
         return
 
     rows = []
+    unreached = [e["municipality"] for _, e in pairs if not reached(e)]
+    if unreached:
+        # ★黙って飛ばさない。母数から消えたことを必ず出す。
+        print(f"  起点ページに到達できず対象外: {unreached}")
     for discovery, extract in pairs:
         muni = extract["municipality"]
         results = []
