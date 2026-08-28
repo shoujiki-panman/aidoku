@@ -108,6 +108,16 @@ _BFCHAR = re.compile(r"beginbfchar(.*?)endbfchar", re.S)
 _BFRANGE = re.compile(r"beginbfrange(.*?)endbfrange", re.S)
 _HEXPAIR = re.compile(r"<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>")
 _HEXTRIPLE = re.compile(r"<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>")
+# bfrange の配列形式。連番ではなく1つずつ並べる書き方。
+_BFRANGE_ARRAY = re.compile(r"<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>\s*\[([^\]]*)\]")
+# 文字を出す命令。ここに現れる <16進> と (…) だけが本文。
+# ★これを見ずに <16進> を全部拾うと、色指定やIDまで本文として読む。
+_SHOW_TEXT = re.compile(
+    r"\[((?:[^\[\]\\]|\\.)*)\]\s*TJ"        # [ <hex> -250 (lit) ] TJ
+    r"|<([0-9A-Fa-f\s]+)>\s*Tj"             # <hex> Tj
+    r"|\(((?:[^()\\]|\\.)*)\)\s*(?:Tj|')",  # (lit) Tj
+)
+_IN_ARRAY = re.compile(r"<([0-9A-Fa-f\s]+)>|\(((?:[^()\\]|\\.)*)\)")
 # 1つのコードに複数の文字が対応することがある（合字）。4桁ずつ切って全部つなぐ。
 MAX_CMAP_ENTRIES = 20000
 
@@ -135,14 +145,30 @@ def build_cmap(streams: list[bytes]) -> dict[int, str]:
             for code, value in _HEXPAIR.findall(block):
                 cmap[int(code, 16)] = _to_text(value)
         for block in _BFRANGE.findall(text):
-            for lo, hi, value in _HEXTRIPLE.findall(block):
-                start, end = int(lo, 16), int(hi, 16)
-                if end - start > MAX_CMAP_ENTRIES:
-                    continue                               # 壊れた範囲。広げない
-                base = int(value, 16)
-                for offset in range(end - start + 1):
-                    cmap[start + offset] = _to_text(f"{base + offset:04X}")
+            _read_ranges(block, cmap)
     return cmap
+
+
+def _read_ranges(block: str, cmap: dict[int, str]) -> None:
+    """bfrange を読む。**2つの形がある。**
+
+    ★配列形式 `<0509> <050A> [<578B> <5951>]` を扱えておらず、
+      実物（品川区の様式）で文字が落ちていた。連番形式だけ見ていた。
+    """
+    for lo, hi, arr in _BFRANGE_ARRAY.findall(block):
+        start = int(lo, 16)
+        values = re.findall(r"<([0-9A-Fa-f]+)>", arr)
+        if len(values) != int(hi, 16) - start + 1:
+            continue                                       # 数が合わない。触らない
+        for offset, value in enumerate(values):
+            cmap[start + offset] = _to_text(value)
+    for lo, hi, value in _HEXTRIPLE.findall(block):
+        start, end = int(lo, 16), int(hi, 16)
+        if end - start > MAX_CMAP_ENTRIES:
+            continue                                       # 壊れた範囲。広げない
+        base = int(value, 16)
+        for offset in range(end - start + 1):
+            cmap.setdefault(start + offset, _to_text(f"{base + offset:04X}"))
 
 
 # 埋め込みフォント・画像の先頭バイト。本文ストリームがこれで始まることはない。
@@ -174,14 +200,129 @@ def is_content_stream(stream: bytes) -> bool:
     return not stream.startswith(BINARY_MAGIC)
 
 
-def _decode_hex_run(hex_value: str, cmap: dict[int, str]) -> str:
-    """`<0AB1 0AB2>` のような2バイトコード列を、対応表で文字に直す。"""
+def _decode_hex_run(hex_value: str, *maps: dict[int, str]) -> str:
+    """`<0AB1 0AB2>` のような2バイトコード列を、対応表で文字に直す。
+
+    ★表は**渡された順に**引く。いま使っているフォントの表を先に、
+      見つからなければ文書全体の表に落とす。世の中の定石と同じ順序
+      （ToUnicode → CIDFontのCMap → 外部CMap）の考え方。
+
+      フォント別だけにしたら、実物（北区の様式）が 0% → 6.4% と**悪化した**。
+      全体の表だけにすると中野区が 7.5% 落ちる。**両方を順に引くのが正しい。**
+    """
     clean = re.sub(r"\s", "", hex_value)
+    if len(clean) % 2:
+        return ""
+    if not any(maps):
+        return _decode_single_byte(clean)
     if len(clean) % 4:                                     # 2バイト固定でないものは触らない
         return ""
     out = []
     for i in range(0, len(clean), 4):
-        out.append(cmap.get(int(clean[i:i + 4], 16), ""))
+        code = int(clean[i:i + 4], 16)
+        out.append(next((m[code] for m in maps if code in m), ""))
+    return "".join(out)
+
+
+def _decode_single_byte(clean: str) -> str:
+    """対応表を持たないフォント（1バイト）の文字列。
+
+    ★2バイト前提で読んでいたせいで、中野区の様式で `<2020…>` が全部落ちた。
+      これは CID の1コードではなく **空白2文字**だった。114文字が欠けていた。
+      対応表が無いフォントは、そのまま1バイトずつ文字として読む。
+    """
+    return bytes.fromhex(clean).decode("latin-1", "ignore")
+
+
+_OBJ = re.compile(rb"(\d+)\s+0\s+obj\b(.*?)endobj", re.S)
+_FONT_RES = re.compile(r"/Font\s*<<(.*?)>>", re.S)
+_FONT_REF = re.compile(r"/(\w+)\s+(\d+)\s+0\s+R")
+_TOUNICODE = re.compile(r"/ToUnicode\s+(\d+)\s+0\s+R")
+# `/F1 10.5 Tf` — ここで使うフォントが切り替わる。
+_TF = re.compile(r"/(\w+)\s+[\d.]+\s+Tf")
+
+
+def _object_streams(data: bytes) -> dict[int, bytes]:
+    """オブジェクト番号 → その中のストリーム。番号で引けないと参照を辿れない。"""
+    out: dict[int, bytes] = {}
+    for match in _OBJ.finditer(data):
+        body = match.group(2)
+        inner = _PDF_STREAM.search(body)
+        if not inner:
+            continue
+        raw = inner.group(1)
+        try:
+            out[int(match.group(1))] = zlib.decompress(raw)
+        except zlib.error:
+            out[int(match.group(1))] = raw
+    return out
+
+
+def font_cmaps(data: bytes) -> dict[str, dict[int, str]]:
+    """フォント名（`F1` 等）ごとの対応表。
+
+    ★2つのフォントで**コードが重なる**。1つの表に混ぜると後勝ちで上書きされ、
+      実物（中野区の委任状）で 7.5% の文字が落ちた。
+      世の中の定石どおり、フォントごとに持つ。
+    """
+    objects = _object_streams(data)
+    text = data.decode("latin-1", "ignore")
+    out: dict[str, dict[int, str]] = {}
+    for block in _FONT_RES.findall(text):
+        for name, num in _FONT_REF.findall(block):
+            body = _object_body(text, int(num))
+            found = _TOUNICODE.search(body)
+            if not found:
+                continue
+            stream = objects.get(int(found.group(1)))
+            if stream:
+                out[name] = build_cmap([stream])
+    return out
+
+
+def _object_body(text: str, number: int) -> str:
+    match = re.search(rf"\b{number}\s+0\s+obj\b(.*?)endobj", text, re.S)
+    return match.group(1) if match else ""
+
+
+def _literal(raw: str) -> str:
+    """`(…)` の中身。PDFのエスケープを戻す。"""
+    return re.sub(r"\\([nrtbf()\\])",
+                  lambda m: {"n": "\n", "r": "\r", "t": "\t",
+                             "b": "", "f": ""}.get(m.group(1), m.group(1)), raw)
+
+
+def _maps(active, cmap):
+    """引く順。対応表を持たないフォントには何も渡さない（1バイトとして読ませる）。"""
+    return (active, cmap) if active is not None else ()
+
+
+def show_text(page: str, cmap: dict[int, str],
+              per_font: dict[str, dict[int, str]] | None = None) -> str:
+    """本文を出す命令からだけ文字を集める。
+
+    ★以前は `<16進>` を無条件に拾っていて、色指定やIDまで本文として読んでいた。
+      文字を出す命令は `Tj` / `TJ` / `'` の3つだけ。そこに現れるものだけを取る。
+
+    `per_font` があれば `Tf` で表を切り替える。無ければ全体の表を使う。
+    """
+    out = []
+    active = cmap
+    for match in re.finditer(f"{_TF.pattern}|{_SHOW_TEXT.pattern}", page):
+        font, array, hex_run, literal = match.groups()
+        if font:
+            active = (per_font or {}).get(font)
+            # ★対応表を持たないフォントは1バイトとして読む。空の辞書を渡すと
+            #   「2バイトで引いて見つからない」になり、空白がまるごと落ちる。
+            continue
+        if array:
+            for in_hex, in_lit in _IN_ARRAY.findall(array):
+                out.append(_decode_hex_run(in_hex, *_maps(active, cmap)) if in_hex
+                           else _literal(in_lit))
+        elif hex_run:
+            out.append(_decode_hex_run(hex_run, *_maps(active, cmap)))
+        elif literal:
+            out.append(_literal(literal))
     return "".join(out)
 
 
@@ -191,18 +332,13 @@ def read_pdf(data: bytes) -> DocText:
     if not streams:
         return DocText("pdf", "", False, "ストリームが無い（暗号化か壊れている）")
     cmap = build_cmap(streams)
+    per_font = font_cmaps(data)
     content = [s for s in streams if is_content_stream(s)]
     if not content:
         return DocText("pdf", "", False, "本文のストリームが無い（画像PDFかアウトライン化）")
     chunks = []
     for stream in content:
-        page = stream.decode("latin-1", "ignore")
-        # ★CIDフォントの本文は `(…)` ではなく `<16進>` で入る。
-        #   前は `(…)` しか見ておらず、日本語の様式がまるごと落ちていた。
-        for match in _PDF_HEX.finditer(page):
-            chunks.append(_decode_hex_run(match.group(1), cmap))
-        for match in _PDF_TEXT.finditer(stream):
-            chunks.append(match.group(0)[1:-1].decode("utf-8", "replace"))
+        chunks.append(show_text(stream.decode("latin-1", "ignore"), cmap, per_font))
     text = _clean("".join(chunks))
     # ★日本語PDFの多くは CID フォントで、( ) の中身がバイト列のまま出る。
     #   文字化けを本文として返すと、判定側が意味のない文字列を読むことになる。
