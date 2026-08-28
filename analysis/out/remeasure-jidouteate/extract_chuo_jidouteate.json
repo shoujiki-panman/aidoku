@@ -1,0 +1,60 @@
+{
+  "municipality": "中央区",
+  "municipality_id": "chuo",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html",
+    "hops": 2,
+    "link_text": "児童手当",
+    "has_jsonld": false,
+    "text_len": 1320,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/202409jidouteate.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "児童手当の申請書、各種届出書については、オンライン申請、郵送、窓口のいずれかの方法で申請できます。",
+  "online_clarity_pages": [
+    "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html",
+    "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/202409jidouteate.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "窓口申請の場合は本人確認書類と申請者・配偶者・対象児童のマイナンバーが分かるものが必要。手続きには児童手当認定請求書（PDF）の提出が必要で、代理人が別世帯から手続きする場合は委任状も必要。",
+      "evidence": "手続きをする方の本人確認ができるもの／児童手当の申請者（受給中の場合は受給者）、配偶者、対象児童のマイナンバーが分かるもの",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "オンライン申請・郵送・窓口のいずれの方法でも申請可能。窓口は区役所6階子ども子育て支援課子育て給付係、日本橋・月島・晴海の各特別出張所地域活動係。",
+      "evidence": "児童手当の申請書、各種届出書については、オンライン申請、郵送、窓口のいずれかの方法で申請できます。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "手当は申請日の翌月分から支給されるため異動日と同月中の申請が原則。ただし異動日が月末に近い場合は、異動日の翌日から15日以内に申請すれば、申請が翌月になっても異動日の翌月分から支給される。",
+      "evidence": "異動日の翌日から15日以内に申請すれば、申請が翌月になっても異動日の翌月分から支給します",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "元URL（jidouteate202206.html）は本文がなく別ページへのリダイレクト案内のみで、実質的な情報はリンク先の202409jidouteate.htmlに集約されている。手数料についてはリンク先ページにも一切記載がなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

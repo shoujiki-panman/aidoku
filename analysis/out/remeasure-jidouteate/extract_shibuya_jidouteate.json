@@ -1,0 +1,57 @@
+{
+  "municipality": "渋谷区",
+  "municipality_id": "shibuya",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_t.html",
+    "hops": 2,
+    "link_text": "児童手当",
+    "has_jsonld": true,
+    "text_len": 6003,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "オンライン申請 児童手当の認定請求（外部サイト）から申請ができます。",
+  "online_clarity_pages": [
+    "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_t.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "（同居の場合）(1)児童手当 認定請求書、(2)請求者名義の口座情報、(3)該当する健康保険に加入している場合は健康保険証などのコピー。別居の場合はこれに加えて(4)別居監護申立書が必要",
+      "evidence": "（1）児童手当 認定請求書（PDF 183KB）（2）請求者名義の口座情報（3）請求者の健康保険証などのコピー【該当の健康保険に加入されている人のみ】",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口（区役所4階子ども政策課子育て給付係）、郵送、オンライン申請（外部サイトGrafferでのスマート申請）のいずれも可能。フォーム・電話予約・FAX・メール・コンビニ・LINE・マイナンバー・マイポータルは不可",
+      "evidence": "申請場所 区役所4階子ども政策課子育て給付係／窓口 利用可能／郵送 利用可能／スマート申請 利用可能",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "出生・前住所の転出予定日の翌日から15日以内に申請",
+      "evidence": "出生・前住所の転出予定日の翌日から15日以内に申請してください。（申請書の提出が遅れると遅れた分の手当を受給できない場合がありますのでご注意ください）",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "手続き情報がアコーディオン形式の長い1ページに集約されており、必要書類・申請方法・期限は本文に明記されている一方、手数料への言及はページ内のどこにも見当たらない（児童手当は制度上無料と推測できるが、ページに記載がないためfound: falseとした）。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

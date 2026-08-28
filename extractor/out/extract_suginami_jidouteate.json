@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 5684,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 231
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:23:36+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
-  "online_clarity_evidence": "窓口および郵送申請のほかに区電子申請サービス「LoGoフォーム」（ロゴフォーム）【マイナンバーカード必須】での電子申請にて手続きすることもできます。",
+  "online_clarity_evidence": "窓口および郵送申請のほかに区電子申請サービス「LoGoフォーム」での電子申請にて手続きすることもできます。",
   "online_clarity_pages": [
     "https://www.city.suginami.tokyo.jp/s053/1142.html"
+  ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "杉並区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "児童手当 認定請求書／請求者名義の金融機関口座（普通口座）がわかるもの（公金受取口座利用時は不要）／該当者のみ：3歳未満の子を養育し国家・地方公務員共済組合員証や日本郵政共済組合員証を持つ場合は健康保険情報がわかるもの（資格確認書の写し等）／国内の別住所に住む児童の場合は「監護・生計同一申立書」／大学生年代の子を養育している場合（3人以上養育時のみ）は「監護相当・生計費の負担についての確認書」",
+        "evidence": "児童手当 認定請求書／請求者名義の金融機関口座（金融機関名、支店名、口座番号、口座名義）がわかるもの／国内の別住所に住む児童の手当を請求する場合は、「監護・生計同一申立書」の添付が必要です",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 39,
+          "note": "連続39文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "児童手当 認定請求書／請求者名義の金融機関口座（普通口座）がわかるもの（公金受取口座利用時は不要）／該当者のみ：3歳未満の子を養育し国家・地方公務員共済組合員証や日本郵政共済組合員証を持つ場合は健康保険情報がわかるもの（資格確認書の写し等）／国内の別住所に住む児童の場合は「監護・生計同一申立書」／大学生年代の子を養育している場合（3人以上養育時のみ）は「監護相当・生計費の負担についての確認書」",
+            "evidence": "児童手当 認定請求書／請求者名義の金融機関口座（金融機関名、支店名、口座番号、口座名義）がわかるもの／国内の別住所に住む児童の手当を請求する場合は、「監護・生計同一申立書」の添付が必要です",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 39,
+              "note": "連続39文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "必要書類は「申請（認定請求）方法と必要書類」内の「申請に必要なもの」に、初回請求と額改定請求で別々の箇条書きとしてまとまっており、該当者限定の書類（健康保険情報・確認書等）も同じ箇条書き内に条件付きで明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "必要書類は「申請（認定請求）方法と必要書類」内の「申請に必要なもの」に、初回請求と額改定請求で別々の箇条書きとしてまとまっており、該当者限定の書類（健康保険情報・確認書等）も同じ箇条書き内に条件付きで明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "杉並区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口・郵送に加え、マイナンバーカード必須の電子申請（LoGoフォーム）でオンライン完結が可能",
+        "evidence": "窓口および郵送申請のほかに区電子申請サービス「LoGoフォーム」（ロゴフォーム）【マイナンバーカード必須】での電子申請にて手続きすることもできます。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 74,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口・郵送に加え、マイナンバーカード必須の電子申請（LoGoフォーム）でオンライン完結が可能",
+            "evidence": "窓口および郵送申請のほかに区電子申請サービス「LoGoフォーム」（ロゴフォーム）【マイナンバーカード必須】での電子申請にて手続きすることもできます。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 74,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文の「申請（認定請求）方法と必要書類」内、受付窓口の直後に「電子申請（LoGoフォーム）」という独立した見出しがあり、そこにオンライン可否が明記されていた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文の「申請（認定請求）方法と必要書類」内、受付窓口の直後に「電子申請（LoGoフォーム）」という独立した見出しがあり、そこにオンライン可否が明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "杉並区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "出生日または（転入の場合）前住所地で届け出た転出予定日の翌日から数えて15日以内（15日目が土日祝・年末年始に当たる場合は次の平日）",
+        "evidence": "翌月になってからの請求であっても、出生日・転出予定日の翌日から数えて15日以内であれば、同月内の請求と同じく翌月分から支給されます。15日目が土曜日、日曜日、祝日、年末年始（12月29日～1月3日）に当たる場合は、次の平日が期限となります。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 120,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "出生日または（転入の場合）前住所地で届け出た転出予定日の翌日から数えて15日以内（15日目が土日祝・年末年始に当たる場合は次の平日）",
+            "evidence": "翌月になってからの請求であっても、出生日・転出予定日の翌日から数えて15日以内であれば、同月内の請求と同じく翌月分から支給されます。15日目が土曜日、日曜日、祝日、年末年始（12月29日～1月3日）に当たる場合は、次の平日が期限となります。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 120,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文の「請求にあたってご注意ください」内「支給開始月について」に起算点（出生日・転出予定日の翌日）と15日以内という期限が明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文の「請求にあたってご注意ください」内「支給開始月について」に起算点（出生日・転出予定日の翌日）と15日以内という期限が明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "杉並区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手続き自体の説明・必要書類・支給額・各種届出は詳細に書かれているが、申請にかかる手数料についての記載（「無料」等の明記を含む）は本文中に見当たらず、リンク一覧にも手数料を説明していそうなページはない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "手続き自体の説明・必要書類・支給額・各種届出は詳細に書かれているが、申請にかかる手数料についての記載（「無料」等の明記を含む）は本文中に見当たらず、リンク一覧にも手数料を説明していそうなページはない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "児童手当 認定請求書、請求者名義の金融機関口座（普通口座）がわかるもの、（3歳未満で公務員共済等に加入の場合）請求者の健康保険情報がわかるもの、（児童が別居の場合）監護・生計同一申立書、（大学生年代の子を養育する場合）監護相当・生計費の負担についての確認書",
-      "evidence": "請求者名義の金融機関口座（金融機関名、支店名、口座番号、口座名義）がわかるもの",
+      "value": "児童手当 認定請求書／請求者名義の金融機関口座（普通口座）がわかるもの（公金受取口座利用時は不要）／該当者のみ：3歳未満の子を養育し国家・地方公務員共済組合員証や日本郵政共済組合員証を持つ場合は健康保険情報がわかるもの（資格確認書の写し等）／国内の別住所に住む児童の場合は「監護・生計同一申立書」／大学生年代の子を養育している場合（3人以上養育時のみ）は「監護相当・生計費の負担についての確認書」",
+      "evidence": "児童手当 認定請求書／請求者名義の金融機関口座（金融機関名、支店名、口座番号、口座名義）がわかるもの／国内の別住所に住む児童の手当を請求する場合は、「監護・生計同一申立書」の添付が必要です",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 39,
+        "note": "連続39文字だけ一致。引用全体は確認できない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口（子ども家庭部管理課子ども医療・手当係、区民課区民係、区民事務所）で申請可。郵送申請も可（子ども家庭部管理課宛）。電子申請サービス「LoGoフォーム」（マイナンバーカード必須）でオンライン完結も可能",
+      "value": "窓口・郵送に加え、マイナンバーカード必須の電子申請（LoGoフォーム）でオンライン完結が可能",
       "evidence": "窓口および郵送申請のほかに区電子申請サービス「LoGoフォーム」（ロゴフォーム）【マイナンバーカード必須】での電子申請にて手続きすることもできます。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 74,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
-      "value": "手当は請求のあった月の翌月分から支給。ただし出生日・転出予定日の翌日から数えて15日以内の請求であれば、同月内の請求と同じく翌月分から支給される（15日目が土日祝・年末年始の場合は次の平日が期限）。期限を過ぎると支給されない月が発生する",
-      "evidence": "出生日・転出予定日の翌日から数えて15日以内であれば、同月内の請求と同じく翌月分から支給されます。",
+      "value": "出生日または（転入の場合）前住所地で届け出た転出予定日の翌日から数えて15日以内（15日目が土日祝・年末年始に当たる場合は次の平日）",
+      "evidence": "翌月になってからの請求であっても、出生日・転出予定日の翌日から数えて15日以内であれば、同月内の請求と同じく翌月分から支給されます。15日目が土曜日、日曜日、祝日、年末年始（12月29日～1月3日）に当たる場合は、次の平日が期限となります。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 120,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "このページは本文のみで必要書類・窓口・電子申請・期限（支給開始条件）まで具体的に記載されており読みやすい。ただし申請にかかる手数料についてはページ内のどこにも言及がなく、無料と明記もされていない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "必要書類は「申請（認定請求）方法と必要書類」内の「申請に必要なもの」に、初回請求と額改定請求で別々の箇条書きとしてまとまっており、該当者限定の書類（健康保険情報・確認書等）も同じ箇条書き内に条件付きで明記されている。\n本文の「申請（認定請求）方法と必要書類」内、受付窓口の直後に「電子申請（LoGoフォーム）」という独立した見出しがあり、そこにオンライン可否が明記されていた。\n本文の「請求にあたってご注意ください」内「支給開始月について」に起算点（出生日・転出予定日の翌日）と15日以内という期限が明記されている。\n手続き自体の説明・必要書類・支給額・各種届出は詳細に書かれているが、申請にかかる手数料についての記載（「無料」等の明記を含む）は本文中に見当たらず、リンク一覧にも手数料を説明していそうなページはない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.suginami.tokyo.jp/s053/1142.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

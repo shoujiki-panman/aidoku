@@ -4,59 +4,418 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "page": {
-    "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
-    "hops": 2,
+    "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+    "hops": 3,
     "link_text": "児童手当・助成",
     "has_jsonld": false,
-    "text_len": 1500,
+    "text_len": 775,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T13:52:17+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [
-    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
-    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/tetsuduki.html"
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
   ],
-  "online_clarity": "明記",
-  "online_clarity_evidence": "子ども総合窓口で受け付けている以下の手続きについて、郵送や電子申請等で申請可能です。",
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
   "online_clarity_pages": [
-    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
-    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
-    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/tetsuduki.html"
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+  ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "中野区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "PDF内のみ",
+        "failure_type": "not_retrieved",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+          ],
+          "page_notes": "このページは「児童手当・助成」カテゴリの一覧ページで、申請に必要な持ち物についての本文記述は無い。「子どもの手当・給付金」等の下位ページに詳細がありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "PDF内のみ",
+            "failure_type": "not_retrieved",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "対象ページ・リンク先2ページとも本文に必要書類の一覧は無く、「児童手当（国制度）（児童手当チラシ（PDF形式：550KB）をご覧ください。）」とPDF添付へ送客している。HTML本文にある唯一の関連記述は『各手当の手続きをする際にはマイナンバーの記載が必要』『窓口にお越しいただく方の本人確認ができるもののほか、請求者及び配偶者等のマイナンバーを確認できるもの（個人カード、通知カードなど）をお持ちください』だが、これは児童手当・児童扶養手当・児童育成手当・特別児童扶養手当など複数手当に共通する注意書きであり、児童手当申請に固有の必要書類（該当者だけに必要なものを含む）を網羅した記載ではないため、この1項目の答えとしては採用しなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+      ],
+      "page_notes": "対象ページ・リンク先2ページとも本文に必要書類の一覧は無く、「児童手当（国制度）（児童手当チラシ（PDF形式：550KB）をご覧ください。）」とPDF添付へ送客している。HTML本文にある唯一の関連記述は『各手当の手続きをする際にはマイナンバーの記載が必要』『窓口にお越しいただく方の本人確認ができるもののほか、請求者及び配偶者等のマイナンバーを確認できるもの（個人カード、通知カードなど）をお持ちください』だが、これは児童手当・児童扶養手当・児童育成手当・特別児童扶養手当など複数手当に共通する注意書きであり、児童手当申請に固有の必要書類（該当者だけに必要なものを含む）を網羅した記載ではないため、この1項目の答えとしては採用しなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "中野区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "曖昧",
+        "failure_type": "fact_ambiguous",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+          ],
+          "page_notes": "このページは「児童手当・助成」カテゴリの一覧ページで、申請方法（窓口/オンライン）についての記述は本文中になく、個別の手当ページへのリンク一覧のみが提示されている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "曖昧",
+            "failure_type": "fact_ambiguous",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「子どもの手当・給付金」ページには児童手当を含む複数手当共通の『手続きの際には、窓口にお越しいただく方の本人確認ができるもの…をお持ちください』という記述があり窓口来庁を前提にした書きぶりだが、同時に上位の『児童手当・助成』ページのサブナビには『窓口に来庁されなくてもできる手続き（子ども総合窓口）』という項目名だけが見え、URLは提供されておらずこの1階層内では中身を確認できなかった。児童手当申請自体がオンラインで完結できるかを一意に断定できる記述は見当たらない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+      ],
+      "page_notes": "「子どもの手当・給付金」ページには児童手当を含む複数手当共通の『手続きの際には、窓口にお越しいただく方の本人確認ができるもの…をお持ちください』という記述があり窓口来庁を前提にした書きぶりだが、同時に上位の『児童手当・助成』ページのサブナビには『窓口に来庁されなくてもできる手続き（子ども総合窓口）』という項目名だけが見え、URLは提供されておらずこの1階層内では中身を確認できなかった。児童手当申請自体がオンラインで完結できるかを一意に断定できる記述は見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "中野区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "リンク先にあり",
+        "failure_type": "not_retrieved",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html"
+          ],
+          "page_notes": "このページは「児童手当・助成」カテゴリの一覧(目次)ページで、申請期限などの手続き詳細は本文になく、下位の「子どもの手当・給付金」ページへ誘導する構成になっている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "案内先の「子どもの手当・給付金」ページには対象要件・現況届・転出時の15日特例は書かれているが、新規申請そのものの期限（起算点つき）は本文になく、「児童手当のご案内（PDF形式：550KB）」等の添付にありそうだが未開封。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html"
+      ],
+      "page_notes": "案内先の「子どもの手当・給付金」ページには対象要件・現況届・転出時の15日特例は書かれているが、新規申請そのものの期限（起算点つき）は本文になく、「児童手当のご案内（PDF形式：550KB）」等の添付にありそうだが未開封。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "中野区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+          ],
+          "page_notes": "このページは「児童手当・助成」カテゴリの一覧（ハブ）ページで、個別の手続き詳細（申請方法・手数料など）は含まれておらず、下位の「子どもの手当・給付金」等のページに委ねられている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申請ページ本文および目的別「児童手当・助成」「子どもの手当・給付金」の2つのリンク先ページを確認したが、手数料・無料についての明記は見当たらなかった。関連PDF（児童手当のご案内等）に記載がある可能性はあるが、本文中には手数料に関する記述がない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+      ],
+      "page_notes": "申請ページ本文および目的別「児童手当・助成」「子どもの手当・給付金」の2つのリンク先ページを確認したが、手数料・無料についての明記は見当たらなかった。関連PDF（児童手当のご案内等）に記載がある可能性はあるが、本文中には手数料に関する記述がない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
-      "found": true,
-      "value": "個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）、申請者の加入保険が確認できるもの（3歳未満の児童を養育し各種共済組合員の場合のみ必要）、請求者名義の振込口座（普通預金）が確認できるもの（郵送申請時は認定請求書等の様式も必要）",
-      "evidence": "個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）",
-      "source": "linked_page",
-      "failure_reason": null
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "PDF内のみ",
+      "failure_type": "not_retrieved",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "窓口オンライン可否": {
-      "found": true,
-      "value": "電子申請（ぴったりサービス）・郵送・窓口（子ども総合窓口や地域事務所）のいずれでも申請可能",
-      "evidence": "児童手当 認定請求書 ぴったりサービス（外部サイト）からご申請ください。",
-      "source": "linked_page",
-      "failure_reason": null
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "曖昧",
+      "failure_type": "fact_ambiguous",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "期限": {
-      "found": true,
-      "value": "出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）",
-      "evidence": "出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）に手続きをしてください。",
-      "source": "linked_page",
-      "failure_reason": null
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "リンク先にあり",
+      "failure_type": "not_retrieved",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "トップの目的別ページ（index.html）自体には手続きの詳細が無く、1階層先の「児童手当」ページに必要書類・期限・オンライン可否がまとまって記載されていた。手数料については両ページとも一切言及がなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "対象ページ・リンク先2ページとも本文に必要書類の一覧は無く、「児童手当（国制度）（児童手当チラシ（PDF形式：550KB）をご覧ください。）」とPDF添付へ送客している。HTML本文にある唯一の関連記述は『各手当の手続きをする際にはマイナンバーの記載が必要』『窓口にお越しいただく方の本人確認ができるもののほか、請求者及び配偶者等のマイナンバーを確認できるもの（個人カード、通知カードなど）をお持ちください』だが、これは児童手当・児童扶養手当・児童育成手当・特別児童扶養手当など複数手当に共通する注意書きであり、児童手当申請に固有の必要書類（該当者だけに必要なものを含む）を網羅した記載ではないため、この1項目の答えとしては採用しなかった。\n「子どもの手当・給付金」ページには児童手当を含む複数手当共通の『手続きの際には、窓口にお越しいただく方の本人確認ができるもの…をお持ちください』という記述があり窓口来庁を前提にした書きぶりだが、同時に上位の『児童手当・助成』ページのサブナビには『窓口に来庁されなくてもできる手続き（子ども総合窓口）』という項目名だけが見え、URLは提供されておらずこの1階層内では中身を確認できなかった。児童手当申請自体がオンラインで完結できるかを一意に断定できる記述は見当たらない。\n案内先の「子どもの手当・給付金」ページには対象要件・現況届・転出時の15日特例は書かれているが、新規申請そのものの期限（起算点つき）は本文になく、「児童手当のご案内（PDF形式：550KB）」等の添付にありそうだが未開封。\n申請ページ本文および目的別「児童手当・助成」「子どもの手当・給付金」の2つのリンク先ページを確認したが、手数料・無料についての明記は見当たらなかった。関連PDF（児童手当のご案内等）に記載がある可能性はあるが、本文中には手数料に関する記述がない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+      "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+      "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 0,
+    "verified": 0,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 4
   }
 }

@@ -1,0 +1,62 @@
+{
+  "municipality": "足立区",
+  "municipality_id": "adachi",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/teate/jidouteate/index.html",
+    "hops": 3,
+    "link_text": "児童手当",
+    "has_jsonld": false,
+    "text_len": 943,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+    "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+  ],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/teate/jidouteate/index.html",
+    "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+    "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "認定請求書（新規申請の場合は児童手当・子ども医療費助成制度認定請求書）、申請者（保護者）名義の普通預金通帳、本人確認書類。別居監護の場合は別居監護申立書、18歳年度末〜22歳年度末の子を養育する場合は監護相当・生計費の負担についての確認書も必要。",
+      "evidence": "本人確認書類 １点で確認できるもの：運転免許証、マイナンバーカード、顔写真付きの身分証明書等",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "オンライン申請の案内はなし。郵送（推奨）または窓口（親子支援課児童手当係〈区役所中央館3階〉、足立福祉事務所各福祉課、転入時のみ区民事務所）で受付。",
+      "evidence": "窓口混雑緩和のため、郵送手続きを推奨しております。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "出生・転入の同月内に申請するのが原則。月の後半に出生・転入した場合は、出生日・転入日の翌日から15日以内に申請すれば出生・転入月の翌月分から支給される（15日特例）。",
+      "evidence": "月の後半に出生・転入した場合は、出生日または転入日（前住所地の転出予定日）の翌日から15日以内に申請すれば、出生・転入月の翌月分から手当が支給されます(15日特例)。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "トップページ（index.html）自体には手続きの詳細は無く、各見出しリンクに情報が分散している。必要書類・窓口・期限は「児童手当のご案内」ページに集約されているが、手数料についてはこの2つのリンク先ページのどこにも記載が見当たらない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

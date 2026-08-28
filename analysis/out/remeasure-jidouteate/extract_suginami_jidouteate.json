@@ -1,0 +1,57 @@
+{
+  "municipality": "杉並区",
+  "municipality_id": "suginami",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.suginami.tokyo.jp/s053/1142.html",
+    "hops": 3,
+    "link_text": "児童手当",
+    "has_jsonld": false,
+    "text_len": 5684,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "窓口および郵送申請のほかに区電子申請サービス「LoGoフォーム」（ロゴフォーム）【マイナンバーカード必須】での電子申請にて手続きすることもできます。",
+  "online_clarity_pages": [
+    "https://www.city.suginami.tokyo.jp/s053/1142.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "児童手当 認定請求書、請求者名義の金融機関口座（普通口座）がわかるもの、（3歳未満で公務員共済等に加入の場合）請求者の健康保険情報がわかるもの、（児童が別居の場合）監護・生計同一申立書、（大学生年代の子を養育する場合）監護相当・生計費の負担についての確認書",
+      "evidence": "請求者名義の金融機関口座（金融機関名、支店名、口座番号、口座名義）がわかるもの",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口（子ども家庭部管理課子ども医療・手当係、区民課区民係、区民事務所）で申請可。郵送申請も可（子ども家庭部管理課宛）。電子申請サービス「LoGoフォーム」（マイナンバーカード必須）でオンライン完結も可能",
+      "evidence": "窓口および郵送申請のほかに区電子申請サービス「LoGoフォーム」（ロゴフォーム）【マイナンバーカード必須】での電子申請にて手続きすることもできます。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "手当は請求のあった月の翌月分から支給。ただし出生日・転出予定日の翌日から数えて15日以内の請求であれば、同月内の請求と同じく翌月分から支給される（15日目が土日祝・年末年始の場合は次の平日が期限）。期限を過ぎると支給されない月が発生する",
+      "evidence": "出生日・転出予定日の翌日から数えて15日以内であれば、同月内の請求と同じく翌月分から支給されます。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページは本文のみで必要書類・窓口・電子申請・期限（支給開始条件）まで具体的に記載されており読みやすい。ただし申請にかかる手数料についてはページ内のどこにも言及がなく、無料と明記もされていない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

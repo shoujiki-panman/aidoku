@@ -1,0 +1,57 @@
+{
+  "municipality": "荒川区",
+  "municipality_id": "arakawa",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
+    "hops": 3,
+    "link_text": "児童手当",
+    "has_jsonld": false,
+    "text_len": 4343,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "窓口、郵送又はぴったりサービスによる電子申請が可能です。",
+  "online_clarity_pages": [
+    "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)／申請者本人が加入している健康保険がわかるもの／申請者本人及び配偶者の個人番号(マイナンバー)が確認できるもの／申請者本人及び配偶者の所得証明書(該当年1月1日に荒川区に住民登録がなかった方のみ)",
+      "evidence": "申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口(区役所2階16番窓口)、郵送、ぴったりサービスによる電子申請のいずれかで申請可能。電子申請にはマイナンバーカードによる電子署名が必要。",
+      "evidence": "窓口、郵送又はぴったりサービスによる電子申請が可能です。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "出生日または前住所地の転出予定日の同月内に申請。月後半の場合は、その翌日から数えて15日以内(15日目が区役所閉庁日の場合はその翌開庁日)に申請すれば同月内申請の扱いになる。それを過ぎると申請月の翌月分からの支給となり遡及不可。",
+      "evidence": "出生日または前住所地の転出予定日が月の後半の場合は、その翌日から数えて15日以内（15日目が区役所閉庁日の場合はその翌開庁日）に申請すれば、同月内に申請した取扱いになります。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "必要書類・申請方法・期限はいずれもHTML本文のQ&Aや箇条書きで明記されているが、手数料については本文中に一切言及がなく、無料か有料かの記載自体が存在しない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

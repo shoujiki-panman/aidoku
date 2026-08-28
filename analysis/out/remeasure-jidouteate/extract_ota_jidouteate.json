@@ -1,0 +1,60 @@
+{
+  "municipality": "大田区",
+  "municipality_id": "ota",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html",
+    "hops": 3,
+    "link_text": "児童手当（電子申請・郵送申請が可能です）",
+    "has_jsonld": false,
+    "text_len": 6369,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.ota.tokyo.jp/faq/bunya/kosodate/jidouteate.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "子育ち支援課子育ち支援担当の窓口（区役所3階24番）、郵送または電子申請で申請してください。",
+  "online_clarity_pages": [
+    "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html",
+    "https://www.city.ota.tokyo.jp/faq/bunya/kosodate/jidouteate.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "請求者名義の普通預金口座のわかるもの（公金受取口座利用の場合は不要）。請求者が児童と別居している場合は「児童手当別居監護申立書」も必要。個々の状況により他の書類を求められる場合あり。",
+      "evidence": "（1）請求者名義の普通預金口座のわかるもの（2）児童手当別居監護申立書 請求者がお子様と別居している場合に必要です。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "子育ち支援課子育ち支援担当の窓口（区役所3階24番）、郵送、または電子申請（マイナンバーカード必須）で申請可能。オンラインのみで完結できる（電子申請）。",
+      "evidence": "子育ち支援課子育ち支援担当 の窓口（区役所3階24番）、郵送または電子申請で申請してください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "異動日（出生日や転入日＝前住所地の転出予定日）の翌日から15日以内に申請すれば、申請月から支給される。15日を過ぎると支給を受けられない月が発生する場合がある。",
+      "evidence": "異動日の翌日から15日以内に申請した場合は、申請月から支給されます。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "本文はかなり詳細で「4 申請方法」節に窓口・郵送・電子申請の別と必要書類、「3 支給時期等」に期限に相当する15日ルールが明記されている。ただし手数料についてはこのページにもリンク先のFAQページにも一切言及がなく、児童手当申請が有料か無料かは読み取れない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

@@ -10,15 +10,256 @@
     "has_jsonld": false,
     "text_len": 1245,
     "truncated": false,
-    "n_links": 22
+    "n_links": 34,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:23:36+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "記載なし",
   "online_clarity_evidence": "",
   "online_clarity_pages": [
     "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/azukari.html"
+  ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "台東区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページは石浜橋場こども園の預かり保育事業拡充のお知らせであり、児童手当の申請とは無関係。リンク一覧にも児童手当申請に関係するものは見当たらない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "このページは石浜橋場こども園の預かり保育事業拡充のお知らせであり、児童手当の申請とは無関係。リンク一覧にも児童手当申請に関係するものは見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "台東区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページは石浜橋場こども園の預かり保育事業拡充のお知らせで、児童手当の申請とは無関係。本文にもリンク一覧にも児童手当に関する記載は見当たらない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "このページは石浜橋場こども園の預かり保育事業拡充のお知らせで、児童手当の申請とは無関係。本文にもリンク一覧にも児童手当に関する記載は見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "台東区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページは石浜橋場こども園の預かり保育事業拡充のお知らせであり、児童手当の申請とは無関係。リンク一覧も認定こども園関連と共通ナビ（子育て・教育、暮らし・手続き等の大分類）のみで、児童手当に特化したリンクは存在しない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "このページは石浜橋場こども園の預かり保育事業拡充のお知らせであり、児童手当の申請とは無関係。リンク一覧も認定こども園関連と共通ナビ（子育て・教育、暮らし・手続き等の大分類）のみで、児童手当に特化したリンクは存在しない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "台東区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページは石浜橋場こども園の預かり保育事業拡充に関する案内で、児童手当の申請とは無関係。本文・リンク一覧のいずれにも児童手当申請に関する記載やリンクは見当たらない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "このページは石浜橋場こども園の預かり保育事業拡充に関する案内で、児童手当の申請とは無関係。本文・リンク一覧のいずれにも児童手当申請に関する記載やリンクは見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
@@ -26,32 +267,70 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "窓口オンライン可否": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "このページは石浜橋場こども園の預かり保育（拡充）に関する案内で、児童手当の申請とは無関係の内容。ページ内・リンク先のいずれにも児童手当への言及は見当たらない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "このページは石浜橋場こども園の預かり保育事業拡充のお知らせであり、児童手当の申請とは無関係。リンク一覧にも児童手当申請に関係するものは見当たらない。\nこのページは石浜橋場こども園の預かり保育事業拡充のお知らせで、児童手当の申請とは無関係。本文にもリンク一覧にも児童手当に関する記載は見当たらない。\nこのページは石浜橋場こども園の預かり保育事業拡充のお知らせであり、児童手当の申請とは無関係。リンク一覧も認定こども園関連と共通ナビ（子育て・教育、暮らし・手続き等の大分類）のみで、児童手当に特化したリンクは存在しない。\nこのページは石浜橋場こども園の預かり保育事業拡充に関する案内で、児童手当の申請とは無関係。本文・リンク一覧のいずれにも児童手当申請に関する記載やリンクは見当たらない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/azukari.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 0,
+    "verified": 0,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 4
   }
 }

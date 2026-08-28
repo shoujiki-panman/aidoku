@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 8022,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 702
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T13:25:41+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "曖昧",
-  "online_clarity_evidence": "電子申請の場合、別途、郵送での手続きが必要な場合があります。",
+  "online_clarity_evidence": "（注）電子申請の場合、別途、郵送での手続きが必要な場合があります。",
   "online_clarity_pages": [
     "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html"
+  ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "江戸川区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "基本4点：①児童手当認定（額改定）請求書 ②身元確認書類（区分Aは顔写真付き身分証明書1点、区分Bは顔写真なし身分証明書等2点） ③マイナンバー（個人番号）確認書類（マイナンバーカード等いずれか1つ） ④申請者名義の普通預金通帳またはキャッシュカード。該当者のみ：⑤養育事実の同意書（単身赴任などで児童と別居している場合、世帯主の同意が必要） ⑥監護相当・生計費の負担についての確認書（児童とその兄姉等〈18歳年度末経過後〜22歳年度末〉の合計が3人以上いる場合） ⑦その他、必要な場合は個別に連絡",
+        "evidence": "4-1.児童手当認定（額改定）請求書 4-2.身元確認書類 4-3.マイナンバー（個人番号）確認書類 4-4.申請者名義の普通預金通帳またはキャッシュカード",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 25,
+          "note": "連続25文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "基本4点：①児童手当認定（額改定）請求書 ②身元確認書類（区分Aは顔写真付き身分証明書1点、区分Bは顔写真なし身分証明書等2点） ③マイナンバー（個人番号）確認書類（マイナンバーカード等いずれか1つ） ④申請者名義の普通預金通帳またはキャッシュカード。該当者のみ：⑤養育事実の同意書（単身赴任などで児童と別居している場合、世帯主の同意が必要） ⑥監護相当・生計費の負担についての確認書（児童とその兄姉等〈18歳年度末経過後〜22歳年度末〉の合計が3人以上いる場合） ⑦その他、必要な場合は個別に連絡",
+            "evidence": "4-1.児童手当認定（額改定）請求書 4-2.身元確認書類 4-3.マイナンバー（個人番号）確認書類 4-4.申請者名義の普通預金通帳またはキャッシュカード",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 25,
+              "note": "連続25文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「4.必要書類」の見出し配下に4-1〜4-7の枝番で基本書類と条件付き書類（別居時・兄姉等がいる場合）が明確に分けて列挙されており、本文だけで完結していた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「4.必要書類」の見出し配下に4-1〜4-7の枝番で基本書類と条件付き書類（別居時・兄姉等がいる場合）が明確に分けて列挙されており、本文だけで完結していた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "江戸川区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "電子（マイナポータル）・郵送・窓口の3方法から選べ、オンライン申請で完結可能（ただし場合により別途郵送が必要）",
+        "evidence": "申請は生計中心者（児童の父または母で所得が高い方）が行います。「電子」・「郵送」・「窓口」のいずれかの方法により申請してください。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 65,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "電子（マイナポータル）・郵送・窓口の3方法から選べ、オンライン申請で完結可能（ただし場合により別途郵送が必要）",
+            "evidence": "申請は生計中心者（児童の父または母で所得が高い方）が行います。「電子」・「郵送」・「窓口」のいずれかの方法により申請してください。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 65,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「3.申請方法」の見出し下に電子・郵送・窓口の3方法が並列で明記されており、電子申請にはマイナポータルへのリンクがあるが、注記で場合により郵送が別途必要とされている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「3.申請方法」の見出し下に電子・郵送・窓口の3方法が並列で明記されており、電子申請にはマイナポータルへのリンクがあるが、注記で場合により郵送が別途必要とされている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "江戸川区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "月の後半に出生または転入した場合は、出生日の翌日から15日以内（転入の場合は前住所地の転出予定日の翌日から15日以内）に申請すれば、出生等の月に申請があったものとみなされる（15日特例）。それ以外は明確な申請期限の定めはなく、申請日の翌月が支給開始月となるため早めの申請が求められる。",
+        "evidence": "月の後半に出生または転入した場合、その日の翌日から数えて15日以内（出生は出生日の翌日から15日以内、転入は前住所地の転出予定日の翌日から15日以内）に申請した場合には、出生等の月に申請があったものとみなされます（15日特例）。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 114,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "月の後半に出生または転入した場合は、出生日の翌日から15日以内（転入の場合は前住所地の転出予定日の翌日から15日以内）に申請すれば、出生等の月に申請があったものとみなされる（15日特例）。それ以外は明確な申請期限の定めはなく、申請日の翌月が支給開始月となるため早めの申請が求められる。",
+            "evidence": "月の後半に出生または転入した場合、その日の翌日から数えて15日以内（出生は出生日の翌日から15日以内、転入は前住所地の転出予定日の翌日から15日以内）に申請した場合には、出生等の月に申請があったものとみなされます（15日特例）。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 114,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文には「絶対にこの日までに出さないと無効」という一律の申請期限は明記されておらず、代わりに「申請日の翌月が支給開始月」という遅延ペナルティ方式と、月後半の出生・転入時のみ適用される15日特例（起算点つき）が示されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文には「絶対にこの日までに出さないと無効」という一律の申請期限は明記されておらず、代わりに「申請日の翌月が支給開始月」という遅延ペナルティ方式と、月後半の出生・転入時のみ適用される15日特例（起算点つき）が示されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "江戸川区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "支給対象・支給額・申請方法・必要書類・手続きの流れは詳細に書かれているが、申請手数料についての記述は本文になく、リンク一覧にも手数料を扱っていそうなページ（FAQは制度内容の一般的なQ&Aで手数料特化ではない）は見当たらない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "支給対象・支給額・申請方法・必要書類・手続きの流れは詳細に書かれているが、申請手数料についての記述は本文になく、リンク一覧にも手数料を扱っていそうなページ（FAQは制度内容の一般的なQ&Aで手数料特化ではない）は見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "①児童手当認定（額改定）請求書 ②身元確認書類（マイナンバーカード等の区分A、または区分Bを2種類） ③マイナンバー（個人番号）確認書類 ④申請者名義の普通預金通帳またはキャッシュカード。別居監護や兄姉等がいる場合は追加で「養育事実の同意書」「監護相当・生計費の負担についての確認書」が必要",
+      "value": "基本4点：①児童手当認定（額改定）請求書 ②身元確認書類（区分Aは顔写真付き身分証明書1点、区分Bは顔写真なし身分証明書等2点） ③マイナンバー（個人番号）確認書類（マイナンバーカード等いずれか1つ） ④申請者名義の普通預金通帳またはキャッシュカード。該当者のみ：⑤養育事実の同意書（単身赴任などで児童と別居している場合、世帯主の同意が必要） ⑥監護相当・生計費の負担についての確認書（児童とその兄姉等〈18歳年度末経過後〜22歳年度末〉の合計が3人以上いる場合） ⑦その他、必要な場合は個別に連絡",
       "evidence": "4-1.児童手当認定（額改定）請求書 4-2.身元確認書類 4-3.マイナンバー（個人番号）確認書類 4-4.申請者名義の普通預金通帳またはキャッシュカード",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 25,
+        "note": "連続25文字だけ一致。引用全体は確認できない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "「電子」（マイナポータル、ログイン・電子署名必須）・「郵送」・「窓口」のいずれかで申請可能。窓口は本庁舎東棟2階4番児童家庭課窓口でのみ受付（区内の各事務所では受付していない）",
+      "value": "電子（マイナポータル）・郵送・窓口の3方法から選べ、オンライン申請で完結可能（ただし場合により別途郵送が必要）",
       "evidence": "申請は生計中心者（児童の父または母で所得が高い方）が行います。「電子」・「郵送」・「窓口」のいずれかの方法により申請してください。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 65,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
-      "value": "通常の申請自体に一律の期限はないが、申請日の翌月からしか支給されず遡っての支給はできないため早めの申請が必要。出生・転入の場合は、その翌日から15日以内に申請すれば出生等のあった月の申請とみなされる（15日特例）",
-      "evidence": "その日の翌日から数えて15日以内（出生は出生日の翌日から15日以内、転入は前住所地の転出予定日の翌日から15日以内）に申請した場合には、出生等の月に申請があったものとみなされます",
+      "value": "月の後半に出生または転入した場合は、出生日の翌日から15日以内（転入の場合は前住所地の転出予定日の翌日から15日以内）に申請すれば、出生等の月に申請があったものとみなされる（15日特例）。それ以外は明確な申請期限の定めはなく、申請日の翌月が支給開始月となるため早めの申請が求められる。",
+      "evidence": "月の後半に出生または転入した場合、その日の翌日から数えて15日以内（出生は出生日の翌日から15日以内、転入は前住所地の転出予定日の翌日から15日以内）に申請した場合には、出生等の月に申請があったものとみなされます（15日特例）。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 114,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "手当の制度説明・申請方法・必要書類は本文に詳細に記載されているが、「手数料」という語自体がページ内に一切登場しない。期限は『通常は明確な期限なし（ただし遅れると遡及支給なし）』と『出生・転入時の15日特例』という2種類の異なる規定が併存しており、単純な一つの答えにはならない構成。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「4.必要書類」の見出し配下に4-1〜4-7の枝番で基本書類と条件付き書類（別居時・兄姉等がいる場合）が明確に分けて列挙されており、本文だけで完結していた。\n「3.申請方法」の見出し下に電子・郵送・窓口の3方法が並列で明記されており、電子申請にはマイナポータルへのリンクがあるが、注記で場合により郵送が別途必要とされている。\n本文には「絶対にこの日までに出さないと無効」という一律の申請期限は明記されておらず、代わりに「申請日の翌月が支給開始月」という遅延ペナルティ方式と、月後半の出生・転入時のみ適用される15日特例（起算点つき）が示されている。\n支給対象・支給額・申請方法・必要書類・手続きの流れは詳細に書かれているが、申請手数料についての記述は本文になく、リンク一覧にも手数料を扱っていそうなページ（FAQは制度内容の一般的なQ&Aで手数料特化ではない）は見当たらない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

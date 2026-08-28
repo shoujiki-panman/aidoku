@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 4343,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 224
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T13:25:41+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
-  "online_clarity_evidence": "窓口、郵送又はぴったりサービスによる電子申請が可能です。",
+  "online_clarity_evidence": "申請方法 窓口、郵送又はぴったりサービスによる電子申請が可能です。",
   "online_clarity_pages": [
     "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html"
+  ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "荒川区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "①申請者本人名義の口座を確認できるもの（通帳やキャッシュカードなど）②申請者本人が加入している健康保険がわかるもの（資格情報のお知らせ、資格確認書、マイナポータルの「資格情報画面」など）③申請者本人及び配偶者の個人番号（マイナンバー）が確認できるもの④申請者本人及び配偶者の所得証明書（該当年の1月1日に荒川区に住民登録がなかった方のみ必要。マイナンバー提示で原則省略可）",
+        "evidence": "申請に必要なもの 申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 38,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "①申請者本人名義の口座を確認できるもの（通帳やキャッシュカードなど）②申請者本人が加入している健康保険がわかるもの（資格情報のお知らせ、資格確認書、マイナポータルの「資格情報画面」など）③申請者本人及び配偶者の個人番号（マイナンバー）が確認できるもの④申請者本人及び配偶者の所得証明書（該当年の1月1日に荒川区に住民登録がなかった方のみ必要。マイナンバー提示で原則省略可）",
+            "evidence": "申請に必要なもの 申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 38,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「申請に必要なもの」の見出し下に箇条書きで必須書類が並び、注釈3で「単身赴任等で別居」「父母以外が養育」等の場合に別途書類が必要な旨も本文に明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「申請に必要なもの」の見出し下に箇条書きで必須書類が並び、注釈3で「単身赴任等で別居」「父母以外が養育」等の場合に別途書類が必要な旨も本文に明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "荒川区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口・郵送・オンライン（ぴったりサービス）のいずれも可能。オンラインは電子署名（マイナンバーカード）が必要",
+        "evidence": "窓口、郵送又はぴったりサービスによる電子申請が可能です。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 28,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口・郵送・オンライン（ぴったりサービス）のいずれも可能。オンラインは電子署名（マイナンバーカード）が必要",
+            "evidence": "窓口、郵送又はぴったりサービスによる電子申請が可能です。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 28,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「申請方法」の見出しの直下に窓口・郵送・電子申請の3方法が明記されており、電子申請の手順とマイナンバーカードによる電子署名の要件も本文に記載されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「申請方法」の見出しの直下に窓口・郵送・電子申請の3方法が明記されており、電子申請の手順とマイナンバーカードによる電子署名の要件も本文に記載されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "荒川区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "出生日または前住所地の転出予定日の同月内に申請。月の後半の場合は、その翌日から数えて15日以内（15日目が閉庁日の場合は翌開庁日）",
+        "evidence": "出生日または前住所地の転出予定日の同月内に申請してください。ただし、出生日または前住所地の転出予定日が月の後半の場合は、その翌日から数えて15日以内",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 74,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "出生日または前住所地の転出予定日の同月内に申請。月の後半の場合は、その翌日から数えて15日以内（15日目が閉庁日の場合は翌開庁日）",
+            "evidence": "出生日または前住所地の転出予定日の同月内に申請してください。ただし、出生日または前住所地の転出予定日が月の後半の場合は、その翌日から数えて15日以内",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 74,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「申請に関する質問と回答」のQ&A形式で「いつまでに手続きをすればよいですか」という項目に起算点つきの期限が明記されていた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「申請に関する質問と回答」のQ&A形式で「いつまでに手続きをすればよいですか」という項目に起算点つきの期限が明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "荒川区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手当額・支給方法・現況届・必要書類など詳細な記載はあるが、申請手数料についての言及は本文にもリンク一覧にも見当たらない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "手当額・支給方法・現況届・必要書類など詳細な記載はあるが、申請手数料についての言及は本文にもリンク一覧にも見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)／申請者本人が加入している健康保険がわかるもの／申請者本人及び配偶者の個人番号(マイナンバー)が確認できるもの／申請者本人及び配偶者の所得証明書(該当年1月1日に荒川区に住民登録がなかった方のみ)",
-      "evidence": "申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)",
+      "value": "①申請者本人名義の口座を確認できるもの（通帳やキャッシュカードなど）②申請者本人が加入している健康保険がわかるもの（資格情報のお知らせ、資格確認書、マイナポータルの「資格情報画面」など）③申請者本人及び配偶者の個人番号（マイナンバー）が確認できるもの④申請者本人及び配偶者の所得証明書（該当年の1月1日に荒川区に住民登録がなかった方のみ必要。マイナンバー提示で原則省略可）",
+      "evidence": "申請に必要なもの 申請者本人名義の口座を確認できるもの(通帳やキャッシュカードなど)",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 38,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口(区役所2階16番窓口)、郵送、ぴったりサービスによる電子申請のいずれかで申請可能。電子申請にはマイナンバーカードによる電子署名が必要。",
+      "value": "窓口・郵送・オンライン（ぴったりサービス）のいずれも可能。オンラインは電子署名（マイナンバーカード）が必要",
       "evidence": "窓口、郵送又はぴったりサービスによる電子申請が可能です。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 28,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
-      "value": "出生日または前住所地の転出予定日の同月内に申請。月後半の場合は、その翌日から数えて15日以内(15日目が区役所閉庁日の場合はその翌開庁日)に申請すれば同月内申請の扱いになる。それを過ぎると申請月の翌月分からの支給となり遡及不可。",
-      "evidence": "出生日または前住所地の転出予定日が月の後半の場合は、その翌日から数えて15日以内（15日目が区役所閉庁日の場合はその翌開庁日）に申請すれば、同月内に申請した取扱いになります。",
+      "value": "出生日または前住所地の転出予定日の同月内に申請。月の後半の場合は、その翌日から数えて15日以内（15日目が閉庁日の場合は翌開庁日）",
+      "evidence": "出生日または前住所地の転出予定日の同月内に申請してください。ただし、出生日または前住所地の転出予定日が月の後半の場合は、その翌日から数えて15日以内",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 74,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "必要書類・申請方法・期限はいずれもHTML本文のQ&Aや箇条書きで明記されているが、手数料については本文中に一切言及がなく、無料か有料かの記載自体が存在しない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「申請に必要なもの」の見出し下に箇条書きで必須書類が並び、注釈3で「単身赴任等で別居」「父母以外が養育」等の場合に別途書類が必要な旨も本文に明記されている。\n「申請方法」の見出しの直下に窓口・郵送・電子申請の3方法が明記されており、電子申請の手順とマイナンバーカードによる電子署名の要件も本文に記載されている。\n「申請に関する質問と回答」のQ&A形式で「いつまでに手続きをすればよいですか」という項目に起算点つきの期限が明記されていた。\n手当額・支給方法・現況届・必要書類など詳細な記載はあるが、申請手数料についての言及は本文にもリンク一覧にも見当たらない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

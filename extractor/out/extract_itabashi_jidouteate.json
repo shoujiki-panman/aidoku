@@ -10,53 +10,385 @@
     "has_jsonld": false,
     "text_len": 1809,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T13:39:21+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [
-    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html",
-    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1064042.html"
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "国が運営する電子申請サービス（ぴったりサービス）です。下記のリンクからお手続きしてください。",
   "online_clarity_pages": [
     "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
-    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html",
-    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1064042.html"
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html"
+  ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "板橋区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "新規申請の必須書類は①児童手当認定請求書、②申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など）、③申請者の本人確認書類（マイナンバーカード顔写真面・運転免許証・パスポート・在留カードなど）。該当者のみ必要なもの：申請者が共済組合加入の場合は保険資格がわかる書類、支給対象児童と別居している場合は監護事実の同意書、支給対象児童と算定対象児童を合計3名以上養育しかつ算定対象児童を1名以上養育している場合は監護相当・生計費の負担についての確認書。",
+        "evidence": "1．児童手当認定請求書 ホームページ下部に添付しています。また、区担当窓口・赤塚支所・各区民事務所で配布しています。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 52,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html"
+          ],
+          "page_notes": "このページは制度全体の総合案内（目的別ナビ）で、必要書類などの具体的な手続き内容は「1．子どもが生まれた・板橋区に転入した（申請手続き）」の個別ページに委ねられている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "新規申請の必須書類は①児童手当認定請求書、②申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など）、③申請者の本人確認書類（マイナンバーカード顔写真面・運転免許証・パスポート・在留カードなど）。該当者のみ必要なもの：申請者が共済組合加入の場合は保険資格がわかる書類、支給対象児童と別居している場合は監護事実の同意書、支給対象児童と算定対象児童を合計3名以上養育しかつ算定対象児童を1名以上養育している場合は監護相当・生計費の負担についての確認書。",
+            "evidence": "1．児童手当認定請求書 ホームページ下部に添付しています。また、区担当窓口・赤塚支所・各区民事務所で配布しています。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 52,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "総合案内ページ本体には必要書類の記載はなく、「1．子どもが生まれた・板橋区に転入した（申請手続き）」のリンク先「児童手当の申請手続きについて」ページに「3．申請に必要な書類」として、必須書類と状況に応じて必要な書類が表形式で整理されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html"
+      ],
+      "page_notes": "総合案内ページ本体には必要書類の記載はなく、「1．子どもが生まれた・板橋区に転入した（申請手続き）」のリンク先「児童手当の申請手続きについて」ページに「3．申請に必要な書類」として、必須書類と状況に応じて必要な書類が表形式で整理されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "板橋区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口(区役所北館1階6番窓口・赤塚支所住民サービス係窓口)、郵送、電子申請(ぴったりサービス)のいずれか。オンラインで完結可能。",
+        "evidence": "届出方法\n\n区役所北館1階6番窓口\n\n赤塚支所住民サービス係窓口\n\n郵送申請\n\n電子申請（ぴったりサービス）",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 54,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html"
+          ],
+          "page_notes": "このページは児童手当の総合案内（目的別ナビ）で、申請の窓口・オンライン可否には触れていない。具体的な申請方法は「1．子どもが生まれた・板橋区に転入した（申請手続き）」のリンク先ページに記載されている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口(区役所北館1階6番窓口・赤塚支所住民サービス係窓口)、郵送、電子申請(ぴったりサービス)のいずれか。オンラインで完結可能。",
+            "evidence": "届出方法\n\n区役所北館1階6番窓口\n\n赤塚支所住民サービス係窓口\n\n郵送申請\n\n電子申請（ぴったりサービス）",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 54,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "総合案内ページ自体には申請方法の記載がなく、「1．子どもが生まれた・板橋区に転入した（申請手続き）」のリンク先に届出方法（窓口・郵送・電子申請）がまとまっていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html"
+      ],
+      "page_notes": "総合案内ページ自体には申請方法の記載がなく、「1．子どもが生まれた・板橋区に転入した（申請手続き）」のリンク先に届出方法（窓口・郵送・電子申請）がまとまっていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "板橋区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "出生・転入などの事由発生日から15日以内",
+        "evidence": "出生・転入などの事由発生日から15日以内に申請が必要です。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 29,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "出生・転入などの事由発生日から15日以内",
+            "evidence": "出生・転入などの事由発生日から15日以内に申請が必要です。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 29,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文冒頭の「最重要（必ずご確認ください）」欄に起算点つきで明記されており、リンク先を辿る必要はなかった。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文冒頭の「最重要（必ずご確認ください）」欄に起算点つきで明記されており、リンク先を辿る必要はなかった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "板橋区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html"
+          ],
+          "page_notes": "このページは児童手当の総合案内（目次）で、手数料など制度の詳細は「1．子どもが生まれた・板橋区に転入した（申請手続き）」などの個別ページに委ねられている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "総合案内ページと申請手続きページ（必要書類・注意事項・電子申請・区担当窓口まで）を確認したが、手数料や無料である旨の記載は見当たらなかった。児童手当は法定給付であり手数料が発生する性質の手続きではないため、そもそも案内自体が省略されている可能性がある。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html"
+      ],
+      "page_notes": "総合案内ページと申請手続きページ（必要書類・注意事項・電子申請・区担当窓口まで）を確認したが、手数料や無料である旨の記載は見当たらなかった。児童手当は法定給付であり手数料が発生する性質の手続きではないため、そもそも案内自体が省略されている可能性がある。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "新規申請の場合、(1)児童手当認定請求書 (2)申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など） (3)申請者の本人確認書類（マイナンバーカード等）が必須。状況により監護事実の同意書等が追加で必要。",
-      "evidence": "1．児童手当認定請求書 2．申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など） 3．申請者の本人確認書類",
+      "value": "新規申請の必須書類は①児童手当認定請求書、②申請者の銀行口座が確認できるもの（通帳・キャッシュカード・アプリ画面など）、③申請者の本人確認書類（マイナンバーカード顔写真面・運転免許証・パスポート・在留カードなど）。該当者のみ必要なもの：申請者が共済組合加入の場合は保険資格がわかる書類、支給対象児童と別居している場合は監護事実の同意書、支給対象児童と算定対象児童を合計3名以上養育しかつ算定対象児童を1名以上養育している場合は監護相当・生計費の負担についての確認書。",
+      "evidence": "1．児童手当認定請求書 ホームページ下部に添付しています。また、区担当窓口・赤塚支所・各区民事務所で配布しています。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 52,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "区役所北館1階6番窓口、赤塚支所住民サービス係窓口、郵送申請、または電子申請（ぴったりサービス）でオンライン申請が可能。",
-      "evidence": "区役所北館1階6番窓口 赤塚支所住民サービス係窓口 郵送申請 電子申請（ぴったりサービス）",
+      "value": "窓口(区役所北館1階6番窓口・赤塚支所住民サービス係窓口)、郵送、電子申請(ぴったりサービス)のいずれか。オンラインで完結可能。",
+      "evidence": "届出方法\n\n区役所北館1階6番窓口\n\n赤塚支所住民サービス係窓口\n\n郵送申請\n\n電子申請（ぴったりサービス）",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 54,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
-      "value": "出生・転入などの事由発生日の翌日から起算して15日以内",
+      "value": "出生・転入などの事由発生日から15日以内",
       "evidence": "出生・転入などの事由発生日から15日以内に申請が必要です。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 29,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "総合案内ページ自体には手続きの詳細（書類・窓口・期限）は無く、1階層下の「申請手続きについて」と「よくある問い合わせ」に情報が分散している。手数料についてはどちらのページにも記載が見当たらない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "総合案内ページ本体には必要書類の記載はなく、「1．子どもが生まれた・板橋区に転入した（申請手続き）」のリンク先「児童手当の申請手続きについて」ページに「3．申請に必要な書類」として、必須書類と状況に応じて必要な書類が表形式で整理されていた。\n総合案内ページ自体には申請方法の記載がなく、「1．子どもが生まれた・板橋区に転入した（申請手続き）」のリンク先に届出方法（窓口・郵送・電子申請）がまとまっていた。\n本文冒頭の「最重要（必ずご確認ください）」欄に起算点つきで明記されており、リンク先を辿る必要はなかった。\n総合案内ページと申請手続きページ（必要書類・注意事項・電子申請・区担当窓口まで）を確認したが、手数料や無料である旨の記載は見当たらなかった。児童手当は法定給付であり手数料が発生する性質の手続きではないため、そもそも案内自体が省略されている可能性がある。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
+      "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

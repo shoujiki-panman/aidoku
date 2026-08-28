@@ -10,48 +10,327 @@
     "has_jsonld": true,
     "text_len": 6003,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 3321
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T13:52:17+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
   "online_clarity_evidence": "オンライン申請 児童手当の認定請求（外部サイト）から申請ができます。",
   "online_clarity_pages": [
     "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_t.html"
   ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "渋谷区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "同居の場合は（1）児童手当 認定請求書、（2）請求者名義の口座情報、（3）請求者の健康保険証などのコピー【該当の健康保険に加入されている人のみ】。別居の場合はこれに加えて（4）児童手当 別居監護申立書も必要。",
+        "evidence": "（1）児童手当 認定請求書（PDF 183KB）（2）請求者名義の口座情報（3）請求者の健康保険証などのコピー【該当の健康保険に加入されている人のみ】",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 33,
+          "note": "連続33文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "同居の場合は（1）児童手当 認定請求書、（2）請求者名義の口座情報、（3）請求者の健康保険証などのコピー【該当の健康保険に加入されている人のみ】。別居の場合はこれに加えて（4）児童手当 別居監護申立書も必要。",
+            "evidence": "（1）児童手当 認定請求書（PDF 183KB）（2）請求者名義の口座情報（3）請求者の健康保険証などのコピー【該当の健康保険に加入されている人のみ】",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 33,
+              "note": "連続33文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「用意するもの」は同居／別居で表が分かれており、別居の場合のみ（4）別居監護申立書が追加される旨が表外の注記に書かれている。該当者限定の書類（健康保険証コピー）も同じ表内に明記されていた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「用意するもの」は同居／別居で表が分かれており、別居の場合のみ（4）別居監護申立書が追加される旨が表外の注記に書かれている。該当者限定の書類（健康保険証コピー）も同じ表内に明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "渋谷区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口・郵送に加え、オンライン申請（スマート申請）でも完結できる",
+        "evidence": "オンライン申請 児童手当の認定請求（外部サイト）から申請ができます。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 31,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口・郵送に加え、オンライン申請（スマート申請）でも完結できる",
+            "evidence": "オンライン申請 児童手当の認定請求（外部サイト）から申請ができます。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 31,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文の「申請方法」に窓口・郵送・オンライン申請の3経路が明記され、さらにページ末尾の手続き方法一覧表で「窓口:利用可能」「スマート申請:利用可能」と機械可読的にも裏付けられていた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文の「申請方法」に窓口・郵送・オンライン申請の3経路が明記され、さらにページ末尾の手続き方法一覧表で「窓口:利用可能」「スマート申請:利用可能」と機械可読的にも裏付けられていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "渋谷区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "出生日または前住所の転出予定日の翌日から15日以内",
+        "evidence": "出生・前住所の転出予定日の翌日から15日以内に申請してください。（申請書の提出が遅れると遅れた分の手当を受給できない場合がありますのでご注意ください）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 75,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "出生日または前住所の転出予定日の翌日から15日以内",
+            "evidence": "出生・前住所の転出予定日の翌日から15日以内に申請してください。（申請書の提出が遅れると遅れた分の手当を受給できない場合がありますのでご注意ください）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 75,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「申請方法」見出し内に起算点付きの期限が明記されており、「支給開始」見出しにも同内容の補足がある。表からではなく本文段落から直接取得できた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「申請方法」見出し内に起算点付きの期限が明記されており、「支給開始」見出しにも同内容の補足がある。表からではなく本文段落から直接取得できた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "渋谷区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申請方法・必要書類・届出の各項目は詳細に記載されているが、手数料や費用に関する記述はページ内になく、関連しそうな外部リンク（スマート申請・電話番号）も手数料の説明ではないため、リンク先誘導もできない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申請方法・必要書類・届出の各項目は詳細に記載されているが、手数料や費用に関する記述はページ内になく、関連しそうな外部リンク（スマート申請・電話番号）も手数料の説明ではないため、リンク先誘導もできない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "（同居の場合）(1)児童手当 認定請求書、(2)請求者名義の口座情報、(3)該当する健康保険に加入している場合は健康保険証などのコピー。別居の場合はこれに加えて(4)別居監護申立書が必要",
+      "value": "同居の場合は（1）児童手当 認定請求書、（2）請求者名義の口座情報、（3）請求者の健康保険証などのコピー【該当の健康保険に加入されている人のみ】。別居の場合はこれに加えて（4）児童手当 別居監護申立書も必要。",
       "evidence": "（1）児童手当 認定請求書（PDF 183KB）（2）請求者名義の口座情報（3）請求者の健康保険証などのコピー【該当の健康保険に加入されている人のみ】",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 33,
+        "note": "連続33文字だけ一致。引用全体は確認できない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口（区役所4階子ども政策課子育て給付係）、郵送、オンライン申請（外部サイトGrafferでのスマート申請）のいずれも可能。フォーム・電話予約・FAX・メール・コンビニ・LINE・マイナンバー・マイポータルは不可",
-      "evidence": "申請場所 区役所4階子ども政策課子育て給付係／窓口 利用可能／郵送 利用可能／スマート申請 利用可能",
+      "value": "窓口・郵送に加え、オンライン申請（スマート申請）でも完結できる",
+      "evidence": "オンライン申請 児童手当の認定請求（外部サイト）から申請ができます。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 31,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": true,
-      "value": "出生・前住所の転出予定日の翌日から15日以内に申請",
+      "value": "出生日または前住所の転出予定日の翌日から15日以内",
       "evidence": "出生・前住所の転出予定日の翌日から15日以内に申請してください。（申請書の提出が遅れると遅れた分の手当を受給できない場合がありますのでご注意ください）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 75,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "手続き情報がアコーディオン形式の長い1ページに集約されており、必要書類・申請方法・期限は本文に明記されている一方、手数料への言及はページ内のどこにも見当たらない（児童手当は制度上無料と推測できるが、ページに記載がないためfound: falseとした）。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「用意するもの」は同居／別居で表が分かれており、別居の場合のみ（4）別居監護申立書が追加される旨が表外の注記に書かれている。該当者限定の書類（健康保険証コピー）も同じ表内に明記されていた。\n本文の「申請方法」に窓口・郵送・オンライン申請の3経路が明記され、さらにページ末尾の手続き方法一覧表で「窓口:利用可能」「スマート申請:利用可能」と機械可読的にも裏付けられていた。\n「申請方法」見出し内に起算点付きの期限が明記されており、「支給開始」見出しにも同内容の補足がある。表からではなく本文段落から直接取得できた。\n申請方法・必要書類・届出の各項目は詳細に記載されているが、手数料や費用に関する記述はページ内になく、関連しそうな外部リンク（スマート申請・電話番号）も手数料の説明ではないため、リンク先誘導もできない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_t.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }
