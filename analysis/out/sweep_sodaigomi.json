@@ -11,7 +11,7 @@
   "summary": {
     "municipalities": 24,
     "swept_fields": 45,
-    "pages_read": 115,
+    "pages_read": 116,
     "found": 9,
     "found_names": [
       "中央区/窓口/オンライン可否",
@@ -24,16 +24,15 @@
       "墨田区/手数料",
       "台東区/手数料"
     ],
-    "exhausted": 25,
+    "exhausted": 26,
     "budget_hit": 0,
     "budget_names": [],
-    "unreadable": 5,
+    "unreadable": 4,
     "unreadable_names": [
       "大田区/期限",
       "品川区/期限",
       "品川区/手数料",
-      "墨田区/期限",
-      "台東区/期限"
+      "墨田区/期限"
     ],
     "errored": 0,
     "errored_names": []
@@ -886,7 +885,7 @@
               "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102301.xls",
               "link_text": "粗大ごみ品目・手数料一覧（令和5年10月1日から）（エクセル：102KB）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102302.pdf",
@@ -1345,18 +1344,22 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "unreadable",
+          "stopped": "exhausted",
           "errors": 0,
-          "unreadable": [
-            "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.files/10.pdf"
-          ],
-          "candidates": 2,
+          "unreadable": [],
+          "candidates": 3,
           "looked": [
             {
               "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
               "link_text": "令和5年10月1日から粗大ごみ処理手数料が変更になります",
               "verified": false,
               "from_cache": true
+            },
+            {
+              "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.files/10.pdf",
+              "link_text": "粗大ごみ（PDF：838KB）",
+              "verified": false,
+              "from_cache": false
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/gomi/jigyosho/gomi/gomi.html",
