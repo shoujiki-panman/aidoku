@@ -1,0 +1,21 @@
+{
+  "$comment": [
+    "セッションの初めに、いまの状態をデータから出して読ませる。",
+    "STATUS.md は手書きで古くなるので、現在地の判断には使わせない。",
+    "LLMは呼ばない・ネットにも出ない（キャッシュ済みファイルを数えるだけ）ので、",
+    "毎回走らせても安い。"
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 analysis/status.py 2>/dev/null || true",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
