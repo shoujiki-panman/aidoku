@@ -27,6 +27,8 @@ import zlib
 from dataclasses import dataclass
 from io import BytesIO
 
+import xls
+
 # Office 文書の中で本文が入っている場所。ここに無いものは読まない。
 OOXML_PARTS = {
     "docx": ("word/document.xml",),
@@ -75,7 +77,7 @@ def looks_like_document(data: bytes) -> bool:
 def kind_of(url: str) -> str:
     """拡張子から形式を決める。中身は見ない（URLで弾く側と揃えるため）。"""
     lowered = url.lower().split("?")[0]
-    for ext in ("docx", "xlsx", "pptx", "pdf"):
+    for ext in ("docx", "xlsx", "pptx", "pdf", "xls"):
         if lowered.endswith("." + ext):
             return ext
     return "unknown"
@@ -451,6 +453,20 @@ def kind_from(url: str, content_type: str = "") -> str:
     return MIME_KIND.get(mime, "unknown")
 
 
+def read_xls(data: bytes) -> DocText:
+    """古い Excel（BIFF8）。**中身の先頭で見分ける**（キャッシュは拡張子を持たない）。
+
+    ★同じ OLE2 の器に古い Word / PowerPoint も入る。中身の取り出し方が違うので、
+      文字が取れなければ「読めない」と正直に返す。**読めたふりをしない。**
+    """
+    text = _clean(xls.read_text(data))
+    if not text:
+        return DocText("xls", "", False, "古いOffice形式で本文が取り出せない（doc/pptか壊れている）")
+    if not readable(text):
+        return DocText("xls", "", False, f"日本語の地の文にならない（{len(text)}字取れたが仮名がほぼ無い）")
+    return DocText("xls", text, True, "")
+
+
 def read_document(data: bytes, url: str, content_type: str = "") -> DocText:
     """入口。形式を見て振り分ける。**読めない形式も結果として返す。**"""
     kind = kind_from(url, content_type)
@@ -458,4 +474,7 @@ def read_document(data: bytes, url: str, content_type: str = "") -> DocText:
         return read_ooxml(data, kind)
     if kind == "pdf":
         return read_pdf(data)
+    # ★拡張子が分からなくても、OLE2 の見出しがあれば古い Excel として試す。
+    if kind == "xls" or xls.is_xls(data):
+        return read_xls(data)
     return DocText(kind, "", False, "対応していない形式")
