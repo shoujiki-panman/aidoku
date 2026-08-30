@@ -41,6 +41,7 @@ sys.path.insert(0, str(ROOT / "crawler"))
 sys.path.insert(0, str(ROOT))
 from discover import score_link  # noqa: E402
 from htmlutil import parse  # noqa: E402
+from officedoc import looks_like_document, read_document  # noqa: E402
 
 from evidence_check import VERIFIED_VERDICTS, check_one  # noqa: E402
 from extractor.fact_extract import (  # noqa: E402
@@ -101,14 +102,30 @@ def procedure_name(procedure_id: str) -> str:
     raise SystemExit(f"手続きが見つからない: {procedure_id}")
 
 
+# 添付から取り出せた文字がこれ未満なら本文として渡さない。
+# `analysis/read_non_html.py` と同じ基準（様式の枠だけ拾った状態を弾く）。
+MIN_DOC_CHARS = 30
+
+
 def cache_text(url: str) -> str | None:
+    """取得済みの本文。ネットには出ない。
+
+    ★添付（PDF/Word/Excel）もここを通る。**中身を見て振り分ける。**
+      以前はすべてHTMLとして読もうとしていたので、添付は文字化けした本文になり、
+      手がかりの語に当たらず**静かに落ちていた**（虱潰し321ページで添付0本）。
+      「その区が書いていない」と言うには、添付も読んでからでなければならない。
+    """
     host = urllib.parse.urlparse(url).netloc
     key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:16]
     path = CACHE / host / f"{key}.html"
     if not path.exists():
         return None
     try:
-        return parse(path.read_text(encoding="utf-8", errors="replace"), url).text
+        raw = path.read_bytes()
+        if looks_like_document(raw):
+            got = read_document(raw, url)
+            return got.text if got.ok and len(got.text) >= MIN_DOC_CHARS else None
+        return parse(raw.decode("utf-8", errors="replace"), url).text
     except Exception:                                     # noqa: BLE001
         return None
 

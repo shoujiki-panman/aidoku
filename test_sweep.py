@@ -13,6 +13,7 @@ from sweep import (  # noqa: E402
     ITEM_TO_FIELD,
     key,
     load_visits,
+    merge_rows,
     missing_fields,
     reached,
     summarize,
@@ -172,6 +173,36 @@ class 虱潰し(unittest.TestCase):
         visits: dict = {}
         self.run_sweep([cand("u1"), cand("u2")], {}, visits)
         self.assertEqual(set(visits), {key("u1", "手数料"), key("u2", "手数料")})
+
+
+class 部分実行(unittest.TestCase):
+    """★`-m` で数区だけ回すと、出力が今回の数区だけになっていた。
+
+    実測で36項目の記録が3項目に減り、git から戻して気づいた。
+    部分実行は「一部を測り直す」であって「他を無かったことにする」ではない。
+    """
+
+    def row(self, mid: str, mark: str) -> dict:
+        return {"municipality_id": mid, "municipality": mid,
+                "fields": [{"field": "手数料", "stopped": mark, "found": False,
+                            "looked": []}]}
+
+    def test_回さなかった自治体の記録を残す(self):
+        got = merge_rows([self.row("a", "exhausted"), self.row("b", "exhausted")],
+                         [self.row("b", "found")])
+        self.assertEqual([r["municipality_id"] for r in got], ["a", "b"])
+
+    def test_回した自治体は新しい方で置き換える(self):
+        got = merge_rows([self.row("b", "exhausted")], [self.row("b", "found")])
+        self.assertEqual(len(got), 1)
+        self.assertEqual(got[0]["fields"][0]["stopped"], "found")
+
+    def test_前回が空でも落ちない(self):
+        self.assertEqual(len(merge_rows([], [self.row("a", "found")])), 1)
+
+    def test_自治体の順を保つ(self):
+        got = merge_rows([self.row("c", "exhausted")], [self.row("a", "found")])
+        self.assertEqual([r["municipality_id"] for r in got], ["a", "c"])
 
 
 class 記録(unittest.TestCase):

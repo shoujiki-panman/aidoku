@@ -173,6 +173,25 @@ def sweep_field(cands: list[dict], muni: str, proc: str, field: str, model: str,
             "candidates": len(cands), "looked": looked}
 
 
+def merge_rows(previous: list[dict], fresh: list[dict]) -> list[dict]:
+    """前回の記録に、今回読んだ自治体を上書きして返す。
+
+    ★`-m` で数区だけ回すと、**出力が今回の数区だけになっていた。**
+      実測で36項目の記録が3項目に減り、git から戻して気づいた。
+      部分実行は「一部を測り直す」であって「他を無かったことにする」ではない。
+    """
+    done = {row["municipality_id"] for row in fresh}
+    kept = [row for row in previous if row["municipality_id"] not in done]
+    return sorted(kept + fresh, key=lambda row: row["municipality_id"])
+
+
+def previous_rows(procedure: str) -> list[dict]:
+    path = OUT_DIR / f"sweep_{procedure}.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text(encoding="utf-8")).get("rows") or []
+
+
 def load_pairs(procedure: str, only: list[str] | None) -> list[tuple[dict, dict]]:
     extracts = {}
     for path in sorted(glob.glob(str(ROOT / f"extractor/out/*_{procedure}.json"))):
@@ -262,6 +281,8 @@ def main(argv: list[str] | None = None) -> None:
         rows.append({"municipality": muni, "municipality_id": extract["municipality_id"],
                      "fields": results})
 
+    # ★部分実行（-m）でも、前回の記録を消さない。
+    rows = merge_rows(previous_rows(args.procedure), rows) if args.municipality else rows
     doc = {
         "_about": "読めなかった項目を候補ページ全部で虱潰しに探した記録。"
                   "上限で止まったものを「書いていない」と読ませないこと。",

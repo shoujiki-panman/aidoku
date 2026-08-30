@@ -1,0 +1,1484 @@
+{
+  "_about": "同じ添付を自作リーダーと anydoc の両方に読ませた記録。判定は変えない。実装が2つで食い違うかどうかの記録。",
+  "version": "compare-readers-0.1",
+  "same_ratio": 0.85,
+  "summary": {
+    "files": 88,
+    "by_verdict": {
+      "両方読めたが中身が違う": 42,
+      "どちらも読めない": 19,
+      "同じ": 16,
+      "★うちだけ読めた": 8,
+      "★anydocだけ読めた": 3
+    },
+    "anydoc_only": [
+      "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102301.xls",
+      "https://www.city.setagaya.lg.jp/documents/5455/komae_hinanjo_2.pdf",
+      "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/SODAIHARIGAMI.pdf"
+    ],
+    "ours_only": [
+      "https://www.city.adachi.tokyo.jp/documents/2950/guide2026_0-77.pdf",
+      "https://www.city.machida.tokyo.jp/kodomo/kosodate/netrepo.files/repo.pdf",
+      "https://www.city.machida.tokyo.jp/kodomo/kosodate/komasu25-34.files/202606_keikaku.pdf",
+      "https://www.city.machida.tokyo.jp/kodomo/kosodate/komasu25-34.files/kosodate_2025.pdf",
+      "https://www.city.minato.tokyo.jp/documents/67227/r6sodairyoukin.pdf",
+      "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninteiseikyuukisairei.pdf",
+      "https://www.city.shinagawa.tokyo.jp/ct/pdf/20250321132249_5.pdf",
+      "https://www.city.toshima.lg.jp/documents/42508/20251006112929.pdf"
+    ],
+    "differ": [
+      "https://www.city.bunkyo.lg.jp/documents/959/sodaigomiitiran0806.pdf",
+      "https://www.city.bunkyo.lg.jp/documents/9434/ninnyoumousikomisho.pdf",
+      "https://www.city.chiyoda.lg.jp/documents/13656/ininjo_2.pdf",
+      "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/001/868/sodai260401.pdf",
+      "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/568/idoutodokdesyo20260105.pdf",
+      "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/570/idoutodokdesyo20260105.pdf",
+      "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/025/128/sinseisyo.pdf",
+      "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/025/128/youryo.pdf",
+      "https://www.city.machida.tokyo.jp/kurashi/bouhan/bousai/fuusuigai/hinanshisetsu-manual.files/modelmanual.pdf",
+      "https://www.city.machida.tokyo.jp/kurashi/kankyo/gomi/gominowakekata/gomi-dashikata/kanenhunen/shiteifukuro.files/20260709.pdf",
+      "https://www.city.machida.tokyo.jp/kodomo/kosodate/komasu25-34.files/shinkyutaisho.pdf",
+      "https://www.city.machida.tokyo.jp/kurashi/kankyo/gomi/gominowakekata/gomi-dashikata/kanenhunen/hanbaiten.files/20260803.pdf",
+      "https://www.city.mitaka.lg.jp/c_service/119/attached/attach_119134_2.pdf",
+      "https://www.city.mitaka.lg.jp/c_service/031/attached/attach_31574_1.pdf",
+      "https://www.city.mitaka.lg.jp/c_service/000/attached/attach_321_2.pdf",
+      "https://www.city.mitaka.lg.jp/c_service/031/attached/attach_31574_2.pdf",
+      "https://www.city.mitaka.lg.jp/c_service/031/attached/attach_31574_5.pdf",
+      "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/004/816/202605sodai.pdf",
+      "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaigomi_fax.pdf",
+      "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_jukyukyohi_todokedesho.pdf",
+      "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_kouzatouroku_todokedesho.pdf",
+      "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/ouennteatetirashipdf.pdf",
+      "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+      "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninnteiseikyuu.pdf",
+      "https://www.city.setagaya.lg.jp/documents/27658/harigami.pdf",
+      "https://www.city.setagaya.lg.jp/documents/381/annai.pdf",
+      "https://www.city.setagaya.lg.jp/documents/640/documents640hinannkizyun_20260528.pdf",
+      "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+      "https://www.city.shinagawa.tokyo.jp/ct/pdf/hpg000027168_52.pdf",
+      "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/SODAIHARIGAMI_KINYUREI.pdf",
+      "https://www.city.shinagawa.tokyo.jp/ct/pdf/20241025kokugaitennyu_1.pdf",
+      "https://www.city.shinagawa.tokyo.jp/ct/pdf/hpg000027168_51.pdf",
+      "https://www.city.shinagawa.tokyo.jp/ct/pdf/20250321132249_7.pdf",
+      "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.files/youshi.docx",
+      "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf",
+      "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otokoHPV_20260624.pdf",
+      "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.files/20240703sodaihonnmokuitiran.pdf",
+      "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8_houkago_ichiran.pdf.pdf",
+      "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.files/20251223jumin_ido_ininjo.xlsx",
+      "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otahuku_20260624.pdf",
+      "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/houkago_kodomokurabu.pdf",
+      "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjotokureitennnyu.pdf"
+    ]
+  },
+  "rows": [
+    {
+      "url": "https://www.city.adachi.tokyo.jp/documents/2950/guide2026_0-77.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 51994,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 0.0,
+      "verdict": "★うちだけ読めた"
+    },
+    {
+      "url": "https://www.city.arakawa.tokyo.jp/documents/568/mapb240311.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "テキスト演算子が無い（画像PDFかアウトライン化）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/documents/959/sodaigomiitiran0806.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 8870,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 20312,
+        "reason": ""
+      },
+      "similarity": 0.237,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_youkoukakutei.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 2528,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2841,
+        "reason": ""
+      },
+      "similarity": 0.914,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/documents/9434/ninnyoumousikomisho.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1895,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 1372,
+        "reason": ""
+      },
+      "similarity": 0.641,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/documents/957/gominabitirasiura.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（1288字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_chirashikakutei.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "テキスト演算子が無い（画像PDFかアウトライン化）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/documents/1958/ichiranhyo_2.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 11789,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 15464,
+        "reason": ""
+      },
+      "similarity": 0.971,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.chiyoda.lg.jp/documents/13656/ininjo_2.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 755,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 835,
+        "reason": ""
+      },
+      "similarity": 0.522,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.hachioji.tokyo.jp/emergency/bousai/m12873/saigai/p035635_d/fil/hinanzyo.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（3219字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/001/868/sodai260401.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 23730,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 31644,
+        "reason": ""
+      },
+      "similarity": 0.427,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/568/idoutodokdesyo20260105.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1180,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 1418,
+        "reason": ""
+      },
+      "similarity": 0.248,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/570/idoutodokdesyo20260105.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1180,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 1418,
+        "reason": ""
+      },
+      "similarity": 0.248,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/568/ininjyo-ido20251222.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1613,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 1535,
+        "reason": ""
+      },
+      "similarity": 0.988,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/025/128/sinseisyo.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 2037,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2408,
+        "reason": ""
+      },
+      "similarity": 0.533,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/025/128/youryo.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 2686,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2996,
+        "reason": ""
+      },
+      "similarity": 0.35,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.machida.tokyo.jp/kurashi/bouhan/bousai/fuusuigai/hinanshisetsu-manual.files/modelmanual.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 3833,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 4702,
+        "reason": ""
+      },
+      "similarity": 0.77,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.machida.tokyo.jp/kodomo/kosodate/netrepo.files/repo.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 27306,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 0.0,
+      "verdict": "★うちだけ読めた"
+    },
+    {
+      "url": "https://www.city.machida.tokyo.jp/kodomo/kosodate/komasu25-34.files/202606_keikaku.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 7186,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 0.0,
+      "verdict": "★うちだけ読めた"
+    },
+    {
+      "url": "https://www.city.machida.tokyo.jp/kodomo/kosodate/netrepo.files/gaiyou.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 8596,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 9174,
+        "reason": ""
+      },
+      "similarity": 0.912,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.machida.tokyo.jp/kurashi/kankyo/gomi/gominowakekata/gomi-dashikata/kanenhunen/shiteifukuro.files/20260709.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 16568,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 19249,
+        "reason": ""
+      },
+      "similarity": 0.245,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.machida.tokyo.jp/kodomo/kosodate/komasu25-34.files/shinkyutaisho.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 5696,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 6516,
+        "reason": ""
+      },
+      "similarity": 0.478,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.machida.tokyo.jp/kodomo/kosodate/komasu25-34.files/kosodate_2025.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 15985,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 0.0,
+      "verdict": "★うちだけ読めた"
+    },
+    {
+      "url": "https://www.city.machida.tokyo.jp/kurashi/kankyo/gomi/gominowakekata/gomi-dashikata/kanenhunen/hanbaiten.files/20260803.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 16467,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 19133,
+        "reason": ""
+      },
+      "similarity": 0.245,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.minato.tokyo.jp/documents/67227/r6sodairyoukin.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 6465,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 0.0,
+      "verdict": "★うちだけ読めた"
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/119/attached/attach_119134_2.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1006,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 1293,
+        "reason": ""
+      },
+      "similarity": 0.132,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/031/attached/attach_31574_1.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1980,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2158,
+        "reason": ""
+      },
+      "similarity": 0.278,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/119/attached/attach_119134_1.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 2890,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2974,
+        "reason": ""
+      },
+      "similarity": 1.0,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/000/attached/attach_321_2.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 3276,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 4169,
+        "reason": ""
+      },
+      "similarity": 0.069,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/102/attached/attach_102650_1.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 336,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 247,
+        "reason": ""
+      },
+      "similarity": 1.0,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/031/attached/attach_31574_2.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 2435,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2741,
+        "reason": ""
+      },
+      "similarity": 0.323,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.mitaka.lg.jp/c_service/031/attached/attach_31574_5.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 398,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 308,
+        "reason": ""
+      },
+      "similarity": 0.543,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.musashino.lg.jp/_res/projects/default_project/_page_/001/004/816/202605sodai.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 5185,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 6072,
+        "reason": ""
+      },
+      "similarity": 0.476,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.files/kodomo_tebiki_2025.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（12378字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/chiiki/bousai/suigai/hazardmap.files/20260226_Yasashi_ALL.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（7986字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "UnsupportedError: unsupported input: PDF has no extractable text (Scanned, 0 pages)"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 329,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 328,
+        "reason": ""
+      },
+      "similarity": 0.992,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninteiseikyuukisairei.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1550,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 0.0,
+      "verdict": "★うちだけ読めた"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaigomi_fax.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 657,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 738,
+        "reason": ""
+      },
+      "similarity": 0.549,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/chiiki/bousai/topics/hinanjodx.files/dx_kiyaku.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 6831,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 7255,
+        "reason": ""
+      },
+      "similarity": 0.96,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/chiiki/bousai/topics/hinanjodx.files/dx_chirashi2.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "テキスト演算子が無い（画像PDFかアウトライン化）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/chiiki/bousai/suigai/hazardmap.files/20260226_ALL.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（8368字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "UnsupportedError: unsupported input: PDF has no extractable text (Scanned, 0 pages)"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_jukyukyohi_todokedesho.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 245,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 292,
+        "reason": ""
+      },
+      "similarity": 0.235,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_kouzatouroku_todokedesho.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1169,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 1313,
+        "reason": ""
+      },
+      "similarity": 0.538,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/ouennteatetirashipdf.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1598,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 1862,
+        "reason": ""
+      },
+      "similarity": 0.255,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1314,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 1358,
+        "reason": ""
+      },
+      "similarity": 0.738,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102301.xls",
+      "kind": "古いOffice（doc/xls/ppt）",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "対応していない形式"
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 21166,
+        "reason": ""
+      },
+      "similarity": 0.0,
+      "verdict": "★anydocだけ読めた"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninnteiseikyuu.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1246,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 1143,
+        "reason": ""
+      },
+      "similarity": 0.275,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102302.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 14900,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 18322,
+        "reason": ""
+      },
+      "similarity": 0.91,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/documents/605/r7_dosya_0304.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "テキスト演算子が無い（画像PDFかアウトライン化）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "MalformedError: malformed document: couldn't parse input: invalid cross reference table"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/documents/27658/harigami.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 582,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 578,
+        "reason": ""
+      },
+      "similarity": 0.008,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/documents/381/annai.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 442,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 524,
+        "reason": ""
+      },
+      "similarity": 0.33,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/documents/640/documents640hinannkizyun_20260528.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 5005,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 5636,
+        "reason": ""
+      },
+      "similarity": 0.809,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/documents/5455/komae_hinanjo_2.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（119字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 183,
+        "reason": ""
+      },
+      "similarity": 0.0,
+      "verdict": "★anydocだけ読めた"
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/documents/605/r7_dosya_all.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（1097字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "MalformedError: malformed document: couldn't parse input: invalid cross reference table"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（4181字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/documents/605/r7_dosya_1.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "テキスト演算子が無い（画像PDFかアウトライン化）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "MalformedError: malformed document: couldn't parse input: invalid cross reference table"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 7078,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 8099,
+        "reason": ""
+      },
+      "similarity": 0.205,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/20250321132249_5.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1655,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 0.0,
+      "verdict": "★うちだけ読めた"
+    },
+    {
+      "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/hpg000027168_52.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 827,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 816,
+        "reason": ""
+      },
+      "similarity": 0.134,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/SODAIHARIGAMI.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（33字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 45,
+        "reason": ""
+      },
+      "similarity": 0.0,
+      "verdict": "★anydocだけ読めた"
+    },
+    {
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/SODAIHARIGAMI_KINYUREI.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 90,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 131,
+        "reason": ""
+      },
+      "similarity": 0.744,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/20241025kokugaitennyu_1.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 749,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 800,
+        "reason": ""
+      },
+      "similarity": 0.793,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/hpg000027168_51.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 657,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 612,
+        "reason": ""
+      },
+      "similarity": 0.149,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/20250321132249_7.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1789,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2320,
+        "reason": ""
+      },
+      "similarity": 0.229,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.suginami.tokyo.jp/documents/727/sodai_itiran5080401.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 34513,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 40061,
+        "reason": ""
+      },
+      "similarity": 0.942,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.files/youshi.docx",
+      "kind": "zip系（docx/xlsx/pptx/epub/odf）",
+      "ours": {
+        "ok": true,
+        "chars": 76,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 116,
+        "reason": ""
+      },
+      "similarity": 0.585,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.files/ryousyuusyohakkouiraisyo.docx",
+      "kind": "zip系（docx/xlsx/pptx/epub/odf）",
+      "ours": {
+        "ok": true,
+        "chars": 233,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 185,
+        "reason": ""
+      },
+      "similarity": 1.0,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.files/20260905kaihou.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "本文のストリームが無い（画像PDFかアウトライン化）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 5015,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 6577,
+        "reason": ""
+      },
+      "similarity": 0.542,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.files/01syusyucalender_0804.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "本文のストリームが無い（画像PDFかアウトライン化）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.files/02syusyucalender_0804.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "本文のストリームが無い（画像PDFかアウトライン化）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8_houkago_pamphlet.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（3字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "MalformedError: malformed document: couldn't parse input: invalid file trailer"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otokoHPV_20260624.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1955,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2332,
+        "reason": ""
+      },
+      "similarity": 0.028,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8shiori.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 2996,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 3174,
+        "reason": ""
+      },
+      "similarity": 0.852,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.files/20240703sodaihonnmokuitiran.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 20131,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 25730,
+        "reason": ""
+      },
+      "similarity": 0.553,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tenkyo-inin-denshi.docx",
+      "kind": "zip系（docx/xlsx/pptx/epub/odf）",
+      "ours": {
+        "ok": true,
+        "chars": 781,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 533,
+        "reason": ""
+      },
+      "similarity": 0.869,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tennyu-inin-denshi.docx",
+      "kind": "zip系（docx/xlsx/pptx/epub/odf）",
+      "ours": {
+        "ok": true,
+        "chars": 779,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 533,
+        "reason": ""
+      },
+      "similarity": 0.87,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.files/10.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "日本語の地の文にならない（7134字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/kaigai-inin-denshi.docx",
+      "kind": "zip系（docx/xlsx/pptx/epub/odf）",
+      "ours": {
+        "ok": true,
+        "chars": 783,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 537,
+        "reason": ""
+      },
+      "similarity": 0.871,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8_houkago_ichiran.pdf.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 2056,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2155,
+        "reason": ""
+      },
+      "similarity": 0.817,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/mr_kutan_20260624.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 2545,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 3004,
+        "reason": ""
+      },
+      "similarity": 0.91,
+      "verdict": "同じ"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.files/20251223jumin_ido_ininjo.xlsx",
+      "kind": "zip系（docx/xlsx/pptx/epub/odf）",
+      "ours": {
+        "ok": true,
+        "chars": 1540,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 55749,
+        "reason": ""
+      },
+      "similarity": 0.38,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otahuku_20260624.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1782,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2123,
+        "reason": ""
+      },
+      "similarity": 0.047,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/houkago_kodomokurabu.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 2805,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 2915,
+        "reason": ""
+      },
+      "similarity": 0.328,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjyou.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "本文のストリームが無い（画像PDFかアウトライン化）"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjotokureitennnyu.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 1899,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": true,
+        "chars": 543,
+        "reason": ""
+      },
+      "similarity": 0.509,
+      "verdict": "両方読めたが中身が違う"
+    },
+    {
+      "url": "https://www.city.toshima.lg.jp/documents/42508/20251006112929.pdf",
+      "kind": "pdf",
+      "ours": {
+        "ok": true,
+        "chars": 3708,
+        "reason": ""
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "NeedsOcr（画像PDF。ローカルではOCRしない）"
+      },
+      "similarity": 0.0,
+      "verdict": "★うちだけ読めた"
+    },
+    {
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/documents/d/seikatubunka/passport_goannai_20260401",
+      "kind": "pdf",
+      "ours": {
+        "ok": false,
+        "chars": 0,
+        "reason": "対応していない形式"
+      },
+      "anydoc": {
+        "ok": false,
+        "chars": 0,
+        "reason": "MalformedError: malformed document: couldn't parse input: invalid cross reference table"
+      },
+      "similarity": 1.0,
+      "verdict": "どちらも読めない"
+    }
+  ]
+}

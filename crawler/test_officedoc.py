@@ -251,6 +251,59 @@ class 字形の対応表(unittest.TestCase):
         self.assertNotIn(0x9999, got)
 
 
+class 全体の表への落とし方(unittest.TestCase):
+    """★フォント別の表が無いときに **文書全体の表まで捨てていた。**
+
+    その結果、対応表を持っているPDFを1バイトとして読み、丸ごと化けていた。
+    実測（墨田区の粗大ごみ処理手数料表）は16進1,100件が全滅して0字。
+    anydoc は同じPDFを「アイロン台 400 2 …」と表のまま読めていた。
+
+    こちらが読めないだけのものを「その区は手数料を書いていない」と言っていた。
+    """
+
+    def test_フォント別の表が無ければ全体の表を使う(self):
+        page = "BT /F9 12 Tf <0100> Tj ET"
+        # F9 の表は無い。全体の表にはある。以前はここで1バイト読みに落ちていた。
+        self.assertEqual(show_text(page, {0x0100: "料"}, {}), "料")
+
+    def test_全体の表にも当たらなければ1バイトで読む(self):
+        # 中野区の <2020…> ＝ 空白2文字。ここを2バイトで読むと114字が消える。
+        page = "BT /F9 12 Tf <41424320> Tj ET"
+        self.assertEqual(show_text(page, {0x9999: "無"}, {}), "ABC ")
+
+    def test_半分当たれば2バイトとして読む(self):
+        # 当たり具合で決める。全部が表にある必要はない（記号や欧文が混ざる）。
+        page = "BT /F9 12 Tf <01000101> Tj ET"
+        self.assertEqual(show_text(page, {0x0100: "手"}, {}), "手")
+
+    def test_表が無ければ今までどおり1バイト(self):
+        self.assertEqual(show_text("BT /F9 12 Tf <414243> Tj ET", {}, {}), "ABC")
+
+
+class リテラルのCID(unittest.TestCase):
+    """★`(…)` の中身が2バイトCIDのことがある（Identity-H）。
+
+    1バイト文字として読むと化ける。ただし普通の欧文リテラルを2バイトで読むと壊すので、
+    **対応表に当たった割合で決める。**
+    """
+
+    def test_表に当たるリテラルは文字に直す(self):
+        page = "BT /F1 12 Tf (\u0001\u0000\u0001\u0001) Tj ET"
+        got = show_text(page, {0x0100: "手", 0x0101: "数"}, {})
+        self.assertEqual(got, "手数")
+
+    def test_当たらないリテラルはそのまま(self):
+        # 欧文のリテラルはCIDに当たらないので、素直に読む側へ戻る。
+        self.assertEqual(show_text("BT /F1 12 Tf (Hello) Tj ET", {0x0100: "手"}, {}), "Hello")
+
+    def test_表が無ければそのまま(self):
+        self.assertEqual(show_text("BT /F1 12 Tf (abc) Tj ET", {}, {}), "abc")
+
+    def test_1文字のリテラルは触らない(self):
+        # 2バイトの組にならないものを無理に読まない。
+        self.assertEqual(show_text("BT /F1 12 Tf (a) Tj ET", {0x0100: "手"}, {}), "a")
+
+
 class 形式の見分け(unittest.TestCase):
     """★リダイレクト先が `/download` のように拡張子を持たないことがある。
 

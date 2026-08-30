@@ -1,0 +1,932 @@
+{
+  "_about": "虱潰しで読んだ (URL, 項目) の記録。二度読まないために持つ。判定ではなく、何を見たかの記録。",
+  "version": "sweep-0.1",
+  "procedure": "jidouteate",
+  "n": 66,
+  "visits": {
+    "https://www.city.adachi.tokyo.jp/kodomokate/kosodate-application-2025.html\t手数料": {
+      "url": "https://www.city.adachi.tokyo.jp/kodomokate/kosodate-application-2025.html",
+      "link_text": "子育てアプリ「足立区おやこ手帳」",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは子育てアプリ「足立区おやこ手帳」の案内で、児童手当の申請や転入届の手数料についての記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html\t窓口/オンライン可否": {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
+      "link_text": "児童手当",
+      "found": true,
+      "value": "申請先",
+      "evidence": "手当の支給を受けるためには、申請手続きをする必要があります。転入やお子様の出生の際は忘れずに手続きをしてください。\n\n児童手当制度\n\n詳細については、次の項目をクリックしてください。\n\n手当月額\n\n支給対象者（手当を受給できる方）\n\n対象となる児童\n\n申請先\n\n申請時期について（出生や転入の際は15日以内にお手続きを）\n\n新規申請に必要なもの",
+      "why_not": "",
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 172,
+        "note": ""
+      },
+      "verified": true
+    },
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html\t手数料": {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
+      "link_text": "児童手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは千代田区の児童手当制度の説明ページで、手当月額・支給対象者・申請先・申請時期・必要書類などの見出しはあるが、申請手数料についての記載は本文中に見当たらない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html\t手数料": {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
+      "link_text": "こども・高校生等医療費助成制度（乳幼児～高校生等）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「こども・高校生等医療費助成制度」に関する内容で、児童手当の申請とは別の手当・助成制度についての説明。児童手当の申請手数料の記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/index.html\t手数料": {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/index.html",
+      "link_text": "手当・助成",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童手当の制度紹介トップページ一覧で、手数料の記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/chukosei-oenteate.html\t手数料": {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/chukosei-oenteate.html",
+      "link_text": "中高生世代応援手当（区独自制度）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは千代田区「中高生世代応援手当」（区独自制度）の説明で、児童手当そのものの申請ページではない。また本文中に申請手数料についての記載自体がない（申請書類・時期・届出先の説明のみ）。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/shin-chugakusei.html\t手数料": {
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/shin-chugakusei.html",
+      "link_text": "令和8年4月から新たに中学生になる児童を養育している方へ（受給のための申請受付を開始します）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは千代田区の「中高生世代応援手当」（令和8年4月から中学生になる児童向けの区独自制度）の申請案内であり、児童手当そのものの申請手続き（転入時の認定請求）や、その手数料についての記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2025ouenteate.html\t手数料": {
+      "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2025ouenteate.html",
+      "link_text": "令和7年度中央区子育て応援手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは令和7年度中央区子育て応援手当（給付金）に関する内容で、他区からの転入時に出す児童手当の申請手続きやその手数料についての記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/oyakudachi/1004610.html\t手数料": {
+      "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/oyakudachi/1004610.html",
+      "link_text": "「いたばし子育て応援アプリ」配信中！",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「いたばし子育て応援アプリ」の紹介ページで、児童手当の申請やその手数料についての記載はない。本文にあるのはアプリの無料利用に関する記述（通信料は利用者負担）とオンライン相談の案内のみ。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065179.html\t手数料": {
+      "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065179.html",
+      "link_text": "「児童扶養手当現況届のお知らせ（郵送手続き）」が届いた方へ",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは板橋区の児童扶養手当（現況届）の郵送手続きについての案内で、児童手当の申請（転入時の届出）とは無関係。手数料の記載もない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065176.html\t手数料": {
+      "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065176.html",
+      "link_text": "「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いた方へ",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童扶養手当の現況届（除外届あり-B）に関する案内で、児童手当の申請（転入時の届出）とは無関係。手数料の記載自体もない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065172.html\t手数料": {
+      "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065172.html",
+      "link_text": "「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いた方へ",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童扶養手当の現況届（除外届あり-A）に関する案内で、板橋区の児童手当の申請（転入時の届出）についての手数料は記載されていない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/1004606.html\t手数料": {
+      "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/1004606.html",
+      "link_text": "いたばし子育て情報ブック",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "「いたばし子育て情報ブック」という冊子の配布案内ページで、児童手当を含む子育て情報全般の冊子を紹介しているだけ。児童手当の申請手続きや手数料についての記載はなく、Adobe Readerの無料ダウンロード案内があるのみ。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1004635.html\t手数料": {
+      "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1004635.html",
+      "link_text": "児童育成手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは板橋区の児童育成手当（ひとり親家庭等向け）の説明で、児童手当の申請や手数料についての記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6028.html\t手数料": {
+      "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6028.html",
+      "link_text": "児童扶養手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童扶養手当（ひとり親家庭向け手当）についてのもので、児童手当の申請（転入時の届出）とは別制度。手数料に関する記載自体もない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.koto.lg.jp/kodomo/kosodate/index.html\t手数料": {
+      "url": "https://www.city.koto.lg.jp/kodomo/kosodate/index.html",
+      "link_text": "子育て支援",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは子育て支援の総合案内（メニュー・リンク一覧）で、児童手当の申請手数料についての本文記載がない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.koto.lg.jp/281012/kodomo/kosodate/benri/4911.html\t手数料": {
+      "url": "https://www.city.koto.lg.jp/281012/kodomo/kosodate/benri/4911.html",
+      "link_text": "子育てハンドブック",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "子育てハンドブックの案内ページで、児童手当の申請や手数料についての記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html\t窓口/オンライン可否": {
+      "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
+      "link_text": "子育て・児童相談",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "「子育て・児童相談」ページで、子育て相談窓口や児童相談所、子ども家庭支援拠点の案内のみ。児童手当（転入時の申請）の窓口/オンライン可否についての記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/sogosodan.html\t窓口/オンライン可否": {
+      "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/sogosodan.html",
+      "link_text": "子育て総合相談窓口（利用者支援事業）（こども家庭センター利用者支援係）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "本文は「子育て総合相談窓口（利用者支援事業）」の相談窓口案内であり、児童手当の申請・届出に関する記載は一切ない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/bukkadakataioukosodateouenteate.html\t手数料": {
+      "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/bukkadakataioukosodateouenteate.html",
+      "link_text": "物価高対応子育て応援手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「物価高対応子育て応援手当」に関するもので、児童手当の申請そのものの手数料は書かれていない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.minato.tokyo.jp/kodomo/kate/teate/index.html\t手数料": {
+      "url": "https://www.city.minato.tokyo.jp/kodomo/kate/teate/index.html",
+      "link_text": "手当て・助成",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "本文は児童手当ページのメニュー・関連リンク一覧のみで、児童手当の申請手続きや手数料についての記載がない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/ai-port.html\t手数料": {
+      "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/ai-port.html",
+      "link_text": "子育てひろば「あい・ぽーと」",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "子育てひろば「あい・ぽーと」の施設案内ページで、会員登録の年会費（区内500円・区外1000円）についての記載はあるが、児童手当の申請手続きやその手数料についての記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kate/teate/jidofuyo.html\t手数料": {
+      "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kate/teate/jidofuyo.html",
+      "link_text": "児童扶養手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "本文は「児童扶養手当」（ひとり親家庭向けの手当）についてのページで、児童手当の申請や手数料についての記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html\t必要書類": {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+      "link_text": "児童手当",
+      "found": true,
+      "value": "個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）の写し、申請者の加入保険が確認できるもの（資格確認書等）の写し（3歳未満の児童を養育し、かつ各種共済組合員の方のみ）、児童手当 別居監護同意書（支給対象のお子さんと別居している方のみ）、請求者名義の振込口座（普通預金）が確認できるものの写し",
+      "evidence": "出生、転入などにより、児童手当の認定請求をするときは添付書類を添えて、「児童手当 認定請求書」をご提出ください。\n\n個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）の写し\n※マイナンバーカードのみで本人確認を兼ねます。\n\n申請者の加入保険が確認できるもの（資格確認書等※）の写し\n※3歳未満の児童を養育し、かつ各種共済組合員（私立学校教職員共済を除く）の方のみ必要です。「保険者番号・記号・番号・枝番」の各欄はマスキングしてください。\n※資格確認書、マイナポータルから保険情報を印字したもの（保険者名・氏名・生年月日・性別・資格取得年月日がわかるもの）\n\n児童手当 別居監護同意書（PDF形式：107KB）\n※支給対象のお子さんと別居している方のみ\n\n請求者名義の振込口座（普通預金）が確認できるものの写し（通帳またはカード等）",
+      "why_not": "",
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 273,
+        "note": "連続273文字だけ一致。引用全体は確認できない"
+      },
+      "verified": false
+    },
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html\t窓口/オンライン可否": {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
+      "link_text": "児童手当など",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "「児童手当など」の制度一覧・関連ページへのリンク集で、申請の窓口やオンライン可否についての本文記述がない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html\t窓口/オンライン可否": {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
+      "link_text": "児童手当の制度改正(令和6年10月分以降)",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは令和6年10月の制度改正（所得制限撤廃・支給対象拡大等）に伴う追加申請の要否と提出先窓口についての案内であり、他区市町村からの転入に伴う児童手当申請の窓口/オンライン可否は書かれていない。申請方法も「こちら（児童手当）をご確認ください」と別ページへのリンクのみで、本文中に具体的な窓口/オンライン可否の記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html\t窓口/オンライン可否": {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+      "link_text": "児童手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童手当の認定請求（出生・転入時の受給申請）の手続きで、電子申請・郵送・窓口いずれも案内されている。しかし本文の申請対象は「児童手当」であり、依頼にある『児童手当の申請＝他市区町村から中野区への転入届』という定義とは異なる。設問の対象（転入届そのもの）はこのページには書かれていない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html\t期限": {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
+      "link_text": "児童手当の制度改正(令和6年10月分以降)",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは令和6年10月の制度改正（所得制限撤廃・支給対象拡大など）の内容と、それに伴う申請要否の判定基準を説明しているのみで、申請自体の期限（○日以内に申請等）は書かれていない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html\t期限": {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+      "link_text": "児童手当",
+      "found": true,
+      "value": "前住所地での転出予定日の翌日から15日以内（土・日・祝含む）",
+      "evidence": "お子さんが生まれたり、中野区に転入された場合は、出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）に手続きをしてください。",
+      "why_not": "",
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 70,
+        "note": ""
+      },
+      "verified": true
+    },
+    "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/tokubetujidoufuyou.html\t手数料": {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/tokubetujidoufuyou.html",
+      "link_text": "特別児童扶養手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは特別児童扶養手当（障害のある児童向けの手当）のページで、練馬区の児童手当（転入時の申請）についての記載も手数料の記載もない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kododateouenken.html\t手数料": {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kododateouenken.html",
+      "link_text": "子育てスタート応援券",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「子育てスタート応援券」の交付案内で、練馬区の児童手当申請（転入時の届出）の手数料には触れていない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/np.html\t手数料": {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/np.html",
+      "link_text": "子育て支援啓発講座『ノーバディーズ・パーフェクト～完璧な親なんていない～』",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは子育て支援啓発講座『ノーバディーズ・パーフェクト』の案内であり、児童手当の申請（転入時の届出）についての記載はない。参加費は無料と書かれているが、これは講座の参加費であり児童手当の手数料ではない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/02413/18187.html\t必要書類": {
+      "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+      "link_text": "児童手当のご案内",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童手当の「必要書類」を説明しているが、記載されているのは出生等による新規申請・額改定請求の一般的な必要書類であり、本文中に「他区市町村から世田谷区へ転入した場合」に特有の必要書類の記載はない（転入に伴う申請が必要である旨の言及はあるが、転入時特有の持参物は書かれていない）",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/02413/18187.html\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+      "link_text": "児童手当のご案内",
+      "found": true,
+      "value": "郵送・窓口・電子申請（マイナポータル経由）のいずれかで児童手当の申請が可能",
+      "evidence": "5.申請方法\n\n以下の郵送、窓口又は電子申請の方法でご申請いただけます。\n\n5-2.窓口での申請をご希望の場合\n\n上の必要書類と添付書類を合わせて、子ども家庭課子ども医療・手当担当の窓口又は各総合支所の子ども家庭支援課の窓口でご提出ください。\n\n5-3.電子申請をご希望の場合\n\nマイナンバーカードをお持ちの方は、マイナポータルを経由して電子申請をすることができます。",
+      "why_not": "",
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 79,
+        "note": "連続79文字だけ一致。引用全体は確認できない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/02413/1310.html\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
+      "link_text": "児童手当現況届のご案内",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童手当の「現況届」（毎年6月に既存受給者が提出する継続確認手続き）についての案内であり、転入時の新規申請とは別の手続き。窓口/オンライン可否の記載も現況届の提出方法（郵送・窓口・マイナポータル電子申請）についてのみで、転入に伴う児童手当申請の窓口/オンライン可否は書かれていない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/11545.html\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/11545.html",
+      "link_text": "子育て",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは子育て関連メニューの一覧（目次）ページであり、児童手当の申請窓口/オンライン可否についての本文記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11726.html\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11726.html",
+      "link_text": "子育ての区情報誌・メールマガジン等",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「子育ての区情報誌・メールマガジン等」の案内で、妊娠・出産・子育てガイドやメールマガジン配信の紹介のみ。児童手当の申請窓口やオンライン可否についての記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11729.html\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11729.html",
+      "link_text": "子育て支援",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「子育て支援」カテゴリの目次ページで、各制度・イベントへのリンク一覧のみ。児童手当の申請（転入時の届出）の窓口やオンライン可否についての本文記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12400.html\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12400.html",
+      "link_text": "子育てステーション",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "「子育てステーション」の施設案内ページ（ほっとステイ・おでかけひろば等の一覧）で、児童手当の申請や窓口/オンライン可否についての記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13019.html\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13019.html",
+      "link_text": "子育て・教育に関する助成",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "「子育て・教育に関する助成」の一覧ページで、児童手当の申請窓口/オンライン可否についての記載はなく、医療費助成・就学援助・奨学金等へのリンク一覧のみ",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
+      "link_text": "ひとり親家庭への手当、助成、貸付",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「ひとり親家庭への手当、助成、貸付」の一覧ページで、児童扶養手当・児童育成手当や医療費助成、貸付制度へのリンクのみ。児童手当（転入時申請）についての記載や窓口・オンライン可否の言及はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/02413/18187.html\t期限": {
+      "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+      "link_text": "児童手当のご案内",
+      "found": true,
+      "value": "前住所地での転出予定日の翌日から15日以内",
+      "evidence": "ただし、申請日が出生日・前住所地での転出予定日の翌月になった場合でも、出生日・前住所地での転出予定日の翌日から15日以内に申請すれば、申請月から支給（又は増額）されます（15日特例）。",
+      "why_not": "",
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 92,
+        "note": ""
+      },
+      "verified": true
+    },
+    "https://www.city.setagaya.lg.jp/02413/18187.html\t手数料": {
+      "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+      "link_text": "児童手当のご案内",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童手当の申請手続き案内であり、手数料の記載はない。関連する費用言及は住宅ローン・奨学金申請用の受給証明発行（無料、記載なし）や振込手数料等でもなく、申請自体の手数料についての記述は本文中に存在しない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html\t手数料": {
+      "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
+      "link_text": "ひとり親家庭への手当、助成、貸付",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「ひとり親家庭への手当、助成、貸付」の案内ページで、児童扶養手当・児童育成手当や医療費助成などのリンク一覧のみ。児童手当（他区市町村からの転入時の申請）については記載がなく、手数料の言及もない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/R7_kosodateouen.html\t手数料": {
+      "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/R7_kosodateouen.html",
+      "link_text": "物価高対応子育て応援手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「物価高対応子育て応援手当」の案内で、児童手当の申請（転入時の届出）の手数料は書かれていない。文中の「手数料」は詐欺注意喚起の文脈（給付金支給のための手数料を求めることはない）のみ",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_f.html\t手数料": {
+      "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_f.html",
+      "link_text": "特別児童扶養手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「特別児童扶養手当」についての案内で、児童手当（転入時の申請）とは別の手当。手数料の記載自体もない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/ninshin-teate/\t手数料": {
+      "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/ninshin-teate/",
+      "link_text": "妊娠・出産に関する手当・助成",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「妊娠・出産に関する手当・助成」の一覧・関連リンク集で、児童手当への内部リンクがあるのみ。児童手当の申請手続きや手数料についての記述は本文中に存在しない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.shibuya.tokyo.jp/contents/koho-news/1612/20260715_kodomo.html\t手数料": {
+      "url": "https://www.city.shibuya.tokyo.jp/contents/koho-news/1612/20260715_kodomo.html",
+      "link_text": "【子育て・教育・生涯学習】それぞれの成長を、一生よろこべる街へ。子どもの手当・医療費助成/4月分～8月分の保育利用料の軽減を行います など",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "本文は児童手当・各種手当の金額表と、保育料軽減や各種イベント募集案内であり、他区からの転入に伴う児童手当の「申請」自体の手数料についての記載はない（手当は無料で申請するもので、掲載されている金額はいずれも「手当額（月額）」であって手数料ではない）",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-shinseisyo/hpg000009624.html\t手数料": {
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-shinseisyo/hpg000009624.html",
+      "link_text": "「児童手当・子ども医療費助成申請書」はこちら",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童手当・子ども医療費助成の申請書ダウンロードページで、記入方法・必要書類・問い合わせ先が書かれているが、手数料についての記載はない（児童手当の申請自体は無料で手数料の概念がない）",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/20250106164225.html\t手数料": {
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/20250106164225.html",
+      "link_text": "9999_令和6年度子育て世帯生活支援特別給付金（住民税非課税世帯等物価高騰対策支援給付金のこども加算分）について【申請受付終了】",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「令和6年度子育て世帯生活支援特別給付金（こども加算分）」の申請案内であり、児童手当の申請（転入時の届出）についての記載や手数料の言及はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.shinjuku.lg.jp/kodomo/jidoikusei01_000001_00004.html\t手数料": {
+      "url": "https://www.city.shinjuku.lg.jp/kodomo/jidoikusei01_000001_00004.html",
+      "link_text": "《申請受付は終了しました》物価高対応子育て応援手当",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「物価高対応子育て応援手当」（一時金の支給）に関するもので、児童手当の申請（転入時の届出）の手数料については記載がない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/km/kodomowakufes2026.html\t必要書類": {
+      "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/km/kodomowakufes2026.html",
+      "link_text": "こどもわくわくフェスティバル【令和8年5月31日（日曜日）】",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「こどもわくわくフェスティバル」というイベント告知で、児童手当の申請や必要書類についての記載は本文中に無い",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html\t必要書類": {
+      "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
+      "link_text": "育児講演会『デジタル時代の子育て ～「距離感」だけで子育てが楽しくなるかもしれない～』を開催します",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "育児講演会の開催案内であり、児童手当の申請とは無関係",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kosodatetokyoPP.html\t期限": {
+      "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kosodatetokyoPP.html",
+      "link_text": "子育て応援とうきょうパスポートについて",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「子育て応援とうきょうパスポート」の案内で、児童手当の申請とは無関係",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.html\t手数料": {
+      "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.html",
+      "link_text": "子育て支援総合センター交流室「交流室開放＆手形・足形カード作り」を開催します",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは子育て支援総合センター交流室の土曜開放イベント（手形・足形カード作り）の案内で、費用は「無料」と記載されている。児童手当の申請や手数料についての記述はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html\t手数料": {
+      "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
+      "link_text": "育児講演会『デジタル時代の子育て ～「距離感」だけで子育てが楽しくなるかもしれない～』を開催します",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "育児講演会の案内ページ。参加費は無料と書かれているが、児童手当の申請の手数料についての記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/isihamahasiba.html\t必要書類": {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/isihamahasiba.html",
+      "link_text": "石浜橋場こども園で遊びませんか",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "石浜橋場こども園の子育てひろば（なかよしひろば・子育て相談・赤ちゃんの駅）の案内ページであり、児童手当の申請や必要書類についての記載は本文に無い",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html\t窓口/オンライン可否": {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
+      "link_text": "幼児教育・保育の無償化（認定こども園に関する概要）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは認定こども園の幼児教育・保育の無償化（利用料の給付認定・請求手続き）についての内容で、児童手当の申請（転入時の届出）についての記載はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html\t窓口/オンライン可否": {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html",
+      "link_text": "令和8年度 認定こども園園児募集について",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "認定こども園の園児募集・入園申込についてのページで、児童手当の申請(転入時の届出)についての記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html\t期限": {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html",
+      "link_text": "令和8年度 認定こども園園児募集について",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは認定こども園（保育施設）の園児募集・入園申込みについての案内であり、児童手当の申請とは無関係。期限として書かれているのは短時間保育・長時間保育の入園申込期間（例:令和7年10月31日〜11月4日など）で、児童手当の申請期限ではない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html\t手数料": {
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
+      "link_text": "幼児教育・保育の無償化（認定こども園に関する概要）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「幼児教育・保育の無償化（認定こども園に関する概要）」であり、認定こども園の預かり保育無償化の認定・請求手続きについての説明。児童手当の申請（転入時の届出）についての記載や手数料はない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html\t必要書類": {
+      "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
+      "link_text": "子育て世帯への食料支援事業（区内共通商品券の配付）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「子育て世帯への食料支援事業（区内共通商品券の配付）」についてのもので、児童手当の申請（転入時の届出）の必要書類は本文に書かれていない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html\t窓口/オンライン可否": {
+      "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
+      "link_text": "子育て世帯への食料支援事業（区内共通商品券の配付）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "子育て世帯への食料支援事業（区内共通商品券の配付）についてのページで、児童手当の申請窓口/オンライン可否の記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html\t期限": {
+      "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
+      "link_text": "子育て世帯への食料支援事業（区内共通商品券の配付）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「子育て世帯への食料支援事業（区内共通商品券の配付）」についてのもので、児童手当の申請やその期限には言及していない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+      "link_text": "児童手当のご案内（PDF：858KB）",
+      "found": true,
+      "value": "郵送、窓口又は電子申請で子ども家庭課に提出（各総合支所保健福祉センター子ども家庭支援課の窓口でも提出可）",
+      "evidence": "「児童手当認定請求書（額改定請求書）（以下、認定請求書という）」と「添付書類（必要な場合）」を合わせて、郵送、窓口又は電子申請で子ども家庭課に提出してください。（中略）＊各総合支所保健福祉センター子ども家庭支援課の窓口でもご提出いただけます。　＊電子申請については、世田谷区のホームページをご確認ください。",
+      "why_not": "",
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 67,
+        "note": "連続67文字だけ一致。引用全体は確認できない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf\t期限": {
+      "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+      "link_text": "児童手当のご案内（PDF：858KB）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "本文には「郵送の場合は…申請が遅れると受給できない月が発生しますので、速やかに申請してください」とあるのみで、転入に伴う申請そのものの具体的な期限（◯日以内など）は書かれていない。文中の「15日以内」は、(a)世田谷区から他区市町村へ転出する人が転出先自治体で申請する場合の話、および(b)前住所地の転出予定日の翌日から15日以内に申請すれば申請月から遡って支給される「15日特例」（支給開始月の起算ルール）についてであり、いずれも転入届（世田谷区への申請）が受理される期限そのものではない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    }
+  }
+}

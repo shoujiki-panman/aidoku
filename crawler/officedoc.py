@@ -54,6 +54,24 @@ class DocText:
     reason: str        # ok=False のとき、なぜ読めなかったか
 
 
+# ファイルの先頭バイト。★キャッシュは拡張子 .html で保存されるので
+# （`polite_fetch._paths`）、**名前では添付かどうか分からない。**
+FILE_MAGIC = (
+    b"%PDF-",              # PDF
+    b"PK\x03\x04",         # zip系（docx / xlsx / pptx / epub / odf）
+    b"\xd0\xcf\x11\xe0",   # 古いOffice（doc / xls / ppt）
+)
+
+
+def looks_like_document(data: bytes) -> bool:
+    """バイト列が添付ファイルか。**名前ではなく中身で判断する。**
+
+    ★これが無いあいだ、`analysis/sweep.py` は添付をHTMLとして読もうとして
+      静かに落としていた（321ページ読んで添付0本）。
+    """
+    return data.startswith(FILE_MAGIC)
+
+
 def kind_of(url: str) -> str:
     """拡張子から形式を決める。中身は見ない（URLで弾く側と揃えるため）。"""
     lowered = url.lower().split("?")[0]
@@ -221,6 +239,10 @@ def _decode_hex_run(hex_value: str, *maps: dict[int, str]) -> str:
     for i in range(0, len(clean), 4):
         code = int(clean[i:i + 4], 16)
         out.append(next((m[code] for m in maps if code in m), ""))
+    # ★当たらないなら、その表はこのフォントのものではない。1バイトとして読み直す。
+    #   `<2020…>` が「CID 1個」ではなく「空白2文字」だった中野区の様式がこれで戻る。
+    if sum(1 for c in out if c) / (len(clean) // 4) < CID_HIT_RATIO:
+        return _decode_single_byte(clean)
     return "".join(out)
 
 
@@ -292,9 +314,39 @@ def _literal(raw: str) -> str:
                              "b": "", "f": ""}.get(m.group(1), m.group(1)), raw)
 
 
+# `( )` の中身を2バイトCIDとして読むとき、これだけ対応表に当たれば採用する。
+#
+# ★Identity-H のPDFは、本文を `<16進>` ではなく `(…)` のリテラルで書くことがある。
+#   中身は2バイトのCIDで、1バイト文字として読むと化ける。実測（墨田区の
+#   粗大ごみ処理手数料表）は3,819字すべてが化けて、丸ごと落ちていた。
+#
+#   ただし普通の1バイト文字列を2バイトで読むと壊れるので、**当たった割合で決める。**
+#   英数字のリテラルはCIDに当たらないので、この関門で自然に元へ戻る。
+CID_HIT_RATIO = 0.5
+
+
+def _decode_literal(raw: str, cmap: dict[int, str]) -> str:
+    """`(…)` の中身。まず素直に読み、2バイトCIDとして当たるならそちらを採る。"""
+    plain = _literal(raw)
+    if not cmap or len(plain) < 2:
+        return plain
+    codes = [(ord(plain[i]) << 8) | ord(plain[i + 1]) for i in range(0, len(plain) - 1, 2)]
+    hits = [cmap.get(code, "") for code in codes]
+    if sum(1 for h in hits if h) / len(codes) < CID_HIT_RATIO:
+        return plain
+    return "".join(hits)
+
+
 def _maps(active, cmap):
-    """引く順。対応表を持たないフォントには何も渡さない（1バイトとして読ませる）。"""
-    return (active, cmap) if active is not None else ()
+    """引く順。いま使っているフォントの表を先に、無ければ文書全体の表に落とす。
+
+    ★以前はフォント別の表が無いとき **何も渡さなかった。** その結果、
+      文書全体の表を持っているのに1バイトとして読み、丸ごと化けていた
+      （墨田区の粗大ごみ処理手数料表・16進1,100件が全滅）。
+      当たらなかったときは `_decode_hex_run` が1バイト読みに戻すので、
+      ここでは渡してよい。
+    """
+    return (active, cmap) if active is not None else (cmap,)
 
 
 def show_text(page: str, cmap: dict[int, str],
@@ -318,11 +370,11 @@ def show_text(page: str, cmap: dict[int, str],
         if array:
             for in_hex, in_lit in _IN_ARRAY.findall(array):
                 out.append(_decode_hex_run(in_hex, *_maps(active, cmap)) if in_hex
-                           else _literal(in_lit))
+                           else _decode_literal(in_lit, cmap))
         elif hex_run:
             out.append(_decode_hex_run(hex_run, *_maps(active, cmap)))
         elif literal:
-            out.append(_literal(literal))
+            out.append(_decode_literal(literal, cmap))
     return "".join(out)
 
 
