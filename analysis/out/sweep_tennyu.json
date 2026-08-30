@@ -19,9 +19,13 @@
       "墨田区/窓口/オンライン可否",
       "墨田区/期限"
     ],
-    "exhausted": 29,
+    "exhausted": 28,
     "budget_hit": 0,
     "budget_names": [],
+    "unreadable": 1,
+    "unreadable_names": [
+      "中野区/手数料"
+    ],
     "errored": 0,
     "errored_names": []
   },
@@ -63,6 +67,7 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
@@ -93,6 +98,7 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 4,
           "looked": [
             {
@@ -129,6 +135,7 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 11,
           "looked": [
             {
@@ -205,8 +212,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "手数料",
@@ -216,6 +224,7 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 4,
           "looked": [
             {
@@ -258,6 +267,7 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
@@ -288,6 +298,7 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 8,
           "looked": [
             {
@@ -354,6 +365,7 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 4,
           "looked": [
             {
@@ -407,6 +419,7 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
@@ -437,49 +450,50 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 7,
           "looked": [
             {
               "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/hikkoshi_info.html",
               "link_text": "引っ越しワンストップ",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/hyojunka.html",
               "link_text": "令和7年1月6日から住民票の写し等と印鑑登録証明書の様式が変わります。",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/seikyu.html",
               "link_text": "江戸川区の住民票の請求",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/koikikofu.html",
               "link_text": "広域交付（住民票のある市区町村以外での交付）による交付申請",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/kihondaicho.html",
               "link_text": "住民基本台帳の閲覧",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
               "link_text": "届出・証明",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.edogawa.tokyo.jp/kurashi/index.html",
               "link_text": "くらし・手続き",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -497,49 +511,50 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 7,
           "looked": [
             {
               "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/index.html",
               "link_text": "戸籍・住民登録",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/index.html",
               "link_text": "住民票の写し・戸籍証明の請求",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/p037367.html",
               "link_text": "住民票の写し・戸籍証明書などの交付手数料の改定に関するお知らせ（令和8（2026）年7月1日から）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/index.html",
               "link_text": "住民票の写し等の請求",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/index.html",
               "link_text": "窓口での請求（住民票の写し等）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/yuusou/index.html",
               "link_text": "郵送での請求（住民票の写し等）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/002/index.html",
               "link_text": "戸籍証明（戸籍謄本・抄本）等の請求",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -557,37 +572,38 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 5,
           "looked": [
             {
               "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
               "link_text": "転入届 （国外から板橋区に転入した方）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
               "link_text": "転居届 （板橋区内で引越しの方）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
               "link_text": "団体での住民異動届出について",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
               "link_text": "旧氏（旧姓）の住民票などへの併記",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
               "link_text": "同じ住所に戸建建物が複数あり誤配等でお困りの方へ",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -605,13 +621,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
               "link_text": "マイナポータルによるオンラインでの転出届（引越しワンストップサービス）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -629,25 +646,26 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 3,
           "looked": [
             {
               "url": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
               "link_text": "転入届、転居届に伴うマイナンバーカードや特定在留カードなどの手続き",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001573.html",
               "link_text": "留学などに伴い、北区への転入手続きを団体で行う方へ",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001571.html",
               "link_text": "オンラインによる転出届・転入（転居）予定連絡",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -665,19 +683,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5015.html",
               "link_text": "転出届（江東区以外の区市町村へのお引越し）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
               "link_text": "住所・戸籍の手続き",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -695,25 +714,26 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 3,
           "looked": [
             {
               "url": "https://www.city.meguro.tokyo.jp/kurashi/kosekitodokede/index.html",
               "link_text": "戸籍の届出（出生、死亡など）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
               "link_text": "引越しワンストップサービス",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
               "link_text": "マイナンバー入り住民票の写しの発行",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -734,33 +754,36 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "exhausted",
+          "stopped": "unreadable",
           "errors": 0,
+          "unreadable": [
+            "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjyou.pdf"
+          ],
           "candidates": 4,
           "looked": [
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/nichiyo.html",
               "link_text": "2階戸籍住民課日曜窓口のご案内【9月20日、9月27日、10月4日、10月25日は休止します】",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/kayoencyo.html",
               "link_text": "2階戸籍住民課での火曜延長窓口のご案内",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240211143306245.html",
               "link_text": "外国人の方の在留期間延長に伴うマイナンバーカードの手続きについて",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
               "link_text": "くらし・手続き",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -778,37 +801,38 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 5,
           "looked": [
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
               "link_text": "転入・転出に伴う区役所以外の手続き（電気・水道・ガス等）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html",
               "link_text": "区役所に行かずにできる手続き（戸籍・住民登録）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
               "link_text": "7月17日から7月21日までに戸籍のお届をされる方へ",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/index.html",
               "link_text": "お知らせ一覧（戸籍・住民登録）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
               "link_text": "くらし・手続き",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -826,19 +850,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/jyuusyo-henkou_mynumber-card.html",
               "link_text": "住所変更に伴うマイナンバーカードの手続きについて",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/kosekijyuminyuso.html",
               "link_text": "戸籍・住民票の郵送請求",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -856,13 +881,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.setagaya.lg.jp/02233/84.html",
               "link_text": "転入・転居届に伴う関連手続きの案内について",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -874,13 +900,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.setagaya.lg.jp/kurashi/11524.html",
               "link_text": "くらし・手続き",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -892,13 +919,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.setagaya.lg.jp/02233/84.html",
               "link_text": "転入・転居届に伴う関連手続きの案内について",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -916,19 +944,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.shibuya.tokyo.jp/kurashi/",
               "link_text": "住民票・戸籍",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/nimpu-info/tennyuu_ninpu.html",
               "link_text": "渋谷区へ転入した妊婦の皆さまへ",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -944,8 +973,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -961,13 +991,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
               "link_text": "住民票等の証明",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -984,37 +1015,37 @@
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000001_00002.html",
               "link_text": "3・4・5月期における転入・転出の手続きについて",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/kurashi00_100002.html",
               "link_text": "住民票等の証明・住所変更の届出",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00011.html",
               "link_text": "スマートフォン等から住所変更の届出書・住民票等の請求書の作成ができます",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_002019.html",
               "link_text": "戸籍住民課各窓口受付状況",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
               "link_text": "住民票等の証明",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/index.html",
               "link_text": "戸籍・住民票・印鑑登録・マイナンバーカード",
               "verified": true,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1026,13 +1057,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
               "link_text": "住民票等の証明",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1044,13 +1076,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
               "link_text": "住民票等の証明",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -1068,19 +1101,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
               "link_text": "くらし・手続き",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.suginami.tokyo.jp/s018/536.html",
               "link_text": "杉並区に転入する方へ",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -1098,31 +1132,32 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 4,
           "looked": [
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
               "link_text": "戸籍の届出",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
               "link_text": "戸籍の証明",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
               "link_text": "住民登録の届出",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
               "link_text": "住民票等の証明書",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1139,7 +1174,7 @@
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
               "link_text": "引越しワンストップサービスが始まりました（墨田区から転出の場合、来庁不要に）",
               "verified": true,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1156,7 +1191,7 @@
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
               "link_text": "引越しワンストップサービスが始まりました（墨田区から転出の場合、来庁不要に）",
               "verified": true,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1168,37 +1203,38 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 5,
           "looked": [
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
               "link_text": "戸籍の届出・証明",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
               "link_text": "戸籍の届出",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
               "link_text": "戸籍の証明",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/mado-yuso_taisaku.html",
               "link_text": "転出届出書（郵送用）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
               "link_text": "住民票等の証明書",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -1216,73 +1252,74 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 11,
           "looked": [
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
               "link_text": "転入したとき",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/kosekitodokede/index.html",
               "link_text": "戸籍に関する届出",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/honninkakunin.html",
               "link_text": "戸籍・住民登録関係の請求や届出の際には本人確認書類の提示が必要です",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kouikikoufu_koseki.html",
               "link_text": "戸籍の広域交付",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/index.html",
               "link_text": "戸籍",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/index.html",
               "link_text": "戸籍に関する証明",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/index.html",
               "link_text": "戸籍に関する証明の取得について",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kosekiyuusouseikyuu.html",
               "link_text": "戸籍の証明書を郵送で取得する",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/juminutusi/index.html",
               "link_text": "住民票の写しについて",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
               "link_text": "マイナンバーカードをお持ちの方へ 来庁不要で戸籍・住民票の写し等を受け取ることができます新規ウィンドウで開きます。",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kurashi/todokede/index.html",
               "link_text": "戸籍・住民登録等",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -1298,8 +1335,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     }

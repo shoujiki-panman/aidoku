@@ -2,7 +2,7 @@
   "_about": "虱潰しで読んだ (URL, 項目) の記録。二度読まないために持つ。判定ではなく、何を見たかの記録。",
   "version": "sweep-0.1",
   "procedure": "sodaigomi",
-  "n": 113,
+  "n": 114,
   "visits": {
     "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html\t必要書類": {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
@@ -1579,6 +1579,20 @@
       "value": "",
       "evidence": "",
       "why_not": "このページは事業系ごみ（事業者が新規に出すごみ）の処理委託・処理手数料に関する内容で、家庭から出る粗大ごみ収集の申込の手数料については書かれていない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/index.html\t手数料": {
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/index.html",
+      "link_text": "ごみ・リサイクル",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは「ごみ・リサイクル」のトップ目次ページで、下位カテゴリ（10_粗大ごみに関すること等）へのリンク一覧のみ。粗大ごみの手数料の金額や処理券の料金表は本文に記載されていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,

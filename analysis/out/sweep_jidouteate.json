@@ -19,9 +19,17 @@
       "中野区/期限",
       "世田谷区/必要書類"
     ],
-    "exhausted": 26,
+    "exhausted": 21,
     "budget_hit": 0,
     "budget_names": [],
+    "unreadable": 5,
+    "unreadable_names": [
+      "中央区/手数料",
+      "練馬区/手数料",
+      "世田谷区/窓口/オンライン可否",
+      "世田谷区/期限",
+      "世田谷区/手数料"
+    ],
     "errored": 0,
     "errored_names": []
   },
@@ -63,13 +71,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.adachi.tokyo.jp/kodomokate/kosodate-application-2025.html",
               "link_text": "子育てアプリ「足立区おやこ手帳」",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -85,8 +94,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -100,8 +110,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "期限",
@@ -109,8 +120,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "手数料",
@@ -118,8 +130,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -140,25 +153,25 @@
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
               "link_text": "児童手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
               "link_text": "こども・高校生等医療費助成制度（乳幼児～高校生等）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/getsugaku.html",
               "link_text": "手当月額",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html",
               "link_text": "支給対象者（手当を受給できる方）",
               "verified": true,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -170,37 +183,38 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 5,
           "looked": [
             {
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
               "link_text": "児童手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
               "link_text": "こども・高校生等医療費助成制度（乳幼児～高校生等）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/index.html",
               "link_text": "手当・助成",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/chukosei-oenteate.html",
               "link_text": "中高生世代応援手当（区独自制度）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/shin-chugakusei.html",
               "link_text": "令和8年4月から新たに中学生になる児童を養育している方へ（受給のための申請受付を開始します）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -216,15 +230,18 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "exhausted",
+          "stopped": "unreadable",
           "errors": 0,
+          "unreadable": [
+            "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2023hitorioyaigaikyuuhu.html"
+          ],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2025ouenteate.html",
               "link_text": "令和7年度中央区子育て応援手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -240,8 +257,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -255,8 +273,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "窓口/オンライン可否",
@@ -264,8 +283,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "期限",
@@ -273,8 +293,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "手数料",
@@ -282,8 +303,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -299,43 +321,44 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 6,
           "looked": [
             {
               "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/oyakudachi/1004610.html",
               "link_text": "「いたばし子育て応援アプリ」配信中！",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065179.html",
               "link_text": "「児童扶養手当現況届のお知らせ（郵送手続き）」が届いた方へ",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065176.html",
               "link_text": "「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いた方へ",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065172.html",
               "link_text": "「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いた方へ",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/1004606.html",
               "link_text": "いたばし子育て情報ブック",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1004635.html",
               "link_text": "児童育成手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -351,8 +374,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "窓口/オンライン可否",
@@ -360,8 +384,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "期限",
@@ -369,8 +394,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "手数料",
@@ -378,8 +404,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -393,8 +420,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -410,25 +438,26 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 3,
           "looked": [
             {
               "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6028.html",
               "link_text": "児童扶養手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.koto.lg.jp/kodomo/kosodate/index.html",
               "link_text": "子育て支援",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.koto.lg.jp/281012/kodomo/kosodate/benri/4911.html",
               "link_text": "子育てハンドブック",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -444,8 +473,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "窓口/オンライン可否",
@@ -455,19 +485,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
               "link_text": "子育て・児童相談",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/sogosodan.html",
               "link_text": "子育て総合相談窓口（利用者支援事業）（こども家庭センター利用者支援係）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -477,8 +508,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         },
         {
           "field": "手数料",
@@ -486,8 +518,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -503,31 +536,32 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 4,
           "looked": [
             {
               "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/bukkadakataioukosodateouenteate.html",
               "link_text": "物価高対応子育て応援手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.minato.tokyo.jp/kodomo/kate/teate/index.html",
               "link_text": "手当て・助成",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/ai-port.html",
               "link_text": "子育てひろば「あい・ぽーと」",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kate/teate/jidofuyo.html",
               "link_text": "児童扶養手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -550,7 +584,7 @@
               "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
               "link_text": "児童手当",
               "verified": true,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -562,25 +596,26 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 3,
           "looked": [
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
               "link_text": "児童手当など",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
               "link_text": "児童手当の制度改正(令和6年10月分以降)",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
               "link_text": "児童手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -597,13 +632,13 @@
               "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
               "link_text": "児童手当の制度改正(令和6年10月分以降)",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
               "link_text": "児童手当",
               "verified": true,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -613,8 +648,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -628,27 +664,30 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "exhausted",
+          "stopped": "unreadable",
           "errors": 0,
+          "unreadable": [
+            "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.files/kodomo_tebiki_2025.pdf"
+          ],
           "candidates": 3,
           "looked": [
             {
               "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/tokubetujidoufuyou.html",
               "link_text": "特別児童扶養手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kododateouenken.html",
               "link_text": "子育てスタート応援券",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/np.html",
               "link_text": "子育て支援啓発講座『ノーバディーズ・パーフェクト～完璧な親なんていない～』",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -666,13 +705,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/ouennteatetirashipdf.pdf",
               "link_text": "【大田区版】物価高対応子育て応援手当標準リーフレット（PDF：444KB）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -695,7 +735,7 @@
               "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
               "link_text": "児童手当のご案内",
               "verified": true,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -705,63 +745,66 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "exhausted",
+          "stopped": "unreadable",
           "errors": 0,
+          "unreadable": [
+            "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf"
+          ],
           "candidates": 9,
           "looked": [
             {
               "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
               "link_text": "児童手当のご案内（PDF：858KB）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
               "link_text": "児童手当のご案内",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
               "link_text": "児童手当現況届のご案内",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/11545.html",
               "link_text": "子育て",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11726.html",
               "link_text": "子育ての区情報誌・メールマガジン等",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11729.html",
               "link_text": "子育て支援",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12400.html",
               "link_text": "子育てステーション",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13019.html",
               "link_text": "子育て・教育に関する助成",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
               "link_text": "ひとり親家庭への手当、助成、貸付",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -771,27 +814,30 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "exhausted",
+          "stopped": "unreadable",
           "errors": 0,
+          "unreadable": [
+            "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf"
+          ],
           "candidates": 3,
           "looked": [
             {
               "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
               "link_text": "児童手当のご案内（PDF：858KB）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
               "link_text": "児童手当のご案内",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
               "link_text": "児童手当現況届のご案内",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -801,21 +847,24 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "exhausted",
+          "stopped": "unreadable",
           "errors": 0,
+          "unreadable": [
+            "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf"
+          ],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
               "link_text": "児童手当のご案内",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
               "link_text": "ひとり親家庭への手当、助成、貸付",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -833,31 +882,32 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 4,
           "looked": [
             {
               "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/R7_kosodateouen.html",
               "link_text": "物価高対応子育て応援手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_f.html",
               "link_text": "特別児童扶養手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/ninshin-teate/",
               "link_text": "妊娠・出産に関する手当・助成",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shibuya.tokyo.jp/contents/koho-news/1612/20260715_kodomo.html",
               "link_text": "【子育て・教育・生涯学習】それぞれの成長を、一生よろこべる街へ。子どもの手当・医療費助成/4月分～8月分の保育利用料の軽減を行います など",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -875,19 +925,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-shinseisyo/hpg000009624.html",
               "link_text": "「児童手当・子ども医療費助成申請書」はこちら",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/20250106164225.html",
               "link_text": "9999_令和6年度子育て世帯生活支援特別給付金（住民税非課税世帯等物価高騰対策支援給付金のこども加算分）について【申請受付終了】",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -905,13 +956,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.shinjuku.lg.jp/kodomo/jidoikusei01_000001_00004.html",
               "link_text": "《申請受付は終了しました》物価高対応子育て応援手当",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -927,8 +979,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     },
@@ -944,19 +997,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/km/kodomowakufes2026.html",
               "link_text": "こどもわくわくフェスティバル【令和8年5月31日（日曜日）】",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
               "link_text": "育児講演会『デジタル時代の子育て ～「距離感」だけで子育てが楽しくなるかもしれない～』を開催します",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -968,13 +1022,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kosodatetokyoPP.html",
               "link_text": "子育て応援とうきょうパスポートについて",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -986,19 +1041,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.html",
               "link_text": "子育て支援総合センター交流室「交流室開放＆手形・足形カード作り」を開催します",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
               "link_text": "育児講演会『デジタル時代の子育て ～「距離感」だけで子育てが楽しくなるかもしれない～』を開催します",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -1016,13 +1072,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/isihamahasiba.html",
               "link_text": "石浜橋場こども園で遊びませんか",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1034,19 +1091,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
               "link_text": "幼児教育・保育の無償化（認定こども園に関する概要）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             },
             {
               "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html",
               "link_text": "令和8年度 認定こども園園児募集について",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1058,13 +1116,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html",
               "link_text": "令和8年度 認定こども園園児募集について",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1076,13 +1135,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
               "link_text": "幼児教育・保育の無償化（認定こども園に関する概要）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         }
@@ -1100,13 +1160,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
               "link_text": "子育て世帯への食料支援事業（区内共通商品券の配付）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1118,13 +1179,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
               "link_text": "子育て世帯への食料支援事業（区内共通商品券の配付）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1136,13 +1198,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
           "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
               "link_text": "子育て世帯への食料支援事業（区内共通商品券の配付）",
               "verified": false,
-              "from_cache": false
+              "from_cache": true
             }
           ]
         },
@@ -1152,8 +1215,9 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "unreadable": [],
+          "looked": [],
+          "stopped": "no_candidates"
         }
       ]
     }
