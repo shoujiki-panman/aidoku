@@ -275,8 +275,10 @@ def main(argv: list[str] | None = None) -> None:
             got = sweep_field(cands, muni, proc, field, args.model, visits)
             results.append(got)
             mark = "★見つけた" if got["found"] else f"（{got['stopped']}）"
+            # ★flush する。しないと、ログに落としたとき数十分ぶん何も出ず、
+            #   進んでいるのか止まっているのか分からない（実測で分からなかった）。
             print(f"  {muni:6} {field:14} {len(got['looked']):2}本読んだ {mark} "
-                  f"{got['value'][:40]}")
+                  f"{got['value'][:40]}", flush=True)
             save_visits(args.procedure, visits)      # 1項目ごとに保存。落ちても失わない
         rows.append({"municipality": muni, "municipality_id": extract["municipality_id"],
                      "fields": results})
