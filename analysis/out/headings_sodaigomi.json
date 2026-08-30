@@ -1,0 +1,660 @@
+{
+  "_about": "AIが読んだページの見出しの記録。適合試験ではない。2.4.6 は主題を説明しているかであり、説明できているかは人が読んで決める。ここで数えるのは機械で確実に言える2つ（見出しが無い・空の見出し）だけ。",
+  "version": "headings-0.1",
+  "procedure": "sodaigomi",
+  "criterion": "2.4.6 見出し及びラベル（レベルAA）",
+  "summary": {
+    "pages": 64,
+    "pages_without_headings": 2,
+    "pages_without_headings_ratio": 0.031,
+    "empty_headings": 0,
+    "pages_with_empty_heading": 0,
+    "pages_without_h1": 2,
+    "generic_not_counted": 22,
+    "headings_total": 776,
+    "municipalities": 22,
+    "unreadable_pages": 0
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
+      "unreadable": false,
+      "headings": 8,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "足立区",
+      "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "足立区",
+      "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/recycle/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "荒川区",
+      "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html",
+      "unreadable": false,
+      "headings": 18,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "荒川区",
+      "url": "https://www2.sodai-web.jp/arakawa/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "文京区",
+      "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
+      "unreadable": false,
+      "headings": 4,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "文京区",
+      "url": "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+      "unreadable": false,
+      "headings": 17,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "文京区",
+      "url": "https://www.city.bunkyo.lg.jp/b039/p000933.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "千代田区",
+      "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html",
+      "unreadable": false,
+      "headings": 13,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+      "unreadable": false,
+      "headings": 7,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html",
+      "unreadable": false,
+      "headings": 16,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "板橋区",
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
+      "unreadable": false,
+      "headings": 22,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "板橋区",
+      "url": "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/gomi/1044412/index.html",
+      "unreadable": false,
+      "headings": 15,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "板橋区",
+      "url": "https://ecolife.e-tumo.jp/itabashi_sodai-u/",
+      "unreadable": false,
+      "headings": 6,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "板橋区",
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
+      "unreadable": false,
+      "headings": 11,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "板橋区",
+      "url": "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/001/868/sodai260401.pdf",
+      "unreadable": false,
+      "headings": 0,
+      "no_headings": true,
+      "empty": 0,
+      "has_h1": false,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "葛飾区",
+      "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/index.html",
+      "unreadable": false,
+      "headings": 5,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "葛飾区",
+      "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1016343.html",
+      "unreadable": false,
+      "headings": 22,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "北区",
+      "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
+      "unreadable": false,
+      "headings": 4,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "北区",
+      "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
+      "unreadable": false,
+      "headings": 34,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "北区",
+      "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html",
+      "unreadable": false,
+      "headings": 11,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "江東区",
+      "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "江東区",
+      "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+      "unreadable": false,
+      "headings": 16,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "江東区",
+      "url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
+      "unreadable": false,
+      "headings": 2,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "江東区",
+      "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html",
+      "unreadable": false,
+      "headings": 7,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "目黒区",
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
+      "unreadable": false,
+      "headings": 10,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "目黒区",
+      "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+      "unreadable": false,
+      "headings": 18,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "目黒区",
+      "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
+      "unreadable": false,
+      "headings": 2,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "目黒区",
+      "url": "https://www2.sodai-web.jp/meguro/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "港区",
+      "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
+      "unreadable": false,
+      "headings": 14,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "港区",
+      "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/yuryo/tenpu.html",
+      "unreadable": false,
+      "headings": 12,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "港区",
+      "url": "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html",
+      "unreadable": false,
+      "headings": 12,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "港区",
+      "url": "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay",
+      "unreadable": false,
+      "headings": 6,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "港区",
+      "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/sodaigomi.html",
+      "unreadable": false,
+      "headings": 16,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中野区",
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+      "unreadable": false,
+      "headings": 7,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中野区",
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "unreadable": false,
+      "headings": 17,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 2
+    },
+    {
+      "municipality": "練馬区",
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
+      "unreadable": false,
+      "headings": 22,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "練馬区",
+      "url": "https://www.sodai-nerima.jp/",
+      "unreadable": false,
+      "headings": 0,
+      "no_headings": true,
+      "empty": 0,
+      "has_h1": false,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "大田区",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "unreadable": false,
+      "headings": 26,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "大田区",
+      "url": "https://www.ota-sodai.com",
+      "unreadable": false,
+      "headings": 7,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "大田区",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+      "unreadable": false,
+      "headings": 8,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 2
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
+      "unreadable": false,
+      "headings": 11,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+      "unreadable": false,
+      "headings": 30,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/02239/384.html",
+      "unreadable": false,
+      "headings": 8,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/02239/27658.html",
+      "unreadable": false,
+      "headings": 18,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/02239/382.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "渋谷区",
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "unreadable": false,
+      "headings": 34,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "渋谷区",
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html",
+      "unreadable": false,
+      "headings": 12,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "品川区",
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
+      "unreadable": false,
+      "headings": 22,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "品川区",
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/hpg000005620.html",
+      "unreadable": false,
+      "headings": 7,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "新宿区",
+      "url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
+      "unreadable": false,
+      "headings": 4,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "新宿区",
+      "url": "https://www.shinjuku-sodai.com",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "杉並区",
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "unreadable": false,
+      "headings": 16,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "杉並区",
+      "url": "https://www.city.suginami.tokyo.jp/s105/727.html",
+      "unreadable": false,
+      "headings": 32,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "杉並区",
+      "url": "https://www.city.suginami.tokyo.jp/s104/728.html",
+      "unreadable": false,
+      "headings": 14,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "墨田区",
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
+      "unreadable": false,
+      "headings": 36,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "墨田区",
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html",
+      "unreadable": false,
+      "headings": 8,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "墨田区",
+      "url": "https://www2.sodai-web.jp/sumida/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "台東区",
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+      "unreadable": false,
+      "headings": 24,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "豊島区",
+      "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
+      "unreadable": false,
+      "headings": 2,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "豊島区",
+      "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
+      "unreadable": false,
+      "headings": 28,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 2
+    },
+    {
+      "municipality": "豊島区",
+      "url": "https://www.city.toshima.lg.jp/151/2012181541.html",
+      "unreadable": false,
+      "headings": 4,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    }
+  ]
+}
