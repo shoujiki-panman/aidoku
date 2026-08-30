@@ -1,0 +1,100 @@
+{
+  "_about": "うちの読み取り器で読めなかったPDFを、OCRで読んでみた記録。**判定には使わない。** 住民のAIは絵も読めるので、「うちが読めない」を「区が書いていない」に混ぜないための材料。",
+  "version": "ocr-unreadable-0.1",
+  "tool": "macOS Vision（tools/ocr_pdf.swift）。作品本体には入れない",
+  "summary": {
+    "files": 7,
+    "ocr_readable": 5,
+    "ocr_unreadable": 2,
+    "chars_total": 8447,
+    "fields_touched": [
+      "jidouteate/中央区/手数料",
+      "jidouteate/練馬区/手数料",
+      "sodaigomi/品川区/手数料",
+      "sodaigomi/品川区/期限",
+      "sodaigomi/墨田区/期限",
+      "sodaigomi/大田区/期限",
+      "tennyu/中野区/手数料"
+    ]
+  },
+  "rows": [
+    {
+      "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2023hitorioyaigaikyuuhu.html",
+      "fields": [
+        "jidouteate/中央区/手数料"
+      ],
+      "reason": "取得できていない",
+      "ocr_ok": false,
+      "chars": 0,
+      "kana": 0,
+      "head": ""
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.files/kodomo_tebiki_2025.pdf",
+      "fields": [
+        "jidouteate/練馬区/手数料"
+      ],
+      "reason": "日本語の地の文にならない（12378字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）",
+      "ocr_ok": true,
+      "chars": 4542,
+      "kana": 1707,
+      "head": "6 届け出が必要なとき ●乳子をお持ちの保護者が児童と別居になったとき ●青をお持ちの保護者または配者が児童と別居に なったとき ●お子様の健康保険が変更になったとき 都外の国民健康保険組合（埼玉土建国民健康保険組合などに 加入された場合）は、すべて払い戻しによる助成となります。 お早めに健康保険の変更をお届けいただき"
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/kyougikai.html",
+      "fields": [
+        "sodaigomi/大田区/期限"
+      ],
+      "reason": "取得できていない",
+      "ocr_ok": false,
+      "chars": 0,
+      "kana": 0,
+      "head": ""
+    },
+    {
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/kankyo-gomi-topi/SODAIHARIGAMI.pdf",
+      "fields": [
+        "sodaigomi/品川区/期限",
+        "sodaigomi/品川区/手数料"
+      ],
+      "reason": "日本語の地の文にならない（33字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文）",
+      "ocr_ok": true,
+      "chars": 29,
+      "kana": 5,
+      "head": "粗大ごみ 受付番号 （ 収集日 月 日） 品目とその金額 "
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.files/01syusyucalender_0804.pdf",
+      "fields": [
+        "sodaigomi/墨田区/期限"
+      ],
+      "reason": "本文のストリームが無い（画像PDFかアウトライン化）",
+      "ocr_ok": true,
+      "chars": 1885,
+      "kana": 111,
+      "head": "資源とごみの収集カレンダー （2026年4月～2027年3月） ひと、つながる。 墨田区 資源・ごみに関するお問い合わせ すみだ清掃事務所 803-3613-2228 年末年始の収集日については、改めてご案内いたします。 各地区の収集時間は道路の状況などで変わりますので、資源・ごみともに決められた集積所等へ収集日当日の"
+    },
+    {
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.files/02syusyucalender_0804.pdf",
+      "fields": [
+        "sodaigomi/墨田区/期限"
+      ],
+      "reason": "本文のストリームが無い（画像PDFかアウトライン化）",
+      "ocr_ok": true,
+      "chars": 1549,
+      "kana": 646,
+      "head": "1 分別して わが家の資源とごみの収集曜日 ※収集曜日を確認してご記入ください。 こと、つながら 墨田区 2 決められた「資源・ごみ集積所」へ 3 収集日当日の早朝から8時までに出してください。 資源 古紙 びん、 新聞（折り込みチラシ含む。） 雑誌（週刊誌・単行本・カタログ・雑がみ含む。） 段ボール 紙パック 缶、ペ"
+    },
+    {
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjyou.pdf",
+      "fields": [
+        "tennyu/中野区/手数料"
+      ],
+      "reason": "本文のストリームが無い（画像PDFかアウトライン化）",
+      "ocr_ok": true,
+      "chars": 442,
+      "kana": 132,
+      "head": "年 月 日 （宛先）中野区長 委任状 （申請者） 本人の住所 本人の氏名 今回の住所異動（転入・転居）に伴う電子証明書に関する必要な手続きについて、下 記に示す者を私の代理人として指定し、その権限を委任します。 また、私のマイナンバー（個人番号）カード等の暗証番号も併せて示し、封入・封緘 を行い、持参させます。 記 （"
+    }
+  ]
+}
