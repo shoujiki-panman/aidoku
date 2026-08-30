@@ -11,18 +11,26 @@
   "summary": {
     "municipalities": 24,
     "swept_fields": 45,
-    "pages_read": 142,
-    "found": 1,
+    "pages_read": 114,
+    "found": 9,
     "found_names": [
+      "中央区/窓口/オンライン可否",
+      "中野区/手数料",
+      "練馬区/期限",
+      "練馬区/手数料",
+      "大田区/手数料",
+      "渋谷区/手数料",
+      "杉並区/手数料",
+      "墨田区/手数料",
       "台東区/手数料"
     ],
-    "exhausted": 35,
-    "budget_hit": 1,
-    "budget_names": [
-      "中央区/窓口/オンライン可否"
-    ],
-    "errored": 0,
-    "errored_names": []
+    "exhausted": 28,
+    "budget_hit": 0,
+    "budget_names": [],
+    "errored": 1,
+    "errored_names": [
+      "品川区/手数料"
+    ]
   },
   "before": {
     "arakawa": "読めた",
@@ -263,8 +271,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
-          "candidates": 1,
+          "candidates": 2,
           "looked": [
+            {
+              "url": "https://www.city.bunkyo.lg.jp/documents/959/sodaigomiitiran0806.pdf",
+              "link_text": "文京区粗大ごみ品目一覧（PDF：1,725KB）",
+              "verified": false,
+              "from_cache": false
+            },
             {
               "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/chuui/index.html",
               "link_text": "ごみ収集に関する注意事項",
@@ -365,13 +379,12 @@
         },
         {
           "field": "窓口/オンライン可否",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "budget",
+          "found": true,
+          "value": "中央区粗大ごみ受付センター",
+          "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/50onjyun230401.html",
+          "evidence": "ご家庭で使用していたものを出す場合（業務用は除く）は、中央区粗大ごみ受付センター（外部サイトへリンク）（別ウィンドウで開きます）へお申込みください。\n電話：03-6833-2525（受付時間：月曜日から土曜日の午前8時から午後7時まで）\nインターネット：中央区粗大ごみ受付センター（24時間受付）（外部サイトへリンク）（別ウィンドウで開きます）",
+          "stopped": "found",
           "errors": 0,
-          "candidates": 15,
           "looked": [
             {
               "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/how_to_dispose_corona.html",
@@ -424,25 +437,7 @@
             {
               "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/50onjyun230401.html",
               "link_text": "分別のわかりにくいごみ・資源など",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kouenkai2026.html",
-              "link_text": "清掃リサイクル講演会",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kuchoukanshajoujushousha.html",
-              "link_text": "令和7年度環境分野の功労事業者（事業用大規模建築物所有者等）のごみ減量・3Rへの取り組み",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/user_kdseiso_time_2019082209091.html",
-              "link_text": "家電リサイクル法対象品目",
-              "verified": false,
+              "verified": true,
               "from_cache": false
             }
           ]
@@ -657,8 +652,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
-          "candidates": 3,
+          "candidates": 4,
           "looked": [
+            {
+              "url": "https://www.city.minato.tokyo.jp/documents/67227/r6sodairyoukin.pdf",
+              "link_text": "主な粗大ごみ料金表",
+              "verified": false,
+              "from_cache": false
+            },
             {
               "url": "https://www.city.minato.tokyo.jp/kurashi/gomi/seso/toke/index.html",
               "link_text": "統計（ごみ収集量・資源回収量・月別清掃データ【速報値】）",
@@ -714,13 +715,12 @@
         },
         {
           "field": "手数料",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "粗大ごみの手数料は、「排出品目一覧（外部サイト）」でご確認いただくか、粗大ごみ受付センター（外部サイト）（03‐5715‐2255 8～19時 月曜日～土曜日：年末年始を除く）にお問い合わせください。また、お申し込みの際には、処理手数料を含む「有料粗大ごみ処理券」の種類と必要枚数をご案内いたします。",
+          "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html",
+          "evidence": "粗大ごみの手数料は、「排出品目一覧（外部サイト）」でご確認いただくか、粗大ごみ受付センター（外部サイト）（03‐5715‐2255 8～19時 月曜日～土曜日：年末年始を除く）にお問い合わせください。また、お申し込みの際には、処理手数料を含む「有料粗大ごみ処理券」の種類と必要枚数をご案内いたします。",
+          "stopped": "found",
           "errors": 0,
-          "candidates": 10,
           "looked": [
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi02.html",
@@ -731,55 +731,7 @@
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html",
               "link_text": "粗大ごみの処理手数料を教えてください。",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
-              "link_text": "○○は粗大ごみですか？",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/jigyosyo-ogata.html",
-              "link_text": "事業所から出る大型のごみ（粗大ごみ）",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/syugojyutaku-recycle.html",
-              "link_text": "集合住宅のリサイクル資源集積所の設置について",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/gomizero/recycletenji.html",
-              "link_text": "ようこそリサイクル展示室へ",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi33.html",
-              "link_text": "普段のごみの収集、資源の回収時間が午後でも、朝に出さなくてはいけまんせんか？",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
-              "link_text": "ごみ・資源",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/index.html",
-              "link_text": "ごみ・資源の出し方",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/index.html",
-              "link_text": "商店・事業所から出るごみと資源の出し方",
-              "verified": false,
+              "verified": true,
               "from_cache": false
             }
           ]
@@ -792,13 +744,12 @@
       "fields": [
         {
           "field": "期限",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "収集日の3日前の23時59分（変更・取消しの受付期限）",
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
+          "evidence": "インターネットからの変更・取消しの申込みは、年末年始、日曜日を除き、収集の場合は収集日の3日前の23時59分までです。",
+          "stopped": "found",
           "errors": 0,
-          "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/kasidasi.html",
@@ -809,20 +760,19 @@
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
               "link_text": "こちら",
-              "verified": false,
+              "verified": true,
               "from_cache": false
             }
           ]
         },
         {
           "field": "手数料",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）",
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
+          "evidence": "令和8年4月1日から、インターネットで粗大ごみ収集の申込みを行う場合、粗大ごみ処理手数料をオンライン決済（キャッシュレス決済）で支払うことができるようになりました。",
+          "stopped": "found",
           "errors": 0,
-          "candidates": 9,
           "looked": [
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaigomi.html",
@@ -875,7 +825,7 @@
             {
               "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
               "link_text": "こちら",
-              "verified": false,
+              "verified": true,
               "from_cache": false
             }
           ]
@@ -894,8 +844,20 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
-          "candidates": 4,
+          "candidates": 6,
           "looked": [
+            {
+              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+              "link_text": "【チラシ】高齢者世帯等に対する粗大ごみの運び出し収集（PDF：151KB）",
+              "verified": false,
+              "from_cache": false
+            },
+            {
+              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102302.pdf",
+              "link_text": "粗大ごみ品目・手数料一覧（令和5年10月1日から）（PDF：361KB）",
+              "verified": false,
+              "from_cache": false
+            },
             {
               "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
               "link_text": "資源とごみの収集日",
@@ -924,48 +886,17 @@
         },
         {
           "field": "手数料",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "運び出し料金は無料ですが、品目に合わせた粗大ごみ処理券が必要です。",
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+          "evidence": "⑤運び出し料金は無料ですが、品目に合わせた粗大ごみ処理券が必要です。訪問調査（下見）の際に担当者からご案内いたしますので収集日までにコンビニエンスストア等でご購入ください。",
+          "stopped": "found",
           "errors": 0,
-          "candidates": 6,
           "looked": [
             {
-              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
-              "link_text": "消火器のリサイクル",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/gomi/index.html",
-              "link_text": "事業系のごみ・資源",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomi-bunbetsu-apli.html",
-              "link_text": "大田区ごみ分別アプリ",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html",
-              "link_text": "家電（エアコン、テレビ、洗濯機・衣類乾燥機、冷蔵・冷凍庫）のリサイクル",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html",
-              "link_text": "風水害が発生した際の資源・ごみの出し方について",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html",
-              "link_text": "令和7年9月11日大田区豪雨により発生したごみの取扱いについて",
-              "verified": false,
+              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+              "link_text": "【チラシ】高齢者世帯等に対する粗大ごみの運び出し収集（PDF：151KB）",
+              "verified": true,
               "from_cache": false
             }
           ]
@@ -1098,13 +1029,12 @@
         },
         {
           "field": "手数料",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "有料粗大ごみ処理券A（1枚）200円、有料粗大ごみ処理券B（1枚）300円",
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
+          "evidence": "有料粗大ごみ処理券の料金表\n\n券種\n\n現行料金\n\n有料粗大ごみ処理券A（1枚）\n\n200円\n\n有料粗大ごみ処理券B（1枚）\n\n300円",
+          "stopped": "found",
           "errors": 0,
-          "candidates": 11,
           "looked": [
             {
               "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/kyasshuresu_sodaigomi.html",
@@ -1115,61 +1045,7 @@
             {
               "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
               "link_text": "有料粗大ごみ処理券",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
-              "link_text": "ごみ減量・リサイクルに関する取り組み",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/application.html",
-              "link_text": "渋谷区ごみ・資源分別アプリ",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/",
-              "link_text": "リサイクル",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/",
-              "link_text": "リサイクルイベント",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/",
-              "link_text": "リサイクル意識啓発",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/ku_syusyu.html",
-              "link_text": "区の収集に事業系ごみを出すとき",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/",
-              "link_text": "家庭から出るごみ・資源",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/",
-              "link_text": "有料ごみ手数料",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/h_jigyo.html",
-              "link_text": "事業者のごみ処理",
-              "verified": false,
+              "verified": true,
               "from_cache": false
             }
           ]
@@ -1195,8 +1071,8 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "exhausted",
-          "errors": 0,
+          "stopped": "error",
+          "errors": 1,
           "candidates": 6,
           "looked": [
             {
@@ -1220,8 +1096,7 @@
             {
               "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/index.html",
               "link_text": "ごみ・リサイクル",
-              "verified": false,
-              "from_cache": false
+              "error": "Unterminated string starting at: line 1 column 58 (char 57)"
             },
             {
               "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-recycle/gomi-recycle-kankou/hpg000008141.html",
@@ -1311,12 +1186,20 @@
         },
         {
           "field": "手数料",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "found": true,
+          "value": "アイロン台400",
+          "url": "https://www.city.suginami.tokyo.jp/documents/727/sodai_itiran5080401.pdf",
+          "evidence": "かな品目名手数料説明文ネット受付可否個数制限あアイロン台400アイロンは不燃ごみでお出しください。〇10",
+          "stopped": "found",
+          "errors": 0,
+          "looked": [
+            {
+              "url": "https://www.city.suginami.tokyo.jp/documents/727/sodai_itiran5080401.pdf",
+              "link_text": "粗大ごみ処理手数料一覧表（主な品目）（PDF：1,253KB）",
+              "verified": true,
+              "from_cache": false
+            }
+          ]
         }
       ]
     },
@@ -1362,13 +1245,12 @@
         },
         {
           "field": "手数料",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "有料粗大ごみ処理券 （Ａ券＝200円　Ｂ券＝300円）",
+          "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf",
+          "evidence": "1　頁有料粗大ごみ処理券 （Ａ券＝200円　Ｂ券＝300円）　　　Ａ券Ｂ券Ａ券Ｂ券（枚）（枚）（枚）（枚）アイロン台4002カセットコンロ（卓上用）4002IHクッキングヒーター（10kg以上）9003",
+          "stopped": "found",
           "errors": 0,
-          "candidates": 11,
           "looked": [
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/onkessai.html",
@@ -1389,51 +1271,9 @@
               "from_cache": false
             },
             {
-              "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/index.html",
-              "link_text": "資源・ごみ・リサイクル",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/volunteer-gomi.html",
-              "link_text": "ボランティアごみの収集",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/event_info/mukoujima-jitensya.html",
-              "link_text": "【すみだ清掃事務所分室】自転車のリユース・リサイクル（海外供与）",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/index.html",
-              "link_text": "その他収集に関すること",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/hureai.html",
-              "link_text": "ふれあい収集",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/boutyou-net.html",
-              "link_text": "資源・ごみ飛散防止ネットの無料貸し出し",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/rinji-tairyou-gomi.html",
-              "link_text": "臨時ごみ・大量ごみとして出す場合",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-50onbunbetu.html",
-              "link_text": "資源とごみの分別一覧表（50音順）",
-              "verified": false,
+              "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf",
+              "link_text": "粗大ごみ手数料一覧（R7.3.1更新）（PDF：123KB）",
+              "verified": true,
               "from_cache": false
             }
           ]
@@ -1471,9 +1311,9 @@
         {
           "field": "手数料",
           "found": true,
-          "value": "有料粗大ごみ処理券（A券200円、B券300円）",
-          "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
-          "evidence": "〇有料粗大ごみ処理券（A券200円、B券300円）に変更はありません。現行の券を引き続きご使用いただけます。",
+          "value": "有料粗大ごみ処理券には、A券（200円）とB券（300円）があります。出される粗大ごみの処理手数料額となるように、2種類の券を組み合わせてご使用ください。",
+          "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
+          "evidence": "有料粗大ごみ処理券には、A券（200円）とB券（300円）があります。出される粗大ごみの処理手数料額となるように、2種類の券を組み合わせてご使用ください。",
           "stopped": "found",
           "errors": 0,
           "looked": [
@@ -1492,12 +1332,6 @@
             {
               "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
               "link_text": "・有料粗大ごみ処理券の取扱所等についてはこちら",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
-              "link_text": "令和5年10月1日から粗大ごみ処理手数料が変更になります",
               "verified": true,
               "from_cache": false
             }

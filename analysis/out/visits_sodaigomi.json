@@ -2,7 +2,7 @@
   "_about": "虱潰しで読んだ (URL, 項目) の記録。二度読まないために持つ。判定ではなく、何を見たかの記録。",
   "version": "sweep-0.1",
   "procedure": "sodaigomi",
-  "n": 142,
+  "n": 113,
   "visits": {
     "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html\t必要書類": {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
@@ -10,7 +10,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "本文ははてなブックマークの足立区タグ一覧ページで、過去の区関連ニュース記事の見出しと要約が並んでいるだけ。粗大ごみ収集の申込（転入時の届出）に関する必要書類の記載は本文中に存在しない。",
+      "why_not": "はてなブックマークの足立区タグ一覧ページ。粗大ごみ収集や必要書類・手数料についての記載はなく、区の不祥事・イベント・図書館・郷土博物館などの過去記事一覧のみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -24,7 +24,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "はてなブックマークの足立区関連エントリー一覧ページで、粗大ごみ収集の申込に関する記述は無い（コロナ対応・コンビニ交付誤り・図書館・郷土博物館などの過去記事一覧のみ）",
+      "why_not": "はてなブックマークの足立区関連エントリー一覧ページで、粗大ごみ収集の申込や必要書類についての本文記載は無い",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -38,7 +38,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "はてなブックマークの足立区タグの記事一覧ページで、粗大ごみ収集申込の必要書類についての本文は無い（記事タイトルと概要のみで、対象ページ本体の内容ではない）",
+      "why_not": "はてなブックマークの足立区関連エントリー一覧ページであり、粗大ごみ収集申込やその必要書類についての本文は含まれていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -52,7 +52,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページはリユース食器貸出事業の案内で、粗大ごみ収集の申込とは無関係。必要書類として書かれているのは「リユース食器貸出申請書（第１号様式）」であり、粗大ごみ収集申込の必要書類ではない。",
+      "why_not": "リユース食器の貸し出し事業についてのページで、粗大ごみ収集の申込やその手数料・必要書類とは無関係",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -66,7 +66,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "リユース食器貸出事業のページで、粗大ごみ収集の申込とは無関係",
+      "why_not": "リユース食器の貸出事業についてのページで、粗大ごみ収集の申込・窓口/オンライン可否については書かれていない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -80,7 +80,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "生ごみ処理機・コンポスト化容器購入費補助金の申請案内であり、粗大ごみ収集の申込とは無関係",
+      "why_not": "このページは「生ごみ処理機・コンポスト化容器購入費補助金」についての案内であり、粗大ごみ収集の申込窓口やオンライン可否については書かれていない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -94,7 +94,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "はてなブックマークの検索結果一覧ページで、足立区に関する話題（不正アクセス、公衆浴場、証明書誤交付、給食レシピ等）のブックマーク記事タイトルと要約が並んでいるだけ。粗大ごみ収集の申込や転入届の期限について記載した本文は存在しない。",
+      "why_not": "本文ははてなブックマークの足立区関連エントリー一覧ページであり、粗大ごみ収集の申込やその期限に関する記述は含まれていない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -108,7 +108,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "はてなブックマークの足立区関連エントリー一覧ページであり、粗大ごみ収集の申込やその期限についての記述は本文中に存在しない。",
+      "why_not": "はてなブックマークの足立区関連エントリー一覧ページであり、粗大ごみ収集の申込や期限に関する本文は含まれていない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -122,7 +122,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "はてなブックマークの「足立区」タグの新着エントリー一覧ページで、学校メールの不正アクセスや浴場無料化などの個別ニュースが並ぶだけ。粗大ごみ収集の申込や資源・ごみの出し方の本文は含まれておらず、期限の記載は無い",
+      "why_not": "本文ははてなブックマークのサイトで、足立区の粗大ごみ収集の申込に関するページ内容ではなく、他の無関係な記事一覧（不正アクセス、給食、図書館督促等）が表示されているのみ",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -136,7 +136,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "リユース食器の貸出事業についてのページで、粗大ごみ収集の申込や転入届の期限についての記載はない",
+      "why_not": "このページはリユース食器貸出事業（イベント用食器の貸出・返却・キャンセル）についてのページで、粗大ごみ収集の申込や手数料についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -150,7 +150,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは生ごみ処理機・コンポスト化容器購入費補助金についてで、粗大ごみ収集の申込や転入届とは無関係。申請受付期間（令和8年4月1日〜令和9年3月15日）はこの補助金申請の期限であり、粗大ごみ収集の申込期限ではない。",
+      "why_not": "このページは「生ごみ処理機・コンポスト化容器購入費補助金」についての案内であり、粗大ごみ収集の申込とは無関係。粗大ごみ収集の申込期限や手数料の記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -164,7 +164,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは家電リサイクル法対象品目の出し方と粗大ごみの案内、悪質な不用品回収業者への注意喚起。粗大ごみは「事前申込（予約）制」「収集（有料）」「指定場所への持ち込み（無料）」とだけ書かれ、手数料の具体的な金額や体系は「『家庭』から出る資源とごみの分け方・出し方」ページへの参照に留まり、本文中には手数料そのものが書かれていない。",
+      "why_not": "このページは家電リサイクル法対象品目の出し方の注意喚起と、粗大ごみは事前申込制で「収集（有料）」「持ち込み（無料）」があると案内するのみ。粗大ごみ受付センターへの申込に誘導しているだけで、処理手数料の金額や品目別料金表そのものはこのページ本文に書かれていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -178,7 +178,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "はてなブックマークの足立区タグの記事一覧ページで、コンビニ交付誤交付、感染症対策、学校メールセキュリティ、図書館、郷土博物館、ハザードマップなど雑多な話題のブックマーク集。粗大ごみ収集の申込や手数料についての記載は本文中に存在しない。",
+      "why_not": "はてなブックマークの足立区関連エントリー一覧ページ。粗大ごみ収集や処理手数料についての記載はなく、区の不祥事・イベント・広報等の無関係な話題のみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -192,7 +192,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "はてなブックマークの「足立区」タグの記事一覧ページ。コロナ対策・不正アクセス・証明書誤交付・シティプロモーションなどの記事見出しが並ぶだけで、粗大ごみ収集の申込や手数料についての記述はない。",
+      "why_not": "はてなブックマークの足立区関連エントリー一覧ページであり、粗大ごみ収集の申込や手数料についての本文記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -206,7 +206,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページははてなブックマークの「足立区」タグの記事一覧で、区の不正アクセス・入浴料無料化・シティプロモーション・コンビニ交付誤り等の過去記事が並んでいるだけ。粗大ごみ収集の申込や転入届、その手数料についての記述は本文中に見当たらない。",
+      "why_not": "はてなブックマークのページで、足立区の様々なニュースへのリンク一覧（学校のセキュリティ事故、コンビニ交付誤交付、給食レシピ、郷土博物館など）が並んでいるだけ。粗大ごみ収集の申込やその手数料についての記載は本文中に存在しない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -220,7 +220,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "リユース食器の貸し出し事業についてのページで、粗大ごみ収集の申込や手数料についての記載はない",
+      "why_not": "リユース食器の貸出事業についてのページで、粗大ごみ収集の申込や処理手数料の記載はない（貸出費用は無料と明記）",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -234,7 +234,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "生ごみ処理機・コンポスト化容器購入費補助金についてのページで、粗大ごみ収集の申込や引っ越しに伴う手数料の記載はない",
+      "why_not": "このページは生ごみ処理機・コンポスト化容器購入費補助金についてのページで、粗大ごみ収集の申込や手数料についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -248,7 +248,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみの手数料・処理券の金額と出し方、事業系ごみの料金、引越しごみの相談先を説明しているのみで、粗大ごみ収集の申込そのものの期限（申込期限）についての記載はない。受付時間（月曜から土曜、午前8時から午後7時）は窓口の話であり申込期限ではない。",
+      "why_not": "本文には申込みの受付方法（電話・インターネット）、手数料額、収集予定日朝8時までに出す旨は書かれているが、申込みそのものの期限（いつまでに申し込む必要があるか）についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -262,7 +262,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは生ごみ処理機等購入費助成制度（家庭用生ごみ処理機・コンポスト容器の購入費助成）についての案内であり、粗大ごみ収集の申込とは無関係。本文中の「申請受付期間 令和8年4月1日から令和9年2月26日まで（必着）」は助成金の申請受付期間であり、粗大ごみ収集の申込期限ではない。",
+      "why_not": "本文は「生ごみ処理機等購入費助成制度」についてのページで、粗大ごみ収集の申込や処理手数料(処理券)には触れていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -276,7 +276,21 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "本文は燃やすごみ・燃やさないごみ・プラスチックの収集曜日を地域ごとに一覧化した収集カレンダーのページで、粗大ごみ収集の申込や転入届の期限についての記載はない",
+      "why_not": "このページは燃やすごみ・燃やさないごみ・プラスチックの収集日カレンダーの案内で、粗大ごみ収集の申込や申込期限についての記述はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.bunkyo.lg.jp/documents/959/sodaigomiitiran0806.pdf\t期限": {
+      "url": "https://www.city.bunkyo.lg.jp/documents/959/sodaigomiitiran0806.pdf",
+      "link_text": "文京区粗大ごみ品目一覧（PDF：1,725KB）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "この文書は粗大ごみ品目ごとの処理手数料一覧表であり、収集申込の期限についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -290,7 +304,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「ごみ収集に関する注意事項」の一覧（災害時のごみの出し方、朝8時までに出す、分別方法など）であり、粗大ごみ収集の申込（転入者向け）や、その申込期限についての記載はない。開庁時間の記載はあるが窓口の話であり対象外。",
+      "why_not": "このページは「ごみ収集に関する注意事項」（災害時の出し方、強風・台風時の対応、集積所へ出す時刻、危険物の出し方など）を扱っており、粗大ごみ収集の申込そのものの期限（受付締切など）についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -304,7 +318,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「事業用生ごみ処理機購入費助成制度」の申請書類についての説明であり、粗大ごみ収集の申込（転入時の届出）とは無関係。",
+      "why_not": "このページは「事業用生ごみ処理機購入費助成制度」についてで、事業者向けの助成金申請の話。粗大ごみ収集の申込（家庭からの粗大ごみ排出）についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -318,7 +332,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "有料ごみ処理券の還付請求ページであり、粗大ごみ収集の申込手続きではない",
+      "why_not": "有料ごみ処理券の還付請求についてのページで、粗大ごみ収集の申込そのものの必要書類ではない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -332,7 +346,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみ処理手数料の免除申請について書かれており、免除の対象者・申込方法（収集日までに申請書を清掃事務所へ提出）を説明している。粗大ごみ収集の申込そのものの期限（引っ越し後何日以内に申し込むか等）についての記載はない。",
+      "why_not": "このページは粗大ごみ処理手数料の「免除」制度についての案内で、収集にかかる手数料の免除申請の話。申込そのものの期限は書かれておらず、「収集日までに...清掃事務所に申し込んでください」とあるのみで、収集日自体は個別に決まるものであり期限として明記されていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -346,7 +360,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは資源とごみの分け方・出し方の総合案内で、粗大ごみの申込期限には触れていない。粗大ごみの詳細は別ページ「粗大ごみの出し方と料金」へのリンクのみで、本文には収集曜日・排出時間・パンフレット案内等があるのみ。",
+      "why_not": "収集日・排出時間・パンフレット配布時期・回収曜日カレンダーの案内のみで、粗大ごみ収集の申込そのものの期限についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -360,7 +374,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「燃やすごみ・燃やさないごみの出し方」についてのページで、粗大ごみ収集の申込やその期限には触れていない（粗大ごみは別ページへのリンクとして名称のみ挙げられている）",
+      "why_not": "このページは「燃やすごみ・燃やさないごみの出し方」についての案内で、粗大ごみ収集の申込やその期限には触れていない。粗大ごみは別ページ「粗大ごみの出し方と料金」へのリンクが関連リンク欄に示されているのみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -374,7 +388,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「事業用生ごみ処理機購入費助成制度」（事業者向けの生ごみ処理機購入補助）についての内容で、粗大ごみ収集の申込とは無関係。該当する期限の記載なし。",
+      "why_not": "このページは事業用生ごみ処理機購入費助成制度（事業者向けの生ごみ処理機購入補助）についての案内であり、粗大ごみ収集の申込とは無関係。「受付は、先着順です。予算がなくなりしだい、助成を終了します。」という記述はあるが、これは助成金予算の話であり、粗大ごみ収集申込の期限ではない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -388,7 +402,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは広報誌の「ごみと資源の分別クイズ」回答・解説（携帯トイレ、モバイルバッテリー、雑紙の分別方法）で、粗大ごみ収集の申込や必要書類についての記載はない",
+      "why_not": "このページは「区のおしらせ ちゅうおう」広報誌に掲載されたごみ分別クイズの回答・解説であり、携帯トイレ、モバイルバッテリー、雑紙の分別方法について説明しているのみ。粗大ごみ収集の申込や必要書類についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -402,7 +416,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "新型コロナウイルス感染症対策としてのごみの収集と資源回収についてのページで、収集作業の継続方針やマスク等の捨て方の案内のみ。粗大ごみ収集の申込窓口やオンライン可否についての記載はない。",
+      "why_not": "新型コロナウイルス感染症対策としてのごみの収集と資源回収についての一般的な注意事項のページであり、粗大ごみ収集の申込窓口やオンライン申込の可否についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -416,7 +430,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "「ごみ減量・リサイクル」のカテゴリ一覧ページで、粗大ごみ収集の申込窓口やオンライン受付についての本文記載は無い（ナビゲーションリンク名の列挙のみ）",
+      "why_not": "「ごみ減量・リサイクル」のトップページで、関連ニュース・リンクの一覧のみ。粗大ごみ収集の申込窓口やオンライン受付の可否についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -430,7 +444,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「ごみの処理とリサイクルのしくみ」についての一般的な啓発ページ（循環型社会・3R・清掃工場の説明）で、粗大ごみ収集の申込窓口やオンライン受付についての記載はない。",
+      "why_not": "このページはごみ処理・リサイクルの仕組み一般の説明であり、粗大ごみ収集の申込窓口やオンライン受付についての記載はない。問い合わせ先も清掃事業係の電話番号のみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -444,7 +458,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "ごみ収集日カレンダーのページで、粗大ごみ収集の申込窓口やオンライン受付についての記載はなく、リンク一覧と区役所の代表連絡先のみだった",
+      "why_not": "このページはごみ収集日カレンダー（曜日案内）のみで、粗大ごみ収集の申込方法・窓口・オンライン可否・手数料についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -458,7 +472,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "ごみ収集日カレンダー（燃やすごみ・粗大ごみ等の収集曜日一覧）のページで、粗大ごみ収集の申込窓口やオンライン受付について書かれていない。粗大ごみの収集曜日を町名・丁目ごとに示す表と中央清掃事務所の電話番号のみ。",
+      "why_not": "このページはごみ・資源の収集曜日一覧表であり、粗大ごみ収集の申込窓口やオンライン受付の可否については記載がない。粗大ごみの収集曜日は載っているが、申込方法自体には触れていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -472,7 +486,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは中央区の3R（リデュース・リユース・リサイクル）推進の一般啓発ページで、粗大ごみ収集の申込窓口やオンライン受付については触れられていない。金属製調理器具などを「資源」の日に出す案内はあるが、粗大ごみの申込方法・窓口・オンライン可否についての記載はない。",
+      "why_not": "3R（リデュース・リユース・リサイクル）の啓発ページで、粗大ごみ収集の申込窓口やオンライン受付についての記載はない。中央清掃事務所の電話番号があるのみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -486,7 +500,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「ごみと資源の分別クイズ」の回答・解説（携帯トイレ、モバイルバッテリー、雑紙の分別方法）であり、粗大ごみ収集の申込窓口やオンライン可否についての記載はない",
+      "why_not": "「区のおしらせ」広報誌のごみ分別クイズ回答・解説（携帯トイレ、モバイルバッテリー、雑紙の分別）についてのページで、粗大ごみ収集の申込窓口やオンライン受付について書かれていない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -500,7 +514,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "ごみの分別・出し方の案内ページで、粗大ごみの分別区分やパンフレット等の案内リンク一覧のみ。粗大ごみ収集の申込窓口やオンライン受付の可否についての記載は本文中にない。",
+      "why_not": "このページは分別・出し方の案内一覧（燃やすごみ、燃やさないごみ、粗大ごみの出し方、プラマークなど各カテゴリへのリンク集）であり、粗大ごみ収集の申込窓口やオンライン受付の可否については本文に記載がない。「粗大ごみの出し方」という項目名のみで、申込方法・窓口・手数料などの具体的内容はこのページ自体には書かれていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -511,58 +525,16 @@
     "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/50onjyun230401.html\t窓口/オンライン可否": {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/50onjyun230401.html",
       "link_text": "分別のわかりにくいごみ・資源など",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "粗大ごみの「収集申込」窓口についてのページであり、転入時の粗大ごみ収集申込の窓口/オンライン可否についての記載ではない",
+      "found": true,
+      "value": "中央区粗大ごみ受付センター",
+      "evidence": "ご家庭で使用していたものを出す場合（業務用は除く）は、中央区粗大ごみ受付センター（外部サイトへリンク）（別ウィンドウで開きます）へお申込みください。\n電話：03-6833-2525（受付時間：月曜日から土曜日の午前8時から午後7時まで）\nインターネット：中央区粗大ごみ受付センター（24時間受付）（外部サイトへリンク）（別ウィンドウで開きます）",
+      "why_not": "",
       "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
+        "verdict": "normalized",
+        "run": 147,
+        "note": "空白・記号のゆれを吸収すると一致"
       },
-      "verified": false
-    },
-    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kouenkai2026.html\t窓口/オンライン可否": {
-      "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kouenkai2026.html",
-      "link_text": "清掃リサイクル講演会",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "リチウムイオン電池の安全な使い方についての講演会の案内ページ。粗大ごみ収集の申込窓口やオンライン可否については触れられていない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kuchoukanshajoujushousha.html\t窓口/オンライン可否": {
-      "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kuchoukanshajoujushousha.html",
-      "link_text": "令和7年度環境分野の功労事業者（事業用大規模建築物所有者等）のごみ減量・3Rへの取り組み",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "事業用大規模建築物のごみ減量・3R功労者表彰についてのページで、粗大ごみ収集の申込（窓口・オンライン可否）に関する記載はない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/user_kdseiso_time_2019082209091.html\t窓口/オンライン可否": {
-      "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/user_kdseiso_time_2019082209091.html",
-      "link_text": "家電リサイクル法対象品目",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは家電リサイクル法対象品目（家電4品目の回収）についての案内で、粗大ごみ収集の申込窓口やオンライン可否については書かれていない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
+      "verified": true
     },
     "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/how_to_dispose_corona.html\t期限": {
       "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/how_to_dispose_corona.html",
@@ -570,7 +542,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "新型コロナ対策下でのごみ収集・資源回収に関するページで、マスクの捨て方や収集時間の遅れの可能性について述べているのみ。粗大ごみ収集の申込や、その期限についての記載はない。",
+      "why_not": "新型コロナウイルス対策としてのごみ収集・資源回収の案内ページで、粗大ごみ収集の申込やその期限についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -584,7 +556,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "清掃リサイクル講演会（リチウムイオン電池の火災事故防止に関する講演会）の案内ページで、粗大ごみ収集の申込にも、その手数料にも触れていない",
+      "why_not": "このページは「清掃リサイクル講演会」（リチウムイオン電池の火災事故防止に関する講演会）の案内であり、粗大ごみ収集の申込やその手数料についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -598,7 +570,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは家電リサイクル法対象品目（エアコン・テレビ・冷蔵庫・洗濯機）のリサイクル料金・収集運搬料金の説明であり、転入時の粗大ごみ収集申込の手数料は書かれていない",
+      "why_not": "このページは「家電リサイクル法対象品目」についてで、家電4品目（エアコン・テレビ・冷蔵庫等）の家電リサイクル料金と収集運搬料金の説明のみ。中央区の粗大ごみ収集の申込や処理券・シールの手数料については触れられていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -612,7 +584,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "夏期のごみ収集時間の前後についての注意ページ。粗大ごみ収集の申込や期限に関する記載はない。",
+      "why_not": "本文は「夏期のごみ収集作業についてご理解をお願いいたします」というページで、猛暑時の収集時間の前後・作業員の休憩に関する案内のみ。粗大ごみ収集の申込期限についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -626,7 +598,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは資源とごみの排出時間・出し方・持ち去り対策についての注意事項であり、粗大ごみ収集の申込（転入時の届出）やその期限についての記載はない",
+      "why_not": "このページは資源とごみの排出ルール（排出時間、袋の使い方、集積所のマナー、持ち去り対策）に関する一般的なお願いであり、粗大ごみ収集の申込や手数料についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -640,7 +612,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「生ごみ減量・食品ロス削減」についてであり、粗大ごみ収集の申込や期限には触れていない",
+      "why_not": "このページは「生ごみ減量・食品ロス削減」の案内であり、粗大ごみ収集の申込やその期限についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -654,7 +626,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「有料粗大ごみ処理券の還付手続き」（区外転出や誤購入時の処理券返金）についてのみで、粗大ごみ収集の申込やその期限には触れていない",
+      "why_not": "このページは「有料粗大ごみ処理券の還付手続き」（購入済みの処理券が不要になった際の払い戻し）についての案内であり、粗大ごみ収集の申込そのものの期限は書かれていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -668,7 +640,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「燃やすごみの出し方」についてで、粗大ごみ収集の申込期限には触れていない（粗大ごみへのリンクが2箇所あるだけ）",
+      "why_not": "このページは「燃やすごみの出し方」についての本文で、粗大ごみ収集の申込やその期限には触れていない。粗大ごみへの言及は「粗大ごみに出せる木の枝や幹は…」という燃やすごみとの区別と、リンク先「粗大ごみ処理の手続き」への案内のみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -682,7 +654,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「MGR100を目指しましょう！」というごみ減量・リサイクルの啓発ページで、目黒区の1人1日あたりのごみ排出量削減目標やめぐろ買い物ルールなどを説明している。粗大ごみ収集の申込やその期限についての記載はない。",
+      "why_not": "このページはMGR100（ごみ減量の合言葉）と目黒区のごみ減量施策・買い物ルール・食べきりレシピ等の案内であり、粗大ごみ収集の申込や申込期限についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -696,7 +668,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "資源とごみの収集日・分別検索ページで、粗大ごみの分別方法へのリンクと「粗大ごみ受付センター」への関連リンクがあるのみ。粗大ごみ収集の申込期限についての記載は本文になし。",
+      "why_not": "このページは資源とごみの収集日・分別検索（収集曜日のカレンダーと分別方法の案内)のみで、粗大ごみ収集の申込に関する期限の記載はない。粗大ごみについては「粗大ごみ」という分別案内へのリンクと「粗大ごみ受付センター」への関連リンクがあるのみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -710,7 +682,21 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは有料ごみ処理券の取扱店一覧（購入場所）と申込方法（電話・インターネット）の案内で、粗大ごみ処理券がA券200円・B券300円の2種類あるという券種の説明はあるが、申込そのものの手数料額（品目ごとの料金表）は書かれていない",
+      "why_not": "処理券の取扱店一覧と、粗大ごみ処理券がA券（200円券）・B券（300円券）の2種類ある旨の記載のみ。「粗大ごみ手数料に合わせて組み合わせてお求め下さい」とあるだけで、品目ごとの手数料額や手数料一覧表は本文に記載されていない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.minato.tokyo.jp/documents/67227/r6sodairyoukin.pdf\t期限": {
+      "url": "https://www.city.minato.tokyo.jp/documents/67227/r6sodairyoukin.pdf",
+      "link_text": "主な粗大ごみ料金表",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "処理手数料一覧・申込方法・減免申請の手続き（受付センターへの電話等）は書かれているが、収集の申込そのものの期限（受付締切や何日前までに申し込むか等）の記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -724,7 +710,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページはごみ収集量・資源回収量の統計データ（月別清掃データ）のみで、粗大ごみ収集の申込に関する記載自体がない",
+      "why_not": "本文は「統計（ごみ収集量・資源回収量・月別清掃データ【速報値】）」ページで、粗大ごみ収集量の統計値や資源回収実績の数字を列挙しているのみ。粗大ごみ収集の申込方法・申込期限に関する記述はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -738,7 +724,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「臨時ごみ（引っ越しごみ等）」と「粗大ごみ」の申込方法・処理手数料・注意点を説明しているが、転入届（他区市町村から港区への転入手続き）の期限には言及していない。",
+      "why_not": "このページは「臨時ごみ」（引っ越し等で一時的に多量に出る家庭ごみ）の申込・処理手数料についての案内で、粗大ごみは対象外と明記されている（「粗大ごみは臨時ごみとして取り扱えません。事前に『みなと粗大ごみ受付センター』へ申し込みをお願いします」）。粗大ごみ収集の申込自体の期限についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -752,7 +738,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは不燃ごみの出し方（収集日・出し方のルール）についての内容で、粗大ごみ収集の申込やその期限には触れていない",
+      "why_not": "このページは「不燃ごみの出し方」の案内で、収集日（月2回、曜日ごと）や出す時間・分別方法についての内容。粗大ごみ収集の申込や申込期限、処理手数料についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -766,7 +752,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは集合住宅のリサイクル資源集積所の設置基準・手続きについてのページで、粗大ごみ収集の申込やその期限には触れていない",
+      "why_not": "このページは集合住宅のリサイクル資源集積所の設置手続きに関するもので、粗大ごみ収集の申込やその期限、処理手数料についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -780,7 +766,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみの「出し方」（事前申し込みの方法と受付センターの連絡先）についてで、手数料の金額は書かれていない。手数料は別ページ「粗大ごみの処理手数料を教えてください。」に案内されている。",
+      "why_not": "本文は粗大ごみの出し方（申込方法・受付センターの電話番号やURL）を説明しているのみで、「有料」とは書かれているが具体的な手数料額や処理券の料金は書かれていない。手数料は別ページ「粗大ごみの処理手数料を教えてください。」（サブナビゲーションのリンク先）にあり、このページの本文には含まれない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -791,128 +777,16 @@
     "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html\t手数料": {
       "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html",
       "link_text": "粗大ごみの処理手数料を教えてください。",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは粗大ごみの処理手数料についてのFAQで、金額の記載はなく粗大ごみ受付センターへの問い合わせ案内のみ。また粗大ごみの排出手数料であり、転入届（住民異動届）の手数料についての記載はない",
+      "found": true,
+      "value": "粗大ごみの手数料は、「排出品目一覧（外部サイト）」でご確認いただくか、粗大ごみ受付センター（外部サイト）（03‐5715‐2255 8～19時 月曜日～土曜日：年末年始を除く）にお問い合わせください。また、お申し込みの際には、処理手数料を含む「有料粗大ごみ処理券」の種類と必要枚数をご案内いたします。",
+      "evidence": "粗大ごみの手数料は、「排出品目一覧（外部サイト）」でご確認いただくか、粗大ごみ受付センター（外部サイト）（03‐5715‐2255 8～19時 月曜日～土曜日：年末年始を除く）にお問い合わせください。また、お申し込みの際には、処理手数料を含む「有料粗大ごみ処理券」の種類と必要枚数をご案内いたします。",
+      "why_not": "",
       "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
+        "verdict": "exact",
+        "run": 150,
+        "note": ""
       },
-      "verified": false
-    },
-    "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html\t手数料": {
-      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
-      "link_text": "○○は粗大ごみですか？",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは「○○は粗大ごみですか？」というFAQで、粗大ごみの分別可否についての説明のみ。手数料の記載は無く、サブナビゲーションに「粗大ごみの処理手数料を教えてください。」という別ページへのリンクがあるだけ。また本文の内容自体は粗大ごみの出し方一般であり、他区市町村からの転入者向けの粗大ごみ収集申込に関する記載でもない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/jigyosyo-ogata.html\t手数料": {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/jigyosyo-ogata.html",
-      "link_text": "事業所から出る大型のごみ（粗大ごみ）",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは事業所（商店・会社等）から出る大型ごみ（粗大ごみ）の産業廃棄物としての処理案内であり、家庭からの粗大ごみ収集申込や、他区市町村からの転入に伴う手続きの手数料についての記載はない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/syugojyutaku-recycle.html\t手数料": {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/syugojyutaku-recycle.html",
-      "link_text": "集合住宅のリサイクル資源集積所の設置について",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは集合住宅のリサイクル資源集積所の設置基準・手続きに関する内容で、粗大ごみ収集の申込や転入届の手数料については書かれていない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/gomizero/recycletenji.html\t手数料": {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/gomizero/recycletenji.html",
-      "link_text": "ようこそリサイクル展示室へ",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "リサイクル展示室の案内ページ（開館日時・展示内容・施設案内）で、粗大ごみ収集申込やその手数料についての記載はない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi33.html\t手数料": {
-      "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi33.html",
-      "link_text": "普段のごみの収集、資源の回収時間が午後でも、朝に出さなくてはいけまんせんか？",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは「普段のごみの収集、資源の回収時間が午後でも、朝に出さなくてはいけまんせんか？」というFAQで、収集時間の変更についての説明のみ。粗大ごみ収集の申込や手数料についての記載はない（サブナビに「粗大ごみの処理手数料を教えてください。」という別ページへのリンクがあるだけ）",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html\t手数料": {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
-      "link_text": "ごみ・資源",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページはごみ・資源に関する総合案内ページで、粗大ごみの申込方法や関連リンクの一覧はあるが、手数料の具体的な金額は本文に書かれていない（「令和5年10月1日から廃棄物処理手数料が変わりました」等のリンク見出しのみで、金額そのものは別ページ）",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/index.html\t手数料": {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/index.html",
-      "link_text": "ごみ・資源の出し方",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは中野区の「ごみ・資源の出し方」の分別・収集ルール一覧ページで、粗大ごみの手数料は本文中に記載がない。「粗大ごみの申込み」への内部リンクがサブナビゲーションにあるのみで、金額の記載は無い。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/index.html\t手数料": {
-      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/index.html",
-      "link_text": "商店・事業所から出るごみと資源の出し方",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "事業所・商店から出るごみ・資源の出し方に関するページで、粗大ごみ収集申込の手数料についての記載はない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
+      "verified": true
     },
     "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/kasidasi.html\t期限": {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/kasidasi.html",
@@ -920,7 +794,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは家庭用生ごみ処理機の貸出しについてのページで、粗大ごみ収集の申込（転入時の届出）とは無関係",
+      "why_not": "このページは「家庭用生ごみ処理機の貸出し」についての案内であり、粗大ごみ収集の申込やその期限、手数料についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -931,16 +805,16 @@
     "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html\t期限": {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
       "link_text": "こちら",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）導入の案内であり、申込そのものの期限には触れていない。書かれているのは決済実行の期限（収集日前日まで）と、申込内容の変更・取消しの受付期間（収集日の3日前23:59まで）のみで、いずれも申込期限とは別の話。",
+      "found": true,
+      "value": "収集日の3日前の23時59分（変更・取消しの受付期限）",
+      "evidence": "インターネットからの変更・取消しの申込みは、年末年始、日曜日を除き、収集の場合は収集日の3日前の23時59分までです。",
+      "why_not": "",
       "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
+        "verdict": "exact",
+        "run": 59,
+        "note": ""
       },
-      "verified": false
+      "verified": true
     },
     "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaigomi.html\t手数料": {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaigomi.html",
@@ -948,7 +822,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「粗大ごみ破砕処理施設」（リチウムイオン電池火災からの復旧）についてのお知らせで、粗大ごみ処理手数料への言及はない。手数料に関するページとしては「粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）について」が関連ページとしてリンクされているのみで、本文中に金額の記載はない。",
+      "why_not": "このページは粗大ごみ破砕処理施設の火災復旧に関するお知らせで、収集申込の手数料（処理券・シールの料金等）についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -962,7 +836,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページはリユース（再使用）促進の案内(「おいくら」「ジモティー」の紹介)であり、粗大ごみ収集の申込手数料についての記載はない。",
+      "why_not": "このページは「おいくら」「ジモティー」等のリユース(再使用)事業者の案内であり、粗大ごみ収集申込の手数料(処理券・シールの料金)は本文に書かれていない。関連リンク一覧に「粗大ごみ処理手数料のオンライン決済(キャッシュレス決済)について」という別ページへのタイトルが出るのみで、金額等の記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -976,7 +850,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは大型生活用品リサイクル情報掲示板（不用品の譲ります・譲ってください掲示）についてのもので、粗大ごみ収集の申込手数料は書かれていない",
+      "why_not": "このページは「大型生活用品リサイクル情報掲示板」（不用品の譲渡・譲受を仲介する掲示板）についてのページで、粗大ごみ収集の申込やその手数料（処理券・シールの料金）については書かれていない。掲示板の利用価格は「原則は無料（価格をつける場合は上限5,000円まで）」とあるが、これは掲示板利用者間の譲渡価格の話であり、区の粗大ごみ収集手数料ではない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -990,7 +864,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "生ごみ処理機・生ごみコンポスト化容器の購入あっせん価格の案内であり、粗大ごみ収集の申込手数料についての記載はない",
+      "why_not": "このページは「生ごみ処理機と生ごみコンポスト化容器購入のあっせん」についてで、粗大ごみ収集の申込やその手数料（処理券・シールの料金）についての記載はない。掲載されているのは生ごみ処理機・コンポスト化容器の購入あっせん価格のみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1004,7 +878,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "家庭用生ごみ処理機の貸出しについてのページで、粗大ごみ収集の申込に関する記載はない",
+      "why_not": "このページは「家庭用生ごみ処理機の貸出し」についてのページで、粗大ごみ収集の申込やその手数料の記載はない。貸出し自体は無料と明記されている。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1018,7 +892,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "学校給食の生ごみから肥料「練馬の大地」を作る取り組みのページで、粗大ごみ収集の申込や手数料についての記載はない",
+      "why_not": "本文は「練馬の大地」（学校給食の生ごみから作る肥料）の紹介ページで、粗大ごみ収集の申込や手数料についての記載は無い",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1032,7 +906,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページはお知らせ一覧（ごみ・リサイクル）の見出しリンク集で、粗大ごみ処理手数料そのものの金額や説明は本文に含まれていない。「粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）について」という告知タイトルはあるが、これは決済方法の告知であって手数料の記載ではない",
+      "why_not": "このページはお知らせ一覧（ごみ・リサイクル）の見出しリストであり、粗大ごみ収集の申込手数料や品目ごとの処理券・シール料金の記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1046,7 +920,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページはエアコン・テレビ・冷蔵庫冷凍庫・洗濯機衣類乾燥機の家電リサイクル法に基づく引取り案内（リサイクル料金・収集運搬料金）で、粗大ごみ収集の申込や転入届の手数料についての記載はない",
+      "why_not": "このページは家電リサイクル法対象の4品目（エアコン・テレビ・冷蔵庫冷凍庫・洗濯機衣類乾燥機）の案内で、リサイクル料金・収集運搬料金について説明している。粗大ごみとしては出せない旨が明記されており、粗大ごみ収集の申込手数料（処理券・シールの料金）はこのページには記載されていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1057,10 +931,38 @@
     "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html\t手数料": {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
       "link_text": "こちら",
+      "found": true,
+      "value": "粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）",
+      "evidence": "令和8年4月1日から、インターネットで粗大ごみ収集の申込みを行う場合、粗大ごみ処理手数料をオンライン決済（キャッシュレス決済）で支払うことができるようになりました。",
+      "why_not": "",
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 82,
+        "note": ""
+      },
+      "verified": true
+    },
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf\t期限": {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+      "link_text": "【チラシ】高齢者世帯等に対する粗大ごみの運び出し収集（PDF：151KB）",
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）導入のお知らせであり、粗大ごみ収集の申込（転入者の届出）そのものの手数料額は書かれていない",
+      "why_not": "本文は「運び出し収集」（65歳以上・障害者のみの世帯向けの特例的な運搬サービス）の案内であり、粗大ごみ収集の申込一般の期限には触れていない。申込みは訪問調査後にその場で行う旨の記載があるのみで、期限の定めは書かれていない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102302.pdf\t期限": {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102302.pdf",
+      "link_text": "粗大ごみ品目・手数料一覧（令和5年10月1日から）（PDF：361KB）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "この本文は粗大ごみの品目別手数料一覧（PDF）であり、収集の申込そのものの期限についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1074,7 +976,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは資源とごみの収集曜日・収集日カレンダーの案内であり、粗大ごみはメニュー内のリンク項目として名前が挙がるのみ。粗大ごみ収集の申込の期限についての記載はない。",
+      "why_not": "本文は資源・ごみの収集曜日カレンダー（燃やせないごみの地区別収集日一覧など）についての案内であり、粗大ごみ収集の申込期限についての記述はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1088,7 +990,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは風水害時のごみ出し方についてのみで、粗大ごみ収集の申込期限(転入時の届出)は書かれていない",
+      "why_not": "このページは風水害発生時のごみの出し方についての案内で、粗大ごみは「被災に伴う粗大ごみの出し方は通常と異なります。排出予約、排出場所、費用等について、地域の被災状況を踏まえ、その都度お知らせします」とあるのみ。通常時の粗大ごみ収集申込の期限についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1102,7 +1004,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「可燃ごみ」の分別・出し方に関するページで、粗大ごみ収集の申込や期限についての記載はない。関連リンクに「粗大ごみ」への誘導があるのみ。",
+      "why_not": "このページは「可燃ごみ」の分別・出し方の案内で、粗大ごみ収集の申込やその期限については書かれていない（関連リンクに「粗大ごみ」への誘導はあるが本文中に期限の記載はない）",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1116,7 +1018,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは不燃ごみの収集日・出し方についての説明で、粗大ごみは「粗大ごみの申込方法などはこちらから」というリンク案内のみ。申込の期限についての記載はない。",
+      "why_not": "このページは不燃ごみの収集日・出し方についての案内。粗大ごみへの言及は「家庭から出る一辺の長さがおおむね30cm以上のものは、粗大ごみです。粗大ごみの申込方法などはこちらから」という他ページへのリンク案内のみで、粗大ごみ収集の申込そのものの期限は書かれていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1124,89 +1026,19 @@
       },
       "verified": false
     },
-    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html\t手数料": {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
-      "link_text": "消火器のリサイクル",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは消火器のリサイクルについてのみで、粗大ごみ収集の申込や引越し・転入に関する記載はない",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf\t手数料": {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+      "link_text": "【チラシ】高齢者世帯等に対する粗大ごみの運び出し収集（PDF：151KB）",
+      "found": true,
+      "value": "運び出し料金は無料ですが、品目に合わせた粗大ごみ処理券が必要です。",
+      "evidence": "⑤運び出し料金は無料ですが、品目に合わせた粗大ごみ処理券が必要です。訪問調査（下見）の際に担当者からご案内いたしますので収集日までにコンビニエンスストア等でご購入ください。",
+      "why_not": "",
       "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
+        "verdict": "exact",
+        "run": 86,
+        "note": ""
       },
-      "verified": false
-    },
-    "https://www.city.ota.tokyo.jp/seikatsu/gomi/gomi/index.html\t手数料": {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/gomi/index.html",
-      "link_text": "事業系のごみ・資源",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "「事業系のごみ・資源」のトップページで、関連ページへのリンク一覧のみ。粗大ごみ収集の申込や手数料についての本文記載はない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomi-bunbetsu-apli.html\t手数料": {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomi-bunbetsu-apli.html",
-      "link_text": "大田区ごみ分別アプリ",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "ごみ分別アプリの案内ページで、粗大ごみ収集申込の手数料についての記載はない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html\t手数料": {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html",
-      "link_text": "家電（エアコン、テレビ、洗濯機・衣類乾燥機、冷蔵・冷凍庫）のリサイクル",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは家電リサイクル法対象品目（エアコン・テレビ・洗濯機・冷蔵庫）のリサイクル料金と処分方法について書かれており、粗大ごみ収集の申込や転入届の手数料についての記載はない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html\t手数料": {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html",
-      "link_text": "風水害が発生した際の資源・ごみの出し方について",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは風水害発生時の資源・ごみの出し方についての案内であり、粗大ごみ収集の申込手数料は記載されていない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html\t手数料": {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html",
-      "link_text": "令和7年9月11日大田区豪雨により発生したごみの取扱いについて",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは令和7年9月11日豪雨で発生したごみ（粗大ごみ・可燃ごみ・不燃ごみ）の取扱いと、粗大ごみ減免申請の期日・手続きについて書かれている。転入時の粗大ごみ収集申込の手数料についての記載はない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
+      "verified": true
     },
     "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/381.html\t期限": {
       "url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/381.html",
@@ -1214,7 +1046,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみの「持ち込み」（自己搬入）の案内で、申込手続きそのものの期限は記載されていない。「オンライン決済を利用された方は…前日までに決済を済ませてください」は決済の期限であり、申込の期限ではない。",
+      "why_not": "本文は「粗大ごみの持ち込み」（船橋粗大ごみ中継所への自己搬入）の案内であり、持ち込み可能な曜日・時間帯（土日、午前9時〜正午・午後1時〜3時30分）や申込方法・手数料の説明はあるが、収集（持ち込みではなく通常の）申込そのものの期限、または申込受付の締切に関する記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1228,7 +1060,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは有料粗大ごみ処理券の種類・購入場所についての案内で、申込の期限には触れていない。記載があるのは受付センターの受付時間（月曜日～土曜日/午前8時～午後7時、祝日も可）のみで、これは窓口の受付時間であり申込の期限ではない。",
+      "why_not": "このページは有料粗大ごみ処理券の種類（A券・B券）と購入場所についての案内であり、収集の申込期限には触れていない。申込先の受付時間（月曜日～土曜日/午前8時～午後7時）は窓口の受付時間の案内であり、申込そのものの期限ではない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1242,7 +1074,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページはごみ・リサイクルカテゴリの目次（リンク一覧）で、「粗大ごみの処理手数料について」というリンク項目名があるだけで、本文中に手数料の金額そのものは書かれていない",
+      "why_not": "このページは「ごみ・リサイクル」のトップ（目次）ページで、本文には「粗大ごみの処理手数料について」「有料粗大ごみ処理券について（券の種類・購入場所）」などのリンク見出しが並んでいるだけ。手数料の金額や処理券の料金表そのものはこのページ内に書かれておらず、リンク先のページにあると見られる。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1256,7 +1088,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「粗大ごみの持ち込み（自己搬入）」の案内で、収集申込一般の話ではなく、手数料も「収集の場合の半額程度になります」という相対的な言及のみで具体的な金額・料金体系は書かれていない",
+      "why_not": "このページは粗大ごみの「持ち込み」（自己搬入）についての説明で、収集の申込手数料そのものではない。本文にあるのは「手数料は、収集の場合の半額程度になります。」という持ち込み手数料と収集手数料の相対関係の記述のみで、品目ごとの処理券料金表など具体的な金額の記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1270,7 +1102,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは有料粗大ごみ処理券（A券200円・B券300円）の種類と購入場所についての説明で、券の価格は処理手数料に応じて組み合わせるものであり手数料額そのものは書かれていない。また粗大ごみ収集の申込は電話受付センターで行うとあり、他区市町村からの転入届出手続きではない別の話題（粗大ごみ収集サービス）。",
+      "why_not": "このページは有料粗大ごみ処理券の券種（A券200円・B券300円）と購入場所の説明のみで、収集の申込方法や品目ごとの処理手数料（料金表）そのものは書かれていない。手数料額は「粗大ごみの処理手数料について」という別ページで案内されている旨が本文中でリンク先として示されている。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1284,7 +1116,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "違法な不用品回収業者への注意喚起ページ。粗大ごみの申込方法（電話・インターネット）と問い合わせ先は書かれているが、手数料の金額は本文に記載がなく、詳細は別ページ「粗大ごみの処理手数料について」へのリンクのみ",
+      "why_not": "このページは違法な不用品回収業者への注意喚起が主題。粗大ごみの申込・手数料には触れておらず、「粗大ごみの処理手数料について」「有料粗大ごみ処理券について」は関連リンクの見出しとして列挙されているだけで、本文中に金額や手数料の記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1298,7 +1130,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "本文は有料ごみ処理券（粗大ごみ処理券・事業系ごみ処理券）の購入・料金表と、その還付手続きの必要書類についてのページで、粗大ごみ収集の申込（受付センターへの事前申込）そのものの必要書類は書かれていない",
+      "why_not": "このページは有料ごみ処理券（有料粗大ごみ処理券・事業系有料ごみ処理券）の説明と、その処理券の「還付（払い戻し）」の必要書類（廃棄物処理手数料還付請求書等）を案内するページ。粗大ごみ収集の申込自体については『粗大ごみ受付センターへ事前に電話（またはLINE・インターネット）で申し込んだうえで処理券を購入』とあるだけで、申込に必要な書類の記載はなく、詳細は別ページ「粗大ごみ」を参照するよう案内されている。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1312,7 +1144,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは委託販売（リサイクルショップ）についての内容で、家庭の不用品を持ち込んで販売する仕組みの説明。粗大ごみ収集の申込（他区市町村からの転入時の届出）については書かれていない。",
+      "why_not": "本文は「委託販売（リサイクルショップ）」の案内で、家庭で不用になった日用雑貨品をリサイクルショップに登録・出品・購入する話。粗大ごみ収集の申込やその必要書類についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1326,7 +1158,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページはキャッシュレス決済の案内で、書かれている期限は「キャッシュレス決済は収集日の7日前まで」「変更・取り消しは収集日の7日前まで」という決済・変更の期限であり、粗大ごみ収集の申込そのものの期限（申込の締切）ではない",
+      "why_not": "このページはキャッシュレス決済の案内で、決済期限（収集日の7日前まで）と変更・取り消しの期限（収集日の7日前まで）は書かれているが、粗大ごみ収集の「申込そのもの」の期限（いつまでに申し込む必要があるか）は書かれていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1340,7 +1172,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは事業系ごみ（事業者向け）の収集ルールについての説明で、住民の転入に伴う粗大ごみ収集申込の期限には触れていない。事業所の粗大ごみは区では収集不可と書かれているのみ。",
+      "why_not": "このページは「事業者ごみ」の区収集について書かれたものであり、家庭から出る粗大ごみの収集申込（住民向け手続き）についての記載ではない。また事業所の粗大ごみは区で収集しない旨（廃棄物処理業者に依頼）が明記されている。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1354,7 +1186,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは集団回収（町会・自治会などによる資源回収活動）の案内であり、粗大ごみ収集や転入届の申込期限についての記述はない",
+      "why_not": "このページは「集団回収」（町会・自治会などが新聞・雑誌・空き缶等を回収業者に引き取ってもらう活動）についての案内であり、粗大ごみ収集の申込やその期限、処理手数料についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1368,7 +1200,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみ処理手数料の『キャッシュレス決済方法』についてのみで、手数料の金額自体は記載されていない",
+      "why_not": "このページは「粗大ごみ処理手数料のキャッシュレス決済について」であり、決済方法（クレジットカード・PayPay）や申込・変更・取り消しの手続き方法を説明しているのみで、品目ごとの処理手数料の金額や料金表は記載されていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1379,142 +1211,16 @@
     "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html\t手数料": {
       "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
       "link_text": "有料粗大ごみ処理券",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは有料ごみ処理券（粗大ごみ処理券・事業系ごみ処理券）の券種と料金、および還付手続きについての案内であり、粗大ごみ収集の「申込」自体の手数料は書かれていない",
+      "found": true,
+      "value": "有料粗大ごみ処理券A（1枚）200円、有料粗大ごみ処理券B（1枚）300円",
+      "evidence": "有料粗大ごみ処理券の料金表\n\n券種\n\n現行料金\n\n有料粗大ごみ処理券A（1枚）\n\n200円\n\n有料粗大ごみ処理券B（1枚）\n\n300円",
+      "why_not": "",
       "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
+        "verdict": "exact",
+        "run": 67,
+        "note": ""
       },
-      "verified": false
-    },
-    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/\t手数料": {
-      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/",
-      "link_text": "ごみ減量・リサイクルに関する取り組み",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは「ごみ減量・リサイクルに関する取り組み」の一覧ページで、集団回収・再生木製家具の販売・不用品情報コーナー・リサイクルショップなどのカテゴリ一覧とナビゲーションのみ。粗大ごみ収集の申込や手数料についての記載はない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/application.html\t手数料": {
-      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/application.html",
-      "link_text": "渋谷区ごみ・資源分別アプリ",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは「渋谷区ごみ・資源分別アプリ」の紹介ページで、粗大ごみ収集の申込や手数料についての記載はない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/\t手数料": {
-      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle/",
-      "link_text": "リサイクル",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "本文はごみ・資源/リサイクルのカテゴリ一覧とナビゲーションのみで、粗大ごみ収集申込の手数料についての記載がない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/\t手数料": {
-      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-event/",
-      "link_text": "リサイクルイベント",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページはリサイクルイベント（フリーマーケット等）の案内ページで、粗大ごみ収集申込の手数料は書かれていない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/\t手数料": {
-      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-keihatsu/",
-      "link_text": "リサイクル意識啓発",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは「リサイクル意識啓発」に関する案内（啓発冊子・アプリ・イベント紹介など）で、粗大ごみ収集の申込や手数料についての記載はなく、ナビゲーションリンクと問い合わせ先情報のみだった",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/ku_syusyu.html\t手数料": {
-      "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/ku_syusyu.html",
-      "link_text": "区の収集に事業系ごみを出すとき",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは事業系ごみ（事業者向け）の区収集の説明で、有料ごみ処理券のルールが書かれているのみ。粗大ごみ収集の申込（転入者の届出）の手数料についての記載はない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/\t手数料": {
-      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/",
-      "link_text": "家庭から出るごみ・資源",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは家庭ごみ・資源の総合案内ページで、粗大ごみの品目別手数料は「粗大ごみ品目手数料一覧」という別リンク先にある。本文中に手数料の金額そのものは書かれていない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/\t手数料": {
-      "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/",
-      "link_text": "有料ごみ手数料",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "ページ本文は渋谷区サイトのナビゲーション・フッター等の枠組みのみで、粗大ごみ収集申込の手数料に関する記載自体が本文に含まれていない（「有料ごみ処理手数料」というカテゴリ名のみで金額等の説明文がない）",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/h_jigyo.html\t手数料": {
-      "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/h_jigyo.html",
-      "link_text": "事業者のごみ処理",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは事業者ごみ（事業系一般廃棄物・産業廃棄物）の処理方法についての内容で、粗大ごみ収集の申込（転入に伴う届出）や、その手数料についての記載はない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
+      "verified": true
     },
     "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/index.html\t手数料": {
       "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/index.html",
@@ -1522,7 +1228,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「粗大ごみに関すること」の一覧・目次ページで、「20_粗大ごみの出し方」「30_粗大ごみ処理手数料」への リンクがあるだけ。手数料の金額そのものは本文に書かれていない（リンク先のページにあると思われる）",
+      "why_not": "本文は「粗大ごみに関すること」の目次ページで、「30_粗大ごみ処理手数料」等へのリンク見出しが並んでいるだけ。手数料の金額や処理券の料金そのものはこの本文中に書かれていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1536,7 +1242,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "本文は令和6年4月から粗大ごみ処理手数料の決済方法に電子決済（クレジットカード）が追加されるという告知で、決済手段の説明のみ。粗大ごみ収集の申込自体の手数料額は記載されていない。また転入時の粗大ごみ収集申込手続きとも無関係。",
+      "why_not": "本文は令和6年4月からの粗大ごみ処理手数料の電子決済（クレジットカード）導入のお知らせであり、粗大ごみ収集の申込そのものの手数料額や品目ごとの料金表は記載されていない。決済方法（電子決済/処理券）とその手続きの説明のみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1550,21 +1256,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「ごみ・リサイクル通信」というPDF形式の広報誌の一覧・発行案内であり、粗大ごみ収集の申込手数料についての記載はない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/index.html\t手数料": {
-      "url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/index.html",
-      "link_text": "ごみ・リサイクル",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは品川区ごみ・リサイクルのカテゴリ一覧（トップページ）で、粗大ごみの手数料に関する本文記載はなく、「10_粗大ごみに関すること」への案内リンクがあるのみ。",
+      "why_not": "本文は「ごみ・リサイクル通信」というニュースレター(PDF一覧)のページで、粗大ごみ収集の申込手続きや手数料についての記載は本文中にない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1578,7 +1270,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "リサイクル情報紙「くるくる」への掲載申込みページであり、粗大ごみ収集の申込や転入届の手数料についての記載はない",
+      "why_not": "このページは「リサイクル情報紙『くるくる』」（不用品譲渡の掲載申込）に関するもので、粗大ごみ収集の申込や手数料についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1592,7 +1284,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは家電リサイクル法対象品目（エアコン・テレビ・冷蔵庫冷凍庫・洗濯機衣類乾燥機）のメーカーリサイクル料金についてで、粗大ごみ収集の申込手数料ではない。むしろ「区の粗大ごみ等では収集しません」と明記されている",
+      "why_not": "このページは家電リサイクル法対象品目（エアコン・テレビ・冷蔵庫等）の出し方に関するページで、記載されている料金はメーカーによる家電リサイクル料金・収集運搬料金・振込手数料であり、品川区の粗大ごみ収集申込の処理手数料（処理券・シール代）についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1606,7 +1298,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "ページは「令和8年度 ごみ減量新宿フェア」というイベント告知で、粗大ごみ収集の申込・期限についての記載は無い",
+      "why_not": "ページは「令和8年度 ごみ減量新宿フェア」というイベントの案内で、粗大ごみ収集の申込期限についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1620,7 +1312,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "ページは「令和8年度 ごみ減量新宿フェア」の開催案内で、粗大ごみ収集の申込手数料についての記載はない",
+      "why_not": "このページは「令和8年度 ごみ減量新宿フェア」というイベントの案内であり、粗大ごみ収集の申込や手数料についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1634,7 +1326,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "四谷リサイクルフェアの案内ページであり、粗大ごみ収集の申込手数料についての記載はない",
+      "why_not": "このページは「令和7年度 四谷リサイクルフェア 開催のお知らせ」というリサイクルフェアイベントの案内ページで、粗大ごみ収集の申込や手数料についての記載はない。費用は「無料」と書かれているが、これはリサイクルフェア参加の費用であり、粗大ごみ収集の申込手数料ではない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1642,13 +1334,27 @@
       },
       "verified": false
     },
+    "https://www.city.suginami.tokyo.jp/documents/727/sodai_itiran5080401.pdf\t手数料": {
+      "url": "https://www.city.suginami.tokyo.jp/documents/727/sodai_itiran5080401.pdf",
+      "link_text": "粗大ごみ処理手数料一覧表（主な品目）（PDF：1,253KB）",
+      "found": true,
+      "value": "アイロン台400",
+      "evidence": "かな品目名手数料説明文ネット受付可否個数制限あアイロン台400アイロンは不燃ごみでお出しください。〇10",
+      "why_not": "",
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 52,
+        "note": ""
+      },
+      "verified": true
+    },
     "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.html\t期限": {
       "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-calendar.html",
       "link_text": "資源とごみの収集カレンダー",
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは資源とごみの収集カレンダー（曜日別の収集日程）についてのもので、粗大ごみ収集の申込や転入届の手続きには言及していない",
+      "why_not": "このページは資源・ごみの収集曜日カレンダー（収集日カレンダー）の案内で、収集日そのもの（曜日・カレンダー）の話のみ。粗大ごみ収集の申込や手数料についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1662,7 +1368,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "自転車のリユース・リサイクル（海外供与）事業の募集期間についてのページで、粗大ごみ収集の申込や転入届とは無関係",
+      "why_not": "このページは自転車のリユース・リサイクル（海外供与）イベントの案内で、粗大ごみ収集の申込ではない。募集期間はこのイベント参加の申込期間であり、粗大ごみ収集の申込期限ではない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1676,7 +1382,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「燃やさないごみの出し方」（不燃ごみの収集ルール）についての内容で、粗大ごみ収集の申込や転入者向けの申込期限には触れていない",
+      "why_not": "このページは「燃やさないごみ」（不燃ごみ）の出し方についての案内で、粗大ごみ収集の申込やその期限には触れていない。粗大ごみについては「一辺30cm以上は粗大ごみ」という注意書きと「粗大ごみの出し方」への案内リンクがあるのみで、申込の期限（受付期間や締切）は本文中に記載がない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1690,7 +1396,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "資源とごみの分別一覧表（50音順）のページで、粗大ごみの品目ごとに『粗大ごみ受付センターに申し込んでください』という案内はあるが、粗大ごみ収集の申込そのものの期限（受付期限）についての記載はない",
+      "why_not": "このページは家庭ごみ・資源の50音別分別一覧表であり、粗大ごみについては「粗大ごみ受付センター（電話03-6417-0074）に申し込んでください」という案内のみで、申込そのものの期限（申込期限・受付期間）についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1704,7 +1410,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）方法や領収書発行手続きについて説明しているが、転入時の粗大ごみ収集申込自体の手数料額は書かれていない",
+      "why_not": "本文は粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）方法・領収書の発行手続きについてのページで、手数料の金額や品目ごとの料金表は記載されていない。金額は別ページ「粗大ごみの出し方」を参照する形になっている。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1718,7 +1424,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみリユース事業（おいくらとの連携による売却型リユースサービス）についての説明で、粗大ごみ収集の申込手数料の記載はない。",
+      "why_not": "本文は粗大ごみリユース事業（おいくら）の案内のみで、粗大ごみ収集申込の手数料・処理券料金の記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1732,7 +1438,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは高齢者・障害者世帯向けの粗大ごみ「運び出し収集」サービスの案内であり、転入時の粗大ごみ収集申込の手数料については記載されていない",
+      "why_not": "このページは高齢者・障害者のみの世帯向け「粗大ごみの運び出し収集」（職員による運び出しサービス）の案内で、申込方法（清掃事務所への電話）や対象世帯の条件が書かれているのみで、手数料・処理券・シールの料金についての記載はない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1740,117 +1446,19 @@
       },
       "verified": false
     },
-    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/index.html\t手数料": {
-      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/index.html",
-      "link_text": "資源・ごみ・リサイクル",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは「資源・ごみ・リサイクル」のトップページ（カテゴリ一覧・新着情報・各案内ページへのリンク集）で、粗大ごみ収集の申込手数料の具体的な金額や記載は本文中にない",
+    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf\t手数料": {
+      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf",
+      "link_text": "粗大ごみ手数料一覧（R7.3.1更新）（PDF：123KB）",
+      "found": true,
+      "value": "有料粗大ごみ処理券 （Ａ券＝200円　Ｂ券＝300円）",
+      "evidence": "1　頁有料粗大ごみ処理券 （Ａ券＝200円　Ｂ券＝300円）　　　Ａ券Ｂ券Ａ券Ｂ券（枚）（枚）（枚）（枚）アイロン台4002カセットコンロ（卓上用）4002IHクッキングヒーター（10kg以上）9003",
+      "why_not": "",
       "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
+        "verdict": "exact",
+        "run": 101,
+        "note": ""
       },
-      "verified": false
-    },
-    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/volunteer-gomi.html\t手数料": {
-      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/volunteer-gomi.html",
-      "link_text": "ボランティアごみの収集",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは「ボランティアごみの収集」に関する案内で、町会・自治会等が清掃活動や行事で排出するごみをすみだ清掃事務所へ申請して収集してもらう制度について書かれている。粗大ごみ収集の申込（他区市町村からの転入時の届出）についての記載は本文中に無く、むしろ「なお、粗大ごみは対象外となります」と明記されている。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/event_info/mukoujima-jitensya.html\t手数料": {
-      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/event_info/mukoujima-jitensya.html",
-      "link_text": "【すみだ清掃事務所分室】自転車のリユース・リサイクル（海外供与）",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "自転車のリユース・リサイクル（海外供与）事業のページで、費用は「無料」と明記されている。粗大ごみ収集の申込（転入時の届出）の手数料についての記載はない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/index.html\t手数料": {
-      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/index.html",
-      "link_text": "その他収集に関すること",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは粗大ごみの「運び出し収集」「ふれあい収集」など収集サービスの案内一覧であり、他区市町村からの転入時に出す粗大ごみ収集の申込手続きやその手数料についての記載は本文に含まれていない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/hureai.html\t手数料": {
-      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/hureai.html",
-      "link_text": "ふれあい収集",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは「ふれあい収集」（高齢者・障害者向けのごみ出し支援サービス）についての説明で、粗大ごみ収集の申込や手数料についての記載はない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/boutyou-net.html\t手数料": {
-      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/boutyou-net.html",
-      "link_text": "資源・ごみ飛散防止ネットの無料貸し出し",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "資源・ごみ飛散防止ネットの無料貸し出しについてのページで、粗大ごみ収集の申込やその手数料には触れていない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/rinji-tairyou-gomi.html\t手数料": {
-      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/rinji-tairyou-gomi.html",
-      "link_text": "臨時ごみ・大量ごみとして出す場合",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "臨時ごみ・大量ごみ（45リットル袋1袋300円）の料金についてのページで、粗大ごみ収集の申込（転入時の届出）自体の手数料は書かれていない",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-50onbunbetu.html\t手数料": {
-      "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi-50onbunbetu.html",
-      "link_text": "資源とごみの分別一覧表（50音順）",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは「資源とごみの分別一覧表（50音順）」で、品目ごとの分別区分（燃やすごみ・資源・粗大ごみ等）と粗大ごみ受付センターへの電話申込先を案内するのみ。転入届（他区市町村から墨田区への転入時の届出）や、その手数料についての記載はない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
+      "verified": true
     },
     "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html\t期限": {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
@@ -1858,7 +1466,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみ処理手数料の改定（令和5年10月1日〜）についての内容で、旧料金適用の申込締切（令和5年9月30日）は改定前手数料が適用される条件の期限であり、粗大ごみ収集の申込そのものの期限ではない。申込自体は予約制で随時受け付けている。",
+      "why_not": "本文にあるのは令和5年9月30日までに申込を完了していれば旧料金が適用されるという、料金改定に伴う経過措置の期日であり、粗大ごみ収集の申込そのものの期限（申込の締切）ではない。申込の受付自体は「予約制」「粗大ごみ受付センターへお申し込みください」とあるのみで、期限の記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1872,7 +1480,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは事業者のごみの出し方（事業系ごみ・マニフェスト・許可業者）についての内容で、粗大ごみ収集の申込の期限には触れていない。事業所からの粗大ごみは「区の収集に出すことはできない」という記載はあるが、申込期限の話ではない",
+      "why_not": "このページは事業者(会社・店舗)向けの事業系ごみの出し方の案内で、住民の家庭ごみとしての粗大ごみ収集申込ではない。事業所からの粗大ごみは「品目・数量に関わらず、区の収集に出すことはできません」とされており、区の粗大ごみ収集の申込期限についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1886,7 +1494,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "本文は台東区の粗大ごみの出し方・分別方法についての案内で、手数料の金額は本文中に記載がない（『令和5年10月1日から粗大ごみ処理手数料が変更になります』という告知リンクがあるのみで、金額自体は本文に含まれていない）",
+      "why_not": "手数料改定のお知らせへのリンク見出し（「令和5年10月1日から粗大ごみ処理手数料が変更になります」）があるのみで、本文中に品目別の料金表や具体的な手数料額は書かれていない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1900,7 +1508,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは粗大ごみ収集受付チャットボットの使い方説明のみで、手数料の具体的な金額は本文に記載されていない（品名で調べる案内があるだけ）",
+      "why_not": "このページはチャットボットの使い方の説明のみで、粗大ごみ収集の申込手数料そのもの（金額や処理券・シールの料金表）は書かれていない。手数料は「品名で調べる」など別ページ（チャットボット内）に誘導されるのみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1911,27 +1519,13 @@
     "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html\t手数料": {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
       "link_text": "・有料粗大ごみ処理券の取扱所等についてはこちら",
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "why_not": "このページは有料ごみ処理券（粗大ごみ用のA券200円・B券300円、事業系ごみ処理券の料金表）の説明であり、他区市町村からの転入者が出す「粗大ごみ収集の申込」という届出そのものの手数料については書かれていない。",
-      "evidence_check": {
-        "verdict": "too_short",
-        "run": 0,
-        "note": "8文字未満は照合しない"
-      },
-      "verified": false
-    },
-    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html\t手数料": {
-      "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
-      "link_text": "令和5年10月1日から粗大ごみ処理手数料が変更になります",
       "found": true,
-      "value": "有料粗大ごみ処理券（A券200円、B券300円）",
-      "evidence": "〇有料粗大ごみ処理券（A券200円、B券300円）に変更はありません。現行の券を引き続きご使用いただけます。",
+      "value": "有料粗大ごみ処理券には、A券（200円）とB券（300円）があります。出される粗大ごみの処理手数料額となるように、2種類の券を組み合わせてご使用ください。",
+      "evidence": "有料粗大ごみ処理券には、A券（200円）とB券（300円）があります。出される粗大ごみの処理手数料額となるように、2種類の券を組み合わせてご使用ください。",
       "why_not": "",
       "evidence_check": {
         "verdict": "exact",
-        "run": 54,
+        "run": 77,
         "note": ""
       },
       "verified": true
@@ -1942,7 +1536,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "年末年始の資源回収・ごみ収集の休止期間と、粗大ごみ受付センターの年末年始の受付時間・電話受付休止日についての案内で、粗大ごみ収集の申込（転入時の届出）そのものの期限は書かれていない。",
+      "why_not": "本文は年末年始の資源回収・ごみ収集の休止期間と、その間の粗大ごみ受付センターの電話受付時間・インターネット受付の案内であり、粗大ごみ収集の申込そのものの期限（申込の締切日など）は書かれていない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1956,7 +1550,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは事業用大規模建築物のごみ処理・リサイクルフロー図の届出（廃棄物管理責任者選任の年次届出、毎年5月31日）についてで、粗大ごみ収集の申込とは無関係",
+      "why_not": "このページは「ごみ処理・リサイクルフロー図」という事業用大規模建築物向けの申請書ダウンロードページで、届出期限（毎年5月31日）は大規模建築物の再利用計画書等に関するもの。粗大ごみ収集の申込やその期限についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1970,7 +1564,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは「粗大ごみ処理券取扱所」の一覧（PDFへのリンクのみ）で、粗大ごみ収集申込の手数料額は本文に記載されていない",
+      "why_not": "このページは「豊島区有料ごみ処理券取扱所」（処理券を買える場所の一覧）で、手数料の金額そのものは書かれていない。手数料は別ページ「粗大ごみ処理手数料（料金）」への案内リンクがあるのみ。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
@@ -1984,7 +1578,7 @@
       "found": false,
       "value": "",
       "evidence": "",
-      "why_not": "このページは事業者の事業系ごみ処理委託についての説明であり、粗大ごみ収集の申込（転入者向け）に関する手数料の記載はない",
+      "why_not": "このページは事業系ごみ（事業者が新規に出すごみ）の処理委託・処理手数料に関する内容で、家庭から出る粗大ごみ収集の申込の手数料については書かれていない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,

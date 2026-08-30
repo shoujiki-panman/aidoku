@@ -11,12 +11,13 @@
   "summary": {
     "municipalities": 24,
     "swept_fields": 50,
-    "pages_read": 64,
-    "found": 3,
+    "pages_read": 71,
+    "found": 4,
     "found_names": [
       "千代田区/窓口/オンライン可否",
+      "中野区/必要書類",
       "中野区/期限",
-      "世田谷区/期限"
+      "世田谷区/必要書類"
     ],
     "exhausted": 26,
     "budget_hit": 0,
@@ -129,15 +130,33 @@
         {
           "field": "窓口/オンライン可否",
           "found": true,
-          "value": "申請先",
-          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
-          "evidence": "手当の支給を受けるためには、申請手続きをする必要があります。転入やお子様の出生の際は忘れずに手続きをしてください。\n\n児童手当制度\n\n詳細については、次の項目をクリックしてください。\n\n手当月額\n\n支給対象者（手当を受給できる方）\n\n対象となる児童\n\n申請先\n\n申請時期について（出生や転入の際は15日以内にお手続きを）\n\n新規申請に必要なもの",
+          "value": "区役所2階子育て推進課、区内各出張所（郵送可）",
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html",
+          "evidence": "申請の受け付けは、次の場所で行っています。なお、郵送の場合は、1の子育て推進課へお送りください。\n\n区役所2階子育て推進課\n\n〒102-8688千代田区九段南1-2-1\n\n電話番号：03-5211-4230\n\n区内各出張所",
           "stopped": "found",
           "errors": 0,
           "looked": [
             {
               "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
               "link_text": "児童手当",
+              "verified": false,
+              "from_cache": false
+            },
+            {
+              "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
+              "link_text": "こども・高校生等医療費助成制度（乳幼児～高校生等）",
+              "verified": false,
+              "from_cache": false
+            },
+            {
+              "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/getsugaku.html",
+              "link_text": "手当月額",
+              "verified": false,
+              "from_cache": false
+            },
+            {
+              "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html",
+              "link_text": "支給対象者（手当を受給できる方）",
               "verified": true,
               "from_cache": false
             }
@@ -520,18 +539,17 @@
       "fields": [
         {
           "field": "必要書類",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）の写し／申請者の加入保険が確認できるもの（資格確認書等）の写し／児童手当 別居監護同意書（支給対象のお子さんと別居している方のみ）／請求者名義の振込口座（普通預金）が確認できるものの写し（通帳またはカード等）",
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+          "evidence": "郵送による申請（様式は関連ファイルをご確認ください。）\n児童手当 認定請求書（PDF形式：135KB）\n監護相当・生計費の負担についての確認書（PDF形式：120KB）\n※18歳年度末を経過した後から22歳年度末までの子を含めて、養育するお子さんが3人以上の場合\n個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）の写し\n※マイナンバーカードのみで本人確認を兼ねます。\n申請者の加入保険が確認できるもの（資格確認書等※）の写し\n※3歳未満の児童を養育し、かつ各種共済組合員（私立学校教職員共済を除く）の方のみ必要です。「保険者番号・記号・番号・枝番」の各欄はマスキングしてください。\n※資格確認書、マイナポータルから保険情報を印字したもの（保険者名・氏名・生年月日・性別・資格取得年月日がわかるもの）\n児童手当 別居監護同意書（PDF形式：107KB）\n※支給対象のお子さんと別居している方のみ\n請求者名義の振込口座（普通預金）が確認できるものの写し（通帳またはカード等）",
+          "stopped": "found",
           "errors": 0,
-          "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
               "link_text": "児童手当",
-              "verified": false,
+              "verified": true,
               "from_cache": false
             }
           ]
@@ -569,7 +587,7 @@
         {
           "field": "期限",
           "found": true,
-          "value": "前住所地での転出予定日の翌日から15日以内（土・日・祝含む）",
+          "value": "出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）",
           "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
           "evidence": "お子さんが生まれたり、中野区に転入された場合は、出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）に手続きをしてください。",
           "stopped": "found",
@@ -646,8 +664,17 @@
           "value": "",
           "url": null,
           "evidence": "",
-          "stopped": "no_candidates",
-          "looked": []
+          "stopped": "exhausted",
+          "errors": 0,
+          "candidates": 1,
+          "looked": [
+            {
+              "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/ouennteatetirashipdf.pdf",
+              "link_text": "【大田区版】物価高対応子育て応援手当標準リーフレット（PDF：444KB）",
+              "verified": false,
+              "from_cache": false
+            }
+          ]
         }
       ]
     },
@@ -657,18 +684,17 @@
       "fields": [
         {
           "field": "必要書類",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "『児童手当認定請求書』又は『児童手当額改定請求書』≪必須≫",
+          "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+          "evidence": "『児童手当認定請求書』又は『児童手当額改定請求書』≪必須≫",
+          "stopped": "found",
           "errors": 0,
-          "candidates": 1,
           "looked": [
             {
               "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
               "link_text": "児童手当のご案内",
-              "verified": false,
+              "verified": true,
               "from_cache": false
             }
           ]
@@ -681,8 +707,14 @@
           "evidence": "",
           "stopped": "exhausted",
           "errors": 0,
-          "candidates": 8,
+          "candidates": 9,
           "looked": [
+            {
+              "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+              "link_text": "児童手当のご案内（PDF：858KB）",
+              "verified": false,
+              "from_cache": false
+            },
             {
               "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
               "link_text": "児童手当のご案内",
@@ -735,17 +767,30 @@
         },
         {
           "field": "期限",
-          "found": true,
-          "value": "前住所地での転出予定日の翌日から15日以内",
-          "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
-          "evidence": "ただし、申請日が出生日・前住所地での転出予定日の翌月になった場合でも、出生日・前住所地での転出予定日の翌日から15日以内に申請すれば、申請月から支給（又は増額）されます（15日特例）。",
-          "stopped": "found",
+          "found": false,
+          "value": "",
+          "url": null,
+          "evidence": "",
+          "stopped": "exhausted",
           "errors": 0,
+          "candidates": 3,
           "looked": [
+            {
+              "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+              "link_text": "児童手当のご案内（PDF：858KB）",
+              "verified": false,
+              "from_cache": false
+            },
             {
               "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
               "link_text": "児童手当のご案内",
-              "verified": true,
+              "verified": false,
+              "from_cache": false
+            },
+            {
+              "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
+              "link_text": "児童手当現況届のご案内",
+              "verified": false,
               "from_cache": false
             }
           ]
