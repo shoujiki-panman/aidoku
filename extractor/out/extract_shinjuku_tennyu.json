@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,20 +43,22 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "none",
+    "non_html_reading": "cmap_text",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-27T16:05:24+00:00",
+    "run_at": "2026-08-30T14:19:09+00:00",
     "discovery_run_at": "2026-08-27T15:29:07+00:00"
   },
   "followed_urls": [
-    "https://www.city.shinjuku.lg.jp/todokede/index01.html"
+    "https://www.city.shinjuku.lg.jp/todokede/index01.html",
+    "https://www.city.shinjuku.lg.jp/todokede/index.html"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "引越しで住所を異動される方は、窓口での「正確な住所の届出」が必要です",
   "online_clarity_pages": [
     "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
-    "https://www.city.shinjuku.lg.jp/todokede/index01.html"
+    "https://www.city.shinjuku.lg.jp/todokede/index01.html",
+    "https://www.city.shinjuku.lg.jp/todokede/index.html"
   ],
   "test_cases": [
     {
@@ -69,8 +71,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -92,7 +94,7 @@
           "requested_urls": [
             "https://www.city.shinjuku.lg.jp/todokede/index01.html"
           ],
-          "page_notes": "このページは転入届の案内ではなく「住所異動の届出が必要です」という啓発文のみで、必要書類の記載はない。本文中で「住所変更の届出について、詳しくは、こちらのページをご参照ください」と明示的にリンク先へ誘導している。"
+          "page_notes": "このページは「住所異動には届出が必要です」という案内のみで、持ち物・必要書類の記載はない。本文中の「住所変更の届出について、詳しくは、こちらのページをご参照ください」のリンク先（index01.html）に手続き詳細がありそうだが、リンク一覧にはそれ以外に転入届固有の必要書類を示す項目はなかった。"
         },
         {
           "stage": "follow",
@@ -102,8 +104,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -111,13 +113,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "対象ページは住所異動届出全般の告知文のみで持ち物の記載なし。リンク先の一覧ページにも「転入届（新宿区外から引越ししてきたとき）」という個別ページへのリンクがあるだけで、そのページ自体にも持ち物の記載は無く、さらに1階層下のページに委ねられている。"
+          "page_notes": "元ページは「正確な住所の届出」を促す告知のみで、リンク先の index01.html も「転入届」等への入口リンクを列挙する一覧ページで、必要書類などの本文は記載されていなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.shinjuku.lg.jp/todokede/index01.html"
       ],
-      "page_notes": "対象ページは住所異動届出全般の告知文のみで持ち物の記載なし。リンク先の一覧ページにも「転入届（新宿区外から引越ししてきたとき）」という個別ページへのリンクがあるだけで、そのページ自体にも持ち物の記載は無く、さらに1階層下のページに委ねられている。",
+      "page_notes": "元ページは「正確な住所の届出」を促す告知のみで、リンク先の index01.html も「転入届」等への入口リンクを列挙する一覧ページで、必要書類などの本文は記載されていなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -138,8 +140,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -159,9 +161,10 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.shinjuku.lg.jp/todokede/index01.html"
+            "https://www.city.shinjuku.lg.jp/todokede/index01.html",
+            "https://www.city.shinjuku.lg.jp/todokede/index.html"
           ],
-          "page_notes": "このページは転入・転出の必要性を告知する案内ページで、窓口かオンラインかの手続き方法には触れていない。本文中に「住所変更の届出について、詳しくは、こちらのページをご参照ください」とあり、こちら（index01.html）が手続き詳細ページへの誘導になっている。"
+          "page_notes": "このページは「転入届」個別の手続きページではなく、住所異動全般の呼びかけ告知。窓口・オンラインの別には触れておらず、詳細は「こちら」（index01.html）や戸籍・住民票トップ（index.html）に誘導している。"
         },
         {
           "stage": "follow",
@@ -171,8 +174,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -180,13 +183,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページは「住所異動には窓口での届出が必要」という一般案内のみで転入届固有の窓口/オンライン可否には触れていない。リンク先の一覧ページでも「転入届」は個別リンクとして案内されるだけで、その先のページを開かないと窓口専用かオンライン完結可かは判断できない。"
+          "page_notes": "本ページは住所異動の呼びかけのみで、リンク先の一覧ページ(index01.html)も「転入届」等のリンク見出しが並ぶだけで、窓口のみかオンライン完結可かを述べる本文がなかった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.shinjuku.lg.jp/todokede/index01.html"
+        "https://www.city.shinjuku.lg.jp/todokede/index01.html",
+        "https://www.city.shinjuku.lg.jp/todokede/index.html"
       ],
-      "page_notes": "元ページは「住所異動には窓口での届出が必要」という一般案内のみで転入届固有の窓口/オンライン可否には触れていない。リンク先の一覧ページでも「転入届」は個別リンクとして案内されるだけで、その先のページを開かないと窓口専用かオンライン完結可かは判断できない。",
+      "page_notes": "本ページは住所異動の呼びかけのみで、リンク先の一覧ページ(index01.html)も「転入届」等のリンク見出しが並ぶだけで、窓口のみかオンライン完結可かを述べる本文がなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -207,8 +211,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -230,7 +234,7 @@
           "requested_urls": [
             "https://www.city.shinjuku.lg.jp/todokede/index01.html"
           ],
-          "page_notes": "このページは転入・転出の案内トップで、期限の具体的な記述はなく「住所変更の届出について、詳しくは、こちらのページをご参照ください」として index01.html に送客している。"
+          "page_notes": "このページは「住所異動の届出が必要です」という案内・注意喚起のみで、転入届の期限（起算点つき）の記載は無い。本文中に「住所変更の届出について、詳しくは、こちらのページをご参照ください」とあり、こちらのリンク先（index01.html）に具体的な手続き内容がありそう。"
         },
         {
           "stage": "follow",
@@ -240,8 +244,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -249,13 +253,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "対象ページは「住所異動が必要です」という案内のみで期限の記載はなし。1階層先の住民記録の届出一覧ページ（index01.html）にも「転入届（新宿区外から引越ししてきたとき）」という項目名だけがあり、実際の手続きページ（期限や起算点が書かれていそうなページ）へはさらに1階層先にリンクされていると見られるが、そのURLはこの一覧には現れていない。"
+          "page_notes": "本文には転入の一般的な必要性のみが書かれ期限の記述はない。リンク先ページも各種届出への入口一覧（転入届など）のみで、個別の期限（例：14日以内）はどちらのページにも記載がなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.shinjuku.lg.jp/todokede/index01.html"
       ],
-      "page_notes": "対象ページは「住所異動が必要です」という案内のみで期限の記載はなし。1階層先の住民記録の届出一覧ページ（index01.html）にも「転入届（新宿区外から引越ししてきたとき）」という項目名だけがあり、実際の手続きページ（期限や起算点が書かれていそうなページ）へはさらに1階層先にリンクされていると見られるが、そのURLはこの一覧には現れていない。",
+      "page_notes": "本文には転入の一般的な必要性のみが書かれ期限の記述はない。リンク先ページも各種届出への入口一覧（転入届など）のみで、個別の期限（例：14日以内）はどちらのページにも記載がなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -276,8 +280,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -299,7 +303,7 @@
           "requested_urls": [
             "https://www.city.shinjuku.lg.jp/todokede/index01.html"
           ],
-          "page_notes": "このページは転入・転出の届出を促す案内文のみで、手数料を含む手続きの詳細は「住所変更の届出について、詳しくは、こちらのページをご参照ください」として別ページ（index01.html）に誘導している。"
+          "page_notes": "このページは転入届そのものの手続きページではなく、住所異動の届出を促す案内ページで、手数料の記載はない。本文に「住所変更の届出について、詳しくは、こちらのページをご参照ください」とあり、手続きの詳細（手数料含む）はリンク先の index01.html にありそう。"
         },
         {
           "stage": "follow",
@@ -309,8 +313,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -318,13 +322,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「住所変更の届出」ページには転入届のリンクは見当たらず、内部リンクからたどった「住民票等の証明・住所変更の届出」ページには「転入届（新宿区外から引越ししてきたとき）」という項目名だけがあり、手数料はさらにその先の個別ページにありそうだが、そこまでは追えなかった。"
+          "page_notes": "元ページは住所異動の総論案内で手数料への言及がなく、リンク先の一覧ページ（住所変更の届出）も各種届出へのリンク集のみで、金額・無料の記載は本文中どこにも見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.shinjuku.lg.jp/todokede/index01.html"
       ],
-      "page_notes": "「住所変更の届出」ページには転入届のリンクは見当たらず、内部リンクからたどった「住民票等の証明・住所変更の届出」ページには「転入届（新宿区外から引越ししてきたとき）」という項目名だけがあり、手数料はさらにその先の個別ページにありそうだが、そこまでは追えなかった。",
+      "page_notes": "元ページは住所異動の総論案内で手数料への言及がなく、リンク先の一覧ページ（住所変更の届出）も各種届出へのリンク集のみで、金額・無料の記載は本文中どこにも見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -342,8 +346,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -355,8 +359,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -368,8 +372,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -381,8 +385,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -390,12 +394,13 @@
       }
     }
   },
-  "page_notes": "対象ページは住所異動届出全般の告知文のみで持ち物の記載なし。リンク先の一覧ページにも「転入届（新宿区外から引越ししてきたとき）」という個別ページへのリンクがあるだけで、そのページ自体にも持ち物の記載は無く、さらに1階層下のページに委ねられている。\n元ページは「住所異動には窓口での届出が必要」という一般案内のみで転入届固有の窓口/オンライン可否には触れていない。リンク先の一覧ページでも「転入届」は個別リンクとして案内されるだけで、その先のページを開かないと窓口専用かオンライン完結可かは判断できない。\n対象ページは「住所異動が必要です」という案内のみで期限の記載はなし。1階層先の住民記録の届出一覧ページ（index01.html）にも「転入届（新宿区外から引越ししてきたとき）」という項目名だけがあり、実際の手続きページ（期限や起算点が書かれていそうなページ）へはさらに1階層先にリンクされていると見られるが、そのURLはこの一覧には現れていない。\n「住所変更の届出」ページには転入届のリンクは見当たらず、内部リンクからたどった「住民票等の証明・住所変更の届出」ページには「転入届（新宿区外から引越ししてきたとき）」という項目名だけがあり、手数料はさらにその先の個別ページにありそうだが、そこまでは追えなかった。",
+  "page_notes": "元ページは「正確な住所の届出」を促す告知のみで、リンク先の index01.html も「転入届」等への入口リンクを列挙する一覧ページで、必要書類などの本文は記載されていなかった。\n本ページは住所異動の呼びかけのみで、リンク先の一覧ページ(index01.html)も「転入届」等のリンク見出しが並ぶだけで、窓口のみかオンライン完結可かを述べる本文がなかった。\n本文には転入の一般的な必要性のみが書かれ期限の記述はない。リンク先ページも各種届出への入口一覧（転入届など）のみで、個別の期限（例：14日以内）はどちらのページにも記載がなかった。\n元ページは住所異動の総論案内で手数料への言及がなく、リンク先の一覧ページ（住所変更の届出）も各種届出へのリンク集のみで、金額・無料の記載は本文中どこにも見当たらなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
-      "https://www.city.shinjuku.lg.jp/todokede/index01.html"
+      "https://www.city.shinjuku.lg.jp/todokede/index01.html",
+      "https://www.city.shinjuku.lg.jp/todokede/index.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,26 +43,24 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "none",
+    "non_html_reading": "cmap_text",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-27T15:45:14+00:00",
+    "run_at": "2026-08-30T13:53:28+00:00",
     "discovery_run_at": "2026-08-27T15:29:07+00:00"
   },
   "followed_urls": [
     "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
     "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
-    "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
-    "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
+    "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html"
   ],
-  "online_clarity": "曖昧",
-  "online_clarity_evidence": "手続によってはオンライン申請に対応していますので、ぜひご利用ください。",
+  "online_clarity": "明記",
+  "online_clarity_evidence": "引っ越し前、引っ越し後のそれぞれの自治体で、申請状況が完了になってから窓口にお越しください。",
   "online_clarity_pages": [
     "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
     "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
     "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
-    "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
-    "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
+    "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html"
   ],
   "test_cases": [
     {
@@ -72,14 +70,14 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ、暗証番号入力要）、住民基本台帳カード（所有者のみ、パスワード入力要）、委任状（代理人が届出する場合）。外国人住民は在留カード又は特別永住者証明書、世帯主との続柄を証する文書も必要。",
-        "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です。",
+        "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ）、住民基本台帳カード（所有者のみ）、委任状（代理人の場合）。外国人住民は在留カード又は特別永住者証明書、続柄を証する文書も必要。",
+        "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です。所有している異動者全員分をお持ちください。",
         "source": "linked_page",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
           "verdict": "normalized",
-          "run": 55,
+          "run": 76,
           "note": "空白・記号のゆれを吸収すると一致"
         }
       },
@@ -99,33 +97,33 @@
             "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
             "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
           ],
-          "page_notes": "この転入届ページは案内の入口で、本文には持ち物の記載がなく、「市外からの引っ越し（転出証明書での手続き）」「市外からの引っ越し（マイナンバーカードでの手続き）」などケース別のリンクに分岐している。"
+          "page_notes": "このページは転入届の入り口で、持ち物・必要書類の具体的な記載は本文になく、「市外からの引っ越し（転出証明書での手続き）」と「市外からの引っ越し（マイナンバーカードでの手続き）」の2ページに手続き方法別の詳細が分かれている構成だった。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ、暗証番号入力要）、住民基本台帳カード（所有者のみ、パスワード入力要）、委任状（代理人が届出する場合）。外国人住民は在留カード又は特別永住者証明書、世帯主との続柄を証する文書も必要。",
-            "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です。",
+            "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ）、住民基本台帳カード（所有者のみ）、委任状（代理人の場合）。外国人住民は在留カード又は特別永住者証明書、続柄を証する文書も必要。",
+            "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です。所有している異動者全員分をお持ちください。",
             "source": "linked_page",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
               "verdict": "normalized",
-              "run": 55,
+              "run": 76,
               "note": "空白・記号のゆれを吸収すると一致"
             }
           },
           "requested_urls": [],
-          "page_notes": "転入届の索引ページ自体には持ち物の記載がなく、実際のリストは手続き種別ごとの子ページ（転出証明書での手続き／マイナンバーカードでの手続き）に分かれていた。転出証明書ベースの手続きページに、該当者のみ必要な書類（マイナンバーカード・外国人住民の追加書類等）を含む一覧があった。"
+          "page_notes": "転入届トップには持ち物の記載がなく、「転出証明書での手続き」ページに要件表として必要書類（本人分・該当者のみ分・外国人住民の追加分）がまとめられていた。"
         }
       ],
       "followed_urls": [
         "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
         "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
       ],
-      "page_notes": "転入届の索引ページ自体には持ち物の記載がなく、実際のリストは手続き種別ごとの子ページ（転出証明書での手続き／マイナンバーカードでの手続き）に分かれていた。転出証明書ベースの手続きページに、該当者のみ必要な書類（マイナンバーカード・外国人住民の追加書類等）を含む一覧があった。",
+      "page_notes": "転入届トップには持ち物の記載がなく、「転出証明書での手続き」ページに要件表として必要書類（本人分・該当者のみ分・外国人住民の追加分）がまとめられていた。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -143,7 +141,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "窓口来庁が必須。マイナポータルでオンライン申請しても、完了後に窓口へ来庁する必要があり、オンラインのみで完結はしない",
+        "value": "窓口来庁が必要（マイナポータルで事前手続きをしても、完了後に窓口へ来庁しなければならない）",
         "evidence": "引っ越し前、引っ越し後のそれぞれの自治体で、申請状況が完了になってから窓口にお越しください。",
         "source": "linked_page",
         "failure_reason": null,
@@ -167,17 +165,17 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
-            "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
+            "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
+            "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html"
           ],
-          "page_notes": "このページは転入届の入口（ページID：C0416600）で、本文には窓口・オンラインの可否についての記述がなく、関連手続き（マイナポータル、手続案内サービス等）へのリンク一覧のみで構成されている。"
+          "page_notes": "本ページは転入届の総合案内で、窓口・オンラインの可否を明記する記述はなく、マイナンバーカードでの手続きやマイナポータル関連の子ページへ案内するリンクのみが並んでいる。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "窓口来庁が必須。マイナポータルでオンライン申請しても、完了後に窓口へ来庁する必要があり、オンラインのみで完結はしない",
+            "value": "窓口来庁が必要（マイナポータルで事前手続きをしても、完了後に窓口へ来庁しなければならない）",
             "evidence": "引っ越し前、引っ越し後のそれぞれの自治体で、申請状況が完了になってから窓口にお越しください。",
             "source": "linked_page",
             "failure_reason": null,
@@ -189,14 +187,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "転入届のページ自体には窓口/オンラインの可否は書かれておらず、「マイナポータルで引っ越し手続きをした方へ」のリンク先で、オンライン申請後も来庁が必須であることが分かる。"
+          "page_notes": "本体の転入届ページには窓口・オンラインの別が書かれておらず、マイナポータル関連ページに誘導するリンクがあるのみ。リンク先を見ても、マイナポータルはあくまで事前手続きで、最終的には窓口来庁が必須と明記されており、オンライン完結ではない。"
         }
       ],
       "followed_urls": [
-        "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
-        "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
+        "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html"
       ],
-      "page_notes": "転入届のページ自体には窓口/オンラインの可否は書かれておらず、「マイナポータルで引っ越し手続きをした方へ」のリンク先で、オンライン申請後も来庁が必須であることが分かる。",
+      "page_notes": "本体の転入届ページには窓口・オンラインの別が書かれておらず、マイナポータル関連ページに誘導するリンクがあるのみ。リンク先を見ても、マイナポータルはあくまで事前手続きで、最終的には窓口来庁が必須と明記されており、オンライン完結ではない。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -241,7 +239,7 @@
             "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
             "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
           ],
-          "page_notes": "このページは転入届の分類一覧・案内リンクのみで、手続き内容（期限・必要書類等）は「市外からの引っ越し（転出証明書での手続き）」等のリンク先ページに委ねられている構成。"
+          "page_notes": "このページ自体は転入届の入口(目次)で、手続き方法別のサブページへのリンク集になっており、期限などの具体的な条件はサブページ側に記載されている可能性が高い。"
         },
         {
           "stage": "follow",
@@ -260,14 +258,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "転入届トップページ自体には期限の記載がなく、「市外からの引っ越し（転出証明書での手続き）」の届出期間欄に記載されていた。マイナンバーカード特例のページには別の期限（転出予定日から30日以内かつ住み始めてから14日以内）があり、手続き方法によって起算点・期限が分岐する構成だった。"
+          "page_notes": "トップページ自体には期限の記載はなく、転入方法別（転出証明書／マイナンバーカード特例）に分かれた別ページに期限が記載されていた。転出証明書での手続き（p004460）が基本手続きとして起算点つきの期限（住み始めてから14日以内）を明記している。"
         }
       ],
       "followed_urls": [
         "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
         "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
       ],
-      "page_notes": "転入届トップページ自体には期限の記載がなく、「市外からの引っ越し（転出証明書での手続き）」の届出期間欄に記載されていた。マイナンバーカード特例のページには別の期限（転出予定日から30日以内かつ住み始めてから14日以内）があり、手続き方法によって起算点・期限が分岐する構成だった。",
+      "page_notes": "トップページ自体には期限の記載はなく、転入方法別（転出証明書／マイナンバーカード特例）に分かれた別ページに期限が記載されていた。転出証明書での手続き（p004460）が基本手続きとして起算点つきの期限（住み始めてから14日以内）を明記している。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -312,7 +310,7 @@
             "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
             "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
           ],
-          "page_notes": "このページは転入届の入口（案内・分類一覧）で、手数料を含む手続きの詳細記述は無く、「市外からの引っ越し（転出証明書での手続き）」等の手続き別ページへの導線のみが本文にある。"
+          "page_notes": "このページは転入届の手続き一覧・入口ページで、手数料を含む具体的な手続き内容（本文・注意事項等）は記載されておらず、「市外からの引っ越し」等のリンク先ページに詳細があると見られる。"
         },
         {
           "stage": "follow",
@@ -331,14 +329,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "転入届のページおよびリンク先の「転出証明書での手続き」「マイナンバーカードでの手続き」の両ページとも、届出に必要なもの・受付窓口・期限（14日以内、遅れると5万円以下の過料）は詳しく書かれているが、手数料・無料の別についての記載は本文中に見当たらなかった。"
+          "page_notes": "転入届の本文および案内された2つのリンク先（転出証明書での手続き／マイナンバーカードでの手続き）のいずれにも手数料・無料に関する記載はなく、期限超過時の「5万円以下の過料」の記載があるのみだった。"
         }
       ],
       "followed_urls": [
         "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
         "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html"
       ],
-      "page_notes": "転入届のページおよびリンク先の「転出証明書での手続き」「マイナンバーカードでの手続き」の両ページとも、届出に必要なもの・受付窓口・期限（14日以内、遅れると5万円以下の過料）は詳しく書かれているが、手数料・無料の別についての記載は本文中に見当たらなかった。",
+      "page_notes": "転入届の本文および案内された2つのリンク先（転出証明書での手続き／マイナンバーカードでの手続き）のいずれにも手数料・無料に関する記載はなく、期限超過時の「5万円以下の過料」の記載があるのみだった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -353,20 +351,20 @@
   "items": {
     "必要書類": {
       "found": true,
-      "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ、暗証番号入力要）、住民基本台帳カード（所有者のみ、パスワード入力要）、委任状（代理人が届出する場合）。外国人住民は在留カード又は特別永住者証明書、世帯主との続柄を証する文書も必要。",
-      "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です。",
+      "value": "前住所地市区町村発行の転出証明書、本人確認書類、マイナンバーカード（所有者のみ）、住民基本台帳カード（所有者のみ）、委任状（代理人の場合）。外国人住民は在留カード又は特別永住者証明書、続柄を証する文書も必要。",
+      "evidence": "前住所地市区町村発行の転出証明書 本人確認書類（下記をご覧ください）（注意2） マイナンバーカード（所有している方のみ必要です。所有している異動者全員分をお持ちください。",
       "source": "linked_page",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
         "verdict": "normalized",
-        "run": 55,
+        "run": 76,
         "note": "空白・記号のゆれを吸収すると一致"
       }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口来庁が必須。マイナポータルでオンライン申請しても、完了後に窓口へ来庁する必要があり、オンラインのみで完結はしない",
+      "value": "窓口来庁が必要（マイナポータルで事前手続きをしても、完了後に窓口へ来庁しなければならない）",
       "evidence": "引っ越し前、引っ越し後のそれぞれの自治体で、申請状況が完了になってから窓口にお越しください。",
       "source": "linked_page",
       "failure_reason": null,
@@ -404,15 +402,14 @@
       }
     }
   },
-  "page_notes": "転入届の索引ページ自体には持ち物の記載がなく、実際のリストは手続き種別ごとの子ページ（転出証明書での手続き／マイナンバーカードでの手続き）に分かれていた。転出証明書ベースの手続きページに、該当者のみ必要な書類（マイナンバーカード・外国人住民の追加書類等）を含む一覧があった。\n転入届のページ自体には窓口/オンラインの可否は書かれておらず、「マイナポータルで引っ越し手続きをした方へ」のリンク先で、オンライン申請後も来庁が必須であることが分かる。\n転入届トップページ自体には期限の記載がなく、「市外からの引っ越し（転出証明書での手続き）」の届出期間欄に記載されていた。マイナンバーカード特例のページには別の期限（転出予定日から30日以内かつ住み始めてから14日以内）があり、手続き方法によって起算点・期限が分岐する構成だった。\n転入届のページおよびリンク先の「転出証明書での手続き」「マイナンバーカードでの手続き」の両ページとも、届出に必要なもの・受付窓口・期限（14日以内、遅れると5万円以下の過料）は詳しく書かれているが、手数料・無料の別についての記載は本文中に見当たらなかった。",
+  "page_notes": "転入届トップには持ち物の記載がなく、「転出証明書での手続き」ページに要件表として必要書類（本人分・該当者のみ分・外国人住民の追加分）がまとめられていた。\n本体の転入届ページには窓口・オンラインの別が書かれておらず、マイナポータル関連ページに誘導するリンクがあるのみ。リンク先を見ても、マイナポータルはあくまで事前手続きで、最終的には窓口来庁が必須と明記されており、オンライン完結ではない。\nトップページ自体には期限の記載はなく、転入方法別（転出証明書／マイナンバーカード特例）に分かれた別ページに期限が記載されていた。転出証明書での手続き（p004460）が基本手続きとして起算点つきの期限（住み始めてから14日以内）を明記している。\n転入届の本文および案内された2つのリンク先（転出証明書での手続き／マイナンバーカードでの手続き）のいずれにも手数料・無料に関する記載はなく、期限超過時の「5万円以下の過料」の記載があるのみだった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
       "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
       "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
-      "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
-      "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html"
+      "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,10 +43,10 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T14:23:36+00:00",
+    "run_at": "2026-08-30T17:46:46+00:00",
     "discovery_run_at": "2026-08-28T13:16:52+00:00"
   },
   "followed_urls": [
@@ -71,8 +71,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -92,9 +92,10 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html"
+            "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
+            "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
           ],
-          "page_notes": "本文は「物価高対応子育て応援手当」ページのナビゲーションのみで、児童手当の申請に必要な持ち物についての記述は見当たらない。関連しそうなリンクとして「受けられる手当・医療費助成について」がある。"
+          "page_notes": "本文はナビゲーションと関連リンク一覧のみで、パンくずが「物価高対応子育て応援手当」を指しており児童手当の申請要件・持ち物に関する記述が本文中に見当たらない。関連リンクの「受けられる手当・医療費助成について」等に案内がある可能性がある。"
         },
         {
           "stage": "follow",
@@ -104,8 +105,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -113,13 +114,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「受けられる手当・医療費助成について」ページは各手当（児童手当・児童扶養手当等）への入口一覧のみで、必要書類の記載は「児童手当」個別ページ側にあると見られるが、今回の追従範囲では未到達。"
+          "page_notes": "「受けられる手当・医療費助成について」ページには「児童手当」への言及はあるがリンクや持ち物の記載はなく、さらに1階層先の「児童手当」個別ページへは到達できなかった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html"
+        "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
+        "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
       ],
-      "page_notes": "「受けられる手当・医療費助成について」ページは各手当（児童手当・児童扶養手当等）への入口一覧のみで、必要書類の記載は「児童手当」個別ページ側にあると見られるが、今回の追従範囲では未到達。",
+      "page_notes": "「受けられる手当・医療費助成について」ページには「児童手当」への言及はあるがリンクや持ち物の記載はなく、さらに1階層先の「児童手当」個別ページへは到達できなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -137,15 +139,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "電子申請での手続きが可能（「児童手当・子どもの医療助成制度の手続きの電子申請について」という専用ページがある）",
-        "evidence": "手続き方法等について 口座振替依頼書のオンライン提出について 手当・助成制度に関する不足書類の提出について ひとり親手当関係の電子申請について 児童手当・子どもの医療助成制度の手続きの電子申請について",
+        "value": "電子申請（オンライン申請）も可能。「児童手当・子どもの医療助成制度の手続きの電子申請について」という案内があり、郵送申請の案内も別途ある",
+        "evidence": "児童手当・子どもの医療助成制度の手続きの電子申請について",
         "source": "linked_page",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "normalized",
-          "run": 94,
-          "note": "空白・記号のゆれを吸収すると一致"
+          "verdict": "exact",
+          "run": 28,
+          "note": ""
         }
       },
       "attempts": [
@@ -164,33 +166,33 @@
             "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
             "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
           ],
-          "page_notes": "取得された本文はページタイトルどおり「物価高対応子育て応援手当」の内容で、児童手当の申請方法（窓口・オンライン）についての記述は本文中に見当たらない。関連しそうな「受けられる手当・医療費助成について」等のリンクへ辿る必要がある。"
+          "page_notes": "取得できた本文はナビゲーションと「物価高対応子育て応援手当」ページの内容のみで、児童手当の申請方法（窓口・オンライン可否）に関する記述は見当たらない。ページ本文とURL（kteate）が一致していない可能性がある。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "電子申請での手続きが可能（「児童手当・子どもの医療助成制度の手続きの電子申請について」という専用ページがある）",
-            "evidence": "手続き方法等について 口座振替依頼書のオンライン提出について 手当・助成制度に関する不足書類の提出について ひとり親手当関係の電子申請について 児童手当・子どもの医療助成制度の手続きの電子申請について",
+            "value": "電子申請（オンライン申請）も可能。「児童手当・子どもの医療助成制度の手続きの電子申請について」という案内があり、郵送申請の案内も別途ある",
+            "evidence": "児童手当・子どもの医療助成制度の手続きの電子申請について",
             "source": "linked_page",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "normalized",
-              "run": 94,
-              "note": "空白・記号のゆれを吸収すると一致"
+              "verdict": "exact",
+              "run": 28,
+              "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "手当トップ→「受けられる手当・医療費助成について」の2階層下に「手続き方法等について」という項目があり、そこに児童手当の電子申請ページと郵送申請ページの両方へのリンクがあった。窓口のみかどうかを明言する記述はなく、リンクタイトルからの推定にとどまる。"
+          "page_notes": "トップページと1階層目の「手当・助成・支援」一覧には申請方法の記載は無く、「受けられる手当・医療費助成について」ページの『手続き方法等について』欄に電子申請・郵送申請へのリンク一覧があった。具体的な申請フロー（完全オンライン完結か一部書類郵送が必要か）はさらに先のページに書かれている可能性がある。"
         }
       ],
       "followed_urls": [
         "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
         "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
       ],
-      "page_notes": "手当トップ→「受けられる手当・医療費助成について」の2階層下に「手続き方法等について」という項目があり、そこに児童手当の電子申請ページと郵送申請ページの両方へのリンクがあった。窓口のみかどうかを明言する記述はなく、リンクタイトルからの推定にとどまる。",
+      "page_notes": "トップページと1階層目の「手当・助成・支援」一覧には申請方法の記載は無く、「受けられる手当・医療費助成について」ページの『手続き方法等について』欄に電子申請・郵送申請へのリンク一覧があった。具体的な申請フロー（完全オンライン完結か一部書類郵送が必要か）はさらに先のページに書かれている可能性がある。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -211,8 +213,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -235,7 +237,7 @@
             "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
             "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
           ],
-          "page_notes": "取得した本文は「物価高対応子育て応援手当」ページの内容であり、URLが指す児童手当（kteate）固有の申請期限の記述は本文中に見当たらない。関連しそうな上位カテゴリのリンクのみ存在する。"
+          "page_notes": "取得できた本文は「物価高対応子育て応援手当」のページで、児童手当の申請期限に関する記述は本文中に見当たらない。児童手当の詳細は「受けられる手当・医療費助成について」等のリンク先にある可能性が高い。"
         },
         {
           "stage": "follow",
@@ -245,8 +247,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -254,14 +256,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「受けられる手当・医療費助成について」ページでは「児童手当」は項目名の列挙のみで、申請期限に関する記述は無かった。期限情報はおそらく「児童手当・子どもの医療助成制度の手続きの電子申請について」等、さらに1階層下の個別ページにあると見られるが、今回取得した2ページにはそのURLが示されていない。"
+          "page_notes": "元ページも追跡した2つのリンク先ページも「受けられる手当・医療費助成について」の項目一覧のみで、児童手当の申請期限（起算点つき）についての本文記載は見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
         "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
       ],
-      "page_notes": "「受けられる手当・医療費助成について」ページでは「児童手当」は項目名の列挙のみで、申請期限に関する記述は無かった。期限情報はおそらく「児童手当・子どもの医療助成制度の手続きの電子申請について」等、さらに1階層下の個別ページにあると見られるが、今回取得した2ページにはそのURLが示されていない。",
+      "page_notes": "元ページも追跡した2つのリンク先ページも「受けられる手当・医療費助成について」の項目一覧のみで、児童手当の申請期限（起算点つき）についての本文記載は見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -303,10 +305,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
-            "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
+            "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html"
           ],
-          "page_notes": "取得された本文は「物価高対応子育て応援手当」のページであり、URL（kteate/index.html）が示す「児童手当」の内容とは一致していない。手数料・無料に関する記述は本文中に見当たらず、関連しそうな上位カテゴリのリンクへ誘導した。"
+          "page_notes": "指定URL(kteate/index.html)の本文は「物価高対応子育て応援手当」のページ内容になっており、児童手当そのものの説明や手数料の記載は本文中に見当たらない。手当一覧をまとめた「受けられる手当・医療費助成について」に児童手当の詳細（申請・手数料）が載っている可能性がある。"
         },
         {
           "stage": "follow",
@@ -325,14 +326,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "トップページ（kteate/index.html）は物価高対応子育て応援手当の紹介記事のみで児童手当の申請要領がなく、1階層先の「受けられる手当・医療費助成について」も各手当・手続きへのリンク集にとどまり、手数料の記載はどちらにも見当たらなかった。"
+          "page_notes": "本文・リンク先ページとも手続き一覧や制度紹介はあるが、手数料・費用に関する記述は見当たらなかった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
-        "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
+        "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html"
       ],
-      "page_notes": "トップページ（kteate/index.html）は物価高対応子育て応援手当の紹介記事のみで児童手当の申請要領がなく、1階層先の「受けられる手当・医療費助成について」も各手当・手続きへのリンク集にとどまり、手数料の記載はどちらにも見当たらなかった。",
+      "page_notes": "本文・リンク先ページとも手続き一覧や制度紹介はあるが、手数料・費用に関する記述は見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -350,8 +350,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -360,15 +360,15 @@
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "電子申請での手続きが可能（「児童手当・子どもの医療助成制度の手続きの電子申請について」という専用ページがある）",
-      "evidence": "手続き方法等について 口座振替依頼書のオンライン提出について 手当・助成制度に関する不足書類の提出について ひとり親手当関係の電子申請について 児童手当・子どもの医療助成制度の手続きの電子申請について",
+      "value": "電子申請（オンライン申請）も可能。「児童手当・子どもの医療助成制度の手続きの電子申請について」という案内があり、郵送申請の案内も別途ある",
+      "evidence": "児童手当・子どもの医療助成制度の手続きの電子申請について",
       "source": "linked_page",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "normalized",
-        "run": 94,
-        "note": "空白・記号のゆれを吸収すると一致"
+        "verdict": "exact",
+        "run": 28,
+        "note": ""
       }
     },
     "期限": {
@@ -376,8 +376,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -398,7 +398,7 @@
       }
     }
   },
-  "page_notes": "「受けられる手当・医療費助成について」ページは各手当（児童手当・児童扶養手当等）への入口一覧のみで、必要書類の記載は「児童手当」個別ページ側にあると見られるが、今回の追従範囲では未到達。\n手当トップ→「受けられる手当・医療費助成について」の2階層下に「手続き方法等について」という項目があり、そこに児童手当の電子申請ページと郵送申請ページの両方へのリンクがあった。窓口のみかどうかを明言する記述はなく、リンクタイトルからの推定にとどまる。\n「受けられる手当・医療費助成について」ページでは「児童手当」は項目名の列挙のみで、申請期限に関する記述は無かった。期限情報はおそらく「児童手当・子どもの医療助成制度の手続きの電子申請について」等、さらに1階層下の個別ページにあると見られるが、今回取得した2ページにはそのURLが示されていない。\nトップページ（kteate/index.html）は物価高対応子育て応援手当の紹介記事のみで児童手当の申請要領がなく、1階層先の「受けられる手当・医療費助成について」も各手当・手続きへのリンク集にとどまり、手数料の記載はどちらにも見当たらなかった。",
+  "page_notes": "「受けられる手当・医療費助成について」ページには「児童手当」への言及はあるがリンクや持ち物の記載はなく、さらに1階層先の「児童手当」個別ページへは到達できなかった。\nトップページと1階層目の「手当・助成・支援」一覧には申請方法の記載は無く、「受けられる手当・医療費助成について」ページの『手続き方法等について』欄に電子申請・郵送申請へのリンク一覧があった。具体的な申請フロー（完全オンライン完結か一部書類郵送が必要か）はさらに先のページに書かれている可能性がある。\n元ページも追跡した2つのリンク先ページも「受けられる手当・医療費助成について」の項目一覧のみで、児童手当の申請期限（起算点つき）についての本文記載は見当たらなかった。\n本文・リンク先ページとも手続き一覧や制度紹介はあるが、手数料・費用に関する記述は見当たらなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [

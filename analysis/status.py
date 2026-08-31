@@ -105,31 +105,40 @@ def watch() -> dict:
     }
 
 
-def current_prompt() -> str | None:
-    """いまのプロンプトの版。**ファイルから計算する**（記録された値を信じない）。"""
-    try:
-        from extract import CLARITY_PROMPT, PROMPT
+def current_conditions() -> dict[str, object] | None:
+    """いまの測定条件。**ファイルから計算する**（記録された値を信じない）。
 
-        from measurement import prompt_version
-        return prompt_version([PROMPT, CLARITY_PROMPT])
+    ★以前は `prompt_version` だけを見ていた。OCRを足したとき**プロンプトは
+      変わらない**ので、条件が変わったのに「揃っている」と嘘をついた。
+      実測で、この画面が「揃っている」と言った手続きを export が拒んだ。
+      **測定条件はひとまとまりで効く。1つだけ見て揃ったと言わない。**
+    """
+    try:
+        sys.path.insert(0, str(ROOT / "tools"))
+        from stale import current
+        return current()
     except Exception:                                      # noqa: BLE001
         return None
 
 
-def conditions(procedure: str, prompt: str | None) -> dict:
+def conditions(procedure: str, now: dict[str, object] | None) -> dict:
     """② 測定条件。**自治体ごとに揃っていないと公開できない。**
 
     ★揃っていないまま出すと、別々の条件の結果が1枚の表に並ぶ。
       `export_dashboard.py` はこれを拒む。ここでは拒まれる理由を先に出す。
     """
-    stale = []
-    total = 0
+    sys.path.insert(0, str(ROOT / "tools"))
+    from stale import differences
+    stale, total, why = [], 0, set()
     for path in sorted(glob.glob(str(ROOT / f"extractor/out/extract_*_{procedure}.json"))):
         doc = _load(Path(path)) or {}
         total += 1
-        if prompt and (doc.get("measurement") or {}).get("prompt_version") != prompt:
+        diff = differences(doc.get("measurement") or {}, now) if now else []
+        if diff:
             stale.append(doc.get("municipality_id") or Path(path).stem)
-    return {"municipalities": total, "stale": stale, "uniform": not stale and total > 0}
+            why.update(diff)
+    return {"municipalities": total, "stale": stale, "why": sorted(why),
+            "uniform": not stale and total > 0}
 
 
 def sweep(procedure: str) -> dict:
@@ -186,8 +195,9 @@ def next_actions(state: dict) -> list[str]:
     for procedure in PROCEDURES:
         cond = state["conditions"][procedure]
         if cond["stale"]:
-            todo.append(f"{procedure}: 測定条件が{len(cond['stale'])}区ぶん揃っていない。"
-                        f"公開できない。`extractor/extract.py -m <区> -p {procedure} --follow`")
+            todo.append(f"{procedure}: 測定条件が{len(cond['stale'])}自治体ぶん揃っていない"
+                        f"（{'・'.join(cond.get('why') or [])}）。公開できない。"
+                        "`tools/run_pipeline.sh`")
     for procedure in PROCEDURES:
         sw = state["sweep"][procedure]
         if sw.get("ok") and sw["errored"]:
@@ -201,11 +211,11 @@ def next_actions(state: dict) -> list[str]:
 
 
 def collect() -> dict:
-    prompt = current_prompt()
+    now = current_conditions()
     return {
-        "prompt_version": prompt,
+        "conditions_now": now,
         "watch": watch(),
-        "conditions": {p: conditions(p, prompt) for p in PROCEDURES},
+        "conditions": {p: conditions(p, now) for p in PROCEDURES},
         "sweep": {p: sweep(p) for p in PROCEDURES},
         "blockers": blockers(),
         "published": published(),
@@ -226,8 +236,9 @@ def render(state: dict) -> str:
     lines.append("## ② 測定条件（揃っていないと公開できない）")
     for procedure in PROCEDURES:
         c = state["conditions"][procedure]
-        mark = "揃っている" if c["uniform"] else f"★{len(c['stale'])}区ぶん古い"
-        lines.append(f"   {procedure:10} {c['municipalities']:2}区  {mark}")
+        mark = ("揃っている" if c["uniform"]
+                else f"★{len(c['stale'])}自治体ぶん古い（{'・'.join(c.get('why') or [])}）")
+        lines.append(f"   {procedure:10} {c['municipalities']:2}自治体  {mark}")
     lines.append("")
 
     lines.append("## ③ 虱潰し（候補を全部読んだか）")

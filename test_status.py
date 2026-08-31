@@ -98,9 +98,9 @@ class 次にやること(unittest.TestCase):
         cond = {p: {"municipalities": 24, "stale": [], "uniform": True}
                 for p in ("tennyu", "jidouteate", "sodaigomi")}
         cond["sodaigomi"] = {"municipalities": 24, "stale": ["ota", "kita"],
-                             "uniform": False}
+                             "why": ["non_html_reading"], "uniform": False}
         got = next_actions(state(conditions=cond))
-        self.assertTrue(any("公開できない" in x and "2区" in x for x in got))
+        self.assertTrue(any("公開できない" in x and "2自治体" in x for x in got))
 
     def test_公開データに条件の記録が無ければ言う(self):
         pub = {p: {"ok": True, "generated_at": "x", "age_days": 1.0,
