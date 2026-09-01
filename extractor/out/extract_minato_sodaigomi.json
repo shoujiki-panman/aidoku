@@ -43,26 +43,22 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T15:28:51+00:00",
+    "run_at": "2026-08-31T16:42:50+00:00",
     "discovery_run_at": "2026-08-28T14:37:31+00:00"
   },
   "followed_urls": [
-    "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/yuryo/tenpu.html",
-    "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html",
     "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay",
-    "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/sodaigomi.html"
+    "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html"
   ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "申込方法は、インターネット（WEB）、AIチャットボットまたは電話の3つの方法があります。",
+  "online_clarity_evidence": "インターネット受付では、次の期間まで収集・持込に関する申込内容の変更・取消を受け付けています",
   "online_clarity_pages": [
     "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
-    "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/yuryo/tenpu.html",
-    "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html",
     "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay",
-    "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/sodaigomi.html"
+    "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html"
   ],
   "test_cases": [
     {
@@ -72,7 +68,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "通常の申込み（みなと粗大ごみ受付センターへの電話・WEB申込み）自体に持参書類は不要。有料ごみ処理券は購入して粗大ごみに貼付する。ただし粗大ごみ処理手数料の減免対象者が申請書を持参する場合は、受給証明書などの資格を証明する書類が必要となることがある。",
+        "value": "通常の申込みは電話・インターネットで完結し提出書類は不要。ただし粗大ごみ処理手数料の減免対象者（生活保護受給者、児童扶養手当受給者等）は、みなとリサイクル清掃事務所等から郵送される「手数料減免申請書」に加え、受給証明書などの資格を証明する書類が必要になる場合がある。",
         "evidence": "手数料減免申請書の他に受給証明書などの資格を証明する書類が必要となる場合があります",
         "source": "linked_page",
         "failure_reason": null,
@@ -96,17 +92,17 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/yuryo/tenpu.html",
+            "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay",
             "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html"
           ],
-          "page_notes": "本文は料金表と申込方法（外部の受付センター）に重点があり、持ち物・必要書類の具体的な列挙は無い。有料ごみ処理券の購入（全員向け）と減免申請（該当者のみ）が別ページに分かれて案内されている。"
+          "page_notes": "このページは粗大ごみの出し方の概要（料金・申込方法・注意事項）のみで、申込時の持ち物や必要書類の記載は無い。申込自体は外部の「みなと粗大ごみ受付センター」で行い、減免対象者向けの必要書類は別ページ「粗大ごみの減免申請」にありそう。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "通常の申込み（みなと粗大ごみ受付センターへの電話・WEB申込み）自体に持参書類は不要。有料ごみ処理券は購入して粗大ごみに貼付する。ただし粗大ごみ処理手数料の減免対象者が申請書を持参する場合は、受給証明書などの資格を証明する書類が必要となることがある。",
+            "value": "通常の申込みは電話・インターネットで完結し提出書類は不要。ただし粗大ごみ処理手数料の減免対象者（生活保護受給者、児童扶養手当受給者等）は、みなとリサイクル清掃事務所等から郵送される「手数料減免申請書」に加え、受給証明書などの資格を証明する書類が必要になる場合がある。",
             "evidence": "手数料減免申請書の他に受給証明書などの資格を証明する書類が必要となる場合があります",
             "source": "linked_page",
             "failure_reason": null,
@@ -118,14 +114,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本体ページと有料ごみ処理券ページには申込み自体に必要な持ち物の記載はなく、唯一「必要書類」に触れているのは減免申請ページの該当者向け記述だった。"
+          "page_notes": "通常申込には持ち物・提出書類の記載が本文になく、必要書類が明記されているのは減免申請の詳細ページのみだった。減免申請書自体は事務所からの郵送で入手する形式のため、利用者が事前に用意する『持ち物』は資格証明書類に限られる。"
         }
       ],
       "followed_urls": [
-        "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/yuryo/tenpu.html",
+        "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay",
         "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html"
       ],
-      "page_notes": "本体ページと有料ごみ処理券ページには申込み自体に必要な持ち物の記載はなく、唯一「必要書類」に触れているのは減免申請ページの該当者向け記述だった。",
+      "page_notes": "通常申込には持ち物・提出書類の記載が本文になく、必要書類が明記されているのは減免申請の詳細ページのみだった。減免申請書自体は事務所からの郵送で入手する形式のため、利用者が事前に用意する『持ち物』は資格証明書類に限られる。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -143,14 +139,83 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "オンラインで完結可能（インターネット申込システムで訪問収集・直接持込とも申込から完了まで可能）",
-        "evidence": "「粗大ごみの戸別収集」については、画面下部の「訪問収集申込」からお申し込みください。",
+        "value": "オンラインで完結可能。みなと粗大ごみ受付センターのインターネット受付（e-tumoシステム）で訪問収集・直接持込の申込ができる",
+        "evidence": "訪問収集申込 受付開始日時 2023年03月20日08時00分 受付終了日時 随時",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 37,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
+          ],
+          "page_notes": "本文は「みなと粗大ごみ受付センター（外部サイトへリンク）にお申し込みください」と申込先を外部サイトへのリンクで示すのみで、窓口／オンラインの別はこのページ本文には書かれていない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "オンラインで完結可能。みなと粗大ごみ受付センターのインターネット受付（e-tumoシステム）で訪問収集・直接持込の申込ができる",
+            "evidence": "訪問収集申込 受付開始日時 2023年03月20日08時00分 受付終了日時 随時",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 37,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本体ページには「みなと粗大ごみ受付センターにお申し込みください」としか書かれておらず窓口かオンラインかは判別できないが、リンク先のe-tumoポータルで手続き選択→メール確認→内容入力→申込完了というオンライン完結の申込フローが確認できた（減免申請のみ電話限定）。"
+        }
+      ],
+      "followed_urls": [
+        "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
+      ],
+      "page_notes": "本体ページには「みなと粗大ごみ受付センターにお申し込みください」としか書かれておらず窓口かオンラインかは判別できないが、リンク先のe-tumoポータルで手続き選択→メール確認→内容入力→申込完了というオンライン完結の申込フローが確認できた（減免申請のみ電話限定）。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "港区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "申込から収集まで約2週間を要する（起算点：希望する収集日。目安として、その約2週間前までに申し込む必要がある）",
+        "evidence": "粗大ごみの戸別収集は、お申し込みから収集まで約２週間を要します。余裕をもってお申し込みください。",
         "source": "linked_page",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
           "verdict": "exact",
-          "run": 42,
+          "run": 48,
           "note": ""
         }
       },
@@ -169,32 +234,32 @@
           "requested_urls": [
             "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
           ],
-          "page_notes": "本文は「みなと粗大ごみ受付センター（外部サイトへリンク）にお申し込みください」と申込先の外部サイトへ誘導するのみで、窓口・電話・オンラインいずれで完結できるかはこのページ自体には書かれていない。"
+          "page_notes": "本文は「事前の申し込みが必要」としか書かれておらず、収集日から起算した申込期限（例：収集日の何日前まで）の記載は無い。申込先の受付センター（外部サイト）に期限情報がある可能性がある。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "オンラインで完結可能（インターネット申込システムで訪問収集・直接持込とも申込から完了まで可能）",
-            "evidence": "「粗大ごみの戸別収集」については、画面下部の「訪問収集申込」からお申し込みください。",
+            "value": "申込から収集まで約2週間を要する（起算点：希望する収集日。目安として、その約2週間前までに申し込む必要がある）",
+            "evidence": "粗大ごみの戸別収集は、お申し込みから収集まで約２週間を要します。余裕をもってお申し込みください。",
             "source": "linked_page",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
               "verdict": "exact",
-              "run": 42,
+              "run": 48,
               "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページは外部の申込センター（みなと粗大ごみ受付センター／ecolife.e-tumo.jp）への案内のみで、申込フォーム自体はリンク先にあった。リンク先は「手続き選択→メール確認→内容入力→申込完了」の一連の流れがオンラインで完結する構成。ただし減免申請のみ電話限定である点は別記されている。"
+          "page_notes": "自治体本体ページには申込期限の記載はなく、外部の受付センター（ecolife.e-tumo.jp）側のお知らせ欄に、収集までの所要期間（目安2週間）という形で間接的に期限相当の情報があった。ただし変更・取消の締切（4営業日前等）は別項目であり、初回申込の期限そのものを明言する記述ではない。"
         }
       ],
       "followed_urls": [
         "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
       ],
-      "page_notes": "元ページは外部の申込センター（みなと粗大ごみ受付センター／ecolife.e-tumo.jp）への案内のみで、申込フォーム自体はリンク先にあった。リンク先は「手続き選択→メール確認→内容入力→申込完了」の一連の流れがオンラインで完結する構成。ただし減免申請のみ電話限定である点は別記されている。",
+      "page_notes": "自治体本体ページには申込期限の記載はなく、外部の受付センター（ecolife.e-tumo.jp）側のお知らせ欄に、収集までの所要期間（目安2週間）という形で間接的に期限相当の情報があった。ただし変更・取消の締切（4営業日前等）は別項目であり、初回申込の期限そのものを明言する記述ではない。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -207,91 +272,20 @@
     },
     {
       "service": "sodaigomi",
-      "fact_type": "deadline",
-      "question": "港区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
-      "test_case_version": "1.0",
-      "result": {
-        "found": false,
-        "value": "",
-        "evidence": "",
-        "source": null,
-        "failure_reason": "記載なし",
-        "failure_type": "fact_missing",
-        "evidence_check": {
-          "verdict": "not_applicable",
-          "run": 0,
-          "note": "found=false のため照合しない"
-        }
-      },
-      "attempts": [
-        {
-          "stage": "initial",
-          "llm_called": true,
-          "result": {
-            "found": false,
-            "value": "",
-            "evidence": "",
-            "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved"
-          },
-          "requested_urls": [
-            "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/sodaigomi.html",
-            "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
-          ],
-          "page_notes": "本文は「事前の申し込みが必要」「みなと粗大ごみ受付センターにお申し込みください」とあるのみで、収集日から起算した申込期限（例：収集日の◯日前まで）の記載はない。「収集」の詳細ページか外部の受付センターに申込〜収集までの期間が載っている可能性がある。"
-        },
-        {
-          "stage": "follow",
-          "llm_called": true,
-          "result": {
-            "found": false,
-            "value": "",
-            "evidence": "",
-            "source": null,
-            "failure_reason": "記載なし",
-            "failure_type": "fact_missing",
-            "evidence_check": {
-              "verdict": "not_applicable",
-              "run": 0,
-              "note": "found=false のため照合しない"
-            }
-          },
-          "requested_urls": [],
-          "page_notes": "収集までの所要期間「約2週間」や、申込後の内容変更・取消の締切（4営業日前・1営業日前）は書かれているが、初回申込みそのものの期限（起算点つき）は本文にもリンク先2ページ・受付センターページにも明記されていなかった。"
-        }
-      ],
-      "followed_urls": [
-        "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/sodaigomi.html",
-        "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
-      ],
-      "page_notes": "収集までの所要期間「約2週間」や、申込後の内容変更・取消の締切（4営業日前・1営業日前）は書かれているが、初回申込みそのものの期限（起算点つき）は本文にもリンク先2ページ・受付センターページにも明記されていなかった。",
-      "evidence_summary": {
-        "checked": 0,
-        "verified": 0,
-        "partial": 0,
-        "missing": 0,
-        "too_short": 0,
-        "not_checked": 0,
-        "not_applicable": 1
-      }
-    },
-    {
-      "service": "sodaigomi",
       "fact_type": "fee",
       "question": "港区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "品目ごとに異なる。有料ごみ処理券を事前購入して支払う（無料ではない）。主な品目の例：布団・いすなど400円、ソファ(1人用)・卓上式ミシンなど900円、机・ベッドマット・たたみなど1,300円、ソファ(2人以上用)など2,300円、両そで机など3,200円",
-        "evidence": "400円 布団、いす など 900円 ソファ(1人用）、卓上式ミシン など 1,300円 机、ベッドマット、たたみ など",
+        "value": "品目により異なる（400円～3,200円）。例: 布団・いす400円、ソファ(1人用)・卓上式ミシン900円、机・ベッドマット・たたみ1,300円、ソファ(2人以上用)2,300円、両そで机等3,200円。収集の場合は事前に「有料ごみ処理券」の購入が必要",
+        "evidence": "粗大ごみを収集する場合は「有料ごみ処理券」を事前に購入する必要があります。",
         "source": "html",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "normalized",
-          "run": 45,
-          "note": "空白・記号のゆれを吸収すると一致"
+          "verdict": "exact",
+          "run": 37,
+          "note": ""
         }
       },
       "attempts": [
@@ -300,23 +294,23 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "品目ごとに異なる。有料ごみ処理券を事前購入して支払う（無料ではない）。主な品目の例：布団・いすなど400円、ソファ(1人用)・卓上式ミシンなど900円、机・ベッドマット・たたみなど1,300円、ソファ(2人以上用)など2,300円、両そで机など3,200円",
-            "evidence": "400円 布団、いす など 900円 ソファ(1人用）、卓上式ミシン など 1,300円 机、ベッドマット、たたみ など",
+            "value": "品目により異なる（400円～3,200円）。例: 布団・いす400円、ソファ(1人用)・卓上式ミシン900円、机・ベッドマット・たたみ1,300円、ソファ(2人以上用)2,300円、両そで机等3,200円。収集の場合は事前に「有料ごみ処理券」の購入が必要",
+            "evidence": "粗大ごみを収集する場合は「有料ごみ処理券」を事前に購入する必要があります。",
             "source": "html",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "normalized",
-              "run": 45,
-              "note": "空白・記号のゆれを吸収すると一致"
+              "verdict": "exact",
+              "run": 37,
+              "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "本文中に主な品目の料金表（400円〜3,200円）が直接記載されている。品目ごとの完全な一覧は「主な粗大ごみ料金表」PDFにリンクされているが、本文だけでも代表的な料金は把握できる。"
+          "page_notes": "料金は本文の表（品目別に400円〜3,200円）に明記されているが、単一額ではなく品目ごとの一覧のため、より詳細な料金表PDFへのリンクも別途用意されている。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "本文中に主な品目の料金表（400円〜3,200円）が直接記載されている。品目ごとの完全な一覧は「主な粗大ごみ料金表」PDFにリンクされているが、本文だけでも代表的な料金は把握できる。",
+      "page_notes": "料金は本文の表（品目別に400円〜3,200円）に明記されているが、単一額ではなく品目ごとの一覧のため、より詳細な料金表PDFへのリンクも別途用意されている。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -331,7 +325,7 @@
   "items": {
     "必要書類": {
       "found": true,
-      "value": "通常の申込み（みなと粗大ごみ受付センターへの電話・WEB申込み）自体に持参書類は不要。有料ごみ処理券は購入して粗大ごみに貼付する。ただし粗大ごみ処理手数料の減免対象者が申請書を持参する場合は、受給証明書などの資格を証明する書類が必要となることがある。",
+      "value": "通常の申込みは電話・インターネットで完結し提出書類は不要。ただし粗大ごみ処理手数料の減免対象者（生活保護受給者、児童扶養手当受給者等）は、みなとリサイクル清掃事務所等から郵送される「手数料減免申請書」に加え、受給証明書などの資格を証明する書類が必要になる場合がある。",
       "evidence": "手数料減免申請書の他に受給証明書などの資格を証明する書類が必要となる場合があります",
       "source": "linked_page",
       "failure_reason": null,
@@ -344,64 +338,62 @@
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "オンラインで完結可能（インターネット申込システムで訪問収集・直接持込とも申込から完了まで可能）",
-      "evidence": "「粗大ごみの戸別収集」については、画面下部の「訪問収集申込」からお申し込みください。",
+      "value": "オンラインで完結可能。みなと粗大ごみ受付センターのインターネット受付（e-tumoシステム）で訪問収集・直接持込の申込ができる",
+      "evidence": "訪問収集申込 受付開始日時 2023年03月20日08時00分 受付終了日時 随時",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 37,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
+    },
+    "期限": {
+      "found": true,
+      "value": "申込から収集まで約2週間を要する（起算点：希望する収集日。目安として、その約2週間前までに申し込む必要がある）",
+      "evidence": "粗大ごみの戸別収集は、お申し込みから収集まで約２週間を要します。余裕をもってお申し込みください。",
       "source": "linked_page",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
         "verdict": "exact",
-        "run": 42,
+        "run": 48,
         "note": ""
-      }
-    },
-    "期限": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "記載なし",
-      "failure_type": "fact_missing",
-      "evidence_check": {
-        "verdict": "not_applicable",
-        "run": 0,
-        "note": "found=false のため照合しない"
       }
     },
     "手数料": {
       "found": true,
-      "value": "品目ごとに異なる。有料ごみ処理券を事前購入して支払う（無料ではない）。主な品目の例：布団・いすなど400円、ソファ(1人用)・卓上式ミシンなど900円、机・ベッドマット・たたみなど1,300円、ソファ(2人以上用)など2,300円、両そで机など3,200円",
-      "evidence": "400円 布団、いす など 900円 ソファ(1人用）、卓上式ミシン など 1,300円 机、ベッドマット、たたみ など",
+      "value": "品目により異なる（400円～3,200円）。例: 布団・いす400円、ソファ(1人用)・卓上式ミシン900円、机・ベッドマット・たたみ1,300円、ソファ(2人以上用)2,300円、両そで机等3,200円。収集の場合は事前に「有料ごみ処理券」の購入が必要",
+      "evidence": "粗大ごみを収集する場合は「有料ごみ処理券」を事前に購入する必要があります。",
       "source": "html",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "normalized",
-        "run": 45,
-        "note": "空白・記号のゆれを吸収すると一致"
+        "verdict": "exact",
+        "run": 37,
+        "note": ""
       }
     }
   },
-  "page_notes": "本体ページと有料ごみ処理券ページには申込み自体に必要な持ち物の記載はなく、唯一「必要書類」に触れているのは減免申請ページの該当者向け記述だった。\n元ページは外部の申込センター（みなと粗大ごみ受付センター／ecolife.e-tumo.jp）への案内のみで、申込フォーム自体はリンク先にあった。リンク先は「手続き選択→メール確認→内容入力→申込完了」の一連の流れがオンラインで完結する構成。ただし減免申請のみ電話限定である点は別記されている。\n収集までの所要期間「約2週間」や、申込後の内容変更・取消の締切（4営業日前・1営業日前）は書かれているが、初回申込みそのものの期限（起算点つき）は本文にもリンク先2ページ・受付センターページにも明記されていなかった。\n本文中に主な品目の料金表（400円〜3,200円）が直接記載されている。品目ごとの完全な一覧は「主な粗大ごみ料金表」PDFにリンクされているが、本文だけでも代表的な料金は把握できる。",
+  "page_notes": "通常申込には持ち物・提出書類の記載が本文になく、必要書類が明記されているのは減免申請の詳細ページのみだった。減免申請書自体は事務所からの郵送で入手する形式のため、利用者が事前に用意する『持ち物』は資格証明書類に限られる。\n本体ページには「みなと粗大ごみ受付センターにお申し込みください」としか書かれておらず窓口かオンラインかは判別できないが、リンク先のe-tumoポータルで手続き選択→メール確認→内容入力→申込完了というオンライン完結の申込フローが確認できた（減免申請のみ電話限定）。\n自治体本体ページには申込期限の記載はなく、外部の受付センター（ecolife.e-tumo.jp）側のお知らせ欄に、収集までの所要期間（目安2週間）という形で間接的に期限相当の情報があった。ただし変更・取消の締切（4営業日前等）は別項目であり、初回申込の期限そのものを明言する記述ではない。\n料金は本文の表（品目別に400円〜3,200円）に明記されているが、単一額ではなく品目ごとの一覧のため、より詳細な料金表PDFへのリンクも別途用意されている。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
-      "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/yuryo/tenpu.html",
-      "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html",
       "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay",
-      "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/sodaigomi.html"
+      "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true
   },
   "evidence_summary": {
-    "checked": 3,
-    "verified": 3,
+    "checked": 4,
+    "verified": 4,
     "partial": 0,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,
-    "not_applicable": 1
+    "not_applicable": 0
   }
 }

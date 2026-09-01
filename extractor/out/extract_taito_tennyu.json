@@ -43,24 +43,24 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-30T17:12:17+00:00",
+    "run_at": "2026-08-31T13:41:33+00:00",
     "discovery_run_at": "2026-08-27T15:29:07+00:00"
   },
   "followed_urls": [
     "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
-    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
-    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html"
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "転出の際に設定した来庁予定日に、来庁予定先として設定した窓口で転入届を提出する。",
   "online_clarity_pages": [
     "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
     "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
-    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
-    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html"
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
+    "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html"
   ],
   "test_cases": [
     {
@@ -70,8 +70,8 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等 ／ 外国人の場合はさらに ・転入者全員の在留カードまたは特別永住者証明書 ・続柄を証する文書（※2）、在留資格の変更等をしている場合はパスポートが必要になることがある",
-        "evidence": "前住所地発行の転出証明書・本人確認のできるもの・賃貸契約書等［外国人の場合は、次の書類も必要］・転入者全員の在留カードまたは特別永住者証明書・続柄を証する文書（※2）",
+        "value": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等／外国人の場合は追加で、転入者全員の在留カードまたは特別永住者証明書・続柄を証する文書（在留資格の変更等がある場合はパスポートも必要な場合あり）",
+        "evidence": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等［外国人の場合は、次の書類も必要］・転入者全員の在留カードまたは特別永住者証明書 ・続柄を証する文書（※2）",
         "source": "linked_page",
         "failure_reason": null,
         "failure_type": null,
@@ -94,17 +94,18 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html"
+            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
+            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html"
           ],
-          "page_notes": "このページは転入届等に伴う「電子証明書の発行手続き」専用ページで、必要なものはマイナンバーカードや委任状など電子証明書関連のみ。転入届そのものの持ち物一覧は「転入・転居・転出・世帯変更の届出」ページにありそう。"
+          "page_notes": "このページは「転入届、転居届、海外転出届に伴う電子証明書の発行手続き」専用ページで、記載されている「必要なもの」（マイナンバーカード・委任状等）は電子証明書手続きのためのものであり、転入届本体の持ち物ではない。転入届自体の必要書類は「転入・転居・転出・世帯変更の届出」ページ等にありそう。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等 ／ 外国人の場合はさらに ・転入者全員の在留カードまたは特別永住者証明書 ・続柄を証する文書（※2）、在留資格の変更等をしている場合はパスポートが必要になることがある",
-            "evidence": "前住所地発行の転出証明書・本人確認のできるもの・賃貸契約書等［外国人の場合は、次の書類も必要］・転入者全員の在留カードまたは特別永住者証明書・続柄を証する文書（※2）",
+            "value": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等／外国人の場合は追加で、転入者全員の在留カードまたは特別永住者証明書・続柄を証する文書（在留資格の変更等がある場合はパスポートも必要な場合あり）",
+            "evidence": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等［外国人の場合は、次の書類も必要］・転入者全員の在留カードまたは特別永住者証明書 ・続柄を証する文書（※2）",
             "source": "linked_page",
             "failure_reason": null,
             "failure_type": null,
@@ -115,13 +116,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "対象ページ（tennyu-tenkyo-denshi.html）は電子証明書手続き専用で、転入届本体の持ち物一覧は載っていない。持ち物一覧は同カテゴリ内の別ページ（jumintoroku.html）の表にまとまっていた。"
+          "page_notes": "起点ページ（電子証明書の発行手続き）には転入届自体の持ち物一覧は無く、リンク先の「転入・転居・転出・世帯変更の届出」ページの一覧表に転入届の必要なものが外国人向け追加書類も含めて記載されていた。"
         }
       ],
       "followed_urls": [
-        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html"
+        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
+        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html"
       ],
-      "page_notes": "対象ページ（tennyu-tenkyo-denshi.html）は電子証明書手続き専用で、転入届本体の持ち物一覧は載っていない。持ち物一覧は同カテゴリ内の別ページ（jumintoroku.html）の表にまとまっていた。",
+      "page_notes": "起点ページ（電子証明書の発行手続き）には転入届自体の持ち物一覧は無く、リンク先の「転入・転居・転出・世帯変更の届出」ページの一覧表に転入届の必要なものが外国人向け追加書類も含めて記載されていた。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -139,7 +141,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "窓口のみ（オンラインは転出届の事前手続きのみ対応。転入届自体は来庁予定窓口での提出が必要）",
+        "value": "窓口のみ（オンラインは転出届の送信までで、転入届自体は窓口への来庁が必要）",
         "evidence": "転出の際に設定した来庁予定日に、来庁予定先として設定した窓口で転入届を提出する。",
         "source": "linked_page",
         "failure_reason": null,
@@ -163,17 +165,17 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
-            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html"
+            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
+            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html"
           ],
-          "page_notes": "このページは電子証明書の再発行手続き専用で、転入届自体の窓口・オンライン可否には触れていない。関連する届出一覧ページとオンライン転入手続きページへのリンクがある。"
+          "page_notes": "このページは転入届本体ではなく、転入届等に伴う電子証明書再発行手続き（マイナンバーカード持参が前提）についてのみ記述しており、転入届自体の窓口／オンライン可否には触れていない。同カテゴリ内に「オンライン(マイナポータル等)で転出届をされた方の転入手続き」という関連ページへのリンクがある。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "窓口のみ（オンラインは転出届の事前手続きのみ対応。転入届自体は来庁予定窓口での提出が必要）",
+            "value": "窓口のみ（オンラインは転出届の送信までで、転入届自体は窓口への来庁が必要）",
             "evidence": "転出の際に設定した来庁予定日に、来庁予定先として設定した窓口で転入届を提出する。",
             "source": "linked_page",
             "failure_reason": null,
@@ -185,14 +187,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本体ページには手続きチャネルの記載なし。関連ページ「転入・転居・転出・世帯変更の届出」の表は転入届の届出先を区役所・区民事務所のみとし、「オンライン転出届をされた方の転入手続き」ページでもオンラインは転出側のみで転入自体は窓口来庁が明記されている。"
+          "page_notes": "本体ページは電子証明書の発行手続きのみで転入届自体のオンライン可否には触れておらず、リンク先の「オンライン転出届をされた方の転入手続き」ページで、オンラインは転出届の送信までで転入届は窓口提出必須と明記されていた。"
         }
       ],
       "followed_urls": [
-        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
-        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html"
+        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
+        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html"
       ],
-      "page_notes": "本体ページには手続きチャネルの記載なし。関連ページ「転入・転居・転出・世帯変更の届出」の表は転入届の届出先を区役所・区民事務所のみとし、「オンライン転出届をされた方の転入手続き」ページでもオンラインは転出側のみで転入自体は窓口来庁が明記されている。",
+      "page_notes": "本体ページは電子証明書の発行手続きのみで転入届自体のオンライン可否には触れておらず、リンク先の「オンライン転出届をされた方の転入手続き」ページで、オンラインは転出届の送信までで転入届は窓口提出必須と明記されていた。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -211,14 +213,14 @@
       "result": {
         "found": true,
         "value": "住み始めてから14日以内",
-        "evidence": "住み始めてから14日以内に戸籍住民サービス課、区民事務所・分室へ",
+        "evidence": "他の区市町村から、台東区内に住所を移したとき　住み始めてから14日以内に戸籍住民サービス課、区民事務所・分室へ",
         "source": "linked_page",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "exact",
-          "run": 32,
-          "note": ""
+          "verdict": "normalized",
+          "run": 50,
+          "note": "空白・記号のゆれを吸収すると一致"
         }
       },
       "attempts": [
@@ -234,10 +236,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
-            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html"
+            "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html"
           ],
-          "page_notes": "このページは転入届等に伴う電子証明書の再発行手続きの説明であり、転入届自体の提出期限には触れていない。期限情報は「転入・転居・転出・世帯変更の届出」等の別ページにありそう。"
+          "page_notes": "このページは転入届等に伴う電子証明書の発行手続きに特化しており、転入届自体の期限には触れていない。期限は「転入・転居・転出・世帯変更の届出」ページに記載されていると考えられる。"
         },
         {
           "stage": "follow",
@@ -245,25 +246,24 @@
           "result": {
             "found": true,
             "value": "住み始めてから14日以内",
-            "evidence": "住み始めてから14日以内に戸籍住民サービス課、区民事務所・分室へ",
+            "evidence": "他の区市町村から、台東区内に住所を移したとき　住み始めてから14日以内に戸籍住民サービス課、区民事務所・分室へ",
             "source": "linked_page",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "exact",
-              "run": 32,
-              "note": ""
+              "verdict": "normalized",
+              "run": 50,
+              "note": "空白・記号のゆれを吸収すると一致"
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページは電子証明書の付随手続きのみで期限の記載なし。リンク先の「転入・転居・転出・世帯変更の届出」ページの一覧表に、転入届の届出期間として起算点（住み始めてから）付きの期限が明記されていた。"
+          "page_notes": "元ページ（電子証明書手続き）には期限の記載がなく、リンク先の「転入・転居・転出・世帯変更の届出」ページの表内に転入届の届出期間が明記されていた。"
         }
       ],
       "followed_urls": [
-        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
-        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html"
+        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html"
       ],
-      "page_notes": "元ページは電子証明書の付随手続きのみで期限の記載なし。リンク先の「転入・転居・転出・世帯変更の届出」ページの一覧表に、転入届の届出期間として起算点（住み始めてから）付きの期限が明記されていた。",
+      "page_notes": "元ページ（電子証明書手続き）には期限の記載がなく、リンク先の「転入・転居・転出・世帯変更の届出」ページの表内に転入届の届出期間が明記されていた。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -307,7 +307,7 @@
           "requested_urls": [
             "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html"
           ],
-          "page_notes": "このページは転入届に伴う電子証明書の発行手続きが主題で、転入届自体の手数料には触れていない。手数料情報は「転入・転居・転出・世帯変更の届出」ページにありそう。"
+          "page_notes": "このページは転入届本体ではなく、転入届等に伴う電子証明書の発行手続き専用のページで、手数料への言及は一切ない。転入届自体の説明は「転入・転居・転出・世帯変更の届出」ページにありそう。"
         },
         {
           "stage": "follow",
@@ -326,13 +326,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "転入届のページにも一覧表のページにも手数料・費用に関する記載がなく、必要書類や届出期間のみが説明されている。"
+          "page_notes": "転入届の必要書類・届出期間は表で詳細に説明されているが、手数料・費用に関する記述はどちらのページにも見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html"
       ],
-      "page_notes": "転入届のページにも一覧表のページにも手数料・費用に関する記載がなく、必要書類や届出期間のみが説明されている。",
+      "page_notes": "転入届の必要書類・届出期間は表で詳細に説明されているが、手数料・費用に関する記述はどちらのページにも見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -347,8 +347,8 @@
   "items": {
     "必要書類": {
       "found": true,
-      "value": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等 ／ 外国人の場合はさらに ・転入者全員の在留カードまたは特別永住者証明書 ・続柄を証する文書（※2）、在留資格の変更等をしている場合はパスポートが必要になることがある",
-      "evidence": "前住所地発行の転出証明書・本人確認のできるもの・賃貸契約書等［外国人の場合は、次の書類も必要］・転入者全員の在留カードまたは特別永住者証明書・続柄を証する文書（※2）",
+      "value": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等／外国人の場合は追加で、転入者全員の在留カードまたは特別永住者証明書・続柄を証する文書（在留資格の変更等がある場合はパスポートも必要な場合あり）",
+      "evidence": "・前住所地発行の転出証明書 ・本人確認のできるもの ・賃貸契約書等［外国人の場合は、次の書類も必要］・転入者全員の在留カードまたは特別永住者証明書 ・続柄を証する文書（※2）",
       "source": "linked_page",
       "failure_reason": null,
       "failure_type": null,
@@ -360,7 +360,7 @@
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみ（オンラインは転出届の事前手続きのみ対応。転入届自体は来庁予定窓口での提出が必要）",
+      "value": "窓口のみ（オンラインは転出届の送信までで、転入届自体は窓口への来庁が必要）",
       "evidence": "転出の際に設定した来庁予定日に、来庁予定先として設定した窓口で転入届を提出する。",
       "source": "linked_page",
       "failure_reason": null,
@@ -374,14 +374,14 @@
     "期限": {
       "found": true,
       "value": "住み始めてから14日以内",
-      "evidence": "住み始めてから14日以内に戸籍住民サービス課、区民事務所・分室へ",
+      "evidence": "他の区市町村から、台東区内に住所を移したとき　住み始めてから14日以内に戸籍住民サービス課、区民事務所・分室へ",
       "source": "linked_page",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "exact",
-        "run": 32,
-        "note": ""
+        "verdict": "normalized",
+        "run": 50,
+        "note": "空白・記号のゆれを吸収すると一致"
       }
     },
     "手数料": {
@@ -398,14 +398,14 @@
       }
     }
   },
-  "page_notes": "対象ページ（tennyu-tenkyo-denshi.html）は電子証明書手続き専用で、転入届本体の持ち物一覧は載っていない。持ち物一覧は同カテゴリ内の別ページ（jumintoroku.html）の表にまとまっていた。\n本体ページには手続きチャネルの記載なし。関連ページ「転入・転居・転出・世帯変更の届出」の表は転入届の届出先を区役所・区民事務所のみとし、「オンライン転出届をされた方の転入手続き」ページでもオンラインは転出側のみで転入自体は窓口来庁が明記されている。\n元ページは電子証明書の付随手続きのみで期限の記載なし。リンク先の「転入・転居・転出・世帯変更の届出」ページの一覧表に、転入届の届出期間として起算点（住み始めてから）付きの期限が明記されていた。\n転入届のページにも一覧表のページにも手数料・費用に関する記載がなく、必要書類や届出期間のみが説明されている。",
+  "page_notes": "起点ページ（電子証明書の発行手続き）には転入届自体の持ち物一覧は無く、リンク先の「転入・転居・転出・世帯変更の届出」ページの一覧表に転入届の必要なものが外国人向け追加書類も含めて記載されていた。\n本体ページは電子証明書の発行手続きのみで転入届自体のオンライン可否には触れておらず、リンク先の「オンライン転出届をされた方の転入手続き」ページで、オンラインは転出届の送信までで転入届は窓口提出必須と明記されていた。\n元ページ（電子証明書手続き）には期限の記載がなく、リンク先の「転入・転居・転出・世帯変更の届出」ページの表内に転入届の届出期間が明記されていた。\n転入届の必要書類・届出期間は表で詳細に説明されているが、手数料・費用に関する記述はどちらのページにも見当たらなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
       "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
-      "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
-      "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html"
+      "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
+      "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,24 +43,20 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T14:23:36+00:00",
+    "run_at": "2026-08-31T16:41:03+00:00",
     "discovery_run_at": "2026-08-28T13:16:52+00:00"
   },
   "followed_urls": [
-    "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
-    "https://www.city.shinjuku.lg.jp/kusei/file18_00002.html",
-    "https://www.city.shinjuku.lg.jp/kusei/index15.html"
+    "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "また、マイナポータル（ぴったりサービス）より請求することもできます。",
   "online_clarity_pages": [
     "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
-    "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
-    "https://www.city.shinjuku.lg.jp/kusei/file18_00002.html",
-    "https://www.city.shinjuku.lg.jp/kusei/index15.html"
+    "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
   ],
   "test_cases": [
     {
@@ -70,15 +66,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "【用意するもの】①個人番号（マイナンバー）確認書類（個人番号カード両面、通知カード、個人番号記載の住民票のいずれか）②本人確認書類（顔写真付き書類1点、または健康保険証・年金手帳等2点）③請求者名義の振込口座を確認できるもの（通帳の写し・キャッシュカードの写し等）。該当者のみ必要：④請求者の健康保険証（資格確認書等を含む）の写し又は年金加入証明書（保険者番号が3から始まる共済保険等の方のみ）／⑤お子さんが別居している場合は「児童手当 別居監護の申立書」と児童の個人番号確認書類（新宿区内での別居は申立書のみ不要）／⑥配偶者と別居している場合は配偶者の個人番号確認書類／⑦ひとり親で婚姻歴がある場合は「児童手当の受給資格に係る申立書」。",
-        "evidence": "個人番号（マイナンバー）確認書類 個人番号カード（両面）、個人番号通知カード、個人番号の記載のある住民票のいずれか 本人確認書類",
+        "value": "個人番号確認書類、本人確認書類、請求者名義の振込口座を確認できるもの、請求者の健康保険証の写し又は年金加入証明書（対象者のみ）。該当者は追加で、別居監護の申立書・児童の個人番号確認書類（子と別居時）、配偶者の個人番号確認書類（配偶者と別居時）、受給資格に係る申立書（婚姻歴があるひとり親）が必要",
+        "evidence": "個人番号（マイナンバー）確認書類／本人確認書類／請求者名義の振込口座を確認できるもの／請求者の健康保険証（略）の写し又は年金加入証明書",
         "source": "linked_page",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "normalized",
-          "run": 53,
-          "note": "空白・記号のゆれを吸収すると一致"
+          "verdict": "partial",
+          "run": 18,
+          "note": "連続18文字だけ一致。引用全体は確認できない"
         }
       },
       "attempts": [
@@ -94,40 +90,38 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
-            "https://www.city.shinjuku.lg.jp/kusei/file18_00002.html"
+            "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
           ],
-          "page_notes": "このページはメニュー階層のみで本文コンテンツがなく、実際の説明は「児童手当」という同名リンク先のページに置かれている。"
+          "page_notes": "このページはナビゲーションメニューのみで構成されたポータル的な入口ページで、申請手続きの本文（必要書類等）は含まれていない。同ページ内の「児童手当」リンク（file03_04_00004.html）が詳細ページと見られる。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "【用意するもの】①個人番号（マイナンバー）確認書類（個人番号カード両面、通知カード、個人番号記載の住民票のいずれか）②本人確認書類（顔写真付き書類1点、または健康保険証・年金手帳等2点）③請求者名義の振込口座を確認できるもの（通帳の写し・キャッシュカードの写し等）。該当者のみ必要：④請求者の健康保険証（資格確認書等を含む）の写し又は年金加入証明書（保険者番号が3から始まる共済保険等の方のみ）／⑤お子さんが別居している場合は「児童手当 別居監護の申立書」と児童の個人番号確認書類（新宿区内での別居は申立書のみ不要）／⑥配偶者と別居している場合は配偶者の個人番号確認書類／⑦ひとり親で婚姻歴がある場合は「児童手当の受給資格に係る申立書」。",
-            "evidence": "個人番号（マイナンバー）確認書類 個人番号カード（両面）、個人番号通知カード、個人番号の記載のある住民票のいずれか 本人確認書類",
+            "value": "個人番号確認書類、本人確認書類、請求者名義の振込口座を確認できるもの、請求者の健康保険証の写し又は年金加入証明書（対象者のみ）。該当者は追加で、別居監護の申立書・児童の個人番号確認書類（子と別居時）、配偶者の個人番号確認書類（配偶者と別居時）、受給資格に係る申立書（婚姻歴があるひとり親）が必要",
+            "evidence": "個人番号（マイナンバー）確認書類／本人確認書類／請求者名義の振込口座を確認できるもの／請求者の健康保険証（略）の写し又は年金加入証明書",
             "source": "linked_page",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "normalized",
-              "run": 53,
-              "note": "空白・記号のゆれを吸収すると一致"
+              "verdict": "partial",
+              "run": 18,
+              "note": "連続18文字だけ一致。引用全体は確認できない"
             }
           },
           "requested_urls": [],
-          "page_notes": "index04_11.htmlはメニューのみでリンク集ページ。実体はリンク先のfile03_04_00004.html（児童手当ページ）の「児童手当の請求方法」内【用意するもの】に必要書類が箇条書きで記載されており、別居・ひとり親等の該当者限定書類も同ページ内に条件付きで列挙されている。"
+          "page_notes": "「児童手当の請求方法」内の【用意するもの】に基本書類、その下の「お子さんが別居」「配偶者と別居」「ひとり親の方」の各見出しに該当者だけの追加書類がまとまっている。"
         }
       ],
       "followed_urls": [
-        "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
-        "https://www.city.shinjuku.lg.jp/kusei/file18_00002.html"
+        "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
       ],
-      "page_notes": "index04_11.htmlはメニューのみでリンク集ページ。実体はリンク先のfile03_04_00004.html（児童手当ページ）の「児童手当の請求方法」内【用意するもの】に必要書類が箇条書きで記載されており、別居・ひとり親等の該当者限定書類も同ページ内に条件付きで列挙されている。",
+      "page_notes": "「児童手当の請求方法」内の【用意するもの】に基本書類、その下の「お子さんが別居」「配偶者と別居」「ひとり親の方」の各見出しに該当者だけの追加書類がまとまっている。",
       "evidence_summary": {
         "checked": 1,
-        "verified": 1,
-        "partial": 0,
+        "verified": 0,
+        "partial": 1,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
@@ -141,7 +135,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "窓口・郵送に加え、マイナポータル（ぴったりサービス）によるオンライン請求が可能",
+        "value": "窓口・郵送に加え、マイナポータル（ぴったりサービス）からのオンライン請求も可能",
         "evidence": "また、マイナポータル（ぴったりサービス）より請求することもできます。",
         "source": "linked_page",
         "failure_reason": null,
@@ -165,17 +159,16 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
-            "https://www.city.shinjuku.lg.jp/kusei/index15.html"
+            "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
           ],
-          "page_notes": "このページ（index04_11.html）は児童手当カテゴリの入口で、本文は見出し・パンくず・共通ナビのみで手続きの詳細記述がない。実際の申請手続き（窓口・オンラインの別）は同一メニュー内のリンク先「児童手当」ページに記載されている可能性が高い。"
+          "page_notes": "このページはナビゲーション用の一覧ページで、児童手当の申請手続き自体の説明本文がない。詳細は「児童手当」というリンク先ページにありそう。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "窓口・郵送に加え、マイナポータル（ぴったりサービス）によるオンライン請求が可能",
+            "value": "窓口・郵送に加え、マイナポータル（ぴったりサービス）からのオンライン請求も可能",
             "evidence": "また、マイナポータル（ぴったりサービス）より請求することもできます。",
             "source": "linked_page",
             "failure_reason": null,
@@ -187,14 +180,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "index04_11.html自体は目次のみで本文情報がなく、実際の手続き詳細は「児童手当」リンク先（file03_04_00004.html）にまとまっている。"
+          "page_notes": "起点ページには窓口案内が無く、リンク先「児童手当」ページの『児童手当の請求方法』節に窓口・郵送・マイナポータルの3経路が明記されていた。"
         }
       ],
       "followed_urls": [
-        "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
-        "https://www.city.shinjuku.lg.jp/kusei/index15.html"
+        "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
       ],
-      "page_notes": "index04_11.html自体は目次のみで本文情報がなく、実際の手続き詳細は「児童手当」リンク先（file03_04_00004.html）にまとまっている。",
+      "page_notes": "起点ページには窓口案内が無く、リンク先「児童手当」ページの『児童手当の請求方法』節に窓口・郵送・マイナポータルの3経路が明記されていた。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -212,7 +204,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "出生・転入等の事由発生日の翌日から15日以内",
+        "value": "出生・転入等の事由発生日の翌日から15日以内（15日を過ぎると、原則として請求した月の翌月分からの支給になる）",
         "evidence": "出生・転入等、その日の翌日から15日以内に請求すれば事由発生のあった日の翌月分から支給できることがあります。",
         "source": "linked_page",
         "failure_reason": null,
@@ -238,14 +230,14 @@
           "requested_urls": [
             "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
           ],
-          "page_notes": "このページはナビゲーションとリンク一覧のみで構成されており、本文には申請期限に関する記述がない。詳細は「児童手当」へのリンク先ページにありそうです。"
+          "page_notes": "このページは「児童手当」カテゴリの入口・目次ページで、本文には制度の詳細（期限等）が書かれておらず、同名リンク「児童手当」が実際の手続き詳細ページへ誘導している構成。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "出生・転入等の事由発生日の翌日から15日以内",
+            "value": "出生・転入等の事由発生日の翌日から15日以内（15日を過ぎると、原則として請求した月の翌月分からの支給になる）",
             "evidence": "出生・転入等、その日の翌日から15日以内に請求すれば事由発生のあった日の翌月分から支給できることがあります。",
             "source": "linked_page",
             "failure_reason": null,
@@ -257,13 +249,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "index04_11.html自体はメニューのみで本文が薄く、実際の期限記述は1階層下のfile03_04_00004.htmlにあった。"
+          "page_notes": "一覧ページ（index04_11.html）自体には期限の記載は無く、リンク先の詳細ページ（file03_04_00004.html）に「児童手当の請求について」の節としてまとまっていた。"
         }
       ],
       "followed_urls": [
         "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
       ],
-      "page_notes": "index04_11.html自体はメニューのみで本文が薄く、実際の期限記述は1階層下のfile03_04_00004.htmlにあった。",
+      "page_notes": "一覧ページ（index04_11.html）自体には期限の記載は無く、リンク先の詳細ページ（file03_04_00004.html）に「児童手当の請求について」の節としてまとまっていた。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -307,7 +299,7 @@
           "requested_urls": [
             "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
           ],
-          "page_notes": "このページは案内トップで、手当の詳細（手数料を含む）は「児童手当」というリンク先の個別ページに記載されている可能性が高い。本文には手数料への言及がない。"
+          "page_notes": "このページは「児童手当」カテゴリの入口（インデックス）ページで、本文は主にグローバルナビゲーションと問い合わせ先のみ。手数料を含む手続きの詳細は、本文中の「児童手当」リンク（file03_04_00004.html）先にあると見られる。"
         },
         {
           "stage": "follow",
@@ -326,13 +318,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "児童手当の申請手続きページ（本体・リンク先とも）は支給対象者・必要書類・請求方法・審査結果・支払月まで詳細に記載しているが、手数料や無料である旨の明記は本文中に見当たらない。"
+          "page_notes": "支給対象・手当額・請求方法・必要書類・用紙ダウンロードまでは詳細に書かれているが、申請にかかる手数料についての言及はページ内のどこにも見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
       ],
-      "page_notes": "児童手当の申請手続きページ（本体・リンク先とも）は支給対象者・必要書類・請求方法・審査結果・支払月まで詳細に記載しているが、手数料や無料である旨の明記は本文中に見当たらない。",
+      "page_notes": "支給対象・手当額・請求方法・必要書類・用紙ダウンロードまでは詳細に書かれているが、申請にかかる手数料についての言及はページ内のどこにも見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -347,20 +339,20 @@
   "items": {
     "必要書類": {
       "found": true,
-      "value": "【用意するもの】①個人番号（マイナンバー）確認書類（個人番号カード両面、通知カード、個人番号記載の住民票のいずれか）②本人確認書類（顔写真付き書類1点、または健康保険証・年金手帳等2点）③請求者名義の振込口座を確認できるもの（通帳の写し・キャッシュカードの写し等）。該当者のみ必要：④請求者の健康保険証（資格確認書等を含む）の写し又は年金加入証明書（保険者番号が3から始まる共済保険等の方のみ）／⑤お子さんが別居している場合は「児童手当 別居監護の申立書」と児童の個人番号確認書類（新宿区内での別居は申立書のみ不要）／⑥配偶者と別居している場合は配偶者の個人番号確認書類／⑦ひとり親で婚姻歴がある場合は「児童手当の受給資格に係る申立書」。",
-      "evidence": "個人番号（マイナンバー）確認書類 個人番号カード（両面）、個人番号通知カード、個人番号の記載のある住民票のいずれか 本人確認書類",
+      "value": "個人番号確認書類、本人確認書類、請求者名義の振込口座を確認できるもの、請求者の健康保険証の写し又は年金加入証明書（対象者のみ）。該当者は追加で、別居監護の申立書・児童の個人番号確認書類（子と別居時）、配偶者の個人番号確認書類（配偶者と別居時）、受給資格に係る申立書（婚姻歴があるひとり親）が必要",
+      "evidence": "個人番号（マイナンバー）確認書類／本人確認書類／請求者名義の振込口座を確認できるもの／請求者の健康保険証（略）の写し又は年金加入証明書",
       "source": "linked_page",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "normalized",
-        "run": 53,
-        "note": "空白・記号のゆれを吸収すると一致"
+        "verdict": "partial",
+        "run": 18,
+        "note": "連続18文字だけ一致。引用全体は確認できない"
       }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口・郵送に加え、マイナポータル（ぴったりサービス）によるオンライン請求が可能",
+      "value": "窓口・郵送に加え、マイナポータル（ぴったりサービス）からのオンライン請求も可能",
       "evidence": "また、マイナポータル（ぴったりサービス）より請求することもできます。",
       "source": "linked_page",
       "failure_reason": null,
@@ -373,7 +365,7 @@
     },
     "期限": {
       "found": true,
-      "value": "出生・転入等の事由発生日の翌日から15日以内",
+      "value": "出生・転入等の事由発生日の翌日から15日以内（15日を過ぎると、原則として請求した月の翌月分からの支給になる）",
       "evidence": "出生・転入等、その日の翌日から15日以内に請求すれば事由発生のあった日の翌月分から支給できることがあります。",
       "source": "linked_page",
       "failure_reason": null,
@@ -398,22 +390,20 @@
       }
     }
   },
-  "page_notes": "index04_11.htmlはメニューのみでリンク集ページ。実体はリンク先のfile03_04_00004.html（児童手当ページ）の「児童手当の請求方法」内【用意するもの】に必要書類が箇条書きで記載されており、別居・ひとり親等の該当者限定書類も同ページ内に条件付きで列挙されている。\nindex04_11.html自体は目次のみで本文情報がなく、実際の手続き詳細は「児童手当」リンク先（file03_04_00004.html）にまとまっている。\nindex04_11.html自体はメニューのみで本文が薄く、実際の期限記述は1階層下のfile03_04_00004.htmlにあった。\n児童手当の申請手続きページ（本体・リンク先とも）は支給対象者・必要書類・請求方法・審査結果・支払月まで詳細に記載しているが、手数料や無料である旨の明記は本文中に見当たらない。",
+  "page_notes": "「児童手当の請求方法」内の【用意するもの】に基本書類、その下の「お子さんが別居」「配偶者と別居」「ひとり親の方」の各見出しに該当者だけの追加書類がまとまっている。\n起点ページには窓口案内が無く、リンク先「児童手当」ページの『児童手当の請求方法』節に窓口・郵送・マイナポータルの3経路が明記されていた。\n一覧ページ（index04_11.html）自体には期限の記載は無く、リンク先の詳細ページ（file03_04_00004.html）に「児童手当の請求について」の節としてまとまっていた。\n支給対象・手当額・請求方法・必要書類・用紙ダウンロードまでは詳細に書かれているが、申請にかかる手数料についての言及はページ内のどこにも見当たらなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
-      "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
-      "https://www.city.shinjuku.lg.jp/kusei/file18_00002.html",
-      "https://www.city.shinjuku.lg.jp/kusei/index15.html"
+      "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true
   },
   "evidence_summary": {
     "checked": 3,
-    "verified": 3,
-    "partial": 0,
+    "verified": 2,
+    "partial": 1,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,

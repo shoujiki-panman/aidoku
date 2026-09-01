@@ -43,10 +43,10 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-30T13:50:39+00:00",
+    "run_at": "2026-08-31T13:07:19+00:00",
     "discovery_run_at": "2026-08-27T15:29:07+00:00"
   },
   "followed_urls": [
@@ -55,7 +55,7 @@
     "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html"
   ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。（引越しをした後でなければ手続きをすることができません。）",
+  "online_clarity_evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。",
   "online_clarity_pages": [
     "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
     "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
@@ -97,7 +97,7 @@
             "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
             "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
           ],
-          "page_notes": "この「転入」トップページは目次のみで、持ち物の一覧は書かれていない。マイナンバーカードの有無で手続きページが2分岐しており、必要書類はそのどちらかに記載されていると見られる。"
+          "page_notes": "このページは転入の入口ページで、必要書類の記載は無く、手続き方法別（マイナンバーカードを使う/使わない）の2つのリンク先ページに分岐している構成。"
         },
         {
           "stage": "follow",
@@ -116,14 +116,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページとリンク先の2ページ（マイナンバー有無別の入口ページ）はいずれも下位ページへの案内リンクの一覧のみで、持ち物・必要書類の具体的な記載は本文になかった。"
+          "page_notes": "「マイナンバーカードを使わずに手続きをする場合」「使って手続きをする場合」のページはいずれも下位ページへのリンク一覧（本人・同世帯／代理人／国外からの場合など）のみで、持ち物・必要書類の具体的な記載は無かった。"
         }
       ],
       "followed_urls": [
         "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
         "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
       ],
-      "page_notes": "元ページとリンク先の2ページ（マイナンバー有無別の入口ページ）はいずれも下位ページへの案内リンクの一覧のみで、持ち物・必要書類の具体的な記載は本文になかった。",
+      "page_notes": "「マイナンバーカードを使わずに手続きをする場合」「使って手続きをする場合」のページはいずれも下位ページへのリンク一覧（本人・同世帯／代理人／国外からの場合など）のみで、持ち物・必要書類の具体的な記載は無かった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -141,7 +141,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "窓口のみ（オンラインは来庁予約の連絡のみで、転入届自体はオンライン完結不可）",
+        "value": "窓口のみ。オンライン（マイナポータル）でできるのは来庁予定の連絡までで、転入届自体は窓口来庁が必須",
         "evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。",
         "source": "linked_page",
         "failure_reason": null,
@@ -165,17 +165,17 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
-            "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html"
+            "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html",
+            "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
           ],
-          "page_notes": "このトップページ自体には窓口かオンライン完結かの明記はなく、マイナンバーカード利用の手続きページと引越しワンストップサービスのページへ分岐する構成になっている。"
+          "page_notes": "本ページは転入手続きの入口ページで、マイナンバーカード有無による手続き方法へのリンクと「引越しワンストップサービス」への案内があるのみで、窓口のみかオンライン完結可能かの明記は本文になかった。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "窓口のみ（オンラインは来庁予約の連絡のみで、転入届自体はオンライン完結不可）",
+            "value": "窓口のみ。オンライン（マイナポータル）でできるのは来庁予定の連絡までで、転入届自体は窓口来庁が必須",
             "evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。",
             "source": "linked_page",
             "failure_reason": null,
@@ -187,14 +187,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "転入トップには可否の記載はなく、「引越しワンストップサービス」のページで転出はオンライン申請可・転入は来庁必須と明記されていた。"
+          "page_notes": "転入トップページ自体には窓口/オンラインの可否記載がなく、同カテゴリ内の「引越しワンストップサービスの利用」ページに転出・転入それぞれの手続き方法が分けて書かれていた。転入は来庁予定の連絡のみオンライン化され、届出自体は窓口必須という構成。"
         }
       ],
       "followed_urls": [
-        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
-        "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html"
+        "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html",
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
       ],
-      "page_notes": "転入トップには可否の記載はなく、「引越しワンストップサービス」のページで転出はオンライン申請可・転入は来庁必須と明記されていた。",
+      "page_notes": "転入トップページ自体には窓口/オンラインの可否記載がなく、同カテゴリ内の「引越しワンストップサービスの利用」ページに転出・転入それぞれの手続き方法が分けて書かれていた。転入は来庁予定の連絡のみオンライン化され、届出自体は窓口必須という構成。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -239,7 +239,7 @@
             "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
             "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
           ],
-          "page_notes": "このページは転入届の入口ページで、手続き方法をマイナンバーカードの有無で2つのサブページに振り分けているだけで、期限そのものの記述は本文になかった。"
+          "page_notes": "このページは「転入」の入口で、マイナンバーカードの有無で手続きページが分岐する構成。期限（起算点）を含む具体的な手続き説明は本文になく、下位の2ページのいずれかに記載されている可能性が高い。"
         },
         {
           "stage": "follow",
@@ -258,14 +258,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "転入トップ・マイナンバー有無別の2下位ページとも、手続きの提出先や必要書類の一覧はあるが、期限（起算点つき）を明記した文言は本文に見当たらなかった。"
+          "page_notes": "転入届のトップページとその下位2ページ（マイナンバーカードあり/なし）はいずれもリンク一覧のみで構成されており、期限（起算点付き）を含む説明本文自体が存在しなかった。実際の手続き詳細はさらに下位の「転入届：本人または同じ世帯の方が手続きするとき」等の個別ページにあると見られるが、今回の探索範囲では未到達。"
         }
       ],
       "followed_urls": [
         "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
         "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
       ],
-      "page_notes": "転入トップ・マイナンバー有無別の2下位ページとも、手続きの提出先や必要書類の一覧はあるが、期限（起算点つき）を明記した文言は本文に見当たらなかった。",
+      "page_notes": "転入届のトップページとその下位2ページ（マイナンバーカードあり/なし）はいずれもリンク一覧のみで構成されており、期限（起算点付き）を含む説明本文自体が存在しなかった。実際の手続き詳細はさらに下位の「転入届：本人または同じ世帯の方が手続きするとき」等の個別ページにあると見られるが、今回の探索範囲では未到達。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -310,7 +310,7 @@
             "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
             "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
           ],
-          "page_notes": "このページは転入届の入口で、手続き方法別（マイナンバーカードあり/なし）にリンクが分かれており、手数料の記載は本文になく手続き別ページ側にありそう。"
+          "page_notes": "このページは転入届の入口（目次）ページで、手続き方法別（マイナンバーカードの有無）に2つのサブページへ分岐しており、手数料を含む具体的な手続き詳細はそちらに記載されている可能性が高い。"
         },
         {
           "stage": "follow",
@@ -329,14 +329,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "転入届の手続きページおよびその下位2ページ（マイナンバーカード利用有無別）を確認したが、手数料・無料に関する記載は見当たらなかった。"
+          "page_notes": "転入ページとその配下2ページ（マイナンバーカード有無別）はいずれも下位ページへのリンク一覧のみで、手数料に関する記述はどこにも見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
         "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
       ],
-      "page_notes": "転入届の手続きページおよびその下位2ページ（マイナンバーカード利用有無別）を確認したが、手数料・無料に関する記載は見当たらなかった。",
+      "page_notes": "転入ページとその配下2ページ（マイナンバーカード有無別）はいずれも下位ページへのリンク一覧のみで、手数料に関する記述はどこにも見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -364,7 +364,7 @@
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみ（オンラインは来庁予約の連絡のみで、転入届自体はオンライン完結不可）",
+      "value": "窓口のみ。オンライン（マイナポータル）でできるのは来庁予定の連絡までで、転入届自体は窓口来庁が必須",
       "evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。",
       "source": "linked_page",
       "failure_reason": null,
@@ -402,7 +402,7 @@
       }
     }
   },
-  "page_notes": "元ページとリンク先の2ページ（マイナンバー有無別の入口ページ）はいずれも下位ページへの案内リンクの一覧のみで、持ち物・必要書類の具体的な記載は本文になかった。\n転入トップには可否の記載はなく、「引越しワンストップサービス」のページで転出はオンライン申請可・転入は来庁必須と明記されていた。\n転入トップ・マイナンバー有無別の2下位ページとも、手続きの提出先や必要書類の一覧はあるが、期限（起算点つき）を明記した文言は本文に見当たらなかった。\n転入届の手続きページおよびその下位2ページ（マイナンバーカード利用有無別）を確認したが、手数料・無料に関する記載は見当たらなかった。",
+  "page_notes": "「マイナンバーカードを使わずに手続きをする場合」「使って手続きをする場合」のページはいずれも下位ページへのリンク一覧（本人・同世帯／代理人／国外からの場合など）のみで、持ち物・必要書類の具体的な記載は無かった。\n転入トップページ自体には窓口/オンラインの可否記載がなく、同カテゴリ内の「引越しワンストップサービスの利用」ページに転出・転入それぞれの手続き方法が分けて書かれていた。転入は来庁予定の連絡のみオンライン化され、届出自体は窓口必須という構成。\n転入届のトップページとその下位2ページ（マイナンバーカードあり/なし）はいずれもリンク一覧のみで構成されており、期限（起算点付き）を含む説明本文自体が存在しなかった。実際の手続き詳細はさらに下位の「転入届：本人または同じ世帯の方が手続きするとき」等の個別ページにあると見られるが、今回の探索範囲では未到達。\n転入ページとその配下2ページ（マイナンバーカード有無別）はいずれも下位ページへのリンク一覧のみで、手数料に関する記述はどこにも見当たらなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [

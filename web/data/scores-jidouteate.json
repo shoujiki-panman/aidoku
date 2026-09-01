@@ -1,223 +1,262 @@
 {
-  "generated_at": "2026-08-17T15:10:26+00:00",
+  "generated_at": "2026-08-31T16:46:38+00:00",
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "question": "{muni}で子どもが生まれました。児童手当の申請に必要なもの・期限・手数料を教えて。オンラインでできますか？",
   "phase": "23区",
   "n_municipalities": 23,
   "measurement": {
-    "measurement_version": null,
-    "prompt_version": null,
-    "follow": null,
-    "max_follow": null,
-    "max_depth": null,
-    "beam": null,
-    "max_fetches": null,
-    "max_text_chars": null,
-    "max_links": null,
-    "link_order": null,
-    "table_reading": null,
-    "model": null,
-    "model_version": null,
-    "run_at": [],
-    "discovery_run_at": [],
-    "recording_status": "legacy_unknown",
-    "comparison_status": "legacy_unknown",
+    "recording_status": "recorded",
+    "comparison_status": "compatible",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text+ocr",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": [
+      "2026-08-30T17:43:44+00:00",
+      "2026-08-30T17:45:43+00:00",
+      "2026-08-30T17:46:46+00:00",
+      "2026-08-30T17:49:25+00:00",
+      "2026-08-30T17:50:42+00:00",
+      "2026-08-31T16:07:43+00:00",
+      "2026-08-31T16:09:57+00:00",
+      "2026-08-31T16:11:23+00:00",
+      "2026-08-31T16:13:39+00:00",
+      "2026-08-31T16:16:26+00:00",
+      "2026-08-31T16:18:14+00:00",
+      "2026-08-31T16:20:58+00:00",
+      "2026-08-31T16:22:53+00:00",
+      "2026-08-31T16:24:31+00:00",
+      "2026-08-31T16:26:27+00:00",
+      "2026-08-31T16:28:54+00:00",
+      "2026-08-31T16:30:27+00:00",
+      "2026-08-31T16:32:10+00:00",
+      "2026-08-31T16:34:32+00:00",
+      "2026-08-31T16:35:54+00:00",
+      "2026-08-31T16:37:30+00:00",
+      "2026-08-31T16:39:46+00:00",
+      "2026-08-31T16:41:03+00:00"
+    ],
+    "discovery_run_at": [
+      "2026-08-28T13:16:52+00:00"
+    ],
     "runs": [
       {
         "municipality_id": "arakawa",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:09:57+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "chuo",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:16:26+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "itabashi",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:20:58+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "koto",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:26:27+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "minato",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "nakano",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:30:27+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "nerima",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:34:32+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "ota",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:35:54+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "shibuya",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-30T17:43:44+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "shinagawa",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "suginami",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "edogawa",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "adachi",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "bunkyo",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "chiyoda",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "katsushika",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "kita",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "meguro",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "setagaya",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:39:46+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "shinjuku",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:41:03+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "suginami",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-30T17:45:43+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "edogawa",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:18:14+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "kita",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:24:31+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "adachi",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:07:43+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "bunkyo",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:11:23+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "chiyoda",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:13:39+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "nakano",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:32:10+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "sumida",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-30T17:46:46+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "katsushika",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:22:53+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "meguro",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:28:54+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
+      },
+      {
+        "municipality_id": "setagaya",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:37:30+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "taito",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-30T17:49:25+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       },
       {
         "municipality_id": "toshima",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-30T17:50:42+00:00",
+        "discovery_run_at": "2026-08-28T13:16:52+00:00"
       }
-    ],
-    "read_breadth": null,
-    "non_html_reading": null
+    ]
   },
   "summary": {
-    "average": 45.7,
+    "average": 51.3,
     "max": 80,
     "min": 0,
     "full_marks": 0,
-    "zero": 9,
+    "zero": 5,
     "fee_missing": 23
   },
   "municipalities": [
@@ -272,7 +311,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "必要書類・申請方法・期限はいずれもHTML本文のQ&Aや箇条書きで明記されているが、手数料については本文中に一切言及がなく、無料か有料かの記載自体が存在しない。",
+      "notes": "「申請に必要なもの」の見出し下に箇条書きで必要書類が列挙されており、注釈で個人番号確認方法や所得証明書省略条件、別途書類が要る例外ケースも補足されている。\n「申請方法」の見出し直下に窓口・郵送・電子申請（ぴったりサービス）の3手段が明記されており、電子申請の手順もページ内に記載されている。\n「申請に関する質問と回答」という見出しの中に「いつまでに手続きをすればよいですか」という質問がそのまま立っており、起算点（出生日・転出予定日）と期限（同月内、または翌日から15日以内）が明記されていた。\n申請に必要なもの・手当額・支給方法・現況届・各種様式など手続きの詳細は網羅的に記載されているが、手数料の有無や金額に言及する記述は本文にもリンク一覧にも見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -333,7 +372,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "元URL（jidouteate202206.html）は本文がなく別ページへのリダイレクト案内のみで、実質的な情報はリンク先の202409jidouteate.htmlに集約されている。手数料についてはリンク先ページにも一切記載がなかった。",
+      "notes": "元ページ（jidouteate202206.html）は移転案内のみで本文が無く、実質的な内容は同一カテゴリのリンク先ページ（202409jidouteate.html）にまとまっていた。必要書類は窓口申請の「必要なもの」と、認定請求の条件別「添付が必要な書類」に分散して記載されている。\n元ページは制度改正後の新ページへのリダイレクト案内のみで本文が無く、リンク先の202409jidouteate.htmlに「申請について」の節としてオンライン・郵送・窓口の3手段が明記されていた。\n元のページは別ページへのリダイレクト誘導のみで本文情報が無く、リンク先の実ページ（202409jidouteate.html）に「申請について」の注意事項として期限（起算点は異動日）が明記されていた。\n申請対象・手当額・支給時期・申請方法・添付書類・現況届まで詳細に書かれているが、手数料についての記載（無料である旨も含め）は本文中に見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -395,7 +434,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "総合案内ページ自体には手続きの詳細（書類・窓口・期限）は無く、1階層下の「申請手続きについて」と「よくある問い合わせ」に情報が分散している。手数料についてはどちらのページにも記載が見当たらない。",
+      "notes": "総合案内ページ自体には必要書類の記載はなく、リンク先の「児童手当の申請手続きについて」ページの『3．申請に必要な書類』に、新規申請と額改定申請それぞれで「必ず提出」と「状況に応じて提出」に分けた詳細な一覧があった。\n「児童手当の申請手続きについて」ページの『2．手続きに関する注意事項』に届出方法として窓口・郵送・電子申請の3種が列挙され、『4．電子申請について』でぴったりサービスの申請リンクが示されている。\n総合案内ページの「最重要（必ずご確認ください）」欄に起算点つきの期限が明記されており、個別の申請手続きページへ遷移しなくても本文だけで判定できた。\n総合案内ページと申請手続きページの両方を確認したが、手数料や費用に関する記述は本文・注意事項・必要書類欄のどこにも見当たらなかった。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -417,6 +456,7 @@
       "hops": 3,
       "page_url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
       "followed": [
+        "https://www.city.koto.lg.jp/281011/20171121.html",
         "https://www.city.koto.lg.jp/281011/2024jidou.html",
         "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/96043.html"
       ],
@@ -457,7 +497,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "起点ページは「郵送受付」専用ページで一覧表形式の可否のみ記載。実際の必要書類・申請方法・期限は別ページ『児童手当について』にまとまっており、そちらを開かないと答えが揃わない。手数料への言及はどちらのページにも無い。",
+      "notes": "このページは「郵送受付」専用の案内で、必要書類は（1）新規・増額の添付書類欄に限定的に記載されている。一般の窓口申請も含めた申請書類の全体像は「児童手当について」（別ページ）にある可能性が高いが、本ページの範囲では上記が本文に明記された内容。\n郵送受付ページ本文には窓口・郵送の説明のみで電子申請への言及は「関連ページ」のリンクのみだったが、リンク先の電子申請ページに新規申請が電子申請対象として明記されていた。\n元ページ（郵送受付ページ）には期限の記載がなく、リンク先の『児童手当について』ページの「15日特例について（ご注意）」節に起算点付きの期限が明記されていた。\n両ページとも申請対象・手当額・必要書類・申請方法は詳細に記載されているが、手数料についての言及自体が本文中に一切ない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -516,75 +556,13 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "アンカーリンクで区切られた単一の長大ページに、申請方法・必要書類・支給額・制度改正の経緯まで全て詰め込まれている。手数料については申請・届出のどの節にも言及がなく、児童手当が無料であることは記載自体からは確認できない。",
+      "notes": "「必要書類」の見出し配下に基本書類の箇条書きがあり、続けて「以下に該当する場合は追加で書類が必要となります」として別居・大学生年代含む多子・離婚協議中・配偶者なしの4パターン別に追加書類が列挙される構成。\n申請方法の節に「1～3のいずれかの方法」として郵送・窓口持参・マイナポータル電子申請の3択が明記されており、本文だけで窓口オンライン可否が判定できた。\n「申請の際の注意事項」の見出し配下に起算点つきの期限が本文中に明記されていた。公務員退職時の別の起算点も同じ節に併記されている。\n支給対象者・申請方法・必要書類・支給額・所得制限などは詳細に記載されているが、申請そのものにかかる手数料についての言及は本文・リンク一覧のどこにも見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
       "lg_code": "131032"
-    },
-    {
-      "id": "nakano",
-      "name": "中野区",
-      "total": 80,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 20
-      },
-      "hops": 2,
-      "page_url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
-      "followed": [
-        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
-        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/tetsuduki.html"
-      ],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        }
-      ],
-      "notes": "トップの目的別ページ（index.html）自体には手続きの詳細が無く、1階層先の「児童手当」ページに必要書類・期限・オンライン可否がまとまって記載されていた。手数料については両ページとも一切言及がなかった。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131148"
     },
     {
       "id": "nerima",
@@ -637,7 +615,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "手続きの全体像（対象者・手当額・支給月・申請方法・必要書類・現況届）は本文に網羅的に記載されているが、手数料についての言及は本文中に一切見当たらない（児童手当は無料が一般的だが、そのことすら明記されていない）。",
+      "notes": "必要書類は「必要書類の一覧」という項番・必要書類・備考の3列表で提示されており、該当者のみ必要な書類（健康保険情報、委任状等）は備考欄に条件が明記されている。各書類のPDF/Excel様式は別途ダウンロードリンクとして本文末尾にまとめられている。\n「申請方法」の節に電子申請・郵送・窓口の3択が明記されており、マイナンバーカードがあればぴったりサービスでオンライン完結できることが本文に直接書かれている。\n本文の「ご注意」節に、原則（申請日の翌月分から支給）と例外（起算点つきの15日特例）の両方が明記されている。\n申請方法・必要書類・手当額・窓口一覧など手続きの詳細は充実しているが、手数料や無料である旨についての記載はページ内にも関連リンク一覧にも見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -698,7 +676,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "本文はかなり詳細で「4 申請方法」節に窓口・郵送・電子申請の別と必要書類、「3 支給時期等」に期限に相当する15日ルールが明記されている。ただし手数料についてはこのページにもリンク先のFAQページにも一切言及がなく、児童手当申請が有料か無料かは読み取れない。",
+      "notes": "「4 申請方法」内の小見出し「申請時に用意するもの」に(1)(2)がまとまっているが、委任状の要否は同じ節内でも別の段落（代理人申請の説明）に離れて書かれている。\nページタイトル自体に「電子申請・郵送申請が可能です」と明記され、4 申請方法の節に窓口・郵送・電子申請の3経路が並記されている。\n申請期限は独立した見出しを持たず、「最新情報」欄と「3 支給時期等」の本文に分散して記載されている。\n本文・よくある質問ともに手数料に関する記載が見当たらず、申請方法や必要書類の説明はあるが費用負担の有無には触れていない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -757,7 +735,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "手続き情報がアコーディオン形式の長い1ページに集約されており、必要書類・申請方法・期限は本文に明記されている一方、手数料への言及はページ内のどこにも見当たらない（児童手当は制度上無料と推測できるが、ページに記載がないためfound: falseとした）。",
+      "notes": "「用意するもの」の表が同居/別居の2パターンで分かれており、別居の場合は別居監護申立書が追加で必要になる旨が明記されている。\n「申請方法」節に窓口・郵送・オンライン申請の3経路が明記され、ページ末尾の手続き方法一覧表でも「窓口:利用可能」「郵送:利用可能」「スマート申請:利用可能」と重複して確認できる。\n「申請方法」の見出し直下に起算点つきの期限が明記されている。「支給開始」の節にも同内容の重複記載あり。\n申請方法・必要書類・届出一覧まで詳細に書かれているが、手数料についての言及はページ内に一切なく、リンク一覧にも手数料に関係しそうなものはない（すべて申請書PDFやオンライン申請フォームへのリンク）。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -816,13 +794,74 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "冒頭に多言語切替メニューと全区メニューが大量に続き、本文（児童手当の説明）に到達するまでが長い。本文自体は1〜13の見出しで整理され、必要書類・申請方法・期限は明記されているが、手数料（無料である旨を含む）についての記載はページ中に見当たらなかった。",
+      "notes": "「9．申請に必要なもの」に本文として4項目（口座・健康保険情報・本人確認書類・その他/委任状）が明記されており、リンク先を追う必要はなかった。\n「8．申請方法」の項に窓口・郵送・電子申請の3経路が明記されており、電子申請はマイナンバーカード＋電子署名が条件のオンライン完結手段として書かれている。\n本文の見出し「7．申請は、出生や転入から15日以内に（15日特例）」に起算点つきの期限が明記されており、リンク先を辿る必要はなかった。\n支給対象・手当額・申請方法・必要書類・各種届出まで詳細だが、申請自体の手数料（有料/無料）についての言及は本文・目次・関連リンクのいずれにも見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
       "lg_code": "131091"
+    },
+    {
+      "id": "shinjuku",
+      "name": "新宿区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
+      "followed": [
+        "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "「児童手当の請求方法」内の【用意するもの】に基本書類、その下の「お子さんが別居」「配偶者と別居」「ひとり親の方」の各見出しに該当者だけの追加書類がまとまっている。\n起点ページには窓口案内が無く、リンク先「児童手当」ページの『児童手当の請求方法』節に窓口・郵送・マイナポータルの3経路が明記されていた。\n一覧ページ（index04_11.html）自体には期限の記載は無く、リンク先の詳細ページ（file03_04_00004.html）に「児童手当の請求について」の節としてまとまっていた。\n支給対象・手当額・請求方法・必要書類・用紙ダウンロードまでは詳細に書かれているが、申請にかかる手数料についての言及はページ内のどこにも見当たらなかった。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131041"
     },
     {
       "id": "suginami",
@@ -875,7 +914,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "このページは本文のみで必要書類・窓口・電子申請・期限（支給開始条件）まで具体的に記載されており読みやすい。ただし申請にかかる手数料についてはページ内のどこにも言及がなく、無料と明記もされていない。",
+      "notes": "「申請（認定請求）方法と必要書類」の「申請に必要なもの」に、初回請求の必要書類と該当者のみの追加書類が箇条書きで列挙されている。委任状の要否は別見出し「委任状について」に記載。\n受付窓口・郵送・電子申請（LoGoフォーム）の3手段が本文の「申請（認定請求）方法と必要書類」節に明記されており、リンク先を追う必要はなかった。\n支給開始月についての注意書きに起算点つきの期限が明記されている。手当額改定等の期限は別項目にあり、この設問（申請の期限）には該当しない。\n手当額・必要書類・委任状など申請手続きの詳細は詳しく書かれているが、申請自体の手数料に関する記載も、それに関連しそうなリンクも見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -896,7 +935,9 @@
       },
       "hops": 3,
       "page_url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html",
-      "followed": [],
+      "followed": [
+        "https://www.city.edogawa.tokyo.jp/qa/kosodate/kosodate/teate/index.html"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -939,13 +980,79 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "手当の制度説明・申請方法・必要書類は本文に詳細に記載されているが、「手数料」という語自体がページ内に一切登場しない。期限は『通常は明確な期限なし（ただし遅れると遡及支給なし）』と『出生・転入時の15日特例』という2種類の異なる規定が併存しており、単純な一つの答えにはならない構成。",
+      "notes": "「4.必要書類」の節に本文として明記されており、様式PDFへのリンクも併記されている。場合により必要な書類（別居時の同意書、兄姉等がいる場合の確認書）も同節内に条件付きで列挙されている。\n「3.申請方法」に電子・郵送・窓口の3方式が明記され、電子はマイナポータル経由。ただし電子申請でも「別途、郵送での手続きが必要な場合があります」との注記があり、完全なオンライン完結とは言い切れない。\n厳密な『申請期限』の定めではなく、申請が遅れても遡及支給されないという運用と、月またぎ時の15日特例が起算点付きで明記されている。\n本文・よくある質問ページのいずれにも「手数料」「無料」の記載は無い。申請書類・支給額・振込方法は詳細に書かれているが、申請自体の費用については触れられていない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
       "lg_code": "131237"
+    },
+    {
+      "id": "kita",
+      "name": "北区",
+      "total": 70,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 10
+      },
+      "hops": 2,
+      "page_url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html",
+      "followed": [
+        "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 10,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "トップページには必要書類の記載はなく、「児童手当制度のご案内（令和6年10月分以降）」というリンク先ページに、初回申請・2人目以降・該当者のみ必要な書類が条件別に分けて詳細に列挙されていた。\n「児童手当」トップページには申請方法の記載がなく、リンク先の「児童手当制度のご案内」に窓口・郵送・電子申請(マイナポータル)の3手段が明記されていた。ただし電子申請の対象は主に初回申請向けの様式で、様式によっては電子申請の記載がないものもある。\n一覧ページ本体には期限の記載はなく、リンク先の「児童手当制度のご案内」ページの『注意事項』に15日特例の起算点付き期限が明記されていた。\n本文は児童手当の対象・所得・手当額・申請方法・必要書類・注意事項まで詳細に記載しているが、申請の手数料についての言及は本文・リンク先ページのいずれにも見当たらなかった。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131172"
     },
     {
       "id": "adachi",
@@ -1006,7 +1113,7 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "トップページ（index.html）自体には手続きの詳細は無く、各見出しリンクに情報が分散している。必要書類・窓口・期限は「児童手当のご案内」ページに集約されているが、手数料についてはこの2つのリンク先ページのどこにも記載が見当たらない。",
+      "notes": "トップページには一覧のみで詳細なし。「児童手当のご案内」ページの「申請に必要なもの」の表に、新規申請・増額申請ごとの必要書類と、該当者のみ必要な書類（別居監護申立書、監護相当・生計費の負担についての確認書）、マイナンバー連携で原則不要になった書類がまとまっている。\n案内ページ（teate-jidoteate.html）は申請書PDFのダウンロードと窓口一覧・郵送先住所を詳しく示すが、オンライン申請システムへの言及は一切ない。窓口混雑緩和のため郵送を推奨する構成になっている。\nindex.htmlは更新情報の一覧のみで本文に期限の記載はなかった。リンク先「児童手当のご案内」に15日特例という起算点つきの申請期限があった（他に所得上限撤廃の経過措置に関する令和7年3月31日という別種の期限もあったが、これは制度改正の特例申請に限定されたもの）。\n「児童手当のご案内」と「こんなときは手続きをしてください」の両ページとも、必要書類・提出先・支給額の説明はあるが、申請手数料についての記述自体が存在しない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -1077,7 +1184,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "トップの「こどもの手当・助成など」一覧ページ自体には本文情報がなく、リンク一覧のみだった。実際の内容は1階層下の「児童手当」ページにあったが、そこも令和6年度制度改正に伴う特定ケース（所得制限撤廃前の未受給者、大学生年代の子がいる世帯など）の説明が中心で、通常の新規申請（出生・転入時など）に必要な持ち物一覧や標準的な届出期限、手数料の有無を一箇所にまとめた記載は見当たらなかった。",
+      "notes": "「児童手当の請求手続き」の郵送申請では「児童手当認定請求書」の様式ダウンロード・記入・郵送のみが案内されており、健康保険証の写しや口座情報、本人確認書類等の持ち物一覧は本文中に見当たらない。(3)該当者向けの「監護相当・生計費の負担についての確認書」の提出は案内されているが、これは別届出の様式であり一般的な必要書類リストではない。\n初回ページ（一覧）には手当ごとのリンクのみで内容なし。児童手当個別ページに申請方法（郵送／電子申請）の詳細があり、電子申請はマイナンバーカード保有者向けの外部リンク遷移で完結できる旨が明記されている。\n「所得が超過した方の再申請について」では住民税決定通知を受け取った日の翌日から15日以内という起算点付きの期限があるが、これは所得超過による再申請に限った規定。令和6年9月の制度改正に伴う経過措置的な「最終申請期限（令和7年3月31日）」も特定の対象者向けで既に終了している。出生・転入等による通常の新規申請に共通する起算点付きの期限は本文に明記されていない。\n「児童手当」ページには支給要件・支給金額・申請方法・様式などが詳しく書かれているが、申請にかかる手数料についての記載は本文中に見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -1088,9 +1195,9 @@
     {
       "id": "chiyoda",
       "name": "千代田区",
-      "total": 0,
+      "total": 20,
       "breakdown": {
-        "必要書類": 0,
+        "必要書類": 20,
         "窓口/オンライン可否": 0,
         "期限": 0,
         "手数料": 0,
@@ -1098,14 +1205,17 @@
       },
       "hops": 3,
       "page_url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
-      "followed": [],
+      "followed": [
+        "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+        "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html"
+      ],
       "fields": [
         {
           "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
+          "verdict": "読めた",
+          "points": 20,
           "agent_value": "",
-          "quote_withheld": false
+          "quote_withheld": true
         },
         {
           "field": "窓口/オンライン可否",
@@ -1131,10 +1241,82 @@
       ],
       "improvements": [
         {
-          "field": "必要書類",
+          "field": "窓口/オンライン可否",
           "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
         },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "「児童手当に関する各種届出ほか」ページは変更届の一覧のみで新規申請の持ち物は載っておらず、別ページ「児童手当の新規申請に必要なもの」にのみ記載があった。\n「各種届出」ページは既に認定済みの世帯向けの変更届が中心で、新規申請の受付方法には触れていない。リンク先の「新規申請に必要なもの」ページも必要書類（マイナンバーカード・認定請求書PDF・口座情報等）を列挙するのみで、窓口へ持参するのか郵送・オンライン提出が可能なのかという提出方法自体は明記されていない。唯一のオンライン言及は「不足書類の提出」が区ポータルサイトから可能という限定的なもので、新規申請そのものの完結可否ではない。\n本文および追跡先の新規申請ページには「事由発生日等から15日以内」という期限が事由（出生・転出・離婚等）ごとに複数記載されているが、新規申請一般に対する単一の起算点付き期限は明記されていない。「期限までに申請書のみご提出いただき」という文言はあるが、その期限自体の定義（何日以内・起算点）は示されていない。\n「児童手当に関する各種届出ほか」と「児童手当の新規申請に必要なもの」のどちらのページにも、手数料・費用に関する記載は無かった（必要書類・添付書類・問い合わせ先の案内のみ）。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131016"
+    },
+    {
+      "id": "nakano",
+      "name": "中野区",
+      "total": 20,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 3,
+      "page_url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+      "followed": [
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
         {
           "field": "窓口/オンライン可否",
           "gain": 20,
@@ -1156,13 +1338,90 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "このページ「児童手当に関する各種届出ほか」は、既に受給中の人が転出・出生・離婚などの事由変化を届け出るためのページで、初めての（新規）申請そのものを解説するページではない。ページ末尾のサイト内ナビに「児童手当の新規申請に必要なもの」という関連ページ名は出ているが、リンクURLが本文中の抽出リンク一覧（最大40件）には含まれておらず、辿れなかった。",
+      "notes": "「子どもの手当・給付金」ページは複数手当（児童手当・児童育成手当・児童扶養手当等）をまとめて案内しており、持ち物の記載も「各手当の手続き」という括りで共通化されている。児童手当申請専用の持ち物一覧（例：預金通帳、健康保険証等）は本文になく、案内チラシ（PDF）に委ねられている可能性がある。\n本文・リンク先2ページとも、児童手当の各種手続き（申請・現況届・転出時の届出等）は列挙されているが、申請そのものが窓口のみかオンラインで完結できるかを明言する記述は見当たらなかった。「窓口に来庁されなくてもできる手続き（子ども総合窓口）」という項目名は存在するが、児童手当がその対象に含まれるかはこの本文からは判断できない。\n遷移先の「子どもの手当・給付金」ページには転出時の15日以内申請の期限は書かれているが、新規申請（出生・転入等）の期限や起算点についての記載は見当たらなかった。\n本文・リンク先の「子どもの手当・給付金」ページとも申請要件や現況届の説明はあるが、手数料に関する記述は見当たらなかった。",
       "page_status": {
-        "code": "target_unconfirmed",
-        "label": "この手続きのページにたどり着けたか、確かめられていません",
-        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
-      "lg_code": "131016"
+      "lg_code": "131148"
+    },
+    {
+      "id": "sumida",
+      "name": "墨田区",
+      "total": 20,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 0
+      },
+      "hops": 3,
+      "page_url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kteate/index.html",
+      "followed": [
+        "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
+        "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        },
+        {
+          "field": "オンライン明示",
+          "gain": 20,
+          "reason": "オンラインで完結できるか否かを、はっきり書く"
+        }
+      ],
+      "notes": "「受けられる手当・医療費助成について」ページには「児童手当」への言及はあるがリンクや持ち物の記載はなく、さらに1階層先の「児童手当」個別ページへは到達できなかった。\nトップページと1階層目の「手当・助成・支援」一覧には申請方法の記載は無く、「受けられる手当・医療費助成について」ページの『手続き方法等について』欄に電子申請・郵送申請へのリンク一覧があった。具体的な申請フロー（完全オンライン完結か一部書類郵送が必要か）はさらに先のページに書かれている可能性がある。\n元ページも追跡した2つのリンク先ページも「受けられる手当・医療費助成について」の項目一覧のみで、児童手当の申請期限（起算点つき）についての本文記載は見当たらなかった。\n本文・リンク先ページとも手続き一覧や制度紹介はあるが、手数料・費用に関する記述は見当たらなかった。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131075"
     },
     {
       "id": "katsushika",
@@ -1178,7 +1437,7 @@
       "hops": 1,
       "page_url": "https://www.city.katsushika.lg.jp/kosodate/index.html",
       "followed": [
-        "https://www.city.katsushika.lg.jp/kosodate/1000056/index.html"
+        "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html"
       ],
       "fields": [
         {
@@ -1237,92 +1496,13 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "トップページも1階層リンク先（子育て）も、カテゴリ一覧の見出しのみで手続きの詳細記述がない。「各種手当・医療費助成」という項目名の中に児童手当を含む説明文があるが、そのリンクURLが本文中に提示されておらず、これ以上辿れない。",
+      "notes": "トップページの「各種手当・医療費助成」の児童手当欄は制度の一覧・案内文のみで、申請に必要な持ち物・書類の記載は無かった。\n「各種手当・医療費助成」ページには児童手当の各種届出のリンクが並ぶが、オンライン申請の記載は「児童手当申請事項変更届について（オンライン申請）」という変更届にのみ限られ、新規の認定請求（申請）自体の窓口・オンライン可否については本文に記載がなかった。\n「各種手当・医療費助成」ページには児童手当への内部リンクがあるのみで、申請期限・起算点についての記述はこのページ本文には見当たらなかった。\nトップページ・リンク先の「各種手当・医療費助成」ページのいずれにも手数料についての記載はなく、児童手当は制度概要と関連リンクの案内のみだった。",
       "page_status": {
         "code": "target_unconfirmed",
         "label": "この手続きのページにたどり着けたか、確かめられていません",
         "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
       },
       "lg_code": "131229"
-    },
-    {
-      "id": "kita",
-      "name": "北区",
-      "total": 0,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 2,
-      "page_url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "gain": 20,
-          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "このページは本文情報を持たず、5件のサブページへのリンク一覧（見出しのみ）だけで構成されている。ただし抽出されたリンク一覧には言語選択・ナビゲーションのURLしか含まれず、肝心のサブページ（制度案内・提出書類・定時の届出・変更手続）へのURLが取得できていないため、follow_urlsを指定できなかった。",
-      "page_status": {
-        "code": "target_unconfirmed",
-        "label": "この手続きのページにたどり着けたか、確かめられていません",
-        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
-      },
-      "lg_code": "131172"
     },
     {
       "id": "meguro",
@@ -1397,7 +1577,7 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "起点ページ・リンク先ページとも「子育てに関する手当・助成」「子どものための諸手当」という一覧（索引）ページで、どちらも本文に手続きの詳細は書かれていない。リンク先ページには「児童手当」という項目名がリンクとして存在するが、そのリンク先URLは本文中に示されておらず、さらに1階層先へ辿らないと4項目には到達できない。",
+      "notes": "トップページ・リンク先の「子どものための諸手当」ページともに、個別の手当（児童手当）へのリンク一覧のみで、申請に必要な持ち物・書類の記載は無かった。実際の書類要件は「児童手当」個別ページ（未取得）にあると見られる。\n「子どものための諸手当」ページは手当の種類一覧（児童手当・児童扶養手当等）へのリンク集のみで、各手当の申請方法（窓口／オンライン可否）はこのページ・リンク先本文のいずれにも記載されていない。\n両ページとも「児童手当」への入口リンクのみで、申請期限や起算点についての記述は本文中に見当たらなかった。\n「子育てに関する手当・助成」および「子どものための諸手当」の両ページとも、児童手当の制度説明・関連手当一覧はあるが、申請手数料に関する記載は見当たらなかった。",
       "page_status": {
         "code": "target_unconfirmed",
         "label": "この手続きのページにたどり着けたか、確かめられていません",
@@ -1418,7 +1598,10 @@
       },
       "hops": 3,
       "page_url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
-      "followed": [],
+      "followed": [
+        "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
+        "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -1476,171 +1659,13 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "このページは「子育て・教育に関する手当」の分類ページで、本文は見出しリンクの一覧（児童育成手当の現況届、物価高対応子育て応援手当、障害のある子どもの養育手当、児童関連手当一覧、児童手当現況届のご案内）のみ。児童手当の新規申請そのものの説明本文が無く、必要書類・窓口・期限・手数料のいずれも記載がない。関連しそうなリンク先（児童関連手当一覧など）のURLは、抽出されたリンク一覧にナビゲーション項目しか含まれておらずhrefが確認できないため follow_urls に入れられなかった。",
+      "notes": "リンク先「児童関連手当一覧」には児童扶養手当・児童育成手当等の必要書類は詳しく書かれているが、児童手当自体は「児童手当についてはこちらのページをご覧ください」と外部ページへの案内のみで、そのページ自体は本文に含まれていなかった。\n指定ページは「子育て・教育に関する手当」カテゴリの一覧で、児童手当自体の説明は無い。リンク先の児童関連手当一覧（1308）には育成手当・児童扶養手当等の詳細はあるが、児童手当は「こちらのページをご覧ください」と別ページへ誘導するのみで窓口/オンラインの記載は無かった。\n元ページは手当一覧のリンク集のみで本文に期限の記載がない。追跡した「児童関連手当一覧」ページには児童手当について『こちらのページをご覧ください』とあるだけで遷移先URLが本文中に見えず、児童手当固有の申請期限（起算点）はどちらのページにも記載がなかった。\n元ページは手当一覧のリンク集のみで、児童手当自体の説明は無い。リンク先の「児童関連手当一覧」も児童扶養手当・児童育成手当等の詳細で、児童手当については別ページへの誘導のみがあり、手数料の記載はどちらにも無かった。",
       "page_status": {
         "code": "target_unconfirmed",
         "label": "この手続きのページにたどり着けたか、確かめられていません",
         "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
       },
       "lg_code": "131121"
-    },
-    {
-      "id": "shinjuku",
-      "name": "新宿区",
-      "total": 0,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 3,
-      "page_url": "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "gain": 20,
-          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "本文として取得できたのはグローバルナビ・フッターのみで、児童手当の制度説明（必要書類・窓口・期限・手数料）にあたる本体コンテンツが本文中に存在しない。「児童手当・子ども医療関係届出用紙ダウンロード」という関連ページ名は見えるがリンク一覧にURLが含まれておらず、追跡できなかった。",
-      "page_status": {
-        "code": "target_unconfirmed",
-        "label": "この手続きのページにたどり着けたか、確かめられていません",
-        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
-      },
-      "lg_code": "131041"
-    },
-    {
-      "id": "sumida",
-      "name": "墨田区",
-      "total": 0,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 3,
-      "page_url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kteate/index.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "gain": 20,
-          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "本文のほとんどがナビゲーションメニューで、実際のページ内容は「物価高対応子育て応援手当」という別の手当についてのもの（パンくずも同じ表題）。指定URL（児童手当）に対応する本文自体が取得できておらず、児童手当の申請に関する記載は一切ない。",
-      "page_status": {
-        "code": "target_unconfirmed",
-        "label": "この手続きのページにたどり着けたか、確かめられていません",
-        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
-      },
-      "lg_code": "131075"
     },
     {
       "id": "taito",
@@ -1713,7 +1738,7 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "このページは石浜橋場こども園の預かり保育（拡充）に関する案内で、児童手当の申請とは無関係の内容。ページ内・リンク先のいずれにも児童手当への言及は見当たらない。",
+      "notes": "このページは「石浜橋場こども園の預かり保育事業拡充」についての案内で、児童手当の申請とは無関係。本文にもリンク一覧にも児童手当に関する記載は見当たらない。\nこのページは石浜橋場こども園の預かり保育事業拡充に関する内容で、児童手当には一切触れていない。リンク一覧にも「子育て・教育」等の汎用ナビ以外に児童手当関連の項目はなかった。\nこのページは石浜橋場こども園の預かり保育事業拡充の案内で、児童手当の申請には一切触れていない。リンク一覧も全ページ共通のサイトナビゲーション（子育て・教育、暮らし・手続き等の大分類）のみで、児童手当申請に特化した誘導リンクは無い。\nこのページは「石浜橋場こども園」の預かり保育事業拡充に関する案内で、児童手当の申請とは無関係。本文にもリンク一覧にも児童手当に関する記載は見当たらない。",
       "page_status": {
         "code": "target_unconfirmed",
         "label": "この手続きのページにたどり着けたか、確かめられていません",
@@ -1794,7 +1819,7 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "元ページは「こども家庭センター・地域子育て相談機関」の相談窓口案内で、児童手当の申請手続きそのものは扱っていない。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」への入口を示すだけのカテゴリページで、URLが本文に示されておらずこれ以上たどれない。",
+      "notes": "「手当・助成」ページは子育て手当関連の下位ページへのリンク一覧のみで、児童手当の申請に必要な持ち物・書類についての本文記載は無かった。\n「手当・助成」ページは「子どもの手当・医療費助成」等のカテゴリ一覧のみで、児童手当の申請方法（窓口かオンラインか）についての記述は本文・リンク先本文のいずれにも見当たらなかった。\n元ページはこども家庭センターの相談窓口案内で申請期限の記載なし。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」という項目名の列挙のみで、期限や起算点の本文は無かった（さらに1階層下のページが必要）。\n手当・助成の一覧ページには児童手当の項目名すら明記されておらず、「子どもの手当・医療費助成」というリンクの先を辿らないと手数料の記述には到達できない構成。",
       "page_status": {
         "code": "target_unconfirmed",
         "label": "この手続きのページにたどり着けたか、確かめられていません",

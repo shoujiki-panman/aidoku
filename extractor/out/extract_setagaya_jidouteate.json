@@ -43,24 +43,22 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-30T17:41:23+00:00",
+    "run_at": "2026-08-31T16:37:30+00:00",
     "discovery_run_at": "2026-08-28T13:16:52+00:00"
   },
   "followed_urls": [
-    "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
-    "https://www.city.setagaya.lg.jp/02413/1310.html",
-    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
+    "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
   ],
   "online_clarity": "記載なし",
   "online_clarity_evidence": "",
   "online_clarity_pages": [
     "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
-    "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
-    "https://www.city.setagaya.lg.jp/02413/1310.html",
-    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+    "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
+    "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
   ],
   "test_cases": [
     {
@@ -94,9 +92,10 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
+            "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
             "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
           ],
-          "page_notes": "このページ（category/13020.html）は「子育て・教育に関する手当」の一覧・入口ページで、児童手当の申請手続き自体の本文や必要書類の記載はない。関連リンクの中では「児童関連手当一覧」が児童手当の詳細ページへの導線として最も可能性が高い。"
+          "page_notes": "このページはカテゴリ一覧（現況届・物価高対応手当などの案内記事一覧）で、児童手当の申請そのものの手続き詳細や必要書類の記載はない。「手当・助成」カテゴリや「児童関連手当一覧」に申請ページがある可能性が高い。"
         },
         {
           "stage": "follow",
@@ -115,13 +114,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "リンク先の「児童関連手当一覧」ページは児童扶養手当・育成手当・障害手当・特別児童扶養手当の詳細は載せているが、児童手当については「児童手当についてはこちらのページをご覧ください」という別リンクの案内のみで、申請の持ち物は記載されていない。"
+          "page_notes": "リンク先「児童関連手当一覧」には児童扶養手当・児童育成手当等の必要書類は詳しく書かれているが、児童手当自体は「児童手当についてはこちらのページをご覧ください」と外部ページへの案内のみで、そのページ自体は本文に含まれていなかった。"
         }
       ],
       "followed_urls": [
+        "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
         "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
       ],
-      "page_notes": "リンク先の「児童関連手当一覧」ページは児童扶養手当・育成手当・障害手当・特別児童扶養手当の詳細は載せているが、児童手当については「児童手当についてはこちらのページをご覧ください」という別リンクの案内のみで、申請の持ち物は記載されていない。",
+      "page_notes": "リンク先「児童関連手当一覧」には児童扶養手当・児童育成手当等の必要書類は詳しく書かれているが、児童手当自体は「児童手当についてはこちらのページをご覧ください」と外部ページへの案内のみで、そのページ自体は本文に含まれていなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -164,9 +164,9 @@
           },
           "requested_urls": [
             "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
-            "https://www.city.setagaya.lg.jp/02413/1310.html"
+            "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
           ],
-          "page_notes": "このページは「子育て・教育に関する手当」の分類インデックスで、児童育成手当の現況届オンライン手続きや物価高対応手当（受付終了）など個別ページへのリンク一覧のみ。児童手当の新規申請そのものの手続き内容（窓口かオンラインか）は本文になく、児童関連手当一覧または児童手当現況届ページに遷移する必要がある。"
+          "page_notes": "このページは「子育て・教育に関する手当」のカテゴリ一覧で、児童手当の申請手続き自体の本文は無く、現況届や関連手当のページへのリンクのみが並んでいる。"
         },
         {
           "stage": "follow",
@@ -185,14 +185,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "カテゴリページ本体には手当一覧へのリンクのみで申請方法の記載はなし。追跡した「児童関連手当一覧」は制度概要と問い合わせ先の案内にとどまり、児童手当自体の詳細は別ページへの誘導のみ。もう1つの「児童手当現況届のご案内」は現況届（更新手続き）専用ページで、新規申請ではなくマイナポータル電子申請の記載も現況届に限定されており、児童手当の新規申請についての窓口・オンライン可否は確認できなかった。"
+          "page_notes": "指定ページは「子育て・教育に関する手当」カテゴリの一覧で、児童手当自体の説明は無い。リンク先の児童関連手当一覧（1308）には育成手当・児童扶養手当等の詳細はあるが、児童手当は「こちらのページをご覧ください」と別ページへ誘導するのみで窓口/オンラインの記載は無かった。"
         }
       ],
       "followed_urls": [
         "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
-        "https://www.city.setagaya.lg.jp/02413/1310.html"
+        "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
       ],
-      "page_notes": "カテゴリページ本体には手当一覧へのリンクのみで申請方法の記載はなし。追跡した「児童関連手当一覧」は制度概要と問い合わせ先の案内にとどまり、児童手当自体の詳細は別ページへの誘導のみ。もう1つの「児童手当現況届のご案内」は現況届（更新手続き）専用ページで、新規申請ではなくマイナポータル電子申請の記載も現況届に限定されており、児童手当の新規申請についての窓口・オンライン可否は確認できなかった。",
+      "page_notes": "指定ページは「子育て・教育に関する手当」カテゴリの一覧で、児童手当自体の説明は無い。リンク先の児童関連手当一覧（1308）には育成手当・児童扶養手当等の詳細はあるが、児童手当は「こちらのページをご覧ください」と別ページへ誘導するのみで窓口/オンラインの記載は無かった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -237,7 +237,7 @@
             "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
             "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
           ],
-          "page_notes": "このページは「子育て・教育に関する手当」の一覧・入口ページで、児童手当の申請期限そのものは本文に記載がなく、現況届や関連手当一覧など下位ページへの導線のみがある。"
+          "page_notes": "このページ(ID 13020)は「子育て・教育に関する手当」の一覧・案内ページで、現況届や物価高対応手当など個別施策へのリンクが並ぶのみ。児童手当の申請要件・期限そのものの本文記載は無く、児童手当専用ページへは直接リンクされていない。"
         },
         {
           "stage": "follow",
@@ -256,14 +256,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "トップページには『児童手当』専用ページへの直接リンクがなく、『児童関連手当一覧』ページでも「児童手当についてはこちらのページをご覧ください」と別ページへ誘導するのみで、申請期限は本文中に記載されていなかった。"
+          "page_notes": "元ページは手当一覧のリンク集のみで本文に期限の記載がない。追跡した「児童関連手当一覧」ページには児童手当について『こちらのページをご覧ください』とあるだけで遷移先URLが本文中に見えず、児童手当固有の申請期限（起算点）はどちらのページにも記載がなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
         "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
       ],
-      "page_notes": "トップページには『児童手当』専用ページへの直接リンクがなく、『児童関連手当一覧』ページでも「児童手当についてはこちらのページをご覧ください」と別ページへ誘導するのみで、申請期限は本文中に記載されていなかった。",
+      "page_notes": "元ページは手当一覧のリンク集のみで本文に期限の記載がない。追跡した「児童関連手当一覧」ページには児童手当について『こちらのページをご覧ください』とあるだけで遷移先URLが本文中に見えず、児童手当固有の申請期限（起算点）はどちらのページにも記載がなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -305,10 +305,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
-            "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+            "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
           ],
-          "page_notes": "このページは「子育て・教育に関する手当」の分類一覧（ページID 13020）で、児童手当そのものの申請案内や手数料の記載はなく、現況届・物価高応援手当・養育手当などへのリンクが並ぶハブページだった。"
+          "page_notes": "このページは手当・助成カテゴリの一覧トップで、児童手当の申請手続き自体の本文や手数料の記載はなく、関連ページへのリンク集になっている。"
         },
         {
           "stage": "follow",
@@ -327,14 +326,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "起点ページは各種手当への入口一覧で、児童手当自体の説明ページへは別リンクに委譲されている。追跡した「児童関連手当一覧」ページは児童扶養手当・児童育成手当など他手当の手数料には触れず、児童手当については『こちらのページをご覧ください』とリンクのみで、手数料の記載は無かった。"
+          "page_notes": "元ページは手当一覧のリンク集のみで、児童手当自体の説明は無い。リンク先の「児童関連手当一覧」も児童扶養手当・児童育成手当等の詳細で、児童手当については別ページへの誘導のみがあり、手数料の記載はどちらにも無かった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
-        "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+        "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
       ],
-      "page_notes": "起点ページは各種手当への入口一覧で、児童手当自体の説明ページへは別リンクに委譲されている。追跡した「児童関連手当一覧」ページは児童扶養手当・児童育成手当など他手当の手数料には触れず、児童手当については『こちらのページをご覧ください』とリンクのみで、手数料の記載は無かった。",
+      "page_notes": "元ページは手当一覧のリンク集のみで、児童手当自体の説明は無い。リンク先の「児童関連手当一覧」も児童扶養手当・児童育成手当等の詳細で、児童手当については別ページへの誘導のみがあり、手数料の記載はどちらにも無かった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -400,14 +398,13 @@
       }
     }
   },
-  "page_notes": "リンク先の「児童関連手当一覧」ページは児童扶養手当・育成手当・障害手当・特別児童扶養手当の詳細は載せているが、児童手当については「児童手当についてはこちらのページをご覧ください」という別リンクの案内のみで、申請の持ち物は記載されていない。\nカテゴリページ本体には手当一覧へのリンクのみで申請方法の記載はなし。追跡した「児童関連手当一覧」は制度概要と問い合わせ先の案内にとどまり、児童手当自体の詳細は別ページへの誘導のみ。もう1つの「児童手当現況届のご案内」は現況届（更新手続き）専用ページで、新規申請ではなくマイナポータル電子申請の記載も現況届に限定されており、児童手当の新規申請についての窓口・オンライン可否は確認できなかった。\nトップページには『児童手当』専用ページへの直接リンクがなく、『児童関連手当一覧』ページでも「児童手当についてはこちらのページをご覧ください」と別ページへ誘導するのみで、申請期限は本文中に記載されていなかった。\n起点ページは各種手当への入口一覧で、児童手当自体の説明ページへは別リンクに委譲されている。追跡した「児童関連手当一覧」ページは児童扶養手当・児童育成手当など他手当の手数料には触れず、児童手当については『こちらのページをご覧ください』とリンクのみで、手数料の記載は無かった。",
+  "page_notes": "リンク先「児童関連手当一覧」には児童扶養手当・児童育成手当等の必要書類は詳しく書かれているが、児童手当自体は「児童手当についてはこちらのページをご覧ください」と外部ページへの案内のみで、そのページ自体は本文に含まれていなかった。\n指定ページは「子育て・教育に関する手当」カテゴリの一覧で、児童手当自体の説明は無い。リンク先の児童関連手当一覧（1308）には育成手当・児童扶養手当等の詳細はあるが、児童手当は「こちらのページをご覧ください」と別ページへ誘導するのみで窓口/オンラインの記載は無かった。\n元ページは手当一覧のリンク集のみで本文に期限の記載がない。追跡した「児童関連手当一覧」ページには児童手当について『こちらのページをご覧ください』とあるだけで遷移先URLが本文中に見えず、児童手当固有の申請期限（起算点）はどちらのページにも記載がなかった。\n元ページは手当一覧のリンク集のみで、児童手当自体の説明は無い。リンク先の「児童関連手当一覧」も児童扶養手当・児童育成手当等の詳細で、児童手当については別ページへの誘導のみがあり、手数料の記載はどちらにも無かった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
-      "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
-      "https://www.city.setagaya.lg.jp/02413/1310.html",
-      "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+      "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
+      "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

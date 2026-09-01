@@ -1,72 +1,39 @@
-① 測り直しが要る: 67区
-② 測り直す（1区ずつ・落ちても失うのは1区）
-   adachi       tennyu     [足立区] hop3 3/4項目 抽出 / オンライン明示=明記 — https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html
-   arakawa      tennyu     [荒川区] hop1 0/4項目 抽出 / オンライン明示=記載なし (+リンク先3件) — https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html
-   bunkyo       tennyu     [文京区] hop3 3/4項目 抽出 / オンライン明示=明記 (+リンク先3件) — https://www.city.bunkyo.lg.jp/b013/p000261/index.html
-   chiyoda      tennyu     [千代田区] hop2 3/4項目 抽出 / オンライン明示=明記 — https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tennyu.html
-   chuo         tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   edogawa      tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   hachioji     tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   itabashi     tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   katsushika   tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   kita         tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   koto         tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   meguro       tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   minato       tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   nakano       tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   nerima       tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   ota          tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   setagaya     tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   shibuya      tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   shinagawa    tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   shinjuku     tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   suginami     tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   sumida       tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   taito        tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   toshima      tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
-   adachi       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   arakawa      sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   bunkyo       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   chiyoda      sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   chuo         sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   edogawa      sodaigomi  [江戸川区] 抽出対象ページなし（到達失敗）
-   hachioji     sodaigomi  [八王子市] 抽出対象ページなし（到達失敗）
-   itabashi     sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   katsushika   sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   kita         sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   koto         sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   meguro       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   minato       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
+① 測り直しが要る: 60組（自治体×手続き。24自治体×3手続き＝72組が満数）
+② 測り直す（1組ずつ・落ちても失うのは1組）
+   edogawa      tennyu     [江戸川区] hop3 3/4項目 抽出 / オンライン明示=明記 — https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html
+   hachioji     tennyu     [八王子市] hop3 2/4項目 抽出 / オンライン明示=曖昧 (+リンク先4件) — https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html
+   itabashi     tennyu     [板橋区] hop2 3/4項目 抽出 / オンライン明示=明記 — https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html
+   katsushika   tennyu     RuntimeError: Test Case失敗: tennyu/deadline: found=falseではvalue/evidenceを空にする
+   kita         tennyu     [北区] hop2 3/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.kita.lg.jp/living/registration/1001564/1001570.html
+   koto         tennyu     [江東区] hop3 3/4項目 抽出 / オンライン明示=記載なし — https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html
+   meguro       tennyu     [目黒区] hop3 3/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html
+   minato       tennyu     [港区] hop3 4/4項目 抽出 / オンライン明示=明記 — https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html
+   nakano       tennyu     [中野区] hop2 3/4項目 抽出 / オンライン明示=曖昧 (+リンク先1件) — https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html
+   nerima       tennyu     [練馬区] hop2 3/4項目 抽出 / オンライン明示=明記 — https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html
+   ota          tennyu     [大田区] hop3 3/4項目 抽出 / オンライン明示=記載なし (+リンク先2件) — https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html
+   setagaya     tennyu     [世田谷区] hop1 0/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html
+   shibuya      tennyu     [渋谷区] hop2 3/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html
+   shinagawa    tennyu     [品川区] hop3 3/4項目 抽出 / オンライン明示=記載なし (+リンク先1件) — https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html
+   shinjuku     tennyu     [新宿区] hop2 0/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html
+   suginami     tennyu     [杉並区] hop3 3/4項目 抽出 / オンライン明示=明記 (+リンク先3件) — https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tennyuu/index.html
+   sumida       tennyu     [墨田区] hop2 0/4項目 抽出 / オンライン明示=記載なし (+リンク先1件) — https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html
+   taito        tennyu     [台東区] hop3 3/4項目 抽出 / オンライン明示=明記 (+リンク先3件) — https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html
+   toshima      tennyu     [豊島区] hop2 3/4項目 抽出 / オンライン明示=明記 (+リンク先3件) — https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html
+   adachi       sodaigomi  [足立区] hop2 0/4項目 抽出 / オンライン明示=記載なし (+リンク先2件) — https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html
+   arakawa      sodaigomi  [荒川区] hop2 3/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html
+   bunkyo       sodaigomi  [文京区] hop2 1/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html
+   chiyoda      sodaigomi  [千代田区] hop2 2/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html
+   chuo         sodaigomi  [中央区] hop1 0/4項目 抽出 / オンライン明示=記載なし (+リンク先3件) — https://www.city.chuo.lg.jp/kurashi/gomi/index.html
+   itabashi     sodaigomi  [板橋区] hop3 2/4項目 抽出 / オンライン明示=明記 (+リンク先4件) — https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html
+   katsushika   sodaigomi  [葛飾区] hop2 2/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/index.html
+   kita         sodaigomi  [北区] hop2 2/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html
+   koto         sodaigomi  [江東区] hop2 2/4項目 抽出 / オンライン明示=明記 (+リンク先3件) — https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html
+   meguro       sodaigomi  [目黒区] hop3 2/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html
+   minato       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/fee: claude -p failed (rc=1): 
    nakano       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
    nerima       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   ota          sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   setagaya     sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   shibuya      sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   shinagawa    sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   shinjuku     sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   suginami     sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   sumida       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   taito        sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   toshima      sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
-   adachi       jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   arakawa      jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   bunkyo       jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   chiyoda      jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   chuo         jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   edogawa      jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   hachioji     jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   itabashi     jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   katsushika   jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   kita         jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   koto         jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   meguro       jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   minato       jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   nakano       jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   nerima       jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   ota          jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   setagaya     jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   shinagawa    jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
-   shinjuku     jidouteate RuntimeError: Test Case失敗: jidouteate/documents: claude -p failed (rc=1): 
+   ★3連続で失敗した。利用上限の可能性が高いので止める。
+   残りは tools/run_pipeline.sh でそのまま再開できる。
 
 ③ 証拠照合（LLMは呼ばない）
    done
@@ -74,18 +41,275 @@
 ④ 公開データを作る（条件が揃っていなければ export が拒む）
    tennyu     export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
    jidouteate export_dashboard.py: error: 測定条件が揃っていない: non_html_reading, prompt_version
-   sodaigomi  export_dashboard.py: error: 測定条件が揃っていない: non_html_reading, prompt_version
+   sodaigomi  export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
 
 ⑤ いまの状態
 # AI読 いまの状態（データから機械的に出したもの）
 
-## ① 見張り: 動いている（0.7日前）
+## ① 見張り: 動いている（1.6日前）
    68ページ確認 / 変わった 29 / 消えた 0
 
 ## ② 測定条件（揃っていないと公開できない）
-   tennyu     24区  揃っている
-   jidouteate 24区  ★18区ぶん古い
-   sodaigomi  24区  ★1区ぶん古い
+   tennyu     24自治体  ★1自治体ぶん古い（non_html_reading）
+   jidouteate 24自治体  ★19自治体ぶん古い（non_html_reading・prompt_version）
+   sodaigomi  24自治体  ★12自治体ぶん古い（non_html_reading）
+
+## ③ 虱潰し（候補を全部読んだか）
+   tennyu     見つけた 3 / 書いていない 29 / 言えない 1
+   jidouteate 見つけた 4 / 書いていない 24 / 言えない 2
+   sodaigomi  見つけた 9 / 書いていない 26 / 言えない 4
+   計          見つけた16 / 書いていない 79 / 言えない 7（304ページ読了）
+
+## ④ 読めない底: 7本のURLが塞いでいる
+
+## ⑤ 公開データ
+   tennyu     0.8日前 / 条件あり
+   jidouteate 14.0日前 / ★条件の記録なし
+   sodaigomi  14.0日前 / ★条件の記録なし
+
+## 次にやること
+   - 見張りが29件の変化を見つけている。測り直す対象を選ぶ（見張りは自動では測り直さない）
+   - tennyu: 測定条件が1自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - jidouteate: 測定条件が19自治体ぶん揃っていない（non_html_reading・prompt_version）。公開できない。`tools/run_pipeline.sh`
+   - sodaigomi: 測定条件が12自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - 公開データに測定条件の記録が無い: jidouteate, sodaigomi（どのAIが出した数字か追えない）
+① 測り直しが要る: 32組（自治体×手続き。24自治体×3手続き＝72組が満数）
+② 測り直す（1組ずつ・落ちても失うのは1組）
+   katsushika   tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
+   minato       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
+   nakano       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
+   ★3連続で失敗した。利用上限の可能性が高いので止める。
+   残りは tools/run_pipeline.sh でそのまま再開できる。
+
+③ 証拠照合（LLMは呼ばない）
+   done
+
+④ 公開データを作る（条件が揃っていなければ export が拒む）
+   tennyu     export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
+   jidouteate export_dashboard.py: error: 測定条件が揃っていない: non_html_reading, prompt_version
+   sodaigomi  export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
+
+⑤ いまの状態
+# AI読 いまの状態（データから機械的に出したもの）
+
+## ① 見張り: 動いている（1.6日前）
+   68ページ確認 / 変わった 29 / 消えた 0
+
+## ② 測定条件（揃っていないと公開できない）
+   tennyu     24自治体  ★1自治体ぶん古い（non_html_reading）
+   jidouteate 24自治体  ★19自治体ぶん古い（non_html_reading・prompt_version）
+   sodaigomi  24自治体  ★12自治体ぶん古い（non_html_reading）
+
+## ③ 虱潰し（候補を全部読んだか）
+   tennyu     見つけた 3 / 書いていない 29 / 言えない 1
+   jidouteate 見つけた 4 / 書いていない 24 / 言えない 2
+   sodaigomi  見つけた 9 / 書いていない 26 / 言えない 4
+   計          見つけた16 / 書いていない 79 / 言えない 7（304ページ読了）
+
+## ④ 読めない底: 7本のURLが塞いでいる
+
+## ⑤ 公開データ
+   tennyu     0.8日前 / 条件あり
+   jidouteate 14.0日前 / ★条件の記録なし
+   sodaigomi  14.0日前 / ★条件の記録なし
+
+## 次にやること
+   - 見張りが29件の変化を見つけている。測り直す対象を選ぶ（見張りは自動では測り直さない）
+   - tennyu: 測定条件が1自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - jidouteate: 測定条件が19自治体ぶん揃っていない（non_html_reading・prompt_version）。公開できない。`tools/run_pipeline.sh`
+   - sodaigomi: 測定条件が12自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - 公開データに測定条件の記録が無い: jidouteate, sodaigomi（どのAIが出した数字か追えない）
+① 測り直しが要る: 32組（自治体×手続き。24自治体×3手続き＝72組が満数）
+② 測り直す（1組ずつ・落ちても失うのは1組）
+   katsushika   tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
+   minato       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
+   nakano       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
+   ★3連続で失敗した。利用上限の可能性が高いので止める。
+   残りは tools/run_pipeline.sh でそのまま再開できる。
+
+③ 証拠照合（LLMは呼ばない）
+   done
+
+④ 公開データを作る（条件が揃っていなければ export が拒む）
+   tennyu     export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
+   jidouteate export_dashboard.py: error: 測定条件が揃っていない: non_html_reading, prompt_version
+   sodaigomi  export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
+
+⑤ いまの状態
+# AI読 いまの状態（データから機械的に出したもの）
+
+## ① 見張り: 動いている（1.6日前）
+   68ページ確認 / 変わった 29 / 消えた 0
+
+## ② 測定条件（揃っていないと公開できない）
+   tennyu     24自治体  ★1自治体ぶん古い（non_html_reading）
+   jidouteate 24自治体  ★19自治体ぶん古い（non_html_reading・prompt_version）
+   sodaigomi  24自治体  ★12自治体ぶん古い（non_html_reading）
+
+## ③ 虱潰し（候補を全部読んだか）
+   tennyu     見つけた 3 / 書いていない 29 / 言えない 1
+   jidouteate 見つけた 4 / 書いていない 24 / 言えない 2
+   sodaigomi  見つけた 9 / 書いていない 26 / 言えない 4
+   計          見つけた16 / 書いていない 79 / 言えない 7（304ページ読了）
+
+## ④ 読めない底: 7本のURLが塞いでいる
+
+## ⑤ 公開データ
+   tennyu     0.9日前 / 条件あり
+   jidouteate 14.0日前 / ★条件の記録なし
+   sodaigomi  14.0日前 / ★条件の記録なし
+
+## 次にやること
+   - 見張りが29件の変化を見つけている。測り直す対象を選ぶ（見張りは自動では測り直さない）
+   - tennyu: 測定条件が1自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - jidouteate: 測定条件が19自治体ぶん揃っていない（non_html_reading・prompt_version）。公開できない。`tools/run_pipeline.sh`
+   - sodaigomi: 測定条件が12自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - 公開データに測定条件の記録が無い: jidouteate, sodaigomi（どのAIが出した数字か追えない）
+① 測り直しが要る: 32組（自治体×手続き。24自治体×3手続き＝72組が満数）
+② 測り直す（1組ずつ・落ちても失うのは1組）
+   katsushika   tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
+   minato       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
+   nakano       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
+   ★3連続で失敗した。利用上限の可能性が高いので止める。
+   残りは tools/run_pipeline.sh でそのまま再開できる。
+
+③ 証拠照合（LLMは呼ばない）
+   done
+
+④ 公開データを作る（条件が揃っていなければ export が拒む）
+   tennyu     export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
+   jidouteate export_dashboard.py: error: 測定条件が揃っていない: non_html_reading, prompt_version
+   sodaigomi  export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
+
+⑤ いまの状態
+# AI読 いまの状態（データから機械的に出したもの）
+
+## ① 見張り: 動いている（1.6日前）
+   68ページ確認 / 変わった 29 / 消えた 0
+
+## ② 測定条件（揃っていないと公開できない）
+   tennyu     24自治体  ★1自治体ぶん古い（non_html_reading）
+   jidouteate 24自治体  ★19自治体ぶん古い（non_html_reading・prompt_version）
+   sodaigomi  24自治体  ★12自治体ぶん古い（non_html_reading）
+
+## ③ 虱潰し（候補を全部読んだか）
+   tennyu     見つけた 3 / 書いていない 29 / 言えない 1
+   jidouteate 見つけた 4 / 書いていない 24 / 言えない 2
+   sodaigomi  見つけた 9 / 書いていない 26 / 言えない 4
+   計          見つけた16 / 書いていない 79 / 言えない 7（304ページ読了）
+
+## ④ 読めない底: 7本のURLが塞いでいる
+
+## ⑤ 公開データ
+   tennyu     0.9日前 / 条件あり
+   jidouteate 14.0日前 / ★条件の記録なし
+   sodaigomi  14.0日前 / ★条件の記録なし
+
+## 次にやること
+   - 見張りが29件の変化を見つけている。測り直す対象を選ぶ（見張りは自動では測り直さない）
+   - tennyu: 測定条件が1自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - jidouteate: 測定条件が19自治体ぶん揃っていない（non_html_reading・prompt_version）。公開できない。`tools/run_pipeline.sh`
+   - sodaigomi: 測定条件が12自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - 公開データに測定条件の記録が無い: jidouteate, sodaigomi（どのAIが出した数字か追えない）
+① 測り直しが要る: 32組（自治体×手続き。24自治体×3手続き＝72組が満数）
+② 測り直す（1組ずつ・落ちても失うのは1組）
+   katsushika   tennyu     RuntimeError: Test Case失敗: tennyu/documents: claude -p failed (rc=1): 
+   minato       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
+   nakano       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/documents: claude -p failed (rc=1): 
+   ★3連続で失敗した。利用上限の可能性が高いので止める。
+   残りは tools/run_pipeline.sh でそのまま再開できる。
+
+③ 証拠照合（LLMは呼ばない）
+   done
+
+④ 公開データを作る（条件が揃っていなければ export が拒む）
+   tennyu     export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
+   jidouteate export_dashboard.py: error: 測定条件が揃っていない: non_html_reading, prompt_version
+   sodaigomi  export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
+
+⑤ いまの状態
+# AI読 いまの状態（データから機械的に出したもの）
+
+## ① 見張り: 動いている（1.6日前）
+   68ページ確認 / 変わった 29 / 消えた 0
+
+## ② 測定条件（揃っていないと公開できない）
+   tennyu     24自治体  ★1自治体ぶん古い（non_html_reading）
+   jidouteate 24自治体  ★19自治体ぶん古い（non_html_reading・prompt_version）
+   sodaigomi  24自治体  ★12自治体ぶん古い（non_html_reading）
+
+## ③ 虱潰し（候補を全部読んだか）
+   tennyu     見つけた 3 / 書いていない 29 / 言えない 1
+   jidouteate 見つけた 4 / 書いていない 24 / 言えない 2
+   sodaigomi  見つけた 9 / 書いていない 26 / 言えない 4
+   計          見つけた16 / 書いていない 79 / 言えない 7（304ページ読了）
+
+## ④ 読めない底: 7本のURLが塞いでいる
+
+## ⑤ 公開データ
+   tennyu     0.9日前 / 条件あり
+   jidouteate 14.0日前 / ★条件の記録なし
+   sodaigomi  14.0日前 / ★条件の記録なし
+
+## 次にやること
+   - 見張りが29件の変化を見つけている。測り直す対象を選ぶ（見張りは自動では測り直さない）
+   - tennyu: 測定条件が1自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - jidouteate: 測定条件が19自治体ぶん揃っていない（non_html_reading・prompt_version）。公開できない。`tools/run_pipeline.sh`
+   - sodaigomi: 測定条件が12自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - 公開データに測定条件の記録が無い: jidouteate, sodaigomi（どのAIが出した数字か追えない）
+① 測り直しが要る: 32組（自治体×手続き。24自治体×3手続き＝72組が満数）
+② 測り直す（1組ずつ・落ちても失うのは1組）
+   katsushika   tennyu     [葛飾区] hop3 3/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html
+   minato       sodaigomi  RuntimeError: Test Case失敗: sodaigomi/fee: 初回のリンク先にあり判定とfollow_urlsの有無を一致させる
+   nakano       sodaigomi  [中野区] hop2 2/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html
+   nerima       sodaigomi  [練馬区] hop2 2/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html
+   ota          sodaigomi  [大田区] hop1 2/4項目 抽出 / オンライン明示=明記 (+リンク先3件) — https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html
+   setagaya     sodaigomi  [世田谷区] hop1 1/4項目 抽出 / オンライン明示=明記 (+リンク先4件) — https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html
+   shibuya      sodaigomi  [渋谷区] hop1 2/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html
+   shinagawa    sodaigomi  [品川区] hop1 2/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html
+   shinjuku     sodaigomi  [新宿区] hop2 2/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html
+   suginami     sodaigomi  [杉並区] hop1 3/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html
+   sumida       sodaigomi  [墨田区] hop1 3/4項目 抽出 / オンライン明示=明記 (+リンク先3件) — https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html
+   taito        sodaigomi  [台東区] hop1 1/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html
+   toshima      sodaigomi  [豊島区] hop2 2/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html
+   adachi       jidouteate [足立区] hop3 3/4項目 抽出 / オンライン明示=記載なし (+リンク先2件) — https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/teate/jidouteate/index.html
+   arakawa      jidouteate [荒川区] hop3 3/4項目 抽出 / オンライン明示=明記 — https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html
+   bunkyo       jidouteate [文京区] hop2 1/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html
+   chiyoda      jidouteate [千代田区] hop3 1/4項目 抽出 / オンライン明示=記載なし (+リンク先2件) — https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html
+   chuo         jidouteate [中央区] hop2 3/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html
+   edogawa      jidouteate [江戸川区] hop3 3/4項目 抽出 / オンライン明示=曖昧 (+リンク先1件) — https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html
+   hachioji     jidouteate [八王子市] hop3 0/4項目 抽出 / オンライン明示=記載なし — https://www.city.hachioji.tokyo.jp/kurashi/kosodate/001/001/p031701.html
+   itabashi     jidouteate [板橋区] hop3 3/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html
+   katsushika   jidouteate [葛飾区] hop1 0/4項目 抽出 / オンライン明示=記載なし (+リンク先1件) — https://www.city.katsushika.lg.jp/kosodate/index.html
+   kita         jidouteate [北区] hop2 3/4項目 抽出 / オンライン明示=曖昧 (+リンク先1件) — https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html
+   koto         jidouteate [江東区] hop3 3/4項目 抽出 / オンライン明示=明記 (+リンク先3件) — https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html
+   meguro       jidouteate [目黒区] hop2 0/4項目 抽出 / オンライン明示=記載なし (+リンク先1件) — https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html
+   minato       jidouteate [港区] hop3 3/4項目 抽出 / オンライン明示=明記 — https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html
+   nakano       jidouteate [中野区] hop3 1/4項目 抽出 / オンライン明示=記載なし (+リンク先2件) — https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html
+   nerima       jidouteate [練馬区] hop3 3/4項目 抽出 / オンライン明示=明記 — https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jidouteate20120401.html
+   ota          jidouteate [大田区] hop3 3/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html
+   setagaya     jidouteate [世田谷区] hop3 0/4項目 抽出 / オンライン明示=記載なし (+リンク先2件) — https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html
+   shinagawa    jidouteate [品川区] hop2 3/4項目 抽出 / オンライン明示=明記 — https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000027168.html
+   shinjuku     jidouteate [新宿区] hop3 3/4項目 抽出 / オンライン明示=明記 (+リンク先1件) — https://www.city.shinjuku.lg.jp/kodomo/index04_11.html
+
+③ 証拠照合（LLMは呼ばない）
+   done
+
+④ 公開データを作る（条件が揃っていなければ export が拒む）
+   tennyu     web/data/scores-tennyu.json（23件） 平均63.9 満点1 0点2 手数料0点22
+   jidouteate web/data/scores-jidouteate.json（23件） 平均51.3 満点0 0点5 手数料0点23
+   sodaigomi  export_dashboard.py: error: 測定条件が揃っていない: non_html_reading
+
+⑤ いまの状態
+# AI読 いまの状態（データから機械的に出したもの）
+
+## ① 見張り: 動いている（1.7日前）
+   68ページ確認 / 変わった 29 / 消えた 0
+
+## ② 測定条件（揃っていないと公開できない）
+   tennyu     24自治体  揃っている
+   jidouteate 24自治体  揃っている
+   sodaigomi  24自治体  ★1自治体ぶん古い（non_html_reading）
 
 ## ③ 虱潰し（候補を全部読んだか）
    tennyu     見つけた 3 / 書いていない 29 / 言えない 1
@@ -97,11 +321,48 @@
 
 ## ⑤ 公開データ
    tennyu     0.0日前 / 条件あり
-   jidouteate 13.1日前 / ★条件の記録なし
-   sodaigomi  13.1日前 / ★条件の記録なし
+   jidouteate 0.0日前 / 条件あり
+   sodaigomi  14.1日前 / ★条件の記録なし
 
 ## 次にやること
    - 見張りが29件の変化を見つけている。測り直す対象を選ぶ（見張りは自動では測り直さない）
-   - jidouteate: 測定条件が18区ぶん揃っていない。公開できない。`extractor/extract.py -m <区> -p jidouteate --follow`
-   - sodaigomi: 測定条件が1区ぶん揃っていない。公開できない。`extractor/extract.py -m <区> -p sodaigomi --follow`
-   - 公開データに測定条件の記録が無い: jidouteate, sodaigomi（どのAIが出した数字か追えない）
+   - sodaigomi: 測定条件が1自治体ぶん揃っていない（non_html_reading）。公開できない。`tools/run_pipeline.sh`
+   - 公開データに測定条件の記録が無い: sodaigomi（どのAIが出した数字か追えない）
+① 測り直しが要る: 1組（自治体×手続き。24自治体×3手続き＝72組が満数）
+② 測り直す（1組ずつ・落ちても失うのは1組）
+   minato       sodaigomi  [港区] hop2 4/4項目 抽出 / オンライン明示=明記 (+リンク先2件) — https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html
+
+③ 証拠照合（LLMは呼ばない）
+   done
+
+④ 公開データを作る（条件が揃っていなければ export が拒む）
+   tennyu     web/data/scores-tennyu.json（23件） 平均63.9 満点1 0点2 手数料0点22
+   jidouteate web/data/scores-jidouteate.json（23件） 平均51.3 満点0 0点5 手数料0点23
+   sodaigomi  web/data/scores-sodaigomi.json（23件） 平均53.9 満点1 0点3 手数料0点15
+
+⑤ いまの状態
+# AI読 いまの状態（データから機械的に出したもの）
+
+## ① 見張り: 動いている（1.7日前）
+   68ページ確認 / 変わった 29 / 消えた 0
+
+## ② 測定条件（揃っていないと公開できない）
+   tennyu     24自治体  揃っている
+   jidouteate 24自治体  揃っている
+   sodaigomi  24自治体  揃っている
+
+## ③ 虱潰し（候補を全部読んだか）
+   tennyu     見つけた 3 / 書いていない 29 / 言えない 1
+   jidouteate 見つけた 4 / 書いていない 24 / 言えない 2
+   sodaigomi  見つけた 9 / 書いていない 26 / 言えない 4
+   計          見つけた16 / 書いていない 79 / 言えない 7（304ページ読了）
+
+## ④ 読めない底: 7本のURLが塞いでいる
+
+## ⑤ 公開データ
+   tennyu     0.0日前 / 条件あり
+   jidouteate 0.0日前 / 条件あり
+   sodaigomi  0.0日前 / 条件あり
+
+## 次にやること
+   - 見張りが29件の変化を見つけている。測り直す対象を選ぶ（見張りは自動では測り直さない）

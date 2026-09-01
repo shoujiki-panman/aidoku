@@ -43,22 +43,20 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-30T14:19:09+00:00",
+    "run_at": "2026-08-31T13:34:36+00:00",
     "discovery_run_at": "2026-08-27T15:29:07+00:00"
   },
   "followed_urls": [
-    "https://www.city.shinjuku.lg.jp/todokede/index01.html",
-    "https://www.city.shinjuku.lg.jp/todokede/index.html"
+    "https://www.city.shinjuku.lg.jp/todokede/index01.html"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "引越しで住所を異動される方は、窓口での「正確な住所の届出」が必要です",
   "online_clarity_pages": [
     "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
-    "https://www.city.shinjuku.lg.jp/todokede/index01.html",
-    "https://www.city.shinjuku.lg.jp/todokede/index.html"
+    "https://www.city.shinjuku.lg.jp/todokede/index01.html"
   ],
   "test_cases": [
     {
@@ -94,7 +92,7 @@
           "requested_urls": [
             "https://www.city.shinjuku.lg.jp/todokede/index01.html"
           ],
-          "page_notes": "このページは「住所異動には届出が必要です」という案内のみで、持ち物・必要書類の記載はない。本文中の「住所変更の届出について、詳しくは、こちらのページをご参照ください」のリンク先（index01.html）に手続き詳細がありそうだが、リンク一覧にはそれ以外に転入届固有の必要書類を示す項目はなかった。"
+          "page_notes": "このページは転入・転出届出全般への案内ページで、必要書類の記載はない。「住所変更の届出について、詳しくは、こちらのページをご参照ください」として index01.html に誘導しており、そちらに持ち物の詳細がある可能性が高い。"
         },
         {
           "stage": "follow",
@@ -113,13 +111,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページは「正確な住所の届出」を促す告知のみで、リンク先の index01.html も「転入届」等への入口リンクを列挙する一覧ページで、必要書類などの本文は記載されていなかった。"
+          "page_notes": "元ページは住所異動届出の注意喚起のみ。リンク先の一覧ページも「転入届」等への項目リンクを並べるだけで、持ち物・必要書類の具体的な記載はどちらにも無かった。"
         }
       ],
       "followed_urls": [
         "https://www.city.shinjuku.lg.jp/todokede/index01.html"
       ],
-      "page_notes": "元ページは「正確な住所の届出」を促す告知のみで、リンク先の index01.html も「転入届」等への入口リンクを列挙する一覧ページで、必要書類などの本文は記載されていなかった。",
+      "page_notes": "元ページは住所異動届出の注意喚起のみ。リンク先の一覧ページも「転入届」等への項目リンクを並べるだけで、持ち物・必要書類の具体的な記載はどちらにも無かった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -161,10 +159,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.shinjuku.lg.jp/todokede/index01.html",
-            "https://www.city.shinjuku.lg.jp/todokede/index.html"
+            "https://www.city.shinjuku.lg.jp/todokede/index01.html"
           ],
-          "page_notes": "このページは「転入届」個別の手続きページではなく、住所異動全般の呼びかけ告知。窓口・オンラインの別には触れておらず、詳細は「こちら」（index01.html）や戸籍・住民票トップ（index.html）に誘導している。"
+          "page_notes": "このページは転出・転入時の「正確な住所の届出」を促す一般的な注意喚起ページで、転入届の窓口・オンライン可否には触れていない。本文中で「住所変更の届出について、詳しくは、こちらのページをご参照ください」と手続き詳細ページへ誘導している。"
         },
         {
           "stage": "follow",
@@ -183,14 +180,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本ページは住所異動の呼びかけのみで、リンク先の一覧ページ(index01.html)も「転入届」等のリンク見出しが並ぶだけで、窓口のみかオンライン完結可かを述べる本文がなかった。"
+          "page_notes": "リンク先ページ（index01.html）は「転入届」等の手続き名がリンク一覧として並ぶ目次ページで、各手続きの窓口・オンライン可否を説明する本文は無い。「転出届（マイナポータルで手続きをするとき）」という項目はあるが「転入届」には対応する項目が無く、判断材料にはならない。"
         }
       ],
       "followed_urls": [
-        "https://www.city.shinjuku.lg.jp/todokede/index01.html",
-        "https://www.city.shinjuku.lg.jp/todokede/index.html"
+        "https://www.city.shinjuku.lg.jp/todokede/index01.html"
       ],
-      "page_notes": "本ページは住所異動の呼びかけのみで、リンク先の一覧ページ(index01.html)も「転入届」等のリンク見出しが並ぶだけで、窓口のみかオンライン完結可かを述べる本文がなかった。",
+      "page_notes": "リンク先ページ（index01.html）は「転入届」等の手続き名がリンク一覧として並ぶ目次ページで、各手続きの窓口・オンライン可否を説明する本文は無い。「転出届（マイナポータルで手続きをするとき）」という項目はあるが「転入届」には対応する項目が無く、判断材料にはならない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -234,7 +230,7 @@
           "requested_urls": [
             "https://www.city.shinjuku.lg.jp/todokede/index01.html"
           ],
-          "page_notes": "このページは「住所異動の届出が必要です」という案内・注意喚起のみで、転入届の期限（起算点つき）の記載は無い。本文中に「住所変更の届出について、詳しくは、こちらのページをご参照ください」とあり、こちらのリンク先（index01.html）に具体的な手続き内容がありそう。"
+          "page_notes": "このページは転入届の手続き詳細ではなく、住所異動の届出が必要であることを知らせる案内ページ。期限の記載はなく、本文で「住所変更の届出について、詳しくは、こちらのページをご参照ください」として index01.html に送客している。"
         },
         {
           "stage": "follow",
@@ -253,13 +249,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本文には転入の一般的な必要性のみが書かれ期限の記述はない。リンク先ページも各種届出への入口一覧（転入届など）のみで、個別の期限（例：14日以内）はどちらのページにも記載がなかった。"
+          "page_notes": "元ページは住所異動の総論案内のみで期限の記載なし。リンク先の一覧ページ（住所変更の届出）も転入届等への各リンクを並べるだけで、期限（起算点つき）の記述はどちらにも見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.shinjuku.lg.jp/todokede/index01.html"
       ],
-      "page_notes": "本文には転入の一般的な必要性のみが書かれ期限の記述はない。リンク先ページも各種届出への入口一覧（転入届など）のみで、個別の期限（例：14日以内）はどちらのページにも記載がなかった。",
+      "page_notes": "元ページは住所異動の総論案内のみで期限の記載なし。リンク先の一覧ページ（住所変更の届出）も転入届等への各リンクを並べるだけで、期限（起算点つき）の記述はどちらにも見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -303,7 +299,7 @@
           "requested_urls": [
             "https://www.city.shinjuku.lg.jp/todokede/index01.html"
           ],
-          "page_notes": "このページは転入届そのものの手続きページではなく、住所異動の届出を促す案内ページで、手数料の記載はない。本文に「住所変更の届出について、詳しくは、こちらのページをご参照ください」とあり、手続きの詳細（手数料含む）はリンク先の index01.html にありそう。"
+          "page_notes": "このページは転入・転出の必要性を案内する導入ページで、手数料には触れていない。本文中で「住所変更の届出について、詳しくは、こちらのページをご参照ください」と明示的にリンク先（index01.html）へ誘導している。"
         },
         {
           "stage": "follow",
@@ -322,13 +318,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページは住所異動の総論案内で手数料への言及がなく、リンク先の一覧ページ（住所変更の届出）も各種届出へのリンク集のみで、金額・無料の記載は本文中どこにも見当たらなかった。"
+          "page_notes": "対象ページは住所異動の総論案内で、リンク先の一覧ページ(index01.html)も「転入届」への次のリンクを並べるだけで手数料の記載はなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.shinjuku.lg.jp/todokede/index01.html"
       ],
-      "page_notes": "元ページは住所異動の総論案内で手数料への言及がなく、リンク先の一覧ページ（住所変更の届出）も各種届出へのリンク集のみで、金額・無料の記載は本文中どこにも見当たらなかった。",
+      "page_notes": "対象ページは住所異動の総論案内で、リンク先の一覧ページ(index01.html)も「転入届」への次のリンクを並べるだけで手数料の記載はなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -394,13 +390,12 @@
       }
     }
   },
-  "page_notes": "元ページは「正確な住所の届出」を促す告知のみで、リンク先の index01.html も「転入届」等への入口リンクを列挙する一覧ページで、必要書類などの本文は記載されていなかった。\n本ページは住所異動の呼びかけのみで、リンク先の一覧ページ(index01.html)も「転入届」等のリンク見出しが並ぶだけで、窓口のみかオンライン完結可かを述べる本文がなかった。\n本文には転入の一般的な必要性のみが書かれ期限の記述はない。リンク先ページも各種届出への入口一覧（転入届など）のみで、個別の期限（例：14日以内）はどちらのページにも記載がなかった。\n元ページは住所異動の総論案内で手数料への言及がなく、リンク先の一覧ページ（住所変更の届出）も各種届出へのリンク集のみで、金額・無料の記載は本文中どこにも見当たらなかった。",
+  "page_notes": "元ページは住所異動届出の注意喚起のみ。リンク先の一覧ページも「転入届」等への項目リンクを並べるだけで、持ち物・必要書類の具体的な記載はどちらにも無かった。\nリンク先ページ（index01.html）は「転入届」等の手続き名がリンク一覧として並ぶ目次ページで、各手続きの窓口・オンライン可否を説明する本文は無い。「転出届（マイナポータルで手続きをするとき）」という項目はあるが「転入届」には対応する項目が無く、判断材料にはならない。\n元ページは住所異動の総論案内のみで期限の記載なし。リンク先の一覧ページ（住所変更の届出）も転入届等への各リンクを並べるだけで、期限（起算点つき）の記述はどちらにも見当たらなかった。\n対象ページは住所異動の総論案内で、リンク先の一覧ページ(index01.html)も「転入届」への次のリンクを並べるだけで手数料の記載はなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
-      "https://www.city.shinjuku.lg.jp/todokede/index01.html",
-      "https://www.city.shinjuku.lg.jp/todokede/index.html"
+      "https://www.city.shinjuku.lg.jp/todokede/index01.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

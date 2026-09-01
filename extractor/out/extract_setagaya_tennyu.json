@@ -43,10 +43,10 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-30T14:15:16+00:00",
+    "run_at": "2026-08-31T13:28:59+00:00",
     "discovery_run_at": "2026-08-27T15:29:07+00:00"
   },
   "followed_urls": [
@@ -92,10 +92,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
-            "https://www.city.setagaya.lg.jp/02312/18274.html"
+            "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html"
           ],
-          "page_notes": "このページは戸籍・住民登録等の総合案内（カテゴリ一覧）であり、転入届の持ち物についての本文記載はない。「住所や世帯を変更したときの届け出」カテゴリページや「お引越し手続きのご案内」ページに詳細がありそう。"
+          "page_notes": "このページは「戸籍・住民登録等」の目次ページで、各手続きの詳細は「住所や世帯を変更したときの届け出」等のカテゴリページやその先の個別ページに分かれており、本ページ自体には転入届の持ち物に関する記述はない。"
         },
         {
           "stage": "follow",
@@ -114,14 +113,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本文は目次と混雑案内・受付窓口一覧が中心で、転入届に必要な持ち物の具体的なリストは無かった。追跡した2ページ（category/12307と02312/18274）も窓口案内や混雑予想が主で、必要書類の記載は『住所や世帯を変更したときの届出』ページに誘導するのみで、そのページ自体は開けなかった。"
+          "page_notes": "元ページ・リンク先ページともに見出しとリンク一覧のみで、転入届の持ち物を具体的に列挙した本文記述は見当たらなかった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
-        "https://www.city.setagaya.lg.jp/02312/18274.html"
+        "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html"
       ],
-      "page_notes": "本文は目次と混雑案内・受付窓口一覧が中心で、転入届に必要な持ち物の具体的なリストは無かった。追跡した2ページ（category/12307と02312/18274）も窓口案内や混雑予想が主で、必要書類の記載は『住所や世帯を変更したときの届出』ページに誘導するのみで、そのページ自体は開けなかった。",
+      "page_notes": "元ページ・リンク先ページともに見出しとリンク一覧のみで、転入届の持ち物を具体的に列挙した本文記述は見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -138,16 +136,16 @@
       "question": "世田谷区の「転入届」について、窓口だけか、オンラインで完結できるか",
       "test_case_version": "1.0",
       "result": {
-        "found": true,
-        "value": "窓口のみ（オンラインでは完結できない）",
-        "evidence": "住所変更（転入届、転居届等）の届け出や、証明書（住民票の写し）の発行は、お近くの総合支所くみん窓口、出張所でもお手続きいただけます。",
-        "source": "linked_page",
-        "failure_reason": null,
-        "failure_type": null,
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
-          "verdict": "exact",
-          "run": 66,
-          "note": ""
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
         }
       },
       "attempts": [
@@ -163,44 +161,42 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
-            "https://www.city.setagaya.lg.jp/02312/18274.html"
+            "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html"
           ],
-          "page_notes": "このページは戸籍・住民登録等の総合案内（カテゴリ目次）で、転入届の具体的な手続き方法（窓口／オンライン可否）は本文になく、「住所や世帯を変更したときの届け出」等の下位ページへのリンクのみが示されている。"
+          "page_notes": "このページは「戸籍・住民登録等」の総合案内・目次ページで、各手続きの詳細は「住所や世帯を変更したときの届け出」等のリンク先カテゴリページに分かれており、転入届自体の窓口・オンライン可否についての記述は本文中に見当たらない。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
-            "found": true,
-            "value": "窓口のみ（オンラインでは完結できない）",
-            "evidence": "住所変更（転入届、転居届等）の届け出や、証明書（住民票の写し）の発行は、お近くの総合支所くみん窓口、出張所でもお手続きいただけます。",
-            "source": "linked_page",
-            "failure_reason": null,
-            "failure_type": null,
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
-              "verdict": "exact",
-              "run": 66,
-              "note": ""
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
             }
           },
           "requested_urls": [],
-          "page_notes": "「お引越し手続きのご案内」ページは『来庁しなくてもできる手続き』（転出届・証明書のみ）と『来庁での手続き』を明確に分けており、転入届は後者に分類され窓口対応と明記されている。"
+          "page_notes": "転入届の窓口/オンライン可否に直接言及する記述は本文になく、リンク先の「住所や世帯を変更したときの届け出」ページも見出しの一覧のみで、オンライン完結可否を示す本文記述は無かった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
-        "https://www.city.setagaya.lg.jp/02312/18274.html"
+        "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html"
       ],
-      "page_notes": "「お引越し手続きのご案内」ページは『来庁しなくてもできる手続き』（転出届・証明書のみ）と『来庁での手続き』を明確に分けており、転入届は後者に分類され窓口対応と明記されている。",
+      "page_notes": "転入届の窓口/オンライン可否に直接言及する記述は本文になく、リンク先の「住所や世帯を変更したときの届け出」ページも見出しの一覧のみで、オンライン完結可否を示す本文記述は無かった。",
       "evidence_summary": {
-        "checked": 1,
-        "verified": 1,
+        "checked": 0,
+        "verified": 0,
         "partial": 0,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
-        "not_applicable": 0
+        "not_applicable": 1
       }
     },
     {
@@ -237,7 +233,7 @@
             "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
             "https://www.city.setagaya.lg.jp/02312/18274.html"
           ],
-          "page_notes": "このページは「戸籍・住民登録等」の分類一覧ページで、転入届固有の説明や期限の記述は本文になく、「住所や世帯を変更したときの届け出」カテゴリページや「お引越し手続きのご案内」ページへのリンクのみが手がかりになる。"
+          "page_notes": "このページは「戸籍・住民登録等」の目次ページで、転入届の期限に関する記述は本文になく、「住所や世帯を変更したときの届け出」等の下位ページへのリンクのみが並んでいる。"
         },
         {
           "stage": "follow",
@@ -256,14 +252,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "案内された2つのリンク先ページ（「住所や世帯を変更したときの届け出」の目次ページ、「お引越し手続きのご案内」）はいずれも窓口の受付時間・混雑状況・手続き一覧が中心で、転入届の期限（起算点つき）を示す記述は見当たらなかった。"
+          "page_notes": "元ページ・追跡した2リンク先とも「住所や世帯を変更したときの届け出」への案内や窓口・混雑状況の説明にとどまり、転入届の期限（起算点つき）を明記した本文は見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
         "https://www.city.setagaya.lg.jp/02312/18274.html"
       ],
-      "page_notes": "案内された2つのリンク先ページ（「住所や世帯を変更したときの届け出」の目次ページ、「お引越し手続きのご案内」）はいずれも窓口の受付時間・混雑状況・手続き一覧が中心で、転入届の期限（起算点つき）を示す記述は見当たらなかった。",
+      "page_notes": "元ページ・追跡した2リンク先とも「住所や世帯を変更したときの届け出」への案内や窓口・混雑状況の説明にとどまり、転入届の期限（起算点つき）を明記した本文は見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -305,10 +301,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
-            "https://www.city.setagaya.lg.jp/02312/18274.html"
+            "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html"
           ],
-          "page_notes": "このページは戸籍・住民登録等のカテゴリ一覧（目次）で、転入届の手数料など個別手続きの詳細は書かれていない。「住所や世帯を変更したときの届け出」等の下位ページに詳細がありそう。"
+          "page_notes": "このページは戸籍・住民登録等の手続き一覧（カテゴリトップ）であり、転入届個別の手数料等は記載されていない。「住所や世帯を変更したときの届け出」のカテゴリページに転入届の詳細ページがあると見られる。"
         },
         {
           "stage": "follow",
@@ -327,14 +322,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "転入届の手続きページおよびリンク先の「住所や世帯を変更したときの届け出」「お引越し手続きのご案内」のいずれにも手数料に関する記載はなく、窓口・受付時間・混雑状況の案内が中心だった。"
+          "page_notes": "リンク先ページ（住所や世帯を変更したときの届け出）は各種手続きへのリンク一覧のみで、手数料についての本文記載は無かった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
-        "https://www.city.setagaya.lg.jp/02312/18274.html"
+        "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html"
       ],
-      "page_notes": "転入届の手続きページおよびリンク先の「住所や世帯を変更したときの届け出」「お引越し手続きのご案内」のいずれにも手数料に関する記載はなく、窓口・受付時間・混雑状況の案内が中心だった。",
+      "page_notes": "リンク先ページ（住所や世帯を変更したときの届け出）は各種手続きへのリンク一覧のみで、手数料についての本文記載は無かった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -361,16 +355,16 @@
       }
     },
     "窓口オンライン可否": {
-      "found": true,
-      "value": "窓口のみ（オンラインでは完結できない）",
-      "evidence": "住所変更（転入届、転居届等）の届け出や、証明書（住民票の写し）の発行は、お近くの総合支所くみん窓口、出張所でもお手続きいただけます。",
-      "source": "linked_page",
-      "failure_reason": null,
-      "failure_type": null,
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
-        "verdict": "exact",
-        "run": 66,
-        "note": ""
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
       }
     },
     "期限": {
@@ -400,7 +394,7 @@
       }
     }
   },
-  "page_notes": "本文は目次と混雑案内・受付窓口一覧が中心で、転入届に必要な持ち物の具体的なリストは無かった。追跡した2ページ（category/12307と02312/18274）も窓口案内や混雑予想が主で、必要書類の記載は『住所や世帯を変更したときの届出』ページに誘導するのみで、そのページ自体は開けなかった。\n「お引越し手続きのご案内」ページは『来庁しなくてもできる手続き』（転出届・証明書のみ）と『来庁での手続き』を明確に分けており、転入届は後者に分類され窓口対応と明記されている。\n案内された2つのリンク先ページ（「住所や世帯を変更したときの届け出」の目次ページ、「お引越し手続きのご案内」）はいずれも窓口の受付時間・混雑状況・手続き一覧が中心で、転入届の期限（起算点つき）を示す記述は見当たらなかった。\n転入届の手続きページおよびリンク先の「住所や世帯を変更したときの届け出」「お引越し手続きのご案内」のいずれにも手数料に関する記載はなく、窓口・受付時間・混雑状況の案内が中心だった。",
+  "page_notes": "元ページ・リンク先ページともに見出しとリンク一覧のみで、転入届の持ち物を具体的に列挙した本文記述は見当たらなかった。\n転入届の窓口/オンライン可否に直接言及する記述は本文になく、リンク先の「住所や世帯を変更したときの届け出」ページも見出しの一覧のみで、オンライン完結可否を示す本文記述は無かった。\n元ページ・追跡した2リンク先とも「住所や世帯を変更したときの届け出」への案内や窓口・混雑状況の説明にとどまり、転入届の期限（起算点つき）を明記した本文は見当たらなかった。\nリンク先ページ（住所や世帯を変更したときの届け出）は各種手続きへのリンク一覧のみで、手数料についての本文記載は無かった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
@@ -412,12 +406,12 @@
     "isolated_by_test_case": true
   },
   "evidence_summary": {
-    "checked": 1,
-    "verified": 1,
+    "checked": 0,
+    "verified": 0,
     "partial": 0,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,
-    "not_applicable": 3
+    "not_applicable": 4
   }
 }

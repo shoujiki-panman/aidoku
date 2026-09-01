@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,17 +43,20 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T14:44:57+00:00",
+    "run_at": "2026-08-31T13:51:35+00:00",
     "discovery_run_at": "2026-08-28T14:37:31+00:00"
   },
-  "followed_urls": [],
+  "followed_urls": [
+    "https://ecolife.e-tumo.jp/sodai.city.chiyoda-u/offer/offerList_initDisplay"
+  ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "インターネットでの申し込み 千代田区 粗大ごみ収集受付（外部サイトへリンク）",
+  "online_clarity_evidence": "いつでも、どこでも、粗大ごみ収集の予約をインターネットで行うことができます",
   "online_clarity_pages": [
-    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html"
+    "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html",
+    "https://ecolife.e-tumo.jp/sodai.city.chiyoda-u/offer/offerList_initDisplay"
   ],
   "test_cases": [
     {
@@ -92,11 +95,11 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "申し込み方法（インターネット・チャットボット・電話）と処理券の料金体系は詳しく書かれているが、申込時に必要な持ち物・書類についての記載は本文になく、関連しそうなリンク一覧（免除・取扱所・事業系ごみ・品目一覧表PDF等）にも該当する項目は見当たらない。"
+          "page_notes": "申込方法（インターネット・チャットボット・電話）と手数料（処理券の種類・金額・品目別料金表）の説明が中心で、申込時に必要な持ち物・書類についての記載は本文にもリンク一覧にも見当たらない。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "申し込み方法（インターネット・チャットボット・電話）と処理券の料金体系は詳しく書かれているが、申込時に必要な持ち物・書類についての記載は本文になく、関連しそうなリンク一覧（免除・取扱所・事業系ごみ・品目一覧表PDF等）にも該当する項目は見当たらない。",
+      "page_notes": "申込方法（インターネット・チャットボット・電話）と手数料（処理券の種類・金額・品目別料金表）の説明が中心で、申込時に必要な持ち物・書類についての記載は本文にもリンク一覧にも見当たらない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -114,15 +117,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "インターネット申し込み可（オンラインで完結できる。電話・チャットボットでも申込可）",
-        "evidence": "インターネットでの申し込み 千代田区 粗大ごみ収集受付（外部サイトへリンク）",
+        "value": "オンラインで完結可（インターネット申し込み・チャットボット申し込みに対応。電話申し込みも可）",
+        "evidence": "インターネットでの申し込み 千代田区 粗大ごみ収集受付（外部サイトへリンク） チャットボットでの申し込み 右下に表示のバナーをクリックしてください。",
         "source": "html",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "normalized",
+          "verdict": "partial",
           "run": 33,
-          "note": "空白・記号のゆれを吸収すると一致"
+          "note": "連続33文字だけ一致。引用全体は確認できない"
         }
       },
       "attempts": [
@@ -131,27 +134,27 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "インターネット申し込み可（オンラインで完結できる。電話・チャットボットでも申込可）",
-            "evidence": "インターネットでの申し込み 千代田区 粗大ごみ収集受付（外部サイトへリンク）",
+            "value": "オンラインで完結可（インターネット申し込み・チャットボット申し込みに対応。電話申し込みも可）",
+            "evidence": "インターネットでの申し込み 千代田区 粗大ごみ収集受付（外部サイトへリンク） チャットボットでの申し込み 右下に表示のバナーをクリックしてください。",
             "source": "html",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "normalized",
+              "verdict": "partial",
               "run": 33,
-              "note": "空白・記号のゆれを吸収すると一致"
+              "note": "連続33文字だけ一致。引用全体は確認できない"
             }
           },
           "requested_urls": [],
-          "page_notes": "申し込み方法として「インターネット」「チャットボット」「電話」の3手段が並列に本文中で明記されており、窓口来訪は求められていない。"
+          "page_notes": "申し込み方法として「インターネット」「チャットボット」「電話」の3種が本文に並記されており、窓口来庁の記載は無い。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "申し込み方法として「インターネット」「チャットボット」「電話」の3手段が並列に本文中で明記されており、窓口来訪は求められていない。",
+      "page_notes": "申し込み方法として「インターネット」「チャットボット」「電話」の3種が本文に並記されており、窓口来庁の記載は無い。",
       "evidence_summary": {
         "checked": 1,
-        "verified": 1,
-        "partial": 0,
+        "verified": 0,
+        "partial": 1,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
@@ -185,6 +188,22 @@
             "value": "",
             "evidence": "",
             "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://ecolife.e-tumo.jp/sodai.city.chiyoda-u/offer/offerList_initDisplay"
+          ],
+          "page_notes": "本文には「事前申込制」「受付時間」等はあるが、収集日から逆算した申込期限（何日前までに等）の記載は無い。実際の申込・日程選択は外部の受付システム（ecolife.e-tumo.jp）で行う構成のため、期限情報はそちら側にある可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
             "failure_reason": "記載なし",
             "failure_type": "fact_missing",
             "evidence_check": {
@@ -194,11 +213,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "申込方法（インターネット・チャットボット・電話）や受付時間は書かれているが、「収集日の何日前までに申し込む必要があるか」という期限の記載はページ本文にもリンク一覧にも見当たらない。粗大ごみ品目一覧表PDFは料金表であり期限とは無関係。"
+          "page_notes": "本文もリンク先の申込システム（ecolife）画面も、収集日と申込日の間隔（何日前までに申し込むべきか）には触れておらず、システムの受付時間帯（随時受付）の説明のみだった。"
         }
       ],
-      "followed_urls": [],
-      "page_notes": "申込方法（インターネット・チャットボット・電話）や受付時間は書かれているが、「収集日の何日前までに申し込む必要があるか」という期限の記載はページ本文にもリンク一覧にも見当たらない。粗大ごみ品目一覧表PDFは料金表であり期限とは無関係。",
+      "followed_urls": [
+        "https://ecolife.e-tumo.jp/sodai.city.chiyoda-u/offer/offerList_initDisplay"
+      ],
+      "page_notes": "本文もリンク先の申込システム（ecolife）画面も、収集日と申込日の間隔（何日前までに申し込むべきか）には触れておらず、システムの受付時間帯（随時受付）の説明のみだった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -216,15 +237,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "有料（品目により異なる）。有料粗大ごみ処理券方式で、A券200円・B券300円を組み合わせて支払う。例：布団など300円、机・シングルベッド900円、箱物家具等2,200円",
-        "evidence": "粗大ごみの収集は、事前申込制で有料です。粗大ごみ処理手数料の支払いは、有料粗大ごみ処理券方式です。A券（200円）・B券（300円）を組み合わせて出してください。",
+        "value": "有料。粗大ごみ処理券（A券200円・B券300円）を組み合わせて購入し貼付する方式。品目ごとに手数料が異なり、例として布団など300円（B券1枚）、自転車（16インチ以上）600円（B券2枚）、机（両そで机以外）900円（B券3枚）、ソファー（2人以上用）1,600円（A券2枚とB券4枚）、大型の箱物家具2,200円（A券2枚とB券6枚）。その他の品目は別紙の粗大ごみ品目一覧表（PDF）に記載。",
+        "evidence": "粗大ごみ処理手数料の支払いは、有料粗大ごみ処理券方式です。申し込み後、区内の主なコンビニエンスストアか千代田区有料粗大ごみ処理券取扱所で購入し、粗大ごみに貼って出してください。",
         "source": "html",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "partial",
-          "run": 29,
-          "note": "連続29文字だけ一致。引用全体は確認できない"
+          "verdict": "exact",
+          "run": 88,
+          "note": ""
         }
       },
       "attempts": [
@@ -233,27 +254,27 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "有料（品目により異なる）。有料粗大ごみ処理券方式で、A券200円・B券300円を組み合わせて支払う。例：布団など300円、机・シングルベッド900円、箱物家具等2,200円",
-            "evidence": "粗大ごみの収集は、事前申込制で有料です。粗大ごみ処理手数料の支払いは、有料粗大ごみ処理券方式です。A券（200円）・B券（300円）を組み合わせて出してください。",
+            "value": "有料。粗大ごみ処理券（A券200円・B券300円）を組み合わせて購入し貼付する方式。品目ごとに手数料が異なり、例として布団など300円（B券1枚）、自転車（16インチ以上）600円（B券2枚）、机（両そで机以外）900円（B券3枚）、ソファー（2人以上用）1,600円（A券2枚とB券4枚）、大型の箱物家具2,200円（A券2枚とB券6枚）。その他の品目は別紙の粗大ごみ品目一覧表（PDF）に記載。",
+            "evidence": "粗大ごみ処理手数料の支払いは、有料粗大ごみ処理券方式です。申し込み後、区内の主なコンビニエンスストアか千代田区有料粗大ごみ処理券取扱所で購入し、粗大ごみに貼って出してください。",
             "source": "html",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "partial",
-              "run": 29,
-              "note": "連続29文字だけ一致。引用全体は確認できない"
+              "verdict": "exact",
+              "run": 88,
+              "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "主な品目例は本文中に表形式で5件のみ掲載されており、それ以外の品目の料金は別添PDF（粗大ごみ品目一覧表）に委ねられている。"
+          "page_notes": "手数料は本文中の説明文とA券・B券の単価に加え、主な品目例が表で明記されている。全品目の網羅的な料金は別添PDF「粗大ごみ品目一覧表」に委ねられている。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "主な品目例は本文中に表形式で5件のみ掲載されており、それ以外の品目の料金は別添PDF（粗大ごみ品目一覧表）に委ねられている。",
+      "page_notes": "手数料は本文中の説明文とA券・B券の単価に加え、主な品目例が表で明記されている。全品目の網羅的な料金は別添PDF「粗大ごみ品目一覧表」に委ねられている。",
       "evidence_summary": {
         "checked": 1,
-        "verified": 0,
-        "partial": 1,
+        "verified": 1,
+        "partial": 0,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
@@ -277,15 +298,15 @@
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "インターネット申し込み可（オンラインで完結できる。電話・チャットボットでも申込可）",
-      "evidence": "インターネットでの申し込み 千代田区 粗大ごみ収集受付（外部サイトへリンク）",
+      "value": "オンラインで完結可（インターネット申し込み・チャットボット申し込みに対応。電話申し込みも可）",
+      "evidence": "インターネットでの申し込み 千代田区 粗大ごみ収集受付（外部サイトへリンク） チャットボットでの申し込み 右下に表示のバナーをクリックしてください。",
       "source": "html",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "normalized",
+        "verdict": "partial",
         "run": 33,
-        "note": "空白・記号のゆれを吸収すると一致"
+        "note": "連続33文字だけ一致。引用全体は確認できない"
       }
     },
     "期限": {
@@ -303,23 +324,24 @@
     },
     "手数料": {
       "found": true,
-      "value": "有料（品目により異なる）。有料粗大ごみ処理券方式で、A券200円・B券300円を組み合わせて支払う。例：布団など300円、机・シングルベッド900円、箱物家具等2,200円",
-      "evidence": "粗大ごみの収集は、事前申込制で有料です。粗大ごみ処理手数料の支払いは、有料粗大ごみ処理券方式です。A券（200円）・B券（300円）を組み合わせて出してください。",
+      "value": "有料。粗大ごみ処理券（A券200円・B券300円）を組み合わせて購入し貼付する方式。品目ごとに手数料が異なり、例として布団など300円（B券1枚）、自転車（16インチ以上）600円（B券2枚）、机（両そで机以外）900円（B券3枚）、ソファー（2人以上用）1,600円（A券2枚とB券4枚）、大型の箱物家具2,200円（A券2枚とB券6枚）。その他の品目は別紙の粗大ごみ品目一覧表（PDF）に記載。",
+      "evidence": "粗大ごみ処理手数料の支払いは、有料粗大ごみ処理券方式です。申し込み後、区内の主なコンビニエンスストアか千代田区有料粗大ごみ処理券取扱所で購入し、粗大ごみに貼って出してください。",
       "source": "html",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "partial",
-        "run": 29,
-        "note": "連続29文字だけ一致。引用全体は確認できない"
+        "verdict": "exact",
+        "run": 88,
+        "note": ""
       }
     }
   },
-  "page_notes": "申し込み方法（インターネット・チャットボット・電話）と処理券の料金体系は詳しく書かれているが、申込時に必要な持ち物・書類についての記載は本文になく、関連しそうなリンク一覧（免除・取扱所・事業系ごみ・品目一覧表PDF等）にも該当する項目は見当たらない。\n申し込み方法として「インターネット」「チャットボット」「電話」の3手段が並列に本文中で明記されており、窓口来訪は求められていない。\n申込方法（インターネット・チャットボット・電話）や受付時間は書かれているが、「収集日の何日前までに申し込む必要があるか」という期限の記載はページ本文にもリンク一覧にも見当たらない。粗大ごみ品目一覧表PDFは料金表であり期限とは無関係。\n主な品目例は本文中に表形式で5件のみ掲載されており、それ以外の品目の料金は別添PDF（粗大ごみ品目一覧表）に委ねられている。",
+  "page_notes": "申込方法（インターネット・チャットボット・電話）と手数料（処理券の種類・金額・品目別料金表）の説明が中心で、申込時に必要な持ち物・書類についての記載は本文にもリンク一覧にも見当たらない。\n申し込み方法として「インターネット」「チャットボット」「電話」の3種が本文に並記されており、窓口来庁の記載は無い。\n本文もリンク先の申込システム（ecolife）画面も、収集日と申込日の間隔（何日前までに申し込むべきか）には触れておらず、システムの受付時間帯（随時受付）の説明のみだった。\n手数料は本文中の説明文とA券・B券の単価に加え、主な品目例が表で明記されている。全品目の網羅的な料金は別添PDF「粗大ごみ品目一覧表」に委ねられている。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
-      "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html"
+      "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html",
+      "https://ecolife.e-tumo.jp/sodai.city.chiyoda-u/offer/offerList_initDisplay"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

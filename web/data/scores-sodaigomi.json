@@ -1,232 +1,327 @@
 {
-  "generated_at": "2026-08-17T15:10:26+00:00",
+  "generated_at": "2026-08-31T16:46:38+00:00",
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "question": "{muni}で粗大ごみを出したいです。申込に必要なもの・期限・手数料を教えて。オンラインでできますか？",
   "phase": "23区",
   "n_municipalities": 23,
   "measurement": {
-    "measurement_version": null,
-    "prompt_version": null,
-    "follow": null,
-    "max_follow": null,
-    "max_depth": null,
-    "beam": null,
-    "max_fetches": null,
-    "max_text_chars": null,
-    "max_links": null,
-    "link_order": null,
-    "table_reading": null,
-    "model": null,
-    "model_version": null,
-    "run_at": [],
-    "discovery_run_at": [],
-    "recording_status": "legacy_unknown",
-    "comparison_status": "legacy_unknown",
+    "recording_status": "recorded",
+    "comparison_status": "compatible",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text+ocr",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": [
+      "2026-08-30T18:04:22+00:00",
+      "2026-08-31T13:45:42+00:00",
+      "2026-08-31T13:47:25+00:00",
+      "2026-08-31T13:49:38+00:00",
+      "2026-08-31T13:51:35+00:00",
+      "2026-08-31T13:53:42+00:00",
+      "2026-08-31T13:56:19+00:00",
+      "2026-08-31T13:58:16+00:00",
+      "2026-08-31T14:00:31+00:00",
+      "2026-08-31T14:02:21+00:00",
+      "2026-08-31T14:04:56+00:00",
+      "2026-08-31T15:38:23+00:00",
+      "2026-08-31T15:40:48+00:00",
+      "2026-08-31T15:42:43+00:00",
+      "2026-08-31T15:45:01+00:00",
+      "2026-08-31T15:48:04+00:00",
+      "2026-08-31T15:50:54+00:00",
+      "2026-08-31T15:53:02+00:00",
+      "2026-08-31T15:55:55+00:00",
+      "2026-08-31T15:58:53+00:00",
+      "2026-08-31T16:01:30+00:00",
+      "2026-08-31T16:04:14+00:00",
+      "2026-08-31T16:42:50+00:00"
+    ],
+    "discovery_run_at": [
+      "2026-08-28T14:37:31+00:00"
+    ],
     "runs": [
       {
-        "municipality_id": "arakawa",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "bunkyo",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "chiyoda",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "itabashi",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "koto",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
         "municipality_id": "minato",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T16:42:50+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
       },
       {
-        "municipality_id": "shibuya",
-        "recording_status": "legacy_unknown",
+        "municipality_id": "arakawa",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "shinagawa",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "toshima",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "nakano",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "katsushika",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "meguro",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "nerima",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "ota",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "shinjuku",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:47:25+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
       },
       {
         "municipality_id": "suginami",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T15:55:55+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
       },
       {
         "municipality_id": "sumida",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T15:58:53+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
       },
       {
-        "municipality_id": "taito",
-        "recording_status": "legacy_unknown",
+        "municipality_id": "chiyoda",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:51:35+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
       },
       {
-        "municipality_id": "adachi",
-        "recording_status": "legacy_unknown",
+        "municipality_id": "itabashi",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:56:19+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
       },
       {
-        "municipality_id": "chuo",
-        "recording_status": "legacy_unknown",
+        "municipality_id": "katsushika",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "edogawa",
-        "recording_status": "legacy_unknown",
-        "model": null,
-        "model_version": null,
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:58:16+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
       },
       {
         "municipality_id": "kita",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T14:00:31+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "koto",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T14:02:21+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "meguro",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T14:04:56+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "nakano",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T15:38:23+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "nerima",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T15:40:48+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "ota",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T15:42:43+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "shibuya",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T15:48:04+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "shinagawa",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T15:50:54+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "shinjuku",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T15:53:02+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "toshima",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:04:14+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "bunkyo",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:49:38+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
       },
       {
         "municipality_id": "setagaya",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T15:45:01+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "taito",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T16:01:30+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "adachi",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:45:42+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "chuo",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:53:42+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
+      },
+      {
+        "municipality_id": "edogawa",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-30T18:04:22+00:00",
+        "discovery_run_at": "2026-08-28T14:37:31+00:00"
       }
-    ],
-    "read_breadth": null,
-    "non_html_reading": null
+    ]
   },
   "summary": {
-    "average": 39.6,
-    "max": 60,
+    "average": 53.9,
+    "max": 100,
     "min": 0,
-    "full_marks": 0,
-    "zero": 5,
-    "fee_missing": 14
+    "full_marks": 1,
+    "zero": 3,
+    "fee_missing": 15
   },
   "municipalities": [
     {
+      "id": "minato",
+      "name": "港区",
+      "total": 100,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
+      "followed": [
+        "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay",
+        "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        }
+      ],
+      "improvements": [],
+      "notes": "通常申込には持ち物・提出書類の記載が本文になく、必要書類が明記されているのは減免申請の詳細ページのみだった。減免申請書自体は事務所からの郵送で入手する形式のため、利用者が事前に用意する『持ち物』は資格証明書類に限られる。\n本体ページには「みなと粗大ごみ受付センターにお申し込みください」としか書かれておらず窓口かオンラインかは判別できないが、リンク先のe-tumoポータルで手続き選択→メール確認→内容入力→申込完了というオンライン完結の申込フローが確認できた（減免申請のみ電話限定）。\n自治体本体ページには申込期限の記載はなく、外部の受付センター（ecolife.e-tumo.jp）側のお知らせ欄に、収集までの所要期間（目安2週間）という形で間接的に期限相当の情報があった。ただし変更・取消の締切（4営業日前等）は別項目であり、初回申込の期限そのものを明言する記述ではない。\n料金は本文の表（品目別に400円〜3,200円）に明記されているが、単一額ではなく品目ごとの一覧のため、より詳細な料金表PDFへのリンクも別途用意されている。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131032"
+    },
+    {
       "id": "arakawa",
       "name": "荒川区",
-      "total": 60,
+      "total": 80,
       "breakdown": {
-        "必要書類": 0,
+        "必要書類": 20,
         "窓口/オンライン可否": 20,
         "期限": 0,
         "手数料": 20,
@@ -234,14 +329,16 @@
       },
       "hops": 2,
       "page_url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html",
-      "followed": [],
+      "followed": [
+        "https://www2.sodai-web.jp/arakawa/index.html"
+      ],
       "fields": [
         {
           "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
+          "verdict": "読めた",
+          "points": 20,
           "agent_value": "",
-          "quote_withheld": false
+          "quote_withheld": true
         },
         {
           "field": "窓口/オンライン可否",
@@ -267,17 +364,12 @@
       ],
       "improvements": [
         {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
           "field": "期限",
           "gain": 20,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
         }
       ],
-      "notes": "申込み手順・料金表は本文に詳細に書かれているが、標準申込みに必要な持参書類（本人確認書類等）や申込み期限についての明記はなく、減免申請用の書類のみが個別に記載されている。",
+      "notes": "通常の申込み手順には持ち物・必要書類の明記が無く、代わりに手数料の減免を受ける対象者向けの『必要書類』表が本文中にあり、それが該当者限定の持ち物にあたる。\n「粗大ごみ申込みの流れ」の手順1に、インターネット申込み（24時間受付・外部の粗大ごみ受付センターへのリンク）と電話申込みの両方が明記されており、窓口来訪は必須とされていない。\n申込みから収集までの手順は詳しく書かれているが、「収集日の何日前までに申込む必要があるか」という期限そのものは本文にもリンク先の受付センターページにも明記されていない。リンク先には収集日3日前からの変更・キャンセル不可の記載はあるが、これは新規申込の期限ではない。\n手数料は品目ごとの一覧表（300円〜3,200円）で示されており、単一の定額ではない。詳細な料金一例は本文中の表と外部の粗大ごみ受付センターサイトに掲載。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -286,29 +378,29 @@
       "lg_code": "131181"
     },
     {
-      "id": "bunkyo",
-      "name": "文京区",
-      "total": 60,
+      "id": "suginami",
+      "name": "杉並区",
+      "total": 80,
       "breakdown": {
-        "必要書類": 0,
+        "必要書類": 20,
         "窓口/オンライン可否": 20,
         "期限": 0,
         "手数料": 20,
         "オンライン明示": 20
       },
-      "hops": 2,
-      "page_url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
+      "hops": 1,
+      "page_url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
       "followed": [
-        "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
-        "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+        "https://www.city.suginami.tokyo.jp/s105/727.html",
+        "https://www.city.suginami.tokyo.jp/s104/728.html"
       ],
       "fields": [
         {
           "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
+          "verdict": "読めた",
+          "points": 20,
           "agent_value": "",
-          "quote_withheld": false
+          "quote_withheld": true
         },
         {
           "field": "窓口/オンライン可否",
@@ -334,23 +426,81 @@
       ],
       "improvements": [
         {
-          "field": "必要書類",
+          "field": "期限",
           "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "トップの案内ページ自体には申込方法の一覧のみで持ち物・書類の記載はなく、リンク先の詳細ページに持ち込み時の本人確認書類と減免希望者向けの証明書類の表がまとまっていた。\nトップの「ごみ・リサイクル」ページには申込方法の記載がなく、「粗大ごみ」リンク先の詳細ページに申込方法（インターネット／チャットボット／電話／ファクス）と電子決済の可否がまとめて書かれていた。\n「粗大ごみの出し方・申し込み方法」ページは事前申込制・先着順であることと、申込から収集まで目安2〜3週間かかることは書かれているが、これは処理期間の目安であり「いつまでに申し込むべきか」という起算点つきの締切ではない。減免制度の申請のみ「収集日の2〜3週間前」という目安があるが対象が限定的で、一般の申込手続き全体の締切として一意に定まらない。\nトップページ本文には手数料の記載はなく、リンク先「粗大ごみの出し方・申し込み方法」ページに詳細（品目ごとに異なり申込時案内、処理券A/B券、持込一律400円）があった。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131156"
+    },
+    {
+      "id": "sumida",
+      "name": "墨田区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
+      "followed": [
+        "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/oyakudachi/genmensinsei.html",
+        "https://www2.sodai-web.jp/sumida/index.html",
+        "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
         },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        }
+      ],
+      "improvements": [
         {
           "field": "期限",
           "gain": 20,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
         }
       ],
-      "notes": "トップの「ごみ・リサイクル」ページ自体には申込手続きの詳細が無く、リンク先の「粗大ごみの出し方」ページに申込方法・料金がまとまっている。必要書類と申込期限（何日前までに申込むか等）はどちらのページにも記載が見当たらなかった。",
+      "notes": "申込ページ本文には持ち物の直接記載はなく、減免該当者向けの提出書類（申請書＋添付書類）はリンク先の減免申請ページにのみ記載されていた。\n「インターネット申込」と「電話申込」の2経路が本文に明記され、インターネット側はオンライン決済まで完結すると書かれている。窓口来所は前提とされていない。\n申込方法・支払い・出し方の手順は詳しいが、「収集希望日の何日前までに申し込む必要があるか」という申込期限そのものの記載は本文にもインターネット受付ページにも見当たらない。ページにあるのは収集日3日前からの変更・キャンセル不可という別の制約のみ。\n本文には「事前申込制で有料」とだけ書かれ、金額は品目ごとの一覧PDF（粗大ごみ手数料一覧）に委ねられている。チャットボットの回答例（ふとん400円）も本文中の参考情報として載っている。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
-      "lg_code": "131059"
+      "lg_code": "131075"
     },
     {
       "id": "chiyoda",
@@ -365,7 +515,9 @@
       },
       "hops": 2,
       "page_url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html",
-      "followed": [],
+      "followed": [
+        "https://ecolife.e-tumo.jp/sodai.city.chiyoda-u/offer/offerList_initDisplay"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -408,7 +560,7 @@
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
         }
       ],
-      "notes": "料金は本文の表に主要品目が明記され、それ以外はPDF一覧表に誘導される二段構成。必要書類や申込期限（何日前までに申し込むか）についての記載は本文中に見当たらない。",
+      "notes": "申込方法（インターネット・チャットボット・電話）と手数料（処理券の種類・金額・品目別料金表）の説明が中心で、申込時に必要な持ち物・書類についての記載は本文にもリンク一覧にも見当たらない。\n申し込み方法として「インターネット」「チャットボット」「電話」の3種が本文に並記されており、窓口来庁の記載は無い。\n本文もリンク先の申込システム（ecolife）画面も、収集日と申込日の間隔（何日前までに申し込むべきか）には触れておらず、システムの受付時間帯（随時受付）の説明のみだった。\n手数料は本文中の説明文とA券・B券の単価に加え、主な品目例が表で明記されている。全品目の網羅的な料金は別添PDF「粗大ごみ品目一覧表」に委ねられている。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -421,278 +573,20 @@
       "name": "板橋区",
       "total": 60,
       "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 20,
-        "期限": 0,
-        "手数料": 20,
-        "オンライン明示": 20
-      },
-      "hops": 3,
-      "page_url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
-      "followed": [
-        "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html"
-      ],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        }
-      ],
-      "notes": "本体ページには具体的な品目別料金が書かれておらず、金額の一覧はPDF「板橋区粗大ごみ品目一覧」またはAIチャットボットへの誘導のみ。リンク先の手数料ページ（1001869）にも一律の料金表はなく、持ち込み時の割引計算例として一部品目の金額が断片的に出てくるのみだった。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131199"
-    },
-    {
-      "id": "koto",
-      "name": "江東区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 20,
-        "期限": 0,
-        "手数料": 20,
-        "オンライン明示": 20
-      },
-      "hops": 2,
-      "page_url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
-      "followed": [
-        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
-        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html"
-      ],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        }
-      ],
-      "notes": "指定URL(7370.html)は「粗大ごみ収集の申込」本体ではなく、生活保護受給者等向けの手数料減免専用ページだった。一般の申込方法・料金の仕組みは同じ分類の別ページ（7367.html「粗大ごみの出し方」、7368.html「粗大ごみ手数料・シール組合せ表」）に分散しており、1ページで完結しない構成。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131083"
-    },
-    {
-      "id": "minato",
-      "name": "港区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 20,
-        "期限": 0,
-        "手数料": 20,
-        "オンライン明示": 20
-      },
-      "hops": 2,
-      "page_url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
-      "followed": [
-        "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
-      ],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        }
-      ],
-      "notes": "本文には料金表が明記されていたが、申込に必要な書類や提出期限の記載は無かった。リンク先の受付センターページで「インターネット申込可・減免のみ電話限定」という運用が分かったが、書類要件や期限には触れていない。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131032"
-    },
-    {
-      "id": "shibuya",
-      "name": "渋谷区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 20,
-        "期限": 0,
-        "手数料": 20,
-        "オンライン明示": 20
-      },
-      "hops": 1,
-      "page_url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        }
-      ],
-      "notes": "申し込み方法・支払い方法は本文に明記されているが、品目ごとの具体的な手数料額はPDF頼みで、本文は「手数料はご予約の際に、ご確認頂けます」と案内するのみ。申込に必要な書類や申込期限についての記載はページ内に見当たらない。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131130"
-    },
-    {
-      "id": "shinagawa",
-      "name": "品川区",
-      "total": 60,
-      "breakdown": {
         "必要書類": 20,
         "窓口/オンライン可否": 20,
         "期限": 0,
         "手数料": 0,
         "オンライン明示": 20
       },
-      "hops": 1,
-      "page_url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
-      "followed": [],
+      "hops": 3,
+      "page_url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
+      "followed": [
+        "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/gomi/1044412/index.html",
+        "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/index.html",
+        "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
+        "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/001/868/sodai260401.pdf"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -735,38 +629,37 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "手数料は本文中に金額の記載が無く「こちらのページをご覧ください」と別ページへ誘導されているが、そのリンクのURLは提供されたリンク一覧（ナビゲーション・多言語リンクのみ）に含まれておらず特定できなかった。期限も「日数を余裕をもって」「なるべく早めに」という表現のみで具体的な日数の記載はない。",
+      "notes": "本人確認書類は「持ち込み」の場合のみ明記されており、収集（自宅前回収）では本人確認書類への言及がない。共通で必要なのは粗大ごみ処理券（購入証）。\n申込方法として「インターネット受付(申込先)」の見出しの下に24時間受付のオンライン申込リンク（ecolife.e-tumo.jp）が明記されており、電話・ファクスと並ぶ手段としてオンライン完結が本文に直接書かれている。\n本文・FAQページともに、申込から収集希望日までに要する期間や「◯日前までに申込」という起算点つきの期限は明記されていない。記載があるのは「変更取消は収集の場合4日前午後7時まで」という取消期限のみで、申込自体の期限ではない。\n手数料は「品目ごとに設定」されており、PDF「粗大ごみ品目一覧」に品目別・サイズ別の金額表（400円〜3200円等）がある。単一の手数料額は存在せず、持込みは収集時の半額になるなど条件も分岐するため、この設問に対する一意の答えは示されていない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
-      "lg_code": "131091"
+      "lg_code": "131199"
     },
     {
-      "id": "toshima",
-      "name": "豊島区",
+      "id": "katsushika",
+      "name": "葛飾区",
       "total": 60,
       "breakdown": {
-        "必要書類": 0,
+        "必要書類": 20,
         "窓口/オンライン可否": 20,
         "期限": 0,
-        "手数料": 20,
+        "手数料": 0,
         "オンライン明示": 20
       },
       "hops": 2,
-      "page_url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
+      "page_url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/index.html",
       "followed": [
-        "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
-        "https://www.city.toshima.lg.jp/151/2012181541.html"
+        "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/1016343.html"
       ],
       "fields": [
         {
           "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
+          "verdict": "読めた",
+          "points": 20,
           "agent_value": "",
-          "quote_withheld": false
+          "quote_withheld": true
         },
         {
           "field": "窓口/オンライン可否",
@@ -784,42 +677,244 @@
         },
         {
           "field": "手数料",
-          "verdict": "読めた",
-          "points": 20,
+          "verdict": "読めない",
+          "points": 0,
           "agent_value": "",
-          "quote_withheld": true
+          "quote_withheld": false
         }
       ],
       "improvements": [
         {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
           "field": "期限",
           "gain": 20,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "起点のindex.htmlは分類リンクのみで内容がなく、実際の申込方法・手数料は「粗大ごみの出し方」「粗大ごみ処理手数料（料金）」という下位2階層のページに分散している。品目別の正確な手数料はさらにPDF（品目別手数料一覧）を開かないと分からない。",
+      "notes": "「粗大ごみの出し方」ページは収集と持込の両方法を併記しており、収集自体には持ち物の指定がない一方、持込は身分証明書必須、減免該当者は別途申請書が必要という条件付きの記載になっている。\n本文中に「事前にインターネットか電話でお申し込みをお願いします」と明記されており、窓口限定ではなくオンライン申込みが可能と分かる。詳細手順は別ページ「粗大ごみの出し方」にあるが、この項目の判定には本文の記載で十分。\n申込方法（インターネット・電話）や収集当日の出し方（朝8時までに出す等）の記載はあるが、「申込」自体の期限（例:収集希望日の◯日前までに申し込む）を明示した記述は見当たらなかった。\n手数料は品目ごとに異なり、申し込み時に電話またはインターネットで案内される仕組み。ページには処理券がA券200円・B券300円の2種類とだけ記載され、具体的な品目別金額は別添PDF「粗大ごみ品目・処理手数料一覧表」に委ねられており、本文だけでは一意の金額が特定できない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
-      "lg_code": "131164"
+      "lg_code": "131229"
+    },
+    {
+      "id": "kita",
+      "name": "北区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
+      "followed": [
+        "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
+        "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "収集（電話・インターネット申込）には持ち物の記載がないが、持込利用者に限り身分証明書の提示が明記されている。\nトップページ本文には申込方法の記載がなく、リンク先「粗大ごみについて」に電話・インターネット両方の申込手順（メール登録→URL→画面入力）が詳述されていた。\n「粗大ごみについて」ページに申込〜収集当日までの手順は詳しく書かれているが、「収集日の何日前までに申し込む必要があるか」という起算点つきの申込期限そのものは記載がなかった。書かれているのは「出す前にお申し込みを済ませる」「収集日の朝8時までに出す」という順序・当日の話のみ。\n手数料は品目ごとの料金表（PDF「粗大ごみ品目と料金」）とA券200円・B券300円の処理券の組み合わせで決まる仕組みで、単一の金額は本文中に無い。改定例の表でも品目により400円〜3,200円超と幅があり、一意の答えは定まらない。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131172"
+    },
+    {
+      "id": "koto",
+      "name": "江東区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
+      "followed": [
+        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+        "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
+        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "このページは粗大ごみ「減免」専用ページで、通常申込の持ち物一般については触れていない。一般の出し方は別ページ（粗大ごみの出し方）にある可能性があるが、本ページは減免対象者に限った証明書類・申請書のみを記載。\n元ページ（7370.html）は減免申請のみを扱い電話必須だったが、粗大ごみ申込み本体は別ページ（7367.html）にインターネット・LINEミニアプリ・電話の3経路があり、窓口不要でオンライン完結可能と明記されている。\n申し込み方法（インターネット・LINE・電話）や受付時間、変更連絡の期限（収集予定日の2日前から業務センターへ）は書かれているが、「申込自体を収集日の何日前までに行うべきか」という起算点付きの期限は本文・リンク先2ページのいずれにも明記されていない。\n手数料は品目ごとに異なり、200円のA券・300円のB券を組み合わせて支払う方式。具体的な金額は品目別PDF一覧やインターネット申込サイトの検索機能でしか分からず、単一の手数料額としては本文に記載がない。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131083"
+    },
+    {
+      "id": "meguro",
+      "name": "目黒区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
+      "followed": [
+        "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+        "https://www2.sodai-web.jp/meguro/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "申込み自体（電話・インターネット）の説明には持参書類の記載がなく、必要書類に触れているのは手数料減額・免除の申請（該当者のみ）の箇所のみだった。\n本来は「収集曜日」のページだが、末尾に「粗大ごみの申込み」の小見出しがあり、インターネット受付へのリンクと電話番号が併記されている。窓口来訪を必須とする記述は無い。\n収集曜日ページ・手続きページ・外部受付サイトのいずれにも「申込みは収集日の◯日前までに」という申込期限の明記はない。「収集予定日の3日前（日曜日を挟む場合は4日前）以降の変更はインターネット不可」という記述はあるが、これは既存申込の変更・追加に関する期限であり、新規申込そのものの期限ではない。また「申込みから収集まで2週間程度」は目安の待機期間であって起算点つきの申込期限ではない。\n「粗大ごみ処理の手続き」ページに『手数料は、粗大ごみの種類によって金額が違います』『収納家具類はサイズ（長い2辺の合計）によって処理手数料が異なります』とあり、金額は品目・サイズ別の一覧（有料粗大ごみ処理券A券/B券や区の品目別料金表）を見る必要があり、本文中には具体的な金額（円）そのものは記載されていなかった。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131105"
     },
     {
       "id": "nakano",
       "name": "中野区",
-      "total": 50,
+      "total": 60,
       "breakdown": {
         "必要書類": 0,
         "窓口/オンライン可否": 20,
         "期限": 0,
         "手数料": 20,
-        "オンライン明示": 10
+        "オンライン明示": 20
       },
       "hops": 2,
       "page_url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
@@ -867,14 +962,9 @@
           "field": "期限",
           "gain": 20,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 10,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "対象ページ自体は申込みアイコンへの入口のみで、必要書類や申込期限の記載はない。関連ページ「「粗大ごみ」の出し方（事前申し込み制）」を確認しても、手数料（処理券の金額）は明記されているが、期限や必要書類についての記載は見当たらなかった。",
+      "notes": "本文とリンク先の「事前申し込み制」ページはいずれも申込方法（電話・インターネット）と処理券購入の流れを説明するのみで、申込み手続き自体に必要な持ち物・提出書類の記載はない。運び出し収集の対象者要件（身体障害者手帳等）は資格条件であり持ち物の説明ではない。\nこのページ自体がインターネット申込専用ページで、申込方法欄に外部の申込システム（sodai-web.jp）へのリンクがあり、対象外品目のみ電話に送客する構成。\n本文・リンク先とも申込方法や収集の流れ（電話/インターネットで申込→処理券購入→収集日朝8時までに排出）は詳しいが、「収集日の何日前までに申し込むべきか」という起算点つきの期限は明記されていない。\n申込ページ本体には料金の記載がなく、「粗大ごみ」の出し方ページに券種と単価（200円・300円）はあるが、品目ごとの必要枚数は外部サイト（排出品目一覧）に委ねられている。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -883,152 +973,11 @@
       "lg_code": "131148"
     },
     {
-      "id": "katsushika",
-      "name": "葛飾区",
-      "total": 40,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 20,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 20
-      },
-      "hops": 2,
-      "page_url": "https://www.city.katsushika.lg.jp/kurashi/1000048/1001536/index.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        }
-      ],
-      "notes": "このページは「粗大ごみ・家電など」の総合案内トップで、申込方法（インターネット／電話）には触れているが、実際の申込フォームや処理券料金表へのリンクは本文・リンク一覧のどちらにも見当たらない。「有料粗大ごみ処理券の還付手続きについて」という見出しから有料制度の存在は示唆されるが、金額の記載はない。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131229"
-    },
-    {
-      "id": "meguro",
-      "name": "目黒区",
-      "total": 40,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 20,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 20
-      },
-      "hops": 3,
-      "page_url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
-      "followed": [
-        "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
-        "https://www2.sodai-web.jp/meguro/index.html"
-      ],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        }
-      ],
-      "notes": "収集曜日ページ（youbi.html）は申込方法（電話・インターネット）は明記しているが、手数料は品目ごとに異なるとしか書かれておらず金額表は別ページに分散、必要書類・提出期限にあたる記載はどのページにも見当たらなかった。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131105"
-    },
-    {
       "id": "nerima",
       "name": "練馬区",
-      "total": 40,
+      "total": 60,
       "breakdown": {
-        "必要書類": 0,
+        "必要書類": 20,
         "窓口/オンライン可否": 20,
         "期限": 0,
         "手数料": 0,
@@ -1037,15 +986,16 @@
       "hops": 2,
       "page_url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
       "followed": [
+        "https://www.sodai-nerima.jp/",
         "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
       ],
       "fields": [
         {
           "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
+          "verdict": "読めた",
+          "points": 20,
           "agent_value": "",
-          "quote_withheld": false
+          "quote_withheld": true
         },
         {
           "field": "窓口/オンライン可否",
@@ -1071,11 +1021,6 @@
       ],
       "improvements": [
         {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
           "field": "期限",
           "gain": 20,
           "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
@@ -1086,7 +1031,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "申込み方法（インターネット／電話）と支払い方法は本文に明記されているが、品目ごとの正確な手数料は外部の料金検索ツール（品目を選択して検索するUI）に依存しており、リンク先ページを開いても具体的な金額は取得できなかった。必要書類も収集時（処理券貼付）と持込み時（本人確認書類）で異なり、申込み手続き自体に一意の必要書類は書かれていない。",
+      "notes": "収集申込み自体（インターネット・電話）には持ち物の記載がなく、持込み利用時のみ本人確認書類の携行が求められている。\n申込み方法として「インターネット申込み（24時間受付）」と「電話申込み」が並記され、インターネット申込みの場合のみオンライン決済まで完結できると明記されている。\n申込み方法・支払い・出し方の手順は詳細に書かれているが、「収集希望日の何日前までに申し込む必要があるか」という起算点つきの期限は本文にもリンク先の申込みサイト（sodai-nerima.jp）本文にも見当たらなかった。\n本文は「粗大ごみは有料」とA券200円・B券300円という券種の額面のみ示し、実際の手数料は品目ごとに異なるため「料金検索」（外部サイト）に誘導している。リンク先は品目分類（あ〜わ）を選んで検索する対話式ツールで、取得できた本文には具体的な品目別金額が含まれていなかった。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -1097,9 +1042,9 @@
     {
       "id": "ota",
       "name": "大田区",
-      "total": 40,
+      "total": 60,
       "breakdown": {
-        "必要書類": 0,
+        "必要書類": 20,
         "窓口/オンライン可否": 20,
         "期限": 0,
         "手数料": 0,
@@ -1107,14 +1052,18 @@
       },
       "hops": 1,
       "page_url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
-      "followed": [],
+      "followed": [
+        "https://www.ota-sodai.com",
+        "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+        "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf"
+      ],
       "fields": [
         {
           "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
+          "verdict": "読めた",
+          "points": 20,
           "agent_value": "",
-          "quote_withheld": false
+          "quote_withheld": true
         },
         {
           "field": "窓口/オンライン可否",
@@ -1140,10 +1089,139 @@
       ],
       "improvements": [
         {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "電話・インターネットでの通常申込には持ち物の記載はなく、持ち込み時の本人確認書類と、手数料減免申請時の証明書類という「該当者だけ」の持ち物が別々の見出し（出し方／手数料の減免）に分散して書かれている。\n申し込み方法の節に電話とインターネットの両方が明記されており、インターネットは収集申込限定（持ち込みは電話のみ）という条件が本文中に明記されている。\n収集申込については「日数に余裕をもって」「2週間以上先の日程での受付となる場合があります」との記述のみで、起算点付きの具体的な期限（◯日前まで等）は本文にもリンク先ページにも見当たらない。3日前締切は持ち込み・減免申請の話で収集申込自体の期限ではない。\n本文には「粗大ごみの処分は有料」とあるのみで、実際の金額は「粗大ごみ品目・手数料一覧」のPDF/Excel添付にしかなく、開いた01.pdfは処理券の使い方説明で金額表ではなかった。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131113"
+    },
+    {
+      "id": "shibuya",
+      "name": "渋谷区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "followed": [
+        "https://p1.govtech-express.com/webui/1496310592?survey=a0OIj000000M4WMMA0",
+        "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        }
+      ],
+      "improvements": [
+        {
           "field": "必要書類",
           "gain": 20,
           "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
         },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "申し込み方法は電話・LINE・インターネットの3経路が詳しく書かれているが、いずれの経路でも本人確認書類や申請書等の「持ち物・必要書類」への言及は本文になく、リンク一覧（品目手数料一覧PDF、有料粗大ごみ処理券、パンフレット等）も申込手数料や手続き方法の説明であり、必要書類を扱うものは見当たらない。\n「申し込み方法」の節で電話・LINE・インターネットの3択が明記され、さらに「収集までの手順」の節に「インターネットまたはLINEから申し込みした場合のみ、キャッシュレス決済が可能」という補足があり、申込と支払いの両方がオンラインで完結できることが本文だけで確認できた。\n申し込み方法・収集までの手順は詳しいが、「収集日の何日前までに申し込むか」という起算点つきの期限は本文になく、キャッシュレス決済の締切（収集日7日前）のみが言及されている。リンク先のインターネット受付ページも本文が取得できず確認できなかった。\n手数料は本文に固定額として書かれておらず、「品目および手数料一覧」ページ（sibuyaku_sodaitesuuryou.html）のあ行〜わ行の品目別テーブルにA券/B券の枚数と費用が個別に記載されている。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131130"
+    },
+    {
+      "id": "shinagawa",
+      "name": "品川区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/20240807165625.html",
+      "followed": [
+        "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/index.html",
+        "https://www.city.shinagawa.tokyo.jp/PC/kankyo/kankyo-gomi/gomi-sodai/hpg000005620.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
         {
           "field": "期限",
           "gain": 20,
@@ -1155,17 +1233,151 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "手続きの流れはHTML本文に詳しく書かれているが、必要書類は申込方法（電話・インターネット・FAX・持ち込み）ごとに条件が分かれ、手数料の具体額は申込時に窓口案内される仕組みで、このページ単体では確定できない。",
+      "notes": "「申し込み方法」の節では申込時に持参する書類は明記されておらず、氏名・住所確認書類の記載は「持ち込みをする場合」の節にのみ登場する。\n申込方法として「インターネット(24時間受付)」と「電話」の2手段のみが明示され、窓口(来庁)による申込方法の記載はない。電子決済を使えば紙の処理券購入も不要になる旨の記載があり、オンラインでの完結可能性を裏付けている。\n本文には「日数を余裕をもってお申し込みください」「なるべく早めにお申し込みください」という曖昧な案内はあるが、起算点付きの具体的な期限（例:収集希望日の何日前まで）は本文にもリンク先の一覧ページにも記載がなかった。\n「粗大ごみ処理手数料」ページでも金額は明記されず、品目ごとに異なるため「粗大ごみ品目手数料検索」という別の検索ツールでの照会に送客されている。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
-      "lg_code": "131113"
+      "lg_code": "131091"
     },
     {
       "id": "shinjuku",
       "name": "新宿区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 20,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
+      "followed": [
+        "https://www.shinjuku-sodai.com",
+        "https://www.city.shinjuku.lg.jp/seikatsu/index09.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        }
+      ],
+      "notes": "元ページは受付センターの連絡先変更告知のみ。リンク先の申込サイト（shinjuku-sodai.com）は減額・免除対象者向けの電話案内や処理券購入方法には触れているが、申込手続きに必要な持ち物・書類の記載は見当たらなかった。\nこのページは「受付先が変わります」という改修告知ページで、電話番号とホームページURLの変更を表形式で示しており、ホームページの受付時間が24時間（メンテナンス等除く）と明記されているためオンライン完結を本文だけで判定できた。\n元ページは受付センターの電話番号・URL変更のお知らせのみで申込期限の記載は無い。リンク先の受付サイトも申込方法・除外品目・注意事項はあるが、収集日から逆算した申込期限（起算点つき）の記述は見当たらなかった。\n自治体本体ページ（shinjuku.lg.jp）には手数料の記述がなく、外部委託の受付サイト（shinjuku-sodai.com）に「有料粗大ごみ処理券」制度の説明があった。ただし具体的な金額表は本文中になく、「品目リスト手数料検索」という別機能に金額情報が置かれている構成だった。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131041"
+    },
+    {
+      "id": "toshima",
+      "name": "豊島区",
+      "total": 60,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
+      "followed": [
+        "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
+        "https://www.city.toshima.lg.jp/151/2012181541.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "申込手順自体（インターネット／電話）には持ち物の記載がなく、持ち物が明記されているのは減免（対象者のみ）のオンライン申請部分のみだった。\n申込方法は起点ページ（index.html）には無く、1階層下の「粗大ごみの出し方」ページの『粗大ごみ受付センター』見出し下に、インターネット申込と電話申込が並記されている。減免利用時はインターネット不可という条件が同じ段落に付記されている。\n申込手順や受付時間・手数料減免の申請期限（収集予定日の1週間前まで）は記載されているが、粗大ごみ収集の申込自体について「収集日の何日前までに申し込む必要があるか」という期限は明記されていない。電話・インターネット受付で申込時に収集日を確認する運用のため、固定の申込期限という形では書かれていない。\n手数料は「品目ごとに設定」とだけ本文にあり、具体額は「粗大ごみ品目一覧表（PDF）」にのみ記載されている。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131164"
+    },
+    {
+      "id": "bunkyo",
+      "name": "文京区",
       "total": 40,
       "breakdown": {
         "必要書類": 0,
@@ -1175,78 +1387,10 @@
         "オンライン明示": 20
       },
       "hops": 2,
-      "page_url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        }
-      ],
-      "notes": "このページは粗大ごみ収集の手続き詳細ではなく、申込先「粗大ごみ受付センター」の電話番号・URLが変更された旨のお知らせのみ。本文に「粗大ごみの出し方は、こちらからご確認ください」という誘導リンクがあるが、そのリンク先URLは抽出済みリンク一覧（ナビゲーションメニューのみ）に含まれておらず追跡できない。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131041"
-    },
-    {
-      "id": "suginami",
-      "name": "杉並区",
-      "total": 40,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 20,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 20
-      },
-      "hops": 1,
-      "page_url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+      "page_url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
       "followed": [
-        "https://www.city.suginami.tokyo.jp/s105/727.html"
+        "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+        "https://www.city.bunkyo.lg.jp/b039/p000933.html"
       ],
       "fields": [
         {
@@ -1295,17 +1439,17 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "申込ページ自体（index.html）は品目リンク集のみで手続き情報が無く、実質的な手続きページはリンク先の「粗大ごみの出し方・申し込み方法」（s105/727.html）だった。手数料は品目ごとに異なり、具体額は本文中のPDF一覧表に依存するため単一の数値としては本文から確定できない。",
+      "notes": "申込みの手順（電話・インターネット・チャットボット）と有料粗大ごみ処理券の購入方法は詳しく書かれているが、申込み自体に必要な持ち物（本人確認書類等）についての記載は本文中に見当たらない。\n一覧ページには申込方法の記載はなく、リンク先の「粗大ごみの出し方」ページに電話・インターネット・チャットボットの3つの申込手段が表形式で列挙されていた。\n申込みから収集までの目安（『2、3週間以上かかる場合も』『お早めに』）はあるが、申込み自体の期限や起算点（例：収集希望日の◯日前まで）を明示した記述は本文になかった。\n粗大ごみは有料だが、料金は品目ごとに異なり申込み時に案内される仕組み（A券200円・B券300円の組み合わせ、例：両袖机3,200円）。一律の手数料額は本文に記載されておらず、「粗大ごみ受付センター」で個別に確認する形になっている。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
-      "lg_code": "131156"
+      "lg_code": "131059"
     },
     {
-      "id": "sumida",
-      "name": "墨田区",
+      "id": "setagaya",
+      "name": "世田谷区",
       "total": 40,
       "breakdown": {
         "必要書類": 0,
@@ -1315,8 +1459,13 @@
         "オンライン明示": 20
       },
       "hops": 1,
-      "page_url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.html",
-      "followed": [],
+      "page_url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
+      "followed": [
+        "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+        "https://www.city.setagaya.lg.jp/02239/383.html",
+        "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/381.html",
+        "https://www.city.setagaya.lg.jp/02239/382.html"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -1364,13 +1513,13 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "手順1〜4の見出しで構成され、具体的な料金はPDF一覧かチャットボット回答に誘導される形で本文には数字が出ない。必要書類や申込期限（いつまでに申し込むか）についての記載は見当たらず、申込方法（インターネット／電話）と支払い方法の説明が中心。",
+      "notes": "「粗大ごみの出し方」「有料粗大ごみ処理券について」の両ページを見たが、申込み手続きに必要な持ち物・書類（本人確認書類や減免対象者向けの証明書類等）を明記した記述はなかった。減免ページ（384.html）は今回のリンク先本文に含まれておらず未確認。\n一覧ページ本体には情報がなく、目次リンク「粗大ごみの出し方」（380.html）に申込方法（インターネット・電話・チャット・FAX）とオンライン決済の可否がまとまっていた。\nリンク先「粗大ごみの出し方」は申込方法（インターネット24時間・電話受付日時等）と、粗大ごみを出す際の期限（収集日の午前8時まで）は明記していたが、収集希望日に対して何日前までに申込が必要かという申込自体の期限は記載が無かった。\n手数料は品目ごとに異なり、このページ自体には一律の金額は無い。「インターネットから申し込みができる粗大ごみの処理手数料」という別ページか、粗大ごみ受付センターへの電話でしか品目別の金額は分からず、一意の答えが出せない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
-      "lg_code": "131075"
+      "lg_code": "131121"
     },
     {
       "id": "taito",
@@ -1385,7 +1534,10 @@
       },
       "hops": 1,
       "page_url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
-      "followed": [],
+      "followed": [
+        "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.files/20240703sodaihonnmokuitiran.pdf",
+        "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -1433,7 +1585,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "収集申込（電話/インターネット）の手順と、別手続きである持込窓口（本人確認書類・持込手数料200円など）の情報が同一ページに混在しており、項目によってはどちらの手続きの説明か区別が必要。収集の手数料額は本文になく、PDFかチャットボット誘導のみ。",
+      "notes": "電話・インターネットでの「粗大ごみ受付センター」への申込手順は書かれているが、申込時に用意すべき持ち物・書類は記載がない。本人確認書類が必要と明記されているのは同ページ内の別手続き「生活家電ごみ持込窓口」（自己搬入）向けであり、設問の対象である収集の申込（受付センターへの電話・インターネット申込）とは別の手続きのため対象外とした。\n本文中に「粗大ごみ受付センター」の電話番号と、インターネット申込のURL・受付時間（24時間）が別表として明記されており、申込自体はオンラインで完結できる。ただし手数料の有料粗大ごみ処理券は別途購入が必要。\n申込方法（電話・インターネット）と、申込後に案内される収集日当日朝8時までに出す旨は書かれているが、申込自体を収集日の何日前までに行う必要があるかという起算点つきの期限は本文にもリンク一覧にも見当たらない。\n手数料は一律ではなく、品目ごとに異なる有料粗大ごみ処理券（A券200円・B券300円）の枚数で決まる（400円〜3,200円等）。本文は「粗大ごみ受付センターへ申込むと処理料金を案内」「品目一覧PDFを見よ」とするのみで、単一の金額は示されていない。品目一覧PDFにも300品目超の個別価格が並ぶだけで、この項目（申込そのものの手数料）としての一意な答えは得られなかった。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -1455,7 +1607,8 @@
       "hops": 2,
       "page_url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
       "followed": [
-        "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html"
+        "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
+        "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/recycle/index.html"
       ],
       "fields": [
         {
@@ -1514,7 +1667,7 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "このページは粗大ごみの資源化（リサイクル）実績・推移を説明する統計ページであり、粗大ごみ収集の申込方法（受付窓口・オンライン可否・手数料など）には触れていない。リンク先の「ごみとリサイクル」一覧ページにも申込手続きへの直接リンクは見当たらず、申込専用ページ（受付センター等）はこの階層のリンク一覧に含まれていない。",
+      "notes": "本文および2つのリンク先ページはいずれも粗大ごみの資源化（リサイクル）実績やごみ全般の記事一覧で、粗大ごみ収集の申込手続きや持ち物に関する記述は見当たらなかった。\n元ページは粗大ごみの資源化（リサイクル）実績の解説で、申込方法には触れていない。リンク先の「ごみとリサイクル」一覧にも申込チャネル（窓口/オンライン）を示す項目は見当たらなかった。\n指定ページは粗大ごみの資源化（リサイクル）実績を説明する記事で、申込方法や期限には触れていない。リンク先の「ごみとリサイクル」一覧ページにも申込手続きの期限に関する記述はなかった。\nこのページは粗大ごみの資源化（リサイクル）実績を説明する統計ページで、収集申込の手続きや手数料には触れていない。リンク一覧もヘッダー・フッターの共通メニューのみで、申込・手数料に関係しそうな個別リンクは無かった。",
       "page_status": {
         "code": "target_unconfirmed",
         "label": "この手続きのページにたどり着けたか、確かめられていません",
@@ -1535,7 +1688,11 @@
       },
       "hops": 1,
       "page_url": "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
-      "followed": [],
+      "followed": [
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html",
+        "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -1593,7 +1750,7 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "このページは「ごみ・リサイクル」カテゴリのトップ（一覧）ページで、分別・出し方・拠点回収・資源回収などのリンク集にとどまり、「粗大ごみ」という語自体がリンク一覧中に一件も現れない。粗大ごみ収集の申込に関する専用ページはこのページからは特定できなかった。",
+      "notes": "起点ページは分別・出し方の総合案内で、粗大ごみの個別申込ページへの直接リンクが一覧に無かった。指定された2つのリンク先（その他の出し方／よくある質問）はいずれも粗大ごみの申込に必要な持ち物・書類には触れていない。\nトップページの「ごみ・リサイクル」カテゴリ一覧および指定された2つのリンク先（その他の出し方／五十音別一覧表）のいずれにも、粗大ごみ収集の申込方法や窓口・オンライン可否についての記載が見当たらなかった。\nごみ・リサイクルのトップページのリンク一覧に「粗大ごみ」への直接リンクが無く、開いた『その他、ごみの出し方』ページも有害物・消火器・二輪車・注射針の出し方のみで粗大ごみ収集の申込期限には触れていない。\nごみ・リサイクルの索引ページには粗大ごみ専用のページへの直接リンクが無く、「その他、ごみの出し方」「ごみ出しで困ったら」の2ページを開いたが、いずれも粗大ごみは申込が必要という言及のみで手数料の金額には触れていない。",
       "page_status": {
         "code": "target_unconfirmed",
         "label": "この手続きのページにたどり着けたか、確かめられていません",
@@ -1679,164 +1836,6 @@
         "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
       },
       "lg_code": "131237"
-    },
-    {
-      "id": "kita",
-      "name": "北区",
-      "total": 0,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 2,
-      "page_url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "gain": 20,
-          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "このページは「粗大ごみの出し方」という見出し1つと、「粗大ごみについて」「有料ごみ処理券の販売店一覧」「有料粗大ごみ処理券の還付手続き」「粗大ごみ料金改定」という4件のリンク見出しのみで構成された索引ページで、申込方法・必要書類・期限・料金の具体的な記述は本文中に一切ない。これらのリンク先URLはページ内リンク一覧（言語切替リンクが大半を占め上限40件を占有）に含まれておらず、follow_urls に確認済みのURLとして挙げられなかった。",
-      "page_status": {
-        "code": "target_unconfirmed",
-        "label": "この手続きのページにたどり着けたか、確かめられていません",
-        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
-      },
-      "lg_code": "131172"
-    },
-    {
-      "id": "setagaya",
-      "name": "世田谷区",
-      "total": 0,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 1,
-      "page_url": "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "gain": 20,
-          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "このページは目次（見出し一覧）のみで構成され、「粗大ごみの出し方」「粗大ごみの処理手数料について」等の実質的な内容セクションの本文がこの抽出には含まれていない。目次項目自体のリンク先URLも、提供されたリンク一覧（ナビゲーション・フッター中心）には含まれておらず、追跡できなかった。",
-      "page_status": {
-        "code": "target_unconfirmed",
-        "label": "この手続きのページにたどり着けたか、確かめられていません",
-        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
-      },
-      "lg_code": "131121"
     }
   ],
   "disclaimer": "AIが自治体の公式サイトを読み取れたかの実測（2026-07-22）。自治体を評価するものではなく、どこを直せば伝わるかを示すためのもの。行政機関の公式発表ではありません。",

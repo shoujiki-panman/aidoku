@@ -43,24 +43,20 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-30T14:01:16+00:00",
+    "run_at": "2026-08-31T13:18:59+00:00",
     "discovery_run_at": "2026-08-27T15:29:07+00:00"
   },
   "followed_urls": [
-    "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
-    "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
-    "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html"
+    "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html"
   ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "引越しワンストップサービスの手続きは日本国内での引越しに限られます。国外からの引越しの場合は「転入届：国外から目黒区へ住所を変更したとき」をご確認ください。",
+  "online_clarity_evidence": "引越しワンストップサービスの手続きは日本国内での引越しに限られます。国外からの引越しの場合は「転入届：国外から目黒区へ住所を変更したとき」をご確認ください",
   "online_clarity_pages": [
     "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
-    "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
-    "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
-    "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html"
+    "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html"
   ],
   "test_cases": [
     {
@@ -70,15 +66,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "①引越しをした人全員のパスポート ②戸籍謄本（戸籍全部事項証明書）および戸籍の附票（本籍が目黒区外にある場合。目黎区内本籍・外国人住民は不要） ③窓口手続き者の本人確認書類（運転免許証等） ④委任状（任意代理人が手続きする場合） ⑤権限確認ができる書類（法定代理人の場合。未成年者は親権確認できる戸籍謄抄本、成年被後見人は成年後見登記事項証明書） ⑥在留カード等または特別永住者証明書等（外国人の場合） ⑦続柄を証明する書類の原本（外国人のみの世帯で続柄を登録する場合） ⑧居住実績がわかる書類＝賃貸借契約書原本（1年以上前の日付で転入手続きをする場合）",
-        "evidence": "届出に必要なもの（日本国外からの転入）1引越しをされたかた全員のパスポート2戸籍謄本（戸籍全部事項証明書）および戸籍の附票3窓口で手続きを行うかたの本人確認書類",
+        "value": "全員のパスポート／戸籍謄本（戸籍全部事項証明書）および戸籍の附票（目黒区外に本籍がある場合。目黎区内・外国人住民は不要）／窓口で手続きする人の本人確認書類／委任状（任意代理人の場合）／権限確認ができる書類（法定代理人の場合：未成年者は戸籍謄抄本、成年被後見人は成年後見登記事項証明書）／在留カード等または特別永住者証明書等（外国人の場合）／続柄を証明する書類の原本（外国人のみの世帯で続柄を登録する場合）／賃貸借契約書の原本（1年以上前の日付で転入手続きをする場合）",
+        "evidence": "1引越しをされたかた全員のパスポート 2戸籍謄本（戸籍全部事項証明書）および戸籍の附票",
         "source": "html",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
           "verdict": "partial",
-          "run": 34,
-          "note": "連続34文字だけ一致。引用全体は確認できない"
+          "run": 22,
+          "note": "連続22文字だけ一致。引用全体は確認できない"
         }
       },
       "attempts": [
@@ -87,23 +83,23 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "①引越しをした人全員のパスポート ②戸籍謄本（戸籍全部事項証明書）および戸籍の附票（本籍が目黒区外にある場合。目黎区内本籍・外国人住民は不要） ③窓口手続き者の本人確認書類（運転免許証等） ④委任状（任意代理人が手続きする場合） ⑤権限確認ができる書類（法定代理人の場合。未成年者は親権確認できる戸籍謄抄本、成年被後見人は成年後見登記事項証明書） ⑥在留カード等または特別永住者証明書等（外国人の場合） ⑦続柄を証明する書類の原本（外国人のみの世帯で続柄を登録する場合） ⑧居住実績がわかる書類＝賃貸借契約書原本（1年以上前の日付で転入手続きをする場合）",
-            "evidence": "届出に必要なもの（日本国外からの転入）1引越しをされたかた全員のパスポート2戸籍謄本（戸籍全部事項証明書）および戸籍の附票3窓口で手続きを行うかたの本人確認書類",
+            "value": "全員のパスポート／戸籍謄本（戸籍全部事項証明書）および戸籍の附票（目黒区外に本籍がある場合。目黎区内・外国人住民は不要）／窓口で手続きする人の本人確認書類／委任状（任意代理人の場合）／権限確認ができる書類（法定代理人の場合：未成年者は戸籍謄抄本、成年被後見人は成年後見登記事項証明書）／在留カード等または特別永住者証明書等（外国人の場合）／続柄を証明する書類の原本（外国人のみの世帯で続柄を登録する場合）／賃貸借契約書の原本（1年以上前の日付で転入手続きをする場合）",
+            "evidence": "1引越しをされたかた全員のパスポート 2戸籍謄本（戸籍全部事項証明書）および戸籍の附票",
             "source": "html",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
               "verdict": "partial",
-              "run": 34,
-              "note": "連続34文字だけ一致。引用全体は確認できない"
+              "run": 22,
+              "note": "連続22文字だけ一致。引用全体は確認できない"
             }
           },
           "requested_urls": [],
-          "page_notes": "「届出に必要なもの」の下に番号付きリストで8項目（基本＋該当者のみ）が明記されており、本文だけで完結している。"
+          "page_notes": "「届出に必要なもの（日本国外からの転入）」の章に1〜8の番号付きリストで持ち物が列挙されており、各項目に該当者限定の注記（外国人のみ・法定代理人のみ・1年以上遡る場合のみ等）が付いている。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "「届出に必要なもの」の下に番号付きリストで8項目（基本＋該当者のみ）が明記されており、本文だけで完結している。",
+      "page_notes": "「届出に必要なもの（日本国外からの転入）」の章に1〜8の番号付きリストで持ち物が列挙されており、各項目に該当者限定の注記（外国人のみ・法定代理人のみ・1年以上遡る場合のみ等）が付いている。",
       "evidence_summary": {
         "checked": 1,
         "verified": 0,
@@ -121,14 +117,14 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "窓口のみ。国外からの転入はオンライン申請の対象外で、窓口での手続きが必要",
-        "evidence": "国外から目黒区に引越しをしたときは、住み始めてから14日以内に目黒区の窓口で転入の手続きが必要です。",
-        "source": "html",
+        "value": "窓口のみ（マイナポータルの引越しワンストップサービスで転出届はオンライン申請できるが、転入手続きは窓口来庁が必須）",
+        "evidence": "マイナポータルで連絡した来庁予定の日になりましたら、必ずマイナンバーカード又は特定在留カード、もしくは特定特別永住者証明書をお持ちの上、目黒区の窓口で転入手続きを行ってください。",
+        "source": "linked_page",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
           "verdict": "exact",
-          "run": 50,
+          "run": 89,
           "note": ""
         }
       },
@@ -145,36 +141,34 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
-            "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html"
+            "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html"
           ],
-          "page_notes": "このページは国外からの転入に特化しており、パスポート等の対面確認が前提のため窓口手続きの説明のみで、オンライン完結の可否には触れていない。同じ分類内に『マイナポータルを利用したオンライン申請をしたかた』という別ページがあり、そちらが転入届全体でのオンライン可否を判断できそうな候補。"
+          "page_notes": "このページ（国外からの転入）は届出場所として区役所窓口・地区サービス事務所のみを挙げ本文中に「オンライン」の記述はないが、同じ分類のリンク一覧に「転入届：マイナポータルを利用したオンライン申請をしたかた」という別ページがあり、そちらがオンライン完結可否の一次情報となりうる。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "窓口のみ。国外からの転入はオンライン申請の対象外で、窓口での手続きが必要",
-            "evidence": "国外から目黒区に引越しをしたときは、住み始めてから14日以内に目黒区の窓口で転入の手続きが必要です。",
-            "source": "html",
+            "value": "窓口のみ（マイナポータルの引越しワンストップサービスで転出届はオンライン申請できるが、転入手続きは窓口来庁が必須）",
+            "evidence": "マイナポータルで連絡した来庁予定の日になりましたら、必ずマイナンバーカード又は特定在留カード、もしくは特定特別永住者証明書をお持ちの上、目黒区の窓口で転入手続きを行ってください。",
+            "source": "linked_page",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
               "verdict": "exact",
-              "run": 50,
+              "run": 89,
               "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "本文はこの区の窓口手続きのみを説明している。マイナポータルのオンライン申請ページも確認したが、そちらは国内引越し限定と明記され、かつオンライン申請後も来庁予定日に窓口で転入手続きを行う必要があり完結しない。"
+          "page_notes": "本体ページ（国外からの転入）は窓口手続きを前提とした説明のみ。リンク先の「マイナポータルを利用したオンライン申請をしたかた」ページで、転出側はオンライン申請可だが転入自体は窓口来庁必須と明記されていた。"
         }
       ],
       "followed_urls": [
-        "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
-        "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html"
+        "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html"
       ],
-      "page_notes": "本文はこの区の窓口手続きのみを説明している。マイナポータルのオンライン申請ページも確認したが、そちらは国内引越し限定と明記され、かつオンライン申請後も来庁予定日に窓口で転入手続きを行う必要があり完結しない。",
+      "page_notes": "本体ページ（国外からの転入）は窓口手続きを前提とした説明のみ。リンク先の「マイナポータルを利用したオンライン申請をしたかた」ページで、転出側はオンライン申請可だが転入自体は窓口来庁必須と明記されていた。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -192,7 +186,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "住み始めてから14日以内",
+        "value": "住み始めてから14日以内（起算点：目黒区の新しい住所に実際に住み始めた日）",
         "evidence": "目黒区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
         "source": "html",
         "failure_reason": null,
@@ -209,7 +203,7 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "住み始めてから14日以内",
+            "value": "住み始めてから14日以内（起算点：目黒区の新しい住所に実際に住み始めた日）",
             "evidence": "目黒区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
             "source": "html",
             "failure_reason": null,
@@ -221,11 +215,11 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「届出期限」という見出しの下に起算点（住み始めてから）と期間（14日以内）が明記されており、本文冒頭にも同内容の記載がある。"
+          "page_notes": "「届出期限」という見出しの直下に明記されており、起算点（住み始めた日）と期限日数（14日以内）の両方が本文に含まれている。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "「届出期限」という見出しの下に起算点（住み始めてから）と期間（14日以内）が明記されており、本文冒頭にも同内容の記載がある。",
+      "page_notes": "「届出期限」という見出しの直下に明記されており、起算点（住み始めた日）と期限日数（14日以内）の両方が本文に含まれている。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -263,23 +257,6 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved"
-          },
-          "requested_urls": [
-            "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
-            "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html"
-          ],
-          "page_notes": "このページは国外からの転入手続きの必要書類・届出期限・届出場所を説明しているが、手数料についての記載は本文中に一切ない。手数料の情報は転入届の総括ページ（tennyuu/index.html）や窓口手続きページに載っている可能性がある。"
-        },
-        {
-          "stage": "follow",
-          "llm_called": true,
-          "result": {
-            "found": false,
-            "value": "",
-            "evidence": "",
-            "source": null,
             "failure_reason": "記載なし",
             "failure_type": "fact_missing",
             "evidence_check": {
@@ -289,14 +266,11 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本文および案内された2つのリンク先ページのいずれにも手数料・費用に関する記述がなく、必要書類・届出期限・届出場所のみが説明されている。"
+          "page_notes": "必要書類・届出期限・届出場所は詳しく書かれているが、手数料（無料か有料か）についての記載はページ内に見当たらない。関連リンクも同一手続きの別パターン（本人・代理人・マイナンバー・オンライン申請）や委任状PDFのみで、手数料に触れるものはない。"
         }
       ],
-      "followed_urls": [
-        "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
-        "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html"
-      ],
-      "page_notes": "本文および案内された2つのリンク先ページのいずれにも手数料・費用に関する記述がなく、必要書類・届出期限・届出場所のみが説明されている。",
+      "followed_urls": [],
+      "page_notes": "必要書類・届出期限・届出場所は詳しく書かれているが、手数料（無料か有料か）についての記載はページ内に見当たらない。関連リンクも同一手続きの別パターン（本人・代理人・マイナンバー・オンライン申請）や委任状PDFのみで、手数料に触れるものはない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -311,33 +285,33 @@
   "items": {
     "必要書類": {
       "found": true,
-      "value": "①引越しをした人全員のパスポート ②戸籍謄本（戸籍全部事項証明書）および戸籍の附票（本籍が目黒区外にある場合。目黎区内本籍・外国人住民は不要） ③窓口手続き者の本人確認書類（運転免許証等） ④委任状（任意代理人が手続きする場合） ⑤権限確認ができる書類（法定代理人の場合。未成年者は親権確認できる戸籍謄抄本、成年被後見人は成年後見登記事項証明書） ⑥在留カード等または特別永住者証明書等（外国人の場合） ⑦続柄を証明する書類の原本（外国人のみの世帯で続柄を登録する場合） ⑧居住実績がわかる書類＝賃貸借契約書原本（1年以上前の日付で転入手続きをする場合）",
-      "evidence": "届出に必要なもの（日本国外からの転入）1引越しをされたかた全員のパスポート2戸籍謄本（戸籍全部事項証明書）および戸籍の附票3窓口で手続きを行うかたの本人確認書類",
+      "value": "全員のパスポート／戸籍謄本（戸籍全部事項証明書）および戸籍の附票（目黒区外に本籍がある場合。目黎区内・外国人住民は不要）／窓口で手続きする人の本人確認書類／委任状（任意代理人の場合）／権限確認ができる書類（法定代理人の場合：未成年者は戸籍謄抄本、成年被後見人は成年後見登記事項証明書）／在留カード等または特別永住者証明書等（外国人の場合）／続柄を証明する書類の原本（外国人のみの世帯で続柄を登録する場合）／賃貸借契約書の原本（1年以上前の日付で転入手続きをする場合）",
+      "evidence": "1引越しをされたかた全員のパスポート 2戸籍謄本（戸籍全部事項証明書）および戸籍の附票",
       "source": "html",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
         "verdict": "partial",
-        "run": 34,
-        "note": "連続34文字だけ一致。引用全体は確認できない"
+        "run": 22,
+        "note": "連続22文字だけ一致。引用全体は確認できない"
       }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみ。国外からの転入はオンライン申請の対象外で、窓口での手続きが必要",
-      "evidence": "国外から目黒区に引越しをしたときは、住み始めてから14日以内に目黒区の窓口で転入の手続きが必要です。",
-      "source": "html",
+      "value": "窓口のみ（マイナポータルの引越しワンストップサービスで転出届はオンライン申請できるが、転入手続きは窓口来庁が必須）",
+      "evidence": "マイナポータルで連絡した来庁予定の日になりましたら、必ずマイナンバーカード又は特定在留カード、もしくは特定特別永住者証明書をお持ちの上、目黒区の窓口で転入手続きを行ってください。",
+      "source": "linked_page",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
         "verdict": "exact",
-        "run": 50,
+        "run": 89,
         "note": ""
       }
     },
     "期限": {
       "found": true,
-      "value": "住み始めてから14日以内",
+      "value": "住み始めてから14日以内（起算点：目黒区の新しい住所に実際に住み始めた日）",
       "evidence": "目黒区の新しい住所に住み始めてから14日以内です。住み始める前の日に受付はできません。",
       "source": "html",
       "failure_reason": null,
@@ -362,14 +336,12 @@
       }
     }
   },
-  "page_notes": "「届出に必要なもの」の下に番号付きリストで8項目（基本＋該当者のみ）が明記されており、本文だけで完結している。\n本文はこの区の窓口手続きのみを説明している。マイナポータルのオンライン申請ページも確認したが、そちらは国内引越し限定と明記され、かつオンライン申請後も来庁予定日に窓口で転入手続きを行う必要があり完結しない。\n「届出期限」という見出しの下に起算点（住み始めてから）と期間（14日以内）が明記されており、本文冒頭にも同内容の記載がある。\n本文および案内された2つのリンク先ページのいずれにも手数料・費用に関する記述がなく、必要書類・届出期限・届出場所のみが説明されている。",
+  "page_notes": "「届出に必要なもの（日本国外からの転入）」の章に1〜8の番号付きリストで持ち物が列挙されており、各項目に該当者限定の注記（外国人のみ・法定代理人のみ・1年以上遡る場合のみ等）が付いている。\n本体ページ（国外からの転入）は窓口手続きを前提とした説明のみ。リンク先の「マイナポータルを利用したオンライン申請をしたかた」ページで、転出側はオンライン申請可だが転入自体は窓口来庁必須と明記されていた。\n「届出期限」という見出しの直下に明記されており、起算点（住み始めた日）と期限日数（14日以内）の両方が本文に含まれている。\n必要書類・届出期限・届出場所は詳しく書かれているが、手数料（無料か有料か）についての記載はページ内に見当たらない。関連リンクも同一手続きの別パターン（本人・代理人・マイナンバー・オンライン申請）や委任状PDFのみで、手数料に触れるものはない。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
-      "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
-      "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
-      "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html"
+      "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

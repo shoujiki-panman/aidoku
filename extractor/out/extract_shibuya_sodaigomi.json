@@ -43,19 +43,21 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T15:28:51+00:00",
+    "run_at": "2026-08-31T15:48:04+00:00",
     "discovery_run_at": "2026-08-28T14:37:31+00:00"
   },
   "followed_urls": [
+    "https://p1.govtech-express.com/webui/1496310592?survey=a0OIj000000M4WMMA0",
     "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
   "online_clarity_pages": [
     "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+    "https://p1.govtech-express.com/webui/1496310592?survey=a0OIj000000M4WMMA0",
     "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html"
   ],
   "test_cases": [
@@ -69,7 +71,7 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "電話でのみ確認可",
+        "failure_reason": "記載なし",
         "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
@@ -86,7 +88,7 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "電話でのみ確認可",
+            "failure_reason": "記載なし",
             "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
@@ -95,11 +97,11 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "申込方法（電話・LINE・インターネット）や収集手順は詳しく書かれているが、申込自体に必要な持ち物・書類の明示的な記載は本文になし。手数料の減額・免除対象者（生活保護受給者等）についても『粗大ごみ受付センターへお問い合わせください』とあるのみで、証明書等の具体的な持ち物は書かれていない。"
+          "page_notes": "申し込み方法は電話・LINE・インターネットの3経路が詳しく書かれているが、いずれの経路でも本人確認書類や申請書等の「持ち物・必要書類」への言及は本文になく、リンク一覧（品目手数料一覧PDF、有料粗大ごみ処理券、パンフレット等）も申込手数料や手続き方法の説明であり、必要書類を扱うものは見当たらない。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "申込方法（電話・LINE・インターネット）や収集手順は詳しく書かれているが、申込自体に必要な持ち物・書類の明示的な記載は本文になし。手数料の減額・免除対象者（生活保護受給者等）についても『粗大ごみ受付センターへお問い合わせください』とあるのみで、証明書等の具体的な持ち物は書かれていない。",
+      "page_notes": "申し込み方法は電話・LINE・インターネットの3経路が詳しく書かれているが、いずれの経路でも本人確認書類や申請書等の「持ち物・必要書類」への言及は本文になく、リンク一覧（品目手数料一覧PDF、有料粗大ごみ処理券、パンフレット等）も申込手数料や手続き方法の説明であり、必要書類を扱うものは見当たらない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -117,7 +119,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "電話だけでなくLINE・インターネットでも申込可能。さらにインターネットまたはLINE申込ならキャッシュレス決済も使え、オンラインで完結できる",
+        "value": "電話・LINE・インターネットの3方法から選択可能。インターネットまたはLINEで申し込んだ場合はキャッシュレス決済も使え、来庁・窓口対応なしで申込から支払いまで完結できる",
         "evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
         "source": "html",
         "failure_reason": null,
@@ -134,7 +136,7 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "電話だけでなくLINE・インターネットでも申込可能。さらにインターネットまたはLINE申込ならキャッシュレス決済も使え、オンラインで完結できる",
+            "value": "電話・LINE・インターネットの3方法から選択可能。インターネットまたはLINEで申し込んだ場合はキャッシュレス決済も使え、来庁・窓口対応なしで申込から支払いまで完結できる",
             "evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
             "source": "html",
             "failure_reason": null,
@@ -146,11 +148,11 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「申し込み方法」の見出し配下に電話・LINE・インターネットの3手段が並列で提示されており、インターネット申込にはキャッシュレス決済も紐づく旨が別セクションに明記されている。"
+          "page_notes": "「申し込み方法」の節で電話・LINE・インターネットの3択が明記され、さらに「収集までの手順」の節に「インターネットまたはLINEから申し込みした場合のみ、キャッシュレス決済が可能」という補足があり、申込と支払いの両方がオンラインで完結できることが本文だけで確認できた。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "「申し込み方法」の見出し配下に電話・LINE・インターネットの3手段が並列で提示されており、インターネット申込にはキャッシュレス決済も紐づく旨が別セクションに明記されている。",
+      "page_notes": "「申し込み方法」の節で電話・LINE・インターネットの3択が明記され、さらに「収集までの手順」の節に「インターネットまたはLINEから申し込みした場合のみ、キャッシュレス決済が可能」という補足があり、申込と支払いの両方がオンラインで完結できることが本文だけで確認できた。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -188,6 +190,22 @@
             "value": "",
             "evidence": "",
             "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://p1.govtech-express.com/webui/1496310592?survey=a0OIj000000M4WMMA0"
+          ],
+          "page_notes": "本文には申込方法（電話・LINE・インターネット）と収集日当日の出し方は詳しく書かれているが、「収集日の何日前までに申し込むか」という期限の明記は見当たらない。キャッシュレス決済の期限（収集日7日前まで）は支払方法の話であり、申込自体の期限ではない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
             "failure_reason": "記載なし",
             "failure_type": "fact_missing",
             "evidence_check": {
@@ -197,11 +215,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "申し込み方法（電話・LINE・インターネット）と受付時間（月～土 9時～17時）、収集までの手順は書かれているが、「申し込みは収集日の何日前までに」という期限そのものの記載は本文になかった。近い記述として『キャッシュレス決済ができるのは収集日の7日前まで』があるが、これは支払い方法の締切であって申込期限ではない。リンク一覧（品目手数料一覧・キャッシュレス決済ページ・各国語パンフレット・LINE/インターネット受付の外部予約システム）も確認したが、いずれも申込期限を明記していそうなページではなかった。"
+          "page_notes": "申し込み方法・収集までの手順は詳しいが、「収集日の何日前までに申し込むか」という起算点つきの期限は本文になく、キャッシュレス決済の締切（収集日7日前）のみが言及されている。リンク先のインターネット受付ページも本文が取得できず確認できなかった。"
         }
       ],
-      "followed_urls": [],
-      "page_notes": "申し込み方法（電話・LINE・インターネット）と受付時間（月～土 9時～17時）、収集までの手順は書かれているが、「申し込みは収集日の何日前までに」という期限そのものの記載は本文になかった。近い記述として『キャッシュレス決済ができるのは収集日の7日前まで』があるが、これは支払い方法の締切であって申込期限ではない。リンク一覧（品目手数料一覧・キャッシュレス決済ページ・各国語パンフレット・LINE/インターネット受付の外部予約システム）も確認したが、いずれも申込期限を明記していそうなページではなかった。",
+      "followed_urls": [
+        "https://p1.govtech-express.com/webui/1496310592?survey=a0OIj000000M4WMMA0"
+      ],
+      "page_notes": "申し込み方法・収集までの手順は詳しいが、「収集日の何日前までに申し込むか」という起算点つきの期限は本文になく、キャッシュレス決済の締切（収集日7日前）のみが言及されている。リンク先のインターネット受付ページも本文が取得できず確認できなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -218,16 +238,16 @@
       "question": "渋谷区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
       "test_case_version": "1.0",
       "result": {
-        "found": false,
-        "value": "",
-        "evidence": "",
-        "source": null,
-        "failure_reason": "曖昧",
-        "failure_type": "fact_ambiguous",
+        "found": true,
+        "value": "無料ではなく有料。品目ごとに手数料が異なり、400円（いす等）～3,200円（両そで机等）の範囲。支払いは有料粗大ごみ処理券（A券200円・B券300円）の組み合わせで行う。",
+        "evidence": "粗大ごみの品目および手数料一覧です。手数料は粗大ごみの種類によって金額が違います。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
         "evidence_check": {
-          "verdict": "not_applicable",
-          "run": 0,
-          "note": "found=false のため照合しない"
+          "verdict": "exact",
+          "run": 41,
+          "note": ""
         }
       },
       "attempts": [
@@ -246,40 +266,40 @@
             "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html",
             "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/d8c9c9e1737f49c8b9d3c3629f671057/sibuyaku_Sodaitesuuryou202512.pdf"
           ],
-          "page_notes": "本文には「手数料はご予約の際に、ご確認頂けます」とあるだけで、品目ごとの金額は「粗大ごみ品目手数料一覧」の別ページとPDFに委ねられている。有料粗大ごみ処理券がA券200円・B券300円という記載はあるが、これは券種であって品目ごとの手数料額そのものではない。"
+          "page_notes": "本文は「手数料はご予約の際に、ご確認頂けます」とし品目ごとの金額は別ページ・PDFの品目手数料一覧に委ねている。有料粗大ごみ処理券のA券200円・B券300円は券種の額であり品目ごとの手数料額そのものではない。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
-            "found": false,
-            "value": "",
-            "evidence": "",
-            "source": null,
-            "failure_reason": "曖昧",
-            "failure_type": "fact_ambiguous",
+            "found": true,
+            "value": "無料ではなく有料。品目ごとに手数料が異なり、400円（いす等）～3,200円（両そで机等）の範囲。支払いは有料粗大ごみ処理券（A券200円・B券300円）の組み合わせで行う。",
+            "evidence": "粗大ごみの品目および手数料一覧です。手数料は粗大ごみの種類によって金額が違います。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
             "evidence_check": {
-              "verdict": "not_applicable",
-              "run": 0,
-              "note": "found=false のため照合しない"
+              "verdict": "exact",
+              "run": 41,
+              "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "手数料は品目ごとに400円〜3,200円の幅がある一覧表（あ行〜わ行、数百品目）で提示されており、申込全体に対する単一の手数料は存在しない。有料処理券はA券200円・B券300円の組み合わせで購入する仕組み。"
+          "page_notes": "手数料は本文に固定額として書かれておらず、「品目および手数料一覧」ページ（sibuyaku_sodaitesuuryou.html）のあ行〜わ行の品目別テーブルにA券/B券の枚数と費用が個別に記載されている。"
         }
       ],
       "followed_urls": [
         "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html"
       ],
-      "page_notes": "手数料は品目ごとに400円〜3,200円の幅がある一覧表（あ行〜わ行、数百品目）で提示されており、申込全体に対する単一の手数料は存在しない。有料処理券はA券200円・B券300円の組み合わせで購入する仕組み。",
+      "page_notes": "手数料は本文に固定額として書かれておらず、「品目および手数料一覧」ページ（sibuyaku_sodaitesuuryou.html）のあ行〜わ行の品目別テーブルにA券/B券の枚数と費用が個別に記載されている。",
       "evidence_summary": {
-        "checked": 0,
-        "verified": 0,
+        "checked": 1,
+        "verified": 1,
         "partial": 0,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
-        "not_applicable": 1
+        "not_applicable": 0
       }
     }
   ],
@@ -289,7 +309,7 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "電話でのみ確認可",
+      "failure_reason": "記載なし",
       "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
@@ -299,7 +319,7 @@
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "電話だけでなくLINE・インターネットでも申込可能。さらにインターネットまたはLINE申込ならキャッシュレス決済も使え、オンラインで完結できる",
+      "value": "電話・LINE・インターネットの3方法から選択可能。インターネットまたはLINEで申し込んだ場合はキャッシュレス決済も使え、来庁・窓口対応なしで申込から支払いまで完結できる",
       "evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
       "source": "html",
       "failure_reason": null,
@@ -324,36 +344,37 @@
       }
     },
     "手数料": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "曖昧",
-      "failure_type": "fact_ambiguous",
+      "found": true,
+      "value": "無料ではなく有料。品目ごとに手数料が異なり、400円（いす等）～3,200円（両そで机等）の範囲。支払いは有料粗大ごみ処理券（A券200円・B券300円）の組み合わせで行う。",
+      "evidence": "粗大ごみの品目および手数料一覧です。手数料は粗大ごみの種類によって金額が違います。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
       "evidence_check": {
-        "verdict": "not_applicable",
-        "run": 0,
-        "note": "found=false のため照合しない"
+        "verdict": "exact",
+        "run": 41,
+        "note": ""
       }
     }
   },
-  "page_notes": "申込方法（電話・LINE・インターネット）や収集手順は詳しく書かれているが、申込自体に必要な持ち物・書類の明示的な記載は本文になし。手数料の減額・免除対象者（生活保護受給者等）についても『粗大ごみ受付センターへお問い合わせください』とあるのみで、証明書等の具体的な持ち物は書かれていない。\n「申し込み方法」の見出し配下に電話・LINE・インターネットの3手段が並列で提示されており、インターネット申込にはキャッシュレス決済も紐づく旨が別セクションに明記されている。\n申し込み方法（電話・LINE・インターネット）と受付時間（月～土 9時～17時）、収集までの手順は書かれているが、「申し込みは収集日の何日前までに」という期限そのものの記載は本文になかった。近い記述として『キャッシュレス決済ができるのは収集日の7日前まで』があるが、これは支払い方法の締切であって申込期限ではない。リンク一覧（品目手数料一覧・キャッシュレス決済ページ・各国語パンフレット・LINE/インターネット受付の外部予約システム）も確認したが、いずれも申込期限を明記していそうなページではなかった。\n手数料は品目ごとに400円〜3,200円の幅がある一覧表（あ行〜わ行、数百品目）で提示されており、申込全体に対する単一の手数料は存在しない。有料処理券はA券200円・B券300円の組み合わせで購入する仕組み。",
+  "page_notes": "申し込み方法は電話・LINE・インターネットの3経路が詳しく書かれているが、いずれの経路でも本人確認書類や申請書等の「持ち物・必要書類」への言及は本文になく、リンク一覧（品目手数料一覧PDF、有料粗大ごみ処理券、パンフレット等）も申込手数料や手続き方法の説明であり、必要書類を扱うものは見当たらない。\n「申し込み方法」の節で電話・LINE・インターネットの3択が明記され、さらに「収集までの手順」の節に「インターネットまたはLINEから申し込みした場合のみ、キャッシュレス決済が可能」という補足があり、申込と支払いの両方がオンラインで完結できることが本文だけで確認できた。\n申し込み方法・収集までの手順は詳しいが、「収集日の何日前までに申し込むか」という起算点つきの期限は本文になく、キャッシュレス決済の締切（収集日7日前）のみが言及されている。リンク先のインターネット受付ページも本文が取得できず確認できなかった。\n手数料は本文に固定額として書かれておらず、「品目および手数料一覧」ページ（sibuyaku_sodaitesuuryou.html）のあ行〜わ行の品目別テーブルにA券/B券の枚数と費用が個別に記載されている。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "https://p1.govtech-express.com/webui/1496310592?survey=a0OIj000000M4WMMA0",
       "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true
   },
   "evidence_summary": {
-    "checked": 1,
-    "verified": 1,
+    "checked": 2,
+    "verified": 2,
     "partial": 0,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,
-    "not_applicable": 3
+    "not_applicable": 2
   }
 }

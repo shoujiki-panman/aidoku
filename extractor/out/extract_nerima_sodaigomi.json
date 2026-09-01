@@ -43,20 +43,22 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T15:28:51+00:00",
+    "run_at": "2026-08-31T15:40:48+00:00",
     "discovery_run_at": "2026-08-28T14:37:31+00:00"
   },
   "followed_urls": [
-    "https://www.sodai-nerima.jp/"
+    "https://www.sodai-nerima.jp/",
+    "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
   ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "（1）インターネット申込み（24時間受付）　インターネットで収集を申込みの場合、オンライン決済（キャシュレス決済）が利用できます。",
+  "online_clarity_evidence": "インターネットで収集を申込みの場合、オンライン決済（キャシュレス決済）が利用できます。",
   "online_clarity_pages": [
     "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
-    "https://www.sodai-nerima.jp/"
+    "https://www.sodai-nerima.jp/",
+    "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
   ],
   "test_cases": [
     {
@@ -66,15 +68,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "持込みの場合のみ、本人確認ができるもの（運転免許証など）が必要。収集（自宅前などに出す方法）の場合は特に持ち物の記載なし。",
-        "evidence": "本人確認ができるもの（運転免許証など）をお持ちください。（注釈）申込みをされた本人または同一世帯（同一住所）の方のみ持込みができます。",
+        "value": "持込みの場合のみ、本人確認ができるもの（運転免許証など）が必要（申込みをされた本人または同一世帯の方のみ持込み可）",
+        "evidence": "本人確認ができるもの（運転免許証など）をお持ちください。",
         "source": "html",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "normalized",
-          "run": 61,
-          "note": "空白・記号のゆれを吸収すると一致"
+          "verdict": "exact",
+          "run": 28,
+          "note": ""
         }
       },
       "attempts": [
@@ -83,23 +85,23 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "持込みの場合のみ、本人確認ができるもの（運転免許証など）が必要。収集（自宅前などに出す方法）の場合は特に持ち物の記載なし。",
-            "evidence": "本人確認ができるもの（運転免許証など）をお持ちください。（注釈）申込みをされた本人または同一世帯（同一住所）の方のみ持込みができます。",
+            "value": "持込みの場合のみ、本人確認ができるもの（運転免許証など）が必要（申込みをされた本人または同一世帯の方のみ持込み可）",
+            "evidence": "本人確認ができるもの（運転免許証など）をお持ちください。",
             "source": "html",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "normalized",
-              "run": 61,
-              "note": "空白・記号のゆれを吸収すると一致"
+              "verdict": "exact",
+              "run": 28,
+              "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "本文は「収集」と「持込み」の2方式を並べて説明しており、持ち物（本人確認書類）は持込みを選んだ場合のみ登場する条件付き記載だった。収集方式には該当する持ち物の記載がない。"
+          "page_notes": "収集申込み自体（インターネット・電話）には持ち物の記載がなく、持込み利用時のみ本人確認書類の携行が求められている。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "本文は「収集」と「持込み」の2方式を並べて説明しており、持ち物（本人確認書類）は持込みを選んだ場合のみ登場する条件付き記載だった。収集方式には該当する持ち物の記載がない。",
+      "page_notes": "収集申込み自体（インターネット・電話）には持ち物の記載がなく、持込み利用時のみ本人確認書類の携行が求められている。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -117,15 +119,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "インターネット申込み可（24時間受付、オンライン決済対応）。電話申込みも可",
-        "evidence": "（1）インターネット申込み（24時間受付）...インターネットで収集を申込みの場合、オンライン決済（キャシュレス決済）が利用できます。",
+        "value": "オンラインで完結可能。インターネット申込み（24時間受付）に加え、クレジットカード・PayPayによるオンライン決済もでき、窓口へ行かずに手続きを終えられる（ただし持込みの場合はオンライン決済不可）",
+        "evidence": "インターネットで収集を申込みの場合、オンライン決済（キャシュレス決済）が利用できます。",
         "source": "html",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "partial",
-          "run": 39,
-          "note": "連続39文字だけ一致。引用全体は確認できない"
+          "verdict": "exact",
+          "run": 43,
+          "note": ""
         }
       },
       "attempts": [
@@ -134,27 +136,27 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "インターネット申込み可（24時間受付、オンライン決済対応）。電話申込みも可",
-            "evidence": "（1）インターネット申込み（24時間受付）...インターネットで収集を申込みの場合、オンライン決済（キャシュレス決済）が利用できます。",
+            "value": "オンラインで完結可能。インターネット申込み（24時間受付）に加え、クレジットカード・PayPayによるオンライン決済もでき、窓口へ行かずに手続きを終えられる（ただし持込みの場合はオンライン決済不可）",
+            "evidence": "インターネットで収集を申込みの場合、オンライン決済（キャシュレス決済）が利用できます。",
             "source": "html",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "partial",
-              "run": 39,
-              "note": "連続39文字だけ一致。引用全体は確認できない"
+              "verdict": "exact",
+              "run": 43,
+              "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "申込み方法として「（1）インターネット申込み（24時間受付）」「（2）電話申込み」が本文中に明記されており、インターネット申込みの場合はオンライン決済（クレジットカード・PayPay）まで完結できると書かれている。"
+          "page_notes": "申込み方法として「インターネット申込み（24時間受付）」と「電話申込み」が並記され、インターネット申込みの場合のみオンライン決済まで完結できると明記されている。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "申込み方法として「（1）インターネット申込み（24時間受付）」「（2）電話申込み」が本文中に明記されており、インターネット申込みの場合はオンライン決済（クレジットカード・PayPay）まで完結できると書かれている。",
+      "page_notes": "申込み方法として「インターネット申込み（24時間受付）」と「電話申込み」が並記され、インターネット申込みの場合のみオンライン決済まで完結できると明記されている。",
       "evidence_summary": {
         "checked": 1,
-        "verified": 0,
-        "partial": 1,
+        "verified": 1,
+        "partial": 0,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
@@ -194,7 +196,7 @@
           "requested_urls": [
             "https://www.sodai-nerima.jp/"
           ],
-          "page_notes": "本文は申込み方法・手数料・収集/持込みの手順を説明しているが、「収集希望日の何日前までに申し込む」といった期限の記載は無い。実際の予約可能日や締切は外部の申込システム（sodai-nerima.jp）側にありそう。"
+          "page_notes": "本文は申込み手順・支払い・収集日の出し方（当日朝8時までに出す）を説明しているが、「申込み自体を収集日の何日前までに行うか」という起算点つきの期限は明記されていない。実際の申込み可能日はインターネット申込みシステム（外部サイト）で提示される仕組みと見られる。"
         },
         {
           "stage": "follow",
@@ -213,13 +215,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "申込みから収集までの必要日数や「収集日の◯日前までに申込み」といった起算点つきの期限表記は本文になく、リンク先（申込みサイト）にも記載がなかった。年末・引っ越し時期は「お早めに」との呼びかけのみで具体的な期限ではない。"
+          "page_notes": "申込み方法・支払い・出し方の手順は詳細に書かれているが、「収集希望日の何日前までに申し込む必要があるか」という起算点つきの期限は本文にもリンク先の申込みサイト（sodai-nerima.jp）本文にも見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.sodai-nerima.jp/"
       ],
-      "page_notes": "申込みから収集までの必要日数や「収集日の◯日前までに申込み」といった起算点つきの期限表記は本文になく、リンク先（申込みサイト）にも記載がなかった。年末・引っ越し時期は「お早めに」との呼びかけのみで具体的な期限ではない。",
+      "page_notes": "申込み方法・支払い・出し方の手順は詳細に書かれているが、「収集希望日の何日前までに申し込む必要があるか」という起算点つきの期限は本文にもリンク先の申込みサイト（sodai-nerima.jp）本文にも見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -257,6 +259,22 @@
             "value": "",
             "evidence": "",
             "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
+          ],
+          "page_notes": "本文には品目ごとの手数料額は書かれておらず「料金検索はこちら（外部サイト）」への案内のみ。A券200円・B券300円は処理券の券種額面であって特定品目の手数料そのものではない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
             "failure_reason": "曖昧",
             "failure_type": "fact_ambiguous",
             "evidence_check": {
@@ -266,11 +284,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "手数料は品目ごとに異なり、本文には具体的な金額の記載がなく「料金など詳しくは、申込み時にご案内いたします」「料金検索はこちら（外部サイト）」に誘導している。A券200円・B券300円は処理券の額面であり品目の手数料そのものではない。"
+          "page_notes": "本文は「粗大ごみは有料」とA券200円・B券300円という券種の額面のみ示し、実際の手数料は品目ごとに異なるため「料金検索」（外部サイト）に誘導している。リンク先は品目分類（あ〜わ）を選んで検索する対話式ツールで、取得できた本文には具体的な品目別金額が含まれていなかった。"
         }
       ],
-      "followed_urls": [],
-      "page_notes": "手数料は品目ごとに異なり、本文には具体的な金額の記載がなく「料金など詳しくは、申込み時にご案内いたします」「料金検索はこちら（外部サイト）」に誘導している。A券200円・B券300円は処理券の額面であり品目の手数料そのものではない。",
+      "followed_urls": [
+        "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
+      ],
+      "page_notes": "本文は「粗大ごみは有料」とA券200円・B券300円という券種の額面のみ示し、実際の手数料は品目ごとに異なるため「料金検索」（外部サイト）に誘導している。リンク先は品目分類（あ〜わ）を選んで検索する対話式ツールで、取得できた本文には具体的な品目別金額が含まれていなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -285,28 +305,28 @@
   "items": {
     "必要書類": {
       "found": true,
-      "value": "持込みの場合のみ、本人確認ができるもの（運転免許証など）が必要。収集（自宅前などに出す方法）の場合は特に持ち物の記載なし。",
-      "evidence": "本人確認ができるもの（運転免許証など）をお持ちください。（注釈）申込みをされた本人または同一世帯（同一住所）の方のみ持込みができます。",
+      "value": "持込みの場合のみ、本人確認ができるもの（運転免許証など）が必要（申込みをされた本人または同一世帯の方のみ持込み可）",
+      "evidence": "本人確認ができるもの（運転免許証など）をお持ちください。",
       "source": "html",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "normalized",
-        "run": 61,
-        "note": "空白・記号のゆれを吸収すると一致"
+        "verdict": "exact",
+        "run": 28,
+        "note": ""
       }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "インターネット申込み可（24時間受付、オンライン決済対応）。電話申込みも可",
-      "evidence": "（1）インターネット申込み（24時間受付）...インターネットで収集を申込みの場合、オンライン決済（キャシュレス決済）が利用できます。",
+      "value": "オンラインで完結可能。インターネット申込み（24時間受付）に加え、クレジットカード・PayPayによるオンライン決済もでき、窓口へ行かずに手続きを終えられる（ただし持込みの場合はオンライン決済不可）",
+      "evidence": "インターネットで収集を申込みの場合、オンライン決済（キャシュレス決済）が利用できます。",
       "source": "html",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "partial",
-        "run": 39,
-        "note": "連続39文字だけ一致。引用全体は確認できない"
+        "verdict": "exact",
+        "run": 43,
+        "note": ""
       }
     },
     "期限": {
@@ -336,20 +356,21 @@
       }
     }
   },
-  "page_notes": "本文は「収集」と「持込み」の2方式を並べて説明しており、持ち物（本人確認書類）は持込みを選んだ場合のみ登場する条件付き記載だった。収集方式には該当する持ち物の記載がない。\n申込み方法として「（1）インターネット申込み（24時間受付）」「（2）電話申込み」が本文中に明記されており、インターネット申込みの場合はオンライン決済（クレジットカード・PayPay）まで完結できると書かれている。\n申込みから収集までの必要日数や「収集日の◯日前までに申込み」といった起算点つきの期限表記は本文になく、リンク先（申込みサイト）にも記載がなかった。年末・引っ越し時期は「お早めに」との呼びかけのみで具体的な期限ではない。\n手数料は品目ごとに異なり、本文には具体的な金額の記載がなく「料金など詳しくは、申込み時にご案内いたします」「料金検索はこちら（外部サイト）」に誘導している。A券200円・B券300円は処理券の額面であり品目の手数料そのものではない。",
+  "page_notes": "収集申込み自体（インターネット・電話）には持ち物の記載がなく、持込み利用時のみ本人確認書類の携行が求められている。\n申込み方法として「インターネット申込み（24時間受付）」と「電話申込み」が並記され、インターネット申込みの場合のみオンライン決済まで完結できると明記されている。\n申込み方法・支払い・出し方の手順は詳細に書かれているが、「収集希望日の何日前までに申し込む必要があるか」という起算点つきの期限は本文にもリンク先の申込みサイト（sodai-nerima.jp）本文にも見当たらなかった。\n本文は「粗大ごみは有料」とA券200円・B券300円という券種の額面のみ示し、実際の手数料は品目ごとに異なるため「料金検索」（外部サイト）に誘導している。リンク先は品目分類（あ〜わ）を選んで検索する対話式ツールで、取得できた本文には具体的な品目別金額が含まれていなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
-      "https://www.sodai-nerima.jp/"
+      "https://www.sodai-nerima.jp/",
+      "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true
   },
   "evidence_summary": {
     "checked": 2,
-    "verified": 1,
-    "partial": 1,
+    "verified": 2,
+    "partial": 0,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,
