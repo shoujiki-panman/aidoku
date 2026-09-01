@@ -1,0 +1,79 @@
+{
+  "municipality": "nakano",
+  "procedure": "jidouteate",
+  "answers": {
+    "_選んだページ": [
+      "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+      "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+      "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html"
+    ],
+    "_オンライン明示": [
+      "記載なし",
+      "記載なし",
+      "記載なし"
+    ],
+    "必要書類": [
+      "読めた",
+      "読めた",
+      "読めた"
+    ],
+    "窓口オンライン可否": [
+      "読めない",
+      "読めない",
+      "読めない"
+    ],
+    "期限": [
+      "読めない",
+      "読めない",
+      "読めない"
+    ],
+    "手数料": [
+      "読めない",
+      "読めない",
+      "読めない"
+    ]
+  },
+  "summary": {
+    "runs": 3,
+    "fields": 4,
+    "split_fields": [],
+    "split_ratio": 0.0,
+    "page_stable": true,
+    "clarity_stable": true
+  },
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text+ocr",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-09-01T17:26:38+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
+  "version": "repeat-0.1",
+  "_about": "同じ条件で同じ区を複数回測った記録。判定には使わない。点数を幅つきで読むための材料。"
+}

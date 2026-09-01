@@ -156,12 +156,17 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument(
         "--follow", action="store_true",
         help="各Test Caseが指定したリンク先を1階層だけ開いて再抽出する")
+    # ★同じ区を何度も測って揺れを見るとき、公開中の結果を上書きしないため。
+    parser.add_argument(
+        "--out-dir", default=None,
+        help="結果の書き出し先（既定 extractor/out）。揺れの測定で使う")
     args = parser.parse_args(argv)
+    out_dir = Path(args.out_dir) if args.out_dir else OUT_DIR
 
     files = discovery_files(args.procedure, args.municipality)
     if not files:
         raise SystemExit("探索結果がない。先に crawler/discover.py を実行すること")
-    jobs = load_jobs(files, args.procedure, OUT_DIR)
+    jobs = load_jobs(files, args.procedure, out_dir)
     run_at = utc_timestamp()
     current_prompt = prompt_version([PROMPT, CLARITY_PROMPT])
     try:
