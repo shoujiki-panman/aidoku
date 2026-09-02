@@ -39,6 +39,8 @@ PROCEDURES = ("tennyu", "jidouteate", "sodaigomi")
 
 # 見張りがこれより古ければ、古いと言う。毎朝回るので2日空けば異常。
 WATCH_STALE_DAYS = 2
+# 状態の履歴。**1日1行**（同じ日は二度追記しない）。
+DEFAULT_HISTORY = ROOT / "web" / "data" / "history" / "status.jsonl"
 
 
 def _load(path: Path) -> dict | None:
@@ -81,6 +83,22 @@ def _from_main(relative: str) -> dict | None:
         return None
 
 
+def ref_age_days() -> float | None:
+    """手元の `origin/main` が指しているコミットの古さ。
+
+    ★`_from_main` は `origin/main` を読むが、**その参照自体が古いことがある**
+      （`git fetch` していないだけ）。実測で「見張りが3.7日前・止まっている」と
+      誤報した。`git fetch origin main` の後は0.7日前で、止まっていなかった。
+      ネットには出ないので**どちらかは判定できない**。両方を候補として出す。
+    """
+    try:
+        got = subprocess.run(["git", "log", "-1", "--format=%cI", "origin/main"],
+                             cwd=ROOT, capture_output=True, text=True, timeout=10)
+    except Exception:                                      # noqa: BLE001
+        return None
+    return _age_days(got.stdout.strip()) if got.returncode == 0 else None
+
+
 def newest(*docs: dict | None) -> dict | None:
     """`checked_at` がいちばん新しいもの。無いものは捨てる。"""
     dated = [d for d in docs if d and d.get("checked_at")]
@@ -94,11 +112,16 @@ def watch() -> dict:
         return {"ok": False, "note": "site-status.json が無い"}
     summary = doc.get("summary") or {}
     age = _age_days(doc.get("checked_at"))
+    stale = age is not None and age > WATCH_STALE_DAYS
+    ref_age = ref_age_days()
     return {
         "ok": True,
         "checked_at": doc.get("checked_at"),
         "age_days": age,
-        "stale": age is not None and age > WATCH_STALE_DAYS,
+        "stale": stale,
+        "ref_age_days": ref_age,
+        # ★参照が古ければ、見張りが止まったのではなく fetch していないだけかもしれない。
+        "maybe_unfetched": bool(stale and ref_age is not None and ref_age > 0.5),
         "pages": summary.get("total"),
         "changed": summary.get("changed"),
         "gone": summary.get("gone"),
@@ -187,8 +210,14 @@ def next_actions(state: dict) -> list[str]:
     """状態から機械的に導く。**人の判断を混ぜない。**"""
     todo = []
     if state["watch"].get("stale"):
-        todo.append(f"見張りが{state['watch']['age_days']}日前で止まっている。"
-                    "`.github/workflows/check-pages.yml` の実行を確認する")
+        if state["watch"].get("maybe_unfetched"):
+            todo.append(f"見張りが{state['watch']['age_days']}日前。ただし手元の"
+                        f"origin/main も{state['watch']['ref_age_days']}日前なので、"
+                        "**先に `git fetch origin main`**。それでも古ければ"
+                        "`.github/workflows/check-pages.yml` の実行を確認する")
+        else:
+            todo.append(f"見張りが{state['watch']['age_days']}日前で止まっている。"
+                        "`.github/workflows/check-pages.yml` の実行を確認する")
     elif state["watch"].get("changed"):
         todo.append(f"見張りが{state['watch']['changed']}件の変化を見つけている。"
                     "測り直す対象を選ぶ（見張りは自動では測り直さない）")
@@ -208,6 +237,36 @@ def next_actions(state: dict) -> list[str]:
         todo.append(f"公開データに測定条件の記録が無い: {', '.join(stale_pub)}"
                     "（どのAIが出した数字か追えない）")
     return todo or ["止まっているものは無い"]
+
+
+STATE_SCHEMA = "aidoku-status-1.0"
+
+
+def snapshot(state: dict, recorded_at: str) -> dict:
+    """いまの状態を、履歴1行にする。Pure Function。
+
+    **なぜ要るか**: `status.py` は毎セッション走るが**読むだけで残していない**。
+    「いつ条件が崩れたか」「読めない底がいつ増えたか」を後から言えない。
+    数だけ残す（区の名前もURLも持たない）。毎日1行でも軽い。
+    """
+    return {
+        "schema": STATE_SCHEMA,
+        "recorded_at": recorded_at,
+        # ★重複判定はここ。毎セッション走るので、時刻で見ると1日に何行も入る。
+        "recorded_day": recorded_at[:10],
+        "watch_checked_at": state["watch"].get("checked_at"),
+        "watch_changed": state["watch"].get("changed"),
+        # 条件が揃っていない自治体の数。0 なら公開できる。
+        "conditions_stale": {p: len(state["conditions"][p].get("stale") or [])
+                             for p in PROCEDURES},
+        # found=見つけた / exhausted=読み切った上で書いていない / unreadable=読めない
+        "sweep": {p: {k: state["sweep"][p].get(k)
+                      for k in ("found", "exhausted", "unreadable", "errored", "pages")}
+                  for p in PROCEDURES},
+        "blockers": state["blockers"].get("urls"),
+        "published_has_conditions": {p: bool(state["published"][p].get("has_conditions"))
+                                     for p in PROCEDURES},
+    }
 
 
 def collect() -> dict:
@@ -277,9 +336,19 @@ def render(state: dict) -> str:
 def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--json", action="store_true", help="機械が読む形で出す")
+    ap.add_argument("--record", metavar="PATH", nargs="?", const=str(DEFAULT_HISTORY),
+                    help="いまの状態を履歴に1行追記する（同じ日は追記しない）")
     args = ap.parse_args(argv)
 
     state = collect()
+    if args.record:
+        sys.path.insert(0, str(ROOT))
+        from history import append_snapshot
+        now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        row = snapshot(state, now)
+        added = append_snapshot(args.record, row, key_fields=("recorded_day",))
+        print(f"{args.record}: " + ("1件追記" if added else "同じ日が既にあるので追記なし"))
+
     if args.json:
         print(json.dumps({**state, "next": next_actions(state)},
                          ensure_ascii=False, indent=2))
