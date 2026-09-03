@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT / "analysis"))
 from status import (  # noqa: E402
     WATCH_STALE_DAYS,
     _age_days,
+    _average,
     conditions,
     newest,
     next_actions,
@@ -40,6 +41,11 @@ def state(**kw) -> dict:
         "published": {p: {"ok": True, "generated_at": "2026-08-30T00:00:00+00:00",
                           "age_days": 1.0, "has_conditions": True}
                       for p in ("tennyu", "jidouteate", "sodaigomi")},
+        "delivery": {"ahead": 0, "undelivered": [],
+                     "procedures": {p: {"live_average": 60.0, "local_average": 60.0,
+                                        "live_generated_at": "2026-08-30T00:00:00+00:00",
+                                        "live_has_conditions": True, "delivered": True}
+                                    for p in ("tennyu", "jidouteate", "sodaigomi")}},
     }
     return {**base, **kw}
 
@@ -197,6 +203,60 @@ class 参照が古いだけのとき(unittest.TestCase):
         todo = " ".join(next_actions(state(watch=w)))
         self.assertIn("check-pages.yml", todo)
         self.assertNotIn("git fetch", todo)
+
+
+class 住民に届いているか(unittest.TestCase):
+    """**なぜ要るか**: これが無かったせいで「公開データを更新した」と8日間言い続けた。
+    更新していたのは**枝の上のファイル**で、住民が見る画面は動いていなかった。"""
+
+    def undelivered(self, **over) -> dict:
+        row = {"live_average": 39.6, "local_average": 53.9,
+               "live_generated_at": "2026-08-17T00:00:00+00:00",
+               "live_has_conditions": False, "delivered": False}
+        row.update(over)
+        return state(delivery={
+            "ahead": 49, "undelivered": ["sodaigomi"],
+            "procedures": {p: (row if p == "sodaigomi" else
+                               {"live_average": 60.0, "local_average": 60.0,
+                                "live_generated_at": "2026-08-30T00:00:00+00:00",
+                                "live_has_conditions": True, "delivered": True})
+                           for p in ("tennyu", "jidouteate", "sodaigomi")}})
+
+    def test_平均を出す(self):
+        doc = {"municipalities": [{"total": 40}, {"total": 60}]}
+        self.assertEqual(_average(doc), 50.0)
+
+    def test_点が無ければNone(self):
+        # ★0 で埋めると「全区0点」に見える。無いものは無いと言う。
+        self.assertIsNone(_average({"municipalities": []}))
+        self.assertIsNone(_average(None))
+
+    def test_住民の数字と手元の数字を並べる(self):
+        text = render(self.undelivered())
+        self.assertIn("住民 39.6", text)
+        self.assertIn("手元 53.9", text)
+
+    def test_届いていないものに印が付く(self):
+        self.assertIn("★届いていない: sodaigomi", render(self.undelivered()))
+
+    def test_住民の版の日付を出す(self):
+        self.assertIn("2026-08-17", render(self.undelivered()))
+
+    def test_条件の記録が無いことも言う(self):
+        self.assertIn("条件の記録なし", render(self.undelivered()))
+
+    def test_未マージ数を出す(self):
+        self.assertIn("未マージ 49コミット", render(self.undelivered()))
+
+    def test_次にやることの先頭に来る(self):
+        """★他の指摘に埋もれると、また8日見落とす。"""
+        todo = next_actions(self.undelivered())
+        self.assertIn("住民に届いていない", todo[0])
+        self.assertIn("main から配信", todo[0])
+
+    def test_届いていれば黙る(self):
+        self.assertNotIn("★届いていない", render(state()))
+        self.assertFalse(any("届いていない" in t for t in next_actions(state())))
 
 
 class 実データ(unittest.TestCase):

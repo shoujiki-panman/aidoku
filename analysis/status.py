@@ -206,6 +206,44 @@ def published() -> dict:
     return out
 
 
+def _average(doc: dict | None) -> float | None:
+    munis = (doc or {}).get("municipalities") or []
+    totals = [m["total"] for m in munis if isinstance(m.get("total"), int)]
+    return round(sum(totals) / len(totals), 1) if totals else None
+
+
+def delivery() -> dict:
+    """⑥ 配信。**手元で作った数字が、住民に届いているか。**
+
+    ★これが無かったせいで、「公開データを更新した」と8日間言い続けた。
+      更新していたのは**枝の上のファイル**で、住民が見る画面は動いていなかった。
+      公開サイトは `main` から配信される。**比べる相手は main。**
+
+    ネットには出ない（`git show origin/main:` を読むだけ）。
+    ただし `origin/main` の参照が古ければ古い値を見る（§見張りと同じ）。
+    """
+    try:
+        got = subprocess.run(["git", "rev-list", "--count", "origin/main..HEAD"],
+                             cwd=ROOT, capture_output=True, text=True, timeout=10)
+        ahead = int(got.stdout.strip()) if got.returncode == 0 else None
+    except Exception:                                      # noqa: BLE001
+        ahead = None
+
+    rows = {}
+    for procedure in PROCEDURES:
+        live = _from_main(f"web/data/scores-{procedure}.json")
+        local = _load(WEB / f"scores-{procedure}.json")
+        rows[procedure] = {
+            "live_average": _average(live),
+            "local_average": _average(local),
+            "live_generated_at": (live or {}).get("generated_at"),
+            "live_has_conditions": bool(((live or {}).get("measurement") or {}).get("model_version")),
+            "delivered": _average(live) == _average(local),
+        }
+    return {"ahead": ahead, "procedures": rows,
+            "undelivered": [p for p, r in rows.items() if not r["delivered"]]}
+
+
 def next_actions(state: dict) -> list[str]:
     """状態から機械的に導く。**人の判断を混ぜない。**"""
     todo = []
@@ -231,6 +269,11 @@ def next_actions(state: dict) -> list[str]:
         sw = state["sweep"][procedure]
         if sw.get("ok") and sw["errored"]:
             todo.append(f"{procedure}: 虱潰しでエラーが{sw['errored']}件。読み直す")
+    d = state.get("delivery") or {}
+    if d.get("undelivered"):
+        todo.insert(0, f"住民に届いていない: {', '.join(d['undelivered'])}"
+                       f"（main に未マージ {d.get('ahead')}コミット）。"
+                       "公開サイトは main から配信される。マージするまで画面は変わらない")
     stale_pub = [p for p, v in state["published"].items()
                  if v.get("ok") and not v["has_conditions"]]
     if stale_pub:
@@ -278,6 +321,7 @@ def collect() -> dict:
         "sweep": {p: sweep(p) for p in PROCEDURES},
         "blockers": blockers(),
         "published": published(),
+        "delivery": delivery(),
     }
 
 
@@ -325,6 +369,21 @@ def render(state: dict) -> str:
             continue
         cond = "条件あり" if p["has_conditions"] else "★条件の記録なし"
         lines.append(f"   {procedure:10} {p['age_days']}日前 / {cond}")
+    lines.append("")
+
+    d = state["delivery"]
+    lines.append("## ⑥ 配信（住民に届いているか）")
+    if d["undelivered"]:
+        lines.append(f"   ★届いていない: {'・'.join(d['undelivered'])}")
+    for procedure in PROCEDURES:
+        r = d["procedures"][procedure]
+        mark = "  " if r["delivered"] else "★"
+        cond = "" if r["live_has_conditions"] else "・条件の記録なし"
+        lines.append(f"   {mark} {procedure:10} 住民 {r['live_average']}"
+                     f" / 手元 {r['local_average']}"
+                     f"（住民の版 {(r['live_generated_at'] or '?')[:10]}{cond}）")
+    if d["ahead"]:
+        lines.append(f"   main に未マージ {d['ahead']}コミット")
     lines.append("")
 
     lines.append("## 次にやること")
