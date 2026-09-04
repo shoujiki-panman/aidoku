@@ -326,3 +326,29 @@ cd analysis  && python3 export_dashboard.py -p <手続きID> --out ../web/data/s
   - ✅ **例外は虱潰し（`analysis/sweep.py`）を通した項目だけ** — §4-7c の5条件が
     全部揃ったものに限る。その場合も言えるのは
     **「候補を1本残らず読んだ上で見つからなかった」**まで
+
+---
+
+## 7. 外部の物差し（参考・まだ採点には入れていない）
+
+JIS X 8341-3 と `jis_mapping.py` で「人間向けアクセシビリティ」の軸は既にある（§ `jis_mapping.py` 冒頭）。
+それとは**別レイヤ**で、世の中に2つの参考がある。**どちらもまだ採点式には入れていない**ので、
+「AI読はこれに準拠」とは言わない。位置づけを見失わないための覚書。
+
+### 7-1. AI向けの機械可読レイヤ（llms.txt など）
+JIS は人間の閲覧を助ける物差し。これとは別に、サイトを**AIエージェント向けに読みやすくする**
+新興の目印がある（`llms.txt` / `ai.txt`、robots.txt の Content-Signal、MCP server cards ほか）。
+AI読は「行政サイトがAIに読めるか」を測る以上、この層は**将来の測定項目の候補**になる。
+ただし普及途上で、行政サイトはまだほぼ持っていない。**今は測っていない＝点にしていない。**
+
+- Website Spec — Agent Readiness（仕様のまとまり）: https://specification.website/spec/agent-readiness/
+- スキャナ実例: https://isagentready.com/en/about ・ https://agent-ready.dev/
+
+### 7-2. 「静的テストはAIの実力を盛る」（Online-Mind2Web, COLM 2025）
+Webエージェントの評価研究では、**固定した課題で測ると成績が過大に出る**ことが分かっている。
+実サイト（動的）で測り直すと大きく下がり、上位でも約6割（Online-Mind2Web / Operator）。
+これは AI読が**「一発の点」ではなく「時系列の差分で見る保守ツール」に寄せた方針**（STATUS §方針-2）の裏づけ。
+一回きりの高得点を信じない、という設計判断の外部根拠として引く。
+
+- Online-Mind2Web (COLM 2025): https://arxiv.org/pdf/2504.01382
+- 対比の旧ベンチ: WebVoyager / WebArena / Mind2Web
