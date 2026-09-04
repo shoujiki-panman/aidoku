@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 3259,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:34:41+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
   "online_clarity_evidence": "他の市区町村から江戸川区にお引っ越しされた方は、必ず窓口に来て転入の届出をしていただく必要があります。",
+  "online_clarity_pages": [
+    "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "江戸川区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "基本は本人確認書類（マイナンバーカード等）。紙の転出証明書を持参する場合は転出証明書（前住所地発行）も必要。委任による届出は委任状（本人自署押印）。外国人住民は在留カードまたは特別永住者証明書、外国人を含む世帯は続柄確認書類が必要な場合あり。国外からの転入者はパスポート・戸籍全部/個人事項証明書・戸籍の附票（本籍が江戸川区の場合は省略可）。住居表示未実施地域への転入は建物登記簿謄本等の地番確認書類が必要。",
+        "evidence": "窓口にお越しになる方の本人確認できるもの／転出証明書（前住所地の市区町村で発行を受けたもの）／転入される方全員分のマイナンバーカード（お持ちの方のみ）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 24,
+          "note": "連続24文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "基本は本人確認書類（マイナンバーカード等）。紙の転出証明書を持参する場合は転出証明書（前住所地発行）も必要。委任による届出は委任状（本人自署押印）。外国人住民は在留カードまたは特別永住者証明書、外国人を含む世帯は続柄確認書類が必要な場合あり。国外からの転入者はパスポート・戸籍全部/個人事項証明書・戸籍の附票（本籍が江戸川区の場合は省略可）。住居表示未実施地域への転入は建物登記簿謄本等の地番確認書類が必要。",
+            "evidence": "窓口にお越しになる方の本人確認できるもの／転出証明書（前住所地の市区町村で発行を受けたもの）／転入される方全員分のマイナンバーカード（お持ちの方のみ）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 24,
+              "note": "連続24文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "持ち物は「引越しワンストップサービス利用」「特例転出」「紙の転出証明書持参」の3ルート別に記載され、さらにルート共通の「その他必要な持ち物」節（外国人住民・国外転入・住居表示未実施地域）が別枠で追加提示される構成。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "持ち物は「引越しワンストップサービス利用」「特例転出」「紙の転出証明書持参」の3ルート別に記載され、さらにルート共通の「その他必要な持ち物」節（外国人住民・国外転入・住居表示未実施地域）が別枠で追加提示される構成。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "江戸川区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ（オンライン完結不可）",
+        "evidence": "他の市区町村から江戸川区にお引っ越しされた方は、必ず窓口に来て転入の届出をしていただく必要があります。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 51,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ（オンライン完結不可）",
+            "evidence": "他の市区町村から江戸川区にお引っ越しされた方は、必ず窓口に来て転入の届出をしていただく必要があります。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 51,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "冒頭で「必ず窓口に来て」と明記されており、オンライン完結の手段は本文中のどのケース分岐（ワンストップ／特例転出／紙の証明書）にも存在しない。いずれも最終的に窓口来庁が必須と書かれている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "冒頭で「必ず窓口に来て」と明記されており、オンライン完結の手段は本文中のどのケース分岐（ワンストップ／特例転出／紙の証明書）にも存在しない。いずれも最終的に窓口来庁が必須と書かれている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "江戸川区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "住みはじめた日から14日以内",
+        "evidence": "届出期間：住みはじめた日から14日以内",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 19,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "住みはじめた日から14日以内",
+            "evidence": "届出期間：住みはじめた日から14日以内",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 19,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文冒頭に「届出期間：住みはじめた日から14日以内」と明記されており、起算点（住みはじめた日）も含めて一意に読み取れた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文冒頭に「届出期間：住みはじめた日から14日以内」と明記されており、起算点（住みはじめた日）も含めて一意に読み取れた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "江戸川区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文には転入届の手数料についての記載がなく、「無料」「手数料」等の語も登場しない。関連リンク一覧（転出届・マイナンバーカード手続き・本人確認書類等）にも手数料を扱うページは見当たらない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文には転入届の手数料についての記載がなく、「無料」「手数料」等の語も登場しない。関連リンク一覧（転出届・マイナンバーカード手続き・本人確認書類等）にも手数料を扱うページは見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "パターンにより異なる：(1)引越しワンストップ/特例転出利用者は転入される方全員のマイナンバーカードのみ、(2)紙の転出証明書を持つ方は本人確認書類＋転出証明書＋（あれば）マイナンバーカード。外国人住民・国外転入者は在留カード等が別途必要",
+      "value": "基本は本人確認書類（マイナンバーカード等）。紙の転出証明書を持参する場合は転出証明書（前住所地発行）も必要。委任による届出は委任状（本人自署押印）。外国人住民は在留カードまたは特別永住者証明書、外国人を含む世帯は続柄確認書類が必要な場合あり。国外からの転入者はパスポート・戸籍全部/個人事項証明書・戸籍の附票（本籍が江戸川区の場合は省略可）。住居表示未実施地域への転入は建物登記簿謄本等の地番確認書類が必要。",
       "evidence": "窓口にお越しになる方の本人確認できるもの／転出証明書（前住所地の市区町村で発行を受けたもの）／転入される方全員分のマイナンバーカード（お持ちの方のみ）",
       "source": "html",
-      "failure_reason": "曖昧"
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 24,
+        "note": "連続24文字だけ一致。引用全体は確認できない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみ。区役所区民課または各事務所の戸籍住民係に来庁が必須で、転入届自体はオンラインで完結できない（転出手続きの一部のみオンライン対応）",
+      "value": "窓口のみ（オンライン完結不可）",
       "evidence": "他の市区町村から江戸川区にお引っ越しされた方は、必ず窓口に来て転入の届出をしていただく必要があります。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 51,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
       "value": "住みはじめた日から14日以内",
       "evidence": "届出期間：住みはじめた日から14日以内",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 19,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "必要書類は前自治体での転出手続き方法（ワンストップ/特例転出/紙の証明書）によって3パターンに分岐しており、単一の正答が定まらない構成。手数料への言及はページ内に一切なく、無料か有料かも読み取れない。",
-  "online_clarity_pages": [
-    "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html"
-  ],
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "持ち物は「引越しワンストップサービス利用」「特例転出」「紙の転出証明書持参」の3ルート別に記載され、さらにルート共通の「その他必要な持ち物」節（外国人住民・国外転入・住居表示未実施地域）が別枠で追加提示される構成。\n冒頭で「必ず窓口に来て」と明記されており、オンライン完結の手段は本文中のどのケース分岐（ワンストップ／特例転出／紙の証明書）にも存在しない。いずれも最終的に窓口来庁が必須と書かれている。\n本文冒頭に「届出期間：住みはじめた日から14日以内」と明記されており、起算点（住みはじめた日）も含めて一意に読み取れた。\n本文には転入届の手数料についての記載がなく、「無料」「手数料」等の語も登場しない。関連リンク一覧（転出届・マイナンバーカード手続き・本人確認書類等）にも手数料を扱うページは見当たらない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

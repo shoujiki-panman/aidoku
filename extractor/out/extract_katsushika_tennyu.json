@@ -10,48 +10,372 @@
     "has_jsonld": false,
     "text_len": 2657,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
-  "online_clarity": "記載なし",
-  "online_clarity_evidence": "",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:45:14+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+    "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "他の区市町村や国外から葛飾区にお引越しされた方は、お近くの区民事務所か区役所（戸籍住民課）で転入の手続きをしてください。",
   "online_clarity_pages": [
-    "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html"
+    "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
+    "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+    "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "葛飾区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "本人確認書類（写真付き1点、または写真なしの資格確認書・介護保険証・年金手帳等2点以上）が必須。加えて、他区市町村からの転入は転入前自治体で交付された転出証明書（特例転出の場合は不要）。マイナンバーカードを持っている場合は転入者全員分のカード。外国人住民は転入者全員分の在留カード又は特別永住者証明書。国外からの転入で日本人は転入者全員のパスポート・戸籍謄本（抄本）・戸籍の附票（本籍地が葛飾区なら戸籍謄本・附票は不要）。国外からの転入で外国人は転入者全員のパスポート（入国日が確認できる証印付き）と在留カード又は特別永住者証明書。代理人が届け出る場合は委任状（法定代理人は資格を証明する書類も）。",
+        "evidence": "これまで住んでいた区市町村に転出届をし、転出証明書の交付を受けてください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 37,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html"
+          ],
+          "page_notes": "このページは「マイナンバーカード等を利用した転出・転入届の特例」専用ページで、特例手続の条件（マイナンバーカード所持等）は書かれているが、通常の転入届に必要な持ち物一覧は載っていない。関連リンクの「住民異動届（転入・転出・転居など）」に情報がありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "本人確認書類（写真付き1点、または写真なしの資格確認書・介護保険証・年金手帳等2点以上）が必須。加えて、他区市町村からの転入は転入前自治体で交付された転出証明書（特例転出の場合は不要）。マイナンバーカードを持っている場合は転入者全員分のカード。外国人住民は転入者全員分の在留カード又は特別永住者証明書。国外からの転入で日本人は転入者全員のパスポート・戸籍謄本（抄本）・戸籍の附票（本籍地が葛飾区なら戸籍謄本・附票は不要）。国外からの転入で外国人は転入者全員のパスポート（入国日が確認できる証印付き）と在留カード又は特別永住者証明書。代理人が届け出る場合は委任状（法定代理人は資格を証明する書類も）。",
+            "evidence": "これまで住んでいた区市町村に転出届をし、転出証明書の交付を受けてください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 37,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "指定ページ自体は「転入届の特例（マイナンバーカード等）」専用ページで通常の転入届の持ち物は書かれておらず、関連リンク「住民異動届（転入・転出・転居など）」に通常の転入届の必要書類がまとまっていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html"
+      ],
+      "page_notes": "指定ページ自体は「転入届の特例（マイナンバーカード等）」専用ページで通常の転入届の持ち物は書かれておらず、関連リンク「住民異動届（転入・転出・転居など）」に通常の転入届の必要書類がまとまっていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "葛飾区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "転入は窓口のみ（オンライン完結不可）",
+        "evidence": "転入先の区市町村窓口にて「特例転入」の届出を行う　窓口にて転入の手続を行う際、マイナンバーカードを持参し「特例転出」を行った旨をお伝えください。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 64,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "転入は窓口のみ（オンライン完結不可）",
+            "evidence": "転入先の区市町村窓口にて「特例転入」の届出を行う　窓口にて転入の手続を行う際、マイナンバーカードを持参し「特例転出」を行った旨をお伝えください。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 64,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページはマイナンバーカードを使った特例転出入の説明で、転入手続きは常に「窓口にて」と明記されている。一般の転入届ページ（住民異動届）は別リンク先。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "このページはマイナンバーカードを使った特例転出入の説明で、転入手続きは常に「窓口にて」と明記されている。一般の転入届ページ（住民異動届）は別リンク先。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "葛飾区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "新しい住所地に住み始めてから14日以内、かつ転出予定日から30日以内",
+        "evidence": "新しい住所地に住み始めてから14日以内かつ転出予定日から30日以内に、転入届に行けること",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 44,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "新しい住所地に住み始めてから14日以内、かつ転出予定日から30日以内",
+            "evidence": "新しい住所地に住み始めてから14日以内かつ転出予定日から30日以内に、転入届に行けること",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 44,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページは「転入届の特例（マイナンバーカード等利用）」専用ページで、期限の記述は特例手続きの利用条件の一項目として出てくる。転入届そのものの一般ページではない点に注意。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "このページは「転入届の特例（マイナンバーカード等利用）」専用ページで、期限の記述は特例手続きの利用条件の一項目として出てくる。転入届そのものの一般ページではない点に注意。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "葛飾区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+            "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html"
+          ],
+          "page_notes": "このページは「転入届の特例（マイナンバーカード等を利用）」という別制度の案内で、通常の転入届の手数料には触れていない。関連リンクの「住民異動届（転入・転出・転居など）」が本来の転入届手続きページと思われる。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届の手続き詳細ページ（住民異動届）まで確認したが、必要書類・届出期間・受付窓口の説明はあるものの、手数料についての記載は本文中に見当たらなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+        "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html"
+      ],
+      "page_notes": "転入届の手続き詳細ページ（住民異動届）まで確認したが、必要書類・届出期間・受付窓口の説明はあるものの、手数料についての記載は本文中に見当たらなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "マイナンバーカードまたは住民基本台帳カード（特例転入の届出時に持参）",
-      "evidence": "窓口にて転入の手続を行う際、マイナンバーカードを持参し「特例転出」を行った旨をお伝えください。",
-      "source": "html",
-      "failure_reason": null
+      "value": "本人確認書類（写真付き1点、または写真なしの資格確認書・介護保険証・年金手帳等2点以上）が必須。加えて、他区市町村からの転入は転入前自治体で交付された転出証明書（特例転出の場合は不要）。マイナンバーカードを持っている場合は転入者全員分のカード。外国人住民は転入者全員分の在留カード又は特別永住者証明書。国外からの転入で日本人は転入者全員のパスポート・戸籍謄本（抄本）・戸籍の附票（本籍地が葛飾区なら戸籍謄本・附票は不要）。国外からの転入で外国人は転入者全員のパスポート（入国日が確認できる証印付き）と在留カード又は特別永住者証明書。代理人が届け出る場合は委任状（法定代理人は資格を証明する書類も）。",
+      "evidence": "これまで住んでいた区市町村に転出届をし、転出証明書の交付を受けてください。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 37,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "転入先の区市町村窓口での届出。このページにオンラインでの転入手続きの記載はない（関連リンクにあるマイナポータルのオンライン手続きは転出届のみ対象）",
-      "evidence": "2.転入先の区市町村窓口にて「特例転入」の届出を行う",
+      "value": "転入は窓口のみ（オンライン完結不可）",
+      "evidence": "転入先の区市町村窓口にて「特例転入」の届出を行う　窓口にて転入の手続を行う際、マイナンバーカードを持参し「特例転出」を行った旨をお伝えください。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 64,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": true,
-      "value": "新しい住所地に住み始めてから14日以内かつ転出予定日から30日以内",
+      "value": "新しい住所地に住み始めてから14日以内、かつ転出予定日から30日以内",
       "evidence": "新しい住所地に住み始めてから14日以内かつ転出予定日から30日以内に、転入届に行けること",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 44,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "このページはマイナンバーカード等を利用した「特例転出・転入」制度専用の説明であり、通常の転入届（一般的な必要書類・手数料）についての記載ではない。関連リンクに「住民異動届（転入・転出・転居など）」等の一般ページが挙げられているが、本文リンク一覧にURLが含まれていないため follow_urls には入れられない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "指定ページ自体は「転入届の特例（マイナンバーカード等）」専用ページで通常の転入届の持ち物は書かれておらず、関連リンク「住民異動届（転入・転出・転居など）」に通常の転入届の必要書類がまとまっていた。\nこのページはマイナンバーカードを使った特例転出入の説明で、転入手続きは常に「窓口にて」と明記されている。一般の転入届ページ（住民異動届）は別リンク先。\nこのページは「転入届の特例（マイナンバーカード等利用）」専用ページで、期限の記述は特例手続きの利用条件の一項目として出てくる。転入届そのものの一般ページではない点に注意。\n転入届の手続き詳細ページ（住民異動届）まで確認したが、必要書類・届出期間・受付窓口の説明はあるものの、手数料についての記載は本文中に見当たらなかった。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
+      "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+      "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

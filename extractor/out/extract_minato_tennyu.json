@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 3260,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 1175
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:55:27+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [],
-  "online_clarity": "明記",
-  "online_clarity_evidence": "国外や国内で港区外から港区へ引越ししたときに必要な届出です。窓口へ届出をしてください。手数料は無料です。",
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
   "online_clarity_pages": [
     "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "港区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "国内からの転入：転出証明書（マイナンバーカードによる転出届をした人は不要）／窓口で手続きする人の本人確認書類／マイナンバーカード（持っている人全員分、暗証番号入力が必要）／外国人住民は在留カード・特別永住者証明書または旧外国人登録証明書。代理人が届出する場合は委任状と委任した本人の本人確認書類のコピーも必要。 国外からの転入：転入者全員のパスポート／日本人は戸籍全部事項証明（戸籍謄本）と戸籍の附票（本籍が港区の人は不要）／マイナンバーカード（持っている人全員分）／国民年金加入者は年金手帳／外国人住民は在留カード・特別永住者証明書または旧外国人登録証明書／家族や夫婦等2人以上の世帯で転入する外国人住民は本国発行の家族関係を確認できる書類（原本）とその翻訳文。署名用電子証明書の発行手続きが必要な場合は暗証番号、代理人が手続きする場合は電子証明書委任状も必要。",
+        "evidence": "転出証明書 前の住所地の市区町村で転出届を出すと交付されます。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 30,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "国内からの転入：転出証明書（マイナンバーカードによる転出届をした人は不要）／窓口で手続きする人の本人確認書類／マイナンバーカード（持っている人全員分、暗証番号入力が必要）／外国人住民は在留カード・特別永住者証明書または旧外国人登録証明書。代理人が届出する場合は委任状と委任した本人の本人確認書類のコピーも必要。 国外からの転入：転入者全員のパスポート／日本人は戸籍全部事項証明（戸籍謄本）と戸籍の附票（本籍が港区の人は不要）／マイナンバーカード（持っている人全員分）／国民年金加入者は年金手帳／外国人住民は在留カード・特別永住者証明書または旧外国人登録証明書／家族や夫婦等2人以上の世帯で転入する外国人住民は本国発行の家族関係を確認できる書類（原本）とその翻訳文。署名用電子証明書の発行手続きが必要な場合は暗証番号、代理人が手続きする場合は電子証明書委任状も必要。",
+            "evidence": "転出証明書 前の住所地の市区町村で転出届を出すと交付されます。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 30,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「届出に必要なもの」の下に国内／国外の転入で表が分かれており、各行が「必要なもの」と「該当者のみ必要」等の注意事項の2列構成になっている。本文の平文化では列対応が保たれるため、そのまま読み取れる。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「届出に必要なもの」の下に国内／国外の転入で表が分かれており、各行が「必要なもの」と「該当者のみ必要」等の注意事項の2列構成になっている。本文の平文化では列対応が保たれるため、そのまま読み取れる。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "港区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ（オンラインでは完結できない）",
+        "evidence": "国外や国内で港区外から港区へ引越ししたときに必要な届出です。窓口へ届出をしてください。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 43,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ（オンラインでは完結できない）",
+            "evidence": "国外や国内で港区外から港区へ引越ししたときに必要な届出です。窓口へ届出をしてください。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 43,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文冒頭で「窓口へ届出をしてください」と明記。「転入・転居手続の来庁予約（引越し手続オンラインサービス）」というリンクがあるが、これは来庁予約のみでオンライン完結の手続きではないため、窓口のみと判断した。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文冒頭で「窓口へ届出をしてください」と明記。「転入・転居手続の来庁予約（引越し手続オンラインサービス）」というリンクがあるが、これは来庁予約のみでオンライン完結の手続きではないため、窓口のみと判断した。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "港区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "港区に住み始めた日から14日以内",
+        "evidence": "港区に住み始めた日から14日以内",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 16,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "港区に住み始めた日から14日以内",
+            "evidence": "港区に住み始めた日から14日以内",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 16,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「届出期間」という見出しの直下に起算点（住み始めた日）と期間（14日以内）が明記されており、本文から直接抽出できた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「届出期間」という見出しの直下に起算点（住み始めた日）と期間（14日以内）が明記されており、本文から直接抽出できた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "港区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "無料",
+        "evidence": "国外や国内で港区外から港区へ引越ししたときに必要な届出です。窓口へ届出をしてください。手数料は無料です。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 52,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "無料",
+            "evidence": "国外や国内で港区外から港区へ引越ししたときに必要な届出です。窓口へ届出をしてください。手数料は無料です。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 52,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手数料は本文冒頭のリード文に明記されており、目次以下の各セクションには手数料の記載はない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "手数料は本文冒頭のリード文に明記されており、目次以下の各セクションには手数料の記載はない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "国内からの転入と国外からの転入で必要なものが異なる。共通:マイナンバーカード(持っている人全員分、暗証番号入力が必要)。国内転入:転出証明書(マイナンバーカードによる転出届をした人は不要)、窓口で手続きする人の本人確認書類、外国人住民は在留カード等。国外転入:転入者全員のパスポート、日本人のみ戸籍全部事項証明(戸籍謄本)と戸籍の附票(本籍が港区の場合は不要)、国民年金加入者は年金手帳、外国人住民は在留カード等、2人以上の世帯の外国人住民は家族関係を確認できる書類。",
-      "evidence": "国内からの転入と国外からの転入で必要なものが異なりますので、ご注意ください。",
+      "value": "国内からの転入：転出証明書（マイナンバーカードによる転出届をした人は不要）／窓口で手続きする人の本人確認書類／マイナンバーカード（持っている人全員分、暗証番号入力が必要）／外国人住民は在留カード・特別永住者証明書または旧外国人登録証明書。代理人が届出する場合は委任状と委任した本人の本人確認書類のコピーも必要。 国外からの転入：転入者全員のパスポート／日本人は戸籍全部事項証明（戸籍謄本）と戸籍の附票（本籍が港区の人は不要）／マイナンバーカード（持っている人全員分）／国民年金加入者は年金手帳／外国人住民は在留カード・特別永住者証明書または旧外国人登録証明書／家族や夫婦等2人以上の世帯で転入する外国人住民は本国発行の家族関係を確認できる書類（原本）とその翻訳文。署名用電子証明書の発行手続きが必要な場合は暗証番号、代理人が手続きする場合は電子証明書委任状も必要。",
+      "evidence": "転出証明書 前の住所地の市区町村で転出届を出すと交付されます。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 30,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "オンライン完結の記載なし。届出窓口は各総合支所区民課窓口サービス係または台場分室。受付時間は午前8時30分から午後5時まで(水曜日は台場分室を除き午後7時まで)。「引越し手続オンラインサービス」はあるが来庁予約のみで、届出自体はオンライン完結できない。",
-      "evidence": "届出窓口 各総合支所区民課窓口サービス係 台場分室 受付時間 午前8時30分から午後5時まで（水曜日は台場分室を除き午前8時30分から午後7時まで）",
+      "value": "窓口のみ（オンラインでは完結できない）",
+      "evidence": "国外や国内で港区外から港区へ引越ししたときに必要な届出です。窓口へ届出をしてください。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 43,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
-      "value": "港区に住み始めた日から14日以内(住み始める前の届出は不可)",
+      "value": "港区に住み始めた日から14日以内",
       "evidence": "港区に住み始めた日から14日以内",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 16,
+        "note": ""
+      }
     },
     "手数料": {
       "found": true,
       "value": "無料",
-      "evidence": "手数料は無料です。",
+      "evidence": "国外や国内で港区外から港区へ引越ししたときに必要な届出です。窓口へ届出をしてください。手数料は無料です。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 52,
+        "note": ""
+      }
     }
   },
-  "page_notes": "必要書類は国内転入/国外転入で別テーブルに分かれ条件分岐が多いが、本文中に明記されているためfound trueとした。オンライン完結の可否は明言されていないが「引越し手続オンラインサービス」は来庁予約機能のみと文脈から判断できる。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「届出に必要なもの」の下に国内／国外の転入で表が分かれており、各行が「必要なもの」と「該当者のみ必要」等の注意事項の2列構成になっている。本文の平文化では列対応が保たれるため、そのまま読み取れる。\n本文冒頭で「窓口へ届出をしてください」と明記。「転入・転居手続の来庁予約（引越し手続オンラインサービス）」というリンクがあるが、これは来庁予約のみでオンライン完結の手続きではないため、窓口のみと判断した。\n「届出期間」という見出しの直下に起算点（住み始めた日）と期間（14日以内）が明記されており、本文から直接抽出できた。\n手数料は本文冒頭のリード文に明記されており、目次以下の各セクションには手数料の記載はない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 4,
+    "verified": 4,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 0
   }
 }

@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 6315,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:45:14+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "記載なし",
   "online_clarity_evidence": "",
   "online_clarity_pages": [
     "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html"
   ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "江東区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "必要書類は「前住所の区市町村で発行した転出証明書」「窓口に来られる方の本人確認書類」「住民異動届」の3点。加えて該当者のみ、マイナンバーカード（継続利用を希望する交付済みの異動者全員分）、在留カード・特別永住者証明書等（外国人住民の異動者全員分、続柄証明書類が必要な場合あり）、申述書（新住所に家族以外がすでに住民登録されている場合）、居住開始が確認できる資料（転入日が届出日より1年以上前の場合）が必要。",
+        "evidence": "前住所の区市町村で発行した転出証明書 窓口に来られる方の本人確認書類 住民異動届（窓口にて記入または下記の関連ドキュメントよりダウンロードできます。）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 37,
+          "note": "連続37文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "必要書類は「前住所の区市町村で発行した転出証明書」「窓口に来られる方の本人確認書類」「住民異動届」の3点。加えて該当者のみ、マイナンバーカード（継続利用を希望する交付済みの異動者全員分）、在留カード・特別永住者証明書等（外国人住民の異動者全員分、続柄証明書類が必要な場合あり）、申述書（新住所に家族以外がすでに住民登録されている場合）、居住開始が確認できる資料（転入日が届出日より1年以上前の場合）が必要。",
+            "evidence": "前住所の区市町村で発行した転出証明書 窓口に来られる方の本人確認書類 住民異動届（窓口にて記入または下記の関連ドキュメントよりダウンロードできます。）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 37,
+              "note": "連続37文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「必要書類」は基本3点のあとに「その他（状況により必要なもの）」として該当者別の書類が箇条書きで続く構成。転出証明書の有無で手続きが2系統（通常/マイナンバーカード特例）に分かれ、必要書類もそれぞれ別に記載されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「必要書類」は基本3点のあとに「その他（状況により必要なもの）」として該当者別の書類が箇条書きで続く構成。転出証明書の有無で手続きが2系統（通常/マイナンバーカード特例）に分かれ、必要書類もそれぞれ別に記載されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "江東区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ（オンラインの記載なし）",
+        "evidence": "届出先 江東区役所2階3番窓口（区民課住民記録係） 豊洲特別出張所 出張所（区内7箇所）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 37,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ（オンラインの記載なし）",
+            "evidence": "届出先 江東区役所2階3番窓口（区民課住民記録係） 豊洲特別出張所 出張所（区内7箇所）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 37,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「届出先」欄に窓口・出張所のみが列挙され、オンライン申請や電子申請への言及は本文・関連ドキュメント・関連ページのいずれにも見当たらない。関連ドキュメントはPDFの様式ダウンロードのみで、オンライン完結の手段ではない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「届出先」欄に窓口・出張所のみが列挙され、オンライン申請や電子申請への言及は本文・関連ドキュメント・関連ページのいずれにも見当たらない。関連ドキュメントはPDFの様式ダウンロードのみで、オンライン完結の手段ではない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "江東区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "新しい住所に住み始めてから14日以内",
+        "evidence": "新しい住所に住み始めてから14日以内（注釈：お引越し前に届出をすることはできません。）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 43,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "新しい住所に住み始めてから14日以内",
+            "evidence": "新しい住所に住み始めてから14日以内（注釈：お引越し前に届出をすることはできません。）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 43,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「届出期間」の見出しの下に起算点（住み始めてから）と期限（14日以内）が明記されており、閉庁日の扱い（翌開庁日）も併記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「届出期間」の見出しの下に起算点（住み始めてから）と期限（14日以内）が明記されており、閉庁日の扱い（翌開庁日）も併記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "江東区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手数料に関する記述はページ本文になく、関連ドキュメント・関連ページのリンク一覧にも手数料を扱うページは見当たらなかった。必要書類・届出期間・届出先は詳細に書かれているが、費用についての言及自体が存在しない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "手数料に関する記述はページ本文になく、関連ドキュメント・関連ページのリンク一覧にも手数料を扱うページは見当たらなかった。必要書類・届出期間・届出先は詳細に書かれているが、費用についての言及自体が存在しない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "前住所の区市町村で発行した転出証明書、窓口に来られる方の本人確認書類、住民異動届（マイナンバーカードの特例転入の場合はマイナンバーカード等）。世帯主以外が届出る場合は委任状が必要",
+      "value": "必要書類は「前住所の区市町村で発行した転出証明書」「窓口に来られる方の本人確認書類」「住民異動届」の3点。加えて該当者のみ、マイナンバーカード（継続利用を希望する交付済みの異動者全員分）、在留カード・特別永住者証明書等（外国人住民の異動者全員分、続柄証明書類が必要な場合あり）、申述書（新住所に家族以外がすでに住民登録されている場合）、居住開始が確認できる資料（転入日が届出日より1年以上前の場合）が必要。",
       "evidence": "前住所の区市町村で発行した転出証明書 窓口に来られる方の本人確認書類 住民異動届（窓口にて記入または下記の関連ドキュメントよりダウンロードできます。）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 37,
+        "note": "連続37文字だけ一致。引用全体は確認できない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "オンライン不可。窓口のみ（江東区役所2階3番窓口、豊洲特別出張所、区内7箇所の出張所）",
-      "evidence": "江東区役所2階3番窓口（区民課住民記録係） 豊洲特別出張所 出張所（区内7箇所）",
+      "value": "窓口のみ（オンラインの記載なし）",
+      "evidence": "届出先 江東区役所2階3番窓口（区民課住民記録係） 豊洲特別出張所 出張所（区内7箇所）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 37,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": true,
-      "value": "新しい住所に住み始めてから14日以内（引越し前の届出は不可、14日目が閉庁日の場合は翌開庁日）",
+      "value": "新しい住所に住み始めてから14日以内",
       "evidence": "新しい住所に住み始めてから14日以内（注釈：お引越し前に届出をすることはできません。）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 43,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "必要書類・届出先・届出期間は本文に詳細に明記されているが、手数料については本文中に一切言及がない。転入届自体は住民票の異動届であり無料の可能性が高いが、ページに明記がないため「記載なし」とする。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「必要書類」は基本3点のあとに「その他（状況により必要なもの）」として該当者別の書類が箇条書きで続く構成。転出証明書の有無で手続きが2系統（通常/マイナンバーカード特例）に分かれ、必要書類もそれぞれ別に記載されている。\n「届出先」欄に窓口・出張所のみが列挙され、オンライン申請や電子申請への言及は本文・関連ドキュメント・関連ページのいずれにも見当たらない。関連ドキュメントはPDFの様式ダウンロードのみで、オンライン完結の手段ではない。\n「届出期間」の見出しの下に起算点（住み始めてから）と期限（14日以内）が明記されており、閉庁日の扱い（翌開庁日）も併記されている。\n手数料に関する記述はページ本文になく、関連ドキュメント・関連ページのリンク一覧にも手数料を扱うページは見当たらなかった。必要書類・届出期間・届出先は詳細に書かれているが、費用についての言及自体が存在しない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

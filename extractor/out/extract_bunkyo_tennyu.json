@@ -10,53 +10,397 @@
     "has_jsonld": false,
     "text_len": 2064,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:34:41+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [
     "https://www.city.bunkyo.lg.jp/b013/p000263.html",
-    "https://www.city.bunkyo.lg.jp/b013/p000264.html"
+    "https://www.city.bunkyo.lg.jp/b013/p000264.html",
+    "https://www.city.bunkyo.lg.jp/b013/p000284/index.html#tennyu"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "届出は文京シビックセンター2階のみで受け付けています。注意：郵送またはメールでの受付はしておりませんのでご注意ください。",
   "online_clarity_pages": [
     "https://www.city.bunkyo.lg.jp/b013/p000261/index.html",
     "https://www.city.bunkyo.lg.jp/b013/p000263.html",
-    "https://www.city.bunkyo.lg.jp/b013/p000264.html"
+    "https://www.city.bunkyo.lg.jp/b013/p000264.html",
+    "https://www.city.bunkyo.lg.jp/b013/p000284/index.html#tennyu"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "文京区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "(1)本人確認書類（マイナンバーカード、運転免許証、パスポート、在留カード等） (2)マイナンバーカード（持っている場合のみ） (3)転出証明書（マイナンバーカードで特例転出した場合は不要） (4)委任状（代理人が届出する場合のみ） (5)その他：1年以上遡る場合は居住を証明する疎明資料（賃貸契約書等）、外国人で家族と同居する場合は家族関係を証明する公的書類",
+        "evidence": "手続に必要なもの (1)窓口に来られた方の本人確認書類 マイナンバーカード(個人番号カード）、運転免許証、パスポート、在留カード等",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 51,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+            "https://www.city.bunkyo.lg.jp/b013/p000264.html"
+          ],
+          "page_notes": "このページは案内の入口で、必要書類そのものは「他の区市町村から文京区へ転入する場合」「国外から文京区へ転入する場合」の各手続きページ、または外部の「くらしの手続きガイド」に委ねられている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "(1)本人確認書類（マイナンバーカード、運転免許証、パスポート、在留カード等） (2)マイナンバーカード（持っている場合のみ） (3)転出証明書（マイナンバーカードで特例転出した場合は不要） (4)委任状（代理人が届出する場合のみ） (5)その他：1年以上遡る場合は居住を証明する疎明資料（賃貸契約書等）、外国人で家族と同居する場合は家族関係を証明する公的書類",
+            "evidence": "手続に必要なもの (1)窓口に来られた方の本人確認書類 マイナンバーカード(個人番号カード）、運転免許証、パスポート、在留カード等",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 51,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "起点ページ（p000261）には持ち物の記載がなく、「他の区市町村から文京区へ転入する場合」（p000263）に「手続に必要なもの」として詳細な番号付きリストがあった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+        "https://www.city.bunkyo.lg.jp/b013/p000264.html"
+      ],
+      "page_notes": "起点ページ（p000261）には持ち物の記載がなく、「他の区市町村から文京区へ転入する場合」（p000263）に「手続に必要なもの」として詳細な番号付きリストがあった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "文京区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ",
+        "evidence": "受付窓口 受付場所 文京シビックセンター2階 戸籍住民課住民記録係",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 29,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ",
+            "evidence": "受付窓口 受付場所 文京シビックセンター2階 戸籍住民課住民記録係",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 29,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文には転入届の提出方法として窓口（文京シビックセンター2階）のみが記載されている。オンライン関連の記述は「引越しワンストップサービス」のみだが、これは転出届のオンライン提出専用であることが注意書きで明示されており、転入届には適用されない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文には転入届の提出方法として窓口（文京シビックセンター2階）のみが記載されている。オンライン関連の記述は「引越しワンストップサービス」のみだが、これは転出届のオンライン提出専用であることが注意書きで明示されており、転入届には適用されない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "文京区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "引越した日から14日以内",
+        "evidence": "届出期間\n\n引越した日から14日以内",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 18,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+            "https://www.city.bunkyo.lg.jp/b013/p000264.html"
+          ],
+          "page_notes": "このページは転入届の案内トップで、実際の手続き詳細（期限・持ち物等）は「他の区市町村から文京区へ引越しされる方」「国外から文京区へ引越しされる方」のリンク先ページに分かれている構成。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "引越した日から14日以内",
+            "evidence": "届出期間\n\n引越した日から14日以内",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 18,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届トップページには期限の記載がなく、「他の区市町村から文京区へ転入する場合」のリンク先ページに届出期間として明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+        "https://www.city.bunkyo.lg.jp/b013/p000264.html"
+      ],
+      "page_notes": "転入届トップページには期限の記載がなく、「他の区市町村から文京区へ転入する場合」のリンク先ページに届出期間として明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "文京区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+            "https://www.city.bunkyo.lg.jp/b013/p000284/index.html#tennyu"
+          ],
+          "page_notes": "このindexページは受付窓口・受付時間・注意事項のみで、手数料についての記載は本文中に一切ない。手続き詳細は「他の区市町村から文京区へ転入する場合」等の下位ページやFAQに分かれている可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届のページおよびリンク先の「他の区市町村から文京区へ転入する場合」「よくある質問」には、必要書類・届出期間・受付窓口の説明はあるが、手数料に関する記述が本文中に見当たらない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+        "https://www.city.bunkyo.lg.jp/b013/p000284/index.html#tennyu"
+      ],
+      "page_notes": "転入届のページおよびリンク先の「他の区市町村から文京区へ転入する場合」「よくある質問」には、必要書類・届出期間・受付窓口の説明はあるが、手数料に関する記述が本文中に見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）、（お持ちの方は）マイナンバーカード、転出証明書（マイナンバーカードで特例転出した場合は不要）、代理人の場合は委任状など",
-      "evidence": "(1)窓口に来られた方の本人確認書類 マイナンバーカード(個人番号カード）、運転免許証、パスポート、在留カード等",
+      "value": "(1)本人確認書類（マイナンバーカード、運転免許証、パスポート、在留カード等） (2)マイナンバーカード（持っている場合のみ） (3)転出証明書（マイナンバーカードで特例転出した場合は不要） (4)委任状（代理人が届出する場合のみ） (5)その他：1年以上遡る場合は居住を証明する疎明資料（賃貸契約書等）、外国人で家族と同居する場合は家族関係を証明する公的書類",
+      "evidence": "手続に必要なもの (1)窓口に来られた方の本人確認書類 マイナンバーカード(個人番号カード）、運転免許証、パスポート、在留カード等",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 51,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみ（文京シビックセンター2階 戸籍住民課住民記録係）。郵送・メールでの受付は不可。オンライン手続き不可",
-      "evidence": "届出は文京シビックセンター2階のみで受け付けています。注意：郵送またはメールでの受付はしておりませんのでご注意ください。",
-      "source": "linked_page",
-      "failure_reason": null
+      "value": "窓口のみ",
+      "evidence": "受付窓口 受付場所 文京シビックセンター2階 戸籍住民課住民記録係",
+      "source": "html",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 29,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": true,
       "value": "引越した日から14日以内",
-      "evidence": "届出期間 引越した日から14日以内",
+      "evidence": "届出期間\n\n引越した日から14日以内",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 18,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "トップページ自体には受付窓口の場所と担当課の情報しかなく、必要書類・受付方法・期限は1階層下の「他の区市町村から文京区へ転入する場合」ページに集約されていた。手数料についてはトップページ・リンク先2ページのいずれにも記載が見当たらない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "起点ページ（p000261）には持ち物の記載がなく、「他の区市町村から文京区へ転入する場合」（p000263）に「手続に必要なもの」として詳細な番号付きリストがあった。\n本文には転入届の提出方法として窓口（文京シビックセンター2階）のみが記載されている。オンライン関連の記述は「引越しワンストップサービス」のみだが、これは転出届のオンライン提出専用であることが注意書きで明示されており、転入届には適用されない。\n転入届トップページには期限の記載がなく、「他の区市町村から文京区へ転入する場合」のリンク先ページに届出期間として明記されていた。\n転入届のページおよびリンク先の「他の区市町村から文京区へ転入する場合」「よくある質問」には、必要書類・届出期間・受付窓口の説明はあるが、手数料に関する記述が本文中に見当たらない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.bunkyo.lg.jp/b013/p000261/index.html",
+      "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+      "https://www.city.bunkyo.lg.jp/b013/p000264.html",
+      "https://www.city.bunkyo.lg.jp/b013/p000284/index.html#tennyu"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

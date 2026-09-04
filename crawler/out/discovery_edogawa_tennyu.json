@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.edogawa.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
@@ -14,7 +35,110 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3259,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届（区外から江戸川区へ引越した方） 江戸川区ホームページ",
+      "meta": {
+        "og:title": "転入届（区外から江戸川区へ引越した方）",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届（区外から江戸川区へ引越した方）"
+        },
+        {
+          "level": 2,
+          "text": "もくじ"
+        },
+        {
+          "level": 2,
+          "text": "引越しワンストップサービスを利用して転出された方"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方"
+        },
+        {
+          "level": 3,
+          "text": "持ち物"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカードを使って転出の届出をされた方（特例転出をされた方）"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方"
+        },
+        {
+          "level": 3,
+          "text": "持ち物"
+        },
+        {
+          "level": 2,
+          "text": "紙の転出証明書をお持ちの方"
+        },
+        {
+          "level": 3,
+          "text": "来庁前の準備をおすすめしています"
+        },
+        {
+          "level": 4,
+          "text": "【書かない窓口】（証明書事前作成サービス）"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方"
+        },
+        {
+          "level": 3,
+          "text": "持ち物"
+        },
+        {
+          "level": 4,
+          "text": "上記の「届出できる方」以外の方が届出する場合"
+        },
+        {
+          "level": 2,
+          "text": "その他必要な持ち物"
+        },
+        {
+          "level": 3,
+          "text": "外国人住民の方"
+        },
+        {
+          "level": 3,
+          "text": "国外から転入される場合"
+        },
+        {
+          "level": 3,
+          "text": "下記の地域に転入される方"
+        },
+        {
+          "level": 2,
+          "text": "転入に伴う主な手続き"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードをお持ちの方の手続き"
+        },
+        {
+          "level": 3,
+          "text": "その他の手続き"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/ido_todoke/index.html",
@@ -25,18 +149,116 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 808,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住所の異動（引越し等） 江戸川区ホームページ",
+      "meta": {
+        "og:title": "住所の異動（引越し等）",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/ido_todoke/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住所の異動（引越し等）"
+        },
+        {
+          "level": 2,
+          "text": "こんなページも見られています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/hikkoshi_info.html",
-      "link_text": "【マイナンバーカードをお持ちの方】引越しワンストップサービス",
+      "link_text": "引っ越しワンストップ",
       "hops": 3,
       "score": 26,
-      "parent": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
+      "parent": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/ido_todoke/index.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 4282,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【マイナンバーカードをお持ちの方】引越しワンストップサービス 江戸川区ホームページ",
+      "meta": {
+        "og:title": "【マイナンバーカードをお持ちの方】引越しワンストップサービス",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/hikkoshi_info.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【マイナンバーカードをお持ちの方】引越しワンストップサービス"
+        },
+        {
+          "level": 2,
+          "text": "マイナポータルからオンラインで転出を届出できるようになりました。"
+        },
+        {
+          "level": 3,
+          "text": "引越しワンストップサービス"
+        },
+        {
+          "level": 4,
+          "text": "手続き"
+        },
+        {
+          "level": 2,
+          "text": "操作方法"
+        },
+        {
+          "level": 3,
+          "text": "操作の流れ"
+        },
+        {
+          "level": 2,
+          "text": "引越し関連手続"
+        },
+        {
+          "level": 3,
+          "text": "転出届に伴う手続き"
+        },
+        {
+          "level": 3,
+          "text": "転入届に伴う手続"
+        },
+        {
+          "level": 3,
+          "text": "転居届に伴う手続"
+        },
+        {
+          "level": 2,
+          "text": "事務所でできる手続きと区役所（本庁舎）でなければできない手続き"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "（1）電話によるお問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "（2）WEBサイトによるお問合せ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/ido_todoke/kakunin.html",
@@ -47,18 +269,120 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3864,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍届出や証明書請求、住所異動等の際の本人確認書類 江戸川区ホームページ",
+      "meta": {
+        "og:title": "戸籍届出や証明書請求、住所異動等の際の本人確認書類",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/ido_todoke/kakunin.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍届出や証明書請求、住所異動等の際の本人確認書類"
+        },
+        {
+          "level": 2,
+          "text": "戸籍関係（戸籍の届出・戸籍証明交付）"
+        },
+        {
+          "level": 2,
+          "text": "住民基本台帳関係（住所異動届・住民票の写し交付・印鑑登録等）"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenkyo.html",
       "link_text": "転居届（江戸川区内で引越した方）",
       "hops": 3,
       "score": 22,
-      "parent": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/ido_todoke/index.html",
+      "parent": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 2483,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転居届（江戸川区内で引越した方） 江戸川区ホームページ",
+      "meta": {
+        "og:title": "転居届（江戸川区内で引越した方）",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenkyo.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転居届（江戸川区内で引越した方）"
+        },
+        {
+          "level": 2,
+          "text": "来庁する前の準備をおすすめしています"
+        },
+        {
+          "level": 3,
+          "text": "【書かない窓口】（申請書事前作成サービス）"
+        },
+        {
+          "level": 3,
+          "text": "来庁予定の連絡（マイナンバーカードをお持ちの方）"
+        },
+        {
+          "level": 2,
+          "text": "窓口で届出をする"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方"
+        },
+        {
+          "level": 2,
+          "text": "持ち物"
+        },
+        {
+          "level": 3,
+          "text": "上記の「届出できる方」以外の方が届出する場合"
+        },
+        {
+          "level": 3,
+          "text": "外国人住民の方"
+        },
+        {
+          "level": 3,
+          "text": "下記の地域に転居される方（集合住宅は除く）"
+        },
+        {
+          "level": 2,
+          "text": "転居に伴う主な手続き"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードをお持ちの方の手続き"
+        },
+        {
+          "level": 3,
+          "text": "その他の手続き"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/juminhyo/index.html",
@@ -69,7 +393,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 838,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票等の請求 江戸川区ホームページ",
+      "meta": {
+        "og:title": "住民票等の請求",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/juminhyo/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票等の請求"
+        },
+        {
+          "level": 2,
+          "text": "こんなページも見られています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/hyojunka.html",
@@ -80,7 +427,68 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2155,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和7年1月6日から住民票の写し等と印鑑登録証明書の様式が変わります。 江戸川区ホームページ",
+      "meta": {
+        "description": "令和7年1月から住民票の写し等と印鑑証明書の様式が変わります。",
+        "og:title": "令和7年1月6日から住民票の写し等と印鑑登録証明書の様式が変わります。",
+        "og:type": "article",
+        "og:description": "令和7年1月から住民票の写し等と印鑑証明書の様式が変わります。",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/hyojunka.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和7年1月6日から住民票の写し等と印鑑登録証明書の様式が変わります。"
+        },
+        {
+          "level": 2,
+          "text": "住民票の写しの変更点について"
+        },
+        {
+          "level": 3,
+          "text": "「転入前住所」欄の新設"
+        },
+        {
+          "level": 3,
+          "text": "「前住所」欄の廃止"
+        },
+        {
+          "level": 3,
+          "text": "「住所を定めた年月日」の記載内容の変更"
+        },
+        {
+          "level": 2,
+          "text": "住民票の写しの様式について"
+        },
+        {
+          "level": 3,
+          "text": "（1）世帯票"
+        },
+        {
+          "level": 3,
+          "text": "（2）個人票"
+        },
+        {
+          "level": 2,
+          "text": "住民票の除票の写しの様式について"
+        },
+        {
+          "level": 2,
+          "text": "印鑑登録証明書の様式について"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/osirase2.html",
@@ -91,7 +499,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 871,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【解消しました】他自治体での住民票の取得に関する不具合 江戸川区ホームページ",
+      "meta": {
+        "og:title": "【解消しました】他自治体での住民票の取得に関する不具合",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/osirase2.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【解消しました】他自治体での住民票の取得に関する不具合"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/seikyu.html",
@@ -102,7 +533,126 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6050,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "江戸川区の住民票の請求 江戸川区ホームページ",
+      "meta": {
+        "og:title": "江戸川区の住民票の請求",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/seikyu.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "江戸川区の住民票の請求"
+        },
+        {
+          "level": 2,
+          "text": "重要なお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "もくじ"
+        },
+        {
+          "level": 2,
+          "text": "コンビニ交付（マイナンバーカードをお持ちの方）"
+        },
+        {
+          "level": 3,
+          "text": "取得時間"
+        },
+        {
+          "level": 3,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "オンライン申請（スマート申請）"
+        },
+        {
+          "level": 2,
+          "text": "郵送請求"
+        },
+        {
+          "level": 3,
+          "text": "本人からの請求"
+        },
+        {
+          "level": 4,
+          "text": "送付先"
+        },
+        {
+          "level": 4,
+          "text": "必要なもの"
+        },
+        {
+          "level": 4,
+          "text": "申請書に記入すること"
+        },
+        {
+          "level": 4,
+          "text": "ご注意"
+        },
+        {
+          "level": 3,
+          "text": "第三者からの請求"
+        },
+        {
+          "level": 4,
+          "text": "申請書ダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "請求ポスト"
+        },
+        {
+          "level": 3,
+          "text": "住民票等請求ポスト"
+        },
+        {
+          "level": 4,
+          "text": "申請書に記入すること"
+        },
+        {
+          "level": 4,
+          "text": "ご注意"
+        },
+        {
+          "level": 2,
+          "text": "窓口請求"
+        },
+        {
+          "level": 3,
+          "text": "請求できる方"
+        },
+        {
+          "level": 4,
+          "text": "ご注意"
+        },
+        {
+          "level": 4,
+          "text": "法人からの請求"
+        },
+        {
+          "level": 3,
+          "text": "申請書ダウンロード"
+        },
+        {
+          "level": 3,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/koikikofu.html",
@@ -113,7 +663,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1747,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "広域交付（住民票のある市区町村以外での交付）による交付申請 江戸川区ホームページ",
+      "meta": {
+        "og:title": "広域交付（住民票のある市区町村以外での交付）による交付申請",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/koikikofu.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "広域交付（住民票のある市区町村以外での交付）による交付申請"
+        },
+        {
+          "level": 2,
+          "text": "広域交付とは"
+        },
+        {
+          "level": 2,
+          "text": "請求できる住民票"
+        },
+        {
+          "level": 3,
+          "text": "請求できる方"
+        },
+        {
+          "level": 3,
+          "text": "窓口にお持ちいただくもの"
+        },
+        {
+          "level": 3,
+          "text": "手数料"
+        },
+        {
+          "level": 3,
+          "text": "受取場所・受付時間"
+        },
+        {
+          "level": 3,
+          "text": "問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/koseki/index.html",
@@ -124,7 +721,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 858,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の届出 江戸川区ホームページ",
+      "meta": {
+        "og:title": "戸籍の届出",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/koseki/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の届出"
+        },
+        {
+          "level": 2,
+          "text": "こんなページも見られています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/madoguchi.html",
@@ -135,7 +755,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2676,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の届出受付窓口 江戸川区ホームページ",
+      "meta": {
+        "og:title": "戸籍の届出受付窓口",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/madoguchi.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の届出受付窓口"
+        },
+        {
+          "level": 2,
+          "text": "重要なお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "平日の届出受付窓口"
+        },
+        {
+          "level": 3,
+          "text": "受付場所（区役所・各事務所の戸籍住民係）"
+        },
+        {
+          "level": 3,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "窓口時間延長日（第1水曜日・第3水曜日）【本庁舎のみ】"
+        },
+        {
+          "level": 2,
+          "text": "夜間休日の届出受付窓口"
+        },
+        {
+          "level": 3,
+          "text": "区役所本庁舎"
+        },
+        {
+          "level": 3,
+          "text": "区民館"
+        },
+        {
+          "level": 2,
+          "text": "夜間休日届出時の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "郵送による届出"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yuusoutodoke.html",
@@ -146,7 +833,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2304,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "郵送による戸籍の届出 江戸川区ホームページ",
+      "meta": {
+        "og:title": "郵送による戸籍の届出",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yuusoutodoke.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "郵送による戸籍の届出"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "届出の方法"
+        },
+        {
+          "level": 3,
+          "text": "江戸川区に郵送する場合の送付先"
+        },
+        {
+          "level": 2,
+          "text": "届出用紙ダウンロード"
+        },
+        {
+          "level": 3,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "届出記入例"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yokuarusitumon.html",
@@ -157,7 +895,106 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3237,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の届出についてのよくある質問と回答 江戸川区ホームページ",
+      "meta": {
+        "og:title": "戸籍の届出についてのよくある質問と回答",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yokuarusitumon.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍の届出についてのよくある質問と回答"
+        },
+        {
+          "level": 2,
+          "text": "届出の受付時間・場所"
+        },
+        {
+          "level": 3,
+          "text": "本庁舎の受付時間と場所を教えてください。"
+        },
+        {
+          "level": 3,
+          "text": "本庁舎以外で受付している場所はありますか、いつ受付していますか。"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の届出を夜間ポストに投函することはできますか。"
+        },
+        {
+          "level": 3,
+          "text": "戸籍届出の受付日時の予約をすることはできますか。"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の届出の時間は、どこかに記録されますか。"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の届出を郵送ですることはできますか。"
+        },
+        {
+          "level": 2,
+          "text": "届出人"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の届出は、誰が届出人になりますか。"
+        },
+        {
+          "level": 3,
+          "text": "婚姻届の届出は、二人で届出に行く必要がありますか。"
+        },
+        {
+          "level": 2,
+          "text": "届出書類等"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の届出の用紙はどこで入手できますか。"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の届出の際に必要になる書類等は、どのようなものがありますか。"
+        },
+        {
+          "level": 3,
+          "text": "本人確認書類とはどのようなものですか。"
+        },
+        {
+          "level": 2,
+          "text": "届書の審査"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の届出の審査はどのようなものですか。"
+        },
+        {
+          "level": 3,
+          "text": "事前審査とはどのようなものですか。"
+        },
+        {
+          "level": 2,
+          "text": "届出後の手続き"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の届出後に戸籍証明書や住民票の写しが必要な場合、いつから取得することができますか。"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/kihondaicho.html",
@@ -168,7 +1005,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1713,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民基本台帳の閲覧 江戸川区ホームページ",
+      "meta": {
+        "og:title": "住民基本台帳の閲覧",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/kihondaicho.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民基本台帳の閲覧"
+        },
+        {
+          "level": 2,
+          "text": "閲覧できる場合"
+        },
+        {
+          "level": 2,
+          "text": "提出書類"
+        },
+        {
+          "level": 2,
+          "text": "本人確認書類"
+        },
+        {
+          "level": 2,
+          "text": "閲覧の公表"
+        },
+        {
+          "level": 2,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "申請書ダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
@@ -179,7 +1063,90 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2148,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "届出・証明 江戸川区ホームページ",
+      "meta": {
+        "og:title": "届出・証明",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "届出・証明"
+        },
+        {
+          "level": 2,
+          "text": "各種証明書のオンライン請求"
+        },
+        {
+          "level": 2,
+          "text": "区役所・各事務所に来庁しなくてもできる手続き"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "事務所取り扱い業務"
+        },
+        {
+          "level": 2,
+          "text": "住所の異動（引越し等）"
+        },
+        {
+          "level": 2,
+          "text": "世帯変更・旧氏の記載の申出 等"
+        },
+        {
+          "level": 2,
+          "text": "住民票等の請求"
+        },
+        {
+          "level": 2,
+          "text": "電子証明書について"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の届出"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の証明書"
+        },
+        {
+          "level": 2,
+          "text": "税に関する証明"
+        },
+        {
+          "level": 2,
+          "text": "自家用車等の届出"
+        },
+        {
+          "level": 2,
+          "text": "印鑑登録・印鑑登録証明書"
+        },
+        {
+          "level": 2,
+          "text": "外国人の方"
+        },
+        {
+          "level": 2,
+          "text": "住民基本台帳カード"
+        },
+        {
+          "level": 2,
+          "text": "こんなページも見られています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kurashi/index.html",
@@ -190,7 +1157,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2195,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "くらし・手続き 江戸川区ホームページ",
+      "meta": {
+        "og:title": "くらし・手続き",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kurashi/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "特設サイト"
+        },
+        {
+          "level": 2,
+          "text": "届出・証明"
+        },
+        {
+          "level": 2,
+          "text": "国民健康保険・後期高齢者医療制度"
+        },
+        {
+          "level": 2,
+          "text": "国民年金"
+        },
+        {
+          "level": 2,
+          "text": "税金"
+        },
+        {
+          "level": 2,
+          "text": "住まい"
+        },
+        {
+          "level": 2,
+          "text": "共生社会"
+        },
+        {
+          "level": 2,
+          "text": "交通・駐車駐輪"
+        },
+        {
+          "level": 2,
+          "text": "地域活動・コミュニティ"
+        },
+        {
+          "level": 2,
+          "text": "人権・男女共同参画・平和"
+        },
+        {
+          "level": 2,
+          "text": "相談案内"
+        },
+        {
+          "level": 2,
+          "text": "ニュース"
+        },
+        {
+          "level": 2,
+          "text": "バナー広告"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/city_number.html",
@@ -201,7 +1239,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1323,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "法人番号 江戸川区ホームページ",
+      "meta": {
+        "og:title": "法人番号",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/city_number.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "法人番号"
+        },
+        {
+          "level": 2,
+          "text": "法人番号の指定"
+        },
+        {
+          "level": 2,
+          "text": "法人番号の公表"
+        },
+        {
+          "level": 2,
+          "text": "法人番号の利用"
+        },
+        {
+          "level": 2,
+          "text": "法人番号についての詳細"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jazh/https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/city_number.html",
@@ -212,7 +1289,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 216,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jako/https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/city_number.html",
@@ -223,7 +1307,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 216,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/index.html",
@@ -234,7 +1325,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1875,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "マイナンバー制度とは 江戸川区ホームページ",
+      "meta": {
+        "og:title": "マイナンバー制度とは",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "マイナンバー制度とは"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバー制度とは"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバー（個人番号）とは"
+        },
+        {
+          "level": 2,
+          "text": "情報連携とは"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーを利用する事務"
+        },
+        {
+          "level": 3,
+          "text": "独自利用事務"
+        },
+        {
+          "level": 4,
+          "text": "独自利用事務の情報連携に係る届出について"
+        },
+        {
+          "level": 4,
+          "text": "根拠規範"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kurashi/mynumber/seido/seidotoha/qa/index.html",
@@ -245,7 +1391,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 833,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "マイナンバーに関するQ&A 江戸川区ホームページ",
+      "meta": {
+        "og:title": "マイナンバーに関するQ&A",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kurashi/mynumber/seido/seidotoha/qa/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "マイナンバーに関するQ&A"
+        },
+        {
+          "level": 2,
+          "text": "こんなページも見られています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -254,6 +1423,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -261,6 +1432,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -268,6 +1441,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -275,6 +1450,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -282,6 +1459,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -289,13 +1468,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -303,6 +1486,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -310,6 +1495,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -317,97 +1504,125 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kurashi/mynumber/seido/seidotoha/qa/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/ido_todoke/kakunin.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenkyo.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/hyojunka.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/osirase2.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/seikyu.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/madoguchi.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yuusoutodoke.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yokuarusitumon.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/hikkoshi_info.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/ido_todoke/kakunin.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/hyojunka.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/osirase2.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/seikyu.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/madoguchi.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yuusoutodoke.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yokuarusitumon.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenkyo.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/koikikofu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/kihondaicho.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

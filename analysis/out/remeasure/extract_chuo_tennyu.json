@@ -1,0 +1,62 @@
+{
+  "municipality": "中央区",
+  "municipality_id": "chuo",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
+    "hops": 2,
+    "link_text": "転入届",
+    "has_jsonld": false,
+    "text_len": 1005,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+    "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+  ],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
+    "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+    "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "【晴海特別出張所のみ】スマホ等で事前に住民異動届等を作成できます",
+      "source": "html",
+      "failure_reason": "曖昧"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページおよびリンク先の2ページ（マイナンバーカード有無別の入口）はいずれも案内用のハブページで、実際の項目（必要書類・期限・手数料）は「本人/同世帯」「代理人」「国外から」等さらに1階層下のページに分かれている模様だが、そのURLは本文中にテキストのみで記載されリンク化されていないため辿れなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

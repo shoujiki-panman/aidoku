@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.hachioji.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
@@ -14,7 +35,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 778,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "転入届"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
@@ -25,7 +65,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2425,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "市外からの引っ越し（転出証明書での手続き）｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "市外からの引っ越し（転出証明書での手続き）"
+        },
+        {
+          "level": 2,
+          "text": "前住所地市区町村発行の転出証明書による転入手続き"
+        },
+        {
+          "level": 3,
+          "text": "届出できる方・届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "受付窓口・受付時間"
+        },
+        {
+          "level": 3,
+          "text": "手続案内サービスをご利用ください"
+        },
+        {
+          "level": 3,
+          "text": "本人確認書類"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページに掲載されている情報のお問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/index.html",
@@ -36,7 +123,190 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1165,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍・住民登録｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "戸籍・住民登録"
+        },
+        {
+          "level": 2,
+          "text": "住民票の写し・戸籍証明の請求"
+        },
+        {
+          "level": 3,
+          "text": "住民票の写し等の請求"
+        },
+        {
+          "level": 3,
+          "text": "戸籍証明（戸籍謄本・抄本）等の請求"
+        },
+        {
+          "level": 2,
+          "text": "住民票の異動届"
+        },
+        {
+          "level": 3,
+          "text": "転入届"
+        },
+        {
+          "level": 3,
+          "text": "転居届"
+        },
+        {
+          "level": 3,
+          "text": "転出届"
+        },
+        {
+          "level": 3,
+          "text": "世帯変更届"
+        },
+        {
+          "level": 3,
+          "text": "届出用紙のダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "印鑑登録"
+        },
+        {
+          "level": 3,
+          "text": "印鑑登録申請"
+        },
+        {
+          "level": 3,
+          "text": "印鑑登録証明書の交付申請"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の届出"
+        },
+        {
+          "level": 3,
+          "text": "婚姻届"
+        },
+        {
+          "level": 3,
+          "text": "離婚届"
+        },
+        {
+          "level": 3,
+          "text": "出生届・認知届"
+        },
+        {
+          "level": 3,
+          "text": "死亡届"
+        },
+        {
+          "level": 3,
+          "text": "養子縁組届・養子離縁届"
+        },
+        {
+          "level": 3,
+          "text": "転籍届・分籍届・入籍届"
+        },
+        {
+          "level": 3,
+          "text": "戸籍へのフリガナ記載"
+        },
+        {
+          "level": 2,
+          "text": "マイナンバーカード・電子証明書"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカード（個人番号カード）"
+        },
+        {
+          "level": 3,
+          "text": "社会保障・税番号制度（マイナンバー制度）"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードの申請"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカードの受取"
+        },
+        {
+          "level": 3,
+          "text": "交付されたマイナンバーカードに係る手続"
+        },
+        {
+          "level": 3,
+          "text": "電子証明書"
+        },
+        {
+          "level": 3,
+          "text": "個人番号通知書・通知カード"
+        },
+        {
+          "level": 3,
+          "text": "住民基本台帳カード"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "電子証明書"
+        },
+        {
+          "level": 2,
+          "text": "外国人関連情報"
+        },
+        {
+          "level": 2,
+          "text": "その他関連情報"
+        },
+        {
+          "level": 3,
+          "text": "区画整理による住所変更"
+        },
+        {
+          "level": 3,
+          "text": "住民基本台帳の一部の写しの閲覧"
+        },
+        {
+          "level": 3,
+          "text": "住居表示"
+        },
+        {
+          "level": 3,
+          "text": "方書登録"
+        },
+        {
+          "level": 3,
+          "text": "DV・ストーカー行為等の被害者支援"
+        },
+        {
+          "level": 3,
+          "text": "住民票、印鑑登録証明書、マイナンバーカード等への旧氏（旧姓）記載"
+        },
+        {
+          "level": 3,
+          "text": "令和6年3月1日より戸籍制度が利用しやすくなりました"
+        },
+        {
+          "level": 2,
+          "text": "窓口混雑状況に関するご案内"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/index.html",
@@ -47,7 +317,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 769,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票の写し・戸籍証明の請求｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "住民票の写し・戸籍証明の請求"
+        },
+        {
+          "level": 2,
+          "text": "住民票の写し等の請求"
+        },
+        {
+          "level": 3,
+          "text": "窓口での請求（住民票の写し等）"
+        },
+        {
+          "level": 3,
+          "text": "郵送での請求（住民票の写し等）"
+        },
+        {
+          "level": 3,
+          "text": "電子申請サービス"
+        },
+        {
+          "level": 2,
+          "text": "戸籍証明（戸籍謄本・抄本）等の請求"
+        },
+        {
+          "level": 3,
+          "text": "窓口での請求（戸籍）"
+        },
+        {
+          "level": 3,
+          "text": "郵送での請求（戸籍）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/index.html",
@@ -58,7 +375,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1056,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票の異動届｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "住民票の異動届"
+        },
+        {
+          "level": 2,
+          "text": "転入届"
+        },
+        {
+          "level": 2,
+          "text": "転居届"
+        },
+        {
+          "level": 2,
+          "text": "転出届"
+        },
+        {
+          "level": 2,
+          "text": "世帯変更届"
+        },
+        {
+          "level": 2,
+          "text": "届出用紙のダウンロード"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/004/index.html",
@@ -69,7 +425,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 966,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍の届出｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "戸籍の届出"
+        },
+        {
+          "level": 2,
+          "text": "婚姻届"
+        },
+        {
+          "level": 2,
+          "text": "離婚届"
+        },
+        {
+          "level": 2,
+          "text": "出生届・認知届"
+        },
+        {
+          "level": 2,
+          "text": "死亡届"
+        },
+        {
+          "level": 2,
+          "text": "養子縁組届・養子離縁届"
+        },
+        {
+          "level": 2,
+          "text": "転籍届・分籍届・入籍届"
+        },
+        {
+          "level": 2,
+          "text": "戸籍へのフリガナ記載"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/p037367.html",
@@ -80,7 +483,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1528,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票の写し・戸籍証明書などの交付手数料の改定に関するお知らせ（令和8（2026）年7月1日から）｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "住民票の写し・戸籍証明書などの交付手数料の改定に関するお知らせ（令和8（2026）年7月1日から）"
+        },
+        {
+          "level": 2,
+          "text": "住民票の写しや戸籍証明書などの交付手数料の改定に関するお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "コンビニ交付では手数料を据え置き（一部減額）しています"
+        },
+        {
+          "level": 3,
+          "text": "郵送請求での注意点"
+        },
+        {
+          "level": 2,
+          "text": "このページに掲載されている情報のお問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/index.html",
@@ -91,7 +529,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1088,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票の写し等の請求｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "住民票の写し等の請求"
+        },
+        {
+          "level": 2,
+          "text": "窓口での請求（住民票の写し等）"
+        },
+        {
+          "level": 2,
+          "text": "郵送での請求（住民票の写し等）"
+        },
+        {
+          "level": 2,
+          "text": "電子申請サービス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/index.html",
@@ -102,7 +571,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 925,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "窓口での請求（住民票の写し等） ｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "窓口での請求（住民票の写し等）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/yuusou/index.html",
@@ -113,7 +601,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 866,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "郵送での請求（住民票の写し等） ｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "郵送での請求（住民票の写し等）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/002/index.html",
@@ -124,7 +631,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1117,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍証明（戸籍謄本・抄本）等の請求｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "戸籍証明（戸籍謄本・抄本）等の請求"
+        },
+        {
+          "level": 2,
+          "text": "窓口での請求（戸籍）"
+        },
+        {
+          "level": 2,
+          "text": "郵送での請求（戸籍）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/index.html",
@@ -135,7 +669,394 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1559,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "くらしの情報｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "くらしの情報"
+        },
+        {
+          "level": 2,
+          "text": "子どもとその家庭"
+        },
+        {
+          "level": 3,
+          "text": "お知らせ"
+        },
+        {
+          "level": 3,
+          "text": "妊娠・出産・母と子の健康"
+        },
+        {
+          "level": 3,
+          "text": "手当・助成・ひとり親家庭への支援"
+        },
+        {
+          "level": 3,
+          "text": "保育・教育"
+        },
+        {
+          "level": 3,
+          "text": "赤ちゃんとお出かけしたい"
+        },
+        {
+          "level": 3,
+          "text": "相談したい"
+        },
+        {
+          "level": 3,
+          "text": "子どもの育成"
+        },
+        {
+          "level": 3,
+          "text": "子育て施設情報"
+        },
+        {
+          "level": 3,
+          "text": "若者への支援"
+        },
+        {
+          "level": 3,
+          "text": "幼児教育・保育センター"
+        },
+        {
+          "level": 3,
+          "text": "子育て支援をしている・したいみなさんへ"
+        },
+        {
+          "level": 3,
+          "text": "子ども・子育てに関する計画・会議・データなど"
+        },
+        {
+          "level": 2,
+          "text": "保健衛生・医療"
+        },
+        {
+          "level": 3,
+          "text": "保健衛生・医療に関するお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "健康"
+        },
+        {
+          "level": 3,
+          "text": "受動喫煙について"
+        },
+        {
+          "level": 3,
+          "text": "健診・検診"
+        },
+        {
+          "level": 3,
+          "text": "八王子市がんポータルサイト"
+        },
+        {
+          "level": 3,
+          "text": "医療"
+        },
+        {
+          "level": 3,
+          "text": "保健衛生・医療関連施設"
+        },
+        {
+          "level": 3,
+          "text": "保健衛生・医療に関する質問・相談"
+        },
+        {
+          "level": 3,
+          "text": "その他の地域福祉"
+        },
+        {
+          "level": 3,
+          "text": "保健所"
+        },
+        {
+          "level": 3,
+          "text": "保健師の人財育成"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 3,
+          "text": "お知らせ"
+        },
+        {
+          "level": 3,
+          "text": "家庭ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "補助金（生ごみ処理機器・資源集団回収）"
+        },
+        {
+          "level": 3,
+          "text": "事業者の方へ"
+        },
+        {
+          "level": 3,
+          "text": "施設情報"
+        },
+        {
+          "level": 3,
+          "text": "計画・各種データ・協議会"
+        },
+        {
+          "level": 2,
+          "text": "税金"
+        },
+        {
+          "level": 3,
+          "text": "税に関するお知らせ（新着）"
+        },
+        {
+          "level": 3,
+          "text": "税金について"
+        },
+        {
+          "level": 3,
+          "text": "税に関する証明書について"
+        },
+        {
+          "level": 3,
+          "text": "税に関する制度・報告書・租税教育について"
+        },
+        {
+          "level": 3,
+          "text": "納税について"
+        },
+        {
+          "level": 3,
+          "text": "チャットボットについて"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "教育・生涯学習・スポーツ"
+        },
+        {
+          "level": 3,
+          "text": "教育委員会からのお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "教育委員会"
+        },
+        {
+          "level": 3,
+          "text": "学校教育"
+        },
+        {
+          "level": 3,
+          "text": "生涯学習・スポーツ"
+        },
+        {
+          "level": 3,
+          "text": "歴史・文化財"
+        },
+        {
+          "level": 2,
+          "text": "市民活動・学園都市・多文化共生・男女共同参画"
+        },
+        {
+          "level": 3,
+          "text": "市民活動・協働"
+        },
+        {
+          "level": 3,
+          "text": "学園都市"
+        },
+        {
+          "level": 3,
+          "text": "男女共同参画"
+        },
+        {
+          "level": 3,
+          "text": "多文化共生・国際交流"
+        },
+        {
+          "level": 3,
+          "text": "文化芸術"
+        },
+        {
+          "level": 3,
+          "text": "多言語情報（English/中文/한국어/Español/Português/その他７言語）"
+        },
+        {
+          "level": 2,
+          "text": "戸籍・住民登録"
+        },
+        {
+          "level": 3,
+          "text": "住民票の写し・戸籍証明の請求"
+        },
+        {
+          "level": 3,
+          "text": "住民票の異動届"
+        },
+        {
+          "level": 3,
+          "text": "印鑑登録"
+        },
+        {
+          "level": 3,
+          "text": "戸籍の届出"
+        },
+        {
+          "level": 3,
+          "text": "マイナンバーカード・電子証明書"
+        },
+        {
+          "level": 3,
+          "text": "電子証明書"
+        },
+        {
+          "level": 3,
+          "text": "外国人関連情報"
+        },
+        {
+          "level": 3,
+          "text": "その他関連情報"
+        },
+        {
+          "level": 3,
+          "text": "窓口混雑状況に関するご案内"
+        },
+        {
+          "level": 2,
+          "text": "高齢・介護・障害・生活福祉"
+        },
+        {
+          "level": 3,
+          "text": "お知らせ"
+        },
+        {
+          "level": 3,
+          "text": "よくある質問"
+        },
+        {
+          "level": 3,
+          "text": "高齢者のために"
+        },
+        {
+          "level": 3,
+          "text": "障害のある方のために"
+        },
+        {
+          "level": 3,
+          "text": "認知症について"
+        },
+        {
+          "level": 3,
+          "text": "医療機関の方へ"
+        },
+        {
+          "level": 3,
+          "text": "生活にお困りの方のために"
+        },
+        {
+          "level": 3,
+          "text": "社会福祉法人の認可等・社会福祉施設等の指導監査"
+        },
+        {
+          "level": 3,
+          "text": "その他の地域福祉"
+        },
+        {
+          "level": 3,
+          "text": "福祉に関するデータ"
+        },
+        {
+          "level": 2,
+          "text": "生活・環境・交通・住宅"
+        },
+        {
+          "level": 3,
+          "text": "道路・交通"
+        },
+        {
+          "level": 3,
+          "text": "上下水道・河川・水路"
+        },
+        {
+          "level": 3,
+          "text": "住宅"
+        },
+        {
+          "level": 3,
+          "text": "環境"
+        },
+        {
+          "level": 3,
+          "text": "生活"
+        },
+        {
+          "level": 2,
+          "text": "国保・後期高齢者医療・年金"
+        },
+        {
+          "level": 3,
+          "text": "国民健康保険"
+        },
+        {
+          "level": 3,
+          "text": "後期高齢者医療制度"
+        },
+        {
+          "level": 3,
+          "text": "国民年金"
+        },
+        {
+          "level": 3,
+          "text": "その他関連情報"
+        },
+        {
+          "level": 2,
+          "text": "産業・仕事"
+        },
+        {
+          "level": 3,
+          "text": "産業・仕事全般"
+        },
+        {
+          "level": 3,
+          "text": "産業政策"
+        },
+        {
+          "level": 3,
+          "text": "中心市街地の活性化"
+        },
+        {
+          "level": 3,
+          "text": "農林・獣害対策"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "物価高騰対策給付金事業"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037551.html",
@@ -146,7 +1067,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1376,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "上恩方町におけるツキノワグマの痕跡情報（足跡）について｜八王子市公式ホームページ",
+      "meta": {
+        "description": "クマ出没に係る啓発について",
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "上恩方町におけるツキノワグマの痕跡情報（足跡）について"
+        },
+        {
+          "level": 2,
+          "text": "痕跡情報（足跡）について"
+        },
+        {
+          "level": 2,
+          "text": "経緯"
+        },
+        {
+          "level": 2,
+          "text": "対 応"
+        },
+        {
+          "level": 2,
+          "text": "このページに掲載されている情報のお問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037505.html",
@@ -157,7 +1114,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1948,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "八王子城跡におけるツキノワグマの目撃情報等について(5月31日更新)｜八王子市公式ホームページ",
+      "meta": {
+        "description": "クマ目撃情報等に係る啓発について",
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "八王子城跡におけるツキノワグマの目撃情報等について(5月31日更新)"
+        },
+        {
+          "level": 2,
+          "text": "(2)5月31日 野生動物の鳴き声について"
+        },
+        {
+          "level": 2,
+          "text": "(1)5月30日 クマの目撃情報について"
+        },
+        {
+          "level": 2,
+          "text": "対 応"
+        },
+        {
+          "level": 2,
+          "text": "注意喚起"
+        },
+        {
+          "level": 2,
+          "text": "このページに掲載されている情報のお問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037446.html",
@@ -168,7 +1165,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1887,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "上恩方町におけるツキノワグマの出没について｜八王子市公式ホームページ",
+      "meta": {
+        "description": "クマ出没に係る啓発について",
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "上恩方町におけるツキノワグマの出没について"
+        },
+        {
+          "level": 2,
+          "text": "出没情報について"
+        },
+        {
+          "level": 2,
+          "text": "経緯"
+        },
+        {
+          "level": 2,
+          "text": "対 応"
+        },
+        {
+          "level": 2,
+          "text": "注意喚起（親子のクマに関する注意喚起）"
+        },
+        {
+          "level": 2,
+          "text": "このページに掲載されている情報のお問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037413.html",
@@ -179,7 +1216,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1421,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "元八王子町二丁目におけるツキノワグマの出没について｜八王子市公式ホームページ",
+      "meta": {
+        "description": "クマ出没に係る啓発について",
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "元八王子町二丁目におけるツキノワグマの出没について"
+        },
+        {
+          "level": 2,
+          "text": "出没情報について"
+        },
+        {
+          "level": 2,
+          "text": "経緯"
+        },
+        {
+          "level": 2,
+          "text": "対 応"
+        },
+        {
+          "level": 2,
+          "text": "このページに掲載されている情報のお問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p034133.html",
@@ -190,7 +1263,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1688,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ツキノワグマについて｜八王子市公式ホームページ",
+      "meta": {
+        "description": "ツキノワグマに関する注意啓発",
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "ツキノワグマについて"
+        },
+        {
+          "level": 2,
+          "text": "寄せ付けないために"
+        },
+        {
+          "level": 2,
+          "text": "遭遇しないために"
+        },
+        {
+          "level": 2,
+          "text": "遭遇してしまった場合は"
+        },
+        {
+          "level": 2,
+          "text": "養蜂家の方へ"
+        },
+        {
+          "level": 2,
+          "text": "ツキノワグマの出没について"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "このページに掲載されている情報のお問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037551.html%26target=_top&SLANG=ja&TLANG=ko&XMODE=0",
@@ -201,7 +1322,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 116,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037551.html%26target=_top&SLANG=ja&TLANG=zh&XMODE=0",
@@ -212,7 +1340,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 78,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037551.html%26target=_top&SLANG=ja&TLANG=zhb&XMODE=0",
@@ -223,7 +1358,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 78,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www3.zoomsight-sv2.jp/SOCH/controller/index.html",
@@ -234,7 +1376,83 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5212,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ZoomSightの起動説明",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ZoomSightの起動説明"
+        },
+        {
+          "level": 2,
+          "text": "ZoomSightの特長・機能"
+        },
+        {
+          "level": 3,
+          "text": "アクセシビリティ・サポーター ZoomSight とは？"
+        },
+        {
+          "level": 3,
+          "text": "アクセシビリティをサポートする4つの機能"
+        },
+        {
+          "level": 4,
+          "text": "表示サイズ変更機能"
+        },
+        {
+          "level": 4,
+          "text": "色の変更機能"
+        },
+        {
+          "level": 4,
+          "text": "音声よみあげ機能"
+        },
+        {
+          "level": 4,
+          "text": "ふりがな機能"
+        },
+        {
+          "level": 2,
+          "text": "動作環境"
+        },
+        {
+          "level": 3,
+          "text": "サポートOS、前提ソフトウェア"
+        },
+        {
+          "level": 3,
+          "text": "適用条件"
+        },
+        {
+          "level": 2,
+          "text": "利用規約"
+        },
+        {
+          "level": 3,
+          "text": "制限事項"
+        },
+        {
+          "level": 3,
+          "text": "使用条件"
+        },
+        {
+          "level": 3,
+          "text": "免責事項"
+        },
+        {
+          "level": 3,
+          "text": "商標のご説明"
+        },
+        {
+          "level": 3,
+          "text": "詳細情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037505.html%26target=_top&SLANG=ja&TLANG=ko&XMODE=0",
@@ -245,7 +1463,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 116,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037505.html%26target=_top&SLANG=ja&TLANG=zh&XMODE=0",
@@ -256,7 +1481,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 78,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037505.html%26target=_top&SLANG=ja&TLANG=zhb&XMODE=0",
@@ -267,7 +1499,14 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 78,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/index.html",
@@ -278,7 +1517,138 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 923,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "産業・仕事｜八王子市公式ホームページ",
+      "meta": {
+        "og:type": "website",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "八王子市"
+        },
+        {
+          "level": 1,
+          "text": "産業・仕事"
+        },
+        {
+          "level": 2,
+          "text": "産業・仕事全般"
+        },
+        {
+          "level": 2,
+          "text": "産業政策"
+        },
+        {
+          "level": 3,
+          "text": "商業"
+        },
+        {
+          "level": 3,
+          "text": "工業"
+        },
+        {
+          "level": 3,
+          "text": "雇用・就職"
+        },
+        {
+          "level": 3,
+          "text": "融資"
+        },
+        {
+          "level": 3,
+          "text": "大規模商業施設"
+        },
+        {
+          "level": 3,
+          "text": "企業誘致"
+        },
+        {
+          "level": 2,
+          "text": "中心市街地の活性化"
+        },
+        {
+          "level": 3,
+          "text": "八王子市中心市街地魅力ある個店リノベーション補助金"
+        },
+        {
+          "level": 3,
+          "text": "八王子市まちなか魅力づくり支援補助金"
+        },
+        {
+          "level": 3,
+          "text": "中心市街地イベント情報"
+        },
+        {
+          "level": 3,
+          "text": "まち歩き・観光コース"
+        },
+        {
+          "level": 3,
+          "text": "まち・観光情報"
+        },
+        {
+          "level": 3,
+          "text": "施設紹介"
+        },
+        {
+          "level": 3,
+          "text": "八王子市中心市街地活性化基本計画（認定）"
+        },
+        {
+          "level": 3,
+          "text": "八王子市中心市街地環境整備事業に関する指導要綱"
+        },
+        {
+          "level": 3,
+          "text": "その他中心市街地関連"
+        },
+        {
+          "level": 2,
+          "text": "農林・獣害対策"
+        },
+        {
+          "level": 3,
+          "text": "農林業振興"
+        },
+        {
+          "level": 3,
+          "text": "東京都による農林畜産物中の放射能検査"
+        },
+        {
+          "level": 3,
+          "text": "道の駅八王子滝山"
+        },
+        {
+          "level": 3,
+          "text": "農業委員会"
+        },
+        {
+          "level": 3,
+          "text": "獣害対策"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "数字で見る産業"
+        },
+        {
+          "level": 3,
+          "text": "産業振興部の活動"
+        },
+        {
+          "level": 3,
+          "text": "産業・仕事のリンク集"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,6 +1657,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -294,6 +1666,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -301,6 +1675,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -308,6 +1684,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -315,6 +1693,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -322,13 +1702,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p034133.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -336,6 +1720,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -343,6 +1729,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -350,13 +1738,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/004/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -364,6 +1756,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -371,6 +1765,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -378,13 +1774,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www3.zoomsight-sv2.jp/SOCH/controller/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -392,6 +1792,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -399,6 +1801,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -406,62 +1810,80 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/p037367.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/yuusou/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/002/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

@@ -10,48 +10,354 @@
     "has_jsonld": false,
     "text_len": 1658,
     "truncated": false,
-    "n_links": 35
+    "n_links": 39,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
-  "online_clarity": "記載なし",
-  "online_clarity_evidence": "",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:55:27+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/tenshutu-yoyaku_pc-smartphone.html",
+    "https://ttzk.graffer.jp/ward-ota/move-in"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "パソコン・スマートフォンで作成した届書は、大田区役所戸籍住民窓口のみでご利用いただけます。特別出張所、郵送では使用できませんのでご注意ください。",
   "online_clarity_pages": [
-    "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html"
+    "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/tenshutu-yoyaku_pc-smartphone.html",
+    "https://ttzk.graffer.jp/ward-ota/move-in"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "大田区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "転出証明書（前住所の市区町村で発行したもの。マイナンバーカードを利用した転出届を届出済みの方は不要）／窓口に来られる方の本人確認書類（マイナンバーカード、免許証、保険証、在留カードなど）／委任状（本人または同一世帯員以外の方が届出する場合のみ）／マイナンバーカード（お持ちの方のみ、別途手続きが必要）",
+        "evidence": "転出証明書（前住所の市区町村で発行したもの。マイナンバーカードを利用した転出届を届出済みの方は不要です。）窓口に来られる方の本人確認書類（マイナンバーカード、免許証、保険証、在留カードなど）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 83,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "転出証明書（前住所の市区町村で発行したもの。マイナンバーカードを利用した転出届を届出済みの方は不要）／窓口に来られる方の本人確認書類（マイナンバーカード、免許証、保険証、在留カードなど）／委任状（本人または同一世帯員以外の方が届出する場合のみ）／マイナンバーカード（お持ちの方のみ、別途手続きが必要）",
+            "evidence": "転出証明書（前住所の市区町村で発行したもの。マイナンバーカードを利用した転出届を届出済みの方は不要です。）窓口に来られる方の本人確認書類（マイナンバーカード、免許証、保険証、在留カードなど）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 83,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「持参する書類」の見出し配下に必要書類が箇条書きされており、該当者限定の持ち物（委任状・マイナンバーカード）も同じリストに含まれている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「持参する書類」の見出し配下に必要書類が箇条書きされており、該当者限定の持ち物（委任状・マイナンバーカード）も同じリストに含まれている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "大田区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ（オンラインでは完結できない）。パソコン・スマートフォンからの来庁予約や届書の事前作成はできるが、最終的な届出は特別出張所または本庁舎1階戸籍住民窓口への来庁が必要。",
+        "evidence": "受付場所　各特別出張所又は本庁舎1階戸籍住民窓口（本庁舎1階戸籍住民窓口は大変混み合います。特別出張所でも受け付けておりますのでご利用ください。）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 70,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/tenshutu-yoyaku_pc-smartphone.html",
+            "https://ttzk.graffer.jp/ward-ota/move-in"
+          ],
+          "page_notes": "本文は「受付場所」として各特別出張所・本庁舎1階戸籍住民窓口という物理窓口のみを明記しており、オンラインで完結できるかどうかへの明言はない。一方、関連リンクに「パソコン・スマートフォンからの住民異動届の窓口予約・届書作成」と外部サービス（Graffer）への「手続き」リンクがあり、そちらに窓口/オンライン可否の答えがある可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ（オンラインでは完結できない）。パソコン・スマートフォンからの来庁予約や届書の事前作成はできるが、最終的な届出は特別出張所または本庁舎1階戸籍住民窓口への来庁が必要。",
+            "evidence": "受付場所　各特別出張所又は本庁舎1階戸籍住民窓口（本庁舎1階戸籍住民窓口は大変混み合います。特別出張所でも受け付けておりますのでご利用ください。）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 70,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文の「受付場所」は特別出張所・本庁舎窓口のみを列挙しており、オンライン完結の記載はない。関連リンクの「窓口予約・届書作成」ページでも、作成した届書は窓口でのみ使用可能と明記され、来庁が前提となっている。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/tenshutu-yoyaku_pc-smartphone.html",
+        "https://ttzk.graffer.jp/ward-ota/move-in"
+      ],
+      "page_notes": "本文の「受付場所」は特別出張所・本庁舎窓口のみを列挙しており、オンライン完結の記載はない。関連リンクの「窓口予約・届書作成」ページでも、作成した届書は窓口でのみ使用可能と明記され、来庁が前提となっている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "大田区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "大田区に住み始めた日から14日以内",
+        "evidence": "届出期間 大田区に住み始めた日から14日以内 （住み始める前の届出はできません。）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 37,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "大田区に住み始めた日から14日以内",
+            "evidence": "届出期間 大田区に住み始めた日から14日以内 （住み始める前の届出はできません。）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 37,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「届出期間」という見出しの直下に起算点（住み始めた日）と期限（14日以内）が明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「届出期間」という見出しの直下に起算点（住み始めた日）と期限（14日以内）が明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "大田区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "届出期間・受付時間・場所・持参書類は明記されているが、手数料への言及は本文にもリンク一覧にも見当たらない。関連ページは他の異動届（転居・転出・世帯変更等）へのリンクが中心で、手数料に触れるリンクはない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "届出期間・受付時間・場所・持参書類は明記されているが、手数料への言及は本文にもリンク一覧にも見当たらない。関連ページは他の異動届（転居・転出・世帯変更等）へのリンクが中心で、手数料に触れるリンクはない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "転出証明書（前住所の市区町村発行、マイナンバーカードでの転出届済みなら不要）、本人確認書類、委任状（本人・同一世帯員以外が届出する場合）、マイナンバーカード（所持者のみ）",
-      "evidence": "転出証明書（前住所の市区町村で発行したもの。マイナンバーカードを利用した転出届を届出済みの方は不要です。）",
+      "value": "転出証明書（前住所の市区町村で発行したもの。マイナンバーカードを利用した転出届を届出済みの方は不要）／窓口に来られる方の本人確認書類（マイナンバーカード、免許証、保険証、在留カードなど）／委任状（本人または同一世帯員以外の方が届出する場合のみ）／マイナンバーカード（お持ちの方のみ、別途手続きが必要）",
+      "evidence": "転出証明書（前住所の市区町村で発行したもの。マイナンバーカードを利用した転出届を届出済みの方は不要です。）窓口に来られる方の本人確認書類（マイナンバーカード、免許証、保険証、在留カードなど）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 83,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "各特別出張所又は本庁舎1階戸籍住民窓口での届出（オンラインで完結できるとの記載なし。パソコン・スマートフォンからの窓口予約・届書作成は可能）",
-      "evidence": "各特別出張所又は本庁舎1階戸籍住民窓口（本庁舎1階戸籍住民窓口は大変混み合います。特別出張所でも受け付けておりますのでご利用ください。）",
+      "value": "窓口のみ（オンラインでは完結できない）。パソコン・スマートフォンからの来庁予約や届書の事前作成はできるが、最終的な届出は特別出張所または本庁舎1階戸籍住民窓口への来庁が必要。",
+      "evidence": "受付場所　各特別出張所又は本庁舎1階戸籍住民窓口（本庁舎1階戸籍住民窓口は大変混み合います。特別出張所でも受け付けておりますのでご利用ください。）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 70,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": true,
-      "value": "大田区に住み始めた日から14日以内（住み始める前の届出は不可）",
-      "evidence": "大田区に住み始めた日から14日以内（住み始める前の届出はできません。）",
+      "value": "大田区に住み始めた日から14日以内",
+      "evidence": "届出期間 大田区に住み始めた日から14日以内 （住み始める前の届出はできません。）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 37,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "必要書類・窓口・期限は本文に明記されているが手数料への言及は本文中に一切なく、関連リンクにも手数料専用ページは見当たらない。窓口予約・届書作成は「パソコン・スマートフォンから」可能だが、これは事前準備であって届出自体のオンライン完結を意味しない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「持参する書類」の見出し配下に必要書類が箇条書きされており、該当者限定の持ち物（委任状・マイナンバーカード）も同じリストに含まれている。\n本文の「受付場所」は特別出張所・本庁舎窓口のみを列挙しており、オンライン完結の記載はない。関連リンクの「窓口予約・届書作成」ページでも、作成した届書は窓口でのみ使用可能と明記され、来庁が前提となっている。\n「届出期間」という見出しの直下に起算点（住み始めた日）と期限（14日以内）が明記されている。\n届出期間・受付時間・場所・持参書類は明記されているが、手数料への言及は本文にもリンク一覧にも見当たらない。関連ページは他の異動届（転居・転出・世帯変更等）へのリンクが中心で、手数料に触れるリンクはない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html",
+      "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/tenshutu-yoyaku_pc-smartphone.html",
+      "https://ttzk.graffer.jp/ward-ota/move-in"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

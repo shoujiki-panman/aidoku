@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.adachi.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html",
@@ -14,7 +35,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2720,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届（他の市区町村や海外から足立区に引っ越してきたとき）｜足立区",
+      "meta": {
+        "og:title": "転入届（他の市区町村や海外から足立区に引っ越してきたとき）",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届（他の市区町村や海外から足立区に引っ越してきたとき）"
+        },
+        {
+          "level": 2,
+          "text": "届出場所"
+        },
+        {
+          "level": 2,
+          "text": "届出期間"
+        },
+        {
+          "level": 2,
+          "text": "お持ちいただくもの"
+        },
+        {
+          "level": 3,
+          "text": "他の市区町村から足立区へ転入した場合"
+        },
+        {
+          "level": 3,
+          "text": "海外から足立区へ転入した場合"
+        },
+        {
+          "level": 2,
+          "text": "届出書"
+        },
+        {
+          "level": 2,
+          "text": "申請書等ダウンロード（関連PDFファイル）"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/hikkoshi-oss.html",
@@ -25,7 +97,86 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3591,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引越しワンストップサービス｜足立区",
+      "meta": {
+        "og:title": "引越しワンストップサービス",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/hikkoshi-oss.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "引越しワンストップサービス"
+        },
+        {
+          "level": 2,
+          "text": "引越しワンストップサービスとは？"
+        },
+        {
+          "level": 3,
+          "text": "利用できる方"
+        },
+        {
+          "level": 3,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 3,
+          "text": "窓口にお越しいただかないと手続きができない場合"
+        },
+        {
+          "level": 2,
+          "text": "足立区からの転出"
+        },
+        {
+          "level": 3,
+          "text": "手続きができる期間"
+        },
+        {
+          "level": 3,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 3,
+          "text": "足立区への転入・足立区内での転居"
+        },
+        {
+          "level": 3,
+          "text": "来庁予定の申請ができる期間"
+        },
+        {
+          "level": 3,
+          "text": "来庁予定の申請が可能な窓口"
+        },
+        {
+          "level": 3,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 3,
+          "text": "転入・転居の受付時間"
+        },
+        {
+          "level": 3,
+          "text": "転入・転居の受付方法"
+        },
+        {
+          "level": 2,
+          "text": "来庁時にお持ちいただくもの"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/hikkoshi/index.html",
@@ -36,7 +187,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 887,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "引っ越しの手続き｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "引っ越しの手続き"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
@@ -47,7 +210,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7058,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍関係の届出一覧｜足立区",
+      "meta": {
+        "og:title": "戸籍関係の届出一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍関係の届出一覧"
+        },
+        {
+          "level": 2,
+          "text": "離婚届出時の共同親権について"
+        },
+        {
+          "level": 2,
+          "text": "出生届に伴う名の振り仮名について"
+        },
+        {
+          "level": 2,
+          "text": "戸籍法改正により戸籍証明書等の添付が不要となりました（令和６年３月１日から）"
+        },
+        {
+          "level": 2,
+          "text": "成年年齢引き下げに伴う変更点について"
+        },
+        {
+          "level": 2,
+          "text": "戸籍とは"
+        },
+        {
+          "level": 2,
+          "text": "戸籍の届出窓口について"
+        },
+        {
+          "level": 2,
+          "text": "窓口での本人確認について"
+        },
+        {
+          "level": 2,
+          "text": "戸籍届出の不受理申出及びその取り下げについて"
+        },
+        {
+          "level": 2,
+          "text": "オリジナル婚姻届について"
+        },
+        {
+          "level": 2,
+          "text": "関連PDFファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/koseki/index.html",
@@ -58,7 +284,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 998,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍発行の手続き｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍発行の手続き"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/index.html",
@@ -69,7 +307,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3251,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "届け出・証明（戸籍・住民票 など）｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "届け出・証明（戸籍・住民票 など）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
@@ -80,7 +330,163 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 13857,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "足立区[B!]新着記事・評価 - はてなブックマーク",
+      "meta": {},
+      "headings": [
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 1,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "『足立区』"
+        },
+        {
+          "level": 3,
+          "text": "区立小中学校の学校メールセキュリティサービスに対する不正アクセスについて（4月22日18時現在情報）"
+        },
+        {
+          "level": 3,
+          "text": "八潮市の下水道管破損に伴い下水道使用制限地域の方に足立区内の公衆浴場の入浴料を無料にします"
+        },
+        {
+          "level": 3,
+          "text": "ワケあり区を始めるワケ"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて（詳細）"
+        },
+        {
+          "level": 3,
+          "text": "「Fujitsu MICJET コンビニ交付」における新たな印刷障害について|富士通Japan株式会社"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて"
+        },
+        {
+          "level": 3,
+          "text": "足立はばたき塾"
+        },
+        {
+          "level": 3,
+          "text": "[PDF] イラストでわかる「みんなが働きやすい！」カタチ。 発達障がいのある方の雇用Ｑ＆Ａ｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "B-29のタイヤが残っています"
+        },
+        {
+          "level": 3,
+          "text": "新型コロナウイルス対策 自宅療養セットの支給しています｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "特殊詐欺の本物の予兆電話(アポ電)が聞ける「アポ電体験ダイヤル」をご利用ください"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～ 芸人・映画監督 北野武さん"
+        },
+        {
+          "level": 3,
+          "text": "江東5区広域避難推進協議会の検討結果について"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館資料長期未返却者への訪問を行います（5月9日から8月31日まで）"
+        },
+        {
+          "level": 3,
+          "text": "郷土博物館所蔵資料データベースの公開"
+        },
+        {
+          "level": 3,
+          "text": "足立区画像・動画オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館利用の3大悪さ撲滅標語大募集！"
+        },
+        {
+          "level": 3,
+          "text": "足立区オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～淑徳大学教授 北野大さん"
+        },
+        {
+          "level": 3,
+          "text": "おいしい給食レシピ集"
+        },
+        {
+          "level": 3,
+          "text": "足立区／ギャラクシティリニューアルオープン"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑（一覧）"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑「エラビ→」の巻"
+        },
+        {
+          "level": 3,
+          "text": "資源の出し方・ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "足立区／区制80周年記念企画展 「タイムスリップ・昭和家電 増田健一コレクション」"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "足立区洪水・内水・高潮ハザードマップ（令和4年4月改訂）"
+        },
+        {
+          "level": 3,
+          "text": "足立区 コンビニ前にはジャージ姿のヤンキーが"
+        },
+        {
+          "level": 2,
+          "text": "このページはまだブックマークされていません"
+        },
+        {
+          "level": 3,
+          "text": "キーボードショートカット一覧"
+        },
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "公式Twitter"
+        },
+        {
+          "level": 2,
+          "text": "はてなのサービス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/reiwa888konninntodoke.html",
@@ -91,7 +497,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1649,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和８年８月８日（土曜日）に婚姻届の受付特設会場を設置します｜足立区",
+      "meta": {
+        "og:title": "令和８年８月８日（土曜日）に婚姻届の受付特設会場を設置します",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/koseki/reiwa888konninntodoke.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和８年８月８日（土曜日）に婚姻届の受付特設会場を設置します"
+        },
+        {
+          "level": 2,
+          "text": "婚姻届受付特設会場について"
+        },
+        {
+          "level": 3,
+          "text": "場所"
+        },
+        {
+          "level": 3,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "足立区からの記念品の贈呈について"
+        },
+        {
+          "level": 2,
+          "text": "都キャンペーン「ふたりの結婚報告キャンペーン888結婚記念日編」について"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/madoguchi/index.html",
@@ -102,7 +551,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1035,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "身近な窓口｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "身近な窓口"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-konzatsu.html",
@@ -113,7 +574,86 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2004,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区民事務所等日別混雑予想｜足立区",
+      "meta": {
+        "og:title": "区民事務所等日別混雑予想",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-konzatsu.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区民事務所等日別混雑予想"
+        },
+        {
+          "level": 2,
+          "text": "7月の戸籍住民課住民異動係の混雑状況"
+        },
+        {
+          "level": 3,
+          "text": "大変混雑する日"
+        },
+        {
+          "level": 3,
+          "text": "混雑する日"
+        },
+        {
+          "level": 2,
+          "text": "7月の千住区民事務所の混雑状況"
+        },
+        {
+          "level": 3,
+          "text": "混雑する日"
+        },
+        {
+          "level": 3,
+          "text": "やや混雑する日"
+        },
+        {
+          "level": 2,
+          "text": "8月の戸籍住民課住民異動係の混雑状況"
+        },
+        {
+          "level": 3,
+          "text": "大変混雑する日"
+        },
+        {
+          "level": 3,
+          "text": "混雑する日"
+        },
+        {
+          "level": 2,
+          "text": "8月の千住区民事務所の混雑状況"
+        },
+        {
+          "level": 3,
+          "text": "混雑する日"
+        },
+        {
+          "level": 3,
+          "text": "やや混雑する日"
+        },
+        {
+          "level": 2,
+          "text": "休日開庁について"
+        },
+        {
+          "level": 2,
+          "text": "時間外サービスについて"
+        },
+        {
+          "level": 2,
+          "text": "区内17ケ所の区民事務所等について"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-annai.html",
@@ -124,7 +664,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3543,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区民事務所のご案内｜足立区",
+      "meta": {
+        "og:title": "区民事務所のご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-annai.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区民事務所のご案内"
+        },
+        {
+          "level": 2,
+          "text": "区民事務所の取扱い業務"
+        },
+        {
+          "level": 2,
+          "text": "業務日時"
+        },
+        {
+          "level": 3,
+          "text": "千住区民事務所の午後5時以降、次の業務は取扱いできません"
+        },
+        {
+          "level": 2,
+          "text": "区民事務所一覧"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-senju-jikangai.html",
@@ -135,7 +710,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2455,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千住区民事務所の時間外サービス｜足立区",
+      "meta": {
+        "og:title": "千住区民事務所の時間外サービス",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-senju-jikangai.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "千住区民事務所の時間外サービス"
+        },
+        {
+          "level": 2,
+          "text": "所在地"
+        },
+        {
+          "level": 2,
+          "text": "業務日時"
+        },
+        {
+          "level": 2,
+          "text": "業務内容"
+        },
+        {
+          "level": 3,
+          "text": "受付時間に制限がある業務"
+        },
+        {
+          "level": 3,
+          "text": "午後７時まで受付できる業務"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/202604rikontodokeyoushikihenkou.html",
@@ -146,7 +760,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2816,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【重要】令和８年４月１日から離婚届の様式が変更となりました。｜足立区",
+      "meta": {
+        "og:title": "【重要】令和８年４月１日から離婚届の様式が変更となりました。",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/koseki/202604rikontodokeyoushikihenkou.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【重要】令和８年４月１日から離婚届の様式が変更となりました。"
+        },
+        {
+          "level": 2,
+          "text": "１ 旧様式の離婚届を提出する場合について"
+        },
+        {
+          "level": 2,
+          "text": "２ 新様式の離婚届について"
+        },
+        {
+          "level": 2,
+          "text": "３ 法改正による変更点"
+        },
+        {
+          "level": 3,
+          "text": "１「未成年の子の氏名欄」の変更"
+        },
+        {
+          "level": 3,
+          "text": "２「離婚後も共同で親権を行使すること又は単独で親権を行使することの意味を理解し、真意に基づいて合意した」ことを確認するチェック欄の追加"
+        },
+        {
+          "level": 3,
+          "text": "３監護の分掌（離婚後の子育ての分担）、親子交流及び養育費の分担の取決めの有無を尋ねるチェック欄の追加"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/reiwa888konninntodoke.html",
@@ -157,7 +814,163 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 13857,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "足立区[B!]新着記事・評価 - はてなブックマーク",
+      "meta": {},
+      "headings": [
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 1,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "『足立区』"
+        },
+        {
+          "level": 3,
+          "text": "区立小中学校の学校メールセキュリティサービスに対する不正アクセスについて（4月22日18時現在情報）"
+        },
+        {
+          "level": 3,
+          "text": "八潮市の下水道管破損に伴い下水道使用制限地域の方に足立区内の公衆浴場の入浴料を無料にします"
+        },
+        {
+          "level": 3,
+          "text": "ワケあり区を始めるワケ"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて（詳細）"
+        },
+        {
+          "level": 3,
+          "text": "「Fujitsu MICJET コンビニ交付」における新たな印刷障害について|富士通Japan株式会社"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストアでの証明書交付サービスにおける証明書誤交付による個人情報の漏えいについて"
+        },
+        {
+          "level": 3,
+          "text": "足立はばたき塾"
+        },
+        {
+          "level": 3,
+          "text": "[PDF] イラストでわかる「みんなが働きやすい！」カタチ。 発達障がいのある方の雇用Ｑ＆Ａ｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "B-29のタイヤが残っています"
+        },
+        {
+          "level": 3,
+          "text": "新型コロナウイルス対策 自宅療養セットの支給しています｜足立区"
+        },
+        {
+          "level": 3,
+          "text": "特殊詐欺の本物の予兆電話(アポ電)が聞ける「アポ電体験ダイヤル」をご利用ください"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～ 芸人・映画監督 北野武さん"
+        },
+        {
+          "level": 3,
+          "text": "江東5区広域避難推進協議会の検討結果について"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館資料長期未返却者への訪問を行います（5月9日から8月31日まで）"
+        },
+        {
+          "level": 3,
+          "text": "郷土博物館所蔵資料データベースの公開"
+        },
+        {
+          "level": 3,
+          "text": "足立区画像・動画オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区／図書館利用の3大悪さ撲滅標語大募集！"
+        },
+        {
+          "level": 3,
+          "text": "足立区オープンデータ"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "～足立大好きインタビュー～淑徳大学教授 北野大さん"
+        },
+        {
+          "level": 3,
+          "text": "おいしい給食レシピ集"
+        },
+        {
+          "level": 3,
+          "text": "足立区／ギャラクシティリニューアルオープン"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑（一覧）"
+        },
+        {
+          "level": 3,
+          "text": "足立キャラクター図鑑「エラビ→」の巻"
+        },
+        {
+          "level": 3,
+          "text": "資源の出し方・ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "足立区／区制80周年記念企画展 「タイムスリップ・昭和家電 増田健一コレクション」"
+        },
+        {
+          "level": 3,
+          "text": "足立区立郷土博物館（旧ページ）"
+        },
+        {
+          "level": 3,
+          "text": "足立区洪水・内水・高潮ハザードマップ（令和4年4月改訂）"
+        },
+        {
+          "level": 3,
+          "text": "足立区 コンビニ前にはジャージ姿のヤンキーが"
+        },
+        {
+          "level": 2,
+          "text": "このページはまだブックマークされていません"
+        },
+        {
+          "level": 3,
+          "text": "キーボードショートカット一覧"
+        },
+        {
+          "level": 2,
+          "text": "はてなブックマーク"
+        },
+        {
+          "level": 2,
+          "text": "公式Twitter"
+        },
+        {
+          "level": 2,
+          "text": "はてなのサービス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/index.html",
@@ -168,7 +981,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 925,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍・税・保険｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍・税・保険"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/madosys.html",
@@ -179,7 +1004,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1662,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "窓口混雑状況（リアルタイム窓口混雑情報）｜足立区",
+      "meta": {
+        "og:title": "窓口混雑状況（リアルタイム窓口混雑情報）",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/koseki/madosys.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "窓口混雑状況（リアルタイム窓口混雑情報）"
+        },
+        {
+          "level": 2,
+          "text": "現在の窓口お呼び出し状況"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/index.html",
@@ -190,7 +1038,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 938,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住まい・暮らし｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "住まい・暮らし"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/shogai-c/idousien.html",
@@ -201,7 +1061,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1848,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年度知的障がい者移動支援従業者養成研修［10月3日（土曜日）・10月4日（日曜日）・10月10日（土曜日）開催］｜足立区",
+      "meta": {
+        "og:title": "令和8年度知的障がい者移動支援従業者養成研修［10月3日（土曜日）・10月4日（日曜日）・10月10日（土曜日）開催］",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/shogai-c/idousien.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度知的障がい者移動支援従業者養成研修［10月3日（土曜日）・10月4日（日曜日）・10月10日（土曜日）開催］"
+        },
+        {
+          "level": 2,
+          "text": "開催日時"
+        },
+        {
+          "level": 2,
+          "text": "開催場所"
+        },
+        {
+          "level": 2,
+          "text": "施設案内"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "募集人数"
+        },
+        {
+          "level": 2,
+          "text": "費用"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 2,
+          "text": "主催者"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/midori/event/20260908manabiba.html",
@@ -212,7 +1127,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1914,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【みどりの学び場】暮らしに役立つハーブの楽しみ方（9月8日（火曜日））｜足立区",
+      "meta": {
+        "og:title": "【みどりの学び場】暮らしに役立つハーブの楽しみ方（9月8日（火曜日））",
+        "og:type": "article",
+        "og:url": "https://www.city.adachi.tokyo.jp/midori/event/20260908manabiba.html",
+        "og:image": "https://www.city.adachi.tokyo.jp/shared/images/sns/ogp.png",
+        "og:site_name": "足立区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【みどりの学び場】暮らしに役立つハーブの楽しみ方（9月8日（火曜日））"
+        },
+        {
+          "level": 2,
+          "text": "開催日時"
+        },
+        {
+          "level": 2,
+          "text": "開催場所"
+        },
+        {
+          "level": 2,
+          "text": "施設案内"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "募集人数"
+        },
+        {
+          "level": 2,
+          "text": "費用"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/sodan/sodanmadoguchi/index.html",
@@ -223,7 +1185,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1009,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "相談窓口｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "相談窓口"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/hoken/kenkohoken/index.html",
@@ -234,7 +1208,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1775,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "国民健康保険｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "国民健康保険"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/index.html",
@@ -245,7 +1231,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3153,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "環境｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "環境"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
@@ -256,7 +1254,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1972,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみとリサイクル｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみとリサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/machi/midori/index.html",
@@ -267,7 +1277,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1707,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "公園・みどり｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "公園・みどり"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/dobutsu/index.html",
@@ -278,190 +1300,254 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1218,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "動物・植物・ペット・その他の生きもの｜足立区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "動物・植物・ペット・その他の生きもの"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.adachi.tokyo.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/madosys.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/shogai-c/idousien.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/midori/event/20260908manabiba.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/sodan/sodanmadoguchi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/reiwa888konninntodoke.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/hoken/kenkohoken/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/madoguchi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-konzatsu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-annai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-senju-jikangai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/machi/midori/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/dobutsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/202604rikontodokeyoushikihenkou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/hikkoshi-oss.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/hikkoshi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/reiwa888konninntodoke.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

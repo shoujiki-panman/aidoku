@@ -10,20 +10,343 @@
     "has_jsonld": false,
     "text_len": 1005,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:34:41+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [
     "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
-    "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+    "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
+    "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html"
   ],
-  "online_clarity": "記載なし",
-  "online_clarity_evidence": "",
+  "online_clarity": "明記",
+  "online_clarity_evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。（引越しをした後でなければ手続きをすることができません。）",
   "online_clarity_pages": [
     "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
     "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
-    "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+    "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
+    "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "中央区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "リンク先にあり",
+        "failure_type": "not_retrieved",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+            "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+          ],
+          "page_notes": "このページは転入手続きの入口ページで、本文には手続きの説明や持ち物の記載がなく、マイナンバーカードの有無で分岐する2つの下位ページへの導線のみが置かれている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入ページは「マイナンバーカードの有無」で二分岐するだけの案内ページで、そのリンク先も「本人/同一世帯」「代理人」「国外から」等でさらに枝分かれする一覧ページに留まり、いずれも持ち物の本文記載には到達しなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+      ],
+      "page_notes": "転入ページは「マイナンバーカードの有無」で二分岐するだけの案内ページで、そのリンク先も「本人/同一世帯」「代理人」「国外から」等でさらに枝分かれする一覧ページに留まり、いずれも持ち物の本文記載には到達しなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "中央区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口来庁が必要。マイナポータルの引越しワンストップサービスで転出届やオンライン予約はできるが、転入届自体はオンラインで完結せず窓口での手続きが必須",
+        "evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 43,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
+            "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html"
+          ],
+          "page_notes": "このページは転入の入口ページで、マイナンバーカード有無で手続き案内が分岐しているだけで、窓口のみかオンライン完結かの明記はない。引越しワンストップサービスへのリンクがあり、オンライン完結可否はそちらに載っている可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口来庁が必要。マイナポータルの引越しワンストップサービスで転出届やオンライン予約はできるが、転入届自体はオンラインで完結せず窓口での手続きが必須",
+            "evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 43,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入トップページ自体には窓口/オンライン可否の明記はなく、リンク先の「引越しワンストップサービスの利用」ページで初めて『転入届は窓口への来庁が必要』と明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
+        "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html"
+      ],
+      "page_notes": "転入トップページ自体には窓口/オンライン可否の明記はなく、リンク先の「引越しワンストップサービスの利用」ページで初めて『転入届は窓口への来庁が必要』と明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "中央区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "リンク先にあり",
+        "failure_type": "not_retrieved",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+            "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+          ],
+          "page_notes": "このページは転入手続きの入口で、マイナンバーカード利用有無で手続きページが分岐している。期限（起算点）はこの入口ページ本文には記載がなく、分岐先の各手続きページに記載されている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「マイナンバーカードを使わずに/使って手続きをする場合」の2ページはいずれも「本人または同じ世帯の方が手続きするとき」等のさらに下位のページへの導線のみで、期限（起算点つき）の記述自体は本文になかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+      ],
+      "page_notes": "「マイナンバーカードを使わずに/使って手続きをする場合」の2ページはいずれも「本人または同じ世帯の方が手続きするとき」等のさらに下位のページへの導線のみで、期限（起算点つき）の記述自体は本文になかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "中央区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+            "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+          ],
+          "page_notes": "このページは転入手続きの入口で、手数料に関する記述は本文になく、マイナンバーカードの有無別の手続きページへ振り分けているだけ。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「転入」ページとその先の「マイナンバーカードを使う/使わない」の2つの分岐ページはいずれも下位の手続き別ページへの目次にとどまり、手数料の記載はどこにもなかった。手数料の記述はさらに下の個別手続きページ（本人/同世帯・代理人・国外からの転入など）にある可能性があるが、それらのURLは本文中に示されていない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
+      ],
+      "page_notes": "「転入」ページとその先の「マイナンバーカードを使う/使わない」の2つの分岐ページはいずれも下位の手続き別ページへの目次にとどまり、手数料の記載はどこにもなかった。手数料の記述はさらに下の個別手続きページ（本人/同世帯・代理人・国外からの転入など）にある可能性があるが、それらのURLは本文中に示されていない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
@@ -31,32 +354,73 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "リンク先にあり",
+      "failure_type": "not_retrieved",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "窓口オンライン可否": {
-      "found": false,
-      "value": "",
-      "evidence": "【晴海特別出張所のみ】スマホ等で事前に住民異動届等を作成できます",
-      "source": "html",
-      "failure_reason": "曖昧"
+      "found": true,
+      "value": "窓口来庁が必要。マイナポータルの引越しワンストップサービスで転出届やオンライン予約はできるが、転入届自体はオンラインで完結せず窓口での手続きが必須",
+      "evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 43,
+        "note": ""
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "リンク先にあり",
+      "failure_type": "not_retrieved",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "このページおよびリンク先の2ページ（マイナンバーカード有無別の入口）はいずれも案内用のハブページで、実際の項目（必要書類・期限・手数料）は「本人/同世帯」「代理人」「国外から」等さらに1階層下のページに分かれている模様だが、そのURLは本文中にテキストのみで記載されリンク化されていないため辿れなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "転入ページは「マイナンバーカードの有無」で二分岐するだけの案内ページで、そのリンク先も「本人/同一世帯」「代理人」「国外から」等でさらに枝分かれする一覧ページに留まり、いずれも持ち物の本文記載には到達しなかった。\n転入トップページ自体には窓口/オンライン可否の明記はなく、リンク先の「引越しワンストップサービスの利用」ページで初めて『転入届は窓口への来庁が必要』と明記されていた。\n「マイナンバーカードを使わずに/使って手続きをする場合」の2ページはいずれも「本人または同じ世帯の方が手続きするとき」等のさらに下位のページへの導線のみで、期限（起算点つき）の記述自体は本文になかった。\n「転入」ページとその先の「マイナンバーカードを使う/使わない」の2つの分岐ページはいずれも下位の手続き別ページへの目次にとどまり、手数料の記載はどこにもなかった。手数料の記述はさらに下の個別手続きページ（本人/同世帯・代理人・国外からの転入など）にある可能性があるが、それらのURLは本文中に示されていない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+      "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
+      "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 1,
+    "verified": 1,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 3
   }
 }

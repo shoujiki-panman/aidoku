@@ -4,6 +4,27 @@
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "top_url": "https://www.city.toshima.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-27T15:29:07+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
@@ -14,7 +35,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1151,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：豊島区外から豊島区に住所を変更したとき｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "転入届：豊島区外から豊島区に住所を変更したとき",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：豊島区外から豊島区に住所を変更したとき"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
@@ -25,7 +69,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1184,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住所や世帯を変更したときの届出（転入届・転出届など）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "住所や世帯を変更したときの届出（転入届・転出届など）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住所や世帯を変更したときの届出（転入届・転出届など）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html",
@@ -36,7 +107,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3649,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：マイナポータルを利用したオンライン申請をしたとき｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "転入届：マイナポータルを利用したオンライン申請をしたとき",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：マイナポータルを利用したオンライン申請をしたとき"
+        },
+        {
+          "level": 2,
+          "text": "届出ができる方（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "1 引越しをする方全員のマイナンバーカード"
+        },
+        {
+          "level": 3,
+          "text": "2 窓口で手続きを行う方の本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "3 権限確認ができる書類（法定代理人の方）"
+        },
+        {
+          "level": 3,
+          "text": "4 在留カードまたは特別永住者証明書（外国人の方）"
+        },
+        {
+          "level": 3,
+          "text": "5 続柄を証明する書類の原本（外国人の世帯で続柄を変更される方）"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
@@ -47,7 +185,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3954,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：本人または新しく同じ世帯になる方が手続きをするとき｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "転入届：本人または新しく同じ世帯になる方が手続きをするとき",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：本人または新しく同じ世帯になる方が手続きをするとき"
+        },
+        {
+          "level": 2,
+          "text": "届出ができる方（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "1 転出証明書"
+        },
+        {
+          "level": 3,
+          "text": "2 窓口で手続きを行う方の本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "3 引越しをする方全員のマイナンバーカード（お持ちの方）"
+        },
+        {
+          "level": 3,
+          "text": "4 権限確認ができる書類（法定代理人の方）"
+        },
+        {
+          "level": 3,
+          "text": "5 在留カードまたは特別永住者証明書（外国人の方）"
+        },
+        {
+          "level": 3,
+          "text": "6 続柄を証明する書類の原本（外国人の世帯で続柄を変更される方）"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
@@ -58,7 +267,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3747,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：代理人が手続きをするとき｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "転入届：代理人が手続きをするとき",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：代理人が手続きをするとき"
+        },
+        {
+          "level": 2,
+          "text": "届出ができる方（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "1 転出証明書"
+        },
+        {
+          "level": 3,
+          "text": "2 引越しをする方が記入した委任状"
+        },
+        {
+          "level": 3,
+          "text": "窓口にお越しになる方の本人確認書類（運転免許証など）をお持ちください。"
+        },
+        {
+          "level": 3,
+          "text": "4 引越しをする方全員のマイナンバーカード（お持ちの方）"
+        },
+        {
+          "level": 3,
+          "text": "5 在留カードまたは特別永住者証明書（外国人の方）"
+        },
+        {
+          "level": 3,
+          "text": "6 続柄を証明する書類の原本（外国人の世帯で続柄を変更される方）"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html",
@@ -69,7 +349,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3686,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転入届：マイナンバーカードを使って本人または同じ世帯になる方が手続きをするとき｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "転入届：マイナンバーカードを使って本人または同じ世帯になる方が手続きをするとき",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転入届：マイナンバーカードを使って本人または同じ世帯になる方が手続きをするとき"
+        },
+        {
+          "level": 2,
+          "text": "届出ができる方（届出人）"
+        },
+        {
+          "level": 2,
+          "text": "届出に必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "1 引越しをする方全員のマイナンバーカード"
+        },
+        {
+          "level": 3,
+          "text": "2 窓口で手続きを行う方の本人確認書類"
+        },
+        {
+          "level": 3,
+          "text": "3 権限確認ができる書類（法定代理人の方）"
+        },
+        {
+          "level": 3,
+          "text": "4 在留カードまたは特別永住者証明書（外国人の方）"
+        },
+        {
+          "level": 3,
+          "text": "5 続柄を証明する書類の原本（外国人の世帯で続柄を変更される方）"
+        },
+        {
+          "level": 2,
+          "text": "届出期限"
+        },
+        {
+          "level": 2,
+          "text": "届出場所・届出時間"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/1809081634.html",
@@ -80,7 +427,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1468,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "[申請書ダウンロード]住民異動届出書（転入・転居・転出届）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "[申請書ダウンロード]住民異動届出書（転入・転居・転出届）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/1809081634.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "[申請書ダウンロード]住民異動届出書（転入・転居・転出届）"
+        },
+        {
+          "level": 2,
+          "text": "転入届（区外から引っ越ししたとき）"
+        },
+        {
+          "level": 3,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "転居届（区内で引っ越ししたとき）"
+        },
+        {
+          "level": 3,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "転出届（豊島区外に引っ越しするとき）"
+        },
+        {
+          "level": 3,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/juminhyo/index.html",
@@ -91,7 +489,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1011,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民票に関する各種証明書｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "住民票に関する各種証明書",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/juminhyo/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民票に関する各種証明書"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/index.html",
@@ -102,7 +523,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2358,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "届出・証明・登録（戸籍・住民票など）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "届出・証明・登録（戸籍・住民票など）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "届出・証明・登録（戸籍・住民票など）"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/koseki/index.html",
@@ -113,7 +561,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 980,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍に関する各種証明書｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "戸籍に関する各種証明書",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/koseki/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍に関する各種証明書"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/todokede/index.html",
@@ -124,7 +595,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1059,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "戸籍届出｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "戸籍届出",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/todokede/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "戸籍届出"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/juminkihondaichocard/index.html",
@@ -135,7 +629,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 977,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住民基本台帳カード｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "住民基本台帳カード",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/juminkihondaichocard/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住民基本台帳カード"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000337.html",
@@ -146,7 +663,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2262,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "住居表示の届出｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "住居表示の届出",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000337.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "住居表示の届出"
+        },
+        {
+          "level": 2,
+          "text": "受付窓口"
+        },
+        {
+          "level": 2,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "豊島区役所本庁舎（総合窓口課）・東西区民事務所"
+        },
+        {
+          "level": 2,
+          "text": "担当地域表"
+        },
+        {
+          "level": 3,
+          "text": "FAX送信先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tenshutsu/index.html",
@@ -157,7 +721,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1121,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転出届：豊島区から豊島区外へ住所を変更するとき｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "転出届：豊島区から豊島区外へ住所を変更するとき",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tenshutsu/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転出届：豊島区から豊島区外へ住所を変更するとき"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tenkyo/index.html",
@@ -168,7 +755,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1040,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "転居届：豊島区内で住所を変更するとき｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "転居届：豊島区内で住所を変更するとき",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tenkyo/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "転居届：豊島区内で住所を変更するとき"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/sonota/index.html",
@@ -179,7 +789,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1146,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "その他の手続きのご案内｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "その他の手続きのご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/sonota/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "その他の手続きのご案内"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/index.html",
@@ -190,7 +823,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1371,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手続き・届出｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "手続き・届出",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/tetsuzuki/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手続き・届出"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/index.html",
@@ -201,7 +857,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1471,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "暮らし・地域｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "暮らし・地域",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "暮らし・地域"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/index.html",
@@ -212,7 +891,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1639,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
@@ -223,7 +925,136 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4508,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方｜豊島区公式ホームページ",
+      "meta": {
+        "description": "粗大ごみに関する情報を掲載しています",
+        "og:title": "粗大ごみの出し方",
+        "og:type": "article",
+        "og:description": "粗大ごみに関する情報を掲載しています",
+        "og:url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 5,
+          "text": "「おいくら」で不用品を売却する場合"
+        },
+        {
+          "level": 5,
+          "text": "「ジモティー」で不用品を譲渡する場合"
+        },
+        {
+          "level": 5,
+          "text": "粗大ごみとして出すときの手順"
+        },
+        {
+          "level": 5,
+          "text": "減免の申請"
+        },
+        {
+          "level": 5,
+          "text": "運び出し"
+        },
+        {
+          "level": 5,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "リユース"
+        },
+        {
+          "level": 4,
+          "text": "「おいくら」で不用品を売却する場合"
+        },
+        {
+          "level": 4,
+          "text": "「ジモティー」で不用品を譲渡する場合"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして出すときの手順"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ受付センター"
+        },
+        {
+          "level": 4,
+          "text": "インターネットでの申し込み（24時間受付）"
+        },
+        {
+          "level": 4,
+          "text": "電話での申し込み"
+        },
+        {
+          "level": 3,
+          "text": "有料粗大ごみ処理券"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ収集曜日表"
+        },
+        {
+          "level": 3,
+          "text": "手数料"
+        },
+        {
+          "level": 2,
+          "text": "手数料の減免"
+        },
+        {
+          "level": 3,
+          "text": "対象"
+        },
+        {
+          "level": 3,
+          "text": "手続き"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ処理手数料の減免のオンライン申請（LoGoフォーム）"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの運び出し"
+        },
+        {
+          "level": 3,
+          "text": "対象"
+        },
+        {
+          "level": 3,
+          "text": "手続き"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 5,
+          "text": "一部サービス利用停止のお知らせ（令和8年7月）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013329.html",
@@ -234,7 +1065,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2263,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみ パンフレット｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "資源・ごみ パンフレット",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013329.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみパンフレット"
+        },
+        {
+          "level": 3,
+          "text": "お知らせ"
+        },
+        {
+          "level": 4,
+          "text": "リチウムイオン電池の集積所回収の開始に伴い、「資源回収・ごみ収集のお知らせ」を改訂しました。"
+        },
+        {
+          "level": 6,
+          "text": "外国人住民等向けに多言語表記した「豊島区のごみ・資源の分け方・出し方」および「資源回収・ごみ収集のお知らせ（簡易版）」の確認はこちらから。"
+        },
+        {
+          "level": 2,
+          "text": "資源回収・ごみ収集のお知らせ保存版 令和8年4月発行"
+        },
+        {
+          "level": 2,
+          "text": "資源回収・ごみ収集のお知らせ簡易版(令和8年4月発行)"
+        },
+        {
+          "level": 2,
+          "text": "集団回収のご案内"
+        },
+        {
+          "level": 2,
+          "text": "清掃事務所からのお願い"
+        },
+        {
+          "level": 2,
+          "text": "資源回収・ごみ収集のお知らせ（翻訳版）"
+        },
+        {
+          "level": 2,
+          "text": "事業者向けパンフレット"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/index.html",
@@ -245,7 +1139,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 943,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭からでる資源・ごみ｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "家庭からでる資源・ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭からでる資源・ごみ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/ese/index.html",
@@ -256,7 +1173,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1473,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "暮らしの衛生(食品・環境)｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "暮らしの衛生(食品・環境)",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/ese/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "暮らしの衛生(食品・環境)"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/ese/oshirase/index.html",
@@ -267,7 +1211,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 809,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お知らせ｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "お知らせ",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kurashi/ese/oshirase/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzukinavi/index.php",
@@ -278,190 +1245,254 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 820,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手続きナビ｜豊島区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "手続きナビ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
     {
       "url": "https://www.city.toshima.lg.jp/",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzukinavi/index.php",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/1809081634.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/juminhyo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/koseki/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/todokede/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/juminkihondaichocard/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000337.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013329.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/ese/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kurashi/ese/oshirase/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tenshutsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tenkyo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/sonota/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

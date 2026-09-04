@@ -1,0 +1,57 @@
+{
+  "municipality": "世田谷区",
+  "municipality_id": "setagaya",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+    "hops": 1,
+    "link_text": "戸籍・住民登録",
+    "has_jsonld": false,
+    "text_len": 2537,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページは「戸籍・住民登録等」の目次（カテゴリ一覧）ページで、転入届自体の説明は本文に無い。目次内に「住所や世帯を変更したときの届け出」「お引越し手続きのご案内（総合支所くみん窓口）」という関連ページ名が見えるが、それらのURLは提供されたリンク一覧（最大40件、地域ナビゲーション等が中心）には含まれておらず、追跡不可。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "municipality": "荒川区",
+  "municipality_id": "arakawa",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+    "hops": 1,
+    "link_text": "くらしの手続きガイド（引越し・結婚・離婚・出生・死亡）",
+    "has_jsonld": false,
+    "text_len": 1760,
+    "truncated": false,
+    "n_links": 23
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "http://ttzk.graffer.jp/ward-arakawa",
+    "https://www.city.arakawa.tokyo.jp/todokede/index.html"
+  ],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+    "http://ttzk.graffer.jp/ward-arakawa",
+    "https://www.city.arakawa.tokyo.jp/todokede/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "各手続きの窓口情報や、手続きに必要な書類もご案内いたします",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "手続きガイドのメニューから、ライフイベントを選択します。質問に回答します。",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページ自体は転入届の詳細情報を持たず、外部の対話式ガイド（Graffer運営「くらしの手続きガイド」）へ誘導するポータル。リンク先のGrafferトップと届出・登録・証明の索引ページも見たが、いずれも質問に回答する多段階フォームへの入口・カテゴリ一覧のみで、必要書類・窓口・期限・手数料の具体的な記載は無い。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

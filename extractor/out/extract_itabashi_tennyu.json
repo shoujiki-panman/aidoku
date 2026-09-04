@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 4449,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T15:45:14+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
   "online_clarity_evidence": "転入届はマイナポータルによる申請のみでは完結しません。必ず窓口へお越しいただき、手続きが必要になります。",
   "online_clarity_pages": [
     "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html"
   ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "板橋区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "前住所地で発行された転出証明書（マイナンバーカードで転出手続きした場合は不要）／本人確認資料（マイナンバーカードや運転免許証、パスポートなど）／全員分のマイナンバーカード（お持ちの方。マイナンバーカードで転出手続きした場合は必須）／在学証明書・教科書給与証明書（新住所の学区域に転校する小・中学生のいる方）／全員分の在留カードまたは特別永住者証明書（外国人の方）／賃貸借契約書の原本など居住実態を確認できる書類（異動日から届出日まで1年以上経過している場合）／代理人が届出する場合は委任状",
+        "evidence": "前住所地で発行された転出証明書 マイナンバーカードや運転免許証、パスポートなど届出に来た方の本人確認資料 全員分のマイナンバーカード（お持ちの方）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 48,
+          "note": "連続48文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "前住所地で発行された転出証明書（マイナンバーカードで転出手続きした場合は不要）／本人確認資料（マイナンバーカードや運転免許証、パスポートなど）／全員分のマイナンバーカード（お持ちの方。マイナンバーカードで転出手続きした場合は必須）／在学証明書・教科書給与証明書（新住所の学区域に転校する小・中学生のいる方）／全員分の在留カードまたは特別永住者証明書（外国人の方）／賃貸借契約書の原本など居住実態を確認できる書類（異動日から届出日まで1年以上経過している場合）／代理人が届出する場合は委任状",
+            "evidence": "前住所地で発行された転出証明書 マイナンバーカードや運転免許証、パスポートなど届出に来た方の本人確認資料 全員分のマイナンバーカード（お持ちの方）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 48,
+              "note": "連続48文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文中の「必要なもの」見出し配下に箇条書きで列挙されており、該当者限定の持ち物（在学証明書、在留カード等）も注記付きで明記されている。代理人の委任状は「届出できる方」セクションに別記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文中の「必要なもの」見出し配下に箇条書きで列挙されており、該当者限定の持ち物（在学証明書、在留カード等）も注記付きで明記されている。代理人の委任状は「届出できる方」セクションに別記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "板橋区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ（マイナポータルでの申請だけでは完結せず、必ず窓口への来庁が必要）",
+        "evidence": "転入届はマイナポータルによる申請のみでは完結しません。必ず窓口へお越しいただき、手続きが必要になります。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 52,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ（マイナポータルでの申請だけでは完結せず、必ず窓口への来庁が必要）",
+            "evidence": "転入届はマイナポータルによる申請のみでは完結しません。必ず窓口へお越しいただき、手続きが必要になります。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 52,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「マイナポータルを利用した方」の項で、オンライン申請だけでは完結せず窓口来庁が必須である旨が明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「マイナポータルを利用した方」の項で、オンライン申請だけでは完結せず窓口来庁が必須である旨が明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "板橋区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "新住所に住み始めた日から14日以内",
+        "evidence": "新住所に住み始めた日から14日以内（住み始める前の手続きはできません）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 35,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "新住所に住み始めた日から14日以内",
+            "evidence": "新住所に住み始めた日から14日以内（住み始める前の手続きはできません）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 35,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「届出期間」という見出しの直後に起算点（住み始めた日）と期限（14日以内）が明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「届出期間」という見出しの直後に起算点（住み始めた日）と期限（14日以内）が明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "板橋区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届の手続きページ本文には手数料についての記載がなく、関連リンク一覧（各種住民異動届出・委任状・マイナンバー関連ページなど）にも手数料を扱っていそうなリンクは見当たらない。唯一の金額記載はマイナンバーカード廃止後再交付時の1000円で、転入届自体の手数料ではない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "転入届の手続きページ本文には手数料についての記載がなく、関連リンク一覧（各種住民異動届出・委任状・マイナンバー関連ページなど）にも手数料を扱っていそうなリンクは見当たらない。唯一の金額記載はマイナンバーカード廃止後再交付時の1000円で、転入届自体の手数料ではない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "前住所地で発行された転出証明書（マイナンバーカードで転出手続きをした場合は不要）、届出に来た方の本人確認資料（マイナンバーカード・運転免許証・パスポート等）、全員分のマイナンバーカード（お持ちの方）、在学証明書・教科書給与証明書（該当の小中学生がいる場合）、全員分の在留カードまたは特別永住者証明書（外国人の方）、居住実態を確認できる書類（異動日から届出日まで1年以上経過している場合）",
+      "value": "前住所地で発行された転出証明書（マイナンバーカードで転出手続きした場合は不要）／本人確認資料（マイナンバーカードや運転免許証、パスポートなど）／全員分のマイナンバーカード（お持ちの方。マイナンバーカードで転出手続きした場合は必須）／在学証明書・教科書給与証明書（新住所の学区域に転校する小・中学生のいる方）／全員分の在留カードまたは特別永住者証明書（外国人の方）／賃貸借契約書の原本など居住実態を確認できる書類（異動日から届出日まで1年以上経過している場合）／代理人が届出する場合は委任状",
       "evidence": "前住所地で発行された転出証明書 マイナンバーカードや運転免許証、パスポートなど届出に来た方の本人確認資料 全員分のマイナンバーカード（お持ちの方）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 48,
+        "note": "連続48文字だけ一致。引用全体は確認できない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみで完結。本庁舎1階または区内6か所の区民事務所（管轄区域なし・どこでも可）で受付。マイナポータル申請のみでは完結せず、必ず窓口への来庁が必要。",
+      "value": "窓口のみ（マイナポータルでの申請だけでは完結せず、必ず窓口への来庁が必要）",
       "evidence": "転入届はマイナポータルによる申請のみでは完結しません。必ず窓口へお越しいただき、手続きが必要になります。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 52,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
-      "value": "新住所に住み始めた日から14日以内（住み始める前の手続きはできません）",
+      "value": "新住所に住み始めた日から14日以内",
       "evidence": "新住所に住み始めた日から14日以内（住み始める前の手続きはできません）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 35,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "必要書類・届出期間・オンライン可否（窓口必須の明記）は本文に詳しく記載されているが、転入届自体の手数料についての言及は本文中に見当たらない（マイナンバーカード再交付の手数料1000円は別手続きの話）。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "本文中の「必要なもの」見出し配下に箇条書きで列挙されており、該当者限定の持ち物（在学証明書、在留カード等）も注記付きで明記されている。代理人の委任状は「届出できる方」セクションに別記されている。\n「マイナポータルを利用した方」の項で、オンライン申請だけでは完結せず窓口来庁が必須である旨が明記されている。\n「届出期間」という見出しの直後に起算点（住み始めた日）と期限（14日以内）が明記されている。\n転入届の手続きページ本文には手数料についての記載がなく、関連リンク一覧（各種住民異動届出・委任状・マイナンバー関連ページなど）にも手数料を扱っていそうなリンクは見当たらない。唯一の金額記載はマイナンバーカード廃止後再交付時の1000円で、転入届自体の手数料ではない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }
