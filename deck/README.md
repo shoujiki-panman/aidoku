@@ -102,7 +102,7 @@ want(f"{n}回とも37日" in html and "37日" in cf["changed"] and cf["returned_
      f"スライド4 反実仮想: 実測 {cf['returned_modified']}/{n}・{cf['changed']}")
 
 # --- スライド5 リンクの並べ替え（LLMを呼ばず、保存済みページだけで測る） ---
-out = subprocess.run(["python3", "../analysis/check_link_order.py"],
+out = subprocess.run(["python3", "../analysis/probes/check_link_order.py"],
                      capture_output=True, text=True).stdout
 g = dict(re.findall(r"^\s{2}(.+?): (\d+)", out, re.M))
 cell = g.get("手続き名を含むリンクを、新しく渡せるようになったセル")

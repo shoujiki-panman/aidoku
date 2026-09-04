@@ -56,7 +56,7 @@ MAPPING = {
         "label": "答えが表の中にしかなく、見出しと値の対応が潰れる",
         "criterion": "1.3.1",
         "why": "本文として読むと、どの見出しの列の値かが失われる",
-        "evidence": "analysis/check_tables.py",
+        "evidence": "analysis/probes/check_tables.py",
     },
     "opaque_link": {
         "label": "リンク題から行き先が分からない（「こちら」「詳しくは」）",

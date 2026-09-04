@@ -1,4 +1,4 @@
-"""`analysis/ocr_unreadable.py` — 読めない画像PDFを OCR で読んでみた記録。
+"""`analysis/probes/ocr_unreadable.py` — 読めない画像PDFを OCR で読んでみた記録。
 
 ★**判定には使わない。** macOS でしか動かない道具なので、測定条件に混ぜてはいけない。
   誤りと分かった結果の置き場と同じで、**読むのは人だけ。**
@@ -17,7 +17,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "analysis"))
+sys.path.insert(0, str(ROOT / "analysis" / "probes"))
 from ocr_unreadable import (  # noqa: E402
     MIN_KANA,
     cached,

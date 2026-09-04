@@ -14,8 +14,8 @@
 
 **ネットには出ない。** 取得済みのキャッシュのバイト列を、そのまま両方に渡す。
 
-    .venv/bin/python analysis/compare_readers.py          # 全部
-    .venv/bin/python analysis/compare_readers.py --check  # 対象の本数だけ
+    .venv/bin/python analysis/probes/compare_readers.py          # 全部
+    .venv/bin/python analysis/probes/compare_readers.py --check  # 対象の本数だけ
 """
 
 from __future__ import annotations
@@ -27,7 +27,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 CACHE = ROOT / "crawler" / "cache"
 OUT_DIR = ROOT / "analysis" / "out"
 

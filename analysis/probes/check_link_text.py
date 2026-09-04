@@ -11,7 +11,7 @@
   **リンク題だけを見たときに行き先が分からないもの**。
   AIも住民も、一覧では題しか見ない。**適合／不適合とは言わない。**
 
-    python3 analysis/check_link_text.py --procedure tennyu
+    python3 analysis/probes/check_link_text.py --procedure tennyu
 """
 
 from __future__ import annotations
@@ -22,7 +22,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 OUT_DIR = ROOT / "analysis" / "out"
 
 VERSION = "link-text-0.1"

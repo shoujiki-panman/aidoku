@@ -13,9 +13,9 @@
 別の作業ツリーに溜めたキャッシュを使うときは `--cache-dir` で渡す。
 
 実行:
-    python3 analysis/scan_unpicked_candidates.py
-    python3 analysis/scan_unpicked_candidates.py --min-markers 2
-    python3 analysis/scan_unpicked_candidates.py --cache-dir /path/to/crawler/cache
+    python3 analysis/probes/scan_unpicked_candidates.py
+    python3 analysis/probes/scan_unpicked_candidates.py --min-markers 2
+    python3 analysis/probes/scan_unpicked_candidates.py --cache-dir /path/to/crawler/cache
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(ROOT / "crawler"))
 
 from polite_fetch import PoliteFetcher  # noqa: E402

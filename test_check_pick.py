@@ -1,4 +1,4 @@
-"""`analysis/check_pick.py` — 起点ページの選び方と本文量の食い違い。
+"""`analysis/probes/check_pick.py` — 起点ページの選び方と本文量の食い違い。
 
 **なぜ要るか**: 最初の版は「選ばれたページより桁違いに長い候補があるか」だけを見て
 27組と答えたが、**長い候補の多くは手続きと無関係なページ**だった
@@ -14,7 +14,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "analysis"))
+sys.path.insert(0, str(ROOT / "analysis" / "probes"))
 from check_pick import KINDS, classify, eligible, passed_over, summarize  # noqa: E402
 
 

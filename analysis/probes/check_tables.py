@@ -20,7 +20,7 @@
 **点数がどう動くかは、測り直すまで言えない。**（武器①のときと同じ約束）
 
 実行:
-    python3 analysis/check_tables.py
+    python3 analysis/probes/check_tables.py
 """
 
 from __future__ import annotations
@@ -30,7 +30,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "crawler"))
 sys.path.insert(0, str(ROOT))
 from htmlutil import parse, tables_text  # noqa: E402

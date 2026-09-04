@@ -292,7 +292,7 @@ robots.txt で許可されていない、5xx が返った、通信に失敗し�
 legacy_unknown`。METHOD.md §4-8）。したがって**既存データ同士の比較は必ず
 `unknown` になる。それが正しい挙動**で、バグではない。
 
-git に残っていた過去のコミットからの復元は `analysis/backfill_history.py`
+git に残っていた過去のコミットからの復元は `analysis/probes/backfill_history.py`
 （冪等。何度流しても増えない）。
 
 ## archive.json — 過去の姿は、こちらで持たない

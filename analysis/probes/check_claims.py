@@ -14,8 +14,8 @@
 最後は人が読む。だが、**古い数字が黙って生き残ることは防げる。**
 
 実行:
-    python3 analysis/check_claims.py --facts
-    python3 analysis/check_claims.py --text ../outputs/aidoku-private/_reference/SUBMISSION.md
+    python3 analysis/probes/check_claims.py --facts
+    python3 analysis/probes/check_claims.py --text ../outputs/aidoku-private/_reference/SUBMISSION.md
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 DATA = ROOT / "web" / "data"
 
 # 文章から拾う数字の形。単位ごとに分けて、比べる相手を変える。

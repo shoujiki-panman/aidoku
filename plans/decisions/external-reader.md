@@ -19,7 +19,7 @@ Tracks: [`plans/read-through.md`](../read-through.md) / Issue #148 / `crawler/of
 
 ## 測ったこと
 
-キャッシュ済みの添付88本を、両方に読ませて突き合わせた（`analysis/compare_readers.py`）。
+キャッシュ済みの添付88本を、両方に読ませて突き合わせた（`analysis/probes/compare_readers.py`）。
 
 | 結果 | 本数 |
 |---|---|
@@ -61,7 +61,7 @@ Tracks: [`plans/read-through.md`](../read-through.md) / Issue #148 / `crawler/of
 
 ## やること
 
-- `analysis/compare_readers.py` を検算道具として置く（`.venv` 経由でのみ動く）
+- `analysis/probes/compare_readers.py` を検算道具として置く（`.venv` 経由でのみ動く）
 - **anydocだけが読めた添付は、うちのリーダーの宿題として記録する**
   （CIDフォント対応・`.xls` 対応）。直ったら差が消えることで確かめられる
 - **anydocの読みを測定結果に使わない。** 判定に混ぜると再現条件が壊れる

@@ -57,7 +57,7 @@
 |---|---|
 | 実測 | 23区×3手続き=69セル（転入届・児童手当・粗大ごみ）。4項目×20点＋オンライン明示 |
 | 見張り | `crawler/check_pages.py`。条件付きGET＋本文指紋で「変わったか」を毎朝自動確認（GitHub Actions）。23区1分・LLM 0回・404は「消えた」扱い。結果は `web/data/site-status.json` → 画面最上部 |
-| 数字の突き合わせ | `analysis/check_claims.py --text <文書>`。対外文の数字が実測に無いと要確認を出す（「5区→4区」の再発防止） |
+| 数字の突き合わせ | `analysis/probes/check_claims.py --text <文書>`。対外文の数字が実測に無いと要確認を出す（「5区→4区」の再発防止） |
 | CI | lint（ruff）・重複（jscpd）・テスト（Python 297 / node 66 / gatekeeper 78）全部落とす設定 |
 | 公開画面 | index（今やる1件＋一覧）／barrier／board／demand の4枚。**役割整理は#65** |
 | 門番 | 署名検証・NLWeb・MCP自前実装（78 PASS）。**方針4によりCloudflare機能への載せ替え対象** |
@@ -97,7 +97,7 @@
 - 公開23区の点数は各1回・ぶれ幅未測定。**3自治体12行の「最大2点」と混ぜない**
 - `web/assets/barrier.js` だけ `extractor_key` を使う（`display_label` に揃えると空欄になる）
 - `fact_types.json` と `web/data/fact-types.json` は手動同期（片方だけ直さない）
-- 対外文の数字を書いたら `python3 analysis/check_claims.py --text <ファイル>` を通す
+- 対外文の数字を書いたら `python3 analysis/probes/check_claims.py --text <ファイル>` を通す
 
 ## 📦 リポジトリ
 

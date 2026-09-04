@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "analysis"))
+sys.path.insert(0, str(ROOT / "analysis" / "probes"))
 from never_looked import (  # noqa: E402
     MARKS,
     followed,
