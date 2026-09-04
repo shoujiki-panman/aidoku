@@ -1,0 +1,237 @@
+{
+  "_about": "ページを渡さずに素で聞いたときの答えを、人手の正解データと突き合わせた記録。",
+  "measurement_version": "cold-ask-0.1",
+  "procedure_id": "tennyu",
+  "procedure": "転入届",
+  "model": "claude-sonnet-5",
+  "runs": 1,
+  "search": true,
+  "questions": {
+    "必要書類": "{muni}で{proc}をします。何を持っていけばいいですか？",
+    "窓口オンライン可否": "{muni}の{proc}は、どこの窓口でできますか？オンラインでもできますか？",
+    "期限": "{muni}の{proc}は、いつまでにすればいいですか？",
+    "手数料": "{muni}の{proc}は、いくらかかりますか？"
+  },
+  "summary": {
+    "n": 12,
+    "by_outcome": {
+      "ページどおりに正解": 4,
+      "ページに無いことを答えた（真偽不明）": 3,
+      "ページの一部だけ正解": 5
+    },
+    "answered": 12,
+    "contradicts_page": 5,
+    "beyond_page": 3,
+    "hedged": 0
+  },
+  "rows": [
+    {
+      "municipality": "江戸川区",
+      "field": "必要書類",
+      "answer": "江戸川区での転入届に必要な持ち物は、**どのように転出手続きをしたか**によって少し異なります。\n\n## 共通で必要なもの\n- **本人確認書類**（マイナンバーカード、運転免許証、パスポートなど）\n- **印鑑**（任意ですが、持っていくと安心です）\n\n## パターン別の持ち物\n\n### ① マイナンバーカードで転出手続きをした場合（引越しワンストップサービス利用者も含む）\n- 転入する方**全員分**のマイナンバーカード\n- 住民基本台帳用の暗証番号（数字4桁）\n- ※このケースでは紙の転出証明書は不要です\n\n### ② 紙の転出証明書を受け取った場合\n- 窓口に来る方の本人確認書類\n- 前の住所地の市区町村で発行された**転出証明書**\n- マイナンバーカードをお持ちの方はそれも持参\n\n## 状況に応じて追加で必要なもの\n- **外国籍の方**：在留カードまたは特別永住者証明書、続柄が確認できる書類\n- **国外からの転入**：パスポート、戸籍謄本・抄本、戸籍の附票\n- **一部地域への転入**：建物の登記簿謄本など地番が表示された書類\n\n## その他の注意点\n- **届出期限**：新住所に住み始めてから**14日以内**\n- **届出先**：区役所区民課、または各事務所（小岩・葛西・小松川など）の戸籍住民係の窓口\n- 転入届はオンラインだけでは完結せず、**必ず窓口へ行く必要**があります\n- 世帯主以外が届け出る場合は「委任状」が必要になることがあります（同一世帯員以外の代理人の場合）\n- 国民健康保険や児童手当など、他の手続きも同時にできる場合があるので該当する方は関連書類（保険証、母子手帳など）もあると手続きがスムーズです\n\n心配な点があれば、事前に江戸川区の窓口へ電話で確認するのが確実です。\n\nSources:\n- [転入届（江戸川区外から引越した方） 江戸川区ホームページ](https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html)\n- [江戸川区外から江戸川区内へ引越した方へ（マイナンバーカードの継続利用）](https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/card/gaiyo/syotetsuduki/keizokuriyo.html)\n- [転出届（江戸川区外へ引越す方） 江戸川区ホームページ](https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenshutsu.html)",
+      "search": true,
+      "cited_urls": [
+        "https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/card/gaiyo/syotetsuduki/keizokuriyo.html",
+        "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
+        "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenshutsu.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "正解",
+      "points": 10.0,
+      "reason": "5/5要素",
+      "outcome": "ページどおりに正解",
+      "run": 1
+    },
+    {
+      "municipality": "江戸川区",
+      "field": "手数料",
+      "answer": "江戸川区の転入届(住民異動届)について:\n\n**転入届自体は無料です。**\n\n住民基本台帳法に基づく転入届の提出には、原則として手数料はかかりません。\n\n参考までに関連する費用がかかるケースもあります:\n- **マイナンバーカード**の住所変更手続き自体は無料\n- 転入届と同時に**住民票の写し**が必要な場合は、1通300円程度の手数料がかかります(江戸川区の場合)\n- **印鑑登録**を新たに行う場合も別途手数料がかかることがあります\n\n正確な最新情報(手数料の有無・必要書類・受付窓口など)は、江戸川区の公式サイトまたは戸籍住民課に直接確認されることをおすすめします。最新情報を確認しましょうか?",
+      "search": true,
+      "cited_urls": [],
+      "answered": true,
+      "hedged": false,
+      "verdict": "不正解(幻覚)",
+      "points": 0.0,
+      "reason": "サイトに記載がないのに値を答えた",
+      "outcome": "ページに無いことを答えた（真偽不明）",
+      "run": 1
+    },
+    {
+      "municipality": "江戸川区",
+      "field": "期限",
+      "answer": "## 江戸川区の転入届の期限\n\n**住み始めた日（転入日）から14日以内**に届出が必要です。\n\n- **届出場所**: 区役所区民課、または各事務所の戸籍住民係\n- **注意点**: 住み始める前に届出をすることはできません（引っ越し完了後の手続きです）\n- **期限を過ぎると**: 正当な理由なく届出を怠ると、50,000円以下の過料に処せられることがあります\n- **必要書類**: 前の住所地で発行された「転出証明書」、本人確認書類（マイナンバーカードをお持ちの場合は持参）\n\nなお、これは住民基本台帳法に基づく全国共通のルール（14日以内）で、江戸川区に限らずどの市区町村でも同様です。\n\nSources:\n- [転入届（区外から江戸川区へ引越した方） 江戸川区ホームページ](https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html)\n- [転居届（江戸川区内で引越した方） 江戸川区ホームページ](https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenkyo.html)\n- [江戸川区の住民票・転入届｜コンビニ交付・土日・必要なもの](https://townhub.jp/tokyo/edogawa/tetsuzuki/edogawa-tetsuzuki-guide)",
+      "search": true,
+      "cited_urls": [
+        "https://townhub.jp/tokyo/edogawa/tetsuzuki/edogawa-tetsuzuki-guide",
+        "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenkyo.html",
+        "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "正解",
+      "points": 10.0,
+      "reason": "2/2要素",
+      "outcome": "ページどおりに正解",
+      "run": 1
+    },
+    {
+      "municipality": "江戸川区",
+      "field": "窓口オンライン可否",
+      "answer": "## 江戸川区の転入届窓口\n\n**届出できる窓口**\n区役所区民課（本庁舎）のほか、以下の各事務所の戸籍住民係でも手続きできます。\n- 区民課（本庁舎）\n- 小松川事務所\n- 葛西事務所\n- 小岩事務所\n- 東部事務所\n- 鹿骨事務所\n\n**届出期限**\n新しい住所に住み始めた日から**14日以内**。\n\n**必要なもの**（ケースにより異なります）\n- マイナンバーカードを使う場合：転入者全員分のマイナンバーカード（暗証番号入力あり）\n- 紙の「転出証明書」を使う場合：本人確認書類＋転出証明書（＋マイナンバーカード所持者はカードも）\n- 外国人住民の場合：在留カードまたは特別永住者証明書も追加で必要\n\n## オンラインでできる？\n\n**転入届そのものは、オンラインだけでは完結せず、必ず窓口への来庁が必要**です（法律上、本人確認のため対面での手続きが求められています）。\n\nただし、以下の点でオンラインを活用できます。\n- **マイナポータルの「引越しワンストップサービス」**：マイナンバーカードを使って転出届（旧住所側）を事前にオンラインで済ませておける仕組みです。転入時は、その情報をもとに窓口で手続きします。\n- **申請書事前作成サービス（書かない窓口）**：来庁前にスマホなどで届出書を事前作成しておくことで、窓口での記入の手間を減らせます。\n\nいずれも「事前準備」であり、転入届自体は窓口での本人来庁が必要な点にご注意ください。受付時間などの詳細は、各窓口に直接お問い合わせいただくのが確実です。\n\nSources:\n- [転入届（区外から江戸川区へ引越した方） 江戸川区ホームページ](https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html)\n- [引越し（手続きナビ） 江戸川区ホームページ](https://www.city.edogawa.tokyo.jp/tetsuzukinavi/hikkoshi/index.html)",
+      "search": true,
+      "cited_urls": [
+        "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
+        "https://www.city.edogawa.tokyo.jp/tetsuzukinavi/hikkoshi/index.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "部分正解",
+      "points": 6.7,
+      "reason": "2/3要素（欠落: 来庁・受付の条件）",
+      "outcome": "ページの一部だけ正解",
+      "run": 1
+    },
+    {
+      "municipality": "八王子市",
+      "field": "必要書類",
+      "answer": "八王子市の転入届は、前住所地でどのように転出手続きをしたかによって、持ち物が少し変わります。**引っ越し後14日以内**の届出が必要です。\n\n## パターン①：紙の「転出証明書」を持っている場合\n\n- **転出証明書**（前の市区町村役場でもらったもの）\n- **本人確認書類**（マイナンバーカード、運転免許証、パスポートなど、氏名・生年月日または住所が確認できるもの）\n- **マイナンバーカード**（持っている場合は世帯全員分。住民基本台帳用の暗証番号の入力が必要）\n- **住民基本台帳カード**（持っている場合は全員分、こちらも暗証番号が必要）\n- 代理人が届け出る場合は**委任状**\n- 外国籍の方は**在留カード**または**特別永住者証明書**（全員分）、続柄を証明する公的文書（外国語の場合は翻訳文も）\n\n## パターン②：マイナンバーカードで「特例転出」を済ませている場合（転出証明書が不要なケース）\n\n- **マイナンバーカード**（有効なもの）\n- **本人確認書類**\n- マイナンバーカードの**暗証番号**が入力できること（必須条件）\n- 代理人の場合は**委任状**\n- ※事前に前住所地の市区町村で「特例転出」の手続きを済ませておく必要があります\n\n## 補足\n\n- 印鑑や国民健康保険証、児童手当・年金関係の書類などは世帯状況によって追加で必要になる場合があるため、心配な場合は事前に八王子市の窓口へ電話確認するのが確実です。\n- 八王子市公式サイトには質問に答えると必要書類が案内される「手続き案内サービス」もあるので、事前にチェックしておくとスムーズです。\n\nSources:\n- [市外からの引っ越し（転出証明書での手続き）｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html)\n- [市外からの引っ越し（マイナンバーカードでの手続き）｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html)\n- [転入の手続き｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/life/001/001/002/index.html)",
+      "search": true,
+      "cited_urls": [
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+        "https://www.city.hachioji.tokyo.jp/life/001/001/002/index.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "部分正解",
+      "points": 8.0,
+      "reason": "4/5要素（欠落: 該当者限定・数量の条件）",
+      "outcome": "ページの一部だけ正解",
+      "run": 1
+    },
+    {
+      "municipality": "八王子市",
+      "field": "手数料",
+      "answer": "## 回答\n\n八王子市の**転入届自体には手数料はかかりません（無料）**。\n\n住民基本台帳法に基づく転入届は、全国どの自治体でも届出そのものに費用は発生しない手続きです。八王子市の公式ページでも転入届の案内に手数料の記載はなく、無料の手続きとして扱われています。\n\n### 注意点\n- 転入届は無料ですが、**マイナンバーカードの住所変更（券面裏書き）**や、その場で**住民票の写しを発行**してもらう場合は別途手数料がかかることがあります（住民票の写しは1通300円程度が一般的ですが、最新の金額は要確認）。\n- 届出には、来庁者の本人確認書類（運転免許証・パスポートなど）が必要です。\n- 転入した日から**14日以内**に届け出る必要があります。\n- 手続き窓口は八王子市役所本庁舎1階市民課（7番窓口）または市民部各事務所です。\n\n正確な最新情報や、住民票発行など関連手数料の詳細は、下記の八王子市公式ページか、市役所（☎042-626-3111）に直接確認するのが確実です。\n\nSources:\n- [転出届｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/003/index.html)\n- [住民票の異動届｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/index.html)\n- [市外からの引っ越し（マイナンバーカードでの手続き）｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html)\n- [市内での引っ越し｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/002/p004451.html)",
+      "search": true,
+      "cited_urls": [
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/002/p004451.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/003/index.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/index.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "不正解(幻覚)",
+      "points": 0.0,
+      "reason": "サイトに記載がないのに値を答えた",
+      "outcome": "ページに無いことを答えた（真偽不明）",
+      "run": 1
+    },
+    {
+      "municipality": "八王子市",
+      "field": "期限",
+      "answer": "八王子市の転入届は、**新しい住所に住み始めた日から14日以内**に届出をする必要があります。\n\nこれは住民基本台帳法で全国共通の期限で、八王子市も同様です。窓口は市役所本庁舎（市民課）または各事務所（由井・元八王子・恩方・浅川・川口・加住・美山・裏高尾など）で手続きできます。\n\n必要なもの（一般的なケース）:\n- 転出証明書（前の自治体で発行されたもの）※マイナポータルでオンライン転出届をした場合は不要な場合あり\n- 本人確認書類（マイナンバーカード・運転免許証など）\n- 印鑑（必要な場合あり）\n- マイナンバーカードをお持ちの場合はそれも持参（継続利用手続きのため）\n\n14日を過ぎても届出自体はできますが、正当な理由なく遅れると住民基本台帳法違反として過料の対象になる場合があるため、早めの手続きがおすすめです。\n\nSources:\n- [市外からの引っ越し（転出証明書での手続き）｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html)\n- [市外への引っ越し（窓口での手続き）｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/003/p004452.html)\n- [市外への引っ越し(マイナポータルからの手続き)｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/003/p004458.html)",
+      "search": true,
+      "cited_urls": [
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/003/p004452.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/003/p004458.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "部分正解",
+      "points": 5.0,
+      "reason": "1/2要素（欠落: 届出できる期間の始まり）",
+      "outcome": "ページの一部だけ正解",
+      "run": 1
+    },
+    {
+      "municipality": "八王子市",
+      "field": "窓口オンライン可否",
+      "answer": "## 八王子市の転入届について\n\n### 届出できる窓口\n転入届は、以下いずれかの窓口で手続きできます。\n\n| 窓口 | 受付時間 |\n|---|---|\n| 八王子市役所本庁舎 1階 市民課（7番窓口） | 平日 8:30〜17:00 |\n| 八王子駅南口総合事務所 | 平日 10:00〜19:00、日曜 10:00〜17:00 |\n| 南大沢事務所 | 平日・日曜 10:00〜17:00 |\n| その他の各事務所（由井・由木東・由木西・元八王子など各出張所） | 平日 9:00〜16:00 |\n\n※現在（2026年1月13日〜4月中旬頃まで）、本庁市民課と八王子駅南口総合事務所は**予約制**になっているとの情報もあるため、来庁前に予約要否を八王子市民課（☎042-620-7232）に確認することをおすすめします。\n\n### オンラインでできるか\n- **転入届そのものをオンラインだけで完結することはできません。** 住民基本台帳法上、転入届は本人確認のため必ず窓口への来庁が必要です。\n- ただし、マイナンバーカードをお持ちの方は「**マイナポータルの引越しワンストップサービス**」を使うことで、\n  - 事前にオンラインで転入の届出情報を送信し、\n  - 来庁予定日時の入力（来庁予約）ができます。\n- マイナポータルで手続きした場合も、**申請状況が「完了」になってから**、市民課などの窓口に来庁する必要があります（窓口で「マイナポータルで引っ越し手続きをしています」と伝えればスムーズです）。\n- 転出届（旧住所側の届出）は、マイナンバーカードがあればオンラインのみで完結できるケースがありますが、転入届は別物なので混同しないよう注意してください。\n\n### 持参するもの（目安）\n- 前住所地が発行した転出証明書（または特例転出の場合はマイナンバーカード）\n- 本人確認書類（マイナンバーカード、運転免許証など）\n- マイナンバーカードをお持ちの場合はそれも持参\n- 外国籍の方は在留カード等\n\n正確な必要書類・当日の予約要否は事前に市民課へ電話確認するのが確実です。\n\n**Sources:**\n- [市外から八王子市に転入してきたときは｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/life/001/001/index.html)\n- [市外からの引っ越し（転出証明書での手続き）｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html)\n- [マイナポータルで引っ越し手続きをした方へ｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html)\n- [転出届｜八王子市公式ホームページ](https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/003/index.html)",
+      "search": true,
+      "cited_urls": [
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+        "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/003/index.html",
+        "https://www.city.hachioji.tokyo.jp/life/001/001/index.html",
+        "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "正解",
+      "points": 10.0,
+      "reason": "3/3要素",
+      "outcome": "ページどおりに正解",
+      "run": 1
+    },
+    {
+      "municipality": "練馬区",
+      "field": "必要書類",
+      "answer": "# 練馬区の転入届に必要なもの\n\n## 期限\n引っ越した日（前住所を出た日）から **14日以内**。引っ越し前の届出はできません。\n\n## 持っていくもの\n\n| 持ち物 | 補足 |\n|---|---|\n| **本人確認書類** | マイナンバーカード・運転免許証など写真付きなら1点でOK。健康保険証など写真なしのものは2点必要 |\n| **転出証明書** | 前の市区町村で紙の転出証明書をもらった場合は必須。マイナンバーカードを使ってオンラインで転出手続きをした場合は不要（代わりに転入するご本人のマイナンバーカードが必要） |\n| **マイナンバーカード** | 世帯で転入する人全員分。住所変更手続きの際に暗証番号入力が必要になる場合あり |\n| **委任状**（代理人が届出する場合） | 別世帯の人が代理で届け出るときは必須 |\n| **在留カード等**（外国籍の方） | 該当者のみ |\n| **在学証明書**（転校する子どもがいる場合） | 転校手続きで必要になることがあるため |\n\n※ 国民健康保険や児童手当、印鑑登録など他の手続きも同時に行う場合は、それぞれ別途書類（保険証、通帳、印鑑など）が必要になることがあるので、目的に合わせて確認しておくと安心です。\n\n## 窓口\n練馬区内の区民事務所（区役所本庁舎含め6か所）で受付。\n- 平日：8:30〜19:00\n- 土曜：9:00〜17:00（関区民事務所は土曜対応なし）\n- 日曜・祝日は基本不可\n\n---\n出典：\n- [転入届（練馬区外（国内）から練馬区に引越したとき）：練馬区公式ホームページ](https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html)\n- [転入届（練馬区外（国内）から練馬区に引越したとき）](https://www.city.nerima.tokyo.jp/m/kurashi/koseki/tennyu.html)\n- [練馬区 - 転入届（国内からの転入）がしたい。](https://www.call-center.jp/faq_nerima/faq.asp?faqno=NER02364&sugtype=4)\n\n正確な最新情報や個別事情（外国籍、世帯分離など）がある場合は、念のため練馬区公式サイトまたは窓口へ事前確認をおすすめします。",
+      "search": true,
+      "cited_urls": [
+        "https://www.call-center.jp/faq_nerima/faq.asp?faqno=NER02364&sugtype=4",
+        "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+        "https://www.city.nerima.tokyo.jp/m/kurashi/koseki/tennyu.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "部分正解",
+      "points": 6.0,
+      "reason": "3/5要素（欠落: 外国人住民の追加書類、該当者限定・数量の条件）",
+      "outcome": "ページの一部だけ正解",
+      "run": 1
+    },
+    {
+      "municipality": "練馬区",
+      "field": "手数料",
+      "answer": "練馬区の転入届について回答します。\n\n**転入届は無料です（手数料はかかりません）。**\n\n転入届（他の市区町村から練馬区へ引っ越した際の届出）は、住民基本台帳法に基づく届出であり、住民票の異動手続き自体には手数料は発生しません。\n\nただし、以下の点にご注意ください。\n\n- **届出期限**:引っ越した日から**14日以内**に届け出る必要があります(正当な理由なく遅れると、5万円以下の過料が科される場合があります)。\n- **必要なもの**: 転出証明書(前住所地の市区町村で発行)、本人確認書類(マイナンバーカード・運転免許証など)、マイナンバーカードを持っている場合はそのカード、印鑑(不要な場合もあり)など。\n- **別途費用がかかる場合**: 転入届自体は無料ですが、その後に**住民票の写しを取得する場合は1通300円**など、証明書発行には手数料がかかります。また代理人が届け出る場合の委任状の準備なども必要になることがあります。\n\n最新の詳細情報(必要書類・窓口・オンライン申請の可否など)は、練馬区の公式サイトで確認することをおすすめします。何か具体的な状況(単身/世帯、マイナンバーカードの有無など)があれば、それに応じてもう少し詳しくご案内できます。",
+      "search": true,
+      "cited_urls": [],
+      "answered": true,
+      "hedged": false,
+      "verdict": "不正解(幻覚)",
+      "points": 0.0,
+      "reason": "サイトに記載がないのに値を答えた",
+      "outcome": "ページに無いことを答えた（真偽不明）",
+      "run": 1
+    },
+    {
+      "municipality": "練馬区",
+      "field": "期限",
+      "answer": "練馬区の転入届は、**練馬区に住み始めた日から14日以内**に届け出る必要があります。\n\n補足ポイント:\n- 住み始める「前」の届出はできません（引越し後に手続きします）。\n- 14日を過ぎると、正当な理由がない場合に過料の対象となることがあります（住民基本台帳法に基づく全国共通のルール）。\n- 届出先は練馬区役所の窓口（本庁舎や区民事務所など）です。マイナンバーカードをお持ちの場合はコンビニ交付などが使えないケースもあるため、詳細は公式ページで最新の持ち物・受付場所をご確認ください。\n\nSources:\n- [転入届 （練馬区外（国内）から練馬区に引越したとき）：練馬区公式ホームページ](https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html)\n- [転入届 （練馬区外（国内）から練馬区に引越したとき）](https://www.city.nerima.tokyo.jp/m/kurashi/koseki/tennyu.html)",
+      "search": true,
+      "cited_urls": [
+        "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+        "https://www.city.nerima.tokyo.jp/m/kurashi/koseki/tennyu.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "正解",
+      "points": 10.0,
+      "reason": "2/2要素",
+      "outcome": "ページどおりに正解",
+      "run": 1
+    },
+    {
+      "municipality": "練馬区",
+      "field": "窓口オンライン可否",
+      "answer": "## 練馬区の転入届について\n\n### 窓口\n転入届は、区内**6か所の区民事務所**のいずれでも手続きできます。お住まいの近くの事務所を利用できます。\n\n1. 練馬区民事務所\n2. 早宮区民事務所\n3. 光が丘区民事務所\n4. 石神井区民事務所\n5. 大泉区民事務所\n6. 関区民事務所\n\n※国外からの転入や、転出証明書の記載と異なる内容での転入など一部のケースは、平日8:30〜17:00の受付に限定されます。事前に混雑状況をリアルタイム窓口混雑情報で確認するのがおすすめです。\n\n### オンラインでできるか\n**転入届そのものはオンラインだけでは完結せず、必ず窓口での手続きが必要です。**（郵送・インターネットのみでの提出は不可）\n\nただし、以下はオンラインで可能です。\n- マイナポータルから「転出届」の提出\n- マイナポータルから「転入届の来庁予定連絡」（来庁前の事前連絡）\n- マイナンバーカードを使い、転出証明書の交付を受けずに転入届を行う方法（この場合も最終的な届出は窓口で行います）\n\nつまり「転出」の一部手続きは電子化されていますが、「転入」自体は本人確認等のため、必ず区民事務所の窓口に行く必要があります。持参する書類（本人確認書類、マイナンバーカードなど）は事前に公式サイトで確認しておくと安心です。\n\nSources:\n- [転入届 （練馬区外（国内）から練馬区に引越したとき）：練馬区公式ホームページ](https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html)\n- [区民事務所で取り扱う主な手続き：練馬区公式ホームページ](https://www.city.nerima.tokyo.jp/kurashi/koseki/omonatetsuduki/kuminjimusho.html)\n- [区役所に行かずにできる手続き（戸籍・住民登録）：練馬区公式ホームページ](https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html)",
+      "search": true,
+      "cited_urls": [
+        "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+        "https://www.city.nerima.tokyo.jp/kurashi/koseki/omonatetsuduki/kuminjimusho.html",
+        "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html"
+      ],
+      "answered": true,
+      "hedged": false,
+      "verdict": "部分正解",
+      "points": 6.7,
+      "reason": "2/3要素（欠落: 来庁・受付の条件）",
+      "outcome": "ページの一部だけ正解",
+      "run": 1
+    }
+  ]
+}
