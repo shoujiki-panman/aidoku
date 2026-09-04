@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.meguro.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
@@ -14,7 +35,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1665,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの収集曜日 | 目黒区",
+      "meta": {
+        "og:title": "粗大ごみの収集曜日",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの収集曜日"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの申込み"
+        },
+        {
+          "level": 3,
+          "text": "インターネットによるお申込み"
+        },
+        {
+          "level": 3,
+          "text": "電話による申込み"
+        },
+        {
+          "level": 4,
+          "text": "電話番号（粗大ごみ受付センター）"
+        },
+        {
+          "level": 4,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "お願い"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
@@ -25,7 +101,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1229,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方 | 目黒区",
+      "meta": {
+        "og:title": "粗大ごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
@@ -36,7 +135,96 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3348,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ処理の手続き | 目黒区",
+      "meta": {
+        "description": "粗大ごみの収集は、有料・事前申込み制です。",
+        "og:title": "粗大ごみ処理の手続き",
+        "og:type": "article",
+        "og:description": "粗大ごみの収集は、有料・事前申込み制です。",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ処理の手続き"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして廃棄する前にご検討ください"
+        },
+        {
+          "level": 3,
+          "text": "地域コミュニティアプリ「ピアッザ」に出品しませんか"
+        },
+        {
+          "level": 3,
+          "text": "リユースショップを活用しませんか"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理の手続き"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ収集の申込み（目黒区粗大ごみ受付センター）"
+        },
+        {
+          "level": 3,
+          "text": "電話によるお申し込み"
+        },
+        {
+          "level": 4,
+          "text": "電話番号（粗大ごみ受付センター）"
+        },
+        {
+          "level": 4,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "インターネットによるお申し込み"
+        },
+        {
+          "level": 4,
+          "text": "動作確認済みブラウザ"
+        },
+        {
+          "level": 2,
+          "text": "「有料粗大ごみ処理券」の購入"
+        },
+        {
+          "level": 2,
+          "text": "収集日当日"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理手数料の減額・免除のオンライン申請（LoGoフォーム）"
+        },
+        {
+          "level": 2,
+          "text": "関連するページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/ticket_shop.html",
@@ -47,7 +235,76 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3077,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料ごみ（粗大ごみ・事業系ごみ）処理券取扱所一覧 | 目黒区",
+      "meta": {
+        "description": "有料ごみ（粗大ごみ・事業系ごみ）の処理には、目黒区の処理券をお買い求めください。",
+        "og:title": "有料ごみ（粗大ごみ・事業系ごみ）処理券取扱所一覧",
+        "og:type": "article",
+        "og:description": "有料ごみ（粗大ごみ・事業系ごみ）の処理には、目黒区の処理券をお買い求めください。",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/ticket_shop.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料ごみ（粗大ごみ・事業系ごみ）処理券取扱所一覧"
+        },
+        {
+          "level": 2,
+          "text": "取扱店標識・有料ごみ処理券（粗大・事業系）"
+        },
+        {
+          "level": 2,
+          "text": "目黒区内の取扱店・コンビ二及び周辺区の取扱店"
+        },
+        {
+          "level": 3,
+          "text": "コンビ二取扱所名"
+        },
+        {
+          "level": 2,
+          "text": "周辺区"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの申し込み"
+        },
+        {
+          "level": 3,
+          "text": "インターネットによる申込み"
+        },
+        {
+          "level": 3,
+          "text": "電話による申込み"
+        },
+        {
+          "level": 4,
+          "text": "電話番号（粗大ごみ受付センター）"
+        },
+        {
+          "level": 4,
+          "text": "受付時間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
@@ -58,7 +315,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 960,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの減量・リサイクル | 目黒区",
+      "meta": {
+        "og:title": "ごみの減量・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの減量・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/reminder.html",
@@ -69,7 +349,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1898,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源とごみの収集日をLINEでお知らせします | 目黒区",
+      "meta": {
+        "og:title": "資源とごみの収集日をLINEでお知らせします",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/reminder.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの収集日をLINEでお知らせします"
+        },
+        {
+          "level": 2,
+          "text": "利用方法"
+        },
+        {
+          "level": 2,
+          "text": "通知の設定手順"
+        },
+        {
+          "level": 2,
+          "text": "通知の解除手順"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
@@ -80,7 +407,106 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2641,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "燃やすごみの出し方 | 目黒区",
+      "meta": {
+        "og:title": "燃やすごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "燃やすごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "燃やすごみとして出すもの"
+        },
+        {
+          "level": 3,
+          "text": "生ごみ"
+        },
+        {
+          "level": 3,
+          "text": "食用油"
+        },
+        {
+          "level": 3,
+          "text": "衣類・布製品"
+        },
+        {
+          "level": 3,
+          "text": "剪定した枝・葉など"
+        },
+        {
+          "level": 3,
+          "text": "皮革製品"
+        },
+        {
+          "level": 3,
+          "text": "ゴム製品"
+        },
+        {
+          "level": 3,
+          "text": "汚れの落ちないプラスチック"
+        },
+        {
+          "level": 3,
+          "text": "金属などプラスチック以外の素材が混じっているもの"
+        },
+        {
+          "level": 3,
+          "text": "リサイクルに支障がでるもの"
+        },
+        {
+          "level": 3,
+          "text": "古紙として回収できない紙類"
+        },
+        {
+          "level": 3,
+          "text": "紙おむつなどの衛生用品"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "出し方のルール"
+        },
+        {
+          "level": 3,
+          "text": "ご相談先"
+        },
+        {
+          "level": 2,
+          "text": "無駄なく無理なくごみ減量 めぐろ買い物ルール"
+        },
+        {
+          "level": 2,
+          "text": "関連するページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
@@ -91,7 +517,82 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2299,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "燃やさないごみの出し方 | 目黒区",
+      "meta": {
+        "og:title": "燃やさないごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "燃やさないごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "燃やさないごみとして出すもの"
+        },
+        {
+          "level": 3,
+          "text": "陶磁器"
+        },
+        {
+          "level": 3,
+          "text": "ガラス"
+        },
+        {
+          "level": 3,
+          "text": "金属類"
+        },
+        {
+          "level": 3,
+          "text": "水銀を含む製品"
+        },
+        {
+          "level": 3,
+          "text": "スプレー缶・ライター・カセットボンベ類"
+        },
+        {
+          "level": 4,
+          "text": "中身が残っていると危険です"
+        },
+        {
+          "level": 3,
+          "text": "プラスチック類についてのお願い"
+        },
+        {
+          "level": 2,
+          "text": "出し方のルール"
+        },
+        {
+          "level": 2,
+          "text": "無駄なく無理なくごみ減量 めぐろ買い物ルール"
+        },
+        {
+          "level": 2,
+          "text": "関連するページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengominihongopdf.html",
@@ -102,7 +603,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1828,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみに関する印刷物PDFデータ（資源とごみの分け方・出し方 日本語版） | 目黒区",
+      "meta": {
+        "description": "資源とごみの分け方・出し方に関するパンフレット（日本語版）をダウンロードできます。",
+        "og:title": "資源・ごみに関する印刷物PDFデータ（資源とごみの分け方・出し方　日本語版）",
+        "og:type": "article",
+        "og:description": "資源とごみの分け方・出し方に関するパンフレット（日本語版）をダウンロードできます。",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengominihongopdf.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみに関する印刷物PDFデータ（資源とごみの分け方・出し方 日本語版）"
+        },
+        {
+          "level": 2,
+          "text": "目黒区 資源とごみの分け方・出し方パンフレット"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの分け方・出し方（A3版ポスター）"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの分別品目一覧（50音順）"
+        },
+        {
+          "level": 2,
+          "text": "事業者向けリーフレット"
+        },
+        {
+          "level": 2,
+          "text": "無駄なく無理なくごみ減量 めぐろ買い物ルール"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/gomigomi.html",
@@ -113,7 +667,64 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1741,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "めぐろ買い物ルールソング「ごみごみ あ！ミーゴ」 | 目黒区",
+      "meta": {
+        "description": "めぐろ買い物ルールソング「ごみごみ　あ！ミーゴ」をご覧いただけます。",
+        "og:title": "めぐろ買い物ルールソング「ごみごみ　あ！ミーゴ」",
+        "og:type": "article",
+        "og:description": "めぐろ買い物ルールソング「ごみごみ　あ！ミーゴ」をご覧いただけます。",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/gomigomi.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "めぐろ買い物ルールソング「ごみごみ あ！ミーゴ」"
+        },
+        {
+          "level": 2,
+          "text": "「ごみごみ あ！ミーゴ」って"
+        },
+        {
+          "level": 3,
+          "text": "山口ともさん"
+        },
+        {
+          "level": 2,
+          "text": "DVDの貸し出し"
+        },
+        {
+          "level": 2,
+          "text": "「ごみごみ あ！ミーゴ」実演"
+        },
+        {
+          "level": 3,
+          "text": "GAKUDAIカーニバル2011（平成23年10月23日学芸大学駅周辺）"
+        },
+        {
+          "level": 3,
+          "text": "ガラクタ音楽会（平成23年11月23日めぐろパーシモンホール小ホール）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/3r/index.html",
@@ -124,7 +735,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1159,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "3Rの推進（リデュース・リユース・リサイクル） | 目黒区",
+      "meta": {
+        "og:title": "3Rの推進（リデュース・リユース・リサイクル）",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/3r/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "3Rの推進（リデュース・リユース・リサイクル）"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/nenmatsu_mgr100.html",
@@ -135,7 +773,108 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2913,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "MGR100を目指しましょう！ | 目黒区",
+      "meta": {
+        "description": "目黒区では、区全体のごみを減らすために、「1人1日100グラムのごみ減量」を目標にしています。合言葉は「M（目黒）・G（ごみ）・R（リデュース）100」1人ひとりのちょっとした取組で、ごみを減らしていきましょう。",
+        "og:title": "MGR100を目指しましょう！",
+        "og:type": "article",
+        "og:description": "目黒区では、区全体のごみを減らすために、「1人1日100グラムのごみ減量」を目標にしています。合言葉は「M（目黒）・G（ごみ）・R（リデュース）100」1人ひとりのちょっとした取組で、ごみを減らしていきましょう。",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/nenmatsu_mgr100.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "MGR100を目指しましょう！"
+        },
+        {
+          "level": 2,
+          "text": "MGR100とは"
+        },
+        {
+          "level": 3,
+          "text": "目黒区の計画目標"
+        },
+        {
+          "level": 2,
+          "text": "ごみ減量のヒント"
+        },
+        {
+          "level": 3,
+          "text": "リデュース（発生抑制）"
+        },
+        {
+          "level": 3,
+          "text": "リユース（再使用）"
+        },
+        {
+          "level": 3,
+          "text": "リサイクル（再生利用）"
+        },
+        {
+          "level": 2,
+          "text": "区の取り組み"
+        },
+        {
+          "level": 3,
+          "text": "無駄なく無理なくごみ減量 めぐろ買い物ルール"
+        },
+        {
+          "level": 4,
+          "text": "めぐろ買い物ルール参加店を募集しています"
+        },
+        {
+          "level": 3,
+          "text": "食べきりレシピの紹介"
+        },
+        {
+          "level": 3,
+          "text": "エコテイクアウト推進事業"
+        },
+        {
+          "level": 3,
+          "text": "フードドライブ活動支援（物品貸出）"
+        },
+        {
+          "level": 2,
+          "text": "過去の取り組み"
+        },
+        {
+          "level": 3,
+          "text": "「MGR100プロジェクト」ごみ減量アイデア募集"
+        },
+        {
+          "level": 3,
+          "text": "「MGR100プロジェクト」ラッピング清掃車"
+        },
+        {
+          "level": 2,
+          "text": "目黒区のごみ量及び資源回収量"
+        },
+        {
+          "level": 2,
+          "text": "東京23区のごみ量及び資源回収量"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengomipdf.html",
@@ -146,7 +885,72 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1662,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみに関する印刷物PDFデータ（資源とごみの分け方・出し方 外国語版） | 目黒区",
+      "meta": {
+        "description": "資源とごみの分け方・出し方に関するパンフレット（英語・中国語・ハングル版）をダウンロードできます。",
+        "og:title": "資源・ごみに関する印刷物PDFデータ（資源とごみの分け方・出し方　外国語版）",
+        "og:type": "article",
+        "og:description": "資源とごみの分け方・出し方に関するパンフレット（英語・中国語・ハングル版）をダウンロードできます。",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengomipdf.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみに関する印刷物PDFデータ（資源とごみの分け方・出し方 外国語版）"
+        },
+        {
+          "level": 2,
+          "text": "目黒区 資源とごみの分け方・出し方パンフレット（英語・中国語・ハングル）"
+        },
+        {
+          "level": 3,
+          "text": "英語版「資源とごみの分け方・出し方」"
+        },
+        {
+          "level": 3,
+          "text": "中国語版「資源とごみの分け方・出し方」"
+        },
+        {
+          "level": 3,
+          "text": "ハングル版「資源とごみの分け方・出し方」"
+        },
+        {
+          "level": 2,
+          "text": "事業者向けリーフレット（英語・中国語・ハングル）"
+        },
+        {
+          "level": 3,
+          "text": "英語版 事業者向けリーフレット"
+        },
+        {
+          "level": 3,
+          "text": "中国語版 事業者向けリーフレット"
+        },
+        {
+          "level": 3,
+          "text": "ハングル版 事業者向けリーフレット"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
@@ -157,7 +961,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1602,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源とごみの収集日・分別検索 | 目黒区",
+      "meta": {
+        "og:title": "資源とごみの収集日・分別検索",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの収集日・分別検索"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集日を確認"
+        },
+        {
+          "level": 2,
+          "text": "ごみ分別案内"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分別方法"
+        },
+        {
+          "level": 2,
+          "text": "見つからない時には"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        },
+        {
+          "level": 2,
+          "text": "ごみを減らすには"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/index.html",
@@ -168,7 +1019,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1171,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル | 目黒区",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
@@ -179,7 +1057,110 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2372,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "めぐろ買い物ルール | 目黒区",
+      "meta": {
+        "og:title": "めぐろ買い物ルール",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "めぐろ買い物ルール"
+        },
+        {
+          "level": 2,
+          "text": "めぐろ買い物ルールのポスター"
+        },
+        {
+          "level": 2,
+          "text": "5つのルールの説明"
+        },
+        {
+          "level": 3,
+          "text": "めぐろ買い物ルール1 マイバッグ プラス マイ○○○のすすめ"
+        },
+        {
+          "level": 3,
+          "text": "一人ひとりできることの例"
+        },
+        {
+          "level": 3,
+          "text": "お店などができることの例"
+        },
+        {
+          "level": 3,
+          "text": "めぐろ買い物ルール2 必要な分だけ買おう！"
+        },
+        {
+          "level": 3,
+          "text": "一人ひとりできることの例"
+        },
+        {
+          "level": 3,
+          "text": "お店などができることの例"
+        },
+        {
+          "level": 3,
+          "text": "めぐろ買い物ルール3 エコな商品を選ぼう！"
+        },
+        {
+          "level": 3,
+          "text": "一人ひとりできることの例"
+        },
+        {
+          "level": 3,
+          "text": "お店などができることの例"
+        },
+        {
+          "level": 3,
+          "text": "めぐろ買い物ルール4 おいしく食べきろう！"
+        },
+        {
+          "level": 3,
+          "text": "一人ひとりできることの例"
+        },
+        {
+          "level": 3,
+          "text": "お店などができることの例"
+        },
+        {
+          "level": 3,
+          "text": "めぐろ買い物ルール5 みんなで「長く」「くり返し」使おう！"
+        },
+        {
+          "level": 3,
+          "text": "一人ひとりできることの例"
+        },
+        {
+          "level": 3,
+          "text": "お店などができることの例"
+        },
+        {
+          "level": 2,
+          "text": "めぐろ買い物ルール参加店を募集しています"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
@@ -190,7 +1171,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
@@ -201,7 +1189,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
@@ -212,7 +1207,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
@@ -223,7 +1225,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
@@ -234,7 +1243,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jako/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
@@ -245,7 +1261,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -254,6 +1277,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -261,153 +1286,197 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/sodaigomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengominihongopdf.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/gomigomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/rule_pdf.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/ticket_shop.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/3r/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/nenmatsu_mgr100.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kurashi/gomi/genryourecycle/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/reminder.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/shigengomipdf.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jako/https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/funen.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     }
   ]

@@ -10,48 +10,416 @@
     "has_jsonld": false,
     "text_len": 1457,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
-  "online_clarity": "記載なし",
-  "online_clarity_evidence": "",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T15:28:51+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+    "https://www.city.setagaya.lg.jp/02239/384.html",
+    "https://www.city.setagaya.lg.jp/02239/27658.html",
+    "https://www.city.setagaya.lg.jp/02239/382.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "オンライン決済を利用された場合、有料粗大ごみ処理券の購入は不要です。",
   "online_clarity_pages": [
-    "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html"
+    "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
+    "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+    "https://www.city.setagaya.lg.jp/02239/384.html",
+    "https://www.city.setagaya.lg.jp/02239/27658.html",
+    "https://www.city.setagaya.lg.jp/02239/382.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "世田谷区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "通常の申込みで持参・提出する書類は明記されていない（有料粗大ごみ処理券を購入し貼付する）。ただし減免対象者（生活保護受給者等）は、手数料減免申請に必要な書類に加えて証明書類を管轄の清掃事務所へ提出する必要がある。",
+        "evidence": "受付後、手数料の減免申請に必要な書類を送付しますので、必要事項を記入し、証明書類とあわせて管轄の清掃事務所へ提出してください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 63,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+            "https://www.city.setagaya.lg.jp/02239/384.html"
+          ],
+          "page_notes": "このページは目次（アンコール）と外部リンクのみのカテゴリ一覧で、本文には持ち物・必要書類の記載がない。「粗大ごみの出し方」と「粗大ごみ・臨時ごみ処理手数料等の減免」の各下位ページに記載がありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "通常の申込みで持参・提出する書類は明記されていない（有料粗大ごみ処理券を購入し貼付する）。ただし減免対象者（生活保護受給者等）は、手数料減免申請に必要な書類に加えて証明書類を管轄の清掃事務所へ提出する必要がある。",
+            "evidence": "受付後、手数料の減免申請に必要な書類を送付しますので、必要事項を記入し、証明書類とあわせて管轄の清掃事務所へ提出してください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 63,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込方法自体（インターネット・電話・チャット・FAX）には持ち物や書類の記載がなく、有料処理券の購入・貼付のみが必要な行為として書かれている。書類提出が明記されているのは減免（該当者限定）のケースのみで、別ページ（384.html）に分離されている。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+        "https://www.city.setagaya.lg.jp/02239/384.html"
+      ],
+      "page_notes": "申込方法自体（インターネット・電話・チャット・FAX）には持ち物や書類の記載がなく、有料処理券の購入・貼付のみが必要な行為として書かれている。書類提出が明記されているのは減免（該当者限定）のケースのみで、別ページ（384.html）に分離されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "世田谷区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "オンラインで完結可能（インターネット申込＋オンライン決済で、窓口へ行かずに完結できる）",
+        "evidence": "インターネットで粗大ごみの申込を行うと粗大ごみの処理手数料をオンライン決済で支払うことができるようになりました",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 55,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+            "https://www.city.setagaya.lg.jp/02239/27658.html"
+          ],
+          "page_notes": "本文は目次（見出し一覧）のみが取得されており、各見出しの実体（申込方法の詳細）は同一URL内のアンカー先か別ページに分離されている。「粗大ごみの出し方」と「オンライン決済」の項目が申込チャネルの手がかりになりそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "オンラインで完結可能（インターネット申込＋オンライン決済で、窓口へ行かずに完結できる）",
+            "evidence": "インターネットで粗大ごみの申込を行うと粗大ごみの処理手数料をオンライン決済で支払うことができるようになりました",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 55,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「粗大ごみの出し方」ページ冒頭の『申込可能な申請方法』一覧はアイコン状態がテキスト抽出で全て『利用不可能』と表示され本文と矛盾しており使えなかった。実際の申込方法（インターネット・電話・チャット・FAX）の詳細記述と、別ページ『オンライン決済』の説明から判断した。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+        "https://www.city.setagaya.lg.jp/02239/27658.html"
+      ],
+      "page_notes": "「粗大ごみの出し方」ページ冒頭の『申込可能な申請方法』一覧はアイコン状態がテキスト抽出で全て『利用不可能』と表示され本文と矛盾しており使えなかった。実際の申込方法（インターネット・電話・チャット・FAX）の詳細記述と、別ページ『オンライン決済』の説明から判断した。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "世田谷区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html"
+          ],
+          "page_notes": "このページは目次（見出し一覧）のみで、各項目の本文（粗大ごみの出し方など）はページ内アンカー先か別ページに分離されており、今回取得した本文には申込期限の記述が含まれていない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「粗大ごみの出し方」ページには申込方法・受付時間・処理券の貼付方法（収集日午前8時までに排出）はあるが、申込自体を収集日の何日前までに行う必要があるかという期限の記載は見当たらなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html"
+      ],
+      "page_notes": "「粗大ごみの出し方」ページには申込方法・受付時間・処理券の貼付方法（収集日午前8時までに排出）はあるが、申込自体を収集日の何日前までに行う必要があるかという期限の記載は見当たらなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "世田谷区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "曖昧",
+        "failure_type": "fact_ambiguous",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.setagaya.lg.jp/02239/382.html"
+          ],
+          "page_notes": "本文は目次のみで手数料の金額は書かれておらず、「粗大ごみの処理手数料について」という別セクション（別ページ）に案内されている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "曖昧",
+            "failure_type": "fact_ambiguous",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "処理手数料のページはあるが、金額は品目ごとに異なり本文には具体的な金額の一覧がなく、「インターネットから申し込みができる粗大ごみの処理手数料」という別リンクか電話確認に誘導されている。有料であることは明記されているが、単一の手数料額としては特定できない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.setagaya.lg.jp/02239/382.html"
+      ],
+      "page_notes": "処理手数料のページはあるが、金額は品目ごとに異なり本文には具体的な金額の一覧がなく、「インターネットから申し込みができる粗大ごみの処理手数料」という別リンクか電話確認に誘導されている。有料であることは明記されているが、単一の手数料額としては特定できない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "記載なし"
+      "found": true,
+      "value": "通常の申込みで持参・提出する書類は明記されていない（有料粗大ごみ処理券を購入し貼付する）。ただし減免対象者（生活保護受給者等）は、手数料減免申請に必要な書類に加えて証明書類を管轄の清掃事務所へ提出する必要がある。",
+      "evidence": "受付後、手数料の減免申請に必要な書類を送付しますので、必要事項を記入し、証明書類とあわせて管轄の清掃事務所へ提出してください。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 63,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
-      "found": false,
-      "value": "",
-      "evidence": "粗大ごみ処理手数料のオンライン決済が始まりました",
-      "source": "html",
-      "failure_reason": "曖昧"
+      "found": true,
+      "value": "オンラインで完結可能（インターネット申込＋オンライン決済で、窓口へ行かずに完結できる）",
+      "evidence": "インターネットで粗大ごみの申込を行うと粗大ごみの処理手数料をオンライン決済で支払うことができるようになりました",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 55,
+        "note": ""
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "曖昧",
+      "failure_type": "fact_ambiguous",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "このページは目次（見出し一覧）のみで構成され、「粗大ごみの出し方」「粗大ごみの処理手数料について」等の実質的な内容セクションの本文がこの抽出には含まれていない。目次項目自体のリンク先URLも、提供されたリンク一覧（ナビゲーション・フッター中心）には含まれておらず、追跡できなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "申込方法自体（インターネット・電話・チャット・FAX）には持ち物や書類の記載がなく、有料処理券の購入・貼付のみが必要な行為として書かれている。書類提出が明記されているのは減免（該当者限定）のケースのみで、別ページ（384.html）に分離されている。\n「粗大ごみの出し方」ページ冒頭の『申込可能な申請方法』一覧はアイコン状態がテキスト抽出で全て『利用不可能』と表示され本文と矛盾しており使えなかった。実際の申込方法（インターネット・電話・チャット・FAX）の詳細記述と、別ページ『オンライン決済』の説明から判断した。\n「粗大ごみの出し方」ページには申込方法・受付時間・処理券の貼付方法（収集日午前8時までに排出）はあるが、申込自体を収集日の何日前までに行う必要があるかという期限の記載は見当たらなかった。\n処理手数料のページはあるが、金額は品目ごとに異なり本文には具体的な金額の一覧がなく、「インターネットから申し込みができる粗大ごみの処理手数料」という別リンクか電話確認に誘導されている。有料であることは明記されているが、単一の手数料額としては特定できない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.setagaya.lg.jp/kurashi/gomi/category/11682.html",
+      "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/380.html",
+      "https://www.city.setagaya.lg.jp/02239/384.html",
+      "https://www.city.setagaya.lg.jp/02239/27658.html",
+      "https://www.city.setagaya.lg.jp/02239/382.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 2,
+    "verified": 2,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 2
   }
 }

@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.nerima.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
@@ -14,7 +35,103 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5085,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ（有料・申込制）・料金検索：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ（有料・申込制）・料金検索"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして出す前に「リユース（再使用）」を検討しませんか？"
+        },
+        {
+          "level": 3,
+          "text": "事業者のご案内"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとは"
+        },
+        {
+          "level": 2,
+          "text": "1 粗大ごみ受付センターへ申込み"
+        },
+        {
+          "level": 3,
+          "text": "（1）インターネット申込み（24時間受付）"
+        },
+        {
+          "level": 3,
+          "text": "（2）電話申込み"
+        },
+        {
+          "level": 2,
+          "text": "2 手数料の納付"
+        },
+        {
+          "level": 3,
+          "text": "（1）オンライン決済をご利用の場合"
+        },
+        {
+          "level": 3,
+          "text": "（2）練馬区の有料粗大ごみ処理券をご利用の場合"
+        },
+        {
+          "level": 2,
+          "text": "3 収集または持込み"
+        },
+        {
+          "level": 3,
+          "text": "（1）収集の場合"
+        },
+        {
+          "level": 3,
+          "text": "（2）持込みの場合"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "悪質な業者にご注意ください"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみを修繕して販売します"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの分け方と出し方"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaigomi.html",
@@ -25,7 +142,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2171,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ破砕処理施設について：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ破砕処理施設について"
+        },
+        {
+          "level": 2,
+          "text": "リチウムイオン電池等の二次電池を含む粗大ごみの取り扱い（ロボット掃除機、コードレス掃除機など）"
+        },
+        {
+          "level": 2,
+          "text": "リチウムイオン電池等の二次電池の出し方"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ一覧（ごみ・リサイクル）"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/reuse.html",
@@ -36,7 +193,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3049,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみとして出す前に「リユース（再使用）」を検討しませんか？：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみとして出す前に「リユース（再使用）」を検討しませんか？"
+        },
+        {
+          "level": 2,
+          "text": "事業者のご案内"
+        },
+        {
+          "level": 3,
+          "text": "リユースプラットフォーム「おいくら」とは"
+        },
+        {
+          "level": 3,
+          "text": "「おいくら」の使い方"
+        },
+        {
+          "level": 3,
+          "text": "連携事業者「株式会社マーケットエンタープライズ」"
+        },
+        {
+          "level": 3,
+          "text": "地域の情報サイト「ジモティー」とは"
+        },
+        {
+          "level": 3,
+          "text": "「ジモティー」の使い方"
+        },
+        {
+          "level": 3,
+          "text": "連携事業者「株式会社ジモティー」"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ一覧（ごみ・リサイクル）"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/homonshushu.html",
@@ -47,7 +268,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1964,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの戸別訪問収集：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの戸別訪問収集"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 2,
+          "text": "見守りサービス"
+        },
+        {
+          "level": 3,
+          "text": "戸別訪問収集の調査依頼はオンライン申請ができます"
+        },
+        {
+          "level": 2,
+          "text": "【〒176・179地域】戸別訪問収集の調査依頼フォーム"
+        },
+        {
+          "level": 2,
+          "text": "【〒177・178地域】戸別訪問収集の調査依頼フォーム"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/downloads.html",
@@ -58,7 +339,83 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2558,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみに関する印刷物のダウンロード：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみに関する印刷物のダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "令和8年10月版 冊子 練馬区資源・ごみの分け方と出し方"
+        },
+        {
+          "level": 2,
+          "text": "令和7年4月版（一部改訂）冊子 練馬区資源・ごみの分け方と出し方"
+        },
+        {
+          "level": 2,
+          "text": "簡易版 練馬区資源・ごみの分け方と出し方"
+        },
+        {
+          "level": 3,
+          "text": "日本語版"
+        },
+        {
+          "level": 3,
+          "text": "外国語版"
+        },
+        {
+          "level": 2,
+          "text": "地域別収集曜日一覧"
+        },
+        {
+          "level": 2,
+          "text": "情報紙「ねりまの環」"
+        },
+        {
+          "level": 2,
+          "text": "ペーパークラフト"
+        },
+        {
+          "level": 2,
+          "text": "ぬり絵"
+        },
+        {
+          "level": 2,
+          "text": "できることからはじめよう！"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/keijiban.html",
@@ -69,7 +426,87 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2417,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大型生活用品リサイクル情報掲示板：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "大型生活用品リサイクル情報掲示板"
+        },
+        {
+          "level": 2,
+          "text": "大型生活用品リサイクル情報掲示板とは"
+        },
+        {
+          "level": 2,
+          "text": "情報掲示板の設置場所"
+        },
+        {
+          "level": 2,
+          "text": "情報を掲示できる方"
+        },
+        {
+          "level": 2,
+          "text": "掲示の対象となる物"
+        },
+        {
+          "level": 3,
+          "text": "おおむね30センチメートル角を超える大きさの品物"
+        },
+        {
+          "level": 2,
+          "text": "掲示の対象にならないもの"
+        },
+        {
+          "level": 2,
+          "text": "価格"
+        },
+        {
+          "level": 3,
+          "text": "原則は無料（価格をつける場合は上限5,000円まで）"
+        },
+        {
+          "level": 2,
+          "text": "掲示の申込み方法"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "成立したときの連絡"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/ichiran.html",
@@ -80,7 +517,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2831,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "練馬区ごみ処理券取扱所一覧：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "練馬区ごみ処理券取扱所一覧"
+        },
+        {
+          "level": 2,
+          "text": "有料ごみ処理券取扱所"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストア"
+        },
+        {
+          "level": 3,
+          "text": "区施設"
+        },
+        {
+          "level": 3,
+          "text": "地域の取扱店"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/assen.html",
@@ -91,7 +580,79 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3714,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "生ごみ処理機と生ごみコンポスト化容器購入のあっせん：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "生ごみ処理機と生ごみコンポスト化容器購入のあっせん"
+        },
+        {
+          "level": 2,
+          "text": "あっせん対象者"
+        },
+        {
+          "level": 2,
+          "text": "あっせん価格"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 3,
+          "text": "郵送する場合"
+        },
+        {
+          "level": 3,
+          "text": "生ごみ処理機を窓口で申請する場合"
+        },
+        {
+          "level": 3,
+          "text": "生ごみコンポスト化容器を窓口で申請する場合"
+        },
+        {
+          "level": 2,
+          "text": "生ごみ処理機の配送および購入代金の支払い"
+        },
+        {
+          "level": 2,
+          "text": "生ごみコンポスト化容器の配送および購入代金の支払い"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "問合せ"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/kasidasi.html",
@@ -102,7 +663,95 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3134,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭用生ごみ処理機の貸出し：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭用生ごみ処理機の貸出し"
+        },
+        {
+          "level": 2,
+          "text": "貸出し機器"
+        },
+        {
+          "level": 3,
+          "text": "シマ株式会社製生ごみ処理機"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "貸出し期間"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "申請書"
+        },
+        {
+          "level": 3,
+          "text": "担当"
+        },
+        {
+          "level": 2,
+          "text": "貸出しの決定通知"
+        },
+        {
+          "level": 2,
+          "text": "機器の受渡し"
+        },
+        {
+          "level": 2,
+          "text": "機器の返却"
+        },
+        {
+          "level": 2,
+          "text": "貸出し期間中の注意"
+        },
+        {
+          "level": 2,
+          "text": "案内チラシ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/recyclingcenter.html",
@@ -113,7 +762,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1726,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "練馬区立リサイクルセンターの行事・講座：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "練馬区立リサイクルセンターの行事・講座"
+        },
+        {
+          "level": 2,
+          "text": "行事・講座一覧表"
+        },
+        {
+          "level": 3,
+          "text": "関町リサイクルセンター"
+        },
+        {
+          "level": 3,
+          "text": "春日町リサイクルセンター"
+        },
+        {
+          "level": 3,
+          "text": "豊玉リサイクルセンター"
+        },
+        {
+          "level": 3,
+          "text": "大泉リサイクルセンター"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/aozorashukai.html",
@@ -124,7 +833,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1816,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "青空集会（資源・ごみの分け方・出し方説明会）を開催してみませんか？：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "青空集会（資源・ごみの分け方・出し方説明会）を開催してみませんか？"
+        },
+        {
+          "level": 2,
+          "text": "青空集会とは？・・・"
+        },
+        {
+          "level": 2,
+          "text": "開催の一例"
+        },
+        {
+          "level": 3,
+          "text": "●地区区民館・敬老館など"
+        },
+        {
+          "level": 3,
+          "text": "●児童館など"
+        },
+        {
+          "level": 3,
+          "text": "●集積所のあり方について"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/recycle-market.html",
@@ -135,7 +900,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1694,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "リサイクル・マーケット：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "リサイクル・マーケット"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル・マーケットとは"
+        },
+        {
+          "level": 2,
+          "text": "団体の登録要件"
+        },
+        {
+          "level": 2,
+          "text": "支援内容"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル・マーケットを開催したい方"
+        },
+        {
+          "level": 2,
+          "text": "リサイクルマーケットに出店したい方・開催情報を知りたい方"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/daichi.html",
@@ -146,7 +967,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1550,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "学校等給食生ごみから肥料「練馬の大地」を作っています：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "学校等給食生ごみから肥料「練馬の大地」を作っています"
+        },
+        {
+          "level": 2,
+          "text": "「練馬の大地」について"
+        },
+        {
+          "level": 2,
+          "text": "「練馬の大地」の写真とチラシ"
+        },
+        {
+          "level": 2,
+          "text": "「練馬の大地」の販売についてのお問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/index.html",
@@ -157,7 +1022,214 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2150,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "これって何ごみ？品目別出し方一覧（ごみ分別辞典）"
+        },
+        {
+          "level": 2,
+          "text": "練馬区資源・ごみ分別アプリ"
+        },
+        {
+          "level": 2,
+          "text": "地域別収集曜日一覧"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみに関する印刷物のダウンロード"
+        },
+        {
+          "level": 3,
+          "text": "ごみの分別・出し方"
+        },
+        {
+          "level": 2,
+          "text": "可燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "不燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ（有料・申込制）・料金検索"
+        },
+        {
+          "level": 3,
+          "text": "資源の分別・出し方"
+        },
+        {
+          "level": 2,
+          "text": "容器包装プラスチック"
+        },
+        {
+          "level": 2,
+          "text": "古紙（新聞・雑誌・段ボール・紙パックなど）"
+        },
+        {
+          "level": 2,
+          "text": "飲食用びん・缶・ペットボトル"
+        },
+        {
+          "level": 2,
+          "text": "古着・古布"
+        },
+        {
+          "level": 2,
+          "text": "使用済み食用油"
+        },
+        {
+          "level": 2,
+          "text": "小型家電（携帯電話など回収対象13品目）"
+        },
+        {
+          "level": 2,
+          "text": "電池（乾電池・小型充電式電池・ボタン電池）"
+        },
+        {
+          "level": 2,
+          "text": "なべ・やかん・フライパン"
+        },
+        {
+          "level": 2,
+          "text": "家庭用の使用済みインクカートリッジ"
+        },
+        {
+          "level": 2,
+          "text": "使用済みペンの回収"
+        },
+        {
+          "level": 3,
+          "text": "区では収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "バッテリー、灯油、ペンキなど"
+        },
+        {
+          "level": 2,
+          "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機"
+        },
+        {
+          "level": 2,
+          "text": "家庭用パソコン"
+        },
+        {
+          "level": 2,
+          "text": "消火器"
+        },
+        {
+          "level": 2,
+          "text": "在宅医療から出る注射針"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみの収集"
+        },
+        {
+          "level": 2,
+          "text": "練馬区ごみ・資源のゆくえ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区ごみのゆくえ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区資源のゆくえ"
+        },
+        {
+          "level": 2,
+          "text": "ごみを減らす工夫"
+        },
+        {
+          "level": 3,
+          "text": "ごみ・リサイクル関係の各種計画"
+        },
+        {
+          "level": 2,
+          "text": "事業者の方へ"
+        },
+        {
+          "level": 2,
+          "text": "オンライン申請"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/ichiran/index.html",
+      "link_text": "ごみ収集日程表",
+      "hops": 1,
+      "score": 14,
+      "parent": "https://www.city.nerima.tokyo.jp/",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1432,
+      "has_jsonld": false,
+      "title": "地域別収集曜日一覧：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "地域別収集曜日一覧"
+        },
+        {
+          "level": 2,
+          "text": "地域別収集曜日一覧"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの分け方と出し方"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/index.html",
@@ -168,7 +1240,33 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1788,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お知らせ一覧（ごみ・リサイクル）：練馬区公式ホームページ",
+      "meta": {
+        "description": "資源・ごみの分け方と出し方や、リサイクルに関する「お知らせ」を掲載しています。"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お知らせ一覧（ごみ・リサイクル）"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/recycle.html",
@@ -179,7 +1277,79 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3041,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機"
+        },
+        {
+          "level": 2,
+          "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は区では収集できません"
+        },
+        {
+          "level": 2,
+          "text": "買い替えをする場合"
+        },
+        {
+          "level": 2,
+          "text": "処分のみの場合"
+        },
+        {
+          "level": 2,
+          "text": "購入店が不明・近くにない場合"
+        },
+        {
+          "level": 3,
+          "text": "引取りを依頼するとき"
+        },
+        {
+          "level": 3,
+          "text": "自分で持ち込めるとき"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル料金と収集運搬料金"
+        },
+        {
+          "level": 3,
+          "text": "リサイクル料金"
+        },
+        {
+          "level": 3,
+          "text": "収集運搬料金"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの分け方と出し方"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
@@ -190,7 +1360,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3133,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）について：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ処理手数料のオンライン決済（キャッシュレス決済）について"
+        },
+        {
+          "level": 2,
+          "text": "利用開始日"
+        },
+        {
+          "level": 2,
+          "text": "利用可能な決済方法"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 2,
+          "text": "当日の出し方"
+        },
+        {
+          "level": 2,
+          "text": "受付変更・取消し申込み期間"
+        },
+        {
+          "level": 3,
+          "text": "期間内の変更・取消しについて"
+        },
+        {
+          "level": 3,
+          "text": "期間外の品目変更・取消しについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ一覧（ごみ・リサイクル）"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/index.html",
@@ -201,7 +1435,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1276,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "各種相談・サービス：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "各種相談・サービス"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/index.html",
@@ -212,7 +1470,33 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1456,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみの分け方と出し方：練馬区公式ホームページ",
+      "meta": {
+        "description": "これって何ごみ？品目別出し方一覧（ごみ分別辞典）、地域別収集曜日一覧、可燃・不燃・粗大ごみ、容器包装プラスチック、びん・缶・ペットボトル、古着・古布、古紙（新聞・雑誌・段ボールなど）等について、分別方法などをご案内するコンテンツです。"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみの分け方と出し方"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/pennorisaikuru.html",
@@ -223,7 +1507,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1540,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "使用済みプラスチック製ペンのリサイクル：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "使用済みプラスチック製ペンのリサイクル"
+        },
+        {
+          "level": 2,
+          "text": "回収対象"
+        },
+        {
+          "level": 3,
+          "text": "回収場所"
+        },
+        {
+          "level": 3,
+          "text": "回収ボックス"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの分け方と出し方"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/gominoyukue.html",
@@ -234,18 +1562,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1087,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/ichiran/index.html",
-      "link_text": "",
-      "hops": 1,
-      "score": 8,
-      "parent": "https://www.city.nerima.tokyo.jp/",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1432,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "練馬区ごみのゆくえ：練馬区公式ホームページ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "練馬区ごみのゆくえ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの分け方と出し方"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "このページを見ている人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "練馬区Nerima city office"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -254,160 +1603,206 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/ichiran/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/reuse.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/downloads.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/keijiban.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/recycle.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/pennorisaikuru.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/gominoyukue.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaigomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/ichiran.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/assen.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/kasidasi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/homonshushu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/recyclingcenter.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/aozorashukai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/recycle-market.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/daichi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/recycle/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

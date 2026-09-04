@@ -10,15 +10,278 @@
     "has_jsonld": true,
     "text_len": 5421,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 140
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T15:28:51+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html"
+  ],
   "online_clarity": "明記",
   "online_clarity_evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
   "online_clarity_pages": [
-    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html"
+    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+    "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "渋谷区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "電話でのみ確認可",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "電話でのみ確認可",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込方法（電話・LINE・インターネット）や収集手順は詳しく書かれているが、申込自体に必要な持ち物・書類の明示的な記載は本文になし。手数料の減額・免除対象者（生活保護受給者等）についても『粗大ごみ受付センターへお問い合わせください』とあるのみで、証明書等の具体的な持ち物は書かれていない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申込方法（電話・LINE・インターネット）や収集手順は詳しく書かれているが、申込自体に必要な持ち物・書類の明示的な記載は本文になし。手数料の減額・免除対象者（生活保護受給者等）についても『粗大ごみ受付センターへお問い合わせください』とあるのみで、証明書等の具体的な持ち物は書かれていない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "渋谷区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "電話だけでなくLINE・インターネットでも申込可能。さらにインターネットまたはLINE申込ならキャッシュレス決済も使え、オンラインで完結できる",
+        "evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 40,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "電話だけでなくLINE・インターネットでも申込可能。さらにインターネットまたはLINE申込ならキャッシュレス決済も使え、オンラインで完結できる",
+            "evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 40,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「申し込み方法」の見出し配下に電話・LINE・インターネットの3手段が並列で提示されており、インターネット申込にはキャッシュレス決済も紐づく旨が別セクションに明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「申し込み方法」の見出し配下に電話・LINE・インターネットの3手段が並列で提示されており、インターネット申込にはキャッシュレス決済も紐づく旨が別セクションに明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "渋谷区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申し込み方法（電話・LINE・インターネット）と受付時間（月～土 9時～17時）、収集までの手順は書かれているが、「申し込みは収集日の何日前までに」という期限そのものの記載は本文になかった。近い記述として『キャッシュレス決済ができるのは収集日の7日前まで』があるが、これは支払い方法の締切であって申込期限ではない。リンク一覧（品目手数料一覧・キャッシュレス決済ページ・各国語パンフレット・LINE/インターネット受付の外部予約システム）も確認したが、いずれも申込期限を明記していそうなページではなかった。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申し込み方法（電話・LINE・インターネット）と受付時間（月～土 9時～17時）、収集までの手順は書かれているが、「申し込みは収集日の何日前までに」という期限そのものの記載は本文になかった。近い記述として『キャッシュレス決済ができるのは収集日の7日前まで』があるが、これは支払い方法の締切であって申込期限ではない。リンク一覧（品目手数料一覧・キャッシュレス決済ページ・各国語パンフレット・LINE/インターネット受付の外部予約システム）も確認したが、いずれも申込期限を明記していそうなページではなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "渋谷区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "曖昧",
+        "failure_type": "fact_ambiguous",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html",
+            "https://files.city.shibuya.tokyo.jp/assets/12995aba8b194961be709ba879857f70/d8c9c9e1737f49c8b9d3c3629f671057/sibuyaku_Sodaitesuuryou202512.pdf"
+          ],
+          "page_notes": "本文には「手数料はご予約の際に、ご確認頂けます」とあるだけで、品目ごとの金額は「粗大ごみ品目手数料一覧」の別ページとPDFに委ねられている。有料粗大ごみ処理券がA券200円・B券300円という記載はあるが、これは券種であって品目ごとの手数料額そのものではない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "曖昧",
+            "failure_type": "fact_ambiguous",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手数料は品目ごとに400円〜3,200円の幅がある一覧表（あ行〜わ行、数百品目）で提示されており、申込全体に対する単一の手数料は存在しない。有料処理券はA券200円・B券300円の組み合わせで購入する仕組み。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html"
+      ],
+      "page_notes": "手数料は品目ごとに400円〜3,200円の幅がある一覧表（あ行〜わ行、数百品目）で提示されており、申込全体に対する単一の手数料は存在しない。有料処理券はA券200円・B券300円の組み合わせで購入する仕組み。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
@@ -26,32 +289,71 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "電話でのみ確認可",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "来庁不要。電話・LINE・インターネットの3方法から選択可能で、インターネット申込（外部サイトgovtech-express）で完結できる。",
+      "value": "電話だけでなくLINE・インターネットでも申込可能。さらにインターネットまたはLINE申込ならキャッシュレス決済も使え、オンラインで完結できる",
       "evidence": "次の3つのうち、いずれかの方法を選んでお申し込みください。電話 LINE インターネット",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 40,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
-      "found": true,
-      "value": "有料粗大ごみ処理券（コンビニ等で購入）にA券200円とB券300円があり、品目に応じて必要枚数を貼付する。品目ごとの具体的な手数料（必要枚数）は別紙PDF「粗大ごみ品目手数料一覧」に記載。",
-      "evidence": "有料粗大ごみ処理券 はA券200円とＢ券300円があります。",
-      "source": "html",
-      "failure_reason": null
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "曖昧",
+      "failure_type": "fact_ambiguous",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "申し込み方法・支払い方法は本文に明記されているが、品目ごとの具体的な手数料額はPDF頼みで、本文は「手数料はご予約の際に、ご確認頂けます」と案内するのみ。申込に必要な書類や申込期限についての記載はページ内に見当たらない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "申込方法（電話・LINE・インターネット）や収集手順は詳しく書かれているが、申込自体に必要な持ち物・書類の明示的な記載は本文になし。手数料の減額・免除対象者（生活保護受給者等）についても『粗大ごみ受付センターへお問い合わせください』とあるのみで、証明書等の具体的な持ち物は書かれていない。\n「申し込み方法」の見出し配下に電話・LINE・インターネットの3手段が並列で提示されており、インターネット申込にはキャッシュレス決済も紐づく旨が別セクションに明記されている。\n申し込み方法（電話・LINE・インターネット）と受付時間（月～土 9時～17時）、収集までの手順は書かれているが、「申し込みは収集日の何日前までに」という期限そのものの記載は本文になかった。近い記述として『キャッシュレス決済ができるのは収集日の7日前まで』があるが、これは支払い方法の締切であって申込期限ではない。リンク一覧（品目手数料一覧・キャッシュレス決済ページ・各国語パンフレット・LINE/インターネット受付の外部予約システム）も確認したが、いずれも申込期限を明記していそうなページではなかった。\n手数料は品目ごとに400円〜3,200円の幅がある一覧表（あ行〜わ行、数百品目）で提示されており、申込全体に対する単一の手数料は存在しない。有料処理券はA券200円・B券300円の組み合わせで購入する仕組み。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+      "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/sibuyaku_sodaitesuuryou.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 1,
+    "verified": 1,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 3
   }
 }

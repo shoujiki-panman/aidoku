@@ -1,0 +1,40 @@
+{
+  "municipality": "東京都",
+  "municipality_id": "tokyo-metro",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "top_url": "https://www.metro.tokyo.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
+  "candidates": [],
+  "fetch_log": [
+    {
+      "url": "https://www.metro.tokyo.lg.jp/",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    }
+  ]
+}

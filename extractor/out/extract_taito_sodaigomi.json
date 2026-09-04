@@ -10,48 +10,346 @@
     "has_jsonld": false,
     "text_len": 5079,
     "truncated": false,
-    "n_links": 39
+    "n_links": 40,
+    "table_chars": 2149
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T19:21:32+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
   "online_clarity_evidence": "電話またはインターネットで申し込んでください。収集日や処理料金（有料粗大ごみ処理券の種類・枚数）をご案内します。",
   "online_clarity_pages": [
     "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html"
   ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "台東区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "電話・インターネットでの通常申込自体には持ち物の指定はない（有料粗大ごみ処理券を購入し、収集日当日にごみへ貼付して出す）。ただし、生活家電ごみを自分で区の窓口へ持ち込む場合（該当者のみ）は、本人確認書類が必要。",
+        "evidence": "本人確認書類（運転免許証、個人番号カード（マイナンバーカード）、健康保険証 等）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 40,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "電話・インターネットでの通常申込自体には持ち物の指定はない（有料粗大ごみ処理券を購入し、収集日当日にごみへ貼付して出す）。ただし、生活家電ごみを自分で区の窓口へ持ち込む場合（該当者のみ）は、本人確認書類が必要。",
+            "evidence": "本人確認書類（運転免許証、個人番号カード（マイナンバーカード）、健康保険証 等）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 40,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "電話・インターネット申込の手順には持ち物の記載がなく、料金は「有料粗大ごみ処理券」を購入して貼付する方式。持ち物（本人確認書類）が明記されているのは、同一ページ内の「生活家電ごみ持込窓口」（該当者のみが使う自己搬入オプション）の項目のみだった。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "電話・インターネット申込の手順には持ち物の記載がなく、料金は「有料粗大ごみ処理券」を購入して貼付する方式。持ち物（本人確認書類）が明記されているのは、同一ページ内の「生活家電ごみ持込窓口」（該当者のみが使う自己搬入オプション）の項目のみだった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "台東区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "電話または区指定サイト（ecolife.e-tumo.jp）からインターネットで申込可能（24時間受付）。窓口のみではない",
+        "evidence": "電話またはインターネットで申し込んでください。収集日や処理料金（有料粗大ごみ処理券の種類・枚数）をご案内します。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 56,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "電話または区指定サイト（ecolife.e-tumo.jp）からインターネットで申込可能（24時間受付）。窓口のみではない",
+            "evidence": "電話またはインターネットで申し込んでください。収集日や処理料金（有料粗大ごみ処理券の種類・枚数）をご案内します。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 56,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込方法は本文中に「粗大ごみ受付センター」の電話番号と、インターネット申込のURL・24時間受付である旨が表形式でも明記されており、窓口のみではないことが本文だけで判定できた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申込方法は本文中に「粗大ごみ受付センター」の電話番号と、インターネット申込のURL・24時間受付である旨が表形式でも明記されており、窓口のみではないことが本文だけで判定できた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "台東区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込方法（電話・インターネット）や収集日当日の排出期限（朝8時まで）は明記されているが、「申込は収集日の何日前までに行うか」という起算点付きの申込期限そのものはページ内・リンク一覧のどこにも記載がない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申込方法（電話・インターネット）や収集日当日の排出期限（朝8時まで）は明記されているが、「申込は収集日の何日前までに行うか」という起算点付きの申込期限そのものはページ内・リンク一覧のどこにも記載がない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "台東区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "PDF内のみ",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        },
+        "failure_type": "not_retrieved"
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.files/20240703sodaihonnmokuitiran.pdf"
+          ],
+          "page_notes": "収集申込の手数料は品目ごとに異なり、本文には金額の明記がなく「粗大ごみ品目一覧（PDF）」を参照するよう案内されている。本文中に金額が出るのは持込（半額・200円）のケースのみで、収集申込の手数料そのものではない。"
+        },
+        {
+          "stage": "follow_fetch",
+          "llm_called": false,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "PDF内のみ",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            },
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [],
+          "attachment_urls": [
+            "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.files/20240703sodaihonnmokuitiran.pdf（日本語の地の文にならない（38215字取れたが仮名がほぼ無い。CIDフォントか、言語タグ等の非本文））"
+          ],
+          "page_notes": "添付を開いたが本文を取り出せなかった（理由はURLに併記）"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "添付を開いたが本文を取り出せなかった（理由はURLに併記）",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "記載なし"
+      "found": true,
+      "value": "電話・インターネットでの通常申込自体には持ち物の指定はない（有料粗大ごみ処理券を購入し、収集日当日にごみへ貼付して出す）。ただし、生活家電ごみを自分で区の窓口へ持ち込む場合（該当者のみ）は、本人確認書類が必要。",
+      "evidence": "本人確認書類（運転免許証、個人番号カード（マイナンバーカード）、健康保険証 等）",
+      "source": "html",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 40,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "粗大ごみ受付センターへ電話（03-6747-5111、月〜土曜8:00-19:00）またはインターネット（https://ecolife.e-tumo.jp/taitosodai-u/、24時間受付）で申込。オンラインで申込は完結するが、手数料分の有料粗大ごみ処理券は別途購入して現物に貼付する必要がある。",
+      "value": "電話または区指定サイト（ecolife.e-tumo.jp）からインターネットで申込可能（24時間受付）。窓口のみではない",
       "evidence": "電話またはインターネットで申し込んでください。収集日や処理料金（有料粗大ごみ処理券の種類・枚数）をご案内します。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 56,
+        "note": ""
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
-      "evidence": "※粗大ごみ手数料は次のファイルをご覧ください。 粗大ごみ品目一覧（PDF：1,357KB）",
+      "evidence": "",
       "source": null,
-      "failure_reason": "PDF内のみ"
+      "failure_reason": "PDF内のみ",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      },
+      "failure_type": "not_retrieved"
     }
   },
-  "page_notes": "収集申込（電話/インターネット）の手順と、別手続きである持込窓口（本人確認書類・持込手数料200円など）の情報が同一ページに混在しており、項目によってはどちらの手続きの説明か区別が必要。収集の手数料額は本文になく、PDFかチャットボット誘導のみ。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "電話・インターネット申込の手順には持ち物の記載がなく、料金は「有料粗大ごみ処理券」を購入して貼付する方式。持ち物（本人確認書類）が明記されているのは、同一ページ内の「生活家電ごみ持込窓口」（該当者のみが使う自己搬入オプション）の項目のみだった。\n申込方法は本文中に「粗大ごみ受付センター」の電話番号と、インターネット申込のURL・24時間受付である旨が表形式でも明記されており、窓口のみではないことが本文だけで判定できた。\n申込方法（電話・インターネット）や収集日当日の排出期限（朝8時まで）は明記されているが、「申込は収集日の何日前までに行うか」という起算点付きの申込期限そのものはページ内・リンク一覧のどこにも記載がない。\n添付を開いたが本文を取り出せなかった（理由はURLに併記）",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 2,
+    "verified": 2,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 2
   }
 }

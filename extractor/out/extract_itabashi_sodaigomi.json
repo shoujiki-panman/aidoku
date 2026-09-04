@@ -10,51 +10,380 @@
     "has_jsonld": false,
     "text_len": 5459,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:58:06+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
   "followed_urls": [
-    "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html"
+    "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/gomi/1044412/index.html",
+    "https://ecolife.e-tumo.jp/itabashi_sodai-u/",
+    "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
+    "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/001/868/sodai260401.pdf"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "以下のリンク先からインターネットで粗大ごみの収集・持ち込みの申し込みができますので、あらかじめ品物の大きさや材質などを確認のうえ、お申し込みください。",
   "online_clarity_pages": [
     "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
-    "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html"
+    "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/gomi/1044412/index.html",
+    "https://ecolife.e-tumo.jp/itabashi_sodai-u/",
+    "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
+    "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/001/868/sodai260401.pdf（pdf）"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "板橋区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "西台粗大ごみセンターへの「持ち込み」を利用する場合のみ、本人確認書類（マイナンバーカードや運転免許証など）が必要。電話・インターネットでの「収集」申込みには持ち物の記載なし。",
+        "evidence": "持ち込みの際に、マイナンバーカードや運転免許証などで本人確認をさせていただきます。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 41,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "西台粗大ごみセンターへの「持ち込み」を利用する場合のみ、本人確認書類（マイナンバーカードや運転免許証など）が必要。電話・インターネットでの「収集」申込みには持ち物の記載なし。",
+            "evidence": "持ち込みの際に、マイナンバーカードや運転免許証などで本人確認をさせていただきます。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 41,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込み自体（電話・インターネット）に必要書類の記載は無く、本人確認書類の要求は「持ち込み」利用者に限定した記述としてのみ登場する。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申込み自体（電話・インターネット）に必要書類の記載は無く、本人確認書類の要求は「持ち込み」利用者に限定した記述としてのみ登場する。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "板橋区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "電話（窓口）とインターネットの両方で申込可能。オンラインで24時間申込が完結できる（ただし処理手数料の減額・免除を受ける場合は電話申込のみ）",
+        "evidence": "【インターネット受付】https://ecolife.e-tumo.jp/itabashi_sodai-u/ 24 時間受付 注：システムメンテナンス時を除く",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 69,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "電話（窓口）とインターネットの両方で申込可能。オンラインで24時間申込が完結できる（ただし処理手数料の減額・免除を受ける場合は電話申込のみ）",
+            "evidence": "【インターネット受付】https://ecolife.e-tumo.jp/itabashi_sodai-u/ 24 時間受付 注：システムメンテナンス時を除く",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 69,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込手順が「粗大ごみ受付センターに申し込む（収集・持ち込みとも）」の1箇所にまとまっており、電話とインターネットの2つの申込先が並記されている。インターネット受付は24時間対応でオンライン完結可能だが、減免申請だけは電話限定と明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申込手順が「粗大ごみ受付センターに申し込む（収集・持ち込みとも）」の1箇所にまとまっており、電話とインターネットの2つの申込先が並記されている。インターネット受付は24時間対応でオンライン完結可能だが、減免申請だけは電話限定と明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "板橋区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/gomi/1044412/index.html",
+            "https://ecolife.e-tumo.jp/itabashi_sodai-u/"
+          ],
+          "page_notes": "本文には申し込み手順・受付時間・変更取消の期限（収集4日前/持込1日前の午後7時まで）は書かれているが、収集希望日から起算した「何日前までに申し込む必要があるか」という申込自体の期限は明記されていない。FAQページかインターネット受付システム側に記載がある可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文とインターネット受付サイト（ecolife.e-tumo.jp）のいずれにも、申込自体の期限（起算点つき）は明記されていない。書かれているのは『申込後の変更取消』の期限（収集は4日前19時まで、持込は1日前19時まで）のみで、これは新規申込の期限とは別の話。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/gomi/1044412/index.html",
+        "https://ecolife.e-tumo.jp/itabashi_sodai-u/"
+      ],
+      "page_notes": "本文とインターネット受付サイト（ecolife.e-tumo.jp）のいずれにも、申込自体の期限（起算点つき）は明記されていない。書かれているのは『申込後の変更取消』の期限（収集は4日前19時まで、持込は1日前19時まで）のみで、これは新規申込の期限とは別の話。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "板橋区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "品目ごとに手数料が設定されている（有料）。例：ふとん(収集)400円。西台粗大ごみセンターへの持込みは収集時の半額（100円未満切捨て）",
+        "evidence": "粗大ごみ処理手数料は、品目ごとに設定されています。区に収集を依頼する場合と西台粗大ごみセンターへご自身で持ち込む場合とで処理手数料が異なります。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 70,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
+            "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/001/868/sodai260401.pdf"
+          ],
+          "page_notes": "本文は手数料が品目ごとに異なることだけ述べ、具体額は「粗大ごみ処理手数料（料金）」ページ（1001869.html）と品目別PDFに委ねている。この1ページに一意の金額の記載はない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "品目ごとに手数料が設定されている（有料）。例：ふとん(収集)400円。西台粗大ごみセンターへの持込みは収集時の半額（100円未満切捨て）",
+            "evidence": "粗大ごみ処理手数料は、品目ごとに設定されています。区に収集を依頼する場合と西台粗大ごみセンターへご自身で持ち込む場合とで処理手数料が異なります。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 70,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手数料は品目ごとに個別設定されており、単一の金額ではなくPDF「粗大ごみ品目一覧」で品目別に確認する構成。1001869ページに料金体系（収集/持込み半額）と具体例が明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
+        "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/001/868/sodai260401.pdf"
+      ],
+      "page_notes": "手数料は品目ごとに個別設定されており、単一の金額ではなくPDF「粗大ごみ品目一覧」で品目別に確認する構成。1001869ページに料金体系（収集/持込み半額）と具体例が明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    }
   ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "記載なし"
+      "found": true,
+      "value": "西台粗大ごみセンターへの「持ち込み」を利用する場合のみ、本人確認書類（マイナンバーカードや運転免許証など）が必要。電話・インターネットでの「収集」申込みには持ち物の記載なし。",
+      "evidence": "持ち込みの際に、マイナンバーカードや運転免許証などで本人確認をさせていただきます。",
+      "source": "html",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 41,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "電話（粗大ごみ受付センター 03-6747-9353、午前8時〜午後7時、月〜土）またはインターネット（https://ecolife.e-tumo.jp/itabashi_sodai-u/ 、24時間受付）で申込み可能。ファクスでの申込みも可。ただし手数料の減額・免除を受ける場合はインターネット申込みでは減免にならず、電話申込みが必要。",
-      "evidence": "【電話受付】03-6747-9353 受付時間：午前8時から午後7時まで 月曜日から土曜日（祝日含む）【インターネット受付】https://ecolife.e-tumo.jp/itabashi_sodai-u/ 24 時間受付 注：システムメンテナンス時を除く",
+      "value": "電話（窓口）とインターネットの両方で申込可能。オンラインで24時間申込が完結できる（ただし処理手数料の減額・免除を受ける場合は電話申込のみ）",
+      "evidence": "【インターネット受付】https://ecolife.e-tumo.jp/itabashi_sodai-u/ 24 時間受付 注：システムメンテナンス時を除く",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 69,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": true,
-      "value": "品目ごとに手数料が異なり、一律の金額ではない（例：ふとん400円、扇風機400円、1人用ソファ900円）。西台粗大ごみセンターへの持ち込みの場合は収集時の半額（100円未満切捨て）。品目ごとの正確な金額は「板橋区粗大ごみ品目一覧」PDFまたはAIチャットボットで確認する必要がある。",
-      "evidence": "粗大ごみ処理手数料は、品目ごとに設定されています。／ふとん（収集時の手数料：400円）を1個持ち込む場合。400円×2分の1＝200円",
+      "value": "品目ごとに手数料が設定されている（有料）。例：ふとん(収集)400円。西台粗大ごみセンターへの持込みは収集時の半額（100円未満切捨て）",
+      "evidence": "粗大ごみ処理手数料は、品目ごとに設定されています。区に収集を依頼する場合と西台粗大ごみセンターへご自身で持ち込む場合とで処理手数料が異なります。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 70,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     }
   },
-  "page_notes": "本体ページには具体的な品目別料金が書かれておらず、金額の一覧はPDF「板橋区粗大ごみ品目一覧」またはAIチャットボットへの誘導のみ。リンク先の手数料ページ（1001869）にも一律の料金表はなく、持ち込み時の割引計算例として一部品目の金額が断片的に出てくるのみだった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "申込み自体（電話・インターネット）に必要書類の記載は無く、本人確認書類の要求は「持ち込み」利用者に限定した記述としてのみ登場する。\n申込手順が「粗大ごみ受付センターに申し込む（収集・持ち込みとも）」の1箇所にまとまっており、電話とインターネットの2つの申込先が並記されている。インターネット受付は24時間対応でオンライン完結可能だが、減免申請だけは電話限定と明記されている。\n本文とインターネット受付サイト（ecolife.e-tumo.jp）のいずれにも、申込自体の期限（起算点つき）は明記されていない。書かれているのは『申込後の変更取消』の期限（収集は4日前19時まで、持込は1日前19時まで）のみで、これは新規申込の期限とは別の話。\n手数料は品目ごとに個別設定されており、単一の金額ではなくPDF「粗大ごみ品目一覧」で品目別に確認する構成。1001869ページに料金体系（収集/持込み半額）と具体例が明記されていた。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
+      "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/gomi/1044412/index.html",
+      "https://ecolife.e-tumo.jp/itabashi_sodai-u/",
+      "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html",
+      "https://www.city.itabashi.tokyo.jp/_res/projects/default_project/_page_/001/001/868/sodai260401.pdf"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

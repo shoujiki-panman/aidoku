@@ -10,48 +10,395 @@
     "has_jsonld": false,
     "text_len": 2325,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:44:57+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+    "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+  ],
   "online_clarity": "記載なし",
   "online_clarity_evidence": "",
   "online_clarity_pages": [
-    "https://www.city.chuo.lg.jp/kurashi/gomi/index.html"
+    "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+    "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html",
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "中央区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページは「ごみ・リサイクル」の総合案内で、分別・拠点回収・資源回収・事業系ごみ等へのリンクはあるが、粗大ごみ収集の申込に関するページやリンクが本文・リンク一覧のどちらにも見当たらない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "このページは「ごみ・リサイクル」の総合案内で、分別・拠点回収・資源回収・事業系ごみ等へのリンクはあるが、粗大ごみ収集の申込に関するページやリンクが本文・リンク一覧のどちらにも見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "中央区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+            "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html"
+          ],
+          "page_notes": "このページは「ごみ・リサイクル」の総合トップで、分別・収集日・拠点回収など一般ごみの案内が中心。粗大ごみ収集の申込に直接言及するリンクは無く、「その他、ごみの出し方」または品目別五十音一覧（そ＝さ行）に案内がある可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページと配下のリンク（一覧表・その他の出し方）は日常ごみ・資源の分別が中心で、「粗大ごみ」という語も申込み方法（窓口／オンライン）への言及も一切見当たらない。粗大ごみ受付専用のページへの導線自体がこの一覧に無い。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+        "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html"
+      ],
+      "page_notes": "このページと配下のリンク（一覧表・その他の出し方）は日常ごみ・資源の分別が中心で、「粗大ごみ」という語も申込み方法（窓口／オンライン）への言及も一切見当たらない。粗大ごみ受付専用のページへの導線自体がこの一覧に無い。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "中央区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+          ],
+          "page_notes": "このページは「ごみ・リサイクル」の総合案内で、粗大ごみ収集の申込に関する期限の記載は本文になく、リンク一覧にも「粗大ごみ」を明示したリンクは無い。ただし「その他、ごみの出し方」や「よくある質問」が粗大ごみの申込方法を扱っている可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「その他、ごみの出し方」「ごみ出しで困ったら・よくある質問について」の2ページを開いたが、いずれも粗大ごみの申込手続き自体（収集日の何日前までに申し込むか等の期限）には触れておらず、粗大ごみは「申し込みが必要」とだけ記載され詳細は清掃事務所への問い合わせに誘導されている。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+      ],
+      "page_notes": "「その他、ごみの出し方」「ごみ出しで困ったら・よくある質問について」の2ページを開いたが、いずれも粗大ごみの申込手続き自体（収集日の何日前までに申し込むか等の期限）には触れておらず、粗大ごみは「申し込みが必要」とだけ記載され詳細は清掃事務所への問い合わせに誘導されている。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "中央区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html"
+          ],
+          "page_notes": "このページは「ごみ・リサイクル」の総合案内トップで、粗大ごみ収集の申込や手数料への直接の記載・専用リンクは無い。「その他、ごみの出し方」に粗大ごみの扱いが含まれている可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "起点ページ「ごみ・リサイクル」とそのリンク一覧には「粗大ごみ」という語自体が一度も現れず、案内済みのリンク先（その他、ごみの出し方）も有害物・消火器・二輪車・注射針の話のみで対象外だった。粗大ごみ収集申込は別系統のページ（このカテゴリ一覧には無い）に置かれている可能性が高い。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html"
+      ],
+      "page_notes": "起点ページ「ごみ・リサイクル」とそのリンク一覧には「粗大ごみ」という語自体が一度も現れず、案内済みのリンク先（その他、ごみの出し方）も有害物・消火器・二輪車・注射針の話のみで対象外だった。粗大ごみ収集申込は別系統のページ（このカテゴリ一覧には無い）に置かれている可能性が高い。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
       "found": false,
       "value": "",
       "evidence": "",
-      "source": "html",
-      "failure_reason": "記載なし"
+      "source": null,
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "窓口オンライン可否": {
       "found": false,
       "value": "",
       "evidence": "",
-      "source": "html",
-      "failure_reason": "記載なし"
+      "source": null,
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
-      "source": "html",
-      "failure_reason": "記載なし"
+      "source": null,
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
-      "source": "html",
-      "failure_reason": "記載なし"
+      "source": null,
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "このページは「ごみ・リサイクル」カテゴリのトップ（一覧）ページで、分別・出し方・拠点回収・資源回収などのリンク集にとどまり、「粗大ごみ」という語自体がリンク一覧中に一件も現れない。粗大ごみ収集の申込に関する専用ページはこのページからは特定できなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "このページは「ごみ・リサイクル」の総合案内で、分別・拠点回収・資源回収・事業系ごみ等へのリンクはあるが、粗大ごみ収集の申込に関するページやリンクが本文・リンク一覧のどちらにも見当たらない。\nこのページと配下のリンク（一覧表・その他の出し方）は日常ごみ・資源の分別が中心で、「粗大ごみ」という語も申込み方法（窓口／オンライン）への言及も一切見当たらない。粗大ごみ受付専用のページへの導線自体がこの一覧に無い。\n「その他、ごみの出し方」「ごみ出しで困ったら・よくある質問について」の2ページを開いたが、いずれも粗大ごみの申込手続き自体（収集日の何日前までに申し込むか等の期限）には触れておらず、粗大ごみは「申し込みが必要」とだけ記載され詳細は清掃事務所への問い合わせに誘導されている。\n起点ページ「ごみ・リサイクル」とそのリンク一覧には「粗大ごみ」という語自体が一度も現れず、案内済みのリンク先（その他、ごみの出し方）も有害物・消火器・二輪車・注射針の話のみで対象外だった。粗大ごみ収集申込は別系統のページ（このカテゴリ一覧には無い）に置かれている可能性が高い。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
+      "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+      "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html",
+      "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 0,
+    "verified": 0,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 4
   }
 }

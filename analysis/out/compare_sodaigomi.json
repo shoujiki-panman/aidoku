@@ -1,0 +1,752 @@
+{
+  "_about": "同じ手続きを2回測った結果の突き合わせ。判定は変えない。何が変わったかの記録。到達できなかった区は unreached として分けてある（same に混ぜない）。",
+  "version": "compare-runs-0.1",
+  "procedure": "sodaigomi",
+  "before_dir": "analysis/out/remeasure-sodaigomi",
+  "followed_urls": {
+    "before": 15,
+    "after": 42
+  },
+  "summary": {
+    "municipalities": 24,
+    "cells": 96,
+    "changed": 21,
+    "up": 18,
+    "down": 3,
+    "unreached_cells": 8,
+    "measured_cells": 88,
+    "changed_ratio": 0.219,
+    "changed_ratio_measured": 0.239,
+    "changed_names": [
+      "↑荒川区/必要書類",
+      "↑板橋区/必要書類",
+      "↑葛飾区/必要書類",
+      "↑葛飾区/手数料",
+      "↑北区/必要書類",
+      "↑北区/手数料",
+      "↑北区/窓口オンライン可否",
+      "↑江東区/必要書類",
+      "↑目黒区/必要書類",
+      "↑港区/必要書類",
+      "↓中野区/手数料",
+      "↑練馬区/必要書類",
+      "↑大田区/必要書類",
+      "↑世田谷区/必要書類",
+      "↑世田谷区/窓口オンライン可否",
+      "↓渋谷区/手数料",
+      "↑杉並区/必要書類",
+      "↑墨田区/必要書類",
+      "↑台東区/必要書類",
+      "↑豊島区/必要書類",
+      "↓豊島区/手数料"
+    ],
+    "unreached_municipalities": [
+      "江戸川区",
+      "八王子市"
+    ],
+    "by_field": {
+      "必要書類": 14,
+      "期限": 0,
+      "手数料": 5,
+      "窓口オンライン可否": 2
+    }
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": false,
+          "after": false
+        }
+      ]
+    },
+    {
+      "municipality": "荒川区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": true,
+          "after": true
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "文京区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": true,
+          "after": true
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "千代田区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": true,
+          "after": true
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "中央区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": false,
+          "after": false
+        }
+      ]
+    },
+    {
+      "municipality": "江戸川区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "unreached",
+          "before": null,
+          "after": null
+        },
+        {
+          "field": "期限",
+          "mark": "unreached",
+          "before": null,
+          "after": null
+        },
+        {
+          "field": "手数料",
+          "mark": "unreached",
+          "before": null,
+          "after": null
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "unreached",
+          "before": null,
+          "after": null
+        }
+      ]
+    },
+    {
+      "municipality": "八王子市",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "unreached",
+          "before": null,
+          "after": null
+        },
+        {
+          "field": "期限",
+          "mark": "unreached",
+          "before": null,
+          "after": null
+        },
+        {
+          "field": "手数料",
+          "mark": "unreached",
+          "before": null,
+          "after": null
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "unreached",
+          "before": null,
+          "after": null
+        }
+      ]
+    },
+    {
+      "municipality": "板橋区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": true,
+          "after": true
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "葛飾区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "北区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "up",
+          "before": false,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "江東区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": true,
+          "after": true
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "目黒区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "港区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": true,
+          "after": true
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "中野区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "down",
+          "before": true,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "練馬区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "大田区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "世田谷区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "up",
+          "before": false,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "渋谷区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "down",
+          "before": true,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "品川区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "same",
+          "before": true,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "新宿区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "杉並区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "墨田区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "台東区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    },
+    {
+      "municipality": "豊島区",
+      "cells": [
+        {
+          "field": "必要書類",
+          "mark": "up",
+          "before": false,
+          "after": true
+        },
+        {
+          "field": "期限",
+          "mark": "same",
+          "before": false,
+          "after": false
+        },
+        {
+          "field": "手数料",
+          "mark": "down",
+          "before": true,
+          "after": false
+        },
+        {
+          "field": "窓口オンライン可否",
+          "mark": "same",
+          "before": true,
+          "after": true
+        }
+      ]
+    }
+  ]
+}

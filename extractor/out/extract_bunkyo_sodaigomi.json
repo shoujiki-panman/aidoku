@@ -10,20 +10,337 @@
     "has_jsonld": false,
     "text_len": 2348,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:44:57+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
   "followed_urls": [
     "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
     "https://www.city.bunkyo.lg.jp/b039/p000933.html"
   ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "インターネットで申込む場合　粗大ごみ受付センター（外部リンク）　受付時間　24時間",
+  "online_clarity_evidence": "インターネットで申込む場合　粗大ごみ受付センター（外部リンク）　24時間　12月28日～1月4日",
   "online_clarity_pages": [
     "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
     "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
     "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "文京区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.bunkyo.lg.jp/b039/p000932/index.html"
+          ],
+          "page_notes": "このページは「ごみ・リサイクル」分野のトップ一覧ページで、各手続きの詳細（申込方法・持ち物等）は掲載せず、個別ページへのリンク集になっている。粗大ごみの申込手続きの詳細は「粗大ごみの出し方」ページに委譲されている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「粗大ごみの出し方」ページは申込み方法（電話・インターネット・チャットボット）、処理券の購入、出し方の注意事項を説明しているが、申込みに必要な持ち物・書類についての記載は見当たらない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.bunkyo.lg.jp/b039/p000932/index.html"
+      ],
+      "page_notes": "「粗大ごみの出し方」ページは申込み方法（電話・インターネット・チャットボット）、処理券の購入、出し方の注意事項を説明しているが、申込みに必要な持ち物・書類についての記載は見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "文京区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口(電話)だけでなくオンライン申込み可（インターネットで24時間受付、粗大ごみ受付センターのページで完結）",
+        "evidence": "・インターネットで申込む場合\n粗大ごみ受付センター（インターネット）\n申込先（下記をクリックしてください。）\n受付時間\n24時間",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 48,
+          "note": "連続48文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.bunkyo.lg.jp/b039/p000932/index.html"
+          ],
+          "page_notes": "このページは「ごみ・リサイクル」の分類トップで、粗大ごみの申込方法（窓口かオンライン完結か）についての記述はなく、「粗大ごみの出し方」の個別ページへ誘導する構成になっている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口(電話)だけでなくオンライン申込み可（インターネットで24時間受付、粗大ごみ受付センターのページで完結）",
+            "evidence": "・インターネットで申込む場合\n粗大ごみ受付センター（インターネット）\n申込先（下記をクリックしてください。）\n受付時間\n24時間",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 48,
+              "note": "連続48文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "一覧ページ(index.html)には申込方法の記載がなく、リンク先の「粗大ごみの出し方」ページに電話・インターネット・チャットボットの3つの申込手段が明記されていた。インターネット申込みは24時間受付でオンライン完結可。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.bunkyo.lg.jp/b039/p000932/index.html"
+      ],
+      "page_notes": "一覧ページ(index.html)には申込方法の記載がなく、リンク先の「粗大ごみの出し方」ページに電話・インターネット・チャットボットの3つの申込手段が明記されていた。インターネット申込みは24時間受付でオンライン完結可。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "文京区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "曖昧",
+        "failure_type": "fact_ambiguous",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+            "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+          ],
+          "page_notes": "このページはごみ・リサイクル全体の目次で、粗大ごみ個別の申込手順・期限は書かれていない。「粗大ごみの出し方」の個別ページに申込方法（収集日の何日前までに、等）が記載されている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "曖昧",
+            "failure_type": "fact_ambiguous",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「粗大ごみの出し方」ページに申込み手順は詳細にあるが、収集希望日の何日前までに申し込む必要があるかという具体的な期限（起算点つき）は明記されていない。「年末年始や引越しの多い季節は、申込みから収集日まで2、3週間以上かかる場合もあります」という所要期間の目安があるのみで、これは締切ではなく処理期間の案内。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+        "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+      ],
+      "page_notes": "「粗大ごみの出し方」ページに申込み手順は詳細にあるが、収集希望日の何日前までに申し込む必要があるかという具体的な期限（起算点つき）は明記されていない。「年末年始や引越しの多い季節は、申込みから収集日まで2、3週間以上かかる場合もあります」という所要期間の目安があるのみで、これは締切ではなく処理期間の案内。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "文京区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "有料（品目ごとに金額が異なる）。有料粗大ごみ処理券をA券（200円）・B券（300円）の組み合わせで購入して使用する仕組みで、具体的な金額は申込み時に案内される",
+        "evidence": "有料粗大ごみ処理券は、A券（200円）とB券（300円）の2種類で、粗大ごみの品目ごとに組み合わせて購入してください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 59,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+            "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+          ],
+          "page_notes": "このページは「ごみ・リサイクル」全体の目次で、粗大ごみの申込・手数料の具体的な記述はない。「粗大ごみの出し方」ページと「有料粗大ごみ処理券取扱所」ページへのリンクがあり、手数料（処理券の価格）はそちらに記載されている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "有料（品目ごとに金額が異なる）。有料粗大ごみ処理券をA券（200円）・B券（300円）の組み合わせで購入して使用する仕組みで、具体的な金額は申込み時に案内される",
+            "evidence": "有料粗大ごみ処理券は、A券（200円）とB券（300円）の2種類で、粗大ごみの品目ごとに組み合わせて購入してください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 59,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "トップページ本文には料金情報がなく、リンク先の「粗大ごみの出し方」ページに料金の仕組み（有料・処理券制・品目ごとに異なる）が書かれていた。ただし品目別の具体的な料金一覧自体は外部サイト（粗大ごみ受付センター）に委ねられている。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+        "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+      ],
+      "page_notes": "トップページ本文には料金情報がなく、リンク先の「粗大ごみの出し方」ページに料金の仕組み（有料・処理券制・品目ごとに異なる）が書かれていた。ただし品目別の具体的な料金一覧自体は外部サイト（粗大ごみ受付センター）に委ねられている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    }
   ],
   "items": {
     "必要書類": {
@@ -31,32 +348,72 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "電話・インターネット・チャットボットの3方法で「粗大ごみ受付センター」に申込む。インターネット申込みは24時間受付。出す場所は自宅前（集合住宅は1階出入口スペース等）。",
-      "evidence": "・インターネットで申込む場合 粗大ごみ受付センター（インターネット） 申込先（下記をクリックしてください。） 受付時間24時間 お休み12月28日～1月4日",
+      "value": "窓口(電話)だけでなくオンライン申込み可（インターネットで24時間受付、粗大ごみ受付センターのページで完結）",
+      "evidence": "・インターネットで申込む場合\n粗大ごみ受付センター（インターネット）\n申込先（下記をクリックしてください。）\n受付時間\n24時間",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 48,
+        "note": "連続48文字だけ一致。引用全体は確認できない"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "曖昧",
+      "failure_type": "fact_ambiguous",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": true,
-      "value": "有料。有料粗大ごみ処理券（A券200円・B券300円）を品目ごとに組み合わせて購入。例：両袖机3,200円（A券1枚・B券10枚）。品目別の具体的な料金は粗大ごみ受付センターで案内される。",
-      "evidence": "有料粗大ごみ処理券は、A券（200円）とB券（300円）の2種類で、粗大ごみの品目ごとに組み合わせて購入してください。例：両袖机（3,200円）A券1枚、B券10枚",
+      "value": "有料（品目ごとに金額が異なる）。有料粗大ごみ処理券をA券（200円）・B券（300円）の組み合わせで購入して使用する仕組みで、具体的な金額は申込み時に案内される",
+      "evidence": "有料粗大ごみ処理券は、A券（200円）とB券（300円）の2種類で、粗大ごみの品目ごとに組み合わせて購入してください。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 59,
+        "note": ""
+      }
     }
   },
-  "page_notes": "トップの「ごみ・リサイクル」ページ自体には申込手続きの詳細が無く、リンク先の「粗大ごみの出し方」ページに申込方法・料金がまとまっている。必要書類と申込期限（何日前までに申込むか等）はどちらのページにも記載が見当たらなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「粗大ごみの出し方」ページは申込み方法（電話・インターネット・チャットボット）、処理券の購入、出し方の注意事項を説明しているが、申込みに必要な持ち物・書類についての記載は見当たらない。\n一覧ページ(index.html)には申込方法の記載がなく、リンク先の「粗大ごみの出し方」ページに電話・インターネット・チャットボットの3つの申込手段が明記されていた。インターネット申込みは24時間受付でオンライン完結可。\n「粗大ごみの出し方」ページに申込み手順は詳細にあるが、収集希望日の何日前までに申し込む必要があるかという具体的な期限（起算点つき）は明記されていない。「年末年始や引越しの多い季節は、申込みから収集日まで2、3週間以上かかる場合もあります」という所要期間の目安があるのみで、これは締切ではなく処理期間の案内。\nトップページ本文には料金情報がなく、リンク先の「粗大ごみの出し方」ページに料金の仕組み（有料・処理券制・品目ごとに異なる）が書かれていた。ただし品目別の具体的な料金一覧自体は外部サイト（粗大ごみ受付センター）に委ねられている。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
+      "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+      "https://www.city.bunkyo.lg.jp/b039/p000933.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 2,
+    "verified": 1,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 2
   }
 }

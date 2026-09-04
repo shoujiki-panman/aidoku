@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.ota.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaigomi_fax.pdf",
@@ -14,7 +35,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
@@ -25,7 +53,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
@@ -36,7 +71,198 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 6343,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：粗大ごみ",
+      "meta": {
+        "og:title": "粗大ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみに出す前にリユース（再利用）をご検討ください。"
+        },
+        {
+          "level": 3,
+          "text": "価格を比較したい方はおいくら、地元で譲りたい方はジモティー"
+        },
+        {
+          "level": 2,
+          "text": "「おいくら」は複数のリサイクルショップに一度の依頼だけで一括査定でき、買取価格を比較して手間なく売却できるサービスです。"
+        },
+        {
+          "level": 2,
+          "text": "「ジモティー」は家具、家電などを地域内で譲り合いできる掲示板サイトです。"
+        },
+        {
+          "level": 3,
+          "text": "ジモティーの特徴"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとは"
+        },
+        {
+          "level": 2,
+          "text": "申し込む前に"
+        },
+        {
+          "level": 2,
+          "text": "申し込み方法"
+        },
+        {
+          "level": 3,
+          "text": "電話 （受付時間：午前8時～午後7時）"
+        },
+        {
+          "level": 3,
+          "text": "インターネット （24時間受付）"
+        },
+        {
+          "level": 3,
+          "text": "お電話でお申し込みされる場合の注意事項"
+        },
+        {
+          "level": 3,
+          "text": "インターネットでお申し込みされる場合の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "出し方"
+        },
+        {
+          "level": 3,
+          "text": "区の収集を希望する場合（2週間以上先の日程での受付となる場合があります）"
+        },
+        {
+          "level": 3,
+          "text": "自分で持ち込みをする場合"
+        },
+        {
+          "level": 4,
+          "text": "持ち込みにあたっての注意点"
+        },
+        {
+          "level": 2,
+          "text": "申し込み内容の確認や変更"
+        },
+        {
+          "level": 2,
+          "text": "手数料の免除"
+        },
+        {
+          "level": 2,
+          "text": "運び出し収集"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+      "link_text": "粗大ごみの品目・手数料確認はこちら",
+      "hops": 2,
+      "score": 25,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1436,
+      "has_jsonld": false,
+      "title": "大田区ホームページ：粗大ごみ品目一覧",
+      "meta": {
+        "og:title": "粗大ごみ品目一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ品目一覧"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ品目・手数料一覧（手数料は区収集時のもの）"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102301.xls",
+      "link_text": "粗大ごみ品目・手数料一覧（令和5年10月1日から）（エクセル：102KB）",
+      "hops": 3,
+      "score": 25,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 23 Oct 2025 01:05:00 GMT",
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf",
@@ -47,18 +273,32 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
-      "link_text": "有料粗大ごみ処理券取り扱い店舗一覧",
-      "hops": 2,
-      "score": 21,
-      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102302.pdf",
+      "link_text": "粗大ごみ品目・手数料一覧（令和5年10月1日から）（PDF：361KB）",
+      "hops": 3,
+      "score": 23,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
       "status": 200,
-      "is_pdf": false,
-      "text_len": 5192,
-      "has_jsonld": false
+      "is_pdf": true,
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Thu, 23 Oct 2025 01:10:00 GMT",
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
@@ -69,7 +309,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1788,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：消火器のリサイクル",
+      "meta": {
+        "og:title": "消火器のリサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "消火器のリサイクル"
+        },
+        {
+          "level": 2,
+          "text": "窓口の探し方、選び方"
+        },
+        {
+          "level": 3,
+          "text": "引き取りを依頼する場合"
+        },
+        {
+          "level": 3,
+          "text": "直接持込む場合 「特定窓口」または、「指定引取場所」（日本消火器工業会が設営した窓口）へご相談ください。"
+        },
+        {
+          "level": 3,
+          "text": "郵送での回収を希望する場合"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
@@ -80,7 +373,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4046,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：資源とごみの収集日",
+      "meta": {
+        "og:title": "資源とごみの収集日",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの収集日"
+        },
+        {
+          "level": 2,
+          "text": "町丁目別 資源・ごみ収集曜日、清掃事務所管轄地区一覧"
+        },
+        {
+          "level": 2,
+          "text": "不燃ごみの収集日"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
@@ -91,7 +433,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 625,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：ごみ・リサイクル",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "トピックス"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "広告"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
@@ -102,7 +477,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1627,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：ごみの戸別訪問収集",
+      "meta": {
+        "og:title": "ごみの戸別訪問収集",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの戸別訪問収集"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/oshirase/mokutekibetsu/gomi/index.html",
@@ -113,18 +533,28 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 272,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
-      "link_text": "",
-      "hops": 2,
-      "score": 12,
-      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 1436,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：ごみ･リサイクル",
+      "meta": {
+        "og:title": "ごみ･リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/oshirase/mokutekibetsu/gomi/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ･リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/kyougikai.html",
@@ -135,7 +565,14 @@
       "status": 404,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/index.html",
@@ -146,7 +583,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1178,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：家庭から出る資源とごみ",
+      "meta": {
+        "og:title": "家庭から出る資源とごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/gomi/index.html",
@@ -157,7 +623,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 611,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：事業系のごみ・資源",
+      "meta": {
+        "og:title": "事業系のごみ・資源",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/gomi/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業系のごみ・資源"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/hokanbasyo/index.html",
@@ -168,7 +663,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 547,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：大規模建築物のごみと資源の保管場所（建築計画をたてるとき）",
+      "meta": {
+        "og:title": "大規模建築物のごみと資源の保管場所（建築計画をたてるとき）",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/hokanbasyo/index.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "大規模建築物のごみと資源の保管場所（建築計画をたてるとき）"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomisaku.html",
@@ -179,106 +703,684 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1000,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：ごみ分別辞典Webサイト",
+      "meta": {
+        "og:title": "ごみ分別辞典Webサイト",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomisaku.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ分別辞典Webサイト"
+        },
+        {
+          "level": 2,
+          "text": "大田区ごみ分別辞典Webサイト"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "トピックス"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/manners.html",
-      "link_text": "資源とごみの集積所について",
-      "hops": 3,
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomi-bunbetsu-apli.html",
+      "link_text": "大田区ごみ分別アプリ",
+      "hops": 2,
       "score": 11,
-      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 1910,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html",
-      "link_text": "風水害が発生した際の資源・ごみの出し方について",
-      "hops": 3,
-      "score": 11,
-      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 2506,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html",
-      "link_text": "令和7年9月11日大田区豪雨により発生したごみの取扱いについて",
-      "hops": 3,
-      "score": 11,
-      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 2027,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.html",
-      "link_text": "パンフレット「令和8年度版 資源とごみの分け方・出し方」",
-      "hops": 3,
-      "score": 11,
-      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 2029,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html",
-      "link_text": "可燃ごみ",
-      "hops": 3,
-      "score": 11,
-      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 2494,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html",
-      "link_text": "不燃ごみ",
-      "hops": 3,
-      "score": 11,
-      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 2456,
-      "has_jsonld": false
+      "text_len": 1994,
+      "has_jsonld": false,
+      "title": "大田区ホームページ：大田区ごみ分別アプリ～資源とごみの分け方・出し方～のご案内",
+      "meta": {
+        "og:title": "大田区ごみ分別アプリ～資源とごみの分け方・出し方～のご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomi-bunbetsu-apli.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "大田区ごみ分別アプリ～資源とごみの分け方・出し方～のご案内"
+        },
+        {
+          "level": 2,
+          "text": "主な機能"
+        },
+        {
+          "level": 3,
+          "text": "・カレンダー機能"
+        },
+        {
+          "level": 3,
+          "text": "・アラート機能"
+        },
+        {
+          "level": 3,
+          "text": "・ごみ分別辞典"
+        },
+        {
+          "level": 3,
+          "text": "・よくある質問"
+        },
+        {
+          "level": 3,
+          "text": "・関連業者"
+        },
+        {
+          "level": 3,
+          "text": "・お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "ダウンロードの方法"
+        },
+        {
+          "level": 3,
+          "text": "【日本語版】"
+        },
+        {
+          "level": 3,
+          "text": "ios端末の方はこちら（ios5.1.1以降に対応）"
+        },
+        {
+          "level": 3,
+          "text": "Android端末の方はこちら（Android2.3以降に対応）"
+        },
+        {
+          "level": 3,
+          "text": "【外国語版】（英語・中国語・ハングル・タガログ語・ネパール語・ベトナム語）"
+        },
+        {
+          "level": 3,
+          "text": "【Foreign language version】(・English・Chinese・Hangul・Tagalog・Nepal・Vietnam)"
+        },
+        {
+          "level": 3,
+          "text": "ios端末の方はこちら（ios5.1.1以降に対応）"
+        },
+        {
+          "level": 3,
+          "text": "Android端末の方はこちら（Android2.3以降に対応）"
+        },
+        {
+          "level": 2,
+          "text": "アプリイメージ画像"
+        },
+        {
+          "level": 2,
+          "text": "プライバシーポリシー"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "トピックス"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 21 Aug 2026 00:35:00 GMT",
+      "etag": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html",
       "link_text": "家電（エアコン、テレビ、洗濯機・衣類乾燥機、冷蔵・冷凍庫）のリサイクル",
       "hops": 3,
       "score": 11,
-      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 3508,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "大田区ホームページ：家電（エアコン、テレビ、洗濯機・衣類乾燥機、冷蔵・冷凍庫）のリサイクル",
+      "meta": {
+        "og:title": "家電（エアコン、テレビ、洗濯機・衣類乾燥機、冷蔵・冷凍庫）のリサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家電（エアコン、テレビ、洗濯機・衣類乾燥機、冷蔵・冷凍庫）のリサイクル"
+        },
+        {
+          "level": 2,
+          "text": "ごみとして捨てずに売却してリユース（再利用）につなげれば、処分費用や搬出の手間を無くすことも可能です。"
+        },
+        {
+          "level": 3,
+          "text": "「おいくら」は複数のリサイクルショップに一度の依頼だけで一括査定でき、買取価格を比較して手間なく売却できるサービスです。"
+        },
+        {
+          "level": 2,
+          "text": "家電（エアコン、テレビ、洗濯機・衣類乾燥機、冷蔵・冷凍庫）のリサイクルについて"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル料金の目安"
+        },
+        {
+          "level": 2,
+          "text": "処分方法"
+        },
+        {
+          "level": 3,
+          "text": "1 家電販売店に引き取りを依頼する"
+        },
+        {
+          "level": 3,
+          "text": "2 家電リサイクル受付センターに申し込む"
+        },
+        {
+          "level": 3,
+          "text": "3 自分で指定引取場所に持ち込む"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kogatakadenn.html",
-      "link_text": "小型家電（携帯電話、デジカメ等）リサイクル事業について",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/manners.html",
+      "link_text": "資源とごみの集積所について",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1910,
+      "has_jsonld": false,
+      "title": "大田区ホームページ：資源とごみの集積所について",
+      "meta": {
+        "og:title": "資源とごみの集積所について",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/manners.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの集積所について"
+        },
+        {
+          "level": 2,
+          "text": "集積所の利用について"
+        },
+        {
+          "level": 3,
+          "text": "集積所の新設・廃止・移動"
+        },
+        {
+          "level": 2,
+          "text": "ふれあい指導について(集積所における排出指導)"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html",
+      "link_text": "風水害が発生した際の資源・ごみの出し方について",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2506,
+      "has_jsonld": false,
+      "title": "大田区ホームページ：風水害が発生した際の資源・ごみの出し方について",
+      "meta": {
+        "og:title": "風水害が発生した際の資源・ごみの出し方について",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "風水害が発生した際の資源・ごみの出し方について"
+        },
+        {
+          "level": 2,
+          "text": "風水害が発生した際の資源・ごみの出し方について"
+        },
+        {
+          "level": 3,
+          "text": "正しい排出が災害からの復旧・復興への近道となります"
+        },
+        {
+          "level": 2,
+          "text": "浸水など、家屋が被災した場合"
+        },
+        {
+          "level": 3,
+          "text": "家庭から出る「可燃ごみ」「不燃ごみ」「プラスチック」「資源」"
+        },
+        {
+          "level": 3,
+          "text": "家庭から出る「粗大ごみ」"
+        },
+        {
+          "level": 3,
+          "text": "事業を営む方が出すごみ 【事業系ごみ】"
+        },
+        {
+          "level": 2,
+          "text": "台風の接近が予想される場合"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html",
+      "link_text": "令和7年9月11日大田区豪雨により発生したごみの取扱いについて",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2027,
+      "has_jsonld": false,
+      "title": "大田区ホームページ：令和7年9月11日大田区豪雨により発生したごみの取扱いについて",
+      "meta": {
+        "og:title": "令和7年9月11日大田区豪雨により発生したごみの取扱いについて",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和7年9月11日大田区豪雨により発生したごみの取扱いについて"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 3,
+          "text": "令和7年9月11日豪雨による粗大ごみ減免の申請は、令和8年3月10日までとなります。"
+        },
+        {
+          "level": 2,
+          "text": "可燃ごみ、不燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "事業を営む方が出すごみ （事業系ごみ)"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.html",
+      "link_text": "パンフレット「令和8年度版 資源とごみの分け方・出し方」",
       "hops": 3,
       "score": 11,
       "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 2458,
-      "has_jsonld": false
+      "text_len": 2029,
+      "has_jsonld": false,
+      "title": "大田区ホームページ：パンフレット「令和8年度版 資源とごみの分け方・出し方」",
+      "meta": {
+        "og:title": "パンフレット「令和8年度版　資源とごみの分け方・出し方」",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "パンフレット「令和8年度版 資源とごみの分け方・出し方」"
+        },
+        {
+          "level": 2,
+          "text": "パンフレット「令和8年度版 資源とごみの分け方・出し方」"
+        },
+        {
+          "level": 2,
+          "text": "How to dispose and separate your waste and recyclable waste"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei.html",
-      "link_text": "家庭用パーソナルコンピューターのリサイクル",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html",
+      "link_text": "可燃ごみ",
       "hops": 3,
       "score": 11,
       "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 2358,
-      "has_jsonld": false
+      "text_len": 2494,
+      "has_jsonld": false,
+      "title": "大田区ホームページ：可燃ごみ",
+      "meta": {
+        "og:title": "可燃ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html",
+        "og:image": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.images/08kanenn.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "可燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "可燃ごみの分け方"
+        },
+        {
+          "level": 3,
+          "text": "汚れているプラスチック"
+        },
+        {
+          "level": 3,
+          "text": "皮革、ゴム製品、衣類"
+        },
+        {
+          "level": 3,
+          "text": "生ごみ、貝がら"
+        },
+        {
+          "level": 3,
+          "text": "少量の枝葉など"
+        },
+        {
+          "level": 3,
+          "text": "再生できない紙類、紙おむつ"
+        },
+        {
+          "level": 3,
+          "text": "廃食用油"
+        },
+        {
+          "level": 2,
+          "text": "可燃ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html",
+      "link_text": "不燃ごみ",
+      "hops": 3,
+      "score": 11,
+      "parent": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 2456,
+      "has_jsonld": false,
+      "title": "大田区ホームページ：不燃ごみ",
+      "meta": {
+        "og:title": "不燃ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html",
+        "og:image": "/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "不燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "不燃ごみの収集日について"
+        },
+        {
+          "level": 2,
+          "text": "不燃ごみの分け方"
+        },
+        {
+          "level": 3,
+          "text": "油などで汚れた缶、化粧品のびん、ガラス製品や陶磁器"
+        },
+        {
+          "level": 3,
+          "text": "小型の家電、電気コード、金属類、傘、フライパンなど"
+        },
+        {
+          "level": 3,
+          "text": "電球、蛍光灯"
+        },
+        {
+          "level": 3,
+          "text": "電池"
+        },
+        {
+          "level": 2,
+          "text": "不燃ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "ガスライターは使い切って、他の不燃ごみとは別の袋に入れて出してください。"
+        },
+        {
+          "level": 3,
+          "text": "スプレー缶やカセットボンベは使い切って、他の資源とは別の袋に入れて「資源」の回収日（週1回）に出してください。"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "このページについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源とごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "大田区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1389,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomishigen.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/kyougikai.html",
       "status": 404,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": "HTTP 404"
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaigomi_fax.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gomi-syori-ken_shop-list.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/oshirase/mokutekibetsu/gomi/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/shoukaki_recycle.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/houmonshushu.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/oshirase/mokutekibetsu/gomi/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/index.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/hokanbasyo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomisaku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/manners.html",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/gomi-bunbetsu-apli.html",
       "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Fri, 21 Aug 2026 00:35:00 GMT",
+      "etag": null,
       "error": null
     },
     {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102301.xls",
       "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Thu, 23 Oct 2025 01:05:00 GMT",
+      "etag": null,
       "error": null
     },
     {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102302.pdf",
       "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": "Thu, 23 Oct 2025 01:10:00 GMT",
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kaden.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kogatakadenn.html",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/manners.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
-      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei.html",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouuhasseijinogomisyuusyuunitsui.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/gouusaigaijinotaiou.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/katei-shigen-gomi_pamphlet.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/kanen.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/funen.html",
+      "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

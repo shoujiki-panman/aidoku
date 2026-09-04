@@ -1,0 +1,57 @@
+{
+  "municipality": "中央区",
+  "municipality_id": "chuo",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
+    "hops": 1,
+    "link_text": "ごみ・リサイクル",
+    "has_jsonld": false,
+    "text_len": 2325,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.chuo.lg.jp/kurashi/gomi/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": "html",
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": "html",
+      "failure_reason": "記載なし"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": "html",
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": "html",
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "このページは「ごみ・リサイクル」カテゴリのトップ（一覧）ページで、分別・出し方・拠点回収・資源回収などのリンク集にとどまり、「粗大ごみ」という語自体がリンク一覧中に一件も現れない。粗大ごみ収集の申込に関する専用ページはこのページからは特定できなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

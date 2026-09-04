@@ -10,53 +10,406 @@
     "has_jsonld": false,
     "text_len": 921,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T19:21:32+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
   "followed_urls": [
     "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
     "https://www.city.toshima.lg.jp/151/2012181541.html"
   ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "インターネットでの申し込み（24時間受付） インターネット受付：https://ecolife.e-tumo.jp/toshima-sodai-u/",
+  "online_clarity_evidence": "インターネットでの申し込み（24時間受付）インターネット受付：https://ecolife.e-tumo.jp/toshima-sodai-u/",
   "online_clarity_pages": [
     "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
     "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
     "https://www.city.toshima.lg.jp/151/2012181541.html"
   ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "豊島区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "通常の申込みでは持ち物の指定は記載なし。ただし手数料の減免を受ける対象者がオンラインで減免申請する場合は、受給者証等の画像データのアップロードが必要",
+        "evidence": "申請情報の入力および受給者証等の画像データのアップロードが必要になります。承認後、豊島清掃事務所から郵送で「粗大ごみ処理券」を送付します。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 69,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html"
+          ],
+          "page_notes": "このページは粗大ごみの案内トップで、本文は分類名のみ。申込手順や持ち物の記載は「粗大ごみの出し方」ページに委ねられている構成。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "通常の申込みでは持ち物の指定は記載なし。ただし手数料の減免を受ける対象者がオンラインで減免申請する場合は、受給者証等の画像データのアップロードが必要",
+            "evidence": "申請情報の入力および受給者証等の画像データのアップロードが必要になります。承認後、豊島清掃事務所から郵送で「粗大ごみ処理券」を送付します。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 69,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「粗大ごみの出し方」ページに手順・手数料・減免まで一通り書かれているが、通常申込みに必要な持ち物（本人確認書類等）の明記はなく、減免対象者向けにのみ「受給者証等の画像データ」の提出が求められている。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html"
+      ],
+      "page_notes": "「粗大ごみの出し方」ページに手順・手数料・減免まで一通り書かれているが、通常申込みに必要な持ち物（本人確認書類等）の明記はなく、減免対象者向けにのみ「受給者証等の画像データ」の提出が求められている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "豊島区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "オンラインで申込完結可（窓口対応はなく、粗大ごみ受付センターへインターネットまたは電話で申込。ただし手数料の減額・免除を受ける場合はインターネット不可で電話のみ）",
+        "evidence": "粗大ごみとして出すときの手順1.粗大ごみ受付センターへインターネットか電話で申し込む",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 40,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html"
+          ],
+          "page_notes": "このページは粗大ごみの分類トップで、申込方法（窓口かオンラインか）の記述はなく、詳細は「粗大ごみの出し方」ページへのリンクに委ねられている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "オンラインで申込完結可（窓口対応はなく、粗大ごみ受付センターへインターネットまたは電話で申込。ただし手数料の減額・免除を受ける場合はインターネット不可で電話のみ）",
+            "evidence": "粗大ごみとして出すときの手順1.粗大ごみ受付センターへインターネットか電話で申し込む",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 40,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "起点ページ（index.html）には申込方法の記載がなく、リンク先「粗大ごみの出し方」ページに手順・インターネット受付URL・電話番号がまとまっていた。窓口（対面）申込の記載はなく、インターネットか電話の二択。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html"
+      ],
+      "page_notes": "起点ページ（index.html）には申込方法の記載がなく、リンク先「粗大ごみの出し方」ページに手順・インターネット受付URL・電話番号がまとまっていた。窓口（対面）申込の記載はなく、インターネットか電話の二択。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "豊島区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html"
+          ],
+          "page_notes": "このページは粗大ごみの分類トップで、申込手順や期限は「粗大ごみの出し方」への案内リンクのみで、本文中に期限の記載はない。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申込手順や受付時間・収集曜日は詳しく書かれているが、「収集日の何日前までに申し込む」といった申込自体の期限（起算点つき）の記載はない。「収集予定日の1週間前まで」という期限は減免のオンライン申請専用のもので、通常の申込期限ではない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html"
+      ],
+      "page_notes": "申込手順や受付時間・収集曜日は詳しく書かれているが、「収集日の何日前までに申し込む」といった申込自体の期限（起算点つき）の記載はない。「収集予定日の1週間前まで」という期限は減免のオンライン申請専用のもので、通常の申込期限ではない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "豊島区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.toshima.lg.jp/151/2012181541.html"
+          ],
+          "page_notes": "本文には手数料の金額は書かれておらず、「粗大ごみ処理手数料（料金）」という別ページへのリンクに委ねられている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "手数料ページ本文には「品目ごとに設定されています」とあるのみで、具体的な金額は「粗大ごみ品目一覧表（PDF）」に委ねられており、本文中に数値の記載はない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.toshima.lg.jp/151/2012181541.html"
+      ],
+      "page_notes": "手数料ページ本文には「品目ごとに設定されています」とあるのみで、具体的な金額は「粗大ごみ品目一覧表（PDF）」に委ねられており、本文中に数値の記載はない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "記載なし"
+      "found": true,
+      "value": "通常の申込みでは持ち物の指定は記載なし。ただし手数料の減免を受ける対象者がオンラインで減免申請する場合は、受給者証等の画像データのアップロードが必要",
+      "evidence": "申請情報の入力および受給者証等の画像データのアップロードが必要になります。承認後、豊島清掃事務所から郵送で「粗大ごみ処理券」を送付します。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 69,
+        "note": ""
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "粗大ごみ受付センターへインターネット(24時間受付・https://ecolife.e-tumo.jp/toshima-sodai-u/)または電話(03-6633-2211、月〜土 午前8時〜午後7時)で申込み。ただし手数料の減額・免除を受ける場合はインターネット申込不可で、電話申込のみ。",
-      "evidence": "1.粗大ごみ受付センターへインターネットか電話で申し込む",
+      "value": "オンラインで申込完結可（窓口対応はなく、粗大ごみ受付センターへインターネットまたは電話で申込。ただし手数料の減額・免除を受ける場合はインターネット不可で電話のみ）",
+      "evidence": "粗大ごみとして出すときの手順1.粗大ごみ受付センターへインターネットか電話で申し込む",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 40,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
-      "found": true,
-      "value": "品目ごとに設定されており、有料粗大ごみ処理券（A券200円・B券300円）を金額に応じて組み合わせて購入・貼付する。品目別の具体的な金額は別リンクの品目別手数料一覧（PDF）に記載。",
-      "evidence": "シールは、A券(200円）とB券(300円）の2種類があります。金額に合わせて、シールを組み合わせて貼ってください。",
-      "source": "linked_page",
-      "failure_reason": null
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "起点のindex.htmlは分類リンクのみで内容がなく、実際の申込方法・手数料は「粗大ごみの出し方」「粗大ごみ処理手数料（料金）」という下位2階層のページに分散している。品目別の正確な手数料はさらにPDF（品目別手数料一覧）を開かないと分からない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「粗大ごみの出し方」ページに手順・手数料・減免まで一通り書かれているが、通常申込みに必要な持ち物（本人確認書類等）の明記はなく、減免対象者向けにのみ「受給者証等の画像データ」の提出が求められている。\n起点ページ（index.html）には申込方法の記載がなく、リンク先「粗大ごみの出し方」ページに手順・インターネット受付URL・電話番号がまとまっていた。窓口（対面）申込の記載はなく、インターネットか電話の二択。\n申込手順や受付時間・収集曜日は詳しく書かれているが、「収集日の何日前までに申し込む」といった申込自体の期限（起算点つき）の記載はない。「収集予定日の1週間前まで」という期限は減免のオンライン申請専用のもので、通常の申込期限ではない。\n手数料ページ本文には「品目ごとに設定されています」とあるのみで、具体的な金額は「粗大ごみ品目一覧表（PDF）」に委ねられており、本文中に数値の記載はない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.toshima.lg.jp/kurashi/gomi/katei/sodaigomi/index.html",
+      "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
+      "https://www.city.toshima.lg.jp/151/2012181541.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 2,
+    "verified": 2,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 2
   }
 }

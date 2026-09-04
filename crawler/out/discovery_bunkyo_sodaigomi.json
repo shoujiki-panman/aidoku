@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.bunkyo.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/959/sodaigomiitiran0806.pdf",
@@ -14,7 +35,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
@@ -25,7 +53,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2348,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル | 文京区",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/genryo/index.html",
@@ -36,7 +95,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1047,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ減量・リサイクルに向けた取組 | 文京区",
+      "meta": {
+        "og:title": "ごみ減量・リサイクルに向けた取組",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/genryo/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ減量・リサイクルに向けた取組"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/chuui/index.html",
@@ -47,7 +129,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1199,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ収集に関する注意事項 | 文京区",
+      "meta": {
+        "og:title": "ごみ収集に関する注意事項",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/chuui/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ収集に関する注意事項"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
@@ -58,7 +163,90 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3127,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方(概ね一辺30cm以上ある大型ごみ） | 文京区",
+      "meta": {
+        "og:title": "粗大ごみの出し方(概ね一辺30cm以上ある大型ごみ）",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方(概ね一辺30cm以上ある大型ごみ）"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして出す前にリユースを検討しませんか？"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみになるもの"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして収集できないもの"
+        },
+        {
+          "level": 3,
+          "text": "家電4品目"
+        },
+        {
+          "level": 4,
+          "text": "パソコン"
+        },
+        {
+          "level": 4,
+          "text": "バッテリー・金庫・オートバイ・自動車等"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "1.申込む"
+        },
+        {
+          "level": 3,
+          "text": "2.有料粗大ごみ処理券を購入する"
+        },
+        {
+          "level": 4,
+          "text": "令和3年10月1日から有料粗大ごみ処理券のデザインを一部変更しました。"
+        },
+        {
+          "level": 3,
+          "text": "3.粗大ごみを出す"
+        },
+        {
+          "level": 2,
+          "text": "宅配便による家庭用電気製品の回収"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています。"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b039/p000933.html",
@@ -69,7 +257,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2026,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料粗大ごみ処理券取扱所 | 文京区",
+      "meta": {
+        "og:title": "有料粗大ごみ処理券取扱所",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/b039/p000933.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料粗大ごみ処理券取扱所"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券取扱所一覧"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストア"
+        },
+        {
+          "level": 4,
+          "text": "取扱店"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストア以外の取扱所"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています。"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/index.html",
@@ -80,7 +319,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1211,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭から出るごみと資源 | 文京区",
+      "meta": {
+        "og:title": "家庭から出るごみと資源",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭から出るごみと資源"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/keikaku/index.html",
@@ -91,7 +357,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1223,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・資源に関する計画・資料 | 文京区",
+      "meta": {
+        "og:title": "ごみ・資源に関する計画・資料",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/keikaku/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・資源に関する計画・資料"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/tenpo/index.html",
@@ -102,7 +395,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1117,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの減量に取り組む店舗 | 文京区",
+      "meta": {
+        "og:title": "ごみの減量に取り組む店舗",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/tenpo/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの減量に取り組む店舗"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/namagomi/index.html",
@@ -113,7 +433,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1069,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "生ごみの減量 | 文京区",
+      "meta": {
+        "og:title": "生ごみの減量",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/namagomi/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "生ごみの減量"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/keikaku/seisoushingikai/index.html",
@@ -124,7 +471,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1310,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "文京区リサイクル清掃審議会 | 文京区",
+      "meta": {
+        "og:title": "文京区リサイクル清掃審議会",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/keikaku/seisoushingikai/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "文京区リサイクル清掃審議会"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/957/gominabitirasiura.pdf",
@@ -135,7 +509,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/genryo/index.html",
@@ -146,7 +527,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/2r/index.html",
@@ -157,7 +545,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1145,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "2R（リデュース・リユース）の推進 | 文京区",
+      "meta": {
+        "og:title": "2R（リデュース・リユース）の推進",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/2r/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "2R（リデュース・リユース）の推進"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/shokuhinrosu/index.html",
@@ -168,7 +583,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1125,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "食品ロスの削減 | 文京区",
+      "meta": {
+        "og:title": "食品ロスの削減",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/shokuhinrosu/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "食品ロスの削減"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/index.html",
@@ -179,7 +621,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/kaishuu/index.html",
@@ -190,7 +639,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1112,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お店で実施している資源回収 | 文京区",
+      "meta": {
+        "og:title": "お店で実施している資源回収",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/kaishuu/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お店で実施している資源回収"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/oshirase/index.html",
@@ -201,7 +681,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1057,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お知らせ | 文京区",
+      "meta": {
+        "og:title": "お知らせ",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/oshirase/index.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b038/p000930.html",
@@ -212,7 +719,114 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3289,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ分別支援サービス「文京ごみナビ」運用開始！ | 文京区",
+      "meta": {
+        "og:title": "ごみ分別支援サービス「文京ごみナビ」運用開始！",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/b038/p000930.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ分別支援サービス「文京ごみナビ」運用開始！"
+        },
+        {
+          "level": 2,
+          "text": "便利な機能"
+        },
+        {
+          "level": 3,
+          "text": "LINE版文京ごみナビの主な機能"
+        },
+        {
+          "level": 4,
+          "text": "15言語による案内"
+        },
+        {
+          "level": 4,
+          "text": "品名入力や画像送信で分別案内を表示"
+        },
+        {
+          "level": 4,
+          "text": "各種サービスへアクセス可能"
+        },
+        {
+          "level": 4,
+          "text": "プッシュ通知による情報配信"
+        },
+        {
+          "level": 4,
+          "text": "LINE版文京ごみナビ操作ガイド"
+        },
+        {
+          "level": 3,
+          "text": "ブラウザ版文京ごみナビの主な機能"
+        },
+        {
+          "level": 2,
+          "text": "アクセス方法"
+        },
+        {
+          "level": 3,
+          "text": "LINEアプリからアクセス"
+        },
+        {
+          "level": 4,
+          "text": "その1 友だち追加ボタンからの登録"
+        },
+        {
+          "level": 4,
+          "text": "その2 二次元コードからの登録"
+        },
+        {
+          "level": 4,
+          "text": "その3 アカウント名を検索して登録"
+        },
+        {
+          "level": 3,
+          "text": "区ホームぺージからアクセス"
+        },
+        {
+          "level": 4,
+          "text": "その1 下記ボタンをクリック"
+        },
+        {
+          "level": 4,
+          "text": "その2 画面右下の「文京区リサイクルシンボルマーク」をクリック"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています。"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b039/p000987.html",
@@ -223,7 +837,118 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1809,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ収集作業のアシスタント職員（夏季）募集 | 文京区",
+      "meta": {
+        "og:title": "ごみ収集作業のアシスタント職員（夏季）募集",
+        "og:type": "article",
+        "og:url": "https://www.city.bunkyo.lg.jp/b039/p000987.html",
+        "og:image": "https://www.city.bunkyo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "文京区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ収集作業のアシスタント職員（夏季）募集"
+        },
+        {
+          "level": 2,
+          "text": "勤務条件"
+        },
+        {
+          "level": 3,
+          "text": "雇用期間"
+        },
+        {
+          "level": 3,
+          "text": "就業場所"
+        },
+        {
+          "level": 3,
+          "text": "応募対象"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "勤務形態"
+        },
+        {
+          "level": 3,
+          "text": "勤務日数"
+        },
+        {
+          "level": 3,
+          "text": "勤務時間"
+        },
+        {
+          "level": 3,
+          "text": "休日"
+        },
+        {
+          "level": 2,
+          "text": "賃金等"
+        },
+        {
+          "level": 3,
+          "text": "日額"
+        },
+        {
+          "level": 3,
+          "text": "交通費"
+        },
+        {
+          "level": 2,
+          "text": "応募手続"
+        },
+        {
+          "level": 3,
+          "text": "応募方法"
+        },
+        {
+          "level": 4,
+          "text": "受付時間"
+        },
+        {
+          "level": 4,
+          "text": "郵送による場合"
+        },
+        {
+          "level": 3,
+          "text": "応募締切"
+        },
+        {
+          "level": 3,
+          "text": "申込先"
+        },
+        {
+          "level": 3,
+          "text": "任用申込書"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています。"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/9434/ninnyoumousikomisho.doc",
@@ -233,8 +958,15 @@
       "parent": "https://www.city.bunkyo.lg.jp/b039/p000987.html",
       "status": 200,
       "is_pdf": false,
-      "text_len": 69177,
-      "has_jsonld": false
+      "text_len": 0,
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/9434/ninnyoumousikomisho.pdf",
@@ -245,7 +977,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -254,160 +993,206 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b039/p000932/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b038/p000930.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b039/p000987.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/959/sodaigomiitiran0806.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/genryo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/b039/p000933.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/keikaku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/tenpo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/957/gominabitirasiura.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/9434/ninnyoumousikomisho.doc",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/documents/9434/ninnyoumousikomisho.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/chuui/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/namagomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/keikaku/seisoushingikai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/genryo/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/2r/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/shokuhinrosu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/kaishuu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/oshirase/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

@@ -1,0 +1,57 @@
+{
+  "municipality": "北区",
+  "municipality_id": "kita",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
+    "hops": 2,
+    "link_text": "粗大ごみ",
+    "has_jsonld": true,
+    "text_len": 3198,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "粗大ごみについて",
+      "source": "html",
+      "failure_reason": "リンク先にあり"
+    },
+    "窓口オンライン可否": {
+      "found": false,
+      "value": "",
+      "evidence": "粗大ごみについて",
+      "source": "html",
+      "failure_reason": "リンク先にあり"
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "粗大ごみについて",
+      "source": "html",
+      "failure_reason": "リンク先にあり"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "粗大ごみ料金改定（令和5年10月1日以降）",
+      "source": "html",
+      "failure_reason": "リンク先にあり"
+    }
+  },
+  "page_notes": "このページは「粗大ごみの出し方」という見出し1つと、「粗大ごみについて」「有料ごみ処理券の販売店一覧」「有料粗大ごみ処理券の還付手続き」「粗大ごみ料金改定」という4件のリンク見出しのみで構成された索引ページで、申込方法・必要書類・期限・料金の具体的な記述は本文中に一切ない。これらのリンク先URLはページ内リンク一覧（言語切替リンクが大半を占め上限40件を占有）に含まれておらず、follow_urls に確認済みのURLとして挙げられなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

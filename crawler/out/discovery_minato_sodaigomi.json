@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.minato.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
@@ -14,7 +35,79 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3019,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／粗大ごみの出し方",
+      "meta": {
+        "og:title": "粗大ごみの出し方",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "悪質な業者にご注意ください"
+        },
+        {
+          "level": 2,
+          "text": "有料ごみ処理券・料金"
+        },
+        {
+          "level": 3,
+          "text": "有料ごみ処理券"
+        },
+        {
+          "level": 3,
+          "text": "料金"
+        },
+        {
+          "level": 4,
+          "text": "主な品目"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの減免申請"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源・ごみ"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/sodaigomi.html",
@@ -25,7 +118,87 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3841,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／粗大ごみの収集",
+      "meta": {
+        "og:title": "粗大ごみの収集",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/sodaigomi.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの収集"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの申し込みから出し方（お申し込みの流れ）"
+        },
+        {
+          "level": 3,
+          "text": "1.みなと粗大ごみ受付センターへ申し込み"
+        },
+        {
+          "level": 3,
+          "text": "2.港区有料粗大ごみ処理券を購入"
+        },
+        {
+          "level": 4,
+          "text": "有料ごみ処理券が購入できる所"
+        },
+        {
+          "level": 4,
+          "text": "粗大ごみ処理手数料の減免や免除"
+        },
+        {
+          "level": 3,
+          "text": "3.申し込み時に指定された収集日当日の午前8時までに、粗大ごみを指定の場所へ出す"
+        },
+        {
+          "level": 4,
+          "text": "収集日が日曜日の方へ"
+        },
+        {
+          "level": 1,
+          "text": "粗大ごみとして収集できないもの"
+        },
+        {
+          "level": 1,
+          "text": "悪質な業者にご注意ください"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html",
@@ -36,7 +209,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2445,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／粗大ごみの減免申請",
+      "meta": {
+        "og:title": "粗大ごみの減免申請",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの減免申請"
+        },
+        {
+          "level": 2,
+          "text": "対象となる方"
+        },
+        {
+          "level": 2,
+          "text": "手続き"
+        },
+        {
+          "level": 3,
+          "text": "1.みなとリサイクル清掃事務所または各地区総合支所区民課へ持参する場合"
+        },
+        {
+          "level": 3,
+          "text": "2.郵送する場合"
+        },
+        {
+          "level": 2,
+          "text": "注意点"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryoushigenka/funengomi.html",
@@ -47,7 +284,95 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2157,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／不燃ごみ・粗大ごみのリサイクルの取り組み",
+      "meta": {
+        "og:title": "不燃ごみ・粗大ごみのリサイクルの取り組み",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/gomigenryoushigenka/funengomi.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "不燃ごみ・粗大ごみのリサイクルの取り組み"
+        },
+        {
+          "level": 2,
+          "text": "不燃ごみの資源化"
+        },
+        {
+          "level": 3,
+          "text": "（1）金属製品等"
+        },
+        {
+          "level": 3,
+          "text": "（2）コード類"
+        },
+        {
+          "level": 3,
+          "text": "（3）使用済み蛍光灯"
+        },
+        {
+          "level": 3,
+          "text": "（4）使用済み小型家電製品"
+        },
+        {
+          "level": 3,
+          "text": "（5）陶磁器・ガラス類"
+        },
+        {
+          "level": 3,
+          "text": "（6）おもちゃ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの資源化"
+        },
+        {
+          "level": 3,
+          "text": "（1）金属製品等"
+        },
+        {
+          "level": 3,
+          "text": "（2）羽毛ふとん"
+        },
+        {
+          "level": 3,
+          "text": "（3）廃木材"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "区が取り組むエコ・3R（リデュース・リユース・リサイクル）活動"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/documents/67227/r6sodairyoukin.pdf",
@@ -58,7 +383,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/jigyoukeikaku/kurashi/gomi/kate/index.html",
@@ -69,7 +401,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1993,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／家庭から出る資源・ごみ",
+      "meta": {
+        "og:title": "家庭から出る資源・ごみ",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/jigyoukeikaku/kurashi/gomi/kate/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭から出る資源・ごみ"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみ収集日検索"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの分別検索"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの品目名を五十音別で検索"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの出し方に関するお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "区が取り組むエコ・3R（リデュース・リユース・リサイクル）活動"
+        },
+        {
+          "level": 2,
+          "text": "その他の資源とごみ情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kurashi/gomi/index.html",
@@ -80,7 +460,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2992,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／ごみ・リサイクル",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kurashi/gomi/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "暮らし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kurashi/gomi/seso/toke/index.html",
@@ -91,7 +503,103 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4549,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／統計（ごみ収集量・資源回収量・月別清掃データ【速報値】）",
+      "meta": {
+        "og:title": "統計（ごみ収集量・資源回収量・月別清掃データ【速報値】）",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/kurashi/gomi/seso/toke/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "統計（ごみ収集量・資源回収量・月別清掃データ【速報値】）"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集量"
+        },
+        {
+          "level": 3,
+          "text": "港区のごみ収集量"
+        },
+        {
+          "level": 4,
+          "text": "令和２年度~令和６年度"
+        },
+        {
+          "level": 4,
+          "text": "平成16年度～平成30年度"
+        },
+        {
+          "level": 3,
+          "text": "東京23区のごみ収集量"
+        },
+        {
+          "level": 2,
+          "text": "資源回収量"
+        },
+        {
+          "level": 3,
+          "text": "港区の資源回収量"
+        },
+        {
+          "level": 5,
+          "text": "令和2年度~令和6年度"
+        },
+        {
+          "level": 4,
+          "text": "平成16年度～平成30年度"
+        },
+        {
+          "level": 3,
+          "text": "東京23区の資源回収量"
+        },
+        {
+          "level": 2,
+          "text": "月別ごみ収集量、資源回収量【速報値】"
+        },
+        {
+          "level": 2,
+          "text": "現在のごみ量【速報値】"
+        },
+        {
+          "level": 3,
+          "text": "ごみ削減に向けて一人ひとりが行動しましょう！"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "清掃事業情報館"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/jigyosho/shushu/index.html",
@@ -102,7 +610,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1859,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／事業者から出るごみ・資源は、廃棄物収集運搬業者に収集・処理を依頼してください！",
+      "meta": {
+        "og:title": "事業者から出るごみ・資源は、廃棄物収集運搬業者に収集・処理を依頼してください！",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/jigyosho/shushu/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業者から出るごみ・資源は、廃棄物収集運搬業者に収集・処理を依頼してください！"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "事業者から出る資源・ごみ"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryoushigenka/petrecycle01.html",
@@ -113,7 +665,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2700,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／ペットボトルに危険な異物を混ぜないでください",
+      "meta": {
+        "og:title": "ペットボトルに危険な異物を混ぜないでください",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/gomigenryoushigenka/petrecycle01.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源プラスチックやペットボトルに危険な異物（注射針や包丁等）を混入しないでください"
+        },
+        {
+          "level": 2,
+          "text": "危険な異物の例"
+        },
+        {
+          "level": 2,
+          "text": "処理の仕方"
+        },
+        {
+          "level": 3,
+          "text": "注射針"
+        },
+        {
+          "level": 3,
+          "text": "包丁"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源・ごみ"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.city.minato.tokyo.jp/gomigenryoushigenka/petrecycle01.html&src=sdkpreparse",
@@ -124,7 +732,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/konnabai/rinji.html",
@@ -135,7 +750,95 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3622,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／家庭から臨時に多量のごみが出るとき",
+      "meta": {
+        "og:title": "家庭から臨時に多量のごみが出るとき",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/konnabai/rinji.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭から臨時に多量のごみが出るとき"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみについて"
+        },
+        {
+          "level": 2,
+          "text": "会社から出るごみ（事業系ごみ）について"
+        },
+        {
+          "level": 2,
+          "text": "処理手数料について"
+        },
+        {
+          "level": 2,
+          "text": "臨時ごみの申し込みから出し方について"
+        },
+        {
+          "level": 4,
+          "text": "1 申し込み"
+        },
+        {
+          "level": 4,
+          "text": "2 港区の有料粗大ごみ処理券Bを購入"
+        },
+        {
+          "level": 4,
+          "text": "3 収集日に臨時ごみを指定された場所へ"
+        },
+        {
+          "level": 2,
+          "text": "注意点"
+        },
+        {
+          "level": 4,
+          "text": "余裕をもって早めにお申し込みください！"
+        },
+        {
+          "level": 4,
+          "text": "通常のごみと同じ分別をしてください。"
+        },
+        {
+          "level": 2,
+          "text": "地域のお祭りなどの無償奉仕活動やボランティア活動によって発生したごみ"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源・ごみ"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/dekinai/index.html",
@@ -146,7 +849,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2241,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／区で収集できないもの",
+      "meta": {
+        "og:title": "区で収集できないもの",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/dekinai/index.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区で収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭から出る資源・ごみ"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/funen.html",
@@ -157,7 +904,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2309,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／不燃ごみの出し方",
+      "meta": {
+        "og:title": "不燃ごみの出し方",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/funen.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "不燃ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "不燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "出すときのお願い"
+        },
+        {
+          "level": 2,
+          "text": "スプレー缶・カセットボンベ・ライターは、ほかの不燃ごみとは別の袋でお出しください！"
+        },
+        {
+          "level": 2,
+          "text": "電池（乾電池、ボタン電池、充電式電池等）の処理方法"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "不燃ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/guidebook.html",
@@ -168,7 +975,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2139,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／資源とごみの分別ガイドブック・ごみ保管場所掲示用ポスター等",
+      "meta": {
+        "og:title": "資源とごみの分別ガイドブック・ごみ保管場所掲示用ポスター等",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/guidebook.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの分別ガイドブック・ごみ保管場所掲示用ポスター等"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの分別ガイドブック"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの分け方・出し方（家庭版）ポスター"
+        },
+        {
+          "level": 2,
+          "text": "その他再生可能紙の出し方チラシ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ保管場所掲示用ポスター"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "分別ガイドブック・各種カレンダー・チラシ・リーフレット等"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/jigyosho/shushu/gyosha.html",
@@ -179,7 +1042,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1543,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／港区の許可を受けている事業系一般廃棄物処理業者",
+      "meta": {
+        "og:title": "港区の許可を受けている事業系一般廃棄物処理業者",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/jigyosho/shushu/gyosha.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "港区の許可を受けている事業系一般廃棄物処理業者"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "事業者から出るごみ・資源は、廃棄物収集運搬業者に収集・処理を依頼してください！"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/yuryo/tenpu.html",
@@ -190,7 +1097,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2088,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "港区ホームページ／有料ごみ処理券",
+      "meta": {
+        "og:title": "有料ごみ処理券",
+        "og:type": "article",
+        "og:description": "東京都港区ホームページです。",
+        "og:url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/yuryo/tenpu.html",
+        "og:image": "https://www.city.minato.tokyo.jp/shared/images/sns/summary_large_image.png",
+        "og:site_name": "港区",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料ごみ処理券"
+        },
+        {
+          "level": 2,
+          "text": "有料ごみ処理券の種類"
+        },
+        {
+          "level": 3,
+          "text": "有料粗大ごみ処理券"
+        },
+        {
+          "level": 3,
+          "text": "事業系有料ごみ処理券"
+        },
+        {
+          "level": 2,
+          "text": "有料ごみ処理券取扱所"
+        },
+        {
+          "level": 2,
+          "text": "有料ごみ処理券の還付手続き"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "このページを見た人はこんなページも見ています"
+        },
+        {
+          "level": 2,
+          "text": "最近チェックしたページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "Pick up"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -199,6 +1170,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -206,13 +1179,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/sodai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -220,13 +1197,17 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryoushigenka/petrecycle01.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -234,90 +1215,116 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/sodaigomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/sagyou/sodaigomigenmensinsei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/documents/67227/r6sodairyoukin.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryoushigenka/funengomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/kurashi/gomi/seso/toke/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/dekinai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.city.minato.tokyo.jp/gomigenryoushigenka/petrecycle01.html&src=sdkpreparse",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/funen.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/guidebook.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/jigyosho/shushu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/jigyosho/shushu/gyosha.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/yuryo/tenpu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

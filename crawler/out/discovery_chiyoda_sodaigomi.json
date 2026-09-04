@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.chiyoda.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html",
@@ -14,7 +35,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3298,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 粗大ごみの出し方と料金（区民が日常生活で使用したもの）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方と料金（区民が日常生活で使用したもの）"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとは"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ受付センター"
+        },
+        {
+          "level": 4,
+          "text": "インターネットでの申し込み"
+        },
+        {
+          "level": 4,
+          "text": "チャットボットでの申し込み"
+        },
+        {
+          "level": 4,
+          "text": "電話での申し込み"
+        },
+        {
+          "level": 2,
+          "text": "千代田区有料粗大ごみ処理券について"
+        },
+        {
+          "level": 3,
+          "text": "有料粗大ごみ処理券の種類"
+        },
+        {
+          "level": 4,
+          "text": "有料粗大ごみ処理券 A券"
+        },
+        {
+          "level": 4,
+          "text": "有料粗大ごみ処理券 B券"
+        },
+        {
+          "level": 4,
+          "text": "主な品目例"
+        },
+        {
+          "level": 2,
+          "text": "注意"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/menjo.html",
@@ -25,7 +106,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1256,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 粗大ごみ等廃棄物処理手数料が免除される場合",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ等廃棄物処理手数料が免除される場合"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "実施（受付）場所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/yuryo/ichiran.html",
@@ -36,7 +137,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2965,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 有料ごみ処理券取扱所一覧（令和7年12月現在）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料ごみ処理券取扱所一覧（令和7年12月現在）"
+        },
+        {
+          "level": 2,
+          "text": "千代田区内の有料ごみ処理券取扱所"
+        },
+        {
+          "level": 3,
+          "text": "千代田区内のコンビニエンスストア"
+        },
+        {
+          "level": 3,
+          "text": "千代田区外の有料ごみ処理券取扱所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/index.html",
@@ -47,7 +172,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1466,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - ごみ・リサイクル",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/gasbombe.html",
@@ -58,7 +195,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2015,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - カセットボンベ・スプレー缶の出し方（月2回・「蛍光管等の日」にごみ集積所で収集）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "カセットボンベ・スプレー缶の出し方（月2回・「蛍光管等の日」にごみ集積所で収集）"
+        },
+        {
+          "level": 2,
+          "text": "ごみが原因による清掃車の火災は、ほぼ毎年発生しています"
+        },
+        {
+          "level": 2,
+          "text": "注意"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/index.html",
@@ -69,7 +226,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5858,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 資源とごみの分け方・出し方",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの回収・収集曜日と時間"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの分け方・出し方パンフレット（日本語版のみです）"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの分け方・出し方ポスター"
+        },
+        {
+          "level": 2,
+          "text": "回収・収集日の「住所別早見表」"
+        },
+        {
+          "level": 2,
+          "text": "資源とごみの収集カレンダー"
+        },
+        {
+          "level": 3,
+          "text": "令和8年（2026年）4月～令和9年（2027年）3月用"
+        },
+        {
+          "level": 3,
+          "text": "資源とごみの収集カレンダー令和8年（2026年）4月～令和9年（2027年）3月"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/jigyokei-sagakukokan.html",
@@ -80,7 +281,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1841,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 事業系有料ごみ処理券（差額交換は3月29日まで）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業系有料ごみ処理券（差額交換は3月29日まで）"
+        },
+        {
+          "level": 2,
+          "text": "差額交換"
+        },
+        {
+          "level": 2,
+          "text": "受付期間"
+        },
+        {
+          "level": 2,
+          "text": "受付場所"
+        },
+        {
+          "level": 2,
+          "text": "必要な物"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/jigyokeigomi-shori-tesuryo.html",
@@ -91,7 +320,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3397,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 令和5年10月から事業系ごみの処理手数料を改定します",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和5年10月から事業系ごみの処理手数料を改定します"
+        },
+        {
+          "level": 2,
+          "text": "改定の概要"
+        },
+        {
+          "level": 3,
+          "text": "改定時期"
+        },
+        {
+          "level": 3,
+          "text": "改定理由"
+        },
+        {
+          "level": 3,
+          "text": "改定額"
+        },
+        {
+          "level": 2,
+          "text": "事業系一般廃棄物の処理を許可業者に委託する事業者の方へ"
+        },
+        {
+          "level": 2,
+          "text": "区の収集を利用する事業者の方へ"
+        },
+        {
+          "level": 3,
+          "text": "臨時窓口の開設日時"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/saigaiji-dashikata.html",
@@ -102,7 +371,23 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1758,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 災害時のごみの出し方",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "災害時のごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "参考"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/jigyosho/index.html",
@@ -113,7 +398,79 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4906,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 事業者が出すごみ",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業者が出すごみ"
+        },
+        {
+          "level": 2,
+          "text": "事業系ごみの適正処理"
+        },
+        {
+          "level": 2,
+          "text": "事業者自ら処理施設に持ち込む"
+        },
+        {
+          "level": 3,
+          "text": "事業系一般廃棄物を持ち込む場合（臨時持込）"
+        },
+        {
+          "level": 3,
+          "text": "産業廃棄物を持ち込む場合"
+        },
+        {
+          "level": 2,
+          "text": "許可業者に収集を委託する場合"
+        },
+        {
+          "level": 3,
+          "text": "産業廃棄物"
+        },
+        {
+          "level": 4,
+          "text": "東京都知事の許可を受けた産業廃棄物処理業者"
+        },
+        {
+          "level": 3,
+          "text": "新型コロナウイルス感染防止用アクリル板の取り扱いについて"
+        },
+        {
+          "level": 4,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 3,
+          "text": "事業系一般廃棄物"
+        },
+        {
+          "level": 3,
+          "text": "事業系粗大ごみ"
+        },
+        {
+          "level": 3,
+          "text": "マニフェスト（一般廃棄物管理票）"
+        },
+        {
+          "level": 4,
+          "text": "マニフェスト対象事業者とは"
+        },
+        {
+          "level": 2,
+          "text": "区の収集に出す場合"
+        },
+        {
+          "level": 3,
+          "text": "ちよだエコ・オフィス町内会（古紙の回収）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kanen.html",
@@ -124,7 +481,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2212,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 燃やすごみ・燃やさないごみの出し方",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "燃やすごみ・燃やさないごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "燃やすごみ"
+        },
+        {
+          "level": 3,
+          "text": "燃やすごみの種類例"
+        },
+        {
+          "level": 2,
+          "text": "燃やさないごみ"
+        },
+        {
+          "level": 3,
+          "text": "燃やさないごみの種類例"
+        },
+        {
+          "level": 2,
+          "text": "出し方"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kaden.html",
@@ -135,7 +524,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2007,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 家電リサイクル法対象品目",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "家電リサイクル法対象品目"
+        },
+        {
+          "level": 2,
+          "text": "家電リサイクル法（特定家庭用機器再商品化法）とは"
+        },
+        {
+          "level": 2,
+          "text": "家電リサイクルの申込方法"
+        },
+        {
+          "level": 3,
+          "text": "購入（買い替え）をする販売店に、引き取りを依頼する場合"
+        },
+        {
+          "level": 3,
+          "text": "販売店が閉店、近くにないなど販売店に依頼できない場合"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/jigyoyonamagomi-josei.html",
@@ -146,7 +563,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2397,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 事業用生ごみ処理機購入費助成制度",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業用生ごみ処理機購入費助成制度"
+        },
+        {
+          "level": 2,
+          "text": "助成対象者"
+        },
+        {
+          "level": 2,
+          "text": "助成対象機器"
+        },
+        {
+          "level": 2,
+          "text": "助成金額"
+        },
+        {
+          "level": 2,
+          "text": "申請の流れ"
+        },
+        {
+          "level": 2,
+          "text": "提出書類"
+        },
+        {
+          "level": 3,
+          "text": "申請時"
+        },
+        {
+          "level": 3,
+          "text": "変更時"
+        },
+        {
+          "level": 3,
+          "text": "設置完了時"
+        },
+        {
+          "level": 3,
+          "text": "請求時"
+        },
+        {
+          "level": 3,
+          "text": "中止・廃止時"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/documents/1958/ichiranhyo_2.pdf",
@@ -157,7 +630,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/pc.html",
@@ -168,7 +648,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2033,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 家庭の使用済みパソコンのリサイクル",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭の使用済みパソコンのリサイクル"
+        },
+        {
+          "level": 2,
+          "text": "1.メーカーに回収を申し込む"
+        },
+        {
+          "level": 2,
+          "text": "2.小型家電リサイクル認定業者による回収"
+        },
+        {
+          "level": 3,
+          "text": "宅配による回収"
+        },
+        {
+          "level": 3,
+          "text": "店頭での回収"
+        },
+        {
+          "level": 2,
+          "text": "事業活動で使用したパソコン"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/suigin.html",
@@ -179,7 +691,23 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1657,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 水銀を含むごみの出し方にご注意ください",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "水銀を含むごみの出し方にご注意ください"
+        },
+        {
+          "level": 2,
+          "text": "水銀を含むごみの出し方"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/dekinai/index.html",
@@ -190,7 +718,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2181,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 清掃事務所で収集できないもの",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "清掃事務所で収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "引火性のあるもの、有害性のあるもの、危険性のあるもの、著しく異臭を発するものおよび液体"
+        },
+        {
+          "level": 2,
+          "text": "その他清掃事務所で収集ができないもの"
+        },
+        {
+          "level": 2,
+          "text": "問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/yuryo/kanpu.html",
@@ -201,7 +753,23 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1994,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 有料ごみ処理券の還付請求",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料ごみ処理券の還付請求"
+        },
+        {
+          "level": 2,
+          "text": "還付請求の手続き"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/3r/index.html",
@@ -212,7 +780,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1468,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 3R（リデュース・リユース・リサイクル）の推進",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "3R（リデュース・リユース・リサイクル）の推進"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/okomari.html",
@@ -223,7 +803,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2509,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - ごみ出しでお困りのこと",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ出しでお困りのこと"
+        },
+        {
+          "level": 2,
+          "text": "ふれあい収集のご案内"
+        },
+        {
+          "level": 2,
+          "text": "カラス等でお困りの方は"
+        },
+        {
+          "level": 2,
+          "text": "不法投棄を見かけたら"
+        },
+        {
+          "level": 3,
+          "text": "連絡先"
+        },
+        {
+          "level": 2,
+          "text": "地域清掃やイベント等で発生するごみの処分"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/apuri.html",
@@ -234,7 +846,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2670,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 千代田区ごみ分別アプリ「分けちよ！」",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "千代田区ごみ分別アプリ「分けちよ！」"
+        },
+        {
+          "level": 2,
+          "text": "主な機能"
+        },
+        {
+          "level": 3,
+          "text": "ごみ出しカレンダー機能"
+        },
+        {
+          "level": 3,
+          "text": "ごみ分別辞典"
+        },
+        {
+          "level": 3,
+          "text": "ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "拠点・ごみ処理券販売MAP案内"
+        },
+        {
+          "level": 3,
+          "text": "ごみの出し忘れ防止アラーム"
+        },
+        {
+          "level": 2,
+          "text": "外国語版での「分けちよ！」の配信"
+        },
+        {
+          "level": 2,
+          "text": "アプリのダウンロード"
+        },
+        {
+          "level": 3,
+          "text": "日本語版"
+        },
+        {
+          "level": 3,
+          "text": "外国語版"
+        },
+        {
+          "level": 2,
+          "text": "アプリの画面イメージ"
+        },
+        {
+          "level": 2,
+          "text": "プライバシーポリシー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/kaigahyogoten-boshu.html",
@@ -245,7 +917,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2763,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 令和8年度 食品ロス削減に関する絵画・標語の作品を募集します",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度 食品ロス削減に関する絵画・標語の作品を募集します"
+        },
+        {
+          "level": 2,
+          "text": "応募期間"
+        },
+        {
+          "level": 2,
+          "text": "作品テーマ"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "応募条件"
+        },
+        {
+          "level": 3,
+          "text": "絵画"
+        },
+        {
+          "level": 3,
+          "text": "標語"
+        },
+        {
+          "level": 3,
+          "text": "共通事項"
+        },
+        {
+          "level": 3,
+          "text": "応募方法"
+        },
+        {
+          "level": 2,
+          "text": "応募作品の展示"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/index.html",
@@ -256,7 +980,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1424,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 食品ロス",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "食品ロス"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/food-drive.html",
@@ -267,7 +1003,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3019,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - フードドライブの実施",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "フードドライブの実施"
+        },
+        {
+          "level": 2,
+          "text": "受け取れる食品の基準"
+        },
+        {
+          "level": 2,
+          "text": "受け取れる食品の例"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/fooddrive-kekka/index.html",
@@ -278,7 +1034,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1551,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - フードドライブの実施結果",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "フードドライブの実施結果"
+        },
+        {
+          "level": 2,
+          "text": "最新号"
+        },
+        {
+          "level": 2,
+          "text": "令和7年度実績"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1063,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/kaigahyogoten-boshu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/jigyokei-sagakukokan.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/jigyokeigomi-shori-tesuryo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/saigaiji-dashikata.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/jigyosho/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/gasbombe.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kanen.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kaden.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/jigyoyonamagomi-josei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/food-drive.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/fooddrive-kekka/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/menjo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/yuryo/ichiran.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/documents/1958/ichiranhyo_2.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/pc.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/suigin.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/dekinai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/yuryo/kanpu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/3r/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/okomari.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/apuri.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

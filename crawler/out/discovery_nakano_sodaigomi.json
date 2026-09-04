@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.tokyo-nakano.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
@@ -14,7 +35,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1100,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ収集のインターネット申込み | 中野区",
+      "meta": {
+        "og:title": "粗大ごみ収集のインターネット申込み",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ収集のインターネット申込み"
+        },
+        {
+          "level": 2,
+          "text": "インターネットでの申込みができる方"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 3,
+          "text": "次のものは、粗大ごみとして収集できません。"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの申込み"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
@@ -25,7 +87,88 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3877,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「粗大ごみ」の出し方(事前申し込み制) | 中野区",
+      "meta": {
+        "og:title": "「粗大ごみ」の出し方(事前申し込み制)",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「粗大ごみ」の出し方(事前申し込み制)"
+        },
+        {
+          "level": 2,
+          "text": "ごみとして捨てる前にリユースしませんか"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとは"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみについてのお問合せ"
+        },
+        {
+          "level": 3,
+          "text": "中野区粗大ごみ受付センター 電話03-5715-2255"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "電話で申し込む"
+        },
+        {
+          "level": 3,
+          "text": "インターネットで申し込む"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみの運び出し収集"
+        },
+        {
+          "level": 3,
+          "text": "その他"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理券の購入"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの種類"
+        },
+        {
+          "level": 2,
+          "text": "収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの申込み"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/index.html",
@@ -36,7 +179,28 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 695,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの申込み | 中野区",
+      "meta": {
+        "og:title": "粗大ごみの申込み",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの申込み"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html",
@@ -47,7 +211,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2142,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料ごみ処理券・有料粗大ごみ処理券取扱所一覧 | 中野区",
+      "meta": {
+        "og:title": "有料ごみ処理券・有料粗大ごみ処理券取扱所一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料ごみ処理券・有料粗大ごみ処理券取扱所一覧"
+        },
+        {
+          "level": 2,
+          "text": "コンビニエンスストア"
+        },
+        {
+          "level": 2,
+          "text": "地域の取扱店（50音順・令和6年12月19日現在）"
+        },
+        {
+          "level": 2,
+          "text": "中野区清掃事務所"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの申込み"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi02.html",
@@ -58,7 +263,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1744,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方を教えてください。 | 中野区",
+      "meta": {
+        "og:title": "粗大ごみの出し方を教えてください。",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi02.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方を教えてください。"
+        },
+        {
+          "level": 2,
+          "text": "質問"
+        },
+        {
+          "level": 2,
+          "text": "回答"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html",
@@ -69,7 +307,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1781,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの処理手数料を教えてください。 | 中野区",
+      "meta": {
+        "og:title": "粗大ごみの処理手数料を教えてください。",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの処理手数料を教えてください。"
+        },
+        {
+          "level": 2,
+          "text": "質問"
+        },
+        {
+          "level": 2,
+          "text": "回答"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
@@ -80,7 +351,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1760,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "○○は粗大ごみですか？ | 中野区",
+      "meta": {
+        "og:title": "○○は粗大ごみですか？",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "○○は粗大ごみですか？"
+        },
+        {
+          "level": 2,
+          "text": "質問"
+        },
+        {
+          "level": 2,
+          "text": "回答"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/jigyosyo-ogata.html",
@@ -91,7 +395,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2005,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "事業所から出る大型のごみ（粗大ごみ） | 中野区",
+      "meta": {
+        "og:title": "事業所から出る大型のごみ（粗大ごみ）",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/jigyosyo-ogata.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業所から出る大型のごみ（粗大ごみ）"
+        },
+        {
+          "level": 2,
+          "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機"
+        },
+        {
+          "level": 2,
+          "text": "パソコン"
+        },
+        {
+          "level": 2,
+          "text": "自動車、オートバイ"
+        },
+        {
+          "level": 2,
+          "text": "そのほかの大型ごみについて（問い合わせ先）"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "商店・事業所から出るごみと資源の出し方"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/syugojyutaku-recycle.html",
@@ -102,7 +451,108 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3903,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "集合住宅のリサイクル資源集積所の設置について | 中野区",
+      "meta": {
+        "og:title": "集合住宅のリサイクル資源集積所の設置について",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/syugojyutaku-recycle.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "集合住宅のリサイクル資源集積所の設置について"
+        },
+        {
+          "level": 2,
+          "text": "中野区集合住宅の建築及び管理に関する条例施行規則 特定集合住宅の建築計画上の基準等 指導事項"
+        },
+        {
+          "level": 3,
+          "text": "対象物件"
+        },
+        {
+          "level": 3,
+          "text": "集積所の用途"
+        },
+        {
+          "level": 3,
+          "text": "集積所の面積"
+        },
+        {
+          "level": 3,
+          "text": "集積所の構造等"
+        },
+        {
+          "level": 3,
+          "text": "計画変更について"
+        },
+        {
+          "level": 2,
+          "text": "手続きについて"
+        },
+        {
+          "level": 3,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 3,
+          "text": "提出書類"
+        },
+        {
+          "level": 3,
+          "text": "集積所の検査（必ず受けてください。未受検の場合、回収は開始されません）"
+        },
+        {
+          "level": 3,
+          "text": "びん・缶回収ケース、ペットボトル回収ネット"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "資源の出し方"
+        },
+        {
+          "level": 4,
+          "text": "びん・缶・ペットボトル"
+        },
+        {
+          "level": 4,
+          "text": "古紙（新聞、雑誌類、ダンボール）"
+        },
+        {
+          "level": 3,
+          "text": "来所時のお願い"
+        },
+        {
+          "level": 2,
+          "text": "関連ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "商店・事業所から出るごみと資源の出し方"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/gomizero/recycletenji.html",
@@ -113,7 +563,88 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2633,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ようこそリサイクル展示室へ | 中野区",
+      "meta": {
+        "og:title": "ようこそリサイクル展示室へ",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/gomizero/recycletenji.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ようこそリサイクル展示室へ"
+        },
+        {
+          "level": 2,
+          "text": "開館日時"
+        },
+        {
+          "level": 2,
+          "text": "来館時のお願い"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル展示室では"
+        },
+        {
+          "level": 3,
+          "text": "令和7年4月2日にペットボトル自動回収機を設置しました"
+        },
+        {
+          "level": 3,
+          "text": "資源とごみについて楽しく学べます"
+        },
+        {
+          "level": 3,
+          "text": "リユース品の展示・提供を行っています"
+        },
+        {
+          "level": 3,
+          "text": "フードドライブの提供受付を行っています"
+        },
+        {
+          "level": 3,
+          "text": "資源の拠点回収を行っています"
+        },
+        {
+          "level": 2,
+          "text": "2026年度の開館予定"
+        },
+        {
+          "level": 2,
+          "text": "施設案内"
+        },
+        {
+          "level": 3,
+          "text": "所在地"
+        },
+        {
+          "level": 3,
+          "text": "電話番号"
+        },
+        {
+          "level": 3,
+          "text": "交通"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "めざせ、ごみゼロ生活"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/index.html",
@@ -124,7 +655,28 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1033,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ収集・資源回収曜日一覧 | 中野区",
+      "meta": {
+        "og:title": "ごみ収集・資源回収曜日一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ収集・資源回収曜日一覧"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi33.html",
@@ -135,7 +687,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1832,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "普段のごみの収集、資源の回収時間が午後でも、朝に出さなくてはいけまんせんか？ | 中野区",
+      "meta": {
+        "og:title": "普段のごみの収集、資源の回収時間が午後でも、朝に出さなくてはいけまんせんか？",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi33.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "普段のごみの収集、資源の回収時間が午後でも、朝に出さなくてはいけまんせんか？"
+        },
+        {
+          "level": 2,
+          "text": "質問"
+        },
+        {
+          "level": 2,
+          "text": "回答"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
@@ -146,7 +731,72 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3296,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・資源 | 中野区",
+      "meta": {
+        "og:title": "ごみ・資源",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・資源"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "第5次中野区一般廃棄物処理基本計画の策定について"
+        },
+        {
+          "level": 2,
+          "text": "中野区ごみ分別チャットボットをご利用ください"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの申込み"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集・資源回収曜日一覧"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源の出し方"
+        },
+        {
+          "level": 2,
+          "text": "商店・事業所から出るごみと資源の出し方"
+        },
+        {
+          "level": 2,
+          "text": "めざせ、ごみゼロ生活"
+        },
+        {
+          "level": 2,
+          "text": "区では収集しないもの"
+        },
+        {
+          "level": 2,
+          "text": "キッズコーナー"
+        },
+        {
+          "level": 2,
+          "text": "くらし・手続き"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/chatbot.html",
@@ -157,7 +807,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1445,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中野区ごみ分別チャットボットをご利用ください | 中野区",
+      "meta": {
+        "og:title": "中野区ごみ分別チャットボットをご利用ください",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/chatbot.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中野区ごみ分別チャットボットをご利用ください"
+        },
+        {
+          "level": 2,
+          "text": "AIチャットボットとは"
+        },
+        {
+          "level": 2,
+          "text": "利用方法"
+        },
+        {
+          "level": 3,
+          "text": "1 チャットボットのバナーをクリック"
+        },
+        {
+          "level": 3,
+          "text": "2 ごみのんに質問（検索ワードを入力し、送信）"
+        },
+        {
+          "level": 3,
+          "text": "3 ごみのんが回答"
+        },
+        {
+          "level": 2,
+          "text": "区民の皆様へのお願い"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/index.html",
@@ -168,7 +871,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1513,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・資源の出し方 | 中野区",
+      "meta": {
+        "og:title": "ごみ・資源の出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・資源の出し方"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源"
+        },
+        {
+          "level": 2,
+          "text": "類似ページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/index.html",
@@ -179,7 +907,28 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1001,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "商店・事業所から出るごみと資源の出し方 | 中野区",
+      "meta": {
+        "og:title": "商店・事業所から出るごみと資源の出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/index.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "商店・事業所から出るごみと資源の出し方"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/kyotenkaisyu/shokuyoabura.html",
@@ -190,7 +939,14 @@
       "status": 404,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/katei-aircon.html",
@@ -201,7 +957,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3767,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭のエアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機の処分 | 中野区",
+      "meta": {
+        "og:title": "家庭のエアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機の処分",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/katei-aircon.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭のエアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機の処分"
+        },
+        {
+          "level": 2,
+          "text": "ごみとして捨てる前にリユースしませんか"
+        },
+        {
+          "level": 2,
+          "text": "区では収集できません"
+        },
+        {
+          "level": 2,
+          "text": "対象品目"
+        },
+        {
+          "level": 2,
+          "text": "処分方法"
+        },
+        {
+          "level": 3,
+          "text": "引き取りを依頼する場合"
+        },
+        {
+          "level": 4,
+          "text": "購入した、または買い替えする販売店に依頼する"
+        },
+        {
+          "level": 4,
+          "text": "家電リサイクル受付センターに依頼する"
+        },
+        {
+          "level": 3,
+          "text": "自分で持ち込む場合"
+        },
+        {
+          "level": 4,
+          "text": "中間集積所に持ち込む"
+        },
+        {
+          "level": 4,
+          "text": "指定引取場所に持ち込む"
+        },
+        {
+          "level": 2,
+          "text": "別表 リサイクル料金（主要メーカー例）"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源の出し方"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/pcsyori.html",
@@ -212,7 +1041,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2422,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「パソコン」の処理方法 | 中野区",
+      "meta": {
+        "og:title": "「パソコン」の処理方法",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/pcsyori.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「パソコン」の処理方法"
+        },
+        {
+          "level": 2,
+          "text": "不用となったパソコンは、下記のとおり処理してください"
+        },
+        {
+          "level": 3,
+          "text": "1 宅配便による回収"
+        },
+        {
+          "level": 4,
+          "text": "申し込み方法"
+        },
+        {
+          "level": 5,
+          "text": "1 インターネットによる申し込み"
+        },
+        {
+          "level": 5,
+          "text": "2 ファクスによる申し込み"
+        },
+        {
+          "level": 3,
+          "text": "2 メーカーによる回収"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源の出し方"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyushinaimono.html",
@@ -223,7 +1105,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1466,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "区では収集しないもの | 中野区",
+      "meta": {
+        "og:title": "区では収集しないもの",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyushinaimono.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "区では収集しないもの"
+        },
+        {
+          "level": 2,
+          "text": "次のような危険物は、収集できません。"
+        },
+        {
+          "level": 3,
+          "text": "引火性のあるもの、有害性のあるもの、危険性のあるもの、著しく悪臭を発するもの"
+        },
+        {
+          "level": 3,
+          "text": "下記にご相談ください。"
+        },
+        {
+          "level": 2,
+          "text": "以下のものは、粗大ごみとして収集できません。"
+        },
+        {
+          "level": 3,
+          "text": "それぞれのお問合せ先にご相談ください。"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/shisetsu/kankyo/gomi/jimusyo.html",
@@ -234,7 +1161,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 931,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "清掃事務所 | 中野区",
+      "meta": {
+        "og:title": "清掃事務所",
+        "og:type": "article",
+        "og:url": "https://www.city.tokyo-nakano.lg.jp/shisetsu/kankyo/gomi/jimusyo.html",
+        "og:image": "https://www.city.tokyo-nakano.lg.jp/images/ogp.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "清掃事務所"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル・環境関連施設"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -243,6 +1195,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -250,6 +1204,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -257,139 +1213,179 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/kyotenkaisyu/shokuyoabura.html",
       "status": 404,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": "HTTP 404"
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi23.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/jigyosyo-ogata.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/syugojyutaku-recycle.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/gomizero/recycletenji.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyuyobi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/katei-aircon.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/pcsyori.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syusyushinaimono.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/chatbot.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/dashikata/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/shisetsu/kankyo/gomi/jimusyo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi02.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/gomi33.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

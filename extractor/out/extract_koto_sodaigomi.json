@@ -10,12 +10,48 @@
     "has_jsonld": false,
     "text_len": 2387,
     "truncated": false,
-    "n_links": 37
+    "n_links": 37,
+    "table_chars": 679
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:58:06+00:00",
+    "discovery_run_at": "2026-08-28T14:37:31+00:00"
+  },
   "followed_urls": [
     "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+    "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
     "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html"
   ],
   "online_clarity": "明記",
@@ -23,40 +59,348 @@
   "online_clarity_pages": [
     "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
     "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+    "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
     "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html"
+  ],
+  "test_cases": [
+    {
+      "service": "sodaigomi",
+      "fact_type": "documents",
+      "question": "江東区の「粗大ごみ収集の申込」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "通常の申込では特別な持ち物の記載はなし。ただし減免対象者（生活保護・児童扶養手当・特別児童扶養手当受給者等）は、送付される申請書に記入したものと、減免対象であることの証明書類（生活保護受給証明書、児童扶養手当受給証明書等）が必要。",
+        "evidence": "粗大ごみ受付センターより申請書類が届きますのでご記入ください。減免を受ける対象であることの証明書類（生活保護受給証明書、児童扶養手当受給証明書等）をご用意ください。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 78,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "通常の申込では特別な持ち物の記載はなし。ただし減免対象者（生活保護・児童扶養手当・特別児童扶養手当受給者等）は、送付される申請書に記入したものと、減免対象であることの証明書類（生活保護受給証明書、児童扶養手当受給証明書等）が必要。",
+            "evidence": "粗大ごみ受付センターより申請書類が届きますのでご記入ください。減免を受ける対象であることの証明書類（生活保護受給証明書、児童扶養手当受給証明書等）をご用意ください。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 78,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "このページは「粗大ごみ等の収集手数料の減免」専用ページで、通常の申込手順ではなく減免申請の流れを説明している。持ち物（証明書類・申請書）は減免対象者向けとして明記されているが、通常申込者向けの持ち物についての記載はない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "このページは「粗大ごみ等の収集手数料の減免」専用ページで、通常の申込手順ではなく減免申請の流れを説明している。持ち物（証明書類・申請書）は減免対象者向けとして明記されているが、通常申込者向けの持ち物についての記載はない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "channel",
+      "question": "江東区の「粗大ごみ収集の申込」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "オンラインで完結可能（インターネットまたはLINEミニアプリで24時間申込ができる。電話申込も可）",
+        "evidence": "インターネットでの申し込み 粗大ごみ受付センター（外部サイトへリンク） 24時間受け付けています。料金の検索もできます。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 30,
+          "note": "連続30文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+            "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html"
+          ],
+          "page_notes": "このページは「粗大ごみ等の収集手数料の減免」専用ページで、通常の申込方法は扱っていない。本文中に「インターネット受付では減免の申請ができません」という注記があり、減免以外にはインターネット受付が存在することは示唆されるが、通常申込がオンラインで完結するかは本文からは判断できない。「粗大ごみの出し方」ページに申込方法の記載がありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "オンラインで完結可能（インターネットまたはLINEミニアプリで24時間申込ができる。電話申込も可）",
+            "evidence": "インターネットでの申し込み 粗大ごみ受付センター（外部サイトへリンク） 24時間受け付けています。料金の検索もできます。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 30,
+              "note": "連続30文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "起点ページ（7370.html）は「粗大ごみ等の収集手数料の減免」専用ページで、減免申請は電話のみだがこれは減免に限った制約。一般の粗大ごみ申込方法はリンク先の「粗大ごみの出し方」(7367.html)に別途あり、そこにインターネット・LINEミニアプリ・電話の3方法が明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+        "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html"
+      ],
+      "page_notes": "起点ページ（7370.html）は「粗大ごみ等の収集手数料の減免」専用ページで、減免申請は電話のみだがこれは減免に限った制約。一般の粗大ごみ申込方法はリンク先の「粗大ごみの出し方」(7367.html)に別途あり、そこにインターネット・LINEミニアプリ・電話の3方法が明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "deadline",
+      "question": "江東区の「粗大ごみ収集の申込」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+            "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html"
+          ],
+          "page_notes": "このページは「粗大ごみ等の収集手数料の減免」専用で、減免申請書類を回収日の3日前までに返送する期限は書かれているが、粗大ごみ収集の申込一般の期限は書かれていない。一般の申込手順は「粗大ごみの出し方」ページにありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "元ページ（手数料減免）とリンク先の「粗大ごみの出し方」ページのいずれにも、申込自体の期限（例：収集日の◯日前までに申込）は書かれていない。『収集予定日の二日前からは業務センターへ連絡』という記述はあるが、これは申込後の変更・キャンセルの連絡先切り替えの話であり、新規申込の期限ではない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+        "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html"
+      ],
+      "page_notes": "元ページ（手数料減免）とリンク先の「粗大ごみの出し方」ページのいずれにも、申込自体の期限（例：収集日の◯日前までに申込）は書かれていない。『収集予定日の二日前からは業務センターへ連絡』という記述はあるが、これは申込後の変更・キャンセルの連絡先切り替えの話であり、新規申込の期限ではない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    },
+    {
+      "service": "sodaigomi",
+      "fact_type": "fee",
+      "question": "江東区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "品目ごとに異なる。処理料金はA券（200円）とB券（300円）の有料粗大ごみ処理券を品目に応じて組み合わせて支払う（一律料金ではなく品目別一覧表または受付センターサイトで確認）",
+        "evidence": "粗大ごみシールは、A券（200円）、B券（300円）の2種類がありますので、排出する粗大ごみの品目ごとに組み合わせて、処理料金分を貼ってください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 73,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html",
+            "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html"
+          ],
+          "page_notes": "このページは減免制度専用のページで、通常の粗大ごみ手数料額は「粗大ごみ手数料・シール組合せ表」（7368）や「粗大ごみの出し方」（7367）に載っている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "品目ごとに異なる。処理料金はA券（200円）とB券（300円）の有料粗大ごみ処理券を品目に応じて組み合わせて支払う（一律料金ではなく品目別一覧表または受付センターサイトで確認）",
+            "evidence": "粗大ごみシールは、A券（200円）、B券（300円）の2種類がありますので、排出する粗大ごみの品目ごとに組み合わせて、処理料金分を貼ってください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 73,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "対象ページ（7370.html）は「収集手数料の減免」＝手数料の免除制度についてのページで、通常の手数料額そのものは書かれていない。手数料額はリンク先の「粗大ごみ手数料・シール組合せ表」（7368.html）にあり、A券200円・B券300円の組み合わせ制で、品目別の実額は五十音順PDF一覧か受付センターサイトの検索でしか分からない構造。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html",
+        "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html"
+      ],
+      "page_notes": "対象ページ（7370.html）は「収集手数料の減免」＝手数料の免除制度についてのページで、通常の手数料額そのものは書かれていない。手数料額はリンク先の「粗大ごみ手数料・シール組合せ表」（7368.html）にあり、A券200円・B券300円の組み合わせ制で、品目別の実額は五十音順PDF一覧か受付センターサイトの検索でしか分からない構造。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    }
   ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "記載なし"
+      "found": true,
+      "value": "通常の申込では特別な持ち物の記載はなし。ただし減免対象者（生活保護・児童扶養手当・特別児童扶養手当受給者等）は、送付される申請書に記入したものと、減免対象であることの証明書類（生活保護受給証明書、児童扶養手当受給証明書等）が必要。",
+      "evidence": "粗大ごみ受付センターより申請書類が届きますのでご記入ください。減免を受ける対象であることの証明書類（生活保護受給証明書、児童扶養手当受給証明書等）をご用意ください。",
+      "source": "html",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 78,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口来庁は不要。インターネット（粗大ごみ受付センターサイト、24時間受付・料金検索可）、LINEミニアプリ（24時間受付）、電話（03-6431-9997、月〜土 8:00〜19:00、年末年始を除く）のいずれかで申込可能。",
-      "evidence": "インターネットでの申し込み 粗大ごみ受付センター（外部サイトへリンク）（別ウィンドウで開きます）24時間受け付けています。料金の検索もできます。",
+      "value": "オンラインで完結可能（インターネットまたはLINEミニアプリで24時間申込ができる。電話申込も可）",
+      "evidence": "インターネットでの申し込み 粗大ごみ受付センター（外部サイトへリンク） 24時間受け付けています。料金の検索もできます。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 30,
+        "note": "連続30文字だけ一致。引用全体は確認できない"
+      }
     },
     "期限": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     },
     "手数料": {
       "found": true,
-      "value": "品目ごとに金額が異なる。処理料金分に応じて有料粗大ごみ処理券（粗大ごみシール、A券200円・B券300円）を組み合わせて購入・貼付する。具体的な品目別金額は粗大ごみ受付センターサイトでの検索、または品目別一覧表（PDF）で確認する。",
+      "value": "品目ごとに異なる。処理料金はA券（200円）とB券（300円）の有料粗大ごみ処理券を品目に応じて組み合わせて支払う（一律料金ではなく品目別一覧表または受付センターサイトで確認）",
       "evidence": "粗大ごみシールは、A券（200円）、B券（300円）の2種類がありますので、排出する粗大ごみの品目ごとに組み合わせて、処理料金分を貼ってください。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 73,
+        "note": ""
+      }
     }
   },
-  "page_notes": "指定URL(7370.html)は「粗大ごみ収集の申込」本体ではなく、生活保護受給者等向けの手数料減免専用ページだった。一般の申込方法・料金の仕組みは同じ分類の別ページ（7367.html「粗大ごみの出し方」、7368.html「粗大ごみ手数料・シール組合せ表」）に分散しており、1ページで完結しない構成。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "このページは「粗大ごみ等の収集手数料の減免」専用ページで、通常の申込手順ではなく減免申請の流れを説明している。持ち物（証明書類・申請書）は減免対象者向けとして明記されているが、通常申込者向けの持ち物についての記載はない。\n起点ページ（7370.html）は「粗大ごみ等の収集手数料の減免」専用ページで、減免申請は電話のみだがこれは減免に限った制約。一般の粗大ごみ申込方法はリンク先の「粗大ごみの出し方」(7367.html)に別途あり、そこにインターネット・LINEミニアプリ・電話の3方法が明記されていた。\n元ページ（手数料減免）とリンク先の「粗大ごみの出し方」ページのいずれにも、申込自体の期限（例：収集日の◯日前までに申込）は書かれていない。『収集予定日の二日前からは業務センターへ連絡』という記述はあるが、これは申込後の変更・キャンセルの連絡先切り替えの話であり、新規申込の期限ではない。\n対象ページ（7370.html）は「収集手数料の減免」＝手数料の免除制度についてのページで、通常の手数料額そのものは書かれていない。手数料額はリンク先の「粗大ごみ手数料・シール組合せ表」（7368.html）にあり、A券200円・B券300円の組み合わせ制で、品目別の実額は五十音順PDF一覧か受付センターサイトの検索でしか分からない構造。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
+      "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+      "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
+      "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

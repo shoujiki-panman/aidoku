@@ -1,0 +1,57 @@
+{
+  "municipality": "台東区",
+  "municipality_id": "taito",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+    "hops": 1,
+    "link_text": "粗大ごみの出し方",
+    "has_jsonld": false,
+    "text_len": 5079,
+    "truncated": false,
+    "n_links": 39
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "電話またはインターネットで申し込んでください。収集日や処理料金（有料粗大ごみ処理券の種類・枚数）をご案内します。",
+  "online_clarity_pages": [
+    "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "粗大ごみ受付センターへ電話（03-6747-5111、月〜土曜8:00-19:00）またはインターネット（https://ecolife.e-tumo.jp/taitosodai-u/、24時間受付）で申込。オンラインで申込は完結するが、手数料分の有料粗大ごみ処理券は別途購入して現物に貼付する必要がある。",
+      "evidence": "電話またはインターネットで申し込んでください。収集日や処理料金（有料粗大ごみ処理券の種類・枚数）をご案内します。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "※粗大ごみ手数料は次のファイルをご覧ください。 粗大ごみ品目一覧（PDF：1,357KB）",
+      "source": null,
+      "failure_reason": "PDF内のみ"
+    }
+  },
+  "page_notes": "収集申込（電話/インターネット）の手順と、別手続きである持込窓口（本人確認書類・持込手数料200円など）の情報が同一ページに混在しており、項目によってはどちらの手続きの説明か区別が必要。収集の手数料額は本文になく、PDFかチャットボット誘導のみ。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

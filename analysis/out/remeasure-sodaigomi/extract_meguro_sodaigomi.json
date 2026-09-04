@@ -1,0 +1,62 @@
+{
+  "municipality": "目黒区",
+  "municipality_id": "meguro",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
+    "hops": 3,
+    "link_text": "粗大ごみの収集曜日",
+    "has_jsonld": false,
+    "text_len": 1665,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+    "https://www2.sodai-web.jp/meguro/index.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "インターネットで24時間受付けます（メンテナンス時は除きます。）。ただし、申し込みできる品目に制限があります。",
+  "online_clarity_pages": [
+    "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/youbi.html",
+    "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/tetuzuki.html",
+    "https://www2.sodai-web.jp/meguro/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "電話（目黒区粗大ごみ受付センター 03-5715-0053、月〜土 午前8時〜午後7時、祝日も受付）またはインターネット（目黒区粗大ごみ受付センターインターネット受付、24時間受付・メンテナンス時除く）で申込み可能。ただしインターネットは申込める品目に制限あり。",
+      "evidence": "インターネットによるお申込み 目黒区粗大ごみ受付センターインターネット受付 電話による申込み 電話番号（粗大ごみ受付センター） 03-5715-0053",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "手数料は、粗大ごみの種類によって金額が違います。金額にあわせて必ず目黒区の「有料粗大ごみ処理券」をお買い求めください。",
+      "source": null,
+      "failure_reason": "曖昧"
+    }
+  },
+  "page_notes": "収集曜日ページ（youbi.html）は申込方法（電話・インターネット）は明記しているが、手数料は品目ごとに異なるとしか書かれておらず金額表は別ページに分散、必要書類・提出期限にあたる記載はどのページにも見当たらなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "municipality": "練馬区",
+  "municipality_id": "nerima",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
+    "hops": 2,
+    "link_text": "粗大ごみ（有料・申込制）・料金検索",
+    "has_jsonld": false,
+    "text_len": 5085,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "インターネットで収集を申込みの場合、オンライン決済（キャシュレス決済）が利用できます。",
+  "online_clarity_pages": [
+    "https://www.city.nerima.tokyo.jp/kurashi/gomi/wakekata/sodai.html",
+    "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "本人確認ができるもの（運転免許証など）をお持ちください。",
+      "source": null,
+      "failure_reason": "曖昧"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "粗大ごみ受付センターへの事前申込みが必要。インターネット申込み（24時間受付、クレジットカードまたはPayPayでのオンライン決済可）、または電話申込み（03-5703-5399）で完結できる。ただし持込みの場合はオンライン決済不可。",
+      "evidence": "収集の場合も、持込みの場合も、粗大ごみ受付センタ―に申込みが必要です。料金など詳しくは、申込み時にご案内いたします。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "有料粗大ごみ処理券は、区内コンビニエンスストア、練馬清掃事務所、石神井清掃事務所、清掃リサイクル課（区役所本庁舎18階）などでお求めいただけます。",
+      "source": null,
+      "failure_reason": "曖昧"
+    }
+  },
+  "page_notes": "申込み方法（インターネット／電話）と支払い方法は本文に明記されているが、品目ごとの正確な手数料は外部の料金検索ツール（品目を選択して検索するUI）に依存しており、リンク先ページを開いても具体的な金額は取得できなかった。必要書類も収集時（処理券貼付）と持込み時（本人確認書類）で異なり、申込み手続き自体に一意の必要書類は書かれていない。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

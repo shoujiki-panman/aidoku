@@ -1,0 +1,60 @@
+{
+  "municipality": "板橋区",
+  "municipality_id": "itabashi",
+  "procedure": "粗大ごみ収集の申込",
+  "procedure_id": "sodaigomi",
+  "page": {
+    "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
+    "hops": 3,
+    "link_text": "粗大ごみ（申込制／有料）・料金検索（AIチャットボット）",
+    "has_jsonld": false,
+    "text_len": 5459,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "以下のリンク先からインターネットで粗大ごみの収集・持ち込みの申し込みができますので、あらかじめ品物の大きさや材質などを確認のうえ、お申し込みください。",
+  "online_clarity_pages": [
+    "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001868.html",
+    "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/sodai/1001869.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "電話（粗大ごみ受付センター 03-6747-9353、午前8時〜午後7時、月〜土）またはインターネット（https://ecolife.e-tumo.jp/itabashi_sodai-u/ 、24時間受付）で申込み可能。ファクスでの申込みも可。ただし手数料の減額・免除を受ける場合はインターネット申込みでは減免にならず、電話申込みが必要。",
+      "evidence": "【電話受付】03-6747-9353 受付時間：午前8時から午後7時まで 月曜日から土曜日（祝日含む）【インターネット受付】https://ecolife.e-tumo.jp/itabashi_sodai-u/ 24 時間受付 注：システムメンテナンス時を除く",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    },
+    "手数料": {
+      "found": true,
+      "value": "品目ごとに手数料が異なり、一律の金額ではない（例：ふとん400円、扇風機400円、1人用ソファ900円）。西台粗大ごみセンターへの持ち込みの場合は収集時の半額（100円未満切捨て）。品目ごとの正確な金額は「板橋区粗大ごみ品目一覧」PDFまたはAIチャットボットで確認する必要がある。",
+      "evidence": "粗大ごみ処理手数料は、品目ごとに設定されています。／ふとん（収集時の手数料：400円）を1個持ち込む場合。400円×2分の1＝200円",
+      "source": "linked_page",
+      "failure_reason": null
+    }
+  },
+  "page_notes": "本体ページには具体的な品目別料金が書かれておらず、金額の一覧はPDF「板橋区粗大ごみ品目一覧」またはAIチャットボットへの誘導のみ。リンク先の手数料ページ（1001869）にも一律の料金表はなく、持ち込み時の割引計算例として一部品目の金額が断片的に出てくるのみだった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

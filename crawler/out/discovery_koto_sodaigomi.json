@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.koto.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
@@ -14,7 +35,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2387,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ等の収集手数料の減免｜江東区",
+      "meta": {
+        "description": "廃棄物処理手数料の減免申請について。",
+        "og:title": "粗大ごみ等の収集手数料の減免",
+        "og:type": "article",
+        "og:description": "廃棄物処理手数料の減免申請について。",
+        "og:url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ等の収集手数料の減免"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの減免を受けるには"
+        },
+        {
+          "level": 3,
+          "text": "1 対象"
+        },
+        {
+          "level": 3,
+          "text": "2 お申し込み方法"
+        },
+        {
+          "level": 3,
+          "text": "3 お申し込みから回収までの流れ"
+        },
+        {
+          "level": 2,
+          "text": "各種廃棄物処理手数料の減免"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
@@ -25,7 +99,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1232,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ｜江東区",
+      "meta": {
+        "og:title": "粗大ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/mentenansu.html",
@@ -36,7 +133,44 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1259,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ受付システムのメンテナンスについて｜江東区",
+      "meta": {
+        "description": "粗大ごみ受付システムのメンテナンスのお知らせ",
+        "og:title": "粗大ごみ受付システムのメンテナンスについて",
+        "og:type": "article",
+        "og:description": "粗大ごみ受付システムのメンテナンスのお知らせ",
+        "og:url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/mentenansu.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ受付システムのメンテナンスについて"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみのインターネット受付・LINE受付を一時停止します"
+        },
+        {
+          "level": 3,
+          "text": "利用停止期間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
@@ -47,7 +181,88 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3639,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方｜江東区",
+      "meta": {
+        "description": "清掃事務所が収集する粗大ごみは、家庭から排出される家具、電化製品（エアコン・テレビ・冷蔵庫・冷凍庫・洗濯機・衣類乾燥機は除く）などの大きなごみで、おおむね30センチ以上のものです。",
+        "og:title": "粗大ごみの出し方",
+        "og:type": "article",
+        "og:description": "清掃事務所が収集する粗大ごみは、家庭から排出される家具、電化製品（エアコン・テレビ・冷蔵庫・冷凍庫・洗濯機・衣類乾燥機は除く）などの大きなごみで、おおむね30センチ以上のものです。",
+        "og:url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとは"
+        },
+        {
+          "level": 2,
+          "text": "電話番号の掛け間違いに注意！"
+        },
+        {
+          "level": 2,
+          "text": "”粗大ごみ”にしない方法をご検討ください！"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの申し込み方法"
+        },
+        {
+          "level": 3,
+          "text": "インターネットでの申し込み"
+        },
+        {
+          "level": 3,
+          "text": "LINEミニアプリでの申し込み"
+        },
+        {
+          "level": 3,
+          "text": "電話での申し込み"
+        },
+        {
+          "level": 2,
+          "text": "申し込み後の流れ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理手数料の確認"
+        },
+        {
+          "level": 3,
+          "text": "検索して確認する"
+        },
+        {
+          "level": 3,
+          "text": "一覧から探して確認する"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7371.html",
@@ -58,7 +273,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2320,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの運び出し｜江東区",
+      "meta": {
+        "description": "高齢者・障がい者の方々などで、運び出しが困難な場合に、屋内からの運び出し収集サービスを行っています。",
+        "og:title": "粗大ごみの運び出し",
+        "og:type": "article",
+        "og:description": "高齢者・障がい者の方々などで、運び出しが困難な場合に、屋内からの運び出し収集サービスを行っています。",
+        "og:url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7371.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの運び出し"
+        },
+        {
+          "level": 2,
+          "text": "”粗大ごみ”にしない方法をご検討ください！"
+        },
+        {
+          "level": 2,
+          "text": "運び出し収集の対象となる方"
+        },
+        {
+          "level": 2,
+          "text": "訪問調査について"
+        },
+        {
+          "level": 2,
+          "text": "収集当日について"
+        },
+        {
+          "level": 2,
+          "text": "ご相談のお問合せ"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/sodai.html",
@@ -69,7 +337,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 964,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ｜江東区",
+      "meta": {
+        "og:title": "粗大ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/sodai.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html",
@@ -80,7 +371,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1966,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ手数料・シール組合せ表｜江東区",
+      "meta": {
+        "description": "☆粗大ごみシールは、A券（200円）、B券（300円）の2種類がありますので、排出する粗大ごみの品目ごとに組み合わせて、処理料金分を貼ってください。",
+        "og:title": "粗大ごみ手数料・シール組合せ表",
+        "og:type": "article",
+        "og:description": "☆粗大ごみシールは、A券（200円）、B券（300円）の2種類がありますので、排出する粗大ごみの品目ごとに組み合わせて、処理料金分を貼ってください。",
+        "og:url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ手数料・シール組合せ表"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理手数料一覧表（五十音順）"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "お申込み"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388001/kurashi/gomi/kate/sodaigomi/7369.html",
@@ -91,7 +427,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2565,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料粗大ごみ処理券・事業系ごみ処理券取扱所｜江東区",
+      "meta": {
+        "description": "江東区内有料粗大ごみ処理券・事業系ごみ処理券取扱所",
+        "og:title": "有料粗大ごみ処理券・事業系ごみ処理券取扱所",
+        "og:type": "article",
+        "og:description": "江東区内有料粗大ごみ処理券・事業系ごみ処理券取扱所",
+        "og:url": "https://www.city.koto.lg.jp/388001/kurashi/gomi/kate/sodaigomi/7369.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料粗大ごみ処理券・事業系ごみ処理券取扱所"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券・事業系ごみ処理券取扱所(コンビニエンスストア）"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券・事業系ごみ処理券取扱所（深川地区）"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券・事業系ごみ処理券取扱所（城東地区）"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券・事業系ごみ処理券取扱所（区外）"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券・事業系ごみ処理券取扱所（区関係）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/index.html",
@@ -102,7 +487,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1093,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの出し方・分別検索｜江東区",
+      "meta": {
+        "og:title": "ごみの出し方・分別検索",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの出し方・分別検索"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ受付センター"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集日"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分別案内（LINEアプリ）"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分別案内（WEBチャットボット）"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分け方早見表"
+        },
+        {
+          "level": 2,
+          "text": "ごみの出し方・分別"
+        },
+        {
+          "level": 2,
+          "text": "ごみの減量への取り組み"
+        },
+        {
+          "level": 2,
+          "text": "関連メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/index.html",
@@ -113,7 +553,110 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2852,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル｜江東区",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/gomi/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "ごみの出し方・分別検索"
+        },
+        {
+          "level": 2,
+          "text": "リチウムイオン電池(充電式電池)等の出し方について"
+        },
+        {
+          "level": 2,
+          "text": "令和5年10月「プラスチックの日」スタート"
+        },
+        {
+          "level": 2,
+          "text": "令和5年2月6日（月曜日）より粗大ごみのお申込み先が変わりました"
+        },
+        {
+          "level": 2,
+          "text": "ごみ分別検索サービス「江東ごみナビ」"
+        },
+        {
+          "level": 2,
+          "text": "家庭ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "区の資源回収"
+        },
+        {
+          "level": 2,
+          "text": "事業系ごみ"
+        },
+        {
+          "level": 2,
+          "text": "集団回収"
+        },
+        {
+          "level": 2,
+          "text": "食品ロス削減"
+        },
+        {
+          "level": 2,
+          "text": "フードドライブ"
+        },
+        {
+          "level": 2,
+          "text": "生ごみ減量・堆肥化"
+        },
+        {
+          "level": 2,
+          "text": "電動式生ごみ処理機購入費助成"
+        },
+        {
+          "level": 2,
+          "text": "資源の店頭回収"
+        },
+        {
+          "level": 2,
+          "text": "リペア（修理）・リサイクルショップ情報"
+        },
+        {
+          "level": 2,
+          "text": "ごみの減量（5Rをすすめましょう）"
+        },
+        {
+          "level": 2,
+          "text": "一般廃棄物処理の基本方針"
+        },
+        {
+          "level": 2,
+          "text": "一般廃棄物処理業及び浄化槽清掃業の申請・届出方法について"
+        },
+        {
+          "level": 2,
+          "text": "浄化槽の設置・維持管理"
+        },
+        {
+          "level": 2,
+          "text": "よくあるご質問"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/43735.html",
@@ -124,18 +667,134 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1935,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "地区別資源回収・ごみ収集日一覧｜江東区",
+      "meta": {
+        "description": "地区別の資源回収・ごみ収集日を紹介するページです。燃やさないごみの収集日は隔週です。本ページで収集日をご確認ください。また、お住まいの地区番号をご確認ください。",
+        "og:title": "地区別資源回収・ごみ収集日一覧",
+        "og:type": "article",
+        "og:description": "地区別の資源回収・ごみ収集日を紹介するページです。燃やさないごみの収集日は隔週です。本ページで収集日をご確認ください。また、お住まいの地区番号をご確認ください。",
+        "og:url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/43735.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "地区別資源回収・ごみ収集日一覧"
+        },
+        {
+          "level": 3,
+          "text": "令和8年度（2026年度）地区別収集日一覧"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/381104/kurashi/gomi/kotogominavi.html",
-      "link_text": "ごみ分別検索サービス 江東ごみナビ（LINEアプリ）",
+      "link_text": "江東区家庭ごみLINEアプリ",
       "hops": 2,
       "score": 11,
       "parent": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/index.html",
       "status": 200,
       "is_pdf": false,
       "text_len": 3025,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ分別検索サービス「江東ごみナビ」｜江東区",
+      "meta": {
+        "og:title": "ごみ分別検索サービス「江東ごみナビ」",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/381104/kurashi/gomi/kotogominavi.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ分別検索サービス「江東ごみナビ」"
+        },
+        {
+          "level": 2,
+          "text": "塩浜1丁目、豊洲1・3丁目にお住いの皆様への重要なお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "令和8年1月21日から、AI(人工知能)によるごみの分別検索サービス「江東ごみナビ」の運用を開始しました。"
+        },
+        {
+          "level": 2,
+          "text": "便利な機能"
+        },
+        {
+          "level": 2,
+          "text": "江東ごみナビの使い方"
+        },
+        {
+          "level": 3,
+          "text": "ステップ1：友だち追加"
+        },
+        {
+          "level": 3,
+          "text": "ステップ2：言語設定・地域設定"
+        },
+        {
+          "level": 3,
+          "text": "ステップ3：品目を入力"
+        },
+        {
+          "level": 3,
+          "text": "ステップ4：案内を確認"
+        },
+        {
+          "level": 3,
+          "text": "江東ごみナビをもっと使いやすく！LINEピン留め機能"
+        },
+        {
+          "level": 4,
+          "text": "ピン留め方法"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "利用規約"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/index.html",
@@ -146,7 +805,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1389,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家庭ごみの出し方｜江東区",
+      "meta": {
+        "og:title": "家庭ごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/index.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家庭ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/381104/kurashi/gomi/risaikuru/26256.html",
@@ -157,7 +839,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1272,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "リサイクルショップのご案内｜江東区",
+      "meta": {
+        "description": "江東区内のリサイクルショップをご案内します。",
+        "og:title": "リサイクルショップのご案内",
+        "og:type": "article",
+        "og:description": "江東区内のリサイクルショップをご案内します。",
+        "og:url": "https://www.city.koto.lg.jp/381104/kurashi/gomi/risaikuru/26256.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "リサイクルショップのご案内"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "情報をお寄せください"
+        },
+        {
+          "level": 2,
+          "text": "関連ドキュメント"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/sodaijimotexi.html",
@@ -168,7 +891,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1974,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「ジモティー」を活用してリユースしませんか？｜江東区",
+      "meta": {
+        "og:title": "「ジモティー」を活用してリユースしませんか？",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/388010/sodaijimotexi.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「ジモティー」を活用してリユースしませんか？"
+        },
+        {
+          "level": 2,
+          "text": "地域の情報サイト「ジモティー」とは"
+        },
+        {
+          "level": 2,
+          "text": "「ジモティー」の使い方"
+        },
+        {
+          "level": 2,
+          "text": "連携事業者「株式会社ジモティー」"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/sodaioikura.html",
@@ -179,7 +945,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1979,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「おいくら」を活用してリユースしませんか？｜江東区",
+      "meta": {
+        "og:title": "「おいくら」を活用してリユースしませんか？",
+        "og:type": "article",
+        "og:url": "https://www.city.koto.lg.jp/388010/sodaioikura.html",
+        "og:image": "https://www.city.koto.lg.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江東区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「おいくら」を活用してリユースしませんか？"
+        },
+        {
+          "level": 2,
+          "text": "リユースプラットフォーム「おいくら」とは​​"
+        },
+        {
+          "level": 2,
+          "text": "「おいくら」の使い方"
+        },
+        {
+          "level": 2,
+          "text": "連携事業者「株式会社マーケットエンタープライズ」"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -188,6 +997,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -195,6 +1006,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -202,41 +1015,53 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7370.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/mentenansu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7367.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7371.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/sodai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -244,6 +1069,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -251,6 +1078,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -258,48 +1087,62 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/sodaigomi/7368.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388001/kurashi/gomi/kate/sodaigomi/7369.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/sodaijimotexi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/388010/sodaioikura.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.koto.lg.jp/381104/kurashi/gomi/risaikuru/26256.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

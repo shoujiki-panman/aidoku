@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.shinjuku.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
@@ -14,7 +35,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2471,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和5年1月4日（水）から粗大ごみ収集のお申込み先が変わります：新宿区",
+      "meta": {
+        "og:title": "令和5年1月4日（水）から粗大ごみ収集のお申込み先が変わります",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和5年1月4日（水）から粗大ごみ収集のお申込み先が変わります"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ受付センター"
+        },
+        {
+          "level": 3,
+          "text": "変更内容"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00028.html",
@@ -25,7 +77,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2768,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "生ごみ減量・コンポストについて：新宿区",
+      "meta": {
+        "og:title": "生ごみ減量・コンポストについて",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00028.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "生ごみ減量・コンポストについて"
+        },
+        {
+          "level": 2,
+          "text": "調理時の3つのコツ"
+        },
+        {
+          "level": 3,
+          "text": "[1]濡らさない"
+        },
+        {
+          "level": 3,
+          "text": "[2]絞る"
+        },
+        {
+          "level": 3,
+          "text": "[3]乾かす"
+        },
+        {
+          "level": 2,
+          "text": "ベランダで「生ごみを捨てない暮らし」をはじめませんか？"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00023.html",
@@ -36,7 +135,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3197,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和8年度 ごみ減量新宿フェア 開催のお知らせ：新宿区",
+      "meta": {
+        "og:title": "令和8年度 ごみ減量新宿フェア 開催のお知らせ",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00023.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度 ごみ減量新宿フェア 開催のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "開催予定"
+        },
+        {
+          "level": 2,
+          "text": "リサイクルバザー 出品物募集"
+        },
+        {
+          "level": 2,
+          "text": "フードドライブについて"
+        },
+        {
+          "level": 2,
+          "text": "フードドライブについてもっと知りたい方はこちら"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00026.html",
@@ -47,7 +189,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2523,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和7年度 四谷リサイクルフェア 開催のお知らせ：新宿区",
+      "meta": {
+        "og:title": "令和7年度 四谷リサイクルフェア 開催のお知らせ",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00026.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和7年度 四谷リサイクルフェア 開催のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "開催予定"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00008.html",
@@ -58,7 +231,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2307,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "災害時のごみの出し方：新宿区",
+      "meta": {
+        "og:title": "災害時のごみの出し方",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00008.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "災害時のごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_002032.html",
@@ -69,7 +269,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4904,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "もったいない！食品ロスを削減しよう：新宿区",
+      "meta": {
+        "og:title": "もったいない！食品ロスを削減しよう",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_002032.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "もったいない！食品ロスを削減しよう"
+        },
+        {
+          "level": 2,
+          "text": "家庭における食品ロスの内訳"
+        },
+        {
+          "level": 2,
+          "text": "みんなで食品ロス削減を！"
+        },
+        {
+          "level": 3,
+          "text": "家庭でできる食品ロス削減"
+        },
+        {
+          "level": 3,
+          "text": "事業者ができる食品ロス削減"
+        },
+        {
+          "level": 2,
+          "text": "「新宿区食品ロス削減協力店制度」について"
+        },
+        {
+          "level": 2,
+          "text": "フードドライブをご活用ください"
+        },
+        {
+          "level": 2,
+          "text": "フードシェアリング"
+        },
+        {
+          "level": 2,
+          "text": "食品ロスダイアリーにチャレンジしてみませんか"
+        },
+        {
+          "level": 2,
+          "text": "ベランダで「生ごみを捨てない暮らし」をはじめませんか？"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://twitter.com/share?url=https://www.city.shinjuku.lg.jp/kankyo/gomi01_002032.html",
@@ -80,7 +343,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.city.shinjuku.lg.jp%2Fkankyo%2Fgomi01_002032.html&src=sdkpreparse",
@@ -91,7 +361,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/seikatsu/index09.html",
@@ -102,7 +379,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2362,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00009.html",
@@ -113,7 +402,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2340,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "荒天時における収集について：新宿区",
+      "meta": {
+        "og:title": "荒天時における収集について",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00009.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "荒天時における収集について"
+        },
+        {
+          "level": 2,
+          "text": "「荒天時における資源・ごみの収集について」"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/seikatsu/seiso01_001002.html",
@@ -124,7 +444,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2954,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "年末年始の資源・ごみ収集：新宿区",
+      "meta": {
+        "og:title": "年末年始の資源・ごみ収集",
+        "og:type": "article",
+        "og:site_name": "新宿区",
+        "og:url": "https://www.city.shinjuku.lg.jp/seikatsu/seiso01_001002.html",
+        "og:description": "新宿区の公式ウェブサイトです。",
+        "og:image": "https://www.city.shinjuku.lg.jp/content/000387666.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "年末年始の資源・ごみ収集"
+        },
+        {
+          "level": 2,
+          "text": "家庭の粗大ごみ等の受付"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ受付センター"
+        },
+        {
+          "level": 3,
+          "text": "家電リサイクル受付センター"
+        },
+        {
+          "level": 2,
+          "text": "リチウムイオン電池等の排出方法にご注意ください。"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するお問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "本ページに関するご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/seikatsu/kurashi00_100025.html",
@@ -135,7 +498,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1874,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・資源・環境：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・資源・環境"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/living_04.html",
@@ -146,7 +521,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2492,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみ：新宿区",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみ"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル・ごみに関する情報"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 3,
+          "text": "プラスチックに関するお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "資源・ごみのお知らせについて"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみに関する「よくある質問と回答」"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -155,6 +562,8 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
@@ -162,90 +571,116 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/living_04.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/seikatsu/index09.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_002032.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00009.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/seikatsu/seiso01_001002.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00028.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://twitter.com/share?url=https://www.city.shinjuku.lg.jp/kankyo/gomi01_002032.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.city.shinjuku.lg.jp%2Fkankyo%2Fgomi01_002032.html&src=sdkpreparse",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00023.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00026.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00008.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

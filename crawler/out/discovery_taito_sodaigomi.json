@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.taito.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
@@ -14,7 +35,117 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5079,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方 台東区ホームページ",
+      "meta": {
+        "og:title": "粗大ごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
+        "og:description": "いちばん長い部分が30センチを超えるごみは粗大ごみになります",
+        "description": "いちばん長い部分が30センチを超えるごみは粗大ごみになります"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして収集するもの"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして出す前に、「おいくら」で売却しリユースしましょう"
+        },
+        {
+          "level": 3,
+          "text": "「おいくら」は複数のショップの買取価格を比較し、手間なく売却できるサービスです。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ受付センターへ電話かインターネットで申し込み"
+        },
+        {
+          "level": 3,
+          "text": "台東区の有料粗大ごみ処理券を購入する"
+        },
+        {
+          "level": 3,
+          "text": "収集日当日の朝8時までに粗大ごみを出す"
+        },
+        {
+          "level": 2,
+          "text": "生活家電ごみ持込窓口"
+        },
+        {
+          "level": 3,
+          "text": "窓口に関するお問い合わせ"
+        },
+        {
+          "level": 3,
+          "text": "利用要件"
+        },
+        {
+          "level": 4,
+          "text": "対象"
+        },
+        {
+          "level": 4,
+          "text": "持込上限"
+        },
+        {
+          "level": 3,
+          "text": "持込可能品目"
+        },
+        {
+          "level": 3,
+          "text": "持込方法"
+        },
+        {
+          "level": 4,
+          "text": "手数料"
+        },
+        {
+          "level": 4,
+          "text": "必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "持込場所"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html",
@@ -25,7 +156,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 974,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ 台東区ホームページ",
+      "meta": {
+        "og:title": "粗大ごみ",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/tyattotukaikata.html",
@@ -36,7 +199,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1253,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "チャットボットの使い方（粗大ごみの手数料の検索から申し込みまでチャットで手続きができます） 台東区ホームページ",
+      "meta": {
+        "og:title": "チャットボットの使い方（粗大ごみの手数料の検索から申し込みまでチャットで手続きができます）",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/tyattotukaikata.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "チャットボットの使い方（粗大ごみの手数料の検索から申し込みまでチャットで手続きができます）"
+        },
+        {
+          "level": 2,
+          "text": "利用方法"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの手数料やごみの分別方法を品名や写真で調べる"
+        },
+        {
+          "level": 3,
+          "text": "品名で調べる"
+        },
+        {
+          "level": 3,
+          "text": "写真で調べる"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
@@ -47,7 +262,75 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2525,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料ごみ処理券 台東区ホームページ",
+      "meta": {
+        "og:title": "有料ごみ処理券",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料ごみ処理券"
+        },
+        {
+          "level": 2,
+          "text": "有料ごみ処理券には「有料粗大ごみ処理券」と「事業系有料ごみ処理券」の2種類があります。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみを出す方へ"
+        },
+        {
+          "level": 2,
+          "text": "事業系有料ごみ処理券を使用して、ごみや資源を区の収集へ出している事業者の方へ"
+        },
+        {
+          "level": 3,
+          "text": "古いごみ処理券について"
+        },
+        {
+          "level": 3,
+          "text": "領収書の保管について"
+        },
+        {
+          "level": 3,
+          "text": "有料ごみ処理券の貼り方について"
+        },
+        {
+          "level": 3,
+          "text": "偽造券にご注意ください"
+        },
+        {
+          "level": 2,
+          "text": "有料ごみ処理券の購入場所"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
@@ -58,7 +341,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1558,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "令和5年10月1日から粗大ごみ処理手数料が変更になります 台東区ホームページ",
+      "meta": {
+        "og:title": "令和5年10月1日から粗大ごみ処理手数料が変更になります",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和5年10月1日から粗大ごみ処理手数料が変更になります"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.files/10.pdf",
@@ -69,7 +388,85 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/index.html",
+      "link_text": "リサイクルの活動のご紹介",
+      "hops": 2,
+      "score": 15,
+      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
+      "status": 200,
+      "is_pdf": false,
+      "text_len": 1157,
+      "has_jsonld": false,
+      "title": "リサイクル活動のご紹介 台東区ホームページ",
+      "meta": {
+        "og:title": "リサイクル活動のご紹介",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "リサイクル活動のご紹介"
+        },
+        {
+          "level": 2,
+          "text": "エコいいね宣言店の紹介"
+        },
+        {
+          "level": 2,
+          "text": "エコいいね宣言店を募集しています"
+        },
+        {
+          "level": 2,
+          "text": "あなたも「出張子供服のリユースクローゼット」を開催してみませんか?"
+        },
+        {
+          "level": 2,
+          "text": "フリーマーケット"
+        },
+        {
+          "level": 2,
+          "text": "再利用講座のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル協力店(令和8年3月31日終了)"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル品"
+        },
+        {
+          "level": 2,
+          "text": "3R（スリー・アール）＋Sへの取り組み"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": "Fri, 28 Aug 2026 14:01:35 GMT",
+      "etag": "W/\"4d3d-65a1be3fd7dc1\""
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/seikatsukaden.html",
@@ -80,7 +477,91 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3733,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "生活家電ごみ持込窓口 台東区ホームページ",
+      "meta": {
+        "og:title": "生活家電ごみ持込窓口",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/seikatsukaden.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "生活家電ごみ持込窓口"
+        },
+        {
+          "level": 2,
+          "text": "環境ふれあい館エレベーター利用停止のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "生活家電ごみ持込窓口について"
+        },
+        {
+          "level": 3,
+          "text": "利用要件"
+        },
+        {
+          "level": 4,
+          "text": "対象"
+        },
+        {
+          "level": 4,
+          "text": "持込上限"
+        },
+        {
+          "level": 3,
+          "text": "持込可能品目"
+        },
+        {
+          "level": 3,
+          "text": "持込方法"
+        },
+        {
+          "level": 4,
+          "text": "手数料"
+        },
+        {
+          "level": 4,
+          "text": "必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "持込場所"
+        },
+        {
+          "level": 3,
+          "text": "台東区の有料粗大ごみ処理券を購入してください。"
+        },
+        {
+          "level": 2,
+          "text": "お持ち込みできないもの"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/gomikentoriastukaijo.html",
@@ -91,7 +572,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3938,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料ごみ処理券取扱所 台東区ホームページ",
+      "meta": {
+        "og:title": "有料ごみ処理券取扱所",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/gomikentoriastukaijo.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料ごみ処理券取扱所"
+        },
+        {
+          "level": 2,
+          "text": "取扱所一覧"
+        },
+        {
+          "level": 3,
+          "text": "コンビニエンスストア"
+        },
+        {
+          "level": 3,
+          "text": "コンビニ以外の取扱所一覧（町名のあいうえお順で掲載しています）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/pcrecycle.html",
@@ -102,7 +631,61 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1712,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "パソコンリサイクル 台東区ホームページ",
+      "meta": {
+        "og:title": "パソコンリサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/pcrecycle.html",
+        "og:description": "家庭系パソコンの処分方法について掲載しています",
+        "description": "家庭系パソコンの処分方法について掲載しています"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "パソコンリサイクル"
+        },
+        {
+          "level": 2,
+          "text": "対象となるパソコンと付属品"
+        },
+        {
+          "level": 3,
+          "text": "メーカーがわかる場合"
+        },
+        {
+          "level": 3,
+          "text": "メーカーが不明、倒産している、自作のパソコンである場合"
+        },
+        {
+          "level": 3,
+          "text": "宅配便による回収"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "区では収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/korona.html",
@@ -113,7 +696,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1361,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの収集について 台東区ホームページ",
+      "meta": {
+        "og:title": "ごみの収集について",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/korona.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの収集について"
+        },
+        {
+          "level": 2,
+          "text": "ごみの収集について"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/kobetsukakudai.html",
@@ -124,7 +747,79 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2648,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "燃やすごみ・燃やさないごみは戸別収集です 台東区ホームページ",
+      "meta": {
+        "og:title": "燃やすごみ・燃やさないごみは戸別収集です",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/kobetsukakudai.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "燃やすごみ・燃やさないごみは戸別収集です"
+        },
+        {
+          "level": 2,
+          "text": "戸別収集導入の背景"
+        },
+        {
+          "level": 2,
+          "text": "戸別収集とは"
+        },
+        {
+          "level": 3,
+          "text": "分別の徹底"
+        },
+        {
+          "level": 3,
+          "text": "排出の抑制"
+        },
+        {
+          "level": 2,
+          "text": "戸別収集の成果"
+        },
+        {
+          "level": 3,
+          "text": "ごみ量の推移"
+        },
+        {
+          "level": 2,
+          "text": "戸別収集で変わった点・変わらない点"
+        },
+        {
+          "level": 3,
+          "text": "戸別収集で変わった点"
+        },
+        {
+          "level": 3,
+          "text": "戸別収集でも変わらない点"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/demaekoza.html",
@@ -135,18 +830,61 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1346,
-      "has_jsonld": false
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/index.html",
-      "link_text": "ごみ・リサイクルに関するお知らせ",
-      "hops": 2,
-      "score": 14,
-      "parent": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
-      "status": 200,
-      "is_pdf": false,
-      "text_len": 960,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ減量・リサイクル出前講座 台東区ホームページ",
+      "meta": {
+        "og:title": "ごみ減量・リサイクル出前講座",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/demaekoza.html",
+        "og:description": "ごみ減量・リサイクル出前講座を実施しています",
+        "description": "ごみ減量・リサイクル出前講座を実施しています"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ減量・リサイクル出前講座"
+        },
+        {
+          "level": 2,
+          "text": "『ごみ減量・リサイクル出前講座』で環境について学んでみよう"
+        },
+        {
+          "level": 3,
+          "text": "小学校では"
+        },
+        {
+          "level": 3,
+          "text": "幼稚園、保育園では"
+        },
+        {
+          "level": 3,
+          "text": "町会等では"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/index.html",
@@ -157,7 +895,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 704,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル関係の計画・方針等 台東区ホームページ",
+      "meta": {
+        "og:title": "ごみ・リサイクル関係の計画・方針等",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル関係の計画・方針等"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/20180124165732477.html",
@@ -168,7 +930,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1170,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【外国語版】リサイクル品(資源)とごみのわけ方・だし方(英・中・韓) 台東区ホームページ",
+      "meta": {
+        "og:title": "【外国語版】リサイクル品(資源)とごみのわけ方・だし方(英・中・韓)",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/20180124165732477.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【外国語版】リサイクル品(資源)とごみのわけ方・だし方(英・中・韓)"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/benri/qa/gomi/index.html",
@@ -179,7 +977,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 364,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル 台東区ホームページ",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/benri/qa/gomi/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問の検索"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/oikura.html",
@@ -190,7 +1008,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1796,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「おいくら」を活用して、リユースを検討してみませんか? 台東区ホームページ",
+      "meta": {
+        "og:title": "「おいくら」を活用して、リユースを検討してみませんか?",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/oikura.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「おいくら」を活用して、リユースを検討してみませんか?"
+        },
+        {
+          "level": 2,
+          "text": "「おいくら」は複数のショップの買取価格を比較し、手間なく売却ができるサービスです"
+        },
+        {
+          "level": 3,
+          "text": "「おいくら」ご利用の流れ"
+        },
+        {
+          "level": 3,
+          "text": "ご利用時の注意事項"
+        },
+        {
+          "level": 3,
+          "text": "連携事業者"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
@@ -201,7 +1071,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 768,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル 台東区ホームページ",
+      "meta": {
+        "og:title": "ごみ・リサイクル",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル みんなでつくる循環型社会の実現"
+        },
+        {
+          "level": 2,
+          "text": "家庭からでるごみと資源"
+        },
+        {
+          "level": 2,
+          "text": "商店・事業所からでるごみと資源"
+        },
+        {
+          "level": 2,
+          "text": "リサイクル・啓発活動"
+        },
+        {
+          "level": 2,
+          "text": "計画・統計・資料など"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
@@ -212,7 +1118,61 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1680,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源とごみの分け方・出し方（令和7年5月発行） 台東区ホームページ",
+      "meta": {
+        "og:title": "資源とごみの分け方・出し方（令和7年5月発行）",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
+        "og:description": "資源とごみの分別方法を詳しく紹介しています。",
+        "description": "資源とごみの分別方法を詳しく紹介しています。"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源とごみの分け方・出し方（令和7年5月発行）"
+        },
+        {
+          "level": 2,
+          "text": "配付場所"
+        },
+        {
+          "level": 2,
+          "text": "ダウンロード（PDFファイル）"
+        },
+        {
+          "level": 3,
+          "text": "全頁一括ダウンロード"
+        },
+        {
+          "level": 3,
+          "text": "目次別ダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "各種パンフレット"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/index.html",
@@ -223,7 +1183,69 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1025,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "資源・ごみの出し方 台東区ホームページ",
+      "meta": {
+        "og:title": "資源・ごみの出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/index.html",
+        "og:description": "家庭から出る資源・ごみの分別と出し方などについて掲載しています。",
+        "description": "家庭から出る資源・ごみの分別と出し方などについて掲載しています。"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "資源・ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "令和5年10月1日から粗大ごみ処理手数料が変更になります"
+        },
+        {
+          "level": 2,
+          "text": "使い切れなかった灯油の処分について"
+        },
+        {
+          "level": 2,
+          "text": "石綿（アスベスト）を含む珪藻土製品にご注意ください"
+        },
+        {
+          "level": 2,
+          "text": "【外国語版】リサイクル品(資源)とごみのわけ方・だし方(英・中・韓)"
+        },
+        {
+          "level": 2,
+          "text": "【概要版】資源とごみの分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "資源の分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "ごみの分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "区では収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/index.html",
@@ -234,7 +1256,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 712,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの分け方・出し方 台東区ホームページ",
+      "meta": {
+        "og:title": "ごみの分け方・出し方",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/index.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "燃やすごみ"
+        },
+        {
+          "level": 2,
+          "text": "燃やさないごみ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ収集曜日一覧"
+        },
+        {
+          "level": 2,
+          "text": "ボランティア活動に伴うごみの収集"
+        },
+        {
+          "level": 2,
+          "text": "ひと声収集（高齢や身障者の方のために）"
+        },
+        {
+          "level": 2,
+          "text": "死んだ動物の処置"
+        },
+        {
+          "level": 2,
+          "text": "ごみの出し方に注意"
+        },
+        {
+          "level": 2,
+          "text": "資源・ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/jigyosho/gomi/gomi.html",
@@ -245,7 +1327,85 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3134,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "事業者のごみの出し方について 台東区ホームページ",
+      "meta": {
+        "og:title": "事業者のごみの出し方について",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/jigyosho/gomi/gomi.html",
+        "og:description": "事業者のごみは自己処理が原則です",
+        "description": "事業者のごみは自己処理が原則です"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業者のごみの出し方について"
+        },
+        {
+          "level": 2,
+          "text": "廃棄物の種類を知りましょう"
+        },
+        {
+          "level": 2,
+          "text": "廃棄物処理業の許可を受けた業者に委託しましょう"
+        },
+        {
+          "level": 3,
+          "text": "廃棄物処理業の許可を受けた業者で作る団体もあります"
+        },
+        {
+          "level": 3,
+          "text": "許可業者の検索はこちら"
+        },
+        {
+          "level": 2,
+          "text": "契約書を交わしましょう"
+        },
+        {
+          "level": 2,
+          "text": "マニフェストを作成しましょう"
+        },
+        {
+          "level": 3,
+          "text": "マニフェストの販売場所"
+        },
+        {
+          "level": 2,
+          "text": "区の収集に出す場合"
+        },
+        {
+          "level": 3,
+          "text": "区の収集に出す場合の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "事業所から出る粗大ごみ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "事業者のごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/taishohinmoku.html",
@@ -256,7 +1416,73 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2507,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "家電リサイクル法対象品目 台東区ホームページ",
+      "meta": {
+        "og:title": "家電リサイクル法対象品目",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/taishohinmoku.html",
+        "og:description": "エアコン・テレビ・冷蔵庫（冷凍庫を含む）・洗濯機及び衣類乾燥機の処分方法について",
+        "description": "エアコン・テレビ・冷蔵庫（冷凍庫を含む）・洗濯機及び衣類乾燥機の処分方法について"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "家電リサイクル法対象品目"
+        },
+        {
+          "level": 2,
+          "text": "家電リサイクル法対象品目の処分方法"
+        },
+        {
+          "level": 3,
+          "text": "【1】 買い換える場合 ・ 購入した販売店がわかる場合"
+        },
+        {
+          "level": 3,
+          "text": "【2】 ご自身で運搬して「指定引取場所」に持ち込む場合"
+        },
+        {
+          "level": 4,
+          "text": "上昇運輸株式会社"
+        },
+        {
+          "level": 4,
+          "text": "西濃運輸株式会社 江東指定引取場所"
+        },
+        {
+          "level": 3,
+          "text": "【3】 製品を購入した販売店が遠方、廃業、不明の場合で、収集運搬も依頼する場合"
+        },
+        {
+          "level": 4,
+          "text": "家電リサイクル受付センター"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "区では収集できないもの"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html",
@@ -267,7 +1493,111 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5269,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "プラスチック 台東区ホームページ",
+      "meta": {
+        "og:title": "プラスチック",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "プラスチック"
+        },
+        {
+          "level": 2,
+          "text": "プラスチック分別回収が区内全域で始まっています"
+        },
+        {
+          "level": 2,
+          "text": "プラスチックの分け方・出し方"
+        },
+        {
+          "level": 3,
+          "text": "プラスチックとして回収するもの"
+        },
+        {
+          "level": 3,
+          "text": "プラスチックの出し方"
+        },
+        {
+          "level": 3,
+          "text": "回収場所・日時"
+        },
+        {
+          "level": 3,
+          "text": "プラスチックとして回収しないもの"
+        },
+        {
+          "level": 3,
+          "text": "資源とごみの出し方・分け方（プラスチック保存版）について"
+        },
+        {
+          "level": 3,
+          "text": "動画で分かりやすく解説！"
+        },
+        {
+          "level": 3,
+          "text": "【集合住宅向け】ごみ保管庫等のレイアウトについて"
+        },
+        {
+          "level": 3,
+          "text": "【集合住宅向け】 プラスチック分別回収用ネットの貸出しについて"
+        },
+        {
+          "level": 3,
+          "text": "お店や会社から出るプラスチック"
+        },
+        {
+          "level": 2,
+          "text": "プラスチックは資源コンテナには出さないでください"
+        },
+        {
+          "level": 2,
+          "text": "出前プラスチック分別回収説明会を実施しています"
+        },
+        {
+          "level": 2,
+          "text": "プラスチック分別回収チラシがダウンロードできます"
+        },
+        {
+          "level": 3,
+          "text": "プラスチック分別回収チラシ（日本語版）"
+        },
+        {
+          "level": 3,
+          "text": "プラスチック分別回収チラシ（外国語版）"
+        },
+        {
+          "level": 2,
+          "text": "区でのこれまでの取り組み"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "資源の分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/saiyojoho/seisoukakibosyuu.html",
@@ -278,7 +1608,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2065,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "台東清掃事務所 夏期（9月）アルバイト職員（会計年度任用職員＜ごみ収集補助B＞を募集します 台東区ホームページ",
+      "meta": {
+        "og:title": "台東清掃事務所　夏期（9月）アルバイト職員（会計年度任用職員＜ごみ収集補助B＞を募集します",
+        "og:type": "article",
+        "og:url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/saiyojoho/seisoukakibosyuu.html"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "台東清掃事務所 夏期（9月）アルバイト職員（会計年度任用職員＜ごみ収集補助B＞を募集します"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "より使いやすいホームページにするためにご意見をお聞かせください。"
+        },
+        {
+          "level": 2,
+          "text": "会計年度任用職員・アルバイト"
+        },
+        {
+          "level": 2,
+          "text": "厳選メニュー"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1649,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaigomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/shigenjoho/plastics.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/saiyojoho/seisoukakibosyuu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/tyattotukaikata.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
       "status": 200,
+      "from_cache": true,
+      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
+      "error": null
+    },
+    {
+      "url": "https://www.city.taito.lg.jp/kurashi/gomi/recyclekatsudo/index.html",
+      "status": 200,
       "from_cache": false,
       "blocked_by_robots": false,
+      "last_modified": "Fri, 28 Aug 2026 14:01:35 GMT",
+      "etag": "W/\"4d3d-65a1be3fd7dc1\"",
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/korona.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/kobetsukakudai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/demaekoza.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
-      "error": null
-    },
-    {
-      "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/oserase/index.html",
-      "status": 200,
-      "from_cache": false,
-      "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.files/10.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/20180124165732477.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/benri/qa/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/seikatsukaden.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/gomikentoriastukaijo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/pcrecycle.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/oikura.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/jigyosho/gomi/gomi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/syuusyuudekinaimono/taishohinmoku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

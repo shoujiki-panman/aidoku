@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.arakawa.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html",
@@ -14,7 +35,94 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4934,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみの出し方／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "粗大ごみの出し方",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "​​​​​粗大ごみ申込みの流れ"
+        },
+        {
+          "level": 3,
+          "text": "1.粗大ごみ受付センターへ、インターネットまたは電話で事前に申込み"
+        },
+        {
+          "level": 4,
+          "text": "インターネットでの申込み（24時間受付）"
+        },
+        {
+          "level": 4,
+          "text": "電話での申込み"
+        },
+        {
+          "level": 5,
+          "text": "【お願い！】電話番号のお掛け間違いにご注意ください。"
+        },
+        {
+          "level": 3,
+          "text": "2.荒川区有料粗大ごみ処理券を用意"
+        },
+        {
+          "level": 4,
+          "text": "有料ごみ処理券の販売店"
+        },
+        {
+          "level": 3,
+          "text": "3.粗大ごみを、収集日の朝8時までに家の前に出す"
+        },
+        {
+          "level": 2,
+          "text": "手数料の減免"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ処理手数料の減免事由・減免割合等"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの運び出し"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理料金の一例"
+        },
+        {
+          "level": 3,
+          "text": "粗大ごみ処理料金の一例（令和5年10月1日から）"
+        },
+        {
+          "level": 3,
+          "text": "関連ファイル"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/sodaigomi/index.html",
@@ -25,7 +133,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1100,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "粗大ごみ／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "粗大ごみ",
+        "og:url": "https://www.city.arakawa.tokyo.jp/recycle/sodaigomi/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "粗大ごみ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/sodaigomi/gomishoriken/index.html",
@@ -36,7 +163,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1044,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "有料粗大ごみ処理券・事業系有料ごみ処理券取扱店／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "有料粗大ごみ処理券・事業系有料ごみ処理券取扱店",
+        "og:url": "https://www.city.arakawa.tokyo.jp/recycle/sodaigomi/gomishoriken/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "有料粗大ごみ処理券・事業系有料ごみ処理券取扱店"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/tesuryo.html",
@@ -47,7 +193,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2515,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ手数料案内（粗大ごみ・事業系ごみ）／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみ手数料案内（粗大ごみ・事業系ごみ）",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/tesuryo.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ手数料案内（粗大ごみ・事業系ごみ）"
+        },
+        {
+          "level": 2,
+          "text": "手数料のかかるごみ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ（家庭から出るもの）"
+        },
+        {
+          "level": 3,
+          "text": "申込み先"
+        },
+        {
+          "level": 3,
+          "text": "手数料及び出し方"
+        },
+        {
+          "level": 2,
+          "text": "事業系ごみ"
+        },
+        {
+          "level": 2,
+          "text": "引越し等で大量に出るごみ"
+        },
+        {
+          "level": 2,
+          "text": "有料粗大ごみ処理券・事業系ごみ処理券取扱店"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/josei/namagomishoriki.html",
@@ -58,7 +263,114 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3396,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "生ごみ処理機等購入費助成制度のご案内／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "生ごみ処理機等購入費助成制度のご案内",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a025/recycle/josei/namagomishoriki.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "生ごみ処理機等購入費助成制度のご案内"
+        },
+        {
+          "level": 2,
+          "text": "利用できる方（全ての項目に該当する方）"
+        },
+        {
+          "level": 2,
+          "text": "助成の対象となる生ごみ処理機等"
+        },
+        {
+          "level": 3,
+          "text": "参考"
+        },
+        {
+          "level": 2,
+          "text": "助成金額"
+        },
+        {
+          "level": 3,
+          "text": "計算例"
+        },
+        {
+          "level": 4,
+          "text": "（例1）60,000円（税込み）の生ごみ処理機を購入した場合"
+        },
+        {
+          "level": 4,
+          "text": "（例2）31,500円（税込み）の生ごみ処理機を購入した場合"
+        },
+        {
+          "level": 4,
+          "text": "（例3）40,000円（税込み）の生ごみ処理機を3,000円分のポイント等を使用してで購入した場合"
+        },
+        {
+          "level": 2,
+          "text": "手続きの流れ"
+        },
+        {
+          "level": 2,
+          "text": "申請に必要な書類"
+        },
+        {
+          "level": 3,
+          "text": "申請書"
+        },
+        {
+          "level": 3,
+          "text": "個人住民税関係書類"
+        },
+        {
+          "level": 3,
+          "text": "国民健康保険料関係書類"
+        },
+        {
+          "level": 4,
+          "text": "令和7年度（令和7年4月分～令和8年3月分）に国民健康保険に加入している方（令和7年度中に一度でも納付対象となった方も含みます）​"
+        },
+        {
+          "level": 4,
+          "text": "令和7年度（令和7年4月分～令和8年3月分）に企業等の健康保険に加入している方、後期高齢者医療保険に加入している方"
+        },
+        {
+          "level": 2,
+          "text": "申請受付期間"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 2,
+          "text": "申請受付・お問合せ"
+        },
+        {
+          "level": 2,
+          "text": "生ごみ処理機等の使用状況に関するアンケート"
+        },
+        {
+          "level": 2,
+          "text": "生ごみ処理容器「ミニ・キエーロ」モニターになってみませんか？"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/portal/gomi/index.html",
@@ -69,7 +381,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1079,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクルの出し方／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみ・リサイクルの出し方",
+        "og:url": "https://www.city.arakawa.tokyo.jp/portal/gomi/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクルの出し方"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・プラスチック・資源の収集・回収日検索"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・プラスチック・資源の出し方"
+        },
+        {
+          "level": 2,
+          "text": "関連メニュー"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/moyasugomi-moyasanaigomi-dasikata.html",
@@ -80,7 +427,94 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3214,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・プラスチック・資源の分け方・出し方／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみ・プラスチック・資源の分け方・出し方",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a025/moyasugomi-moyasanaigomi-dasikata.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・プラスチック・資源の分け方・出し方"
+        },
+        {
+          "level": 2,
+          "text": "地域別収集日、ごみ・プラスチック・資源の正しい分け方と出し方"
+        },
+        {
+          "level": 2,
+          "text": "燃やすごみ"
+        },
+        {
+          "level": 3,
+          "text": "対象品目"
+        },
+        {
+          "level": 3,
+          "text": "出すときの注意"
+        },
+        {
+          "level": 2,
+          "text": "燃やさないごみ"
+        },
+        {
+          "level": 3,
+          "text": "対象品目"
+        },
+        {
+          "level": 3,
+          "text": "出すときの注意"
+        },
+        {
+          "level": 3,
+          "text": "スプレー缶、カセットボンベ、ライターの出し方"
+        },
+        {
+          "level": 3,
+          "text": "小型充電式電池（リチウムイオン電池等）・小型充電式電池内蔵製品の出し方"
+        },
+        {
+          "level": 2,
+          "text": "プラスチック"
+        },
+        {
+          "level": 3,
+          "text": "対象品目"
+        },
+        {
+          "level": 3,
+          "text": "出すときの注意"
+        },
+        {
+          "level": 2,
+          "text": "資源"
+        },
+        {
+          "level": 3,
+          "text": "対象品目"
+        },
+        {
+          "level": 3,
+          "text": "出すときの注意"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/namagomisyoriyouki-minikiero-monita.html",
@@ -91,7 +525,50 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1523,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "生ごみ処理容器「ミニ・キエーロ」モニターになってみませんか？／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "生ごみ処理容器「ミニ・キエーロ」モニターになってみませんか？",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a025/namagomisyoriyouki-minikiero-monita.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "生ごみ処理容器「ミニ・キエーロ」モニターになってみませんか？"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        },
+        {
+          "level": 2,
+          "text": "「ミニ・キエーロ」とは？"
+        },
+        {
+          "level": 3,
+          "text": "概要"
+        },
+        {
+          "level": 3,
+          "text": "特徴"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/shuushuubi/index.html",
@@ -102,7 +579,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 899,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・資源の収集日／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみ・資源の収集日",
+        "og:url": "https://www.city.arakawa.tokyo.jp/recycle/shuushuubi/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・資源の収集日"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/josei/index.html",
@@ -113,7 +609,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 918,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクルに関する助成・支援／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみ・リサイクルに関する助成・支援",
+        "og:url": "https://www.city.arakawa.tokyo.jp/recycle/josei/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクルに関する助成・支援"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/index.html",
@@ -124,7 +639,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1553,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・リサイクル／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみ・リサイクル",
+        "og:url": "https://www.city.arakawa.tokyo.jp/recycle/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "最新ニュース"
+        },
+        {
+          "level": 2,
+          "text": "トピックスPR"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/shuushuubi/syusyubi.html",
@@ -135,7 +681,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5842,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ収集日・プラスチック回収日／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみ収集日・プラスチック回収日",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a025/recycle/shuushuubi/syusyubi.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ収集日・プラスチック回収日"
+        },
+        {
+          "level": 2,
+          "text": "収集、回収日・カレンダー"
+        },
+        {
+          "level": 3,
+          "text": "大型集合住宅"
+        },
+        {
+          "level": 4,
+          "text": "南千住三丁目"
+        },
+        {
+          "level": 4,
+          "text": "南千住四丁目"
+        },
+        {
+          "level": 4,
+          "text": "南千住七丁目"
+        },
+        {
+          "level": 4,
+          "text": "南千住八丁目"
+        },
+        {
+          "level": 2,
+          "text": "燃やさないごみの収集日の考え方"
+        },
+        {
+          "level": 2,
+          "text": "Other Languages"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/genryou/index.html",
@@ -146,7 +755,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1657,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ減量・リサイクルに関する情報・施策／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみ減量・リサイクルに関する情報・施策",
+        "og:url": "https://www.city.arakawa.tokyo.jp/recycle/genryou/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ減量・リサイクルに関する情報・施策"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/bunbetsu/index.html",
@@ -157,7 +785,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1387,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみの分別・出し方／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみの分別・出し方",
+        "og:url": "https://www.city.arakawa.tokyo.jp/recycle/bunbetsu/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみの分別・出し方"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/dashikata.html",
@@ -168,7 +815,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1201,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ごみ・資源・プラスチックの正しい分け方、出し方／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ごみ・資源・プラスチックの正しい分け方、出し方",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/dashikata.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ごみ・資源・プラスチックの正しい分け方、出し方"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源の分別"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/jigyoukei/index.html",
@@ -179,7 +857,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 962,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "事業系のごみ／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "事業系のごみ",
+        "og:url": "https://www.city.arakawa.tokyo.jp/recycle/jigyoukei/index.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "事業系のごみ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/josei/volunteer.html",
@@ -190,7 +887,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1214,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ボランティア活動で発生したごみの手数料減免申請／荒川区公式サイト",
+      "meta": {
+        "og:type": "article",
+        "og:title": "ボランティア活動で発生したごみの手数料減免申請",
+        "og:url": "https://www.city.arakawa.tokyo.jp/a025/recycle/josei/volunteer.html",
+        "og:image": "https://www.city.arakawa.tokyo.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "荒川区公式サイト",
+        "og:locale": "ja_jp"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ボランティア活動で発生したごみの手数料減免申請"
+        },
+        {
+          "level": 2,
+          "text": "関連PDFファイル"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "こちらの記事も読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -199,125 +927,161 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/portal/gomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/sodaigomi-2.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/moyasugomi-moyasanaigomi-dasikata.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/shuushuubi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/josei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/sodaigomi/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/sodaigomi/gomishoriken/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/tesuryo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/bunbetsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/bunbetsu/dashikata.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/shuushuubi/syusyubi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/genryou/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/recycle/jigyoukei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/josei/namagomishoriki.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/namagomisyoriyouki-minikiero-monita.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/josei/volunteer.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

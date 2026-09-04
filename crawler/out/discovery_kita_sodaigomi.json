@@ -4,6 +4,27 @@
   "procedure": "粗大ごみ収集の申込",
   "procedure_id": "sodaigomi",
   "top_url": "https://www.city.kita.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T14:37:31+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
@@ -14,7 +35,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3198,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "粗大ごみの出し方｜東京都北区",
+      "meta": {
+        "og:title": "粗大ごみの出し方｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
@@ -25,7 +78,163 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 8393,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "粗大ごみについて｜東京都北区",
+      "meta": {
+        "og:title": "粗大ごみについて｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "粗大ごみについて"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして出す前にリユースを検討しませんか？"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみとして出す場合"
+        },
+        {
+          "level": 3,
+          "text": "電話番号"
+        },
+        {
+          "level": 3,
+          "text": "インターネット"
+        },
+        {
+          "level": 4,
+          "text": "インターネットからのお申し込み方法"
+        },
+        {
+          "level": 3,
+          "text": "品目一覧料金表"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの出し方"
+        },
+        {
+          "level": 3,
+          "text": "1. お申し込みになる前に"
+        },
+        {
+          "level": 3,
+          "text": "2. 「粗大ごみ受付センター」に申し込む"
+        },
+        {
+          "level": 3,
+          "text": "3. 粗大ごみ処理券を購入する"
+        },
+        {
+          "level": 3,
+          "text": "4. 粗大ごみ処理券を粗大ごみに貼って出す"
+        },
+        {
+          "level": 3,
+          "text": "5. 粗大ごみを持込する場合"
+        },
+        {
+          "level": 4,
+          "text": "指定施設（指定場所）"
+        },
+        {
+          "level": 4,
+          "text": "持込できる日時"
+        },
+        {
+          "level": 4,
+          "text": "持込の注意点"
+        },
+        {
+          "level": 4,
+          "text": "事業活動に伴って出た粗大ごみは持込できません"
+        },
+        {
+          "level": 2,
+          "text": "収集できないもの"
+        },
+        {
+          "level": 3,
+          "text": "家電リサイクル法の対象品"
+        },
+        {
+          "level": 3,
+          "text": "事業所から出る粗大ごみ"
+        },
+        {
+          "level": 3,
+          "text": "一定の大きさや重さが超えるもの"
+        },
+        {
+          "level": 3,
+          "text": "家庭で使用していたパソコン（本体・ディスプレイ）"
+        },
+        {
+          "level": 3,
+          "text": "有害性のあるもの、危険性のあるもの、著しく悪臭を発するもの"
+        },
+        {
+          "level": 3,
+          "text": "処理が困難なもの"
+        },
+        {
+          "level": 3,
+          "text": "処分場の管理又は処分作業に支障をきたすおそれのあるもの"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの運び出し収集"
+        },
+        {
+          "level": 3,
+          "text": "運び出しの要件"
+        },
+        {
+          "level": 3,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "要件を満たさない場合"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ処理手数料の減額・免除"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [
+        "2026-01-10T09:00:04+09:00"
+      ],
+      "date_published": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002024.html",
@@ -36,7 +245,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4375,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "有料粗大ごみ処理券の還付手続き｜東京都北区",
+      "meta": {
+        "og:title": "有料粗大ごみ処理券の還付手続き｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002024.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "有料粗大ごみ処理券の還付手続き"
+        },
+        {
+          "level": 2,
+          "text": "持参していただくもの"
+        },
+        {
+          "level": 2,
+          "text": "受付場所"
+        },
+        {
+          "level": 2,
+          "text": "郵送受付"
+        },
+        {
+          "level": 2,
+          "text": "電子申請"
+        },
+        {
+          "level": 2,
+          "text": "備考"
+        },
+        {
+          "level": 2,
+          "text": "添付ファイル"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [
+        "2025-11-26T11:00:04+09:00"
+      ],
+      "date_published": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html",
@@ -47,7 +320,71 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4117,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "粗大ごみ料金改定（令和5年10月1日以降）｜東京都北区",
+      "meta": {
+        "og:title": "粗大ごみ料金改定（令和5年10月1日以降）｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "粗大ごみ料金改定（令和5年10月1日以降）"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみの回収料金が改定されます"
+        },
+        {
+          "level": 3,
+          "text": "お申し込み・お問い合わせ窓口"
+        },
+        {
+          "level": 4,
+          "text": "電話番号"
+        },
+        {
+          "level": 4,
+          "text": "ホームページ"
+        },
+        {
+          "level": 5,
+          "text": "インターネットからのお申し込み方法"
+        },
+        {
+          "level": 2,
+          "text": "改定される主な粗大ごみ料金の例"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [
+        "2025-03-10T17:00:08+09:00"
+      ],
+      "date_published": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/index.html",
@@ -58,7 +395,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3956,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "ごみ・リサイクル｜東京都北区",
+      "meta": {
+        "og:title": "ごみ・リサイクル｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/index.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "ごみ・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクルに関するお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "家庭からでるごみ"
+        },
+        {
+          "level": 2,
+          "text": "ごみの減量・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "事業所からでるごみ"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクルに関するイベント"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・リサイクルに関する統計・調査"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002014.html",
@@ -69,7 +462,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4154,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "ごみ・資源の収集日｜東京都北区",
+      "meta": {
+        "og:title": "ごみ・資源の収集日｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002013/1002014.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "ごみ・資源の収集日"
+        },
+        {
+          "level": 2,
+          "text": "収集日"
+        },
+        {
+          "level": 2,
+          "text": "ごみ・資源を出す時のルール"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "生成AI検索の方法"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [
+        "2025-12-24T16:00:04+09:00"
+      ],
+      "date_published": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1018220/index.html",
@@ -80,7 +529,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3200,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "ごみ・リサイクルに関するお知らせ｜東京都北区",
+      "meta": {
+        "og:title": "ごみ・リサイクルに関するお知らせ｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1018220/index.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "ごみ・リサイクルに関するお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002115/index.html",
@@ -91,7 +572,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3405,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "ごみの減量・リサイクル｜東京都北区",
+      "meta": {
+        "og:title": "ごみの減量・リサイクル｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002115/index.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "ごみの減量・リサイクル"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/index.html",
@@ -102,7 +615,39 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3215,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "家庭からでるごみ｜東京都北区",
+      "meta": {
+        "og:title": "家庭からでるごみ｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002013/index.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "家庭からでるごみ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002019.html",
@@ -113,7 +658,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3957,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "家庭ごみ・資源の分け方出し方チラシ｜東京都北区",
+      "meta": {
+        "og:title": "家庭ごみ・資源の分け方出し方チラシ｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002013/1002019.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "家庭ごみ・資源の分け方出し方チラシ"
+        },
+        {
+          "level": 2,
+          "text": "日本語版冊子"
+        },
+        {
+          "level": 2,
+          "text": "日本語版チラシ"
+        },
+        {
+          "level": 2,
+          "text": "外国語版チラシ"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [
+        "2026-04-27T13:00:04+09:00"
+      ],
+      "date_published": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002027/1002028.html",
@@ -124,7 +725,83 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4513,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "可燃ごみ｜東京都北区",
+      "meta": {
+        "og:title": "可燃ごみ｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002013/1002027/1002028.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "可燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "可燃ごみとは"
+        },
+        {
+          "level": 2,
+          "text": "収集日"
+        },
+        {
+          "level": 2,
+          "text": "収集場所"
+        },
+        {
+          "level": 2,
+          "text": "出し方など"
+        },
+        {
+          "level": 2,
+          "text": "収集地域"
+        },
+        {
+          "level": 3,
+          "text": "王子・赤羽地区：北区清掃事務所（電話:03-3913-3141）"
+        },
+        {
+          "level": 3,
+          "text": "滝野川地区：滝野川清掃庁舎（電話:03-3800-9191）"
+        },
+        {
+          "level": 2,
+          "text": "不適正搬入防止に向けた取組"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "date_published": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002115/1002119.html",
@@ -135,7 +812,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3694,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "リサイクル活動拠点「エコー広場館」｜東京都北区",
+      "meta": {
+        "og:title": "リサイクル活動拠点「エコー広場館」｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002115/1002119.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "リサイクル活動拠点「エコー広場館」"
+        },
+        {
+          "level": 2,
+          "text": "エコー広場館とは"
+        },
+        {
+          "level": 2,
+          "text": "エコー広場館でどんなことができるの？"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "date_published": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002115/1002089.html",
@@ -146,7 +875,75 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4202,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "ごみの流れ・処理の仕方｜東京都北区",
+      "meta": {
+        "og:title": "ごみの流れ・処理の仕方｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002115/1002089.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "ごみの流れ・処理の仕方"
+        },
+        {
+          "level": 2,
+          "text": "可燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "不燃ごみ"
+        },
+        {
+          "level": 2,
+          "text": "粗大ごみ（事前申込制）"
+        },
+        {
+          "level": 2,
+          "text": "管理・運営"
+        },
+        {
+          "level": 3,
+          "text": "清掃工場・不燃ごみ処理センター・粗大ごみ破砕処理施設"
+        },
+        {
+          "level": 3,
+          "text": "埋立処分場（中央防波堤外側埋立処分場・新海面処分場）"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "date_published": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002115/1002091.html",
@@ -157,7 +954,83 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7343,
-      "has_jsonld": true
+      "has_jsonld": true,
+      "title": "ごみと資源についての学習｜東京都北区",
+      "meta": {
+        "og:title": "ごみと資源についての学習｜東京都北区",
+        "og:type": "article",
+        "og:description": "東京都北区",
+        "og:url": "https://www.city.kita.lg.jp/living/bins/1002115/1002091.html",
+        "og:image": "https://www.city.kita.lg.jp/_template_/_site_/_default_/_res/images/sns/ogimage.png",
+        "og:site_name": "東京都北区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 2,
+          "text": "ページ番号検索"
+        },
+        {
+          "level": 2,
+          "text": "緊急情報"
+        },
+        {
+          "level": 1,
+          "text": "ごみと資源についての学習"
+        },
+        {
+          "level": 2,
+          "text": "環境展"
+        },
+        {
+          "level": 3,
+          "text": "令和7年度開催"
+        },
+        {
+          "level": 2,
+          "text": "親子でリデュースクッキング調理実習会"
+        },
+        {
+          "level": 3,
+          "text": "令和7年度開催"
+        },
+        {
+          "level": 2,
+          "text": "親子で学ぼう！エコエコツアー"
+        },
+        {
+          "level": 3,
+          "text": "令和7年度開催（有明清掃工場・中央防波堤埋立処分場見学）"
+        },
+        {
+          "level": 2,
+          "text": "子どもへのごみと資源についての学習"
+        },
+        {
+          "level": 2,
+          "text": "環境学習ツアー「紙資源のゆくえを追いかけろっ！！ おみせの裏側、見てみよう」"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "北区役所"
+        }
+      ],
+      "date_modified": [
+        "2025-11-05T10:00:04+09:00"
+      ],
+      "date_published": [
+        "2025-02-07T21:00:04+09:00"
+      ],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -166,104 +1039,134 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002014.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1018220/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002115/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002021.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002024.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002026.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002019.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002027/1002028.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002115/1002119.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002115/1002089.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.kita.lg.jp/living/bins/1002115/1002091.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]
