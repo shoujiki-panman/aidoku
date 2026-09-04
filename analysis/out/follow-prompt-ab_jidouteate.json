@@ -1,0 +1,512 @@
+{
+  "_about": "プロンプトだけを差し替えて、AIがリンクを開こうとするかを比べた記録。本番の抽出は動かしていない。開いた先で項目が取れるかは見ていない。",
+  "version": "try-follow-prompt-0.1",
+  "procedure": "jidouteate",
+  "model": "claude-sonnet-5",
+  "summary": {
+    "municipalities": 7,
+    "cases": 28,
+    "before_proposed_links": 16,
+    "after_proposed_links": 19,
+    "before_said_absent": 14,
+    "after_said_absent": 9,
+    "errors": 0
+  },
+  "rows": [
+    {
+      "municipality": "千代田区",
+      "municipality_id": "chiyoda",
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
+            ]
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html"
+            ]
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html"
+            ]
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "八王子市",
+      "municipality_id": "hachioji",
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "北区",
+      "municipality_id": "kita",
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1018788.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1018788.html"
+            ]
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002922.html"
+            ]
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002922.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html"
+            ]
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": [
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+              "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002922.html"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "世田谷区",
+      "municipality_id": "setagaya",
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
+              "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
+            ]
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
+              "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+            ]
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
+              "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
+              "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+            ]
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
+              "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
+              "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "新宿区",
+      "municipality_id": "shinjuku",
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
+            ]
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
+              "https://www.city.shinjuku.lg.jp/kusei/index15.html"
+            ]
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
+            ]
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "墨田区",
+      "municipality_id": "sumida",
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
+              "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
+            ]
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": [
+              "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
+              "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
+            ]
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html",
+              "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html"
+            ]
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "follow_urls": [
+              "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
+              "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html"
+            ]
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "台東区",
+      "municipality_id": "taito",
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "follow_urls": []
+          }
+        }
+      ]
+    }
+  ]
+}
