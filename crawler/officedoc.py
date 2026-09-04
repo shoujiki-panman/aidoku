@@ -39,6 +39,9 @@ _TAG = re.compile(r"<[^>]+>")
 # PDF のテキスト表示演算子。( ) の中身と [ ] 配列の中身の両方を拾う。
 _PDF_TEXT = re.compile(rb"\((?:\\.|[^\\()])*\)")
 _PDF_STREAM = re.compile(rb"stream\r?\n(.*?)endstream", re.S)
+# ★CIDフォントの本文は `(…)` ではなく `<16進>` で書かれる。
+#   ( ) しか見ていなかったので、日本語の様式がまるごと落ちていた。
+_PDF_HEX = re.compile(r"<([0-9A-Fa-f\s]{4,})>")
 
 
 @dataclass(frozen=True)
@@ -84,26 +87,122 @@ def read_ooxml(data: bytes, kind: str) -> DocText:
 
 
 def _pdf_streams(data: bytes) -> list[bytes]:
-    """Flate 圧縮のストリームだけ解く。他の圧縮は解かない。"""
+    """PDFのストリームを取り出す。
+
+    ★最初「Flate 圧縮のストリームだけ解く」と書いて、解けないものを捨てていた。
+      **字形の対応表（ToUnicode CMap）は非圧縮の平文で入っていることがある。**
+      実際に北区の様式がそれで、捨てていたせいで「CIDフォントで読めない」と
+      報告していた。対応表はPDFの中にあった。
+    """
     out = []
     for match in _PDF_STREAM.finditer(data):
+        raw = match.group(1)
         try:
-            out.append(zlib.decompress(match.group(1)))
+            out.append(zlib.decompress(raw))
         except zlib.error:
-            continue                                       # 非Flate。無視してよい
+            out.append(raw)                                # 非圧縮。そのまま使う
     return out
+
+
+_BFCHAR = re.compile(r"beginbfchar(.*?)endbfchar", re.S)
+_BFRANGE = re.compile(r"beginbfrange(.*?)endbfrange", re.S)
+_HEXPAIR = re.compile(r"<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>")
+_HEXTRIPLE = re.compile(r"<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>")
+# 1つのコードに複数の文字が対応することがある（合字）。4桁ずつ切って全部つなぐ。
+MAX_CMAP_ENTRIES = 20000
+
+
+def _to_text(hex_value: str) -> str:
+    """CMapの右辺（UTF-16BE の16進）を文字に直す。"""
+    try:
+        return bytes.fromhex(hex_value).decode("utf-16-be", "ignore")
+    except ValueError:
+        return ""
+
+
+def build_cmap(streams: list[bytes]) -> dict[int, str]:
+    """ToUnicode CMap を1つの表にまとめる。
+
+    ★フォントごとの切り替え（Tf）は見ていない。文書全体で1つの表として扱う。
+      様式のような単純なPDFではこれで足りる。足りなくなったら、そのとき分ける。
+    """
+    cmap: dict[int, str] = {}
+    for stream in streams:
+        text = stream.decode("latin-1", "ignore")
+        if "beginbfchar" not in text and "beginbfrange" not in text:
+            continue
+        for block in _BFCHAR.findall(text):
+            for code, value in _HEXPAIR.findall(block):
+                cmap[int(code, 16)] = _to_text(value)
+        for block in _BFRANGE.findall(text):
+            for lo, hi, value in _HEXTRIPLE.findall(block):
+                start, end = int(lo, 16), int(hi, 16)
+                if end - start > MAX_CMAP_ENTRIES:
+                    continue                               # 壊れた範囲。広げない
+                base = int(value, 16)
+                for offset in range(end - start + 1):
+                    cmap[start + offset] = _to_text(f"{base + offset:04X}")
+    return cmap
+
+
+# 埋め込みフォント・画像の先頭バイト。本文ストリームがこれで始まることはない。
+BINARY_MAGIC = (
+    b"\x00\x01\x00\x00",    # TrueType
+    b"OTTO", b"true", b"ttcf",
+    b"\x01\x00\x04",        # CFF
+    b"%!PS",                # Type1
+    b"\xff\xd8",            # JPEG
+    b"\x89PNG",
+)
+
+
+def is_content_stream(stream: bytes) -> bool:
+    """本文（ページ内容）のストリームか。
+
+    ★埋め込みフォントのバイナリにも `BT` や `Tj` の2文字はたまたま現れる。
+      実測した様式PDFは7本のストリームのうち **本文は1本だけ**で、
+      残りは TrueType フォント（先頭 `\\x00\\x01\\x00\\x00`）と CMap だった。
+
+    ★最初これを「印字できる文字が9割以上か」で書いて、**本文まで弾いた。**
+      `(日本語)Tj` のリテラルは印字できないバイトになるので当然だった。
+      先頭バイトで形式を見分ける形に直した。
+    """
+    if b"BT" not in stream or (b"Tj" not in stream and b"TJ" not in stream):
+        return False
+    if b"beginbfchar" in stream or b"beginbfrange" in stream:
+        return False                                       # 対応表そのもの
+    return not stream.startswith(BINARY_MAGIC)
+
+
+def _decode_hex_run(hex_value: str, cmap: dict[int, str]) -> str:
+    """`<0AB1 0AB2>` のような2バイトコード列を、対応表で文字に直す。"""
+    clean = re.sub(r"\s", "", hex_value)
+    if len(clean) % 4:                                     # 2バイト固定でないものは触らない
+        return ""
+    out = []
+    for i in range(0, len(clean), 4):
+        out.append(cmap.get(int(clean[i:i + 4], 16), ""))
+    return "".join(out)
 
 
 def read_pdf(data: bytes) -> DocText:
     """PDF。**入る形と入らない形がある。読めたふりをしない。**"""
     streams = _pdf_streams(data)
     if not streams:
-        return DocText("pdf", "", False, "Flate圧縮のストリームが無い（別の圧縮か暗号化）")
+        return DocText("pdf", "", False, "ストリームが無い（暗号化か壊れている）")
+    cmap = build_cmap(streams)
+    content = [s for s in streams if is_content_stream(s)]
+    if not content:
+        return DocText("pdf", "", False, "本文のストリームが無い（画像PDFかアウトライン化）")
     chunks = []
-    for stream in streams:
+    for stream in content:
+        page = stream.decode("latin-1", "ignore")
+        # ★CIDフォントの本文は `(…)` ではなく `<16進>` で入る。
+        #   前は `(…)` しか見ておらず、日本語の様式がまるごと落ちていた。
+        for match in _PDF_HEX.finditer(page):
+            chunks.append(_decode_hex_run(match.group(1), cmap))
         for match in _PDF_TEXT.finditer(stream):
-            body = match.group(0)[1:-1]
-            chunks.append(body.decode("utf-8", "replace"))
+            chunks.append(match.group(0)[1:-1].decode("utf-8", "replace"))
     text = _clean("".join(chunks))
     # ★日本語PDFの多くは CID フォントで、( ) の中身がバイト列のまま出る。
     #   文字化けを本文として返すと、判定側が意味のない文字列を読むことになる。
