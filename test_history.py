@@ -238,10 +238,6 @@ class RealData(unittest.TestCase):
         self.assertTrue(s["generated_at"])
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class SiteStatusHistory(unittest.TestCase):
     """毎日自動で貯まる側。変化したものだけ残す。"""
 
@@ -301,3 +297,7 @@ class SiteStatusHistory(unittest.TestCase):
     def test_dictでなければ例外(self):
         with self.assertRaises(ValueError):
             history.site_status_snapshot([])
+
+
+if __name__ == "__main__":
+    unittest.main()

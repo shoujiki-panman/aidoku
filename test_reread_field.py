@@ -103,9 +103,6 @@ class 集計(unittest.TestCase):
         self.assertEqual(summarize([row("x", "X区", True)], {})["newly_found"], 1)
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class ファイル名(unittest.TestCase):
     """★項目名を公開データに合わせて `窓口/オンライン可否` にしたら、
@@ -199,3 +196,7 @@ class 再開(unittest.TestCase):
 
     def test_出力がまだ無ければ空(self):
         self.assertEqual(already_done(Path("/nonexistent/x.json")), {})
+
+
+if __name__ == "__main__":
+    unittest.main()

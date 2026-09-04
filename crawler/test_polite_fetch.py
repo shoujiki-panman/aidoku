@@ -252,10 +252,6 @@ class UserAgentTest(unittest.TestCase):
         self.assertIn(CONTACT, USER_AGENT)
 
 
-if __name__ == "__main__":
-    unittest.main(verbosity=2)
-
-
 class SsrfGuard(unittest.TestCase):
     """取得層がSSRFガードを通っているか。ここが抜けると url_guard があっても意味が無い。"""
 
@@ -380,3 +376,7 @@ class バイナリ本文の保存(unittest.TestCase):
     def test_どの文字コードでも読めなければ置換して返す(self):
         # ここで例外を投げると、1ページのために探索全体が止まる。
         self.assertTrue(polite_fetch.decode_body(b"\xff\xfe\xff", "utf-8"))
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -20,6 +20,7 @@ from officedoc import (  # noqa: E402
     read_ooxml,
     read_pdf,
     readable,
+    show_text,
 )
 
 KANA = "これは委任状です。代理人に手続きを委任します。" * 3
@@ -49,13 +50,31 @@ def cmap_stream(pairs: dict[int, str]) -> bytes:
             f"{body}endbfchar\nendcmap\n").encode("latin-1")
 
 
-def pdf_with_cmap(codes: list[int], pairs: dict[int, str]) -> bytes:
-    """CIDフォントの本文（<16進>Tj）と対応表を持つPDF。"""
+def pdf_with_cmap(codes: list[int], pairs: dict[int, str], *,
+                  declare_font: bool = True) -> bytes:
+    """CIDフォントの本文（<16進>Tj）と対応表を持つPDF。
+
+    ★実物のPDFはフォント資源（/Font << /F1 N 0 R >>）を持ち、本文が Tf で切り替える。
+      テストもその形にしないと、実装のどこが効いているか確かめられない。
+    """
     hexes = "".join(f"{c:04X}" for c in codes)
+    cmap = cmap_stream(pairs)
     out = b"%PDF-1.7\n"
-    out += b"stream\n" + cmap_stream(pairs) + b"\nendstream\n"
-    out += b"stream\n" + f"BT /F1 12 Tf <{hexes}> Tj ET\n".encode("latin-1") + b"\nendstream\n"
+    if declare_font:
+        out += b"5 0 obj\n<< /Font << /F1 7 0 R >> >>\nendobj\n"
+        out += b"7 0 obj\n<< /Type /Font /Subtype /Type0 /ToUnicode 9 0 R >>\nendobj\n"
+    out += b"9 0 obj\n<< /Length " + str(len(cmap)).encode() + b" >>\nstream\n"
+    out += cmap + b"\nendstream\nendobj\n"
+    body = f"BT /F1 12 Tf <{hexes}> Tj ET\n".encode("latin-1")
+    out += b"11 0 obj\nstream\n" + body + b"\nendstream\nendobj\n"
     return out
+
+
+def hex_pdf(text: str) -> tuple[bytes, dict[int, str]]:
+    """日本語の本文を、実物と同じ <16進>＋対応表の形で作る。"""
+    pairs = {0x0100 + i: ch for i, ch in enumerate(dict.fromkeys(text))}
+    back = {ch: code for code, ch in pairs.items()}
+    return pdf_with_cmap([back[ch] for ch in text], pairs), pairs
 
 
 class KindOf(unittest.TestCase):
@@ -128,15 +147,20 @@ class ReadOoxml(unittest.TestCase):
 
 class ReadPdf(unittest.TestCase):
     def test_日本語が取れれば読めた(self):
-        body = "".join(f"({ch})Tj " for ch in KANA).encode("utf-8")
-        got = read_pdf(pdf([body]))
+        # ★PDFのリテラル `(…)` は1バイト系の符号化。UTF-8は入らない。
+        #   日本語は <16進>＋対応表で書かれる。実物に合わせる。
+        data, _ = hex_pdf(KANA)
+        got = read_pdf(data)
         self.assertTrue(got.ok, got.reason)
         self.assertIn("委任状", got.text)
 
     def test_非圧縮のストリームも捨てない(self):
         # ★対応表（ToUnicode CMap）は非圧縮の平文で入っていることがある。
         #   Flateだけ見て捨てていたせいで「CIDフォントで読めない」と誤報していた。
-        got = read_pdf(pdf([f"({KANA})Tj".encode()], compress=False))
+        #   hex_pdf の対応表は非圧縮で入れてある。これが読めれば通る。
+        data, _ = hex_pdf(KANA)
+        self.assertNotIn(b"x\x9c", data)          # Flate圧縮していないこと
+        got = read_pdf(data)
         self.assertTrue(got.ok, got.reason)
         self.assertIn("委任状", got.text)
 
@@ -170,10 +194,26 @@ class 字形の対応表(unittest.TestCase):
     PAIRS = {0x0100 + i: ch for i, ch in enumerate("これは委任状です。")}
 
     def test_対応表を使って本文に戻す(self):
-        codes = list(self.PAIRS)
-        got = read_pdf(pdf_with_cmap(codes * 4, self.PAIRS))
+        got = read_pdf(pdf_with_cmap(list(self.PAIRS) * 4, self.PAIRS))
         self.assertTrue(got.ok, got.reason)
         self.assertIn("委任状", got.text)
+
+    def test_対応表を持たないフォントは1バイトで読む(self):
+        # ★2バイト前提で読んでいたせいで、中野区の様式で <2020…> が全部落ちた。
+        #   これはCIDの1コードではなく空白2文字だった。114文字が欠けていた。
+        page = "BT /F9 12 Tf <41424320> Tj ET"
+        self.assertEqual(show_text(page, {}, {}), "ABC ")
+
+    def test_宣言されたフォントの表を先に引く(self):
+        page = "BT /F1 12 Tf <0100> Tj ET"
+        got = show_text(page, {0x0100: "全"}, {"F1": {0x0100: "個"}})
+        self.assertEqual(got, "個")
+
+    def test_フォントの表に無ければ全体の表に落とす(self):
+        # ★フォント別だけにしたら北区が 0%→6.4% と悪化した。両方を順に引く。
+        page = "BT /F1 12 Tf <0200> Tj ET"
+        got = show_text(page, {0x0200: "全"}, {"F1": {0x0100: "個"}})
+        self.assertEqual(got, "全")
 
     def test_対応表を組み立てる(self):
         cmap = build_cmap([cmap_stream(self.PAIRS)])
@@ -192,6 +232,17 @@ class 字形の対応表(unittest.TestCase):
 
     def test_本文のストリームは通す(self):
         self.assertTrue(is_content_stream(b"BT /F1 12 Tf <0100> Tj ET"))
+
+    def test_配列形式のbfrangeを読む(self):
+        # ★<0509> <050A> [<578B> <5951>] の形。連番形式しか見ておらず落ちていた。
+        block = "<0509> <050A> [<578B> <5951>]"
+        cmap = build_cmap([f"beginbfrange\n{block}\nendbfrange".encode("latin-1")])
+        self.assertEqual(cmap[0x0509], "型")
+        self.assertEqual(cmap[0x050A], "契")
+
+    def test_数が合わない配列は触らない(self):
+        block = "<0509> <050C> [<578B> <5951>]"      # 4つ必要なのに2つ
+        self.assertEqual(build_cmap([f"beginbfrange\n{block}\nendbfrange".encode()]), {})
 
     def test_対応表に無いコードは落とす(self):
         # ★埋めない。読めなかった字を勝手に作らない。

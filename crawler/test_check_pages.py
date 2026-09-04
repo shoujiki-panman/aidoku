@@ -388,10 +388,6 @@ class ReportTest(unittest.TestCase):
         self.assertIn("悪くなったという意味ではない", report["_about"])
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class HistoryDoesNotEscape(unittest.TestCase):
     """履歴の既定が実ファイルを指していて、テストが本物を汚した回帰。
 
@@ -414,3 +410,7 @@ class HistoryDoesNotEscape(unittest.TestCase):
             with mock.patch.object(check_pages, "run", side_effect=RuntimeError("boom")):
                 check_pages.main(["--out", str(out), "--history", ""])
             self.assertFalse((out.parent / "history").exists())
+
+
+if __name__ == "__main__":
+    unittest.main()
