@@ -1,0 +1,346 @@
+{
+  "_about": "「記載なし」のうち、リンクを1本も開かずにそう答えたものの記録。判定は変えていない。印を付けて数えているだけ。",
+  "version": "never-looked-0.1",
+  "procedure": "jidouteate",
+  "max_follow": 2,
+  "marks": {
+    "looked_and_absent": "リンクを開いた上で見つからなかった",
+    "never_looked": "リンクを1本も開かずに「記載なし」と答えた",
+    "partly_looked": "開いたが、渡した一覧を使い切っていない"
+  },
+  "summary": {
+    "municipalities": 24,
+    "by_mark": {
+      "looked_and_absent": 4,
+      "never_looked": 14,
+      "partly_looked": 6
+    },
+    "followed_total": 14,
+    "with_missing_fields": 24,
+    "missing_without_looking": 14,
+    "missing_without_looking_names": [
+      "荒川区",
+      "千代田区",
+      "江戸川区",
+      "八王子市",
+      "北区",
+      "港区",
+      "練馬区",
+      "世田谷区",
+      "渋谷区",
+      "品川区",
+      "新宿区",
+      "杉並区",
+      "墨田区",
+      "台東区"
+    ],
+    "all_missing_never_looked": 7,
+    "all_missing_never_looked_names": [
+      "千代田区",
+      "八王子市",
+      "北区",
+      "世田谷区",
+      "新宿区",
+      "墨田区",
+      "台東区"
+    ]
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "municipality_id": "adachi",
+      "followed": 2,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "looked_and_absent"
+    },
+    {
+      "municipality": "荒川区",
+      "municipality_id": "arakawa",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "文京区",
+      "municipality_id": "bunkyo",
+      "followed": 1,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "partly_looked"
+    },
+    {
+      "municipality": "千代田区",
+      "municipality_id": "chiyoda",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "中央区",
+      "municipality_id": "chuo",
+      "followed": 1,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "partly_looked"
+    },
+    {
+      "municipality": "江戸川区",
+      "municipality_id": "edogawa",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "八王子市",
+      "municipality_id": "hachioji",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "板橋区",
+      "municipality_id": "itabashi",
+      "followed": 2,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "looked_and_absent"
+    },
+    {
+      "municipality": "葛飾区",
+      "municipality_id": "katsushika",
+      "followed": 1,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "partly_looked"
+    },
+    {
+      "municipality": "北区",
+      "municipality_id": "kita",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "江東区",
+      "municipality_id": "koto",
+      "followed": 2,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "looked_and_absent"
+    },
+    {
+      "municipality": "目黒区",
+      "municipality_id": "meguro",
+      "followed": 1,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "partly_looked"
+    },
+    {
+      "municipality": "港区",
+      "municipality_id": "minato",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "中野区",
+      "municipality_id": "nakano",
+      "followed": 2,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "looked_and_absent"
+    },
+    {
+      "municipality": "練馬区",
+      "municipality_id": "nerima",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "大田区",
+      "municipality_id": "ota",
+      "followed": 1,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "partly_looked"
+    },
+    {
+      "municipality": "世田谷区",
+      "municipality_id": "setagaya",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "渋谷区",
+      "municipality_id": "shibuya",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "品川区",
+      "municipality_id": "shinagawa",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "新宿区",
+      "municipality_id": "shinjuku",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "杉並区",
+      "municipality_id": "suginami",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "手数料"
+      ],
+      "all_missing": false,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "墨田区",
+      "municipality_id": "sumida",
+      "followed": 0,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "台東区",
+      "municipality_id": "taito",
+      "followed": 0,
+      "links_offered": 22,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "never_looked"
+    },
+    {
+      "municipality": "豊島区",
+      "municipality_id": "toshima",
+      "followed": 1,
+      "links_offered": 40,
+      "missing_fields": [
+        "必要書類",
+        "窓口オンライン可否",
+        "期限",
+        "手数料"
+      ],
+      "all_missing": true,
+      "mark": "partly_looked"
+    }
+  ]
+}
