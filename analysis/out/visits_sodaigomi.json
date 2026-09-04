@@ -2,7 +2,7 @@
   "_about": "虱潰しで読んだ (URL, 項目) の記録。二度読まないために持つ。判定ではなく、何を見たかの記録。",
   "version": "sweep-0.1",
   "procedure": "sodaigomi",
-  "n": 114,
+  "n": 115,
   "visits": {
     "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html\t必要書類": {
       "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
@@ -1593,6 +1593,20 @@
       "value": "",
       "evidence": "",
       "why_not": "このページは「ごみ・リサイクル」のトップ目次ページで、下位カテゴリ（10_粗大ごみに関すること等）へのリンク一覧のみ。粗大ごみの手数料の金額や処理券の料金表は本文に記載されていない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102301.xls\t期限": {
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102301.xls",
+      "link_text": "粗大ごみ品目・手数料一覧（令和5年10月1日から）（エクセル：102KB）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "この本文は粗大ごみの品目一覧表（品目・例示・備考の対応表）であり、収集の申込期限についての記載はない。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,

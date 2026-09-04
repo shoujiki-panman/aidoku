@@ -11,7 +11,7 @@
   "summary": {
     "municipalities": 24,
     "swept_fields": 45,
-    "pages_read": 114,
+    "pages_read": 115,
     "found": 9,
     "found_names": [
       "中央区/窓口/オンライン可否",
@@ -872,16 +872,21 @@
           "stopped": "unreadable",
           "errors": 0,
           "unreadable": [
-            "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102301.xls",
             "https://www.city.ota.tokyo.jp/seikatsu/gomi/topics/kyougikai.html"
           ],
-          "candidates": 6,
+          "candidates": 7,
           "looked": [
             {
               "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
               "link_text": "【チラシ】高齢者世帯等に対する粗大ごみの運び出し収集（PDF：151KB）",
               "verified": false,
               "from_cache": true
+            },
+            {
+              "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102301.xls",
+              "link_text": "粗大ごみ品目・手数料一覧（令和5年10月1日から）（エクセル：102KB）",
+              "verified": false,
+              "from_cache": false
             },
             {
               "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.files/2025102302.pdf",

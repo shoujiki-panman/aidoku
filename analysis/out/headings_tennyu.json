@@ -1,0 +1,600 @@
+{
+  "_about": "AIが読んだページの見出しの記録。適合試験ではない。2.4.6 は主題を説明しているかであり、説明できているかは人が読んで決める。ここで数えるのは機械で確実に言える2つ（見出しが無い・空の見出し）だけ。",
+  "version": "headings-0.1",
+  "procedure": "tennyu",
+  "criterion": "2.4.6 見出し及びラベル（レベルAA）",
+  "summary": {
+    "pages": 58,
+    "pages_without_headings": 1,
+    "pages_without_headings_ratio": 0.017,
+    "empty_headings": 0,
+    "pages_with_empty_heading": 0,
+    "pages_without_h1": 1,
+    "generic_not_counted": 18,
+    "headings_total": 717,
+    "municipalities": 24,
+    "unreadable_pages": 0
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "荒川区",
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "unreadable": false,
+      "headings": 10,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "荒川区",
+      "url": "http://ttzk.graffer.jp/ward-arakawa",
+      "unreadable": false,
+      "headings": 6,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "荒川区",
+      "url": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+      "unreadable": false,
+      "headings": 4,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "荒川区",
+      "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
+      "unreadable": false,
+      "headings": 3,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "文京区",
+      "url": "https://www.city.bunkyo.lg.jp/b013/p000261/index.html",
+      "unreadable": false,
+      "headings": 14,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "文京区",
+      "url": "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+      "unreadable": false,
+      "headings": 28,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "文京区",
+      "url": "https://www.city.bunkyo.lg.jp/b013/p000264.html",
+      "unreadable": false,
+      "headings": 29,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "文京区",
+      "url": "https://www.city.bunkyo.lg.jp/b013/p000284/index.html#tennyu",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "千代田区",
+      "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tennyu.html",
+      "unreadable": false,
+      "headings": 33,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "江戸川区",
+      "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
+      "unreadable": false,
+      "headings": 22,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "八王子市",
+      "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
+      "unreadable": false,
+      "headings": 2,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "八王子市",
+      "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "八王子市",
+      "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "八王子市",
+      "url": "https://www.city.hachioji.tokyo.jp/question/002/hikkosi/p031865.html",
+      "unreadable": false,
+      "headings": 8,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "八王子市",
+      "url": "https://www.city.hachioji.tokyo.jp/online/densi/annnai/p034551.html",
+      "unreadable": false,
+      "headings": 6,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "板橋区",
+      "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+      "unreadable": false,
+      "headings": 21,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "葛飾区",
+      "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
+      "unreadable": false,
+      "headings": 10,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "葛飾区",
+      "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+      "unreadable": false,
+      "headings": 24,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "葛飾区",
+      "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html",
+      "unreadable": false,
+      "headings": 6,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "北区",
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+      "unreadable": false,
+      "headings": 20,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "北区",
+      "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+      "unreadable": false,
+      "headings": 32,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "江東区",
+      "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html",
+      "unreadable": false,
+      "headings": 27,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "目黒区",
+      "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
+      "unreadable": false,
+      "headings": 19,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "港区",
+      "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html",
+      "unreadable": false,
+      "headings": 16,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中野区",
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+      "unreadable": false,
+      "headings": 11,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "中野区",
+      "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html",
+      "unreadable": false,
+      "headings": 16,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "練馬区",
+      "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+      "unreadable": false,
+      "headings": 21,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "大田区",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html",
+      "unreadable": false,
+      "headings": 13,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "大田区",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/tenshutu-yoyaku_pc-smartphone.html",
+      "unreadable": false,
+      "headings": 11,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 2
+    },
+    {
+      "municipality": "大田区",
+      "url": "https://ttzk.graffer.jp/ward-ota/move-in",
+      "unreadable": false,
+      "headings": 0,
+      "no_headings": true,
+      "empty": 0,
+      "has_h1": false,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+      "unreadable": false,
+      "headings": 16,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
+      "unreadable": false,
+      "headings": 2,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/02312/18274.html",
+      "unreadable": false,
+      "headings": 16,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "渋谷区",
+      "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+      "unreadable": false,
+      "headings": 14,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "渋谷区",
+      "url": "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html",
+      "unreadable": false,
+      "headings": 7,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "品川区",
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html",
+      "unreadable": false,
+      "headings": 38,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "新宿区",
+      "url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
+      "unreadable": false,
+      "headings": 3,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "新宿区",
+      "url": "https://www.city.shinjuku.lg.jp/todokede/index01.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "杉並区",
+      "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tennyuu/index.html",
+      "unreadable": false,
+      "headings": 2,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "杉並区",
+      "url": "https://www.city.suginami.tokyo.jp/s018/996.html",
+      "unreadable": false,
+      "headings": 13,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "杉並区",
+      "url": "https://www.city.suginami.tokyo.jp/s018/10714.html",
+      "unreadable": false,
+      "headings": 15,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "杉並区",
+      "url": "https://www.city.suginami.tokyo.jp/s018/540.html",
+      "unreadable": false,
+      "headings": 12,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "杉並区",
+      "url": "https://www.city.suginami.tokyo.jp/s018/538.html",
+      "unreadable": false,
+      "headings": 13,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "墨田区",
+      "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "墨田区",
+      "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
+      "unreadable": false,
+      "headings": 13,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "台東区",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
+      "unreadable": false,
+      "headings": 12,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "台東区",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
+      "unreadable": false,
+      "headings": 7,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "台東区",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
+      "unreadable": false,
+      "headings": 4,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "台東区",
+      "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
+      "unreadable": false,
+      "headings": 17,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "豊島区",
+      "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
+      "unreadable": false,
+      "headings": 2,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "豊島区",
+      "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+      "unreadable": false,
+      "headings": 14,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "豊島区",
+      "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
+      "unreadable": false,
+      "headings": 14,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "豊島区",
+      "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html",
+      "unreadable": false,
+      "headings": 13,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    }
+  ]
+}
