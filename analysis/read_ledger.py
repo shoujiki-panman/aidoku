@@ -56,8 +56,11 @@ REASONS = {
     "read": "読解に渡した",
     "shown_not_chosen": f"リンク一覧に載せたが開かなかった（1ページあたり上限{MAX_FOLLOW}本）",
     "never_shown": "リンク一覧にも載せていない（こちら側の取りこぼし）",
-    "non_html": "PDF/Word/Excel のため弾いた",
-    "unfetchable": "取得できていない",
+    # ★以前は「PDF/Word/Excel のため弾いた」と書いていた。**いまは弾いていない。**
+    #   字形の対応表を使って読めるようになり（PDF 6/7）、抽出にも流している。
+    #   台帳だけ古い理由を書き続けると、直したことが伝わらない。
+    "non_html": "PDF/Word/Excel（読めるものは本文として渡している）",
+    "unfetchable": "取得できていない（大半は robots.txt による拒否）",
 }
 
 

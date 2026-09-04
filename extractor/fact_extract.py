@@ -304,11 +304,18 @@ def _extra_page_sections(pages: list[tuple[str, str]]) -> list[str]:
         for url, text in pages
     ]
     if pages:
+        # ★プロンプトに足した「記載なしにする前に必ずリンクを入れる」規則が、
+        #   この2回目にも効いてしまい `follow_urlsは最大0件: 1件ある` で落ちた
+        #   （粗大ごみ・実測）。節を立てて明示的に打ち消す。
         sections.append(
-            "\n（上のリンク先ページはあなたの要求で開いたものです。ここから答えが"
-            "取れた項目はfound=true / source=\"linked_page\"とし、"
-            "failure_reasonはnullにしてください。リンク追従はここで終了するため、"
-            "follow_urlsは空配列にしてください。）")
+            "\n---\n\n## ここで終わりです（上の探索順序より優先）\n\n"
+            "上のリンク先ページはあなたの要求で開いたものです。ここから答えが"
+            "取れた項目は found=true / source=\"linked_page\" とし、"
+            "failure_reason は null にしてください。\n\n"
+            "**リンク追従はここで終了します。追加のリンクは開けません。**\n"
+            "ここにも無ければ `記載なし` としてください。\n"
+            "**`follow_urls` は必ず空配列 `[]` にしてください。**\n"
+            "「`記載なし` にする前にリンクを入れる」規則は、ここでは適用しません。\n")
     return sections
 
 

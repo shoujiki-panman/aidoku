@@ -123,6 +123,28 @@ class Reasons(unittest.TestCase):
         # 「AIが開かなかった」だけだと、こちらが設けた上限がAIの落ち度に見える。
         self.assertIn("上限", REASONS["shown_not_chosen"])
 
+    def test_非HTMLの理由が実態と合っている(self):
+        """★以前は「PDF/Word/Excel のため弾いた」と書いていた。
+
+        いまは弾いていない（字形の対応表で読み、抽出にも流している）。
+        台帳だけ古い理由を書き続けると、直したことが伝わらない。
+        道具を直したら、理由文も一緒に直す。
+        """
+        import sys
+        from pathlib import Path as _P
+        sys.path.insert(0, str(_P(__file__).resolve().parent))
+        from extractor.fact_extract import NON_HTML_READING
+        reason = REASONS["non_html"]
+        if NON_HTML_READING == "none":
+            self.assertIn("弾いた", reason)
+        else:
+            self.assertNotIn("弾いた", reason)
+
+    def test_取得できない理由に一番多い原因を書く(self):
+        # 実測では大半が robots.txt による拒否（区自身の拒否ではなく、
+        # 共有ボタンや外部の変換サービス）。「取得失敗」だけだと原因を誤解する。
+        self.assertIn("robots", REASONS["unfetchable"])
+
 
 if __name__ == "__main__":
     unittest.main()
