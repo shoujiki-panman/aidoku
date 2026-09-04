@@ -1,0 +1,2159 @@
+{
+  "_about": "読ませていなかった本命ページを読ませ直した追試。測定のやり直しではないので scores-*.json には混ぜられない。",
+  "version": "reread-field-0.1",
+  "procedure": "tennyu",
+  "field": "必要書類",
+  "conditions": {
+    "read_breadth": "strong_all",
+    "model": "claude-sonnet-5",
+    "strong_score": 10,
+    "hint": "必要なもの|お持ちください|持ち物|必要書類|ご用意|本人確認書類"
+  },
+  "summary": {
+    "municipalities": 24,
+    "pages_read": 137,
+    "already_readable": 18,
+    "newly_found": 2,
+    "newly_found_names": [
+      "中央区",
+      "墨田区"
+    ],
+    "unverified_claims": 7
+  },
+  "before": {
+    "minato": "読めた",
+    "adachi": "読めた",
+    "bunkyo": "読めた",
+    "chiyoda": "読めた",
+    "edogawa": "読めた",
+    "itabashi": "読めた",
+    "nerima": "読めた",
+    "shibuya": "読めた",
+    "suginami": "読めた",
+    "taito": "読めた",
+    "toshima": "読めた",
+    "nakano": "読めた",
+    "katsushika": "読めた",
+    "kita": "読めた",
+    "koto": "読めた",
+    "meguro": "読めた",
+    "ota": "読めた",
+    "shinagawa": "読めた",
+    "shinjuku": "読めない",
+    "arakawa": "読めない",
+    "chuo": "読めない",
+    "setagaya": "読めない",
+    "sumida": "読めない"
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "municipality_id": "adachi",
+      "pages": [
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
+          "link_text": "戸籍関係の届出一覧（7月17日）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍関係の届出（出生届・婚姻届・離婚届・死亡届など）の一覧であり、他区市町村からの転入届については記載がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
+          "link_text": "",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "はてなブックマークの足立区関連エントリー一覧ページであり、転入届に関する記載自体が本文中に存在しない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "荒川区",
+      "municipality_id": "arakawa",
+      "pages": [
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
+          "link_text": "住民票関連の証明書",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写し・住民票記載事項証明書・除票の写し・不在住証明書など「証明書を請求するとき」の必要書類・手続きについての説明であり、転入届そのものの必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
+          "link_text": "住民票の写しの電話予約",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「住民票の写しの電話予約」についてで、転入届の必要書類ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/ininjou/koronayuusou.html",
+          "link_text": "郵送による住民票の写し、戸籍に関する証明書等の交付申請",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は「郵送による住民票の写し、戸籍に関する証明書等の交付申請」についてのページで、証明書を郵送請求する際の手続きを説明している。転入届そのものの必要書類には触れていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
+          "link_text": "住民票の写し・戸籍証明書の郵送請求におけるキャッシュレス決済",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写し・戸籍証明書の郵送請求におけるキャッシュレス決済（証明書交付手数料の支払い）についての案内であり、転入届の必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "文京区",
+      "municipality_id": "bunkyo",
+      "pages": [
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b004/p000176.html",
+          "link_text": "くらしの手続きガイド （引越し・結婚・離婚・出生・死亡）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「くらしの手続きガイド」という外部リンク型の案内サービスの紹介のみで、転入届の必要書類そのものは本文に記載されていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000260/index.html",
+          "link_text": "住民票の異動関係（転入・転出・転居届等）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転入届・転出届・転居届等へのリンク一覧（索引ページ）であり、転入届自体の必要書類は本文に記載されていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/koseki/index.html",
+          "link_text": "戸籍の届出関係（出生届・婚姻届・死亡届等）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「戸籍の届出関係（出生届・婚姻届・死亡届等）」の一覧ページで、転入届の必要書類は書かれていない。関連リンクとして「住民票の異動関係（転入・転出・転居届等）」への誘導があるのみで、本文に必要書類の記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/index.html",
+          "link_text": "届出・登録・証明（戸籍・住民票など）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「届出・登録・証明」の目次・リンク一覧ページで、「転入届(区外や国外から文京区へ引越しされる方）」へのリンク名があるのみ。転入届の必要書類そのものは本文に記載されていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p007546.html",
+          "link_text": "引越し・住民票・印鑑登録の質問にAIチャットボットがお答えします",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "AIチャットボットサービスの案内ページで、転入届の必要書類は本文に記載されていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000271.html",
+          "link_text": "「引越しワンストップサービス」",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「引越しワンストップサービス（マイナポータル経由のオンライン転出届・転入予約）」の説明で、来庁時の持ち物として挙げられているのは「世帯全員分のマイナンバーカード」のみ。これはオンライン予約制度を使う場合の持ち物であり、転入届そのものの必要書類一覧ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/shoumeisho/index.html",
+          "link_text": "各種証明書（戸籍・住民票の写し・印鑑登録証明書等）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「各種証明書（戸籍・住民票の写し・印鑑登録証明書等）」の一覧ページで、証明書請求の案内とリンク集のみ。転入届の必要書類は本文に記載されておらず、「住民票の異動関係（転入・転出・転居届等）」への別リンクがあるだけ。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000265/index.html",
+          "link_text": "転出届(文京区から区外や国外に引越しされる方)",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転出届(文京区から区外や国外に引越しされる方)」についてのページで、転入届の必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000268/index.html",
+          "link_text": "転居届(文京区内で引越しされる方)",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届(文京区内で引越しされる方)」の必要書類。転入届（区外・国外から文京区へ引っ越す場合の届出）とは別の手続きで、本文にも区別が明記されている。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "千代田区",
+      "municipality_id": "chiyoda",
+      "pages": [
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/mainambadenshi/card-keizoku.html",
+          "link_text": "引越し等に伴うマイナンバーカードの住所・氏名等変更手続き（継続利用・券面更新）および電子証明書の発行",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはマイナンバーカードの住所・氏名等変更手続き（継続利用・券面更新）と電子証明書発行の必要書類についてのページであり、転入届そのものの必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/juminhyo/index.html",
+          "link_text": "住民票の写し等の請求・閲覧",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「住民票の写し等の請求・閲覧」に関する内容で、証明書（住民票の写し・除票・記載事項証明書等）を請求する際の手続きが中心。転入届そのものの必要書類は本文に書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/index.html",
+          "link_text": "住民登録に関する手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民登録関連の手続き一覧ページで、各届出（転出届・転居届・転入届・世帯変更届など）へのリンク名が並んでいるだけ。転入届そのものの必要書類は本文に書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenshutsu.html",
+          "link_text": "転出届（千代田区から他の市区町村または国外に住所を異動するとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは千代田区から他の市区町村へ「転出」する際の届出（転出届）についてのページであり、転入届（他区市町村から千代田区への転入）の必要書類は本文に記載されていない。ページ下部の関連リンク一覧に「転入届」という項目名があるのみで、その必要書類の内容はこのページには書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenkyo.html",
+          "link_text": "転居届（千代田区内で住所を異動するとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（千代田区内で住所を異動するとき）」の必要書類であり、転入届（他区市町村から千代田区への転入）のページではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/koseki/todokede.html",
+          "link_text": "戸籍の届出",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「戸籍の届出」（出生届・婚姻届・離婚届・死亡届・養子縁組届・養子離縁届・転籍届・分籍届・入籍届）の説明であり、住民異動の転入届については記載がない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/jyuminhyo-heiki.html",
+          "link_text": "旧氏（旧姓）等の住民票等への併記",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "旧氏（旧姓）等の住民票等への併記に関するページで、転入届の必要書類の記載はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/kyuuji-furigana.html",
+          "link_text": "住民票に旧氏の振り仮名が記載されます",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票への旧氏の振り仮名の記載制度についての説明で、転入届の必要書類ではない（旧氏の振り仮名の届出に必要な持ち物の記載はあるが、転入届とは別の手続き）",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/index.html",
+          "link_text": "戸籍・住民の手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「戸籍・住民の手続き」の目次（索引）ページで、住民登録・戸籍届出・証明書請求などへのリンク一覧のみが本文にあり、転入届の必要書類そのものは記載されていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/koseki/index.html",
+          "link_text": "戸籍届出と証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍届出と証明のトップページで、戸籍届出の種類一覧・戸籍証明書の請求・戸籍証明書ダウンロード等へのリンクのみ。転入届の必要書類は本文に記載されていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/koseki.html",
+          "link_text": "戸籍・住民票「本人確認」",
+          "found": true,
+          "value": "運転免許証・パスポート・マイナンバーカード・在留カード・特別永住者証明書・資格確認書・年金手帳・顔写真付き社員証・顔写真付き学生証など",
+          "evidence": "転出・転入などの住民票の異動届出\n\n運転免許証・パスポート・マイナンバーカード・在留カード・特別永住者証明書・資格確認書・年金手帳・顔写真付き社員証・顔写真付き学生証など\n\n注意：上記のいずれもお持ちでない場合は、お問い合わせください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 118,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tokkyuhakko.html",
+          "link_text": "マイナンバーカードの特急発行",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはマイナンバーカードの特急発行についての内容で、転入届の必要書類ではなく、特急発行申請時の本人確認書類が書かれている",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/tetsuzukiguide.html",
+          "link_text": "千代田区手続きガイド～あなたに必要な手続きや持ち物が確認できます～",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「千代田区手続きガイド」という外部サイト誘導ツールの紹介文で、転入届の必要書類そのものは本文に記載されていない（利用案内があるのみ）",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "運転免許証・パスポート・マイナンバーカード・在留カード・特別永住者証明書・資格確認書・年金手帳・顔写真付き社員証・顔写真付き学生証など"
+    },
+    {
+      "municipality": "中央区",
+      "municipality_id": "chuo",
+      "pages": [
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html",
+          "link_text": "引越しワンストップサービスの利用",
+          "found": true,
+          "value": "マイナンバーカード",
+          "evidence": "転入届は、窓口への来庁が必要です。必ずマイナンバーカードをお持ちのうえご来庁ください。（引越しをした後でなければ手続きをすることができません。）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 72,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/zyushohenkoutodokede.html",
+          "link_text": "住所変更の届出を忘れずに",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住所異動届出全般の案内ページで、転入・転居・転出それぞれの詳細（別ページ）へのリンク一覧と、届出期間・届出する人・受付窓口/時間のみを掲載。転入届そのものの必要書類は本文中に記載されていない（「区外から転入する」等のリンク先ページの内容と思われる）。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/syusseitodoke/index.html",
+          "link_text": "出生届",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは中央区の「出生届の提出方法」に関するもので、転入届とは無関係。届出に必要なものは出生届・出生証明書・母子健康手帳であり、転入届の必要書類は本文に記載されていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/user_kumin_time_20191030.html",
+          "link_text": "住民票、マイナンバーカード等へ「旧氏」の記載を希望する方へ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「旧氏」の住民票・マイナンバーカードへの記載請求の届出に関する説明で、必要書類も本人確認書類・委任状・旧氏の振り仮名を証明する書類など旧氏記載請求のためのものであり、転入届そのものの必要書類ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/furigana.html",
+          "link_text": "戸籍に振り仮名を記録する取り組みが始まります",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「戸籍への振り仮名の記載」および氏名の振り仮名の変更届に関する内容で、転入届（他市区町村から中央区への転入時の届出）についての記載は無い。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "マイナンバーカード"
+    },
+    {
+      "municipality": "江戸川区",
+      "municipality_id": "edogawa",
+      "pages": [
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/ido_todoke/index.html",
+          "link_text": "住所の異動（引越し等）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「住所の異動（引越し等）」の一覧・リンクページで、転居届・転入届・転出届などへのリンク名が並んでいるだけ。転入届の必要書類そのものは本文に記載されていない（リンク先ページの内容と思われる）",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/hikkoshi_info.html",
+          "link_text": "【マイナンバーカードをお持ちの方】引越しワンストップサービス",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「引越しワンストップサービス」（マイナポータルでの転出届オンライン手続き）の案内と、転出・転入・転居それぞれに伴う関連手続き一覧（表）が中心で、転入届そのものを窓口で行う際に何を持参すべきかという必要書類の記載は本文中に無い。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/ido_todoke/kakunin.html",
+          "link_text": "戸籍届出や証明書請求、住所異動等の際の本人確認書類",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「戸籍届出や証明書請求、住所異動等の際の本人確認書類」というタイトルの通り、戸籍の届出・各種証明書の交付請求・住所異動届（転入届・転出届・転居届をまとめた総称）を提出する際に共通して必要な本人確認書類（運転免許証やパスポートなど区分A~Fの一覧）を説明したページ。転入届に固有の必要書類（転出証明書など）が本文に書かれているわけではなく、証明書請求や転出・転居届と共通の本人確認書類を扱っているだけなので、「転入届そのものの必要書類」には該当しない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenkyo.html",
+          "link_text": "転居届（江戸川区内で引越した方）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（江戸川区内で引越した方）」の必要書類のみを説明しており、転入届（区外から江戸川区へ引越した方）の必要書類は本文に書かれていない。転入届へのリンクが一覧に出ているだけ。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/seikyu.html",
+          "link_text": "江戸川区の住民票の請求",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写しなど証明書を請求するときの必要書類についてで、転入届そのものの必要書類ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/koikikofu.html",
+          "link_text": "広域交付（住民票のある市区町村以外での交付）による交付申請",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「広域交付（住民票のある市区町村以外での交付）による交付申請」、つまり住民票の写しの証明書請求に関するページであり、転入届の必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yuusoutodoke.html",
+          "link_text": "郵送による戸籍の届出",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「郵送による戸籍の届出」（婚姻届・離婚届・転籍届・入籍届など戸籍の届出）について書かれており、転入届（住民異動届）の必要書類は本文に記載がない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yokuarusitumon.html",
+          "link_text": "戸籍の届出についてのよくある質問と回答",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出（婚姻届・出生届・死亡届・転籍届など）についてのよくある質問と回答であり、転入届（住民異動届）についての記載は本文中に見当たらない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/kihondaicho.html",
+          "link_text": "住民基本台帳の閲覧",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「住民基本台帳の閲覧」（統計調査・学術研究等での住民基本台帳の閲覧申出）と「住民票等の請求」に関する内容で、転入届の必要書類ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
+          "link_text": "届出・証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は「届出・証明」カテゴリのリンク一覧（メニュー構造）のみで、「転入届（区外から江戸川区へ引越した方）」というリンク名が挙がっているだけ。転入届そのものの必要書類（本文）は書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "八王子市",
+      "municipality_id": "hachioji",
+      "pages": [],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "板橋区",
+      "municipality_id": "itabashi",
+      "pages": [
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+          "link_text": "転入届 （国外から板橋区に転入した方）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転入届（国外から板橋区に転入した方）」の必要書類（パスポート・戸籍謄本・戸籍の附票・在留カード等）であり、他の市区町村から板橋区へ引っ越す場合の転入届とは別の手続き（国外からの転入）を扱っている",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
+          "link_text": "転居届 （板橋区内で引越しの方）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（板橋区内で引越しの方）」の必要書類であり、他区市町村から板橋区への「転入届」の必要書類ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
+          "link_text": "団体での住民異動届出について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「団体での住民異動届出について」で、板橋区外から板橋区へ引っ越す個人向けの転入届の必要書類は書かれていない。団体（概ね5世帯以上）での来庁予約手続きと、様式ダウンロード・代理人申請時の持参物の説明のみで、転入届自体の必要書類（本人確認書類やマイナンバーカード等）の記載はない。転入届のページ自体は「関連リンク」として別ページへのリンクがあるのみ。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
+          "link_text": "旧氏（旧姓）の住民票などへの併記",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「旧氏（旧姓）の住民票などへの併記」の届出案内であり、転入届の必要書類については書かれていない。転入届自体は関連リンクとして挙げられているのみ。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
+          "link_text": "同じ住所に戸建建物が複数あり誤配等でお困りの方へ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「同じ住所に戸建建物が複数あり誤配等でお困りの方へ（補助番号制度）」の説明で、持参物は補助番号付定の申請時のもの。転入届そのものの必要書類は書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kenko/kourei/kouki/tetsuduki/1003527.html",
+          "link_text": "転入転出等に係わる手続き（後期高齢者医療制度）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "後期高齢者医療制度の転入時手続き（保険関係の届出）についてのページで、記載されている「手続きに必要なもの」（後期高齢者医療負担区分等証明書、マイナンバーカード等）は後期高齢者医療制度の手続きのためのもの。転入届そのもの（戸籍住民課での届出）の必要書類は本文に書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/1001687.html",
+          "link_text": "くらしの各種手続・届出",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍住民課の業務案内一覧（各種手続きへのリンク集）で、住民登録（引越し等の手続き）や本人確認の案内はあるが、転入届で持参すべき必要書類そのものは本文に記載されていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "葛飾区",
+      "municipality_id": "katsushika",
+      "pages": [
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+          "link_text": "転入届",
+          "found": true,
+          "value": "他自治体からの転入：転出証明書（または「転入届の特例」適用時は不要）、マイナンバーカードをお持ちの場合は転入される方全員分のカード、外国人住民の方は在留カード又は特別永住者証明書。国外からの転入（日本人）：転入者全員のパスポート、戸籍謄本（抄本）及び戸籍の附票（本籍地が葛飾区の方は不要）。国外からの転入（外国人）：転入者全員のパスポート（入国日が確認できる証印が押印されているもの）と、在留カード又は特別永住者証明書。",
+          "evidence": "転入の届出に必要な証明書類\n\n他自治体からの転入\n\nこれまで住んでいた区市町村に転出届をし、転出証明書の交付を受けてください。（マイナンバーカード等による「転入届の特例」が適用された場合、転出証明書は交付されません。）\n\nマイナンバーカードをお持ちの場合は、転入される方全員分のカードを持参してください。\n\nマイナンバーカードの継続利用（住所変更）の手続きについては、本人または暗証番号を入力できる同一世帯員のみ可能です。ただし、電子証明書の発行手続きは本人のみ可能となります。\n\n外国人住民の方は、転入される方全員分の在留カード又は特別永住者証明書をご持参ください。\n\n国外からの転入\n\n日本人の方\n\n転入者全員のパスポート、戸籍謄本（抄本）及び戸籍の附票が必要です。（本籍地が葛飾区の方は、戸籍謄本（抄本）と附票は不要です。）\n\n外国人の方\n\n転入者全員のパスポート（入国日が確認できる証印が押印されているもの）と、在留カード（在留カードとみなされるパスポートの手続きを受けた場合はそのパスポートで可）または特別永住者証明書が必要です。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 470,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001400/index.html",
+          "link_text": "戸籍の届出・証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出・証明（婚姻届・離婚届・出生届・戸籍謄本の交付申請など）についてのページで、転入届（他区市町村から葛飾区への転入時の届出）の必要書類には触れていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "他自治体からの転入：転出証明書（または「転入届の特例」適用時は不要）、マイナンバーカードをお持ちの場合は転入される方全員分のカード、外国人住民の方は在留カード又は特別永住者証明書。国外からの転入（日本人）：転入者全員のパスポート、戸籍謄本（抄本）及び戸籍の附票（本籍地が葛飾区の方は不要）。国外からの転入（外国人）：転入者全員のパスポート（入国日が確認できる証印が押印されているもの）と、在留カード又は特別永住者証明書。"
+    },
+    {
+      "municipality": "北区",
+      "municipality_id": "kita",
+      "pages": [
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+          "link_text": "転入届、転居届に伴うマイナンバーカードや特定在留カードなどの手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転入届、転居届に伴うマイナンバーカードや特定在留カードなどの手続き」についてのもので、マイナンバーカード等の継続利用・券面事項変更・署名用電子証明書発行に必要な持ち物のみが書かれている。転入届そのもの（住民異動の届出自体）の必要書類は別ページ「転入・転出の住所変更等の届出」へのリンクとして案内されているだけで、本文には記載がない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "link_text": "転入・転出の住所変更等の届出",
+          "found": true,
+          "value": "転出証明書(転入届の特例の場合はマイナンバーカードまたは特定在留カードなど）／転入される方のマイナンバーカードまたは特定在留カードなど（お持ちの方）／本人確認書類（運転免許証・在留カードなど）",
+          "evidence": "転入届（国内（北区外の区市町村）から引越してきたとき）\n\n引越してきた日から14日以内に、本人または世帯主の方が区民事務所までお届けください。\n\n届出に必要なもの\n\n転出証明書(転入届の特例の場合はマイナンバーカードまたは特定在留カードなど）\n\n転入される方のマイナンバーカードまたは特定在留カードなど（お持ちの方）\n\n本人確認書類（運転免許証・在留カードなど）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 181,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001565.html",
+          "link_text": "引越しに関する手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「引越しに関する手続き」の案内トップで、区民事務所への来所時にマイナンバーカード等を持参する旨の記載はあるが、これは氏名・住所変更に伴う記載事項変更の話であり、転入届そのものの必要書類（持参物一覧）は本文に書かれていない。関連リンク先（転入・転出の住所変更等の届出など）に委ねられている。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001566.html",
+          "link_text": "転入時の手続き",
+          "found": true,
+          "value": "本人確認書類・転出証明書（代理人の場合は委任状も必要。外国人住民は在留カード等も必要）",
+          "evidence": "窓口にお越しいただく方の本人確認書類・転出証明書（※）、代理人の方は転入された方からの委任状もお持ちのうえ、引っ越してきた日から14日以内に手続きをしてください。\n\n外国人住民の方は、転入された方全員分の在留カード（特定在留カード）・特別永住者証明書（特定特別永住者証明書）・一時庇護許可証・仮滞在許可証のうちいずれか1種類(交付を受けている方のみ)を併せてお持ちください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 187,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001573.html",
+          "link_text": "留学などに伴い、北区への転入手続きを団体で行う方へ",
+          "found": true,
+          "value": "住民異動届出書、窓口にお越しいただく方の本人確認書類、転入される方全員のマイナンバーカード（お持ちの方）、転入される方全員の在留カード、特別永住者証明書（外国人住民の方）、国内からの転入の場合は転出証明書（転入届の特例の場合はマイナンバーカード）、国外からの転入の場合はパスポート、転入される方全員の戸籍、戸籍の附票（日本人住民の方、原則発行から3か月以内のもの）、代理人が申請する場合は委任状",
+          "evidence": "必要なもの\n\n住民異動についての届出書\n\n住民異動届出書 （PDF 154.5KB）\n\nPDFファイルをダウンロードして、事前に記入してからお持ちください。\n\n特に「新しい住所」、「異動年月日（住み始めた年月日）」、「フリガナ」は、よく確認し必ず記入してください。\n\n窓口にお越しいただく方の本人確認書類\n\n転入される方全員のマイナンバーカード（お持ちの方）\n\n転入される方全員の在留カード、特別永住者証明書（外国人住民の方）\n\n国内からの転入の場合\n\n転出証明書（転入届の特例の場合はマイナンバーカード）\n\n国外からの転入の場合\n\nパスポート（自動化ゲートを利用された方（査証欄へのスタンプ省略）は入国日のわかるものもお持ちください）\n\n転入される方全員の戸籍、戸籍の附票（日本人住民の方、原則発行から3か月以内のもの）\n\n代理人が申請する場合\n\n委任状\n\n委任状見本・様式（住民異動） （PDF 558.1KB）\n\nPDFファイルをダウンロードして、転入される方が記入したものをお持ちください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 449,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001571.html",
+          "link_text": "オンラインによる転出届・転入（転居）予定連絡",
+          "found": true,
+          "value": "来庁者の本人確認書類および引越しする方のマイナンバーカード、特定在留カードなど",
+          "evidence": "必要な持ち物\n\n来庁者の本人確認書類および引越しする方のマイナンバーカード、特定在留カードなど",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 47,
+            "note": ""
+          },
+          "verified": true
+        }
+      ],
+      "now_found": true,
+      "value": "転出証明書(転入届の特例の場合はマイナンバーカードまたは特定在留カードなど）／転入される方のマイナンバーカードまたは特定在留カードなど（お持ちの方）／本人確認書類（運転免許証・在留カードなど）"
+    },
+    {
+      "municipality": "江東区",
+      "municipality_id": "koto",
+      "pages": [
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5021.html",
+          "link_text": "国外への転出届・国外からの転入届",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「国外への転出届・国外からの転入届」のページで、必要書類は国外から江東区へ引っ越した場合（パスポート・戸籍謄本等）のもの。依頼にある他市区町村からの転入届（国内の引っ越し）は別ページ「転入届（江東区以外の区市町村からのお引越し）」であり、本文には出てこない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5015.html",
+          "link_text": "転出届（江東区以外の区市町村へのお引越し）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転出届（江東区以外の区市町村へのお引越し）」、つまり江東区から転出するときの届出についてのページであり、江東区への転入届のページではない。本文中には転入届は「転出証明書を持参の上、転入届をしてください」という案内でのみ言及されており、転入届そのものの必要書類は書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5017.html",
+          "link_text": "転居届（江東区内でのお引越し）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（江東区内でのお引越し）」の必要書類。転入届（他区市町村から江東区への転入）とは別の手続き",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060302/kurashi/jumin/koseki/5060.html",
+          "link_text": "戸籍の届出、本人確認、受付窓口について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "戸籍の届出（出生届・婚姻届・転籍届など）の本人確認書類と受付窓口についてのページであり、住民異動の「転入届」の必要書類は本文に記載がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5018.html",
+          "link_text": "世帯変更",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「世帯変更届」の必要書類（本人確認書類）を説明しており、転入届（他区市町村から江東区への転入）の必要書類ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "目黒区",
+      "municipality_id": "meguro",
+      "pages": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html",
+          "link_text": "転入届：本人または新しく同じ世帯になるかたが手続きをするとき",
+          "found": true,
+          "value": "1転出証明書、2窓口で手続きを行うかたの本人確認書類、3引越しをするかた全員のマイナンバーカード等（お持ちのかた）、4権限確認ができる書類（法定代理人のかた）、5在留カード等または特別永住者証明書等（外国人のかた）、6続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）、7一年以上前の日付で転入手続きをするかた",
+          "evidence": "届出に必要なもの（日本国内からの転入）\n\n1転出証明書\n\n目黒区に引越してくる前の住所の区市町村で転出届を行い、「転出証明書」または「転出証明書に準ずる証明書」の交付を受けてください。\n\n転出証明書や転出証明書に準ずる証明書の添付がないと転入の手続きは行えません。\n\n2窓口で手続きを行うかたの本人確認書類\n\n窓口にお越しになるかたの本人確認書類（運転免許証など）をお持ちください。\n\n詳細な本人確認書類の一覧は「本人確認を実施しています」をご参照ください。\n\n3引越しをするかた全員のマイナンバーカード等（お持ちのかた）\n\n転入届の後にマイナンバーカード等の継続利用手続きが必要です。引越しをするかたの中でマイナンバーカード等をお持ちのかたが複数名いる場合は、引越しをする全てのかたのマイナンバーカード等をお持ちください。\n\n手続きの際に、交付時に設定した数字4桁の暗証番号を入力していただきます。事前にマイナンバーカード等をお持ちのかた全員分の暗証番号のご確認をお願いします。\n\nマイナンバーカード等の継続利用については「マイナンバーカードの継続利用（他区市町村からの転入の場合）について」をご覧ください。\n\nまた、本人と同じ世帯のかたもしくは法定代理人が、転入届と同時に電子証明書の手続きをする場合は「署名用電子証明書について」をご覧ください。\n\n4権限確認ができる書類（法定代理人のかた）\n\n次の法定代理人については、発行日から3か月以内の各書類の原本をご提示ください。\n\n未成年者：親権者であることが確認できる戸籍謄抄本\n\n成年被後見人：成年後見登記事項証明書\n\n5在留カード等または特別永住者証明書等（外国人のかた）\n\n外国人住民のかたは裏面に新住所を記載するため、在留カード等をお持ちください。\n\n特定在留カード及び特定特別永住者証明書をお持ちの方は、3引越しをするかた全員のマイナンバーカード（お持ちのかた）も併せてご確認ください。\n\n6続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）\n\n外国人のかたのみの世帯で続柄を登録する場合、続柄を証明する書類の原本とその日本語訳が必要になります。\n\n本国の政府等公的機関が発行したパスポート、出生証明書及び婚姻証明書などをお持ちください。\n\n7一年以上前の日付で転入手続きをするかた\n\n1年以上遡って転入届を提出する場合、居住実績がわかる書類が必要です。\n\n転入する方名義の、更新分を含めた全ての賃貸借契約書の原本をお持ちください。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "partial",
+            "run": 861,
+            "note": "連続861文字だけ一致。引用全体は確認できない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuudairi.html",
+          "link_text": "転入届：代理人が手続きをするとき",
+          "found": true,
+          "value": "転出証明書、引越しをするかたが記入した委任状、窓口で手続きを行うかたの本人確認書類、引越しをするかた全員のマイナンバーカード等（お持ちのかた）、在留カード等または特別永住者証明書等（外国人のかた）、続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）、一年以上前の日付で転入手続きをするかたは居住実績がわかる書類",
+          "evidence": "届出に必要なもの（日本国内からの転入）\n\n1転出証明書\n\n目黒区に引越してくる前の住所の区市町村で転出届を行い、「転出証明書」または「転出証明書に準ずる証明書」の交付を受けてください。\n\n転出証明書や転出証明書に準ずる証明書の添付がないと転入の手続きは行えません。\n\n2引越しをするかたが記入した委任状\n\n「委任状の書き方について」をご確認の上、次の様式をダウンロードしてご使用ください。\n\n3窓口で手続きを行うかたの本人確認書類\n\n窓口にお越しになるかたの本人確認書類（運転免許証など）をお持ちください。\n\n4引越しをするかた全員のマイナンバーカード等（お持ちのかた）\n\nカードの継続利用の手続きの際に、交付時に設定した数字4桁の暗証番号が必要です。\n\n5在留カード等または特別永住者証明書等（外国人のかた）\n\n外国人住民のかたは裏面に新住所を記載するため、在留カード等をお持ちください。\n\n6続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）\n\n外国人のかたのみの世帯で続柄を登録する場合、続柄を証明する書類の原本とその日本語訳が必要になります。\n\n7一年以上前の日付で転入手続きをするかた\n\n1年以上前の日付で転入届を提出する場合、居住実績がわかる書類が必要です。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "partial",
+            "run": 173,
+            "note": "連続173文字だけ一致。引用全体は確認できない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/ido.html",
+          "link_text": "転入届：マイナンバーカード等を使って本人または同じ世帯になるかたが窓口で手続きをするとき",
+          "found": true,
+          "value": "引越しをするかた全員のマイナンバーカード等、窓口で手続きを行うかたの本人確認書類、権限確認ができる書類（法定代理人のかた）、在留カード等または特別永住者証明書等（外国人のかた）、続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）",
+          "evidence": "届出に必要なもの\n\n1引越しをするかた全員のマイナンバーカード等\n\nマイナンバーカード等がないと転入手続きができません。必ずお持ちください。\n\n2窓口で手続きを行うかたの本人確認書類\n\n窓口にお越しになるかたの本人確認書類（運転免許証など）をお持ちください。\n\n3権限確認ができる書類（法定代理人のかた）\n\n次の法定代理人については、発行日から3か月以内の各書類をご提示ください。\n\n未成年者：親権者であることが確認できる戸籍謄抄本\n\n成年被後見人：成年後見登記事項証明書\n\n4在留カード等または特別永住者証明書等（外国人のかた）\n\n外国人住民のかたは裏面に新住所を記載するため、在留カード等をお持ちください。\n\n5続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）\n\n外国人のかたのみの世帯で続柄を登録する場合、続柄を証明する書類の原本とその日本語訳が必要になります。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "partial",
+            "run": 89,
+            "note": "連続89文字だけ一致。引用全体は確認できない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
+          "link_text": "転入届",
+          "found": true,
+          "value": "引越しをするかた全員のマイナンバーカード等、窓口で手続きを行うかたの本人確認書類、在留カード等または特別永住者証明書等（外国人のかた）、引越しをするかたが記入した委任状（代理人による手続きの場合）",
+          "evidence": "届出に必要なもの\n\n1引越しをするかた全員のマイナンバーカード等\n\nマイナンバーカード等がないと転入手続きができません。必ずお持ちください。\n\n2窓口で手続きを行うかたの本人確認書類\n\n窓口にお越しになるかたの本人確認書類（運転免許証など）をお持ちください。\n\n3在留カード等または特別永住者証明書等（外国人のかた）\n\n外国人住民のかたは裏面に新住所を記載するため、在留カード等をお持ちください。\n\n4引越しをするかたが記入した委任状（代理人による手続きの場合）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "partial",
+            "run": 65,
+            "note": "連続65文字だけ一致。引用全体は確認できない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+          "link_text": "転入届",
+          "found": true,
+          "value": "1引越しをするかた全員のマイナンバーカード等／2窓口で手続きを行うかたの本人確認書類／3引越しをするかたが記入した委任状／4在留カード等または特別永住者証明書等（外国人のかた）／5続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）",
+          "evidence": "届出に必要なもの\n\n1引越しをするかた全員のマイナンバーカード等\n\nマイナンバーカード等がないと転入手続きができません。必ずお持ちください。\n\n2窓口で手続きを行うかたの本人確認書類\n\n窓口にお越しになるかたの本人確認書類（運転免許証など）をお持ちください。\n\n3引越しをするかたが記入した委任状\n\n「委任状の書き方について」をご確認のうえ、次の様式をダウンロードしてご使用ください。\n\n4在留カード等または特別永住者証明書等（外国人のかた）\n\n外国人住民のかたは裏面に新住所を記載するため、在留カード等をお持ちください。\n\n5続柄を証明する書類の原本（外国人のかたのみの世帯で続柄を登録されるかた）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "partial",
+            "run": 62,
+            "note": "連続62文字だけ一致。引用全体は確認できない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/index.html",
+          "link_text": "引越しの手続き（転入・転出など）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは引越し手続き全体の案内トップページで、転入届・転出届・転居届などへのリンク一覧のみ。転入届の持ち物・必要書類そのものは本文に書かれていない（手続案内サービスに誘導しているだけ）",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tenkyo/index.html",
+          "link_text": "目黒区内で引っ越し",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届：目黒区内で住所を変更するとき」のページで、転入届（目黒区外から目黒区への転入）とは別の手続き。本文には転居届の案内サービスへのリンクと、同じ分類の他の届出（転入届・転出届・世帯変更届など）へのリンク一覧があるのみで、必要書類そのものはどの届出についても本文中に記載されていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/honninkakunin-junin.html",
+          "link_text": "本人確認を実施しています（住所変更の手続き、住民票の取得、印鑑登録に関する手続き）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本人確認書類（住所変更・住民票取得・印鑑登録の際に本人確認として提示する書類）についてのページであり、転入届そのものの必要書類（提出書類一式）は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/kyuuuzikisai.html",
+          "link_text": "住民票、マイナンバーカード等への旧氏（旧姓）記載",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票・マイナンバーカード等への旧氏（旧姓）記載の手続きについて説明しており、転入届そのものの必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
+          "link_text": "マイナンバー入り住民票の写しの発行",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「マイナンバー入りの住民票がほしいとき」の証明書請求手続きについてのもので、転入届の必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "港区",
+      "municipality_id": "minato",
+      "pages": [
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tenkyo.html",
+          "link_text": "転居届（港区内で引越しするとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（港区内で引越しするとき）」の説明で、転入届（他区市町村から港区への引越し）とは別の届出。本文には転居届の必要書類のみ記載されている。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tenshutsu.html",
+          "link_text": "転出届（港区外へ引越しするとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転出届（港区外へ引越しするとき）」の説明であり、転入届（港区外から港区へ引越しするとき）の必要書類ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/todokede/kosekitodokede.html",
+          "link_text": "戸籍の届出",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出（出生届・養子縁組届・婚姻届・離婚届・転籍届・死亡届・死産届など）の一覧であり、転入届（住民票の異動届）については触れられていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/kurashi/todokede/juminhyo.html",
+          "link_text": "申請書ダウンロード",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民異動届などの様式ダウンロード一覧で、転入届に必要な持参書類（本人確認書類等）についての本文記載はない。「本人確認書類」は関連リンクのタイトルとして挙がっているだけで、本文中に必要書類の説明はない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/shomesho/yubin/index.html",
+          "link_text": "郵送でできる手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「郵送でできる手続き」について書かれており、転出届（区外への引越し）と証明書の郵送請求（住民票・戸籍等）の必要書類のみが記載されている。転入届については本文中に一切言及がない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/todokede/index.html",
+          "link_text": "戸籍の証明書の請求",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「戸籍の証明書の請求」についてのページで、転入届ではなく戸籍謄本・抄本・除籍証明書・身分証明書・独身証明書などの証明書請求に必要なもの（申請書、本人確認書類、続柄がわかる資料等）が書かれている。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kurashi/todokede/index.html",
+          "link_text": "届出・証明・住民の手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "「届出・証明・住民の手続き」の目次ページで、「転入届（港区外から港区へ引越しするとき）」へのリンク名があるだけ。本文には必要書類の具体的な記載がない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/kurashi/todokede/utsushi.html",
+          "link_text": "住民票の請求・閲覧の手続き",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の写し（証明書）の請求手続きについてで、転入届の必要書類ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/madoguchikonzatsujyoukyouhaishin.html",
+          "link_text": "お引越し等の手続き窓口の混雑状況",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「お引越し等の手続き窓口の混雑状況」（窓口の待ち時間・混雑予想・各総合支所の案内）についてのページであり、転入届の必要書類についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "中野区",
+      "municipality_id": "nakano",
+      "pages": [
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240117145211630.html",
+          "link_text": "転入届、転居届とあわせて行う電子証明書発行の代理手続きについて",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転入届・転居届と合わせて行う電子証明書発行の代理手続き（委任状）についてのページで、転入届そのものの必要書類は書かれていない。記載の「必要なもの」は代理人が電子証明書発行の委任手続きをする際の持ち物（本人のマイナンバーカード、同一世帯員の本人確認書類、委任状）である。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kokugaikara.html",
+          "link_text": "国外からの転入",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転入届（国外から中野区へ）」で、海外からの転入専用の手続き。本文にも『日本国内で他の区市町村から中野区に引越しをした方は、転入届（区外から中野区へ）をご覧ください』とあり、他市区町村からの転入届（区外から中野区へ）とは別ページ・別の必要書類。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/hikkoshi.html",
+          "link_text": "引越し・印鑑登録をされる方へ",
+          "found": true,
+          "value": "前住所地で発行される紙の転出証明書（マイナンバーカードを使った転出届をオンラインでされた場合と窓口でされた場合は不要）",
+          "evidence": "別の区市町村から中野区に引越しをされる場合（転入届）は、来庁してください。前住所地で発行される紙の転出証明書を忘れずにご持参ください。なお、マイナンバーカードを使った転出届をオンラインでされたの場合とマイナンバーカードを使った転出届を窓口でされた場合は、紙の転出証明書は不要です。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 140,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tenkyo-kunai.html",
+          "link_text": "転居届（中野区内で引越しをしたとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（中野区内の引越し）」（区内での引越し）の必要書類を説明しており、転入届（区外から中野区へ）とは別の届出のページ",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/ikanai-kakanai-matanai.html",
+          "link_text": "行かない・書かない・待たない窓口(住民異動・マイナンバーカードに関する手続き)",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「行かない・書かない・待たない窓口」の案内（電子申請、書かない窓口、事前申請システム、混雑状況案内、外国人団体来庁予約など）であり、転入届の必要書類（持参物）は本文中に一切記載されていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/index.html",
+          "link_text": "戸籍・住民票・各種証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「戸籍・住民票・各種証明」のトップ（案内・リンク一覧）ページで、「転入届（区外から中野区へ）」へのリンクがあるだけ。本文には持参物・必要書類の具体的な記載がない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/index.html",
+          "link_text": "住民票の届出、証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは中野区の「住民票の届出、証明」の目次（リンク一覧）ページであり、「転入届（区外から中野区へ）」というリンク名があるのみで、本文中に転入届の必要書類そのものは記載されていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/mynumber-seido.html",
+          "link_text": "マイナンバー制度（社会保障・税番号制度）について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはマイナンバー制度（社会保障・税番号制度）全般の説明で、転入届そのものの必要書類は本文に書かれていない。関連ページとして「マイナンバーカードを利用する転入届」へのリンク名が末尾のサブナビゲーションに挙がっているのみで、本文中に転入届の持参書類の説明はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/nichiyo.html",
+          "link_text": "2階戸籍住民課日曜窓口のご案内【9月20日、9月27日、10月4日、10月25日は休止します】",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは日曜窓口の開設案内で、転入届を含む届出の必要なものは『内容により異なります。詳しくは、次のリンク先をご確認ください』とリンク先へ誘導するのみで、本文中に転入届の必要書類そのものは書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/kayoencyo.html",
+          "link_text": "2階戸籍住民課での火曜延長窓口のご案内",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「火曜延長窓口」の案内で、取扱業務の一覧と問い合わせ先を示すのみ。転入届については『マイナンバーカード、住民基本台帳カードを利用する転入届はできない場合があります』『本人確認書類等をお持ちでない場合や、他の自治体へ確認が必要な場合は受付できません』という注意書きがあるだけで、転入届そのものの必要書類は本文に書かれていない（住民票の届出、証明への外部リンクのみ）。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240211143306245.html",
+          "link_text": "外国人の方の在留期間延長に伴うマイナンバーカードの手続きについて",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "外国人住民のマイナンバーカードの有効期間延長手続きに関するページで、転入届の必要書類の記載は本文にありません。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "前住所地で発行される紙の転出証明書（マイナンバーカードを使った転出届をオンラインでされた場合と窓口でされた場合は不要）"
+    },
+    {
+      "municipality": "練馬区",
+      "municipality_id": "nerima",
+      "pages": [
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyukokugai.html",
+          "link_text": "転入届（国外から練馬区に引越したとき）",
+          "found": true,
+          "value": "窓口に来所する方の本人確認書類、転入される方全員のパスポート（原本）および入国日の確認ができるもの、戸籍謄本と戸籍の附票【日本国籍の方のみ、転入する方全員分】、在留カード、特別永住者証明書または外国人登録証明書（みなし特別永住者証明書）【外国人住民の方のみ、転入する方全員分】",
+          "evidence": "4.届出に必要なもの\n窓口に来所する方の本人確認書類（詳しくは「戸籍、住民票の申請・届出の本人確認方法について」をご覧ください。）\n例えば、パスポート（日本国旅券）、マイナンバーカード、運転免許証、在留カード、特別永住者証明書など日本の官公署が発行した顔写真付きの証明書の場合は1点\n上記以外の健康保険の資格確認書や基礎年金番号通知書、年金手帳、介護保険証などは2点\n※いずれの証明書も、有効期限の切れたものや、失効したものは使用できません。\n転入される方全員のパスポート（原本）および入国日の確認ができるもの\n顔認証ゲート等により、入国（帰国）印がパスポートに押印されない場合は、空港でパスポートに入国（帰国）印を押印してもらってください。\nパスポートへの押印が難しい場合は、入国（帰国）日が記入されている「飛行機の搭乗券の半券」等もお持ちください。\n戸籍謄本と戸籍 の附票【日本国籍の方のみ、転入する方全員分】\nご持参のない場合は、区が本籍地に戸籍の内容の問い合わせをしますので、転入する方全員の本籍・筆頭者を正確にお申し出ください。問い合わせにはお時間がかかりますので、お時間に余裕を持ってお越しください。本籍地へ確認がとれなかった場合は、再来所が必要になりますので、ご了承ください。\n※本籍が練馬区の方は、練馬区で確認できるため持参不要です。（本籍と筆頭者のお申出は必要です。）\n在留カード、特別永住者証明書または外国人登録証明書（みなし特別永住者証明書）【外国人住民の方のみ、転入する方全員分】",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "normalized",
+            "run": 582,
+            "note": "空白・記号のゆれを吸収すると一致"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenshutsu.html",
+          "link_text": "転出届 （練馬区外に引っ越しするとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは練馬区から転出する際の「転出届」の手続きページであり、必要書類も転出届のもの（本人確認書類・委任状など）。転入届については練馬区外・新住所地の窓口で行うことに触れているのみで、転入届自体の必要書類は本文に書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenkyo.html",
+          "link_text": "転居届 （練馬区内で引っ越ししたとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（練馬区内で引越ししたとき）」の必要書類であり、転入届（他区市町村から練馬区へ引越したとき）のページではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tensyutsukokugai.html",
+          "link_text": "転出届 （国外へ引越しするとき）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転出届（国外へ引越しするとき）」についてのページであり、転入届の必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/shomei/honninkakunin25.html",
+          "link_text": "戸籍、住民票の申請・届出の本人確認方法について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本人確認書類（顔写真付き証明書など)についてのページで、転入届提出時の本人確認証明書の説明はあるが、転入届そのものの必要書類（届出書・前住所地からの転出証明書など）は本文に書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
+          "link_text": "7月17日から7月21日までに戸籍のお届をされる方へ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "戸籍の届出（婚姻届など）の休日夜間受付や、届出後の受理証明書・戸籍謄抄本の郵送請求方法についてのお知らせで、転入届そのものの必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "窓口に来所する方の本人確認書類、転入される方全員のパスポート（原本）および入国日の確認ができるもの、戸籍謄本と戸籍の附票【日本国籍の方のみ、転入する方全員分】、在留カード、特別永住者証明書または外国人登録証明書（みなし特別永住者証明書）【外国人住民の方のみ、転入する方全員分】"
+    },
+    {
+      "municipality": "大田区",
+      "municipality_id": "ota",
+      "pages": [
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu-tenshutu_jyuuki-card.html",
+          "link_text": "マイナンバーカードをお持ちの方の転出届・転入届",
+          "found": true,
+          "value": "マイナンバーカード、暗証番号（数字4桁）",
+          "evidence": "転入の手続きにはマイナンバーカードが必要です。\nカード交付時に設定した暗証番号（数字4桁）が必要になります。\n本人又は同一世帯以外の方が代理で転入手続きを行う場合は、本人のカードと委任状、暗証番号（数字4桁）が必要です。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "normalized",
+            "run": 98,
+            "note": "空白・記号のゆれを吸収すると一致"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tenkyo.html",
+          "link_text": "転居届（大田区内の引越し）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは転居届（大田区内の引越し）の必要書類。転入届（区外から大田区へ）とは別の届出。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/jyuusyo-henkou_mynumber-card.html",
+          "link_text": "住所変更に伴うマイナンバーカードの手続きについて",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「住所変更に伴うマイナンバーカードの手続き」についてで、転入届などの届出をした後にマイナンバーカードの住所変更手続きに何が要るか（本人ならマイナンバーカード、代理人なら委任状・本人確認書類等）を書いている。転入届そのものを出すときの必要書類ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/donichi_jyushohenkou.html",
+          "link_text": "3月・4月の休日窓口で住民異動届の受付、マイナンバーカードの住所等の変更手続きをいたします",
+          "found": true,
+          "value": "1 転出証明書（マイナポータルを利用した転出及び前住所地で特例転出を選択された方はマイナンバーカードが必要です) 2 本人確認書類（免許証・マイナンバーカード・保険証等）",
+          "evidence": "転入届（ただし、国外からの転入は除く） 1 転出証明書（マイナポータルを利用した転出及び前住所地で特例転出を選択された方はマイナンバーカードが必要です) 2 本人確認書類（免許証・マイナンバーカード・保険証等） 本人又は世帯主又は大田区で同一世帯の方",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "normalized",
+            "run": 106,
+            "note": "空白・記号のゆれを吸収すると一致"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/index.html",
+          "link_text": "住民票の届出・証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは住民票の届出・証明の総合案内ページで、転入届そのものの必要書類は本文に記載されていない。運転免許証など本人確認書類・国民健康保険証の記述は住所異動の届出全般（転入・転出・転居含む）についての一般的な案内であり、転入届固有の必要書類ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/kosekijyuminyuso.html",
+          "link_text": "戸籍・住民票の郵送請求",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍・住民票の郵送請求（証明書の郵送請求）についての説明で、転入届そのものの必要書類は書かれていない。転出届への案内はあるが転入届への言及はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "マイナンバーカード、暗証番号（数字4桁）"
+    },
+    {
+      "municipality": "世田谷区",
+      "municipality_id": "setagaya",
+      "pages": [
+        {
+          "url": "https://www.city.setagaya.lg.jp/02233/84.html",
+          "link_text": "転入・転居届に伴う関連手続きの案内について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転入・転居届に伴う関連手続きの案内」であり、印鑑登録・マイナンバーカード・国民健康保険・介護保険・国民年金・児童手当など関連手続きの窓口一覧とリンク集のみ。転入届そのもの（住民記録・戸籍課での届出）に必要な持参書類の記載は本文中に無い。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "渋谷区",
+      "municipality_id": "shibuya",
+      "pages": [
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu_kaigai.html",
+          "link_text": "国外転入届（国外から渋谷区へ）",
+          "found": true,
+          "value": "転入する人全員のパスポート（帰国日の確認のスタンプが押されていない場合は、帰国日が確認できる飛行機の半券等が必要です。）",
+          "evidence": "転入する人全員のパスポート（帰国日の確認のスタンプが押されていない場合は、帰国日が確認できる飛行機の半券等が必要です。）\n\n（注）実際に転入する人以外が窓口で手続きをする場合には、窓口で手続きする人の本人確認ができるもの（運転免許証・パスポートなど）が別途必要となります。\n\n戸籍の謄本または抄本（渋谷区が本籍の人は不要です。）\n\nマイナンバーカード（交付を受けている人）\n\n賃貸契約書や公共料金の領収書など（渋谷区に住み始めてから6か月以上経過してから国外転入届をする場合のみ）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 240,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/f_t_tennyu.html",
+          "link_text": "転入届（外国人住民）",
+          "found": true,
+          "value": "窓口で手続きする人の本人確認ができるもの（在留カード・特別永住者証明書・運転免許証・パスポートなど）、転出証明書（前住所地の区市町村が発行したもの）、転入する人全員の在留カードまたは特別永住者証明書、マイナンバーカード（交付を受けている人）など",
+          "evidence": "届出に必要なもの\n\n窓口で手続きする人の本人確認ができるもの（在留カード・特別永住者証明書・運転免許証・パスポートなど）\n\n転出証明書（前住所地の区市町村が発行したもの）\n\n（注）マイナンバーカードを利用した特例転入の場合、転出証明書は発行されないため不要です。\n\n転入する人全員の在留カードまたは特別永住者証明書\n\nマイナンバーカード（交付を受けている人）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 179,
+            "note": ""
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/out_postal_fuki.html",
+          "link_text": "転入届の特例による転入",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転入届の特例による転入届・転出届」（マイナンバーカードを使った特例手続き）についてのページで、通常の転入届の必要書類ではなく、特例による転出届に必要なもの（前住所地の個人番号カードなど）や特例による転入届の届出窓口・受付時間が書かれているのみ。通常の転入届そのものの必要書類の記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenkyo.html",
+          "link_text": "転居届（渋谷区内の引っ越し）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居届（渋谷区内の引っ越し）」＝区内での住所異動の届出であり、他の市区町村からの転入届ではない。転入届自体の必要書類はこの本文に書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/nenkin/shikaku-menjo/nenkin_tetsuzuki_todokede.html",
+          "link_text": "国民年金（手続き・届出）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは国民年金の手続き・届出（資格取得・免除・請求など）に関する受付窓口案内であり、転入届（住民異動の届出）そのものの必要書類については触れていない。「国外から転入したとき」という記載はあるが、これは国民年金の資格取得手続きの契機の説明であり、転入届の必要書類ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/nimpu-info/tennyuu_ninpu.html",
+          "link_text": "渋谷区へ転入した妊婦の皆さまへ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は「妊婦転入届」（渋谷区に転入した妊婦が母子保健サービスを受けるための届出）の必要書類（母子健康手帳・本人確認書類・前住所地の受診票など）を説明しているだけで、住民異動としての転入届そのものの必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/mynumber/mynumber-tsuchi/mynumber_keizokuriyou.html",
+          "link_text": "マイナンバーカードの継続利用について（他区市町村からの転入の場合）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはマイナンバーカードの継続利用手続き（転入時に暗証番号などを持って窓口へ行く手続き）についての案内であり、転入届そのものの必要書類は書かれていない。本文中でも「転入届については、転入届（区外から渋谷区へ）のページを参照してください」と別ページへ誘導している。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu.html",
+          "link_text": "転出届（渋谷区から区外へ）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転出届（渋谷区から区外へ）」＝渋谷区から他区市町村へ引っ越す人向けの届出。転入届（他区市町村から渋谷区へ引っ越す届出）の必要書類ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu_kaigai.html",
+          "link_text": "国外転出届（渋谷区から国外へ）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「国外転出届」（渋谷区から国外へ転出するときの届出）についてのページであり、転入届（他市区町村から渋谷区へ転入する際の届出）の必要書類は書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "転入する人全員のパスポート（帰国日の確認のスタンプが押されていない場合は、帰国日が確認できる飛行機の半券等が必要です。）"
+    },
+    {
+      "municipality": "品川区",
+      "municipality_id": "shinagawa",
+      "pages": [
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/20220309142208.html",
+          "link_text": "【団体での国外からの転入】団体で国外から品川区への転入届を行う方へ",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「団体で国外から品川区への転入届」の必要書類（パスポート・戸籍謄本など）についてで、他の市区町村からの引っ越しに伴う一般的な転入届ではなく、海外からの団体転入という特殊なケースの説明だった",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/procedure-koseki-todokede/index.html",
+          "link_text": "21_戸籍の届出",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍の届出（出生届・婚姻届・死亡届・転籍届・離婚届など）の一覧であり、転入届（住民異動の届出）についての記載がない。本人確認書類の案内も婚姻・離婚・養子縁組・養子離縁・認知の届出に限定されており、転入届は対象外。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/procedure-koseki-todokede/20200315145439.html",
+          "link_text": "9999_離婚の際に称していた氏を称する届（戸籍法77条の2の届）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「離婚の際に称していた氏を称する届（戸籍法77条の2の届）」についての内容で、転入届とは無関係です。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "新宿区",
+      "municipality_id": "shinjuku",
+      "pages": [
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
+          "link_text": "住民票等の証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「住民票等の証明」（住民票の写し・住民票記載事項証明書などの証明書を請求する際の必要書類）についてのページであり、転入届そのものの必要書類は書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "杉並区",
+      "municipality_id": "suginami",
+      "pages": [
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s018/536.html",
+          "link_text": "杉並区に転入する方へ",
+          "found": true,
+          "value": "転入届：杉並区外から杉並区に住所を変更したとき",
+          "evidence": "転入届：杉並区外から杉並区に住所を変更したとき",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "exact",
+            "run": 23,
+            "note": ""
+          },
+          "verified": true
+        }
+      ],
+      "now_found": true,
+      "value": "転入届：杉並区外から杉並区に住所を変更したとき"
+    },
+    {
+      "municipality": "墨田区",
+      "municipality_id": "sumida",
+      "pages": [
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
+          "link_text": "戸籍の届出",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "本文は「戸籍の届出」ページで、出生届・死亡届・婚姻届・離婚届・転籍届・分籍届・養子縁組届の必要書類を扱っており、転入届（他区市町村から墨田区への住民異動届）の必要書類は書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
+          "link_text": "戸籍の証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「戸籍の証明」（戸籍謄本・抄本など証明書を請求する際の必要書類・本人確認書類）についてのみ書かれており、転入届そのものの必要書類についての記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
+          "link_text": "住民登録の届出",
+          "found": true,
+          "value": "本人であることを確認できるもの（注釈1）／転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）／マイナンバーカード（お持ちの方のみ）（注釈3）※暗証番号（4桁の数字）の入力が必要です。",
+          "evidence": "転入（他市区町村から墨田区への引っ越し）\n事前に、以前お住まいの市区町村で転出の届出をする必要があります。実際に墨田区に住み始めてから14日以内に転入の届出をしてください。引っ越し前の転入手続はできません。\n相当期間経過（墨田区に住み始めてから1年以上経過）してからの転入については、現住確認書類（賃貸の契約書など）が必要な場合があります。あらかじめ墨田区窓口課住民異動係までお問合せください。 \n届出期間　届出に必要なもの　届出人\n引っ越し後14日以内\n本人であることを確認できるもの（注釈1）\n転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）\nマイナンバーカード（お持ちの方のみ）（注釈3）\n※暗証番号（4桁の数字）の入力が必要です。\n本人又は世帯員\n（注釈2）",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "normalized",
+            "run": 318,
+            "note": "空白・記号のゆれを吸収すると一致"
+          },
+          "verified": true
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
+          "link_text": "住民票等の証明書",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「住民票等の証明書」の取得方法（コンビニ交付・LoGoフォーム郵送・電話予約・窓口請求）についての説明で、証明書請求時の必要なものが書かれているだけ。転入届そのものの必要書類の記載はない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": true,
+      "value": "本人であることを確認できるもの（注釈1）／転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）／マイナンバーカード（お持ちの方のみ）（注釈3）※暗証番号（4桁の数字）の入力が必要です。"
+    },
+    {
+      "municipality": "台東区",
+      "municipality_id": "taito",
+      "pages": [
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
+          "link_text": "転入したとき",
+          "found": true,
+          "value": "【日本人の方】転出証明書、本人確認できるもの／【外国人の方】転出証明書、在留カードまたは特別永住者証明書／【マイナンバーカードをお持ちの方】マイナンバーカード",
+          "evidence": "【日本人の方】転出証明書、本人確認できるものを持参して、住み始めてから、14日以内に手続きをしてください。国外から転入する場合は、転出証明書は不要ですが、転入する人すべての戸籍の謄本または抄本、戸籍の附票、パスポートが必要です。\n自動化ゲートを利用しパスポートに出入国記録が残らない場合は、eチケットや飛行機搭乗券の半券等、入国日が確認できるものをパスポートと併せてお持ちください。\n【外国人の方】転出証明書、在留カードまたは特別永住者証明書を持参して、住み始めてから、14日以内に手続きをしてください。国外から転入する場合は、転出証明書は不要です。住民票の続柄欄を記載するにあたり、続柄を証する文書（出生証明書、結婚証明書等）と翻訳者を明らかにした日本語の翻訳文が必要となる場合があります。また、在留資格の変更や在留期間の更新手続き中である場合は、パスポートもあわせてご持参ください。\n【マイナンバーカードをお持ちの方】マイナンバーカードを持参して、住み始めてから、14日以内に手続きをしてください。この場合、転出証明書の持参は必要ありませんが、受付時にカードの暗証番号の入力が必要です。\n※事前に前住所地の区市町村に転出届を提出しておく必要があります。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "partial",
+            "run": 309,
+            "note": "連続309文字だけ一致。引用全体は確認できない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
+          "link_text": "転入・転居・転出について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転入・転居・転出について」の案内ページで、関連ページへのリンク一覧（転入届、転居届、オンライン転出届など）のみが並んでおり、転入届の必要書類そのものは本文に書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/honninkakunin.html",
+          "link_text": "戸籍・住民登録関係の請求や届出の際には本人確認書類の提示が必要です",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍・住民登録関係の請求や届出における本人確認書類の一覧（証明書請求・各種届出共通の本人確認手続き）についてのものであり、転入届固有の必要書類は本文に書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kouikikoufu_koseki.html",
+          "link_text": "戸籍の広域交付",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍証明書の広域交付(証明書請求)の必要書類についてで、転入届の必要書類ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/index.html",
+          "link_text": "戸籍に関する証明",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍に関する証明（住民票の写し・戸籍謄本等の請求）の案内ページであり、転入届そのものの必要書類は本文に記載されていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/index.html",
+          "link_text": "戸籍に関する証明の取得について",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは戸籍に関する証明書（謄本・抄本等）を取得する方法についての案内であり、転入届そのものの必要書類については書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kosekiyuusouseikyuu.html",
+          "link_text": "戸籍の証明書を郵送で取得する",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「戸籍の証明書を郵送で取得する」手続きの必要書類（請求書・手数料・本人確認書類など）であり、転入届の必要書類ではない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+          "link_text": "転出するとき（マイナンバーカードを利用したオンラインでの手続き）",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「オンラインによる転出届」（台東区から他の市区町村へ転出する際のマイナポータル経由の届出）についての説明であり、台東区への転入届そのものの必要書類は書かれていない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/index.html",
+          "link_text": "戸籍・住民登録等",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "戸籍・住民登録等のトップページで、転入届へのリンク（引越しガイド、転入・転居・転出について等）はあるが、転入届自体の必要書類は本文に記載されていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+          "link_text": "",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページはオンラインによる転出届（台東区から他区市町村へ転出する際の手続き）についてのもので、他市区町村から台東区への転入届の必要書類は書かれていない",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenkyo.html",
+          "link_text": "転居するとき",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転居するとき」（区内での住所異動）についての届出であり、転入届（他市区町村から台東区への転入）ではない。必要書類として本人確認できるものと賃貸契約書等が挙げられているが、これは転居届のものであり転入届のものではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    },
+    {
+      "municipality": "豊島区",
+      "municipality_id": "toshima",
+      "pages": [
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
+          "link_text": "転入届：代理人が手続きをするとき",
+          "found": false,
+          "value": "",
+          "evidence": "",
+          "why_not": "このページは「転入届：代理人が手続きをするとき」であり、代理人が届出をする場合の必要書類（委任状・転出証明書・本人確認書類・マイナンバーカード・在留カード等）を説明している。転入届そのもの（本人または同じ世帯の人が手続きする場合）の必要書類ではない。",
+          "evidence_check": {
+            "verdict": "too_short",
+            "run": 0,
+            "note": "8文字未満は照合しない"
+          },
+          "verified": false
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html",
+          "link_text": "転入・転出の特例（住民基本台帳カードまたはマイナンバーカードを利用した転入届・転出届）",
+          "found": true,
+          "value": "1 引越しをする方全員のマイナンバーカード、2 窓口で手続きを行う方の本人確認書類、3 権限確認ができる書類（法定代理人の方）、4 在留カードまたは特別永住者証明書（外国人の方）、5 続柄を証明する書類の原本（外国人の世帯で続柄を変更される方）",
+          "evidence": "届出に必要なもの\n\n1 引越しをする方全員のマイナンバーカード\n\n転入手続きの後にカードの継続利用手続きが必要です。引越しをする方の中でマイナンバーカード等をお持ちの方が複数名いる場合は、引越しをする方全員分のマイナンバーカードをお持ちください。\n\n手続きの際に、交付時に設定した数字4桁の暗証番号を入力していただきます。マイナンバーカードをお持ちの方全員分の暗証番号のご確認をお願いします。\n\n2 窓口で手続きを行う方の本人確認書類\n\n窓口にお越しになる方の本人確認書類（運転免許証など）をお持ちください。\n\n3 権限確認ができる書類（法定代理人の方）\n\n未成年者・・・親権者であることが確認できる戸籍謄抄本（発行日から2か月以内）\n\n成年被後見人・・・成年後見登記事項証明書（原本）（発行日から6か月以内）\n\n4 在留カードまたは特別永住者証明書（外国人の方）\n\n裏面に新住所を記載するため、在留カード等をお持ちください。\n\n5 続柄を証明する書類の原本（外国人の世帯で続柄を変更される方）\n\n外国人の方のみの世帯で続柄を変更する場合、続柄を証明する書類の原本が必要になります。",
+          "why_not": "",
+          "evidence_check": {
+            "verdict": "partial",
+            "run": 178,
+            "note": "連続178文字だけ一致。引用全体は確認できない"
+          },
+          "verified": false
+        }
+      ],
+      "now_found": false,
+      "value": ""
+    }
+  ]
+}
