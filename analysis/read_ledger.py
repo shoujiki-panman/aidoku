@@ -193,7 +193,7 @@ def load_pairs(procedure: str) -> list[tuple[dict, dict]]:
 
 def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--procedure", default="tennyu")
+    ap.add_argument("--procedure", "-p", default="tennyu")
     args = ap.parse_args(argv)
 
     rows = [build_one(d, e) for d, e in load_pairs(args.procedure)]

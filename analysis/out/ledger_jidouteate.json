@@ -1,0 +1,5041 @@
+{
+  "_about": "探索が見つけた候補1本ごとに、読解へ渡したかどうかと、渡さなかった理由。判定はしていない。何を見たかの記録。",
+  "ledger_version": "read-ledger-0.1",
+  "procedure": "jidouteate",
+  "reasons": {
+    "read": "読解に渡した",
+    "shown_not_chosen": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）",
+    "never_shown": "リンク一覧にも載せていない（こちら側の取りこぼし）",
+    "non_html": "PDF/Word/Excel のため弾いた",
+    "unfetchable": "取得できていない"
+  },
+  "summary": {
+    "municipalities": 24,
+    "entries": 588,
+    "by_mark": {
+      "read": 49,
+      "shown_not_chosen": 147,
+      "never_shown": 331,
+      "non_html": 25,
+      "unfetchable": 36
+    }
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "municipality_id": "adachi",
+      "entries": [
+        {
+          "url": "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/teate/jidouteate/index.html",
+          "link_text": "児童手当",
+          "score": 25,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/oyako/jidouteate-shiharai.html",
+          "link_text": "児童手当の支払(振込)日【令和8年8月4日】以降",
+          "score": 21,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-genkyotodoke.html",
+          "link_text": "児童手当の現況届を送付いたします（提出必要者のみ）",
+          "score": 21,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/teate/index.html",
+          "link_text": "手当・医療費助成",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kodomokate/kosodate-application-2025.html",
+          "link_text": "子育てアプリ「足立区おやこ手帳」",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kodomokate/k-kyoiku/kosodate/ninshin-guidebook.html",
+          "link_text": "⇒ あだち子育てガイドブック",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/kodomokate/kosodate-application-2025.html",
+          "link_text": "",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/kodomokate/k-kyoiku/kosodate/ninshin-guidebook.html",
+          "link_text": "",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/search_index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/pickup/kosodate-support.html",
+          "link_text": "妊娠・出産・子育てを切れ目なくサポートします",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/juku/k-kyoiku/kosodate/tsudoinoba-salon.html",
+          "link_text": "子育てサロン",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kodomokate/20251001.html",
+          "link_text": "子育て家庭訪問事業",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/ouen/index.html",
+          "link_text": "子育て応援・相談",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/juku/shisetsu/kosodate/001.html",
+          "link_text": "≪子育てサロン綾瀬≫",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kodomo-nyuuen/11setsumeikai.html",
+          "link_text": "【はじめての保育園 】オンライン説明会 7月8月開催日程",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/hoken/k-kyoiku/kosodate/ninshin-gakkyu.html",
+          "link_text": "⇒ ファミリー学級にいらっしゃいませんか",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/pickup/kosodate-support.html",
+          "link_text": "",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kodomo-nyuuen/20220701.html",
+          "link_text": "オンライン説明会申込",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kodomo-nyuuen/shisetsu/27hoikukon.html",
+          "link_text": "保育コンシェルジュ",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/kodomo-nyuuen/11setsumeikai.html",
+          "link_text": "",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/k-kyoiku/index.html",
+          "link_text": "子育て・教育",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/hodo/juyo/2020_0306.html",
+          "link_text": "電子申請や郵送などでもできる手続き",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/pickup/tag1.html",
+          "link_text": "子育て",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/k-kyoiku/guidebook/index.html",
+          "link_text": "あだち子育てガイドブック",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/documents/2950/guide2026_0-77.pdf",
+          "link_text": "令和8年度版あだち子育てガイドブック［表紙からP.77］（PDF：7,309KB）",
+          "score": 1,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 5,
+        "never_shown": 18,
+        "non_html": 1,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "荒川区",
+      "municipality_id": "arakawa",
+      "entries": [
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
+          "link_text": "児童手当",
+          "score": 21,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/kosodate/teate/index.html",
+          "link_text": "子育てに関する手当・助成",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/iryohijyoseikanpu.html",
+          "link_text": "乳幼児・子ども・高校生等及びひとり親家庭医療費助成費の支給申請（自己負担分を支払ったとき）",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/teate/manseishippei_shinsei.html",
+          "link_text": "小児慢性特定疾病医療費支給の申請について（対象児童保護者の方）",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/kodomo_hotline.html",
+          "link_text": "子どもの学校や家庭での困りごと等の相談",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/jidougyakutai/index.html",
+          "link_text": "児童虐待",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hisotijidoutougyakutai.html",
+          "link_text": "施設職員や里親等による虐待（被措置児童等虐待）",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/kodomo_center.html",
+          "link_text": "子ども家庭総合センター（児童相談所）",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/portal/kosodatesetai/index.html",
+          "link_text": "子ども・子育て",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/shisetsuannai/kosodate/index.html",
+          "link_text": "子育て・教育施設",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/sodan.html",
+          "link_text": "子育て全般の相談窓口",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/kosodate/index.html",
+          "link_text": "子育て",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a036/kosodate/ikujisoudan/counselor.html",
+          "link_text": "子育て支援カウンセラーが相談に応じます",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/index.html",
+          "link_text": "子育て支援",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/odekakemap.html",
+          "link_text": "あらかわ子育て応援ブック（令和7年8月発行）",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/gakkyu_koza/index.html",
+          "link_text": "子育てハッピー講座",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/gyakutai.html",
+          "link_text": "虐待対応ダイヤル189",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a039/kosodate/ikujisoudan/kidscall.html",
+          "link_text": "あらかわキッズ・ファミリーコール24",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
+          "link_text": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/kosodate/ikujisoudan/index.html",
+          "link_text": "家庭に関する相談",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/ikujisoudan/kateisodan.html",
+          "link_text": "家庭相談",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a033/kosodate/ikujisoudan/i-space.html",
+          "link_text": "母親グループミーティング 「I・スペース」",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/kosodateshien/hoikutougyakutai.html",
+          "link_text": "保育所等における虐待等に関する相談窓口",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/kosodate/kosodateshien/satooyaseido/index.html",
+          "link_text": "里親制度",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/youngcarer.html",
+          "link_text": "ヤングケアラー～家事や介護などを過度に行っている子ども・若者",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 2,
+        "never_shown": 22,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "文京区",
+      "municipality_id": "bunkyo",
+      "entries": [
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+          "link_text": "こどもの手当・助成など",
+          "score": 14,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b022/p001469/index.html",
+          "link_text": "児童手当",
+          "score": 13,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/iryouhi/index.html",
+          "link_text": "こどもの医療費助成",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+          "link_text": "お子さんの安全について",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+          "link_text": "児童館",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+          "link_text": "やさしい日本語ON",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/kodomonoanzen/index.html",
+          "link_text": "やさしい日本語ON",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/index.html",
+          "link_text": "やさしい日本語ON",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/honkomagomeminami/index.html",
+          "link_text": "本駒込南児童館",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/ibashozukuri/jidoukan/yanagimachi/index.html",
+          "link_text": "柳町児童館",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
+          "link_text": "子育てサービス検索",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/index.html",
+          "link_text": "子育て",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kenri/index.html",
+          "link_text": "こどもの権利",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/kosodatejouhou/index.html",
+          "link_text": "子育て情報",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_chirashikakutei.pdf",
+          "link_text": "文京区こどもメディアパートナー募集チラシ（PDF：729KB）",
+          "score": 5,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/documents/12923/kodomomedhipa_youkoukakutei.pdf",
+          "link_text": "文京区こどもメディアパートナー募集要項（PDF：451KB）",
+          "score": 5,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/hitorioya/index.html",
+          "link_text": "ひとり親支援",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/index.html",
+          "link_text": "保育園・幼稚園・一時預かり",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/hoikuenhoka/hoikushisetsu/index.html",
+          "link_text": "保育施設等",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/service/index.html",
+          "link_text": "やさしい日本語ON",
+          "score": 4,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b093/p001476.html",
+          "link_text": "こども宅食プロジェクト",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b003/p006119/p000002.html",
+          "link_text": "【参加者募集】こどもメディアパートナー",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b003/p008237.html",
+          "link_text": "こどもメディアパートナー",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 8,
+        "never_shown": 8,
+        "non_html": 2,
+        "unfetchable": 4
+      }
+    },
+    {
+      "municipality": "千代田区",
+      "municipality_id": "chiyoda",
+      "entries": [
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
+          "link_text": "児童手当に関する各種届出について",
+          "score": 25,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
+          "link_text": "児童手当",
+          "score": 21,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
+          "link_text": "こども・高校生等医療費助成制度（乳幼児～高校生等）",
+          "score": 15,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/getsugaku.html",
+          "link_text": "手当月額",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html",
+          "link_text": "支給対象者（手当を受給できる方）",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomokateicenter.html",
+          "link_text": "千代田区こども家庭センター",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/index.html",
+          "link_text": "手当・助成",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/chukosei-oenteate.html",
+          "link_text": "中高生世代応援手当（区独自制度）",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/shin-chugakusei.html",
+          "link_text": "令和8年4月から新たに中学生になる児童を養育している方へ（受給のための申請受付を開始します）",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-uketsuke.html",
+          "link_text": "子どもケアプランの受け付けが始まります",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-kettei.html",
+          "link_text": "はばたきプラン",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/gaikokujin.html",
+          "link_text": "外国人学校児童・生徒保護者補助金",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/kosodate/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kuse/shisaku/juyo/kosodate/index.html",
+          "link_text": "子育て中の方へ",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kyubyo/kyukyu.html",
+          "link_text": "ちよだこども救急室",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/lifeevent/teate/index.html",
+          "link_text": "手当・助成",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/guidebook.html",
+          "link_text": "千代田区の子育て応援情報をご紹介します",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/event.html",
+          "link_text": "保育園・こども園でいっしょに遊びましょう（イベント・入園体験）",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/shinseido-2.html",
+          "link_text": "子ども・子育て支援新制度",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/ko-nayamu/index.html",
+          "link_text": "お子さんの教育や子育てに悩んだとき",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/index.html",
+          "link_text": "子育て",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kosodate/index.html",
+          "link_text": "子育てに迷ったり、困ったとき",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/chiyoda-kosodate-map.html",
+          "link_text": "chiyoda子育てMapをご活用ください",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kuse/jinji/boshu/hijokin/kodomo/jidoshidoin.html",
+          "link_text": "令和8年度千代田区児童指導員（会計年度任用職員）の募集",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/teiin-akijokyo.html",
+          "link_text": "【例月（4月入所を除く）】保育所等の定員と空き状況および待機児童数の状況",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 6,
+        "never_shown": 18,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "中央区",
+      "municipality_id": "chuo",
+      "entries": [
+        {
+          "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html",
+          "link_text": "児童手当",
+          "score": 25,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/202409jidouteate.html",
+          "link_text": "児童手当（別ウィンドウで開きます）",
+          "score": 25,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kosodate/kosodate/teatejosei/index.html",
+          "link_text": "子育ての手当・助成",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2025ouenteate.html",
+          "link_text": "令和7年度中央区子育て応援手当",
+          "score": 14,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2023hitorioyaigaikyuuhu.html",
+          "link_text": "子育て世帯生活支援特別給付金",
+          "score": 11,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/ininjo/ininjo.html",
+          "link_text": "委任状（子ども子育て支援課）",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2023ouenkyuuhukin.html",
+          "link_text": "中央区子育て世帯応援特別給付金",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/jidoukenkou/syuugakuzikennsinn.html",
+          "link_text": "令和9年度小学校入学予定者の就学時健康診断日程について",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0032/kosodate/shussan/kodomonokenkou/sukusukusika.html",
+          "link_text": "すくすく歯科相談～よい歯並びの育み方～9月・10月開催分申込開始しました",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0031/kosodate/shussan/kodomonokenkou/kyoiku/user_fkensu_time_2018.html",
+          "link_text": "離乳食講習会9月開催分を更新しました",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kosodate/shussan/kodomonokenkou/index.html",
+          "link_text": "子どもの健康・予防接種 乳幼児の健康診断や予防接種など",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0031/kosodate/shussan/kodomonokenkou/shinseijichokakuhiyoujyosei.html",
+          "link_text": "新生児聴覚検査費用助成制度",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kosodate/kosodate/teatejosei/iryouhijosei/index.html",
+          "link_text": "医療費に関する助成",
+          "score": 8,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0006/kosodate/kosodate/teatejosei/soumu_hojo.html",
+          "link_text": "中央区外国人学校生徒等の外国人保護者に対する補助制度",
+          "score": 8,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0032/kosodate/shussan/kodomonokenkou/sikakyousitu07.html",
+          "link_text": "歯の健康教室～よい歯並びの育み方(4,5,6歳児編)～",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kosodate/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0048/kosodate/gakkoukyouiku/kyouikuiinkai/kyouikuiinkai.html",
+          "link_text": "教育委員会",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0048/kosodate/gakkoukyouiku/kyouikuiinkai/news.html",
+          "link_text": "新着情報の一覧",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/topics/index.html",
+          "link_text": "教育委員会トピックス",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/kyogikai/index.html",
+          "link_text": "協議会・検討会",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/chosa/index.html",
+          "link_text": "調査・報告",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/sinnnyuugakushougakkou.html",
+          "link_text": "新入学手続き（小学校）",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/sinnyugaku_chugaku.html",
+          "link_text": "新入学手続き（中学校）",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/nyugakumaeshikyu.html",
+          "link_text": "新入学児童生徒学用品費の入学前支給(小・中学校)",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/raising_children/index.html",
+          "link_text": "子育て",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 7,
+        "never_shown": 15,
+        "non_html": 0,
+        "unfetchable": 1
+      }
+    },
+    {
+      "municipality": "江戸川区",
+      "municipality_id": "edogawa",
+      "entries": [
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html",
+          "link_text": "児童手当",
+          "score": 25,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate/teateshien/index.html",
+          "link_text": "児童手当・子ども医療費助成・ひとり親への支援",
+          "score": 21,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/genkyo.html",
+          "link_text": "児童手当の更新手続き（現況届）",
+          "score": 21,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/2024_9_jidoteate.html",
+          "link_text": "児童手当（令和6年9月分までの制度）",
+          "score": 21,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
+          "link_text": "子ども会",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jazh/https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
+          "link_text": "简体中文",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jako/https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
+          "link_text": "한국어",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate/teateshien/shisaku/index.html",
+          "link_text": "ひとり親家庭への支援",
+          "score": 8,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kosodate/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate_ouen/index.html",
+          "link_text": "子育て応援サイト",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/rdt/20250930_kodomokatei.html",
+          "link_text": "江戸川区こども家庭センター（江戸川区児童相談所内）",
+          "score": 7,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e068/kosodate/kyoiku/kyouiku/index.html",
+          "link_text": "就学後の子育て（江戸川区教育委員会）",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate_ouen/nayandara/index.html",
+          "link_text": "子育てに悩んだら",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kosodate/kenzenikusei/index.html",
+          "link_text": "青少年健全育成",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 5,
+        "never_shown": 5,
+        "non_html": 0,
+        "unfetchable": 3
+      }
+    },
+    {
+      "municipality": "八王子市",
+      "municipality_id": "hachioji",
+      "entries": [
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosodate/index.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosodate/001/001/p031701.html",
+          "link_text": "出産・子育て応援交付金に関する情報",
+          "score": 7,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosodate/001/001/p028930.html",
+          "link_text": "八王子市子育て応援サイトへの移行について（妊娠・出産・母と子の健康）",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/tantoumadoguchi/015/004/p029000.html",
+          "link_text": "手当・助成（八王子市子育て応援サイトへの移行について）",
+          "score": 6,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosodate/015/001/p037563.html",
+          "link_text": "市内保育施設に在籍する児童情報の誤送信について",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/kosodate/015/001/p037563.html%26target=_top&SLANG=ja&TLANG=ko&XMODE=0",
+          "link_text": "한국어",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/kosodate/015/001/p037563.html%26target=_top&SLANG=ja&TLANG=zh&XMODE=0",
+          "link_text": "簡体字",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/kosodate/015/001/p037563.html%26target=_top&SLANG=ja&TLANG=zhb&XMODE=0",
+          "link_text": "繁体字",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www3.zoomsight-sv2.jp/SOCH/controller/index.html",
+          "link_text": "音声読み上げ",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosodate/001/001/p000972.html",
+          "link_text": "出生連絡カードの提出",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/kosodate/001/001/p000972.html%26target=_top&SLANG=ja&TLANG=ko&XMODE=0",
+          "link_text": "한국어",
+          "score": 4,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/application/index.html",
+          "link_text": "申請や手続きから探す",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/online/densi/index.html",
+          "link_text": "電子申請・届出",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/online/download/index.html",
+          "link_text": "申請書ダウンロード",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/001/p037381.html",
+          "link_text": "【6月15日から8月31日まで申請受付中】八王子市物価高騰対応事業者支援金について",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/event/002/p033918.html",
+          "link_text": "子育て関連のイベントは子育て応援サイトに掲載しています。",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/nenkin/001/005/001/p003516.html",
+          "link_text": "国民健康保険関連の申請書ダウンロード",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/zeikin/002/007/p012226.html",
+          "link_text": "税証明書の申請書ダウンロード",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/online/densi/002/index.html",
+          "link_text": "電子申請・届出（インターネットからの申請・届出）サービス",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/online/densi/002/p030041.html",
+          "link_text": "電子申請・届出サービス",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/online/densi/003/index.html",
+          "link_text": "電子申請利用状況",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/online/densi/003/p032547.html",
+          "link_text": "令和6年度（2024年度）電子申請利用状況",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/tantoumadoguchi/015/004/index.html",
+          "link_text": "子育て支援課",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/tantoumadoguchi/015/007/index.html",
+          "link_text": "こども家庭センター",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/nenkin/001/005/001/index.html",
+          "link_text": "申請書ダウンロード",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/nenkin/001/002/008/p026118.html",
+          "link_text": "国民健康保険の医療機関等受診記録(医療費通知)の交付申請について",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 1,
+        "never_shown": 19,
+        "non_html": 0,
+        "unfetchable": 4
+      }
+    },
+    {
+      "municipality": "板橋区",
+      "municipality_id": "itabashi",
+      "entries": [
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
+          "link_text": "児童手当 総合案内",
+          "score": 21,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/index.html",
+          "link_text": "子どもの手当・助成・支援",
+          "score": 11,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/index.html",
+          "link_text": "子育て情報ブック",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/index.html",
+          "link_text": "子どもの手当",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/shogai/index.html",
+          "link_text": "障がいのある子どもの手当・医療の助成",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/oyakudachi/1004610.html",
+          "link_text": "「いたばし子育て応援アプリ」配信中！",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065179.html",
+          "link_text": "「児童扶養手当現況届のお知らせ（郵送手続き）」が届いた方へ",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065176.html",
+          "link_text": "「児童扶養手当現況届のお知らせ（除外届あり-B）」が届いた方へ",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065172.html",
+          "link_text": "「児童扶養手当現況届のお知らせ（除外届あり-A）」が届いた方へ",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/1004606.html",
+          "link_text": "いたばし子育て情報ブック",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/index.html",
+          "link_text": "児童扶養手当 総合案内",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1004635.html",
+          "link_text": "児童育成手当",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/shogai/1004642.html",
+          "link_text": "障がいのある子どもの手当・医療の助成",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E3%81%A9%E3%82%82%E3%81%AE%E6%89%8B%E5%BD%93%E3%83%BB%E5%8A%A9%E6%88%90%E3%83%BB%E6%94%AF%E6%8F%B4%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fteate%2Findex.html",
+          "link_text": "このページの情報をXでポストできます",
+          "score": 8,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E8%82%B2%E3%81%A6%E6%83%85%E5%A0%B1%E3%83%96%E3%83%83%E3%82%AF%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fteate%2Fbook%2Findex.html",
+          "link_text": "このページの情報をXでポストできます",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fteate%2Fbook%2Findex.html&t=%E5%AD%90%E8%82%B2%E3%81%A6%E6%83%85%E5%A0%B1%E3%83%96%E3%83%83%E3%82%AF%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
+          "link_text": "このページの情報をフェイスブックでシェアできます",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/index.html",
+          "link_text": "子育て・教育・生涯学習トップ",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/index.html",
+          "link_text": "子育て相談窓口",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/shisetsu/index.html",
+          "link_text": "子育て関連施設",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/soudan/kosodate/index.html",
+          "link_text": "子育てに関する相談",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/1064645/index.html",
+          "link_text": "こども性暴力防止法に関すること",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/ninshin/index.html",
+          "link_text": "妊娠・出産",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kosodate/kenko/index.html",
+          "link_text": "子どもの健康",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E8%82%B2%E3%81%A6%E7%9B%B8%E8%AB%87%E7%AA%93%E5%8F%A3%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fsoudan%2Findex.html",
+          "link_text": "このページの情報をXでポストできます",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Fkosodate%2Fsoudan%2Findex.html&t=%E5%AD%90%E8%82%B2%E3%81%A6%E7%9B%B8%E8%AB%87%E7%AA%93%E5%8F%A3%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
+          "link_text": "このページの情報をフェイスブックでシェアできます",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 5,
+        "never_shown": 14,
+        "non_html": 0,
+        "unfetchable": 5
+      }
+    },
+    {
+      "municipality": "葛飾区",
+      "municipality_id": "katsushika",
+      "entries": [
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/index.html",
+          "link_text": "子育て・教育・子どもトップ",
+          "score": 7,
+          "hops": 1,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/index.html",
+          "link_text": "子育て",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1030198/index.html",
+          "link_text": "子育て・教育に関する相談",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1037720/index.html",
+          "link_text": "かつしかこどものページができました！！",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1039543.html",
+          "link_text": "第一子無償化等子育て施策の充実（令和7年9月から）",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1037722/index.html",
+          "link_text": "こどものけんり",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1030342/index.html",
+          "link_text": "子育ての流れ（切れ目のない支援）",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html",
+          "link_text": "各種手当・医療費助成",
+          "score": 7,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1041271/index.html",
+          "link_text": "こども誰でも通園制度",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1030355/index.html",
+          "link_text": "子ども・子育て施設",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1002333/1039584.html",
+          "link_text": "認可保育所（公立・私立）、認定こども園（保育部分）、小規模保育事業所、家庭的保育事業所",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1002333/1025713.html",
+          "link_text": "子育て家庭家事サポーター派遣事業",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1030342/1032108.html",
+          "link_text": "かつしか子育てカレンダー",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1000057/index.html",
+          "link_text": "教育・学校",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kosodate/1002752/index.html",
+          "link_text": "生涯学習",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kosodate/1000056/index.html",
+          "link_text": "ふりがな",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kosodate/1000056/index.html",
+          "link_text": "やさしい日本語",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kosodate/1030198/index.html",
+          "link_text": "ふりがな",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kosodate/1030198/index.html",
+          "link_text": "やさしい日本語",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://twitter.com/intent/tweet?text=%E5%AD%90%E8%82%B2%E3%81%A6%E3%83%BB%E6%95%99%E8%82%B2%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E7%9B%B8%E8%AB%87%ef%bd%9c%E8%91%9B%E9%A3%BE%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88&url=https%3A%2F%2Fwww.city.katsushika.lg.jp%2Fkosodate%2F1030198%2Findex.html",
+          "link_text": "Xでポスト",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.katsushika.lg.jp%2Fkosodate%2F1030198%2Findex.html&t=%E5%AD%90%E8%82%B2%E3%81%A6%E3%83%BB%E6%95%99%E8%82%B2%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E7%9B%B8%E8%AB%87%ef%bd%9c%E8%91%9B%E9%A3%BE%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88",
+          "link_text": "フェイスブックでシェア",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kosodate/1000056/1039543.html",
+          "link_text": "ふりがな",
+          "score": 4,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kosodate/1000056/1037722/index.html",
+          "link_text": "ふりがな",
+          "score": 4,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kosodate/1000056/1037722/index.html",
+          "link_text": "やさしい日本語",
+          "score": 4,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://twitter.com/intent/tweet?text=%E3%81%93%E3%81%A9%E3%82%82%E3%81%AE%E3%81%91%E3%82%93%E3%82%8A%ef%bd%9c%E8%91%9B%E9%A3%BE%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88&url=https%3A%2F%2Fwww.city.katsushika.lg.jp%2Fkosodate%2F1000056%2F1037722%2Findex.html",
+          "link_text": "Xでポスト",
+          "score": 4,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 10,
+        "never_shown": 3,
+        "non_html": 0,
+        "unfetchable": 10
+      }
+    },
+    {
+      "municipality": "北区",
+      "municipality_id": "kita",
+      "entries": [
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002923.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html",
+          "link_text": "児童手当",
+          "score": 13,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+          "link_text": "児童手当制度のご案内（令和6年10月分以降）",
+          "score": 13,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1018788.html",
+          "link_text": "児童手当（多子加算を受給している方の提出書類について）",
+          "score": 13,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002922.html",
+          "link_text": "児童手当（定時の届出）",
+          "score": 13,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/025/128/sinseisyo.pdf",
+          "link_text": "物価高対応子育て応援手当申請書（請求書） （PDF 177.1KB）",
+          "score": 7,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/025/128/youryo.pdf",
+          "link_text": "【記載要領】物価高対応子育て応援手当申請書（請求書） （PDF 194.6KB）",
+          "score": 7,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1018247/1025128.html",
+          "link_text": "2026年1月19日 東京都北区物価高対応子育て応援手当を支給します",
+          "score": 6,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1018247/1025221.html",
+          "link_text": "【終了しました】（公務員の方）東京都北区物価高対応子育て応援手当",
+          "score": 6,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002911.html",
+          "link_text": "子育てに関する手当等の所得控除額",
+          "score": 6,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/index.html",
+          "link_text": "子育て",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/edu-counseling/index.html",
+          "link_text": "子育て・教育の相談",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/shinsei_tetsuzuki_search.html",
+          "link_text": "申請・手続き検索",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/city-information/pr/1011994/1026256/1026262.html",
+          "link_text": "【2026年7月14日】＜事前案内＞「北区子育てようちえんフェスタ」開催",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/index.html",
+          "link_text": "子どもの手当・助成",
+          "score": 3,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002833/index.html",
+          "link_text": "子育て支援",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002975/index.html",
+          "link_text": "保育園・幼稚園・認定こども園",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/edu-counseling/1002953.html",
+          "link_text": "子ども子育て総合相談",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1018247/index.html",
+          "link_text": "その他の子どもの手当・助成",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002910.html",
+          "link_text": "子どもの手当・医療費助成（まずはこちらをご覧ください）",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002912.html",
+          "link_text": "子どもの手当・医療費助成における窓口混雑予想と手続き時間",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002833/1018248/index.html",
+          "link_text": "子育て支援に関する募集・お知らせ",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002833/1002899.html",
+          "link_text": "東京都北区子育て応援ガイド きたハピモバイル",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002833/1018249/index.html",
+          "link_text": "子育て支援サービス",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 4,
+        "shown_not_chosen": 5,
+        "never_shown": 13,
+        "non_html": 2,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "江東区",
+      "municipality_id": "koto",
+      "entries": [
+        {
+          "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
+          "link_text": "児童手当・子ども医療費等の郵送受付",
+          "score": 25,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/281011/2024jidou.html",
+          "link_text": "児童手当について",
+          "score": 17,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/281011/20171121.html",
+          "link_text": "児童手当・子ども医療費助成の電子申請",
+          "score": 16,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kodomo/kosodate/teate/index.html",
+          "link_text": "手当・医療助成",
+          "score": 15,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/96043.html",
+          "link_text": "手当と医療費助成制度について",
+          "score": 15,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6028.html",
+          "link_text": "児童扶養手当",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6029.html",
+          "link_text": "児童育成手当（育成手当）",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6011.html",
+          "link_text": "児童育成手当（障害手当）",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kodomo/kosodate/katsudo/index.html",
+          "link_text": "こども・子育て支援活動",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/281000/documents/kodomokosodatekaigi/r7/documents/kosodatedanntaishien.html",
+          "link_text": "こども・子育て支援活動を行う団体",
+          "score": 14,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/search/result.html?q=%E5%85%90%E7%AB%A5%E6%89%8B%E5%BD%93&sa=%E6%A4%9C%E7%B4%A2&cx=006317087180884836016%3Ac-iuyduhxj8&ie=UTF-8&cof=FORID%3A9",
+          "link_text": "児童手当",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kodomo/kosodate/index.html",
+          "link_text": "子育て支援",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/281012/kodomo/kosodate/benri/4911.html",
+          "link_text": "子育てハンドブック",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/282011/kodomo/kosodate/service/5874.html",
+          "link_text": "子育て相談（子ども家庭支援センター）",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/260552/kodomo/kosodate/sodan/6901.html",
+          "link_text": "子育て相談（保健相談所）",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kodomo/kosodate/shokudo/index.html",
+          "link_text": "こども食堂",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kodomo/kosodate/service/index.html",
+          "link_text": "子育てサービス",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kodomo/index.html",
+          "link_text": "こども・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kosodate.html",
+          "link_text": "子育て世帯",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kodomo/hoiku/ninka/index.html",
+          "link_text": "保育園",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kodomo/hoiku/index.html",
+          "link_text": "保育園・保育施設",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/280308/kodomo/hoiku/ninka/akijyohou_r8_5kara.html",
+          "link_text": "空き人員一覧（認可保育所等、居宅訪問型保育（待機児童））",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/280308/kodomo/hoiku/ninka/hoikunohitsuyouseinonintei.html",
+          "link_text": "保育の必要性の認定について",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/280502/kodomo/hoiku/ninka/kaitikukaisyuukeikaku.html",
+          "link_text": "区立保育園（公設民営含む）の改築・改修計画について【令和8年2月現在】",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 7,
+        "never_shown": 14,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "目黒区",
+      "municipality_id": "meguro",
+      "entries": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
+          "link_text": "子育てに関する手当・助成",
+          "score": 14,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
+          "link_text": "子育て・児童相談",
+          "score": 11,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html",
+          "link_text": "子どものための諸手当",
+          "score": 11,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/sogosodan.html",
+          "link_text": "子育て総合相談窓口（利用者支援事業）（こども家庭センター利用者支援係）",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
+          "link_text": "简体中文",
+          "score": 8,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
+          "link_text": "繁體中文",
+          "score": 8,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/shakaisankaku/kodomojoreicalendar_r9.html",
+          "link_text": "「令和9年版目黒区子ども条例啓発カレンダー」に載せる絵を募集します",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/shakaisankaku/kodomonitor/index.html",
+          "link_text": "MEGUROこどモニター",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
+          "link_text": "简体中文",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
+          "link_text": "繁體中文",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/kodomonokokoro.html",
+          "link_text": "子どもの心の問題",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/heartnet/index.html",
+          "link_text": "子ども相談室「めぐろ はあと ねっと」",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/shakaisankaku/kodomojoreicalendar_r9.html",
+          "link_text": "简体中文",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
+          "link_text": "令和8年度目黒区学童保育クラブ利用申請のご案内・申請書",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/honettohiroba.html",
+          "link_text": "「ほ・ねっと ひろば」（こども家庭センター利用者支援係）",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/shougaigakushuu/event/08chuuou_kosodate.html",
+          "link_text": "社会教育講座「子育てはチームプレー！パパの力が未来を変える」",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/kosodatenetsukunavi.html",
+          "link_text": "めぐろ子育てホッ！とナビ",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/index.html",
+          "link_text": "子育て",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/index.html",
+          "link_text": "子育て支援",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/ibashozukuri/gakudou/apply/shinseisyorui/index.html",
+          "link_text": "学童保育クラブ利用申請提出書類",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kusei/onlineservice/download/kosodate/gakudou/index.html",
+          "link_text": "学童保育クラブに関する申請書",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/hottobook.html",
+          "link_text": "めぐろ子育てホッ！とブック",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
+          "link_text": "简体中文",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
+          "link_text": "繁體中文",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 6,
+        "never_shown": 10,
+        "non_html": 0,
+        "unfetchable": 7
+      }
+    },
+    {
+      "municipality": "港区",
+      "municipality_id": "minato",
+      "entries": [
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html",
+          "link_text": "児童手当",
+          "score": 21,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/bukkadakataioukosodateouenteate.html",
+          "link_text": "物価高対応子育て応援手当",
+          "score": 18,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/index-shisetsu.html",
+          "link_text": "子育て支援施設",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomo/kate/teate/index.html",
+          "link_text": "手当て・助成",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomokatei/minatokosodateouen/20260805.html",
+          "link_text": "港区みなと子育て応援プラザ事業運営事業候補者をプロポーザル方式により募集します",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/bousai/kosodatekatei-bousai-techo.html",
+          "link_text": "子育て家庭の防災手帳",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/ai-port.html",
+          "link_text": "子育てひろば「あい・ぽーと」",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kate/teate/jidofuyo.html",
+          "link_text": "児童扶養手当",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/chiikihoken/kodomo/syusankosodate07.html",
+          "link_text": "妊婦のための支援給付",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/sodan/index.html",
+          "link_text": "相談",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kate/kodomoiryo.html",
+          "link_text": "子ども医療助成",
+          "score": 8,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/shien.html",
+          "link_text": "子ども家庭支援センター",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/kodomo/shienshisetsu/jidoushisetsu.html",
+          "link_text": "子ども中高生プラザ・児童高齢者交流プラザ",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https://www.city.minato.tokyo.jp/kodomokatei/minatokosodateouen/20260805.html&src=sdkpreparse",
+          "link_text": "シェア",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomo/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/kihonhou.html",
+          "link_text": "「こども基本法」って知ってる？",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomo/kodomo/index.html",
+          "link_text": "子育て・家庭支援",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kosodatesuppot/20260805.html",
+          "link_text": "港区みなと子育てサポートハウス事業運営事業候補者をプロポーザル方式により募集します",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kosodatesien/kosodate/index.html",
+          "link_text": "子ども",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/index.html",
+          "link_text": "キッズページ小学生",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/birudo/index.html",
+          "link_text": "キッズページ中高生",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kodomosoudan/20140610.html",
+          "link_text": "みなと相談ねっと",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/quiz/index.html",
+          "link_text": "クイズ・ゲームで遊ぼう",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/video/index.html",
+          "link_text": "ビデオでみよう港区のこと",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kyouikucenter/kodomo/kids/watashitachinominatoku/index.html",
+          "link_text": "わたしたちの港区",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 6,
+        "never_shown": 17,
+        "non_html": 0,
+        "unfetchable": 1
+      }
+    },
+    {
+      "municipality": "中野区",
+      "municipality_id": "nakano",
+      "entries": [
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+          "link_text": "児童手当・助成",
+          "score": 25,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+          "link_text": "児童手当・助成",
+          "score": 21,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
+          "link_text": "児童手当など",
+          "score": 21,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
+          "link_text": "児童手当の制度改正(令和6年10月分以降)",
+          "score": 21,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+          "link_text": "児童手当",
+          "score": 21,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/kodomowakamono.html",
+          "link_text": "子ども・若者支援センターのご案内",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/index.html",
+          "link_text": "小学生～",
+          "score": 8,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/keyword/kodomosoudansitu/index.html",
+          "link_text": "子ども相談室",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/azukari/kodomoshortstay.html",
+          "link_text": "子どもショートステイ・トワイライトステイ",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/shisetsu/kosodate/soudan/nakanoku-jidousoudan.html",
+          "link_text": "中野区児童相談所",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/index.html",
+          "link_text": "中野区子育てサイト おひるね",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/case/kosodate/index.html",
+          "link_text": "子育て",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/syogai/news_event/parentmentor_youseikouza.html",
+          "link_text": "子育てが楽しくなる「ペアレント・プログラム」に参加者してみませんか？",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/sodan/kosodate/index.html",
+          "link_text": "子育て・家庭の相談",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kusei/toukei-cyousa/survey/kosodate/wakamonojittaichousa.html",
+          "link_text": "中野区若者実態調査を実施中！",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/hoikuen/goannnai/hoikushisetsuichiran.html",
+          "link_text": "中野区内の保育施設一覧",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/ninshin/kouza/0236162120240202111253211.html",
+          "link_text": "北部すこやか福祉センター妊婦さんの歯っぴいお食事講座",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/gakko/syuugakuzikensin.html",
+          "link_text": "就学時健康診断のご案内",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kyoikuiinkai/shisetsu/library/event-202608.html",
+          "link_text": "区立図書館のイベント情報【8月】",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/nakano-teensbase.html",
+          "link_text": "中高生年代の居場所（（仮称）ナカノティーンズベース）の開設について",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/ichijihoiku/index.html",
+          "link_text": "育児支援・家事援助",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/odekake/index.html",
+          "link_text": "でかける・居場所",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/hoikuen/index.html",
+          "link_text": "保育園・幼稚園",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/kyuukyuu/index.html",
+          "link_text": "急病・救急",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 10,
+        "never_shown": 13,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "練馬区",
+      "municipality_id": "nerima",
+      "entries": [
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jidouteate20120401.html",
+          "link_text": "児童手当",
+          "score": 29,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/tokubetujidoufuyou.html",
+          "link_text": "特別児童扶養手当",
+          "score": 19,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/shinsei.html",
+          "link_text": "子ども医療助成費（マル乳・マル子）の払い戻し（償還払い）申請",
+          "score": 15,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jido/index.html",
+          "link_text": "子どもの手当・医療費助成",
+          "score": 15,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/index.html",
+          "link_text": "手当・医療助成",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jido/teategaku.html",
+          "link_text": "児童扶養手当・特別児童扶養手当の手当額（月額）が変わります。",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/ikuseiteate.html",
+          "link_text": "児童育成手当（育成手当・障害手当）",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/fuyoteate.html",
+          "link_text": "児童扶養手当",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/haraimodoshi.html",
+          "link_text": "ひとり親家庭等医療費助成（マル親） の払い戻し（償還払い）申請",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.html",
+          "link_text": "子ども医療費の助成（マル乳・マル子医療証）",
+          "score": 12,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/saikoufu.html",
+          "link_text": "ひとり親家庭等医療証（マル親医療証）の再交付",
+          "score": 12,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/tatakanai_kosodate.html",
+          "link_text": "たたかない・どならない子育てのために",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/20200413.html",
+          "link_text": "子どもや子育てに関する悩みがある方は、ご相談ください",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/index.html",
+          "link_text": "子育て",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/hoiku/daredemo.html",
+          "link_text": "練馬区こども誰でも通園事業（試行）",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/kododateouenken.html",
+          "link_text": "子育てスタート応援券",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/np.html",
+          "link_text": "子育て支援啓発講座『ノーバディーズ・パーフェクト～完璧な親なんていない～』",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/josei.files/kodomo_tebiki_2025.pdf",
+          "link_text": "子ども医療費助成（マル乳・マル子・マル青）のてびき（PDF：1,359KB）",
+          "score": 10,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/kodomokateicenter/taibatsu_batsu.html",
+          "link_text": "体罰などによる子どもの身体と心への影響",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/sodan/index.html",
+          "link_text": "相談",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/bamen/kosodate.html",
+          "link_text": "子育て",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 10,
+        "never_shown": 10,
+        "non_html": 1,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "大田区",
+      "municipality_id": "ota",
+      "entries": [
+        {
+          "url": "https://www.city.ota.tokyo.jp/faq/bunya/kosodate/jidouteate.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html",
+          "link_text": "児童手当（電子申請・郵送申請が可能です）",
+          "score": 28,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninnteiseikyuu.pdf",
+          "link_text": "第2号様式 児童手当 認定請求書（PDF：173KB）",
+          "score": 26,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.files/ninteiseikyuukisairei.pdf",
+          "link_text": "第2号様式 児童手当 認定請求書【記入例】（PDF：224KB）",
+          "score": 26,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jitekaisei.html",
+          "link_text": "児童手当（令和6年度制度改正後）について",
+          "score": 25,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.html",
+          "link_text": "物価高対応子育て応援手当",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/ouennteatetirashipdf.pdf",
+          "link_text": "【大田区版】物価高対応子育て応援手当標準リーフレット（PDF：444KB）",
+          "score": 16,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_kouzatouroku_todokedesho.pdf",
+          "link_text": "第2号様式 物価高対応子育て応援手当口座登録等の届出書（PDF：303KB）",
+          "score": 16,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/r7ouenteate_jukyukyohi_todokedesho.pdf",
+          "link_text": "第1号様式 物価高対応子育て応援手当受給拒否の届出書（PDF：134KB）",
+          "score": 16,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/topics/kosodateprbrochure.html",
+          "link_text": "画像リンク：「安心」「わくわく」大田区の子育てのページへ",
+          "score": 11,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/kosodate_handbook.html",
+          "link_text": "【デジタル版】子育てハンドブック（令和8年度版）",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/topics/ouchi_kosodate-hoiku.html",
+          "link_text": "おうちで楽しむ子育て・保育 ～おうち時間を楽しもう～",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/index.html",
+          "link_text": "手当・医療費助成",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/kosodatehiroba/index.html",
+          "link_text": "子育てひろば",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/t_kosodate_handbook.html",
+          "link_text": "体罰などによらない子育てハンドブック",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidousoudanjyo_kaisetsu.html",
+          "link_text": "大田区こども未来総合センターの開設に向けて",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/index.html",
+          "link_text": "子育て、こどもに関する支援",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/index.html",
+          "link_text": "児童館・学童保育",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/doukyo-jidou.html",
+          "link_text": "同居児童の届出（同居児童に関する届出書・同居児童の解消に関する届出書）",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/R8gakudousinnsei.html",
+          "link_text": "令和8年度 学童保育利用募集のご案内",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/shien/jidoukan/houkagonosugoshikata.html",
+          "link_text": "放課後の過ごし方を【動画】でご紹介しています！",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/tetsuzuki/kosodate/jidoukan/gakudou-hoiku_nyushitsu-go.html",
+          "link_text": "学童保育入室後の各種手続きについて（必要書類のダウンロードができます）",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/index.html",
+          "link_text": "妊娠・出産 子育て",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/download/kodomo/index.html",
+          "link_text": "子ども・教育",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/download/index.html",
+          "link_text": "申請書ダウンロード",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/denshishinsei/index.html",
+          "link_text": "電子申請 マイナンバー",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 4,
+        "never_shown": 15,
+        "non_html": 5,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "世田谷区",
+      "municipality_id": "setagaya",
+      "entries": [
+        {
+          "url": "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+          "link_text": "児童手当のご案内（PDF：858KB）",
+          "score": 19,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf",
+          "link_text": "児童手当認定(額改定)請求書（PDF：641KB）",
+          "score": 19,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
+          "link_text": "子育て・教育に関する手当",
+          "score": 14,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+          "link_text": "児童手当のご案内",
+          "score": 13,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
+          "link_text": "児童手当現況届のご案内",
+          "score": 13,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/11545.html",
+          "link_text": "子育て",
+          "score": 11,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11726.html",
+          "link_text": "子育ての区情報誌・メールマガジン等",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11729.html",
+          "link_text": "子育て支援",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12400.html",
+          "link_text": "子育てステーション",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
+          "link_text": "手当・助成",
+          "score": 11,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13019.html",
+          "link_text": "子育て・教育に関する助成",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
+          "link_text": "ひとり親家庭への手当、助成、貸付",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11725.html",
+          "link_text": "親子の交流・子どもとおでかけ",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11727.html",
+          "link_text": "子どもの健康",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11728.html",
+          "link_text": "子どもの安全・安心",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/joureikeikaku/category/34503.html",
+          "link_text": "子ども・子育て応援都市宣言",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/11525.html",
+          "link_text": "子ども・教育・若者支援",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/11544.html",
+          "link_text": "妊娠・出産",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11721.html",
+          "link_text": "妊娠",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11722.html",
+          "link_text": "出産",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/ninshinshussan/category/11723.html",
+          "link_text": "産前・産後のお母さんのサポート",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02243/29576.html",
+          "link_text": "世田谷版こども誰でも通園制度（乳児等通園支援事業）について",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02413/21570.html",
+          "link_text": "世田谷区妊娠・出産・子育てガイド",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02413/1273.html",
+          "link_text": "せたがや子育て応援ブック",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02413/1275.html",
+          "link_text": "パパ・プレパパ向け子育てイベント・講座",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 6,
+        "never_shown": 15,
+        "non_html": 2,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "渋谷区",
+      "municipality_id": "shibuya",
+      "entries": [
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_t.html",
+          "link_text": "児童手当",
+          "score": 21,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/R7_kosodateouen.html",
+          "link_text": "物価高対応子育て応援手当",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/",
+          "link_text": "子ども手当",
+          "score": 11,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_i.html",
+          "link_text": "児童育成（障害）手当",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_f.html",
+          "link_text": "特別児童扶養手当",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/hitorioya/hitorioya_teate.html",
+          "link_text": "手当・助成",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/kosodate-shien/",
+          "link_text": "子育て支援サービス",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/ninshin-teate/",
+          "link_text": "妊娠・出産に関する手当・助成",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/hoiku/kosodate-hiroba/",
+          "link_text": "子育てひろば・施設",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/hoiku/kosodate-shisetu/",
+          "link_text": "子育て支援施設",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/contents/koho-news/1612/20260715_kodomo.html",
+          "link_text": "【子育て・教育・生涯学習】それぞれの成長を、一生よろこべる街へ。子どもの手当・医療費助成/4月分～8月分の保育利用料の軽減を行います など",
+          "score": 10,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/iryo-josei/kodomo_ij.html",
+          "link_text": "子ども医療費助成",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/hitorioya/hitorioya_shien.html",
+          "link_text": "貸付・支援",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/hoiku-josei/hoikuryo_keigen.html",
+          "link_text": "保育利用料の軽減制度",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/teate_gendogaku.html",
+          "link_text": "所得制限",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/",
+          "link_text": "子育て・教育・生涯学習",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/contents/case/kosodate.html",
+          "link_text": "子育て",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kenko/shogai-seikatsu/teate-nenkin/teate.html",
+          "link_text": "手当",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/gakko-kyoiku/new-gakko/atarashii_gakko_dukuri.html",
+          "link_text": "未来の学校",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kenko/shogai-seikatsu/shogaiji-shien/sodan-kodomo.html",
+          "link_text": "相談窓口（子ども・療育）",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/contents/shinsei/",
+          "link_text": "申請・各種申し込み一覧",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 3,
+        "never_shown": 17,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "品川区",
+      "municipality_id": "shinagawa",
+      "entries": [
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000027168.html",
+          "link_text": "9_児童手当",
+          "score": 17,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/20250321132249.html",
+          "link_text": "9999_児童手当に関する「監護相当・生計費の負担についての確認書」などの提出手続きについて",
+          "score": 17,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000011133.html",
+          "link_text": "13_公務員の方の児童手当",
+          "score": 17,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-shinseisyo/hpg000009624.html",
+          "link_text": "「児童手当・子ども医療費助成申請書」はこちら",
+          "score": 16,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/20250106164225.html",
+          "link_text": "9999_令和6年度子育て世帯生活支援特別給付金（住民税非課税世帯等物価高騰対策支援給付金のこども加算分）について【申請受付終了】",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-kateisoudan/kodomo-kateisoudan-kosodateouen/index.html",
+          "link_text": "21_子育て応援プログラム",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/hpg000027168_51.pdf",
+          "link_text": "児童手当の受給資格に係る申立書(PDF : 81KB)",
+          "score": 11,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/hpg000027168_52.pdf",
+          "link_text": "児童手当の受給資格に係る申立書【記入例】(PDF : 139KB)",
+          "score": 11,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/20250321132249_5.pdf",
+          "link_text": "・児童手当額改定請求書(PDF : 199KB)",
+          "score": 11,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/20250321132249_7.pdf",
+          "link_text": "【記入例】児童手当額改定請求書(PDF : 529KB)",
+          "score": 11,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/index.html",
+          "link_text": "手当・医療費助成",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-kateisoudan/index.html",
+          "link_text": "子育て・児童家庭相談",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-kaigi/index.html",
+          "link_text": "子ども・子育て会議",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-kateisoudan/kodomo-kateisoudan-kyoushitsu/index.html",
+          "link_text": "451_子育て相談・教室",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-kateisoudan/20190329092516.html",
+          "link_text": "481_いきいきあんしん子育てガイド",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-kateisoudan/hpg000010941.html",
+          "link_text": "511_しながわ わくわく子育てライフバランスチェック",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-kaigi/kodomo-kaigi-kaigiroku/index.html",
+          "link_text": "51_品川区子ども・子育て会議",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-kaigi/hpg000033460.html",
+          "link_text": "111_品川区子ども・子育て支援事業計画",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-kaigi/hpg000033461.html",
+          "link_text": "121_子ども・子育て支援新制度について",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/child_rights/index.html",
+          "link_text": "9999_こどもの権利に関する新条例",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/index.html",
+          "link_text": "子ども教育",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-hitorioya/index.html",
+          "link_text": "家庭相談・ひとり親家庭支援",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-ninnshinn/index.html",
+          "link_text": "妊娠・出産",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-hoyou/index.html",
+          "link_text": "保育園・幼稚園",
+          "score": 4,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-zidoucenter/index.html",
+          "link_text": "児童センター",
+          "score": 4,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 9,
+        "never_shown": 11,
+        "non_html": 4,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "新宿区",
+      "municipality_id": "shinjuku",
+      "entries": [
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kusei/file18_00002.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
+          "link_text": "児童手当",
+          "score": 17,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/jidoikusei01_000001_00004.html",
+          "link_text": "《申請受付は終了しました》物価高対応子育て応援手当",
+          "score": 13,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_06.html",
+          "link_text": "子育て・相談",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_0405.html",
+          "link_text": "手当・助成（子ども・教育）",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index12.html",
+          "link_text": "子ども・子育てに関する会議",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_20.html",
+          "link_text": "子育てに関する相談",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_21.html",
+          "link_text": "地域の子育て支援",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_13.html",
+          "link_text": "児童扶養手当・児童育成手当",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index26_01.html",
+          "link_text": "子ども・子育て会議",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index.html",
+          "link_text": "出産・子ども・教育",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002040.html",
+          "link_text": "令和8年度新宿区子ども未来基金助成活動を募集します",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/kyoshido01_002049_00077.html",
+          "link_text": "新宿区教育委員会会計年度任用講師（学習指導支援員）を募集します",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index02.html",
+          "link_text": "妊娠・出産",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index13.html",
+          "link_text": "基金（子ども・教育）",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index10_0821.html",
+          "link_text": "新宿区子ども未来基金",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002037.html",
+          "link_text": "「新宿区子ども未来基金」",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/kodomok02_002040_00001.html",
+          "link_text": "こちら",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_23.html",
+          "link_text": "子ども向け相談",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index12_01.html",
+          "link_text": "次世代育成協議会",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index02_02.html",
+          "link_text": "妊娠",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index02_01.html",
+          "link_text": "出産・誕生",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kodomo/index02_03.html",
+          "link_text": "母子の健康",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/kusei/index15.html",
+          "link_text": "電子申請サービス",
+          "score": 3,
+          "hops": 1,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/jigyo/index03.html",
+          "link_text": "事業別申請・手続き",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/living_07.html",
+          "link_text": "子育て・教育",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 4,
+        "shown_not_chosen": 3,
+        "never_shown": 20,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "杉並区",
+      "municipality_id": "suginami",
+      "entries": [
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s053/1142.html",
+          "link_text": "児童手当",
+          "score": 13,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/teate/index.html",
+          "link_text": "子どもの手当",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/jidoukan/index.html",
+          "link_text": "児童館、子ども・子育てプラザ、児童青少年センター（ゆう杉並）、放課後等居場所事業など",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kodomoshokudou/index.html",
+          "link_text": "区内の子ども食堂のご案内",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/jidoukan/jidoukanjouhou/index.html",
+          "link_text": "児童館情報",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/index.html",
+          "link_text": "子ども・子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodate/index.html",
+          "link_text": "妊娠・出産・子育て",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodate/18351.html",
+          "link_text": "コンテンツ一覧（すぎなみ子育てサイト）",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodate/18310.html",
+          "link_text": "手当・助成・支援",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodate/18311.html",
+          "link_text": "子育て家庭支援",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/sinseido/index.html",
+          "link_text": "子ども・子育て支援新制度へのリンク",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/index.html",
+          "link_text": "子育て",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/benrichou/index.html",
+          "link_text": "子育て便利帳",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/houkokusho/index.html",
+          "link_text": "子育て支援・子ども家庭支援の報告書",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kodomoazukeru/index.html",
+          "link_text": "子どもを預ける",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodate/topics/index.html",
+          "link_text": "トピックス一覧を見る",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodate/18309.html",
+          "link_text": "親子・子どもの居場所",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/index.html",
+          "link_text": "子どもの居場所",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/ibasho/gakudou/index.html",
+          "link_text": "学童クラブ",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/ikuji/index.html",
+          "link_text": "育児",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kosodatekyouiku/kosodate/iryouhi/index.html",
+          "link_text": "子どもの医療費助成（マル乳・マル子・マル青医療証）",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s042/news/25347.html",
+          "link_text": "住民税非課税等の世帯向け エアコンの購入費を助成します 最大10万円 申請は6月1日9月30日まで",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/news/index.html?value=0",
+          "link_text": "手当・給付金など",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s058/24087.html",
+          "link_text": "8年度 こども誰でも通園制度（乳児等通園支援事業）",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 3,
+        "never_shown": 19,
+        "non_html": 0,
+        "unfetchable": 1
+      }
+    },
+    {
+      "municipality": "墨田区",
+      "municipality_id": "sumida",
+      "entries": [
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kteate/index.html",
+          "link_text": "物価高対応子育て応援手当",
+          "score": 14,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.html",
+          "link_text": "子育て支援総合センター交流室「交流室開放＆手形・足形カード作り」を開催します",
+          "score": 11,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/index.html",
+          "link_text": "子ども・子育て",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html",
+          "link_text": "手当・助成・支援",
+          "score": 11,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/km/kodomowakufes2026.html",
+          "link_text": "こどもわくわくフェスティバル【令和8年5月31日（日曜日）】",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
+          "link_text": "育児講演会『デジタル時代の子育て ～「距離感」だけで子育てが楽しくなるかもしれない～』を開催します",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
+          "link_text": "受けられる手当・医療費助成について",
+          "score": 11,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kosodatetokyoPP.html",
+          "link_text": "子育て応援とうきょうパスポートについて",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/kodomono_kenko/index.html",
+          "link_text": "子どもの健康",
+          "score": 8,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikuji_kouenkai.html",
+          "link_text": "5歳児健康相談事業講演会「小学校のこと、もっと知ろう～家庭から始める入学準備～」を開催します",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/kodomono_kenko/h280830anzen.html",
+          "link_text": "お子さんの食べ物による窒息事故にご注意ください",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/index.html",
+          "link_text": "子育て応援サイト",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/asobiba/hiroba.html",
+          "link_text": "ひろばデビュー応援隊＆子育て講座のご案内",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/asobiba/kouryuusitu.html",
+          "link_text": "子育て支援総合センター「交流室」8月のスケジュール",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kuseijoho/kunosyoukai/sosiki/kosodatesougouc.html",
+          "link_text": "子育て支援総合センター ※令和6年11月5日にすみだ保健子育て総合センター(横川5-7-4)へ移転しました",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/azukeru/hoikuen/bosyuusuu/ta80320020180605.html",
+          "link_text": "空き情報〈認可保育園・認定こども園・小規模保育事業所・家庭的保育者（保育ママ）〉",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/ikiikikosodategaido.html",
+          "link_text": "すみだいきいき子育てガイドブック",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/shisetsu/index.html",
+          "link_text": "子育て関連施設",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.files/20260905kaihou.pdf",
+          "link_text": "交流室開放（PDF：347KB）",
+          "score": 6,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/index.html",
+          "link_text": "教育",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/tiiki_kyouiku_shien/index.html",
+          "link_text": "地域教育支援事業",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/school/oshirase/bukatsu.html",
+          "link_text": "墨田区の部活動地域展開の方針・部活動外部指導員の募集",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/school/oshirase/sumijuku.html",
+          "link_text": "すみだ まなび塾（墨田区立中学校生徒向け放課後学習支援事業）の参加生徒の募集について",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/allNewsList.html",
+          "link_text": "新着情報一覧",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 8,
+        "never_shown": 13,
+        "non_html": 1,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "台東区",
+      "municipality_id": "taito",
+      "entries": [
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/azukari.html",
+          "link_text": "令和8年度より石浜橋場こども園の預かり保育事業を拡充しました",
+          "score": 11,
+          "hops": 1,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/index.html",
+          "link_text": "認定こども園",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/index.html",
+          "link_text": "台東区の認定こども園",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/index.html",
+          "link_text": "石浜橋場こども園",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
+          "link_text": "幼児教育・保育の無償化（認定こども園に関する概要）",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/01588621000.html",
+          "link_text": "私立認定こども園児入園料等補助金のお知らせ",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/iryoutekikea.html",
+          "link_text": "区立幼稚園及び認定こども園（短時間クラス）における医療的ケアが必要なお子さまの受入れについて",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/ninteikodomoen.html",
+          "link_text": "「認定こども園」とは",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/kotobuki/index.html",
+          "link_text": "ことぶきこども園",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/taito/index.html",
+          "link_text": "たいとうこども園",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html",
+          "link_text": "令和8年度 認定こども園園児募集について",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/isihamahasiba.html",
+          "link_text": "石浜橋場こども園で遊びませんか",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/houkago_kodomokurabu.pdf",
+          "link_text": "放課後子供教室とこどもクラブの過ごし方（PDF：401KB）",
+          "score": 9,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.html",
+          "link_text": "子どもの予防接種",
+          "score": 8,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.html",
+          "link_text": "夏は放課後子供教室で過ごしませんか？",
+          "score": 8,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/benri/teate-josei.html",
+          "link_text": "手当・助成",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kusei/saiyo/saiyo/hoikuen/kodomoenhijokin30.html",
+          "link_text": "令和8年度 石浜橋場こども園保育士（会計年度任用職員）の募集について",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/index.html",
+          "link_text": "台東いきいき子育て",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/mr_kutan_20260624.pdf",
+          "link_text": "MR協力医療機関名簿（令和8年6月24日時点）（PDF：313KB）",
+          "score": 6,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otahuku_20260624.pdf",
+          "link_text": "おたふくかぜ協力医療機関名簿（令和8年6月24日時点）（PDF：285KB）",
+          "score": 6,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/kenkou_iryou/yobousesshu/kodomoyobousesshu.files/otokoHPV_20260624.pdf",
+          "link_text": "男性HPV実施医療機関名簿（令和8年6月24日時点）（PDF：259KB）",
+          "score": 6,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8_houkago_pamphlet.pdf",
+          "link_text": "放課後子供教室パンフレット（令和8年度版）（PDF：491KB）",
+          "score": 6,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8_houkago_ichiran.pdf.pdf",
+          "link_text": "放課後対策事業一覧（PDF：334KB）",
+          "score": 6,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kosodatekyouiku/kosodate/mokutei/gakkou_houkago/houkago/kodomokyoushitu.files/R8shiori.pdf",
+          "link_text": "台東区放課後子供教室_災害時のしおり（PDF：708KB）",
+          "score": 6,
+          "hops": 2,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 6,
+        "never_shown": 11,
+        "non_html": 7,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "豊島区",
+      "municipality_id": "toshima",
+      "entries": [
+        {
+          "url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/kodomokateicenter.html",
+          "link_text": "こども家庭センター・地域子育て相談機関",
+          "score": 14,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html",
+          "link_text": "手当・助成",
+          "score": 11,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
+          "link_text": "子育て世帯への食料支援事業（区内共通商品券の配付）",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/index.html",
+          "link_text": "子どもの手当・医療費助成",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/1803221119.html",
+          "link_text": "子ども・若者支援",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/kenri/index.html",
+          "link_text": "子どもの権利",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/oshirase/index.html",
+          "link_text": "お知らせ",
+          "score": 8,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/iken/index.html",
+          "link_text": "子どもの意見表明",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/ibasho/index.html",
+          "link_text": "子どもの居場所・活動の場",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/index.html",
+          "link_text": "子育て・教育",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/2606251907.html",
+          "link_text": "新着情報 7月22日 妊産婦・子育て世帯等の居場所",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/index.html",
+          "link_text": "子育て支援",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/joho/index.html",
+          "link_text": "子育て情報",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/260/kosodate/kosodate/hoikuen/nyuen/1809261358.html",
+          "link_text": "ダウンロード（入園のしおり・保育施設MAP・申請書）",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/268/kosodate/kosodate/hoikuen/kouritsuunei/2602051945.html",
+          "link_text": "【区立保育園】豊島区こどもつながる定期預かり事業（こども誰でも通園制度）",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/hoiku/shinseisho/index.html",
+          "link_text": "申請書様式集",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/hoiku/shinseisho/download/index.html",
+          "link_text": "申請書ダウンロード",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/258/kosodate/infomation.html",
+          "link_text": "子育て支援課（子育てインフォメーション）",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/1809211404.html",
+          "link_text": "保育",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/kenko/index.html",
+          "link_text": "子どもの健康",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/sodan/index.html",
+          "link_text": "育児相談",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/265/kosodate/kosodate/shiencenter/001746/annai/006556.html",
+          "link_text": "東部子ども家庭支援センター",
+          "score": 4,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/266/kosodate/kosodate/shiencenter/001746/annai/2005251634.html",
+          "link_text": "西部子ども家庭支援センター",
+          "score": 4,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/497/kuse/electronic/denshishinse/018244.html",
+          "link_text": "オンライン申請",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/guide/shussan.html",
+          "link_text": "出産・子育て",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 12,
+        "never_shown": 11,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    }
+  ]
+}
