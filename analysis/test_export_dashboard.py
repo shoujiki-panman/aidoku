@@ -245,6 +245,8 @@ class MeasurementTest(unittest.TestCase):
             max_links=40,
             link_order="score_desc",
             table_reading="heading_value",
+            read_breadth="agent_pick",
+            non_html_reading="none",
             model_version="claude-sonnet-5",
             run_at="2026-08-16T01:00:00+00:00",
         )
@@ -277,6 +279,8 @@ class MeasurementTest(unittest.TestCase):
                 max_links=40,
                 link_order="score_desc",
                 table_reading="heading_value",
+                read_breadth="agent_pick",
+                non_html_reading="none",
                 model_version="claude-sonnet-5",
                 run_at="2026-08-16T01:00:00+00:00",
             )
