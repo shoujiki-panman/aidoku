@@ -14,8 +14,16 @@ from sweep import (  # noqa: E402
     key,
     load_visits,
     missing_fields,
+    reached,
     summarize,
 )
+
+PAGE = {"url": "https://x.example/service"}
+
+
+def extract(items: dict, *, page=PAGE) -> dict:
+    """抽出結果の形。★`page` を省くと、到達できなかった区と同じ形になる。"""
+    return {"page": page, "items": items}
 
 
 def cand(url: str, score: int = 20) -> dict:
@@ -24,21 +32,36 @@ def cand(url: str, score: int = 20) -> dict:
 
 class 足りない項目(unittest.TestCase):
     def test_取れていない項目だけ返す(self):
-        extract = {"items": {"必要書類": {"found": True}, "手数料": {"found": False}}}
-        self.assertEqual(missing_fields(extract), ["手数料"])
+        got = extract({"必要書類": {"found": True}, "手数料": {"found": False}})
+        self.assertEqual(missing_fields(got), ["手数料"])
 
     def test_公開データの項目名に直す(self):
         # ★抽出結果は「窓口オンライン可否」、公開データは「窓口/オンライン可否」。
         #   この取り違えを3回やっている。
-        extract = {"items": {"窓口オンライン可否": {"found": False}}}
-        self.assertEqual(missing_fields(extract), ["窓口/オンライン可否"])
+        got = extract({"窓口オンライン可否": {"found": False}})
+        self.assertEqual(missing_fields(got), ["窓口/オンライン可否"])
 
     def test_対応表に無いキーは無視する(self):
-        extract = {"items": {"謎の項目": {"found": False}}}
-        self.assertEqual(missing_fields(extract), [])
+        self.assertEqual(missing_fields(extract({"謎の項目": {"found": False}})), [])
 
     def test_itemsが無くても落ちない(self):
         self.assertEqual(missing_fields({}), [])
+        self.assertEqual(missing_fields(extract({})), [])
+
+    def test_到達できなかった区は対象外(self):
+        """★`reached: false` の区は page が null で、読むページが1本も無い。
+
+        実測で2区あった（粗大ごみ・江戸川区/八王子市）。ここで落ちていた。
+        「書いていない」ではなく「探索が届かなかった」。混ぜてはいけない。
+        """
+        self.assertEqual(missing_fields({"page": None, "reached": False,
+                                         "items": {"手数料": {"found": False}}}), [])
+
+    def test_到達判定(self):
+        self.assertTrue(reached({"page": {"url": "https://x.example/a"}}))
+        self.assertFalse(reached({"page": None}))
+        self.assertFalse(reached({"page": {}}))
+        self.assertFalse(reached({}))
 
     def test_対応表は公開データの項目名を持つ(self):
         doc = json.loads((ROOT / "web/data/scores-tennyu.json").read_text(encoding="utf-8"))
@@ -102,6 +125,49 @@ class 虱潰し(unittest.TestCase):
         self.assertTrue(got["looked"][0]["from_cache"])
         self.assertFalse(got["found"])
 
+    def test_1件壊れても止まらない(self):
+        """★1件のAI応答が壊れただけで全体が止まっていた（JSONDecodeError）。
+
+        reread_field では拾っていた失敗を、ここで拾っていなかった。
+        """
+        import sweep as mod
+        calls = []
+
+        def flaky(target, muni, proc, field, model):
+            calls.append(target["url"])
+            if target["url"] == "u1":
+                raise ValueError("Extra data")
+            return {"found": True, "verified": True, "value": "無料",
+                    "evidence": "本文", "why_not": ""}
+
+        original, mod.ask_page = mod.ask_page, flaky
+        try:
+            got = mod.sweep_field([cand("u1"), cand("u2")], "A区", "転入届",
+                                  "手数料", "m", {})
+        finally:
+            mod.ask_page = original
+        self.assertEqual(calls, ["u1", "u2"])       # 止まらず次へ進む
+        self.assertTrue(got["found"])
+        self.assertEqual(got["errors"], 1)
+        self.assertIn("error", got["looked"][0])
+
+    def test_壊れた応答は記録に残さない(self):
+        # ★次回もう一度読ませるため。記録すると永久に読まれない。
+        import sweep as mod
+        visits: dict = {}
+
+        def always_fail(*_a, **_k):
+            raise ValueError("Extra data")
+
+        original, mod.ask_page = mod.ask_page, always_fail
+        try:
+            got = mod.sweep_field([cand("u1")], "A区", "転入届", "手数料", "m", visits)
+        finally:
+            mod.ask_page = original
+        self.assertEqual(visits, {})
+        # ★全部見たとは言えない。exhausted にしない
+        self.assertEqual(got["stopped"], "error")
+
     def test_読んだものは必ず記録に残る(self):
         visits: dict = {}
         self.run_sweep([cand("u1"), cand("u2")], {}, visits)
@@ -141,6 +207,14 @@ class 集計(unittest.TestCase):
         self.assertEqual(got["budget_hit"], 1)
         self.assertEqual(got["budget_names"], ["A区/手数料"])
         self.assertEqual(got["exhausted"], 1)
+
+    def test_読めなかった項目を別に数える(self):
+        # ★exhausted と混ぜると「読み切った上で無い」が嘘になる。
+        rows = [row("A区", [result("手数料", found=False, stopped="error")])]
+        got = summarize(rows)
+        self.assertEqual(got["errored"], 1)
+        self.assertEqual(got["errored_names"], ["A区/手数料"])
+        self.assertEqual(got["exhausted"], 0)
 
     def test_候補が無い項目はどちらにも数えない(self):
         rows = [row("A区", [result("手数料", found=False, stopped="no_candidates", looked=0)])]

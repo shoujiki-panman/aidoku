@@ -65,8 +65,21 @@ ITEM_TO_FIELD = {
 }
 
 
+def reached(extract: dict) -> bool:
+    """起点ページにたどり着けた抽出結果か。
+
+    ★`reached: false` の区は `page` が null で、読むページが1本も無い。
+      実測で2区あった（粗大ごみ・江戸川区/八王子市）。
+      **これは「書いていない」ではなく「探索が届かなかった」。** 虱潰しの対象外。
+      黙って落ちると、その区が結果から消えて母数が変わる。
+    """
+    return bool(extract.get("page") and extract["page"].get("url"))
+
+
 def missing_fields(extract: dict) -> list[str]:
     """まだ取れていない項目（公開データの項目名で返す）。"""
+    if not reached(extract):
+        return []
     return [ITEM_TO_FIELD[name] for name, item in (extract.get("items") or {}).items()
             if not item.get("found") and name in ITEM_TO_FIELD]
 
@@ -120,22 +133,44 @@ def key(url: str, field: str) -> str:
 
 def sweep_field(cands: list[dict], muni: str, proc: str, field: str, model: str,
                 visits: dict[str, dict]) -> dict:
-    """1項目を虱潰し。**止まった理由を必ず返す。**"""
-    looked = []
+    """1項目を虱潰し。**止まった理由を必ず返す。**
+
+    ★1件のAI応答が壊れただけで全体を止めていた（実測: `JSONDecodeError: Extra data`）。
+      `analysis/reread_field.py` では拾っていた失敗を、ここで拾っていなかった。
+      **失敗は記録して次へ進む。ただし「読めなかった」を「無かった」に混ぜない。**
+    """
+    looked, errors = [], 0
     for cand in cands[:BUDGET]:
         cached = visits.get(key(cand["url"], field))
-        got = cached or ask_page(cand, muni, proc, field, model)
-        visits[key(cand["url"], field)] = got
+        if cached:
+            got = cached
+        else:
+            try:
+                got = ask_page(cand, muni, proc, field, model)
+            except Exception as exc:                      # noqa: BLE001
+                # ★エラーは記録に残さない。次回もう一度読ませるため。
+                print(f"    ! {cand['url']}: {str(exc)[:120]}", file=sys.stderr)
+                looked.append({"url": cand["url"], "link_text": cand["link_text"],
+                               "error": str(exc)[:200]})
+                errors += 1
+                continue
+            visits[key(cand["url"], field)] = got
         looked.append({"url": cand["url"], "link_text": cand["link_text"],
                        "verified": got.get("verified"), "from_cache": bool(cached)})
         if got.get("verified"):
             return {"field": field, "found": True, "value": got.get("value", ""),
                     "url": cand["url"], "evidence": got.get("evidence", ""),
-                    "stopped": "found", "looked": looked}
-    # ★上限で止まったのか、本当に全部見たのかを分ける。混ぜると「書いていない」が嘘になる。
-    stopped = "exhausted" if len(cands) <= BUDGET else "budget"
+                    "stopped": "found", "errors": errors, "looked": looked}
+    # ★止まった理由を3つに分ける。混ぜると「書いていない」が嘘になる。
+    if errors:
+        stopped = "error"          # 読めなかったページがある。結論にできない
+    elif len(cands) <= BUDGET:
+        stopped = "exhausted"      # 全部見た上で無かった。ここだけ「書いていない」と言える
+    else:
+        stopped = "budget"         # 上限で止まった。結論にできない
     return {"field": field, "found": False, "value": "", "url": None, "evidence": "",
-            "stopped": stopped, "candidates": len(cands), "looked": looked}
+            "stopped": stopped, "errors": errors,
+            "candidates": len(cands), "looked": looked}
 
 
 def load_pairs(procedure: str, only: list[str] | None) -> list[tuple[dict, dict]]:
@@ -169,6 +204,11 @@ def summarize(rows: list[dict]) -> dict:
         "budget_names": [f"{row['municipality']}/{r['field']}"
                          for row in rows for r in row["fields"]
                          if r["stopped"] == "budget"],
+        # ★読めなかったページがある項目。これも結論にできない
+        "errored": sum(1 for r in results if r["stopped"] == "error"),
+        "errored_names": [f"{row['municipality']}/{r['field']}"
+                          for row in rows for r in row["fields"]
+                          if r["stopped"] == "error"],
     }
 
 
@@ -193,10 +233,17 @@ def main(argv: list[str] | None = None) -> None:
                 total += n
                 if n:
                     print(f"  {extract['municipality']:6} {field:14} 残り{n}本")
+        skipped = [e["municipality"] for _, e in pairs if not reached(e)]
+        if skipped:
+            print(f"  起点ページに到達できず対象外: {skipped}")
         print(f"\n読む対象 {total}本（上限{BUDGET}本/項目）。記録済み {len(visits)}件")
         return
 
     rows = []
+    unreached = [e["municipality"] for _, e in pairs if not reached(e)]
+    if unreached:
+        # ★黙って飛ばさない。母数から消えたことを必ず出す。
+        print(f"  起点ページに到達できず対象外: {unreached}")
     for discovery, extract in pairs:
         muni = extract["municipality"]
         results = []
@@ -232,6 +279,7 @@ def main(argv: list[str] | None = None) -> None:
     print(f"  ★見つけた: {s['found']}  {s['found_names']}")
     print(f"  全部見た上で無かった: {s['exhausted']}")
     print(f"  ★上限で止まった（結論にできない）: {s['budget_hit']}  {s['budget_names']}")
+    print(f"  ★読めなかったページがある（結論にできない）: {s['errored']}  {s['errored_names']}")
 
 
 if __name__ == "__main__":
