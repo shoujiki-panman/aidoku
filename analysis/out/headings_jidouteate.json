@@ -1,0 +1,510 @@
+{
+  "_about": "AIが読んだページの見出しの記録。適合試験ではない。2.4.6 は主題を説明しているかであり、説明できているかは人が読んで決める。ここで数えるのは機械で確実に言える2つ（見出しが無い・空の見出し）だけ。",
+  "version": "headings-0.1",
+  "procedure": "jidouteate",
+  "criterion": "2.4.6 見出し及びラベル（レベルAA）",
+  "summary": {
+    "pages": 49,
+    "pages_without_headings": 0,
+    "pages_without_headings_ratio": 0.0,
+    "empty_headings": 0,
+    "pages_with_empty_heading": 0,
+    "pages_without_h1": 0,
+    "generic_not_counted": 18,
+    "headings_total": 807,
+    "municipalities": 24,
+    "unreadable_pages": 0
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "url": "https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/teate/jidouteate/index.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "足立区",
+      "url": "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+      "unreadable": false,
+      "headings": 39,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 2
+    },
+    {
+      "municipality": "足立区",
+      "url": "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html",
+      "unreadable": false,
+      "headings": 26,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "荒川区",
+      "url": "https://www.city.arakawa.tokyo.jp/a035/kosodate/teate/jidoteate.html",
+      "unreadable": false,
+      "headings": 19,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 2
+    },
+    {
+      "municipality": "文京区",
+      "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+      "unreadable": false,
+      "headings": 4,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "文京区",
+      "url": "https://www.city.bunkyo.lg.jp/b022/p001469/index.html",
+      "unreadable": false,
+      "headings": 43,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "千代田区",
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
+      "unreadable": false,
+      "headings": 3,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "千代田区",
+      "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+      "unreadable": false,
+      "headings": 6,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html",
+      "unreadable": false,
+      "headings": 3,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中央区",
+      "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/202409jidouteate.html",
+      "unreadable": false,
+      "headings": 28,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "江戸川区",
+      "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html",
+      "unreadable": false,
+      "headings": 39,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "八王子市",
+      "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosodate/001/001/p031701.html",
+      "unreadable": false,
+      "headings": 5,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "八王子市",
+      "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosodate/index.html",
+      "unreadable": false,
+      "headings": 72,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 4
+    },
+    {
+      "municipality": "板橋区",
+      "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/index.html",
+      "unreadable": false,
+      "headings": 13,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "板橋区",
+      "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1063955/1004634.html",
+      "unreadable": false,
+      "headings": 23,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "葛飾区",
+      "url": "https://www.city.katsushika.lg.jp/kosodate/index.html",
+      "unreadable": false,
+      "headings": 9,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "葛飾区",
+      "url": "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html",
+      "unreadable": false,
+      "headings": 11,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "北区",
+      "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html",
+      "unreadable": false,
+      "headings": 4,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "北区",
+      "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+      "unreadable": false,
+      "headings": 24,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "北区",
+      "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1018788.html",
+      "unreadable": false,
+      "headings": 10,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "北区",
+      "url": "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002923.html",
+      "unreadable": false,
+      "headings": 8,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "江東区",
+      "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/23708.html",
+      "unreadable": false,
+      "headings": 17,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "江東区",
+      "url": "https://www.city.koto.lg.jp/281011/2024jidou.html",
+      "unreadable": false,
+      "headings": 36,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "江東区",
+      "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/96043.html",
+      "unreadable": false,
+      "headings": 27,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "目黒区",
+      "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
+      "unreadable": false,
+      "headings": 3,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "目黒区",
+      "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html",
+      "unreadable": false,
+      "headings": 2,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "港区",
+      "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html",
+      "unreadable": false,
+      "headings": 27,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中野区",
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/nenreibetsu/kodomo/teate_zyosei/index.html",
+      "unreadable": false,
+      "headings": 4,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "中野区",
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+      "unreadable": false,
+      "headings": 26,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "中野区",
+      "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+      "unreadable": false,
+      "headings": 14,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "練馬区",
+      "url": "https://www.city.nerima.tokyo.jp/kosodatekyoiku/kodomo/teateiryo/jidouteate20120401.html",
+      "unreadable": false,
+      "headings": 41,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "大田区",
+      "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/jidou.html",
+      "unreadable": false,
+      "headings": 23,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "大田区",
+      "url": "https://www.city.ota.tokyo.jp/faq/bunya/kosodate/jidouteate.html",
+      "unreadable": false,
+      "headings": 17,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13020.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/kyoutsu/kodomo/1308.html",
+      "unreadable": false,
+      "headings": 39,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 1
+    },
+    {
+      "municipality": "世田谷区",
+      "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12401.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "渋谷区",
+      "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_t.html",
+      "unreadable": false,
+      "headings": 19,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "品川区",
+      "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000027168.html",
+      "unreadable": false,
+      "headings": 23,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "新宿区",
+      "url": "https://www.city.shinjuku.lg.jp/kodomo/index04_11.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "新宿区",
+      "url": "https://www.city.shinjuku.lg.jp/kodomo/file03_04_00004.html",
+      "unreadable": false,
+      "headings": 32,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "新宿区",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/file18_00002.html",
+      "unreadable": false,
+      "headings": 5,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "新宿区",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/index15.html",
+      "unreadable": false,
+      "headings": 1,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "杉並区",
+      "url": "https://www.city.suginami.tokyo.jp/s053/1142.html",
+      "unreadable": false,
+      "headings": 26,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 2
+    },
+    {
+      "municipality": "墨田区",
+      "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kteate/index.html",
+      "unreadable": false,
+      "headings": 3,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "墨田区",
+      "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
+      "unreadable": false,
+      "headings": 8,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "墨田区",
+      "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html",
+      "unreadable": false,
+      "headings": 3,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "台東区",
+      "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/azukari.html",
+      "unreadable": false,
+      "headings": 11,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "豊島区",
+      "url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/kodomokateicenter.html",
+      "unreadable": false,
+      "headings": 5,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    },
+    {
+      "municipality": "豊島区",
+      "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html",
+      "unreadable": false,
+      "headings": 2,
+      "no_headings": false,
+      "empty": 0,
+      "has_h1": true,
+      "generic_not_counted": 0
+    }
+  ]
+}

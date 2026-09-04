@@ -13,9 +13,11 @@ from sweep import (  # noqa: E402
     ITEM_TO_FIELD,
     key,
     load_visits,
+    merge_rows,
     missing_fields,
     reached,
     summarize,
+    unwrap,
 )
 
 PAGE = {"url": "https://x.example/service"}
@@ -172,6 +174,123 @@ class 虱潰し(unittest.TestCase):
         visits: dict = {}
         self.run_sweep([cand("u1"), cand("u2")], {}, visits)
         self.assertEqual(set(visits), {key("u1", "手数料"), key("u2", "手数料")})
+
+
+class 部分実行(unittest.TestCase):
+    """★`-m` で数区だけ回すと、出力が今回の数区だけになっていた。
+
+    実測で36項目の記録が3項目に減り、git から戻して気づいた。
+    部分実行は「一部を測り直す」であって「他を無かったことにする」ではない。
+    """
+
+    def row(self, mid: str, mark: str) -> dict:
+        return {"municipality_id": mid, "municipality": mid,
+                "fields": [{"field": "手数料", "stopped": mark, "found": False,
+                            "looked": []}]}
+
+    def test_回さなかった自治体の記録を残す(self):
+        got = merge_rows([self.row("a", "exhausted"), self.row("b", "exhausted")],
+                         [self.row("b", "found")])
+        self.assertEqual([r["municipality_id"] for r in got], ["a", "b"])
+
+    def test_回した自治体は新しい方で置き換える(self):
+        got = merge_rows([self.row("b", "exhausted")], [self.row("b", "found")])
+        self.assertEqual(len(got), 1)
+        self.assertEqual(got[0]["fields"][0]["stopped"], "found")
+
+    def test_前回が空でも落ちない(self):
+        self.assertEqual(len(merge_rows([], [self.row("a", "found")])), 1)
+
+    def test_自治体の順を保つ(self):
+        got = merge_rows([self.row("c", "exhausted")], [self.row("a", "found")])
+        self.assertEqual([r["municipality_id"] for r in got], ["a", "c"])
+
+
+class 読めない候補(unittest.TestCase):
+    """★本文が取れない候補を黙って落として「全部見た」と言っていた。
+
+    実測で9項目が該当（画像PDF・404・古い .xls）。落とした候補があるまま
+    exhausted にすると、**読めなかったものが「無かった」に化ける。**
+    """
+
+    def ok_ask(self, target, muni, proc, field, model):
+        return {"found": False, "verified": False, "value": "",
+                "evidence": "", "why_not": ""}
+
+    def run_sweep(self, cands, unreadable):
+        import sweep as mod
+        original, mod.ask_page = mod.ask_page, self.ok_ask
+        try:
+            return mod.sweep_field(cands, "A区", "転入届", "手数料", "m", {}, unreadable)
+        finally:
+            mod.ask_page = original
+
+    def test_読めない候補が残っていれば_exhausted_にしない(self):
+        got = self.run_sweep([cand("u1")], ["https://x/scan.pdf"])
+        self.assertEqual(got["stopped"], "unreadable")
+        self.assertEqual(got["unreadable"], ["https://x/scan.pdf"])
+
+    def test_読めない候補が無ければ_exhausted(self):
+        self.assertEqual(self.run_sweep([cand("u1")], [])["stopped"], "exhausted")
+
+    def test_省略しても落ちない(self):
+        # 既存の呼び出し（第7引数なし）を壊さない。
+        import sweep as mod
+        original, mod.ask_page = mod.ask_page, self.ok_ask
+        try:
+            got = mod.sweep_field([cand("u1")], "A区", "転入届", "手数料", "m", {})
+        finally:
+            mod.ask_page = original
+        self.assertEqual(got["stopped"], "exhausted")
+
+    def test_エラーの方を優先する(self):
+        # ★どちらも「結論にできない」だが、原因の違いを残す。
+        import sweep as mod
+
+        def fail(*_a, **_k):
+            raise ValueError("Extra data")
+
+        original, mod.ask_page = mod.ask_page, fail
+        try:
+            got = mod.sweep_field([cand("u1")], "A区", "転入届", "手数料", "m", {}, ["u2"])
+        finally:
+            mod.ask_page = original
+        self.assertEqual(got["stopped"], "error")
+
+    def test_集計が読めない候補を別に数える(self):
+        rows = [row("A区", [result("手数料", found=False, stopped="unreadable")]),
+                row("B区", [result("期限", found=False, stopped="exhausted")])]
+        got = summarize(rows)
+        self.assertEqual(got["unreadable"], 1)
+        self.assertEqual(got["unreadable_names"], ["A区/手数料"])
+        self.assertEqual(got["exhausted"], 1)
+
+
+class 包まれたURL(unittest.TestCase):
+    """★翻訳サービス経由のURL（`https://…/https://本来のURL`）。
+
+    実測では目黒区のごみのページが j-server 経由で6本並んでいた。
+    包みは robots.txt で拒否されるが、**中身のページは取得済み**だった。
+    包みを「読めない候補」と数えると、同じページを読んでいるのに
+    「読み切っていない」ことになり、穴の数が実態より多く出る。
+    """
+
+    def test_中身のURLを取り出す(self):
+        got = unwrap("https://www15.j-server.com/LUC/ns/w0/jazh/"
+                     "https://www.city.meguro.tokyo.jp/gomi/funen.html")
+        self.assertEqual(got, "https://www.city.meguro.tokyo.jp/gomi/funen.html")
+
+    def test_包みでなければそのまま(self):
+        url = "https://www.city.meguro.tokyo.jp/gomi/funen.html"
+        self.assertEqual(unwrap(url), url)
+
+    def test_クエリに入っていても取り出す(self):
+        got = unwrap("https://tr.example/go?url=https://www.city.ota.tokyo.jp/a.html")
+        self.assertEqual(got, "https://www.city.ota.tokyo.jp/a.html")
+
+    def test_httpも扱う(self):
+        self.assertEqual(unwrap("https://w.example/x/http://a.example/b"),
+                         "http://a.example/b")
 
 
 class 記録(unittest.TestCase):

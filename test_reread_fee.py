@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "analysis"))
-from reread_fee import FEE_WORDS, read_urls, summarize  # noqa: E402
+from reread_fee import FEE_WORDS, cache_text, read_urls, summarize  # noqa: E402
 
 HTML = "https://example.lg.jp/tennyu.html"
 OTHER = "https://example.lg.jp/kokugai.html"
@@ -24,6 +25,55 @@ class FeeWords(unittest.TestCase):
 
     def test_無関係な文には当たらない(self):
         self.assertIsNone(FEE_WORDS.search("本人確認書類をお持ちください"))
+
+
+class CacheText(unittest.TestCase):
+    """★添付（PDF/Word/Excel）もここを通る。**中身を見て振り分ける。**
+
+    以前はすべてHTMLとして読もうとしていたので、添付は文字化けした本文になり、
+    手がかりの語に当たらず静かに落ちていた。実測で、虱潰し321ページのうち
+    添付は0本だった。「その区が書いていない」と言う前に、添付も読む必要がある。
+    """
+
+    def put(self, tmp: Path, url: str, raw: bytes) -> None:
+        import hashlib
+        import urllib.parse
+        host = tmp / urllib.parse.urlparse(url).netloc
+        host.mkdir(parents=True, exist_ok=True)
+        key = hashlib.sha1(url.encode("utf-8")).hexdigest()[:16]
+        (host / f"{key}.html").write_bytes(raw)
+
+    def read(self, url: str, raw: bytes) -> str | None:
+        import reread_fee as mod
+        with tempfile.TemporaryDirectory() as tmp:
+            self.put(Path(tmp), url, raw)
+            original, mod.CACHE = mod.CACHE, Path(tmp)
+            try:
+                return cache_text(url)
+            finally:
+                mod.CACHE = original
+
+    def test_HTMLは本文を返す(self):
+        got = self.read(HTML, b"<html><body><p>\xe6\x89\x8b\xe6\x95\xb0\xe6\x96\x99</p></body></html>")
+        self.assertIn("手数料", got or "")
+
+    def test_取得していないURLはNone(self):
+        import reread_fee as mod
+        with tempfile.TemporaryDirectory() as tmp:
+            original, mod.CACHE = mod.CACHE, Path(tmp)
+            try:
+                self.assertIsNone(cache_text(HTML))
+            finally:
+                mod.CACHE = original
+
+    def test_読めない添付はNoneを返す(self):
+        # ★空文字ではなく None。「本文が空のページ」と「読めなかった」を混ぜない。
+        self.assertIsNone(self.read("https://example.lg.jp/a.pdf", b"%PDF-1.4 broken"))
+
+    def test_添付をHTMLとして読まない(self):
+        # 中身がPDFなら、HTMLパーサには渡さない（渡すと化けた文字列が本文になる）。
+        got = self.read("https://example.lg.jp/b.pdf", b"%PDF-1.4\n" + b"\xef\xbf\xbd" * 200)
+        self.assertIsNone(got)
 
 
 class ReadUrls(unittest.TestCase):

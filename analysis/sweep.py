@@ -27,7 +27,9 @@ from __future__ import annotations
 import argparse
 import glob
 import json
+import re
 import sys
+import urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -84,11 +86,47 @@ def missing_fields(extract: dict) -> list[str]:
             if not item.get("found") and name in ITEM_TO_FIELD]
 
 
-def candidates(discovery: dict, extract: dict, kw: dict, field: str) -> list[dict]:
-    """残っている候補を、点数の高い順に。**既に読んだページは除く。**"""
+# 翻訳サービスなどに包まれたURL。`https://…/https://本来のURL` の形をしている。
+# 実測では目黒区のごみのページが j-server 経由で6本並んでいた。
+# 包みは robots.txt で拒否されるが、**中身のページはこちらに取得済み**のことがある。
+_WRAPPED = re.compile(r"^https?://[^/]+/.*?(https?://.+)$")
+
+
+def unwrap(url: str) -> str:
+    """包まれたURLから中身の本来のURLを取り出す。包みでなければそのまま返す。
+
+    ★包みを「読めない候補」として数えると、**同じページを読んでいるのに
+      「読み切っていない」ことになる。** 穴の数が実態より多く出る。
+
+    2種類ある。どちらも実測で出た:
+
+        翻訳サービス  https://…/jazh/https://本来のURL
+        共有ボタン    https://twitter.com/intent/tweet?…url=https%3A%2F%2F本来のURL&text=…
+
+    共有ボタンは `&` の後ろに題や `src=` を足すので、そこで切る。
+    """
+    decoded = urllib.parse.unquote(url)
+    match = _WRAPPED.match(decoded)
+    if not match:
+        return url
+    return match.group(1).split("&")[0]
+
+
+def candidates(discovery: dict, extract: dict, kw: dict,
+               field: str) -> tuple[list[dict], list[str]]:
+    """残っている候補（点数の高い順）と、**本文が取れなかった候補のURL**。
+
+    ★2つを分けて返すのが要点。以前は本文が取れない候補を黙って落としていた。
+      落とした候補があるまま「候補を全部読んだ（exhausted）」と言うと、
+      **読めなかったものが「無かった」に化ける。** 実測で9項目が該当した
+      （画像PDF・404・古い .xls）。
+
+    「本文が取れない」と「本文はあるが手がかりの語が無い」は違う。
+    後者は正しい絞り込みで、落として構わない。前者はこちらの穴である。
+    """
     read = read_urls(extract)
     hint = HINTS[field]
-    out = []
+    out, unreadable = [], []
     for cand in discovery.get("candidates") or []:
         url = cand.get("url") or ""
         if not url or url in read:
@@ -96,11 +134,21 @@ def candidates(discovery: dict, extract: dict, kw: dict, field: str) -> list[dic
         if score_link(cand.get("link_text") or "", url, kw) < MIN_SCORE:
             continue
         text = cache_text(url)
-        if not text or not hint.search(text):
-            continue
+        if not text:
+            # ★包みなら中身を見る。中身が読めていれば穴ではない（同じページ）。
+            inner = unwrap(url)
+            text = cache_text(inner) if inner != url else None
+            if not text:
+                unreadable.append(url)                     # ★穴として数える
+                continue
+            url = inner
+            if url in read or any(c["url"] == url for c in out):
+                continue                                   # 中身は既に見ている
+        if not hint.search(text):
+            continue                                       # 語が無いだけ。穴ではない
         out.append({"url": url, "link_text": cand.get("link_text"),
                     "score": cand.get("score") or 0, "text": text})
-    return sorted(out, key=lambda c: -c["score"])
+    return sorted(out, key=lambda c: -c["score"]), unreadable
 
 
 def visits_path(procedure: str) -> Path:
@@ -132,7 +180,7 @@ def key(url: str, field: str) -> str:
 
 
 def sweep_field(cands: list[dict], muni: str, proc: str, field: str, model: str,
-                visits: dict[str, dict]) -> dict:
+                visits: dict[str, dict], unreadable: list[str] | None = None) -> dict:
     """1項目を虱潰し。**止まった理由を必ず返す。**
 
     ★1件のAI応答が壊れただけで全体を止めていた（実測: `JSONDecodeError: Extra data`）。
@@ -161,16 +209,39 @@ def sweep_field(cands: list[dict], muni: str, proc: str, field: str, model: str,
             return {"field": field, "found": True, "value": got.get("value", ""),
                     "url": cand["url"], "evidence": got.get("evidence", ""),
                     "stopped": "found", "errors": errors, "looked": looked}
-    # ★止まった理由を3つに分ける。混ぜると「書いていない」が嘘になる。
+    # ★止まった理由を4つに分ける。混ぜると「書いていない」が嘘になる。
+    unread = list(unreadable or [])
     if errors:
         stopped = "error"          # 読めなかったページがある。結論にできない
+    elif unread:
+        # ★本文が取れない候補を残したまま「全部見た」とは言えない。
+        stopped = "unreadable"     # 読めない候補が残っている。結論にできない
     elif len(cands) <= BUDGET:
         stopped = "exhausted"      # 全部見た上で無かった。ここだけ「書いていない」と言える
     else:
         stopped = "budget"         # 上限で止まった。結論にできない
     return {"field": field, "found": False, "value": "", "url": None, "evidence": "",
-            "stopped": stopped, "errors": errors,
+            "stopped": stopped, "errors": errors, "unreadable": unread,
             "candidates": len(cands), "looked": looked}
+
+
+def merge_rows(previous: list[dict], fresh: list[dict]) -> list[dict]:
+    """前回の記録に、今回読んだ自治体を上書きして返す。
+
+    ★`-m` で数区だけ回すと、**出力が今回の数区だけになっていた。**
+      実測で36項目の記録が3項目に減り、git から戻して気づいた。
+      部分実行は「一部を測り直す」であって「他を無かったことにする」ではない。
+    """
+    done = {row["municipality_id"] for row in fresh}
+    kept = [row for row in previous if row["municipality_id"] not in done]
+    return sorted(kept + fresh, key=lambda row: row["municipality_id"])
+
+
+def previous_rows(procedure: str) -> list[dict]:
+    path = OUT_DIR / f"sweep_{procedure}.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text(encoding="utf-8")).get("rows") or []
 
 
 def load_pairs(procedure: str, only: list[str] | None) -> list[tuple[dict, dict]]:
@@ -204,6 +275,11 @@ def summarize(rows: list[dict]) -> dict:
         "budget_names": [f"{row['municipality']}/{r['field']}"
                          for row in rows for r in row["fields"]
                          if r["stopped"] == "budget"],
+        # ★本文が取れない候補を残したまま止まった項目。これも結論にできない
+        "unreadable": sum(1 for r in results if r["stopped"] == "unreadable"),
+        "unreadable_names": [f"{row['municipality']}/{r['field']}"
+                             for row in rows for r in row["fields"]
+                             if r["stopped"] == "unreadable"],
         # ★読めなかったページがある項目。これも結論にできない
         "errored": sum(1 for r in results if r["stopped"] == "error"),
         "errored_names": [f"{row['municipality']}/{r['field']}"
@@ -229,10 +305,12 @@ def main(argv: list[str] | None = None) -> None:
         total = 0
         for discovery, extract in pairs:
             for field in missing_fields(extract):
-                n = min(len(candidates(discovery, extract, kw, field)), BUDGET)
+                cands, unread = candidates(discovery, extract, kw, field)
+                n = min(len(cands), BUDGET)
                 total += n
-                if n:
-                    print(f"  {extract['municipality']:6} {field:14} 残り{n}本")
+                if n or unread:
+                    note = f"（読めない候補{len(unread)}本）" if unread else ""
+                    print(f"  {extract['municipality']:6} {field:14} 残り{n}本{note}")
         skipped = [e["municipality"] for _, e in pairs if not reached(e)]
         if skipped:
             print(f"  起点ページに到達できず対象外: {skipped}")
@@ -248,20 +326,26 @@ def main(argv: list[str] | None = None) -> None:
         muni = extract["municipality"]
         results = []
         for field in missing_fields(extract):
-            cands = candidates(discovery, extract, kw, field)
+            cands, unread = candidates(discovery, extract, kw, field)
             if not cands:
+                # ★候補が0本でも、読めなかった候補があれば「無かった」とは言えない。
                 results.append({"field": field, "found": False, "value": "", "url": None,
-                                "evidence": "", "stopped": "no_candidates", "looked": []})
+                                "evidence": "", "unreadable": unread, "looked": [],
+                                "stopped": "unreadable" if unread else "no_candidates"})
                 continue
-            got = sweep_field(cands, muni, proc, field, args.model, visits)
+            got = sweep_field(cands, muni, proc, field, args.model, visits, unread)
             results.append(got)
             mark = "★見つけた" if got["found"] else f"（{got['stopped']}）"
+            # ★flush する。しないと、ログに落としたとき数十分ぶん何も出ず、
+            #   進んでいるのか止まっているのか分からない（実測で分からなかった）。
             print(f"  {muni:6} {field:14} {len(got['looked']):2}本読んだ {mark} "
-                  f"{got['value'][:40]}")
+                  f"{got['value'][:40]}", flush=True)
             save_visits(args.procedure, visits)      # 1項目ごとに保存。落ちても失わない
         rows.append({"municipality": muni, "municipality_id": extract["municipality_id"],
                      "fields": results})
 
+    # ★部分実行（-m）でも、前回の記録を消さない。
+    rows = merge_rows(previous_rows(args.procedure), rows) if args.municipality else rows
     doc = {
         "_about": "読めなかった項目を候補ページ全部で虱潰しに探した記録。"
                   "上限で止まったものを「書いていない」と読ませないこと。",
@@ -280,6 +364,8 @@ def main(argv: list[str] | None = None) -> None:
     print(f"  全部見た上で無かった: {s['exhausted']}")
     print(f"  ★上限で止まった（結論にできない）: {s['budget_hit']}  {s['budget_names']}")
     print(f"  ★読めなかったページがある（結論にできない）: {s['errored']}  {s['errored_names']}")
+    print(f"  ★読めない候補が残っている（結論にできない）: {s['unreadable']}  "
+          f"{s['unreadable_names']}")
 
 
 if __name__ == "__main__":

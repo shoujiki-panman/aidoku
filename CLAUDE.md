@@ -4,7 +4,18 @@
 **この作品の前提は「住民のAIエージェントが、住民の代わりに行政サイトへ来る」**。
 「住民がAIに質問する」ではない。対外文（提出・LT・デッキ・動画）は必ずエージェント来訪の側で書く。
 
-最初に読む → [START-HERE.md](START-HERE.md) ／ 進捗と期日 → [STATUS.md](STATUS.md)
+最初に読む → [START-HERE.md](START-HERE.md) ／ 経緯と期日 → [STATUS.md](STATUS.md)
+
+## いまの状態は、聞かずに出す（MUST）
+
+```bash
+python3 analysis/status.py     # 見張り・測定条件・虱潰し・公開データ・次にやること
+```
+
+**`STATUS.md` を現在地の判断に使わない。** 手で書くので古くなる（実際に13日前で
+止まっていた）。上のコマンドは**その場でファイルを読んで数える**ので古くならない。
+セッションの初めに自動で走る（`.claude/settings.json` の SessionStart）。
+作業の入口は `.claude/skills/aidoku/SKILL.md`。
 
 ## コマンド
 

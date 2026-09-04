@@ -11,7 +11,9 @@ from reread_field import (  # noqa: E402
     ASK,
     HINTS,
     NOT_THIS,
+    PROC_DESC,
     already_done,
+    proc_rules,
     safe_name,
     summarize,
 )
@@ -34,13 +36,16 @@ class 項目名(unittest.TestCase):
         self.assertEqual(set(HINTS), published_fields())
 
     def test_語の表と除外の表がずれていない(self):
-        self.assertEqual(set(HINTS), set(NOT_THIS))
+        for proc, table in NOT_THIS.items():
+            with self.subTest(proc=proc):
+                self.assertEqual(set(HINTS), set(table))
 
     def test_除外がどれも空でない(self):
         # 空だと隣の手続きの答えを拾う。手数料で実証済み。
-        for field, text in NOT_THIS.items():
-            with self.subTest(field=field):
-                self.assertGreater(len(text.strip()), 40)
+        for proc, table in NOT_THIS.items():
+            for field, text in table.items():
+                with self.subTest(proc=proc, field=field):
+                    self.assertGreater(len(text.strip()), 40)
 
 
 class 語の選び方(unittest.TestCase):
@@ -69,8 +74,10 @@ class 質問文(unittest.TestCase):
     def test_全項目で組み立てられる(self):
         for field in HINTS:
             with self.subTest(field=field):
+                desc, not_this = proc_rules("転入届", field, "港区")
                 text = ASK.format(muni="港区", proc="転入届", field=field,
-                                  not_this=NOT_THIS[field], url="https://x.example/a", text="本文")
+                                  proc_desc=desc, not_this=not_this,
+                                  url="https://x.example/a", text="本文")
                 self.assertIn(field, text)
                 self.assertIn("港区", text)
                 # JSONの見本が壊れていないこと（{{ }} のエスケープ漏れ検出）
@@ -79,6 +86,47 @@ class 質問文(unittest.TestCase):
     def test_引き写しを求めている(self):
         # 言い換えられると evidence_check が missing になり、正しい根拠まで落ちる。
         self.assertIn("引き写して", ASK)
+
+
+class 手続きごとの説明(unittest.TestCase):
+    """★転入届の説明を全手続きに使っていた。
+
+    「粗大ごみ収集の申込とは、他の市区町村から引っ越してきたときに出す届出です」と
+    AIに教えていた。実測（墨田区）で、AIは粗大ごみ処理手数料一覧表を**正しく読んだ上で**
+    「転入時の届出の手数料ではない」と却下した。**読めても、聞き方が違えば取れない。**
+    """
+
+    def test_3手続きぶんある(self):
+        self.assertEqual(set(PROC_DESC), set(NOT_THIS))
+        self.assertEqual(set(PROC_DESC),
+                         {"転入届", "児童手当の申請", "粗大ごみ収集の申込"})
+
+    def test_粗大ごみを引っ越しの届出と説明しない(self):
+        desc, _ = proc_rules("粗大ごみ収集の申込", "手数料", "墨田区")
+        self.assertNotIn("引っ越してきた", desc)
+        self.assertIn("粗大ごみ", desc)
+
+    def test_児童手当を引っ越しの届出と説明しない(self):
+        desc, _ = proc_rules("児童手当の申請", "手数料", "港区")
+        self.assertNotIn("引っ越してきた", desc)
+
+    def test_品目ごとの料金表を手数料として認める(self):
+        # ★これを却下していたのが、墨田区/手数料 を「書いていない」にした原因。
+        _, not_this = proc_rules("粗大ごみ収集の申込", "手数料", "墨田区")
+        self.assertIn("品目ごとの料金表", not_this)
+
+    def test_児童手当の支給額を手数料と混ぜない(self):
+        _, not_this = proc_rules("児童手当の申請", "手数料", "港区")
+        self.assertIn("支給額", not_this)
+
+    def test_区名が説明に入る(self):
+        desc, _ = proc_rules("転入届", "期限", "世田谷区")
+        self.assertIn("世田谷区", desc)
+
+    def test_知らない手続きは黙って通さない(self):
+        # ★転入届の説明を使い回して、実測で判定を1件落としている。
+        with self.assertRaises(SystemExit):
+            proc_rules("パスポートの申請", "手数料", "港区")
 
 
 def row(mid: str, name: str, found: bool, pages: list[dict] | None = None) -> dict:
