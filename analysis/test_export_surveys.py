@@ -156,20 +156,37 @@ class 日付の名前(unittest.TestCase):
 
 
 class 実データ(unittest.TestCase):
-    def test_いまの履歴から3回ぶんが出る_値が違うのは1回(self):
-        doc = export_surveys.build()
-        self.assertEqual(doc["n_runs"], 3)
-        # ★測ったのは実質1回。generated_at はエクスポータの実行時刻なので、
-        #   3回ぶんの記録があっても中身は同じ。これを画面で言い張らないための番人。
-        self.assertEqual(doc["n_distinct"], 1)
-        self.assertTrue(all(r["recording_status"] == "legacy_unknown" for r in doc["runs"]))
+    """★2026-09-04 に書き直した。
 
-    def test_これ大事_実データの実測時刻は全件不明のまま出る(self):
-        # extractor/out にも crawler/out にも実測時刻が残っていない（2026-08-23 調査）。
-        # 無いものを書き出し時刻で埋めた結果が、345観測すべて同じ値の「3回の調査」だった。
+    元は「全件 legacy_unknown」「n_runs は3」と**その日の実データを固定**していた。
+    条件を記録して測り直したので記録のある回が増え、固定した数が古くなって落ちた。
+
+    守りたかったのは数ではなく**不変条件**だった:
+    **無い実測時刻を書き出し時刻で埋めない。** 埋めた結果が、345観測すべて同じ値の
+    「3回の調査」だった（plans/decisions/resident-vs-data.md）。そこを固定し直す。
+    """
+
+    def test_記録のある回と無い回が混ざっている(self):
         doc = export_surveys.build()
-        self.assertEqual(doc["n_measured_unknown"], doc["n_runs"])
-        self.assertTrue(all(r["measured_at"] is None for r in doc["runs"]))
+        kinds = {r["recording_status"] for r in doc["runs"]}
+        self.assertIn("legacy_unknown", kinds, "条件を記録する前の回は消えない（§4-8）")
+        self.assertIn("recorded", kinds, "条件を記録した回が1つも無い")
+
+    def test_言い張れる回数より多く調査したと言わない(self):
+        # ★generated_at はエクスポータの実行時刻。同じ中身で2回流せば2回に見える。
+        #   画面が「n回調査した」と言い張らないよう、違う中身の数を必ず添える。
+        doc = export_surveys.build()
+        self.assertLessEqual(doc["n_distinct"], doc["n_runs"])
+
+    def test_これ大事_記録の無い回だけが不明のまま出る(self):
+        # ★これが崩れるとき、無い時刻を書き出し時刻で埋めている。
+        doc = export_surveys.build()
+        for run in doc["runs"]:
+            with self.subTest(exported=run["exported_at"]):
+                self.assertEqual(run["measured_at"] is None,
+                                 run["recording_status"] != "recorded")
+        self.assertEqual(doc["n_measured_unknown"],
+                         sum(1 for r in doc["runs"] if r["recording_status"] != "recorded"))
         self.assertTrue(all(r["exported_at"] for r in doc["runs"]))
 
     def test_履歴が無ければ空で返す(self):

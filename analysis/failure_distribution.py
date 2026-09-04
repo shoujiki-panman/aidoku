@@ -127,13 +127,26 @@ def summarize_experiment_cases(paths: list[Path]) -> dict:
 
 
 def summarize_experiment_trials(paths: list[Path]) -> dict:
-    """反復実験の各trial × fact_typeを集計する。"""
+    """反復実験の各trial × fact_typeを集計する。
+
+    ★`experiment/out/` には**別の種類の記録**も置かれる（`cold-ask` / `fee-ask` /
+      `stale-ask` — ページを渡さず素で聞いた記録。`results` ではなく `rows` を持つ）。
+      それを「壊れた反復実験」として落としていた。CI が8日間赤だった原因はこれ。
+
+      **黙って飛ばさない。** `results` を持たないものは種類が違うと判断して
+      名前を残す（数だけ合って中身を読んでいない、という状態を作らないため）。
+      `results` があって配列でなければ、これは壊れているので今まで通り落とす。
+    """
     failure_types: list[str] = []
     legacy_reasons: Counter[str] = Counter()
     fact_results = 0
     trials = 0
+    skipped: list[str] = []
     for path in paths:
         document = load_json_object(path)
+        if "results" not in document:
+            skipped.append(path.name)
+            continue
         result_groups = document.get("results")
         if not isinstance(result_groups, list):
             raise ValueError(f"{path}: resultsが配列でない")
@@ -163,6 +176,8 @@ def summarize_experiment_trials(paths: list[Path]) -> dict:
                     failure_types.append(failure_type)
     return {
         "source_files": len(paths),
+        # ★飛ばしたファイル名を必ず出す。数だけ合って中身を読んでいない状態を防ぐ。
+        "skipped_files": skipped,
         "trials": trials,
         "fact_results": fact_results,
         "fact_failures": len(failure_types),

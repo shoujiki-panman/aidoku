@@ -124,6 +124,21 @@ class FailureDistributionTest(unittest.TestCase):
                 ensure_output_is_distinct(alias, [source])
 
     def test_既存データの再分類値を固定する(self):
+        """★2026-09-04 に値を更新した。**測り直したので動くのが正しい。**
+
+        条件を揃えて72組を測り直し、PDFの字形表・OCR・.xls・手続きごとの質問文を
+        直した結果、失敗の数と内訳が動いた。動いた向きが仕事の中身そのもの:
+
+            fact_failures    157 → 138  (−19)
+            not_retrieved     12 →   3  (−9)   見に行っていなかったものが読めた
+            fact_missing     134 → 121  (−13)  「書いていない」が実は書いてあった
+            fact_ambiguous    11 →  14  (+3)
+            契約違反            2 →   0          legacy の異常が消えた
+
+        ★このテストは「勝手に分類が変わっていないか」の番人。**測り直したときは
+          値を更新してよいが、そのとき何がどう動いたかをここに書き残すこと。**
+          黙って数字だけ差し替えると、番人が意味を失う。
+        """
         summary = build_summary(
             sorted((ROOT / "extractor" / "out").glob("extract_*.json")),
             sorted((ROOT / "experiment" / "cases").glob("*/case.json")),
@@ -134,22 +149,23 @@ class FailureDistributionTest(unittest.TestCase):
         self.assertEqual(extractor["reached_runs"], 71)
         self.assertEqual(extractor["unreached_runs"], 2)
         self.assertEqual(extractor["fact_results_in_reached_runs"], 284)
-        self.assertEqual(extractor["fact_failures"], 157)
+        self.assertEqual(extractor["fact_failures"], 138)
         self.assertEqual(extractor["fact_failure_distribution"], {
-            "fact_missing": 134,
-            "fact_ambiguous": 11,
-            "not_retrieved": 12,
+            "fact_missing": 121,
+            "fact_ambiguous": 14,
+            "not_retrieved": 3,
             "wrong_evidence": 0,
             "wrong_answer": 0,
             "page_not_discoverable": 0,
             "structure_issue": 0,
             "stale_information": 0,
         })
-        self.assertEqual(extractor["legacy_contract_anomaly_count"], 2)
+        self.assertEqual(extractor["legacy_contract_anomaly_count"], 0)
+        # ★測り直しで legacy の契約違反は消えた（元は ["曖昧", "記載なし"] の2件）。
         self.assertEqual(
             [item["failure_reason"]
              for item in extractor["legacy_contract_anomalies"]],
-            ["曖昧", "記載なし"],
+            [],
         )
         self.assertEqual(extractor["run_failure_distribution"], {
             "fact_missing": 0,
@@ -162,7 +178,17 @@ class FailureDistributionTest(unittest.TestCase):
             "stale_information": 0,
         })
         trials = summary["experiment_trials"]
-        self.assertEqual(trials["source_files"], 1)
+        # ★experiment/out には別種の記録（cold-ask / fee-ask / stale-ask）も入る。
+        #   それを「壊れた反復実験」として落としていたのが、CI が8日間赤だった原因。
+        #   飛ばしたものは名前を必ず出す（数だけ合って中身を読まない状態を防ぐ）。
+        self.assertEqual(trials["source_files"], 6)
+        self.assertEqual(trials["skipped_files"], [
+            "cold-ask_tennyu_nosearch.json",
+            "cold-ask_tennyu_search.json",
+            "fee-ask_search.json",
+            "stale-ask_passport_nosearch.json",
+            "stale-ask_passport_search.json",
+        ])
         self.assertEqual(trials["trials"], 15)
         self.assertEqual(trials["fact_results"], 60)
         self.assertEqual(trials["fact_failures"], 20)
