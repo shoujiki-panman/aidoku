@@ -12,8 +12,19 @@
   - 数値に単位や記号を混ぜない（20 であって「20点」ではない）
   - 日付は YYYY-MM-DD
   - 見出しは1行だけ。前置きや脚注を表の中に入れない
-  - 空欄は hops（クリック数）だけ。そのページに到達できなかった回で、
-    0 と書くと「0クリックで着いた」の意味になるため、あえて空にする
+  - 空欄になるのは2列だけ。どちらも「値が無い」を値で埋めないためのもの
+      - hops … そのページに到達できなかった回。0 と書くと「0クリックで着いた」になる
+      - measured_on … 実際に測った時刻が記録されていない回
+
+**日付が3列あるのは、意味が3つ違うから。**
+
+    measured_on  実際に測った日。記録が無ければ空欄
+    exported_on  scores-*.json を書き出した日
+    recorded_on  この履歴行を記録に残した日
+
+以前は measured_on に書き出し時刻（generated_at）を入れていた。書き出しを流し直す
+だけで「別の日に測った」行が増えるため、測り直した瞬間に日付が嘘になる。
+記録が無いなら空欄にする——それが正しい（plans/decisions/resident-vs-data.md）。
 
 ※ デジタル庁「オープンデータ基本指針」はCSVの書き方までは定めていない
   （2026-08-23 に digital.go.jp を確認）。上のルールは機械判読可能な
@@ -34,8 +45,11 @@ HISTORY = ROOT / "web" / "data" / "history" / "scores.jsonl"
 OUT = ROOT / "web" / "data" / "history" / "measurements.csv"
 
 COLUMNS = [
-    "measured_on",        # 測った日（YYYY-MM-DD）
-    "recorded_on",        # 記録に残した日（YYYY-MM-DD）
+    # ★この3つを混ぜないこと。以前は measured_on に generated_at（書き出し時刻）を
+    #   入れていて、書き出しを流し直しただけの回が「別の日に測った」に見えていた。
+    "measured_on",        # 実際に測った日（YYYY-MM-DD）。記録が無い回は空欄
+    "exported_on",        # scores-*.json を書き出した日（YYYY-MM-DD）
+    "recorded_on",        # この履歴行を記録に残した日（YYYY-MM-DD）
     "lg_code",            # 全国地方公共団体コード
     "municipality",       # 自治体名
     "procedure_id",       # 手続きの識別子
@@ -61,13 +75,21 @@ def snapshots() -> list[dict]:
     return [json.loads(line) for line in HISTORY.read_text(encoding="utf-8").splitlines() if line.strip()]
 
 
+def day_of(value: object) -> str:
+    """ISO 8601 の頭10文字。値が無ければ空欄にする（それらしい日付を作らない）。"""
+    return str(value)[:10] if isinstance(value, str) and value else ""
+
+
 def rows_of(snap: dict, codes: dict[str, str]) -> list[dict]:
     out = []
     for m in snap.get("municipalities", []):
         for field, points in sorted((m.get("breakdown") or {}).items()):
             out.append({
-                "measured_on": str(snap.get("generated_at", ""))[:10],
-                "recorded_on": str(snap.get("recorded_at", ""))[:10],
+                # measured_on の出どころは snapshot の measured_at ただ1つ。
+                # 記録が無い回は空欄のまま。generated_at で代用しない。
+                "measured_on": day_of(snap.get("measured_at")),
+                "exported_on": day_of(snap.get("generated_at")),
+                "recorded_on": day_of(snap.get("recorded_at")),
                 "lg_code": codes.get(m["id"], ""),
                 "municipality": m.get("name", ""),
                 "procedure_id": snap.get("procedure_id", ""),
@@ -87,8 +109,10 @@ def rows_of(snap: dict, codes: dict[str, str]) -> list[dict]:
 def build() -> list[dict]:
     codes = lg_codes()
     rows = [r for s in snapshots() for r in rows_of(s, codes)]
-    # 並びは 日付 → 団体コード → 手続き → 項目。読む側が固定順を期待できる
-    rows.sort(key=lambda r: (r["measured_on"], r["lg_code"], r["procedure_id"], r["field"]))
+    # 並びは 測定日 → 書き出し日 → 団体コード → 手続き → 項目。
+    # measured_on が空欄の回でも並びが決まるよう、第2キーに exported_on を置く。
+    rows.sort(key=lambda r: (r["measured_on"], r["exported_on"], r["lg_code"],
+                             r["procedure_id"], r["field"]))
     return rows
 
 
@@ -101,8 +125,15 @@ def main() -> None:
         w = csv.DictWriter(f, fieldnames=COLUMNS)
         w.writeheader()
         w.writerows(rows)
-    days = sorted({r["measured_on"] for r in rows})
-    print(f"{args.out}: {len(rows)}行 / 測定日 {len(days)}回（{', '.join(days)}）"
+    # 「測定日◯回」と「書き出し日◯回」を分けて言う。前は書き出し回数を測定回数として
+    # 出していたので、画面に出す前の段階で既に嘘になっていた。
+    days = sorted({r["measured_on"] for r in rows if r["measured_on"]})
+    exports = sorted({r["exported_on"] for r in rows if r["exported_on"]})
+    unknown = sum(1 for r in rows if not r["measured_on"])
+    measured = f"測定日 {len(days)}回（{', '.join(days)}）" if days else "測定日 記録なし"
+    print(f"{args.out}: {len(rows)}行 / {measured}"
+          f" / 書き出し日 {len(exports)}回（{', '.join(exports)}）"
+          f" / 測定日が空欄の行 {unknown}"
           f" / {args.out.stat().st_size // 1024} KB")
 
 

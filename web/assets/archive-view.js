@@ -28,7 +28,7 @@
     const open = !run.same_as_previous ? ' open' : '';
     return `<details class="survey"${open}>
       <summary class="survey__head">
-        <span class="survey__date">${esc(A.jpDateTime(run.measured_at))}に測定</span>
+        <span class="survey__date">${esc(A.exportedLabel(run))}</span>
         <span class="survey__sub">${esc(A.runSummary(run))}</span>
         <span class="survey__right">
           ${run.same_as_previous ? '<span class="survey__tag">前回と同じ値</span>' : ''}
@@ -37,7 +37,8 @@
       </summary>
       <div class="survey__body">
         ${note ? `<p class="survey__note">${esc(note)}</p>` : ''}
-        <p class="survey__meta">記録した日: ${esc(run.recorded_on.map(A.jpDate).join('、'))}<br>
+        <p class="survey__meta">${esc(A.measuredLabel(run))}<br>
+          記録した日: ${esc(run.recorded_on.map(A.jpDate).join('、'))}<br>
           ${esc(A.conditionLabel(run.recording_status))}</p>
         <table class="survey__table">
           <caption class="dads-u-visually-hidden">第${index + 1}回の調査結果</caption>
@@ -62,8 +63,9 @@
       const runs = doc.runs.slice().reverse();
       $('runs').innerHTML = runs.map((r, i) => runCard(r, doc.runs.length - 1 - i)).join('');
       $('files').innerHTML = doc.files.map(fileRow).join('');
+      // フッタの見出しは「データ生成日」。出すのは書き出し日であって測定日ではない
       const last = doc.runs[doc.runs.length - 1];
-      $('generated-at').textContent = last ? last.measured_on : '';
+      $('generated-at').textContent = last ? last.exported_on : '';
     } catch (err) {
       $('runs-note').textContent = '調査一覧を読み込めませんでした。';
       console.error(err);

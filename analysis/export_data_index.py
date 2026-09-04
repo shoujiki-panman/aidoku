@@ -204,6 +204,10 @@ def provenance(procs: list[dict]) -> dict:
             "記録されていない回のもの。したがって過去との差が出ても、"
             "サイトが変わったのか判定器が変わったのかを断定できない。"
             "history/ の差分もこの場合、自治体のせいにしない。"
+            "**測った時刻（run_at）も記録されていない。**したがって"
+            "history/measurements.csv の measured_on と surveys.json の measured_at は"
+            "空欄 / null になる。書き出し時刻（exported_on / exported_at）で"
+            "埋めることはしない。"
         )
     return out
 
@@ -258,6 +262,10 @@ def timeseries() -> dict:
             "いつ・どの自治体の・どの手続きの・どの項目が何点だったかを、1行1観測で並べたCSV。"
             "1セル1データ、日付は YYYY-MM-DD、数値に単位を混ぜない。"
             "hops の空欄は「そのページに到達できなかった」の意味で、0 とは違う。"
+            "日付の列は3つあり、意味が違うので混ぜないこと。measured_on が実際に測った日、"
+            "exported_on が書き出しを走らせた日、recorded_on が履歴に記録した日。"
+            "measured_on の空欄は「実際に測った時刻が記録されていない」の意味であり、"
+            "書き出し日で代用していない。"
         ),
         "path": "history/measurements.csv",
         "media_type": "text/csv",
@@ -265,8 +273,13 @@ def timeseries() -> dict:
         "sha256": hashlib.sha256(raw).hexdigest(),
         "records": {"path": "row", "count": rows},
         "columns": {
-            "measured_on": "測った日（YYYY-MM-DD）",
-            "recorded_on": "記録に残した日",
+            "measured_on": (
+                "実際に測った日（YYYY-MM-DD）。**空欄は「測った時刻の記録が無い」**の意味で、"
+                "書き出し日（exported_on）とは別物。埋めていないのは、埋めると測り直して"
+                "いない回まで「その日に測った」ことになるため"
+            ),
+            "exported_on": "scores-*.json を書き出した日（エクスポータを走らせた日）",
+            "recorded_on": "この履歴行を記録に残した日",
             "lg_code": "全国地方公共団体コード",
             "municipality": "自治体名",
             "procedure_id": "手続きの識別子",
@@ -310,11 +323,14 @@ def datasets(procs: list[dict]) -> list[dict]:
                 "この部分のライセンスは CC BY 4.0（作成者は当方ではない）。",
                 record_path="wards"),
         timeseries(),
-        dataset("surveys.json", "調査の回の一覧",
-                "いつ何を測ったかを回ごとにまとめたもの。"
+        dataset("surveys.json", "書き出しの回の一覧",
+                "いつ書き出したかを回ごとにまとめたもの。"
+                "exported_at は書き出しを走らせた時刻であって測定時刻ではない。"
+                "実際に測った時刻は measured_at に入るが、測定条件を記録し始める前の回は"
+                "記録が残っておらず null（measured_at_status: unknown）。"
                 "same_as_previous が true の回は、測り直しではなく書き出しをやり直したもの。",
                 record_path="runs",
-                join="measured_at で history/scores.jsonl の generated_at と突き合わせる"),
+                join="exported_at で history/scores.jsonl の generated_at と突き合わせる"),
         dataset("municipalities.json", "東京23区の基本情報",
                 "区のIDと名前、全国地方公共団体コード、区の公式サイト。"
                 "読めなかった項目を住民が確かめに行く先として使う。",

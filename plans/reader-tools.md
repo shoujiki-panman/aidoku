@@ -74,3 +74,11 @@ Bridge CLI / Slack Bridge を差し込む形）と同じ構成にする。
 - 2026-08-23 住民の画面から点数（7/12）・棒グラフ・推移リンクを外し、1文に置き換えた。決定は plans/decisions/resident-vs-data.md
 - 2026-08-23 archive.html（調査データ一覧）を追加。回ごとに測定日・手続き・平均・条件記録の有無を出す。
 - 2026-08-23 **history/scores.jsonl は測定ではなく書き出し実行を記録していた**（measured_on の元が generated_at）。3回ぶんの記録の中身が同一。same_as_previous で明示して回避したが、日付の出所は直っていない。
+- 2026-08-23 武器②表読み 実装。`crawler/htmlutil.py` に表を「行ごとの見出し: 値」へ直す純関数を足した（標準ライブラリのみ・colspan/rowspan/入れ子/見出し無しをテストで固定）。
+- 2026-08-23 効果をキャッシュだけで測定（LLM 0回）。**表の中にしかない項目があるのは4セル・6項目。見積もりの5セルではなかった**（`analysis/check_tables.py`）。28セルで見出しつきの表 28,946字が新たに渡る、本文が削れたセルは0。
+- 2026-08-23 手数料の語に `\d+円` を入れたら児童手当の支給額の表まで拾って12セルになった。語の選び方で数が3倍変わる。金額の形は答えの形ではないので外した。数え方の限界は plans/decisions/table-reading.md に書いた。
+- 2026-08-23 練馬区・児童手当の「手数料」は「マイナポータルアプリ（無料）」への誤検出。4セルのうち1件は当たりではない。
+- 2026-08-23 表テキストを evidence_check の照合対象にも足した。入れないと表から正しく引いた根拠が捏造の疑い（missing）に落ちる。
+- 2026-08-23 `table_reading` を CONDITION_KEYS に追加。公開済み scores-*.json に `"table_reading": null` を足した（足さないと measurement_signature が KeyError）。
+- 2026-08-23 点数への効果は未測定。再測定は claude -p が要るため未実施。`experiment/run.py` は表なしのまま（本測定と条件が揃っていない）。武器③PDF読みは未着手。
+- 2026-08-23 実測時刻を探した。**どこにも残っていなかった**（extractor/out は全件 legacy_unknown で run_at が null、crawler/out には measurement 自体が無い）。無いので捏造せず、名前を実態に合わせた: measured_at（実測・無ければ null）/ exported_at（書き出し）/ recorded_at（記録）。measurements.csv の measured_on は全1035行が空欄になった。詳細は plans/fix-measured-on.md

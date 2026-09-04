@@ -40,6 +40,7 @@ def measurement(**changes) -> dict:
         max_text_chars=18000,
         max_links=40,
         link_order="score_desc",
+        table_reading="heading_value",
         model_version="claude-sonnet-5",
         run_at="2026-08-16T01:00:00+00:00",
     )
@@ -87,6 +88,7 @@ class 条件の記録(unittest.TestCase):
                 max_text_chars=18000,
                 max_links=40,
                 link_order="score_desc",
+                table_reading="heading_value",
                 model_version="claude-sonnet-5",
                 run_at="2026-08-16T01:00:00+00:00",
             )
@@ -103,6 +105,7 @@ class 条件の記録(unittest.TestCase):
                 max_text_chars=18000,
                 max_links=40,
                 link_order="score_desc",
+                table_reading="heading_value",
                 model_version="claude-sonnet-5",
                 run_at="2026-08-16T01:00:00+00:00",
             )
@@ -128,6 +131,7 @@ class 条件の記録(unittest.TestCase):
                         max_text_chars=18000,
                         max_links=40,
                         link_order="score_desc",
+                        table_reading="heading_value",
                         model_version="claude-sonnet-5",
                         run_at="2026-08-16T01:00:00+00:00",
                     )
@@ -204,6 +208,7 @@ class 条件の比較(unittest.TestCase):
             "max_text_chars": 18001,
             "max_links": 41,
             "link_order": "document",
+            "table_reading": "none",
             "model": "other-cli",
             "model_version": "claude-sonnet-other",
         }

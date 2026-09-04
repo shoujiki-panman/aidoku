@@ -43,3 +43,47 @@ Tracks: web/index.html / web/assets/app.js / web/archive.html / analysis/export_
 **残っている宿題**: 測定の日付を、エクスポータの実行時刻ではなく
 実際に測った時刻から取ること。いまは再測定していないので実害は出ていないが、
 測り直した瞬間に日付が嘘になる。
+
+---
+
+## 追記（2026-08-23）— 宿題への回答: 実測時刻は残っていなかった
+
+**まず探した。無かった。**
+
+| 探した場所 | 結果 |
+|---|---|
+| `extractor/out/*.json`（73件） | 全件 `recording_status: legacy_unknown`。`run_at` / `discovery_run_at` は `null` |
+| `crawler/out/*.json`（83件） | `measurement` キー自体が無い。`fetch_log` にも時刻は無い |
+| `scorer/out/*.json` | `measurement` は `null` |
+| `web/data/scores-*.json` | `measurement.run_at` は `[]`、`runs[]` 23件も全部 `run_at: null` |
+| `experiment/out/setagaya-tennyu_2026-08-15.json` | `run_at` を持つ**が**、これは1区の安定性実験で、23区の点数とは別系統。流用しない |
+
+`README.md` や `export_dashboard.py` の散文に「2026-07-22」という日付はあるが、
+これは人が書いた文であって、レコードごとに付いた時刻ではない。転入届の初回ぶんしか
+指しておらず、その後の再抽出も同じ日として扱われてしまう。**データに書き戻すのは
+捏造なので、しない。**
+
+**したがって決定（依頼の選択肢3番）: いまの `generated_at` が何であるかを、公開データ
+自身に明示する。注釈で済ませず、名前を実態に合わせる。**
+
+    measured_at / measured_on   実際に測った時刻。**記録が無ければ null / 空欄**
+    exported_at / exported_on   書き出しを走らせた時刻（旧 measured_at の中身）
+    recorded_at / recorded_on   履歴行を記録に残した時刻
+
+- `history.snapshot_from_doc()` は `measurement.run_at` から `measured_at` を取る
+  （新設 `measured_at_of()`）。記録が無ければ `None`。**`generated_at` で埋めない。**
+- `analysis/export_timeseries.py` の CSV は `measured_on` を空欄にし、`exported_on` を足した。
+- `analysis/export_surveys.py` は `measured_at` → `exported_at` に改名し、実測の
+  `measured_at` と `measured_at_status`（recorded / unknown）を別に持つ。schema は
+  `aidoku-surveys-2`。`same_as_previous` は従来どおり「値が前回と同じ書き出し」を指し、
+  改名後は「3回の書き出し／値が違うのは1回」と読み方が一致する。
+- 画面（`archive.html` / `archive-list.js` / `archive-view.js`）は「◯月◯日に測定」をやめ、
+  「◯月◯日 ◯:◯ に書き出し」＋「測った日時: 記録なし」と書く。
+
+**なぜ注釈でなく改名まで要ったか**: `_about` に but 書きを足すだけでは、列名
+`measured_on` をそのまま読む機械（表計算・統計ソフト・AI）が嘘を読む。
+**名前が嘘なら、注釈は届かない。**
+
+**次に測り直したときに直ること**: 抽出器が `recording_status: recorded` で `run_at` を
+書けば、以降の履歴行は自動的に本物の実測時刻を持つ。コードはもうそちらを見ている。
+**過去の回は不明のまま**で、それが正しい。

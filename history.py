@@ -36,8 +36,43 @@ def _page_status_code(muni: dict) -> str | None:
     return status.get("code") if isinstance(status, dict) else None
 
 
+def measured_at_of(measurement: object) -> str | None:
+    """**実際に測った時刻**を返す。取れないときは None。
+
+    ★None を `generated_at`（＝エクスポータを走らせた時刻）で埋めないこと。埋めると、
+      測り直していないのに「その日に測った」ことになる。実際そうなっていて、3回ぶんの
+      記録があるのに345観測すべて値が同じ、という状態を作った
+      （plans/decisions/resident-vs-data.md）。**分からない時刻は None のまま出す。**
+
+    出どころは `measurement.run_at` ただ1つ。scores-*.json の measurement は
+    `summarize_measurements()` が作るので run_at は**リスト**（自治体ごとの実測時刻を
+    集めたもの）、extractor 1件ぶんの measurement では**文字列**になる。
+    リストのときは最も早い時刻＝その回の測り始めを返す。
+
+    `recording_status` が "recorded" 以外（legacy_unknown）の回は run_at が
+    そもそも記録されていないので None になる。
+    """
+    if not isinstance(measurement, dict):
+        return None
+    if measurement.get("recording_status") != "recorded":
+        return None
+    run_at = measurement.get("run_at")
+    if isinstance(run_at, str):
+        return run_at or None
+    if isinstance(run_at, list):
+        stamps = sorted(s for s in run_at if isinstance(s, str) and s)
+        return stamps[0] if stamps else None
+    return None
+
+
 def snapshot_from_doc(doc: dict, recorded_at: str) -> dict:
-    """scores-*.json 1本から、履歴1行ぶんを作る。Pure Function。"""
+    """scores-*.json 1本から、履歴1行ぶんを作る。Pure Function。
+
+    時刻が3つ並ぶので、意味を混ぜないこと。
+      - `measured_at`   実際に測った時刻。無ければ None（**ここを埋めない**）
+      - `generated_at`  scores-*.json を書き出した時刻
+      - `recorded_at`   この履歴行を書いた時刻
+    """
     if not isinstance(doc, dict):
         raise ValueError("scores ドキュメントが dict でない")
     measurement = doc.get("measurement")
@@ -60,6 +95,7 @@ def snapshot_from_doc(doc: dict, recorded_at: str) -> dict:
         "schema": SCHEMA_VERSION,
         "recorded_at": recorded_at,
         "generated_at": doc.get("generated_at"),
+        "measured_at": measured_at_of(measurement),
         "procedure_id": doc.get("procedure_id"),
         "procedure": doc.get("procedure"),
         "measurement_signature": signature,
@@ -197,6 +233,10 @@ def series(snapshots: list[dict], municipality_id: str) -> list[dict]:
         for m in snap.get("municipalities", []):
             if m.get("id") == municipality_id:
                 out.append({
+                    # 折れ線の横軸に本来使うべきは measured_at。ただし記録が無い回は
+                    # None なので、いまは generated_at（書き出し時刻）しか目印が無い。
+                    # 両方出して、どちらを見ているかを読む側に選ばせる。
+                    "measured_at": snap.get("measured_at"),
                     "generated_at": snap.get("generated_at"),
                     "total": m.get("total"),
                     "page_status": m.get("page_status"),

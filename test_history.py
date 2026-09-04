@@ -11,6 +11,7 @@ COND = {
     "measurement_version": "aidoku-1.0", "prompt_version": "p1", "follow": True,
     "max_follow": 3, "max_depth": 3, "beam": {"1": {"take": 8, "of": 40}},
     "max_fetches": 40, "max_text_chars": 60000, "max_links": 40, "link_order": "score_desc",
+    "table_reading": "heading_value",
     "model": "claude-cli", "model_version": "claude-sonnet-5",
 }
 
@@ -160,6 +161,65 @@ class Series(unittest.TestCase):
         self.assertEqual(history.series([snap("2026-08-01", {"a": 40})], "zzz"), [])
 
 
+class 測定時刻(unittest.TestCase):
+    """★書き出し時刻を測定時刻と呼ばない、を固定する。
+
+    もとの不具合: `measured_on` の元が `generated_at`（エクスポータの実行時刻）で、
+    書き出しを流し直すだけで「別の日に測った」記録が増えていた。
+    """
+
+    def test_実測時刻が記録されていなければNone(self):
+        self.assertIsNone(history.measured_at_of(
+            {"recording_status": "legacy_unknown", "run_at": None}))
+
+    def test_記録済みでもrun_atが空ならNone(self):
+        self.assertIsNone(history.measured_at_of({"recording_status": "recorded", "run_at": []}))
+        self.assertIsNone(history.measured_at_of({"recording_status": "recorded", "run_at": ""}))
+        self.assertIsNone(history.measured_at_of({"recording_status": "recorded"}))
+
+    def test_measurementがdictでなくても落ちない(self):
+        self.assertIsNone(history.measured_at_of(None))
+        self.assertIsNone(history.measured_at_of("2026-08-11T13:52:32+00:00"))
+
+    def test_文字列のrun_atをそのまま使う(self):
+        self.assertEqual(
+            history.measured_at_of({"recording_status": "recorded",
+                                    "run_at": "2026-08-20T01:00:00+00:00"}),
+            "2026-08-20T01:00:00+00:00")
+
+    def test_リストのrun_atは測り始めを使う(self):
+        # scores-*.json の measurement は summarize_measurements() が作るのでリストになる
+        self.assertEqual(
+            history.measured_at_of({"recording_status": "recorded", "run_at": [
+                "2026-08-20T03:00:00+00:00", "2026-08-20T01:00:00+00:00"]}),
+            "2026-08-20T01:00:00+00:00")
+
+    def test_条件未記録の回のmeasured_atはNoneになる(self):
+        s = snap("2026-08-01T09:00:00+00:00", {"a": 40}, recorded=False)
+        self.assertIsNone(s["measured_at"])
+
+    def test_これ大事_書き出し時刻をmeasured_atに流し込まない(self):
+        # 記録済みでも run_at が無ければ measured_at は None。generated_at は別の値のまま
+        s = snap("2026-08-01T09:00:00+00:00", {"a": 40})
+        self.assertEqual(s["generated_at"], "2026-08-01T09:00:00+00:00")
+        self.assertIsNone(s["measured_at"])
+
+    def test_run_atがあればmeasured_atに入る(self):
+        d = doc("2026-08-01T09:00:00+00:00", {"a": 40})
+        d["measurement"]["run_at"] = ["2026-07-30T11:22:33+00:00"]
+        s = history.snapshot_from_doc(d, "t")
+        self.assertEqual(s["measured_at"], "2026-07-30T11:22:33+00:00")
+        # 書き出し時刻は書き出し時刻のまま。上書きしない
+        self.assertEqual(s["generated_at"], "2026-08-01T09:00:00+00:00")
+
+    def test_推移にも両方の時刻を出す(self):
+        d = doc("2026-08-01T09:00:00+00:00", {"a": 40})
+        d["measurement"]["run_at"] = ["2026-07-30T11:22:33+00:00"]
+        row = history.series([history.snapshot_from_doc(d, "t")], "a")[0]
+        self.assertEqual(row["measured_at"], "2026-07-30T11:22:33+00:00")
+        self.assertEqual(row["generated_at"], "2026-08-01T09:00:00+00:00")
+
+
 class RealData(unittest.TestCase):
     """実データで通ること。既存69マスは legacy_unknown なので原因は言えない。"""
 
@@ -171,6 +231,9 @@ class RealData(unittest.TestCase):
         self.assertEqual(s["recording_status"], "legacy_unknown")
         # 実データ同士は必ず unknown になる。これが正しい挙動
         self.assertEqual(history.attribution(s, s)[0], "unknown")
+        # ★実データには「実際に測った時刻」が残っていない。generated_at で埋めない
+        self.assertIsNone(s["measured_at"])
+        self.assertTrue(s["generated_at"])
 
 
 if __name__ == "__main__":

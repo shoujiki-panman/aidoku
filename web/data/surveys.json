@@ -1,10 +1,13 @@
 {
-  "_about": "AI読が実施した調査の一覧。1件が1回の調査で、測った日ごとに並べてある。値が前回と同じ回は same_as_previous を true にしている。",
-  "schema": "aidoku-surveys-1",
+  "_about": "AI読が実施した調査の一覧。1件が1回の書き出しで、書き出した日ごとに並べてある。exported_at は書き出しを走らせた時刻であって、測定した時刻ではない。実際に測った時刻は measured_at に入るが、測定条件を記録し始める前の回は記録が残っておらず null になる（measured_at_status: unknown）。分からない時刻を書き出し時刻で埋めることはしない。値が前回と同じ回は same_as_previous を true にしている。",
+  "schema": "aidoku-surveys-2",
   "runs": [
     {
-      "measured_at": "2026-08-11T13:52:32+00:00",
-      "measured_on": "2026-08-11",
+      "exported_at": "2026-08-11T13:52:32+00:00",
+      "exported_on": "2026-08-11",
+      "measured_at": null,
+      "measured_on": null,
+      "measured_at_status": "unknown",
       "recorded_at": [
         "2026-08-17T01:02:39+09:00"
       ],
@@ -42,8 +45,11 @@
       "same_as_previous": false
     },
     {
-      "measured_at": "2026-08-17T12:56:14+00:00",
-      "measured_on": "2026-08-17",
+      "exported_at": "2026-08-17T12:56:14+00:00",
+      "exported_on": "2026-08-17",
+      "measured_at": null,
+      "measured_on": null,
+      "measured_at_status": "unknown",
       "recorded_at": [
         "2026-08-17T22:01:07+09:00"
       ],
@@ -81,8 +87,11 @@
       "same_as_previous": true
     },
     {
-      "measured_at": "2026-08-17T15:10:26+00:00",
-      "measured_on": "2026-08-17",
+      "exported_at": "2026-08-17T15:10:26+00:00",
+      "exported_on": "2026-08-17",
+      "measured_at": null,
+      "measured_on": null,
+      "measured_at_status": "unknown",
       "recorded_at": [
         "2026-08-18T00:59:18+09:00"
       ],
@@ -122,6 +131,7 @@
   ],
   "n_runs": 3,
   "n_distinct": 1,
+  "n_measured_unknown": 3,
   "files": [
     {
       "label": "1行1観測のCSV（全期間）",

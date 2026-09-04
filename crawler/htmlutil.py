@@ -22,11 +22,32 @@ HEAD_CONTENT_TAGS = {
 }
 PRE_BODY_TAGS = HEAD_CONTENT_TAGS | {"head", "html"}
 
+CELL_TAGS = {"td", "th"}
+# 結合セルの上限。colspan="9999" のような値で格子を膨らませない
+MAX_SPAN = 40
+# 表テキストの上限。1つの巨大な表でAIへの入力を食い潰さない
+MAX_TABLE_ROWS = 80
+MAX_CELL_CHARS = 200
+
 
 @dataclass(frozen=True)
 class Link:
     href: str
     text: str
+
+
+@dataclass(frozen=True)
+class Cell:
+    text: str
+    header: bool
+    colspan: int
+    rowspan: int
+
+
+@dataclass(frozen=True)
+class Table:
+    caption: str
+    rows: list[list[Cell]]
 
 
 @dataclass(frozen=True)
@@ -45,6 +66,7 @@ class NormalizedPage:
     headings: list[Heading]
     date_modified: list[str]
     date_published: list[str]
+    tables: list[Table]
 
 
 def clean_inline_text(chunks: Sequence[str]) -> str:
@@ -250,6 +272,224 @@ class _Parser(HTMLParser):
         return (value or "").split(";", 1)[0].strip().lower() == "application/ld+json"
 
 
+def span_value(raw: str | None) -> int:
+    """colspan / rowspan を読む。壊れた値でも格子を作れるよう 1..MAX_SPAN に収める。"""
+    try:
+        span = int((raw or "1").strip())
+    except ValueError:
+        return 1
+    return min(max(span, 1), MAX_SPAN)
+
+
+def take_carried(carried: dict[int, tuple[Cell, int]], column: int,
+                 following: dict[int, tuple[Cell, int]]) -> Cell:
+    """rowspan で持ち越されたセルを取り出し、まだ残るなら次の行へ渡す。"""
+    held, left = carried[column]
+    if left > 1:
+        following[column] = (held, left - 1)
+    return held
+
+
+def expand_row(row: Sequence[Cell], carried: dict[int, tuple[Cell, int]],
+               ) -> tuple[list[Cell], dict[int, tuple[Cell, int]]]:
+    """1行を「1マス1セル」に広げ、次の行へ持ち越す rowspan を返す。
+
+    ★見出しと値は列の位置でしか結びつかない。結合セルを広げずに読むと
+      列がずれ、値が隣の見出しにぶら下がる。
+    """
+    out: list[Cell] = []
+    following: dict[int, tuple[Cell, int]] = {}
+    column, cells = 0, iter(row)
+    cell = next(cells, None)
+    while cell is not None or column in carried:
+        if column in carried:
+            out.append(take_carried(carried, column, following))
+            column += 1
+            continue
+        for _ in range(cell.colspan):
+            out.append(cell)
+            if cell.rowspan > 1:
+                following[column] = (cell, cell.rowspan - 1)
+            column += 1
+        cell = next(cells, None)
+    return out, following
+
+
+def expand_grid(rows: Sequence[Sequence[Cell]]) -> list[list[Cell]]:
+    """表全体を、結合セルのない格子へ広げる。"""
+    grid: list[list[Cell]] = []
+    carried: dict[int, tuple[Cell, int]] = {}
+    for row in rows[:MAX_TABLE_ROWS]:
+        expanded, carried = expand_row(row, carried)
+        grid.append(expanded)
+    return grid
+
+
+def column_headers(grid: Sequence[Sequence[Cell]]) -> list[str]:
+    """先頭行が全部見出しセルなら、それを列の見出しとして使う。
+
+    見出し行が無い表（td だけの表）は空リストを返し、値だけを並べる。
+    """
+    if not grid or len(grid[0]) < 2:
+        return []
+    first = grid[0]
+    if not all(cell.header for cell in first) or not any(cell.text for cell in first):
+        return []
+    return [cell.text for cell in first]
+
+
+def row_line(row: Sequence[Cell], headers: Sequence[str]) -> str:
+    """1行を「見出し: 値 / 見出し: 値」に直す。行頭の見出しセルは行の名前にする。"""
+    labels: list[str] = []
+    pairs: list[str] = []
+    for column, cell in enumerate(row):
+        if column and cell is row[column - 1]:  # 結合で広げた複製は1回だけ出す
+            continue
+        if cell.header and not pairs:
+            labels.append(cell.text)
+            continue
+        head = headers[column] if column < len(headers) else ""
+        if not cell.text:
+            continue
+        pairs.append(f"{head}: {cell.text}" if head and head != cell.text else cell.text)
+    label = " ".join(text for text in labels if text)
+    body = " / ".join(pairs)
+    return f"【{label}】{body}".rstrip() if label else body
+
+
+def table_lines(table: Table) -> list[str]:
+    """1つの表を、行ごとに1行のテキストへ直す。"""
+    grid = expand_grid(table.rows)
+    headers = column_headers(grid)
+    lines = [f"（{table.caption}）"] if table.caption else []
+    for row in (grid[1:] if headers else grid):
+        line = row_line(row, headers)
+        if line:
+            lines.append(f"- {line}")
+    return lines if len(lines) > (1 if table.caption else 0) else []
+
+
+def tables_text(tables: Sequence[Table]) -> str:
+    """表を「行ごとの見出し: 値」に直したテキスト。表が無ければ空文字。"""
+    blocks: list[str] = []
+    for table in tables:
+        lines = table_lines(table)
+        if lines:  # 中身の無い表は番号も与えず落とす（入力の無駄になるだけ）
+            blocks.append(f"表{len(blocks) + 1}\n" + "\n".join(lines))
+    return "\n\n".join(blocks)
+
+
+class _TableParser(HTMLParser):
+    """表だけを、行と結合セルを保ったまま取り出す。入れ子の表は別の表として扱う。"""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.tables: list[Table] = []
+        # 入れ子の表を外側から順に積む。開きかけのセルも表ごとに持たないと、
+        # 内側の表の <td> が外側のセルを内側の行へ入れてしまう。
+        self._open: list[dict] = []
+        self._skip_depth = 0
+
+    @property
+    def _top(self) -> dict:
+        return self._open[-1]
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in SKIP_TAGS:
+            self._skip_depth += 1
+            return
+        if tag == "table":
+            self._open.append(
+                {"caption": "", "rows": [], "row": None, "cell": None, "chunks": None})
+            return
+        if not self._open:
+            return
+        if tag == "caption":
+            self._top.update(cell=None, chunks=[], in_caption=True)
+        elif tag == "tr":
+            self._close_cell()
+            self._top["row"] = []
+        elif tag in CELL_TAGS:
+            self._start_cell(tag, dict(attrs))
+        elif tag == "br" and self._top["chunks"] is not None:
+            self._top["chunks"].append(" ")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in SKIP_TAGS:
+            self._skip_depth = max(0, self._skip_depth - 1)
+            return
+        if not self._open:
+            return
+        if tag in CELL_TAGS:
+            self._close_cell()
+        elif tag == "caption":
+            self._close_caption()
+        elif tag == "tr":
+            self._close_cell()
+            self._close_row()
+        elif tag == "table":
+            self._close_table()
+
+    def handle_data(self, data: str) -> None:
+        if self._skip_depth or not self._open or self._top["chunks"] is None:
+            return
+        self._top["chunks"].append(data)
+
+    def finish(self) -> None:
+        while self._open:  # </table> が閉じていないHTMLでも取れたところまで返す
+            self._close_table()
+
+    def _start_cell(self, tag: str, attrs: dict[str, str | None]) -> None:
+        self._close_cell()
+        if self._top["row"] is None:  # <tr> の無い表でも1行として拾う
+            self._top["row"] = []
+        self._top["cell"] = {
+            "header": tag == "th",
+            "colspan": span_value(attrs.get("colspan")),
+            "rowspan": span_value(attrs.get("rowspan")),
+        }
+        self._top["chunks"] = []
+
+    def _close_cell(self) -> None:
+        if self._top["cell"] is None:
+            return
+        text = clean_inline_text(self._top["chunks"] or [])[:MAX_CELL_CHARS]
+        self._top["row"].append(Cell(text=text, **self._top["cell"]))
+        self._top.update(cell=None, chunks=None)
+
+    def _close_caption(self) -> None:
+        if not self._top.get("in_caption"):
+            return
+        self._top["caption"] = clean_inline_text(self._top["chunks"] or [])[:MAX_CELL_CHARS]
+        self._top.update(chunks=None, in_caption=False)
+
+    def _close_row(self) -> None:
+        if self._top["row"]:
+            self._top["rows"].append(self._top["row"])
+        self._top["row"] = None
+
+    def _close_table(self) -> None:
+        self._close_cell()
+        self._close_row()
+        table = self._open.pop()
+        if table["rows"]:
+            self.tables.append(Table(caption=table["caption"], rows=table["rows"]))
+        if self._open and self._top["chunks"] is not None:
+            self._top["chunks"].append(" ")  # 入れ子の表の前後の文が繋がらないようにする
+
+
+def extract_tables(html_text: str) -> list[Table]:
+    """HTMLから表だけを取り出す。壊れたHTMLでも取れたところまで返す。"""
+    parser = _TableParser()
+    try:
+        parser.feed(html_text)
+        parser.close()
+    except Exception:  # 壊れたHTMLでも取れたところまでで進む
+        pass
+    parser.finish()
+    return parser.tables
+
+
 def parse(html_text: str, base_url: str) -> NormalizedPage:
     """HTMLを、リンク・本文・ページ構造・構造化日時へ正規化する。"""
     parser = _Parser(base_url)
@@ -271,6 +511,7 @@ def parse(html_text: str, base_url: str) -> NormalizedPage:
         headings=parser.headings,
         date_modified=modified,
         date_published=published,
+        tables=extract_tables(html_text),
     )
 
 

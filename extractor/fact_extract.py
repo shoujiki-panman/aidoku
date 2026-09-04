@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import subprocess
 import sys
+from collections.abc import Sequence
 from dataclasses import asdict
 from pathlib import Path
 
@@ -14,11 +15,15 @@ MAX_TEXT_CHARS = 18000
 MAX_LINKS = 40
 # 渡すリンクの選び方。測定条件として記録する（並べ替えの有無で結果が変わる）
 LINK_ORDER = "score_desc"
+# 表の渡し方。測定条件として記録する（表読みの有無で結果が変わる）
+TABLE_READING = "heading_value"
+# 表テキストの上限。本文を削ってまで表を入れないための枠
+MAX_TABLE_CHARS = 4000
 MAX_FOLLOW = 2
 
 sys.path.insert(0, str(ROOT / "crawler"))
 from discover import score_link  # noqa: E402
-from htmlutil import parse  # noqa: E402
+from htmlutil import Table, parse, tables_text  # noqa: E402
 from polite_fetch import PoliteFetcher  # noqa: E402
 
 sys.path.insert(0, str(ROOT))
@@ -46,17 +51,33 @@ def build_input(page: dict, muni: str, proc: str, test_case: TestCase,
     normalized = parse(result.body(), page["url"])
     return compose_input(
         page, muni, proc, test_case,
-        normalized.links, normalized.text, normalized.jsonld, extra_pages)
+        normalized.links, normalized.text, normalized.jsonld, extra_pages,
+        tables=normalized.tables)
+
+
+def table_section(text: str, tables: Sequence[Table]) -> str:
+    """表を「見出し: 値」に直した節。本文と合わせて MAX_TEXT_CHARS を超えない分だけ返す。
+
+    ★表のセルの文字は本文にも入っているが、どの見出しの列の値かは潰れている。
+      見出しと値を組み直したものを別立てで渡す。
+
+    本文を削ってまでは入れない。表が読めるようになった代わりに本文が消えると、
+    どちらが効いたのか分からなくなるし、減った側の損は測りようがない。
+    """
+    room = min(MAX_TABLE_CHARS, MAX_TEXT_CHARS - min(len(text), MAX_TEXT_CHARS))
+    return tables_text(tables)[:room] if room > 0 else ""
 
 
 def compose_input(page: dict, muni: str, proc: str, test_case: TestCase,
                   links: list, text: str, jsonld: list[str],
                   extra_pages: list[tuple[str, str]] | None = None,
+                  tables: Sequence[Table] = (),
                   ) -> tuple[str, dict, set[str]]:
     """解析済み内容から、本測定・再現実験で共通の1項目promptを作る。"""
     truncated = len(text) > MAX_TEXT_CHARS
     link_lines, allowed_urls = _prompt_links(links, keywords_for(proc))
     usable_jsonld = _usable_jsonld(jsonld)
+    table_text = table_section(text, tables)
     fact = by_id(test_case.fact_type)
     parts = [
         PROMPT.read_text(encoding="utf-8"),
@@ -72,6 +93,7 @@ def compose_input(page: dict, muni: str, proc: str, test_case: TestCase,
         _jsonld_section(usable_jsonld),
         f"\n## ページ本文{'（長いため冒頭のみ）' if truncated else ''}\n\n"
         f"{text[:MAX_TEXT_CHARS]}\n",
+        _table_section_text(table_text),
         f"\n## このページから出ているリンク（最大{MAX_LINKS}件）\n\n"
         + ("\n".join(link_lines) or "（なし）"),
     ]
@@ -79,6 +101,7 @@ def compose_input(page: dict, muni: str, proc: str, test_case: TestCase,
     meta = {
         "has_jsonld": bool(usable_jsonld), "text_len": len(text),
         "truncated": truncated, "n_links": len(link_lines),
+        "table_chars": len(table_text),
     }
     return "".join(parts), meta, allowed_urls
 
@@ -239,6 +262,15 @@ def _prompt_links(links: list, kw: dict | None = None) -> tuple[list[str], set[s
             {link.href for link in picked})
 
 
+def _table_section_text(table_text: str) -> str:
+    """表が無いページには節ごと足さない。空の見出しは入力の無駄にしかならない。"""
+    if not table_text:
+        return ""
+    return ("\n## このページの表（行ごとに「見出し: 値」へ組み直したもの）\n\n"
+            "（本文にも同じ文字が入っていますが、そこでは列の対応が潰れています）\n\n"
+            f"{table_text}\n")
+
+
 def _jsonld_section(jsonld: list[str]) -> str:
     content = "（なし）" if not jsonld else "\n".join(jsonld)[:2000]
     return f"\n## 構造化データ (JSON-LD)\n\n{content}\n"
@@ -287,7 +319,13 @@ def _attach_evidence_check(page: dict, fetcher: PoliteFetcher,
     cached = fetcher.cached(page["url"])
     if cached is None or not cached.body_path:
         raise RuntimeError(f"照合対象のキャッシュが無い: {page['url']}")
-    page_texts = [truncate_page_text(parse(cached.body(), page["url"]).text)]
+    normalized = parse(cached.body(), page["url"])
+    page_texts = [truncate_page_text(normalized.text)]
+    # 組み直した表も「渡した文」なので照合対象に入れる。入れないと、
+    # 表から正しく引いた根拠が捏造の疑い（missing）に落ちる。
+    table_text = table_section(normalized.text, normalized.tables)
+    if table_text:
+        page_texts.append(table_text)
     page_texts.extend(truncate_page_text(text) for _url, text in extra)
     checked, summary = attach_checks_across_pages(
         {"item": attempt["result"]}, page_texts)
