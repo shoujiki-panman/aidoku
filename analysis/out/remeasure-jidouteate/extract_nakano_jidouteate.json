@@ -1,0 +1,62 @@
+{
+  "municipality": "中野区",
+  "municipality_id": "nakano",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+    "hops": 2,
+    "link_text": "児童手当・助成",
+    "has_jsonld": false,
+    "text_len": 1500,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/tetsuduki.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "子ども総合窓口で受け付けている以下の手続きについて、郵送や電子申請等で申請可能です。",
+  "online_clarity_pages": [
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html",
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+    "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/tetsuduki.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）、申請者の加入保険が確認できるもの（3歳未満の児童を養育し各種共済組合員の場合のみ必要）、請求者名義の振込口座（普通預金）が確認できるもの（郵送申請時は認定請求書等の様式も必要）",
+      "evidence": "個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "電子申請（ぴったりサービス）・郵送・窓口（子ども総合窓口や地域事務所）のいずれでも申請可能",
+      "evidence": "児童手当 認定請求書 ぴったりサービス（外部サイト）からご申請ください。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）",
+      "evidence": "出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）に手続きをしてください。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "トップの目的別ページ（index.html）自体には手続きの詳細が無く、1階層先の「児童手当」ページに必要書類・期限・オンライン可否がまとまって記載されていた。手数料については両ページとも一切言及がなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

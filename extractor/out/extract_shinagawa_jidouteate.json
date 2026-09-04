@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 11826,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 3101
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T14:23:36+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
   "online_clarity_evidence": "申請者ご本人様がマイナンバーカードを持ち、かつ電子署名の使用が可能な場合は、「品川区電子申請サービス」または「ぴったりサービス」からご申請いただけます。",
   "online_clarity_pages": [
     "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000027168.html"
   ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "品川区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "①申請者（請求者）名義の金融機関口座の分かる書類（通帳・キャッシュカード等のコピー、増額申請時は不要）／②申請者の健康保険情報の分かるもの（原則不要、加入年金が国家公務員共済〔日本郵政含む〕や地方公務員共済等の場合のみ提出）／③本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）／④その他、申請者個々の状況により必要な書類（別世帯の代理人が来庁申請する場合は①～③に加え「委任状」が必要）",
+        "evidence": "本人確認書類 マイナンバーカード・運転免許証・パスポート・在留カード等",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 27,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "①申請者（請求者）名義の金融機関口座の分かる書類（通帳・キャッシュカード等のコピー、増額申請時は不要）／②申請者の健康保険情報の分かるもの（原則不要、加入年金が国家公務員共済〔日本郵政含む〕や地方公務員共済等の場合のみ提出）／③本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）／④その他、申請者個々の状況により必要な書類（別世帯の代理人が来庁申請する場合は①～③に加え「委任状」が必要）",
+            "evidence": "本人確認書類 マイナンバーカード・運転免許証・パスポート・在留カード等",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 27,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「9．申請に必要なもの」の見出し直下に必要書類が4項目（口座・健康保険情報・本人確認書類・その他）で箇条書きされており、該当者のみ必要な書類（健康保険情報、委任状）も同じ節に明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「9．申請に必要なもの」の見出し直下に必要書類が4項目（口座・健康保険情報・本人確認書類・その他）で箇条書きされており、該当者のみ必要な書類（健康保険情報、委任状）も同じ節に明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "品川区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口・郵送に加え、オンラインで完結可能。マイナンバーカードを持ち電子署名が使える場合は「品川区電子申請サービス」または「ぴったりサービス」から申請できる",
+        "evidence": "申請者ご本人様がマイナンバーカードを持ち、かつ電子署名の使用が可能な場合は、「品川区電子申請サービス」または「ぴったりサービス」からご申請いただけます。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 76,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口・郵送に加え、オンラインで完結可能。マイナンバーカードを持ち電子署名が使える場合は「品川区電子申請サービス」または「ぴったりサービス」から申請できる",
+            "evidence": "申請者ご本人様がマイナンバーカードを持ち、かつ電子署名の使用が可能な場合は、「品川区電子申請サービス」または「ぴったりサービス」からご申請いただけます。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 76,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「8．申請方法」の見出し直下に(1)郵送(2)電子申請の2択が明記されており、オンライン申請の条件（マイナンバーカード＋電子署名）まで本文に書かれていた。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「8．申請方法」の見出し直下に(1)郵送(2)電子申請の2択が明記されており、オンライン申請の条件（マイナンバーカード＋電子署名）まで本文に書かれていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "品川区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "出生日（または転入日）の翌日から15日以内（15日特例）",
+        "evidence": "出生により受給資格が生じた日の翌日から15日以内に、お住まいの区市町村に申請が必要です。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 44,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "出生日（または転入日）の翌日から15日以内（15日特例）",
+            "evidence": "出生により受給資格が生じた日の翌日から15日以内に、お住まいの区市町村に申請が必要です。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 44,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「7．申請は、出生や転入から15日以内に（15日特例）」という見出しの節に、事由別（出生・増額・転入・公務員異動）の起算点と期限がまとめて列挙されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「7．申請は、出生や転入から15日以内に（15日特例）」という見出しの節に、事由別（出生・増額・転入・公務員異動）の起算点と期限がまとめて列挙されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "品川区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "ページ本文・目次・添付一覧のいずれにも「手数料」「無料」等の記載がなく、手数料に関する言及そのものが見当たらない。リンク一覧も申請書・パンフレット等で手数料に触れるものはない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "ページ本文・目次・添付一覧のいずれにも「手数料」「無料」等の記載がなく、手数料に関する言及そのものが見当たらない。リンク一覧も申請書・パンフレット等で手数料に触れるものはない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "申請者名義の金融機関口座がわかる書類（増額申請時は不要）、申請者の健康保険情報がわかるもの（原則不要、共済組合加入者のみ）、本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）。代理人申請時はさらに委任状が必要。",
-      "evidence": "申請者（請求者）名義の金融機関口座の分かる書類 申請者の健康保険情報の分かるもの 本人確認書類 マイナンバーカード・運転免許証・パスポート・在留カード等",
+      "value": "①申請者（請求者）名義の金融機関口座の分かる書類（通帳・キャッシュカード等のコピー、増額申請時は不要）／②申請者の健康保険情報の分かるもの（原則不要、加入年金が国家公務員共済〔日本郵政含む〕や地方公務員共済等の場合のみ提出）／③本人確認書類（マイナンバーカード・運転免許証・パスポート・在留カード等）／④その他、申請者個々の状況により必要な書類（別世帯の代理人が来庁申請する場合は①～③に加え「委任状」が必要）",
+      "evidence": "本人確認書類 マイナンバーカード・運転免許証・パスポート・在留カード等",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 27,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口は品川区役所本庁舎7階の子育て応援課手当医療助成担当（地域センターでの取扱いなし）。郵送も可。マイナンバーカードと電子署名が使える場合は品川区電子申請サービスまたはぴったりサービスでオンライン申請可能。",
-      "evidence": "品川区役所本庁舎7階の子育て応援課手当医療助成担当へ申請してください。申請は(1)郵送または(2)電子申請サービスも可能です。",
+      "value": "窓口・郵送に加え、オンラインで完結可能。マイナンバーカードを持ち電子署名が使える場合は「品川区電子申請サービス」または「ぴったりサービス」から申請できる",
+      "evidence": "申請者ご本人様がマイナンバーカードを持ち、かつ電子署名の使用が可能な場合は、「品川区電子申請サービス」または「ぴったりサービス」からご申請いただけます。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 76,
+        "note": ""
+      }
     },
     "期限": {
       "found": true,
-      "value": "出生や転入等により受給資格が生じた日（または前住地の転出予定日）の翌日から15日以内に申請（15日特例）。遅れるとその分の手当が受けられない。",
+      "value": "出生日（または転入日）の翌日から15日以内（15日特例）",
       "evidence": "出生により受給資格が生じた日の翌日から15日以内に、お住まいの区市町村に申請が必要です。",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 44,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "冒頭に多言語切替メニューと全区メニューが大量に続き、本文（児童手当の説明）に到達するまでが長い。本文自体は1〜13の見出しで整理され、必要書類・申請方法・期限は明記されているが、手数料（無料である旨を含む）についての記載はページ中に見当たらなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「9．申請に必要なもの」の見出し直下に必要書類が4項目（口座・健康保険情報・本人確認書類・その他）で箇条書きされており、該当者のみ必要な書類（健康保険情報、委任状）も同じ節に明記されている。\n「8．申請方法」の見出し直下に(1)郵送(2)電子申請の2択が明記されており、オンライン申請の条件（マイナンバーカード＋電子署名）まで本文に書かれていた。\n「7．申請は、出生や転入から15日以内に（15日特例）」という見出しの節に、事由別（出生・増額・転入・公務員異動）の起算点と期限がまとめて列挙されている。\nページ本文・目次・添付一覧のいずれにも「手数料」「無料」等の記載がなく、手数料に関する言及そのものが見当たらない。リンク一覧も申請書・パンフレット等で手数料に触れるものはない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/hpg000027168.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

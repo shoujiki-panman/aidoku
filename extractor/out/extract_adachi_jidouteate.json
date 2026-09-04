@@ -10,10 +10,45 @@
     "has_jsonld": false,
     "text_len": 943,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T13:25:41+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [
     "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
     "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
@@ -25,38 +60,364 @@
     "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
     "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
   ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "足立区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "新規申請（転入・出生等）の必要書類は、①児童手当・子ども医療費助成制度認定請求書、②申請者（保護者）名義の普通預金通帳、③本人確認書類（マイナンバーカード等1点、または健康保険証等2点）。該当者のみ必要なものとして、単身赴任等で申請者と子が別居している場合は別居監護申立書、18歳年度末以降22歳年度末までの子を養育している場合は監護相当・生計費の負担についての確認書が必要。マイナンバー連携により、健康保険証等の年金加入証明書類・課税証明書・住民票の写しは原則提出不要（情報連携ができない場合は提出が必要）。",
+        "evidence": "本人確認書類 １点で確認できるもの：運転免許証、マイナンバーカード、顔写真付きの身分証明書等 ２点必要なもの：健康保険証、共済組合員証・国民年金手帳、年金証書、住民基本台帳カード(写真なし)等",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 81,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+            "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+          ],
+          "page_notes": "このページは児童手当に関するお知らせ・関連ページへのリンク一覧のみで構成されており、申請の持ち物など手続きの詳細は本文に記載がない。詳細は「児童手当のご案内」等の下位ページにありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "新規申請（転入・出生等）の必要書類は、①児童手当・子ども医療費助成制度認定請求書、②申請者（保護者）名義の普通預金通帳、③本人確認書類（マイナンバーカード等1点、または健康保険証等2点）。該当者のみ必要なものとして、単身赴任等で申請者と子が別居している場合は別居監護申立書、18歳年度末以降22歳年度末までの子を養育している場合は監護相当・生計費の負担についての確認書が必要。マイナンバー連携により、健康保険証等の年金加入証明書類・課税証明書・住民票の写しは原則提出不要（情報連携ができない場合は提出が必要）。",
+            "evidence": "本人確認書類 １点で確認できるもの：運転免許証、マイナンバーカード、顔写真付きの身分証明書等 ２点必要なもの：健康保険証、共済組合員証・国民年金手帳、年金証書、住民基本台帳カード(写真なし)等",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 81,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "トップページ本文には必要書類の記載がなく、リンク一覧から「児童手当のご案内」ページに必要書類が表形式（新規申請の場合／該当者のみ必要なもの）でまとまっていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+      ],
+      "page_notes": "トップページ本文には必要書類の記載がなく、リンク一覧から「児童手当のご案内」ページに必要書類が表形式（新規申請の場合／該当者のみ必要なもの）でまとまっていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "足立区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口または郵送（オンライン申請の記載なし）",
+        "evidence": "窓口混雑緩和のため、郵送手続きを推奨しております。申請書・届出書はこちらからダウンロードしていただくか、お電話にてご請求ください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 61,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+            "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+          ],
+          "page_notes": "このページは児童手当関連の告知・お知らせを一覧するトップページで、申請方法（窓口/オンライン）についての本文記述はない。「児童手当のご案内」や「こんなときは手続きをしてください」等の下位ページに申請手続きの詳細がありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口または郵送（オンライン申請の記載なし）",
+            "evidence": "窓口混雑緩和のため、郵送手続きを推奨しております。申請書・届出書はこちらからダウンロードしていただくか、お電話にてご請求ください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 61,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「児童手当のご案内」「こんなときは手続きをしてください」の両ページとも、受付方法として窓口(親子支援課・各福祉課等)と郵送のみを案内し、郵送を「混雑緩和のため推奨」としている。オンライン申請・電子申請への言及は本文中に一切見当たらない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+      ],
+      "page_notes": "「児童手当のご案内」「こんなときは手続きをしてください」の両ページとも、受付方法として窓口(親子支援課・各福祉課等)と郵送のみを案内し、郵送を「混雑緩和のため推奨」としている。オンライン申請・電子申請への言及は本文中に一切見当たらない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "足立区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "出生日または転入日（前住所地の転出予定日）の翌日から15日以内（15日特例）",
+        "evidence": "月の後半に出生・転入した場合は、出生日または転入日（前住所地の転出予定日）の翌日から15日以内に申請すれば、出生・転入月の翌月分から手当が支給されます(15日特例)。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 83,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+            "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+          ],
+          "page_notes": "このindexページはニュース見出しとリンク一覧のみで構成されており、申請期限に関する具体的な記述は本文中に無い。「児童手当のご案内」または「こんなときは手続きをしてください」に詳細がありそう。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "出生日または転入日（前住所地の転出予定日）の翌日から15日以内（15日特例）",
+            "evidence": "月の後半に出生・転入した場合は、出生日または転入日（前住所地の転出予定日）の翌日から15日以内に申請すれば、出生・転入月の翌月分から手当が支給されます(15日特例)。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 83,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "トップページには期限の記述がなく、「児童手当のご案内」ページに15日特例の起算点つき期限があった。別に令和7年度制度改正に伴う経過措置としての最終申請期限（令和7年3月31日）も同ページにあるが、これは恒久的な申請ルールではなく期間限定の経過措置のため採用しなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+      ],
+      "page_notes": "トップページには期限の記述がなく、「児童手当のご案内」ページに15日特例の起算点つき期限があった。別に令和7年度制度改正に伴う経過措置としての最終申請期限（令和7年3月31日）も同ページにあるが、これは恒久的な申請ルールではなく期間限定の経過措置のため採用しなかった。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "足立区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+            "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+          ],
+          "page_notes": "本文はお知らせ・関連リンクの一覧のみで、手数料を含む手続き詳細は「児童手当のご案内」等のリンク先ページに委ねられている構成。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「児童手当のご案内」「こんなときは手続きをしてください」の両ページを確認したが、申請にかかる手数料についての記述（無料・有料いずれの明記も）は見当たらなかった。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+        "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+      ],
+      "page_notes": "「児童手当のご案内」「こんなときは手続きをしてください」の両ページを確認したが、申請にかかる手数料についての記述（無料・有料いずれの明記も）は見当たらなかった。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "認定請求書（新規申請の場合は児童手当・子ども医療費助成制度認定請求書）、申請者（保護者）名義の普通預金通帳、本人確認書類。別居監護の場合は別居監護申立書、18歳年度末〜22歳年度末の子を養育する場合は監護相当・生計費の負担についての確認書も必要。",
-      "evidence": "本人確認書類 １点で確認できるもの：運転免許証、マイナンバーカード、顔写真付きの身分証明書等",
+      "value": "新規申請（転入・出生等）の必要書類は、①児童手当・子ども医療費助成制度認定請求書、②申請者（保護者）名義の普通預金通帳、③本人確認書類（マイナンバーカード等1点、または健康保険証等2点）。該当者のみ必要なものとして、単身赴任等で申請者と子が別居している場合は別居監護申立書、18歳年度末以降22歳年度末までの子を養育している場合は監護相当・生計費の負担についての確認書が必要。マイナンバー連携により、健康保険証等の年金加入証明書類・課税証明書・住民票の写しは原則提出不要（情報連携ができない場合は提出が必要）。",
+      "evidence": "本人確認書類 １点で確認できるもの：運転免許証、マイナンバーカード、顔写真付きの身分証明書等 ２点必要なもの：健康保険証、共済組合員証・国民年金手帳、年金証書、住民基本台帳カード(写真なし)等",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 81,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "オンライン申請の案内はなし。郵送（推奨）または窓口（親子支援課児童手当係〈区役所中央館3階〉、足立福祉事務所各福祉課、転入時のみ区民事務所）で受付。",
-      "evidence": "窓口混雑緩和のため、郵送手続きを推奨しております。",
+      "value": "窓口または郵送（オンライン申請の記載なし）",
+      "evidence": "窓口混雑緩和のため、郵送手続きを推奨しております。申請書・届出書はこちらからダウンロードしていただくか、お電話にてご請求ください。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 61,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
       "found": true,
-      "value": "出生・転入の同月内に申請するのが原則。月の後半に出生・転入した場合は、出生日・転入日の翌日から15日以内に申請すれば出生・転入月の翌月分から支給される（15日特例）。",
+      "value": "出生日または転入日（前住所地の転出予定日）の翌日から15日以内（15日特例）",
       "evidence": "月の後半に出生・転入した場合は、出生日または転入日（前住所地の転出予定日）の翌日から15日以内に申請すれば、出生・転入月の翌月分から手当が支給されます(15日特例)。",
       "source": "linked_page",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 83,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "トップページ（index.html）自体には手続きの詳細は無く、各見出しリンクに情報が分散している。必要書類・窓口・期限は「児童手当のご案内」ページに集約されているが、手数料についてはこの2つのリンク先ページのどこにも記載が見当たらない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "トップページ本文には必要書類の記載がなく、リンク一覧から「児童手当のご案内」ページに必要書類が表形式（新規申請の場合／該当者のみ必要なもの）でまとまっていた。\n「児童手当のご案内」「こんなときは手続きをしてください」の両ページとも、受付方法として窓口(親子支援課・各福祉課等)と郵送のみを案内し、郵送を「混雑緩和のため推奨」としている。オンライン申請・電子申請への言及は本文中に一切見当たらない。\nトップページには期限の記述がなく、「児童手当のご案内」ページに15日特例の起算点つき期限があった。別に令和7年度制度改正に伴う経過措置としての最終申請期限（令和7年3月31日）も同ページにあるが、これは恒久的な申請ルールではなく期間限定の経過措置のため採用しなかった。\n「児童手当のご案内」「こんなときは手続きをしてください」の両ページを確認したが、申請にかかる手数料についての記述（無料・有料いずれの明記も）は見当たらなかった。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.adachi.tokyo.jp/k-kyoiku/kosodate/teate/jidouteate/index.html",
+      "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-jidoteate.html",
+      "https://www.city.adachi.tokyo.jp/oyako/k-kyoiku/kosodate/teate-tetsuzuki.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

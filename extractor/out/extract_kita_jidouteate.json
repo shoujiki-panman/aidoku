@@ -10,48 +10,413 @@
     "has_jsonld": true,
     "text_len": 3228,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 0
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
-  "followed_urls": [],
-  "online_clarity": "記載なし",
-  "online_clarity_evidence": "",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T13:39:21+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
+  "followed_urls": [
+    "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+    "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1018788.html",
+    "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002923.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "次のいずれかの方法により申請してください。子育て給付係の窓口もしくは郵送にて必要書類を提出／電子申請（※）",
   "online_clarity_pages": [
-    "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html"
+    "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html",
+    "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+    "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1018788.html",
+    "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002923.html"
+  ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "北区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "①児童手当認定請求書（申請書） ②申請者の健康保険証（資格確認書または資格情報のお知らせでも可）のコピー ③申請者名義の受取口座（通帳・キャッシュカード・口座画面等）のコピー ④申請者及び配偶者の個人番号カードまたは個人番号が確認できるもの ⑤申請者の本人確認書類 ⑥代理人が申請する場合は代理人の本人確認書類及び委任状 ⑦その他世帯の状況により必要な書類（多子世帯で大学生年代の子がいる場合の確認書、別居児童の監護事実の申立書、海外在住に係る申立書、養育・監護していない旨の申立書、戸籍謄本、パスポートのコピー等、該当者のみ）",
+        "evidence": "1.「児童手当認定請求書」（申請書）2.申請者の「健康保険証（資格確認書または資格情報のお知らせでも可）のコピー」3.申請者名義の児童手当の「受取口座（通帳、キャッシュカード、口座画面等）のコピー」4.申請者及び配偶者の個人番号カードまたは個人番号が確認できるもの（※1）5.申請者の本人確認書類（※2）6.代理人が申請する場合は、代理人の本人確認書類（※2）及び委任状7.その他世帯の状況により必要な書類",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 96,
+          "note": "連続96文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+            "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1018788.html"
+          ],
+          "page_notes": "このページは児童手当に関するサブページへのリンク一覧のみで構成された索引ページで、申請の必要書類など具体的な手続き内容は本文に記載がなく、下位ページ（制度案内や提出書類のページ）に委ねられている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "①児童手当認定請求書（申請書） ②申請者の健康保険証（資格確認書または資格情報のお知らせでも可）のコピー ③申請者名義の受取口座（通帳・キャッシュカード・口座画面等）のコピー ④申請者及び配偶者の個人番号カードまたは個人番号が確認できるもの ⑤申請者の本人確認書類 ⑥代理人が申請する場合は代理人の本人確認書類及び委任状 ⑦その他世帯の状況により必要な書類（多子世帯で大学生年代の子がいる場合の確認書、別居児童の監護事実の申立書、海外在住に係る申立書、養育・監護していない旨の申立書、戸籍謄本、パスポートのコピー等、該当者のみ）",
+            "evidence": "1.「児童手当認定請求書」（申請書）2.申請者の「健康保険証（資格確認書または資格情報のお知らせでも可）のコピー」3.申請者名義の児童手当の「受取口座（通帳、キャッシュカード、口座画面等）のコピー」4.申請者及び配偶者の個人番号カードまたは個人番号が確認できるもの（※1）5.申請者の本人確認書類（※2）6.代理人が申請する場合は、代理人の本人確認書類（※2）及び委任状7.その他世帯の状況により必要な書類",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 96,
+              "note": "連続96文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "一覧ページ自体には必要書類の記載はなく、「児童手当制度のご案内（令和6年10月分以降）」ページに初回申請者向けの必要書類が番号付きで整理され、さらに『その他世帯の状況により必要な書類』として該当者のみの追加書類（多子加算の確認書、監護事実の申立書等）が別セクションで列挙されている。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+        "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1018788.html"
+      ],
+      "page_notes": "一覧ページ自体には必要書類の記載はなく、「児童手当制度のご案内（令和6年10月分以降）」ページに初回申請者向けの必要書類が番号付きで整理され、さらに『その他世帯の状況により必要な書類』として該当者のみの追加書類（多子加算の確認書、監護事実の申立書等）が別セクションで列挙されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "北区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口・郵送に加え、マイナポータル（ぴったりサービス）による電子申請が可能（オンラインで完結できる）",
+        "evidence": "次のいずれかの方法により申請してください。子育て給付係の窓口（北区役所第一庁舎2階6番）もしくは郵送にて必要書類を提出 電子申請（※）",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 62,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html"
+          ],
+          "page_notes": "このページは児童手当の下位ページへの入口一覧のみで、申請方法（窓口かオンラインか）についての本文記述は無い。「児童手当制度のご案内（令和6年10月分以降）」に申請手続きの詳細が載っている可能性が高い。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口・郵送に加え、マイナポータル（ぴったりサービス）による電子申請が可能（オンラインで完結できる）",
+            "evidence": "次のいずれかの方法により申請してください。子育て給付係の窓口（北区役所第一庁舎2階6番）もしくは郵送にて必要書類を提出 電子申請（※）",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 62,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "北区の児童手当トップページ自体には申請方法の記載がなく、リンク先の「児童手当制度のご案内」ページに窓口・郵送・電子申請（マイナポータル）の3手段がまとめて明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html"
+      ],
+      "page_notes": "北区の児童手当トップページ自体には申請方法の記載がなく、リンク先の「児童手当制度のご案内」ページに窓口・郵送・電子申請（マイナポータル）の3手段がまとめて明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "北区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "事由発生日（出生日・転入日等）の翌日から15日以内（15日特例）に申請すれば、事由発生日の属する月分から支給される",
+        "evidence": "事由発生日（出生日・転入日等）が月末に近い場合は、申請日が翌月になっても、事由発生日の翌日から15日以内にご申請いただければ、申請月分から支給します（15日特例）",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 81,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html"
+          ],
+          "page_notes": "このページは児童手当の目次（索引）ページで、本文には制度案内・多子加算・定時の届出・変更手続・法改正の5件のリンクが並ぶのみ。申請期限そのものの記載は無く、「児童手当制度のご案内」ページに詳細がありそうだが未確認。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "事由発生日（出生日・転入日等）の翌日から15日以内（15日特例）に申請すれば、事由発生日の属する月分から支給される",
+            "evidence": "事由発生日（出生日・転入日等）が月末に近い場合は、申請日が翌月になっても、事由発生日の翌日から15日以内にご申請いただければ、申請月分から支給します（15日特例）",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 81,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "トップページの本文には期限の記載はなく、リンク先「児童手当制度のご案内（令和6年10月分以降）」の『注意事項』に15日特例として起算点付きの期限が明記されていた。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html"
+      ],
+      "page_notes": "トップページの本文には期限の記載はなく、リンク先「児童手当制度のご案内（令和6年10月分以降）」の『注意事項』に15日特例として起算点付きの期限が明記されていた。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "北区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+            "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002923.html"
+          ],
+          "page_notes": "このページは「児童手当」の目次（サブページへのリンク集）で、本文には申請手続きの詳細や手数料の記載がない。制度説明は「児童手当制度のご案内」等の子ページに委ねられている。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「児童手当制度のご案内」ページに必要書類・申請方法・手当月額まで詳細に記載があるが、手数料（申請費用）についての言及は本文中に一切ない。無料である旨の明記もない。"
+        }
+      ],
+      "followed_urls": [
+        "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+        "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002923.html"
+      ],
+      "page_notes": "「児童手当制度のご案内」ページに必要書類・申請方法・手当月額まで詳細に記載があるが、手数料（申請費用）についての言及は本文中に一切ない。無料である旨の明記もない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
   ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "児童手当（多子加算を受給している方の提出書類について）",
-      "source": "html",
-      "failure_reason": "リンク先にあり"
+      "found": true,
+      "value": "①児童手当認定請求書（申請書） ②申請者の健康保険証（資格確認書または資格情報のお知らせでも可）のコピー ③申請者名義の受取口座（通帳・キャッシュカード・口座画面等）のコピー ④申請者及び配偶者の個人番号カードまたは個人番号が確認できるもの ⑤申請者の本人確認書類 ⑥代理人が申請する場合は代理人の本人確認書類及び委任状 ⑦その他世帯の状況により必要な書類（多子世帯で大学生年代の子がいる場合の確認書、別居児童の監護事実の申立書、海外在住に係る申立書、養育・監護していない旨の申立書、戸籍謄本、パスポートのコピー等、該当者のみ）",
+      "evidence": "1.「児童手当認定請求書」（申請書）2.申請者の「健康保険証（資格確認書または資格情報のお知らせでも可）のコピー」3.申請者名義の児童手当の「受取口座（通帳、キャッシュカード、口座画面等）のコピー」4.申請者及び配偶者の個人番号カードまたは個人番号が確認できるもの（※1）5.申請者の本人確認書類（※2）6.代理人が申請する場合は、代理人の本人確認書類（※2）及び委任状7.その他世帯の状況により必要な書類",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 96,
+        "note": "連続96文字だけ一致。引用全体は確認できない"
+      }
     },
     "窓口オンライン可否": {
-      "found": false,
-      "value": "",
-      "evidence": "児童手当制度のご案内（令和6年10月分以降）",
-      "source": "html",
-      "failure_reason": "リンク先にあり"
+      "found": true,
+      "value": "窓口・郵送に加え、マイナポータル（ぴったりサービス）による電子申請が可能（オンラインで完結できる）",
+      "evidence": "次のいずれかの方法により申請してください。子育て給付係の窓口（北区役所第一庁舎2階6番）もしくは郵送にて必要書類を提出 電子申請（※）",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 62,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
     },
     "期限": {
-      "found": false,
-      "value": "",
-      "evidence": "児童手当（定時の届出）",
-      "source": "html",
-      "failure_reason": "リンク先にあり"
+      "found": true,
+      "value": "事由発生日（出生日・転入日等）の翌日から15日以内（15日特例）に申請すれば、事由発生日の属する月分から支給される",
+      "evidence": "事由発生日（出生日・転入日等）が月末に近い場合は、申請日が翌月になっても、事由発生日の翌日から15日以内にご申請いただければ、申請月分から支給します（15日特例）",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 81,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "このページは本文情報を持たず、5件のサブページへのリンク一覧（見出しのみ）だけで構成されている。ただし抽出されたリンク一覧には言語選択・ナビゲーションのURLしか含まれず、肝心のサブページ（制度案内・提出書類・定時の届出・変更手続）へのURLが取得できていないため、follow_urlsを指定できなかった。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "一覧ページ自体には必要書類の記載はなく、「児童手当制度のご案内（令和6年10月分以降）」ページに初回申請者向けの必要書類が番号付きで整理され、さらに『その他世帯の状況により必要な書類』として該当者のみの追加書類（多子加算の確認書、監護事実の申立書等）が別セクションで列挙されている。\n北区の児童手当トップページ自体には申請方法の記載がなく、リンク先の「児童手当制度のご案内」ページに窓口・郵送・電子申請（マイナポータル）の3手段がまとめて明記されていた。\nトップページの本文には期限の記載はなく、リンク先「児童手当制度のご案内（令和6年10月分以降）」の『注意事項』に15日特例として起算点付きの期限が明記されていた。\n「児童手当制度のご案内」ページに必要書類・申請方法・手当月額まで詳細に記載があるが、手数料（申請費用）についての言及は本文中に一切ない。無料である旨の明記もない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/index.html",
+      "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1019297.html",
+      "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1018788.html",
+      "https://www.city.kita.lg.jp/children-edu/childcare/1002909/1002919/1002923.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 2,
+    "partial": 1,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }

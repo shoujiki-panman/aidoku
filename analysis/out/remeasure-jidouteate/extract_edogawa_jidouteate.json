@@ -1,0 +1,57 @@
+{
+  "municipality": "江戸川区",
+  "municipality_id": "edogawa",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html",
+    "hops": 3,
+    "link_text": "児童手当",
+    "has_jsonld": false,
+    "text_len": 8022,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [],
+  "online_clarity": "曖昧",
+  "online_clarity_evidence": "電子申請の場合、別途、郵送での手続きが必要な場合があります。",
+  "online_clarity_pages": [
+    "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "①児童手当認定（額改定）請求書 ②身元確認書類（マイナンバーカード等の区分A、または区分Bを2種類） ③マイナンバー（個人番号）確認書類 ④申請者名義の普通預金通帳またはキャッシュカード。別居監護や兄姉等がいる場合は追加で「養育事実の同意書」「監護相当・生計費の負担についての確認書」が必要",
+      "evidence": "4-1.児童手当認定（額改定）請求書 4-2.身元確認書類 4-3.マイナンバー（個人番号）確認書類 4-4.申請者名義の普通預金通帳またはキャッシュカード",
+      "source": "html",
+      "failure_reason": null
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "「電子」（マイナポータル、ログイン・電子署名必須）・「郵送」・「窓口」のいずれかで申請可能。窓口は本庁舎東棟2階4番児童家庭課窓口でのみ受付（区内の各事務所では受付していない）",
+      "evidence": "申請は生計中心者（児童の父または母で所得が高い方）が行います。「電子」・「郵送」・「窓口」のいずれかの方法により申請してください。",
+      "source": "html",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": true,
+      "value": "通常の申請自体に一律の期限はないが、申請日の翌月からしか支給されず遡っての支給はできないため早めの申請が必要。出生・転入の場合は、その翌日から15日以内に申請すれば出生等のあった月の申請とみなされる（15日特例）",
+      "evidence": "その日の翌日から数えて15日以内（出生は出生日の翌日から15日以内、転入は前住所地の転出予定日の翌日から15日以内）に申請した場合には、出生等の月に申請があったものとみなされます",
+      "source": "html",
+      "failure_reason": null
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "手当の制度説明・申請方法・必要書類は本文に詳細に記載されているが、「手数料」という語自体がページ内に一切登場しない。期限は『通常は明確な期限なし（ただし遅れると遡及支給なし）』と『出生・転入時の15日特例』という2種類の異なる規定が併存しており、単純な一つの答えにはならない構成。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

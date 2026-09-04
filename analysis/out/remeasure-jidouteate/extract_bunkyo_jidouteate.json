@@ -1,0 +1,60 @@
+{
+  "municipality": "文京区",
+  "municipality_id": "bunkyo",
+  "procedure": "児童手当の申請",
+  "procedure_id": "jidouteate",
+  "page": {
+    "url": "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+    "hops": 2,
+    "link_text": "こどもの手当・助成など",
+    "has_jsonld": false,
+    "text_len": 1236,
+    "truncated": false,
+    "n_links": 40
+  },
+  "reached": true,
+  "model": "claude-sonnet-5",
+  "followed_urls": [
+    "https://www.city.bunkyo.lg.jp/b022/p001469/index.html"
+  ],
+  "online_clarity": "明記",
+  "online_clarity_evidence": "電子申請の場合※マイナンバーカードをお持ちの方のみ可。こちらの外部リンク（外部リンク）より、ご申請ください。",
+  "online_clarity_pages": [
+    "https://www.city.bunkyo.lg.jp/kosodatekyouiku/kosodate/teate/index.html",
+    "https://www.city.bunkyo.lg.jp/b022/p001469/index.html"
+  ],
+  "items": {
+    "必要書類": {
+      "found": false,
+      "value": "",
+      "evidence": "下記の様式をダウンロードし、ご記入（ご入力）のうえ「児童手当認定請求書」をこども若者支援課児童給付係宛てにご郵送ください。",
+      "source": "linked_page",
+      "failure_reason": "曖昧"
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "郵送（こども若者支援課児童給付係宛て）で申請するか、マイナンバーカードがあれば外部リンクから電子申請が可能。区役所窓口への来庁申請については本文に記載なし。",
+      "evidence": "電子申請の場合※マイナンバーカードをお持ちの方のみ可。こちらの外部リンク（外部リンク）より、ご申請ください。",
+      "source": "linked_page",
+      "failure_reason": null
+    },
+    "期限": {
+      "found": false,
+      "value": "",
+      "evidence": "住民税の決定（更正）通知書を受け取った日の翌日から15日以内に児童手当・特例給付認定請求書（以下、認定請求書）をご提出ください。",
+      "source": "linked_page",
+      "failure_reason": "曖昧"
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし"
+    }
+  },
+  "page_notes": "トップの「こどもの手当・助成など」一覧ページ自体には本文情報がなく、リンク一覧のみだった。実際の内容は1階層下の「児童手当」ページにあったが、そこも令和6年度制度改正に伴う特定ケース（所得制限撤廃前の未受給者、大学生年代の子がいる世帯など）の説明が中心で、通常の新規申請（出生・転入時など）に必要な持ち物一覧や標準的な届出期限、手数料の有無を一箇所にまとめた記載は見当たらなかった。",
+  "measurement": {
+    "recording_status": "legacy_unknown"
+  }
+}

@@ -10,48 +10,327 @@
     "has_jsonld": false,
     "text_len": 9345,
     "truncated": false,
-    "n_links": 40
+    "n_links": 40,
+    "table_chars": 1628
   },
   "reached": true,
+  "failure_type": null,
   "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-28T13:52:17+00:00",
+    "discovery_run_at": "2026-08-28T13:16:52+00:00"
+  },
   "followed_urls": [],
   "online_clarity": "明記",
   "online_clarity_evidence": "マイナポータルによる電子申請（外部サイトへリンク）※ただし、電子申請にはマイナンバーカード及びマイナンバーカードに対応するICカードリーダまたはマイナンバーカード対応のスマートフォンやタブレットが必要になります。",
   "online_clarity_pages": [
     "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html"
   ],
+  "test_cases": [
+    {
+      "service": "jidouteate",
+      "fact_type": "documents",
+      "question": "港区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "児童手当認定請求書、請求者の本人確認書類、請求者及び配偶者の個人番号確認書類、請求者名義の普通預金口座のわかるもの（通帳やキャッシュカードの写し）。該当者のみ：国家公務員共済等加入者は健康保険の資格情報がわかるもの、該当年の1月1日時点で日本国内に住民登録がなかった場合は旅券の写し。さらに、支給対象児童と別居している場合は監護事実の同意書とマイナンバーが分かるもの、大学生年代の子を含めて児童3人以上養育している場合は監護相当・生計費の負担についての確認書、離婚協議中で別居している場合は受給資格に係る申立書と離婚協議中を確認できる書類、配偶者がいない場合は認定請求書に係る確認事項についての書類が必要。",
+        "evidence": "児童手当認定請求書（PDF：321KB）請求者の本人確認書類（窓口申請の場合は原本提示、郵送の場合は写しを提出）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 33,
+          "note": "連続33文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "児童手当認定請求書、請求者の本人確認書類、請求者及び配偶者の個人番号確認書類、請求者名義の普通預金口座のわかるもの（通帳やキャッシュカードの写し）。該当者のみ：国家公務員共済等加入者は健康保険の資格情報がわかるもの、該当年の1月1日時点で日本国内に住民登録がなかった場合は旅券の写し。さらに、支給対象児童と別居している場合は監護事実の同意書とマイナンバーが分かるもの、大学生年代の子を含めて児童3人以上養育している場合は監護相当・生計費の負担についての確認書、離婚協議中で別居している場合は受給資格に係る申立書と離婚協議中を確認できる書類、配偶者がいない場合は認定請求書に係る確認事項についての書類が必要。",
+            "evidence": "児童手当認定請求書（PDF：321KB）請求者の本人確認書類（窓口申請の場合は原本提示、郵送の場合は写しを提出）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 33,
+              "note": "連続33文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「必要書類」の見出し配下に基本書類が箇条書きで並び、続けて「以下に該当する場合は追加で書類が必要となります」として別居・多子・離婚協議中・配偶者なしの4パターンが個別に列挙されている構成。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「必要書類」の見出し配下に基本書類が箇条書きで並び、続けて「以下に該当する場合は追加で書類が必要となります」として別居・多子・離婚協議中・配偶者なしの4パターンが個別に列挙されている構成。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "channel",
+      "question": "港区の「児童手当の申請」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "オンライン(マイナポータル電子申請)・郵送・窓口のいずれも可",
+        "evidence": "以下の1～3のいずれかの方法で申請してください。港区役所子ども若者支援課子ども給付係に郵送/各総合支所区民課保健福祉係の窓口へ持参/マイナポータルによる電子申請（外部サイトへリンク）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "partial",
+          "run": 44,
+          "note": "連続44文字だけ一致。引用全体は確認できない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "オンライン(マイナポータル電子申請)・郵送・窓口のいずれも可",
+            "evidence": "以下の1～3のいずれかの方法で申請してください。港区役所子ども若者支援課子ども給付係に郵送/各総合支所区民課保健福祉係の窓口へ持参/マイナポータルによる電子申請（外部サイトへリンク）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "partial",
+              "run": 44,
+              "note": "連続44文字だけ一致。引用全体は確認できない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「申請方法」見出しの本文に、郵送・窓口持参・マイナポータル電子申請の3方法が番号付きで列挙されている。マイナンバーカード等が必要な条件付きだがオンライン完結の選択肢がある。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「申請方法」見出しの本文に、郵送・窓口持参・マイナポータル電子申請の3方法が番号付きで列挙されている。マイナンバーカード等が必要な条件付きだがオンライン完結の選択肢がある。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 0,
+        "partial": 1,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "deadline",
+      "question": "港区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "出生日・転入日（前住地の転出予定日）の翌日から15日以内",
+        "evidence": "出生、転入日（前住地の転出予定日）の翌日から15日以内に申請してください。（申請が遅れると遅れた分の手当が受給できないためご注意ください。）",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 70,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "出生日・転入日（前住地の転出予定日）の翌日から15日以内",
+            "evidence": "出生、転入日（前住地の転出予定日）の翌日から15日以内に申請してください。（申請が遅れると遅れた分の手当が受給できないためご注意ください。）",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 70,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "「申請の際の注意事項」の見出し配下に起算点つきの期限（出生・転入日の翌日から15日以内、15日目が閉庁日の場合は翌開庁日まで）が本文に明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "「申請の際の注意事項」の見出し配下に起算点つきの期限（出生・転入日の翌日から15日以内、15日目が閉庁日の場合は翌開庁日まで）が本文に明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "jidouteate",
+      "fact_type": "fee",
+      "question": "港区の「児童手当の申請」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "申請方法・必要書類・支給額・所得制限は詳細に書かれているが、手数料や費用についての記述は本文中に一切なく、関連しそうなリンクも一覧に見当たらない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "申請方法・必要書類・支給額・所得制限は詳細に書かれているが、手数料や費用についての記述は本文中に一切なく、関連しそうなリンクも一覧に見当たらない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
   "items": {
     "必要書類": {
       "found": true,
-      "value": "児童手当認定請求書に加え、請求者の本人確認書類、請求者及び配偶者の個人番号確認書類、請求者名義の預金口座がわかるもの、（該当者のみ）健康保険の資格情報がわかるもの・旅券の写し等。別居児童や大学生年代の子がいる場合等は追加書類が必要。",
-      "evidence": "請求者の本人確認書類（窓口申請の場合は原本提示、郵送の場合は写しを提出）",
+      "value": "児童手当認定請求書、請求者の本人確認書類、請求者及び配偶者の個人番号確認書類、請求者名義の普通預金口座のわかるもの（通帳やキャッシュカードの写し）。該当者のみ：国家公務員共済等加入者は健康保険の資格情報がわかるもの、該当年の1月1日時点で日本国内に住民登録がなかった場合は旅券の写し。さらに、支給対象児童と別居している場合は監護事実の同意書とマイナンバーが分かるもの、大学生年代の子を含めて児童3人以上養育している場合は監護相当・生計費の負担についての確認書、離婚協議中で別居している場合は受給資格に係る申立書と離婚協議中を確認できる書類、配偶者がいない場合は認定請求書に係る確認事項についての書類が必要。",
+      "evidence": "児童手当認定請求書（PDF：321KB）請求者の本人確認書類（窓口申請の場合は原本提示、郵送の場合は写しを提出）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 33,
+        "note": "連続33文字だけ一致。引用全体は確認できない"
+      }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "港区役所子ども若者支援課子ども給付係への郵送、各総合支所区民課保健福祉係の窓口への持参、またはマイナポータルによる電子申請の3方法。電子申請にはマイナンバーカード等が必要。",
-      "evidence": "『必要書類』を用意し、以下の1～3のいずれかの方法で申請してください。",
+      "value": "オンライン(マイナポータル電子申請)・郵送・窓口のいずれも可",
+      "evidence": "以下の1～3のいずれかの方法で申請してください。港区役所子ども若者支援課子ども給付係に郵送/各総合支所区民課保健福祉係の窓口へ持参/マイナポータルによる電子申請（外部サイトへリンク）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "partial",
+        "run": 44,
+        "note": "連続44文字だけ一致。引用全体は確認できない"
+      }
     },
     "期限": {
       "found": true,
-      "value": "出生・転入日（前住地の転出予定日）の翌日から15日以内（15日目が閉庁日の場合は翌開庁日まで）。郵送の場合は港区役所への到着日が申請日となる。",
-      "evidence": "出生、転入日（前住地の転出予定日）の翌日から15日以内に申請してください。",
+      "value": "出生日・転入日（前住地の転出予定日）の翌日から15日以内",
+      "evidence": "出生、転入日（前住地の転出予定日）の翌日から15日以内に申請してください。（申請が遅れると遅れた分の手当が受給できないためご注意ください。）",
       "source": "html",
-      "failure_reason": null
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 70,
+        "note": ""
+      }
     },
     "手数料": {
       "found": false,
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし"
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
     }
   },
-  "page_notes": "アンカーリンクで区切られた単一の長大ページに、申請方法・必要書類・支給額・制度改正の経緯まで全て詰め込まれている。手数料については申請・届出のどの節にも言及がなく、児童手当が無料であることは記載自体からは確認できない。",
-  "measurement": {
-    "recording_status": "legacy_unknown"
+  "page_notes": "「必要書類」の見出し配下に基本書類が箇条書きで並び、続けて「以下に該当する場合は追加で書類が必要となります」として別居・多子・離婚協議中・配偶者なしの4パターンが個別に列挙されている構成。\n「申請方法」見出しの本文に、郵送・窓口持参・マイナポータル電子申請の3方法が番号付きで列挙されている。マイナンバーカード等が必要な条件付きだがオンライン完結の選択肢がある。\n「申請の際の注意事項」の見出し配下に起算点つきの期限（出生・転入日の翌日から15日以内、15日目が閉庁日の場合は翌開庁日まで）が本文に明記されている。\n申請方法・必要書類・支給額・所得制限は詳細に書かれているが、手数料や費用についての記述は本文中に一切なく、関連しそうなリンクも一覧に見当たらない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/jidoteate.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 1,
+    "partial": 2,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
   }
 }
