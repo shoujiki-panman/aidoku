@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.meguro.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
@@ -14,7 +35,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1327,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てに関する手当・助成 | 目黒区",
+      "meta": {
+        "og:title": "子育てに関する手当・助成",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てに関する手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
@@ -25,7 +73,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1609,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・児童相談 | 目黒区",
+      "meta": {
+        "og:title": "子育て・児童相談",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・児童相談"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html",
@@ -36,7 +107,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1161,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どものための諸手当 | 目黒区",
+      "meta": {
+        "og:title": "子どものための諸手当",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どものための諸手当"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/sogosodan.html",
@@ -47,7 +141,80 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2523,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て総合相談窓口（利用者支援事業）（こども家庭センター利用者支援係） | 目黒区",
+      "meta": {
+        "description": "子ども（0歳から18歳未満）と子育てに関する悩みや困りごとについて、一緒に考え、必要に応じて情報の提供をしたり、適切なサービスや支援機関を紹介しています。",
+        "og:title": "子育て総合相談窓口（利用者支援事業）（こども家庭センター利用者支援係）",
+        "og:type": "article",
+        "og:description": "子ども（0歳から18歳未満）と子育てに関する悩みや困りごとについて、一緒に考え、必要に応じて情報の提供をしたり、適切なサービスや支援機関を紹介しています。",
+        "og:url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/sogosodan.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て総合相談窓口（利用者支援事業）（こども家庭センター利用者支援係）"
+        },
+        {
+          "level": 2,
+          "text": "受付時間"
+        },
+        {
+          "level": 2,
+          "text": "相談方法"
+        },
+        {
+          "level": 3,
+          "text": "電話相談"
+        },
+        {
+          "level": 3,
+          "text": "ファックス相談"
+        },
+        {
+          "level": 3,
+          "text": "Eメール相談"
+        },
+        {
+          "level": 3,
+          "text": "その他の相談方法"
+        },
+        {
+          "level": 4,
+          "text": "来所相談"
+        },
+        {
+          "level": 4,
+          "text": "オンライン相談"
+        },
+        {
+          "level": 4,
+          "text": "訪問相談"
+        },
+        {
+          "level": 2,
+          "text": "子育て支援機関やサービス等の紹介"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
@@ -58,7 +225,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
@@ -69,7 +243,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/shakaisankaku/kodomojoreicalendar_r9.html",
@@ -80,7 +261,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1973,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「令和9年版目黒区子ども条例啓発カレンダー」に載せる絵を募集します | 目黒区",
+      "meta": {
+        "og:title": "「令和9年版目黒区子ども条例啓発カレンダー」に載せる絵を募集します",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/shakaisankaku/kodomojoreicalendar_r9.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「令和9年版目黒区子ども条例啓発カレンダー」に載せる絵を募集します"
+        },
+        {
+          "level": 2,
+          "text": "テーマ"
+        },
+        {
+          "level": 2,
+          "text": "絵のサイズ・画材"
+        },
+        {
+          "level": 2,
+          "text": "募集期間"
+        },
+        {
+          "level": 2,
+          "text": "応募資格"
+        },
+        {
+          "level": 2,
+          "text": "応募方法"
+        },
+        {
+          "level": 3,
+          "text": "応募先"
+        },
+        {
+          "level": 2,
+          "text": "注意とお願い"
+        },
+        {
+          "level": 2,
+          "text": "採用作品"
+        },
+        {
+          "level": 2,
+          "text": "2026年版カレンダーの応募作品（昨年度の応募作品）"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/shakaisankaku/kodomonitor/index.html",
@@ -91,7 +343,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 919,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "MEGUROこどモニター | 目黒区",
+      "meta": {
+        "description": "小学生から高校生までの子どもたちの声を、まちづくりに生かすための取り組みです。参加した「こどモニター」は、アンケートを通じて区の取り組みに意見やアイデアを伝えます。集まった声は、子どもがいきいきと過ごせる未来のめぐろづくりに活用します。",
+        "og:title": "MEGUROこどモニター",
+        "og:type": "article",
+        "og:description": "小学生から高校生までの子どもたちの声を、まちづくりに生かすための取り組みです。参加した「こどモニター」は、アンケートを通じて区の取り組みに意見やアイデアを伝えます。集まった声は、子どもがいきいきと過ごせる未来のめぐろづくりに活用します。",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/shakaisankaku/kodomonitor/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "MEGUROこどモニター"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
@@ -102,7 +379,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
@@ -113,7 +397,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/kodomonokokoro.html",
@@ -124,7 +415,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1250,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの心の問題 | 目黒区",
+      "meta": {
+        "og:title": "子どもの心の問題",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/kodomonokokoro.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの心の問題"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/heartnet/index.html",
@@ -135,7 +457,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1758,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども相談室「めぐろ はあと ねっと」 | 目黒区",
+      "meta": {
+        "og:title": "子ども相談室「めぐろ はあと ねっと」",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/heartnet/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども相談室「めぐろ はあと ねっと」"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/shakaisankaku/kodomojoreicalendar_r9.html",
@@ -146,7 +491,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/index.html",
@@ -157,7 +509,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1725,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育 | 目黒区",
+      "meta": {
+        "og:title": "子育て・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "ピックアップ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
@@ -168,7 +547,98 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2193,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "学童保育クラブの利用 （年度途中から利用） | 目黒区",
+      "meta": {
+        "og:title": "学童保育クラブの利用 （年度途中から利用）",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "学童保育クラブの利用 （年度途中から利用）"
+        },
+        {
+          "level": 2,
+          "text": "利用案内"
+        },
+        {
+          "level": 3,
+          "text": "保育期間"
+        },
+        {
+          "level": 2,
+          "text": "申請に必要な書類"
+        },
+        {
+          "level": 3,
+          "text": "必要書類一覧"
+        },
+        {
+          "level": 4,
+          "text": "必須"
+        },
+        {
+          "level": 4,
+          "text": "​​​​​​​利用要件ごとに必要"
+        },
+        {
+          "level": 4,
+          "text": "該当者のみ必要"
+        },
+        {
+          "level": 3,
+          "text": "入手方法"
+        },
+        {
+          "level": 3,
+          "text": "注意"
+        },
+        {
+          "level": 2,
+          "text": "提出方法"
+        },
+        {
+          "level": 2,
+          "text": "保育料納付の手続"
+        },
+        {
+          "level": 3,
+          "text": "ご用意いただくもの"
+        },
+        {
+          "level": 3,
+          "text": "振替日"
+        },
+        {
+          "level": 3,
+          "text": "オンライン口座振替サービス対象外の方"
+        },
+        {
+          "level": 2,
+          "text": "関連するページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/honettohiroba.html",
@@ -179,7 +649,96 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2698,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "「ほ・ねっと ひろば」（こども家庭センター利用者支援係） | 目黒区",
+      "meta": {
+        "description": "「ほ・ねっと　ひろば」には、子育てに困ったとき、不安や悩みがあるときにご相談いただける子育て総合相談窓口と子育てひろばがあります。子育て家庭に寄り添いながら、地域の子育て情報の提供や子育て支援の紹介などを行っています。気軽にお立ち寄りください。",
+        "og:title": "「ほ・ねっと　ひろば」（こども家庭センター利用者支援係）",
+        "og:type": "article",
+        "og:description": "「ほ・ねっと　ひろば」には、子育てに困ったとき、不安や悩みがあるときにご相談いただける子育て総合相談窓口と子育てひろばがあります。子育て家庭に寄り添いながら、地域の子育て情報の提供や子育て支援の紹介などを行っています。気軽にお立ち寄りください。",
+        "og:url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/honettohiroba.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "「ほ・ねっと ひろば」（こども家庭センター利用者支援係）"
+        },
+        {
+          "level": 2,
+          "text": "ほ・ねっとひろばからのお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "総合庁舎別館エレベーター停止のお知らせ"
+        },
+        {
+          "level": 4,
+          "text": "エレベーター停止日"
+        },
+        {
+          "level": 2,
+          "text": "ほ・ねっとひろば"
+        },
+        {
+          "level": 3,
+          "text": "開設日"
+        },
+        {
+          "level": 4,
+          "text": "気象庁の「気象等に関する特別警報」発表時の対応について"
+        },
+        {
+          "level": 2,
+          "text": "ひろば内紹介"
+        },
+        {
+          "level": 3,
+          "text": "情報コーナー"
+        },
+        {
+          "level": 3,
+          "text": "とっとタイム"
+        },
+        {
+          "level": 3,
+          "text": "マザーズハローワーク"
+        },
+        {
+          "level": 4,
+          "text": "令和8年度 開催日"
+        },
+        {
+          "level": 3,
+          "text": "対象者"
+        },
+        {
+          "level": 3,
+          "text": "場所"
+        },
+        {
+          "level": 2,
+          "text": "問合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/shougaigakushuu/event/08chuuou_kosodate.html",
@@ -190,7 +749,98 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2237,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "社会教育講座「子育てはチームプレー！パパの力が未来を変える」 | 目黒区",
+      "meta": {
+        "og:title": "社会教育講座「子育てはチームプレー！パパの力が未来を変える」",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/shougaigakushuu/event/08chuuou_kosodate.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "社会教育講座「子育てはチームプレー！パパの力が未来を変える」"
+        },
+        {
+          "level": 2,
+          "text": "開催日時（全3回）"
+        },
+        {
+          "level": 2,
+          "text": "会場"
+        },
+        {
+          "level": 2,
+          "text": "講師"
+        },
+        {
+          "level": 2,
+          "text": "学習プログラム"
+        },
+        {
+          "level": 3,
+          "text": "第1回（池田講師）"
+        },
+        {
+          "level": 3,
+          "text": "第2回（高祖講師）"
+        },
+        {
+          "level": 3,
+          "text": "第3回（池田講師）"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "定員"
+        },
+        {
+          "level": 2,
+          "text": "一時保育"
+        },
+        {
+          "level": 2,
+          "text": "主催"
+        },
+        {
+          "level": 2,
+          "text": "申し込み方法"
+        },
+        {
+          "level": 3,
+          "text": "オンライン申請での申し込み"
+        },
+        {
+          "level": 3,
+          "text": "窓口・電話・はがき・ファクスでの申し込み"
+        },
+        {
+          "level": 4,
+          "text": "申し込みに必要な項目"
+        },
+        {
+          "level": 3,
+          "text": "締め切り"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/kosodatenetsukunavi.html",
@@ -201,7 +851,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2377,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "めぐろ子育てホッ！とナビ | 目黒区",
+      "meta": {
+        "og:title": "めぐろ子育てホッ！とナビ",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/kosodatenetsukunavi.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "めぐろ子育てホッ！とナビ"
+        },
+        {
+          "level": 2,
+          "text": "めぐろ子育てホッ！とナビ"
+        },
+        {
+          "level": 3,
+          "text": "利用方法"
+        },
+        {
+          "level": 3,
+          "text": "目黒区行政サービス"
+        },
+        {
+          "level": 3,
+          "text": "子育て支援施設の検索"
+        },
+        {
+          "level": 3,
+          "text": "子育てふれあいひろば・児童館・ランランひろばからのお知らせ"
+        },
+        {
+          "level": 3,
+          "text": "区民発！おすすめ情報"
+        },
+        {
+          "level": 2,
+          "text": "オンライン相談サービス"
+        },
+        {
+          "level": 3,
+          "text": "相談窓口一覧"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/index.html",
@@ -212,7 +925,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 896,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て | 目黒区",
+      "meta": {
+        "og:title": "子育て",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/index.html",
@@ -223,7 +959,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1471,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援 | 目黒区",
+      "meta": {
+        "og:title": "子育て支援",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/ibashozukuri/gakudou/apply/shinseisyorui/index.html",
@@ -234,7 +993,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1212,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "利用要件ごとに必要な書類（学童保育クラブ） | 目黒区",
+      "meta": {
+        "og:title": "利用要件ごとに必要な書類（学童保育クラブ）",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/ibashozukuri/gakudou/apply/shinseisyorui/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "利用要件ごとに必要な書類（学童保育クラブ）"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kusei/onlineservice/download/kosodate/gakudou/index.html",
@@ -245,7 +1027,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1186,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "学童保育クラブに関する申請書 | 目黒区",
+      "meta": {
+        "og:title": "学童保育クラブに関する申請書",
+        "og:type": "article",
+        "og:url": "https://www.city.meguro.tokyo.jp/kusei/onlineservice/download/kosodate/gakudou/index.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "学童保育クラブに関する申請書"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/hottobook.html",
@@ -256,7 +1061,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1679,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "めぐろ子育てホッ！とブック（令和8年度版）を配布しています | 目黒区",
+      "meta": {
+        "description": "出産前のかたから小学校3年生くらいまでのお子さんを育てているかた向けに、子育てに関する情報を集約して掲載しています。",
+        "og:title": "めぐろ子育てホッ！とブック（令和8年度版）を配布しています",
+        "og:type": "article",
+        "og:description": "出産前のかたから小学校3年生くらいまでのお子さんを育てているかた向けに、子育てに関する情報を集約して掲載しています。",
+        "og:url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/hottobook.html",
+        "og:image": "https://www.city.meguro.tokyo.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "目黒区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "めぐろ子育てホッ！とブック（令和8年度版）を配布しています"
+        },
+        {
+          "level": 2,
+          "text": "めぐろ子育てホッ！とブック"
+        },
+        {
+          "level": 2,
+          "text": "配布場所"
+        },
+        {
+          "level": 2,
+          "text": "「めぐろ子育てホッ！とブック」電子版（令和8年4月下旬更新予定）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        },
+        {
+          "level": 2,
+          "text": "一緒に読まれているページ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
@@ -267,7 +1117,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
@@ -278,7 +1135,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1151,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/honettohiroba.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/shougaigakushuu/event/08chuuou_kosodate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/kosodatenetsukunavi.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/sogosodan.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/shakaisankaku/kodomojoreicalendar_r9.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/shakaisankaku/kodomonitor/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/ibashozukuri/gakudou/apply/shinseisyorui/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kusei/onlineservice/download/kosodate/gakudou/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/houkago/kosodatekyouiku/kosodate/gakudoushinnseiannnai.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/index.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/kodomonokokoro.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/heartnet/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/hottobook.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/kosodateshien/kosodatekyouiku/shakaisankaku/kodomojoreicalendar_r9.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     }
   ]

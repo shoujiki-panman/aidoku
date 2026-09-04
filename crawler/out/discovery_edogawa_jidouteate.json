@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.edogawa.tokyo.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html",
@@ -14,7 +35,178 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 8022,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当 江戸川区ホームページ",
+      "meta": {
+        "og:title": "児童手当",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当"
+        },
+        {
+          "level": 2,
+          "text": "窓口混雑予想と手続き時間"
+        },
+        {
+          "level": 3,
+          "text": "比較的空いている時間帯、曜日等"
+        },
+        {
+          "level": 3,
+          "text": "混雑が予想される時間帯、曜日等"
+        },
+        {
+          "level": 2,
+          "text": "1.支給対象者"
+        },
+        {
+          "level": 3,
+          "text": "1-1.生計中心者が児童と別居している場合"
+        },
+        {
+          "level": 3,
+          "text": "1-2.生計中心者が外国人の方の場合"
+        },
+        {
+          "level": 3,
+          "text": "1-3.生計中心者が公務員の方の場合（公務員共済組合に加入した場合を含む。）"
+        },
+        {
+          "level": 3,
+          "text": "1-4.児童の住民票が国内にない場合"
+        },
+        {
+          "level": 2,
+          "text": "2.支給額・支給月・支給方法"
+        },
+        {
+          "level": 3,
+          "text": "2-1.支給額（1人あたりの月額）"
+        },
+        {
+          "level": 3,
+          "text": "2-2.支給月"
+        },
+        {
+          "level": 3,
+          "text": "2-3.支給方法"
+        },
+        {
+          "level": 2,
+          "text": "3.申請方法"
+        },
+        {
+          "level": 3,
+          "text": "3-1.申請にあたっての注意事項"
+        },
+        {
+          "level": 3,
+          "text": "3-2.申請者の代理人が窓口で申請する場合（配偶者の場合など）"
+        },
+        {
+          "level": 4,
+          "text": "以下のものをご用意いただき、窓口で申請してください。"
+        },
+        {
+          "level": 2,
+          "text": "4.必要書類"
+        },
+        {
+          "level": 3,
+          "text": "4-1.児童手当認定（額改定）請求書"
+        },
+        {
+          "level": 3,
+          "text": "4-2.身元確認書類"
+        },
+        {
+          "level": 4,
+          "text": "区分A（1種類お持ち下さい）"
+        },
+        {
+          "level": 4,
+          "text": "区分B（2種類お持ち下さい）"
+        },
+        {
+          "level": 3,
+          "text": "4-3.マイナンバー（個人番号）確認書類"
+        },
+        {
+          "level": 3,
+          "text": "4-4.申請者名義の普通預金通帳またはキャッシュカード"
+        },
+        {
+          "level": 3,
+          "text": "以下の書類は場合により必要です"
+        },
+        {
+          "level": 3,
+          "text": "4-5.養育事実の同意書単身赴任などで児童と別居している方"
+        },
+        {
+          "level": 3,
+          "text": "4-6.児童の兄姉等（18歳年度末経過後から22歳年度末までの子）がいる方"
+        },
+        {
+          "level": 3,
+          "text": "4-7.その他"
+        },
+        {
+          "level": 2,
+          "text": "5.申請にあたっての注意事項"
+        },
+        {
+          "level": 2,
+          "text": "6.こんな時にはお手続きが必要です"
+        },
+        {
+          "level": 3,
+          "text": "6-1.江戸川区外へ転出する場合"
+        },
+        {
+          "level": 3,
+          "text": "6-2.振込口座の変更をする場合"
+        },
+        {
+          "level": 3,
+          "text": "6-3.第2子以降の児童が生まれた場合"
+        },
+        {
+          "level": 3,
+          "text": "6-4.その他、手続が必要となる場合"
+        },
+        {
+          "level": 3,
+          "text": "6-5.不足書類を提出する場合"
+        },
+        {
+          "level": 2,
+          "text": "7.児童手当の更新手続き（現況届）について"
+        },
+        {
+          "level": 2,
+          "text": "8.児童手当についてのよくある質問"
+        },
+        {
+          "level": 2,
+          "text": "9.児童手当のご案内"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate/teateshien/index.html",
@@ -25,7 +217,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1221,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当・子ども医療費助成・ひとり親への支援 江戸川区ホームページ",
+      "meta": {
+        "og:title": "児童手当・子ども医療費助成・ひとり親への支援",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate/teateshien/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当・子ども医療費助成・ひとり親への支援"
+        },
+        {
+          "level": 2,
+          "text": "こんなページも見られています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/genkyo.html",
@@ -36,7 +251,110 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4383,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当の更新手続き（現況届） 江戸川区ホームページ",
+      "meta": {
+        "og:title": "児童手当の更新手続き（現況届）",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/genkyo.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当の更新手続き（現況届）"
+        },
+        {
+          "level": 2,
+          "text": "1.現況届が届いた方へ"
+        },
+        {
+          "level": 3,
+          "text": "1-1.提出が必要な対象者"
+        },
+        {
+          "level": 3,
+          "text": "1-2.提出方法"
+        },
+        {
+          "level": 3,
+          "text": "1-3.受付期間"
+        },
+        {
+          "level": 2,
+          "text": "2.現況届の書き方"
+        },
+        {
+          "level": 2,
+          "text": "3.添付書類の書き方"
+        },
+        {
+          "level": 3,
+          "text": "3-1.養育事実の同意書"
+        },
+        {
+          "level": 3,
+          "text": "3-2.監護相当・生計費の負担についての確認書"
+        },
+        {
+          "level": 3,
+          "text": "3-3.受給資格に係る申立書"
+        },
+        {
+          "level": 3,
+          "text": "3-4.このページに掲載されている書類以外の書類名が記載されている方"
+        },
+        {
+          "level": 2,
+          "text": "4.支給予定日"
+        },
+        {
+          "level": 2,
+          "text": "5.支給額"
+        },
+        {
+          "level": 2,
+          "text": "6.よくある質問"
+        },
+        {
+          "level": 3,
+          "text": "Q1.現況届が届きました。提出は必要ですか。"
+        },
+        {
+          "level": 3,
+          "text": "Q2.現況届の提出が6月30日に間に合いません。"
+        },
+        {
+          "level": 3,
+          "text": "Q3.現況届が送られてきましたが、追加で申請した下の子が記載されていません。"
+        },
+        {
+          "level": 3,
+          "text": "Q4.次回の児童手当の振込日はいつですか。"
+        },
+        {
+          "level": 3,
+          "text": "Q5.振込口座を変更したいのですが、どうすればよいですか。"
+        },
+        {
+          "level": 3,
+          "text": "Q6.児童手当の月額が記載された通知書等は送られてきますか。"
+        },
+        {
+          "level": 2,
+          "text": "児童手当について詳しくお知りになりたい方はご参照ください"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/2024_9_jidoteate.html",
@@ -47,7 +365,166 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 8360,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "児童手当（令和6年9月分までの制度） 江戸川区ホームページ",
+      "meta": {
+        "og:title": "児童手当（令和6年9月分までの制度）",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/2024_9_jidoteate.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当（令和6年9月分までの制度）"
+        },
+        {
+          "level": 2,
+          "text": "窓口混雑予想と手続き時間（3月、4月は特に窓口の混雑が予想されます）"
+        },
+        {
+          "level": 2,
+          "text": "1.支給対象者"
+        },
+        {
+          "level": 3,
+          "text": "令和5年分（令和5年1月～12月）の所得が所得上限限度額未満になった方へ"
+        },
+        {
+          "level": 3,
+          "text": "所得額の判定について"
+        },
+        {
+          "level": 3,
+          "text": "生計中心者が児童と別居している場合"
+        },
+        {
+          "level": 3,
+          "text": "生計中心者が外国人の方の場合"
+        },
+        {
+          "level": 3,
+          "text": "生計中心者が公務員の方の場合（公務員共済組合に加入した場合を含む）"
+        },
+        {
+          "level": 3,
+          "text": "児童の住民票が国内にない場合"
+        },
+        {
+          "level": 2,
+          "text": "2.支給額・支給月・支給方法"
+        },
+        {
+          "level": 3,
+          "text": "支給額（1人あたりの月額）"
+        },
+        {
+          "level": 3,
+          "text": "支給月"
+        },
+        {
+          "level": 3,
+          "text": "支給方法"
+        },
+        {
+          "level": 2,
+          "text": "3.申請方法"
+        },
+        {
+          "level": 3,
+          "text": "申請にあたっての注意事項"
+        },
+        {
+          "level": 3,
+          "text": "申請者の代理人が窓口で申請する場合（配偶者の場合など）"
+        },
+        {
+          "level": 4,
+          "text": "以下のものをご用意いただき、窓口で申請してください。"
+        },
+        {
+          "level": 2,
+          "text": "4.必要書類"
+        },
+        {
+          "level": 3,
+          "text": "1.児童手当認定（額改定）請求書"
+        },
+        {
+          "level": 3,
+          "text": "2.身元確認書類"
+        },
+        {
+          "level": 3,
+          "text": "3.マイナンバー（個人番号）確認書類"
+        },
+        {
+          "level": 3,
+          "text": "4.申請者名義の普通預金通帳またはキャッシュカード"
+        },
+        {
+          "level": 3,
+          "text": "5.申請者の健康保険証（国家公務員共済・地方公務員共済加入者の方のみ）"
+        },
+        {
+          "level": 2,
+          "text": "以下の書類は場合により必要です。"
+        },
+        {
+          "level": 3,
+          "text": "6.養育事実の同意書 単身赴任などで児童と別居している方"
+        },
+        {
+          "level": 3,
+          "text": "7.戸籍の附票 日本国籍の方"
+        },
+        {
+          "level": 3,
+          "text": "8.パスポート 外国籍の方"
+        },
+        {
+          "level": 3,
+          "text": "9.その他"
+        },
+        {
+          "level": 2,
+          "text": "5.申請にあたっての注意事項"
+        },
+        {
+          "level": 2,
+          "text": "6.こんな時にはお手続きが必要です"
+        },
+        {
+          "level": 3,
+          "text": "江戸川区外へ転出する場合"
+        },
+        {
+          "level": 3,
+          "text": "振込口座の変更をする場合"
+        },
+        {
+          "level": 3,
+          "text": "第2子以降の児童が生まれた場合"
+        },
+        {
+          "level": 3,
+          "text": "変更届・消滅届の提出が必要となる事由が追加されました"
+        },
+        {
+          "level": 2,
+          "text": "7.児童手当の資格更新手続について"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
@@ -58,7 +535,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 929,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども会 江戸川区ホームページ",
+      "meta": {
+        "og:title": "子ども会",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども会"
+        },
+        {
+          "level": 2,
+          "text": "このページに関するお問い合わせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jazh/https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
@@ -69,7 +569,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jako/https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
@@ -80,7 +587,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate/teateshien/shisaku/index.html",
@@ -91,7 +605,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1165,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ひとり親・母子家庭のための施策 江戸川区ホームページ",
+      "meta": {
+        "og:title": "ひとり親・母子家庭のための施策",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate/teateshien/shisaku/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ひとり親・母子家庭のための施策"
+        },
+        {
+          "level": 2,
+          "text": "こんなページも見られています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/index.html",
@@ -102,7 +639,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1781,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育 江戸川区ホームページ",
+      "meta": {
+        "og:title": "子育て・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kosodate/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "特設サイト"
+        },
+        {
+          "level": 2,
+          "text": "子育て"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "教育"
+        },
+        {
+          "level": 2,
+          "text": "青少年健全育成"
+        },
+        {
+          "level": 2,
+          "text": "江戸川区子どもの権利条例"
+        },
+        {
+          "level": 2,
+          "text": "出会い・結婚支援"
+        },
+        {
+          "level": 2,
+          "text": "ニュース"
+        },
+        {
+          "level": 2,
+          "text": "バナー広告"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate_ouen/index.html",
@@ -113,7 +705,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1004,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て応援サイト 江戸川区ホームページ",
+      "meta": {
+        "og:title": "子育て応援サイト",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate_ouen/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て応援サイト 子育て世代を支援するための、お役立ち情報まとめページ"
+        },
+        {
+          "level": 2,
+          "text": "子育てお役立ち情報"
+        },
+        {
+          "level": 2,
+          "text": "江戸川区の主な子育てサービス一覧"
+        },
+        {
+          "level": 2,
+          "text": "メタバース区役所 もオープンしています！"
+        },
+        {
+          "level": 3,
+          "text": "子どもの笑顔があふれるまちに～充実した子育て環境～別ウィンドウで開きます"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "よく見られるページ"
+        },
+        {
+          "level": 2,
+          "text": "バナー広告"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/rdt/20250930_kodomokatei.html",
@@ -124,7 +763,14 @@
       "status": 0,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e068/kosodate/kyoiku/kyouiku/index.html",
@@ -135,7 +781,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1634,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "江戸川区教育委員会 江戸川区ホームページ",
+      "meta": {
+        "og:title": "江戸川区教育委員会",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/e068/kosodate/kyoiku/kyouiku/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "江戸川区教育委員会"
+        },
+        {
+          "level": 2,
+          "text": "ピックアップ"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "学校・教育施設一覧"
+        },
+        {
+          "level": 3,
+          "text": "江戸川区内の各学校・教育施設を紹介しています。"
+        },
+        {
+          "level": 2,
+          "text": "教育相談"
+        },
+        {
+          "level": 3,
+          "text": "教育電話相談"
+        },
+        {
+          "level": 3,
+          "text": "来室相談"
+        },
+        {
+          "level": 3,
+          "text": "対象者"
+        },
+        {
+          "level": 3,
+          "text": "受付時間"
+        },
+        {
+          "level": 2,
+          "text": "入園・入学手続き等"
+        },
+        {
+          "level": 2,
+          "text": "特色ある学校教育活動"
+        },
+        {
+          "level": 2,
+          "text": "関連コンテンツ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate_ouen/nayandara/index.html",
@@ -146,7 +863,90 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1787,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てに悩んだら 江戸川区ホームページ",
+      "meta": {
+        "og:title": "子育てに悩んだら",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate_ouen/nayandara/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てに悩んだら"
+        },
+        {
+          "level": 2,
+          "text": "育児に関する相談"
+        },
+        {
+          "level": 3,
+          "text": "子どもの相談"
+        },
+        {
+          "level": 3,
+          "text": "産後ケアのご案内"
+        },
+        {
+          "level": 3,
+          "text": "パパとパートナーのための育児ゼミ"
+        },
+        {
+          "level": 3,
+          "text": "家事・育児支援事業「えどがわママパパ応援隊」"
+        },
+        {
+          "level": 3,
+          "text": "なごみの家"
+        },
+        {
+          "level": 3,
+          "text": "食の支援（子ども食堂・食事支援事業）"
+        },
+        {
+          "level": 2,
+          "text": "心身の発達についての相談"
+        },
+        {
+          "level": 3,
+          "text": "発達障害"
+        },
+        {
+          "level": 3,
+          "text": "発達相談・支援センター"
+        },
+        {
+          "level": 3,
+          "text": "障害児（18歳未満の方）のサービス"
+        },
+        {
+          "level": 3,
+          "text": "育成室"
+        },
+        {
+          "level": 2,
+          "text": "子どもに関する総合相談窓口"
+        },
+        {
+          "level": 3,
+          "text": "江戸川区児童相談所（はあとポート）"
+        },
+        {
+          "level": 3,
+          "text": "江戸川区こども家庭センター（江戸川区児童相談所内）"
+        },
+        {
+          "level": 2,
+          "text": "こんなページも見られています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kenzenikusei/index.html",
@@ -157,7 +957,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1473,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "青少年健全育成 江戸川区ホームページ",
+      "meta": {
+        "og:title": "青少年健全育成",
+        "og:type": "article",
+        "og:url": "https://www.city.edogawa.tokyo.jp/kosodate/kenzenikusei/index.html",
+        "og:image": "https://www.city.edogawa.tokyo.jp/shared/site_rn/images/sns/logo.png",
+        "og:site_name": "江戸川区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "青少年健全育成"
+        },
+        {
+          "level": 2,
+          "text": "江戸川区少年少女オーケストラ トレーナー紹介"
+        },
+        {
+          "level": 2,
+          "text": "地域青少年リーダー講習会"
+        },
+        {
+          "level": 2,
+          "text": "プロテクトミライ"
+        },
+        {
+          "level": 2,
+          "text": "二十歳を祝う会（成人式）"
+        },
+        {
+          "level": 2,
+          "text": "鈴木青少年の翼"
+        },
+        {
+          "level": 2,
+          "text": "江戸川区少年少女合唱団"
+        },
+        {
+          "level": 2,
+          "text": "子ども会"
+        },
+        {
+          "level": 2,
+          "text": "ジュニアリーダー"
+        },
+        {
+          "level": 2,
+          "text": "江戸川区青少年委員"
+        },
+        {
+          "level": 2,
+          "text": "こんなページも見られています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -166,104 +1025,134 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate/teateshien/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate_ouen/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/rdt/20250930_kodomokatei.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/kodomoteate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/genkyo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e049/kosodate/kosodate/teateshien/2024_9_jidoteate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jazh/https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jako/https://www.city.edogawa.tokyo.jp/e027/kosodate/kenzenikusei/kodomokai.html",
       "status": 0,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": true,
+      "last_modified": null,
+      "etag": null,
       "error": "disallowed by robots.txt"
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kenzenikusei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate/teateshien/shisaku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/e068/kosodate/kyoiku/kyouiku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.edogawa.tokyo.jp/kosodate/kosodate_ouen/nayandara/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

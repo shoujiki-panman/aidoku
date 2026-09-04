@@ -15,6 +15,7 @@ from officedoc import (  # noqa: E402
     MIN_KANA,
     build_cmap,
     is_content_stream,
+    kind_from,
     kind_of,
     read_document,
     read_ooxml,
@@ -248,6 +249,32 @@ class 字形の対応表(unittest.TestCase):
         # ★埋めない。読めなかった字を勝手に作らない。
         got = build_cmap([cmap_stream(self.PAIRS)])
         self.assertNotIn(0x9999, got)
+
+
+class 形式の見分け(unittest.TestCase):
+    """★リダイレクト先が `/download` のように拡張子を持たないことがある。
+
+    拡張子だけ見て「対応していない形式」と記録すると、
+    **中身がPDFなのに形式不明として残る。** Content-Type も見る。
+    """
+
+    def test_拡張子があればそれを使う(self):
+        self.assertEqual(kind_from("https://x.example/a.pdf", "text/html"), "pdf")
+
+    def test_拡張子が無ければContent_Typeを見る(self):
+        self.assertEqual(kind_from("https://x.example/download", "application/pdf"), "pdf")
+        self.assertEqual(
+            kind_from("https://x.example/dl",
+                      "application/vnd.openxmlformats-officedocument"
+                      ".wordprocessingml.document"), "docx")
+
+    def test_文字集合が付いていても見分ける(self):
+        self.assertEqual(kind_from("https://x.example/dl", "application/pdf; charset=binary"),
+                         "pdf")
+
+    def test_どちらでも分からなければunknown(self):
+        self.assertEqual(kind_from("https://x.example/dl", "image/png"), "unknown")
+        self.assertEqual(kind_from("https://x.example/dl", ""), "unknown")
 
 
 class ReadDocument(unittest.TestCase):

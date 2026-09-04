@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.chuo.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html",
@@ -14,7 +35,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1320,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／児童手当",
+      "meta": {
+        "og:title": "児童手当",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/202409jidouteate.html",
@@ -25,7 +73,134 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 7256,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／児童手当の制度改正（令和6年10月分以降）",
+      "meta": {
+        "og:title": "児童手当の制度改正（令和6年10月分以降）",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/202409jidouteate.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当"
+        },
+        {
+          "level": 2,
+          "text": "支給対象"
+        },
+        {
+          "level": 4,
+          "text": "受給者の要件"
+        },
+        {
+          "level": 4,
+          "text": "児童の要件"
+        },
+        {
+          "level": 2,
+          "text": "手当額"
+        },
+        {
+          "level": 4,
+          "text": "児童として人数をカウントするにあたり、年齢制限があります。"
+        },
+        {
+          "level": 2,
+          "text": "支給する時期・方法"
+        },
+        {
+          "level": 2,
+          "text": "申請について"
+        },
+        {
+          "level": 5,
+          "text": "オンラインでの申請"
+        },
+        {
+          "level": 5,
+          "text": "郵送での申請"
+        },
+        {
+          "level": 5,
+          "text": "窓口での申請"
+        },
+        {
+          "level": 6,
+          "text": "受付可能な窓口"
+        },
+        {
+          "level": 6,
+          "text": "必要なもの"
+        },
+        {
+          "level": 3,
+          "text": "申請の際の注意事項"
+        },
+        {
+          "level": 2,
+          "text": "申請書類"
+        },
+        {
+          "level": 3,
+          "text": "認定請求"
+        },
+        {
+          "level": 6,
+          "text": "以下に該当する場合は、添付が必要な書類があります。"
+        },
+        {
+          "level": 3,
+          "text": "額改定"
+        },
+        {
+          "level": 6,
+          "text": "以下に該当する場合は、添付が必要な書類があります。"
+        },
+        {
+          "level": 3,
+          "text": "氏名住所等の変更"
+        },
+        {
+          "level": 6,
+          "text": "以下に該当する場合は、添付が必要な書類があります。"
+        },
+        {
+          "level": 3,
+          "text": "振込希望口座の変更"
+        },
+        {
+          "level": 3,
+          "text": "資格消滅"
+        },
+        {
+          "level": 2,
+          "text": "現況届"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        },
+        {
+          "level": 2,
+          "text": "児童手当受給者証明書の発行"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/kosodate/teatejosei/index.html",
@@ -36,7 +211,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1064,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／子育ての手当・助成",
+      "meta": {
+        "og:title": "子育ての手当・助成",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kosodate/kosodate/teatejosei/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育ての手当・助成"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2025ouenteate.html",
@@ -47,7 +241,66 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2861,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／令和7年度中央区子育て応援手当",
+      "meta": {
+        "og:title": "令和7年度中央区子育て応援手当",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2025ouenteate.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "＜申請受付は終了しました＞令和7年度中央区子育て応援手当"
+        },
+        {
+          "level": 2,
+          "text": "支給対象者"
+        },
+        {
+          "level": 2,
+          "text": "支給の時期"
+        },
+        {
+          "level": 3,
+          "text": "1.令和7年9月分（10月支給分）の児童手当を本区から受給した方（注記：令和7年9月に出生した児童については10月分）"
+        },
+        {
+          "level": 3,
+          "text": "2.令和7年10月1日以降、「出生した」児童分の児童手当の申請を本区で行った方"
+        },
+        {
+          "level": 3,
+          "text": "3.令和7年10月1日以降、「出生した」児童分の児童手当の申請をこれから本区で行う方"
+        },
+        {
+          "level": 2,
+          "text": "注意事項（必ずご確認ください。）"
+        },
+        {
+          "level": 2,
+          "text": "振り込め詐欺や個人情報の詐取にご注意ください"
+        },
+        {
+          "level": 2,
+          "text": "こども家庭庁コールセンター"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2023hitorioyaigaikyuuhu.html",
@@ -58,7 +311,14 @@
       "status": 404,
       "is_pdf": false,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/ininjo/ininjo.html",
@@ -69,7 +329,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1699,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／委任状（子ども子育て支援課）",
+      "meta": {
+        "og:title": "委任状（子ども子育て支援課）",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/ininjo/ininjo.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "委任状（子ども子育て支援課）"
+        },
+        {
+          "level": 2,
+          "text": "児童手当・子ども医療費助成・新生児誕生祝品（買物券）用"
+        },
+        {
+          "level": 2,
+          "text": "その他手続き用"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2023ouenkyuuhukin.html",
@@ -80,7 +375,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1382,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／中央区子育て世帯応援特別給付金",
+      "meta": {
+        "og:title": "中央区子育て世帯応援特別給付金",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2023ouenkyuuhukin.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "(申請受付終了)中央区子育て世帯応援特別給付金"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/jidoukenkou/syuugakuzikennsinn.html",
@@ -91,7 +413,70 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3248,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／就学時健康診断",
+      "meta": {
+        "og:title": "就学時健康診断",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/jidoukenkou/syuugakuzikennsinn.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "就学時健康診断"
+        },
+        {
+          "level": 2,
+          "text": "就学時健康診断とは"
+        },
+        {
+          "level": 2,
+          "text": "令和9年度小学校入学予定者の就学時健康診断日程表"
+        },
+        {
+          "level": 2,
+          "text": "健康診断実施場所"
+        },
+        {
+          "level": 2,
+          "text": "実施内容"
+        },
+        {
+          "level": 2,
+          "text": "当日の持ち物"
+        },
+        {
+          "level": 2,
+          "text": "欠席される場合"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        },
+        {
+          "level": 3,
+          "text": "指定校変更の申請を予定されている場合"
+        },
+        {
+          "level": 3,
+          "text": "特認校制度の申請を予定されている場合"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0032/kosodate/shussan/kodomonokenkou/sukusukusika.html",
@@ -102,7 +487,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2435,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／すくすく歯科相談～よい歯並びの育み方～",
+      "meta": {
+        "description": "すくすく歯科相談、よい歯並びを育むために、今からできるポイントのご紹介",
+        "og:title": "すくすく歯科相談～よい歯並びの育み方～",
+        "og:type": "article",
+        "og:description": "すくすく歯科相談、よい歯並びを育むために、今からできるポイントのご紹介",
+        "og:url": "https://www.city.chuo.lg.jp/a0032/kosodate/shussan/kodomonokenkou/sukusukusika.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "すくすく歯科相談～よい歯並びの育み方～"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "内容"
+        },
+        {
+          "level": 2,
+          "text": "参加者の声"
+        },
+        {
+          "level": 2,
+          "text": "定員"
+        },
+        {
+          "level": 2,
+          "text": "申し込み"
+        },
+        {
+          "level": 2,
+          "text": "区のおしらせちゅうおう"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0031/kosodate/shussan/kodomonokenkou/kyoiku/user_fkensu_time_2018.html",
@@ -113,7 +551,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2159,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／離乳食講習会（概要）",
+      "meta": {
+        "og:title": "離乳食講習会（概要）",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0031/kosodate/shussan/kodomonokenkou/kyoiku/user_fkensu_time_2018.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "離乳食講習会（概要）"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "年間予定表"
+        },
+        {
+          "level": 2,
+          "text": "直近の開催状況"
+        },
+        {
+          "level": 3,
+          "text": "8月開催分"
+        },
+        {
+          "level": 4,
+          "text": "スタートクラス(初期食から中期食)"
+        },
+        {
+          "level": 4,
+          "text": "ステップアップクラス(後期食から完了期食)"
+        },
+        {
+          "level": 3,
+          "text": "9月開催分"
+        },
+        {
+          "level": 4,
+          "text": "スタートクラス(初期食から中期食)"
+        },
+        {
+          "level": 4,
+          "text": "ステップアップクラス(後期食から完了期食)"
+        },
+        {
+          "level": 2,
+          "text": "離乳食のポイントと料理を動画で紹介しています。"
+        },
+        {
+          "level": 2,
+          "text": "食育情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/shussan/kodomonokenkou/index.html",
@@ -124,7 +633,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1004,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／子どもの健診・相談",
+      "meta": {
+        "og:title": "子どもの健診・相談",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kosodate/shussan/kodomonokenkou/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの健診・相談"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0031/kosodate/shussan/kodomonokenkou/shinseijichokakuhiyoujyosei.html",
@@ -135,7 +663,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2786,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／里帰り出産等に伴う妊産婦健康診査等の費用助成（再掲）",
+      "meta": {
+        "og:title": "里帰り出産等に伴う妊産婦健康診査等の費用助成（再掲）",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0031/kosodate/shussan/kodomonokenkou/shinseijichokakuhiyoujyosei.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "里帰り出産等に伴う妊産婦健康診査等の費用助成（再掲）"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "対象となる健診等及び助成上限額"
+        },
+        {
+          "level": 2,
+          "text": "申請期限"
+        },
+        {
+          "level": 2,
+          "text": "産婦健康診査を受診する際の注意点"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 2,
+          "text": "支払方法"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/kosodate/teatejosei/iryouhijosei/index.html",
@@ -146,7 +729,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1066,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／医療費に関する助成",
+      "meta": {
+        "og:title": "医療費に関する助成",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kosodate/kosodate/teatejosei/iryouhijosei/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "医療費に関する助成"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0006/kosodate/kosodate/teatejosei/soumu_hojo.html",
@@ -157,7 +759,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1607,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／中央区外国人学校生徒等の外国人保護者に対する補助制度",
+      "meta": {
+        "og:title": "中央区外国人学校生徒等の外国人保護者に対する補助制度",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0006/kosodate/kosodate/teatejosei/soumu_hojo.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "中央区外国人学校生徒等の外国人保護者に対する補助制度"
+        },
+        {
+          "level": 2,
+          "text": "補助金額"
+        },
+        {
+          "level": 2,
+          "text": "申請条件"
+        },
+        {
+          "level": 3,
+          "text": "保護者"
+        },
+        {
+          "level": 3,
+          "text": "児童・生徒"
+        },
+        {
+          "level": 2,
+          "text": "申し込みについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0032/kosodate/shussan/kodomonokenkou/sikakyousitu07.html",
@@ -168,7 +817,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1666,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／歯の健康教室～よい歯並びの育み方(4,5,6歳児編)～",
+      "meta": {
+        "description": "よい歯並びをつくるために、永久歯が生え始める4、5、6歳児期から実践できるポイントをご紹介する歯科教室を開催します。",
+        "og:title": "歯の健康教室～よい歯並びの育み方(4,5,6歳児編)～",
+        "og:type": "article",
+        "og:description": "よい歯並びをつくるために、永久歯が生え始める4、5、6歳児期から実践できるポイントをご紹介する歯科教室を開催します。",
+        "og:url": "https://www.city.chuo.lg.jp/a0032/kosodate/shussan/kodomonokenkou/sikakyousitu07.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "歯の健康教室～よい歯並びの育み方(4,5,6歳児編)～"
+        },
+        {
+          "level": 2,
+          "text": "日時、場所"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "内容"
+        },
+        {
+          "level": 2,
+          "text": "定員"
+        },
+        {
+          "level": 2,
+          "text": "費用"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/index.html",
@@ -179,7 +881,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1380,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／子育て・教育",
+      "meta": {
+        "og:title": "子育て・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kosodate/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産"
+        },
+        {
+          "level": 2,
+          "text": "子育て"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育の相談"
+        },
+        {
+          "level": 2,
+          "text": "学校教育"
+        },
+        {
+          "level": 2,
+          "text": "青少年育成"
+        },
+        {
+          "level": 2,
+          "text": "生涯学習・社会教育"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0048/kosodate/gakkoukyouiku/kyouikuiinkai/kyouikuiinkai.html",
@@ -190,7 +939,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1285,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／教育委員会について",
+      "meta": {
+        "og:title": "教育委員会について",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0048/kosodate/gakkoukyouiku/kyouikuiinkai/kyouikuiinkai.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "教育委員会について"
+        },
+        {
+          "level": 2,
+          "text": "ニュース"
+        },
+        {
+          "level": 2,
+          "text": "教育委員会"
+        },
+        {
+          "level": 2,
+          "text": "教職員の採用について"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0048/kosodate/gakkoukyouiku/kyouikuiinkai/news.html",
@@ -201,7 +989,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1217,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／新着情報の一覧",
+      "meta": {
+        "og:title": "新着情報の一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0048/kosodate/gakkoukyouiku/kyouikuiinkai/news.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "新着情報の一覧"
+        },
+        {
+          "level": 2,
+          "text": "掲載日"
+        },
+        {
+          "level": 3,
+          "text": "令和8年3月26日"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/topics/index.html",
@@ -212,7 +1035,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 944,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／教育委員会からのお知らせ",
+      "meta": {
+        "og:title": "教育委員会からのお知らせ",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/topics/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "教育委員会からのお知らせ"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/kyogikai/index.html",
@@ -223,7 +1065,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1015,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／協議会・検討会",
+      "meta": {
+        "og:title": "協議会・検討会",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/kyogikai/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "協議会・検討会"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/chosa/index.html",
@@ -234,7 +1095,26 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1015,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／調査・報告",
+      "meta": {
+        "og:title": "調査・報告",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/chosa/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "調査・報告"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/sinnnyuugakushougakkou.html",
@@ -245,7 +1125,82 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4044,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／新入学手続き（小学校）",
+      "meta": {
+        "og:title": "新入学手続き（小学校）",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/sinnnyuugakushougakkou.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "新入学手続き（小学校）"
+        },
+        {
+          "level": 2,
+          "text": "個別の事情がある方へ"
+        },
+        {
+          "level": 3,
+          "text": "例"
+        },
+        {
+          "level": 3,
+          "text": "申請受付期間"
+        },
+        {
+          "level": 3,
+          "text": "取下"
+        },
+        {
+          "level": 2,
+          "text": "特認校制度の実施について"
+        },
+        {
+          "level": 2,
+          "text": "入学までのスケジュール"
+        },
+        {
+          "level": 2,
+          "text": "国立・都立・私立小学校等への入学が決まったとき"
+        },
+        {
+          "level": 2,
+          "text": "他の区市町村立小学校への入学が決まったとき"
+        },
+        {
+          "level": 2,
+          "text": "中央区にお住まいの外国籍のお子さんが区立小学校へ入学を希望するとき"
+        },
+        {
+          "level": 2,
+          "text": "就学免除、就学猶予"
+        },
+        {
+          "level": 2,
+          "text": "就学相談"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/sinnyugaku_chugaku.html",
@@ -256,7 +1211,90 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4209,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／新入学手続き（中学校）",
+      "meta": {
+        "og:title": "新入学手続き（中学校）",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/sinnyugaku_chugaku.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "新入学手続き（中学校）"
+        },
+        {
+          "level": 2,
+          "text": "個別の事情がある方へ（指定校変更）"
+        },
+        {
+          "level": 3,
+          "text": "例"
+        },
+        {
+          "level": 3,
+          "text": "申請受付期間"
+        },
+        {
+          "level": 2,
+          "text": "中学校自由選択制の実施"
+        },
+        {
+          "level": 2,
+          "text": "入学までのスケジュール"
+        },
+        {
+          "level": 3,
+          "text": "中学校自由選択制の申請締め切り後に中央区へ転入されたとき"
+        },
+        {
+          "level": 2,
+          "text": "中央区立中学校案内"
+        },
+        {
+          "level": 2,
+          "text": "国立・都立・私立中学校への入学が決まったとき"
+        },
+        {
+          "level": 2,
+          "text": "他の区市町村立中学校への入学が決まったとき"
+        },
+        {
+          "level": 2,
+          "text": "区立小学校以外に就学されているお子さんが区立中学校へ入学を希望するとき"
+        },
+        {
+          "level": 2,
+          "text": "中央区にお住まいの外国籍のお子さんが区立中学校へ入学を希望するとき"
+        },
+        {
+          "level": 2,
+          "text": "就学免除、就学猶予"
+        },
+        {
+          "level": 2,
+          "text": "就学相談"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/nyugakumaeshikyu.html",
@@ -267,7 +1305,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3147,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／新入学児童生徒学用品費の入学前支給(小・中学校)",
+      "meta": {
+        "og:title": "新入学児童生徒学用品費の入学前支給(小・中学校)",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/nyugakumaeshikyu.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "新入学児童生徒学用品費の入学前支給(小・中学校)"
+        },
+        {
+          "level": 2,
+          "text": "就学援助・就学奨励の令和8年度新入学児童生徒学用品費入学前支給の対象となる方"
+        },
+        {
+          "level": 3,
+          "text": "就学援助を受けられる方 注記：1から3の全てに該当している必要があります。"
+        },
+        {
+          "level": 3,
+          "text": "就学奨励を受けられる方 注記：1に加え2に該当している必要があります。"
+        },
+        {
+          "level": 2,
+          "text": "申請方法"
+        },
+        {
+          "level": 3,
+          "text": "中央区内にお住まいで国公立小学校に就学予定の方"
+        },
+        {
+          "level": 3,
+          "text": "中央区内にお住まいで国公立中学校に就学予定の方"
+        },
+        {
+          "level": 3,
+          "text": "申請期限"
+        },
+        {
+          "level": 2,
+          "text": "支給金額"
+        },
+        {
+          "level": 3,
+          "text": "就学援助"
+        },
+        {
+          "level": 3,
+          "text": "就学奨励"
+        },
+        {
+          "level": 2,
+          "text": "支給時期"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ先"
+        },
+        {
+          "level": 2,
+          "text": "より良いウェブサイトにするためにみなさまのご意見をお聞かせください"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/raising_children/index.html",
@@ -278,7 +1387,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 931,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "中央区ホームページ／子育て",
+      "meta": {
+        "og:title": "子育て",
+        "og:type": "article",
+        "og:url": "https://www.city.chuo.lg.jp/raising_children/index.html",
+        "og:image": "https://www.city.chuo.lg.jp/shared/images/sns/logo.jpg",
+        "og:site_name": "中央区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て"
+        },
+        {
+          "level": 2,
+          "text": "よく見られているページ"
+        },
+        {
+          "level": 2,
+          "text": "サービスから探す"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1427,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0048/kosodate/gakkoukyouiku/kyouikuiinkai/kyouikuiinkai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/raising_children/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/kosodate/teatejosei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/jidoukenkou/syuugakuzikennsinn.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0032/kosodate/shussan/kodomonokenkou/sukusukusika.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0031/kosodate/shussan/kodomonokenkou/kyoiku/user_fkensu_time_2018.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0048/kosodate/gakkoukyouiku/kyouikuiinkai/news.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/topics/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/kyogikai/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/gakkoukyouiku/kyouikuiinkai/chosa/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/jidouteate202206.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2023hitorioyaigaikyuuhu.html",
       "status": 404,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": "HTTP 404"
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/shussan/kodomonokenkou/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0031/kosodate/shussan/kodomonokenkou/shinseijichokakuhiyoujyosei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/202409jidouteate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/ininjo/ininjo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2023ouenkyuuhukin.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0020/kosodate/kosodate/teatejosei/2025ouenteate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/kosodate/kosodate/teatejosei/iryouhijosei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0006/kosodate/kosodate/teatejosei/soumu_hojo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/sinnnyuugakushougakkou.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/sinnyugaku_chugaku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0049/kosodate/gakkoukyouiku/shouchuugakkou/nyuugaku/nyugakumaeshikyu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chuo.lg.jp/a0032/kosodate/shussan/kodomonokenkou/sikakyousitu07.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

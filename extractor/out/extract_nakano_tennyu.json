@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,17 +43,20 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "none",
+    "non_html_reading": "cmap_text",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-27T15:55:27+00:00",
+    "run_at": "2026-08-28T13:16:44+00:00",
     "discovery_run_at": "2026-08-27T15:29:07+00:00"
   },
-  "followed_urls": [],
+  "followed_urls": [
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html"
+  ],
   "online_clarity": "記載なし",
   "online_clarity_evidence": "",
   "online_clarity_pages": [
-    "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html"
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html"
   ],
   "test_cases": [
     {
@@ -63,15 +66,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "マイナンバーカード（個人番号カード）（パスワード入力が必要。カード・在留カードには新住所を追記欄に記載）。本人と同一世帯の方が届出人の場合は暗証番号が必要。別世帯の代理人が届け出る場合は委任状（代理人が本人のマイナンバーカードを使用して転入届をする際の委任状）が必要で、暗証番号を記入しのり止め封入して持参。",
-        "evidence": "マイナンバーカード（個人番号カード） ※パスワード入力を行います。／別世帯の代理人の方は、委任状(代理人が本人のマイナンバーカードを使用して転入届をする際の委任状)（PDF形式：367KB）が必要です。",
+        "value": "マイナンバーカード（個人番号カード）。窓口ではマイナンバーカード交付時に設定した数字4桁の暗証番号の入力が必要。別世帯の代理人が届け出る場合は委任状（代理人が本人のマイナンバーカードを使用して転入届をする際の委任状、PDF367KB、本人設定の暗証番号記入・のり止め要）が必要。転入届とあわせて署名用電子証明書発行の代理手続きを行う場合は本人の委任状（PDF138KB）が必要。",
+        "evidence": "マイナンバーカード（個人番号カード） ※パスワード入力を行います。",
         "source": "html",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "partial",
-          "run": 59,
-          "note": "連続59文字だけ一致。引用全体は確認できない"
+          "verdict": "exact",
+          "run": 33,
+          "note": ""
         }
       },
       "attempts": [
@@ -80,27 +83,27 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "マイナンバーカード（個人番号カード）（パスワード入力が必要。カード・在留カードには新住所を追記欄に記載）。本人と同一世帯の方が届出人の場合は暗証番号が必要。別世帯の代理人が届け出る場合は委任状（代理人が本人のマイナンバーカードを使用して転入届をする際の委任状）が必要で、暗証番号を記入しのり止め封入して持参。",
-            "evidence": "マイナンバーカード（個人番号カード） ※パスワード入力を行います。／別世帯の代理人の方は、委任状(代理人が本人のマイナンバーカードを使用して転入届をする際の委任状)（PDF形式：367KB）が必要です。",
+            "value": "マイナンバーカード（個人番号カード）。窓口ではマイナンバーカード交付時に設定した数字4桁の暗証番号の入力が必要。別世帯の代理人が届け出る場合は委任状（代理人が本人のマイナンバーカードを使用して転入届をする際の委任状、PDF367KB、本人設定の暗証番号記入・のり止め要）が必要。転入届とあわせて署名用電子証明書発行の代理手続きを行う場合は本人の委任状（PDF138KB）が必要。",
+            "evidence": "マイナンバーカード（個人番号カード） ※パスワード入力を行います。",
             "source": "html",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "partial",
-              "run": 59,
-              "note": "連続59文字だけ一致。引用全体は確認できない"
+              "verdict": "exact",
+              "run": 33,
+              "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "「届出に必要なもの」と「届出人」の2セクションに持ち物が分かれており、届出人の立場（本人／同一世帯／別世帯代理人）によって追加で必要な書類（委任状など）が変わる構成。委任状自体はPDFだが、必要書類名と条件はHTML本文に明記されている。"
+          "page_notes": "「届出に必要なもの」の欄には基本の持ち物のみ記載され、代理人向けの委任状の要否は下の「届出人」欄に分かれて書かれている。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "「届出に必要なもの」と「届出人」の2セクションに持ち物が分かれており、届出人の立場（本人／同一世帯／別世帯代理人）によって追加で必要な書類（委任状など）が変わる構成。委任状自体はPDFだが、必要書類名と条件はHTML本文に明記されている。",
+      "page_notes": "「届出に必要なもの」の欄には基本の持ち物のみ記載され、代理人向けの委任状の要否は下の「届出人」欄に分かれて書かれている。",
       "evidence_summary": {
         "checked": 1,
-        "verified": 0,
-        "partial": 1,
+        "verified": 1,
+        "partial": 0,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
@@ -114,7 +117,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "窓口のみ（オンライン完結の記載なし）",
+        "value": "窓口のみ（オンライン完結不可）",
         "evidence": "届出場所 区役所2階4番戸籍住民課住民記録係窓口 各地域事務所 受付時間 月曜日から金曜日までの午前8時半から午後5時まで。",
         "source": "html",
         "failure_reason": null,
@@ -131,7 +134,7 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "窓口のみ（オンライン完結の記載なし）",
+            "value": "窓口のみ（オンライン完結不可）",
             "evidence": "届出場所 区役所2階4番戸籍住民課住民記録係窓口 各地域事務所 受付時間 月曜日から金曜日までの午前8時半から午後5時まで。",
             "source": "html",
             "failure_reason": null,
@@ -143,11 +146,11 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "このページは「マイナンバーカードを利用する転入届」に限定した手続きページで、届出場所は区役所窓口・各地域事務所のみが明記され、オンライン申請への言及は本文中に一切ない。関連情報に「転入届（区外から中野区へ）」への別リンクがあるが、これは同一fact_typeの別ページであり、指定URL本文からは窓口のみと読み取れる。"
+          "page_notes": "「届出場所」欄に区役所窓口・地域事務所のみが列挙され、オンライン手続きへの言及は本文中に無い。マイナンバーカード本体の持参とその場でのパスワード入力が必須とされており、来庁前提の手続きであることが読み取れる。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "このページは「マイナンバーカードを利用する転入届」に限定した手続きページで、届出場所は区役所窓口・各地域事務所のみが明記され、オンライン申請への言及は本文中に一切ない。関連情報に「転入届（区外から中野区へ）」への別リンクがあるが、これは同一fact_typeの別ページであり、指定URL本文からは窓口のみと読み取れる。",
+      "page_notes": "「届出場所」欄に区役所窓口・地域事務所のみが列挙され、オンライン手続きへの言及は本文中に無い。マイナンバーカード本体の持参とその場でのパスワード入力が必須とされており、来庁前提の手続きであることが読み取れる。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -165,7 +168,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "中野区の住所に住み始めた日から14日以内、かつ転出予定日から30日以内",
+        "value": "実際に中野区の住所に住み始めた日から14日以内、かつ転出予定日から30日以内",
         "evidence": "実際に中野区の住所に住み始めた日から14日以内で、かつ転出予定日から30日以内にお届けください。",
         "source": "html",
         "failure_reason": null,
@@ -182,7 +185,7 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "中野区の住所に住み始めた日から14日以内、かつ転出予定日から30日以内",
+            "value": "実際に中野区の住所に住み始めた日から14日以内、かつ転出予定日から30日以内",
             "evidence": "実際に中野区の住所に住み始めた日から14日以内で、かつ転出予定日から30日以内にお届けください。",
             "source": "html",
             "failure_reason": null,
@@ -194,11 +197,11 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "このページは「マイナンバーカードを利用する転入届」に特化しており、届出期間が本文に明記されている。関連情報に一般の「転入届（区外から中野区へ）」への別リンクがあるが、本ページ自体に期限の記載があるため参照不要。"
+          "page_notes": "「届出期間」という見出しの直後に起算点つきの期限が明記されており、本文から直接取得できた。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "このページは「マイナンバーカードを利用する転入届」に特化しており、届出期間が本文に明記されている。関連情報に一般の「転入届（区外から中野区へ）」への別リンクがあるが、本ページ自体に期限の記載があるため参照不要。",
+      "page_notes": "「届出期間」という見出しの直後に起算点つきの期限が明記されており、本文から直接取得できた。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -236,6 +239,22 @@
             "value": "",
             "evidence": "",
             "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html"
+          ],
+          "page_notes": "このページはマイナンバーカードを使う転入届の手続き（届出期間・場所・必要なもの・届出人）のみを扱っており、手数料への言及は本文中に一切ない。関連情報として挙がっている「転入届（区外から中野区へ）」の方が一般的な転入届の説明ページとみられ、手数料もそちらに記載されている可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
             "failure_reason": "記載なし",
             "failure_type": "fact_missing",
             "evidence_check": {
@@ -245,11 +264,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "手続きの流れ（届出期間・場所・受付時間・必要なもの・届出人）は詳しく書かれているが、手数料に関する記述はページ内になく、リンク一覧にも手数料表や料金案内に該当しそうなものは見当たらない。"
+          "page_notes": "本文・リンク先ページとも「届出期間」「届出場所」「受付時間」「届出に必要なもの」「届出人」の項目は詳細に書かれているが、手数料・料金に関する記載（「無料」「手数料」等の語）はどちらのページにも見当たらなかった。"
         }
       ],
-      "followed_urls": [],
-      "page_notes": "手続きの流れ（届出期間・場所・受付時間・必要なもの・届出人）は詳しく書かれているが、手数料に関する記述はページ内になく、リンク一覧にも手数料表や料金案内に該当しそうなものは見当たらない。",
+      "followed_urls": [
+        "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html"
+      ],
+      "page_notes": "本文・リンク先ページとも「届出期間」「届出場所」「受付時間」「届出に必要なもの」「届出人」の項目は詳細に書かれているが、手数料・料金に関する記載（「無料」「手数料」等の語）はどちらのページにも見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -264,20 +285,20 @@
   "items": {
     "必要書類": {
       "found": true,
-      "value": "マイナンバーカード（個人番号カード）（パスワード入力が必要。カード・在留カードには新住所を追記欄に記載）。本人と同一世帯の方が届出人の場合は暗証番号が必要。別世帯の代理人が届け出る場合は委任状（代理人が本人のマイナンバーカードを使用して転入届をする際の委任状）が必要で、暗証番号を記入しのり止め封入して持参。",
-      "evidence": "マイナンバーカード（個人番号カード） ※パスワード入力を行います。／別世帯の代理人の方は、委任状(代理人が本人のマイナンバーカードを使用して転入届をする際の委任状)（PDF形式：367KB）が必要です。",
+      "value": "マイナンバーカード（個人番号カード）。窓口ではマイナンバーカード交付時に設定した数字4桁の暗証番号の入力が必要。別世帯の代理人が届け出る場合は委任状（代理人が本人のマイナンバーカードを使用して転入届をする際の委任状、PDF367KB、本人設定の暗証番号記入・のり止め要）が必要。転入届とあわせて署名用電子証明書発行の代理手続きを行う場合は本人の委任状（PDF138KB）が必要。",
+      "evidence": "マイナンバーカード（個人番号カード） ※パスワード入力を行います。",
       "source": "html",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "partial",
-        "run": 59,
-        "note": "連続59文字だけ一致。引用全体は確認できない"
+        "verdict": "exact",
+        "run": 33,
+        "note": ""
       }
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "窓口のみ（オンライン完結の記載なし）",
+      "value": "窓口のみ（オンライン完結不可）",
       "evidence": "届出場所 区役所2階4番戸籍住民課住民記録係窓口 各地域事務所 受付時間 月曜日から金曜日までの午前8時半から午後5時まで。",
       "source": "html",
       "failure_reason": null,
@@ -290,7 +311,7 @@
     },
     "期限": {
       "found": true,
-      "value": "中野区の住所に住み始めた日から14日以内、かつ転出予定日から30日以内",
+      "value": "実際に中野区の住所に住み始めた日から14日以内、かつ転出予定日から30日以内",
       "evidence": "実際に中野区の住所に住み始めた日から14日以内で、かつ転出予定日から30日以内にお届けください。",
       "source": "html",
       "failure_reason": null,
@@ -315,19 +336,20 @@
       }
     }
   },
-  "page_notes": "「届出に必要なもの」と「届出人」の2セクションに持ち物が分かれており、届出人の立場（本人／同一世帯／別世帯代理人）によって追加で必要な書類（委任状など）が変わる構成。委任状自体はPDFだが、必要書類名と条件はHTML本文に明記されている。\nこのページは「マイナンバーカードを利用する転入届」に限定した手続きページで、届出場所は区役所窓口・各地域事務所のみが明記され、オンライン申請への言及は本文中に一切ない。関連情報に「転入届（区外から中野区へ）」への別リンクがあるが、これは同一fact_typeの別ページであり、指定URL本文からは窓口のみと読み取れる。\nこのページは「マイナンバーカードを利用する転入届」に特化しており、届出期間が本文に明記されている。関連情報に一般の「転入届（区外から中野区へ）」への別リンクがあるが、本ページ自体に期限の記載があるため参照不要。\n手続きの流れ（届出期間・場所・受付時間・必要なもの・届出人）は詳しく書かれているが、手数料に関する記述はページ内になく、リンク一覧にも手数料表や料金案内に該当しそうなものは見当たらない。",
+  "page_notes": "「届出に必要なもの」の欄には基本の持ち物のみ記載され、代理人向けの委任状の要否は下の「届出人」欄に分かれて書かれている。\n「届出場所」欄に区役所窓口・地域事務所のみが列挙され、オンライン手続きへの言及は本文中に無い。マイナンバーカード本体の持参とその場でのパスワード入力が必須とされており、来庁前提の手続きであることが読み取れる。\n「届出期間」という見出しの直後に起算点つきの期限が明記されており、本文から直接取得できた。\n本文・リンク先ページとも「届出期間」「届出場所」「受付時間」「届出に必要なもの」「届出人」の項目は詳細に書かれているが、手数料・料金に関する記載（「無料」「手数料」等の語）はどちらのページにも見当たらなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
-      "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html"
+      "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+      "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true
   },
   "evidence_summary": {
     "checked": 3,
-    "verified": 2,
-    "partial": 1,
+    "verified": 3,
+    "partial": 0,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,

@@ -374,9 +374,34 @@ def readable(text: str, need: float = 0.02) -> bool:
     return kana >= MIN_KANA and kana / len(text) >= need
 
 
-def read_document(data: bytes, url: str) -> DocText:
-    """入口。形式を見て振り分ける。**読めない形式も結果として返す。**"""
+# Content-Type から形式を決める。拡張子の無いURLで配られる添付があるため。
+MIME_KIND = {
+    "application/pdf": "pdf",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "docx",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "xlsx",
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation": "pptx",
+    "application/msword": "docx",
+    "application/vnd.ms-excel": "xlsx",
+}
+
+
+def kind_from(url: str, content_type: str = "") -> str:
+    """形式を決める。**URLの拡張子だけでは足りない。**
+
+    ★リダイレクト先が `/download` のように拡張子を持たないことがある。
+      拡張子だけ見て「対応していない形式」と記録すると、
+      **中身がPDFなのに形式不明として残る。** Content-Type も見る。
+    """
     kind = kind_of(url)
+    if kind != "unknown":
+        return kind
+    mime = content_type.split(";")[0].strip().lower()
+    return MIME_KIND.get(mime, "unknown")
+
+
+def read_document(data: bytes, url: str, content_type: str = "") -> DocText:
+    """入口。形式を見て振り分ける。**読めない形式も結果として返す。**"""
+    kind = kind_from(url, content_type)
     if kind in OOXML_PARTS:
         return read_ooxml(data, kind)
     if kind == "pdf":

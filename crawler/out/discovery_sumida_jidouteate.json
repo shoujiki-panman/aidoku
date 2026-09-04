@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.sumida.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kteate/index.html",
@@ -14,7 +35,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2887,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "物価高対応子育て応援手当 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "物価高対応子育て応援手当",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kteate/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "物価高対応子育て応援手当"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.html",
@@ -25,7 +71,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3131,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援総合センター交流室「交流室開放＆手形・足形カード作り」を開催します 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "子育て支援総合センター交流室「交流室開放＆手形・足形カード作り」を開催します",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援総合センター交流室「交流室開放＆手形・足形カード作り」を開催します"
+        },
+        {
+          "level": 2,
+          "text": "日時"
+        },
+        {
+          "level": 2,
+          "text": "会場"
+        },
+        {
+          "level": 2,
+          "text": "内容"
+        },
+        {
+          "level": 2,
+          "text": "費用"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "申込"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/index.html",
@@ -36,7 +131,24 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3506,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども・子育て 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "子ども・子育て",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども・子育て"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html",
@@ -47,7 +159,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3089,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手当・助成・支援 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "手当・助成・支援",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・助成・支援"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/km/kodomowakufes2026.html",
@@ -58,7 +195,120 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4782,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こどもわくわくフェスティバル【令和8年5月31日（日曜日）】 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "こどもわくわくフェスティバル【令和8年5月31日（日曜日）】",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/km/kodomowakufes2026.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こどもわくわくフェスティバル【令和8年5月31日（日曜日）】"
+        },
+        {
+          "level": 2,
+          "text": "「みんなであそぼう！こどもわくわくフェスティバル」を開催します！"
+        },
+        {
+          "level": 2,
+          "text": "～みんなでつくる「こどもまんなかすみだ」～"
+        },
+        {
+          "level": 3,
+          "text": "こどもわくわくフェスティバルとは？"
+        },
+        {
+          "level": 3,
+          "text": "なぜ開催するの？"
+        },
+        {
+          "level": 2,
+          "text": "日時"
+        },
+        {
+          "level": 2,
+          "text": "会場"
+        },
+        {
+          "level": 3,
+          "text": "アクセス"
+        },
+        {
+          "level": 4,
+          "text": "電車"
+        },
+        {
+          "level": 4,
+          "text": "バス"
+        },
+        {
+          "level": 2,
+          "text": "イベントパンフレット"
+        },
+        {
+          "level": 2,
+          "text": "実施内容"
+        },
+        {
+          "level": 3,
+          "text": "遊び体験ブース"
+        },
+        {
+          "level": 3,
+          "text": "飲食ブース"
+        },
+        {
+          "level": 3,
+          "text": "ステージプログラム"
+        },
+        {
+          "level": 4,
+          "text": "特別出演"
+        },
+        {
+          "level": 3,
+          "text": "スタンプラリー"
+        },
+        {
+          "level": 2,
+          "text": "同時開催！スペシャルトークショー"
+        },
+        {
+          "level": 2,
+          "text": "ご協力いただける方・団体を募集します！（募集終了）"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
@@ -69,7 +319,64 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3767,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "育児講演会『デジタル時代の子育て ～「距離感」だけで子育てが楽しくなるかもしれない～』を開催します 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "育児講演会『デジタル時代の子育て ～「距離感」だけで子育てが楽しくなるかもしれない～』を開催します",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "育児講演会『デジタル時代の子育て ～「距離感」だけで子育てが楽しくなるかもしれない～』を開催します"
+        },
+        {
+          "level": 2,
+          "text": "講師"
+        },
+        {
+          "level": 2,
+          "text": "日時・受付時間"
+        },
+        {
+          "level": 2,
+          "text": "場所"
+        },
+        {
+          "level": 2,
+          "text": "開催方法・対象"
+        },
+        {
+          "level": 2,
+          "text": "一時保育"
+        },
+        {
+          "level": 2,
+          "text": "参加費"
+        },
+        {
+          "level": 2,
+          "text": "持ち物"
+        },
+        {
+          "level": 2,
+          "text": "申込方法・期間"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
@@ -80,7 +387,54 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3193,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "受けられる手当・医療費助成について 墨田区公式ホームページ",
+      "meta": {
+        "description": "児童手当、児童扶養手当、児童育成手当、特別児童扶養手当子どもの医療費の助成、ひとり親家庭等医療費助成",
+        "og:title": "受けられる手当・医療費助成について",
+        "og:type": "article",
+        "og:description": "児童手当、児童扶養手当、児童育成手当、特別児童扶養手当子どもの医療費の助成、ひとり親家庭等医療費助成",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "受けられる手当・医療費助成について"
+        },
+        {
+          "level": 2,
+          "text": "初めて申請する方へ"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "各手当について"
+        },
+        {
+          "level": 2,
+          "text": "医療費助成について"
+        },
+        {
+          "level": 2,
+          "text": "手続き方法等について"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kosodatetokyoPP.html",
@@ -91,7 +445,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3956,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て応援とうきょうパスポートについて 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "子育て応援とうきょうパスポートについて",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kosodatetokyoPP.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て応援とうきょうパスポートについて"
+        },
+        {
+          "level": 2,
+          "text": "パスポートの入手方法・使い方"
+        },
+        {
+          "level": 3,
+          "text": "子育て応援とうきょうパスポートアプリ配信中！"
+        },
+        {
+          "level": 3,
+          "text": "協賛店も募集中！"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/kodomono_kenko/index.html",
@@ -102,7 +509,36 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3110,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの健康 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの健康",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/kodomono_kenko/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの健康"
+        },
+        {
+          "level": 2,
+          "text": "休日・救急診療、平日夜間救急（小児科）"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikuji_kouenkai.html",
@@ -113,7 +549,176 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3792,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "5歳児健康相談事業講演会「小学校のこと、もっと知ろう～家庭から始める入学準備～」を開催します 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "5歳児健康相談事業講演会「小学校のこと、もっと知ろう～家庭から始める入学準備～」を開催します",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikuji_kouenkai.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "5歳児健康相談事業講演会「小学校のこと、もっと知ろう～家庭から始める入学準備～」を開催します"
+        },
+        {
+          "level": 2,
+          "text": "本講演は、主に年少さんから年長さんの保護者に向けたお話が中心です"
+        },
+        {
+          "level": 2,
+          "text": "日時"
+        },
+        {
+          "level": 2,
+          "text": "場所"
+        },
+        {
+          "level": 2,
+          "text": "講師"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "参加費"
+        },
+        {
+          "level": 2,
+          "text": "申込期間"
+        },
+        {
+          "level": 2,
+          "text": "申込方法"
+        },
+        {
+          "level": 2,
+          "text": "外部サイトへリンク 新規ウインドウで開きます。申込ページ（外部サイト）"
+        },
+        {
+          "level": 2,
+          "text": "お申込みに関する連絡事項"
+        },
+        {
+          "level": 2,
+          "text": "イベント名"
+        },
+        {
+          "level": 2,
+          "text": "実施日1"
+        },
+        {
+          "level": 3,
+          "text": "会場名1"
+        },
+        {
+          "level": 3,
+          "text": "住所1"
+        },
+        {
+          "level": 3,
+          "text": "緯度情報1"
+        },
+        {
+          "level": 3,
+          "text": "経度情報1"
+        },
+        {
+          "level": 2,
+          "text": "実施日2"
+        },
+        {
+          "level": 3,
+          "text": "会場名2"
+        },
+        {
+          "level": 3,
+          "text": "住所2"
+        },
+        {
+          "level": 3,
+          "text": "緯度情報2"
+        },
+        {
+          "level": 3,
+          "text": "経度情報2"
+        },
+        {
+          "level": 2,
+          "text": "実施日3"
+        },
+        {
+          "level": 3,
+          "text": "会場名3"
+        },
+        {
+          "level": 3,
+          "text": "住所3"
+        },
+        {
+          "level": 3,
+          "text": "緯度情報3"
+        },
+        {
+          "level": 3,
+          "text": "経度情報3"
+        },
+        {
+          "level": 2,
+          "text": "実施日4"
+        },
+        {
+          "level": 3,
+          "text": "会場名4"
+        },
+        {
+          "level": 3,
+          "text": "住所4"
+        },
+        {
+          "level": 3,
+          "text": "緯度情報4"
+        },
+        {
+          "level": 3,
+          "text": "経度情報4"
+        },
+        {
+          "level": 2,
+          "text": "実施日5"
+        },
+        {
+          "level": 3,
+          "text": "会場名5"
+        },
+        {
+          "level": 3,
+          "text": "住所5"
+        },
+        {
+          "level": 3,
+          "text": "緯度情報5"
+        },
+        {
+          "level": 3,
+          "text": "経度情報5"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/kodomono_kenko/h280830anzen.html",
@@ -124,7 +729,52 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3667,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お子さんの食べ物による窒息事故にご注意ください 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "お子さんの食べ物による窒息事故にご注意ください",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/kodomono_kenko/h280830anzen.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お子さんの食べ物による窒息事故にご注意ください"
+        },
+        {
+          "level": 2,
+          "text": "窒息事故を予防するための食べ方（5つのポイント）"
+        },
+        {
+          "level": 2,
+          "text": "安全に食べるための実施指針をご活用ください"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/index.html",
@@ -135,7 +785,40 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2931,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "子育て・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "子育て応援サイト"
+        },
+        {
+          "level": 2,
+          "text": "教育"
+        },
+        {
+          "level": 2,
+          "text": "地域教育支援事業"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/index.html",
@@ -146,7 +829,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3540,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て応援サイト 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "子育て応援サイト",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て応援サイト"
+        },
+        {
+          "level": 2,
+          "text": "新着情報"
+        },
+        {
+          "level": 2,
+          "text": "子育て情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/asobiba/hiroba.html",
@@ -157,7 +865,74 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3932,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ひろばデビュー応援隊＆子育て講座のご案内 墨田区公式ホームページ",
+      "meta": {
+        "description": "子育てに関する情報や、区内の遊び場情報を紹介します。月に1回、子育て講座を開催します。",
+        "og:title": "ひろばデビュー応援隊＆子育て講座のご案内",
+        "og:type": "article",
+        "og:description": "子育てに関する情報や、区内の遊び場情報を紹介します。月に1回、子育て講座を開催します。",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/asobiba/hiroba.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ひろばデビュー応援隊＆子育て講座のご案内"
+        },
+        {
+          "level": 2,
+          "text": "ひろばデビュー応援隊"
+        },
+        {
+          "level": 2,
+          "text": "日時"
+        },
+        {
+          "level": 2,
+          "text": "子育て講座のご案内"
+        },
+        {
+          "level": 3,
+          "text": "7月「絵本の読み聞かせ」"
+        },
+        {
+          "level": 3,
+          "text": "8月「はじめての英語おはなし会」"
+        },
+        {
+          "level": 2,
+          "text": "場所"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/asobiba/kouryuusitu.html",
@@ -168,7 +943,64 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3623,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援総合センター「交流室」のご案内 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "子育て支援総合センター「交流室」のご案内",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/asobiba/kouryuusitu.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援総合センター「交流室」のご案内"
+        },
+        {
+          "level": 2,
+          "text": "予定表"
+        },
+        {
+          "level": 2,
+          "text": "実施事業"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "ところ"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kuseijoho/kunosyoukai/sosiki/kosodatesougouc.html",
@@ -179,7 +1011,104 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5495,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援総合センター 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "子育て支援総合センター",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kuseijoho/kunosyoukai/sosiki/kosodatesougouc.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援総合センター"
+        },
+        {
+          "level": 2,
+          "text": "所在地・交通案内"
+        },
+        {
+          "level": 2,
+          "text": "子育て事業担当"
+        },
+        {
+          "level": 3,
+          "text": "主な業務概要"
+        },
+        {
+          "level": 4,
+          "text": "子育て支援サービス（一覧）"
+        },
+        {
+          "level": 4,
+          "text": "子育て支援サービス（お困りごと別）"
+        },
+        {
+          "level": 4,
+          "text": "一時預かり／一時保育／緊急一時保育の実施施設マップ"
+        },
+        {
+          "level": 5,
+          "text": "凡例"
+        },
+        {
+          "level": 2,
+          "text": "子ども相談担当"
+        },
+        {
+          "level": 3,
+          "text": "主な業務概要"
+        },
+        {
+          "level": 2,
+          "text": "子ども・家庭支援連携担当"
+        },
+        {
+          "level": 3,
+          "text": "主な業務概要"
+        },
+        {
+          "level": 2,
+          "text": "通話録音について"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        },
+        {
+          "level": 2,
+          "text": "よくある質問"
+        },
+        {
+          "level": 2,
+          "text": "リンク集"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/azukeru/hoikuen/bosyuusuu/ta80320020180605.html",
@@ -190,7 +1119,78 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4022,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "空き情報〈認可保育園・認定こども園・小規模保育事業所・家庭的保育者（保育ママ）〉 墨田区公式ホームページ",
+      "meta": {
+        "description": "毎月の空き情報・募集見込数一覧を掲載しています。申込締切日にご注意ください。",
+        "og:title": "空き情報〈認可保育園・認定こども園・小規模保育事業所・家庭的保育者（保育ママ）〉",
+        "og:type": "article",
+        "og:description": "毎月の空き情報・募集見込数一覧を掲載しています。申込締切日にご注意ください。",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/azukeru/hoikuen/bosyuusuu/ta80320020180605.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "空き情報〈認可保育園・認定こども園・小規模保育事業所・家庭的保育者（保育ママ）〉"
+        },
+        {
+          "level": 2,
+          "text": "令和8年9月の募集見込数 ※申込締切日：郵送・電子：8月3日（月曜日）窓口：8月10日（月曜日）"
+        },
+        {
+          "level": 3,
+          "text": "入所募集見込一覧 ※8月1日（土曜日）時点"
+        },
+        {
+          "level": 2,
+          "text": "各保育園の注意点について"
+        },
+        {
+          "level": 3,
+          "text": "江東橋保育園分園について"
+        },
+        {
+          "level": 3,
+          "text": "横川さくら保育園について"
+        },
+        {
+          "level": 3,
+          "text": "光の園保育学校の分園について"
+        },
+        {
+          "level": 3,
+          "text": "わらべ向島保育園分園について"
+        },
+        {
+          "level": 3,
+          "text": "延長保育について"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/ikiikikosodategaido.html",
@@ -201,7 +1201,72 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4313,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "すみだいきいき子育てガイドブック 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "すみだいきいき子育てガイドブック",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/ikiikikosodategaido.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "すみだいきいき子育てガイドブック"
+        },
+        {
+          "level": 2,
+          "text": "冊子の配布場所"
+        },
+        {
+          "level": 3,
+          "text": "親子健康手帳交付時にお渡ししています"
+        },
+        {
+          "level": 3,
+          "text": "希望する方に次の場所で随時配布しています"
+        },
+        {
+          "level": 2,
+          "text": "電子版"
+        },
+        {
+          "level": 3,
+          "text": "お探しのページはフローチャートから早引きできます"
+        },
+        {
+          "level": 3,
+          "text": "1. 電子書籍版 （スマートフォン閲覧に最適）"
+        },
+        {
+          "level": 3,
+          "text": "2. PDF版"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/shisetsu/index.html",
@@ -212,7 +1277,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3016,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て関連施設 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "子育て関連施設",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/shisetsu/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て関連施設"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.files/20260905kaihou.pdf",
@@ -223,7 +1313,14 @@
       "status": 200,
       "is_pdf": true,
       "text_len": 0,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": null,
+      "meta": {},
+      "headings": [],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/index.html",
@@ -234,7 +1331,48 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2912,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "教育 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "教育",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "教育"
+        },
+        {
+          "level": 2,
+          "text": "学校教育"
+        },
+        {
+          "level": 2,
+          "text": "教育委員会"
+        },
+        {
+          "level": 2,
+          "text": "総合教育会議"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/tiiki_kyouiku_shien/index.html",
@@ -245,7 +1383,116 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3034,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "地域教育支援事業 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "地域教育支援事業",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/tiiki_kyouiku_shien/index.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "地域教育支援事業"
+        },
+        {
+          "level": 2,
+          "text": "社会を明るくする運動について"
+        },
+        {
+          "level": 2,
+          "text": "すみだ郷土文化資料館の臨時休館のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "青少年健全育成作文コンクール"
+        },
+        {
+          "level": 2,
+          "text": "墨田区青少年委員"
+        },
+        {
+          "level": 2,
+          "text": "すみだ教室"
+        },
+        {
+          "level": 2,
+          "text": "少年団体の育成・支援"
+        },
+        {
+          "level": 2,
+          "text": "青少年育成委員会の活動支援"
+        },
+        {
+          "level": 2,
+          "text": "墨田区青少年問題協議会"
+        },
+        {
+          "level": 2,
+          "text": "文化財の保護・普及"
+        },
+        {
+          "level": 2,
+          "text": "人権・同和教育"
+        },
+        {
+          "level": 2,
+          "text": "PTA活動の支援"
+        },
+        {
+          "level": 2,
+          "text": "夏休み自然体験教室"
+        },
+        {
+          "level": 2,
+          "text": "社会教育関係団体の登録"
+        },
+        {
+          "level": 2,
+          "text": "家庭と地域の教育力の充実事業"
+        },
+        {
+          "level": 2,
+          "text": "子育て通信"
+        },
+        {
+          "level": 2,
+          "text": "放課後子ども教室"
+        },
+        {
+          "level": 2,
+          "text": "放課後子ども教室の「見守りボランティア」を募集しています"
+        },
+        {
+          "level": 2,
+          "text": "「ネット依存」防止の取組について"
+        },
+        {
+          "level": 2,
+          "text": "学校支援ネットワーク事業"
+        },
+        {
+          "level": 2,
+          "text": "イベント情報"
+        },
+        {
+          "level": 2,
+          "text": "関連リンク"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/school/oshirase/bukatsu.html",
@@ -256,7 +1503,56 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3855,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "墨田区の部活動地域展開の方針・部活動外部指導員の募集 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "墨田区の部活動地域展開の方針・部活動外部指導員の募集",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/school/oshirase/bukatsu.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "墨田区の部活動地域展開の方針・部活動外部指導員の募集"
+        },
+        {
+          "level": 2,
+          "text": "墨田区の学校部活動の地域展開の方針・部活動外部指導員の募集"
+        },
+        {
+          "level": 3,
+          "text": "部活動外部指導員は、以下のＱＲコードからＬｏｇｏフォームにて応募してください。"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/school/oshirase/sumijuku.html",
@@ -267,7 +1563,112 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 5952,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "すみだ まなび塾（墨田区立中学校生徒向け放課後学習支援事業）の参加生徒の募集について 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "すみだ まなび塾（墨田区立中学校生徒向け放課後学習支援事業）の参加生徒の募集について",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/school/oshirase/sumijuku.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "すみだ まなび塾（墨田区立中学校生徒向け放課後学習支援事業）の参加生徒の募集について"
+        },
+        {
+          "level": 2,
+          "text": "参加生徒の募集（二次募集）"
+        },
+        {
+          "level": 3,
+          "text": "定員（二次募集）"
+        },
+        {
+          "level": 3,
+          "text": "申込要件（二次募集）（申込要件（評定）を一次募集時から変更しました。）"
+        },
+        {
+          "level": 4,
+          "text": "一般募集"
+        },
+        {
+          "level": 4,
+          "text": "特別募集"
+        },
+        {
+          "level": 3,
+          "text": "申込案内（二次募集）"
+        },
+        {
+          "level": 3,
+          "text": "入塾検討者向け説明会の動画配信"
+        },
+        {
+          "level": 3,
+          "text": "選考方法（二次募集）"
+        },
+        {
+          "level": 4,
+          "text": "一般募集"
+        },
+        {
+          "level": 5,
+          "text": "(1)入塾テスト兼クラス分けテスト"
+        },
+        {
+          "level": 5,
+          "text": "(2)評定内容"
+        },
+        {
+          "level": 4,
+          "text": "特別募集"
+        },
+        {
+          "level": 5,
+          "text": "(1)入塾テスト兼クラス分けテスト"
+        },
+        {
+          "level": 5,
+          "text": "(2)面接（(1)の入塾テスト兼クラス分けテストの選考の結果、一定基準を満たした生徒のみ対象）"
+        },
+        {
+          "level": 4,
+          "text": "申込方法"
+        },
+        {
+          "level": 2,
+          "text": "留意事項"
+        },
+        {
+          "level": 2,
+          "text": "問合せ先"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "この情報は、お役に立ちましたか？"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        },
+        {
+          "level": 2,
+          "text": "こちらのページも読まれています"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/allNewsList.html",
@@ -278,7 +1679,32 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4064,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "新着情報一覧 墨田区公式ホームページ",
+      "meta": {
+        "og:title": "新着情報一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/allNewsList.html",
+        "og:image": "https://www.city.sumida.lg.jp/images/slogo.png"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "新着情報一覧"
+        },
+        {
+          "level": 2,
+          "text": "同じカテゴリから探す"
+        },
+        {
+          "level": 2,
+          "text": "注目情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1713,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/asobiba/hiroba.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/asobiba/kouryuusitu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kuseijoho/kunosyoukai/sosiki/kosodatesougouc.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.files/20260905kaihou.pdf",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/tiiki_kyouiku_shien/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/azukeru/hoikuen/bosyuusuu/ta80320020180605.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/school/oshirase/bukatsu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kyouiku/school/oshirase/sumijuku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/allNewsList.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/kodomono_kenko/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/ikiikikosodategaido.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/shisetsu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/km/kodomowakufes2026.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikuji_kouenkai.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kteate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/teate_zyosei/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kosodatetokyoPP.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/kodomono_kenko/h280830anzen.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

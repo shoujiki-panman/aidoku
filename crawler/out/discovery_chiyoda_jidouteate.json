@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.chiyoda.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
@@ -14,7 +35,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3362,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 児童手当に関する各種届出ほか",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当に関する各種届出ほか"
+        },
+        {
+          "level": 2,
+          "text": "児童手当に関する各種届出について"
+        },
+        {
+          "level": 2,
+          "text": "児童手当の寄付について"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
@@ -25,7 +66,23 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1592,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 児童手当",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当"
+        },
+        {
+          "level": 2,
+          "text": "児童手当制度"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
@@ -36,7 +93,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4555,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - こども・高校生等医療費助成制度（乳幼児～高校生等）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "こども・高校生等医療費助成制度（乳幼児～高校生等）"
+        },
+        {
+          "level": 2,
+          "text": "対象児童"
+        },
+        {
+          "level": 2,
+          "text": "申請者"
+        },
+        {
+          "level": 2,
+          "text": "こども・高校生等医療証申請方法および注意点"
+        },
+        {
+          "level": 3,
+          "text": "注意"
+        },
+        {
+          "level": 2,
+          "text": "こども・高校生等医療費助成の対象とならないもの"
+        },
+        {
+          "level": 2,
+          "text": "医療証の更新"
+        },
+        {
+          "level": 2,
+          "text": "届出"
+        },
+        {
+          "level": 3,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "現金助成"
+        },
+        {
+          "level": 3,
+          "text": "申請方法"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "振込方法"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/getsugaku.html",
@@ -47,7 +164,23 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1264,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 児童手当の手当月額",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当の手当月額"
+        },
+        {
+          "level": 2,
+          "text": "1 手当月額"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html",
@@ -58,7 +191,43 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2683,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 児童手当の支給対象者（児童手当を受給できる方）ほか",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "児童手当の支給対象者（児童手当を受給できる方）ほか"
+        },
+        {
+          "level": 2,
+          "text": "1 支給対象者（手当を受給できる方）"
+        },
+        {
+          "level": 2,
+          "text": "2 対象となる児童"
+        },
+        {
+          "level": 2,
+          "text": "3 多子加算 算定対象児童"
+        },
+        {
+          "level": 2,
+          "text": "4 申請先"
+        },
+        {
+          "level": 2,
+          "text": "5 申請時期について（出生や転入の際は、15日以内に申請を）"
+        },
+        {
+          "level": 3,
+          "text": "【例】お子さんが10月24日に生まれた場合"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomokateicenter.html",
@@ -69,7 +238,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2131,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 千代田区こども家庭センター",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "千代田区こども家庭センター"
+        },
+        {
+          "level": 2,
+          "text": "子ども・子育てに関する総合相談"
+        },
+        {
+          "level": 2,
+          "text": "子どもと家庭に関すること"
+        },
+        {
+          "level": 2,
+          "text": "妊娠・出産・産後に関すること"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/index.html",
@@ -80,7 +273,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1339,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 手当・助成",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・助成"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/chukosei-oenteate.html",
@@ -91,7 +296,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4347,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 中高生世代応援手当（区独自制度）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "中高生世代応援手当（区独自制度）"
+        },
+        {
+          "level": 2,
+          "text": "対象となる児童"
+        },
+        {
+          "level": 2,
+          "text": "手当額"
+        },
+        {
+          "level": 2,
+          "text": "申請に必要な書類"
+        },
+        {
+          "level": 2,
+          "text": "支払月"
+        },
+        {
+          "level": 2,
+          "text": "申請時期について（転入の際は、15日以内に申請を）"
+        },
+        {
+          "level": 2,
+          "text": "各種届出について"
+        },
+        {
+          "level": 2,
+          "text": "申請先"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/shin-chugakusei.html",
@@ -102,7 +351,67 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3487,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 令和8年4月から新たに中学生になる児童を養育している方へ（受給のための申請受付を開始します）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年4月から新たに中学生になる児童を養育している方へ（受給のための申請受付を開始します）"
+        },
+        {
+          "level": 2,
+          "text": "申請が不要な方"
+        },
+        {
+          "level": 3,
+          "text": "申請が不要な方が手続きを行う場合"
+        },
+        {
+          "level": 4,
+          "text": "手当の受給を希望しない場合"
+        },
+        {
+          "level": 4,
+          "text": "手当を児童手当とは別の口座に入金を希望する場合"
+        },
+        {
+          "level": 4,
+          "text": "児童手当の受給者ではなく、対象児童と同居する配偶者に手当の受給者を変更したい場合"
+        },
+        {
+          "level": 2,
+          "text": "申請が必要な方"
+        },
+        {
+          "level": 3,
+          "text": "必要書類"
+        },
+        {
+          "level": 4,
+          "text": "対象児童分を受給することで初めて手当を受給する場合"
+        },
+        {
+          "level": 4,
+          "text": "対象児童の兄姉分としてすでに手当を受給している場合"
+        },
+        {
+          "level": 4,
+          "text": "児童手当を所属庁から受給している方が、配偶者への手当支給を希望する場合"
+        },
+        {
+          "level": 2,
+          "text": "申請期限（手続きの期限）"
+        },
+        {
+          "level": 2,
+          "text": "申請先（手続きの提出先）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-uketsuke.html",
@@ -113,7 +422,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2374,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 子どもケアプランの受け付けが始まります",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもケアプランの受け付けが始まります"
+        },
+        {
+          "level": 2,
+          "text": "子どもケアプランでできること"
+        },
+        {
+          "level": 3,
+          "text": "子どもの将来を見渡した支援の全体像が分かります"
+        },
+        {
+          "level": 4,
+          "text": "子どもケアプランの作成"
+        },
+        {
+          "level": 3,
+          "text": "子どもの情報が整理でき、共有できます"
+        },
+        {
+          "level": 4,
+          "text": "子育てカルテの作成"
+        },
+        {
+          "level": 3,
+          "text": "自分が利用できる福祉サービスなどが分かり、申請に必要な計画が作成できます"
+        },
+        {
+          "level": 4,
+          "text": "相談や障害児支援利用計画などの作成"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-kettei.html",
@@ -124,7 +481,55 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2409,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - はばたきプラン",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "はばたきプラン"
+        },
+        {
+          "level": 2,
+          "text": "はばたきプランでできること"
+        },
+        {
+          "level": 3,
+          "text": "子どもの将来を見渡した支援の全体像が分かります"
+        },
+        {
+          "level": 4,
+          "text": "はばたきプランの作成"
+        },
+        {
+          "level": 2,
+          "text": "子どもの情報が整理でき、共有できます"
+        },
+        {
+          "level": 3,
+          "text": "子育てカルテの作成"
+        },
+        {
+          "level": 2,
+          "text": "自分が利用できる福祉サービスなどが分かり、申請に必要な計画が作成できます"
+        },
+        {
+          "level": 3,
+          "text": "相談や障害児支援利用計画などの作成"
+        },
+        {
+          "level": 2,
+          "text": "対象"
+        },
+        {
+          "level": 2,
+          "text": "その他"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/gaikokujin.html",
@@ -135,7 +540,47 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1985,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 外国人学校児童・生徒保護者補助金",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "外国人学校児童・生徒保護者補助金"
+        },
+        {
+          "level": 2,
+          "text": "補助金額"
+        },
+        {
+          "level": 2,
+          "text": "申請に必要なもの"
+        },
+        {
+          "level": 2,
+          "text": "申請書配布時期"
+        },
+        {
+          "level": 2,
+          "text": "対象者（申請条件）"
+        },
+        {
+          "level": 3,
+          "text": "保護者"
+        },
+        {
+          "level": 3,
+          "text": "児童・生徒"
+        },
+        {
+          "level": 2,
+          "text": "実施（受付）場所"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/kosodate/index.html",
@@ -146,7 +591,63 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4736,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 子育て・教育",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "子育て"
+        },
+        {
+          "level": 2,
+          "text": "保育"
+        },
+        {
+          "level": 2,
+          "text": "幼稚園"
+        },
+        {
+          "level": 2,
+          "text": "手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "子どもの遊び場事業"
+        },
+        {
+          "level": 2,
+          "text": "児童センター・児童館・学童クラブ"
+        },
+        {
+          "level": 2,
+          "text": "小学校・中学校・中等教育学校"
+        },
+        {
+          "level": 2,
+          "text": "教育活動"
+        },
+        {
+          "level": 2,
+          "text": "千代田区教育委員会"
+        },
+        {
+          "level": 2,
+          "text": "各種会議・計画"
+        },
+        {
+          "level": 2,
+          "text": "学校施設などの開放"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kuse/shisaku/juyo/kosodate/index.html",
@@ -157,7 +658,23 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1311,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 子育て応援",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て応援ページ 千代田区の子育て応援情報をご紹介します"
+        },
+        {
+          "level": 2,
+          "text": "目的別に探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kyubyo/kyukyu.html",
@@ -168,7 +685,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2613,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - ちよだこども救急室（平日準夜間小児初期救急診療）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "ちよだこども救急室（平日準夜間小児初期救急診療）"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "診療場所"
+        },
+        {
+          "level": 2,
+          "text": "診療日・診療時間"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/lifeevent/teate/index.html",
@@ -179,7 +724,27 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 995,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 手当・助成",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "障害者福祉"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/guidebook.html",
@@ -190,7 +755,31 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2588,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 2025千代田区子育て応援ガイドブック（令和7年8月発行版）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "2025千代田区子育て応援ガイドブック（令和7年8月発行版）"
+        },
+        {
+          "level": 2,
+          "text": "アプリで子育て応援ガイドブックが読めます"
+        },
+        {
+          "level": 2,
+          "text": "利用方法"
+        },
+        {
+          "level": 3,
+          "text": "アプリケーションのダウンロード"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/event.html",
@@ -201,7 +790,35 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4586,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 保育園・こども園でいっしょに遊びましょう（イベント・入園体験）",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "保育園・こども園でいっしょに遊びましょう（イベント・入園体験）"
+        },
+        {
+          "level": 2,
+          "text": "申込方法（グローバルキッズ飯田橋こども園のイベントを除く）"
+        },
+        {
+          "level": 3,
+          "text": "イベントの申し込みについての注意点"
+        },
+        {
+          "level": 2,
+          "text": "グローバルキッズ飯田橋こども園"
+        },
+        {
+          "level": 3,
+          "text": "GKIDS PLAY FACTORY“飯田橋こども園 地域子育て支援事業”"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/shinseido-2.html",
@@ -212,7 +829,59 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2917,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 子ども・子育て支援新制度",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども・子育て支援新制度"
+        },
+        {
+          "level": 2,
+          "text": "子ども・子育て支援新制度の概要"
+        },
+        {
+          "level": 2,
+          "text": "子ども・子育て関連3法"
+        },
+        {
+          "level": 2,
+          "text": "新制度の仕組み"
+        },
+        {
+          "level": 3,
+          "text": "保育の必要性の認定"
+        },
+        {
+          "level": 3,
+          "text": "教育・保育の提供"
+        },
+        {
+          "level": 3,
+          "text": "給付"
+        },
+        {
+          "level": 3,
+          "text": "子育て支援に関する事業"
+        },
+        {
+          "level": 2,
+          "text": "新制度に関する手続き"
+        },
+        {
+          "level": 2,
+          "text": "子ども・子育て支援新制度に関する情報"
+        },
+        {
+          "level": 2,
+          "text": "新制度区民説明会資料（平成26年度実施）（PDF：2,863KB）"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/ko-nayamu/index.html",
@@ -223,7 +892,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1290,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - お子さんの教育や子育てに悩んだとき",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "お子さんの教育や子育てに悩んだとき"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/index.html",
@@ -234,7 +915,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1340,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 子育て",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kosodate/index.html",
@@ -245,7 +938,19 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1383,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 子育てに迷ったり、困ったとき",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てに迷ったり、困ったとき"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/chiyoda-kosodate-map.html",
@@ -256,7 +961,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2686,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - chiyoda子育てMapをご活用ください",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "chiyoda子育てMapをご活用ください"
+        },
+        {
+          "level": 2,
+          "text": "chiyoda子育てMap"
+        },
+        {
+          "level": 3,
+          "text": "九段・富士見・西神田"
+        },
+        {
+          "level": 3,
+          "text": "神田・秋葉原"
+        },
+        {
+          "level": 3,
+          "text": "番町・麹町"
+        },
+        {
+          "level": 2,
+          "text": "子育てコーディネーターの子育て情報紙"
+        },
+        {
+          "level": 2,
+          "text": "子育てコーディネーターの子育て情報紙バックナンバーがご覧いただけます"
+        },
+        {
+          "level": 2,
+          "text": "子ども相談窓口"
+        },
+        {
+          "level": 2,
+          "text": "注意事項"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kuse/jinji/boshu/hijokin/kodomo/jidoshidoin.html",
@@ -267,7 +1016,115 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 4452,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 令和8年度千代田区児童指導員（会計年度任用職員）の募集",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "令和8年度千代田区児童指導員（会計年度任用職員）の募集"
+        },
+        {
+          "level": 2,
+          "text": "職務内容"
+        },
+        {
+          "level": 2,
+          "text": "必要な資格等"
+        },
+        {
+          "level": 2,
+          "text": "任期"
+        },
+        {
+          "level": 2,
+          "text": "条件付採用期間"
+        },
+        {
+          "level": 2,
+          "text": "採用予定数"
+        },
+        {
+          "level": 2,
+          "text": "給与"
+        },
+        {
+          "level": 2,
+          "text": "勤務場所"
+        },
+        {
+          "level": 2,
+          "text": "勤務日数"
+        },
+        {
+          "level": 2,
+          "text": "勤務時間"
+        },
+        {
+          "level": 2,
+          "text": "休暇等"
+        },
+        {
+          "level": 2,
+          "text": "週休日・休日"
+        },
+        {
+          "level": 2,
+          "text": "保険"
+        },
+        {
+          "level": 2,
+          "text": "選考の方法および選考日"
+        },
+        {
+          "level": 3,
+          "text": "選考の方法"
+        },
+        {
+          "level": 2,
+          "text": "面接日および面接会場（予定）"
+        },
+        {
+          "level": 3,
+          "text": "合格発表"
+        },
+        {
+          "level": 2,
+          "text": "申込手続き"
+        },
+        {
+          "level": 3,
+          "text": "申込方法"
+        },
+        {
+          "level": 4,
+          "text": "注意事項"
+        },
+        {
+          "level": 3,
+          "text": "申込期間"
+        },
+        {
+          "level": 4,
+          "text": "郵送の場合"
+        },
+        {
+          "level": 4,
+          "text": "窓口の場合"
+        },
+        {
+          "level": 3,
+          "text": "郵送および提出先"
+        },
+        {
+          "level": 2,
+          "text": "個人情報の取扱いについて"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/teiin-akijokyo.html",
@@ -278,7 +1135,51 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3594,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "千代田区ホームページ - 【例月（4月入所を除く）】保育所等の定員と空き状況および待機児童数の状況",
+      "meta": {},
+      "headings": [
+        {
+          "level": 1,
+          "text": "【例月（4月入所を除く）】保育所等の定員と空き状況および待機児童数の状況"
+        },
+        {
+          "level": 2,
+          "text": "区内認可保育所等の利用定員"
+        },
+        {
+          "level": 2,
+          "text": "区内認証保育所等の定員"
+        },
+        {
+          "level": 2,
+          "text": "直近の空き状況"
+        },
+        {
+          "level": 2,
+          "text": "過去の空き状況"
+        },
+        {
+          "level": 3,
+          "text": "令和8年度入園"
+        },
+        {
+          "level": 3,
+          "text": "令和7年度入園"
+        },
+        {
+          "level": 3,
+          "text": "令和6年度入園"
+        },
+        {
+          "level": 2,
+          "text": "令和7年度の待機児童数の状況について"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1188,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kuse/shisaku/juyo/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kyubyo/kyukyu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/lifeevent/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/guidebook.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kuse/jinji/boshu/hijokin/kodomo/jidoshidoin.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomokateicenter.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/event.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/shinseido-2.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/ko-nayamu/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/hoiku/teiin-akijokyo.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-uketsuke.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kodomoplan-kettei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/getsugaku.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/chukosei-oenteate.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/shin-chugakusei.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/gaikokujin.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/kosodate/chiyoda-kosodate-map.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]

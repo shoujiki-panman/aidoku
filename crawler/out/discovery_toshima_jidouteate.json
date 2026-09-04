@@ -4,6 +4,27 @@
   "procedure": "児童手当の申請",
   "procedure_id": "jidouteate",
   "top_url": "https://www.city.toshima.lg.jp/",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "run_at": "2026-08-28T13:16:52+00:00"
+  },
   "candidates": [
     {
       "url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/kodomokateicenter.html",
@@ -14,7 +35,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1929,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "こども家庭センター・地域子育て相談機関｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "こども家庭センター・地域子育て相談機関",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/kodomokateicenter.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "こども家庭センター・地域子育て相談機関"
+        },
+        {
+          "level": 2,
+          "text": "豊島区こども家庭センター"
+        },
+        {
+          "level": 2,
+          "text": "豊島区地域子育て相談機関"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html",
@@ -25,7 +81,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 972,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "手当・助成｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "手当・助成",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "手当・助成"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
@@ -36,7 +115,60 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2190,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て世帯への食料支援事業（区内共通商品券の配付）｜豊島区公式ホームページ",
+      "meta": {
+        "description": "豊島区では、物価が高騰している現状において即効性のある食料支援を行うため、ひとり親家庭等および18歳以下の児童がいる非課税世帯を対象に、「区内共通商品券（6,000円分）」を配付します。",
+        "og:title": "子育て世帯への食料支援事業（区内共通商品券の配付）",
+        "og:type": "article",
+        "og:description": "豊島区では、物価が高騰している現状において即効性のある食料支援を行うため、ひとり親家庭等および18歳以下の児童がいる非課税世帯を対象に、「区内共通商品券（6,000円分）」を配付します。",
+        "og:url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て世帯への食料支援事業（区内共通商品券の配付）"
+        },
+        {
+          "level": 2,
+          "text": "事業概要"
+        },
+        {
+          "level": 2,
+          "text": "対象者"
+        },
+        {
+          "level": 2,
+          "text": "配付内容"
+        },
+        {
+          "level": 2,
+          "text": "配付時期"
+        },
+        {
+          "level": 2,
+          "text": "不在連絡票に記載の保管期限を過ぎてしまったときの受取方法"
+        },
+        {
+          "level": 2,
+          "text": "区内共通商品券の利用方法"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/index.html",
@@ -47,7 +179,58 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1394,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの手当・医療費助成｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの手当・医療費助成",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの手当・医療費助成"
+        },
+        {
+          "level": 2,
+          "text": "子どもの手当・医療費助成申請書類の個人番号（マイナンバー）の記入について"
+        },
+        {
+          "level": 2,
+          "text": "高校生相当年齢までの子どものいるかたの手当"
+        },
+        {
+          "level": 2,
+          "text": "高校生相当年齢までの児童の医療費助成(子どもの医療費助成)"
+        },
+        {
+          "level": 2,
+          "text": "ひとり親家庭等の場合の手当"
+        },
+        {
+          "level": 2,
+          "text": "保護者に障害がある場合の手当等"
+        },
+        {
+          "level": 2,
+          "text": "子どもに障害がある場合の手当"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/1803221119.html",
@@ -58,7 +241,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1379,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子ども・若者支援｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "子ども・若者支援",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/1803221119.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子ども・若者支援"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/kenri/index.html",
@@ -69,7 +279,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 883,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの権利｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの権利",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/kenri/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの権利"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/oshirase/index.html",
@@ -80,7 +313,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1082,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "お知らせ｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "お知らせ",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/oshirase/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/iken/index.html",
@@ -91,7 +347,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 852,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの意見表明｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの意見表明",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/iken/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの意見表明"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/ibasho/index.html",
@@ -102,7 +381,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1003,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの居場所・活動の場｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの居場所・活動の場",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/ibasho/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの居場所・活動の場"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/index.html",
@@ -113,7 +415,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1435,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て・教育｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "子育て・教育",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て・教育"
+        },
+        {
+          "level": 2,
+          "text": "目次"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/2606251907.html",
@@ -124,7 +449,68 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1924,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "妊産婦・子育て世帯等の居場所｜豊島区公式ホームページ",
+      "meta": {
+        "description": "多様な国籍や文化的バックグラウンドを持つ妊娠中の方や3歳未満のお子さんを子育て中のご家庭などが、気軽に立ち寄り、交流したりゆっくりしたりできる場所です。",
+        "og:title": "妊産婦・子育て世帯等の居場所",
+        "og:type": "article",
+        "og:description": "多様な国籍や文化的バックグラウンドを持つ妊娠中の方や3歳未満のお子さんを子育て中のご家庭などが、気軽に立ち寄り、交流したりゆっくりしたりできる場所です。",
+        "og:url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/2606251907.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【7月20日オープン】妊産婦・子育て世帯等の居場所 愛称：TADAIMA（ただいま）"
+        },
+        {
+          "level": 2,
+          "text": "多言語対応"
+        },
+        {
+          "level": 2,
+          "text": "事業内容"
+        },
+        {
+          "level": 3,
+          "text": "ピアサポート（仲間同士の支えあい）"
+        },
+        {
+          "level": 3,
+          "text": "相談支援"
+        },
+        {
+          "level": 6,
+          "text": "個別相談"
+        },
+        {
+          "level": 6,
+          "text": "助産師相談"
+        },
+        {
+          "level": 6,
+          "text": "オンライン相談"
+        },
+        {
+          "level": 3,
+          "text": "イベント・講座"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/index.html",
@@ -135,7 +521,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2779,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て支援｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "子育て支援",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kosodate/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て支援"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/joho/index.html",
@@ -146,7 +559,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 961,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育て情報｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "子育て情報",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kosodate/joho/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育て情報"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/260/kosodate/kosodate/hoikuen/nyuen/1809261358.html",
@@ -157,7 +593,34 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 966,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "ダウンロード（入園のしおり・保育施設MAP・申請書）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "ダウンロード（入園のしおり・保育施設MAP・申請書）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/260/kosodate/kosodate/hoikuen/nyuen/1809261358.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "ダウンロード（入園のしおり・保育施設MAP・申請書）"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/268/kosodate/kosodate/hoikuen/kouritsuunei/2602051945.html",
@@ -168,7 +631,62 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2604,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "【区立保育園】豊島区こどもつながる定期預かり事業（こども誰でも通園制度）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "【区立保育園】豊島区こどもつながる定期預かり事業（こども誰でも通園制度）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/268/kosodate/kosodate/hoikuen/kouritsuunei/2602051945.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "【区立保育園】豊島区こどもつながる定期預かり事業（こども誰でも通園制度）"
+        },
+        {
+          "level": 2,
+          "text": "利用対象者"
+        },
+        {
+          "level": 2,
+          "text": "利用時間"
+        },
+        {
+          "level": 2,
+          "text": "利用期間（令和8年度上半期）"
+        },
+        {
+          "level": 2,
+          "text": "料金"
+        },
+        {
+          "level": 2,
+          "text": "実施施設"
+        },
+        {
+          "level": 2,
+          "text": "利用申込"
+        },
+        {
+          "level": 2,
+          "text": "集団生活で配慮が必要なお子さんについて"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/hoiku/shinseisho/index.html",
@@ -179,7 +697,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 902,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "申請書様式集｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "申請書様式集",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/hoiku/shinseisho/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "申請書様式集"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/hoiku/shinseisho/download/index.html",
@@ -190,7 +731,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1673,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "申請書ダウンロード｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "申請書ダウンロード",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/hoiku/shinseisho/download/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "申請書ダウンロード"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/258/kosodate/infomation.html",
@@ -201,7 +765,92 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2752,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子育てインフォメーション（子育て情報、相談、窓口等のご案内）｜豊島区公式ホームページ",
+      "meta": {
+        "description": "子育てインフォメーションで、子育ての情報をお伝えします。",
+        "og:title": "子育てインフォメーション（子育て情報、相談、窓口等のご案内）",
+        "og:type": "article",
+        "og:description": "子育てインフォメーションで、子育ての情報をお伝えします。",
+        "og:url": "https://www.city.toshima.lg.jp/258/kosodate/infomation.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子育てインフォメーション（子育て情報、相談、窓口等のご案内）"
+        },
+        {
+          "level": 2,
+          "text": "こんな悩みはありませんか？「赤ちゃんが生まれたら、どんな生活？」"
+        },
+        {
+          "level": 2,
+          "text": "こんな情報を提供します"
+        },
+        {
+          "level": 3,
+          "text": "もっと詳しい情報を得るために"
+        },
+        {
+          "level": 2,
+          "text": "利用案内"
+        },
+        {
+          "level": 3,
+          "text": "受付時間"
+        },
+        {
+          "level": 3,
+          "text": "利用できるかた"
+        },
+        {
+          "level": 3,
+          "text": "利用方法"
+        },
+        {
+          "level": 3,
+          "text": "場所"
+        },
+        {
+          "level": 3,
+          "text": "連絡先"
+        },
+        {
+          "level": 3,
+          "text": "ご案内リーフレット"
+        },
+        {
+          "level": 3,
+          "text": "YouTubeに動画を公開しました！"
+        },
+        {
+          "level": 2,
+          "text": "母子手帳アプリ【としまもっと見る知るby母子モ】で配信しています！"
+        },
+        {
+          "level": 3,
+          "text": "登録方法・費用"
+        },
+        {
+          "level": 2,
+          "text": "「子育て応援ふくろう」をお渡ししています"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/1809211404.html",
@@ -212,7 +861,38 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 2118,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "保育｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "保育",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kosodate/1809211404.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "保育"
+        },
+        {
+          "level": 2,
+          "text": "関連ページ"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/kenko/index.html",
@@ -223,7 +903,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1063,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "子どもの健康｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "子どもの健康",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kosodate/kenko/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "子どもの健康"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/sodan/index.html",
@@ -234,7 +937,30 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 920,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "育児相談｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "育児相談",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/kosodate/kosodate/sodan/index.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "育児相談"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/265/kosodate/kosodate/shiencenter/001746/annai/006556.html",
@@ -245,7 +971,98 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3471,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "施設案内（東部子ども家庭支援センター）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "施設案内（東部子ども家庭支援センター）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/265/kosodate/kosodate/shiencenter/001746/annai/006556.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "施設案内（東部子ども家庭支援センター）"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 2,
+          "text": "親子遊び広場"
+        },
+        {
+          "level": 3,
+          "text": "施設ご利用時のお願い"
+        },
+        {
+          "level": 3,
+          "text": "講座のご案内（抜粋）"
+        },
+        {
+          "level": 4,
+          "text": "プレママ向け講座"
+        },
+        {
+          "level": 4,
+          "text": "0歳赤ちゃんとママ向け講座"
+        },
+        {
+          "level": 4,
+          "text": "父親向け講座"
+        },
+        {
+          "level": 2,
+          "text": "子どもと家庭の相談"
+        },
+        {
+          "level": 4,
+          "text": "相談方法"
+        },
+        {
+          "level": 4,
+          "text": "利用時間"
+        },
+        {
+          "level": 2,
+          "text": "一時保育のご案内"
+        },
+        {
+          "level": 2,
+          "text": "としまいっしょに子育て 子育て訪問相談事業"
+        },
+        {
+          "level": 4,
+          "text": "子育て訪問相談"
+        },
+        {
+          "level": 4,
+          "text": "1歳のバースデイ訪問相談"
+        },
+        {
+          "level": 2,
+          "text": "SNSのアカウントをぜひフォローしてください！"
+        },
+        {
+          "level": 3,
+          "text": "YouTubeに動画を公開しました！"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/266/kosodate/kosodate/shiencenter/001746/annai/2005251634.html",
@@ -256,7 +1073,86 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 3064,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "施設案内（西部子ども家庭支援センター）｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "施設案内（西部子ども家庭支援センター）",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/266/kosodate/kosodate/shiencenter/001746/annai/2005251634.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "施設案内（西部子ども家庭支援センター）"
+        },
+        {
+          "level": 2,
+          "text": "お知らせ"
+        },
+        {
+          "level": 3,
+          "text": "広場事業によって、ランチタイム・おやつタイムの時間帯が変わる場合があります。最新の情報はセンター便りをご覧ください。"
+        },
+        {
+          "level": 3,
+          "text": "動画配信のお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "親子遊び広場"
+        },
+        {
+          "level": 3,
+          "text": "施設のご利用にあたり"
+        },
+        {
+          "level": 3,
+          "text": "西部子ども家庭支援センターでは"
+        },
+        {
+          "level": 3,
+          "text": "西部子ども家庭支援センターへの地図"
+        },
+        {
+          "level": 3,
+          "text": "一時保育について"
+        },
+        {
+          "level": 3,
+          "text": "子育て訪問事業について"
+        },
+        {
+          "level": 3,
+          "text": "SNSについて"
+        },
+        {
+          "level": 4,
+          "text": "X（旧Twitter）とInstagramの公式アカウントができました！"
+        },
+        {
+          "level": 5,
+          "text": "YouTubeに動画を公開しました！"
+        },
+        {
+          "level": 3,
+          "text": "毎月実施のセンター事業"
+        },
+        {
+          "level": 2,
+          "text": "お問い合わせ"
+        },
+        {
+          "level": 2,
+          "text": "同じ分類から探す"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/497/kuse/electronic/denshishinse/018244.html",
@@ -267,7 +1163,42 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1094,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "オンライン申請(電子申請)手続一覧｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "オンライン申請(電子申請)手続一覧",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/497/kuse/electronic/denshishinse/018244.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "オンライン申請"
+        },
+        {
+          "level": 2,
+          "text": "オンライン申請とは"
+        },
+        {
+          "level": 2,
+          "text": "手続き・申請を検索"
+        },
+        {
+          "level": 2,
+          "text": "オンラインでできる申請の種類"
+        },
+        {
+          "level": 2,
+          "text": "動画で見る手続き方法"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/guide/shussan.html",
@@ -278,7 +1209,46 @@
       "status": 200,
       "is_pdf": false,
       "text_len": 1434,
-      "has_jsonld": false
+      "has_jsonld": false,
+      "title": "出産・子育て｜豊島区公式ホームページ",
+      "meta": {
+        "og:title": "出産・子育て",
+        "og:type": "article",
+        "og:url": "https://www.city.toshima.lg.jp/guide/shussan.html",
+        "og:image": "https://www.city.toshima.lg.jp/shared/site_rn2025/images/sns/logo.jpg",
+        "og:site_name": "豊島区",
+        "og:locale": "ja_JP"
+      },
+      "headings": [
+        {
+          "level": 1,
+          "text": "出産・子育てとしま"
+        },
+        {
+          "level": 2,
+          "text": "区からのお知らせ"
+        },
+        {
+          "level": 2,
+          "text": "サービスを探す"
+        },
+        {
+          "level": 2,
+          "text": "お役立ち情報"
+        },
+        {
+          "level": 2,
+          "text": "イベント情報"
+        },
+        {
+          "level": 2,
+          "text": "関連情報"
+        }
+      ],
+      "date_modified": [],
+      "date_published": [],
+      "last_modified": null,
+      "etag": null
     }
   ],
   "fetch_log": [
@@ -287,181 +1257,233 @@
       "status": 200,
       "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/2606251907.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/1809211404.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/497/kuse/electronic/denshishinse/018244.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/guide/shussan.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/528/kosodate/kosodate/kodomokateicenter.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/1803221119.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/kenri/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/joho/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/kenko/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/sodan/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/260/kosodate/kosodate/hoikuen/nyuen/1809261358.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/268/kosodate/kosodate/hoikuen/kouritsuunei/2602051945.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/hoiku/shinseisho/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/hoiku/shinseisho/download/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/258/kosodate/infomation.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/265/kosodate/kosodate/shiencenter/001746/annai/006556.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/266/kosodate/kosodate/shiencenter/001746/annai/2005251634.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/oshirase/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/iken/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     },
     {
       "url": "https://www.city.toshima.lg.jp/kosodate/kodomowakamono/ibasho/index.html",
       "status": 200,
-      "from_cache": false,
+      "from_cache": true,
       "blocked_by_robots": false,
+      "last_modified": null,
+      "etag": null,
       "error": null
     }
   ]
