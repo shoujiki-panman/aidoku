@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,24 +43,24 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T14:44:57+00:00",
+    "run_at": "2026-08-31T13:53:42+00:00",
     "discovery_run_at": "2026-08-28T14:37:31+00:00"
   },
   "followed_urls": [
     "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
-    "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html",
-    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html",
+    "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html"
   ],
   "online_clarity": "記載なし",
   "online_clarity_evidence": "",
   "online_clarity_pages": [
     "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
     "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
-    "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html",
-    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+    "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html",
+    "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html"
   ],
   "test_cases": [
     {
@@ -90,6 +90,23 @@
             "value": "",
             "evidence": "",
             "source": null,
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved"
+          },
+          "requested_urls": [
+            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+          ],
+          "page_notes": "このページは「ごみ・リサイクル」の総合案内トップで、粗大ごみ収集の申込に関する専用リンクや本文の記載は見当たらない。「その他、ごみの出し方」等の下位ページに情報がある可能性がある。"
+        },
+        {
+          "stage": "follow",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
             "failure_reason": "記載なし",
             "failure_type": "fact_missing",
             "evidence_check": {
@@ -99,11 +116,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "このページは「ごみ・リサイクル」の総合案内で、分別・拠点回収・資源回収・事業系ごみ等へのリンクはあるが、粗大ごみ収集の申込に関するページやリンクが本文・リンク一覧のどちらにも見当たらない。"
+          "page_notes": "起点ページは分別・出し方の総合案内で、粗大ごみの個別申込ページへの直接リンクが一覧に無かった。指定された2つのリンク先（その他の出し方／よくある質問）はいずれも粗大ごみの申込に必要な持ち物・書類には触れていない。"
         }
       ],
-      "followed_urls": [],
-      "page_notes": "このページは「ごみ・リサイクル」の総合案内で、分別・拠点回収・資源回収・事業系ごみ等へのリンクはあるが、粗大ごみ収集の申込に関するページやリンクが本文・リンク一覧のどちらにも見当たらない。",
+      "followed_urls": [
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+      ],
+      "page_notes": "起点ページは分別・出し方の総合案内で、粗大ごみの個別申込ページへの直接リンクが一覧に無かった。指定された2つのリンク先（その他の出し方／よくある質問）はいずれも粗大ごみの申込に必要な持ち物・書類には触れていない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -146,9 +166,9 @@
           },
           "requested_urls": [
             "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
-            "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html"
+            "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html"
           ],
-          "page_notes": "このページは「ごみ・リサイクル」の総合トップで、分別・収集日・拠点回収など一般ごみの案内が中心。粗大ごみ収集の申込に直接言及するリンクは無く、「その他、ごみの出し方」または品目別五十音一覧（そ＝さ行）に案内がある可能性がある。"
+          "page_notes": "このページは「ごみ・リサイクル」のカテゴリ一覧（分別・資源回収・減量など）で、粗大ごみ収集の申込に直接言及するリンクは一覧中に見当たらない。「その他、ごみの出し方」または「ごみの分け方・出し方一覧表」に粗大ごみの扱いが記載されている可能性がある。"
         },
         {
           "stage": "follow",
@@ -167,14 +187,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "このページと配下のリンク（一覧表・その他の出し方）は日常ごみ・資源の分別が中心で、「粗大ごみ」という語も申込み方法（窓口／オンライン）への言及も一切見当たらない。粗大ごみ受付専用のページへの導線自体がこの一覧に無い。"
+          "page_notes": "トップページの「ごみ・リサイクル」カテゴリ一覧および指定された2つのリンク先（その他の出し方／五十音別一覧表）のいずれにも、粗大ごみ収集の申込方法や窓口・オンライン可否についての記載が見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
-        "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html"
+        "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html"
       ],
-      "page_notes": "このページと配下のリンク（一覧表・その他の出し方）は日常ごみ・資源の分別が中心で、「粗大ごみ」という語も申込み方法（窓口／オンライン）への言及も一切見当たらない。粗大ごみ受付専用のページへの導線自体がこの一覧に無い。",
+      "page_notes": "トップページの「ごみ・リサイクル」カテゴリ一覧および指定された2つのリンク先（その他の出し方／五十音別一覧表）のいずれにも、粗大ごみ収集の申込方法や窓口・オンライン可否についての記載が見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -216,10 +236,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
-            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html"
           ],
-          "page_notes": "このページは「ごみ・リサイクル」の総合案内で、粗大ごみ収集の申込に関する期限の記載は本文になく、リンク一覧にも「粗大ごみ」を明示したリンクは無い。ただし「その他、ごみの出し方」や「よくある質問」が粗大ごみの申込方法を扱っている可能性がある。"
+          "page_notes": "このページは通常ごみ・資源の分別案内が中心で、「粗大ごみ」という語も申込方法・期限に関する記述も本文・リンク一覧に見当たらない。関連しそうなのは「その他、ごみの出し方」程度で、粗大ごみ専用ページへの直接リンクはこの一覧に含まれていない。"
         },
         {
           "stage": "follow",
@@ -238,14 +257,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「その他、ごみの出し方」「ごみ出しで困ったら・よくある質問について」の2ページを開いたが、いずれも粗大ごみの申込手続き自体（収集日の何日前までに申し込むか等の期限）には触れておらず、粗大ごみは「申し込みが必要」とだけ記載され詳細は清掃事務所への問い合わせに誘導されている。"
+          "page_notes": "ごみ・リサイクルのトップページのリンク一覧に「粗大ごみ」への直接リンクが無く、開いた『その他、ごみの出し方』ページも有害物・消火器・二輪車・注射針の出し方のみで粗大ごみ収集の申込期限には触れていない。"
         }
       ],
       "followed_urls": [
-        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
-        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html"
       ],
-      "page_notes": "「その他、ごみの出し方」「ごみ出しで困ったら・よくある質問について」の2ページを開いたが、いずれも粗大ごみの申込手続き自体（収集日の何日前までに申し込むか等の期限）には触れておらず、粗大ごみは「申し込みが必要」とだけ記載され詳細は清掃事務所への問い合わせに誘導されている。",
+      "page_notes": "ごみ・リサイクルのトップページのリンク一覧に「粗大ごみ」への直接リンクが無く、開いた『その他、ごみの出し方』ページも有害物・消火器・二輪車・注射針の出し方のみで粗大ごみ収集の申込期限には触れていない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -287,9 +305,10 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html"
+            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+            "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
           ],
-          "page_notes": "このページは「ごみ・リサイクル」の総合案内トップで、粗大ごみ収集の申込や手数料への直接の記載・専用リンクは無い。「その他、ごみの出し方」に粗大ごみの扱いが含まれている可能性がある。"
+          "page_notes": "このページは「ごみ・リサイクル」の総合案内トップで、リンク一覧に「粗大ごみ」という語を含む項目が一つも無い。分別・拠点回収・資源関連の個別ページは多数あるが、粗大ごみ収集の申込・手数料に触れているのは本文にもリンクテキストにも見当たらず、「その他、ごみの出し方」等の包括的な項目が候補として残る。"
         },
         {
           "stage": "follow",
@@ -308,13 +327,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "起点ページ「ごみ・リサイクル」とそのリンク一覧には「粗大ごみ」という語自体が一度も現れず、案内済みのリンク先（その他、ごみの出し方）も有害物・消火器・二輪車・注射針の話のみで対象外だった。粗大ごみ収集申込は別系統のページ（このカテゴリ一覧には無い）に置かれている可能性が高い。"
+          "page_notes": "ごみ・リサイクルの索引ページには粗大ごみ専用のページへの直接リンクが無く、「その他、ごみの出し方」「ごみ出しで困ったら」の2ページを開いたが、いずれも粗大ごみは申込が必要という言及のみで手数料の金額には触れていない。"
         }
       ],
       "followed_urls": [
-        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html"
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
+        "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
       ],
-      "page_notes": "起点ページ「ごみ・リサイクル」とそのリンク一覧には「粗大ごみ」という語自体が一度も現れず、案内済みのリンク先（その他、ごみの出し方）も有害物・消火器・二輪車・注射針の話のみで対象外だった。粗大ごみ収集申込は別系統のページ（このカテゴリ一覧には無い）に置かれている可能性が高い。",
+      "page_notes": "ごみ・リサイクルの索引ページには粗大ごみ専用のページへの直接リンクが無く、「その他、ごみの出し方」「ごみ出しで困ったら」の2ページを開いたが、いずれも粗大ごみは申込が必要という言及のみで手数料の金額には触れていない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -380,14 +400,14 @@
       }
     }
   },
-  "page_notes": "このページは「ごみ・リサイクル」の総合案内で、分別・拠点回収・資源回収・事業系ごみ等へのリンクはあるが、粗大ごみ収集の申込に関するページやリンクが本文・リンク一覧のどちらにも見当たらない。\nこのページと配下のリンク（一覧表・その他の出し方）は日常ごみ・資源の分別が中心で、「粗大ごみ」という語も申込み方法（窓口／オンライン）への言及も一切見当たらない。粗大ごみ受付専用のページへの導線自体がこの一覧に無い。\n「その他、ごみの出し方」「ごみ出しで困ったら・よくある質問について」の2ページを開いたが、いずれも粗大ごみの申込手続き自体（収集日の何日前までに申し込むか等の期限）には触れておらず、粗大ごみは「申し込みが必要」とだけ記載され詳細は清掃事務所への問い合わせに誘導されている。\n起点ページ「ごみ・リサイクル」とそのリンク一覧には「粗大ごみ」という語自体が一度も現れず、案内済みのリンク先（その他、ごみの出し方）も有害物・消火器・二輪車・注射針の話のみで対象外だった。粗大ごみ収集申込は別系統のページ（このカテゴリ一覧には無い）に置かれている可能性が高い。",
+  "page_notes": "起点ページは分別・出し方の総合案内で、粗大ごみの個別申込ページへの直接リンクが一覧に無かった。指定された2つのリンク先（その他の出し方／よくある質問）はいずれも粗大ごみの申込に必要な持ち物・書類には触れていない。\nトップページの「ごみ・リサイクル」カテゴリ一覧および指定された2つのリンク先（その他の出し方／五十音別一覧表）のいずれにも、粗大ごみ収集の申込方法や窓口・オンライン可否についての記載が見当たらなかった。\nごみ・リサイクルのトップページのリンク一覧に「粗大ごみ」への直接リンクが無く、開いた『その他、ごみの出し方』ページも有害物・消火器・二輪車・注射針の出し方のみで粗大ごみ収集の申込期限には触れていない。\nごみ・リサイクルの索引ページには粗大ごみ専用のページへの直接リンクが無く、「その他、ごみの出し方」「ごみ出しで困ったら」の2ページを開いたが、いずれも粗大ごみは申込が必要という言及のみで手数料の金額には触れていない。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.chuo.lg.jp/kurashi/gomi/index.html",
       "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/sonota.html",
-      "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/sagyou/index.html",
-      "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html"
+      "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/gomidasidekomattara.html",
+      "https://www.city.chuo.lg.jp/kurashi/gomi/bunbetsu/wakekata/ichiran/index.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

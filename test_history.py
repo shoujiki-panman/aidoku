@@ -223,19 +223,33 @@ class 測定時刻(unittest.TestCase):
 
 
 class RealData(unittest.TestCase):
-    """実データで通ること。既存69マスは legacy_unknown なので原因は言えない。"""
+    """実データで通ること。
+
+    ★2026-08-31、転入届は**条件を記録して測り直した**ので `recorded` になった。
+      児童手当・粗大ごみはまだ `legacy_unknown`（条件の記録が無い）。
+      **混在しているのが正しい現状**なので、どちらかに決め打ちしない。
+    """
+
+    def snapshot(self, procedure: str):
+        root = Path(__file__).parent
+        path = root / f"web/data/scores-{procedure}.json"
+        return history.snapshot_from_doc(
+            json.loads(path.read_text(encoding="utf-8")), "t")
 
     def test_実データからスナップショットを作れる(self):
-        root = Path(__file__).parent
-        d = json.loads((root / "web/data/scores-tennyu.json").read_text(encoding="utf-8"))
-        s = history.snapshot_from_doc(d, "t")
+        s = self.snapshot("tennyu")
         self.assertEqual(len(s["municipalities"]), 23)
-        self.assertEqual(s["recording_status"], "legacy_unknown")
-        # 実データ同士は必ず unknown になる。これが正しい挙動
+        self.assertIn(s["recording_status"], ("recorded", "legacy_unknown"))
+        self.assertTrue(s["generated_at"])
+
+    def test_条件の記録が無いものは比較を拒否する(self):
+        # ★ここが要。記録の無いものどうしは必ず unknown になる。
+        s = self.snapshot("jidouteate")
+        if s["recording_status"] != "legacy_unknown":
+            self.skipTest("この手続きも測り直された")
         self.assertEqual(history.attribution(s, s)[0], "unknown")
         # ★実データには「実際に測った時刻」が残っていない。generated_at で埋めない
         self.assertIsNone(s["measured_at"])
-        self.assertTrue(s["generated_at"])
 
 
 class SiteStatusHistory(unittest.TestCase):

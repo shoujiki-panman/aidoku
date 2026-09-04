@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,10 +43,10 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T13:39:21+00:00",
+    "run_at": "2026-08-31T16:28:54+00:00",
     "discovery_run_at": "2026-08-28T13:16:52+00:00"
   },
   "followed_urls": [
@@ -69,8 +69,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -92,7 +92,7 @@
           "requested_urls": [
             "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
           ],
-          "page_notes": "このページは「子育てに関する手当・助成」の分類トップで、各手当ごとの詳細ページへのリンク一覧のみ。児童手当の申請に必要な持ち物は本文になく、「子どものための諸手当」ページに掲載されている可能性が高い。"
+          "page_notes": "このページは「子育てに関する手当・助成」の一覧ページで、児童手当そのものの説明や必要書類の記載はなく、「子どものための諸手当」への入口リンクのみがある。"
         },
         {
           "stage": "follow",
@@ -102,8 +102,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -111,13 +111,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「子どものための諸手当」一覧ページに「児童手当」という項目名は掲載されているが、そこから先の児童手当専用ページ（申請の持ち物を説明するページ）のURLはこの本文からは取得できず、必要書類の記載は見当たらなかった。"
+          "page_notes": "トップページ・リンク先の「子どものための諸手当」ページともに、個別の手当（児童手当）へのリンク一覧のみで、申請に必要な持ち物・書類の記載は無かった。実際の書類要件は「児童手当」個別ページ（未取得）にあると見られる。"
         }
       ],
       "followed_urls": [
         "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
       ],
-      "page_notes": "「子どものための諸手当」一覧ページに「児童手当」という項目名は掲載されているが、そこから先の児童手当専用ページ（申請の持ち物を説明するページ）のURLはこの本文からは取得できず、必要書類の記載は見当たらなかった。",
+      "page_notes": "トップページ・リンク先の「子どものための諸手当」ページともに、個別の手当（児童手当）へのリンク一覧のみで、申請に必要な持ち物・書類の記載は無かった。実際の書類要件は「児童手当」個別ページ（未取得）にあると見られる。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -138,8 +138,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -161,7 +161,7 @@
           "requested_urls": [
             "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
           ],
-          "page_notes": "このページは「子育てに関する手当・助成」の一覧トップで、各手当の入口へのリンク集になっている。児童手当自体の申請方法（窓口かオンライン完結か）は本文になく、「子どものための諸手当」のリンク先に個別ページがありそう。"
+          "page_notes": "このページは「子育てに関する手当・助成」の分類一覧ページで、児童手当そのものの申請方法や窓口・オンライン可否は本文に記載がない。「子どものための諸手当」のリンク先に個別の手当情報がありそう。"
         },
         {
           "stage": "follow",
@@ -171,8 +171,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -180,13 +180,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「子どものための諸手当」ページは手当の一覧リンク集で、「児童手当」という項目名のリンクはあるが、そのリンク先（児童手当専用ページ）のURLはこのページのテキストからは分からず、申請方法（窓口／オンライン）の記載も本文中には無かった。"
+          "page_notes": "「子どものための諸手当」ページは手当の種類一覧（児童手当・児童扶養手当等）へのリンク集のみで、各手当の申請方法（窓口／オンライン可否）はこのページ・リンク先本文のいずれにも記載されていない。"
         }
       ],
       "followed_urls": [
         "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
       ],
-      "page_notes": "「子どものための諸手当」ページは手当の一覧リンク集で、「児童手当」という項目名のリンクはあるが、そのリンク先（児童手当専用ページ）のURLはこのページのテキストからは分からず、申請方法（窓口／オンライン）の記載も本文中には無かった。",
+      "page_notes": "「子どものための諸手当」ページは手当の種類一覧（児童手当・児童扶養手当等）へのリンク集のみで、各手当の申請方法（窓口／オンライン可否）はこのページ・リンク先本文のいずれにも記載されていない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -207,8 +207,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -230,7 +230,7 @@
           "requested_urls": [
             "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
           ],
-          "page_notes": "このページは「子育てに関する手当・助成」の一覧ページで、児童手当自体の説明や期限は本文になく、「子どものための諸手当」への案内リンクのみがある。"
+          "page_notes": "このページは「子育てに関する手当・助成」の一覧ページで、本文は主にリンク集のみ。児童手当の詳細（申請期限を含む）は「子どものための諸手当」のリンク先にあると考えられる。"
         },
         {
           "stage": "follow",
@@ -240,8 +240,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -249,13 +249,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「子育てに関する手当・助成」→「子どものための諸手当」の2階層を辿ったが、児童手当はさらに下位のリンク項目として名前のみ列挙されており、申請期限・起算点の記述はこの2ページには無い。"
+          "page_notes": "両ページとも「児童手当」への入口リンクのみで、申請期限や起算点についての記述は本文中に見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
       ],
-      "page_notes": "「子育てに関する手当・助成」→「子どものための諸手当」の2階層を辿ったが、児童手当はさらに下位のリンク項目として名前のみ列挙されており、申請期限・起算点の記述はこの2ページには無い。",
+      "page_notes": "両ページとも「児童手当」への入口リンクのみで、申請期限や起算点についての記述は本文中に見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -276,8 +276,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -299,7 +299,7 @@
           "requested_urls": [
             "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
           ],
-          "page_notes": "このページは「子育てに関する手当・助成」の分類一覧ページで、児童手当そのものの説明や手数料の記載はなく、「子どものための諸手当」など下位ページへのリンクのみが並んでいる。"
+          "page_notes": "このページは子育てに関する手当・助成の一覧（ハブ）ページで、児童手当個別の申請手続きや手数料の記述は無い。「子どものための諸手当」のリンク先に詳細がありそう。"
         },
         {
           "stage": "follow",
@@ -309,8 +309,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -318,13 +318,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「子どものための諸手当」ページは児童手当を含む複数手当への入口一覧で、各手当の詳細（手数料の要否）は個別ページ（児童手当）に分かれており、この階層までには手数料の記載はなかった。"
+          "page_notes": "「子育てに関する手当・助成」および「子どものための諸手当」の両ページとも、児童手当の制度説明・関連手当一覧はあるが、申請手数料に関する記載は見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/teate/shoteate/index.html"
       ],
-      "page_notes": "「子どものための諸手当」ページは児童手当を含む複数手当への入口一覧で、各手当の詳細（手数料の要否）は個別ページ（児童手当）に分かれており、この階層までには手数料の記載はなかった。",
+      "page_notes": "「子育てに関する手当・助成」および「子どものための諸手当」の両ページとも、児童手当の制度説明・関連手当一覧はあるが、申請手数料に関する記載は見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -342,8 +342,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -355,8 +355,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -368,8 +368,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -381,8 +381,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -390,7 +390,7 @@
       }
     }
   },
-  "page_notes": "「子どものための諸手当」一覧ページに「児童手当」という項目名は掲載されているが、そこから先の児童手当専用ページ（申請の持ち物を説明するページ）のURLはこの本文からは取得できず、必要書類の記載は見当たらなかった。\n「子どものための諸手当」ページは手当の一覧リンク集で、「児童手当」という項目名のリンクはあるが、そのリンク先（児童手当専用ページ）のURLはこのページのテキストからは分からず、申請方法（窓口／オンライン）の記載も本文中には無かった。\n「子育てに関する手当・助成」→「子どものための諸手当」の2階層を辿ったが、児童手当はさらに下位のリンク項目として名前のみ列挙されており、申請期限・起算点の記述はこの2ページには無い。\n「子どものための諸手当」ページは児童手当を含む複数手当への入口一覧で、各手当の詳細（手数料の要否）は個別ページ（児童手当）に分かれており、この階層までには手数料の記載はなかった。",
+  "page_notes": "トップページ・リンク先の「子どものための諸手当」ページともに、個別の手当（児童手当）へのリンク一覧のみで、申請に必要な持ち物・書類の記載は無かった。実際の書類要件は「児童手当」個別ページ（未取得）にあると見られる。\n「子どものための諸手当」ページは手当の種類一覧（児童手当・児童扶養手当等）へのリンク集のみで、各手当の申請方法（窓口／オンライン可否）はこのページ・リンク先本文のいずれにも記載されていない。\n両ページとも「児童手当」への入口リンクのみで、申請期限や起算点についての記述は本文中に見当たらなかった。\n「子育てに関する手当・助成」および「子どものための諸手当」の両ページとも、児童手当の制度説明・関連手当一覧はあるが、申請手数料に関する記載は見当たらなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [

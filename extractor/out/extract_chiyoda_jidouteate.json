@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,20 +43,22 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T13:25:41+00:00",
+    "run_at": "2026-08-31T16:13:39+00:00",
     "discovery_run_at": "2026-08-28T13:16:52+00:00"
   },
   "followed_urls": [
-    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html"
   ],
   "online_clarity": "記載なし",
   "online_clarity_evidence": "",
   "online_clarity_pages": [
     "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
-    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+    "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html"
   ],
   "test_cases": [
     {
@@ -66,14 +68,14 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "同居の場合は（1）マイナンバーカード（お持ちでない方はマイナンバー通知カード＋本人確認書類で代用可）、（2）児童手当認定請求書、（3）申請者の「資格情報のお知らせ」もしくは「資格確認書」またはマイナポータルの「資格情報画面」などの写し（国家公務員共済組合・地方公務員共済組合加入者のみ必要。審査により他の方にも提出を求める場合あり）、（4）手当の振込先口座情報（申請者名義に限る）。児童と別世帯の場合は上記に加え（5）別居監護申立書が必要。父母が離婚を前提に別居中、子が海外留学中、未成年後見人が受給する場合等は個別案内のため問い合わせ先へ連絡が必要。",
-        "evidence": "（3）申請者の「資格情報のお知らせ」もしくは「資格確認書」またはマイナポータルからダウンロードした「資格情報画面」などの写し",
+        "value": "（1）マイナンバーカード（無い場合はマイナンバー通知カード＋本人確認書類）、（2）児童手当認定請求書、（3）申請者の「資格情報のお知らせ」等の写し（共済組合加入者のみ）、（4）手当の振込先口座情報、（5）別居監護申立書（別居している場合のみ）",
+        "evidence": "マイナンバーカードをお持ちでない方は、マイナンバー通知カードおよび本人確認書類（運転免許証等）で代用できます。",
         "source": "linked_page",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
           "verdict": "exact",
-          "run": 62,
+          "run": 55,
           "note": ""
         }
       },
@@ -92,32 +94,32 @@
           "requested_urls": [
             "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
           ],
-          "page_notes": "このページは「各種届出ほか」で、転出・氏名変更など既受給者の届出書類一覧のみを扱っている。新規申請に必要な持ち物は別ページ「児童手当の新規申請に必要なもの」に分かれている。"
+          "page_notes": "このページ（kakushu.html）は「各種届出ほか」で、既に受給中の人の届出変更を扱う表であり、新規申請の持ち物は別ページ「児童手当の新規申請に必要なもの」（shinki.html）に分かれている。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "同居の場合は（1）マイナンバーカード（お持ちでない方はマイナンバー通知カード＋本人確認書類で代用可）、（2）児童手当認定請求書、（3）申請者の「資格情報のお知らせ」もしくは「資格確認書」またはマイナポータルの「資格情報画面」などの写し（国家公務員共済組合・地方公務員共済組合加入者のみ必要。審査により他の方にも提出を求める場合あり）、（4）手当の振込先口座情報（申請者名義に限る）。児童と別世帯の場合は上記に加え（5）別居監護申立書が必要。父母が離婚を前提に別居中、子が海外留学中、未成年後見人が受給する場合等は個別案内のため問い合わせ先へ連絡が必要。",
-            "evidence": "（3）申請者の「資格情報のお知らせ」もしくは「資格確認書」またはマイナポータルからダウンロードした「資格情報画面」などの写し",
+            "value": "（1）マイナンバーカード（無い場合はマイナンバー通知カード＋本人確認書類）、（2）児童手当認定請求書、（3）申請者の「資格情報のお知らせ」等の写し（共済組合加入者のみ）、（4）手当の振込先口座情報、（5）別居監護申立書（別居している場合のみ）",
+            "evidence": "マイナンバーカードをお持ちでない方は、マイナンバー通知カードおよび本人確認書類（運転免許証等）で代用できます。",
             "source": "linked_page",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
               "verdict": "exact",
-              "run": 62,
+              "run": 55,
               "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "対象ページ（kakushu.html）は既存受給者の変更届一覧のみで新規申請の持ち物は載っておらず、同一階層の「児童手当の新規申請に必要なもの」ページに同居・別世帯の2パターンで持ち物一覧が表として整理されていた。"
+          "page_notes": "「児童手当に関する各種届出ほか」ページは変更届の一覧のみで新規申請の持ち物は載っておらず、別ページ「児童手当の新規申請に必要なもの」にのみ記載があった。"
         }
       ],
       "followed_urls": [
         "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
       ],
-      "page_notes": "対象ページ（kakushu.html）は既存受給者の変更届一覧のみで新規申請の持ち物は載っておらず、同一階層の「児童手当の新規申請に必要なもの」ページに同居・別世帯の2パターンで持ち物一覧が表として整理されていた。",
+      "page_notes": "「児童手当に関する各種届出ほか」ページは変更届の一覧のみで新規申請の持ち物は載っておらず、別ページ「児童手当の新規申請に必要なもの」にのみ記載があった。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -159,9 +161,10 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
+            "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+            "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html"
           ],
-          "page_notes": "このページは既に認定済みの受給者向けの「各種届出（変更・消滅等）」一覧で、新規の「児童手当の申請」自体の窓口／オンライン可否には触れていない。新規申請の方法は別ページ「児童手当の新規申請に必要なもの」に案内されている可能性が高い。"
+          "page_notes": "このページは認定後の各種変更届出（転出・氏名変更・口座変更等）専用で、新規申請の窓口／オンライン可否には触れていない。新規申請自体の情報は別ページ「児童手当の新規申請に必要なもの」に分かれている。"
         },
         {
           "stage": "follow",
@@ -180,13 +183,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「各種届出ほか」も「新規申請に必要なもの」も、必要書類（認定請求書PDF等）の提出を前提とした記述のみで、窓口持参が必須かオンラインで完結できるかは明言されていない。区ポータルサイトへの言及は『不足書類の追加提出』限定で、新規申請そのものの提出方法には触れていない。"
+          "page_notes": "「各種届出」ページは既に認定済みの世帯向けの変更届が中心で、新規申請の受付方法には触れていない。リンク先の「新規申請に必要なもの」ページも必要書類（マイナンバーカード・認定請求書PDF・口座情報等）を列挙するのみで、窓口へ持参するのか郵送・オンライン提出が可能なのかという提出方法自体は明記されていない。唯一のオンライン言及は「不足書類の提出」が区ポータルサイトから可能という限定的なもので、新規申請そのものの完結可否ではない。"
         }
       ],
       "followed_urls": [
-        "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
+        "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+        "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html"
       ],
-      "page_notes": "「各種届出ほか」も「新規申請に必要なもの」も、必要書類（認定請求書PDF等）の提出を前提とした記述のみで、窓口持参が必須かオンラインで完結できるかは明言されていない。区ポータルサイトへの言及は『不足書類の追加提出』限定で、新規申請そのものの提出方法には触れていない。",
+      "page_notes": "「各種届出」ページは既に認定済みの世帯向けの変更届が中心で、新規申請の受付方法には触れていない。リンク先の「新規申請に必要なもの」ページも必要書類（マイナンバーカード・認定請求書PDF・口座情報等）を列挙するのみで、窓口へ持参するのか郵送・オンライン提出が可能なのかという提出方法自体は明記されていない。唯一のオンライン言及は「不足書類の提出」が区ポータルサイトから可能という限定的なもので、新規申請そのものの完結可否ではない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -203,16 +207,16 @@
       "question": "千代田区の「児童手当の申請」について、いつまでに手続きが必要か（起算点つきで）",
       "test_case_version": "1.0",
       "result": {
-        "found": true,
-        "value": "事由発生日の翌日から15日以内",
-        "evidence": "今後お子様を養育する方は、左記の事由発生日の翌日から15日以内に住所地へ児童手当の申請をしてください。",
-        "source": "html",
-        "failure_reason": null,
-        "failure_type": null,
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "曖昧",
+        "failure_type": "fact_ambiguous",
         "evidence_check": {
-          "verdict": "exact",
-          "run": 51,
-          "note": ""
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
         }
       },
       "attempts": [
@@ -230,40 +234,40 @@
           "requested_urls": [
             "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
           ],
-          "page_notes": "このページは「各種届出ほか」で、既に認定されている受給者の状況変化（転出・出生・離婚など）ごとの届出期限（多くが事由発生日等から15日以内）を列挙しているが、これから新規に申請する人向けの一般的な申請期限は書かれていない。新規申請の期限は別ページ「児童手当の新規申請に必要なもの」（shinki.html）にありそう。"
+          "page_notes": "このページは既に認定されている受給者向けの「各種届出」（転出・氏名変更等）を扱っており、新規申請の期限は書かれていない。新規申請の手続き自体は別ページ「児童手当の新規申請に必要なもの」にリンクされている。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
-            "found": true,
-            "value": "事由発生日の翌日から15日以内",
-            "evidence": "今後お子様を養育する方は、左記の事由発生日の翌日から15日以内に住所地へ児童手当の申請をしてください。",
-            "source": "html",
-            "failure_reason": null,
-            "failure_type": null,
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "曖昧",
+            "failure_type": "fact_ambiguous",
             "evidence_check": {
-              "verdict": "exact",
-              "run": 51,
-              "note": ""
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
             }
           },
           "requested_urls": [],
-          "page_notes": "このページ（kakushu.html）は既受給者向けの「各種届出」が中心で、初回の一般的な「児童手当の申請」に絞った単独の期限説明はない。リンク先の「新規申請に必要なもの」ページも『期限までに申請書のみご提出』とは書くが日数・起算点は明記していなかった。一方、本文中の（注意）書きに『事由発生日の翌日から15日以内に…児童手当の申請をしてください』という一般的な文言があり、これが起算点つきの期限として唯一明記された記述だった。"
+          "page_notes": "本文および追跡先の新規申請ページには「事由発生日等から15日以内」という期限が事由（出生・転出・離婚等）ごとに複数記載されているが、新規申請一般に対する単一の起算点付き期限は明記されていない。「期限までに申請書のみご提出いただき」という文言はあるが、その期限自体の定義（何日以内・起算点）は示されていない。"
         }
       ],
       "followed_urls": [
         "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
       ],
-      "page_notes": "このページ（kakushu.html）は既受給者向けの「各種届出」が中心で、初回の一般的な「児童手当の申請」に絞った単独の期限説明はない。リンク先の「新規申請に必要なもの」ページも『期限までに申請書のみご提出』とは書くが日数・起算点は明記していなかった。一方、本文中の（注意）書きに『事由発生日の翌日から15日以内に…児童手当の申請をしてください』という一般的な文言があり、これが起算点つきの期限として唯一明記された記述だった。",
+      "page_notes": "本文および追跡先の新規申請ページには「事由発生日等から15日以内」という期限が事由（出生・転出・離婚等）ごとに複数記載されているが、新規申請一般に対する単一の起算点付き期限は明記されていない。「期限までに申請書のみご提出いただき」という文言はあるが、その期限自体の定義（何日以内・起算点）は示されていない。",
       "evidence_summary": {
-        "checked": 1,
-        "verified": 1,
+        "checked": 0,
+        "verified": 0,
         "partial": 0,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
-        "not_applicable": 0
+        "not_applicable": 1
       }
     },
     {
@@ -299,7 +303,7 @@
           "requested_urls": [
             "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
           ],
-          "page_notes": "このページは「各種届出ほか」（転出・氏名変更・口座変更など認定後の変更届）のみを扱っており、新規申請（本体の「申請」手続き）の説明は「児童手当の新規申請に必要なもの」ページに分かれている。手数料についての記載はどちらの本文にも見当たらず、新規申請ページ側を確認する必要がある。"
+          "page_notes": "このページは「各種届出ほか」で、区外転出・氏名変更・口座変更など既存受給者向けの手続き一覧。新規申請そのものの案内や手数料の記載は無く、新規申請の詳細は別ページ「児童手当の新規申請に必要なもの」にありそう。"
         },
         {
           "stage": "follow",
@@ -318,13 +322,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「各種届出ほか」ページとリンク先の「新規申請に必要なもの」ページはいずれも必要書類・添付書類の一覧が中心で、手数料・費用に関する記述は見当たらなかった。"
+          "page_notes": "「児童手当に関する各種届出ほか」と「児童手当の新規申請に必要なもの」のどちらのページにも、手数料・費用に関する記載は無かった（必要書類・添付書類・問い合わせ先の案内のみ）。"
         }
       ],
       "followed_urls": [
         "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
       ],
-      "page_notes": "「各種届出ほか」ページとリンク先の「新規申請に必要なもの」ページはいずれも必要書類・添付書類の一覧が中心で、手数料・費用に関する記述は見当たらなかった。",
+      "page_notes": "「児童手当に関する各種届出ほか」と「児童手当の新規申請に必要なもの」のどちらのページにも、手数料・費用に関する記載は無かった（必要書類・添付書類・問い合わせ先の案内のみ）。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -339,14 +343,14 @@
   "items": {
     "必要書類": {
       "found": true,
-      "value": "同居の場合は（1）マイナンバーカード（お持ちでない方はマイナンバー通知カード＋本人確認書類で代用可）、（2）児童手当認定請求書、（3）申請者の「資格情報のお知らせ」もしくは「資格確認書」またはマイナポータルの「資格情報画面」などの写し（国家公務員共済組合・地方公務員共済組合加入者のみ必要。審査により他の方にも提出を求める場合あり）、（4）手当の振込先口座情報（申請者名義に限る）。児童と別世帯の場合は上記に加え（5）別居監護申立書が必要。父母が離婚を前提に別居中、子が海外留学中、未成年後見人が受給する場合等は個別案内のため問い合わせ先へ連絡が必要。",
-      "evidence": "（3）申請者の「資格情報のお知らせ」もしくは「資格確認書」またはマイナポータルからダウンロードした「資格情報画面」などの写し",
+      "value": "（1）マイナンバーカード（無い場合はマイナンバー通知カード＋本人確認書類）、（2）児童手当認定請求書、（3）申請者の「資格情報のお知らせ」等の写し（共済組合加入者のみ）、（4）手当の振込先口座情報、（5）別居監護申立書（別居している場合のみ）",
+      "evidence": "マイナンバーカードをお持ちでない方は、マイナンバー通知カードおよび本人確認書類（運転免許証等）で代用できます。",
       "source": "linked_page",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
         "verdict": "exact",
-        "run": 62,
+        "run": 55,
         "note": ""
       }
     },
@@ -364,16 +368,16 @@
       }
     },
     "期限": {
-      "found": true,
-      "value": "事由発生日の翌日から15日以内",
-      "evidence": "今後お子様を養育する方は、左記の事由発生日の翌日から15日以内に住所地へ児童手当の申請をしてください。",
-      "source": "html",
-      "failure_reason": null,
-      "failure_type": null,
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "曖昧",
+      "failure_type": "fact_ambiguous",
       "evidence_check": {
-        "verdict": "exact",
-        "run": 51,
-        "note": ""
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
       }
     },
     "手数料": {
@@ -390,23 +394,24 @@
       }
     }
   },
-  "page_notes": "対象ページ（kakushu.html）は既存受給者の変更届一覧のみで新規申請の持ち物は載っておらず、同一階層の「児童手当の新規申請に必要なもの」ページに同居・別世帯の2パターンで持ち物一覧が表として整理されていた。\n「各種届出ほか」も「新規申請に必要なもの」も、必要書類（認定請求書PDF等）の提出を前提とした記述のみで、窓口持参が必須かオンラインで完結できるかは明言されていない。区ポータルサイトへの言及は『不足書類の追加提出』限定で、新規申請そのものの提出方法には触れていない。\nこのページ（kakushu.html）は既受給者向けの「各種届出」が中心で、初回の一般的な「児童手当の申請」に絞った単独の期限説明はない。リンク先の「新規申請に必要なもの」ページも『期限までに申請書のみご提出』とは書くが日数・起算点は明記していなかった。一方、本文中の（注意）書きに『事由発生日の翌日から15日以内に…児童手当の申請をしてください』という一般的な文言があり、これが起算点つきの期限として唯一明記された記述だった。\n「各種届出ほか」ページとリンク先の「新規申請に必要なもの」ページはいずれも必要書類・添付書類の一覧が中心で、手数料・費用に関する記述は見当たらなかった。",
+  "page_notes": "「児童手当に関する各種届出ほか」ページは変更届の一覧のみで新規申請の持ち物は載っておらず、別ページ「児童手当の新規申請に必要なもの」にのみ記載があった。\n「各種届出」ページは既に認定済みの世帯向けの変更届が中心で、新規申請の受付方法には触れていない。リンク先の「新規申請に必要なもの」ページも必要書類（マイナンバーカード・認定請求書PDF・口座情報等）を列挙するのみで、窓口へ持参するのか郵送・オンライン提出が可能なのかという提出方法自体は明記されていない。唯一のオンライン言及は「不足書類の提出」が区ポータルサイトから可能という限定的なもので、新規申請そのものの完結可否ではない。\n本文および追跡先の新規申請ページには「事由発生日等から15日以内」という期限が事由（出生・転出・離婚等）ごとに複数記載されているが、新規申請一般に対する単一の起算点付き期限は明記されていない。「期限までに申請書のみご提出いただき」という文言はあるが、その期限自体の定義（何日以内・起算点）は示されていない。\n「児童手当に関する各種届出ほか」と「児童手当の新規申請に必要なもの」のどちらのページにも、手数料・費用に関する記載は無かった（必要書類・添付書類・問い合わせ先の案内のみ）。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/kakushu.html",
-      "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html"
+      "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/shinki.html",
+      "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true
   },
   "evidence_summary": {
-    "checked": 2,
-    "verified": 2,
+    "checked": 1,
+    "verified": 1,
     "partial": 0,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,
-    "not_applicable": 2
+    "not_applicable": 3
   }
 }

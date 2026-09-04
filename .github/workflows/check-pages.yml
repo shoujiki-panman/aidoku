@@ -68,10 +68,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # 履歴も一緒にコミットする。これを足さないと、毎日の追記が
           # ランナーの中だけで消えて時系列が貯まらない。
+          # いまの状態も1日1行残す。status.py は毎セッション走るが読むだけで、
+          # 「いつ条件が崩れたか」「読めない底がいつ増えたか」を後から言えなかった。
+          # LLMは呼ばない・ネットにも出ない（ファイルを数えるだけ）。
+          python3 analysis/status.py --record >/dev/null || true
           # 目次は各ファイルの sha256 を持つので、site-status.json が変わったら作り直す。
           # 作らないと目次と実体がズレて、web/test_data_index.mjs が翌日から落ち続ける。
           python3 analysis/export_data_index.py
-          git add web/data/site-status.json web/data/history/site-status.jsonl web/data/index.json
+          git add web/data/site-status.json web/data/history/site-status.jsonl \
+                  web/data/history/status.jsonl web/data/index.json
           if git diff --cached --quiet; then
             echo "変化なし（ファイルも同じ）"
           else

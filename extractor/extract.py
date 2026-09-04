@@ -41,8 +41,17 @@ from measurement import (  # noqa: E402
 from measurement_cases import TestCase, test_cases_for  # noqa: E402
 
 
-def pick_page(discovery: dict) -> dict | None:
-    """探索結果から、抽出対象にするスコア最上位のHTMLページを選ぶ。"""
+def pick_page(discovery: dict, force_url: str | None = None) -> dict | None:
+    """探索結果から、抽出対象にするスコア最上位のHTMLページを選ぶ。
+
+    `force_url` は**実験専用**（`--page-url`）。起点を変えると点がどう動くかを
+    確かめるためのもので、**公開する数字を作るのに使ってはいけない**
+    （`read_breadth` が `agent_pick` でなくなる）。
+    """
+    if force_url:
+        return next(
+            (c for c in discovery.get("candidates", []) if c.get("url") == force_url),
+            None)
     for candidate in discovery.get("candidates", []):
         if candidate.get("is_pdf") or is_non_html(candidate.get("url") or ""):
             continue
@@ -134,8 +143,8 @@ def measurement_for(discovery: dict, *, follow: bool, model: str,
 
 def extract_prepared(discovery: dict, cases: tuple[TestCase, ...],
                      fetcher: PoliteFetcher, model: str, follow: bool,
-                     measurement: dict) -> dict:
-    page = pick_page(discovery)
+                     measurement: dict, force_url: str | None = None) -> dict:
+    page = pick_page(discovery, force_url)
     if page is None:
         return unreachable_result(discovery, list(cases), measurement, model)
     records, meta, extra = run_test_cases(
@@ -156,12 +165,21 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument(
         "--follow", action="store_true",
         help="各Test Caseが指定したリンク先を1階層だけ開いて再抽出する")
+    # ★同じ区を何度も測って揺れを見るとき、公開中の結果を上書きしないため。
+    parser.add_argument(
+        "--out-dir", default=None,
+        help="結果の書き出し先（既定 extractor/out）。揺れの測定で使う")
+    # ★実験専用。公開する数字を作るのに使ってはいけない（条件が変わる）。
+    parser.add_argument(
+        "--page-url", default=None,
+        help="起点ページを指定する（実験専用・公開データには使わない）")
     args = parser.parse_args(argv)
+    out_dir = Path(args.out_dir) if args.out_dir else OUT_DIR
 
     files = discovery_files(args.procedure, args.municipality)
     if not files:
         raise SystemExit("探索結果がない。先に crawler/discover.py を実行すること")
-    jobs = load_jobs(files, args.procedure, OUT_DIR)
+    jobs = load_jobs(files, args.procedure, out_dir)
     run_at = utc_timestamp()
     current_prompt = prompt_version([PROMPT, CLARITY_PROMPT])
     try:
@@ -177,7 +195,7 @@ def main(argv: list[str] | None = None) -> None:
     fetcher = PoliteFetcher()
     batch = build_batch(jobs, lambda job: extract_prepared(
         job.discovery, job.cases, fetcher, args.model, args.follow,
-        measurements[job.output]))
+        measurements[job.output], args.page_url))
 
     write_batch(batch)
     for _job, result, _serialized in batch:

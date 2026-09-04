@@ -1,0 +1,106 @@
+{
+  "_about": "同一ホスト制限が効いていなかったことの記録。判定には使わない。",
+  "version": "check-host-0.1",
+  "summary": {
+    "candidates": 2102,
+    "off_host_candidates": 154,
+    "groups_affected": 31,
+    "by_host": {
+      "translation2.j-server.com": 24,
+      "twitter.com": 24,
+      "www.seikatubunka.metro.tokyo.lg.jp": 20,
+      "tsutaeru.cloud": 19,
+      "www15.j-server.com": 17,
+      "www.facebook.com": 15,
+      "kodomo-smile.metro.tokyo.lg.jp": 13,
+      "b.hatena.ne.jp": 9,
+      "www.kodomoseisaku.metro.tokyo.lg.jp": 5,
+      "www3.zoomsight-sv2.jp": 3,
+      "www.my.metro.tokyo.lg.jp": 3,
+      "www.digitalservice.metro.tokyo.lg.jp": 1,
+      "www.sangyo-rodo.metro.tokyo.lg.jp": 1
+    },
+    "read_off_host": 13,
+    "read_as_entry": 1
+  },
+  "read_rows": [
+    {
+      "municipality": "荒川区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://www2.sodai-web.jp/arakawa/index.html"
+    },
+    {
+      "municipality": "荒川区",
+      "procedure": "tennyu",
+      "how": "追従",
+      "url": "http://ttzk.graffer.jp/ward-arakawa"
+    },
+    {
+      "municipality": "千代田区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://ecolife.e-tumo.jp/sodai.city.chiyoda-u/offer/offerList_initDisplay"
+    },
+    {
+      "municipality": "目黒区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://www2.sodai-web.jp/meguro/index.html"
+    },
+    {
+      "municipality": "港区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://ecolife.e-tumo.jp/sodai-minato-tokyo-u/offer/offerList_initDisplay"
+    },
+    {
+      "municipality": "練馬区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://www.sodai-nerima.jp/"
+    },
+    {
+      "municipality": "練馬区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://www.sodai-nerima.jp/eco/view/nerima/dustlistSearch.html"
+    },
+    {
+      "municipality": "大田区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://www.ota-sodai.com"
+    },
+    {
+      "municipality": "大田区",
+      "procedure": "tennyu",
+      "how": "追従",
+      "url": "https://ttzk.graffer.jp/ward-ota/move-in"
+    },
+    {
+      "municipality": "渋谷区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://p1.govtech-express.com/webui/1496310592?survey=a0OIj000000M4WMMA0"
+    },
+    {
+      "municipality": "新宿区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://www.shinjuku-sodai.com"
+    },
+    {
+      "municipality": "墨田区",
+      "procedure": "sodaigomi",
+      "how": "追従",
+      "url": "https://www2.sodai-web.jp/sumida/index.html"
+    },
+    {
+      "municipality": "東京都",
+      "procedure": "passport",
+      "how": "起点",
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/passport/documents/0000000374"
+    }
+  ]
+}

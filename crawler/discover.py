@@ -92,9 +92,20 @@ def link_filter(top_url: str, allow_subdomains: bool):
 
     フラグ（コマンドライン引数）ではなく設定に置くのは、**つけ忘れると
     結果が変わるのに、あとから見て分からなくなる**ため。
+
+    ★2026-09-03 修正。以前は `page_host in href` と書いていた。これは
+      **URL全体への部分一致**で、区のホスト名を中に含むだけの別ホストを通していた。
+
+        https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/...
+        https://translation2.j-server.com/...?url=https://www.city.adachi.tokyo.jp/
+        https://twitter.com/share?url=https://www.city.adachi.tokyo.jp/gomi/
+
+      **同一ホスト制限がそもそも効いていなかった。** 候補 2,102本のうち 154本が
+      別ホストで、31組にまたがっていた（`analysis/check_host.py`）。
     """
     if not allow_subdomains:
-        return lambda page_host, href: page_host in href
+        top_host = urllib.parse.urlsplit(top_url).netloc
+        return lambda page_host, href: urllib.parse.urlsplit(href).netloc == top_host
 
     # www. を落として親ドメインを作る。www.metro.tokyo.lg.jp → metro.tokyo.lg.jp
     top_host = urllib.parse.urlsplit(top_url).netloc

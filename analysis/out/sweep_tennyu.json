@@ -11,15 +11,14 @@
   "summary": {
     "municipalities": 24,
     "swept_fields": 36,
-    "pages_read": 115,
-    "found": 4,
+    "pages_read": 116,
+    "found": 3,
     "found_names": [
       "中央区/期限",
-      "新宿区/窓口/オンライン可否",
       "墨田区/窓口/オンライン可否",
       "墨田区/期限"
     ],
-    "exhausted": 28,
+    "exhausted": 29,
     "budget_hit": 0,
     "budget_names": [],
     "unreadable": 1,
@@ -622,13 +621,19 @@
           "stopped": "exhausted",
           "errors": 0,
           "unreadable": [],
-          "candidates": 1,
+          "candidates": 2,
           "looked": [
             {
               "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
               "link_text": "マイナポータルによるオンラインでの転出届（引越しワンストップサービス）",
               "verified": false,
               "from_cache": true
+            },
+            {
+              "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html",
+              "link_text": "住所の届出・証明（住民票）",
+              "verified": false,
+              "from_cache": false
             }
           ]
         }
@@ -1004,12 +1009,14 @@
         },
         {
           "field": "窓口/オンライン可否",
-          "found": true,
-          "value": "窓口での届出が必要（オンライン不可）",
-          "url": "https://www.city.shinjuku.lg.jp/todokede/index.html",
-          "evidence": "引越しで住所を異動される方は、窓口での「正確な住所の届出」が必要です",
-          "stopped": "found",
+          "found": false,
+          "value": "",
+          "url": null,
+          "evidence": "",
+          "stopped": "exhausted",
           "errors": 0,
+          "unreadable": [],
+          "candidates": 6,
           "looked": [
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000001_00002.html",
@@ -1042,10 +1049,10 @@
               "from_cache": true
             },
             {
-              "url": "https://www.city.shinjuku.lg.jp/todokede/index.html",
-              "link_text": "戸籍・住民票・印鑑登録・マイナンバーカード",
-              "verified": true,
-              "from_cache": true
+              "url": "https://www.city.shinjuku.lg.jp/living_03.html",
+              "link_text": "引越し",
+              "verified": false,
+              "from_cache": false
             }
           ]
         },

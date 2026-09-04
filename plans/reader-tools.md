@@ -82,3 +82,8 @@ Bridge CLI / Slack Bridge を差し込む形）と同じ構成にする。
 - 2026-08-23 `table_reading` を CONDITION_KEYS に追加。公開済み scores-*.json に `"table_reading": null` を足した（足さないと measurement_signature が KeyError）。
 - 2026-08-23 点数への効果は未測定。再測定は claude -p が要るため未実施。`experiment/run.py` は表なしのまま（本測定と条件が揃っていない）。武器③PDF読みは未着手。
 - 2026-08-23 実測時刻を探した。**どこにも残っていなかった**（extractor/out は全件 legacy_unknown で run_at が null、crawler/out には measurement 自体が無い）。無いので捏造せず、名前を実態に合わせた: measured_at（実測・無ければ null）/ exported_at（書き出し）/ recorded_at（記録）。measurements.csv の measured_on は全1035行が空欄になった。詳細は plans/fix-measured-on.md
+- 2026-09-02 武器③PDF読み 完了。`/ToUnicode` を持たず `/Ordering (Japan1)` だけ宣言するPDFを、Adobe 公式 `UniJIS-UCS2-H`（BSD-3-Clause）から起こした字形表 9,490件で読む。**Japan1 を宣言しているときだけ当てる**（無条件に当てると別の字体で化ける）。
+- 2026-09-02 武器④OCR 完了。macOS Vision + PDFKit。朝は「開発時の道具、測定条件に混ぜない」としていたが**誤りで、指摘を受けて改めた**。住民の ChatGPT / Claude は絵を読む。こちらが字しか扱えないまま「その区は書いていない」と言うのは、住民の側で読めているものを区の落ち度にすること。再現性は「使わない」ではなく**使ったことを記録する**ことで守る（`non_html_reading = cmap_text+ocr`）。
+- 2026-09-02 OCRの落とし所が「本文のストリームが無い」の早期returnより後ろにあり、**画像PDFに一度も届いていなかった**（7本中1本しか読めなかった）。`_pdf_as_text` に切り出し、失敗する全経路の後で絵として読むよう直して 4本読めた。
+- 2026-09-02 読めない候補 11本 → 3本（404が2本、元々29字の張り紙1本）。**これ以上は道具では減らない。**
+- 2026-09-02 武器⑤サイト内検索は**作らないと決めた**。作る前に測ったら、区自身のURLで叩ける検索は24自治体中**0**だった（Google CSE 20 / `#` のみ 3 / 外部 1）。「検索窓を使えば読める」は成り立たない。`analysis/out/search_forms.json`。

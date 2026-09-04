@@ -2,7 +2,7 @@
   "_about": "AI読（アイドク）の公開データの目次。人間向けの説明は README.md、機械向けはこのファイル。まずここを読めば、どこに何があり、どこまで測ってあるかが分かる。",
   "name": "AI読（アイドク）公開データ",
   "schema_version": 1,
-  "generated_at": "2026-09-04T13:51:56+00:00",
+  "generated_at": "2026-09-04T14:12:57+00:00",
   "homepage": "https://shoujiki-panman.github.io/aidoku/web/",
   "repository": "https://github.com/shoujiki-panman/aidoku",
   "base_url": "https://shoujiki-panman.github.io/aidoku/web/data/",
@@ -38,43 +38,205 @@
     ],
     "by_procedure": {
       "tennyu": {
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "runs": 23,
         "models": [
           "claude-cli/claude-sonnet-5"
         ],
         "conditions": {
-          "comparison_status": "legacy_unknown"
+          "comparison_status": "compatible",
+          "measurement_version": "aidoku-1.0",
+          "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+          "follow": true,
+          "max_follow": 2,
+          "max_depth": 3,
+          "beam": {
+            "1": {
+              "parents": 1,
+              "links": 6
+            },
+            "2": {
+              "parents": 3,
+              "links": 4
+            },
+            "3": {
+              "parents": 4,
+              "links": 3
+            }
+          },
+          "max_fetches": 26,
+          "max_text_chars": 18000,
+          "max_links": 40,
+          "link_order": "score_desc",
+          "table_reading": "heading_value",
+          "read_breadth": "agent_pick",
+          "non_html_reading": "cmap_text+ocr",
+          "model": "claude-cli",
+          "model_version": "claude-sonnet-5",
+          "run_at": [
+            "2026-08-30T17:56:25+00:00",
+            "2026-08-30T17:57:27+00:00",
+            "2026-08-30T17:59:47+00:00",
+            "2026-08-30T18:01:55+00:00",
+            "2026-08-31T13:07:19+00:00",
+            "2026-08-31T13:09:23+00:00",
+            "2026-08-31T13:13:15+00:00",
+            "2026-08-31T13:16:17+00:00",
+            "2026-08-31T13:17:58+00:00",
+            "2026-08-31T13:18:59+00:00",
+            "2026-08-31T13:21:37+00:00",
+            "2026-08-31T13:22:53+00:00",
+            "2026-08-31T13:25:32+00:00",
+            "2026-08-31T13:27:00+00:00",
+            "2026-08-31T13:28:59+00:00",
+            "2026-08-31T13:30:43+00:00",
+            "2026-08-31T13:32:45+00:00",
+            "2026-08-31T13:34:36+00:00",
+            "2026-08-31T13:36:39+00:00",
+            "2026-08-31T13:39:02+00:00",
+            "2026-08-31T13:41:33+00:00",
+            "2026-08-31T13:43:33+00:00",
+            "2026-08-31T15:33:55+00:00"
+          ],
+          "discovery_run_at": [
+            "2026-08-27T15:29:07+00:00"
+          ]
         }
       },
       "jidouteate": {
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "runs": 23,
         "models": [
           "claude-cli/claude-sonnet-5"
         ],
         "conditions": {
-          "comparison_status": "legacy_unknown"
+          "comparison_status": "compatible",
+          "measurement_version": "aidoku-1.0",
+          "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+          "follow": true,
+          "max_follow": 2,
+          "max_depth": 3,
+          "beam": {
+            "1": {
+              "parents": 1,
+              "links": 6
+            },
+            "2": {
+              "parents": 3,
+              "links": 4
+            },
+            "3": {
+              "parents": 4,
+              "links": 3
+            }
+          },
+          "max_fetches": 26,
+          "max_text_chars": 18000,
+          "max_links": 40,
+          "link_order": "score_desc",
+          "table_reading": "heading_value",
+          "read_breadth": "agent_pick",
+          "non_html_reading": "cmap_text+ocr",
+          "model": "claude-cli",
+          "model_version": "claude-sonnet-5",
+          "run_at": [
+            "2026-08-30T17:43:44+00:00",
+            "2026-08-30T17:45:43+00:00",
+            "2026-08-30T17:46:46+00:00",
+            "2026-08-30T17:49:25+00:00",
+            "2026-08-30T17:50:42+00:00",
+            "2026-08-31T16:07:43+00:00",
+            "2026-08-31T16:09:57+00:00",
+            "2026-08-31T16:11:23+00:00",
+            "2026-08-31T16:13:39+00:00",
+            "2026-08-31T16:16:26+00:00",
+            "2026-08-31T16:18:14+00:00",
+            "2026-08-31T16:20:58+00:00",
+            "2026-08-31T16:22:53+00:00",
+            "2026-08-31T16:24:31+00:00",
+            "2026-08-31T16:26:27+00:00",
+            "2026-08-31T16:28:54+00:00",
+            "2026-08-31T16:30:27+00:00",
+            "2026-08-31T16:32:10+00:00",
+            "2026-08-31T16:34:32+00:00",
+            "2026-08-31T16:35:54+00:00",
+            "2026-08-31T16:37:30+00:00",
+            "2026-08-31T16:39:46+00:00",
+            "2026-08-31T16:41:03+00:00"
+          ],
+          "discovery_run_at": [
+            "2026-08-28T13:16:52+00:00"
+          ]
         }
       },
       "sodaigomi": {
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "runs": 23,
         "models": [
-          "claude-cli/claude-sonnet-5",
-          "未記録"
+          "claude-cli/claude-sonnet-5"
         ],
         "conditions": {
-          "comparison_status": "legacy_unknown"
+          "comparison_status": "compatible",
+          "measurement_version": "aidoku-1.0",
+          "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+          "follow": true,
+          "max_follow": 2,
+          "max_depth": 3,
+          "beam": {
+            "1": {
+              "parents": 1,
+              "links": 6
+            },
+            "2": {
+              "parents": 3,
+              "links": 4
+            },
+            "3": {
+              "parents": 4,
+              "links": 3
+            }
+          },
+          "max_fetches": 26,
+          "max_text_chars": 18000,
+          "max_links": 40,
+          "link_order": "score_desc",
+          "table_reading": "heading_value",
+          "read_breadth": "agent_pick",
+          "non_html_reading": "cmap_text+ocr",
+          "model": "claude-cli",
+          "model_version": "claude-sonnet-5",
+          "run_at": [
+            "2026-08-30T18:04:22+00:00",
+            "2026-08-31T13:45:42+00:00",
+            "2026-08-31T13:47:25+00:00",
+            "2026-08-31T13:49:38+00:00",
+            "2026-08-31T13:51:35+00:00",
+            "2026-08-31T13:53:42+00:00",
+            "2026-08-31T13:56:19+00:00",
+            "2026-08-31T13:58:16+00:00",
+            "2026-08-31T14:00:31+00:00",
+            "2026-08-31T14:02:21+00:00",
+            "2026-08-31T14:04:56+00:00",
+            "2026-08-31T15:38:23+00:00",
+            "2026-08-31T15:40:48+00:00",
+            "2026-08-31T15:42:43+00:00",
+            "2026-08-31T15:45:01+00:00",
+            "2026-08-31T15:48:04+00:00",
+            "2026-08-31T15:50:54+00:00",
+            "2026-08-31T15:53:02+00:00",
+            "2026-08-31T15:55:55+00:00",
+            "2026-08-31T15:58:53+00:00",
+            "2026-08-31T16:01:30+00:00",
+            "2026-08-31T16:04:14+00:00",
+            "2026-08-31T16:42:50+00:00"
+          ],
+          "discovery_run_at": [
+            "2026-08-28T14:37:31+00:00"
+          ]
         }
       }
     },
-    "unrecorded": [
-      "tennyu",
-      "jidouteate",
-      "sodaigomi"
-    ],
-    "note": "いま配信している実測は、測定条件（モデル・プロンプト版・探索の上限）が記録されていない回のもの。したがって過去との差が出ても、サイトが変わったのか判定器が変わったのかを断定できない。history/ の差分もこの場合、自治体のせいにしない。**測った時刻（run_at）も記録されていない。**したがってhistory/measurements.csv の measured_on と surveys.json の measured_at は空欄 / null になる。書き出し時刻（exported_on / exported_at）で埋めることはしない。"
+    "unrecorded": []
   },
   "calibration": {
     "what": "人手で作った正解データ。判定器のぶれを測るために使う",
@@ -139,9 +301,9 @@
       "title": "転入届の実測（23区）",
       "description": "東京23区の「転入届」のページを住民のAIに読ませ、4項目を読み取れたかを測った結果。",
       "path": "scores-tennyu.json",
-      "bytes": 60960,
-      "sha256": "12838fd504d1f8b5a6f74ae037fb3739e30e2b21a98b5e3896d67465a458383b",
-      "generated_at": "2026-08-17T15:10:26+00:00",
+      "bytes": 79947,
+      "sha256": "b7104885d51f04964689efdcd85d65f19122f82e1f294088343e3038e27e0646",
+      "generated_at": "2026-08-31T16:46:38+00:00",
       "records": {
         "path": "municipalities",
         "count": 23
@@ -167,9 +329,9 @@
       "title": "児童手当の申請の実測（23区）",
       "description": "東京23区の「児童手当の申請」のページを住民のAIに読ませ、4項目を読み取れたかを測った結果。",
       "path": "scores-jidouteate.json",
-      "bytes": 64791,
-      "sha256": "5959b97a7d7b2ed26c7a840fc98dbd018de54d2d85699fb51a3e93b7b263dce5",
-      "generated_at": "2026-08-17T15:10:26+00:00",
+      "bytes": 82346,
+      "sha256": "ebd5f82a65f11c32cfefac790a193a3cf80bacc631734394315acab3b3f3bbe0",
+      "generated_at": "2026-08-31T16:46:38+00:00",
       "records": {
         "path": "municipalities",
         "count": 23
@@ -195,9 +357,9 @@
       "title": "粗大ごみ収集の申込の実測（23区）",
       "description": "東京23区の「粗大ごみ収集の申込」のページを住民のAIに読ませ、4項目を読み取れたかを測った結果。",
       "path": "scores-sodaigomi.json",
-      "bytes": 65578,
-      "sha256": "9f83f87e9f61eb63bd9b46d673a6847e7ae49901659e7d388ca06274e55841f3",
-      "generated_at": "2026-08-17T15:10:26+00:00",
+      "bytes": 85078,
+      "sha256": "9dc334ee13af49a0dbddb32ff1d7bfc03e006fa084db6ea2562c72d6b27f36a3",
+      "generated_at": "2026-08-31T16:46:38+00:00",
       "records": {
         "path": "municipalities",
         "count": 23

@@ -2,7 +2,7 @@
   "_about": "虱潰しで読んだ (URL, 項目) の記録。二度読まないために持つ。判定ではなく、何を見たかの記録。",
   "version": "sweep-0.1",
   "procedure": "tennyu",
-  "n": 115,
+  "n": 117,
   "visits": {
     "https://www.city.adachi.tokyo.jp/kurashi/todokede/index.html\t手数料": {
       "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/index.html",
@@ -1607,6 +1607,34 @@
       "value": "",
       "evidence": "",
       "why_not": "本文はメニュー項目の一覧（見出しリンク集）のみで、転入届の手数料に関する記述は本文中にない。「手数料一覧」というリンク項目はあるが、これは戸籍・住民票等の証明書交付手数料のページへのリンクであり、転入届そのものの手数料額は本文に書かれていない。",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html\t手数料": {
+      "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html",
+      "link_text": "住所の届出・証明（住民票）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "住民異動届（転入・転出・転居など）の窓口案内や住民票の写し等の証明書交付手数料に関するページで、転入届そのものの手数料についての記載はない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.shinjuku.lg.jp/living_03.html\t窓口/オンライン可否": {
+      "url": "https://www.city.shinjuku.lg.jp/living_03.html",
+      "link_text": "引越し",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "引越し関連の手続きへのリンク一覧ページで、「住所変更の届け出」などへのリンクがあるのみ。転入届の窓口/オンライン可否についての具体的な記述は本文中にない",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,

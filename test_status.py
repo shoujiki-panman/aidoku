@@ -18,10 +18,12 @@ sys.path.insert(0, str(ROOT / "analysis"))
 from status import (  # noqa: E402
     WATCH_STALE_DAYS,
     _age_days,
+    _average,
     conditions,
     newest,
     next_actions,
     render,
+    snapshot,
 )
 
 
@@ -39,6 +41,11 @@ def state(**kw) -> dict:
         "published": {p: {"ok": True, "generated_at": "2026-08-30T00:00:00+00:00",
                           "age_days": 1.0, "has_conditions": True}
                       for p in ("tennyu", "jidouteate", "sodaigomi")},
+        "delivery": {"ahead": 0, "undelivered": [],
+                     "procedures": {p: {"live_average": 60.0, "local_average": 60.0,
+                                        "live_generated_at": "2026-08-30T00:00:00+00:00",
+                                        "live_has_conditions": True, "delivered": True}
+                                    for p in ("tennyu", "jidouteate", "sodaigomi")}},
     }
     return {**base, **kw}
 
@@ -98,9 +105,9 @@ class 次にやること(unittest.TestCase):
         cond = {p: {"municipalities": 24, "stale": [], "uniform": True}
                 for p in ("tennyu", "jidouteate", "sodaigomi")}
         cond["sodaigomi"] = {"municipalities": 24, "stale": ["ota", "kita"],
-                             "uniform": False}
+                             "why": ["non_html_reading"], "uniform": False}
         got = next_actions(state(conditions=cond))
-        self.assertTrue(any("公開できない" in x and "2区" in x for x in got))
+        self.assertTrue(any("公開できない" in x and "2自治体" in x for x in got))
 
     def test_公開データに条件の記録が無ければ言う(self):
         pub = {p: {"ok": True, "generated_at": "x", "age_days": 1.0,
@@ -141,6 +148,115 @@ class 表示(unittest.TestCase):
     def test_見張りが無くても落ちない(self):
         text = render(state(watch={"ok": False, "note": "site-status.json が無い"}))
         self.assertIn("site-status.json が無い", text)
+
+
+class 状態を履歴に残す(unittest.TestCase):
+    """**なぜ要るか**: `status.py` は毎セッション走るが読むだけだった。
+    「いつ条件が崩れたか」「読めない底がいつ増えたか」を後から言えない。"""
+
+    def snap(self, **kw) -> dict:
+        return snapshot(state(**kw), "2026-09-02T16:00:00+00:00")
+
+    def test_日で重複判定する(self):
+        # ★毎セッション走るので、時刻で見ると1日に何行も入る。
+        self.assertEqual(self.snap()["recorded_day"], "2026-09-02")
+
+    def test_条件が崩れた数を残す(self):
+        cond = {p: {"municipalities": 24, "stale": ["a", "b"], "uniform": False}
+                for p in ("tennyu", "jidouteate", "sodaigomi")}
+        self.assertEqual(self.snap(conditions=cond)["conditions_stale"]["tennyu"], 2)
+
+    def test_読めない底の本数を残す(self):
+        self.assertEqual(self.snap(blockers={"urls": 7})["blockers"], 7)
+
+    def test_虱潰しの数を残す(self):
+        got = self.snap()["sweep"]["tennyu"]
+        self.assertEqual(got["exhausted"], 1)
+        self.assertIn("unreadable", got)
+
+    def test_区の名前もURLも持たない(self):
+        """★数だけ残す。名前まで持つと、履歴が公開データの複製になる。"""
+        import json
+        text = json.dumps(self.snap(), ensure_ascii=False)
+        self.assertNotIn("http", text)
+        self.assertNotIn("municipality", text)
+
+    def test_公開データに条件があるかを残す(self):
+        pub = {p: {"ok": True, "generated_at": "x", "age_days": 1.0,
+                   "has_conditions": False} for p in ("tennyu", "jidouteate", "sodaigomi")}
+        self.assertFalse(self.snap(published=pub)["published_has_conditions"]["tennyu"])
+
+
+class 参照が古いだけのとき(unittest.TestCase):
+    """**なぜ要るか**: `origin/main` を fetch していないと、見張りが止まって見える。
+    実測で「3.7日前・止まっている」と誤報し、動いているワークフローを調べに行った。"""
+
+    def test_fetchを先に促す(self):
+        w = {"ok": True, "age_days": 3.7, "stale": True, "pages": 68, "changed": 29,
+             "gone": 0, "ref_age_days": 3.7, "maybe_unfetched": True}
+        todo = " ".join(next_actions(state(watch=w)))
+        self.assertIn("git fetch origin main", todo)
+
+    def test_参照が新しければワークフローを疑う(self):
+        w = {"ok": True, "age_days": 3.7, "stale": True, "pages": 68, "changed": 29,
+             "gone": 0, "ref_age_days": 0.1, "maybe_unfetched": False}
+        todo = " ".join(next_actions(state(watch=w)))
+        self.assertIn("check-pages.yml", todo)
+        self.assertNotIn("git fetch", todo)
+
+
+class 住民に届いているか(unittest.TestCase):
+    """**なぜ要るか**: これが無かったせいで「公開データを更新した」と8日間言い続けた。
+    更新していたのは**枝の上のファイル**で、住民が見る画面は動いていなかった。"""
+
+    def undelivered(self, **over) -> dict:
+        row = {"live_average": 39.6, "local_average": 53.9,
+               "live_generated_at": "2026-08-17T00:00:00+00:00",
+               "live_has_conditions": False, "delivered": False}
+        row.update(over)
+        return state(delivery={
+            "ahead": 49, "undelivered": ["sodaigomi"],
+            "procedures": {p: (row if p == "sodaigomi" else
+                               {"live_average": 60.0, "local_average": 60.0,
+                                "live_generated_at": "2026-08-30T00:00:00+00:00",
+                                "live_has_conditions": True, "delivered": True})
+                           for p in ("tennyu", "jidouteate", "sodaigomi")}})
+
+    def test_平均を出す(self):
+        doc = {"municipalities": [{"total": 40}, {"total": 60}]}
+        self.assertEqual(_average(doc), 50.0)
+
+    def test_点が無ければNone(self):
+        # ★0 で埋めると「全区0点」に見える。無いものは無いと言う。
+        self.assertIsNone(_average({"municipalities": []}))
+        self.assertIsNone(_average(None))
+
+    def test_住民の数字と手元の数字を並べる(self):
+        text = render(self.undelivered())
+        self.assertIn("住民 39.6", text)
+        self.assertIn("手元 53.9", text)
+
+    def test_届いていないものに印が付く(self):
+        self.assertIn("★届いていない: sodaigomi", render(self.undelivered()))
+
+    def test_住民の版の日付を出す(self):
+        self.assertIn("2026-08-17", render(self.undelivered()))
+
+    def test_条件の記録が無いことも言う(self):
+        self.assertIn("条件の記録なし", render(self.undelivered()))
+
+    def test_未マージ数を出す(self):
+        self.assertIn("未マージ 49コミット", render(self.undelivered()))
+
+    def test_次にやることの先頭に来る(self):
+        """★他の指摘に埋もれると、また8日見落とす。"""
+        todo = next_actions(self.undelivered())
+        self.assertIn("住民に届いていない", todo[0])
+        self.assertIn("main から配信", todo[0])
+
+    def test_届いていれば黙る(self):
+        self.assertNotIn("★届いていない", render(state()))
+        self.assertFalse(any("届いていない" in t for t in next_actions(state())))
 
 
 class 実データ(unittest.TestCase):

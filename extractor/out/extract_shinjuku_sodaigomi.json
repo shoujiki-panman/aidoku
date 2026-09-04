@@ -43,20 +43,22 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T19:21:32+00:00",
+    "run_at": "2026-08-31T15:53:02+00:00",
     "discovery_run_at": "2026-08-28T14:37:31+00:00"
   },
   "followed_urls": [
-    "https://www.shinjuku-sodai.com"
+    "https://www.shinjuku-sodai.com",
+    "https://www.city.shinjuku.lg.jp/seikatsu/index09.html"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "インターネット受付でお申し込みになれる粗大ごみの個数は、合計10個までです。それ以上の粗大ごみをお出しになる場合には、粗大ごみ受付センターまでお電話でお申し込みください。",
   "online_clarity_pages": [
     "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
-    "https://www.shinjuku-sodai.com"
+    "https://www.shinjuku-sodai.com",
+    "https://www.city.shinjuku.lg.jp/seikatsu/index09.html"
   ],
   "test_cases": [
     {
@@ -90,9 +92,10 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.shinjuku-sodai.com"
+            "https://www.shinjuku-sodai.com",
+            "https://www.city.shinjuku.lg.jp/seikatsu/index09.html"
           ],
-          "page_notes": "このページは粗大ごみ受付センターの電話番号・URL変更を告知する更新履歴ページで、申込手続き自体の持ち物・必要書類の記載はない。本文に「粗大ごみの出し方は、こちらからご確認ください」とあるが該当リンクは一覧に含まれず、代わりに申込先である粗大ごみ受付センターの公式サイト（shinjuku-sodai.com）へのリンクのみ確認できる。"
+          "page_notes": "このページは粗大ごみ受付センターの電話番号・URL変更の告知のみで、申込手続きの持ち物・必要書類には触れていない。本文中に「粗大ごみの出し方は、こちらからご確認ください」とあるが、そのリンク先URLはリンク一覧に含まれておらず、代わりに受付センター本体サイト（shinjuku-sodai.com）とごみ・リサイクルの上位カテゴリページを候補とした。"
         },
         {
           "stage": "follow",
@@ -111,13 +114,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページは受付センターの連絡先変更のお知らせのみ。リンク先の申込サイトも収集品目・支払い方法・注意事項は記載しているが、申込に必要な持ち物・書類についての言及は見当たらなかった。"
+          "page_notes": "元ページは受付センターの連絡先変更告知のみ。リンク先の申込サイト（shinjuku-sodai.com）は減額・免除対象者向けの電話案内や処理券購入方法には触れているが、申込手続きに必要な持ち物・書類の記載は見当たらなかった。"
         }
       ],
       "followed_urls": [
-        "https://www.shinjuku-sodai.com"
+        "https://www.shinjuku-sodai.com",
+        "https://www.city.shinjuku.lg.jp/seikatsu/index09.html"
       ],
-      "page_notes": "元ページは受付センターの連絡先変更のお知らせのみ。リンク先の申込サイトも収集品目・支払い方法・注意事項は記載しているが、申込に必要な持ち物・書類についての言及は見当たらなかった。",
+      "page_notes": "元ページは受付センターの連絡先変更告知のみ。リンク先の申込サイト（shinjuku-sodai.com）は減額・免除対象者向けの電話案内や処理券購入方法には触れているが、申込手続きに必要な持ち物・書類の記載は見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -135,15 +139,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "電話とオンライン（ホームページ）の両方で申込可能。ホームページは24時間受付（メンテナンス等除く）、電話は月～土曜8時～19時",
-        "evidence": "お申込み先である粗大ごみ受付センターの電話番号、ホームページURLが変更になります。",
+        "value": "電話受付（03-5304-8080、月～土曜日午前8時～午後7時）とホームページ（https://www.shinjuku-sodai.com）の両方があり、ホームページは24時間受付（メンテナンス等除く）となっているため、窓口だけでなくオンラインでの申込みが可能",
+        "evidence": "変更項目: ホームページURL / 変更内容: https://www.shinjuku-sodai.com / 受付時間: 24時間受付（メンテナンス等除く）",
         "source": "html",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "exact",
-          "run": 42,
-          "note": ""
+          "verdict": "partial",
+          "run": 45,
+          "note": "連続45文字だけ一致。引用全体は確認できない"
         }
       },
       "attempts": [
@@ -152,27 +156,27 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "電話とオンライン（ホームページ）の両方で申込可能。ホームページは24時間受付（メンテナンス等除く）、電話は月～土曜8時～19時",
-            "evidence": "お申込み先である粗大ごみ受付センターの電話番号、ホームページURLが変更になります。",
+            "value": "電話受付（03-5304-8080、月～土曜日午前8時～午後7時）とホームページ（https://www.shinjuku-sodai.com）の両方があり、ホームページは24時間受付（メンテナンス等除く）となっているため、窓口だけでなくオンラインでの申込みが可能",
+            "evidence": "変更項目: ホームページURL / 変更内容: https://www.shinjuku-sodai.com / 受付時間: 24時間受付（メンテナンス等除く）",
             "source": "html",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "exact",
-              "run": 42,
-              "note": ""
+              "verdict": "partial",
+              "run": 45,
+              "note": "連続45文字だけ一致。引用全体は確認できない"
             }
           },
           "requested_urls": [],
-          "page_notes": "このページは受付センターの電話・URL変更のお知らせだが、表に電話（月～土8-19時）とホームページ（24時間受付）の両チャネルが明記されており、本文の探索順序1で判定できた。"
+          "page_notes": "このページは「受付先が変わります」という改修告知ページで、電話番号とホームページURLの変更を表形式で示しており、ホームページの受付時間が24時間（メンテナンス等除く）と明記されているためオンライン完結を本文だけで判定できた。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "このページは受付センターの電話・URL変更のお知らせだが、表に電話（月～土8-19時）とホームページ（24時間受付）の両チャネルが明記されており、本文の探索順序1で判定できた。",
+      "page_notes": "このページは「受付先が変わります」という改修告知ページで、電話番号とホームページURLの変更を表形式で示しており、ホームページの受付時間が24時間（メンテナンス等除く）と明記されているためオンライン完結を本文だけで判定できた。",
       "evidence_summary": {
         "checked": 1,
-        "verified": 1,
-        "partial": 0,
+        "verified": 0,
+        "partial": 1,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
@@ -212,7 +216,7 @@
           "requested_urls": [
             "https://www.shinjuku-sodai.com"
           ],
-          "page_notes": "このページは「粗大ごみ受付センターの電話番号・URLが変更になった」という告知ページで、申込の期限には触れていない。本文中に「粗大ごみの出し方は、こちらからご確認ください」とあるが、そのリンク先URLはリンク一覧に見当たらず、代わりに新しい受付センターの公式サイト（https://www.shinjuku-sodai.com）がリンクされている。"
+          "page_notes": "このページは粗大ごみ受付センターの電話番号・URL変更のお知らせのみで、申込期限そのものは書かれていない。本文中「粗大ごみの出し方は、こちらからご確認ください」がリンク先（粗大ごみ受付センターのサイト）を指しており、そこに期限情報がありそう。"
         },
         {
           "stage": "follow",
@@ -231,13 +235,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページは受付センターの電話番号・URL変更を告知するお知らせのみで申込期限の記載なし。リンク先の新宿区粗大ごみインターネット受付サイトも申込方法・除外品目・注意事項は詳しいが、収集日の何日前までに申し込むべきかという期限（起算点）の記載は見当たらなかった。"
+          "page_notes": "元ページは受付センターの電話番号・URL変更のお知らせのみで申込期限の記載は無い。リンク先の受付サイトも申込方法・除外品目・注意事項はあるが、収集日から逆算した申込期限（起算点つき）の記述は見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.shinjuku-sodai.com"
       ],
-      "page_notes": "元ページは受付センターの電話番号・URL変更を告知するお知らせのみで申込期限の記載なし。リンク先の新宿区粗大ごみインターネット受付サイトも申込方法・除外品目・注意事項は詳しいが、収集日の何日前までに申し込むべきかという期限（起算点）の記載は見当たらなかった。",
+      "page_notes": "元ページは受付センターの電話番号・URL変更のお知らせのみで申込期限の記載は無い。リンク先の受付サイトも申込方法・除外品目・注意事項はあるが、収集日から逆算した申込期限（起算点つき）の記述は見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -254,16 +258,16 @@
       "question": "新宿区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
       "test_case_version": "1.0",
       "result": {
-        "found": false,
-        "value": "",
-        "evidence": "",
-        "source": null,
-        "failure_reason": "曖昧",
-        "failure_type": "fact_ambiguous",
+        "found": true,
+        "value": "有料（金額は品目ごとに異なり、「粗大ごみ品目リスト手数料検索」で確認する仕組み）",
+        "evidence": "有料粗大ごみ処理券をご購入。有料粗大ごみ処理券は、「新宿区有料粗大ごみ処理券取扱所」の掲示のある商店・コンビニ・スーパーなどでお求めください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
         "evidence_check": {
-          "verdict": "not_applicable",
-          "run": 0,
-          "note": "found=false のため照合しない"
+          "verdict": "exact",
+          "run": 71,
+          "note": ""
         }
       },
       "attempts": [
@@ -281,40 +285,40 @@
           "requested_urls": [
             "https://www.shinjuku-sodai.com"
           ],
-          "page_notes": "このページは受付先の電話番号・URL変更のお知らせのみで、手数料の記載はない。「粗大ごみの出し方は、こちらからご確認ください」と粗大ごみ受付センター（shinjuku-sodai.com）への案内があり、手数料はそちらに掲載されている可能性が高い。"
+          "page_notes": "このページは受付センターの電話番号・URL変更のお知らせのみで、手数料等の手続き詳細は「粗大ごみの出し方」や受付センターのサイト（shinjuku-sodai.com）側にあると案内されている。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
-            "found": false,
-            "value": "",
-            "evidence": "",
-            "source": null,
-            "failure_reason": "曖昧",
-            "failure_type": "fact_ambiguous",
+            "found": true,
+            "value": "有料（金額は品目ごとに異なり、「粗大ごみ品目リスト手数料検索」で確認する仕組み）",
+            "evidence": "有料粗大ごみ処理券をご購入。有料粗大ごみ処理券は、「新宿区有料粗大ごみ処理券取扱所」の掲示のある商店・コンビニ・スーパーなどでお求めください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
             "evidence_check": {
-              "verdict": "not_applicable",
-              "run": 0,
-              "note": "found=false のため照合しない"
+              "verdict": "exact",
+              "run": 71,
+              "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "受付ページには「有料粗大ごみ処理券をご購入」「品目リスト手数料検索」とあり、有料であることと品目別の料金検索ツールへの案内はあるが、具体的な金額（円）はこの本文には書かれていない。品目ごとに異なるため一意の数字が本文中に存在しない。"
+          "page_notes": "自治体本体ページ（shinjuku.lg.jp）には手数料の記述がなく、外部委託の受付サイト（shinjuku-sodai.com）に「有料粗大ごみ処理券」制度の説明があった。ただし具体的な金額表は本文中になく、「品目リスト手数料検索」という別機能に金額情報が置かれている構成だった。"
         }
       ],
       "followed_urls": [
         "https://www.shinjuku-sodai.com"
       ],
-      "page_notes": "受付ページには「有料粗大ごみ処理券をご購入」「品目リスト手数料検索」とあり、有料であることと品目別の料金検索ツールへの案内はあるが、具体的な金額（円）はこの本文には書かれていない。品目ごとに異なるため一意の数字が本文中に存在しない。",
+      "page_notes": "自治体本体ページ（shinjuku.lg.jp）には手数料の記述がなく、外部委託の受付サイト（shinjuku-sodai.com）に「有料粗大ごみ処理券」制度の説明があった。ただし具体的な金額表は本文中になく、「品目リスト手数料検索」という別機能に金額情報が置かれている構成だった。",
       "evidence_summary": {
-        "checked": 0,
-        "verified": 0,
+        "checked": 1,
+        "verified": 1,
         "partial": 0,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
-        "not_applicable": 1
+        "not_applicable": 0
       }
     }
   ],
@@ -334,15 +338,15 @@
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "電話とオンライン（ホームページ）の両方で申込可能。ホームページは24時間受付（メンテナンス等除く）、電話は月～土曜8時～19時",
-      "evidence": "お申込み先である粗大ごみ受付センターの電話番号、ホームページURLが変更になります。",
+      "value": "電話受付（03-5304-8080、月～土曜日午前8時～午後7時）とホームページ（https://www.shinjuku-sodai.com）の両方があり、ホームページは24時間受付（メンテナンス等除く）となっているため、窓口だけでなくオンラインでの申込みが可能",
+      "evidence": "変更項目: ホームページURL / 変更内容: https://www.shinjuku-sodai.com / 受付時間: 24時間受付（メンテナンス等除く）",
       "source": "html",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "exact",
-        "run": 42,
-        "note": ""
+        "verdict": "partial",
+        "run": 45,
+        "note": "連続45文字だけ一致。引用全体は確認できない"
       }
     },
     "期限": {
@@ -359,36 +363,37 @@
       }
     },
     "手数料": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "曖昧",
-      "failure_type": "fact_ambiguous",
+      "found": true,
+      "value": "有料（金額は品目ごとに異なり、「粗大ごみ品目リスト手数料検索」で確認する仕組み）",
+      "evidence": "有料粗大ごみ処理券をご購入。有料粗大ごみ処理券は、「新宿区有料粗大ごみ処理券取扱所」の掲示のある商店・コンビニ・スーパーなどでお求めください。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
       "evidence_check": {
-        "verdict": "not_applicable",
-        "run": 0,
-        "note": "found=false のため照合しない"
+        "verdict": "exact",
+        "run": 71,
+        "note": ""
       }
     }
   },
-  "page_notes": "元ページは受付センターの連絡先変更のお知らせのみ。リンク先の申込サイトも収集品目・支払い方法・注意事項は記載しているが、申込に必要な持ち物・書類についての言及は見当たらなかった。\nこのページは受付センターの電話・URL変更のお知らせだが、表に電話（月～土8-19時）とホームページ（24時間受付）の両チャネルが明記されており、本文の探索順序1で判定できた。\n元ページは受付センターの電話番号・URL変更を告知するお知らせのみで申込期限の記載なし。リンク先の新宿区粗大ごみインターネット受付サイトも申込方法・除外品目・注意事項は詳しいが、収集日の何日前までに申し込むべきかという期限（起算点）の記載は見当たらなかった。\n受付ページには「有料粗大ごみ処理券をご購入」「品目リスト手数料検索」とあり、有料であることと品目別の料金検索ツールへの案内はあるが、具体的な金額（円）はこの本文には書かれていない。品目ごとに異なるため一意の数字が本文中に存在しない。",
+  "page_notes": "元ページは受付センターの連絡先変更告知のみ。リンク先の申込サイト（shinjuku-sodai.com）は減額・免除対象者向けの電話案内や処理券購入方法には触れているが、申込手続きに必要な持ち物・書類の記載は見当たらなかった。\nこのページは「受付先が変わります」という改修告知ページで、電話番号とホームページURLの変更を表形式で示しており、ホームページの受付時間が24時間（メンテナンス等除く）と明記されているためオンライン完結を本文だけで判定できた。\n元ページは受付センターの電話番号・URL変更のお知らせのみで申込期限の記載は無い。リンク先の受付サイトも申込方法・除外品目・注意事項はあるが、収集日から逆算した申込期限（起算点つき）の記述は見当たらなかった。\n自治体本体ページ（shinjuku.lg.jp）には手数料の記述がなく、外部委託の受付サイト（shinjuku-sodai.com）に「有料粗大ごみ処理券」制度の説明があった。ただし具体的な金額表は本文中になく、「品目リスト手数料検索」という別機能に金額情報が置かれている構成だった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.shinjuku.lg.jp/kankyo/seiso01_000001_00023.html",
-      "https://www.shinjuku-sodai.com"
+      "https://www.shinjuku-sodai.com",
+      "https://www.city.shinjuku.lg.jp/seikatsu/index09.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true
   },
   "evidence_summary": {
-    "checked": 1,
+    "checked": 2,
     "verified": 1,
-    "partial": 0,
+    "partial": 1,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,
-    "not_applicable": 3
+    "not_applicable": 2
   }
 }

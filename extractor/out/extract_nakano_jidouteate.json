@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,10 +43,10 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T13:52:17+00:00",
+    "run_at": "2026-08-31T16:32:10+00:00",
     "discovery_run_at": "2026-08-28T13:16:52+00:00"
   },
   "followed_urls": [
@@ -67,16 +67,16 @@
       "question": "中野区の「児童手当の申請」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
       "test_case_version": "1.0",
       "result": {
-        "found": false,
-        "value": "",
-        "evidence": "",
-        "source": null,
-        "failure_reason": "PDF内のみ",
-        "failure_type": "not_retrieved",
+        "found": true,
+        "value": "本人確認ができるもの、請求者及び配偶者等のマイナンバーを確認できるもの（個人番号カード、通知カードなど）",
+        "evidence": "手続きの際には、窓口にお越しいただく方の本人確認ができるもののほか、請求者及び配偶者等のマイナンバーを確認できるもの（個人カード、通知カードなど）をお持ちください。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
         "evidence_check": {
-          "verdict": "not_applicable",
-          "run": 0,
-          "note": "found=false のため照合しない"
+          "verdict": "exact",
+          "run": 82,
+          "note": ""
         }
       },
       "attempts": [
@@ -92,44 +92,42 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
-            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html"
           ],
-          "page_notes": "このページは「児童手当・助成」カテゴリの一覧ページで、申請に必要な持ち物についての本文記述は無い。「子どもの手当・給付金」等の下位ページに詳細がありそう。"
+          "page_notes": "このページは「児童手当・助成」カテゴリのリンク集で、申請手続きの詳細(持ち物等)は本文になく、個別ページへの誘導のみ。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
-            "found": false,
-            "value": "",
-            "evidence": "",
-            "source": null,
-            "failure_reason": "PDF内のみ",
-            "failure_type": "not_retrieved",
+            "found": true,
+            "value": "本人確認ができるもの、請求者及び配偶者等のマイナンバーを確認できるもの（個人番号カード、通知カードなど）",
+            "evidence": "手続きの際には、窓口にお越しいただく方の本人確認ができるもののほか、請求者及び配偶者等のマイナンバーを確認できるもの（個人カード、通知カードなど）をお持ちください。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
             "evidence_check": {
-              "verdict": "not_applicable",
-              "run": 0,
-              "note": "found=false のため照合しない"
+              "verdict": "exact",
+              "run": 82,
+              "note": ""
             }
           },
           "requested_urls": [],
-          "page_notes": "対象ページ・リンク先2ページとも本文に必要書類の一覧は無く、「児童手当（国制度）（児童手当チラシ（PDF形式：550KB）をご覧ください。）」とPDF添付へ送客している。HTML本文にある唯一の関連記述は『各手当の手続きをする際にはマイナンバーの記載が必要』『窓口にお越しいただく方の本人確認ができるもののほか、請求者及び配偶者等のマイナンバーを確認できるもの（個人カード、通知カードなど）をお持ちください』だが、これは児童手当・児童扶養手当・児童育成手当・特別児童扶養手当など複数手当に共通する注意書きであり、児童手当申請に固有の必要書類（該当者だけに必要なものを含む）を網羅した記載ではないため、この1項目の答えとしては採用しなかった。"
+          "page_notes": "「子どもの手当・給付金」ページは複数手当（児童手当・児童育成手当・児童扶養手当等）をまとめて案内しており、持ち物の記載も「各手当の手続き」という括りで共通化されている。児童手当申請専用の持ち物一覧（例：預金通帳、健康保険証等）は本文になく、案内チラシ（PDF）に委ねられている可能性がある。"
         }
       ],
       "followed_urls": [
-        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
-        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html"
       ],
-      "page_notes": "対象ページ・リンク先2ページとも本文に必要書類の一覧は無く、「児童手当（国制度）（児童手当チラシ（PDF形式：550KB）をご覧ください。）」とPDF添付へ送客している。HTML本文にある唯一の関連記述は『各手当の手続きをする際にはマイナンバーの記載が必要』『窓口にお越しいただく方の本人確認ができるもののほか、請求者及び配偶者等のマイナンバーを確認できるもの（個人カード、通知カードなど）をお持ちください』だが、これは児童手当・児童扶養手当・児童育成手当・特別児童扶養手当など複数手当に共通する注意書きであり、児童手当申請に固有の必要書類（該当者だけに必要なものを含む）を網羅した記載ではないため、この1項目の答えとしては採用しなかった。",
+      "page_notes": "「子どもの手当・給付金」ページは複数手当（児童手当・児童育成手当・児童扶養手当等）をまとめて案内しており、持ち物の記載も「各手当の手続き」という括りで共通化されている。児童手当申請専用の持ち物一覧（例：預金通帳、健康保険証等）は本文になく、案内チラシ（PDF）に委ねられている可能性がある。",
       "evidence_summary": {
-        "checked": 0,
-        "verified": 0,
+        "checked": 1,
+        "verified": 1,
         "partial": 0,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
-        "not_applicable": 1
+        "not_applicable": 0
       }
     },
     {
@@ -142,8 +140,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "曖昧",
-        "failure_type": "fact_ambiguous",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -166,7 +164,7 @@
             "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
             "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
           ],
-          "page_notes": "このページは「児童手当・助成」カテゴリの一覧ページで、申請方法（窓口/オンライン）についての記述は本文中になく、個別の手当ページへのリンク一覧のみが提示されている。"
+          "page_notes": "このページは年齢別ポータルで、児童手当そのものの手続き詳細（窓口かオンラインか）は書かれておらず、「子どもの手当・給付金」等の目的別ページへのリンクのみが並んでいる。"
         },
         {
           "stage": "follow",
@@ -176,8 +174,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "曖昧",
-            "failure_type": "fact_ambiguous",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -185,14 +183,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「子どもの手当・給付金」ページには児童手当を含む複数手当共通の『手続きの際には、窓口にお越しいただく方の本人確認ができるもの…をお持ちください』という記述があり窓口来庁を前提にした書きぶりだが、同時に上位の『児童手当・助成』ページのサブナビには『窓口に来庁されなくてもできる手続き（子ども総合窓口）』という項目名だけが見え、URLは提供されておらずこの1階層内では中身を確認できなかった。児童手当申請自体がオンラインで完結できるかを一意に断定できる記述は見当たらない。"
+          "page_notes": "本文・リンク先2ページとも、児童手当の各種手続き（申請・現況届・転出時の届出等）は列挙されているが、申請そのものが窓口のみかオンラインで完結できるかを明言する記述は見当たらなかった。「窓口に来庁されなくてもできる手続き（子ども総合窓口）」という項目名は存在するが、児童手当がその対象に含まれるかはこの本文からは判断できない。"
         }
       ],
       "followed_urls": [
         "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
         "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
       ],
-      "page_notes": "「子どもの手当・給付金」ページには児童手当を含む複数手当共通の『手続きの際には、窓口にお越しいただく方の本人確認ができるもの…をお持ちください』という記述があり窓口来庁を前提にした書きぶりだが、同時に上位の『児童手当・助成』ページのサブナビには『窓口に来庁されなくてもできる手続き（子ども総合窓口）』という項目名だけが見え、URLは提供されておらずこの1階層内では中身を確認できなかった。児童手当申請自体がオンラインで完結できるかを一意に断定できる記述は見当たらない。",
+      "page_notes": "本文・リンク先2ページとも、児童手当の各種手続き（申請・現況届・転出時の届出等）は列挙されているが、申請そのものが窓口のみかオンラインで完結できるかを明言する記述は見当たらなかった。「窓口に来庁されなくてもできる手続き（子ども総合窓口）」という項目名は存在するが、児童手当がその対象に含まれるかはこの本文からは判断できない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -213,8 +211,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -234,9 +232,10 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html"
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
           ],
-          "page_notes": "このページは「児童手当・助成」カテゴリの一覧(目次)ページで、申請期限などの手続き詳細は本文になく、下位の「子どもの手当・給付金」ページへ誘導する構成になっている。"
+          "page_notes": "このページは年齢別カテゴリの一覧ページで、児童手当そのものの申請期限には触れておらず、「子どもの手当・給付金」等の下位ページへの導線のみが並んでいる。"
         },
         {
           "stage": "follow",
@@ -246,8 +245,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -255,13 +254,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "案内先の「子どもの手当・給付金」ページには対象要件・現況届・転出時の15日特例は書かれているが、新規申請そのものの期限（起算点つき）は本文になく、「児童手当のご案内（PDF形式：550KB）」等の添付にありそうだが未開封。"
+          "page_notes": "遷移先の「子どもの手当・給付金」ページには転出時の15日以内申請の期限は書かれているが、新規申請（出生・転入等）の期限や起算点についての記載は見当たらなかった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html"
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
       ],
-      "page_notes": "案内先の「子どもの手当・給付金」ページには対象要件・現況届・転出時の15日特例は書かれているが、新規申請そのものの期限（起算点つき）は本文になく、「児童手当のご案内（PDF形式：550KB）」等の添付にありそうだが未開封。",
+      "page_notes": "遷移先の「子どもの手当・給付金」ページには転出時の15日以内申請の期限は書かれているが、新規申請（出生・転入等）の期限や起算点についての記載は見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -303,10 +303,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
-            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+            "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html"
           ],
-          "page_notes": "このページは「児童手当・助成」カテゴリの一覧（ハブ）ページで、個別の手続き詳細（申請方法・手数料など）は含まれておらず、下位の「子どもの手当・給付金」等のページに委ねられている。"
+          "page_notes": "このページは年齢別カテゴリの一覧ページで、手数料などの手続き詳細は書かれていない。「子どもの手当・給付金」ページに児童手当の詳細がありそう。"
         },
         {
           "stage": "follow",
@@ -325,14 +324,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "申請ページ本文および目的別「児童手当・助成」「子どもの手当・給付金」の2つのリンク先ページを確認したが、手数料・無料についての明記は見当たらなかった。関連PDF（児童手当のご案内等）に記載がある可能性はあるが、本文中には手数料に関する記述がない。"
+          "page_notes": "本文・リンク先の「子どもの手当・給付金」ページとも申請要件や現況届の説明はあるが、手数料に関する記述は見当たらなかった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html",
-        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/index.html"
+        "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/kodomonoteate.html"
       ],
-      "page_notes": "申請ページ本文および目的別「児童手当・助成」「子どもの手当・給付金」の2つのリンク先ページを確認したが、手数料・無料についての明記は見当たらなかった。関連PDF（児童手当のご案内等）に記載がある可能性はあるが、本文中には手数料に関する記述がない。",
+      "page_notes": "本文・リンク先の「子どもの手当・給付金」ページとも申請要件や現況届の説明はあるが、手数料に関する記述は見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -346,16 +344,16 @@
   ],
   "items": {
     "必要書類": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "PDF内のみ",
-      "failure_type": "not_retrieved",
+      "found": true,
+      "value": "本人確認ができるもの、請求者及び配偶者等のマイナンバーを確認できるもの（個人番号カード、通知カードなど）",
+      "evidence": "手続きの際には、窓口にお越しいただく方の本人確認ができるもののほか、請求者及び配偶者等のマイナンバーを確認できるもの（個人カード、通知カードなど）をお持ちください。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
       "evidence_check": {
-        "verdict": "not_applicable",
-        "run": 0,
-        "note": "found=false のため照合しない"
+        "verdict": "exact",
+        "run": 82,
+        "note": ""
       }
     },
     "窓口オンライン可否": {
@@ -363,8 +361,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "曖昧",
-      "failure_type": "fact_ambiguous",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -376,8 +374,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -398,7 +396,7 @@
       }
     }
   },
-  "page_notes": "対象ページ・リンク先2ページとも本文に必要書類の一覧は無く、「児童手当（国制度）（児童手当チラシ（PDF形式：550KB）をご覧ください。）」とPDF添付へ送客している。HTML本文にある唯一の関連記述は『各手当の手続きをする際にはマイナンバーの記載が必要』『窓口にお越しいただく方の本人確認ができるもののほか、請求者及び配偶者等のマイナンバーを確認できるもの（個人カード、通知カードなど）をお持ちください』だが、これは児童手当・児童扶養手当・児童育成手当・特別児童扶養手当など複数手当に共通する注意書きであり、児童手当申請に固有の必要書類（該当者だけに必要なものを含む）を網羅した記載ではないため、この1項目の答えとしては採用しなかった。\n「子どもの手当・給付金」ページには児童手当を含む複数手当共通の『手続きの際には、窓口にお越しいただく方の本人確認ができるもの…をお持ちください』という記述があり窓口来庁を前提にした書きぶりだが、同時に上位の『児童手当・助成』ページのサブナビには『窓口に来庁されなくてもできる手続き（子ども総合窓口）』という項目名だけが見え、URLは提供されておらずこの1階層内では中身を確認できなかった。児童手当申請自体がオンラインで完結できるかを一意に断定できる記述は見当たらない。\n案内先の「子どもの手当・給付金」ページには対象要件・現況届・転出時の15日特例は書かれているが、新規申請そのものの期限（起算点つき）は本文になく、「児童手当のご案内（PDF形式：550KB）」等の添付にありそうだが未開封。\n申請ページ本文および目的別「児童手当・助成」「子どもの手当・給付金」の2つのリンク先ページを確認したが、手数料・無料についての明記は見当たらなかった。関連PDF（児童手当のご案内等）に記載がある可能性はあるが、本文中には手数料に関する記述がない。",
+  "page_notes": "「子どもの手当・給付金」ページは複数手当（児童手当・児童育成手当・児童扶養手当等）をまとめて案内しており、持ち物の記載も「各手当の手続き」という括りで共通化されている。児童手当申請専用の持ち物一覧（例：預金通帳、健康保険証等）は本文になく、案内チラシ（PDF）に委ねられている可能性がある。\n本文・リンク先2ページとも、児童手当の各種手続き（申請・現況届・転出時の届出等）は列挙されているが、申請そのものが窓口のみかオンラインで完結できるかを明言する記述は見当たらなかった。「窓口に来庁されなくてもできる手続き（子ども総合窓口）」という項目名は存在するが、児童手当がその対象に含まれるかはこの本文からは判断できない。\n遷移先の「子どもの手当・給付金」ページには転出時の15日以内申請の期限は書かれているが、新規申請（出生・転入等）の期限や起算点についての記載は見当たらなかった。\n本文・リンク先の「子どもの手当・給付金」ページとも申請要件や現況届の説明はあるが、手数料に関する記述は見当たらなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
@@ -410,12 +408,12 @@
     "isolated_by_test_case": true
   },
   "evidence_summary": {
-    "checked": 0,
-    "verified": 0,
+    "checked": 1,
+    "verified": 1,
     "partial": 0,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,
-    "not_applicable": 4
+    "not_applicable": 3
   }
 }

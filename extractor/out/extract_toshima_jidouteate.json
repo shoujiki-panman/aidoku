@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,10 +43,10 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T14:23:36+00:00",
+    "run_at": "2026-08-30T17:50:42+00:00",
     "discovery_run_at": "2026-08-28T13:16:52+00:00"
   },
   "followed_urls": [
@@ -69,8 +69,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -92,7 +92,7 @@
           "requested_urls": [
             "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html"
           ],
-          "page_notes": "このページは「こども家庭センター・地域子育て相談機関」の窓口案内で、児童手当の申請手続きや必要書類には触れていない。リンク一覧の「手当・助成」が児童手当の申請ページへの入り口と考えられる。"
+          "page_notes": "このページは「こども家庭センター・地域子育て相談機関」の相談窓口案内で、児童手当の申請や必要書類には触れていない。関連しそうなリンクは「手当・助成」のみ。"
         },
         {
           "stage": "follow",
@@ -102,8 +102,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -111,13 +111,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページはこども家庭センターの相談窓口案内で、児童手当の必要書類には触れていない。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」への入口リンクを並べるだけで、申請の必要書類そのものはさらに先のページにありそう。"
+          "page_notes": "「手当・助成」ページは子育て手当関連の下位ページへのリンク一覧のみで、児童手当の申請に必要な持ち物・書類についての本文記載は無かった。"
         }
       ],
       "followed_urls": [
         "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html"
       ],
-      "page_notes": "元ページはこども家庭センターの相談窓口案内で、児童手当の必要書類には触れていない。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」への入口リンクを並べるだけで、申請の必要書類そのものはさらに先のページにありそう。",
+      "page_notes": "「手当・助成」ページは子育て手当関連の下位ページへのリンク一覧のみで、児童手当の申請に必要な持ち物・書類についての本文記載は無かった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -138,8 +138,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -161,7 +161,7 @@
           "requested_urls": [
             "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html"
           ],
-          "page_notes": "このページは「こども家庭センター・地域子育て相談機関」の相談窓口案内で、児童手当の申請手続きには触れていない。手当関連は同じ分類の「手当・助成」リンク先にありそう。"
+          "page_notes": "このページは「こども家庭センター・地域子育て相談機関」の紹介と相談窓口の電話番号一覧で、児童手当の申請方法については触れていない。手当・助成の一覧ページへのリンクがあるのでそちらを辿る必要がある。"
         },
         {
           "stage": "follow",
@@ -171,8 +171,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -180,13 +180,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "こども家庭センターのページにも、案内先の「手当・助成」一覧ページにも、申請が窓口のみかオンラインで完結できるかの記述はなかった。「手当・助成」ページ内の「子どもの手当・医療費助成」リンク先に詳細がありそうだが、リンク追従の上限のためここでは確認できていない。"
+          "page_notes": "「手当・助成」ページは「子どもの手当・医療費助成」等のカテゴリ一覧のみで、児童手当の申請方法（窓口かオンラインか）についての記述は本文・リンク先本文のいずれにも見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html"
       ],
-      "page_notes": "こども家庭センターのページにも、案内先の「手当・助成」一覧ページにも、申請が窓口のみかオンラインで完結できるかの記述はなかった。「手当・助成」ページ内の「子どもの手当・医療費助成」リンク先に詳細がありそうだが、リンク追従の上限のためここでは確認できていない。",
+      "page_notes": "「手当・助成」ページは「子どもの手当・医療費助成」等のカテゴリ一覧のみで、児童手当の申請方法（窓口かオンラインか）についての記述は本文・リンク先本文のいずれにも見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -230,7 +230,7 @@
           "requested_urls": [
             "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html"
           ],
-          "page_notes": "このページは「こども家庭センター・地域子育て相談機関」の窓口案内で、児童手当の申請期限には触れていない。同じ分類欄にある「手当・助成」リンクが該当手続きのページと考えられる。"
+          "page_notes": "このページは「こども家庭センター・地域子育て相談機関」の相談窓口案内で、児童手当の申請期限に関する記載は無い。「手当・助成」への分類リンクが関連しそうな遷移先。"
         },
         {
           "stage": "follow",
@@ -249,13 +249,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "対象ページは「こども家庭センター・地域子育て相談機関」の相談窓口案内で、児童手当の申請期限には触れていない。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」への入口を示すのみで、期限の記載はなかった。"
+          "page_notes": "元ページはこども家庭センターの相談窓口案内で申請期限の記載なし。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」という項目名の列挙のみで、期限や起算点の本文は無かった（さらに1階層下のページが必要）。"
         }
       ],
       "followed_urls": [
         "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html"
       ],
-      "page_notes": "対象ページは「こども家庭センター・地域子育て相談機関」の相談窓口案内で、児童手当の申請期限には触れていない。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」への入口を示すのみで、期限の記載はなかった。",
+      "page_notes": "元ページはこども家庭センターの相談窓口案内で申請期限の記載なし。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」という項目名の列挙のみで、期限や起算点の本文は無かった（さらに1階層下のページが必要）。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -276,8 +276,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -299,7 +299,7 @@
           "requested_urls": [
             "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html"
           ],
-          "page_notes": "このページは「こども家庭センター・地域子育て相談機関」の案内で、児童手当の申請や手数料には触れていない。手当・助成の情報は別カテゴリの「手当・助成」リンク先にありそう。"
+          "page_notes": "このページは「こども家庭センター・地域子育て相談機関」の相談窓口案内であり、児童手当の申請手続きや手数料には触れていない。手当・助成の情報は別ページ（手当・助成 一覧）にありそうだが、そのリンクは分類トップへの誘導で、申請ページそのものかは未確認。"
         },
         {
           "stage": "follow",
@@ -309,8 +309,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -318,13 +318,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「こども家庭センター」ページには相談窓口の案内のみで手数料の記載はなく、リンク先の「手当・助成」一覧ページも各手当への入口一覧にとどまり、金額情報は「子どもの手当・医療費助成」個別ページ側にあると見られる。"
+          "page_notes": "手当・助成の一覧ページには児童手当の項目名すら明記されておらず、「子どもの手当・医療費助成」というリンクの先を辿らないと手数料の記述には到達できない構成。"
         }
       ],
       "followed_urls": [
         "https://www.city.toshima.lg.jp/kosodate/kosodate/teate/index.html"
       ],
-      "page_notes": "「こども家庭センター」ページには相談窓口の案内のみで手数料の記載はなく、リンク先の「手当・助成」一覧ページも各手当への入口一覧にとどまり、金額情報は「子どもの手当・医療費助成」個別ページ側にあると見られる。",
+      "page_notes": "手当・助成の一覧ページには児童手当の項目名すら明記されておらず、「子どもの手当・医療費助成」というリンクの先を辿らないと手数料の記述には到達できない構成。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -342,8 +342,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -355,8 +355,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -381,8 +381,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -390,7 +390,7 @@
       }
     }
   },
-  "page_notes": "元ページはこども家庭センターの相談窓口案内で、児童手当の必要書類には触れていない。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」への入口リンクを並べるだけで、申請の必要書類そのものはさらに先のページにありそう。\nこども家庭センターのページにも、案内先の「手当・助成」一覧ページにも、申請が窓口のみかオンラインで完結できるかの記述はなかった。「手当・助成」ページ内の「子どもの手当・医療費助成」リンク先に詳細がありそうだが、リンク追従の上限のためここでは確認できていない。\n対象ページは「こども家庭センター・地域子育て相談機関」の相談窓口案内で、児童手当の申請期限には触れていない。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」への入口を示すのみで、期限の記載はなかった。\n「こども家庭センター」ページには相談窓口の案内のみで手数料の記載はなく、リンク先の「手当・助成」一覧ページも各手当への入口一覧にとどまり、金額情報は「子どもの手当・医療費助成」個別ページ側にあると見られる。",
+  "page_notes": "「手当・助成」ページは子育て手当関連の下位ページへのリンク一覧のみで、児童手当の申請に必要な持ち物・書類についての本文記載は無かった。\n「手当・助成」ページは「子どもの手当・医療費助成」等のカテゴリ一覧のみで、児童手当の申請方法（窓口かオンラインか）についての記述は本文・リンク先本文のいずれにも見当たらなかった。\n元ページはこども家庭センターの相談窓口案内で申請期限の記載なし。リンク先の「手当・助成」一覧ページも「子どもの手当・医療費助成」という項目名の列挙のみで、期限や起算点の本文は無かった（さらに1階層下のページが必要）。\n手当・助成の一覧ページには児童手当の項目名すら明記されておらず、「子どもの手当・医療費助成」というリンクの先を辿らないと手数料の記述には到達できない構成。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [

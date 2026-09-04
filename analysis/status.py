@@ -39,6 +39,8 @@ PROCEDURES = ("tennyu", "jidouteate", "sodaigomi")
 
 # 見張りがこれより古ければ、古いと言う。毎朝回るので2日空けば異常。
 WATCH_STALE_DAYS = 2
+# 状態の履歴。**1日1行**（同じ日は二度追記しない）。
+DEFAULT_HISTORY = ROOT / "web" / "data" / "history" / "status.jsonl"
 
 
 def _load(path: Path) -> dict | None:
@@ -81,6 +83,22 @@ def _from_main(relative: str) -> dict | None:
         return None
 
 
+def ref_age_days() -> float | None:
+    """手元の `origin/main` が指しているコミットの古さ。
+
+    ★`_from_main` は `origin/main` を読むが、**その参照自体が古いことがある**
+      （`git fetch` していないだけ）。実測で「見張りが3.7日前・止まっている」と
+      誤報した。`git fetch origin main` の後は0.7日前で、止まっていなかった。
+      ネットには出ないので**どちらかは判定できない**。両方を候補として出す。
+    """
+    try:
+        got = subprocess.run(["git", "log", "-1", "--format=%cI", "origin/main"],
+                             cwd=ROOT, capture_output=True, text=True, timeout=10)
+    except Exception:                                      # noqa: BLE001
+        return None
+    return _age_days(got.stdout.strip()) if got.returncode == 0 else None
+
+
 def newest(*docs: dict | None) -> dict | None:
     """`checked_at` がいちばん新しいもの。無いものは捨てる。"""
     dated = [d for d in docs if d and d.get("checked_at")]
@@ -94,42 +112,56 @@ def watch() -> dict:
         return {"ok": False, "note": "site-status.json が無い"}
     summary = doc.get("summary") or {}
     age = _age_days(doc.get("checked_at"))
+    stale = age is not None and age > WATCH_STALE_DAYS
+    ref_age = ref_age_days()
     return {
         "ok": True,
         "checked_at": doc.get("checked_at"),
         "age_days": age,
-        "stale": age is not None and age > WATCH_STALE_DAYS,
+        "stale": stale,
+        "ref_age_days": ref_age,
+        # ★参照が古ければ、見張りが止まったのではなく fetch していないだけかもしれない。
+        "maybe_unfetched": bool(stale and ref_age is not None and ref_age > 0.5),
         "pages": summary.get("total"),
         "changed": summary.get("changed"),
         "gone": summary.get("gone"),
     }
 
 
-def current_prompt() -> str | None:
-    """いまのプロンプトの版。**ファイルから計算する**（記録された値を信じない）。"""
-    try:
-        from extract import CLARITY_PROMPT, PROMPT
+def current_conditions() -> dict[str, object] | None:
+    """いまの測定条件。**ファイルから計算する**（記録された値を信じない）。
 
-        from measurement import prompt_version
-        return prompt_version([PROMPT, CLARITY_PROMPT])
+    ★以前は `prompt_version` だけを見ていた。OCRを足したとき**プロンプトは
+      変わらない**ので、条件が変わったのに「揃っている」と嘘をついた。
+      実測で、この画面が「揃っている」と言った手続きを export が拒んだ。
+      **測定条件はひとまとまりで効く。1つだけ見て揃ったと言わない。**
+    """
+    try:
+        sys.path.insert(0, str(ROOT / "tools"))
+        from stale import current
+        return current()
     except Exception:                                      # noqa: BLE001
         return None
 
 
-def conditions(procedure: str, prompt: str | None) -> dict:
+def conditions(procedure: str, now: dict[str, object] | None) -> dict:
     """② 測定条件。**自治体ごとに揃っていないと公開できない。**
 
     ★揃っていないまま出すと、別々の条件の結果が1枚の表に並ぶ。
       `export_dashboard.py` はこれを拒む。ここでは拒まれる理由を先に出す。
     """
-    stale = []
-    total = 0
+    sys.path.insert(0, str(ROOT / "tools"))
+    from stale import differences
+    stale, total, why = [], 0, set()
     for path in sorted(glob.glob(str(ROOT / f"extractor/out/extract_*_{procedure}.json"))):
         doc = _load(Path(path)) or {}
         total += 1
-        if prompt and (doc.get("measurement") or {}).get("prompt_version") != prompt:
+        diff = differences(doc.get("measurement") or {}, now) if now else []
+        if diff:
             stale.append(doc.get("municipality_id") or Path(path).stem)
-    return {"municipalities": total, "stale": stale, "uniform": not stale and total > 0}
+            why.update(diff)
+    return {"municipalities": total, "stale": stale, "why": sorted(why),
+            "uniform": not stale and total > 0}
 
 
 def sweep(procedure: str) -> dict:
@@ -174,24 +206,74 @@ def published() -> dict:
     return out
 
 
+def _average(doc: dict | None) -> float | None:
+    munis = (doc or {}).get("municipalities") or []
+    totals = [m["total"] for m in munis if isinstance(m.get("total"), int)]
+    return round(sum(totals) / len(totals), 1) if totals else None
+
+
+def delivery() -> dict:
+    """⑥ 配信。**手元で作った数字が、住民に届いているか。**
+
+    ★これが無かったせいで、「公開データを更新した」と8日間言い続けた。
+      更新していたのは**枝の上のファイル**で、住民が見る画面は動いていなかった。
+      公開サイトは `main` から配信される。**比べる相手は main。**
+
+    ネットには出ない（`git show origin/main:` を読むだけ）。
+    ただし `origin/main` の参照が古ければ古い値を見る（§見張りと同じ）。
+    """
+    try:
+        got = subprocess.run(["git", "rev-list", "--count", "origin/main..HEAD"],
+                             cwd=ROOT, capture_output=True, text=True, timeout=10)
+        ahead = int(got.stdout.strip()) if got.returncode == 0 else None
+    except Exception:                                      # noqa: BLE001
+        ahead = None
+
+    rows = {}
+    for procedure in PROCEDURES:
+        live = _from_main(f"web/data/scores-{procedure}.json")
+        local = _load(WEB / f"scores-{procedure}.json")
+        rows[procedure] = {
+            "live_average": _average(live),
+            "local_average": _average(local),
+            "live_generated_at": (live or {}).get("generated_at"),
+            "live_has_conditions": bool(((live or {}).get("measurement") or {}).get("model_version")),
+            "delivered": _average(live) == _average(local),
+        }
+    return {"ahead": ahead, "procedures": rows,
+            "undelivered": [p for p, r in rows.items() if not r["delivered"]]}
+
+
 def next_actions(state: dict) -> list[str]:
     """状態から機械的に導く。**人の判断を混ぜない。**"""
     todo = []
     if state["watch"].get("stale"):
-        todo.append(f"見張りが{state['watch']['age_days']}日前で止まっている。"
-                    "`.github/workflows/check-pages.yml` の実行を確認する")
+        if state["watch"].get("maybe_unfetched"):
+            todo.append(f"見張りが{state['watch']['age_days']}日前。ただし手元の"
+                        f"origin/main も{state['watch']['ref_age_days']}日前なので、"
+                        "**先に `git fetch origin main`**。それでも古ければ"
+                        "`.github/workflows/check-pages.yml` の実行を確認する")
+        else:
+            todo.append(f"見張りが{state['watch']['age_days']}日前で止まっている。"
+                        "`.github/workflows/check-pages.yml` の実行を確認する")
     elif state["watch"].get("changed"):
         todo.append(f"見張りが{state['watch']['changed']}件の変化を見つけている。"
                     "測り直す対象を選ぶ（見張りは自動では測り直さない）")
     for procedure in PROCEDURES:
         cond = state["conditions"][procedure]
         if cond["stale"]:
-            todo.append(f"{procedure}: 測定条件が{len(cond['stale'])}区ぶん揃っていない。"
-                        f"公開できない。`extractor/extract.py -m <区> -p {procedure} --follow`")
+            todo.append(f"{procedure}: 測定条件が{len(cond['stale'])}自治体ぶん揃っていない"
+                        f"（{'・'.join(cond.get('why') or [])}）。公開できない。"
+                        "`tools/run_pipeline.sh`")
     for procedure in PROCEDURES:
         sw = state["sweep"][procedure]
         if sw.get("ok") and sw["errored"]:
             todo.append(f"{procedure}: 虱潰しでエラーが{sw['errored']}件。読み直す")
+    d = state.get("delivery") or {}
+    if d.get("undelivered"):
+        todo.insert(0, f"住民に届いていない: {', '.join(d['undelivered'])}"
+                       f"（main に未マージ {d.get('ahead')}コミット）。"
+                       "公開サイトは main から配信される。マージするまで画面は変わらない")
     stale_pub = [p for p, v in state["published"].items()
                  if v.get("ok") and not v["has_conditions"]]
     if stale_pub:
@@ -200,15 +282,46 @@ def next_actions(state: dict) -> list[str]:
     return todo or ["止まっているものは無い"]
 
 
-def collect() -> dict:
-    prompt = current_prompt()
+STATE_SCHEMA = "aidoku-status-1.0"
+
+
+def snapshot(state: dict, recorded_at: str) -> dict:
+    """いまの状態を、履歴1行にする。Pure Function。
+
+    **なぜ要るか**: `status.py` は毎セッション走るが**読むだけで残していない**。
+    「いつ条件が崩れたか」「読めない底がいつ増えたか」を後から言えない。
+    数だけ残す（区の名前もURLも持たない）。毎日1行でも軽い。
+    """
     return {
-        "prompt_version": prompt,
+        "schema": STATE_SCHEMA,
+        "recorded_at": recorded_at,
+        # ★重複判定はここ。毎セッション走るので、時刻で見ると1日に何行も入る。
+        "recorded_day": recorded_at[:10],
+        "watch_checked_at": state["watch"].get("checked_at"),
+        "watch_changed": state["watch"].get("changed"),
+        # 条件が揃っていない自治体の数。0 なら公開できる。
+        "conditions_stale": {p: len(state["conditions"][p].get("stale") or [])
+                             for p in PROCEDURES},
+        # found=見つけた / exhausted=読み切った上で書いていない / unreadable=読めない
+        "sweep": {p: {k: state["sweep"][p].get(k)
+                      for k in ("found", "exhausted", "unreadable", "errored", "pages")}
+                  for p in PROCEDURES},
+        "blockers": state["blockers"].get("urls"),
+        "published_has_conditions": {p: bool(state["published"][p].get("has_conditions"))
+                                     for p in PROCEDURES},
+    }
+
+
+def collect() -> dict:
+    now = current_conditions()
+    return {
+        "conditions_now": now,
         "watch": watch(),
-        "conditions": {p: conditions(p, prompt) for p in PROCEDURES},
+        "conditions": {p: conditions(p, now) for p in PROCEDURES},
         "sweep": {p: sweep(p) for p in PROCEDURES},
         "blockers": blockers(),
         "published": published(),
+        "delivery": delivery(),
     }
 
 
@@ -226,8 +339,9 @@ def render(state: dict) -> str:
     lines.append("## ② 測定条件（揃っていないと公開できない）")
     for procedure in PROCEDURES:
         c = state["conditions"][procedure]
-        mark = "揃っている" if c["uniform"] else f"★{len(c['stale'])}区ぶん古い"
-        lines.append(f"   {procedure:10} {c['municipalities']:2}区  {mark}")
+        mark = ("揃っている" if c["uniform"]
+                else f"★{len(c['stale'])}自治体ぶん古い（{'・'.join(c.get('why') or [])}）")
+        lines.append(f"   {procedure:10} {c['municipalities']:2}自治体  {mark}")
     lines.append("")
 
     lines.append("## ③ 虱潰し（候補を全部読んだか）")
@@ -257,6 +371,21 @@ def render(state: dict) -> str:
         lines.append(f"   {procedure:10} {p['age_days']}日前 / {cond}")
     lines.append("")
 
+    d = state["delivery"]
+    lines.append("## ⑥ 配信（住民に届いているか）")
+    if d["undelivered"]:
+        lines.append(f"   ★届いていない: {'・'.join(d['undelivered'])}")
+    for procedure in PROCEDURES:
+        r = d["procedures"][procedure]
+        mark = "  " if r["delivered"] else "★"
+        cond = "" if r["live_has_conditions"] else "・条件の記録なし"
+        lines.append(f"   {mark} {procedure:10} 住民 {r['live_average']}"
+                     f" / 手元 {r['local_average']}"
+                     f"（住民の版 {(r['live_generated_at'] or '?')[:10]}{cond}）")
+    if d["ahead"]:
+        lines.append(f"   main に未マージ {d['ahead']}コミット")
+    lines.append("")
+
     lines.append("## 次にやること")
     for item in next_actions(state):
         lines.append(f"   - {item}")
@@ -266,9 +395,19 @@ def render(state: dict) -> str:
 def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--json", action="store_true", help="機械が読む形で出す")
+    ap.add_argument("--record", metavar="PATH", nargs="?", const=str(DEFAULT_HISTORY),
+                    help="いまの状態を履歴に1行追記する（同じ日は追記しない）")
     args = ap.parse_args(argv)
 
     state = collect()
+    if args.record:
+        sys.path.insert(0, str(ROOT))
+        from history import append_snapshot
+        now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        row = snapshot(state, now)
+        added = append_snapshot(args.record, row, key_fields=("recorded_day",))
+        print(f"{args.record}: " + ("1件追記" if added else "同じ日が既にあるので追記なし"))
+
     if args.json:
         print(json.dumps({**state, "next": next_actions(state)},
                          ensure_ascii=False, indent=2))

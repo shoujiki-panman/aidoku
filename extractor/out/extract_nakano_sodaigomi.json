@@ -43,20 +43,22 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T15:28:51+00:00",
+    "run_at": "2026-08-31T15:38:23+00:00",
     "discovery_run_at": "2026-08-28T14:37:31+00:00"
   },
   "followed_urls": [
-    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html"
   ],
   "online_clarity": "明記",
-  "online_clarity_evidence": "「粗大ごみのインターネット申し込み先」のページでお申し込みください（外部サイト）。申し込みは、24時間可能です。(定期メンテナンス時などを除く)",
+  "online_clarity_evidence": "「電話」か「インターネット」で事前に申し込みを行う。（中略）申し込みは、24時間可能です。(定期メンテナンス時などを除く)",
   "online_clarity_pages": [
     "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
-    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+    "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html"
   ],
   "test_cases": [
     {
@@ -92,7 +94,7 @@
           "requested_urls": [
             "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
           ],
-          "page_notes": "このページはインターネット申込みの入口案内で、持ち物・必要書類には触れていない。本文中で「「粗大ごみ」の出し方（事前申し込み制）」のページへ複数回誘導しており、そちらに詳細がありそう。"
+          "page_notes": "このページは申込方法（インターネット申込みの案内）と収集不可品目の説明が中心で、持ち物・必要書類には触れていない。「「粗大ごみ」の出し方（事前申し込み制）」ページを繰り返し参照するよう促しており、詳細情報はそちらに集約されている可能性が高い。"
         },
         {
           "stage": "follow",
@@ -111,13 +113,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「粗大ごみ」の出し方ページには申込方法・処理券購入・運び出し収集の対象要件（年齢・要介護認定・身体障害者手帳など）は書かれているが、これらは対象者の該当条件の説明であり、申込手続き自体に必要な持ち物・提出書類としては明記されていない。"
+          "page_notes": "本文とリンク先の「事前申し込み制」ページはいずれも申込方法（電話・インターネット）と処理券購入の流れを説明するのみで、申込み手続き自体に必要な持ち物・提出書類の記載はない。運び出し収集の対象者要件（身体障害者手帳等）は資格条件であり持ち物の説明ではない。"
         }
       ],
       "followed_urls": [
         "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
       ],
-      "page_notes": "「粗大ごみ」の出し方ページには申込方法・処理券購入・運び出し収集の対象要件（年齢・要介護認定・身体障害者手帳など）は書かれているが、これらは対象者の該当条件の説明であり、申込手続き自体に必要な持ち物・提出書類としては明記されていない。",
+      "page_notes": "本文とリンク先の「事前申し込み制」ページはいずれも申込方法（電話・インターネット）と処理券購入の流れを説明するのみで、申込み手続き自体に必要な持ち物・提出書類の記載はない。運び出し収集の対象者要件（身体障害者手帳等）は資格条件であり持ち物の説明ではない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -135,7 +137,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "オンライン申込可（インターネット申込対応。品目にない物のみ電話受付）",
+        "value": "インターネット申込で完結可能（一部品目のみ電話併用）",
         "evidence": "下記インターネット申込のアイコンをクリックして下さい。インターネット申込に無い品目の物をお申し込みの際は、お電話でお申込み下さい。",
         "source": "html",
         "failure_reason": null,
@@ -152,7 +154,7 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "オンライン申込可（インターネット申込対応。品目にない物のみ電話受付）",
+            "value": "インターネット申込で完結可能（一部品目のみ電話併用）",
             "evidence": "下記インターネット申込のアイコンをクリックして下さい。インターネット申込に無い品目の物をお申し込みの際は、お電話でお申込み下さい。",
             "source": "html",
             "failure_reason": null,
@@ -164,11 +166,11 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本ページ自体が「インターネット申込み」専用ページで、電話受付は品目にない物のみの例外として明記されている。実際の申込は外部システム（sodai-web.jp）へのリンクで行われる。"
+          "page_notes": "このページ自体がインターネット申込専用ページで、申込方法欄に外部の申込システム（sodai-web.jp）へのリンクがあり、対象外品目のみ電話に送客する構成。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "本ページ自体が「インターネット申込み」専用ページで、電話受付は品目にない物のみの例外として明記されている。実際の申込は外部システム（sodai-web.jp）へのリンクで行われる。",
+      "page_notes": "このページ自体がインターネット申込専用ページで、申込方法欄に外部の申込システム（sodai-web.jp）へのリンクがあり、対象外品目のみ電話に送客する構成。",
       "evidence_summary": {
         "checked": 1,
         "verified": 0,
@@ -212,7 +214,7 @@
           "requested_urls": [
             "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
           ],
-          "page_notes": "このページは申込みの操作手順（インターネット申込みの入口）が中心で、期限（何日前までに申し込むか等）の記述はない。「詳しくは『粗大ごみ』の出し方（事前申し込み制）のページをご覧ください」と2回明示的に案内されており、期限情報はそちらに集約されている可能性が高い。"
+          "page_notes": "このページは申込み方法（インターネット申込みへの導線）を説明する案内ページで、収集日と申込期限の関係は書かれていない。「事前申し込み制」の詳細ページへ複数箇所で誘導されており、期限情報はそちらにありそう。"
         },
         {
           "stage": "follow",
@@ -231,13 +233,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本文・リンク先ページとも「事前に申し込みが必要」「収集日の朝8時までに出す」という排出時刻の言及はあるが、申込自体の期限（収集日の何日前までに申し込むか等）は明記されていなかった。"
+          "page_notes": "本文・リンク先とも申込方法や収集の流れ（電話/インターネットで申込→処理券購入→収集日朝8時までに排出）は詳しいが、「収集日の何日前までに申し込むべきか」という起算点つきの期限は明記されていない。"
         }
       ],
       "followed_urls": [
         "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
       ],
-      "page_notes": "本文・リンク先ページとも「事前に申し込みが必要」「収集日の朝8時までに出す」という排出時刻の言及はあるが、申込自体の期限（収集日の何日前までに申し込むか等）は明記されていなかった。",
+      "page_notes": "本文・リンク先とも申込方法や収集の流れ（電話/インターネットで申込→処理券購入→収集日朝8時までに排出）は詳しいが、「収集日の何日前までに申し込むべきか」という起算点つきの期限は明記されていない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -254,16 +256,16 @@
       "question": "中野区の「粗大ごみ収集の申込」について、手数料はいくらか（無料なら無料と）",
       "test_case_version": "1.0",
       "result": {
-        "found": false,
-        "value": "",
-        "evidence": "",
-        "source": null,
-        "failure_reason": "曖昧",
-        "failure_type": "fact_ambiguous",
+        "found": true,
+        "value": "有料。処理券A(200円)・処理券B(300円)の2種類を、品目や寸法に応じた枚数の組み合わせで使用する（具体的な必要枚数は品目ごとに異なり、排出品目一覧で確認）",
+        "evidence": "有料粗大ごみ処理券は、「処理券A(200円)」と「処理券B(300円)」の2種類あります。粗大ごみの寸法などにより、購入する枚数・種類が異なります。",
+        "source": "linked_page",
+        "failure_reason": null,
+        "failure_type": null,
         "evidence_check": {
-          "verdict": "not_applicable",
-          "run": 0,
-          "note": "found=false のため照合しない"
+          "verdict": "normalized",
+          "run": 63,
+          "note": "空白・記号のゆれを吸収すると一致"
         }
       },
       "attempts": [
@@ -279,42 +281,44 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
+            "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+            "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html"
           ],
-          "page_notes": "このページは申込み方法（電話・インターネット）の案内が中心で、手数料の金額表は掲載されていない。品目別の料金は「『粗大ごみ』の出し方（事前申し込み制）」ページで案内されている前提の構成になっている。"
+          "page_notes": "このページは申込方法（インターネット受付）の案内のみで、手数料の金額は書かれていない。本文中で「詳しくは『粗大ごみ』の出し方（事前申し込み制）のページをご覧ください」と2回案内しており、手数料はそちらのページに記載されている可能性が高い。"
         },
         {
           "stage": "follow",
           "llm_called": true,
           "result": {
-            "found": false,
-            "value": "",
-            "evidence": "",
-            "source": null,
-            "failure_reason": "曖昧",
-            "failure_type": "fact_ambiguous",
+            "found": true,
+            "value": "有料。処理券A(200円)・処理券B(300円)の2種類を、品目や寸法に応じた枚数の組み合わせで使用する（具体的な必要枚数は品目ごとに異なり、排出品目一覧で確認）",
+            "evidence": "有料粗大ごみ処理券は、「処理券A(200円)」と「処理券B(300円)」の2種類あります。粗大ごみの寸法などにより、購入する枚数・種類が異なります。",
+            "source": "linked_page",
+            "failure_reason": null,
+            "failure_type": null,
             "evidence_check": {
-              "verdict": "not_applicable",
-              "run": 0,
-              "note": "found=false のため照合しない"
+              "verdict": "normalized",
+              "run": 63,
+              "note": "空白・記号のゆれを吸収すると一致"
             }
           },
           "requested_urls": [],
-          "page_notes": "手数料は品目ごとに異なり、「有料粗大ごみ処理券」（処理券A 200円・処理券B 300円）の必要枚数で支払う仕組みのため、単一の金額としては確定できない。具体的な品目別の必要枚数・合計額は「排出品目一覧」という外部サイトのページに委ねられており、このページ内では完結しない。"
+          "page_notes": "申込ページ本体には料金の記載がなく、「粗大ごみ」の出し方ページに券種と単価（200円・300円）はあるが、品目ごとの必要枚数は外部サイト（排出品目一覧）に委ねられている。"
         }
       ],
       "followed_urls": [
-        "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
+        "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+        "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html"
       ],
-      "page_notes": "手数料は品目ごとに異なり、「有料粗大ごみ処理券」（処理券A 200円・処理券B 300円）の必要枚数で支払う仕組みのため、単一の金額としては確定できない。具体的な品目別の必要枚数・合計額は「排出品目一覧」という外部サイトのページに委ねられており、このページ内では完結しない。",
+      "page_notes": "申込ページ本体には料金の記載がなく、「粗大ごみ」の出し方ページに券種と単価（200円・300円）はあるが、品目ごとの必要枚数は外部サイト（排出品目一覧）に委ねられている。",
       "evidence_summary": {
-        "checked": 0,
-        "verified": 0,
+        "checked": 1,
+        "verified": 1,
         "partial": 0,
         "missing": 0,
         "too_short": 0,
         "not_checked": 0,
-        "not_applicable": 1
+        "not_applicable": 0
       }
     }
   ],
@@ -334,7 +338,7 @@
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "オンライン申込可（インターネット申込対応。品目にない物のみ電話受付）",
+      "value": "インターネット申込で完結可能（一部品目のみ電話併用）",
       "evidence": "下記インターネット申込のアイコンをクリックして下さい。インターネット申込に無い品目の物をお申し込みの際は、お電話でお申込み下さい。",
       "source": "html",
       "failure_reason": null,
@@ -359,36 +363,37 @@
       }
     },
     "手数料": {
-      "found": false,
-      "value": "",
-      "evidence": "",
-      "source": null,
-      "failure_reason": "曖昧",
-      "failure_type": "fact_ambiguous",
+      "found": true,
+      "value": "有料。処理券A(200円)・処理券B(300円)の2種類を、品目や寸法に応じた枚数の組み合わせで使用する（具体的な必要枚数は品目ごとに異なり、排出品目一覧で確認）",
+      "evidence": "有料粗大ごみ処理券は、「処理券A(200円)」と「処理券B(300円)」の2種類あります。粗大ごみの寸法などにより、購入する枚数・種類が異なります。",
+      "source": "linked_page",
+      "failure_reason": null,
+      "failure_type": null,
       "evidence_check": {
-        "verdict": "not_applicable",
-        "run": 0,
-        "note": "found=false のため照合しない"
+        "verdict": "normalized",
+        "run": 63,
+        "note": "空白・記号のゆれを吸収すると一致"
       }
     }
   },
-  "page_notes": "「粗大ごみ」の出し方ページには申込方法・処理券購入・運び出し収集の対象要件（年齢・要介護認定・身体障害者手帳など）は書かれているが、これらは対象者の該当条件の説明であり、申込手続き自体に必要な持ち物・提出書類としては明記されていない。\n本ページ自体が「インターネット申込み」専用ページで、電話受付は品目にない物のみの例外として明記されている。実際の申込は外部システム（sodai-web.jp）へのリンクで行われる。\n本文・リンク先ページとも「事前に申し込みが必要」「収集日の朝8時までに出す」という排出時刻の言及はあるが、申込自体の期限（収集日の何日前までに申し込むか等）は明記されていなかった。\n手数料は品目ごとに異なり、「有料粗大ごみ処理券」（処理券A 200円・処理券B 300円）の必要枚数で支払う仕組みのため、単一の金額としては確定できない。具体的な品目別の必要枚数・合計額は「排出品目一覧」という外部サイトのページに委ねられており、このページ内では完結しない。",
+  "page_notes": "本文とリンク先の「事前申し込み制」ページはいずれも申込方法（電話・インターネット）と処理券購入の流れを説明するのみで、申込み手続き自体に必要な持ち物・提出書類の記載はない。運び出し収集の対象者要件（身体障害者手帳等）は資格条件であり持ち物の説明ではない。\nこのページ自体がインターネット申込専用ページで、申込方法欄に外部の申込システム（sodai-web.jp）へのリンクがあり、対象外品目のみ電話に送客する構成。\n本文・リンク先とも申込方法や収集の流れ（電話/インターネットで申込→処理券購入→収集日朝8時までに排出）は詳しいが、「収集日の何日前までに申し込むべきか」という起算点つきの期限は明記されていない。\n申込ページ本体には料金の記載がなく、「粗大ごみ」の出し方ページに券種と単価（200円・300円）はあるが、品目ごとの必要枚数は外部サイト（排出品目一覧）に委ねられている。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/internetmoshikomi02.html",
-      "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html"
+      "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+      "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/yuryogomi.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true
   },
   "evidence_summary": {
-    "checked": 1,
-    "verified": 0,
+    "checked": 2,
+    "verified": 1,
     "partial": 1,
     "missing": 0,
     "too_short": 0,
     "not_checked": 0,
-    "not_applicable": 3
+    "not_applicable": 2
   }
 }

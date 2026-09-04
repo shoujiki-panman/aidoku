@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:c3d7b8128671cde2d5595c1bd1b99dd1fc8be9c492cc5ab7b5224c2c0206e379",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,10 +43,10 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T13:39:21+00:00",
+    "run_at": "2026-08-31T16:22:53+00:00",
     "discovery_run_at": "2026-08-28T13:16:52+00:00"
   },
   "followed_urls": [
@@ -69,8 +69,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -92,7 +92,7 @@
           "requested_urls": [
             "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html"
           ],
-          "page_notes": "このページは「子育て・教育」の分野トップで、児童手当の申請手続きや必要書類には触れていない。「各種手当・医療費助成」というカテゴリリンクが児童手当の詳細ページへの入口と見られる。"
+          "page_notes": "このページは子育て・教育分野全体のカテゴリ一覧トップページで、個別の手続き（児童手当の申請）に関する本文記述は無く、「各種手当・医療費助成」という下位カテゴリへのリンクがあるのみ。"
         },
         {
           "stage": "follow",
@@ -102,8 +102,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -111,13 +111,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「各種手当・医療費助成」ページには「児童手当」という見出しと『ここでは、児童手当について紹介します。』という一文があるのみで、持ち物・必要書類の記載はこのページ内になく、専用の児童手当ページへのリンク（URL未提示）に委ねられている。"
+          "page_notes": "トップページの「各種手当・医療費助成」の児童手当欄は制度の一覧・案内文のみで、申請に必要な持ち物・書類の記載は無かった。"
         }
       ],
       "followed_urls": [
         "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html"
       ],
-      "page_notes": "「各種手当・医療費助成」ページには「児童手当」という見出しと『ここでは、児童手当について紹介します。』という一文があるのみで、持ち物・必要書類の記載はこのページ内になく、専用の児童手当ページへのリンク（URL未提示）に委ねられている。",
+      "page_notes": "トップページの「各種手当・医療費助成」の児童手当欄は制度の一覧・案内文のみで、申請に必要な持ち物・書類の記載は無かった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -138,8 +138,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -161,7 +161,7 @@
           "requested_urls": [
             "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html"
           ],
-          "page_notes": "このページは子育て・教育分野のトップ（カテゴリ一覧）で、児童手当そのものの手続き詳細は書かれていない。「各種手当・医療費助成」のリンク先に申請方法（窓口/オンライン）の情報がありそう。"
+          "page_notes": "このページは「子育て・教育」の入口となるトップページで、各種手当・医療費助成へのリンクが並ぶのみ。児童手当の申請方法（窓口かオンラインか）についての本文記述は無い。"
         },
         {
           "stage": "follow",
@@ -171,8 +171,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -180,13 +180,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「各種手当・医療費助成」ページの児童手当欄はリンク見出しのみで、申請の窓口・オンライン可否には触れていない。オンライン申請の記載があるのは「児童手当申請事項変更届」（住所変更等の届出）についてのみで、新規の認定請求（申請）自体の説明ではない。詳細は「児童手当」という見出しリンク先のさらに先のページにあると見られるが、今回の情報には含まれていない。"
+          "page_notes": "「各種手当・医療費助成」ページには児童手当の各種届出のリンクが並ぶが、オンライン申請の記載は「児童手当申請事項変更届について（オンライン申請）」という変更届にのみ限られ、新規の認定請求（申請）自体の窓口・オンライン可否については本文に記載がなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html"
       ],
-      "page_notes": "「各種手当・医療費助成」ページの児童手当欄はリンク見出しのみで、申請の窓口・オンライン可否には触れていない。オンライン申請の記載があるのは「児童手当申請事項変更届」（住所変更等の届出）についてのみで、新規の認定請求（申請）自体の説明ではない。詳細は「児童手当」という見出しリンク先のさらに先のページにあると見られるが、今回の情報には含まれていない。",
+      "page_notes": "「各種手当・医療費助成」ページには児童手当の各種届出のリンクが並ぶが、オンライン申請の記載は「児童手当申請事項変更届について（オンライン申請）」という変更届にのみ限られ、新規の認定請求（申請）自体の窓口・オンライン可否については本文に記載がなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -207,8 +207,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -230,7 +230,7 @@
           "requested_urls": [
             "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html"
           ],
-          "page_notes": "このページは子育て・教育分野全体の入口（カテゴリ一覧）で、児童手当という語自体が本文に現れない。「各種手当・医療費助成」というリンクが手当関連の下位ページへの入口と見られる。"
+          "page_notes": "このページは「子育て・教育」の総合トップで、児童手当は「各種手当・医療費助成」への案内リンクのみ。申請期限などの具体的な記述は本文になく、リンク先の手当専用ページを見る必要がある。"
         },
         {
           "stage": "follow",
@@ -240,8 +240,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -249,13 +249,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "トップページにも「各種手当・医療費助成」ページにも児童手当の申請期限（起算点つき）の記述はなく、「児童手当」の項目自体がさらに詳細ページへのリンクになっていると見られるが、そのURLは本文中に示されていない。"
+          "page_notes": "「各種手当・医療費助成」ページには児童手当への内部リンクがあるのみで、申請期限・起算点についての記述はこのページ本文には見当たらなかった。"
         }
       ],
       "followed_urls": [
         "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html"
       ],
-      "page_notes": "トップページにも「各種手当・医療費助成」ページにも児童手当の申請期限（起算点つき）の記述はなく、「児童手当」の項目自体がさらに詳細ページへのリンクになっていると見られるが、そのURLは本文中に示されていない。",
+      "page_notes": "「各種手当・医療費助成」ページには児童手当への内部リンクがあるのみで、申請期限・起算点についての記述はこのページ本文には見当たらなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -299,7 +299,7 @@
           "requested_urls": [
             "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html"
           ],
-          "page_notes": "このページは「子育て・教育」の総合トップで、児童手当そのものの説明や手数料の記載はなく、「各種手当・医療費助成」への入口リンクがあるのみ。"
+          "page_notes": "このページは子育て・教育分野全体のトップ（カテゴリ一覧）で、児童手当個別の説明や手数料の記載はない。「各種手当・医療費助成」のリンク先に児童手当の詳細情報がありそう。"
         },
         {
           "stage": "follow",
@@ -318,13 +318,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "トップページ「子育て・教育」から「各種手当・医療費助成」の児童手当セクションまで辿ったが、申請の手数料に関する記述は本文中に見当たらなかった。児童手当自体の専用ページへのリンクがありそうだが、本文中にURLは示されていない。"
+          "page_notes": "トップページ・リンク先の「各種手当・医療費助成」ページのいずれにも手数料についての記載はなく、児童手当は制度概要と関連リンクの案内のみだった。"
         }
       ],
       "followed_urls": [
         "https://www.city.katsushika.lg.jp/kosodate/1000056/1002336/index.html"
       ],
-      "page_notes": "トップページ「子育て・教育」から「各種手当・医療費助成」の児童手当セクションまで辿ったが、申請の手数料に関する記述は本文中に見当たらなかった。児童手当自体の専用ページへのリンクがありそうだが、本文中にURLは示されていない。",
+      "page_notes": "トップページ・リンク先の「各種手当・医療費助成」ページのいずれにも手数料についての記載はなく、児童手当は制度概要と関連リンクの案内のみだった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -342,8 +342,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -355,8 +355,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -368,8 +368,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -390,7 +390,7 @@
       }
     }
   },
-  "page_notes": "「各種手当・医療費助成」ページには「児童手当」という見出しと『ここでは、児童手当について紹介します。』という一文があるのみで、持ち物・必要書類の記載はこのページ内になく、専用の児童手当ページへのリンク（URL未提示）に委ねられている。\n「各種手当・医療費助成」ページの児童手当欄はリンク見出しのみで、申請の窓口・オンライン可否には触れていない。オンライン申請の記載があるのは「児童手当申請事項変更届」（住所変更等の届出）についてのみで、新規の認定請求（申請）自体の説明ではない。詳細は「児童手当」という見出しリンク先のさらに先のページにあると見られるが、今回の情報には含まれていない。\nトップページにも「各種手当・医療費助成」ページにも児童手当の申請期限（起算点つき）の記述はなく、「児童手当」の項目自体がさらに詳細ページへのリンクになっていると見られるが、そのURLは本文中に示されていない。\nトップページ「子育て・教育」から「各種手当・医療費助成」の児童手当セクションまで辿ったが、申請の手数料に関する記述は本文中に見当たらなかった。児童手当自体の専用ページへのリンクがありそうだが、本文中にURLは示されていない。",
+  "page_notes": "トップページの「各種手当・医療費助成」の児童手当欄は制度の一覧・案内文のみで、申請に必要な持ち物・書類の記載は無かった。\n「各種手当・医療費助成」ページには児童手当の各種届出のリンクが並ぶが、オンライン申請の記載は「児童手当申請事項変更届について（オンライン申請）」という変更届にのみ限られ、新規の認定請求（申請）自体の窓口・オンライン可否については本文に記載がなかった。\n「各種手当・医療費助成」ページには児童手当への内部リンクがあるのみで、申請期限・起算点についての記述はこのページ本文には見当たらなかった。\nトップページ・リンク先の「各種手当・医療費助成」ページのいずれにも手数料についての記載はなく、児童手当は制度概要と関連リンクの案内のみだった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [

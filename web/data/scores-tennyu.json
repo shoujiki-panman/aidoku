@@ -1,223 +1,262 @@
 {
-  "generated_at": "2026-08-17T15:10:26+00:00",
+  "generated_at": "2026-08-31T16:46:38+00:00",
   "procedure": "転入届",
   "procedure_id": "tennyu",
   "question": "{muni}に引っ越します。転入届に必要なもの・期限・手数料を教えて。オンラインでできますか？",
   "phase": "23区",
   "n_municipalities": 23,
   "measurement": {
-    "measurement_version": null,
-    "prompt_version": null,
-    "follow": null,
-    "max_follow": null,
-    "max_depth": null,
-    "beam": null,
-    "max_fetches": null,
-    "max_text_chars": null,
-    "max_links": null,
-    "link_order": null,
-    "table_reading": null,
-    "model": null,
-    "model_version": null,
-    "run_at": [],
-    "discovery_run_at": [],
-    "recording_status": "legacy_unknown",
-    "comparison_status": "legacy_unknown",
+    "recording_status": "recorded",
+    "comparison_status": "compatible",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "cmap_text+ocr",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": [
+      "2026-08-30T17:56:25+00:00",
+      "2026-08-30T17:57:27+00:00",
+      "2026-08-30T17:59:47+00:00",
+      "2026-08-30T18:01:55+00:00",
+      "2026-08-31T13:07:19+00:00",
+      "2026-08-31T13:09:23+00:00",
+      "2026-08-31T13:13:15+00:00",
+      "2026-08-31T13:16:17+00:00",
+      "2026-08-31T13:17:58+00:00",
+      "2026-08-31T13:18:59+00:00",
+      "2026-08-31T13:21:37+00:00",
+      "2026-08-31T13:22:53+00:00",
+      "2026-08-31T13:25:32+00:00",
+      "2026-08-31T13:27:00+00:00",
+      "2026-08-31T13:28:59+00:00",
+      "2026-08-31T13:30:43+00:00",
+      "2026-08-31T13:32:45+00:00",
+      "2026-08-31T13:34:36+00:00",
+      "2026-08-31T13:36:39+00:00",
+      "2026-08-31T13:39:02+00:00",
+      "2026-08-31T13:41:33+00:00",
+      "2026-08-31T13:43:33+00:00",
+      "2026-08-31T15:33:55+00:00"
+    ],
+    "discovery_run_at": [
+      "2026-08-27T15:29:07+00:00"
+    ],
     "runs": [
       {
         "municipality_id": "minato",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:21:37+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "adachi",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-30T17:56:25+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "bunkyo",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-30T17:59:47+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "chiyoda",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-30T18:01:55+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "edogawa",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:09:23+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "itabashi",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "nerima",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "shibuya",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "suginami",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "taito",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "toshima",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "nakano",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:13:15+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "katsushika",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T15:33:55+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "kita",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "koto",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:16:17+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "meguro",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:18:59+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
+      },
+      {
+        "municipality_id": "nerima",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:25:32+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
+      },
+      {
+        "municipality_id": "shibuya",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:30:43+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
+      },
+      {
+        "municipality_id": "suginami",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:36:39+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
+      },
+      {
+        "municipality_id": "taito",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:41:33+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
+      },
+      {
+        "municipality_id": "toshima",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:43:33+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
+      },
+      {
+        "municipality_id": "nakano",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:22:53+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
+      },
+      {
+        "municipality_id": "koto",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:17:58+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "ota",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:27:00+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "shinagawa",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "shinjuku",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
-      },
-      {
-        "municipality_id": "arakawa",
-        "recording_status": "legacy_unknown",
-        "model": "claude-cli",
-        "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:32:45+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "chuo",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:07:19+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "setagaya",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:28:59+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
+      },
+      {
+        "municipality_id": "shinjuku",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-31T13:34:36+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
+      },
+      {
+        "municipality_id": "arakawa",
+        "recording_status": "recorded",
+        "model": "claude-cli",
+        "model_version": "claude-sonnet-5",
+        "run_at": "2026-08-30T17:57:27+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       },
       {
         "municipality_id": "sumida",
-        "recording_status": "legacy_unknown",
+        "recording_status": "recorded",
         "model": "claude-cli",
         "model_version": "claude-sonnet-5",
-        "run_at": null,
-        "discovery_run_at": null
+        "run_at": "2026-08-31T13:39:02+00:00",
+        "discovery_run_at": "2026-08-27T15:29:07+00:00"
       }
-    ],
-    "read_breadth": null,
-    "non_html_reading": null
+    ]
   },
   "summary": {
-    "average": 59.6,
+    "average": 63.9,
     "max": 100,
     "min": 0,
     "full_marks": 1,
-    "zero": 4,
+    "zero": 2,
     "fee_missing": 22
   },
   "municipalities": [
@@ -266,7 +305,7 @@
         }
       ],
       "improvements": [],
-      "notes": "必要書類は国内転入/国外転入で別テーブルに分かれ条件分岐が多いが、本文中に明記されているためfound trueとした。オンライン完結の可否は明言されていないが「引越し手続オンラインサービス」は来庁予約機能のみと文脈から判断できる。",
+      "notes": "本文の表が「必要なもの／注意事項等」の2列構成で国内・国外別に分かれており、該当者限定の条件（外国人のみ・日本人のみ・世帯人数条件）が注意事項列に書かれている。\n本文は「窓口へ届出をしてください」と明記。リンク一覧にある「転入・転居手続の来庁予約（引越し手続オンラインサービス）」は来庁の予約のみで、届出自体のオンライン完結ではない。\n「届出期間」の見出し直下に起算点（住み始めた日）と期限（14日以内）が明記されている。届出期間を過ぎた場合や転出届の種類による例外の注記もあるが、基本の期限はこの1文で完結している。\n手数料は冒頭の説明文に明記されており、以降の届出期間・必要なもの等のセクションには手数料に関する追加記載はない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -325,7 +364,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "届出場所・期限・持ち物（国内転入／海外転入で場合分け）・過料の注意まで本文に明記されているが、手数料についての記載はページ内に見当たらない。",
+      "notes": "「お持ちいただくもの」の下に「他の市区町村から足立区へ転入した場合」と「海外から足立区へ転入した場合」の2区分で必要書類が箇条書きされており、該当者限定の持ち物（マイナンバーカード所持者のみ、外国人のみ、世帯主変更時のみ等）も本文に明記されている。\n本文冒頭で窓口必須・郵送不可・ワンストップサービス対象外を明記しており、この1項目は本文だけで完結して判定できた。\n「届出期間」の見出し直下に起算点（引っ越ししてから）と期限（14日以内）が明記されている。\n手数料に関する記述はページ本文になく、リンク一覧（引っ越しワンストップサービス、特例転入、委任状、区民事務所案内等）にも手数料を扱うページは見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -348,7 +387,8 @@
       "page_url": "https://www.city.bunkyo.lg.jp/b013/p000261/index.html",
       "followed": [
         "https://www.city.bunkyo.lg.jp/b013/p000263.html",
-        "https://www.city.bunkyo.lg.jp/b013/p000264.html"
+        "https://www.city.bunkyo.lg.jp/b013/p000264.html",
+        "https://www.city.bunkyo.lg.jp/b013/p000284/index.html#tennyu"
       ],
       "fields": [
         {
@@ -387,7 +427,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "トップページ自体には受付窓口の場所と担当課の情報しかなく、必要書類・受付方法・期限は1階層下の「他の区市町村から文京区へ転入する場合」ページに集約されていた。手数料についてはトップページ・リンク先2ページのいずれにも記載が見当たらない。",
+      "notes": "トップページ自体には持ち物の記載はなく、「他の区市町村から」「国外から」の2つの子ページにそれぞれ独立した『手続に必要なもの』リストがある。国内転入のリストを採用した。\n転入届トップページには受付方法の明記は無いが、リンク先の「他の区市町村から」「国外から」の各ページに同一文言で窓口限定・郵送/メール不可が明記されていた。オンライン完結の記載は無し。\n転入届トップページ自体には期限の記載がなく、「他の区市町村から」への内部リンク先ページに届出期間が明記されていた。\n転入届のページおよび「他の区市町村から文京区へ転入する場合」「よくある質問」のいずれにも手数料に関する記述がなく、必要書類・届出期間・受付窓口の説明のみだった。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -446,7 +486,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "転入届は届出方法が(1)転出証明書持参(2)特例転入(3)ワンストップ事前通知(4)国外転入の4パターンに分かれ、必要書類が方法ごとに異なるため単一の一覧としては提示されていない。手数料についてはページ内のどこにも言及がない。",
+      "notes": "転入方法が(1)〜(4)の4パターンに分かれ、それぞれに「必要な持ち物」の見出しが独立して存在する。加えて「注意」欄に条件付きの追加書類（居住証明書、委任状PDF等）が本文中に散在しており、単一のリストではなく方法・該当者別の集合として構成されている。\nマイナポータルを使った「事前通知」（ワンストップサービス）はあるが、これは転出届のみをオンライン完結させる仕組みで、転入届自体は必ず窓口来庁が必要と明記されている。\n届出方法(1)〜(4)ごとに「届ける時期」の見出しで個別に明記されており、いずれも「新しい住所に引っ越してから14日以内」で統一されている。\n転入届のページ本文には手数料に関する記載が一切なく、リンク一覧にも手数料表など関連しそうなページは見当たらなかった（関連リンクは他の住民登録手続きへの遷移のみ）。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -505,7 +545,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "必要書類は前自治体での転出手続き方法（ワンストップ/特例転出/紙の証明書）によって3パターンに分岐しており、単一の正答が定まらない構成。手数料への言及はページ内に一切なく、無料か有料かも読み取れない。",
+      "notes": "「持ち物」は転出手続きの経路（ワンストップ／特例転出／紙の証明書）ごとに別々に列挙され、さらに「その他必要な持ち物」という独立見出しで外国人住民・国外転入・住居表示未実施地域向けの追加持ち物がまとめて併記されている。\n転出側の「引越しワンストップサービス」利用者向けの案内はあるが、それは転出手続きがオンライン化されているだけで、転入届自体は本文中で明確に「必ず窓口に来て」と述べられており、オンライン完結の余地はない。\n期限は本文冒頭に「届出期間：住みはじめた日から14日以内」として明記されており、起算点（住みはじめた日）も同じ一文に含まれていた。\n本文には転入届の手数料に関する記載がなく、「50,000円以下の過料」という罰則規定はあるが手続き自体の手数料の言及はない。リンク一覧も届出方法・持ち物・関連手続きに関するもので、手数料に触れるものは見当たらなかった。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -564,13 +604,197 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "必要書類・届出期間・オンライン可否（窓口必須の明記）は本文に詳しく記載されているが、転入届自体の手数料についての言及は本文中に見当たらない（マイナンバーカード再交付の手数料1000円は別手続きの話）。",
+      "notes": "「必要なもの」の見出し下に箇条書きで一般対象者と該当者限定の持ち物が明記されており、注釈で条件も併記されている。\n本文中に「マイナポータルを利用した方」という節があり、オンライン申請だけでは完結せず窓口来庁が必須と明記されている。マイナポータルへの誘導リンクはあるが、それは前提の説明であり手続き自体を完結させるものではない。\n「届出期間」の見出し直下に起算点（住み始めた日）と期限（14日以内）が明記されていた。\n本文には手続きの流れ・必要書類・マイナンバーカード関連手数料（再交付1000円）の記載はあるが、転入届の届出自体の手数料への言及はなし。リンク一覧も戸籍住民課の関連手続き（転居届・転出届・印鑑登録等）のみで、手数料一覧に該当するリンクは見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
       "lg_code": "131199"
+    },
+    {
+      "id": "katsushika",
+      "name": "葛飾区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
+      "followed": [
+        "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "本体ページ（1001442）は「転入届の特例」制度の説明のみで持ち物リストが無く、リンク先の「住民異動届（転入・転出・転居など）」ページに本人確認書類・国内/国外転入別の必要書類が集約されていた。\nこのページはマイナンバーカードを使った特例転出入の説明で、転出はマイナポータルでオンライン可だが、転入は特例手続でも必ず窓口対応と明記されている。\nこのページは「転入届の特例（マイナンバーカード等利用）」専用ページで、期限の記述は「特例手続の条件等」の一項目として現れる。通常の転入届ページ（住民異動届）は別リンク先にある。\n転入届の特例ページにもリンク先の「住民異動届（転入・転出・転居など）」ページにも、手数料・料金・無料に関する記述は見当たらなかった。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131229"
+    },
+    {
+      "id": "kita",
+      "name": "北区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+      "followed": [
+        "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+        "https://www.city.kita.lg.jp/living/registration/1001564/index.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "このページは「転入届の特例」（マイナンバーカード等所持者向け）専用ページで、転出セクションと転入セクションで持ち物の記載が分かれている。転入側の「届出に必要なもの」を採用した。\nこのページは転入届の中でもマイナンバーカード等所持者向けの特例手続きに限定されており、届出方法の項に「窓口で手続きをしてください」と明記されオンライン完結の記載は無い。\nこのページはマイナンバーカード等保持者向けの「転入届の特例」に特化しており、期限の記載は「上記カードをお持ちの方の転入届出時の注意事項」の箇条書き内にのみ存在した。\n転入届の手続きページおよび「転入・転出の住所変更等の届出」ページには、必要書類や届出期限の説明はあるが、転入届自体の手数料についての記載はない。マイナンバーカード再交付時の手数料への言及はあるが、これは別手続きのもの。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131172"
+    },
+    {
+      "id": "meguro",
+      "name": "目黒区",
+      "total": 80,
+      "breakdown": {
+        "必要書類": 20,
+        "窓口/オンライン可否": 20,
+        "期限": 20,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 3,
+      "page_url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
+      "followed": [
+        "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "期限",
+          "verdict": "読めた",
+          "points": 20,
+          "agent_value": "",
+          "quote_withheld": true
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "「届出に必要なもの（日本国外からの転入）」の章に1〜8の番号付きリストで持ち物が列挙されており、各項目に該当者限定の注記（外国人のみ・法定代理人のみ・1年以上遡る場合のみ等）が付いている。\n本体ページ（国外からの転入）は窓口手続きを前提とした説明のみ。リンク先の「マイナポータルを利用したオンライン申請をしたかた」ページで、転出側はオンライン申請可だが転入自体は窓口来庁必須と明記されていた。\n「届出期限」という見出しの直下に明記されており、起算点（住み始めた日）と期限日数（14日以内）の両方が本文に含まれている。\n必要書類・届出期限・届出場所は詳しく書かれているが、手数料（無料か有料か）についての記載はページ内に見当たらない。関連リンクも同一手続きの別パターン（本人・代理人・マイナンバー・オンライン申請）や委任状PDFのみで、手数料に触れるものはない。",
+      "page_status": {
+        "code": "facts_found",
+        "label": "このページから読み取れた項目があります",
+        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131105"
     },
     {
       "id": "nerima",
@@ -623,7 +847,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "1〜8の番号見出しで構成され本文は詳細だが、転入届自体の手数料についての明記は見当たらない（マイナンバーカード再交付手数料の記載はあるが別手続き）。届出方法は窓口来所のみでオンライン不可と明記されている。",
+      "notes": "「4.届出に必要なもの」の章見出しの下に本文の箇条書きとして必須項目・該当者のみ項目が明記されており、リンク先を辿る必要はなかった。\n「1.届出方法」の見出し直下に窓口限定である旨が明記されており、マイナポータルの電子申請は「来庁予定連絡」のみで転入届自体の提出には使えないと本文中で繰り返し補足されている。\n「3.届出期間」の見出し直下に起算点（住み始めてから）と期限（14日以内）が明記されている。マイナンバーカード利用時の例外規定も併記されているが、基本の期限規定はこの一文のみ。\n本文には転入届自体の手数料についての記載がなく、手数料の言及はマイナンバーカード再交付（1,000円/800円）のみ。転入届の手数料は「練馬区新生活手続きガイド」PDFに載っている可能性がある。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -644,7 +868,9 @@
       },
       "hops": 2,
       "page_url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
-      "followed": [],
+      "followed": [
+        "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -682,7 +908,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "届出期間・届出人・必要なもの・窓口/受付時間が見出しごとに整理され、利用可能な手続き方法（窓口/郵送/オンライン等）を一覧表示する定型ブロックもあり構造は明確。ただし手数料についてはこのページ・関連リンクのどこにも言及がない（転入届自体は無料と思われるが本文に明記なし）。",
+      "notes": "「届出の際に必要なもの」の見出し配下に、基本の持ち物に加えて続柄・居住期間・代理人などの該当者別の追加書類が箇条書きで列挙されている。\nページ末尾に「ご利用いただける手続き方法」という定型表があり、窓口のみ利用可能で他は全て利用不可能と明記されている。本文中にも「転入届は郵送では受付できません」と重ねて書かれている。\n「届出期間」という独立の見出し（h2相当）の直後に起算点付きの期限が明記されており、本文冒頭から容易に特定できた。\n本文は届出期間・届出人・必要なもの・窓口/受付時間・マイナンバーカード継続利用のみで構成され、手数料に関する記載はない。リンク先の「引っ越し」ページも手続き一覧のカテゴリページで金額情報は無かった。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -705,6 +931,7 @@
       "page_url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tennyuu/index.html",
       "followed": [
         "https://www.city.suginami.tokyo.jp/s018/996.html",
+        "https://www.city.suginami.tokyo.jp/s018/10714.html",
         "https://www.city.suginami.tokyo.jp/s018/540.html"
       ],
       "fields": [
@@ -744,7 +971,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "トップページ（index.html）は届出パターンの一覧だけで詳細情報を持たず、必要書類・窓口・期限は「本人が手続き」「マイナポータル」など各サブページに分散している。手数料については追跡した2つのサブページ（996.html, 540.html）のいずれにも記載がなかった。",
+      "notes": "転入届のトップページ自体には持ち物の説明が無く、届出者の属性（本人／代理人／国外から／マイナンバー利用など）ごとに6枚のサブページへ分岐する構成。今回のTest Caseに対応する「本人または新しく同じ世帯になる方」用サブページ（s018/996.html）に「届け出に必要なもの」として番号付きリストがあった。\n転入届のトップページ自体には窓口/オンラインの可否が明記されておらず、6種の状況別サブページに分岐している。マイナポータル利用ページ（540.html）を見ても、オンラインで完結するのは前住所地での転出届のみで、転入手続きは常に窓口来庁が必須と明記されていた。\nページ本文は複数の転入パターン（本人・代理人・国外・マイナンバーカード利用等）へのリンク集で、期限に関する記述は本文中に一箇所だけ短くまとまっていた。\n転入届の本文（届出先ページ・本人手続きページ・代理人手続きページ）とも、必要なもの・届出期限・窓口時間の記載はあるが「手数料」という語自体が一度も出てこない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -763,10 +990,11 @@
         "手数料": 0,
         "オンライン明示": 20
       },
-      "hops": 2,
+      "hops": 3,
       "page_url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
       "followed": [
         "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
+        "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
         "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html"
       ],
       "fields": [
@@ -806,7 +1034,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "起点ページは転入届そのものではなく「電子証明書の発行手続き」の案内で、転入届の必要書類・期限は別ページ（jumintoroku.html）の表にあり、オンライン可否はさらに別ページ（onraintennyu.html）で「オンラインの転出届後も転入届自体は窓口必須」と分かった。手数料はどのページにも記載がなかった。",
+      "notes": "起点ページ（電子証明書の発行手続き）には転入届自体の持ち物一覧は無く、リンク先の「転入・転居・転出・世帯変更の届出」ページの一覧表に転入届の必要なものが外国人向け追加書類も含めて記載されていた。\n本体ページは電子証明書の発行手続きのみで転入届自体のオンライン可否には触れておらず、リンク先の「オンライン転出届をされた方の転入手続き」ページで、オンラインは転出届の送信までで転入届は窓口提出必須と明記されていた。\n元ページ（電子証明書手続き）には期限の記載がなく、リンク先の「転入・転居・転出・世帯変更の届出」ページの表内に転入届の届出期間が明記されていた。\n転入届の必要書類・届出期間は表で詳細に説明されているが、手数料・費用に関する記述はどちらのページにも見当たらなかった。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -829,6 +1057,7 @@
       "page_url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
       "followed": [
         "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+        "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
         "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html"
       ],
       "fields": [
@@ -868,7 +1097,7 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "トップページ自体は届出人の属性（本人/代理人/国外/マイナンバーカード/マイナポータル）ごとの案内へのリンク集にすぎず、必要書類・期限・窓口の詳細情報は子ページ側にのみ記載されている。手数料についてはどのページにも言及がなかった。",
+      "notes": "トップの手続き案内ページには持ち物の記載はなく、届出人の立場（本人・代理人など）別に分かれたリンク先ページに「届出に必要なもの」として番号付きリストで記載されていた。\nトップページ本文には窓口・オンラインの別は書かれておらず、リンク先の「マイナポータルを利用したオンライン申請をしたとき」ページで、オンライン申請をしても転入手続き自体は窓口必須と明記されていた。\nトップページ本文には期限の記載がなく、「転入届：本人または新しく同じ世帯になる方が手続きをするとき」の子ページに「届出期限」の見出しで起算点付きの期限が明記されていた。\n転入届のページ本文および「本人が手続きするとき」「代理人が手続きするとき」の2つのリンク先ページには、必要書類・届出期限・届出場所の説明はあるが、手数料や「無料」についての記載が一切ない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -934,141 +1163,13 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "指定URLは『マイナンバーカードを利用する転入届』という特定手続きのページで、一般的な転入届は別ページ（転入届（区外から中野区へ））にある。両ページとも手数料の記載は一切なし。",
+      "notes": "「届出に必要なもの」に本人用の持ち物、「届出人」の項目に届出人の類型（本人／同一世帯／別世帯の代理人）ごとの追加の必要書類（委任状）が分かれて記載されている。\n本体ページ・リンク先の「転入届（区外から中野区へ）」ページとも、届出場所は窓口（本庁または地域事務所）のみを案内。リンク先には「届出書の事前入力ができるサービス」があるが、自宅で入力しても提出・印刷は区役所窓口で行う仕組みで、オンライン完結の手続きではない。\n「届出期間」という見出しの直下に起算点付きの期限が明記されており、本文だけで完結していた。\n転入届（マイナンバー利用・区外からの2ページとも）は届出期間・必要書類・届出場所・受付時間・届出人を詳しく記載するが、手数料の有無や金額には一切触れていない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
       "lg_code": "131148"
-    },
-    {
-      "id": "katsushika",
-      "name": "葛飾区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 3,
-      "page_url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "このページはマイナンバーカード等を利用した「特例転出・転入」制度専用の説明であり、通常の転入届（一般的な必要書類・手数料）についての記載ではない。関連リンクに「住民異動届（転入・転出・転居など）」等の一般ページが挙げられているが、本文リンク一覧にURLが含まれていないため follow_urls には入れられない。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131229"
-    },
-    {
-      "id": "kita",
-      "name": "北区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 2,
-      "page_url": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "このページは一般的な「転入届」ではなく、マイナンバーカード等の所持者向けの特例(転入届の特例)に限定した解説ページ。手数料への言及が本文に一切なく、関連リンク「転入・転出の住所変更等の届出」のURLもリンク一覧に含まれていないため確認できなかった。リンク一覧の大半が多言語切替リンクで占められており、本文関連リンクの把握を妨げている。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131172"
     },
     {
       "id": "koto",
@@ -1126,77 +1227,13 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "必要書類・届出先・届出期間は本文に詳細に明記されているが、手数料については本文中に一切言及がない。転入届自体は住民票の異動届であり無料の可能性が高いが、ページに明記がないため「記載なし」とする。",
+      "notes": "1ページに「転出証明書あり」と「マイナンバーカード特例」の2手続きが並記され、それぞれに別の必要書類リストがある。設問は前者（転出証明書の発行を受けた方）の一般的な転入届を指すと判断し、そちらを採用した。\n本文は転入届（転出証明書あり／マイナンバーカード特例）の2パターンとも届出先を区役所窓口・豊洲特別出張所・出張所の3種の物理窓口としてのみ記載しており、オンライン申請への言及や関連リンクは無かった。\n「届出期間」の見出しの下に起算点（新しい住所に住み始めてから）と期限（14日以内）が明記されている。転出証明書ありのパターンと特例（マイナンバーカード利用）パターンで同じ記載が2回登場する。\n本文・必要書類・関連ドキュメントの一覧に手数料への言及がなく、関連リンクにも手数料や料金表にあたるページが見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
       },
       "lg_code": "131083"
-    },
-    {
-      "id": "meguro",
-      "name": "目黒区",
-      "total": 60,
-      "breakdown": {
-        "必要書類": 20,
-        "窓口/オンライン可否": 20,
-        "期限": 20,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 3,
-      "page_url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "期限",
-          "verdict": "読めた",
-          "points": 20,
-          "agent_value": "",
-          "quote_withheld": true
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "国外からの転入という特殊ケースに特化したページで、必要書類は非常に詳細（8項目）だが、手数料についてはページ内のどこにも言及がなく、オンライン申請についても明示的な記載がない（同カテゴリの別ページ「マイナポータルを利用したオンライン申請」は国内転入向けと見られ、本ケースへの適用は不明）。",
-      "page_status": {
-        "code": "facts_found",
-        "label": "このページから読み取れた項目があります",
-        "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
-      },
-      "lg_code": "131105"
     },
     {
       "id": "ota",
@@ -1211,7 +1248,10 @@
       },
       "hops": 3,
       "page_url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html",
-      "followed": [],
+      "followed": [
+        "https://www.city.ota.tokyo.jp/faq/bunya/koseki_j/jyuumin_idoutodoke.html",
+        "https://ttzk.graffer.jp/ward-ota/move-in"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -1254,7 +1294,7 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "必要書類・窓口・期限は本文に明記されているが手数料への言及は本文中に一切なく、関連リンクにも手数料専用ページは見当たらない。窓口予約・届書作成は「パソコン・スマートフォンから」可能だが、これは事前準備であって届出自体のオンライン完結を意味しない。",
+      "notes": "「持参する書類」見出しの下に箇条書きで必要書類が列挙されており、該当者のみ必要な委任状・マイナンバーカードも同じリストに含まれている。\n受付場所・持参する書類（転出証明書や本人確認書類の提示）が明記されており、来庁前提の記述のみ。「パソコン・スマートフォンからの住民異動届の窓口予約・届書作成」は事前予約・書類作成に留まり、届出自体のオンライン完結とは書かれていない。\n「届出期間」という見出しの直下に起算点（住み始めた日）と期限（14日以内）が明記されており、本文だけで完結していた。\n本文には届出期間・受付窓口・持参書類の案内はあるが手数料の記載がなく、指定されたリンク先「よくある質問（住民記録・異動届について）」にも手数料に関する記述は無かった。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -1275,7 +1315,9 @@
       },
       "hops": 3,
       "page_url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html",
-      "followed": [],
+      "followed": [
+        "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/index.html"
+      ],
       "fields": [
         {
           "field": "必要書類",
@@ -1318,7 +1360,7 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "本人／同一世帯／法定代理人／任意代理人の4パターンで持ち物説明が並列され情報量が多いが、手数料への言及は本文中どこにも見当たらない。オンライン可否についても明示的な可否表明はなく、窓口の受付時間表のみが詳細に記載されている。",
+      "notes": "「必要な持ち物」は本人・同一世帯・法定代理人・成年後見人・任意代理人ごとに見出し区切りで並列記載されており、外国人向けの追加書類は各パターンの末尾に【外国人の方は…】として共通パターンで繰り返されている。\n本文は「4.手続き可能な窓口」で品川区役所・地域センターの窓口受付時間のみを列挙しており、転入届自体をオンラインで提出できるという記載は無い。「特例転入届」節はマイナポータルで転出届を先に出した人向けの案内で、転入届の受理自体は依然として来庁が前提になっている。\n冒頭の注意書きと本文1章の両方に同じ「住み始めてから14日以内」という起算点つきの期限が明記されており、過料（5万円以下）にも言及がある。\n転入届のページ本文・持ち物一覧・窓口案内には手数料の記載がなく、案内先の『住民登録についての届け出』一覧ページにも手数料に関する言及は無かった。転入届自体は基本的に無料の手続きだが、それを明記した記述はページ上に見当たらない。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
@@ -1327,8 +1369,8 @@
       "lg_code": "131091"
     },
     {
-      "id": "shinjuku",
-      "name": "新宿区",
+      "id": "chuo",
+      "name": "中央区",
       "total": 40,
       "breakdown": {
         "必要書類": 0,
@@ -1338,9 +1380,11 @@
         "オンライン明示": 20
       },
       "hops": 2,
-      "page_url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
+      "page_url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
       "followed": [
-        "https://www.city.shinjuku.lg.jp/todokede/index.html"
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
+        "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html"
       ],
       "fields": [
         {
@@ -1389,11 +1433,164 @@
           "reason": "手数料の額を書く。無料なら「無料」と書く"
         }
       ],
-      "notes": "本ページは転入・転出の注意喚起の告知文のみで、手続き詳細（必要書類・期限・手数料）は掲載されていない。リンク先の「戸籍・住民票・印鑑登録・マイナンバーカード」トップページも項目一覧のハブに過ぎず、実際の転入届の詳細手続きページには本文中のURLが提示されておらず到達できなかった。",
+      "notes": "「マイナンバーカードを使わずに手続きをする場合」「使って手続きをする場合」のページはいずれも下位ページへのリンク一覧（本人・同世帯／代理人／国外からの場合など）のみで、持ち物・必要書類の具体的な記載は無かった。\n転入トップページ自体には窓口/オンラインの可否記載がなく、同カテゴリ内の「引越しワンストップサービスの利用」ページに転出・転入それぞれの手続き方法が分けて書かれていた。転入は来庁予定の連絡のみオンライン化され、届出自体は窓口必須という構成。\n転入届のトップページとその下位2ページ（マイナンバーカードあり/なし）はいずれもリンク一覧のみで構成されており、期限（起算点付き）を含む説明本文自体が存在しなかった。実際の手続き詳細はさらに下位の「転入届：本人または同じ世帯の方が手続きするとき」等の個別ページにあると見られるが、今回の探索範囲では未到達。\n転入ページとその配下2ページ（マイナンバーカード有無別）はいずれも下位ページへのリンク一覧のみで、手数料に関する記述はどこにも見当たらなかった。",
       "page_status": {
         "code": "facts_found",
         "label": "このページから読み取れた項目があります",
         "detail": "4項目のうち1つ以上を読み取れたため、対象の手続きのページを採点していると考えられます。"
+      },
+      "lg_code": "131024"
+    },
+    {
+      "id": "setagaya",
+      "name": "世田谷区",
+      "total": 20,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 1,
+      "page_url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+      "followed": [
+        "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
+        "https://www.city.setagaya.lg.jp/02312/18274.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "元ページ・リンク先ページともに見出しとリンク一覧のみで、転入届の持ち物を具体的に列挙した本文記述は見当たらなかった。\n転入届の窓口/オンライン可否に直接言及する記述は本文になく、リンク先の「住所や世帯を変更したときの届け出」ページも見出しの一覧のみで、オンライン完結可否を示す本文記述は無かった。\n元ページ・追跡した2リンク先とも「住所や世帯を変更したときの届け出」への案内や窓口・混雑状況の説明にとどまり、転入届の期限（起算点つき）を明記した本文は見当たらなかった。\nリンク先ページ（住所や世帯を変更したときの届け出）は各種手続きへのリンク一覧のみで、手数料についての本文記載は無かった。",
+      "page_status": {
+        "code": "target_unconfirmed",
+        "label": "この手続きのページにたどり着けたか、確かめられていません",
+        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
+      },
+      "lg_code": "131121"
+    },
+    {
+      "id": "shinjuku",
+      "name": "新宿区",
+      "total": 20,
+      "breakdown": {
+        "必要書類": 0,
+        "窓口/オンライン可否": 0,
+        "期限": 0,
+        "手数料": 0,
+        "オンライン明示": 20
+      },
+      "hops": 2,
+      "page_url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
+      "followed": [
+        "https://www.city.shinjuku.lg.jp/todokede/index01.html"
+      ],
+      "fields": [
+        {
+          "field": "必要書類",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "期限",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        },
+        {
+          "field": "手数料",
+          "verdict": "読めない",
+          "points": 0,
+          "agent_value": "",
+          "quote_withheld": false
+        }
+      ],
+      "improvements": [
+        {
+          "field": "必要書類",
+          "gain": 20,
+          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
+        },
+        {
+          "field": "窓口/オンライン可否",
+          "gain": 20,
+          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
+        },
+        {
+          "field": "期限",
+          "gain": 20,
+          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
+        },
+        {
+          "field": "手数料",
+          "gain": 20,
+          "reason": "手数料の額を書く。無料なら「無料」と書く"
+        }
+      ],
+      "notes": "元ページは住所異動届出の注意喚起のみ。リンク先の一覧ページも「転入届」等への項目リンクを並べるだけで、持ち物・必要書類の具体的な記載はどちらにも無かった。\nリンク先ページ（index01.html）は「転入届」等の手続き名がリンク一覧として並ぶ目次ページで、各手続きの窓口・オンライン可否を説明する本文は無い。「転出届（マイナポータルで手続きをするとき）」という項目はあるが「転入届」には対応する項目が無く、判断材料にはならない。\n元ページは住所異動の総論案内のみで期限の記載なし。リンク先の一覧ページ（住所変更の届出）も転入届等への各リンクを並べるだけで、期限（起算点つき）の記述はどちらにも見当たらなかった。\n対象ページは住所異動の総論案内で、リンク先の一覧ページ(index01.html)も「転入届」への次のリンクを並べるだけで手数料の記載はなかった。",
+      "page_status": {
+        "code": "target_unconfirmed",
+        "label": "この手続きのページにたどり着けたか、確かめられていません",
+        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
       },
       "lg_code": "131041"
     },
@@ -1412,6 +1609,7 @@
       "page_url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
       "followed": [
         "http://ttzk.graffer.jp/ward-arakawa",
+        "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
         "https://www.city.arakawa.tokyo.jp/todokede/index.html"
       ],
       "fields": [
@@ -1471,174 +1669,13 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "このページ自体は転入届の詳細情報を持たず、外部の対話式ガイド（Graffer運営「くらしの手続きガイド」）へ誘導するポータル。リンク先のGrafferトップと届出・登録・証明の索引ページも見たが、いずれも質問に回答する多段階フォームへの入口・カテゴリ一覧のみで、必要書類・窓口・期限・手数料の具体的な記載は無い。",
+      "notes": "元ページは「くらしの手続きガイド」への案内のみで持ち物の記載はなし。追従したGraffer提供の外部手続きガイドも質問に回答して結果を得るインタラクティブなツールの入口ページであり、転入届の具体的な必要書類リストはページ本文に記載されていなかった。\n「くらしの手続きガイド」は外部(Graffer)の手続き洗い出しツールへの案内で、必要な手続きや持ち物のチェックリストを示すのみ。「電子申請」ページも申請可能な手続きの一覧は別リンク（外部サイト）任せで、転入届自体が窓口のみかオンライン完結可かは本文・リンク先とも明記されていない。\n本文は「くらしの手続きガイド」という対話式ツールへの案内のみで、転入届の期限そのものは書かれていない。リンク先のGrafferガイド（外部サイト）もライフイベント選択画面で、質問に回答しないと個別の期限情報が出てこない構造だった。\n「くらしの手続きガイド」ページおよびリンク先の「届出・登録・証明」「電子申請」ページのいずれにも転入届の手数料に関する記載がなかった。転入届自体の詳細手続きページ（戸籍・住民票 > 転入・転出・転居）へはさらに1階層先にあると見られるが、今回はこれ以上追跡できなかった。",
       "page_status": {
         "code": "target_unconfirmed",
         "label": "この手続きのページにたどり着けたか、確かめられていません",
         "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
       },
       "lg_code": "131181"
-    },
-    {
-      "id": "chuo",
-      "name": "中央区",
-      "total": 0,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 2,
-      "page_url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
-      "followed": [
-        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
-        "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html"
-      ],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "gain": 20,
-          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "このページおよびリンク先の2ページ（マイナンバーカード有無別の入口）はいずれも案内用のハブページで、実際の項目（必要書類・期限・手数料）は「本人/同世帯」「代理人」「国外から」等さらに1階層下のページに分かれている模様だが、そのURLは本文中にテキストのみで記載されリンク化されていないため辿れなかった。",
-      "page_status": {
-        "code": "target_unconfirmed",
-        "label": "この手続きのページにたどり着けたか、確かめられていません",
-        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
-      },
-      "lg_code": "131024"
-    },
-    {
-      "id": "setagaya",
-      "name": "世田谷区",
-      "total": 0,
-      "breakdown": {
-        "必要書類": 0,
-        "窓口/オンライン可否": 0,
-        "期限": 0,
-        "手数料": 0,
-        "オンライン明示": 0
-      },
-      "hops": 1,
-      "page_url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
-      "followed": [],
-      "fields": [
-        {
-          "field": "必要書類",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "期限",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        },
-        {
-          "field": "手数料",
-          "verdict": "読めない",
-          "points": 0,
-          "agent_value": "",
-          "quote_withheld": false
-        }
-      ],
-      "improvements": [
-        {
-          "field": "必要書類",
-          "gain": 20,
-          "reason": "必要な持ち物を、条件つきで箇条書きにする（本人確認書類・転出証明書など）"
-        },
-        {
-          "field": "窓口/オンライン可否",
-          "gain": 20,
-          "reason": "窓口のみか、オンラインで完結できるかを、はっきり書く"
-        },
-        {
-          "field": "期限",
-          "gain": 20,
-          "reason": "「住み始めた日から14日以内」のように、起算点つきで書く"
-        },
-        {
-          "field": "手数料",
-          "gain": 20,
-          "reason": "手数料の額を書く。無料なら「無料」と書く"
-        },
-        {
-          "field": "オンライン明示",
-          "gain": 20,
-          "reason": "オンラインで完結できるか否かを、はっきり書く"
-        }
-      ],
-      "notes": "このページは「戸籍・住民登録等」の目次（カテゴリ一覧）ページで、転入届自体の説明は本文に無い。目次内に「住所や世帯を変更したときの届け出」「お引越し手続きのご案内（総合支所くみん窓口）」という関連ページ名が見えるが、それらのURLは提供されたリンク一覧（最大40件、地域ナビゲーション等が中心）には含まれておらず、追跡不可。",
-      "page_status": {
-        "code": "target_unconfirmed",
-        "label": "この手続きのページにたどり着けたか、確かめられていません",
-        "detail": "4項目が1つも読み取れませんでした。区のページに書かれていないのか、こちらが別のページを採点したのかを、この結果からは区別できません。"
-      },
-      "lg_code": "131121"
     },
     {
       "id": "sumida",
@@ -1713,7 +1750,7 @@
           "reason": "オンラインで完結できるか否かを、はっきり書く"
         }
       ],
-      "notes": "指定URLのページは「転入届・転居届と併せて行う電子証明書発行の同一世帯員代理手続き」という付随手続きの説明であり、転入届本体の必要書類・窓口・期限・手数料は書かれていない。リンク先の「届出・登録・証明」ページも見出し一覧（住民登録の届出など）のみでURL付きのリンクが本文中に確認できず、これ以上辿れなかった。",
+      "notes": "対象ページは「転入届・転居届と併せて行う電子証明書発行の代理手続き」に特化しており、転入届本体の持ち物を扱っていない。リンク先の「届出・登録・証明」ページもカテゴリ一覧で、「住民登録の届出」など関連リンクは並ぶが本文に持ち物の記載は無かった。\n元ページは転入届に伴う電子証明書代理手続きの説明で、転入届自体の窓口/オンライン可否には触れていない。リンク先の「届出・登録・証明」一覧ページも見出しリストのみで、転入届の手続方法を直接述べる本文はなく、「引越しワンストップサービス」の項目は転出のみに言及しており転入届には言及していない。\n対象ページは転入届・転居届に伴う「電子証明書発行」の代理手続きの案内で、転入届自体の期限には触れていない。リンク先の「届出・登録・証明」トップも各種手続きへのリンク一覧のみで、期限の記載は無かった。\n1ページ目は転入届と併せた電子証明書発行の代理手続きのみを扱い、2ページ目（届出・登録・証明の一覧）は「住民登録の届出」などへのリンク集で、転入届の手数料には触れていなかった。",
       "page_status": {
         "code": "target_unconfirmed",
         "label": "この手続きのページにたどり着けたか、確かめられていません",

@@ -97,17 +97,27 @@ class 並び(unittest.TestCase):
 
 
 class 実データ(unittest.TestCase):
-    """★いまの公開データには実測時刻が1件も残っていない（2026-08-23 調査）。
+    """★2026-09-04 に書き直した。
 
-    extractor/out/*.json は全件 legacy_unknown（run_at が null）、
-    crawler/out/*.json には measurement そのものが無い。無いものは無いと出す。
+    元は「全行の measured_on が空欄」と固定していた（2026-08-23 時点の実データ）。
+    条件を記録して測り直したので、記録のある行には実測日が入るようになり落ちた。
+
+    守りたかったのは**無い実測日を書き出し日で埋めないこと**。そこを固定し直す。
     """
 
-    def test_全行のmeasured_onが空欄で_exported_onは埋まっている(self):
+    def test_これ大事_記録の無い行だけが空欄になる(self):
         rows = export_timeseries.build()
         self.assertTrue(rows)
-        self.assertEqual({r["measured_on"] for r in rows}, {""})
+        for row in rows:
+            with self.subTest(muni=row["municipality"], field=row["field"]):
+                self.assertEqual(row["measured_on"] == "",
+                                 row["recording_status"] != "recorded")
         self.assertTrue(all(r["exported_on"] for r in rows))
+
+    def test_記録前の行は残っている(self):
+        # ★§4-8。既存の観測は条件を復元できない。消して揃えたりしない。
+        rows = export_timeseries.build()
+        self.assertTrue(any(r["measured_on"] == "" for r in rows))
 
     def test_書き出し済みCSVの見出しがCOLUMNSと一致する(self):
         head = export_timeseries.OUT.read_text(encoding="utf-8").splitlines()[0]

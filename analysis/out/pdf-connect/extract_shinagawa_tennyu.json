@@ -1,0 +1,336 @@
+{
+  "municipality": "品川区",
+  "municipality_id": "shinagawa",
+  "procedure": "転入届",
+  "procedure_id": "tennyu",
+  "page": {
+    "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html",
+    "hops": 3,
+    "link_text": "● 転入届の詳細ページ",
+    "has_jsonld": false,
+    "text_len": 14142,
+    "truncated": false,
+    "n_links": 40,
+    "table_chars": 3858
+  },
+  "reached": true,
+  "failure_type": null,
+  "model": "claude-sonnet-5",
+  "measurement": {
+    "recording_status": "recorded",
+    "measurement_version": "aidoku-1.0",
+    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "follow": true,
+    "max_follow": 2,
+    "max_depth": 3,
+    "beam": {
+      "1": {
+        "parents": 1,
+        "links": 6
+      },
+      "2": {
+        "parents": 3,
+        "links": 4
+      },
+      "3": {
+        "parents": 4,
+        "links": 3
+      }
+    },
+    "max_fetches": 26,
+    "max_text_chars": 18000,
+    "max_links": 40,
+    "link_order": "score_desc",
+    "table_reading": "heading_value",
+    "read_breadth": "agent_pick",
+    "non_html_reading": "none",
+    "model": "claude-cli",
+    "model_version": "claude-sonnet-5",
+    "run_at": "2026-08-27T16:05:24+00:00",
+    "discovery_run_at": "2026-08-27T15:29:07+00:00"
+  },
+  "followed_urls": [],
+  "online_clarity": "記載なし",
+  "online_clarity_evidence": "",
+  "online_clarity_pages": [
+    "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html"
+  ],
+  "test_cases": [
+    {
+      "service": "tennyu",
+      "fact_type": "documents",
+      "question": "品川区の「転入届」について、手続きに必要な持ち物は何か（該当者だけに必要なものも含めて）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "本人が届出:転出証明書・本人確認書類・マイナンバーカード(持っていれば)。同一世帯の代理:転出証明書・来庁者の本人確認書類・マイナンバーカード。法定代理人(親権者・成年後見人):親権者/成年後見人の本人確認書類・本人のマイナンバーカード・親子関係を証明する書類原本(戸籍謄本等、品川区に本籍地があれば不要)または登記事項証明書原本、法人成年後見人は委任状。任意代理人:代理人の本人確認書類・委任状・転出証明書。外国人はいずれも在留カードまたは特別永住者証明書、続柄登録が必要な場合はパスポートと続柄証明書類の原本+訳文を追加。マイナポータルで転出届済みの特例転入では転出証明書は不要で本人確認書類のみ。1年以上前の日付での転入手続きは居住実績がわかる賃貸借契約書原本(更新分含め全て)が必要。",
+        "evidence": "・転出証明書 ・本人確認書類 ・マイナンバーカード（お持ちの方のみ） カード本体をお持ちください。iPhoneに搭載されたもののみでは手続きができません。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 66,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "本人が届出:転出証明書・本人確認書類・マイナンバーカード(持っていれば)。同一世帯の代理:転出証明書・来庁者の本人確認書類・マイナンバーカード。法定代理人(親権者・成年後見人):親権者/成年後見人の本人確認書類・本人のマイナンバーカード・親子関係を証明する書類原本(戸籍謄本等、品川区に本籍地があれば不要)または登記事項証明書原本、法人成年後見人は委任状。任意代理人:代理人の本人確認書類・委任状・転出証明書。外国人はいずれも在留カードまたは特別永住者証明書、続柄登録が必要な場合はパスポートと続柄証明書類の原本+訳文を追加。マイナポータルで転出届済みの特例転入では転出証明書は不要で本人確認書類のみ。1年以上前の日付での転入手続きは居住実績がわかる賃貸借契約書原本(更新分含め全て)が必要。",
+            "evidence": "・転出証明書 ・本人確認書類 ・マイナンバーカード（お持ちの方のみ） カード本体をお持ちください。iPhoneに搭載されたもののみでは手続きができません。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 66,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "持ち物は「転入届」と「特例転入届」の2系統×「本人/同一世帯/法定代理人/任意代理人」の4区分に分かれ、各区分ごとに折りたたみ見出しの下へ列挙されている。外国人向けの追加書類や1年以上前の転入時の追加書類は各区分の末尾に共通パターンで繰り返し記載されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "持ち物は「転入届」と「特例転入届」の2系統×「本人/同一世帯/法定代理人/任意代理人」の4区分に分かれ、各区分ごとに折りたたみ見出しの下へ列挙されている。外国人向けの追加書類や1年以上前の転入時の追加書類は各区分の末尾に共通パターンで繰り返し記載されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "channel",
+      "question": "品川区の「転入届」について、窓口だけか、オンラインで完結できるか",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "窓口のみ（オンラインで完結できるとの案内はない）",
+        "evidence": "・ご来庁の際は、時間に余裕を持ってお越しください。特に、他課（子育て・健康保険関連など）でのお手続きを希望される方はお時間に余裕をもってお越しください。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "normalized",
+          "run": 70,
+          "note": "空白・記号のゆれを吸収すると一致"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "窓口のみ（オンラインで完結できるとの案内はない）",
+            "evidence": "・ご来庁の際は、時間に余裕を持ってお越しください。特に、他課（子育て・健康保険関連など）でのお手続きを希望される方はお時間に余裕をもってお越しください。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "normalized",
+              "run": 70,
+              "note": "空白・記号のゆれを吸収すると一致"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "転入届は「必要な持ち物」を窓口へ持参する前提で全体が構成されており、区役所・各地域センターの窓口受付時間の一覧のみが手続き手段として示されている。マイナポータル経由の特例転入届も「転出届」をオンラインで出した人向けの案内であり、転入届自体は品川区の窓口で行うと明記されている。オンライン申請フォーム等への言及はページ内に一切ない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "転入届は「必要な持ち物」を窓口へ持参する前提で全体が構成されており、区役所・各地域センターの窓口受付時間の一覧のみが手続き手段として示されている。マイナポータル経由の特例転入届も「転出届」をオンラインで出した人向けの案内であり、転入届自体は品川区の窓口で行うと明記されている。オンライン申請フォーム等への言及はページ内に一切ない。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "deadline",
+      "question": "品川区の「転入届」について、いつまでに手続きが必要か（起算点つきで）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": true,
+        "value": "新しい住所地に住み始めてから14日以内",
+        "evidence": "新しい住所地に住み始めてから14日以内に転入届を出す必要があります。",
+        "source": "html",
+        "failure_reason": null,
+        "failure_type": null,
+        "evidence_check": {
+          "verdict": "exact",
+          "run": 34,
+          "note": ""
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": true,
+            "value": "新しい住所地に住み始めてから14日以内",
+            "evidence": "新しい住所地に住み始めてから14日以内に転入届を出す必要があります。",
+            "source": "html",
+            "failure_reason": null,
+            "failure_type": null,
+            "evidence_check": {
+              "verdict": "exact",
+              "run": 34,
+              "note": ""
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "冒頭の注意書きと「1.転入届」節の両方に同じ期限（住み始めてから14日以内）が明記されている。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "冒頭の注意書きと「1.転入届」節の両方に同じ期限（住み始めてから14日以内）が明記されている。",
+      "evidence_summary": {
+        "checked": 1,
+        "verified": 1,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 0
+      }
+    },
+    {
+      "service": "tennyu",
+      "fact_type": "fee",
+      "question": "品川区の「転入届」について、手数料はいくらか（無料なら無料と）",
+      "test_case_version": "1.0",
+      "result": {
+        "found": false,
+        "value": "",
+        "evidence": "",
+        "source": null,
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
+        "evidence_check": {
+          "verdict": "not_applicable",
+          "run": 0,
+          "note": "found=false のため照合しない"
+        }
+      },
+      "attempts": [
+        {
+          "stage": "initial",
+          "llm_called": true,
+          "result": {
+            "found": false,
+            "value": "",
+            "evidence": "",
+            "source": null,
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
+            "evidence_check": {
+              "verdict": "not_applicable",
+              "run": 0,
+              "note": "found=false のため照合しない"
+            }
+          },
+          "requested_urls": [],
+          "page_notes": "本文には手数料についての記載がなく、料金表・注意書き・リンク一覧のいずれにも手数料に触れたものはない。50,000円以下の過料は届出遅延時の罰則であり手数料ではない。"
+        }
+      ],
+      "followed_urls": [],
+      "page_notes": "本文には手数料についての記載がなく、料金表・注意書き・リンク一覧のいずれにも手数料に触れたものはない。50,000円以下の過料は届出遅延時の罰則であり手数料ではない。",
+      "evidence_summary": {
+        "checked": 0,
+        "verified": 0,
+        "partial": 0,
+        "missing": 0,
+        "too_short": 0,
+        "not_checked": 0,
+        "not_applicable": 1
+      }
+    }
+  ],
+  "items": {
+    "必要書類": {
+      "found": true,
+      "value": "本人が届出:転出証明書・本人確認書類・マイナンバーカード(持っていれば)。同一世帯の代理:転出証明書・来庁者の本人確認書類・マイナンバーカード。法定代理人(親権者・成年後見人):親権者/成年後見人の本人確認書類・本人のマイナンバーカード・親子関係を証明する書類原本(戸籍謄本等、品川区に本籍地があれば不要)または登記事項証明書原本、法人成年後見人は委任状。任意代理人:代理人の本人確認書類・委任状・転出証明書。外国人はいずれも在留カードまたは特別永住者証明書、続柄登録が必要な場合はパスポートと続柄証明書類の原本+訳文を追加。マイナポータルで転出届済みの特例転入では転出証明書は不要で本人確認書類のみ。1年以上前の日付での転入手続きは居住実績がわかる賃貸借契約書原本(更新分含め全て)が必要。",
+      "evidence": "・転出証明書 ・本人確認書類 ・マイナンバーカード（お持ちの方のみ） カード本体をお持ちください。iPhoneに搭載されたもののみでは手続きができません。",
+      "source": "html",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 66,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
+    },
+    "窓口オンライン可否": {
+      "found": true,
+      "value": "窓口のみ（オンラインで完結できるとの案内はない）",
+      "evidence": "・ご来庁の際は、時間に余裕を持ってお越しください。特に、他課（子育て・健康保険関連など）でのお手続きを希望される方はお時間に余裕をもってお越しください。",
+      "source": "html",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "normalized",
+        "run": 70,
+        "note": "空白・記号のゆれを吸収すると一致"
+      }
+    },
+    "期限": {
+      "found": true,
+      "value": "新しい住所地に住み始めてから14日以内",
+      "evidence": "新しい住所地に住み始めてから14日以内に転入届を出す必要があります。",
+      "source": "html",
+      "failure_reason": null,
+      "failure_type": null,
+      "evidence_check": {
+        "verdict": "exact",
+        "run": 34,
+        "note": ""
+      }
+    },
+    "手数料": {
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "source": null,
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
+      "evidence_check": {
+        "verdict": "not_applicable",
+        "run": 0,
+        "note": "found=false のため照合しない"
+      }
+    }
+  },
+  "page_notes": "持ち物は「転入届」と「特例転入届」の2系統×「本人/同一世帯/法定代理人/任意代理人」の4区分に分かれ、各区分ごとに折りたたみ見出しの下へ列挙されている。外国人向けの追加書類や1年以上前の転入時の追加書類は各区分の末尾に共通パターンで繰り返し記載されている。\n転入届は「必要な持ち物」を窓口へ持参する前提で全体が構成されており、区役所・各地域センターの窓口受付時間の一覧のみが手続き手段として示されている。マイナポータル経由の特例転入届も「転出届」をオンラインで出した人向けの案内であり、転入届自体は品川区の窓口で行うと明記されている。オンライン申請フォーム等への言及はページ内に一切ない。\n冒頭の注意書きと「1.転入届」節の両方に同じ期限（住み始めてから14日以内）が明記されている。\n本文には手数料についての記載がなく、料金表・注意書き・リンク一覧のいずれにも手数料に触れたものはない。50,000円以下の過料は届出遅延時の罰則であり手数料ではない。",
+  "evidence_check_status": "complete",
+  "evidence_check_scope": {
+    "pages": [
+      "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html"
+    ],
+    "max_text_chars_per_page": 18000,
+    "isolated_by_test_case": true
+  },
+  "evidence_summary": {
+    "checked": 3,
+    "verified": 3,
+    "partial": 0,
+    "missing": 0,
+    "too_short": 0,
+    "not_checked": 0,
+    "not_applicable": 1
+  }
+}

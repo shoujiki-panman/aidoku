@@ -19,7 +19,7 @@
   "measurement": {
     "recording_status": "recorded",
     "measurement_version": "aidoku-1.0",
-    "prompt_version": "sha256:6245bea9db192655fab44cc21802bd6efc708929e9e7040abd11a7f428996990",
+    "prompt_version": "sha256:bf5e02b3aad2643f04ce899988ac7765d7768344d5287a27a2ffed5264cd20f0",
     "follow": true,
     "max_follow": 2,
     "max_depth": 3,
@@ -43,24 +43,24 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "none",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-27T15:34:41+00:00",
+    "run_at": "2026-08-30T17:57:27+00:00",
     "discovery_run_at": "2026-08-27T15:29:07+00:00"
   },
   "followed_urls": [
     "http://ttzk.graffer.jp/ward-arakawa",
-    "https://www.city.arakawa.tokyo.jp/todokede/index.html",
-    "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html"
+    "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
+    "https://www.city.arakawa.tokyo.jp/todokede/index.html"
   ],
   "online_clarity": "記載なし",
   "online_clarity_evidence": "",
   "online_clarity_pages": [
     "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
     "http://ttzk.graffer.jp/ward-arakawa",
-    "https://www.city.arakawa.tokyo.jp/todokede/index.html",
-    "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html"
+    "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
+    "https://www.city.arakawa.tokyo.jp/todokede/index.html"
   ],
   "test_cases": [
     {
@@ -73,8 +73,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -94,10 +94,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "http://ttzk.graffer.jp/ward-arakawa",
-            "https://www.city.arakawa.tokyo.jp/todokede/index.html"
+            "http://ttzk.graffer.jp/ward-arakawa"
           ],
-          "page_notes": "このページは「くらしの手続きガイド」という質問形式ツールの案内ページで、転入届固有の持ち物リストは本文に無く、外部のGrafferツール（くらしの手続きガイドリンク）を使って個別に確認する仕組みになっている。"
+          "page_notes": "このページは転入届専用ではなく、ライフイベント別の手続きを案内する外部の対話型ガイド（Graffer）への入り口。持ち物リストは質問に回答した結果としてガイド内で表示される仕組みで、本文には具体的な必要書類の記載がない。"
         },
         {
           "stage": "follow",
@@ -107,8 +106,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -116,14 +115,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "元ページは「くらしの手続きガイド」という対話型ツールへの案内のみで、持ち物の一覧は本文になし。追跡したGrafferの外部ガイドもツール入口のみで具体的な必要書類は記載なし。todokede/index.htmlにある「転入・転出・転居」というサブリンク（未追跡）に実際の書類一覧がありそうだが、追跡上限のためここで終了。"
+          "page_notes": "元ページは「くらしの手続きガイド」への案内のみで持ち物の記載はなし。追従したGraffer提供の外部手続きガイドも質問に回答して結果を得るインタラクティブなツールの入口ページであり、転入届の具体的な必要書類リストはページ本文に記載されていなかった。"
         }
       ],
       "followed_urls": [
-        "http://ttzk.graffer.jp/ward-arakawa",
-        "https://www.city.arakawa.tokyo.jp/todokede/index.html"
+        "http://ttzk.graffer.jp/ward-arakawa"
       ],
-      "page_notes": "元ページは「くらしの手続きガイド」という対話型ツールへの案内のみで、持ち物の一覧は本文になし。追跡したGrafferの外部ガイドもツール入口のみで具体的な必要書類は記載なし。todokede/index.htmlにある「転入・転出・転居」というサブリンク（未追跡）に実際の書類一覧がありそうだが、追跡上限のためここで終了。",
+      "page_notes": "元ページは「くらしの手続きガイド」への案内のみで持ち物の記載はなし。追従したGraffer提供の外部手続きガイドも質問に回答して結果を得るインタラクティブなツールの入口ページであり、転入届の具体的な必要書類リストはページ本文に記載されていなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -168,7 +166,7 @@
             "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
             "http://ttzk.graffer.jp/ward-arakawa"
           ],
-          "page_notes": "このページは「くらしの手続きガイド」というライフイベント別の質問形式ツールの案内で、転入・転出・転居をまとめて扱うのみ。転入届が窓口のみかオンラインで完結できるかは本文に記載がなく、「電子申請」一覧ページか外部の手続きガイド（Graffer）に誘導されている。"
+          "page_notes": "このページは「くらしの手続きガイド」という質問形式の案内ツールへの入口で、転入届自体の窓口・オンライン可否は本文に記載がない。電子申請一覧ページか外部の手続きガイドツールに情報がある可能性がある。"
         },
         {
           "stage": "follow",
@@ -187,14 +185,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本文ページは外部の「くらしの手続きガイド」（Graffer運営）への案内のみで、転入届自体の窓口/オンライン可否は書かれていない。リンク先のGrafferページも「転入」に必要な手続きを洗い出すチェックリスト型のガイドで、届出そのものをオンラインで完結できるかは記載がなかった。"
+          "page_notes": "「くらしの手続きガイド」は外部(Graffer)の手続き洗い出しツールへの案内で、必要な手続きや持ち物のチェックリストを示すのみ。「電子申請」ページも申請可能な手続きの一覧は別リンク（外部サイト）任せで、転入届自体が窓口のみかオンライン完結可かは本文・リンク先とも明記されていない。"
         }
       ],
       "followed_urls": [
         "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
         "http://ttzk.graffer.jp/ward-arakawa"
       ],
-      "page_notes": "本文ページは外部の「くらしの手続きガイド」（Graffer運営）への案内のみで、転入届自体の窓口/オンライン可否は書かれていない。リンク先のGrafferページも「転入」に必要な手続きを洗い出すチェックリスト型のガイドで、届出そのものをオンラインで完結できるかは記載がなかった。",
+      "page_notes": "「くらしの手続きガイド」は外部(Graffer)の手続き洗い出しツールへの案内で、必要な手続きや持ち物のチェックリストを示すのみ。「電子申請」ページも申請可能な手続きの一覧は別リンク（外部サイト）任せで、転入届自体が窓口のみかオンライン完結可かは本文・リンク先とも明記されていない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -215,8 +213,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "リンク先にあり",
-        "failure_type": "not_retrieved",
+        "failure_reason": "記載なし",
+        "failure_type": "fact_missing",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -236,10 +234,9 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.arakawa.tokyo.jp/todokede/index.html",
             "http://ttzk.graffer.jp/ward-arakawa"
           ],
-          "page_notes": "このページは「くらしの手続きガイド」という質問式ツールの案内ページで、転入届の期限など個別手続きの内容は本文に記載がなく、外部のガイドツールや「届出・登録・証明」カテゴリページへ誘導する構成になっている。"
+          "page_notes": "このページは「くらしの手続きガイド」という質問形式のナビゲーションツールへの入口で、転入届の期限そのものは本文に書かれておらず、外部サイト（Graffer）の質問回答結果に依存する構成になっている。"
         },
         {
           "stage": "follow",
@@ -249,8 +246,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "リンク先にあり",
-            "failure_type": "not_retrieved",
+            "failure_reason": "記載なし",
+            "failure_type": "fact_missing",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -258,14 +255,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "「くらしの手続きガイド」ページと外部の手続きガイド（Graffer）はライフイベント別の手続き一覧への入口で、転入届の期限（起算点つき）そのものは書かれていない。届出・登録・証明トップの「転入・転出・転居」リンク先に期限の記載がありそうだが未確認。"
+          "page_notes": "本文は「くらしの手続きガイド」という対話式ツールへの案内のみで、転入届の期限そのものは書かれていない。リンク先のGrafferガイド（外部サイト）もライフイベント選択画面で、質問に回答しないと個別の期限情報が出てこない構造だった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.arakawa.tokyo.jp/todokede/index.html",
         "http://ttzk.graffer.jp/ward-arakawa"
       ],
-      "page_notes": "「くらしの手続きガイド」ページと外部の手続きガイド（Graffer）はライフイベント別の手続き一覧への入口で、転入届の期限（起算点つき）そのものは書かれていない。届出・登録・証明トップの「転入・転出・転居」リンク先に期限の記載がありそうだが未確認。",
+      "page_notes": "本文は「くらしの手続きガイド」という対話式ツールへの案内のみで、転入届の期限そのものは書かれていない。リンク先のGrafferガイド（外部サイト）もライフイベント選択画面で、質問に回答しないと個別の期限情報が出てこない構造だった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -307,9 +303,10 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "http://ttzk.graffer.jp/ward-arakawa"
+            "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+            "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html"
           ],
-          "page_notes": "このページは「くらしの手続きガイド」という外部サービス（Graffer）への案内ページで、手数料を含む個別の手続き詳細はページ本文になく、外部リンク先のガイドで確認する構成になっている。"
+          "page_notes": "このページは「くらしの手続きガイド」という質問形式ツールの紹介ページで、転入届自体の手数料等は記載されていない。実際の手続き詳細は上位の届出一覧ページか外部ガイドツール（Graffer）側にある可能性が高い。"
         },
         {
           "stage": "follow",
@@ -328,13 +325,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "このページは「くらしの手続きガイド」の案内ページで、転入届単体の手数料は本文にもリンク先のGrafferガイド（ライフイベント選択画面止まり）にも記載がなかった。"
+          "page_notes": "「くらしの手続きガイド」ページおよびリンク先の「届出・登録・証明」「電子申請」ページのいずれにも転入届の手数料に関する記載がなかった。転入届自体の詳細手続きページ（戸籍・住民票 > 転入・転出・転居）へはさらに1階層先にあると見られるが、今回はこれ以上追跡できなかった。"
         }
       ],
       "followed_urls": [
-        "http://ttzk.graffer.jp/ward-arakawa"
+        "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+        "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html"
       ],
-      "page_notes": "このページは「くらしの手続きガイド」の案内ページで、転入届単体の手数料は本文にもリンク先のGrafferガイド（ライフイベント選択画面止まり）にも記載がなかった。",
+      "page_notes": "「くらしの手続きガイド」ページおよびリンク先の「届出・登録・証明」「電子申請」ページのいずれにも転入届の手数料に関する記載がなかった。転入届自体の詳細手続きページ（戸籍・住民票 > 転入・転出・転居）へはさらに1階層先にあると見られるが、今回はこれ以上追跡できなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -352,8 +350,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -378,8 +376,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "リンク先にあり",
-      "failure_type": "not_retrieved",
+      "failure_reason": "記載なし",
+      "failure_type": "fact_missing",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -400,14 +398,14 @@
       }
     }
   },
-  "page_notes": "元ページは「くらしの手続きガイド」という対話型ツールへの案内のみで、持ち物の一覧は本文になし。追跡したGrafferの外部ガイドもツール入口のみで具体的な必要書類は記載なし。todokede/index.htmlにある「転入・転出・転居」というサブリンク（未追跡）に実際の書類一覧がありそうだが、追跡上限のためここで終了。\n本文ページは外部の「くらしの手続きガイド」（Graffer運営）への案内のみで、転入届自体の窓口/オンライン可否は書かれていない。リンク先のGrafferページも「転入」に必要な手続きを洗い出すチェックリスト型のガイドで、届出そのものをオンラインで完結できるかは記載がなかった。\n「くらしの手続きガイド」ページと外部の手続きガイド（Graffer）はライフイベント別の手続き一覧への入口で、転入届の期限（起算点つき）そのものは書かれていない。届出・登録・証明トップの「転入・転出・転居」リンク先に期限の記載がありそうだが未確認。\nこのページは「くらしの手続きガイド」の案内ページで、転入届単体の手数料は本文にもリンク先のGrafferガイド（ライフイベント選択画面止まり）にも記載がなかった。",
+  "page_notes": "元ページは「くらしの手続きガイド」への案内のみで持ち物の記載はなし。追従したGraffer提供の外部手続きガイドも質問に回答して結果を得るインタラクティブなツールの入口ページであり、転入届の具体的な必要書類リストはページ本文に記載されていなかった。\n「くらしの手続きガイド」は外部(Graffer)の手続き洗い出しツールへの案内で、必要な手続きや持ち物のチェックリストを示すのみ。「電子申請」ページも申請可能な手続きの一覧は別リンク（外部サイト）任せで、転入届自体が窓口のみかオンライン完結可かは本文・リンク先とも明記されていない。\n本文は「くらしの手続きガイド」という対話式ツールへの案内のみで、転入届の期限そのものは書かれていない。リンク先のGrafferガイド（外部サイト）もライフイベント選択画面で、質問に回答しないと個別の期限情報が出てこない構造だった。\n「くらしの手続きガイド」ページおよびリンク先の「届出・登録・証明」「電子申請」ページのいずれにも転入届の手数料に関する記載がなかった。転入届自体の詳細手続きページ（戸籍・住民票 > 転入・転出・転居）へはさらに1階層先にあると見られるが、今回はこれ以上追跡できなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
       "http://ttzk.graffer.jp/ward-arakawa",
-      "https://www.city.arakawa.tokyo.jp/todokede/index.html",
-      "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html"
+      "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
+      "https://www.city.arakawa.tokyo.jp/todokede/index.html"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

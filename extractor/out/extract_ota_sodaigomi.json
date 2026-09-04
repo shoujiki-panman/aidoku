@@ -43,22 +43,24 @@
     "link_order": "score_desc",
     "table_reading": "heading_value",
     "read_breadth": "agent_pick",
-    "non_html_reading": "cmap_text",
+    "non_html_reading": "cmap_text+ocr",
     "model": "claude-cli",
     "model_version": "claude-sonnet-5",
-    "run_at": "2026-08-28T15:28:51+00:00",
+    "run_at": "2026-08-31T15:42:43+00:00",
     "discovery_run_at": "2026-08-28T14:37:31+00:00"
   },
   "followed_urls": [
     "https://www.ota-sodai.com",
-    "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html"
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf"
   ],
   "online_clarity": "明記",
   "online_clarity_evidence": "インターネット（24時間受付）保守点検日以外は受付できます。パソコン、スマートフォンのいずれからもお申し込みできます。",
   "online_clarity_pages": [
     "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
     "https://www.ota-sodai.com",
-    "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html"
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+    "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf（pdf）"
   ],
   "test_cases": [
     {
@@ -68,7 +70,7 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "粗大ごみ処理券（大田区発行、収集日と名前または受付番号を記入して品物に貼付）が必要。自分で持ち込む場合は、申込者本人の氏名・住所が確認できるもの（運転免許証・マイナンバーカードなど）が別途必要。手数料減免の対象者（生活保護受給者等）は、後日送付される「手数料減免申請書」に証書の写しまたは受給証明書等を添付して清掃事務所へ提出する必要がある。ファックス申込の場合はファックス送受信できる環境が必要。",
+        "value": "自分で持ち込む場合は「申込者本人の氏名及び住所が確認できるものをご持参ください。（運転免許証・マイナンバーカードなど）」が必要。また、手数料の減免に該当する方は「収集日の3日前までに、申請書に証書の写し、又は受給証明書等を添付して、管轄の清掃事務所に提出」する必要がある。",
         "evidence": "申込者本人の氏名及び住所が確認できるものをご持参ください。（運転免許証・マイナンバーカードなど）",
         "source": "html",
         "failure_reason": null,
@@ -85,7 +87,7 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "粗大ごみ処理券（大田区発行、収集日と名前または受付番号を記入して品物に貼付）が必要。自分で持ち込む場合は、申込者本人の氏名・住所が確認できるもの（運転免許証・マイナンバーカードなど）が別途必要。手数料減免の対象者（生活保護受給者等）は、後日送付される「手数料減免申請書」に証書の写しまたは受給証明書等を添付して清掃事務所へ提出する必要がある。ファックス申込の場合はファックス送受信できる環境が必要。",
+            "value": "自分で持ち込む場合は「申込者本人の氏名及び住所が確認できるものをご持参ください。（運転免許証・マイナンバーカードなど）」が必要。また、手数料の減免に該当する方は「収集日の3日前までに、申請書に証書の写し、又は受給証明書等を添付して、管轄の清掃事務所に提出」する必要がある。",
             "evidence": "申込者本人の氏名及び住所が確認できるものをご持参ください。（運転免許証・マイナンバーカードなど）",
             "source": "html",
             "failure_reason": null,
@@ -97,11 +99,11 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "持ち物は申込方法（収集／持込／ファックス）と該当者区分（減免対象者）ごとに本文中の別々の箇所に分散して書かれており、1か所にまとまっていない。"
+          "page_notes": "電話・インターネットでの通常申込には持ち物の記載はなく、持ち込み時の本人確認書類と、手数料減免申請時の証明書類という「該当者だけ」の持ち物が別々の見出し（出し方／手数料の減免）に分散して書かれている。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "持ち物は申込方法（収集／持込／ファックス）と該当者区分（減免対象者）ごとに本文中の別々の箇所に分散して書かれており、1か所にまとまっていない。",
+      "page_notes": "電話・インターネットでの通常申込には持ち物の記載はなく、持ち込み時の本人確認書類と、手数料減免申請時の証明書類という「該当者だけ」の持ち物が別々の見出し（出し方／手数料の減免）に分散して書かれている。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -119,15 +121,15 @@
       "test_case_version": "1.0",
       "result": {
         "found": true,
-        "value": "電話またはインターネットの両方で申込み可能。インターネットは24時間受付でパソコン・スマートフォンから申込みでき、収集を依頼する場合はオンラインで完結できる（ただし自分で持ち込む場合の申込みは電話のみ）",
-        "evidence": "電話又はインターネットで、「大田区粗大ごみ受付センター」に日数に余裕をもってお申し込みください。",
+        "value": "オンラインで申込可（インターネットで24時間受付。ただし収集のみ対象で、持ち込みを希望する場合は電話申込が必要）",
+        "evidence": "インターネット （24時間受付）保守点検日以外は受付できます。パソコン、スマートフォンのいずれからもお申し込みできます。",
         "source": "html",
         "failure_reason": null,
         "failure_type": null,
         "evidence_check": {
-          "verdict": "exact",
-          "run": 48,
-          "note": ""
+          "verdict": "normalized",
+          "run": 54,
+          "note": "空白・記号のゆれを吸収すると一致"
         }
       },
       "attempts": [
@@ -136,23 +138,23 @@
           "llm_called": true,
           "result": {
             "found": true,
-            "value": "電話またはインターネットの両方で申込み可能。インターネットは24時間受付でパソコン・スマートフォンから申込みでき、収集を依頼する場合はオンラインで完結できる（ただし自分で持ち込む場合の申込みは電話のみ）",
-            "evidence": "電話又はインターネットで、「大田区粗大ごみ受付センター」に日数に余裕をもってお申し込みください。",
+            "value": "オンラインで申込可（インターネットで24時間受付。ただし収集のみ対象で、持ち込みを希望する場合は電話申込が必要）",
+            "evidence": "インターネット （24時間受付）保守点検日以外は受付できます。パソコン、スマートフォンのいずれからもお申し込みできます。",
             "source": "html",
             "failure_reason": null,
             "failure_type": null,
             "evidence_check": {
-              "verdict": "exact",
-              "run": 48,
-              "note": ""
+              "verdict": "normalized",
+              "run": 54,
+              "note": "空白・記号のゆれを吸収すると一致"
             }
           },
           "requested_urls": [],
-          "page_notes": "申し込み方法の節に電話とインターネットの両方が明記されており、インターネット受付の注意事項に「収集のみ申し込みできます。持ち込みを希望される場合は、電話で申し込みください」とあるため、収集依頼はオンライン完結・持ち込みは電話のみという条件分岐がある。"
+          "page_notes": "申し込み方法の節に電話とインターネットの両方が明記されており、インターネットは収集申込限定（持ち込みは電話のみ）という条件が本文中に明記されている。"
         }
       ],
       "followed_urls": [],
-      "page_notes": "申し込み方法の節に電話とインターネットの両方が明記されており、インターネット受付の注意事項に「収集のみ申し込みできます。持ち込みを希望される場合は、電話で申し込みください」とあるため、収集依頼はオンライン完結・持ち込みは電話のみという条件分岐がある。",
+      "page_notes": "申し込み方法の節に電話とインターネットの両方が明記されており、インターネットは収集申込限定（持ち込みは電話のみ）という条件が本文中に明記されている。",
       "evidence_summary": {
         "checked": 1,
         "verified": 1,
@@ -196,7 +198,7 @@
           "requested_urls": [
             "https://www.ota-sodai.com"
           ],
-          "page_notes": "本文には「日数に余裕をもってお申し込みください」「2週間以上先の日程での受付となる場合があります」という目安のみで、収集申込の起算点つき期限（例：収集希望日の◯日前まで）の明記はない。持ち込みの「3日前午後7時まで」は収集とは別区分。具体的な受付期限はインターネット申込システム側で提示される可能性が高い。"
+          "page_notes": "収集の申し込みについては「日数に余裕をもって」「2週間以上先の日程での受付となる場合があります」とあるのみで、起算点つきの具体的な申込期限（例：収集希望日の◯日前まで）は本文に明記されていない。持ち込みの方は「持込日3日前の午後7時まで」という具体的期限があるが、これは収集ではなく持ち込みの申込に関するもの。"
         },
         {
           "stage": "follow",
@@ -215,13 +217,13 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本文には「日数に余裕をもってお申し込みください」「収集は2週間以上先の日程となる場合がある」等の記述はあるが、起算点付きの具体的な期限（例：収集希望日の◯日前まで）は本文にもリンク先の申込サイトにも明記されていなかった。"
+          "page_notes": "収集申込については「日数に余裕をもって」「2週間以上先の日程での受付となる場合があります」との記述のみで、起算点付きの具体的な期限（◯日前まで等）は本文にもリンク先ページにも見当たらない。3日前締切は持ち込み・減免申請の話で収集申込自体の期限ではない。"
         }
       ],
       "followed_urls": [
         "https://www.ota-sodai.com"
       ],
-      "page_notes": "本文には「日数に余裕をもってお申し込みください」「収集は2週間以上先の日程となる場合がある」等の記述はあるが、起算点付きの具体的な期限（例：収集希望日の◯日前まで）は本文にもリンク先の申込サイトにも明記されていなかった。",
+      "page_notes": "収集申込については「日数に余裕をもって」「2週間以上先の日程での受付となる場合があります」との記述のみで、起算点付きの具体的な期限（◯日前まで等）は本文にもリンク先ページにも見当たらない。3日前締切は持ち込み・減免申請の話で収集申込自体の期限ではない。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -242,8 +244,8 @@
         "value": "",
         "evidence": "",
         "source": null,
-        "failure_reason": "記載なし",
-        "failure_type": "fact_missing",
+        "failure_reason": "リンク先にあり",
+        "failure_type": "not_retrieved",
         "evidence_check": {
           "verdict": "not_applicable",
           "run": 0,
@@ -263,9 +265,10 @@
             "failure_type": "not_retrieved"
           },
           "requested_urls": [
-            "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html"
+            "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+            "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf"
           ],
-          "page_notes": "本文には「粗大ごみの処分は有料です」「収集日や手数料などは、申し込みの際にご案内します」とあるだけで具体的な金額は記載がなく、品目別の手数料は別ページ「粗大ごみの品目・手数料確認はこちら」にリンクされている。"
+          "page_notes": "本文には「粗大ごみを処分する場合は、事前の申し込みが必要です。（有料）」とあり有料である旨は明記されているが、具体的な金額は「粗大ごみの品目・手数料確認はこちら」という別ページへのリンクに委ねられている。"
         },
         {
           "stage": "follow",
@@ -275,8 +278,8 @@
             "value": "",
             "evidence": "",
             "source": null,
-            "failure_reason": "記載なし",
-            "failure_type": "fact_missing",
+            "failure_reason": "リンク先にあり",
+            "failure_type": "not_retrieved",
             "evidence_check": {
               "verdict": "not_applicable",
               "run": 0,
@@ -284,13 +287,14 @@
             }
           },
           "requested_urls": [],
-          "page_notes": "本文には「粗大ごみの処分は有料です」とあるだけで具体的な金額は書かれておらず、金額は「粗大ごみ品目・手数料一覧」のExcel/PDF添付でのみ提供されている。"
+          "page_notes": "本文には「粗大ごみの処分は有料」とあるのみで、実際の金額は「粗大ごみ品目・手数料一覧」のPDF/Excel添付にしかなく、開いた01.pdfは処理券の使い方説明で金額表ではなかった。"
         }
       ],
       "followed_urls": [
-        "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html"
+        "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+        "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf"
       ],
-      "page_notes": "本文には「粗大ごみの処分は有料です」とあるだけで具体的な金額は書かれておらず、金額は「粗大ごみ品目・手数料一覧」のExcel/PDF添付でのみ提供されている。",
+      "page_notes": "本文には「粗大ごみの処分は有料」とあるのみで、実際の金額は「粗大ごみ品目・手数料一覧」のPDF/Excel添付にしかなく、開いた01.pdfは処理券の使い方説明で金額表ではなかった。",
       "evidence_summary": {
         "checked": 0,
         "verified": 0,
@@ -305,7 +309,7 @@
   "items": {
     "必要書類": {
       "found": true,
-      "value": "粗大ごみ処理券（大田区発行、収集日と名前または受付番号を記入して品物に貼付）が必要。自分で持ち込む場合は、申込者本人の氏名・住所が確認できるもの（運転免許証・マイナンバーカードなど）が別途必要。手数料減免の対象者（生活保護受給者等）は、後日送付される「手数料減免申請書」に証書の写しまたは受給証明書等を添付して清掃事務所へ提出する必要がある。ファックス申込の場合はファックス送受信できる環境が必要。",
+      "value": "自分で持ち込む場合は「申込者本人の氏名及び住所が確認できるものをご持参ください。（運転免許証・マイナンバーカードなど）」が必要。また、手数料の減免に該当する方は「収集日の3日前までに、申請書に証書の写し、又は受給証明書等を添付して、管轄の清掃事務所に提出」する必要がある。",
       "evidence": "申込者本人の氏名及び住所が確認できるものをご持参ください。（運転免許証・マイナンバーカードなど）",
       "source": "html",
       "failure_reason": null,
@@ -318,15 +322,15 @@
     },
     "窓口オンライン可否": {
       "found": true,
-      "value": "電話またはインターネットの両方で申込み可能。インターネットは24時間受付でパソコン・スマートフォンから申込みでき、収集を依頼する場合はオンラインで完結できる（ただし自分で持ち込む場合の申込みは電話のみ）",
-      "evidence": "電話又はインターネットで、「大田区粗大ごみ受付センター」に日数に余裕をもってお申し込みください。",
+      "value": "オンラインで申込可（インターネットで24時間受付。ただし収集のみ対象で、持ち込みを希望する場合は電話申込が必要）",
+      "evidence": "インターネット （24時間受付）保守点検日以外は受付できます。パソコン、スマートフォンのいずれからもお申し込みできます。",
       "source": "html",
       "failure_reason": null,
       "failure_type": null,
       "evidence_check": {
-        "verdict": "exact",
-        "run": 48,
-        "note": ""
+        "verdict": "normalized",
+        "run": 54,
+        "note": "空白・記号のゆれを吸収すると一致"
       }
     },
     "期限": {
@@ -347,8 +351,8 @@
       "value": "",
       "evidence": "",
       "source": null,
-      "failure_reason": "記載なし",
-      "failure_type": "fact_missing",
+      "failure_reason": "リンク先にあり",
+      "failure_type": "not_retrieved",
       "evidence_check": {
         "verdict": "not_applicable",
         "run": 0,
@@ -356,13 +360,14 @@
       }
     }
   },
-  "page_notes": "持ち物は申込方法（収集／持込／ファックス）と該当者区分（減免対象者）ごとに本文中の別々の箇所に分散して書かれており、1か所にまとまっていない。\n申し込み方法の節に電話とインターネットの両方が明記されており、インターネット受付の注意事項に「収集のみ申し込みできます。持ち込みを希望される場合は、電話で申し込みください」とあるため、収集依頼はオンライン完結・持ち込みは電話のみという条件分岐がある。\n本文には「日数に余裕をもってお申し込みください」「収集は2週間以上先の日程となる場合がある」等の記述はあるが、起算点付きの具体的な期限（例：収集希望日の◯日前まで）は本文にもリンク先の申込サイトにも明記されていなかった。\n本文には「粗大ごみの処分は有料です」とあるだけで具体的な金額は書かれておらず、金額は「粗大ごみ品目・手数料一覧」のExcel/PDF添付でのみ提供されている。",
+  "page_notes": "電話・インターネットでの通常申込には持ち物の記載はなく、持ち込み時の本人確認書類と、手数料減免申請時の証明書類という「該当者だけ」の持ち物が別々の見出し（出し方／手数料の減免）に分散して書かれている。\n申し込み方法の節に電話とインターネットの両方が明記されており、インターネットは収集申込限定（持ち込みは電話のみ）という条件が本文中に明記されている。\n収集申込については「日数に余裕をもって」「2週間以上先の日程での受付となる場合があります」との記述のみで、起算点付きの具体的な期限（◯日前まで等）は本文にもリンク先ページにも見当たらない。3日前締切は持ち込み・減免申請の話で収集申込自体の期限ではない。\n本文には「粗大ごみの処分は有料」とあるのみで、実際の金額は「粗大ごみ品目・手数料一覧」のPDF/Excel添付にしかなく、開いた01.pdfは処理券の使い方説明で金額表ではなかった。",
   "evidence_check_status": "complete",
   "evidence_check_scope": {
     "pages": [
       "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.html",
       "https://www.ota-sodai.com",
-      "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html"
+      "https://www.city.ota.tokyo.jp/seikatsu/gomi/sodaigomi_ichiran.html",
+      "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/01.pdf"
     ],
     "max_text_chars_per_page": 18000,
     "isolated_by_test_case": true

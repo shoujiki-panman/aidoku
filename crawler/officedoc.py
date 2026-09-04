@@ -27,6 +27,8 @@ import zlib
 from dataclasses import dataclass
 from io import BytesIO
 
+import cidmap
+import ocr
 import xls
 
 # Office 文書の中で本文が入っている場所。ここに無いものは読まない。
@@ -339,20 +341,26 @@ def _decode_literal(raw: str, cmap: dict[int, str]) -> str:
     return "".join(hits)
 
 
-def _maps(active, cmap):
-    """引く順。いま使っているフォントの表を先に、無ければ文書全体の表に落とす。
+def _maps(active, cmap, fallback=None):
+    """引く順。フォントの表 → 文書全体の表 → 最後に字形集合の表。
 
     ★以前はフォント別の表が無いとき **何も渡さなかった。** その結果、
       文書全体の表を持っているのに1バイトとして読み、丸ごと化けていた
       （墨田区の粗大ごみ処理手数料表・16進1,100件が全滅）。
       当たらなかったときは `_decode_hex_run` が1バイト読みに戻すので、
       ここでは渡してよい。
+
+    ★`fallback` は Adobe-Japan1 の表（`crawler/cidmap.py`）。
+      **PDFが Ordering を Japan1 と宣言しているときだけ**渡す。
+      宣言の無いPDFに当てると、別の字形集合に日本語をでっち上げることになる。
     """
-    return (active, cmap) if active is not None else (cmap,)
+    order = (active, cmap) if active is not None else (cmap,)
+    return (*order, fallback) if fallback else order
 
 
 def show_text(page: str, cmap: dict[int, str],
-              per_font: dict[str, dict[int, str]] | None = None) -> str:
+              per_font: dict[str, dict[int, str]] | None = None,
+              fallback: dict[int, str] | None = None) -> str:
     """本文を出す命令からだけ文字を集める。
 
     ★以前は `<16進>` を無条件に拾っていて、色指定やIDまで本文として読んでいた。
@@ -371,38 +379,59 @@ def show_text(page: str, cmap: dict[int, str],
             continue
         if array:
             for in_hex, in_lit in _IN_ARRAY.findall(array):
-                out.append(_decode_hex_run(in_hex, *_maps(active, cmap)) if in_hex
-                           else _decode_literal(in_lit, cmap))
+                out.append(_decode_hex_run(in_hex, *_maps(active, cmap, fallback))
+                           if in_hex else _decode_literal(in_lit, cmap))
         elif hex_run:
-            out.append(_decode_hex_run(hex_run, *_maps(active, cmap)))
+            out.append(_decode_hex_run(hex_run, *_maps(active, cmap, fallback)))
         elif literal:
             out.append(_decode_literal(literal, cmap))
     return "".join(out)
 
 
-def read_pdf(data: bytes) -> DocText:
-    """PDF。**入る形と入らない形がある。読めたふりをしない。**"""
+def _pdf_as_text(data: bytes) -> tuple[str, str]:
+    """PDFを**字として**読む。返すのは（本文, 読めなかった理由）。"""
     streams = _pdf_streams(data)
     if not streams:
-        return DocText("pdf", "", False, "ストリームが無い（暗号化か壊れている）")
-    cmap = build_cmap(streams)
-    per_font = font_cmaps(data)
+        return "", "ストリームが無い（暗号化か壊れている）"
     content = [s for s in streams if is_content_stream(s)]
     if not content:
-        return DocText("pdf", "", False, "本文のストリームが無い（画像PDFかアウトライン化）")
-    chunks = []
-    for stream in content:
-        chunks.append(show_text(stream.decode("latin-1", "ignore"), cmap, per_font))
-    text = _clean("".join(chunks))
+        return "", "本文のストリームが無い（画像PDFかアウトライン化）"
+    cmap = build_cmap(streams)
+    per_font = font_cmaps(data)
+    # ★ToUnicode を1つも持たないPDFがある（実測3本）。そのPDFだけを見ても
+    #   文字に戻せないので、字形集合の宣言があるときだけ外の対応表に落とす。
+    fallback = cidmap.japan1_map(data, streams)
+    text = _clean("".join(
+        show_text(s.decode("latin-1", "ignore"), cmap, per_font, fallback) for s in content))
     # ★日本語PDFの多くは CID フォントで、( ) の中身がバイト列のまま出る。
     #   文字化けを本文として返すと、判定側が意味のない文字列を読むことになる。
     if not text:
-        return DocText("pdf", "", False, "テキスト演算子が無い（画像PDFかアウトライン化）")
+        return "", "テキスト演算子が無い（画像PDFかアウトライン化）"
     if not readable(text):
-        return DocText("pdf", "", False,
-                       f"日本語の地の文にならない（{len(text)}字取れたが仮名がほぼ無い。"
-                       "CIDフォントか、言語タグ等の非本文）")
-    return DocText("pdf", text, True, "")
+        return "", (f"日本語の地の文にならない（{len(text)}字取れたが仮名がほぼ無い。"
+                    "CIDフォントか、言語タグ等の非本文）")
+    return text, ""
+
+
+def read_pdf(data: bytes) -> DocText:
+    """PDF。**字で読めなければ、絵として読む。**
+
+    ★住民のAI（ChatGPT / Claude）は絵を読む。こちらが字しか扱えないまま
+      「その区は書いていない」と言うのは、住民の側で読めているものを
+      区の落ち度にすることになる。**住民のAIができることは、こちらもできる。**
+
+    ★絵として読んだかどうかは測定条件 `non_html_reading` に残る（`cmap_text+ocr`）。
+      使えない環境では条件が変わるので、**混ざったまま比較されることはない。**
+
+    ★それでも読めなければ、読めない理由を返す。**読めたふりをしない。**
+    """
+    text, why = _pdf_as_text(data)
+    if text:
+        return DocText("pdf", text, True, "")
+    drawn = _clean(ocr.read_pdf_text(data))
+    if drawn and readable(drawn):
+        return DocText("pdf", drawn, True, "")
+    return DocText("pdf", "", False, why)
 
 
 # 仮名。日本語の地の文には必ず混ざる。漢字や英数字だけでは文章の証拠にならない。

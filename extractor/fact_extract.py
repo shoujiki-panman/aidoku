@@ -25,16 +25,23 @@ MAX_FOLLOW = 2
 #   strong_all  手続きに該当する候補を、こちらから全部渡す
 # ★本数は max_follow が持っているので、ここには書かない（2箇所に書くとずれる）
 READ_BREADTH = "agent_pick"
-# HTML以外（PDF/Word/Excel）の扱い。測定条件として記録する。
-#   none      弾く（2026-08-28 以前）
-#   cmap_text 字形の対応表を使って本文を取り出す。読めなければ理由を残す
-NON_HTML_READING = "cmap_text"
 
 sys.path.insert(0, str(ROOT / "crawler"))
 from discover import score_link  # noqa: E402
 from htmlutil import Table, parse, tables_text  # noqa: E402
+from ocr import condition as _ocr_condition  # noqa: E402
 from officedoc import read_document  # noqa: E402
 from polite_fetch import PoliteFetcher  # noqa: E402
+
+# HTML以外（PDF/Word/Excel）の扱い。測定条件として記録する。
+#   none          弾く（2026-08-28 以前）
+#   cmap_text     字形の対応表を使って本文を取り出す。読めなければ理由を残す
+#   cmap_text+ocr 上に加えて、字として読めないPDFを**絵として読む**（住民のAIと同じ）
+#
+# ★住民のAIは絵を読む。こちらが字しか扱えないまま「区が書いていない」と言ってはいけない。
+# ★環境にOCRが無ければ "cmap_text" のままになる。**条件が違う記録は比較を拒否される**ので、
+#   「使ったのに使っていないことにする」は起きない。
+NON_HTML_READING = _ocr_condition("cmap_text")
 
 sys.path.insert(0, str(ROOT))
 from evidence_check import attach_checks_across_pages, truncate_page_text  # noqa: E402

@@ -2,7 +2,7 @@
   "_about": "虱潰しで読んだ (URL, 項目) の記録。二度読まないために持つ。判定ではなく、何を見たかの記録。",
   "version": "sweep-0.1",
   "procedure": "jidouteate",
-  "n": 71,
+  "n": 72,
   "visits": {
     "https://www.city.adachi.tokyo.jp/kodomokate/kosodate-application-2025.html\t手数料": {
       "url": "https://www.city.adachi.tokyo.jp/kodomokate/kosodate-application-2025.html",
@@ -991,6 +991,20 @@
       "value": "",
       "evidence": "",
       "why_not": "このページは「子育て世帯への食料支援事業（区内共通商品券の配付）」の案内であり、児童手当の申請そのものについては書かれていない",
+      "evidence_check": {
+        "verdict": "too_short",
+        "run": 0,
+        "note": "8文字未満は照合しない"
+      },
+      "verified": false
+    },
+    "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf\t窓口/オンライン可否": {
+      "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf",
+      "link_text": "児童手当認定(額改定)請求書（PDF：641KB）",
+      "found": false,
+      "value": "",
+      "evidence": "",
+      "why_not": "このページは児童手当認定請求書（申請様式）そのものの記入項目・添付書類の案内であり、申請の提出窓口やオンライン申請の可否については記載がない。「窓口での提示が難しい場合はお問い合わせください」はマイナンバーカード等の提示方法に関する記述で、申請そのものの窓口/オンライン可否とは異なる。",
       "evidence_check": {
         "verdict": "too_short",
         "run": 0,
