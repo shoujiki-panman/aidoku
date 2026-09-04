@@ -1,4 +1,4 @@
-"""`analysis/check_search.py` — 区の検索窓が、ブラウザを持たないAIから使えるか。
+"""`analysis/probes/check_search.py` — 区の検索窓が、ブラウザを持たないAIから使えるか。
 
 **なぜ要るか**: 住民のAIが最初にやることの一つが「サイト内検索に語を入れる」。
 だが AI読はリンクしか辿っていない。**検索窓を一度も使っていない。**
@@ -18,7 +18,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "analysis"))
+sys.path.insert(0, str(ROOT / "analysis" / "probes"))
 from check_search import (  # noqa: E402
     KINDS,
     LABEL,

@@ -32,7 +32,7 @@
 
 ★判定にも点数にも使わない。
 
-    python3 analysis/check_pick.py
+    python3 analysis/probes/check_pick.py
 """
 
 from __future__ import annotations
@@ -43,7 +43,7 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 OUT_DIR = ROOT / "analysis" / "out"
 
 sys.path.insert(0, str(ROOT / "crawler"))

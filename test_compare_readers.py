@@ -1,4 +1,4 @@
-"""`analysis/compare_readers.py` — 自作リーダーと外部の変換器を突き合わせる検算道具。
+"""`analysis/probes/compare_readers.py` — 自作リーダーと外部の変換器を突き合わせる検算道具。
 
 **作品本体ではない。** 外部の変換器（anydoc）は開発時にだけ使う
 （CLAUDE.md「作品本体は Python 標準ライブラリのみ」）。ruff / jscpd と同じ立場。
@@ -12,7 +12,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "analysis"))
+sys.path.insert(0, str(ROOT / "analysis" / "probes"))
 from compare_readers import (  # noqa: E402
     SAME_RATIO,
     kind_of,

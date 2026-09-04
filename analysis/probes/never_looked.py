@@ -15,7 +15,7 @@ AIが「もう十分だ」と判断して、開かずに「記載なし」と答
 `METHOD.md` §6 が禁じている「4項目とも0点の区を『書いていない』と言うこと」を、
 数字で裏づけるためのもの。
 
-    python3 analysis/never_looked.py --procedure tennyu
+    python3 analysis/probes/never_looked.py --procedure tennyu
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 OUT_DIR = ROOT / "analysis" / "out"
 
 VERSION = "never-looked-0.1"

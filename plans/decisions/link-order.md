@@ -1,7 +1,7 @@
 # AIに渡すリンクを、ページ順で切るか、点の高い順に並べ替えるか
 
 Status: 決定済み（2026-08-23）
-Tracks: extractor/fact_extract.py / measurement.py / analysis/check_link_order.py
+Tracks: extractor/fact_extract.py / measurement.py / analysis/probes/check_link_order.py
 
 ## 問題
 
@@ -25,7 +25,7 @@ Tracks: extractor/fact_extract.py / measurement.py / analysis/check_link_order.p
 
 ## 効果（LLMを1回も呼ばずに測った）
 
-`analysis/check_link_order.py` が、保存済みページだけを読んで新旧の40件を比べる。
+`analysis/probes/check_link_order.py` が、保存済みページだけを読んで新旧の40件を比べる。
 
 ```
 調べたセル: 68（キャッシュ無し 0）

@@ -16,7 +16,7 @@
     判定には使わない。読むのは人だけ（誤りと分かった結果の置き場と同じ扱い）。
 
     swiftc -O tools/ocr_pdf.swift -o /tmp/ocr_pdf
-    python3 analysis/ocr_unreadable.py
+    python3 analysis/probes/ocr_unreadable.py
 """
 
 from __future__ import annotations
@@ -32,7 +32,7 @@ import tempfile
 import urllib.parse
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 CACHE = ROOT / "crawler" / "cache"
 OUT_DIR = ROOT / "analysis" / "out"
 SOURCE = ROOT / "tools" / "ocr_pdf.swift"

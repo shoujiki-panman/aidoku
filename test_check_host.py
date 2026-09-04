@@ -1,4 +1,4 @@
-"""`analysis/check_host.py` — 区の外のホストがどれだけ混ざっていたか。
+"""`analysis/probes/check_host.py` — 区の外のホストがどれだけ混ざっていたか。
 
 **なぜ要るか**: 同一ホスト判定が部分一致だったため、区のホスト名を中に含むだけの
 別ホストが通っていた。**どれだけ通っていたかを数え直せるようにする。**
@@ -11,7 +11,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "analysis"))
+sys.path.insert(0, str(ROOT / "analysis" / "probes"))
 from check_host import host_of, off_host  # noqa: E402
 
 TOP = "https://www.city.adachi.tokyo.jp/"

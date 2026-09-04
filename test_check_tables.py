@@ -13,7 +13,7 @@ import sys
 import unittest
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT / "analysis"))
 from check_tables import inspect, strip_tables, table_only_facts  # noqa: E402
 

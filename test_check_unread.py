@@ -1,4 +1,4 @@
-"""`analysis/check_unread.py` — 読ませなかったページに手がかりがあったかを機械的に見る道具。
+"""`analysis/probes/check_unread.py` — 読ませなかったページに手がかりがあったかを機械的に見る道具。
 
 LLMを呼ばないので、ここで手がかりが出た区は**こちらの読み落としの疑いが確定する**。
 判定はしない。人が読んで確かめるための材料を切り出すだけ。
@@ -13,7 +13,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "analysis"))
+sys.path.insert(0, str(ROOT / "analysis" / "probes"))
 from check_unread import FIELD_HINTS, hits, read_urls  # noqa: E402
 
 
@@ -83,7 +83,7 @@ class 開いたURL(unittest.TestCase):
 class 出力先(unittest.TestCase):
     def test_他の道具と同じ_analysis_out_に置く(self):
         # ★ここだけ analysis/ 直下に書いていた。出力の置き場が2か所あると探せない。
-        src = (ROOT / "analysis" / "check_unread.py").read_text(encoding="utf-8")
+        src = (ROOT / "analysis" / "probes" / "check_unread.py").read_text(encoding="utf-8")
         self.assertIn('out_dir = ROOT / "analysis" / "out"', src)
 
 

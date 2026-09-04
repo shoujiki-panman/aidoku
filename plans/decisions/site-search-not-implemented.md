@@ -1,7 +1,7 @@
 # サイト内検索は使わない（作る前に測って、作らないと決めた）
 
 Status: 決定（2026-09-02）
-Tracks: `analysis/check_search.py` / `analysis/out/search_forms.json`
+Tracks: `analysis/probes/check_search.py` / `analysis/out/search_forms.json`
 
 ## 問題
 

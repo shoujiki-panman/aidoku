@@ -1,7 +1,7 @@
 # 表を、本文の平文として渡すか、行ごとに「見出し: 値」へ組み直して渡すか
 
 Status: 決定済み（2026-08-23）
-Tracks: crawler/htmlutil.py / extractor/fact_extract.py / measurement.py / analysis/check_tables.py
+Tracks: crawler/htmlutil.py / extractor/fact_extract.py / measurement.py / analysis/probes/check_tables.py
 
 ## 問題
 
@@ -42,7 +42,7 @@ Tracks: crawler/htmlutil.py / extractor/fact_extract.py / measurement.py / analy
 
 ## 効果（LLMを1回も呼ばずに測った）
 
-`analysis/check_tables.py` が、保存済みページだけを読んで前後を比べる。
+`analysis/probes/check_tables.py` が、保存済みページだけを読んで前後を比べる。
 
 ```
 調べたセル: 70（キャッシュ無し 0 / 採点対象ページ無し 2）

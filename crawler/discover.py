@@ -101,7 +101,7 @@ def link_filter(top_url: str, allow_subdomains: bool):
         https://twitter.com/share?url=https://www.city.adachi.tokyo.jp/gomi/
 
       **同一ホスト制限がそもそも効いていなかった。** 候補 2,102本のうち 154本が
-      別ホストで、31組にまたがっていた（`analysis/check_host.py`）。
+      別ホストで、31組にまたがっていた（`analysis/probes/check_host.py`）。
     """
     if not allow_subdomains:
         top_host = urllib.parse.urlsplit(top_url).netloc
