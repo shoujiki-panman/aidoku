@@ -1,0 +1,5129 @@
+{
+  "_about": "探索が見つけた候補1本ごとに、読解へ渡したかどうかと、渡さなかった理由。判定はしていない。何を見たかの記録。",
+  "ledger_version": "read-ledger-0.1",
+  "procedure": "tennyu",
+  "reasons": {
+    "read": "読解に渡した",
+    "shown_not_chosen": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）",
+    "never_shown": "リンク一覧にも載せていない（こちら側の取りこぼし）",
+    "non_html": "PDF/Word/Excel のため弾いた",
+    "unfetchable": "取得できていない"
+  },
+  "summary": {
+    "municipalities": 24,
+    "entries": 599,
+    "by_mark": {
+      "read": 41,
+      "shown_not_chosen": 237,
+      "never_shown": 290,
+      "non_html": 10,
+      "unfetchable": 21
+    }
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "municipality_id": "adachi",
+      "entries": [
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html",
+          "link_text": "転入届（他の市区町村や海外から足立区に引っ越してきたとき）",
+          "score": 46,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/hikkoshi-oss.html",
+          "link_text": "引越しワンストップサービス",
+          "score": 26,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/hikkoshi/index.html",
+          "link_text": "引っ越しの手続き",
+          "score": 25,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
+          "link_text": "戸籍関係の届出一覧（7月17日）",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/koseki/index.html",
+          "link_text": "戸籍発行の手続き",
+          "score": 18,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/index.html",
+          "link_text": "届け出・証明 （戸籍・住民票など）",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
+          "link_text": "",
+          "score": 12,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/reiwa888konninntodoke.html",
+          "link_text": "令和８年８月８日（土曜日）に婚姻届の受付特設会場を設置します（7月17日）",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/madoguchi/index.html",
+          "link_text": "身近な窓口",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-konzatsu.html",
+          "link_text": "区民事務所等日別混雑予想",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-annai.html",
+          "link_text": "区民事務所のご案内",
+          "score": 8,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/chiiki/kurashi/todokede/mado-senju-jikangai.html",
+          "link_text": "千住区民事務所の時間外サービス",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/202604rikontodokeyoushikihenkou.html",
+          "link_text": "【重要】令和８年４月１日から離婚届の様式が変更となりました。",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/reiwa888konninntodoke.html",
+          "link_text": "",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/index.html",
+          "link_text": "戸籍・税・保険",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/koseki/madosys.html",
+          "link_text": "窓口混雑状況（戸籍住民課・千住区民事務所）",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/index.html",
+          "link_text": "住まい・暮らし",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/shogai-c/idousien.html",
+          "link_text": "令和8年度知的障がい者移動支援従業者養成研修［10月3日（土曜日）・10月4日（日曜日）・10月10日（土曜日）開催］",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/midori/event/20260908manabiba.html",
+          "link_text": "【みどりの学び場】暮らしに役立つハーブの楽しみ方（9月8日（火曜日））",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/sodan/sodanmadoguchi/index.html",
+          "link_text": "相談窓口",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/hoken/kenkohoken/index.html",
+          "link_text": "国民健康保険",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/index.html",
+          "link_text": "環境",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/kankyo/gomi/index.html",
+          "link_text": "ごみとリサイクル",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/machi/midori/index.html",
+          "link_text": "公園・みどり",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.adachi.tokyo.jp/kurashi/dobutsu/index.html",
+          "link_text": "動物・植物・ペット・その他の生きもの",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 6,
+        "never_shown": 18,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "荒川区",
+      "municipality_id": "arakawa",
+      "entries": [
+        {
+          "url": "http://ttzk.graffer.jp/ward-arakawa",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+          "link_text": "くらしの手続きガイド（引越し・結婚・離婚・出生・死亡）",
+          "score": 24,
+          "hops": 1,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/tennyuutenshutsu/index.html",
+          "link_text": "転入・転出・転居",
+          "score": 22,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/index.html",
+          "link_text": "戸籍・住民票",
+          "score": 14,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/tenseki.html",
+          "link_text": "転籍(戸籍を移す)に関する届出",
+          "score": 14,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
+          "link_text": "戸籍",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
+          "link_text": "住民票",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/yuusouseikyuu/index.html",
+          "link_text": "住民票に関する証明書等の窓口・郵送請求",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
+          "link_text": "住民票関連の証明書",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
+          "link_text": "住民票の写しの電話予約",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/ininjou/koronayuusou.html",
+          "link_text": "郵送による住民票の写し、戸籍に関する証明書等の交付申請",
+          "score": 10,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a012/todokede/shoumeisho/online_manyuaru.html",
+          "link_text": "住民票の写し・戸籍証明書のオンライン申請",
+          "score": 10,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
+          "link_text": "住民票の写し・戸籍証明書の郵送請求におけるキャッシュレス決済",
+          "score": 10,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/index.html",
+          "link_text": "届出・登録・証明",
+          "score": 7,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/gaikokujintouroku/index.html",
+          "link_text": "外国人住民の方の手続き",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/portal/tetsuzuki/index.html",
+          "link_text": "手続き・よく利用される届出",
+          "score": 6,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a030/tanpopojidou/2026arttherapy.html",
+          "link_text": "【満席】知的障がい・発達障がいのある子どものためのアートセラピー～スタンプTシャツを作ろう～",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/index.html",
+          "link_text": "電子申請・電子納付サービス等",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinse.html",
+          "link_text": "電子申請",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/denshishinsei/denshinoufu/index.html",
+          "link_text": "電子納付サービス",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/mynumbercard/index.html",
+          "link_text": "マイナンバーカード",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/todokede/inkantouroku/index.html",
+          "link_text": "印鑑登録",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/howtodenshi.html",
+          "link_text": "電子申請とは",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/denshishinsei-riyou.html",
+          "link_text": "電子申請の利用状況",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 13,
+        "never_shown": 8,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "文京区",
+      "municipality_id": "bunkyo",
+      "entries": [
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000263.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000264.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000261/index.html",
+          "link_text": "転入届(区外や国外から文京区へ引越しされる方）",
+          "score": 30,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b004/p000176.html",
+          "link_text": "くらしの手続きガイド （引越し・結婚・離婚・出生・死亡）",
+          "score": 16,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000260/index.html",
+          "link_text": "住民票の異動関係（転入・転出・転居届等）",
+          "score": 16,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/koseki/index.html",
+          "link_text": "戸籍の届出関係（出生届・婚姻届・死亡届等）",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/index.html",
+          "link_text": "届出・登録・証明（戸籍・住民票など）",
+          "score": 13,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p007546.html",
+          "link_text": "引越し・住民票・印鑑登録の質問にAIチャットボットがお答えします",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000271.html",
+          "link_text": "「引越しワンストップサービス」",
+          "score": 10,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/shoumeisho/index.html",
+          "link_text": "各種証明書（戸籍・住民票の写し・印鑑登録証明書等）",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000265/index.html",
+          "link_text": "転出届(文京区から区外や国外に引越しされる方)",
+          "score": 10,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000268/index.html",
+          "link_text": "転居届(文京区内で引越しされる方)",
+          "score": 10,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000305/index.html",
+          "link_text": "「引越しワンストップサービス」に関する質問",
+          "score": 10,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/koseki/index.html",
+          "link_text": "やさしい日本語ON",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/madoguchi/index.html",
+          "link_text": "窓口のご案内（手続きに必要な本人確認書類・各種申請書等）",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/shitsumon/index.html",
+          "link_text": "よくある質問 （戸籍・住民記録・証明・マイナンバーカード関連 ）",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/index.html",
+          "link_text": "手続き・くらし",
+          "score": 6,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/guide/index.html",
+          "link_text": "くらしの手続きガイド",
+          "score": 6,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000201/index.html",
+          "link_text": "郵便による請求（戸籍証明・住民票の写し）",
+          "score": 6,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000284/index.html",
+          "link_text": "住民票の異動に関する質問",
+          "score": 6,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/koseki_furigana.html",
+          "link_text": "氏名の振り仮名",
+          "score": 4,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000177.html",
+          "link_text": "戸籍住民課窓口混雑状況",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000258.html",
+          "link_text": "その他の届出",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.bunkyo.lg.jp/b013/p000282.html",
+          "link_text": "住民票等への旧姓（旧氏）併記について",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 6,
+        "never_shown": 14,
+        "non_html": 0,
+        "unfetchable": 1
+      }
+    },
+    {
+      "municipality": "千代田区",
+      "municipality_id": "chiyoda",
+      "entries": [
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tennyu.html",
+          "link_text": "転入届（他の市区町村または国外から千代田区に住所を異動するとき）",
+          "score": 42,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/mainambadenshi/card-keizoku.html",
+          "link_text": "引越し等に伴うマイナンバーカードの住所・氏名等変更手続き（継続利用・券面更新）および電子証明書の発行",
+          "score": 24,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/juminhyo/jisho.html",
+          "link_text": "住民票の写しの交付申請書・住民基本台帳閲覧請求書・委任状には、住所・氏名欄への自署が必須となりました",
+          "score": 22,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/juminhyo/index.html",
+          "link_text": "住民票の写し等の請求・閲覧",
+          "score": 19,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/index.html",
+          "link_text": "住民登録に関する手続き",
+          "score": 18,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenshutsu.html",
+          "link_text": "転出届（千代田区から他の市区町村または国外に住所を異動するとき）",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenkyo.html",
+          "link_text": "転居届（千代田区内で住所を異動するとき）",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/koseki/todokede.html",
+          "link_text": "戸籍の届出",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/jyuminhyo-heiki.html",
+          "link_text": "旧氏（旧姓）等の住民票等への併記",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/kyuuji-furigana.html",
+          "link_text": "住民票に旧氏の振り仮名が記載されます",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/yoshikihenko.html",
+          "link_text": "システム標準化に伴い、令和8年1月から住民票の写しと印鑑登録証明書の様式が変更されます",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/lifeevent/tennyu/index.html",
+          "link_text": "転入・転出",
+          "score": 14,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/index.html",
+          "link_text": "戸籍・住民の手続き",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/koseki/index.html",
+          "link_text": "戸籍届出と証明",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/koseki.html",
+          "link_text": "戸籍・住民票「本人確認」",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tokkyuhakko.html",
+          "link_text": "マイナンバーカードの特急発行",
+          "score": 12,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/tetsuzukiguide.html",
+          "link_text": "千代田区手続きガイド～あなたに必要な手続きや持ち物が確認できます～",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/sogi.html",
+          "link_text": "葬儀",
+          "score": 8,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/honninkakunin-shiyofuka.html",
+          "link_text": "【令和7年12月2日以降】健康保険証は本人確認書類として使用できません",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/inkan/index.html",
+          "link_text": "印鑑登録・証明書",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/mainambadenshi/index.html",
+          "link_text": "マイナンバー・電子証明書",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/documents/13656/ininjo_2.pdf",
+          "link_text": "委任状（転入・転居届に伴う電子証明書の発行用）（PDF：260KB）",
+          "score": 8,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/kurashi/index.html",
+          "link_text": "暮らし・手続き",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/sodanmadoguchi/callcenter.html",
+          "link_text": "千代田区コールセンター",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/sodanmadoguchi/kuminsodanshitsu.html",
+          "link_text": "相談窓口",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 11,
+        "never_shown": 12,
+        "non_html": 1,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "中央区",
+      "municipality_id": "chuo",
+      "entries": [
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-ari/index.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
+          "link_text": "転入届",
+          "score": 32,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/index.html",
+          "link_text": "住民の異動の届出（転入・転出など）",
+          "score": 24,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/hikkoshioss.html",
+          "link_text": "引越しワンストップサービスの利用",
+          "score": 22,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/zyushohenkoutodokede.html",
+          "link_text": "住所変更の届出を忘れずに",
+          "score": 18,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/mynocd-nashi/index.html",
+          "link_text": "マイナンバーカードを使わずに手続きをする場合",
+          "score": 15,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/touroku/koseki/index.html",
+          "link_text": "戸籍の届出（出生、死亡など）",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0004/kurashi/touroku/denshishinsei/hikkoshioss.html",
+          "link_text": "住民の異動の届出（転出届など）",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/syusseitodoke/index.html",
+          "link_text": "出生届",
+          "score": 12,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminhyou/shoumeisho/kosekitohu.html",
+          "link_text": "戸籍謄本・抄本",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0018/kurashi/touroku/juuminidou/harumimadoguchi.html",
+          "link_text": "【晴海特別出張所のみ】スマホ等で事前に住民異動届等を作成できます",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tenkyo/index.html",
+          "link_text": "転居届：中央区内で住所を変更するとき",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/user_kumin_time_20191030.html",
+          "link_text": "住民票、マイナンバーカード等へ「旧氏」の記載を希望する方へ",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/furigana.html",
+          "link_text": "戸籍に振り仮名を記録する取り組みが始まります",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminhyou/index.html",
+          "link_text": "住民票・戸籍の証明書",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/sumai/mansion_seido/index.html",
+          "link_text": "分譲マンションの管理支援",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tenshutsu/index.html",
+          "link_text": "転出届",
+          "score": 8,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0004/kurashi/online/onlineshinsei.html",
+          "link_text": "オンライン手続き",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/kurashi/online/index.html",
+          "link_text": "オンライン手続き・デジタル化",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0004/kurashi/touroku/denshishinsei/kanounatetsuduki.html",
+          "link_text": "オンラインで可能な手続き一覧",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/resident_procedures/index.html",
+          "link_text": "住民票・戸籍",
+          "score": 6,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0035/kurashi/koutsuu/koukyoukoutsuu/edobasu/kuseihatijussyuunenn.html?utm_source=kotu_top&utm_medium=ba&utm_campaign=18378_260601",
+          "link_text": "",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0009/kurashi/zeikin/nouzei/zeinouhuannaidenwa.html",
+          "link_text": "",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/oshirase/hakkenki.html",
+          "link_text": "窓口混雑状況",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.chuo.lg.jp/a0004/kurashi/online/riyoukiyaku.html",
+          "link_text": "電子申請サービス利用規約等",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 9,
+        "never_shown": 14,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "江戸川区",
+      "municipality_id": "edogawa",
+      "entries": [
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
+          "link_text": "転入届（区外から江戸川区へ引越した方）",
+          "score": 46,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/ido_todoke/index.html",
+          "link_text": "住所の異動（引越し等）",
+          "score": 28,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/hikkoshi_info.html",
+          "link_text": "【マイナンバーカードをお持ちの方】引越しワンストップサービス",
+          "score": 26,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/ido_todoke/kakunin.html",
+          "link_text": "戸籍届出や証明書請求、住所異動等の際の本人確認書類",
+          "score": 24,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tenkyo.html",
+          "link_text": "転居届（江戸川区内で引越した方）",
+          "score": 22,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/juminhyo/index.html",
+          "link_text": "住民票等の請求",
+          "score": 19,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/hyojunka.html",
+          "link_text": "令和7年1月6日から住民票の写し等と印鑑登録証明書の様式が変わります。",
+          "score": 19,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/osirase2.html",
+          "link_text": "【解消しました】他自治体での住民票の取得に関する不具合",
+          "score": 19,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/seikyu.html",
+          "link_text": "江戸川区の住民票の請求",
+          "score": 19,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/koikikofu.html",
+          "link_text": "広域交付（住民票のある市区町村以外での交付）による交付申請",
+          "score": 19,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/koseki/index.html",
+          "link_text": "戸籍の届出",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/madoguchi.html",
+          "link_text": "戸籍の届出受付窓口",
+          "score": 18,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yuusoutodoke.html",
+          "link_text": "郵送による戸籍の届出",
+          "score": 18,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e031/kurashi/todoke/koseki/yokuarusitumon.html",
+          "link_text": "戸籍の届出についてのよくある質問と回答",
+          "score": 18,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/kihondaicho.html",
+          "link_text": "住民基本台帳の閲覧",
+          "score": 16,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
+          "link_text": "届出・証明",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/city_number.html",
+          "link_text": "法人番号 1000020131237",
+          "score": 8,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jazh/https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/city_number.html",
+          "link_text": "简体中文",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCAIEDOGA/ns/w0/jako/https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/city_number.html",
+          "link_text": "한국어",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/mynumber/seido/seidotoha/index.html",
+          "link_text": "マイナンバー制度とは",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.edogawa.tokyo.jp/kurashi/mynumber/seido/seidotoha/qa/index.html",
+          "link_text": "マイナンバーに関するQ&A",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 7,
+        "never_shown": 14,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "八王子市",
+      "municipality_id": "hachioji",
+      "entries": [
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004455.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
+          "link_text": "転入届",
+          "score": 32,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/p004460.html",
+          "link_text": "市外からの引っ越し（転出証明書での手続き）",
+          "score": 25,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/index.html",
+          "link_text": "戸籍・住民登録",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/index.html",
+          "link_text": "住民票の写し・戸籍証明の請求",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/index.html",
+          "link_text": "住民票の異動届",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/004/index.html",
+          "link_text": "戸籍の届出",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/p037367.html",
+          "link_text": "住民票の写し・戸籍証明書などの交付手数料の改定に関するお知らせ（令和8（2026）年7月1日から）",
+          "score": 18,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/index.html",
+          "link_text": "住民票の写し等の請求",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/index.html",
+          "link_text": "窓口での請求（住民票の写し等）",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/yuusou/index.html",
+          "link_text": "郵送での請求（住民票の写し等）",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/002/index.html",
+          "link_text": "戸籍証明（戸籍謄本・抄本）等の請求",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/index.html",
+          "link_text": "くらしの情報",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037551.html",
+          "link_text": "上恩方町におけるツキノワグマの痕跡情報（足跡）について",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037505.html",
+          "link_text": "八王子城跡におけるツキノワグマの目撃情報等について",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037446.html",
+          "link_text": "上恩方町におけるツキノワグマの出没について",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037413.html",
+          "link_text": "元八王子町二丁目におけるツキノワグマの出没について",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p034133.html",
+          "link_text": "ツキノワグマについて",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037551.html%26target=_top&SLANG=ja&TLANG=ko&XMODE=0",
+          "link_text": "한국어",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037551.html%26target=_top&SLANG=ja&TLANG=zh&XMODE=0",
+          "link_text": "簡体字",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037551.html%26target=_top&SLANG=ja&TLANG=zhb&XMODE=0",
+          "link_text": "繁体字",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www3.zoomsight-sv2.jp/SOCH/controller/index.html",
+          "link_text": "音声読み上げ",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037505.html%26target=_top&SLANG=ja&TLANG=ko&XMODE=0",
+          "link_text": "한국어",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037505.html%26target=_top&SLANG=ja&TLANG=zh&XMODE=0",
+          "link_text": "簡体字",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://translation2.j-server.com/LUCHOJC/ns/tl_ex.cgi?SURL=https://translation2.j-server.com/LUCHOJC/ns/warning_mess.cgi%3furl=https://www.city.hachioji.tokyo.jp/kurashi/sangyo/004/jyugai/p037505.html%26target=_top&SLANG=ja&TLANG=zhb&XMODE=0",
+          "link_text": "繁体字",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.hachioji.tokyo.jp/kurashi/sangyo/index.html",
+          "link_text": "産業・仕事",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 3,
+        "never_shown": 20,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "板橋区",
+      "municipality_id": "itabashi",
+      "entries": [
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+          "link_text": "転入届 （板橋区外から板橋区に転入した方）",
+          "score": 32,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+          "link_text": "転入届 （国外から板橋区に転入した方）",
+          "score": 32,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/index.html",
+          "link_text": "住民登録(引越し等の手続き)",
+          "score": 28,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1041451/index.html",
+          "link_text": "引越しワンストップサービス（オンラインでの引越し手続き）について",
+          "score": 25,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
+          "link_text": "転居届 （板橋区内で引越しの方）",
+          "score": 22,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
+          "link_text": "団体での住民異動届出について",
+          "score": 18,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
+          "link_text": "旧氏（旧姓）の住民票などへの併記",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
+          "link_text": "同じ住所に戸建建物が複数あり誤配等でお困りの方へ",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/index.html",
+          "link_text": "戸籍・住民票・印鑑登録・届出・証明・マイナンバー",
+          "score": 13,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/kenko/kourei/kouki/tetsuduki/1003527.html",
+          "link_text": "転入転出等に係わる手続き（後期高齢者医療制度）",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://twitter.com/intent/tweet?text=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html",
+          "link_text": "",
+          "score": 12,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2F1001614.html&t=%E8%BB%A2%E5%85%A5%E5%B1%8A%E3%80%80%EF%BC%88%E5%9B%BD%E5%A4%96%E3%81%8B%E3%82%89%E6%9D%BF%E6%A9%8B%E5%8C%BA%E3%81%AB%E8%BB%A2%E5%85%A5%E3%81%97%E3%81%9F%E6%96%B9%EF%BC%89%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",
+          "link_text": "",
+          "score": 12,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://twitter.com/intent/tweet?text=%E4%BD%8F%E6%B0%91%E7%99%BB%E9%8C%B2%28%E5%BC%95%E8%B6%8A%E3%81%97%E7%AD%89%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%29%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Fjuminhyo%2Findex.html",
+          "link_text": "",
+          "score": 12,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/1015233/1015237.html",
+          "link_text": "引越し",
+          "score": 10,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/1001687.html",
+          "link_text": "くらしの各種手続・届出",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koseki/index.html",
+          "link_text": "戸籍",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/faq/tetsuduki/koseki/koseki/index.html",
+          "link_text": "戸籍",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1001605.html",
+          "link_text": "お墓を移す手続きについて",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/index.html",
+          "link_text": "手続き・くらしトップ",
+          "score": 6,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/koufu/1001666.html",
+          "link_text": "コンビニ交付の休止",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/shomeisho/1053497.html",
+          "link_text": "詳しく見る",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/mynumber/1045073/1001657.html",
+          "link_text": "法人番号について",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://twitter.com/intent/tweet?text=%E6%88%B8%E7%B1%8D%E3%83%BB%E4%BD%8F%E6%B0%91%E7%A5%A8%E3%83%BB%E5%8D%B0%E9%91%91%E7%99%BB%E9%8C%B2%E3%83%BB%E5%B1%8A%E5%87%BA%E3%83%BB%E8%A8%BC%E6%98%8E%E3%83%BB%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%B3%E3%83%90%E3%83%BC%ef%bd%9c%E6%9D%BF%E6%A9%8B%E5%8C%BA%E5%85%AC%E5%BC%8F%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8&url=https%3A%2F%2Fwww.city.itabashi.tokyo.jp%2Ftetsuduki%2Fkoseki%2Findex.html",
+          "link_text": "",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/madoguchi/index.html",
+          "link_text": "受付窓口(区役所・区民事務所)",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/inkan/index.html",
+          "link_text": "印鑑登録",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 10,
+        "never_shown": 10,
+        "non_html": 0,
+        "unfetchable": 4
+      }
+    },
+    {
+      "municipality": "葛飾区",
+      "municipality_id": "katsushika",
+      "entries": [
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001442.html",
+          "link_text": "「転入届の特例」による転出と転入手続き",
+          "score": 27,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1001438.html",
+          "link_text": "転入届",
+          "score": 24,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/faq/1030270/1007654/1007705/1007826.html",
+          "link_text": "郵送で転入届を届け出ることは可能でしょうか。",
+          "score": 20,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
+          "link_text": "引越し等の手続きができる窓口一覧",
+          "score": 17,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
+          "link_text": "マイナポータルによるオンラインでの転出届（引越しワンストップサービス）",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html",
+          "link_text": "住所の届出・証明（住民票）",
+          "score": 13,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/faq/1030270/1007654/1007705/1007828.html",
+          "link_text": "転入・転出・転居の届出はどこでできますか",
+          "score": 13,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/index.html",
+          "link_text": "くらし・手続きトップ",
+          "score": 10,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/index.html",
+          "link_text": "戸籍・住民票など",
+          "score": 10,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/lifeevent/lifeevent3.html",
+          "link_text": "引っ越し",
+          "score": 10,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001400/index.html",
+          "link_text": "戸籍の届出・証明",
+          "score": 10,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001406/index.html",
+          "link_text": "届出・申請窓口のご案内",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1030169/index.html",
+          "link_text": "郵送による届出・申請",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001404/index.html",
+          "link_text": "外国人（がいこくじん）のみなさんへ（手続き）",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001406/1015241.html",
+          "link_text": "戸籍住民課（本庁舎）・区民事務所の混雑状況",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000047/index.html",
+          "link_text": "税金",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000048/index.html",
+          "link_text": "ごみ・リサイクル",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000049/index.html",
+          "link_text": "国保・後期高齢・年金",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/index.html",
+          "link_text": "ふりがな",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/index.html",
+          "link_text": "やさしい日本語",
+          "score": 4,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1003399/index.html",
+          "link_text": "住まい",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.katsushika.lg.jp/kurashi/1000062/index.html",
+          "link_text": "環境",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
+          "link_text": "ふりがな",
+          "score": 4,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/easy.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/1040608.html",
+          "link_text": "やさしい日本語",
+          "score": 4,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://tsutaeru.cloud/ruby.php?uri=https%3A%2F%2Fwww.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
+          "link_text": "ふりがな",
+          "score": 4,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 15,
+        "never_shown": 4,
+        "non_html": 0,
+        "unfetchable": 5
+      }
+    },
+    {
+      "municipality": "北区",
+      "municipality_id": "kita",
+      "entries": [
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001570.html",
+          "link_text": "マイナンバーカードや特定在留カードなどをお持ちの方の転出転入手続き(転入届の特例)",
+          "score": 23,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+          "link_text": "転入届、転居届に伴うマイナンバーカードや特定在留カードなどの手続き",
+          "score": 23,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001568.html",
+          "link_text": "転入・転出の住所変更等の届出",
+          "score": 16,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001565.html",
+          "link_text": "引越しに関する手続き",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001566.html",
+          "link_text": "転入時の手続き",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001573.html",
+          "link_text": "留学などに伴い、北区への転入手続きを団体で行う方へ",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/index.html",
+          "link_text": "引越し",
+          "score": 10,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001629/1001639.html",
+          "link_text": "月1回、日曜と火曜夜間に転出・転入・転居などの窓口を開庁しています",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001571.html",
+          "link_text": "オンラインによる転出届・転入（転居）予定連絡",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/570/idoutodokdesyo20260105.pdf",
+          "link_text": "住民異動届出書 （PDF 154.5KB）",
+          "score": 8,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/568/idoutodokdesyo20260105.pdf",
+          "link_text": "住民異動届出書 （PDF 154.5KB）",
+          "score": 8,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/index.html",
+          "link_text": "くらし・手続きトップ",
+          "score": 6,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001523/index.html",
+          "link_text": "戸籍の届出（婚姻、離婚、出生、死亡など）",
+          "score": 6,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001590/index.html",
+          "link_text": "住民票・戸籍の証明書",
+          "score": 6,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/_res/projects/default_project/_page_/001/001/568/ininjyo-ido20251222.pdf",
+          "link_text": "委任状見本・様式（住民異動） （PDF 558.1KB）",
+          "score": 5,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/index.html",
+          "link_text": "届出・証明",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/shinsei_tetsuzuki_search.html",
+          "link_text": "申請・手続き検索",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001641/index.html",
+          "link_text": "届出・証明に関するお知らせ",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001585/index.html",
+          "link_text": "外国人住民の手続き",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010040/1001570",
+          "link_text": "区民部 戸籍住民課 王子区民事務所へのお問い合わせは専用フォームをご利用ください。",
+          "score": 3,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010050/1001570",
+          "link_text": "区民部 戸籍住民課 赤羽区民事務所へのお問い合わせは専用フォームをご利用ください。",
+          "score": 3,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010040/1016956",
+          "link_text": "区民部 戸籍住民課 王子区民事務所へのお問い合わせは専用フォームをご利用ください。",
+          "score": 3,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010050/1016956",
+          "link_text": "区民部 戸籍住民課 赤羽区民事務所へのお問い合わせは専用フォームをご利用ください。",
+          "score": 3,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/cgi-crm/CRM030/CRM030_004/G080010060/1016956",
+          "link_text": "区民部 戸籍住民課 滝野川区民事務所へのお問い合わせは専用フォームをご利用ください。",
+          "score": 3,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.kita.lg.jp/living/registration/1001629/1001631.html",
+          "link_text": "区民事務所・戸籍係・個人番号カード交付係の混雑・待合情報サービス",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 5,
+        "never_shown": 11,
+        "non_html": 3,
+        "unfetchable": 5
+      }
+    },
+    {
+      "municipality": "江東区",
+      "municipality_id": "koto",
+      "entries": [
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5014.html",
+          "link_text": "転入届（江東区以外の区市町村からのお引越し）",
+          "score": 46,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5021.html",
+          "link_text": "国外への転出届・国外からの転入届",
+          "score": 36,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5015.html",
+          "link_text": "転出届（江東区以外の区市町村へのお引越し）",
+          "score": 26,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5017.html",
+          "link_text": "転居届（江東区内でのお引越し）",
+          "score": 26,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/idotodoke/index.html",
+          "link_text": "住民異動届",
+          "score": 19,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060302/kurashi/jumin/koseki/r080808.html",
+          "link_text": "令和8年8月8日に戸籍の届出をされる方へ",
+          "score": 18,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060302/kurashi/jumin/koseki/5060.html",
+          "link_text": "戸籍の届出、本人確認、受付窓口について",
+          "score": 18,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
+          "link_text": "住所・戸籍の手続き",
+          "score": 17,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/larressingle.html",
+          "link_text": "",
+          "score": 16,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5018.html",
+          "link_text": "世帯変更",
+          "score": 16,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/koseki/index.html",
+          "link_text": "戸籍関係届",
+          "score": 15,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/hikkoshi.html",
+          "link_text": "引っ越し",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/tetsuduki/index.html",
+          "link_text": "手続き案内 引っ越し・結婚・出産など、生活の変化に合わせて必要な手続きをご案内します",
+          "score": 13,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/gaikoku/index.html",
+          "link_text": "外国人の方の手続き（旧外国人登録）",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/madoguchi/index.html",
+          "link_text": "水曜延長窓口・日曜窓口",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/jumin/oshirase/index.html",
+          "link_text": "お知らせ",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/index.html",
+          "link_text": "くらし・地域",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/gomi/kensaku/index.html",
+          "link_text": "ごみの出し方・分別検索 ごみの収集日や分別方法などをご案内します",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/060609/kurashi/zekin/nohusoudan.html",
+          "link_text": "住民税の夜間電話相談を実施します",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/250201/kurashi/sodan/sekatsu/7132.html",
+          "link_text": "女性相談",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/gomi/kate/sodaigomi/index.html",
+          "link_text": "粗大ごみ",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/kurashi/gomi/index.html",
+          "link_text": "ごみ・リサイクル",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/43735.html",
+          "link_text": "地区別資源回収・ごみ収集日一覧",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/381104/kurashi/gomi/kotogominavi.html",
+          "link_text": "",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.koto.lg.jp/388010/kurashi/gomi/kate/shigen/43451.html",
+          "link_text": "あ行",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 8,
+        "never_shown": 16,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "目黒区",
+      "municipality_id": "meguro",
+      "entries": [
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuukokugai.html",
+          "link_text": "転入届：国外から目黒区へ住所を変更したとき",
+          "score": 39,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyu_mado.html",
+          "link_text": "転入届：本人または新しく同じ世帯になるかたが手続きをするとき",
+          "score": 39,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuudairi.html",
+          "link_text": "転入届：代理人が手続きをするとき",
+          "score": 39,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/ido.html",
+          "link_text": "転入届：マイナンバーカード等を使って本人または同じ世帯になるかたが窓口で手続きをするとき",
+          "score": 39,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuuonline.html",
+          "link_text": "転入届",
+          "score": 36,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+          "link_text": "転入届",
+          "score": 36,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tennyuu/index.html",
+          "link_text": "転入届：目黒区外から目黒区に住所を変更したとき",
+          "score": 35,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/index.html",
+          "link_text": "引越しの手続き（転入・転出など）",
+          "score": 31,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kurashi/hikkoshi/tenkyo/index.html",
+          "link_text": "目黒区内で引っ越し",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kurashi/kosekitodokede/index.html",
+          "link_text": "戸籍の届出（出生、死亡など）",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
+          "link_text": "引越しワンストップサービス",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/honninkakunin-junin.html",
+          "link_text": "本人確認を実施しています（住所変更の手続き、住民票の取得、印鑑登録に関する手続き）",
+          "score": 17,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+          "link_text": "简体中文",
+          "score": 16,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/tennyuumynumber.html",
+          "link_text": "繁體中文",
+          "score": 16,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/hikkoshi/kyuuuzikisai.html",
+          "link_text": "住民票、マイナンバーカード等への旧氏（旧姓）記載",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/benrinavi/hikkoshi/index.html",
+          "link_text": "引っ越し",
+          "score": 14,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+          "link_text": "マイナンバーカードに関する手続きは一部を除いて地区サービス事務所でも行えます",
+          "score": 11,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
+          "link_text": "マイナンバー入り住民票の写しの発行",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/mynumber_rinji_madoguchi.html",
+          "link_text": "マイナンバーカードに関する手続きの休日開庁日",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/holiday_kohu.html",
+          "link_text": "休日の証明書交付",
+          "score": 8,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/sonota/konbinikoufu.html",
+          "link_text": "コンビニ交付サービス",
+          "score": 8,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazh/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+          "link_text": "简体中文",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www15.j-server.com/LUCMEGURO/ns/w0/jazhb/https://www.city.meguro.tokyo.jp/koseki/kurashi/mynumber-card/chiku_tetsuzuki.html",
+          "link_text": "繁體中文",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+          "link_text": "ごみの 出し方・分別検索",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 10,
+        "never_shown": 14,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "港区",
+      "municipality_id": "minato",
+      "entries": [
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tennyu.html",
+          "link_text": "転入届（港区外から港区へ引越しするとき）",
+          "score": 46,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/madoguchidxtan/hikkoshi.html",
+          "link_text": "転入・転居手続の来庁予約（引越し手続オンラインサービス）",
+          "score": 24,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tenkyo.html",
+          "link_text": "転居届（港区内で引越しするとき）",
+          "score": 22,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadosa/kurashi/todokede/hikkoshi/tenshutsu.html",
+          "link_text": "転出届（港区外へ引越しするとき）",
+          "score": 22,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kurashi/todokede/index-todokede02.html",
+          "link_text": "引越しに関する手続き",
+          "score": 21,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/todokede/kosekitodokede.html",
+          "link_text": "戸籍の届出",
+          "score": 18,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/kurashi/todokede/juminhyo.html",
+          "link_text": "申請書ダウンロード",
+          "score": 16,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/shomesho/yubin/index.html",
+          "link_text": "郵送でできる手続き",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibakoseki/kurashi/todokede/todokede/index.html",
+          "link_text": "戸籍の証明書の請求",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/kurashi/todokede/honnsekitikosekisyoumeisyokouhusabisu.html",
+          "link_text": "本籍地戸籍証明書コンビニ交付サービス",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kurashi/todokede/index.html",
+          "link_text": "届出・証明・住民の手続き",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kurashi/todokede/index-todokede04.html",
+          "link_text": "住民票・戸籍・印鑑登録など",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/kurashi/todokede/utsushi.html",
+          "link_text": "住民票の請求・閲覧の手続き",
+          "score": 14,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/shibamadochou/madoguchikonzatsujyoukyouhaishin.html",
+          "link_text": "お引越し等の手続き窓口の混雑状況",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kurashi/index.html",
+          "link_text": "暮らし・手続き",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kankyoushidou/kankyo-machi/kankyo/index-netsu.html?utm_source=newsletter&utm_medium=email&utm_campaign=mega_netyusyou",
+          "link_text": "熱中症対策",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/jigyoukeikaku/kurashi/gomi/kate/index.html",
+          "link_text": "ごみ・リサイクル",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kankyoushidou/kankyo-machi/kankyo/index-netsu-kiso.html",
+          "link_text": "基本知識",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kankyoushidou/kankyo-machi/kankyo/index-netsu-taisaku.html",
+          "link_text": "対策",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kankyoushidou/kankyo-machi/kankyo/index-netsu-sonota.html",
+          "link_text": "その他",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kankyoushidou/kankyo-machi/kankyo/index-josei.html",
+          "link_text": "助成制度・計画・調査・統計・報告",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/kurashi/gomi/index.html",
+          "link_text": "ごみ・リサイクル",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/konnabai/rinji.html",
+          "link_text": "家庭から臨時に多量のごみが出るとき",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/recycling/denchi.html",
+          "link_text": "令和7年9月から充電式電池（リチウムイオン電池、ニカド電池、ニッケル水素電池）を不燃ごみの日に回収します。",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.minato.tokyo.jp/jigyoukeikaku/kurashi/gomi/kate/a/index.html",
+          "link_text": "あ",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 8,
+        "never_shown": 16,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "中野区",
+      "municipality_id": "nakano",
+      "entries": [
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.html",
+          "link_text": "マイナンバーカードを利用する転入届",
+          "score": 36,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjotokureitennnyu.pdf",
+          "link_text": "委任状(代理人が本人のマイナンバーカードを使用して転入届をする際の委任状)（PDF形式：367KB）",
+          "score": 34,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240117145211630.html",
+          "link_text": "転入届、転居届とあわせて行う電子証明書発行の代理手続きについて",
+          "score": 31,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kugaikara.html",
+          "link_text": "他の区市町村からの転入",
+          "score": 22,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tennyu-kokugaikara.html",
+          "link_text": "国外からの転入",
+          "score": 22,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/hikkoshi.html",
+          "link_text": "引越し・印鑑登録をされる方へ",
+          "score": 22,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/tenkyo-kunai.html",
+          "link_text": "転居届（中野区内で引越しをしたとき）",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/case/hikkoshi/index.html",
+          "link_text": "引越し・住まい",
+          "score": 14,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/ikanai-kakanai-matanai.html",
+          "link_text": "行かない・書かない・待たない窓口(住民異動・マイナンバーカードに関する手続き)",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/index.html",
+          "link_text": "戸籍・住民票・各種証明",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/koseki/index.html",
+          "link_text": "戸籍の届出、証明",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/jyuminhyo/index.html",
+          "link_text": "住民票の届出、証明",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/denshishinsei/koseki/index.html",
+          "link_text": "戸籍・住民票・登録",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/tennyutodoke.files/ininjyou.pdf",
+          "link_text": "本人の委任状（PDF形式：138KB）",
+          "score": 14,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/mynumber-seido.html",
+          "link_text": "マイナンバー制度（社会保障・税番号制度）について",
+          "score": 12,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/mynumber-tetsuduki.html",
+          "link_text": "区の窓口でマイナンバーを利用する主な手続き",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/nichiyo.html",
+          "link_text": "2階戸籍住民課日曜窓口のご案内【9月20日、9月27日、10月4日、10月25日は休止します】",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/madoguti/kayoencyo.html",
+          "link_text": "2階戸籍住民課での火曜延長窓口のご案内",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/0972306420240211143306245.html",
+          "link_text": "外国人の方の在留期間延長に伴うマイナンバーカードの手続きについて",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/faq/koseki/index.html",
+          "link_text": "戸籍・住民票・マイナンバー",
+          "score": 10,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/koseki/mynumber/shinsei.html",
+          "link_text": "マイナンバーカードの申請",
+          "score": 8,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/sodaigomi/jizenmoshikomi.html",
+          "link_text": "粗大ごみの申込み",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/index.html",
+          "link_text": "ごみ・資源",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/digitalmadoguti/index.html",
+          "link_text": "デジタル窓口",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 15,
+        "never_shown": 6,
+        "non_html": 2,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "練馬区",
+      "municipality_id": "nerima",
+      "entries": [
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyu.html",
+          "link_text": "転入届 （練馬区に引っ越してきたとき）",
+          "score": 42,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tennyukokugai.html",
+          "link_text": "転入届（国外から練馬区に引越したとき）",
+          "score": 42,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
+          "link_text": "転入・転出に伴う区役所以外の手続き（電気・水道・ガス等）",
+          "score": 21,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/bamen/hikkoshi.html",
+          "link_text": "引越し",
+          "score": 18,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenshutsu.html",
+          "link_text": "転出届 （練馬区外に引っ越しするとき）",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tenkyo.html",
+          "link_text": "転居届 （練馬区内で引っ越ししたとき）",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/tensyutsukokugai.html",
+          "link_text": "転出届 （国外へ引越しするとき）",
+          "score": 18,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/shomei/honninkakunin25.html",
+          "link_text": "戸籍、住民票の申請・届出の本人確認方法について",
+          "score": 17,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html",
+          "link_text": "区役所に行かずにできる手続き（戸籍・住民登録）",
+          "score": 17,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
+          "link_text": "7月17日から7月21日までに戸籍のお届をされる方へ",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/kiroku/juminkiroku.html",
+          "link_text": "住民記録の届出について",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyoka/index.html",
+          "link_text": "みどりに関する届出・手続き",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/index.html",
+          "link_text": "戸籍・住民登録",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/index.html",
+          "link_text": "お知らせ一覧（戸籍・住民登録）",
+          "score": 14,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/index.html",
+          "link_text": "",
+          "score": 8,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/photoguide.html",
+          "link_text": "",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/midori_network.html",
+          "link_text": "みどりのネットワークの形成",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/shigoto/midori/kyodo/index.html",
+          "link_text": "みどりを育むムーブメントの輪を広げる",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
+          "link_text": "",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/bosai/bohan/20230317_.html",
+          "link_text": "区内で特殊詐欺が多発しています",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/chisui/shisuiban.html",
+          "link_text": "止水板の購入・設置費用を助成します",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kifu/kifu/kifu0701.html",
+          "link_text": "皆様の寄付に感謝申し上げます（4月の寄付）",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/sumai/aratanakotsu.html",
+          "link_text": "バスに代わる交通について考えるオープンハウスを開催します",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/kuseisanka/kyodosuisin/nerimakyodorabo/jisshijigyo/miraichallenge/komaneri/index.html",
+          "link_text": "こまねり登録団体の取材情報を更新しました！",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.nerima.tokyo.jp/kurashi/nenkinhoken/oshirase/koureisyou_kousin.html",
+          "link_text": "新しい高齢受給者証または資格情報のお知らせを7月16日（木）に発送",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 9,
+        "never_shown": 15,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "大田区",
+      "municipality_id": "ota",
+      "entries": [
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu.html",
+          "link_text": "転入届（区外から大田区へ）",
+          "score": 32,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tennyu-tenshutu_jyuuki-card.html",
+          "link_text": "マイナンバーカードをお持ちの方の転出届・転入届",
+          "score": 32,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tenkyo.html",
+          "link_text": "転居届（大田区内の引越し）",
+          "score": 18,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/gaikoku/index.html",
+          "link_text": "外国人住民の方のお引越し等の手続きについて",
+          "score": 17,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/tetsuzuki/hikkoshi/index.html",
+          "link_text": "引越し",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/jyuusyo-henkou_mynumber-card.html",
+          "link_text": "住所変更に伴うマイナンバーカードの手続きについて",
+          "score": 14,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/donichi_jyushohenkou.html",
+          "link_text": "3月・4月の休日窓口で住民異動届の受付、マイナンバーカードの住所等の変更手続きをいたします",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/oshirase/mokutekibetsu/koseki/kosekijuminka_service.html",
+          "link_text": "来庁せずにできるお手続きなどのお知らせ",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/kosekijuminrealtime.html",
+          "link_text": "区役所1階戸籍住民窓口の待ち人数・待ち時間がリアルタイムで確認できます",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/index.html",
+          "link_text": "戸籍・住民票",
+          "score": 10,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/index.html",
+          "link_text": "住民票の届出・証明",
+          "score": 10,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/koseki/index.html",
+          "link_text": "戸籍の届出・証明",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/kosekijyuminyuso.html",
+          "link_text": "戸籍・住民票の郵送請求",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/kosekifuseiseikyuu.html",
+          "link_text": "戸籍や住民票の不正取得は犯罪です",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/combini-koseki_202110.html",
+          "link_text": "マイナンバーカードを利用して、大田区以外に住所がある方の大田区の戸籍証明書がコンビニエンスストアで取得できるようになります",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/oshirase/mokutekibetsu/koseki/index.html",
+          "link_text": "戸籍・住民票",
+          "score": 10,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/kuseijoho/soshiki/annai/kosekijuuminhyoumadoguti.html",
+          "link_text": "戸籍・住民票などの取り扱い窓口一覧",
+          "score": 10,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/tenshutu.html",
+          "link_text": "転出",
+          "score": 8,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/yusotenshutu.html",
+          "link_text": "郵送による転出届",
+          "score": 8,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/koseki/todoke/oshirase/photo.html",
+          "link_text": "婚姻届提出の記念に写真を撮りませんか 結婚記念撮影スポットのご案内",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/tenshutu-yoyaku_pc-smartphone.html",
+          "link_text": "パソコン・スマートフォンから住民異動届の窓口予約",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/topics/guide.html",
+          "link_text": "",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/tetsuzuki/index.html",
+          "link_text": "よくある手続き",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/sangyo/other/zentoshin_joho.html",
+          "link_text": "全東信の破産手続き開始に係る情報提供について",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.ota.tokyo.jp/kuseijoho/shiraberu/index.html",
+          "link_text": "大田区くらしのガイド",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 9,
+        "never_shown": 15,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "世田谷区",
+      "municipality_id": "setagaya",
+      "entries": [
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html",
+          "link_text": "戸籍・住民登録",
+          "score": 14,
+          "hops": 1,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02233/48.html",
+          "link_text": "引越し手続きを行う窓口（くみん窓口・出張所）の混雑状況を確認できます",
+          "score": 13,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02312/18274.html",
+          "link_text": "お引越し手続きのご案内（総合支所くみん窓口）",
+          "score": 13,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02233/84.html",
+          "link_text": "転入・転居届に伴う関連手続きの案内について",
+          "score": 13,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11660.html",
+          "link_text": "戸籍",
+          "score": 11,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11661.html",
+          "link_text": "住民登録",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12307.html",
+          "link_text": "住所や世帯を変更したときの届け出",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11664.html",
+          "link_text": "外国人の方の手続き",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12308.html",
+          "link_text": "住民票の写し等の交付",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12309.html",
+          "link_text": "住民票コード",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/12830.html",
+          "link_text": "住民票の変更の届け出",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/index.html",
+          "link_text": "住宅・引っ越し",
+          "score": 10,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/11524.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/15709.html",
+          "link_text": "引越し",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02053/29211.html",
+          "link_text": "転入される外国人の方への住民税のご案内について",
+          "score": 10,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11665.html",
+          "link_text": "コンビニ交付",
+          "score": 8,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11662.html",
+          "link_text": "印鑑登録",
+          "score": 8,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/category/11663.html",
+          "link_text": "住民基本台帳ネットワークシステム・公的個人認証",
+          "score": 8,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02233/57.html",
+          "link_text": "戸籍届出の時間外受付窓口",
+          "score": 6,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02233/58.html",
+          "link_text": "戸籍の届出",
+          "score": 6,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/setagayachiiki/taishidou/index.html",
+          "link_text": "太子堂地区",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/11535.html",
+          "link_text": "ごみ・リサイクル",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/02233/33729.html",
+          "link_text": "9月のくみん窓口戸籍担当（区民課戸籍係）の混雑予想について",
+          "score": 3,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/15710.html",
+          "link_text": "住民票の変更の届け出",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.setagaya.lg.jp/lifescene/juutaku/15713.html",
+          "link_text": "その他の届出",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 15,
+        "never_shown": 9,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "渋谷区",
+      "municipality_id": "shibuya",
+      "entries": [
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu.html",
+          "link_text": "転入届",
+          "score": 36,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tennyu_kaigai.html",
+          "link_text": "国外転入届（国外から渋谷区へ）",
+          "score": 36,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/f_t_tennyu.html",
+          "link_text": "転入届（外国人住民）",
+          "score": 32,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/out_postal_fuki.html",
+          "link_text": "転入届の特例による転入",
+          "score": 32,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenkyo.html",
+          "link_text": "転居届（渋谷区内の引っ越し）",
+          "score": 22,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/",
+          "link_text": "住所の異動",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/koseki/koseki-todokede/",
+          "link_text": "戸籍の届出",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/juminzei/todokede/",
+          "link_text": "手続き・届出",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/koseki/koseki-todokede/koseki_todoke.html",
+          "link_text": "戸籍の届出・証明",
+          "score": 18,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/",
+          "link_text": "住民票・戸籍",
+          "score": 14,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/contents/case/hikkoshi.html",
+          "link_text": "引っ越し",
+          "score": 14,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/nenkin/shikaku-menjo/nenkin_tetsuzuki_todokede.html",
+          "link_text": "国民年金（手続き・届出）",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/nimpu-info/tennyuu_ninpu.html",
+          "link_text": "渋谷区へ転入した妊婦の皆さまへ",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/mynumber/mynumber-tsuchi/mynumber_keizokuriyou.html",
+          "link_text": "マイナンバーカードの継続利用について（他区市町村からの転入の場合）",
+          "score": 14,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu.html",
+          "link_text": "転出届（渋谷区から区外へ）",
+          "score": 12,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/ido/t_tenshutu_kaigai.html",
+          "link_text": "国外転出届（渋谷区から国外へ）",
+          "score": 12,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/jumin/utsushi/",
+          "link_text": "住民票の写しの請求・閲覧",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/gaikokujin/jumin/",
+          "link_text": "外国人住民の手続き",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/contents/case/kyouiku.html",
+          "link_text": "入学・転入学",
+          "score": 10,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/mynumber/mynumber-seido/mynumber_houjinno.html",
+          "link_text": "9000020131130",
+          "score": 8,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/shisetsu/kuyakusho/kuyakusho/shintyousha.html",
+          "link_text": "暮らしの手続きのフロア（庁舎3階）住民戸籍課",
+          "score": 6,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/kifu/kifu/furusatonozei.html",
+          "link_text": "ふるさと納税",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/gomi_sodai.html",
+          "link_text": "粗大ごみ",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kodomo/gakko-kyoiku/nyugaku-tennyu-shugaku/tetsuduki_g.html",
+          "link_text": "小中学校",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shibuya.tokyo.jp/kurashi/ininjo/kakunin/inin.html",
+          "link_text": "委任状",
+          "score": 4,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 10,
+        "never_shown": 14,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "品川区",
+      "municipality_id": "shinagawa",
+      "entries": [
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/tennyu20241020.html",
+          "link_text": "● 転入届の詳細ページ",
+          "score": 28,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/20220309142208.html",
+          "link_text": "【団体での国外からの転入】団体で国外から品川区への転入届を行う方へ",
+          "score": 24,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/procedure-koseki-todokede/index.html",
+          "link_text": "21_戸籍の届出",
+          "score": 14,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/20250206184722.html",
+          "link_text": "100_【引越しの際にご活用ください】手続きチェックシートについて",
+          "score": 13,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/procedure-koseki-todokede/20200401165504.html",
+          "link_text": "戸籍届書の様式（婚姻届・出生届・転籍届など6種類）がホームページからダウンロードできるようになりました",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/procedure-koseki-todokede/20210521162937.html",
+          "link_text": "9999_富士通Japan（株）と共同で実施した戸籍電子書籍AI検索サービスの実証実験の結果について",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/procedure-koseki-todokede/20200315145439.html",
+          "link_text": "9999_離婚の際に称していた氏を称する届（戸籍法77条の2の届）",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/procedure-koseki-todokede/20190225103857.html",
+          "link_text": "品川区オリジナル出生届（記念用）を配付しています",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/procedure-koseki-todokede/hpg000001411.html",
+          "link_text": "10_出生届",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/index.html",
+          "link_text": "戸籍",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/procedure-koseki-syoumeisyo/index.html",
+          "link_text": "11_戸籍等証明書",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-koseki/hpg000030707.html",
+          "link_text": "71_委任状（戸籍関連）",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/index.html",
+          "link_text": "住民登録についての届け出",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/index.html",
+          "link_text": "手続き・届出",
+          "score": 6,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/mynumbercard/202401268888.html",
+          "link_text": "マイナンバーカードに関する各手続きについて（紛失、暗証番号ロック、電子証明書、住所・氏名変更など）",
+          "score": 6,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/index.html",
+          "link_text": "21_住民登録・印鑑登録・住民票の写し等",
+          "score": 6,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-shinagawakuyakusyo/index.html",
+          "link_text": "品川区役所3階 戸籍住民課 戸籍住民担当（住民異動）",
+          "score": 6,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-zidoucenter/index.html",
+          "link_text": "児童センター",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kenkou/seinenkoukenseido/index.html",
+          "link_text": "成年後見制度",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/procedure-zyuumin_inkan-zyuumin-todoke/20241222kyuseiheiki.html",
+          "link_text": "「旧氏および旧氏の振り仮名記載について」",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/bosai/index.html",
+          "link_text": "防災くらしの安全",
+          "score": 3,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/kenkou/kenkou-eisei/index.html",
+          "link_text": "くらしの衛生",
+          "score": 3,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/mynumbercard/20231121164934.html",
+          "link_text": "「手続きできない日曜日に関するページ」",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/procedure/procedure-zyuumin_inkan/procedure-zyuumin_inkan-zyuumin/index.html",
+          "link_text": "住民登録",
+          "score": 3,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinagawa.tokyo.jp/ct/pdf/20241025kokugaitennyu_1.pdf",
+          "link_text": "本人確認書類(PDF : 138KB)",
+          "score": 2,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        }
+      ],
+      "counts": {
+        "read": 1,
+        "shown_not_chosen": 12,
+        "never_shown": 11,
+        "non_html": 1,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "新宿区",
+      "municipality_id": "shinjuku",
+      "entries": [
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
+          "link_text": "引越しで住所を異動される方は、窓口での「正確な住所の届出」が必要です",
+          "score": 27,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000001_00002.html",
+          "link_text": "3・4・5月期における転入・転出の手続きについて",
+          "score": 21,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/kurashi00_100002.html",
+          "link_text": "住民票等の証明・住所変更の届出",
+          "score": 17,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00011.html",
+          "link_text": "スマートフォン等から住所変更の届出書・住民票等の請求書の作成ができます",
+          "score": 17,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_002019.html",
+          "link_text": "戸籍住民課各窓口受付状況",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
+          "link_text": "住民票等の証明",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/index.html",
+          "link_text": "戸籍・住民票・印鑑登録・マイナンバーカード",
+          "score": 10,
+          "hops": 1,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/living_03.html",
+          "link_text": "引越し",
+          "score": 10,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki02_000001_00018.html",
+          "link_text": "",
+          "score": 8,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://twitter.com/share?url=https://www.city.shinjuku.lg.jp/todokede/koseki02_000001_00018.html",
+          "link_text": "Tweet",
+          "score": 8,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.city.shinjuku.lg.jp%2Ftodokede%2Fkoseki02_000001_00018.html&src=sdkpreparse",
+          "link_text": "シェアする",
+          "score": 8,
+          "hops": 2,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki02_000006.html",
+          "link_text": "こちら",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://twitter.com/share?url=https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00007.html",
+          "link_text": "Tweet",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.city.shinjuku.lg.jp%2Ftodokede%2Fkoseki01_000001_00007.html&src=sdkpreparse",
+          "link_text": "シェアする",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://twitter.com/share?url=https://www.city.shinjuku.lg.jp/todokede/koseki03_000001_00002.html",
+          "link_text": "Tweet",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.city.shinjuku.lg.jp%2Ftodokede%2Fkoseki03_000001_00002.html&src=sdkpreparse",
+          "link_text": "シェアする",
+          "score": 8,
+          "hops": 3,
+          "mark": "unfetchable",
+          "reason": "取得できていない"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/todokede/index01.html",
+          "link_text": "住所変更の届け出",
+          "score": 7,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/fukushi/kurashi00_100013.html",
+          "link_text": "福祉・介護",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/seikatsu/kurashi00_100025.html",
+          "link_text": "ごみ・資源・環境",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/seikatsu/kurashi00_100039.html",
+          "link_text": "道路・交通・自転車",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/chiiki/kurashi00_100046.html",
+          "link_text": "地域共生・区民活動",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/seikatsu/kurashi00_100055.html",
+          "link_text": "消費生活・相談",
+          "score": 4,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/living.html",
+          "link_text": "くらし",
+          "score": 3,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/jigyo/index03.html",
+          "link_text": "事業別申請・手続き",
+          "score": 3,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.shinjuku.lg.jp/formalities_info.html",
+          "link_text": "お手続きの情報・窓口案内",
+          "score": 3,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 14,
+        "never_shown": 3,
+        "non_html": 0,
+        "unfetchable": 6
+      }
+    },
+    {
+      "municipality": "杉並区",
+      "municipality_id": "suginami",
+      "entries": [
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s018/540.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s018/996.html",
+          "link_text": null,
+          "score": null,
+          "hops": null,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tennyuu/index.html",
+          "link_text": "転入届：杉並区外から杉並区に住所を変更したとき",
+          "score": 39,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/index.html",
+          "link_text": "引越しの手続き（転入・転出など）",
+          "score": 35,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tetsuzuki/index.html",
+          "link_text": "お引越しをされる方へ必要な手続き",
+          "score": 25,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekitodoke/index.html",
+          "link_text": "戸籍の届出（出生、死亡など）",
+          "score": 18,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tenkyo/index.html",
+          "link_text": "転居届：杉並区内で住所を変更するとき",
+          "score": 15,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/index.html",
+          "link_text": "戸籍に関する各種証明書",
+          "score": 15,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/hikkoshi/tenshutsu/index.html",
+          "link_text": "転出届：杉並区から杉並区外へ住所を変更するとき",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/kunai/index.html",
+          "link_text": "戸籍証明の窓口申請（本籍地が杉並区の方）",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/kugai/index.html",
+          "link_text": "戸籍証明の窓口申請（本籍地が杉並区外の方）",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/kosekishoumei/yuusou/index.html",
+          "link_text": "戸籍証明の郵送申請",
+          "score": 15,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/hikkoshi/index.html",
+          "link_text": "引っ越し",
+          "score": 14,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/mynumberseido/index.html",
+          "link_text": "マイナンバー（社会保障・税番号）制度",
+          "score": 12,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/shoumei/index.html",
+          "link_text": "住民票に関する各種証明書",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/index.html",
+          "link_text": "届出・証明",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/madoguchi/index.html",
+          "link_text": "その他の手続き・お知らせ",
+          "score": 11,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
+          "link_text": "くらし・手続き",
+          "score": 10,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/koseki_zyuuminhyou/index.html",
+          "link_text": "戸籍・住民票",
+          "score": 10,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s018/536.html",
+          "link_text": "杉並区に転入する方へ",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/todokede/inkan/index.html",
+          "link_text": "印鑑登録・印鑑登録証明書",
+          "score": 8,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/gomi/seisougomi/index.html",
+          "link_text": "ごみ・リサイクル",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kurashi/kakushusoudan/index.html",
+          "link_text": "相談窓口",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/kusei/kouhou/kouhou/benricho/index.html",
+          "link_text": "すぎなみくらしのガイド",
+          "score": 3,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s018/10722.html",
+          "link_text": "転居届：本人、同じ世帯の方が手続きをするとき",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s018/10723.html",
+          "link_text": "転居届：代理人が手続きをするとき",
+          "score": 3,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.suginami.tokyo.jp/s018/1007.html",
+          "link_text": "住民票やマイナンバーカードなどへの旧氏（旧姓）併記",
+          "score": 3,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 7,
+        "never_shown": 17,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "墨田区",
+      "municipality_id": "sumida",
+      "entries": [
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/densi/douitsu_setai.html",
+          "link_text": "転入届・転居届と併せて行う「電子証明書の発行」の同一世帯員による代理手続きについて",
+          "score": 27,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+          "link_text": "引越しワンストップサービスが始まりました（墨田区から転出の場合、来庁不要に）",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
+          "link_text": "戸籍の届出・証明",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
+          "link_text": "戸籍の届出",
+          "score": 18,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/index.html",
+          "link_text": "住民登録の届出・証明（住民票）・閲覧",
+          "score": 17,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
+          "link_text": "戸籍の証明",
+          "score": 15,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/index.html",
+          "link_text": "戸籍・住民票",
+          "score": 14,
+          "hops": 1,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
+          "link_text": "住民登録の届出",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/tetudukihayami.html",
+          "link_text": "【窓口課】（届出・登録・証明）郵送・電子申請（オンライン）等でできる手続一覧",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/konzatsu-kanwa.html",
+          "link_text": "区役所1階及び2階窓口（住民登録やマイナンバーカード等）の混雑緩和対策について",
+          "score": 11,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/mado-yuso_taisaku.html",
+          "link_text": "転出届出書（郵送用）",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
+          "link_text": "住民票等の証明書",
+          "score": 11,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurasi_guide/hikkosi.html",
+          "link_text": "引越し",
+          "score": 10,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/uketukezikan-henkou.html",
+          "link_text": "令和7年12月1日から墨田区役所庁舎一部窓口の受付時間を変更しました（平日は午前9時から午後4時30分までに変更ほか）",
+          "score": 8,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/zyuutau_zyosei_seido.html",
+          "link_text": "住宅に関する助成制度",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/zyuutaku/jyutaku_shien/kasituke_seido/index.html",
+          "link_text": "住宅に関する貸付制度",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/index.html",
+          "link_text": "受付時間・混雑状況",
+          "score": 8,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/uk/suiyou_mado.html",
+          "link_text": "水曜延長窓口 ※",
+          "score": 8,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/index.html",
+          "link_text": "くらし",
+          "score": 7,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/kenkouhoken/kokuminkenkouhoken/hokensyou/kokuhokisaihenkou.html",
+          "link_text": "国民健康保険証の記載内容に変更があったときの手続き",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/uketori/mainayoyaku.html",
+          "link_text": "【予約をお願いします】マイナンバーカードに関する手続きの予約について（受け取り・電子証明書に関する手続き）",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/mynumber/index.html",
+          "link_text": "マイナンバー",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/okuyami/okuyami.html",
+          "link_text": "おくやみコーナー・ ハンドブック",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/zeikin/index.html",
+          "link_text": "税金",
+          "score": 4,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.sumida.lg.jp/kurashi/kokuminnenkin/index.html",
+          "link_text": "国民年金",
+          "score": 4,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        }
+      ],
+      "counts": {
+        "read": 2,
+        "shown_not_chosen": 19,
+        "never_shown": 4,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "台東区",
+      "municipality_id": "taito",
+      "entries": [
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tennyu-inin-denshi.docx",
+          "link_text": "・「委任状 転入届（台東区外からのお引越し）、電子証明書の発行」(ワード:29KB)",
+          "score": 46,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.html",
+          "link_text": "転入届、転居届、海外転出届に伴う電子証明書の発行手続きについて",
+          "score": 39,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/onraintennyu.html",
+          "link_text": "オンライン(マイナポータル等)で転出届をされた方の転入手続き・オンラインからの転居予定連絡",
+          "score": 29,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/tenkyo-inin-denshi.docx",
+          "link_text": "・「委任状 転居届（台東区内のお引越し）、電子証明書の発行」(ワード:29KB)",
+          "score": 26,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tennyu-tenkyo-denshi.files/kaigai-inin-denshi.docx",
+          "link_text": "・「委任状 海外転出届（海外へのお引越し）、電子証明書の発行」（日本国籍の方）(ワード:29KB)",
+          "score": 26,
+          "hops": 3,
+          "mark": "non_html",
+          "reason": "PDF/Word/Excel のため弾いた"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
+          "link_text": "転入したとき",
+          "score": 22,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/index.html",
+          "link_text": "転入・転居・転出について",
+          "score": 22,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/jumintoroku.html",
+          "link_text": "住民登録",
+          "score": 19,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/honninkakunin.html",
+          "link_text": "戸籍・住民登録関係の請求や届出の際には本人確認書類の提示が必要です",
+          "score": 17,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kouikikoufu_koseki.html",
+          "link_text": "戸籍の広域交付",
+          "score": 15,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/index.html",
+          "link_text": "戸籍",
+          "score": 15,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/index.html",
+          "link_text": "戸籍に関する証明",
+          "score": 15,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/index.html",
+          "link_text": "戸籍に関する証明の取得について",
+          "score": 15,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kosekiyuusouseikyuu.html",
+          "link_text": "戸籍の証明書を郵送で取得する",
+          "score": 15,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+          "link_text": "転出するとき（マイナンバーカードを利用したオンラインでの手続き）",
+          "score": 15,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenshutsumado.html",
+          "link_text": "転出するとき（オンライン以外での手続き）",
+          "score": 15,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/lifeevent/hikkoshi.html",
+          "link_text": "引越し",
+          "score": 14,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/index.html",
+          "link_text": "戸籍・住民登録等",
+          "score": 14,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp//kurashi/todokede/jyuminhyo/hikkoshi/tensyutsuonline.html",
+          "link_text": "",
+          "score": 12,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/tenkyo.html",
+          "link_text": "転居するとき",
+          "score": 12,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/setaihennkou.html",
+          "link_text": "世帯に変更があったとき",
+          "score": 12,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/hikkoshi/kuminjimusho.html",
+          "link_text": "最寄の区民事務所・分室をご活用ください",
+          "score": 12,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
+          "link_text": "",
+          "score": 8,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/mado-haishin.html",
+          "link_text": "区役所1階の混雑状況",
+          "score": 8,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.taito.lg.jp/jigyosha/todokede/index.html",
+          "link_text": "区・保健所への申請と届出",
+          "score": 7,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 7,
+        "never_shown": 12,
+        "non_html": 3,
+        "unfetchable": 0
+      }
+    },
+    {
+      "municipality": "豊島区",
+      "municipality_id": "toshima",
+      "entries": [
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tennyu/index.html",
+          "link_text": "転入届：豊島区外から豊島区に住所を変更したとき",
+          "score": 31,
+          "hops": 2,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/index.html",
+          "link_text": "住所や世帯を変更したときの届出（転入届・転出届など）",
+          "score": 30,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/tennyu/portal.html",
+          "link_text": "転入届：マイナポータルを利用したオンライン申請をしたとき",
+          "score": 28,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000320.html",
+          "link_text": "転入届：本人または新しく同じ世帯になる方が手続きをするとき",
+          "score": 27,
+          "hops": 3,
+          "mark": "read",
+          "reason": "読解に渡した"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000319.html",
+          "link_text": "転入届：代理人が手続きをするとき",
+          "score": 27,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/j-net/026522.html",
+          "link_text": "転入・転出の特例（住民基本台帳カードまたはマイナンバーカードを利用した転入届・転出届）",
+          "score": 24,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/1809081634.html",
+          "link_text": "[申請書ダウンロード]住民異動届出書（転入・転居・転出届）",
+          "score": 20,
+          "hops": 2,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/juminhyo/index.html",
+          "link_text": "住民票に関する各種証明書",
+          "score": 15,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/index.html",
+          "link_text": "届出・証明・登録（戸籍・住民票など）",
+          "score": 13,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/koseki/index.html",
+          "link_text": "戸籍に関する各種証明書",
+          "score": 11,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/todokede/index.html",
+          "link_text": "戸籍届出",
+          "score": 10,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/juminkihondaichocard/index.html",
+          "link_text": "住民基本台帳カード",
+          "score": 8,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/096/tetsuzuki/todokede/kiroku/000337.html",
+          "link_text": "住居表示の届出",
+          "score": 7,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tenshutsu/index.html",
+          "link_text": "転出届：豊島区から豊島区外へ住所を変更するとき",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/kiroku/tenkyo/index.html",
+          "link_text": "転居届：豊島区内で住所を変更するとき",
+          "score": 7,
+          "hops": 3,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/todokede/sonota/index.html",
+          "link_text": "その他の手続きのご案内",
+          "score": 7,
+          "hops": 3,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzuki/index.html",
+          "link_text": "手続き・届出",
+          "score": 6,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kurashi/index.html",
+          "link_text": "暮らし・地域",
+          "score": 4,
+          "hops": 1,
+          "mark": "shown_not_chosen",
+          "reason": "リンク一覧に載せたが開かなかった（1ページあたり上限2本）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kurashi/gomi/index.html",
+          "link_text": "ごみ・リサイクル",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/009383.html",
+          "link_text": "粗大ごみ",
+          "score": 4,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/013329.html",
+          "link_text": "資源・ごみ パンフレット",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kurashi/gomi/katei/index.html",
+          "link_text": "家庭からでる資源・ごみ",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kurashi/ese/index.html",
+          "link_text": "暮らしの衛生(食品・環境)",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/kurashi/ese/oshirase/index.html",
+          "link_text": "お知らせ",
+          "score": 4,
+          "hops": 2,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        },
+        {
+          "url": "https://www.city.toshima.lg.jp/tetsuzukinavi/index.php",
+          "link_text": "手続きナビ",
+          "score": 3,
+          "hops": 1,
+          "mark": "never_shown",
+          "reason": "リンク一覧にも載せていない（こちら側の取りこぼし）"
+        }
+      ],
+      "counts": {
+        "read": 3,
+        "shown_not_chosen": 9,
+        "never_shown": 13,
+        "non_html": 0,
+        "unfetchable": 0
+      }
+    }
+  ]
+}
