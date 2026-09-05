@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <base href="../">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>調べ方とデータ — 結果の見どころ・判定の基準・使っていいデータ | AI読（アイドク）</title>
@@ -26,7 +27,7 @@
         <ul class="menu__list">
           <li><a href="index.html">住民の方 — 自分の区を調べる</a></li>
           <li><a href="fix.html">自治体の方 — 自分の区を直す</a></li>
-          <li><a href="data.html" aria-current="page">調べ方とデータ</a></li>
+          <li><a href="reference/data.html" aria-current="page">調べ方とデータ</a></li>
         </ul>
       </details>
     </div>
@@ -46,14 +47,14 @@
   <section aria-labelledby="more-heading">
     <h2 class="dads-heading" data-size="l" id="more-heading">結果をくわしく見る</h2>
     <ul class="datalist">
-      <li><a class="dads-link" href="how.html">この数字はどう作られたか</a> — 取得・読解・採点の3層、測定条件、対照実験</li>
-      <li><a class="dads-link" href="archive.html">調査データ一覧</a> — いつ何を測ったか。回ごとの中身とファイル</li>
-      <li><a class="dads-link" href="skill.html">自分のAIに持たせる</a> — 実測を使って推測を止めるスキル（住民の方向け）</li>
+      <li><a class="dads-link" href="reference/how.html">この数字はどう作られたか</a> — 取得・読解・採点の3層、測定条件、対照実験</li>
+      <li><a class="dads-link" href="reference/archive.html">調査データ一覧</a> — いつ何を測ったか。回ごとの中身とファイル</li>
+      <li><a class="dads-link" href="reference/skill.html">自分のAIに持たせる</a> — 実測を使って推測を止めるスキル（住民の方向け）</li>
       <li><a class="dads-link" href="board.html">23区の一覧</a> — 23区 × 3手続きを1枚に。押すとその区の結果が出ます</li>
-      <li><a class="dads-link" href="journey.html">AIの道のり</a> — AIがトップページからどのリンクを選び、どこで力尽きたか</li>
-      <li><a class="dads-link" href="trends.html">見張りと推移</a> — 毎朝の見張りが見つけた変化と、点数の履歴</li>
-      <li><a class="dads-link" href="barrier.html">AIがつまずいた段差</a> — 失敗の型と、直したときの効果</li>
-      <li><a class="dads-link" href="demand.html">AIが取れずに帰ったもの</a> — AI窓口が記録する「来たが取れなかった」</li>
+      <li><a class="dads-link" href="reference/journey.html">AIの道のり</a> — AIがトップページからどのリンクを選び、どこで力尽きたか</li>
+      <li><a class="dads-link" href="reference/trends.html">見張りと推移</a> — 毎朝の見張りが見つけた変化と、点数の履歴</li>
+      <li><a class="dads-link" href="reference/barrier.html">AIがつまずいた段差</a> — 失敗の型と、直したときの効果</li>
+      <li><a class="dads-link" href="reference/demand.html">AIが取れずに帰ったもの</a> — AI窓口が記録する「来たが取れなかった」</li>
     </ul>
   </section>
 
@@ -79,7 +80,7 @@
 
     <p class="section-note">
       AI窓口が集める「AIが取れずに帰ったもの」は
-      <a class="dads-link" href="demand.html">こちら</a>。
+      <a class="dads-link" href="reference/demand.html">こちら</a>。
       <strong>まだ本物のAIエージェントの来訪は0件</strong>で、画面の数字は見本です。
     </p>
 
@@ -136,8 +137,8 @@
   <div class="wrap">
     <p>調査・実装: 正直パンマン（個人）。<strong>行政機関の公式発表ではありません。</strong></p>
     <p>判定基準（必須要素）を公開しています。誤りの指摘を歓迎します → <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku">GitHub</a></p>
-    <p>いつ何を測ったかは <a class="dads-link" href="archive.html">調査データ一覧</a> に、点数の作られ方は <a class="dads-link" href="how.html">この数字はどう作られたか</a> にあります。</p>
-    <p>使ったオープンデータ: 東京都住民基本台帳人口移動報告／東京都区市町村清掃事業年報／『歴史的行政区域データセットβ版』（CODH作成） → <a class="dads-link" href="data.html#opendata-heading">出典と使い道</a></p>
+    <p>いつ何を測ったかは <a class="dads-link" href="reference/archive.html">調査データ一覧</a> に、点数の作られ方は <a class="dads-link" href="reference/how.html">この数字はどう作られたか</a> にあります。</p>
+    <p>使ったオープンデータ: 東京都住民基本台帳人口移動報告／東京都区市町村清掃事業年報／『歴史的行政区域データセットβ版』（CODH作成） → <a class="dads-link" href="reference/data.html#opendata-heading">出典と使い道</a></p>
     <p class="site-footer__credit">画面のスタイルに <a class="dads-link" href="https://design.digital.go.jp/">デジタル庁デザインシステム</a> のコードスニペット（MIT）を利用しています。デジタル庁が本調査を提供・監修しているものではありません。</p>
     <p class="site-footer__generated">データ生成日: <span id="generated-at"></span></p>
   </div>

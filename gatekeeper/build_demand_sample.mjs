@@ -1,4 +1,4 @@
-// 画面（web/demand.html）に出す**見本**のデータを作る。
+// 画面（web/reference/demand.html）に出す**見本**のデータを作る。
 //
 //   node gatekeeper/build_demand_sample.mjs
 //

@@ -1,0 +1,38 @@
+# 使う画面3枚に絞る
+
+Status: 実装済み（2026-09-05）
+決定の理由: [decisions/three-screens.md](decisions/three-screens.md)
+
+## やること
+
+1. 読み物8枚（`how` `data` `archive` `journey` `barrier` `demand` `trends` `skill`）を
+   `web/reference/` へ `git mv` する
+2. 下げた8枚の `<head>` 先頭に `<base href="../">` を入れる
+3. 上の階層から読み物へのリンクを `reference/…` にする
+   （`index.html` / `board.html` / `fix.html` のメニューとフッター、`assets/app.js`、`assets/fix.js`）
+4. テストを新しい形に合わせる（`test_askai.mjs` / `test_pipeline.mjs`）
+5. 場所を書いている文書を直す（`README.md` / `START-HERE.md` とコード中のコメント）
+
+## 完了の条件
+
+- `web/test_*.mjs` 12本と `gatekeeper/test_*.mjs` 4本が緑
+- Python のテストが緑（`.` 498 / `analysis` 90 / `crawler` 218）
+- `ruff check .` と `npx jscpd .` が緑
+- ブラウザで `index.html` と `reference/how.html` を開き、404 が1本も出ない
+
+## やらないこと
+
+- **データは分けない。** reference/ からしか読まれないのは16本中4本だけ。
+  理由は決定ファイルに書いた
+- **読み物を消さない。** 移すだけ
+
+## Progress
+
+<!-- 追記のみ。1ステップ1行。失敗も書く。書き直さない -->
+
+- 2026-09-05 ①②③ 実施（前セッション）。`<base href="../">` 方式を採用
+- 2026-09-05 テスト2本が旧レイアウト前提で落ちた
+  （`test_askai` の「6枚以上」、`test_pipeline` の `./data.html` 直読み）→ ④で直した
+- 2026-09-05 ⑤ `README` / `START-HERE` / `export_journey.py` / `build_demand_sample.mjs` /
+  `lookup.js` / `app.js` のコメントを `reference/` に直した
+- 2026-09-05 完了条件を全部確認。ブラウザは `index.html` 41本・`reference/how.html` 14本とも 200

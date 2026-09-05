@@ -64,7 +64,7 @@ Claude Code が無い環境では、23区の実測結果のみ返ります。
 |---|---|
 | `POST /ask` | [NLWeb](https://nlweb.ai/docs/specification) 準拠。`answer` / `failure` / `elicitation` を規格どおり返す |
 | `POST /mcp` | MCP（JSON-RPC 2.0）。ツールは NLWeb 仕様の `ask` 1本 |
-| `web/demand.html` | 集めたものの画面「AIが取れずに帰ったもの」 |
+| `web/reference/demand.html` | 集めたものの画面「AIが取れずに帰ったもの」 |
 
 **主役のデータは「取れなかった」の方**。サーバーログには「来た」しか残らず、
 **「来たが答えを見つけられずに帰った」はどこにも記録されていない**。

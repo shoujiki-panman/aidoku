@@ -89,7 +89,7 @@
   // 住民に見せる言い方。点数（7/12）と棒グラフはここには出さない。
   // ★本人の指摘:「住民側にこれいらないでしょ。一切説明もない」。
   //   住民が知りたいのは「自分のAIが何を知れないか」であって、区の成績ではない。
-  //   点数と推移は archive.html（調査データ一覧）に置く。
+  //   点数と推移は reference/archive.html（調査データ一覧）に置く。
   function missingSummary(missing, procedures, fieldsPerProc) {
     const m = Number(missing);
     const p = Number(procedures);
