@@ -1,6 +1,6 @@
 """プロンプトを変えたら、AIはリンクを開くようになるか（案A の A/B）。
 
-**なぜ要るか**: `analysis/never_looked.py` が示したとおり、読み取り器は
+**なぜ要るか**: `analysis/probes/never_looked.py` が示したとおり、読み取り器は
 **24自治体中14で、リンクを1本も開かずに「記載なし」と答えている**。
 上限（`MAX_FOLLOW = 2`）には当たっていないので、上限の問題ではない。
 
@@ -16,7 +16,7 @@
 **言えること**: プロンプトを変えるとAIがリンクを開くようになるか
 **言えないこと**: 開いた先で項目が取れるか（それは本測定の通し直しで見る）
 
-    python3 analysis/try_follow_prompt.py -p jidouteate -m setagaya -m sumida
+    python3 analysis/probes/try_follow_prompt.py -p jidouteate -m setagaya -m sumida
 """
 
 from __future__ import annotations
@@ -27,7 +27,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 OUT_DIR = ROOT / "analysis" / "out"
 
 sys.path.insert(0, str(ROOT / "crawler"))

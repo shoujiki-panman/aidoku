@@ -58,7 +58,7 @@ python3 analysis/export_dashboard.py -p <手続き> --out web/data/scores-<手�
   現在地は `analysis/status.py`。手で数えて一度間違えている（29→21）
 - **間違った結果は消さない** → `analysis/out/known-wrong/`。判定には使わない
 - **作品本体は標準ライブラリのみ。** 外部の変換器（anydoc）は
-  `analysis/compare_readers.py` の検算だけ → `plans/decisions/external-reader.md`
+  `analysis/probes/compare_readers.py` の検算だけ → `plans/decisions/external-reader.md`
 - 作業の記録は `plans/<名前>.md` の `## Progress` に**追記のみ**
 
 ## よく使う道具
@@ -69,5 +69,5 @@ python3 analysis/export_dashboard.py -p <手続き> --out web/data/scores-<手�
 | 虱潰し | `python3 analysis/sweep.py -p <手続き>` |
 | 2回の測定の差 | `python3 analysis/compare_runs.py -p <手続き>` |
 | 壊れたキャッシュを取り直す | `python3 crawler/refetch_broken.py --check` |
-| 読み手の検算（要 .venv） | `.venv/bin/python analysis/compare_readers.py` |
+| 読み手の検算（要 .venv） | `.venv/bin/python analysis/probes/compare_readers.py` |
 | 全テスト | `python3 -m unittest discover -s . -p "test_*.py"` |

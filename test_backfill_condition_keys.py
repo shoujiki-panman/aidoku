@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent / "analysis"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "analysis" / "probes"))
 from backfill_condition_keys import (  # noqa: E402
     fill,
     index_stale_keys,

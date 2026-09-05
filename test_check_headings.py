@@ -1,4 +1,4 @@
-"""`analysis/check_headings.py` — 見出しで中身にたどれるか（2.4.6 の対応づけ）。
+"""`analysis/probes/check_headings.py` — 見出しで中身にたどれるか（2.4.6 の対応づけ）。
 
 **適合試験ではない。** 2.4.6 は「主題又は目的を説明している」であって、
 説明できているかは人が読んで決める。ここで数えるのは機械で確実に言える2つだけ。
@@ -17,7 +17,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "analysis"))
+sys.path.insert(0, str(ROOT / "analysis" / "probes"))
 from check_headings import GENERIC, marks, page_headings, read_pages, summarize  # noqa: E402
 
 

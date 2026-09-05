@@ -11,7 +11,7 @@
 
 **LLMは呼ばない**（探索結果と抽出結果を読むだけ）。判定にも点数にも使わない。
 
-    python3 analysis/check_host.py
+    python3 analysis/probes/check_host.py
 """
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ import urllib.parse
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 OUT_DIR = ROOT / "analysis" / "out"
 
 VERSION = "check-host-0.1"

@@ -19,8 +19,8 @@
 ★最初これを1つの再帰探索でやろうとして、自治体ごとの `runs`（`model` しか持たない）まで
   measurement ブロックとして拾った。**形を決め打ちしないことが常に安全とは限らない。**
 
-    python3 analysis/backfill_condition_keys.py --check   # 数えるだけ（CI用・不足があれば非0で終わる）
-    python3 analysis/backfill_condition_keys.py           # 実際に足す
+    python3 analysis/probes/backfill_condition_keys.py --check   # 数えるだけ（CI用・不足があれば非0で終わる）
+    python3 analysis/probes/backfill_condition_keys.py           # 実際に足す
 """
 
 from __future__ import annotations
@@ -30,7 +30,7 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT))
 from measurement import CONDITION_KEYS  # noqa: E402
 

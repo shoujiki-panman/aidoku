@@ -12,7 +12,7 @@
 **このスクリプトはLLMを呼ばない。** キャッシュ済みの本文を機械的に見るだけ。
 ここで手がかりが出た区は、**うちが読み落とした疑いが確定する。**
 
-    python3 analysis/check_unread.py --procedure tennyu --field 手数料
+    python3 analysis/probes/check_unread.py --procedure tennyu --field 手数料
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ import sys
 import urllib.parse
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 CACHE = ROOT / "crawler" / "cache"
 
 sys.path.insert(0, str(ROOT / "crawler"))

@@ -16,11 +16,11 @@
       中身が空の見出し           → 主題の説明になりようがない
 
 ★**「お知らせ」「その他」のような一般的な見出しは数えない。**
-  リンク題で同じことをやって間違えた（`analysis/check_link_text.py`）。
+  リンク題で同じことをやって間違えた（`analysis/probes/check_link_text.py`）。
   「相談窓口」「印鑑登録」を欠陥として73本数えたが、中身を見たら十分わかるものだった。
   **語の一般性で意味は測れない。** 参考値としてだけ出す。
 
-    python3 analysis/check_headings.py --procedure tennyu
+    python3 analysis/probes/check_headings.py --procedure tennyu
 """
 
 from __future__ import annotations
@@ -31,7 +31,7 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 OUT_DIR = ROOT / "analysis" / "out"
 
 sys.path.insert(0, str(ROOT / "crawler"))

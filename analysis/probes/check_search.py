@@ -15,7 +15,7 @@
 
 ★**判定に使わない。** 点数には入れない。次に何を作るかを決めるための材料。
 
-    python3 analysis/check_search.py
+    python3 analysis/probes/check_search.py
 """
 
 from __future__ import annotations
@@ -29,7 +29,7 @@ import sys
 import urllib.parse
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 CACHE = ROOT / "crawler" / "cache"
 OUT_DIR = ROOT / "analysis" / "out"
 

@@ -6,8 +6,8 @@
 追記は冪等（同じ generated_at / checked_at は入らない）なので、
 何度流しても増えない。
 
-    python3 analysis/backfill_history.py            # 実際に書く
-    python3 analysis/backfill_history.py --dry-run  # 何が入るかだけ見る
+    python3 analysis/probes/backfill_history.py            # 実際に書く
+    python3 analysis/probes/backfill_history.py --dry-run  # 何が入るかだけ見る
 """
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(ROOT))
 from history import (  # noqa: E402
     SCORE_KEY,

@@ -10,7 +10,7 @@ AIを呼ばずに測る。採点済みページはキャッシュにあり、
 それが渡るようになれば、AIが辿れる可能性が出る。**点が上がるとは言っていない。**
 実際に読めるかは測り直さないと分からない。
 
-    python3 analysis/check_link_order.py
+    python3 analysis/probes/check_link_order.py
 """
 
 from __future__ import annotations
@@ -19,7 +19,7 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "crawler"))
 sys.path.insert(0, str(ROOT))
 from discover import score_link  # noqa: E402
