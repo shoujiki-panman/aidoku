@@ -75,7 +75,7 @@ node runtime_check.mjs
 ```
 
 - 聞き方は `POST /ask`（NLWeb準拠）と `POST /mcp`（MCP）の2つ
-- 集めたものの画面は [web/demand.html](web/demand.html)
+- 集めたものの画面は [web/reference/demand.html](web/reference/demand.html)
 - **本物のAIエージェントの来訪は現在0件**。画面の数字は見本（`"is_sample": true`）
 - テスト用の鍵を作り直したら wrangler dev を再起動する（**JWKSを1時間キャッシュする**）
 

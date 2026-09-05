@@ -585,7 +585,7 @@ function lookupCellRow(c) {
         ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
         ${nextStepForResident(c)}
         <p class="cell__more">
-          <a class="dads-link" href="journey.html?muni=${esc(c.muniId)}&proc=${esc(c.procId)}">AIがどう歩いたか</a>
+          <a class="dads-link" href="reference/journey.html?muni=${esc(c.muniId)}&proc=${esc(c.procId)}">AIがどう歩いたか</a>
         </p>
       </div>
     </details>
@@ -616,7 +616,7 @@ function renderLookup(res) {
     box.innerHTML = `
       <p class="lookup__title">${esc(res.muniName)}</p>
       <p class="lookup__sub">${via}</p>
-      <!-- 推移は trends.html に置く。ここに出すと、区を押した直後に
+      <!-- 推移は reference/trends.html に置く。ここに出すと、区を押した直後に
            「この差の原因は言えない」と日付が並んで、手続きを探す邪魔になる。 -->
       <p class="lookup__do">
         手続きを開くと、<strong>区の公式ページ</strong>と、読み取れなかった項目が出ます。

@@ -88,10 +88,10 @@ const LAYERS = [
 
 // --- 画面から行けること ---
 {
-  const data = readFileSync(new URL('./data.html', import.meta.url), 'utf8');
-  check('調べ方とデータから行ける', data.includes('how.html'));
+  const data = readFileSync(new URL('./reference/data.html', import.meta.url), 'utf8');
+  check('調べ方とデータから行ける', data.includes('reference/how.html'));
   const index = readFileSync(new URL('./index.html', import.meta.url), 'utf8');
-  check('住民の画面のフッターからも行ける', index.includes('how.html'));
+  check('住民の画面のフッターからも行ける', index.includes('reference/how.html'));
 }
 
 console.log(`\n  ${pass} PASS / ${fail} FAIL`);

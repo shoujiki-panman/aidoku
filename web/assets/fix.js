@@ -80,7 +80,7 @@
       <p class="fixcell__acts">
         ${fixes ? `<button type="button" class="dads-button fix-dl"
                    data-key="${esc(c.muniId)}/${esc(c.procId)}">この1枚を持ち帰る（.md）</button>` : ''}
-        <a class="dads-link" href="journey.html?muni=${esc(c.muniId)}&proc=${esc(c.procId)}">AIがどう歩いたか</a>
+        <a class="dads-link" href="reference/journey.html?muni=${esc(c.muniId)}&proc=${esc(c.procId)}">AIがどう歩いたか</a>
       </p>
     </section>`;
   }

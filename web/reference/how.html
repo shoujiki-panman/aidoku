@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <base href="../">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>調査データ一覧 — いつ、何を測ったか | AI読（アイドク）</title>
+<title>この数字はどう作られたか — 測り方の中身 | AI読（アイドク）</title>
 <meta name="description" content="AI読が実施した調査を、測った日ごとに並べた一覧。各回の手続き・自治体数・平均点と、そのときのファイルへのリンクを置いています。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,7 @@
         <ul class="menu__list">
           <li><a href="index.html">住民の方 — 自分の区を調べる</a></li>
           <li><a href="fix.html">自治体の方 — 自分の区を直す</a></li>
-          <li><a href="data.html">調べ方とデータ</a></li>
+          <li><a href="reference/data.html">調べ方とデータ</a></li>
         </ul>
       </details>
     </div>
@@ -36,11 +37,8 @@
   <header class="site-header">
     <div class="wrap">
       <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
-      <h1 class="dads-heading" data-size="xl">調査データ一覧</h1>
-      <p class="site-header__lead">AI読がこれまでに書き出した調査データを、<strong>書き出した日ごと</strong>に並べています。
-        各回の中身と、そのときのファイルをそのまま置いてあります。</p>
-      <p class="site-header__lead"><strong>日付は書き出しを走らせた時刻です。</strong>測定条件を記録し始める前の回は、
-        実際に測った時刻が残っていません。分からない時刻は「記録なし」と書いており、書き出し時刻で埋めてはいません。</p>
+      <h1 class="dads-heading" data-size="xl">この数字はどう作られたか</h1>
+      <p class="site-header__lead" id="lead"></p>
     </div>
   </header>
 
@@ -56,24 +54,44 @@
     </p>
     <div class="dads-notification-banner__body">
       <p>自分の区の手続きを調べたいだけなら、<a class="dads-link" href="index.html">住民の方の入口</a>へ。
-        このページは、調査の中身を確かめたい方・データを使いたい方のためのものです。</p>
+        このページは、点数の作られ方を確かめたい方のためのものです。
+        このページの数字はすべて<a class="dads-link" href="data/pipeline.json">実ファイルを数えた値</a>です。</p>
     </div>
   </div>
 
-  <section aria-labelledby="runs-heading">
-    <h2 class="dads-heading" data-size="l" id="runs-heading">調査の回</h2>
-    <p class="section-note" id="runs-note"></p>
-    <div id="runs" aria-live="polite"></div>
+  <section aria-labelledby="layers-heading">
+    <h2 class="dads-heading" data-size="l" id="layers-heading">外に出るのは1層だけ</h2>
+    <p class="section-note">外部に接続するのは取得層だけです。読解層と採点層は保存済みのページしか読まないので、
+      何度作り直しても自治体サイトに負荷をかけません。</p>
+    <div id="layers"></div>
   </section>
 
   <hr class="dads-divider">
 
-  <section aria-labelledby="files-heading">
-    <h2 class="dads-heading" data-size="l" id="files-heading">全期間のファイル</h2>
-    <p class="section-note">回をまたいだ生データです。表計算ソフトや統計ソフトでそのまま開けます。</p>
-    <ul class="filelist" id="files"></ul>
-    <p class="section-note">使い方とライセンス（CC BY 4.0）は
-      <a class="dads-link" href="data.html#license-heading">調べ方とデータ</a>にあります。</p>
+  <section aria-labelledby="scoring-heading">
+    <h2 class="dads-heading" data-size="l" id="scoring-heading">AIには点を出させない</h2>
+    <p class="section-note">当初は同じ入力でも点数が15点揺れました。「正解か、惜しいか」の線引きをAIに委ねていたためです。
+      いまは人が必須要素をあらかじめ決め、AIには<strong>項目ごとの有無だけ</strong>を答えさせ、点は機械的に計算します。</p>
+    <p class="pipe__fact" id="calibration"></p>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="cond-heading">
+    <h2 class="dads-heading" data-size="l" id="cond-heading">条件が違うデータは、比べさせない</h2>
+    <p class="section-note">道具を良くして点が上がったものを「サイトが直った」と読ませないための仕組みです。
+      測定条件をまとめて署名にし、署名が違う記録どうしは比較を拒否します。</p>
+    <p class="pipe__fact" id="cond"></p>
+    <ul class="condlist" id="condkeys"></ul>
+  </section>
+
+  <hr class="dads-divider">
+
+  <section aria-labelledby="exp-heading">
+    <h2 class="dads-heading" data-size="l" id="exp-heading">ページを書き換えて確かめた</h2>
+    <p class="section-note" id="exp"></p>
+    <p class="pipe__fact" id="cf"></p>
+    <p class="section-note">記録は <a class="dads-link" href="reference/journey.html#proof-heading">AIの道のり</a> にもあります。</p>
   </section>
 
 </main>
@@ -82,8 +100,8 @@
   <div class="wrap">
     <p>調査・実装: 正直パンマン（個人）。<strong>行政機関の公式発表ではありません。</strong></p>
     <p>判定基準（必須要素）を公開しています。誤りの指摘を歓迎します → <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku">GitHub</a></p>
-    <p>いつ何を測ったかは <a class="dads-link" href="archive.html">調査データ一覧</a> に、点数の作られ方は <a class="dads-link" href="how.html">この数字はどう作られたか</a> にあります。</p>
-    <p>使ったオープンデータ: 東京都住民基本台帳人口移動報告／東京都区市町村清掃事業年報／『歴史的行政区域データセットβ版』（CODH作成） → <a class="dads-link" href="data.html#opendata-heading">出典と使い道</a></p>
+    <p>いつ何を測ったかは <a class="dads-link" href="reference/archive.html">調査データ一覧</a> に、点数の作られ方は <a class="dads-link" href="reference/how.html">この数字はどう作られたか</a> にあります。</p>
+    <p>使ったオープンデータ: 東京都住民基本台帳人口移動報告／東京都区市町村清掃事業年報／『歴史的行政区域データセットβ版』（CODH作成） → <a class="dads-link" href="reference/data.html#opendata-heading">出典と使い道</a></p>
     <p class="site-footer__credit">画面のスタイルに <a class="dads-link" href="https://design.digital.go.jp/">デジタル庁デザインシステム</a> のコードスニペット（MIT）を利用しています。デジタル庁が本調査を提供・監修しているものではありません。</p>
     <p class="site-footer__generated">データ生成日: <span id="generated-at"></span></p>
   </div>
@@ -94,8 +112,8 @@
 
 <script src="ask-ai-button.js" defer data-selector="main"
         data-actions="procedure" data-label="AIに渡す"></script>
-<script src="assets/archive-list.js"></script>
-<script src="assets/archive-view.js"></script>
+<script src="assets/pipeline-list.js"></script>
+<script src="assets/pipeline-view.js"></script>
 <script src="assets/shell.js" defer></script>
 </body>
 </html>

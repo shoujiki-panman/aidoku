@@ -16,10 +16,17 @@ const ok = (name, cond, detail) => {
 };
 
 // 「 2.html」のような同期ソフトの複製は対象外
-const pages = readdirSync(here)
+const htmlIn = (dir) => readdirSync(join(here, dir))
   .filter((f) => f.endsWith('.html') && !/ \d+\.html$/.test(f))
+  .map((f) => (dir === '.' ? f : `${dir}/${f}`))
   .sort();
-ok('ページを見つけた', pages.length >= 6, `${pages.length}枚`);
+// 使う画面は3枚だけ。読み物は reference/ に下げた（分けた理由は
+// plans/decisions/three-screens.md）。ボタンの付け方は両方で同じにする
+const screens = htmlIn('.');
+const refs = htmlIn('reference');
+const pages = [...screens, ...refs];
+ok('使う画面は3枚', screens.length === 3, `${screens.length}枚`);
+ok('読み物を見つけた', refs.length >= 6, `${refs.length}枚`);
 
 for (const f of pages) {
   const s = read(f);
@@ -50,6 +57,12 @@ for (const f of pages) {
   // 上のメニューは <details>。素のままだと外を押しても閉じず、
   // 押した本人は閉じたつもりで次を押すので、画面に残って邪魔になる。
   ok(`${f} が shell.js を読む`, /<script src="assets\/shell\.js" defer><\/script>/.test(s));
+
+  // reference/ は1段下。<base href="../"> が無いと ask-ai-button.js も
+  // assets/ も画面へのリンクも、上のパスのまま書いてあるので 404 になる
+  if (f.startsWith('reference/')) {
+    ok(`${f} に <base href="../"> がある`, /<base href="\.\.\/">/.test(s));
+  }
 
   // 読み込みは </body> の直前（本文より後）
   ok(`${f} はボタンを最後に読む`, s.indexOf('ask-ai-button.js') > s.lastIndexOf('</main>'));
