@@ -43,3 +43,9 @@ Status: 実装済み（2026-09-05）
   **残り: ruff / jscpd / Python を新ブランチで1回、そのあと push と PR**
 - 2026-09-05 別件の未処理: 8dc18a5「一度きりの調べものを分け、検査を1本にする」が
   main に入っていない。PR が無いので、この作業とは別に1本立てる必要がある
+- 2026-09-05 `feat/three-screens` で完了条件を全部再確認。ruff 緑 /
+  Python 986本 緑（`.`478 `analysis`123 `crawler`218 `experiment`37 `extractor`65
+  `gennai_app`41 `scorer`24）/ jscpd 0.93%（閾値5%）/ node 16本 緑 /
+  11枚 228リンクを実際に引いて 404 ゼロ
+- 2026-09-05 8dc18a5 の別件は別セッションが `refactor/probes-split` で拾った。
+  同じ作業ツリーを共有すると HEAD を取り合うので、こちらは worktree を分けた
