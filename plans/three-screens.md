@@ -36,3 +36,10 @@ Status: 実装済み（2026-09-05）
 - 2026-09-05 ⑤ `README` / `START-HERE` / `export_journey.py` / `build_demand_sample.mjs` /
   `lookup.js` / `app.js` のコメントを `reference/` に直した
 - 2026-09-05 完了条件を全部確認。ブラウザは `index.html` 41本・`reference/how.html` 14本とも 200
+- 2026-09-05 `feat/method-external-refs`（PR #178 マージ済み・その後 8dc18a5 が1本
+  ぶら下がったまま）ではなく、`origin/main` から `feat/three-screens` を切って
+  cherry-pick した（a8926d3）。main 側の変更は data だけで衝突なし
+- 2026-09-05 新ブランチで node 16本（web 12 + gatekeeper 4）緑を再確認。
+  **残り: ruff / jscpd / Python を新ブランチで1回、そのあと push と PR**
+- 2026-09-05 別件の未処理: 8dc18a5「一度きりの調べものを分け、検査を1本にする」が
+  main に入っていない。PR が無いので、この作業とは別に1本立てる必要がある
