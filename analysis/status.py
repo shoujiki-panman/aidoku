@@ -16,6 +16,7 @@
 
     python3 analysis/status.py           # 人が読む形
     python3 analysis/status.py --json    # 機械が読む形
+    python3 analysis/status.py --write   # 現在地1枚を NOW.md に書き出す
 """
 
 from __future__ import annotations
@@ -397,9 +398,18 @@ def main(argv: list[str] | None = None) -> None:
     ap.add_argument("--json", action="store_true", help="機械が読む形で出す")
     ap.add_argument("--record", metavar="PATH", nargs="?", const=str(DEFAULT_HISTORY),
                     help="いまの状態を履歴に1行追記する（同じ日は追記しない）")
+    ap.add_argument("--write", metavar="PATH", nargs="?", const=str(ROOT / "NOW.md"),
+                    help="現在地1枚を NOW.md に書き出す（tools/check.sh が毎回呼ぶ）")
     args = ap.parse_args(argv)
 
     state = collect()
+    if args.write:
+        now = datetime.now(timezone.utc).astimezone().isoformat(timespec="minutes")
+        body = ("<!-- 自動生成。手で編集しない。更新は tools/check.sh か"
+                " `python3 analysis/status.py --write` -->\n\n"
+                f"{render(state)}\n\n生成: {now}\n")
+        Path(args.write).write_text(body, encoding="utf-8")
+        print(f"{args.write}: 書き出した")
     if args.record:
         sys.path.insert(0, str(ROOT))
         from history import append_snapshot
