@@ -850,3 +850,18 @@ td.marks { white-space: nowrap; }
 .verify__acts { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0 0; }
 .verify__json { margin: 10px 0 0; padding: 10px 12px; background: #f0f2f5; border-radius: 8px;
   font-size: .8125rem; overflow-x: auto; }
+
+/* ── 今日直す1件（fix.html 入口・assets/today-ui.mjs）───────────── */
+.today__item { display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  border: 1px solid #d8dde3; border-radius: 10px; padding: 12px 14px; margin: 10px 0 0; background: #fff; }
+.today__item--main { border-color: #0056b3; border-width: 2px; }
+.today__state { font-size: .75rem; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+  background: #e8f0fb; color: #0056b3; white-space: nowrap; }
+.today__state[data-state="確認案件"] { background: #fdeceb; color: #b3261e; }
+.today__state[data-state="未確認"] { background: #f0f2f5; color: #4e5255; }
+.today__reason { flex: 1 1 240px; font-size: .875rem; color: #4e5255; }
+.today__open { white-space: nowrap; }
+.today__rest { margin: 10px 0 0; }
+.today__rest > summary { cursor: pointer; font-size: .9375rem; }
+.today__more { font-size: .875rem; color: #4e5255; }
+.today__note { margin: 10px 0 0; font-size: .8125rem; color: #4e5255; }

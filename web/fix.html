@@ -47,6 +47,14 @@
        こちらの断り書きではない。免責は消さずに結果の下へ回した。
        見出し「区を選ぶ」＋ラベル「自治体」＋選択肢「区を選ぶ」で同じことを3回
        言っていたのも1回にした。 -->
+  <!-- ★入口は「区を選ぶ」ではなく「今日直す1件」（2026-09-08 決定）。
+       見張りの43件を数字のまま見せず、状態で分けて優先度順の先頭1件に変換する。
+       中身は assets/today-ui.mjs が描く。 -->
+  <section aria-labelledby="today-heading">
+    <h2 class="dads-heading" data-size="l" id="today-heading">今日直す1件</h2>
+    <div id="fix-today" aria-live="polite"><p>課題を確認しています…</p></div>
+  </section>
+
   <section aria-labelledby="fix-heading">
     <h2 class="dads-heading" data-size="l" id="fix-heading">どの区を直しますか</h2>
     <p class="fixpick">
@@ -100,6 +108,7 @@
 <script src="ask-ai-button.js" defer data-selector="main"
         data-actions="procedure" data-label="AIに渡す"></script>
 <script src="assets/fix.js"></script>
+<script type="module" src="assets/today-ui.mjs"></script>
 <script type="module" src="assets/verify-ui.mjs"></script>
 <script src="assets/shell.js" defer></script>
 </body>

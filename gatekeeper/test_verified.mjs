@@ -11,6 +11,7 @@ import worker from './worker.mjs';
 import { generateKeyPair, jwkThumbprint, signRequest } from './httpsig.mjs';
 import { effectiveFields, hasAnyAnswer } from './demand.mjs';
 import { reviewAgainstWatch, publishInto, parseTime, urlKey, unknownFields } from './verified_sync.mjs';
+import { summarizeVerified } from './verified_core.mjs';
 
 const AGENT_ORIGIN = 'https://agent.example';
 const HOST = 'www.city.setagaya.lg.jp';
@@ -171,6 +172,16 @@ realLog('テスト（部品）:');
 
 // 見張りの "+0000" 形式の時刻が読める
 check('見張りの時刻形式（+0000）が読める', Number.isFinite(parseTime('2026-09-08T00:46:47+0000')));
+
+// 状態サマリ（web/data/verified-status.json）は状態だけで、値を外に出さない
+{
+  const r = record();
+  const [s] = summarizeVerified([r]);
+  check('状態サマリに区・手続き・項目の状態が入る',
+    s.municipality_id === 'setagaya' && s.fields.fee.status === 'published' && s.fields.fee.version === 1,
+    JSON.stringify(s));
+  check('  └ 値そのものは入らない', !JSON.stringify(s).includes('無料'), JSON.stringify(s));
+}
 
 // --- ここから門番ごと通す（署名つきエージェントが /ask で聞く）---
 realLog('テスト（門番ごと）:');
