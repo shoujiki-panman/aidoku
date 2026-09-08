@@ -831,3 +831,22 @@ td.marks { white-space: nowrap; }
 .pipe__fact { margin: 12px 0 0; font-size: 1rem; font-weight: 700; color: #1a1a1c; }
 .condlist { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; padding: 0; }
 .condlist code { font-size: .75rem; background: #f0f2f5; padding: 3px 8px; border-radius: 4px; color: #4e5255; }
+
+
+/* ── 担当者の確認フォーム（fix.html・assets/verify-ui.mjs）─────────────
+   内容確認 → 公開の準備 → AIが取得した結果、を1つの details に収める。 */
+.verify { margin: 12px 0 0; border: 1px solid #d8dde3; border-radius: 10px; padding: 10px 14px; background: #fff; }
+.verify > summary { cursor: pointer; font-weight: 700; }
+.verify__note { margin: 10px 0 0; font-size: .875rem; color: #4e5255; }
+.verify__row { margin: 10px 0 0; }
+.verify__row label { display: block; font-size: .875rem; margin: 6px 0 0; }
+.verify__row input { display: block; width: 100%; max-width: 560px; margin-top: 4px;
+  padding: 8px 10px; border: 1px solid #949ba3; border-radius: 6px; font-size: 1rem; min-height: 44px; }
+.verify__ok { color: #197a4b; font-weight: 700; }
+.verify__ng { color: #b3261e; font-weight: 700; }
+.verify__preview { margin: 8px 0 0; padding-left: 1.2em; line-height: 1.9; }
+.verify__prov { font-size: .8125rem; color: #4e5255; }
+.verify__steps { margin: 8px 0 0; padding-left: 1.4em; line-height: 1.9; font-size: .9375rem; }
+.verify__acts { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0 0; }
+.verify__json { margin: 10px 0 0; padding: 10px 12px; background: #f0f2f5; border-radius: 8px;
+  font-size: .8125rem; overflow-x: auto; }

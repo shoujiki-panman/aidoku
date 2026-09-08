@@ -28,6 +28,9 @@ const FIELD_WORDS = {
   how_to_apply: ['オンライン', '窓口', '郵送', '来庁', 'どこで'],
 };
 
+// 答えとして扱う項目名はこの4つだけ（確認済み情報の項目名検証にも使う）
+export const KNOWN_FIELDS = Object.keys(FIELD_WORDS);
+
 export function matchField(lookingFor) {
   if (!lookingFor) return null;
   for (const [field, words] of Object.entries(FIELD_WORDS)) {
@@ -36,11 +39,28 @@ export function matchField(lookingFor) {
   return null;
 }
 
+// 実測（fields）と担当者確認済み（verified_fields）を1枚に重ねた読み取り用ビュー。
+// 確認済みが優先。元の fields は書き換えない（実測は実測のまま残す）。
+// verified_fields に載るのは公開中（published）の項目だけ（verified_sync.mjs が選ぶ）。
+export function effectiveFields(answer) {
+  const merged = { ...(answer?.fields ?? {}) };
+  for (const [field, v] of Object.entries(answer?.verified_fields ?? {})) {
+    if (v && v.value != null) merged[field] = v.value;
+  }
+  return merged;
+}
+
+// そのページについて、実測か確認済みか、どちらかの答えを1つでも持っているか。
+export function hasAnyAnswer(answer) {
+  if (!answer) return false;
+  return Object.values(effectiveFields(answer)).some((v) => v != null);
+}
+
 // 「探しに来たものが、実際に取れたか」を判定する。
 // ページに答えの束があっても、聞かれた項目が空なら取れていない＝取れずに帰った。
 export function isAnswered(answer, lookingFor) {
   if (!answer) return false;
-  const fields = answer.fields ?? {};
+  const fields = effectiveFields(answer);
   const field = matchField(normalizeQuery(lookingFor));
   if (field) return fields[field] != null;
   // 何を聞かれたか分からないときは、1つでも答えがあれば取れた扱い

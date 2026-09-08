@@ -47,6 +47,9 @@ POST /ask
 
 ※ `results` の `fields` は schema.org の語彙ではなく、AI読の実測値そのもの
 （`answers/*.json` の中身）。文章はここで作らない。
+自治体担当者が確認した値がある場合は、`verified_fields` として**実測と別の束で**返す
+（出典・条件・確認者・版つき。作り方は [`verified/README.md`](verified/README.md)）。
+答えの有無の判定は両方を重ねて行う＝実測が空でも確認済みがあれば `answer` になる。
 
 ### MCP からも同じことを聞ける（`POST /mcp`）
 
@@ -110,10 +113,13 @@ curl -X POST https://<門番>/mcp -H 'content-type: application/json' \
 | `demo_talk.mjs` | **AIと門番のやり取りをそのまま書き出すデモ**（何を聞かれ、何を返したか） |
 | `demo_demand.mjs` | **Cloudflare無しで、データができるところを見せるデモ** |
 | `test_local.mjs` | 署名→検証の暗号テスト 11本（門番が例外で落ちないことの確認を含む） |
-| `test_worker.mjs` | 門番の応対テスト 23本（ネットワークはスタブ） |
+| `test_worker.mjs` | 門番の応対テスト 28本（ネットワークはスタブ） |
 | `test_nlweb.mjs` | NLWeb の窓口テスト 20本（自然文で聞いて answer / failure / elicitation） |
 | `test_mcp.mjs` | MCP の窓口テスト 24本（握手・tools/list・tools/call・規格どおりのエラー） |
 | `build_answers.mjs` | 23区の実測から「整った答え」を作る（`answers/`。文章はここで作らない） |
+| `verified/` | **自治体担当者が確認した情報の置き場**（出典・条件・確認者・版つき。形は中のREADME） |
+| `verified_sync.mjs` | 確認済みを `answers/` へ反映し、見張りが変化を見つけた項目を確認案件に戻す |
+| `test_verified.mjs` | 確認済み情報のテスト 29本（公開→門番に載る→差し戻し→再公開の一周） |
 | `wrangler.jsonc` / `put_answers.sh` | Cloudflare Workers へのデプロイ設定とKV投入 |
 | `check_chatgpt_keys.mjs` | ChatGPT の実鍵を取得してパース互換を確認（要ネットワーク） |
 | `runtime_check.mjs` / `runtime_client.mjs` | **本番ランタイム(workerd)の上で門番を動かして確かめる**（25本）。素の worker.mjs をそのまま呼ぶ |
@@ -122,11 +128,13 @@ curl -X POST https://<門番>/mcp -H 'content-type: application/json' \
 
 ```bash
 node gatekeeper/test_local.mjs        # 暗号として動く証明（11 PASS）
-node gatekeeper/test_worker.mjs       # 門番の応対一周（23 PASS）
+node gatekeeper/test_worker.mjs       # 門番の応対一周（28 PASS）
 node gatekeeper/test_nlweb.mjs        # ★AIが自然文で聞く窓口（20 PASS）
 node gatekeeper/test_mcp.mjs          # ★MCPクライアントから同じことを聞く（24 PASS）
 node gatekeeper/check_chatgpt_keys.mjs  # ChatGPTの実鍵で形式互換を確認
+node gatekeeper/test_verified.mjs     # ★担当者の確認がAIの案内を変える一周（29 PASS）
 node gatekeeper/build_answers.mjs     # 23区の実測から「整った答え」を作る
+node gatekeeper/verified_sync.mjs     # 担当者の確認済みを answers/ へ反映（差し戻しも）
 node gatekeeper/demo_talk.mjs         # ★AIと門番のやり取りをそのまま見る
 node gatekeeper/demo_demand.mjs       # ★AIを来させて、データができるところを見る
 ```
