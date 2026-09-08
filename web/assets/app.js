@@ -711,9 +711,11 @@ async function renderWardMap() {
   const labels = wards.filter((w) => w.lx != null).map((w) => `
     <text class="wardmap__name" x="${w.lx}" y="${w.ly}" data-tone="${esc(w.tone)}"
           text-anchor="middle" aria-hidden="true">${esc(w.short)}</text>`).join('');
+  // ★凡例は地図の**上**。下に置くと、色の意味を知る前に地図を見ることになる
+  //   （見てから explanation を探しに行く順番になっていた）
   box.innerHTML = `
-    <svg viewBox="${esc(doc.viewBox)}" class="wardmap__svg" role="group">${paths}${labels}</svg>
     <p class="wardmap__scale">${esc(AidokuWardMap.scaleLine(wards))}</p>
+    <svg viewBox="${esc(doc.viewBox)}" class="wardmap__svg" role="group">${paths}${labels}</svg>
     <p class="wardmap__credit">境界: <a class="dads-link" href="${esc(doc.source_url)}">${esc(doc.source)}</a>（${esc(doc.license)}）</p>`;
 
   const pick = (el) => {
