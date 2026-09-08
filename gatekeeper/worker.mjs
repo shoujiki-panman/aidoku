@@ -12,7 +12,7 @@
 // この形のまま Cloudflare Workers にデプロイできる（wrangler deploy）。
 // 実運用の記録先は console.log ではなく Workers Analytics Engine / KV に差し替える。
 import { verifyRequest, importPublicJwk, jwkThumbprint } from './httpsig.mjs';
-import { recordAsk, aggregate, isAnswered } from './demand.mjs';
+import { recordAsk, aggregate, isAnswered, hasAnyAnswer } from './demand.mjs';
 import { ASK_PATH, parseAsk, askTarget, decideAsk, failureResponse } from './nlweb.mjs';
 import { MCP_PATH, handleRpc, rpcError } from './mcp.mjs';
 
@@ -121,8 +121,8 @@ async function askCore(parsed, url, env, ctx, result, via) {
   let answer = null;
   if (env?.ANSWERS) {
     answer = await env.ANSWERS.get(target.key, 'json');
-    // 全項目が null＝そのページからは何も読み取れなかった。「答えがある」ふりをしない。
-    if (answer && Object.values(answer.fields ?? {}).every((v) => v === null)) answer = null;
+    // 実測も確認済みも無い＝そのページからは何も読み取れなかった。「答えがある」ふりをしない。
+    if (!hasAnyAnswer(answer)) answer = null;
   }
 
   const decided = decideAsk(answer, parsed.text, target.url);
@@ -275,11 +275,9 @@ export default {
     let answer = null;
     if (result.ok && env?.ANSWERS) {
       answer = await env.ANSWERS.get(`${url.host}${url.pathname}`, 'json');
-      // 全項目が null＝そのページからは何も読み取れなかった、ということ。
+      // 実測も確認済みも無い＝そのページからは何も読み取れなかった、ということ。
       // 「答えがある」ふりをせず、取れずに帰った扱いにする。
-      if (answer && Object.values(answer.fields ?? {}).every((v) => v === null)) {
-        answer = null;
-      }
+      if (!hasAnyAnswer(answer)) answer = null;
     }
 
     // 門番が貯める記録の主役: 何を探しに来て、取れたか／取れずに帰ったか

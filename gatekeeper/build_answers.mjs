@@ -49,7 +49,16 @@ for (const f of files) {
   };
 
   const key = `${host}${pathname}`;
-  await writeFile(join(OUT, `${d.municipality_id}.json`), JSON.stringify(answer, null, 2) + '\n');
+  const outPath = join(OUT, `${d.municipality_id}.json`);
+  // 担当者確認済み（verified_fields）は実測の再生成で消してはいけない。
+  // 前の版から持ち越す（正本は verified/ で、載せ直しは verified_sync.mjs の仕事）。
+  try {
+    const prev = JSON.parse(await readFile(outPath, 'utf-8'));
+    if (prev.verified_fields) answer.verified_fields = prev.verified_fields;
+  } catch {
+    // 前の版が無い＝初回。持ち越すものなし
+  }
+  await writeFile(outPath, JSON.stringify(answer, null, 2) + '\n');
   index.push({ key, file: `${d.municipality_id}.json`, municipality: d.municipality });
 }
 
