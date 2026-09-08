@@ -16,6 +16,13 @@
   "main": "worker.mjs",
   "compatibility_date": "2026-07-01",
 
+  "vars": {
+    // 素通し先。workers.dev で動かす段階では、同じURLへの素通しが自分自身への
+    // 再帰(エラー1042)になるため、自分のサイトへ渡す。実際に自治体サイトの前に
+    // routes で置くときは、この値を消す（従来どおり同じURLへ素通し）。
+    "ORIGIN": "https://shoujiki-panman.github.io/aidoku"
+  },
+
   "kv_namespaces": [
     {
       // 検証済みエージェントに返す「整った答え」。キーは host+path。
