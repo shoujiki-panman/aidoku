@@ -66,17 +66,20 @@
     const fixes = (c.improvements || []).map((w) => `
       <li><span class="gain">+${esc(w.gain)}点</span><b>${esc(w.field)}</b>
           <span class="fixnote">${esc(w.reason)}</span></li>`).join('');
+    // ★並び順。担当者が知りたいのは「何が抜けているか → どう書くか」で、
+    //   どのページを採点したかはその確認。以前はURLが最初に来ていた。
+    // ★点の「3/4」は単位が無いと何分の何か分からない。数字に名前を付ける。
     return `<section class="fixcell">
       <h3 class="dads-heading" data-size="s">${esc(c.procName)}
-        <span class="fixcell__score" data-ok="${miss.length === 0}">${FIELDS.length - miss.length}/${FIELDS.length}</span></h3>
-      <p class="fixcell__page">採点したページ:
-        <a class="dads-link" href="${esc(c.url || '')}" target="_blank" rel="noopener">${esc(c.url || '不明')}</a></p>
+        <span class="fixcell__score" data-ok="${miss.length === 0}">届いた項目 ${FIELDS.length - miss.length}/${FIELDS.length}</span></h3>
       ${miss.length
         ? `<p class="fixcell__miss">読み取れなかった項目: <b>${esc(miss.join('・'))}</b></p>`
         : '<p class="fixcell__ok">4項目とも読み取れました。住民のAIに答えが届いています。</p>'}
+      ${fixes ? `<p class="fixcell__lead">どう書けば届くか</p><ul class="fixlist">${fixes}</ul>` : ''}
       ${c.notes ? `<details class="fixcell__why"><summary>なぜ読み取れなかったか（判定したAIの観察記録）</summary>
         <p>${esc(c.notes)}</p></details>` : ''}
-      ${fixes ? `<p class="fixcell__lead">どう書けば届くか</p><ul class="fixlist">${fixes}</ul>` : ''}
+      <p class="fixcell__page">採点したページ:
+        <a class="dads-link" href="${esc(c.url || '')}" target="_blank" rel="noopener">${esc(c.url || '不明')}</a></p>
       <p class="fixcell__acts">
         ${fixes ? `<button type="button" class="dads-button fix-dl"
                    data-key="${esc(c.muniId)}/${esc(c.procId)}">この1枚を持ち帰る（.md）</button>` : ''}
@@ -87,6 +90,8 @@
 
   function show(muniId) {
     const box = $('fix-result');
+    const peek = $('fix-peek');
+    if (peek) peek.hidden = Boolean(muniId);
     if (!muniId) { box.innerHTML = ''; return; }
     const mine = cells.filter((c) => c.muniId === muniId);
     if (!mine.length) { box.innerHTML = '<p>この区はまだ調べていません。</p>'; return; }

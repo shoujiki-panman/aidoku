@@ -43,6 +43,28 @@
 
 <main class="wrap" id="main">
 
+  <!-- ★順番。担当者がこの画面で最初に受け取るのは**自分の区の状態**であって、
+       こちらの断り書きではない。免責は消さずに結果の下へ回した。
+       見出し「区を選ぶ」＋ラベル「自治体」＋選択肢「区を選ぶ」で同じことを3回
+       言っていたのも1回にした。 -->
+  <section aria-labelledby="fix-heading">
+    <h2 class="dads-heading" data-size="l" id="fix-heading">どの区を直しますか</h2>
+    <p class="fixpick">
+      <label class="dads-u-visually-hidden" for="fix-ward">自治体</label>
+      <select class="fixpick__select" id="fix-ward"><option value="">区を選ぶ</option></select>
+    </p>
+
+    <!-- ★押す前に、何が出るかを見せる。選ぶまで真っ白だと、選ぶ理由が分からない。
+         区を選んだら消える（assets/fix.js の show()） -->
+    <ul class="fixpeek" id="fix-peek">
+      <li><b>読み取れなかった項目</b>住民のAIが、区のページから拾えなかったもの</li>
+      <li><b>どう書けば届くか</b>その項目を、どう書けば拾われるか</li>
+      <li><b>持ち帰る1枚</b>同じ中身を Markdown で保存できます</li>
+    </ul>
+
+    <div id="fix-result" aria-live="polite"></div>
+  </section>
+
   <div class="dads-notification-banner" data-style="standard" data-type="info" role="note">
     <p class="dads-notification-banner__heading">
       <svg class="dads-notification-banner__icon" width="24" height="24" viewBox="0 0 24 24" role="img" aria-label="情報">
@@ -57,15 +79,6 @@
         個人による第三者調査であり、行政機関の公式発表ではありません。</p>
     </div>
   </div>
-
-  <section aria-labelledby="fix-heading">
-    <h2 class="dads-heading" data-size="l" id="fix-heading">区を選ぶ</h2>
-    <p class="fixpick">
-      <label class="fixpick__label" for="fix-ward">自治体</label>
-      <select class="fixpick__select" id="fix-ward"><option value="">区を選ぶ</option></select>
-    </p>
-    <div id="fix-result" aria-live="polite"></div>
-  </section>
 
 </main>
 

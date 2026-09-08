@@ -748,6 +748,13 @@ td.marks { white-space: nowrap; }
   background: #fff; border: 1px solid #767676; border-radius: 6px; max-width: 16em;
 }
 .fixpick__select:focus-visible { outline: 3px solid #0056b3; outline-offset: 1px; }
+/* 選ぶ前に「何が出るか」を見せる見本。押す前に予測できるようにするため */
+.fixpeek { list-style: none; padding: 0; margin: 0 0 8px; max-width: 46em; }
+.fixpeek li { padding: .55em .9em; margin-bottom: 6px; border-radius: 8px;
+  background: #f4f6f8; color: #4e5255; font-size: .9375rem; }
+.fixpeek b { display: inline-block; min-width: 12.5em; color: #1a1a1c; }
+@media (max-width: 30em) { .fixpeek b { display: block; min-width: 0; } }
+
 .fixhead { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin: 0 0 18px; }
 .fixhead b { font-size: 1.25rem; }
 .fixhead__sum { color: #4e5255; font-size: .9375rem; }
