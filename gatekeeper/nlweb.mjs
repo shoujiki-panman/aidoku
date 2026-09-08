@@ -13,7 +13,7 @@
 //
 // 探し物の項目が特定できないときは **elicitation**（聞き返し）を返す。
 // 黙って「取れた」に倒さないための、規格側の正解。
-import { matchField, normalizeQuery } from './demand.mjs';
+import { matchField, normalizeQuery, effectiveFields } from './demand.mjs';
 
 export const ASK_PATH = '/ask';
 export const NLWEB_VERSION = '0.55';
@@ -72,7 +72,9 @@ export function askTarget(host, site) {
 
 // 実測データ1件を、schema.org の型に載せて返す。
 // name / provider / url は schema.org の語彙。
-// **fields は schema.org の語彙ではなく、AI読の実測値そのもの**（作らない・盛らない）。
+// **fields は schema.org の語彙ではなくAI読の実測値そのもの**（作らない・盛らない）。
+// verified_fields は自治体担当者が確認した値で、出典・条件・確認者・版ごと渡す。
+// 実測と確認済みを混ぜて1本にしない（どちらの値かをAI側が言えるように）。
 export function toResult(answer, sourceUrl) {
   return {
     '@context': 'https://schema.org',
@@ -83,6 +85,9 @@ export function toResult(answer, sourceUrl) {
       : null,
     url: answer.source ?? sourceUrl ?? null,
     fields: answer.fields ?? {},
+    ...(answer.verified_fields && Object.keys(answer.verified_fields).length
+      ? { verified_fields: answer.verified_fields }
+      : {}),
     measured_at: answer.measured_at ?? null,
     note: answer.note ?? null,
   };
@@ -109,26 +114,30 @@ export function decideAsk(answer, text, sourceUrl) {
     };
   }
 
-  const fields = answer.fields ?? {};
+  // 実測に無くても担当者確認済みがあれば「答えがある」。判定はこの重ねた景色で行う
+  const fields = effectiveFields(answer);
 
   // どの項目を聞かれたか分からない → 聞き返す（推測で「取れた」にしない）
   if (!field) {
+    const options = Object.entries(FIELD_LABELS)
+      // 値があるものだけを選択肢に出す（空の項目を勧めない）
+      .filter(([k]) => fields[k] != null)
+      .map(([, label]) => label);
+    // 4項目のどれにも値が無い（例: 語彙外の項目名だけが入っていた）なら、
+    // 選択肢ゼロの聞き返しを出さず、答えが無いことを正直に返す
+    if (!options.length) {
+      return {
+        answered: null,
+        field: null,
+        body: failureResponse('NO_RESULTS', 'どの項目か特定できず、このページに出せる項目もありませんでした。'),
+      };
+    }
     return {
       answered: null,
       field: null,
       body: elicitationResponse(
         `${answer.municipality ?? ''}の${answer.procedure ?? '手続き'}について、どれを知りたいですか？`,
-        [
-          {
-            id: 'field',
-            text: '知りたい項目',
-            type: 'single_select',
-            options: Object.entries(FIELD_LABELS)
-              // 実測で値があるものだけを選択肢に出す（空の項目を勧めない）
-              .filter(([k]) => fields[k] != null)
-              .map(([, label]) => label),
-          },
-        ],
+        [{ id: 'field', text: '知りたい項目', type: 'single_select', options }],
       ),
     };
   }

@@ -21,7 +21,7 @@ python3 analysis/status.py     # 見張り・測定条件・虱潰し・公開�
 
 ```bash
 # 門番のテスト（外部ネットワーク不要）
-cd gatekeeper && node test_local.mjs && node test_worker.mjs && node test_nlweb.mjs && node test_mcp.mjs
+cd gatekeeper && node test_local.mjs && node test_worker.mjs && node test_nlweb.mjs && node test_mcp.mjs && node test_verified.mjs
 
 # 採点のぶれを測る（5回×3自治体・約8分）
 python3 scorer/stability.py -p tennyu --runs 5 --tag <識別子>
@@ -33,7 +33,7 @@ python3 scorer/stability.py -p tennyu --runs 5 --tag <識別子>
 
 1. **`change-check` を回す。** 一次情報／影響範囲／前提の3行をチャットに書く。
    飛ばすと古い盤面のまま先へ進む（実際に STATUS.md が3日放置された）
-2. **テストを回す。** 現在 78 PASS / 0 FAIL
+2. **テストを回す。** 門番は現在 112 PASS / 0 FAIL（2026-09-09 実測。数がずれていたら実測を正とする）
 3. **影響を受けた文書を同じ変更の中で直す。** 特に STATUS.md と README.md
 
 ## 進め方（依頼を受けてから）

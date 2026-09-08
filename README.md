@@ -72,7 +72,7 @@ Claude Code が無い環境では、23区の実測結果のみ返ります。
 > ⚠️ 現在、**本物のAIエージェントの来訪は0件**。画面に出ている数字は自分で作った見本で、
 > JSON に `"is_sample": true` が付いている。デプロイするまで本物は集まらない。
 
-詳しくは [gatekeeper/README.md](gatekeeper/README.md)。テストは **78 PASS / 0 FAIL**。
+詳しくは [gatekeeper/README.md](gatekeeper/README.md)。テストは **112 PASS / 0 FAIL**。
 
 ## 門番を置いてみたい方へ（サイトを持っている方）
 
