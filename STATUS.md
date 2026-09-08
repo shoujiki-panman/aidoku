@@ -67,7 +67,7 @@ MVPの最初の実装対象は**確認済み情報の保存と門番への接続
 | 実測 | 23区×3手続き=69セル（転入届・児童手当・粗大ごみ）。4項目×20点＋オンライン明示 |
 | 見張り | `crawler/check_pages.py`。条件付きGET＋本文指紋で「変わったか」を毎朝自動確認（GitHub Actions）。23区1分・LLM 0回・404は「消えた」扱い。結果は `web/data/site-status.json` → 画面最上部 |
 | 数字の突き合わせ | `analysis/probes/check_claims.py --text <文書>`。対外文の数字が実測に無いと要確認を出す（「5区→4区」の再発防止） |
-| CI | lint（ruff）・重複（jscpd）・テスト（Python 297 / node 66 / gatekeeper 112）全部落とす設定 |
+| CI | lint（ruff）・重複（jscpd）・テスト（Python 297 / web(node) 304 / gatekeeper 112）全部落とす設定（node系は2026-09-09実測。ずれていたら実測を正とする） |
 | 公開画面 | index（今やる1件＋一覧）／barrier／board／demand の4枚。**役割整理は#65** |
 | 門番 | 署名検証・NLWeb・MCP・確認済み情報の自前実装（112 PASS）。**方針4によりCloudflare機能への載せ替え対象** |
 

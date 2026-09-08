@@ -85,6 +85,9 @@
                    data-key="${esc(c.muniId)}/${esc(c.procId)}">この1枚を持ち帰る（.md）</button>` : ''}
         <a class="dads-link" href="reference/journey.html?muni=${esc(c.muniId)}&proc=${esc(c.procId)}">AIがどう歩いたか</a>
       </p>
+      <div class="verify-slot" data-muni-id="${esc(c.muniId)}" data-muni-name="${esc(c.muniName)}"
+           data-proc-id="${esc(c.procId)}" data-proc-name="${esc(c.procName)}" data-url="${esc(c.url || '')}"
+           data-generated="${esc(c.generatedAt || '')}" data-missing="${esc(miss.join(','))}"></div>
     </section>`;
   }
 
@@ -106,6 +109,8 @@
       const c = cells.find((x) => `${x.muniId}/${x.procId}` === b.dataset.key);
       if (c) download(c);
     }));
+    // 担当者の確認フォーム（assets/verify-ui.mjs）が .verify-slot に差し込む合図
+    document.dispatchEvent(new CustomEvent('aidoku:fix-rendered'));
   }
 
   async function init() {
