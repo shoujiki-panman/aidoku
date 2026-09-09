@@ -57,14 +57,22 @@ function renderSampleBanner(data) {
 }
 
 function renderHeadline(data) {
-  const real = data.is_sample ? 0 : (data.totals?.asks ?? 0);
-  $('real-visits').textContent = nf.format(real);
-  $('headline').dataset.state = real === 0 ? 'empty' : 'has';
-  $('headline-note').textContent = real === 0
+  const t = data.totals ?? {};
+  // 「本物の来訪」と見出しで数えてよいのは、署名の検証に成功した分だけ。
+  // asks には署名が付いていても検証に至らなかった来訪（unverified）が含まれるので、
+  // そのまま出すと「すべて署名で身元を確かめた」が嘘になる（実データ初日に露見）。
+  const verified = data.is_sample ? 0 : Math.max(0, (t.asks ?? 0) - (t.unverified ?? 0));
+  const unv = data.is_sample ? 0 : (t.unverified ?? 0);
+  $('real-visits').textContent = nf.format(verified);
+  $('headline').dataset.state = verified === 0 ? 'empty' : 'has';
+  $('headline-note').textContent = verified === 0
     ? (data.is_sample
       ? 'AI窓口はまだ公開していません。公開すると、ここに実際の来訪が入ります。'
-      : '公開していますが、まだ署名つきのAIは来ていません。')
-    : 'すべて署名で身元を確かめた来訪です。';
+      : (unv
+        ? `署名の検証に成功した来訪はまだありません（署名つきで検証に至らなかった来訪が ${nf.format(unv)}件）。`
+        : '公開していますが、まだ署名つきのAIは来ていません。'))
+    : `すべて署名で身元を確かめた来訪です。`
+      + (unv ? `ほかに、署名は付いていたが検証に至らなかった来訪が ${nf.format(unv)}件あります。` : '');
 }
 
 const STATS = [
