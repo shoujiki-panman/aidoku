@@ -30,7 +30,7 @@ AI読は東京23区 × 3手続きについて、**各ページから実際に何
 ### 2. 実測データを引く
 
 ```
-https://shoujiki-panman.github.io/aidoku/data/scores-<procId>.json
+https://shoujiki-panman.github.io/aidoku/web/data/scores-<procId>.json
 ```
 
 `municipalities[]` から `name` が一致する区を探す。使うのは次の3つ。
@@ -70,7 +70,7 @@ https://shoujiki-panman.github.io/aidoku/data/scores-<procId>.json
 1. **書かれていないことを、そのまま言う。**
    例:「世田谷区の転入届のページには、手数料の記載がありませんでした（AI読 2026-08 実測）」
 2. **つまずいた理由が分かっていれば添える。**
-   `https://shoujiki-panman.github.io/aidoku/data/barriers.json` の `barriers[]` を
+   `https://shoujiki-panman.github.io/aidoku/web/data/barriers.json` の `barriers[]` を
    `municipality` と `procedure` で引く。`failure.summary` に、
    AIがどこで力尽きたか（例: 目次ページに「転入」の語が1回も無い）が入っている。
 3. **人に聞く先を出す。** 区役所の担当窓口に電話で確認するよう促す。
@@ -106,4 +106,4 @@ https://shoujiki-panman.github.io/aidoku/data/scores-<procId>.json
 | `journeys.json` | AIがトップページからどのリンクを選んで、どこで力尽きたか |
 | `site-status.json` | robots.txt など、そもそも読ませてもらえるか |
 
-すべて `https://shoujiki-panman.github.io/aidoku/data/` の下。CC BY 4.0。
+すべて `https://shoujiki-panman.github.io/aidoku/web/data/` の下。CC BY 4.0。

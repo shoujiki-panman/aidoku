@@ -75,9 +75,22 @@ const orphan = bars.filter((b) => b.procedure === '転入届' && !names.has(b.mu
 ok('barriers の区名が実測と突き合う', orphan.length === 0, orphan.map((b) => b.municipality).join(','));
 
 // --- 出典URLが Pages の実体を指しているか ---
+// ★Pages はリポジトリ直下を配信する。/aidoku/<p> の実体は <repo>/<p> であって web/<p> ではない。
+//   以前は web/ 起点で照合していたため、/aidoku/data/…（実際は404）を素通りさせていた。
+const repoRoot = join(here, '..');
 const urls = [...skill.matchAll(/https:\/\/shoujiki-panman\.github\.io\/aidoku\/([^\s`)>]*)/g)]
   .map((m) => m[1]).filter((p) => p.endsWith('.json'));
-for (const u of urls) ok(`公開URL ${u} が実体を持つ`, existsSync(join(here, u)), u);
+for (const u of urls) ok(`公開URL ${u} が実体を持つ`, existsSync(join(repoRoot, u)), u);
+
+// --- データURLは index.json の base_url と一致しているか（機械の入口はテストで守る） ---
+const baseUrl = JSON.parse(readFileSync(join(dataDir, 'index.json'), 'utf8')).base_url;
+ok('index.json に base_url がある', typeof baseUrl === 'string' && baseUrl.startsWith('https://'));
+const dataUrls = [...skill.matchAll(/https:\/\/shoujiki-panman\.github\.io\/[^\s`)>]*/g)]
+  .map((m) => m[0]).filter((u) => u.includes('data'));
+ok('SKILL.md にデータURLがある', dataUrls.length >= 2);
+for (const u of dataUrls) {
+  ok(`データURLが base_url 起点（${u.slice(-40)}）`, u.startsWith(baseUrl) || u === baseUrl.replace(/\/$/, ''), `base_url=${baseUrl}`);
+}
 
 // --- 推測を止める指示が消えていないか（このスキルの存在理由） ---
 ok('推測を禁じる記述がある', /埋めない|推測/.test(skill));
