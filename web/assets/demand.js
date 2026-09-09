@@ -49,6 +49,8 @@ function renderSampleBanner(data) {
     return;
   }
   $('sample-heading').textContent = '公開中のAI窓口から読み込んだ実データです';
+  // 実データのときは「以下は見本の数字です」の断りを消す（見本のときだけの注意書き）
+  $('sample-numbers-note')?.remove();
   $('sample-note').textContent =
     '署名で身元が確認できたAIエージェントの来訪だけを記録しています。人（ブラウザ）のアクセスは記録していません。';
   document.querySelector('.dads-notification-banner').dataset.type = 'info';

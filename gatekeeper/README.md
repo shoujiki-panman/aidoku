@@ -83,9 +83,9 @@ MCP にはもう1本、**受付**のツールがある（`report_correction`・2
 門番は集めたものをKVに追記し、この口から集計して返す。**取れずに帰った一覧が、
 そのまま区役所への更新依頼リストになる。**
 
-⚠️ **下の回数は `demo_demand.mjs` の再現で、こちらで決めた仮の値**。
-本物のAIが来た記録ではない（実データはまだ無い。「まだやっていないこと」を参照）。
-実測で言えるのは「どのページのどの項目が空か」のほうで、そちらは `answers/` が実測値。
+下の例の回数は `demo_demand.mjs` の再現の仮の値だが、**実データは 2026-09-09 から
+本物が貯まり始めた**（本物のChatGPTの検証済み来訪）。公開画面（demand.html）へは
+`export_demand.mjs` で手動エクスポートする（PR経由＝コミット前に質問文を人が見る）。
 
 ```
 ■ AIが探しに来たのに、取れずに帰ったもの（＝そのページに足りていない情報）
@@ -130,6 +130,8 @@ MCP にはもう1本、**受付**のツールがある（`report_correction`・2
 | `test_verified.mjs` | 確認済み情報のテスト 29本（公開→門番に載る→差し戻し→再公開の一周） |
 | `reception.mjs` | **受付＝AIが実行できる操作の第1弾**（誤り・更新の指摘 → GitHub Issue）。定義・入力チェック・実行・記録 |
 | `test_reception.mjs` | 受付のテスト 15本（成立の判定と、どこで止まったかが必ず分かること） |
+| `export_demand.mjs` | **集めた記録を公開データへ**（web/data/demand.json）。見本は拒否・手で回す |
+| `test_export_demand.mjs` | エクスポートのテスト 4本（見本を実データとして公開できないこと） |
 | `wrangler.jsonc` / `put_answers.sh` | Cloudflare Workers へのデプロイ設定とKV投入 |
 | `check_chatgpt_keys.mjs` | ChatGPT の実鍵を取得してパース互換を確認（要ネットワーク） |
 | `runtime_check.mjs` / `runtime_client.mjs` | **本番ランタイム(workerd)の上で門番を動かして確かめる**（25本）。素の worker.mjs をそのまま呼ぶ |
