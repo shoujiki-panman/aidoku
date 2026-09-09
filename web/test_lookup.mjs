@@ -80,7 +80,8 @@ check('測っていないものに点数をつけない',
 // ★本人の指摘:「住民側にこれいらないでしょ。一切説明もない」
 {
   const some = missingSummary(5, 3, 4);
-  check('読み取れなかった数を言う', some === '測った3つの手続きのうち、AIが区のページから読み取れなかった項目が5つあります。', some);
+  check('読み取れなかった数を言う', some === '測った3つの手続きのうち、AIが区のページから読み取れなかった項目が5個あります。', some);
+  check('★「5つ」「11つ」のような助数詞にしない', !/\d+つあります/.test(missingSummary(11, 3, 4)), missingSummary(11, 3, 4));
   check('★点数の書き方（7/12）はしない', !/\d+\s*\/\s*\d+/.test(some), some);
   check('★「知れない」のような不自然な言い方をしない', !some.includes('知れない'), some);
 
@@ -92,6 +93,13 @@ check('測っていないものに点数をつけない',
     missingSummary(12, 3, 4).includes('1項目も読み取れませんでした'));
 
   check('手続きが0なら何も言わない', missingSummary(0, 0, 4) === '');
+
+  // ★到達未確認は「読み取れなかった」に混ぜない（#86の教訓）
+  const withUnconf = missingSummary(4, 3, 4, 1);
+  check('到達未確認は別に数える', withUnconf.includes('1つは、対象ページに到達できたか確認中'), withUnconf);
+  check('  └ 「書かれていない」ではないと明言', withUnconf.includes('「書かれていない」という意味ではありません'), withUnconf);
+  check('  └ 残りの手続きの欠落は言う', withUnconf.includes('残る2つ') && withUnconf.includes('4個'), withUnconf);
+  check('全部未確認なら欠落を語らない', !missingSummary(0, 2, 4, 2).includes('読み取れなかった'), missingSummary(0, 2, 4, 2));
   check('数字でなければ何も言わない', missingSummary('あ', 3, 4) === '' && missingSummary(1, null, 4) === '');
 }
 
@@ -101,6 +109,7 @@ check('測っていないものに点数をつけない',
   check('全部読めたときの札', cellChip(0, 4) === '4項目とも読めた');
   check('★0/4 のような点数にしない', !cellChip(0, 4).includes('/') && !cellChip(3, 4).includes('/'));
   check('数字でなければ空', cellChip(undefined, 4) === '');
+  check('到達未確認の札は「確認中」（読めないと混ぜない）', cellChip(4, 4, true) === '確認中（測り直し待ち）');
 }
 
 console.log(`\n  ${pass} PASS / ${fail} FAIL`);

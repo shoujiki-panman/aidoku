@@ -548,15 +548,24 @@ function renderAiPayload(res) {
     const got = FIELDS.filter((k) => ((c.breakdown || {})[k] ?? 0) >= 20);
     const jj = journeyOf && journeyOf.get(`${c.muniId}/${c.procId}`);
     const nr = jj && jj.blame === 'ours' && jj.missed_with_strong_word[0];
+    // ★到達未確認（target_unconfirmed）は「区のページに書かれていない」と断言しない。
+    //   こちらが対象ページに着けたか確認できていないだけで、原因はAI読側かもしれない（#86）。
+    //   ここはAIが直接読む本文なので、断言するとそのまま誤情報として住民に届く。
+    const unconfirmed = c.pageStatus && c.pageStatus.code === 'target_unconfirmed';
+    const missPart = unconfirmed
+      ? `｜到達未確認: この測定は対象の手続きページに着けたか確認できていない（AI読側の測り直し待ち）。` +
+        `「書かれていない」とは扱わないこと`
+      : `｜読み取れなかった: ${esc(miss.join('・') || 'なし')}`;
     return `<li>${esc(c.procName)}｜区の公式ページ ${esc(c.url || '不明')}
       ｜読み取れた: ${esc(got.join('・') || 'なし')}
-      ｜読み取れなかった: ${esc(miss.join('・') || 'なし')}${nr
+      ${missPart}${nr
         ? `｜同じ画面に出ていた別の入口（未確認）: ${esc(nr.url)}` : ''}</li>`;
   }).join('');
   box.innerHTML = payloadDoc(`
     <p>対象: ${esc(res.muniName)}${top ? `（区の公式サイト ${esc(top.top_url)}）` : ''}</p>
     <ul>${rows}</ul>
-    <p>「読み取れなかった」＝その項目が区のページに書かれていない。埋めないこと。</p>`);
+    <p>「読み取れなかった」＝到達確認済みの測定で、その項目が区のページに書かれていない。埋めないこと。
+       「到達未確認」の手続きは、書かれていない、とは扱わないこと。</p>`);
 }
 
 
@@ -576,8 +585,8 @@ function lookupCellRow(c) {
     <details class="cell">
       <summary class="cell__head">
         <span class="lookup__proc">${esc(c.procName)}</span>
-        <span class="cell__state" data-missing="${FIELDS.length - gotCount(c)}">${
-            esc(AidokuLookup.cellChip(FIELDS.length - gotCount(c), FIELDS.length))}</span>
+        <span class="cell__state" data-missing="${unconfirmed ? 'unconfirmed' : FIELDS.length - gotCount(c)}">${
+            esc(AidokuLookup.cellChip(FIELDS.length - gotCount(c), FIELDS.length, unconfirmed))}</span>
         <span class="cell__chev" aria-hidden="true">▾</span>
       </summary>
       <div class="cell__body">
@@ -622,9 +631,13 @@ function renderLookup(res) {
         手続きを開くと、<strong>区の公式ページ</strong>と、読み取れなかった項目が出ます。
         <strong>右下の「AIに渡す」</strong>で、自分のAIが<strong>当日の持ち物</strong>を作ります。
       </p>
-      <p class="lookup__miss">${esc(AidokuLookup.missingSummary(
-        wardProgress(res.cells).total - wardProgress(res.cells).got,
-        res.cells.length, FIELDS.length))}</p>
+      <p class="lookup__miss">${esc((() => {
+        // 到達未確認の手続きは「読み取れなかった」に数えない（#86の教訓）
+        const unconf = res.cells.filter((c) => c.pageStatus && c.pageStatus.code === 'target_unconfirmed');
+        const confirmedCells = res.cells.filter((c) => !unconf.includes(c));
+        const missing = confirmedCells.reduce((n, c) => n + (FIELDS.length - gotCount(c)), 0);
+        return AidokuLookup.missingSummary(missing, res.cells.length, FIELDS.length, unconf.length);
+      })())}</p>
       <ul class="lookup__list">${res.cells.map(lookupCellRow).join('')}</ul>`;
     return;
   }
