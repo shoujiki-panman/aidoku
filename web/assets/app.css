@@ -685,7 +685,9 @@ td.marks { white-space: nowrap; }
 .cell[open] > .cell__head .cell__chev { transform: rotate(180deg); }
 .cell[open] > .cell__head { border-bottom: 1px solid #eef0f4; border-radius: 12px 12px 0 0; }
 .cell__body { padding: 14px 16px 16px; }
-.cell__go { margin: 14px 0 0; }
+.lookup__answer { margin-bottom: 14px; }
+.lookup__answer-none { margin: .7em 0 0; font-weight: 700; color: #8c1d18; }
+.lookup__answer + .cell__miss { margin-top: 0; }
 @media (prefers-reduced-motion: reduce) { .cell__chev { transition: none; } }
 
 /* 住民が次にやること。職員向けの「+20点／こう書く」だけでは、

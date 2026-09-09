@@ -1,8 +1,11 @@
 // 「自分の区を調べる」の照合テスト。DOM無しで回る（web/assets/lookup.js のみ）。
 // 実行: node web/test_lookup.mjs
 import { createRequire } from 'node:module';
+import { readFileSync } from 'node:fs';
 const require = createRequire(import.meta.url);
-const { normalizeUrl, normalizeName, lookup, missingSummary, cellChip } = require('./assets/lookup.js');
+const {
+  normalizeUrl, normalizeName, lookup, answerFields, fillQuestion, missingSummary, cellChip,
+} = require('./assets/lookup.js');
 
 let pass = 0;
 let fail = 0;
@@ -75,6 +78,34 @@ check('壊れた行は落として続ける',
 // ★ 当てずっぽうを返さないこと。盤面のグレーと同じ約束
 check('測っていないものに点数をつけない',
   lookup('八王子市', CELLS, ORDER).cell === undefined);
+
+// --- 住民に見せる回答の順番と、手続きごとの質問 ---
+{
+  const original = [
+    { field: '期限', verdict: '読めない' },
+    { field: '持ち物', verdict: '読めた' },
+    { field: '手数料', verdict: '読めない' },
+    { field: 'オンライン', verdict: '読めた' },
+  ];
+  const ordered = answerFields(original);
+  check('読めた項目を読めない項目より先に返す',
+    ordered.map((f) => f.field).join(',') === '持ち物,オンライン,期限,手数料');
+  check('同じ判定内の順序は保つ',
+    ordered.filter((f) => f.verdict === '読めた').map((f) => f.field).join(',') === '持ち物,オンライン');
+  check('元のfields配列を変更しない', original[0].field === '期限');
+  check('fieldsが配列でなくても落ちない', answerFields(null).length === 0);
+  check('壊れたfieldは落とす', answerFields([null, 'x', ...original]).length === 4);
+
+  check('測定データの質問に区名を入れる',
+    fillQuestion('{muni}で子どもが生まれました。', '港区') === '港区で子どもが生まれました。');
+  check('質問の未設定時は安全な既定文', fillQuestion(null, '港区') === '港区について教えて。');
+
+  const appSource = readFileSync(new URL('./assets/app.js', import.meta.url), 'utf8');
+  check('手続きごとの質問を照合セルに渡す', appSource.includes('question: d.question'));
+  check('項目別回答がセル本文の先頭にある',
+    /<div class="cell__body">\s*\$\{residentAnswerBlock\(c\)\}\s*<p class="cell__miss">/.test(appSource));
+  check('描画が消えた旧ボタンのリスナーを残さない', !appSource.includes("closest('.lookup__open')"));
+}
 
 // --- 住民に見せる1文。点数（7/12）と棒グラフの代わり ---
 // ★本人の指摘:「住民側にこれいらないでしょ。一切説明もない」
