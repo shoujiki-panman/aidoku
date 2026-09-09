@@ -28,9 +28,18 @@ const pages = [...screens, ...refs];
 ok('使う画面は3枚', screens.length === 3, `${screens.length}枚`);
 ok('読み物を見つけた', refs.length >= 6, `${refs.length}枚`);
 
+// ★2026-09-08の本人決定: 「AIに渡す」は住民画面=回答直後に置く／担当者画面=表示しない／
+//   データ画面=表示しない。担当者画面に出すと、住民向けプロンプトのまま担当者の本文
+//   （確認フォーム・生成JSONまで）を外部AIへ渡してしまう。
+const NO_BUTTON = new Set(['fix.html', 'board.html']);
+
 for (const f of pages) {
   const s = read(f);
   const tag = s.match(/<script[^>]*ask-ai-button\.js[^>]*><\/script>/);
+  if (NO_BUTTON.has(f)) {
+    ok(`${f} にはボタンを置かない（9/8決定）`, !tag, tag?.[0]);
+    continue;
+  }
   ok(`${f} にボタンがある`, !!tag);
   if (!tag) continue;
 
