@@ -85,6 +85,33 @@
       貯まり始め、画面はその実データを表示しています。
     </p>
 
+    <h3 class="dads-heading" data-size="s" id="agent-endpoint-heading">AIエージェント向けの窓口</h3>
+    <p class="section-note">
+      自分のAIからは、自治体ページのHTMLを直接読み解かせる代わりに、
+      AI読が測った値をJSONで受け取れます。公開している窓口は次の2つです。
+    </p>
+    <ul class="datalist">
+      <li><code>POST https://aidoku-gatekeeper.shoujiki-panman.workers.dev/ask</code> — NLWebの窓口。質問を <code>query.text</code>、対象ページの完全URLを <code>query.site</code> に入れます</li>
+      <li><code>POST https://aidoku-gatekeeper.shoujiki-panman.workers.dev/mcp</code> — MCPの窓口。JSON-RPCの <code>tools/call</code> で <code>ask</code> ツールを呼びます</li>
+    </ul>
+    <p class="section-note"><strong>NLWeb（<code>/ask</code>）の例</strong></p>
+    <pre class="next-action__cmd"><code>curl -X POST https://aidoku-gatekeeper.shoujiki-panman.workers.dev/ask \
+  -H 'content-type: application/json' \
+  -d '{"query":{"text":"転入届の手数料はいくらですか","site":"https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html"}}'</code></pre>
+    <p class="section-note"><strong>MCP（<code>/mcp</code>）の例</strong></p>
+    <pre class="next-action__cmd"><code>curl -X POST https://aidoku-gatekeeper.shoujiki-panman.workers.dev/mcp \
+  -H 'content-type: application/json' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"ask","arguments":{"query":{"text":"転入届の手数料はいくらですか","site":"https://www.city.setagaya.lg.jp/kurashi/kosekijuumin/11531.html"}}}}'</code></pre>
+    <p class="section-note">
+      <strong>ページに書かれていない項目は推測しません。</strong>
+      <code>failure</code> / <code>NO_RESULTS</code> として返します。これは通信エラーではなく、
+      「AI読の実測では答えを確認できなかった」という正常な応答です。
+    </p>
+    <p class="section-note">
+      Web Bot Authの署名を検証できた来訪は、AIサービス名単位で記録します。
+      利用者個人を識別する情報は記録しません。
+    </p>
+
     <h3 class="dads-heading" data-size="s" id="data-heading">データの入手</h3>
     <ul class="datalist">
       <li><a class="dads-link" href="data/index.json">index.json</a> — <strong>機械可読な目次</strong>。どこに何があり、どこまで測ってあるか。AIにはまずこれを読ませてください</li>
