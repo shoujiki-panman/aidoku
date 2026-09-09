@@ -91,6 +91,24 @@ function setCache(origin, entry) {
   }
 }
 
+// 素通し。実際に自治体サイトの前に置くときは、同じURLをそのまま取りに行く。
+// ただし workers.dev で動かす段階では、同じURL＝この門番自身なので再帰になり
+// Cloudflare がエラー(1042)にする。その場合は env.ORIGIN（素通し先。例:
+// https://shoujiki-panman.github.io/aidoku）を設定して、そちらへ渡す。
+function passThrough(request, url, env) {
+  if (!env?.ORIGIN) return fetch(request);
+  let base;
+  try {
+    base = new URL(env.ORIGIN);
+  } catch {
+    return fetch(request); // 設定が壊れていても門番は落ちない（従来の素通しへ）
+  }
+  const dest = new URL(base);
+  dest.pathname = `${base.pathname.replace(/\/$/, '')}${url.pathname}`;
+  dest.search = url.search;
+  return fetch(new Request(dest.toString(), request));
+}
+
 const jsonResponse = (obj, status = 200) =>
   new Response(JSON.stringify(obj), {
     status,
@@ -289,7 +307,7 @@ export default {
 
     // 署名なし＝普通の人間のアクセス。記録せず素通し（住民のデータは集めない）
     if (result.reason === 'no-signature') {
-      return fetch(request);
+      return passThrough(request, url, env);
     }
 
     // 検証済みエージェントに返す整った答え（AI読の実測データを流用）を先に引く。
@@ -340,6 +358,6 @@ export default {
     }
 
     // 整った答えがまだ無いページ／検証失敗 → 元のサイトへ素通し
-    return fetch(request);
+    return passThrough(request, url, env);
   },
 };
