@@ -15,6 +15,7 @@ import { verifyRequest, importPublicJwk, jwkThumbprint } from './httpsig.mjs';
 import { recordAsk, aggregate, isAnswered, hasAnyAnswer } from './demand.mjs';
 import { ASK_PATH, parseAsk, askTarget, decideAsk, failureResponse } from './nlweb.mjs';
 import { MCP_PATH, handleRpc, rpcError } from './mcp.mjs';
+import { executeReport, recordReception } from './reception.mjs';
 
 // 集めたデータの取り出し口。自治体サイトのURLと衝突しないよう接頭辞を付ける。
 const DEMAND_PATH = '/_aidoku/demand';
@@ -185,7 +186,29 @@ async function handleMcp(request, url, env, ctx, result) {
     return jsonResponse(rpcError(null, -32700, 'Parse error'), 400);
   }
 
-  const reply = await handleRpc(message, (parsed) => askCore(parsed, url, env, ctx, result, 'mcp'));
+  const reply = await handleRpc(message, {
+    ask: (parsed) => askCore(parsed, url, env, ctx, result, 'mcp'),
+    // 受付（操作）。実行できるのは署名検証済みだけ——その判定は executeReport の中。
+    // 成立も不成立も記録する（何を書こうとしたかの本文は記録に入れない）。
+    report: async (args) => {
+      const agent = result.ok ? (result.agent ?? result.keyid ?? '(署名検証済み・名乗りなし)') : null;
+      const body = await executeReport({ args, agent, env });
+      // 署名なし＝人間かもしれないアクセスは記録しない（ask と同じ方針）。
+      // 記録の名乗りは回数上限の判定（countAccepted）と同じ値を使う。
+      if (result.reason !== 'no-signature') {
+        await recordReception(env, ctx, {
+          ts: new Date().toISOString(),
+          agent,
+          site: typeof args?.site === 'string' ? args.site.slice(0, 200) : null,
+          field: typeof args?.field === 'string' ? args.field.slice(0, 40) : null,
+          accepted: body.accepted,
+          stopped_at: body.stopped_at ?? null,
+          issue_number: body.issue_number ?? null,
+        });
+      }
+      return body;
+    },
+  });
   // 通知（id が無いもの）には本文を返さない
   if (reply === null) return new Response(null, { status: 202 });
   return jsonResponse(reply);

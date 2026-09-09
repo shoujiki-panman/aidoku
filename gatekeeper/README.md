@@ -66,6 +66,14 @@ curl -X POST https://<門番>/mcp -H 'content-type: application/json' \
 
 **どの口から来ても、答え方も数え方も同じ**（記録の `via` が `nlweb` / `mcp` / `query` で分かれるだけ）。
 
+MCP にはもう1本、**受付**のツールがある（`report_correction`・2026-09-09 追加）。
+読むだけでなく、AIが**操作を実行**できる第1弾で、実測値の誤り・元ページの更新を
+指摘すると GitHub Issue が立ち、番号とURLが返る（＝受付成立の判定）。
+実行できるのは**署名検証済みのエージェントだけ**。止まった場合は
+`signature` / `validation` / `not-configured` / `github-<status>` のどこで
+止まったかを隠さず返し、成立・不成立とも記録する。定義と実装は
+[`reception.mjs`](reception.mjs)、計画は `plans/ai-reception.md`。
+
 `isError` は「ツールが実行できなかった」ときの印なので、
 **「そのページには書かれていなかった」(`NO_RESULTS`) は `isError: false`**。
 書かれていないことは失敗ではなく、正しい答え。
@@ -120,6 +128,8 @@ curl -X POST https://<門番>/mcp -H 'content-type: application/json' \
 | `verified/` | **自治体担当者が確認した情報の置き場**（出典・条件・確認者・版つき。形は中のREADME） |
 | `verified_sync.mjs` | 確認済みを `answers/` へ反映し、見張りが変化を見つけた項目を確認案件に戻す |
 | `test_verified.mjs` | 確認済み情報のテスト 29本（公開→門番に載る→差し戻し→再公開の一周） |
+| `reception.mjs` | **受付＝AIが実行できる操作の第1弾**（誤り・更新の指摘 → GitHub Issue）。定義・入力チェック・実行・記録 |
+| `test_reception.mjs` | 受付のテスト 15本（成立の判定と、どこで止まったかが必ず分かること） |
 | `wrangler.jsonc` / `put_answers.sh` | Cloudflare Workers へのデプロイ設定とKV投入 |
 | `check_chatgpt_keys.mjs` | ChatGPT の実鍵を取得してパース互換を確認（要ネットワーク） |
 | `runtime_check.mjs` / `runtime_client.mjs` | **本番ランタイム(workerd)の上で門番を動かして確かめる**（25本）。素の worker.mjs をそのまま呼ぶ |
@@ -133,6 +143,7 @@ node gatekeeper/test_nlweb.mjs        # ★AIが自然文で聞く窓口（20 PA
 node gatekeeper/test_mcp.mjs          # ★MCPクライアントから同じことを聞く（24 PASS）
 node gatekeeper/check_chatgpt_keys.mjs  # ChatGPTの実鍵で形式互換を確認
 node gatekeeper/test_verified.mjs     # ★担当者の確認がAIの案内を変える一周（29 PASS）
+node gatekeeper/test_reception.mjs    # ★AIが受付を実行できる（成立/どこで止まったか・15 PASS）
 node gatekeeper/build_answers.mjs     # 23区の実測から「整った答え」を作る
 node gatekeeper/verified_sync.mjs     # 担当者の確認済みを answers/ へ反映（差し戻しも）
 node gatekeeper/demo_talk.mjs         # ★AIと門番のやり取りをそのまま見る
@@ -165,6 +176,8 @@ cd gatekeeper
 npx wrangler login                        # ハッカソン用チームアカウントを選ぶ
 npx wrangler kv namespace create ANSWERS  # 出力の id を wrangler.jsonc に貼る
 npx wrangler kv namespace create DEMAND   # 同上（集めたデータの置き場）
+npx wrangler secret put GITHUB_TOKEN      # 受付（Issue作成）用。fine-grained で issues:write だけに絞る。
+                                          # 未設定なら受付は not-configured で閉じたまま（fail-closed）
 node build_answers.mjs && ./put_answers.sh
 npx wrangler deploy
 ```

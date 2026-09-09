@@ -7,8 +7,13 @@
 // 返す中身は HTTP の /ask と同じ NLWeb のレスポンスをそのまま入れる（Appendix C.1）。
 //
 // 扱うのは JSON-RPC 2.0 の initialize / tools/list / tools/call / ping と
-// notifications/*（通知は本文を返さない）。ここで独自のツールを生やさない。
+// notifications/*（通知は本文を返さない）。
+//
+// ツールは2本。ask（NLWeb 仕様のまま。ここに独自の変更を入れない）と、
+// report_correction（受付＝AIに提供する「操作」。2026-09-09 の本人決定で追加。
+// 定義は reception.mjs に1か所で持つ）。
 import { parseAsk, NLWEB_VERSION } from './nlweb.mjs';
+import { REPORT_TOOL } from './reception.mjs';
 
 export const MCP_PATH = '/mcp';
 export const PROTOCOL_VERSION = '2025-06-18';
@@ -50,9 +55,12 @@ export function rpcError(id, code, message, data) {
 }
 
 // message: JSON-RPC のリクエスト1件
-// ask(parsed) -> NLWeb のレスポンス本体を返す関数
+// handlers: { ask, report }（関数を1つ渡した場合は ask として扱う＝従来互換）
+//   ask(parsed)  -> NLWeb のレスポンス本体
+//   report(args) -> reception.mjs の executeReport の戻り（accepted / stopped_at）
 // 戻り値が null のときは「通知なので本文を返さない」の意味
-export async function handleRpc(message, ask) {
+export async function handleRpc(message, handlers) {
+  const { ask, report } = typeof handlers === 'function' ? { ask: handlers } : (handlers ?? {});
   if (!message || typeof message !== 'object' || Array.isArray(message)) {
     return rpcError(null, -32600, 'Invalid Request');
   }
@@ -72,7 +80,9 @@ export async function handleRpc(message, ask) {
         serverInfo: { name: 'aidoku-gatekeeper', title: 'AI読 門番', version: NLWEB_VERSION },
         instructions:
           'ask ツールで、この自治体ページについて自然文で質問できます。' +
-          '返る値はAI読による実測値で、行政機関の公式発表ではありません。',
+          '返る値はAI読による実測値で、行政機関の公式発表ではありません。' +
+          'report_correction ツールで、実測値の誤りや元ページの更新を指摘できます' +
+          '（署名検証済みのエージェントのみ。受け付けると GitHub Issue の番号が返ります）。',
       });
     }
 
@@ -80,9 +90,19 @@ export async function handleRpc(message, ask) {
       return rpcResult(id, {});
 
     case 'tools/list':
-      return rpcResult(id, { tools: [ASK_TOOL] });
+      return rpcResult(id, { tools: [ASK_TOOL, REPORT_TOOL] });
 
     case 'tools/call': {
+      if (params?.name === REPORT_TOOL.name && report) {
+        const body = await report(params?.arguments ?? {});
+        return rpcResult(id, {
+          content: [{ type: 'text', text: JSON.stringify(body) }],
+          structuredContent: body,
+          // 受付が成立しなかったら「実行できなかった」なので isError: true。
+          // stopped_at（signature / validation / not-configured / github-*）が理由。
+          isError: !body?.accepted,
+        });
+      }
       if (params?.name !== 'ask') {
         return rpcError(id, -32602, `Unknown tool: ${params?.name}`);
       }
