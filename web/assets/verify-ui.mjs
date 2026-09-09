@@ -102,10 +102,23 @@ async function prepare(slot, out) {
       実際の配信は、下のファイルを置いて反映してから始まります。</p>
     <h4 class="dads-heading" data-size="xs">公開のしかた</h4>
     <ol class="verify__steps">
-      <li>このファイルを <code>gatekeeper/verified/${esc(name)}</code> としてリポジトリに置く（Pull Request）</li>
-      <li><code>node gatekeeper/verified_sync.mjs</code> を実行（見張りとの突き合わせと answers/ への反映）</li>
-      <li><code>gatekeeper/put_answers.sh</code> でKVへ。ここでAIの案内が変わります</li>
+      <li><b>あなた（担当者）がすること:</b> 確認した内容をAI読へ届ける。
+        <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku/new/main?filename=gatekeeper/verified/${encodeURIComponent(name)}&value=${encodeURIComponent(json)}"
+           target="_blank" rel="noopener">GitHubでこのファイルを追加する</a>（中身は入力済みで開きます。
+        書き込み権限が無いアカウントでも、自動でフォークとPull Requestになります）。
+        またはこの中身を添えて
+        <a class="dads-link" href="https://github.com/shoujiki-panman/aidoku/issues/new?title=${encodeURIComponent(`[確認済み情報] ${cell.muniName}・${cell.procName}`)}&body=${encodeURIComponent(`担当者として値を確認しました。公開をお願いします。\n\n\`\`\`json\n${json}\`\`\``)}"
+           target="_blank" rel="noopener">Issueで送る</a>こともできます（どちらもGitHubのアカウントが必要です）</li>
+      <li><b>AI読側で行うこと:</b> 見張りの記録と突き合わせて、AIへの配信に反映します。
+        反映されると、この画面の「今日直す1件」の確認案件から消え、AIの案内が変わります</li>
     </ol>
+    <details class="verify__prov"><summary>エンジニア向けの内訳</summary>
+      <ol class="verify__steps">
+        <li><code>gatekeeper/verified/${esc(name)}</code> をPRで置く</li>
+        <li><code>node gatekeeper/verified_sync.mjs</code>（見張りとの突き合わせと answers/ への反映）</li>
+        <li><code>gatekeeper/put_answers.sh</code> でKVへ</li>
+      </ol>
+    </details>
     <p class="verify__acts">
       <button type="button" class="dads-button verify__dl">記録ファイルを保存（${esc(name)}）</button>
       <button type="button" class="dads-button verify__copy">中身をコピー</button>
