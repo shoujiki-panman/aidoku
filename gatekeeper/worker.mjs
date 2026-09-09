@@ -247,7 +247,15 @@ export default {
     // （7/31 に JWKS fetch で同じ壊れ方をしている。原則を実装で担保しておく）
     let result;
     try {
-      result = await verifyRequest({ authority: url.host, headers, getKey: resolveKey });
+      result = await verifyRequest({
+        authority: url.host,
+        method: request.method,
+        path: url.pathname,
+        scheme: url.protocol.replace(':', ''),
+        targetUri: url.href,
+        headers,
+        getKey: resolveKey,
+      });
     } catch {
       result = { ok: false, reason: 'verify-error' };
     }

@@ -58,15 +58,23 @@ export function buildSignatureBase(components, valueOf, paramsRaw) {
 
 // ---- 署名（テスト用クライアント側）----------------------------------------
 
-export async function signRequest({ authority, agent, privateKey, keyid, created, expires }) {
+// method を渡すと、本物のChatGPTと同じ形（"@authority" "@method" "signature-agent"）で署名する
+// （2026-09-09 の本番来訪で実測した形。互換テストに使う）。
+export async function signRequest({ authority, agent, privateKey, keyid, created, expires, method }) {
   const agentValue = `"${agent}"`; // Signature-Agent は sf-string（引用符つき）
-  const components = ['@authority', 'signature-agent'];
+  const components = method
+    ? ['@authority', '@method', 'signature-agent']
+    : ['@authority', 'signature-agent'];
   const paramsRaw =
-    `("@authority" "signature-agent")` +
+    `(${components.map((c) => `"${c}"`).join(' ')})` +
     `;created=${created};expires=${expires};keyid="${keyid}";alg="ed25519";tag="web-bot-auth"`;
   const base = buildSignatureBase(
     components,
-    (name) => (name === '@authority' ? authority.toLowerCase() : agentValue),
+    (name) => {
+      if (name === '@authority') return authority.toLowerCase();
+      if (name === '@method') return method.toUpperCase();
+      return agentValue;
+    },
     paramsRaw,
   );
   const sig = new Uint8Array(await crypto.subtle.sign({ name: 'Ed25519' }, privateKey, enc.encode(base)));
@@ -81,7 +89,13 @@ export async function signRequest({ authority, agent, privateKey, keyid, created
 
 // headers: 小文字キーのプレーンオブジェクト
 // getKey(keyid, agentValue) -> CryptoKey | null
-export async function verifyRequest({ authority, headers, getKey, now = Math.floor(Date.now() / 1000) }) {
+// method / path / scheme / targetUri は、署名対象に派生コンポーネントが含まれるときに使う。
+// 本物のChatGPTは ("@authority" "@method" "signature-agent") で署名してくる
+// （2026-09-09 の本番来訪で実測。@authority だけの想定では base-construction-failed になっていた）。
+export async function verifyRequest({
+  authority, method, path, scheme, targetUri, headers, getKey,
+  now = Math.floor(Date.now() / 1000),
+}) {
   const h = {};
   for (const [k, v] of Object.entries(headers)) h[k.toLowerCase()] = v;
 
@@ -126,6 +140,24 @@ export async function verifyRequest({ authority, headers, getKey, now = Math.flo
       components,
       (name) => {
         if (name === '@authority') return authority.toLowerCase();
+        // RFC 9421 §2.2 の派生コンポーネント。値を渡されていない（＝この呼び出し元では
+        // 検証できない）ものは落とすのではなく base-construction-failed に倒す
+        if (name === '@method') {
+          if (!method) throw new Error('covered @method but no method given');
+          return method.toUpperCase(); // §2.2.1: メソッドは大文字
+        }
+        if (name === '@path') {
+          if (!path) throw new Error('covered @path but no path given');
+          return path;
+        }
+        if (name === '@scheme') {
+          if (!scheme) throw new Error('covered @scheme but no scheme given');
+          return scheme.toLowerCase();
+        }
+        if (name === '@target-uri') {
+          if (!targetUri) throw new Error('covered @target-uri but no target-uri given');
+          return targetUri;
+        }
         if (name.startsWith('@')) throw new Error(`unsupported derived component: ${name}`);
         const v = h[name];
         if (v === undefined) throw new Error(`missing covered header: ${name}`);
