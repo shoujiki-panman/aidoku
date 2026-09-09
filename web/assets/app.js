@@ -466,6 +466,7 @@ async function loadLookupCells() {
     const d = await loadJson(`data/${p.file}`);
     return d.municipalities.map((m) => ({
       procId: p.id, procName: p.name, muniId: m.id, muniName: m.name,
+      question: d.question,
       total: m.total, url: m.page_url, breakdown: m.breakdown, pageStatus: m.page_status,
       // 項目ごとに「どこに何を書くか」を出すために持つ
       improvements: m.improvements || [],
@@ -577,6 +578,26 @@ function missingLine(c) {
   return `このページからは <b>${esc(miss.join('・'))}</b> が読み取れませんでした。`;
 }
 
+// 区と手続きを選んだ人に、その測定でAIが実際に答えられた内容を先に見せる。
+// 実文は許諾整理中のため復元せず、answerLine() の既存の非公開表示を使う。
+function residentAnswerBlock(c) {
+  const fields = AidokuLookup.answerFields(c.fields);
+  const answered = fields.filter((f) => f.verdict === '読めた').length;
+  const none = fields.length > 0 && answered === 0
+    ? '<p class="lookup__answer-none">この測定で答えられた項目はありません。</p>'
+    : '';
+  const rows = fields.length
+    ? `<ul class="ans">${fields.map((f) => answerLine(f, 0)).join('')}</ul>`
+    : '<p class="lookup__answer-none">項目別の測定結果がありません。</p>';
+  return `<div class="chat lookup__answer">
+    <p class="chat__q"><span class="chat__who">住民</span>「${esc(AidokuLookup.fillQuestion(c.question, c.muniName))}」</p>
+    <div class="chat__a">
+      <span class="chat__who">住民のAI</span>
+      ${none}${rows}
+    </div>
+  </div>`;
+}
+
 function lookupCellRow(c) {
   const st = c.pageStatus;
   const unconfirmed = st !== null && typeof st === 'object' && st.code === 'target_unconfirmed';
@@ -590,6 +611,7 @@ function lookupCellRow(c) {
         <span class="cell__chev" aria-hidden="true">▾</span>
       </summary>
       <div class="cell__body">
+        ${residentAnswerBlock(c)}
         <p class="cell__miss">${missingLine(c)}</p>
         ${unconfirmed ? `<p class="lookup__warn">${esc(st.label)}</p>` : ''}
         ${nextStepForResident(c)}
@@ -599,13 +621,6 @@ function lookupCellRow(c) {
       </div>
     </details>
   </li>`;
-}
-
-// その区が住民のAIに届けられている項目の数。3手続き × 4項目 = 12 が満点
-function wardProgress(cells) {
-  const total = cells.length * FIELDS.length;
-  const got = cells.reduce((a, c) => a + gotCount(c), 0);
-  return { got, total, pct: total ? Math.round((got / total) * 100) : 0 };
 }
 
 function renderLookup(res) {
@@ -754,14 +769,6 @@ function initLookup() {
       runLookup($('lookup-input').value);
     });
   }
-  $('lookup-result').addEventListener('click', async (e) => {
-    const b = e.target.closest('.lookup__open');
-    if (!b) return;
-    setStage('detail');
-    await loadProcedure(b.dataset.proc, b.dataset.muni);
-    $('detail-heading').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-
   // 手続きを開いたとき、中身が画面の外に出ることがある。
   // 「あなたが次にやること」まで見えるように送る。
   $('lookup-result').addEventListener('toggle', (e) => {

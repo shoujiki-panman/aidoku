@@ -45,6 +45,29 @@
     return mine.sort((a, b) => rank(a.procId) - rank(b.procId) || a.procId.localeCompare(b.procId));
   }
 
+  // 住民には、まずAIが答えられた内容、そのあとに答えられなかった内容を見せる。
+  // 元配列はデータとしてほかの画面も使うので、並べ替えで壊さない。
+  function answerFields(fields) {
+    const list = Array.isArray(fields)
+      ? fields.filter((f) => f !== null && typeof f === 'object' && !Array.isArray(f))
+      : [];
+    return list
+      .map((field, index) => ({ field, index }))
+      .sort((a, b) =>
+        Number(b.field.verdict === '読めた') - Number(a.field.verdict === '読めた') ||
+        a.index - b.index)
+      .map(({ field }) => field);
+  }
+
+  // 質問文は手続きごとの測定データが出どころ。現在表示中の別手続きの
+  // グローバル状態を参照すると、児童手当のカードに転入届の質問が出てしまう。
+  function fillQuestion(template, muniName) {
+    const base = typeof template === 'string' && template.trim()
+      ? template
+      : '{muni}について教えて。';
+    return base.replace('{muni}', String(muniName === null || muniName === undefined ? '' : muniName));
+  }
+
   // 返す形:
   //   { kind: 'page',  cell }                        貼られたページそのものを測ってある
   //   { kind: 'ward',  muniName, cells, matchedBy }  区は測ってあるが、そのページは測っていない
@@ -121,5 +144,8 @@
     return m === 0 ? `${fields}項目とも読めた` : `読めない ${m}項目`;
   }
 
-  return { normalizeUrl, normalizeName, lookup, wardCells, missingSummary, cellChip };
+  return {
+    normalizeUrl, normalizeName, lookup, wardCells,
+    answerFields, fillQuestion, missingSummary, cellChip,
+  };
 });
