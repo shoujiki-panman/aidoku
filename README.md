@@ -63,22 +63,28 @@ Claude Code が無い環境では、23区の実測結果のみ返ります。
 | 窓口 | 何 |
 |---|---|
 | `POST /ask` | [NLWeb](https://nlweb.ai/docs/specification) 準拠。`answer` / `failure` / `elicitation` を規格どおり返す |
-| `POST /mcp` | MCP（JSON-RPC 2.0）。ツールは NLWeb 仕様の `ask` 1本 |
+| `POST /mcp` | MCP（JSON-RPC 2.0）。ツールは NLWeb 仕様の `ask` と、受付の `report_correction`（署名検証済みのAIだけが誤り・更新の指摘を出せる。GitHub Issue が立ち番号が返る） |
 | `web/reference/demand.html` | 集めたものの画面「AIが取れずに帰ったもの」 |
 
 **主役のデータは「取れなかった」の方**。サーバーログには「来た」しか残らず、
 **「来たが答えを見つけられずに帰った」はどこにも記録されていない**。
 
-> ⚠️ 現在、**本物のAIエージェントの来訪は0件**。画面に出ている数字は自分で作った見本で、
-> JSON に `"is_sample": true` が付いている。デプロイするまで本物は集まらない。
+> ✅ **2026-09-09、門番を本番（workers.dev・個人枠）に置き、本物の ChatGPT の来訪を
+> 署名検証つきで記録した。** ChatGPT は全リクエストに Web Bot Auth の署名を付けて来る。
+> 検証済みの「取れずに帰った」記録も貯まり始めた（実測の詳細は
+> [gatekeeper/README.md](gatekeeper/README.md) の「実測で確かめたこと（2026-09-09）」と
+> [#199](https://github.com/shoujiki-panman/aidoku/issues/199)）。
+> ⚠️ ただし「AIが取れずに帰ったもの」**画面**（demand.html）の数字はまだ見本のままで、
+> JSON に `"is_sample": true` が付いている。本物の記録を画面へ流すのはこれから。
 
-詳しくは [gatekeeper/README.md](gatekeeper/README.md)。テストは **112 PASS / 0 FAIL**。
+詳しくは [gatekeeper/README.md](gatekeeper/README.md)。テストは **149 PASS / 0 FAIL**（2026-09-09 実測）。
 
 ## 門番を置いてみたい方へ（サイトを持っている方）
 
 門番は**サイトの持ち主がサーバーの前に置いて初めて動く**。他人のサイトには置けないし、置かない。
-だから、いま一番ほしいのは**置かせてくれる1サイト**。まだ本物の来訪は0件で、
-「本物のAIエージェントがどう来るのか」は誰も観測していない。
+だから、いま一番ほしいのは**置かせてくれる1サイト**。
+「本物のAIエージェントがどう来るのか」は自分のサイトで観測を始めた
+（ChatGPT は署名して来る。上の門番の節を参照）。次は本物の自治体サイトで確かめたい。
 
 置いたときに門番がすることは、これだけ。
 
