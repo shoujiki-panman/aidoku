@@ -90,18 +90,32 @@
   // ★本人の指摘:「住民側にこれいらないでしょ。一切説明もない」。
   //   住民が知りたいのは「自分のAIが何を知れないか」であって、区の成績ではない。
   //   点数と推移は reference/archive.html（調査データ一覧）に置く。
-  function missingSummary(missing, procedures, fieldsPerProc) {
+  // unconfirmed = 到達未確認（page_status: target_unconfirmed）の手続き数。
+  // ★到達未確認を「読み取れなかった」に混ぜない。混ぜると「区が書いていない」に読める
+  //   （実際はこちらが対象ページに着けたか確認できていないだけ。#86の教訓）。
+  //   missing は到達確認済みの手続きぶんだけを渡すこと。
+  function missingSummary(missing, procedures, fieldsPerProc, unconfirmed = 0) {
     const m = Number(missing);
     const p = Number(procedures);
+    const u = Number(unconfirmed) || 0;
     if (!Number.isFinite(m) || !Number.isFinite(p) || p <= 0) return '';
-    const all = p * Number(fieldsPerProc);
-    if (m === 0) return `測った${p}つの手続きは、どれも${fieldsPerProc}項目すべてを読み取れました。`;
-    if (m === all) return `測った${p}つの手続きは、どれも1項目も読み取れませんでした。`;
-    return `測った${p}つの手続きのうち、AIが区のページから読み取れなかった項目が${m}つあります。`;
+    const confirmed = p - u;
+    const head = u > 0
+      ? `測った${p}つの手続きのうち${u}つは、対象ページに到達できたか確認中です` +
+        `（AI読側の測り直し待ち。「書かれていない」という意味ではありません）。`
+      : '';
+    if (confirmed <= 0) return head;
+    const subject = u > 0 ? `残る${confirmed}つ` : `測った${confirmed}つの手続き`;
+    const all = confirmed * Number(fieldsPerProc);
+    if (m === 0) return `${head}${subject}は、どれも${fieldsPerProc}項目すべてを読み取れました。`;
+    if (m === all) return `${head}${subject}は、どれも1項目も読み取れませんでした。`;
+    return `${head}${subject}${u > 0 ? 'では' : 'のうち'}、AIが区のページから読み取れなかった項目が${m}個あります。`;
   }
 
-  // 手続き1行の見出しに出す短い札。0/4 のような点数はやめる
-  function cellChip(missing, fields) {
+  // 手続き1行の見出しに出す短い札。0/4 のような点数はやめる。
+  // 到達未確認の手続きは「読めない」ではなく「確認中」（上と同じ理由）。
+  function cellChip(missing, fields, unconfirmed = false) {
+    if (unconfirmed) return '確認中（測り直し待ち）';
     const m = Number(missing);
     if (!Number.isFinite(m)) return '';
     return m === 0 ? `${fields}項目とも読めた` : `読めない ${m}項目`;
