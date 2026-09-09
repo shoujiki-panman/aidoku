@@ -28,7 +28,7 @@ import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { KNOWN_FIELDS } from './demand.mjs';
-import { hasPublished, publishInto, reviewAgainstWatch, unknownFields, urlKey } from './verified_core.mjs';
+import { hasPublished, publishInto, reviewAgainstWatch, summarizeVerified, unknownFields, urlKey } from './verified_core.mjs';
 
 // 既存の呼び出し側（テスト等）が verified_sync から引き続き import できるように再輸出する
 export { parseTime, urlKey, unknownFields, reviewAgainstWatch, publishInto } from './verified_core.mjs';
@@ -37,6 +37,8 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const VERIFIED_DIR = join(HERE, 'verified');
 const ANSWERS_DIR = join(HERE, 'answers');
 const SITE_STATUS = join(HERE, '..', 'web', 'data', 'site-status.json');
+// 状態サマリの公開先。担当者画面の「今日直す1件」が確認案件を拾う（値は入れない）
+const VERIFIED_STATUS = join(HERE, '..', 'web', 'data', 'verified-status.json');
 
 async function readJson(path) {
   return JSON.parse(await readFile(path, 'utf-8'));
@@ -50,6 +52,7 @@ async function main() {
     files = (await readdir(VERIFIED_DIR)).filter((f) => f.endsWith('.json'));
   } catch {
     console.log('verified/ がまだ無い。反映するものなし。');
+    await writeJson(VERIFIED_STATUS, { generated_at: new Date().toISOString(), records: [] });
     return;
   }
 
@@ -67,10 +70,12 @@ async function main() {
   const index = await readJson(join(ANSWERS_DIR, '_index.json'));
   // record が紐づいた answers ファイル。ここに無いのに verified_fields を持つ answers は孤児
   const claimed = new Set();
+  const records = [];
 
   for (const f of files) {
     const path = join(VERIFIED_DIR, f);
     const record = await readJson(path);
+    records.push(record);
 
     const bad = unknownFields(record);
     if (bad.length) {
@@ -129,6 +134,9 @@ async function main() {
       console.log(`孤児を消した: ${row.file}（どの verified/ 記録にも紐づかない verified_fields）`);
     }
   }
+
+  // 状態サマリを公開データへ（差し戻し反映後の状態。担当者画面の「今日直す1件」が読む）
+  await writeJson(VERIFIED_STATUS, { generated_at: new Date().toISOString(), records: summarizeVerified(records) });
 
   if (process.exitCode === 1) {
     console.error('★上の問題を直してから再実行する。KVへは上げない。');

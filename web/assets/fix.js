@@ -122,6 +122,7 @@
           procId: p.id, procName: p.name, muniId: m.id, muniName: m.name,
           url: m.page_url, breakdown: m.breakdown, improvements: m.improvements || [],
           notes: m.notes || '', lgCode: m.lg_code || null,
+          pageStatus: (m.page_status && m.page_status.code) || null,
           generatedAt: (d.generated_at || '').slice(0, 10),
         }));
       }));
@@ -140,6 +141,10 @@
       sel.insertAdjacentHTML('beforeend',
         wards.map((w) => `<option value="${esc(w.muniId)}">${esc(w.muniName)}</option>`).join(''));
       sel.addEventListener('change', () => show(sel.value));
+
+      // 「今日直す1件」（assets/today-ui.mjs）へデータが揃った合図を送る
+      window.__aidokuFixCells = cells;
+      document.dispatchEvent(new CustomEvent('aidoku:fix-cells', { detail: { cells } }));
 
       // ?muni=setagaya で直接開く。庁内で共有するときに使える
       const want = new URLSearchParams(location.search).get('muni');

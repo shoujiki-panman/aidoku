@@ -110,3 +110,22 @@ export function publishInto(answer, record) {
 
 export const hasPublished = (record) =>
   Object.values(record?.fields ?? {}).some((e) => e?.status === 'published');
+
+// 公開用の状態サマリ（web/data/verified-status.json の中身）。
+// 担当者画面の「今日直す1件」が、確認案件（needs_review）を拾うのに使う。
+// 値そのものは入れない（値は answers/ 経由で門番が返す。ここは状態だけ）。
+export function summarizeVerified(records) {
+  return records.map((record) => ({
+    municipality_id: record.municipality_id ?? null,
+    procedure_id: record.procedure_id ?? null,
+    source: record.source ?? null,
+    fields: Object.fromEntries(
+      Object.entries(record.fields ?? {}).map(([name, e]) => [name, {
+        status: e?.status ?? null,
+        version: e?.version ?? null,
+        verified_at: e?.verified_at ?? null,
+        review_reason: e?.review_reason ?? null,
+      }]),
+    ),
+  }));
+}
