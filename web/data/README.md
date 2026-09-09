@@ -49,6 +49,7 @@ AI読（アイドク）が測った結果です。**使うのに許可は要り�
 | `summary.txt` | 要約（テキスト） |
 | `site-status.json` | **採点したページが前回から変わったか**の確認結果（下記）。毎朝の自動確認で更新され、公開画面の最上部がこれを読む |
 | `verified-status.json` | **自治体担当者が確認した情報の状態**（公開中／確認案件。値は入れない）。`gatekeeper/verified_sync.mjs` が生成し、担当者画面の「今日直す1件」がこれを読む |
+| `demand.json` | **門番が記録した本物のAI来訪の集計**（何を探しに来て、取れたか／取れずに帰ったか）。`gatekeeper/export_demand.mjs` で手動エクスポート。2026-09-09 より前は見本（`is_sample: true`）だった |
 
 ### `site-status.json` — 見張りの記録
 

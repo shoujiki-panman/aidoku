@@ -74,8 +74,9 @@ Claude Code が無い環境では、23区の実測結果のみ返ります。
 > 検証済みの「取れずに帰った」記録も貯まり始めた（実測の詳細は
 > [gatekeeper/README.md](gatekeeper/README.md) の「実測で確かめたこと（2026-09-09）」と
 > [#199](https://github.com/shoujiki-panman/aidoku/issues/199)）。
-> ⚠️ ただし「AIが取れずに帰ったもの」**画面**（demand.html）の数字はまだ見本のままで、
-> JSON に `"is_sample": true` が付いている。本物の記録を画面へ流すのはこれから。
+> 「AIが取れずに帰ったもの」**画面**（demand.html）も、この本物の記録を表示している
+> （`gatekeeper/export_demand.mjs` で手動エクスポート・PR経由で更新。見本だった期間の
+> 数字は `is_sample` 付きで区別していた）。
 
 詳しくは [gatekeeper/README.md](gatekeeper/README.md)。テストは **149 PASS / 0 FAIL**（2026-09-09 実測）。
 
