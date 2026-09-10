@@ -1,6 +1,6 @@
 // 「今日直す1件」の中身（純粋ロジック）。画面の配線は today-ui.mjs。
 //
-// 見張りの変化（43件）を「43件の数字」として見せず、状態で分けて優先度順に並べ、
+// 見張りの変化を件数だけで見せず、状態で分けて優先度順に並べ、
 // 先頭の1件に変換する（2026-09-08 の設計決定）。状態は混ぜない:
 //
 //   確認案件   … 担当者が確認した値が、元ページの変化で門番から消えている（最優先）
@@ -23,6 +23,33 @@ const STATE_RANK = [STATE.needsReview, STATE.recheck, STATE.missing, STATE.uncon
 const FIELD_JP = Object.fromEntries(Object.entries(FIELD_MAP).map(([jp, en]) => [en, jp]));
 
 const cellKey = (muniId, procId) => `${muniId}/${procId}`;
+
+// 「要再確認」をAI読側へ渡す依頼票。GitHubの新規Issue画面を開くだけで、
+// ここから再測定を自動実行しない。画面とnodeテストの両方から使うため純粋関数にする。
+export function buildRemeasureIssueUrl(q) {
+  if (!q || q.state !== STATE.recheck || !q.cell) return '';
+  const c = q.cell;
+  const required = [c.muniId, c.muniName, c.procId, c.procName, c.url, q.reason];
+  if (required.some((v) => typeof v !== 'string' || !v.trim())) return '';
+
+  const issue = new URL('https://github.com/shoujiki-panman/aidoku/issues/new');
+  issue.searchParams.set('title', `[再測定依頼] ${c.muniName}・${c.procName}`);
+  issue.searchParams.set('body', [
+    'AI読の担当者画面から、再測定を依頼します。',
+    '',
+    `- 自治体: ${c.muniName}（${c.muniId}）`,
+    `- 手続き: ${c.procName}（${c.procId}）`,
+    `- 対象ページ: ${c.url}`,
+    `- 検出内容: ${q.reason}`,
+    '',
+    '「変わった」は、ページが悪化したという意味ではありません。公開結果は前回の測定時点のままです。',
+    'AI読側で対象ページを確認し、必要なら探索からやり直したうえで、同じ条件で再測定するか判断してください。',
+    'このIssueを送信しただけでは、再測定は始まりません。',
+    '',
+    'Refs #209',
+  ].join('\n'));
+  return issue.href;
+}
 
 // cells: fix.js が組んだ 区×手続き（muniId/procId/名前/breakdown/pageStatus/lgCode）
 // statusItems: web/data/site-status.json の items
