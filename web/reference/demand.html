@@ -4,7 +4,7 @@
   <base href="../">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AIが取れずに帰ったもの — AI窓口が集めるデータ | AI読（アイドク）</title>
+<title>AI窓口へのアクセスと対応情報 | AI読（アイドク）</title>
 <meta name="description" content="住民のAIが自治体サイトに何を探しに来て、答えを見つけられずに帰ったか。サーバーログには「来た」しか残りません。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +40,9 @@
 <header class="site-header">
   <div class="wrap">
     <p class="site-header__eyebrow">都知事杯オープンデータ・ハッカソン2026 応募作品　AI読（アイドク）</p>
-    <h1 class="dads-heading" data-size="xl">AIが取れずに帰ったもの</h1>
-    <p class="site-header__lead">サーバーの記録に残るのは「開けたか」まで。<br>
-      <strong>ページが正常に開いたのに、答えが載っていなかった。</strong>これはどこにも残りません。</p>
+    <h1 class="dads-heading" data-size="xl">AI窓口へのアクセスと対応情報</h1>
+    <p class="site-header__lead">署名つきアクセスと、質問に対応する情報の有無を集計します。<br>
+      AIの最終回答や住民の手続完了は、この記録では確認できません。</p>
   </div>
 </header>
 
@@ -56,7 +56,7 @@
         <path d="M12 2 1 21h22L12 2Z" fill="currentcolor"/>
         <path d="M11 10h2v5h-2v-5Zm0 7h2v2h-2v-2Z" fill="Canvas"/>
       </svg>
-      <span class="dads-notification-banner__heading-text" id="sample-heading">下の数字は見本です。本物のAIはまだ1件も来ていません</span>
+      <span class="dads-notification-banner__heading-text" id="sample-heading">データを読み込んでいます</span>
     </p>
     <div class="dads-notification-banner__body">
       <p id="sample-note"></p>
@@ -64,7 +64,7 @@
   </div>
 
   <section aria-labelledby="totals-heading">
-    <h2 class="dads-heading" data-size="l" id="totals-heading">来たAIと、取れなかったもの</h2>
+    <h2 class="dads-heading" data-size="l" id="totals-heading">アクセスと対応情報の集計</h2>
 
     <div class="headline" id="headline">
       <p class="headline__label">本物のAIエージェントの来訪</p>
@@ -80,8 +80,8 @@
   <hr class="dads-divider">
 
   <section aria-labelledby="unanswered-heading">
-    <h2 class="dads-heading" data-size="l" id="unanswered-heading">取れずに帰った探し物</h2>
-    <p class="section-note">そのまま区役所への更新依頼リストになります。</p>
+    <h2 class="dads-heading" data-size="l" id="unanswered-heading">窓口に対応情報がなかった質問</h2>
+    <p class="section-note">元ページに情報がないとは限りません。出典を確認するための候補です。</p>
 
     <!-- 2026-08-13 追記。Cloudflare AI Crawl Control が 403/404/robots.txt違反まで
          無料で記録するようになったので、「取れなかった」だけでは差にならない。
@@ -92,24 +92,19 @@
           <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="currentcolor"/>
           <path d="M11 17h2v-6h-2v6Zm0-8h2V7h-2v2Z" fill="Canvas"/>
         </svg>
-        <span class="dads-notification-banner__heading-text">「エラーで取れなかった」は、もう無料で分かります</span>
+        <span class="dads-notification-banner__heading-text">アクセスと情報の有無は別に確認します</span>
       </p>
       <div class="dads-notification-banner__body">
-        <p>どのAIが来たか、どのURLでエラーになったか（403・404）、robots.txt に弾かれたか——
-        ここまでは <a class="dads-link" href="https://developers.cloudflare.com/ai-crawl-control/" target="_blank" rel="noopener">Cloudflare AI Crawl Control</a>
-        が全プラン・設定不要で記録します（2026-08-13 確認）。</p>
-        <p><strong>残っているのは「ページは正常に開いたのに、答えが載っていなかった」です。</strong>
-        自治体サイトで一番起きるのはこれで、HTTPの記録には一切現れません。
-        世田谷区の転入届のページは <strong>200 を返します</strong>。中身も表示されます。それでも4項目は0点でした。</p>
-        <p>この判定には「そのページに何が書かれているべきか」の知識が要ります。
-        AI読が持っているのは、<a class="dads-link" href="index.html">4項目の実測データ</a>そのものです。</p>
+        <p><a class="dads-link" href="https://developers.cloudflare.com/ai-crawl-control/features/analyze-ai-traffic/" target="_blank" rel="noopener">Cloudflare AI Crawl Control</a>ではHTTPリクエストと応答コードなどを確認できます。</p>
+        <p>AI読では、質問に対応する実測値や確認済み情報を窓口が持っているかを記録します。元サイトへの素通し後にAIが回答できたかは分かりません。</p>
+        <p>質問のないHTML・JS・JSONの取得は、回答の成否に数えません。</p>
       </div>
     </div>
 
     <p class="rollup" id="rollup"></p>
     <div class="dads-table">
       <table class="dads-table__table">
-        <caption class="visually-hidden">AIが探しに来たのに取れずに帰ったものの一覧</caption>
+        <caption class="visually-hidden">窓口に対応情報がなかった質問の一覧</caption>
         <thead>
           <tr>
             <th scope="col">結果</th>
@@ -146,8 +141,8 @@
           <tr>
             <th scope="col">ページ</th>
             <th scope="col" class="num">来訪</th>
-            <th scope="col" class="num">取れた</th>
-            <th scope="col" class="num">取れず</th>
+            <th scope="col" class="num">対応情報あり</th>
+            <th scope="col" class="num">対応情報なし</th>
             <th scope="col">聞かれたこと</th>
           </tr>
         </thead>
@@ -164,9 +159,9 @@
     <details class="def-details">
       <summary>数え方の定義</summary>
       <dl class="def-list">
-        <dt>取れた</dt><dd>聞かれた項目に、そのページから読み取れた実測値があった。</dd>
-        <dt>取れずに帰った</dt><dd>聞かれた項目が、そのページに書かれていなかった。</dd>
-        <dt>聞き返した</dt><dd>どの項目を聞かれたか特定できなかった。推測で「取れた」に数えません。</dd>
+        <dt>対応情報あり</dt><dd>質問に対応する実測値または確認済み情報を窓口が持っていた。</dd>
+        <dt>対応情報なし</dt><dd>窓口に対応情報がなかった。元ページの情報欠落やAIの回答失敗を意味しません。</dd>
+        <dt>判定対象外</dt><dd>質問がない、またはどの項目か特定できないアクセス。回答の成否には数えません。</dd>
         <dt>検証に失敗</dt><dd>署名が確かめられなかった来訪。件数だけ数え、名乗りは記録しません。</dd>
       </dl>
     </details>

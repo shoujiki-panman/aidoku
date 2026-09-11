@@ -3,8 +3,8 @@
   "totals": {
     "asks": 14,
     "answered": 0,
-    "unanswered": 5,
-    "undetermined": 0,
+    "unanswered": 0,
+    "undetermined": 5,
     "unverified": 9,
     "agents": 1
   },
@@ -19,96 +19,10 @@
       "agent": "https://chatgpt.com",
       "asks": 5,
       "answered": 0,
-      "unanswered": 5
+      "unanswered": 0
     }
   ],
-  "unanswered": [
-    {
-      "authority": "aidoku-gatekeeper.shoujiki-panman.workers.dev",
-      "path": "/web/data/scores-tennyu.json",
-      "looking_for": null,
-      "count": 2,
-      "answered_count": 0,
-      "unanswered_count": 1,
-      "by_agent": {
-        "https://chatgpt.com": {
-          "asks": 1,
-          "answered": 0,
-          "unanswered": 1
-        }
-      },
-      "first_seen": "2026-09-09T00:22:48.464Z",
-      "last_seen": "2026-09-09T00:29:39.802Z"
-    },
-    {
-      "authority": "aidoku-gatekeeper.shoujiki-panman.workers.dev",
-      "path": "/web/data/scores-jidouteate.json",
-      "looking_for": null,
-      "count": 1,
-      "answered_count": 0,
-      "unanswered_count": 1,
-      "by_agent": {
-        "https://chatgpt.com": {
-          "asks": 1,
-          "answered": 0,
-          "unanswered": 1
-        }
-      },
-      "first_seen": "2026-09-09T00:29:38.963Z",
-      "last_seen": "2026-09-09T00:29:38.963Z"
-    },
-    {
-      "authority": "aidoku-gatekeeper.shoujiki-panman.workers.dev",
-      "path": "/web/data/scores-sodaigomi.json",
-      "looking_for": null,
-      "count": 1,
-      "answered_count": 0,
-      "unanswered_count": 1,
-      "by_agent": {
-        "https://chatgpt.com": {
-          "asks": 1,
-          "answered": 0,
-          "unanswered": 1
-        }
-      },
-      "first_seen": "2026-09-09T00:29:36.351Z",
-      "last_seen": "2026-09-09T00:29:36.351Z"
-    },
-    {
-      "authority": "aidoku-gatekeeper.shoujiki-panman.workers.dev",
-      "path": "/web/assets/board.js",
-      "looking_for": null,
-      "count": 1,
-      "answered_count": 0,
-      "unanswered_count": 1,
-      "by_agent": {
-        "https://chatgpt.com": {
-          "asks": 1,
-          "answered": 0,
-          "unanswered": 1
-        }
-      },
-      "first_seen": "2026-09-09T00:29:06.044Z",
-      "last_seen": "2026-09-09T00:29:06.044Z"
-    },
-    {
-      "authority": "aidoku-gatekeeper.shoujiki-panman.workers.dev",
-      "path": "/web/board.html",
-      "looking_for": null,
-      "count": 1,
-      "answered_count": 0,
-      "unanswered_count": 1,
-      "by_agent": {
-        "https://chatgpt.com": {
-          "asks": 1,
-          "answered": 0,
-          "unanswered": 1
-        }
-      },
-      "first_seen": "2026-09-09T00:28:50.814Z",
-      "last_seen": "2026-09-09T00:28:50.814Z"
-    }
-  ],
+  "unanswered": [],
   "all": [
     {
       "authority": "aidoku-gatekeeper.shoujiki-panman.workers.dev",
@@ -116,12 +30,12 @@
       "looking_for": null,
       "count": 2,
       "answered_count": 0,
-      "unanswered_count": 1,
+      "unanswered_count": 0,
       "by_agent": {
         "https://chatgpt.com": {
           "asks": 1,
           "answered": 0,
-          "unanswered": 1
+          "unanswered": 0
         }
       },
       "first_seen": "2026-09-09T00:22:48.464Z",
@@ -133,12 +47,12 @@
       "looking_for": null,
       "count": 1,
       "answered_count": 0,
-      "unanswered_count": 1,
+      "unanswered_count": 0,
       "by_agent": {
         "https://chatgpt.com": {
           "asks": 1,
           "answered": 0,
-          "unanswered": 1
+          "unanswered": 0
         }
       },
       "first_seen": "2026-09-09T00:29:38.963Z",
@@ -150,12 +64,12 @@
       "looking_for": null,
       "count": 1,
       "answered_count": 0,
-      "unanswered_count": 1,
+      "unanswered_count": 0,
       "by_agent": {
         "https://chatgpt.com": {
           "asks": 1,
           "answered": 0,
-          "unanswered": 1
+          "unanswered": 0
         }
       },
       "first_seen": "2026-09-09T00:29:36.351Z",
@@ -167,12 +81,12 @@
       "looking_for": null,
       "count": 1,
       "answered_count": 0,
-      "unanswered_count": 1,
+      "unanswered_count": 0,
       "by_agent": {
         "https://chatgpt.com": {
           "asks": 1,
           "answered": 0,
-          "unanswered": 1
+          "unanswered": 0
         }
       },
       "first_seen": "2026-09-09T00:29:06.044Z",
@@ -184,12 +98,12 @@
       "looking_for": null,
       "count": 1,
       "answered_count": 0,
-      "unanswered_count": 1,
+      "unanswered_count": 0,
       "by_agent": {
         "https://chatgpt.com": {
           "asks": 1,
           "answered": 0,
-          "unanswered": 1
+          "unanswered": 0
         }
       },
       "first_seen": "2026-09-09T00:28:50.814Z",
@@ -284,5 +198,5 @@
       "last_seen": "2026-09-09T00:20:57.460Z"
     }
   ],
-  "note": "記録しているのは署名を付けて来たAIエージェントのアクセスだけです。人（ブラウザ）のアクセスは記録していません。署名の検証に失敗したものも件数には含みます（totals.unverified）が、どのAIが来たか（by_agent）は検証に成功した名乗りだけを数えています。デジタル庁OSS「源内」のAIアプリ仕様に準拠した第三者調査（AI読）による実測値です。行政機関の公式発表ではありません。"
+  "note": "署名つきアクセスの集計です。署名なしは記録対象外です。answered/unansweredは窓口側の対応情報の有無で、AIの最終回答や手続完了の成否ではありません。質問のないアクセスはundetermined（判定対象外）に訂正しています。"
 }

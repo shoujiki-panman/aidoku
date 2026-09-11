@@ -11,6 +11,7 @@
 import { writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { normalizeDemandSnapshot } from './demand.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const OUT = join(HERE, '..', 'web', 'data', 'demand.json');
@@ -23,7 +24,29 @@ export function validateExport(data) {
   if (!data.totals || typeof data.totals.asks !== 'number') problems.push('totals.asks が無い（集計の形ではない）');
   if (!data.generated_at) problems.push('generated_at が無い（いつの集計か言えない）');
   if (!Array.isArray(data.by_agent)) problems.push('by_agent が無い');
+  if (!Array.isArray(data.all)) problems.push('all が無い');
   return problems;
+}
+
+export async function writeDemandFiles(data, out = OUT) {
+  const problems = validateExport(data);
+  if (problems.length) throw new Error(problems.join(' / '));
+  const normalized = normalizeDemandSnapshot(data);
+  normalized.note = '署名つきアクセスの集計です。署名なしは記録対象外です。' +
+    'answered/unansweredは窓口側の対応情報の有無で、AIの最終回答や手続完了の成否ではありません。' +
+    '質問のないアクセスはundetermined（判定対象外）に訂正しています。';
+  const csvCell = (v) => `"${String(v ?? '').replaceAll('"', '""')}"`;
+  const csv = [['サイト', 'ページ', '質問', 'アクセス回数', '対応情報あり', '対応情報なし', '最初', '最後'],
+    ...normalized.all.map((r) => [r.authority, r.path, r.looking_for, r.count, r.answered_count, r.unanswered_count, r.first_seen, r.last_seen])]
+    .map((row) => row.map(csvCell).join(',')).join('\n');
+  const t = normalized.totals;
+  const summary = `AI読 署名つきアクセスの集計\n集計日時: ${normalized.generated_at}\n` +
+    `アクセス: ${t.asks}\n対応情報あり: ${t.answered}\n対応情報なし: ${t.unanswered}\n` +
+    `判定対象外: ${t.undetermined ?? 0}\n署名検証失敗: ${t.unverified ?? 0}\n${normalized.note}\n`;
+  await writeFile(out, `${JSON.stringify(normalized, null, 2)}\n`);
+  await writeFile(join(dirname(out), 'demand.csv'), `${csv}\n`);
+  await writeFile(join(dirname(out), 'demand-summary.txt'), summary);
+  return normalized;
 }
 
 async function main() {
@@ -51,9 +74,9 @@ async function main() {
     return;
   }
 
-  await writeFile(OUT, `${JSON.stringify(data, null, 2)}\n`);
-  const t = data.totals;
-  console.log(`書き出した: web/data/demand.json（来訪 ${t.asks} / 取れずに帰った ${t.unanswered} / 検証済みエージェント ${t.agents}）`);
+  const normalized = await writeDemandFiles(data);
+  const t = normalized.totals;
+  console.log(`書き出した: web/data/demand.json・CSV・要約（アクセス ${t.asks} / 対応情報なし ${t.unanswered} / 検証済みエージェント ${t.agents}）`);
   console.log('コミットする前に、質問文（looking_for）に公開してはいけないものが無いか目で見る。');
 }
 
