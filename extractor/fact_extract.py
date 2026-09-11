@@ -17,6 +17,11 @@ MAX_LINKS = 40
 LINK_ORDER = "score_desc"
 # 表の渡し方。測定条件として記録する（表読みの有無で結果が変わる）
 TABLE_READING = "heading_value"
+# 本文の渡し方。測定条件として記録する（見出しの階層の有無で結果が変わる）
+#   flat              見出しも本文と同じ1行として渡す（2026-09-08 以前）
+#   markdown_headings 見出しを `#` の階層として戻して渡す
+# ★字は増やさない。HTMLに有って渡していなかった印を戻すだけ。
+BODY_STRUCTURE = "flat"
 # 表テキストの上限。本文を削ってまで表を入れないための枠
 MAX_TABLE_CHARS = 4000
 MAX_FOLLOW = 2
@@ -60,6 +65,7 @@ from measurement_cases import TestCase  # noqa: E402
 def build_input(page: dict, muni: str, proc: str, test_case: TestCase,
                 fetcher: PoliteFetcher,
                 extra_pages: list[tuple[str, str]] | None = None,
+                body_structure: str = BODY_STRUCTURE,
                 ) -> tuple[str, dict, set[str]]:
     result = fetcher.cached(page["url"])
     if result is None or not result.body_path:
@@ -69,7 +75,8 @@ def build_input(page: dict, muni: str, proc: str, test_case: TestCase,
     return compose_input(
         page, muni, proc, test_case,
         normalized.links, normalized.text, normalized.jsonld, extra_pages,
-        tables=normalized.tables)
+        tables=normalized.tables, markdown=normalized.markdown,
+        body_structure=body_structure)
 
 
 def table_section(text: str, tables: Sequence[Table]) -> str:
@@ -85,12 +92,26 @@ def table_section(text: str, tables: Sequence[Table]) -> str:
     return tables_text(tables)[:room] if room > 0 else ""
 
 
+def body_text(text: str, markdown: str, body_structure: str) -> str:
+    """AIへ渡す本文。`markdown_headings` のときだけ見出しの階層を戻したものにする。
+
+    ★markdown が空のとき（古い呼び出し・見出しの無いページ）は text に倒す。
+      **条件だけ立って中身が変わらない、を起こさない。**
+    """
+    if body_structure == "markdown_headings" and markdown:
+        return markdown
+    return text
+
+
 def compose_input(page: dict, muni: str, proc: str, test_case: TestCase,
                   links: list, text: str, jsonld: list[str],
                   extra_pages: list[tuple[str, str]] | None = None,
                   tables: Sequence[Table] = (),
+                  markdown: str = "",
+                  body_structure: str = BODY_STRUCTURE,
                   ) -> tuple[str, dict, set[str]]:
     """解析済み内容から、本測定・再現実験で共通の1項目promptを作る。"""
+    text = body_text(text, markdown, body_structure)
     truncated = len(text) > MAX_TEXT_CHARS
     link_lines, allowed_urls = _prompt_links(links, keywords_for(proc))
     usable_jsonld = _usable_jsonld(jsonld)
@@ -119,6 +140,7 @@ def compose_input(page: dict, muni: str, proc: str, test_case: TestCase,
         "has_jsonld": bool(usable_jsonld), "text_len": len(text),
         "truncated": truncated, "n_links": len(link_lines),
         "table_chars": len(table_text),
+        "body_structure": body_structure,
     }
     return "".join(parts), meta, allowed_urls
 

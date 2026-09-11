@@ -333,5 +333,34 @@ class 表読みTest(unittest.TestCase):
         self.assertIn("無料", page.text)  # 本文側の見え方は変えない
 
 
+class MarkdownBody(unittest.TestCase):
+    """見出しを `#` として戻した本文。**text の見え方は変えない。**"""
+
+    def test_見出しの階層が段の深さになる(self):
+        page = parse("<h1>転入届</h1><p>本文</p><h2>必要なもの</h2><p>本人確認書類</p>"
+                     "<h3>外国人の方</h3><p>在留カード</p>", "https://example.jp/")
+        self.assertIn("# 転入届", page.markdown)
+        self.assertIn("## 必要なもの", page.markdown)
+        self.assertIn("### 外国人の方", page.markdown)
+
+    def test_本文の見え方は変えない(self):
+        page = parse("<h2>手数料</h2><p>無料</p>", "https://example.jp/")
+        # ★text は従来どおり平文。ここが変わると、本測定が黙って変わってしまう
+        self.assertEqual(page.text, "手数料\n\n無料")
+
+    def test_中身の空な見出しには印を付けない(self):
+        page = parse("<h2></h2><p>本文</p>", "https://example.jp/")
+        self.assertNotIn("#", page.markdown)
+
+    def test_見出しの無いページはtextと同じ(self):
+        page = parse("<p>本文だけ</p>", "https://example.jp/")
+        self.assertEqual(page.markdown, page.text)
+
+    def test_字を足さない(self):
+        """印以外は増やさない。**本文を書き換えたら比較にならない。**"""
+        page = parse("<h2>手数料</h2><p>無料</p>", "https://example.jp/")
+        self.assertEqual(page.markdown.replace("#", "").strip(), page.text.strip())
+
+
 if __name__ == "__main__":
     unittest.main()
