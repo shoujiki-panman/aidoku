@@ -356,6 +356,13 @@ check(
   check('DEMAND_TOKEN未設定なら閉じたまま', noToken.status === 404, `status=${noToken.status}`);
 }
 
+// 質問のないHTML/JS/JSONアクセスは、答えの保存状態によらず判定対象外。
+for (const path of [PAGE, '/assets/app.js', '/data/scores.json', `${PAGE}?q=%20`, `${PAGE}?q=hello`]) {
+  await worker.fetch(new Request(`${SITE}${path}`, { headers: signedHeaders }), env);
+  const record = records[records.length - 1];
+  check(`質問不明のアクセスを失敗にしない: ${path}`, record.answered === null && record.verified === true);
+}
+
 console.log = realLog;
 realLog(`\n結果: ${pass} PASS / ${fail} FAIL`);
 process.exit(fail === 0 ? 0 : 1);

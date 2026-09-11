@@ -313,7 +313,7 @@ export default {
       return handleMcp(request, url, env, ctx, result);
     }
 
-    // 署名なし＝普通の人間のアクセス。記録せず素通し（住民のデータは集めない）
+    // 署名なしは記録せず素通し。人かAIかを推定しない。
     if (result.reason === 'no-signature') {
       return passThrough(request, url, env);
     }
@@ -329,9 +329,8 @@ export default {
       if (!hasAnyAnswer(answer)) answer = null;
     }
 
-    // 門番が貯める記録の主役: 何を探しに来て、取れたか／取れずに帰ったか
-    // 「取れた」は、ページに答えの束があることではなく、**聞かれた項目に答えがあること**。
-    // 例: 手数料を聞かれたのに手数料だけ空なら、取れずに帰った。
+    // 質問に対応する情報を窓口が持つかを記録する。AIの最終回答は観測できない。
+    // 質問なし・特定不能はnull。手数料を聞かれ、手数料が空ならfalse。
     const lookingFor = url.searchParams.get('q');
     const record = {
       ts: new Date().toISOString(),
@@ -346,7 +345,7 @@ export default {
       keyid: result.keyid ?? null,
       authority: url.host,
       path: url.pathname,
-      via: 'query', // ?q= で来た分（NLWeb の /ask で来た分は via: 'nlweb'）
+      via: lookingFor?.trim() ? 'query' : 'http',
     };
     // データとして貯める。応答を待たせないよう、書き込みはリクエストの外に逃がす。
     await keepRecord(env, ctx, record, result.keyid);

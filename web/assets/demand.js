@@ -45,6 +45,7 @@ function agentName(origin, isSample) {
 
 function renderSampleBanner(data) {
   if (data.is_sample) {
+    $('sample-heading').textContent = '以下は見本データです';
     $('sample-note').textContent = String(data.sample_note ?? '').replace(/^⚠️ /, '');
     return;
   }
@@ -52,7 +53,7 @@ function renderSampleBanner(data) {
   // 実データのときは「以下は見本の数字です」の断りを消す（見本のときだけの注意書き）
   $('sample-numbers-note')?.remove();
   $('sample-note').textContent =
-    '署名で身元が確認できたAIエージェントの来訪だけを記録しています。人（ブラウザ）のアクセスは記録していません。';
+    '署名つきのアクセスを記録しています。署名なしは対象外です。情報の有無は窓口側の判定であり、AIの最終回答の成否は観測していません。';
   document.querySelector('.dads-notification-banner').dataset.type = 'info';
 }
 
@@ -76,10 +77,10 @@ function renderHeadline(data) {
 }
 
 const STATS = [
-  { key: 'asks', label: '聞きに来た', unit: '回' },
-  { key: 'answered', label: '持ち帰れた', unit: '回' },
-  { key: 'unanswered', label: '取れずに帰った', unit: '回', star: true },
-  { key: 'undetermined', label: '聞き返した', unit: '回' },
+  { key: 'asks', label: '署名つきアクセス', unit: '回' },
+  { key: 'answered', label: '対応情報あり', unit: '回' },
+  { key: 'unanswered', label: '対応情報なし', unit: '回', star: true },
+  { key: 'undetermined', label: '判定対象外', unit: '回' },
   { key: 'unverified', label: '検証に失敗', unit: '回' },
   { key: 'agents', label: '来たAI', unit: '体' },
 ];
@@ -91,9 +92,11 @@ function renderTotals(data) {
       <dt>${esc(s.label)}</dt>
       <dd>${nf.format(t[s.key] ?? 0)}<span class="unit">${esc(s.unit)}</span></dd>
     </div>`).join('');
-  const rate = t.asks ? Math.round((t.unanswered / t.asks) * 100) : 0;
+  const evaluated = (t.answered ?? 0) + (t.unanswered ?? 0);
+  const rate = evaluated ? Math.round((t.unanswered / evaluated) * 100) : 0;
   $('totals-note').innerHTML =
-    `聞きに来た <strong>${nf.format(t.asks ?? 0)}回</strong> のうち <strong>${nf.format(t.unanswered ?? 0)}回（${rate}%）</strong>が手ぶらで帰りました。`;
+    evaluated ? `情報の有無を判定した ${nf.format(evaluated)}回のうち、窓口に対応情報がなかったのは ${nf.format(t.unanswered ?? 0)}回（${rate}%）です。AIの回答失敗率ではありません。`
+      : '情報の有無を判定できる質問はまだありません。アクセス件数から回答の成否は判断できません。';
 }
 
 // 1行に「どのAIが取れずに帰ったか」を出す
@@ -116,7 +119,7 @@ function renderUnanswered(data) {
   );
   $('unanswered-body').innerHTML = sorted.map((x) => `
     <tr>
-      <td><span class="mark" data-tone="miss">✕ 取れず</span></td>
+      <td><span class="mark" data-tone="miss">対応情報なし</span></td>
       <td class="q">${esc(x.looking_for ?? '（言葉なし）')}</td>
       <td class="who">${esc(missedBy(x, data.is_sample))}</td>
       <td class="site">${esc(x.authority)}<br><span class="path">${esc(x.path)}</span></td>
@@ -142,7 +145,7 @@ function agentDetail(data) {
     for (const [origin, v] of Object.entries(x.by_agent ?? {})) {
       const cur = map.get(origin) ?? { pages: new Set(), questions: new Set(), first: null, last: null };
       cur.pages.add(`${x.authority}${x.path}`);
-      cur.questions.add(x.looking_for ?? '');
+      if (x.looking_for) cur.questions.add(x.looking_for);
       if (!cur.first || x.first_seen < cur.first) cur.first = x.first_seen;
       if (!cur.last || x.last_seen > cur.last) cur.last = x.last_seen;
       map.set(origin, cur);
@@ -163,14 +166,15 @@ function renderAgents(data) {
   $('agents').innerHTML = list.map((a) => {
     const { name, sub } = agentName(a.agent, data.is_sample);
     const d = detail.get(a.agent) ?? { pages: new Set(), questions: new Set() };
-    const rate = a.asks ? Math.round((a.unanswered / a.asks) * 100) : 0;
+    const evaluated = a.answered + a.unanswered;
+    const rate = evaluated ? Math.round((a.unanswered / evaluated) * 100) : null;
     return `
     <div class="agent-card">
       <p class="agent-card__name">${esc(name)}${sub ? `<span class="agent-card__origin">${esc(sub)}</span>` : ''}</p>
       <p class="agent-card__count">${nf.format(a.asks)}<span class="unit">回 来た</span></p>
       <p class="agent-card__note">
         ${nf.format(d.pages.size)}ページを見て、${nf.format(d.questions.size)}種類のことを聞いた<br>
-        持ち帰れた ${nf.format(a.answered)}回 ／ <strong>手ぶら ${nf.format(a.unanswered)}回（${rate}%）</strong><br>
+        対応情報あり ${nf.format(a.answered)}回 ／ <strong>対応情報なし ${nf.format(a.unanswered)}回${rate === null ? '（判定なし）' : `（判定中${rate}%）`}</strong><br>
         <span class="agent-card__when">${esc(jstDate(d.first))} 〜 ${esc(jstDate(d.last))}</span>
       </p>
     </div>`;

@@ -1,4 +1,4 @@
-// 門番が集めた「AIが何を探しに来て、取れたか／取れずに帰ったか」をデータにする。
+// 署名つきアクセスと、窓口が持つ対応情報の有無を集計する。最終回答の評価ではない。
 //
 // 貯め方: KV に追記していく（1リクエスト＝1件）。中身はキーのメタデータに入れる。
 //   → 集計のときに list() だけで読めるので、件数ぶんの get が要らない。
@@ -6,7 +6,7 @@
 //   同時アクセスで数え落ちる。追記だけにしておけば落ちない）。
 //
 // 記録するのは「署名を付けて来たAIエージェント」だけ。
-// 署名なし＝人間のアクセスは、そもそも呼ばれない（worker側で先に素通しする）。
+// 署名なしは記録しない（人かAIかは判別しない）。
 // 検証に失敗したものも記録はする（門番は拒否しない設計。「偽の名乗りが来た」も観測値）。
 // ただし **どのAIが来たかの集計には、検証に成功した名乗りだけ**を入れる。
 // 他人の公開 keyid は誰でも書けるので、検証前の名乗りは自称にすぎない。
@@ -56,15 +56,13 @@ export function hasAnyAnswer(answer) {
   return Object.values(effectiveFields(answer)).some((v) => v != null);
 }
 
-// 「探しに来たものが、実際に取れたか」を判定する。
-// ページに答えの束があっても、聞かれた項目が空なら取れていない＝取れずに帰った。
+// 質問に対応する項目を窓口が持っているか。未知の質問はnull。
+// falseでも、素通し先や別の情報源からAIが回答できた可能性は残る。
 export function isAnswered(answer, lookingFor) {
-  if (!answer) return false;
-  const fields = effectiveFields(answer);
   const field = matchField(normalizeQuery(lookingFor));
-  if (field) return fields[field] != null;
-  // 何を聞かれたか分からないときは、1つでも答えがあれば取れた扱い
-  return Object.values(fields).some((v) => v != null);
+  // HTTPアクセスだけでは質問も回答の成否も分からない。
+  if (!field) return null;
+  return effectiveFields(answer)[field] != null;
 }
 
 // 時刻を「新しいほど小さい数」に変換する（14桁固定。2603年まで桁あふれしない）
@@ -86,7 +84,8 @@ export async function recordAsk(env, record, uniq) {
       authority: record.authority,
       path: record.path,
       looking_for: normalizeQuery(record.looking_for),
-      answered: record.answered,
+      answered: record.verified === true && normalizeQuery(record.looking_for) ? record.answered : null,
+      via: record.via ?? null,
       verified: record.verified,
       agent: record.agent,
     },
@@ -117,9 +116,11 @@ export async function aggregate(env, { limit = LIST_LIMIT } = {}) {
   let answered = 0;
   let unanswered = 0;
   let unverified = 0; // 署名の検証に失敗した来訪（名乗りは自称なので数に入れない）
-  let undetermined = 0; // 何を聞かれたか特定できず、聞き返した分（推測で「取れた」にしない）
+  let undetermined = 0; // 質問なし・特定不能など、対応情報の有無を判定できない分
 
-  for (const r of rows) {
+  for (const raw of rows) {
+    // 旧記録も補正する。質問なしの false は回答失敗の証拠ではない。
+    const r = { ...raw, answered: raw.verified === true && normalizeQuery(raw.looking_for) ? raw.answered : null };
     if (r.answered === true) answered++;
     else if (r.answered === false) unanswered++;
     else if (r.verified === true) undetermined++;
@@ -173,7 +174,7 @@ export async function aggregate(env, { limit = LIST_LIMIT } = {}) {
       asks: rows.length,
       answered,
       unanswered,
-      undetermined, // 何を聞かれたか特定できなかった分（NLWeb の elicitation で聞き返した）
+      undetermined, // 質問なしのHTTPアクセスも含む。聞き返し件数とは限らない
       unverified, // 署名の検証に失敗した来訪（「偽の名乗りが来た」という別の観測値）
       agents: byAgent.size,
     },
@@ -187,16 +188,50 @@ export async function aggregate(env, { limit = LIST_LIMIT } = {}) {
     },
     // どのAIが来て、どれだけ手ぶらで帰ったか。**署名の検証に成功した名乗りだけ**。
     by_agent: [...byAgent.values()].sort((a, b) => b.asks - a.asks),
-    // ここが本体。AIが探しに来たのに取れずに帰った＝そのページに足りていない情報。
-    // そのまま「区役所への更新依頼リスト」になる。
+    // 窓口の対応情報がない質問。元ページを確認する候補であり、欠落の確定ではない。
     unanswered: all.filter((x) => x.unanswered_count > 0),
     all,
     note:
       '記録しているのは署名を付けて来たAIエージェントのアクセスだけです。' +
-      '人（ブラウザ）のアクセスは記録していません。' +
+      '署名なしのアクセスは記録していません（人かAIかは判別していません）。' +
+      'answered/unanswered は窓口が質問に対応する情報を持つかの判定で、AIの最終回答の成否ではありません。' +
+      '質問のないアクセスは undetermined（判定対象外）です。' +
       '署名の検証に失敗したものも件数には含みます（totals.unverified）が、' +
       'どのAIが来たか（by_agent）は検証に成功した名乗りだけを数えています。' +
       'デジタル庁OSS「源内」のAIアプリ仕様に準拠した第三者調査（AI読）による実測値です。' +
       '行政機関の公式発表ではありません。',
   };
+}
+
+// 保存済み集計の訂正。元のアクセス件数・時刻は残し、質問のない判定だけを外す。
+export function normalizeDemandSnapshot(input) {
+  const data = structuredClone(input);
+  const removed = new Map();
+  for (const row of data.all ?? []) {
+    if (normalizeQuery(row.looking_for)) continue;
+    const yes = row.answered_count ?? 0;
+    const no = row.unanswered_count ?? 0;
+    data.totals.answered -= yes;
+    data.totals.unanswered -= no;
+    data.totals.undetermined = (data.totals.undetermined ?? 0) + yes + no;
+    row.answered_count = 0;
+    row.unanswered_count = 0;
+    for (const [agent, counts] of Object.entries(row.by_agent ?? {})) {
+      const lost = removed.get(agent) ?? { answered: 0, unanswered: 0 };
+      lost.answered += counts.answered ?? 0;
+      lost.unanswered += counts.unanswered ?? 0;
+      removed.set(agent, lost);
+      counts.answered = 0;
+      counts.unanswered = 0;
+    }
+  }
+  for (const agent of data.by_agent ?? []) {
+    const lost = removed.get(agent.agent);
+    if (lost) {
+      agent.answered -= lost.answered;
+      agent.unanswered -= lost.unanswered;
+    }
+  }
+  data.unanswered = (data.all ?? []).filter((row) => row.unanswered_count > 0);
+  return data;
 }
