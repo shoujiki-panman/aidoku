@@ -20,3 +20,8 @@ report/
 # 本体を古い版に巻き戻す事故のもとなので、git には載せない。
 * [2-9].*
 
+
+# 毎朝の差分（analysis/daily_diff.py）。区のサイトの文をそのまま含むので公開しない（#100 と同じ扱い）。
+# 前回の取得を残しておく場所も、生HTMLなので同じ。
+analysis/out/daily/
+crawler/cache-daily/
