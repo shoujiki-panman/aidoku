@@ -25,7 +25,6 @@ import argparse
 import csv
 import json
 import re
-import subprocess
 import sys
 from dataclasses import dataclass
 from dataclasses import field as dc_field
@@ -38,6 +37,7 @@ OUT_DIR = Path(__file__).parent / "out"
 JUDGE_PROMPT = Path(__file__).parent / "judge_prompt.md"
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+from claude_cli import run_locked  # noqa: E402
 from fact_types import EXTRACTOR_KEYS  # noqa: E402
 
 FIELDS = EXTRACTOR_KEYS
@@ -139,13 +139,8 @@ def judge(golden: GoldenRow, item: dict, muni: str, proc: str, model: str) -> di
         f"\n\n## エージェントの答え\n\n{item['value']}",
         f"\n\n## エージェントが挙げた根拠\n\n{item['evidence'] or '（なし）'}",
     ])
-    proc_res = subprocess.run(
-        ["claude", "-p", "--model", model, "--output-format", "text"],
-        input=prompt, capture_output=True, text=True, timeout=300,
-    )
-    if proc_res.returncode != 0:
-        raise RuntimeError(f"claude -p failed: {proc_res.stderr[:300]}")
-    text = proc_res.stdout.strip()
+    # 採点器にも道具は渡さない。外を見て判定されると、点が文面の外で決まる
+    text = run_locked(prompt, model).strip()
     fence = re.search(r"```(?:json)?\s*(.*?)```", text, re.S)
     if fence:
         text = fence.group(1).strip()

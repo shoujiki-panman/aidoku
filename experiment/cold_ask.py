@@ -24,9 +24,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import subprocess
 import sys
-import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -36,7 +34,10 @@ sys.path.insert(0, str(ROOT / "scorer"))
 sys.path.insert(0, str(ROOT))
 from score import load_golden  # noqa: E402
 
-MEASUREMENT_VERSION = "cold-ask-0.1"
+from claude_cli import run_locked  # noqa: E402
+
+# 0.2: 道具を名指しで許す形に変えた（0.1 の「検索なし」は Bash で取りに行けた）
+MEASUREMENT_VERSION = "cold-ask-0.2"
 
 # 住民が実際に打つ聞き方。丁寧語で、1文で、専門用語を使わない。
 # ★「分からなければ分からないと言って」とは書かない。書くと安全側に寄って、
@@ -67,7 +68,7 @@ JSON だけを返してください: {"answered": true, "hedged": false, "value"
 # ★リポジトリの中で claude -p を走らせると CLAUDE.md を読み、
 #   「私はAI読の開発ツールです」と答えてしまう。実際にそうなった。
 #   住民が使う素のAIを測るのだから、プロジェクト文脈の外で走らせる。
-NEUTRAL_DIR = Path(tempfile.gettempdir()) / "aidoku-cold-ask-neutral"
+# 中立な cwd は claude_cli.NEUTRAL_DIR が持つ。
 
 # ★claude -p は既定で「コーディング助手」として振る舞う。
 #   実際「この件はコードベース作業ではなく」と前置きした答えが返ってきた。
@@ -85,18 +86,10 @@ WEB_TOOLS = ["WebSearch", "WebFetch"]
 
 def call_claude(prompt: str, model: str, system: str = ASSISTANT_PROMPT,
                 search: bool = True) -> str:
-    NEUTRAL_DIR.mkdir(parents=True, exist_ok=True)
-    cmd = ["claude", "-p", "--model", model, "--output-format", "text",
-           "--system-prompt", system]
-    if not search:
-        cmd += ["--disallowed-tools", *WEB_TOOLS]
-    proc = subprocess.run(
-        cmd, input=prompt, capture_output=True, text=True, timeout=300,
-        cwd=NEUTRAL_DIR,
-    )
-    if proc.returncode != 0:
-        raise RuntimeError(f"claude -p failed: {proc.stderr[:300]}")
-    return proc.stdout.strip()
+    # ★「検索なし」を WebSearch/WebFetch の禁止だけで作っていたが、Bash（curl）と MCP が
+    #   開いたままで、取りに行けた（2026-09-23）。許す道具を名指しし、残りは全部閉じる。
+    tools = WEB_TOOLS if search else []
+    return run_locked(prompt, model, tools=tools, system=system).strip()
 
 
 def parse_json(text: str) -> dict:

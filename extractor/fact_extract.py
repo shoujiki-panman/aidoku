@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-import subprocess
 import sys
 from collections.abc import Sequence
 from dataclasses import asdict
@@ -44,6 +43,7 @@ from polite_fetch import PoliteFetcher  # noqa: E402
 NON_HTML_READING = _ocr_condition("cmap_text")
 
 sys.path.insert(0, str(ROOT))
+from claude_cli import run_locked  # noqa: E402
 from evidence_check import attach_checks_across_pages, truncate_page_text  # noqa: E402
 from extractor.response_contract import (  # noqa: E402
     is_non_html_url,
@@ -124,14 +124,8 @@ def compose_input(page: dict, muni: str, proc: str, test_case: TestCase,
 
 
 def call_claude(prompt: str, model: str, timeout: int = 300) -> str:
-    proc = subprocess.run(
-        ["claude", "-p", "--model", model, "--output-format", "text"],
-        input=prompt, capture_output=True, text=True, timeout=timeout,
-    )
-    if proc.returncode != 0:
-        raise RuntimeError(
-            f"claude -p failed (rc={proc.returncode}): {proc.stderr[:500]}")
-    return proc.stdout
+    # 道具を閉じて呼ぶ。渡した文面以外（ネット・golden）を読ませない（claude_cli.py）
+    return run_locked(prompt, model, timeout=timeout)
 
 
 def run_test_case(page: dict, muni: str, proc: str, test_case: TestCase,
