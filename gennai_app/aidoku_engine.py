@@ -20,7 +20,6 @@ from __future__ import annotations
 import json
 import os
 import re
-import subprocess
 import sys
 from pathlib import Path
 
@@ -89,11 +88,9 @@ MEASURED = load_measured()
 # ── ライブ判定（未知のURL用） ───────────────────────────
 
 def _call_claude(prompt: str, timeout: int = 300) -> str:
-    p = subprocess.run(["claude", "-p", "--model", MODEL, "--output-format", "text"],
-                       input=prompt, capture_output=True, text=True, timeout=timeout)
-    if p.returncode != 0:
-        raise RuntimeError(f"claude -p 失敗 (rc={p.returncode}): {p.stderr[:300]}")
-    return p.stdout
+    sys.path.insert(0, str(REPO))
+    from claude_cli import run_locked
+    return run_locked(prompt, MODEL, timeout=timeout)
 
 
 def _parse_json(raw: str) -> dict:

@@ -34,6 +34,7 @@ sys.path.insert(0, str(ROOT / "crawler"))
 sys.path.insert(0, str(ROOT))
 from polite_fetch import PoliteFetcher  # noqa: E402
 
+from claude_cli import run_locked  # noqa: E402
 from extractor.fact_extract import PROMPT, build_input  # noqa: E402
 from extractor.response_contract import parse_json_reply  # noqa: E402
 from measurement_cases import test_cases_for  # noqa: E402
@@ -55,11 +56,7 @@ def old_prompt() -> str:
 
 
 def call(prompt: str, model: str) -> dict:
-    proc = subprocess.run(["claude", "-p", "--model", model, "--output-format", "text"],
-                          input=prompt, capture_output=True, text=True, timeout=300)
-    if proc.returncode != 0:
-        raise RuntimeError(f"claude -p failed: {proc.stderr[:200]}")
-    return parse_json_reply(proc.stdout)
+    return parse_json_reply(run_locked(prompt, model))
 
 
 def swap_prompt(full_input: str, old: str, new: str) -> str:
