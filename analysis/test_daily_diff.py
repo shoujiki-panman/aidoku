@@ -74,5 +74,35 @@ class OutPathTest(unittest.TestCase):
             self.assertTrue(second.name.startswith("2026-09-24-"))
 
 
+class RemeasureCommandTest(unittest.TestCase):
+    TARGET_IDS = {**TARGET, "municipality_id": "kita", "procedure_id": "sodaigomi"}
+
+    def test_ids_are_carried_from_target(self):
+        d = daily_diff.compare(self.TARGET_IDS, "a", "a\n手数料は無料です")
+        self.assertEqual((d.municipality_id, d.procedure_id), ("kita", "sodaigomi"))
+
+    def test_field_hit_gets_one_command_line(self):
+        d = daily_diff.compare(self.TARGET_IDS, "a", "a\n手数料は無料です")
+        text = daily_diff.render("2026-09-28", [d])
+        self.assertEqual(text.count("python3 tools/remeasure_one.py -m kita -p sodaigomi"), 1)
+
+    def test_other_changes_do_not_get_a_command(self):
+        # 飾りの可能性がある変化にはコマンドを出さない。測るのは候補だけ
+        d = daily_diff.compare(self.TARGET_IDS, "a", "a\nForeign Languages")
+        self.assertNotIn("remeasure_one", daily_diff.render("2026-09-28", [d]))
+
+    def test_no_ids_no_command(self):
+        # ID が無いのに名前で組み立てると、違う区を測ってしまう
+        d = daily_diff.compare(TARGET, "a", "a\n手数料は無料です")
+        self.assertIsNone(daily_diff.remeasure_command(d))
+        self.assertNotIn("remeasure_one", daily_diff.render("2026-09-28", [d]))
+
+    def test_real_targets_have_ids(self):
+        # check_pages.targets の行にはIDが入っている（実物で確かめる。ネットワークは使わない）
+        rows = daily_diff.targets(["sodaigomi"])
+        self.assertTrue(rows)
+        self.assertTrue(all(r["municipality_id"] and r["procedure_id"] == "sodaigomi" for r in rows))
+
+
 if __name__ == "__main__":
     unittest.main()
