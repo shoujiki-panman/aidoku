@@ -220,25 +220,33 @@ def score_one(ext: dict, golden: dict[tuple[str, str], GoldenRow], model: str) -
     }
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--procedure", "-p", default="tennyu")
     ap.add_argument("--municipality", "-m", action="append")
     ap.add_argument("--model", default="claude-sonnet-5")
-    args = ap.parse_args()
+    # ★1区だけ測り直すとき（tools/remeasure_one.py）、公開の元になる extractor/out と
+    #   scorer/out を上書きしないため。既定は今までどおり。
+    ap.add_argument("--extract-dir", default=None,
+                    help="抽出結果の読み込み元（既定 extractor/out）")
+    ap.add_argument("--out-dir", default=None,
+                    help="採点結果の書き出し先（既定 scorer/out）")
+    args = ap.parse_args(argv)
+    extract_dir = Path(args.extract_dir) if args.extract_dir else EXTRACT_DIR
+    out_dir = Path(args.out_dir) if args.out_dir else OUT_DIR
 
     golden = load_golden(args.procedure)
-    files = sorted(EXTRACT_DIR.glob(f"extract_*_{args.procedure}.json"))
+    files = sorted(extract_dir.glob(f"extract_*_{args.procedure}.json"))
     if args.municipality:
         files = [f for f in files if any(f"extract_{m}_" in f.name for m in args.municipality)]
     if not files:
         raise SystemExit("抽出結果がない。先に extractor/extract.py を実行すること")
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     for f in files:
         ext = json.loads(f.read_text(encoding="utf-8"))
         res = score_one(ext, golden, args.model)
-        out = OUT_DIR / f"score_{res['municipality_id']}_{res['procedure_id']}.json"
+        out = out_dir / f"score_{res['municipality_id']}_{res['procedure_id']}.json"
         out.write_text(json.dumps(res, ensure_ascii=False, indent=2), encoding="utf-8")
         b = res["breakdown"]
         print(f"[{res['municipality']}] {res['total']:>5}点 "

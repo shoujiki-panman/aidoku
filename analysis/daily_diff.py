@@ -12,7 +12,8 @@
   2. 前回の取得（無ければ採点時のキャッシュ）と**本文**を行単位で比べる
   3. 足された行・消えた行に、4項目（必要書類・窓口オンライン可否・期限・手数料）の語が
      あるかで印を付ける。印のあるページが LLM で測り直す候補
-  4. analysis/out/daily/YYYY-MM-DD.md に書く
+  4. analysis/out/daily/YYYY-MM-DD.md に書く。候補の下には測り直す1行
+     （`python3 tools/remeasure_one.py -m <id> -p <id>`）を出す。**打つかは本人が決める**
 
 ★出力には区のサイトの文がそのまま入る。区の実文は公開しない方針（#100）なので、
   出力先は .gitignore に入れてある。
@@ -62,6 +63,9 @@ class PageDiff:
     removed: list[str] = field(default_factory=list)
     fields: list[str] = field(default_factory=list)
     note: str = ""
+    # ★測り直すコマンドを1通に出すための鍵。名前（北区）ではなく ID（kita）で渡す
+    municipality_id: str = ""
+    procedure_id: str = ""
 
 
 def changed_lines(old: str, new: str) -> tuple[list[str], list[str]]:
@@ -83,7 +87,9 @@ def touched_fields(lines: list[str]) -> list[str]:
 
 
 def compare(target: dict, old_text: str | None, new_text: str | None) -> PageDiff:
-    diff = PageDiff(target["municipality"], target["procedure"], target["url"], "比べられない")
+    diff = PageDiff(target["municipality"], target["procedure"], target["url"], "比べられない",
+                    municipality_id=target.get("municipality_id", ""),
+                    procedure_id=target.get("procedure_id", ""))
     if old_text is None or new_text is None:
         diff.note = "前回か今回の本文が取れなかった"
         return diff
@@ -112,6 +118,17 @@ def check_one(target: dict, base: PoliteFetcher, daily: PoliteFetcher) -> PageDi
     return compare(target, old_text, new_text)
 
 
+def remeasure_command(d: PageDiff) -> str | None:
+    """その候補を測り直す1行。ID が無ければ出さない（違う区を測るよりよい）。
+
+    ★測り直しは自動にしない。目印は語で拾うので飾りの差も拾う（練馬区の児童手当は
+      ナビの差だった）。本人が1通を見て選び、この1行を打つ。
+    """
+    if not d.municipality_id or not d.procedure_id:
+        return None
+    return f"python3 tools/remeasure_one.py -m {d.municipality_id} -p {d.procedure_id}"
+
+
 def _page_block(d: PageDiff) -> list[str]:
     head = f"- **{d.municipality} {d.procedure}** +{len(d.added)} / -{len(d.removed)}行"
     if d.fields:
@@ -119,6 +136,9 @@ def _page_block(d: PageDiff) -> list[str]:
     lines = [head, f"  {d.url}"]
     lines += [f"  + {s[:120]}" for s in d.added[:SHOW_LINES]]
     lines += [f"  - {s[:120]}" for s in d.removed[:SHOW_LINES]]
+    command = remeasure_command(d)
+    if command:
+        lines.append(f"  測り直す: `{command}`")
     return lines
 
 

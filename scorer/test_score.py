@@ -11,9 +11,11 @@ LLM（`claude -p`）は呼ばない。呼ばずに決まる経路だけを対象
 
 from __future__ import annotations
 
+import json
 import sys
 import unittest
 from pathlib import Path
+from tempfile import TemporaryDirectory
 from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -245,6 +247,29 @@ class GoldenFilesTest(unittest.TestCase):
             for mid in sorted({m for m, _ in rows}):
                 with self.subTest(procedure=proc, municipality=mid):
                     self.assertEqual(sorted(f for m, f in rows if m == mid), sorted(FIELDS))
+
+
+class DirsOptionTest(unittest.TestCase):
+    """1区だけ測り直すとき、公開の元（extractor/out・scorer/out）に触れないこと。"""
+
+    EXTRACT = {"municipality_id": "zz-test", "municipality": "テスト区", "procedure": "粗大ごみ",
+               "procedure_id": "sodaigomi", "reached": False, "items": {}}
+
+    def test_指定した場所から読み指定した場所へ書く(self):
+        with TemporaryDirectory() as d:
+            src, out = Path(d) / "extract", Path(d) / "score"
+            src.mkdir()
+            (src / "extract_zz-test_sodaigomi.json").write_text(
+                json.dumps(self.EXTRACT, ensure_ascii=False), encoding="utf-8")
+            with mock.patch("builtins.print"):
+                score.main(["-p", "sodaigomi", "--extract-dir", str(src), "--out-dir", str(out)])
+            written = json.loads((out / "score_zz-test_sodaigomi.json").read_text(encoding="utf-8"))
+            self.assertEqual(written["municipality_id"], "zz-test")
+        self.assertFalse((score.OUT_DIR / "score_zz-test_sodaigomi.json").exists())
+
+    def test_既定の場所は今までどおり(self):
+        self.assertEqual(score.EXTRACT_DIR, score.ROOT / "extractor" / "out")
+        self.assertEqual(score.OUT_DIR, Path(score.__file__).parent / "out")
 
 
 if __name__ == "__main__":
