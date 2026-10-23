@@ -1,0 +1,523 @@
+{
+  "_about": "本文の渡し方だけを flat → markdown_headings に変えて比べた記録。本番の抽出は動かしていない（BODY_STRUCTURE の既定は flat のまま）。ここで取れた項目を「区が書いていた」と読み替えてはいけない。",
+  "version": "try-headings-prompt-0.1",
+  "procedure": "tennyu",
+  "model": "claude-sonnet-5",
+  "before": "flat",
+  "after": "markdown_headings",
+  "summary": {
+    "municipalities": 8,
+    "cases": 32,
+    "before_found": 12,
+    "after_found": 13,
+    "before_said_absent": 4,
+    "after_said_absent": 4,
+    "flipped": [
+      {
+        "municipality": "文京区",
+        "field": "channel",
+        "before": "リンク先にあり",
+        "after": "取れた"
+      }
+    ],
+    "errors": 0
+  },
+  "rows": [
+    {
+      "municipality": "足立区",
+      "municipality_id": "adachi",
+      "page": "https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/h-tennyu.html",
+      "cached": true,
+      "headings": 9,
+      "added_chars": 28,
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "【他の市区町村から転入】転出証明書（旧住所地市区町村発行）※引っ越しワンストップサービス・特例転入利用者は不要／世帯全員分のマイナンバーカード（所持者のみ）／世"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "【他の市区町村から転入】転出証明書（旧住所地市区町村発行、引っ越しワンストップサービス・特例転入利用者は不要）／世帯全員分のマイナンバーカード（所持者のみ）／世"
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "窓口のみ（オンライン不可）"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "窓口のみ。郵送不可、引っ越しワンストップサービス利用者も窓口届出が必要"
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "引っ越ししてから14日以内"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "引っ越ししてから14日以内"
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "value_head": ""
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "荒川区",
+      "municipality_id": "arakawa",
+      "page": "https://www.city.arakawa.tokyo.jp/a008/todokede/denshishinsei/tetsudukigaido.html",
+      "cached": true,
+      "headings": 10,
+      "added_chars": 34,
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "文京区",
+      "municipality_id": "bunkyo",
+      "page": "https://www.city.bunkyo.lg.jp/b013/p000261/index.html",
+      "cached": true,
+      "headings": 14,
+      "added_chars": 47,
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "窓口のみ（受付窓口＝文京シビックセンター2階での来庁手続きが必要。オンラインで完結できるのは転出届のみで、転入届はオンライン提出の対象外）"
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "千代田区",
+      "municipality_id": "chiyoda",
+      "page": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tennyu.html",
+      "cached": true,
+      "headings": 33,
+      "added_chars": 160,
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "共通して必要なもの: 届出人の本人確認書類（マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など）、転出証明書（ワンストップ利用時は不要な場合"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "（通常の転入届の場合）届出人の本人確認書類（マイナンバーカード、パスポート、運転免許証、在留カード、資格確認書など）、転出証明書、引っ越す方全員のマイナンバーカ"
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "窓口のみ（オンラインで完結不可）"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "窓口のみ（オンラインでは完結不可）。マイナポータルで事前通知はできるが、転入届自体は必ず窓口来庁が必要"
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "新しい住所に引っ越してから（住み始めた日から）14日以内"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "新しい住所に引っ越してから14日以内"
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "value_head": ""
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "中央区",
+      "municipality_id": "chuo",
+      "page": "https://www.city.chuo.lg.jp/kurashi/touroku/juuminidou/tennyuu/index.html",
+      "cached": true,
+      "headings": 1,
+      "added_chars": 2,
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "江戸川区",
+      "municipality_id": "edogawa",
+      "page": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/tennyu.html",
+      "cached": true,
+      "headings": 22,
+      "added_chars": 81,
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "基本の持ち物（紙の転出証明書をお持ちの方の場合）：窓口に来る本人の本人確認書類、転出証明書（前住所地の市区町村発行）、転入される方全員分のマイナンバーカード（お"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "転入の方法により持ち物が異なる。①引越しワンストップサービス利用者・②マイナンバーカードでの特例転出の場合は「転入される方全員分のマイナンバーカード」。③紙の転"
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "窓口のみ（オンライン完結不可）"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "窓口のみ（オンライン完結不可、来庁必須）"
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "住みはじめた日から14日以内"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "住みはじめた日から14日以内"
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "value_head": ""
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "八王子市",
+      "municipality_id": "hachioji",
+      "page": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/002/001/index.html",
+      "cached": true,
+      "headings": 2,
+      "added_chars": 6,
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "リンク先にあり",
+            "value_head": ""
+          }
+        }
+      ]
+    },
+    {
+      "municipality": "板橋区",
+      "municipality_id": "itabashi",
+      "page": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001611.html",
+      "cached": true,
+      "headings": 21,
+      "added_chars": 74,
+      "cases": [
+        {
+          "field": "documents",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "前住所地で発行された転出証明書（マイナンバーカードを利用して転出手続きをした方は不要。戸籍届出で転出証明書の内容に変更があった場合は戸籍謄本または戸籍届出の受理"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "①前住所地で発行された転出証明書（マイナンバーカードを利用して転出手続きをした方は不要。戸籍届出で転出証明書の内容に変更があった場合は戸籍謄本または戸籍届出の受"
+          }
+        },
+        {
+          "field": "channel",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "窓口のみ（オンラインでは完結できない）"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "窓口のみ（オンラインでは完結できない。マイナポータルで申請しても最終的に窓口来庁が必須）"
+          }
+        },
+        {
+          "field": "deadline",
+          "before": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "新住所に住み始めた日から14日以内"
+          },
+          "after": {
+            "found": true,
+            "failure_reason": null,
+            "value_head": "新住所に住み始めた日から14日以内"
+          }
+        },
+        {
+          "field": "fee",
+          "before": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "value_head": ""
+          },
+          "after": {
+            "found": false,
+            "failure_reason": "記載なし",
+            "value_head": ""
+          }
+        }
+      ]
+    }
+  ]
+}

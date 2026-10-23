@@ -60,6 +60,8 @@ class Heading:
 class NormalizedPage:
     links: list[Link]
     text: str
+    # 本文に見出しの階層を `#` として戻したもの。**text と同じ字を、構造つきで持つ**
+    markdown: str
     jsonld: list[str]
     title: str | None
     meta: dict[str, str]
@@ -80,6 +82,27 @@ def clean_body_text(chunks: Sequence[str]) -> str:
     text = re.sub(r"[ \t　]+", " ", text)
     text = re.sub(r"\n\s*\n\s*", "\n\n", text)
     return text.strip()
+
+
+def markdown_body(chunks: Sequence[str], marks: Sequence[tuple[int, int]]) -> str:
+    """本文に見出しの階層を `#` として戻す。**字は足さない。印を戻すだけ。**
+
+    ★なぜ要るか: `<h2>` は HTML には有るのに、AIへ渡していた本文では
+      ただの1行に潰れていた。サイトの側に構造が有るのに、読み手が捨てている。
+
+    marks は (chunkの位置, 見出しレベル)。中身が空の見出しは印を持たない
+    （`_finish_heading` が捨てる）ので、`##` だけの行は出ない。
+    """
+    level_at = {}
+    for index, level in marks:
+        level_at.setdefault(index, level)
+    parts: list[str] = []
+    for index, chunk in enumerate(chunks):
+        level = level_at.get(index)
+        if level is not None:
+            parts.append(f"\n\n{'#' * level} ")
+        parts.append(chunk)
+    return clean_body_text(parts)
 
 
 def append_unique_text(target: list[str], value: object) -> None:
@@ -128,6 +151,8 @@ class _Parser(HTMLParser):
         self.jsonld: list[str] = []
         self.meta: dict[str, str] = {}
         self.headings: list[Heading] = []
+        # 見出しの本文が chunks のどこから始まるか。Markdown へ戻すときに使う
+        self.heading_marks: list[tuple[int, int]] = []
         self.title: str | None = None
         self._skip_depth = 0
         self._head_depth = 0
@@ -138,6 +163,7 @@ class _Parser(HTMLParser):
         self._title_text: list[str] | None = None
         self._heading_level: int | None = None
         self._heading_text: list[str] = []
+        self._heading_mark: int | None = None
         self._jsonld_text: list[str] | None = None
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -176,6 +202,8 @@ class _Parser(HTMLParser):
             self._heading_text = []
         if tag in BLOCK_TAGS:
             self.chunks.append("\n")
+        if tag in HEADING_TAGS:
+            self._heading_mark = len(self.chunks)
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "script" and self._jsonld_text is not None:
@@ -256,8 +284,11 @@ class _Parser(HTMLParser):
         text = clean_inline_text(self._heading_text)
         if text:
             self.headings.append(Heading(level=self._heading_level, text=text))
+            if self._heading_mark is not None:
+                self.heading_marks.append((self._heading_mark, self._heading_level))
         self._heading_level = None
         self._heading_text = []
+        self._heading_mark = None
 
     def _finish_jsonld(self) -> None:
         if self._jsonld_text is None:
@@ -505,6 +536,7 @@ def parse(html_text: str, base_url: str) -> NormalizedPage:
     return NormalizedPage(
         links=parser.links,
         text=clean_body_text(parser.chunks),
+        markdown=markdown_body(parser.chunks, parser.heading_marks),
         jsonld=parser.jsonld,
         title=parser.title,
         meta=parser.meta,
