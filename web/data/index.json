@@ -2,7 +2,7 @@
   "_about": "AI読（アイドク）の公開データの目次。人間向けの説明は README.md、機械向けはこのファイル。まずここを読めば、どこに何があり、どこまで測ってあるかが分かる。",
   "name": "AI読（アイドク）公開データ",
   "schema_version": 1,
-  "generated_at": "2026-10-31T01:57:51+00:00",
+  "generated_at": "2026-11-01T01:39:16+00:00",
   "homepage": "https://shoujiki-panman.github.io/aidoku/web/",
   "repository": "https://github.com/shoujiki-panman/aidoku",
   "base_url": "https://shoujiki-panman.github.io/aidoku/web/data/",
@@ -415,7 +415,7 @@
       "description": "採点済みページが変わっていないかの毎日の確認（LLMは呼ばない）。変わっていれば測り直しが必要という意味で、悪くなったという意味ではない。",
       "path": "site-status.json",
       "bytes": 31685,
-      "sha256": "5f0a956101cbbb058d88c5168ee361fe3a1a0dc561f6df91d5800340bc6e238d",
+      "sha256": "b27f33e62e4c6b9be29470cafd3be022f11a47cdd3162f7ac08b781ec431f36b",
       "records": {
         "path": "items",
         "count": 68
