@@ -15,6 +15,8 @@
   //   取り出せないので、貯めた記録は9月末までに必ずエクスポートすること。
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "aidoku-gatekeeper",
+  // 自分のアカウント。都知事杯の提供環境は 2026-11-06 に削除されるので移した（#282）
+  "account_id": "0d46647484641bf0fe914a9f97f5126a",
   "main": "worker.mjs",
   "compatibility_date": "2026-07-01",
 
@@ -30,13 +32,13 @@
       // 検証済みエージェントに返す「整った答え」。キーは host+path。
       // 中身は build_answers.mjs が23区の実測から作る（文章はここで作らない）。
       "binding": "ANSWERS",
-      "id": "PLACEHOLDER_ここに wrangler kv namespace create ANSWERS の出力を貼る"
+      "id": "c3b8c65fa1b9481597bd35de30a12457"
     },
     {
       // 集めた「何を探しに来て、取れたか／取れずに帰ったか」の置き場。
       // 追記だけして、読み出し( /_aidoku/demand )のときに集計する。
       "binding": "DEMAND",
-      "id": "PLACEHOLDER_ここに wrangler kv namespace create DEMAND の出力を貼る"
+      "id": "2686aa7c7bf24c25847b39da098e8da2"
     }
   ],
 

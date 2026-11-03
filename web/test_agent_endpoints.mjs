@@ -5,7 +5,7 @@ import { ASK_PATH } from '../gatekeeper/nlweb.mjs';
 import { MCP_PATH } from '../gatekeeper/mcp.mjs';
 
 const html = readFileSync(new URL('./reference/data.html', import.meta.url), 'utf8');
-const origin = 'https://aidoku-gatekeeper.shoujiki-panman.workers.dev';
+const origin = 'https://aidoku-gatekeeper.panman.workers.dev';
 const askUrl = `${origin}${ASK_PATH}`;
 const mcpUrl = `${origin}${MCP_PATH}`;
 const section = html.match(

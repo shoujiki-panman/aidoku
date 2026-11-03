@@ -69,7 +69,7 @@ MVPの最初の実装対象は**確認済み情報の保存と門番への接続
 | 数字の突き合わせ | `analysis/probes/check_claims.py --text <文書>`。対外文の数字が実測に無いと要確認を出す（「5区→4区」の再発防止） |
 | CI | lint（ruff）・重複（jscpd）・テスト（Python 297 / web(node) 304 / gatekeeper 112）全部落とす設定（node系は2026-09-09実測。ずれていたら実測を正とする） |
 | 公開画面 | index（今やる1件＋一覧）／barrier／board／demand の4枚。**役割整理は#65** |
-| 門番 | 署名検証・NLWeb・MCP・確認済み情報・受付の自前実装。**個人枠で本番稼働中**: https://aidoku-gatekeeper.shoujiki-panman.workers.dev （素通し=自サイト・実測24件をKVに投入・受付は鍵未設定で閉。#199のコメントに記録）。**方針4によりCloudflare機能への載せ替え対象** |
+| 門番 | 署名検証・NLWeb・MCP・確認済み情報・受付の自前実装。**個人枠で本番稼働中**: https://aidoku-gatekeeper.panman.workers.dev （素通し=自サイト・実測24件をKVに投入・受付は鍵未設定で閉。#199のコメントに記録）。**方針4によりCloudflare機能への載せ替え対象** |
 
 ### ⚠️ 公開データの状態（2026-08-18）
 
