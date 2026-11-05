@@ -1,0 +1,57 @@
+{
+ "_about": "plans/evidence-segments.md。公開データではない。",
+ "found_but_rejected": 5,
+ "now_verified": 4,
+ "items": [
+  {
+   "procedure": "tennyu",
+   "key": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00011.html\t窓口/オンライン可否",
+   "url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00011.html",
+   "value": "本庁舎1階 戸籍住民課 住民記録係（窓口での手続きが必要。インターネットのみでは完結しない）",
+   "evidence": "利用できる窓口\n本庁舎1階 戸籍住民課 住民記録係\n※特別出張所及びその他の窓口ではご利用できません。\n作成できる届出書（請求書）\n転入届\n転出届\n転居届\n住民票の写し交付請求書（※）\n注意事項\n本サービスはインターネットで手続きが完了するものではありません。システムでの画面入力後、窓口での手続きが必要です。入力後に表示されるＱＲコードをもとに届出書等を出力しますので、ご来庁の際に必ずＱＲコードをご持参ください。",
+   "before": "partial",
+   "after": "segmented",
+   "now_verified": true
+  },
+  {
+   "procedure": "tennyu",
+   "key": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html\t必要書類",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
+   "value": "本人であることを確認できるもの（注釈1）／転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）／マイナンバーカード（お持ちの方のみ）（注釈3）",
+   "evidence": "届出に必要なもの\n\n本人であることを確認できるもの（注釈1）\n\n転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）\n\nマイナンバーカード（お持ちの方のみ）（注釈3）\n\n※暗証番号（4桁の数字）の入力が必要です。",
+   "before": "partial",
+   "after": "segmented",
+   "now_verified": true
+  },
+  {
+   "procedure": "jidouteate",
+   "key": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html\t窓口/オンライン可否",
+   "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+   "value": "電子申請（ぴったりサービス）と窓口での申請の両方が可能",
+   "evidence": "認定請求手続き（初めて児童手当の申請をする方）\n\n出生、転入などにより、児童手当の認定請求をするときは添付書類を添えて、「児童手当 認定請求書」をご提出ください。\n\n電子申請\n\n児童手当 認定請求書 ぴったりサービス（外部サイト）からご申請ください。\n\n監護相当・生計費の負担についての確認書 ぴったりサービス（外部サイト）で申請ができます。\n※18歳年度末を経過した後から22歳年度末までの子を含めて、養育するお子さんが3人以上の場合\n\n郵送による申請（様式は関連ファイルをご確認ください。）\n\n児童手当 認定請求書（PDF形式：135KB）\n\n窓口での申請\n\n個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）\n※マイナンバーカードのみで本人確認を兼ねます。",
+   "before": "partial",
+   "after": "partial",
+   "now_verified": false
+  },
+  {
+   "procedure": "jidouteate",
+   "key": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf\t窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+   "value": "郵送、窓口又は電子申請で申請可能",
+   "evidence": "「児童手当認定請求書（額改定請求書）（以下、認定請求書という）」と「添付書類（必要な場合）」を合わせて、郵送、窓口又は電子申請で子ども家庭課に提出してください。＊各総合支所保健福祉センター子ども家庭支援課の窓口でもご提出いただけます。　＊電子申請については、世田谷区のホームページをご確認ください。",
+   "before": "partial",
+   "after": "segmented",
+   "now_verified": true
+  },
+  {
+   "procedure": "jidouteate",
+   "key": "https://www.city.setagaya.lg.jp/02413/18187.html\t窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+   "value": "郵送、窓口又は電子申請",
+   "evidence": "5.申請方法\n\n以下の郵送、窓口又は電子申請の方法でご申請いただけます。\n\n5-1.郵送での申請をご希望の場合\n\n5-2.窓口での申請をご希望の場合\n\n上の必要書類と添付書類を合わせて、子ども家庭課子ども医療・手当担当の窓口又は各総合支所の子ども家庭支援課の窓口でご提出ください。\n\n5-3.電子申請をご希望の場合\n\nマイナンバーカードをお持ちの方は、マイナポータルを経由して電子申請をすることができます。\n\nご希望の方は、以下のリンクから申請ページへお進みください。\n\n児童手当認定請求書(新規申請)\n\n児童手当額改定請求書(下の子が出生した等)",
+   "before": "partial",
+   "after": "segmented",
+   "now_verified": true
+  }
+ ]
+}
