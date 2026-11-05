@@ -11,15 +11,16 @@
   "summary": {
     "municipalities": 24,
     "swept_fields": 50,
-    "pages_read": 72,
-    "found": 4,
+    "pages_read": 63,
+    "found": 5,
     "found_names": [
       "千代田区/窓口/オンライン可否",
       "中野区/必要書類",
       "中野区/期限",
-      "世田谷区/必要書類"
+      "世田谷区/必要書類",
+      "世田谷区/窓口/オンライン可否"
     ],
-    "exhausted": 24,
+    "exhausted": 23,
     "budget_hit": 0,
     "budget_names": [],
     "unreadable": 2,
@@ -36,22 +37,22 @@
     "itabashi": "読めない",
     "koto": "読めない",
     "minato": "読めない",
-    "nakano": "読めない",
     "nerima": "読めない",
     "ota": "読めない",
     "shibuya": "読めない",
     "shinagawa": "読めない",
+    "shinjuku": "読めない",
     "suginami": "読めない",
     "edogawa": "読めない",
+    "kita": "読めない",
     "adachi": "読めない",
     "bunkyo": "読めない",
     "chiyoda": "読めない",
+    "nakano": "読めない",
+    "sumida": "読めない",
     "katsushika": "読めない",
-    "kita": "読めない",
     "meguro": "読めない",
     "setagaya": "読めない",
-    "shinjuku": "読めない",
-    "sumida": "読めない",
     "taito": "読めない",
     "toshima": "読めない"
   },
@@ -738,73 +739,17 @@
         },
         {
           "field": "窓口/オンライン可否",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "郵送、窓口又は電子申請で申請可能",
+          "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+          "evidence": "「児童手当認定請求書（額改定請求書）（以下、認定請求書という）」と「添付書類（必要な場合）」を合わせて、郵送、窓口又は電子申請で子ども家庭課に提出してください。＊各総合支所保健福祉センター子ども家庭支援課の窓口でもご提出いただけます。　＊電子申請については、世田谷区のホームページをご確認ください。",
+          "stopped": "found",
           "errors": 0,
-          "unreadable": [],
-          "candidates": 10,
           "looked": [
             {
               "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
               "link_text": "児童手当のご案内（PDF：858KB）",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf",
-              "link_text": "児童手当認定(額改定)請求書（PDF：641KB）",
-              "verified": false,
-              "from_cache": false
-            },
-            {
-              "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
-              "link_text": "児童手当のご案内",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
-              "link_text": "児童手当現況届のご案内",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/11545.html",
-              "link_text": "子育て",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11726.html",
-              "link_text": "子育ての区情報誌・メールマガジン等",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11729.html",
-              "link_text": "子育て支援",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12400.html",
-              "link_text": "子育てステーション",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13019.html",
-              "link_text": "子育て・教育に関する助成",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
-              "link_text": "ひとり親家庭への手当、助成、貸付",
-              "verified": false,
+              "verified": true,
               "from_cache": true
             }
           ]

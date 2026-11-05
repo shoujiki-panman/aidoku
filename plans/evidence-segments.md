@@ -25,4 +25,4 @@
 
 ## 触らないもの
 
-公開データと `sweep_*.json`。反映するかは再判定の結果を見て決める。
+公開データ。`sweep_*.json` への反映は再判定の結果を見て決めた（`plans/decisions/exhausted-crosscheck.md`）。

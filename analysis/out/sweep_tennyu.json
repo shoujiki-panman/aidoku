@@ -11,14 +11,16 @@
   "summary": {
     "municipalities": 24,
     "swept_fields": 36,
-    "pages_read": 116,
-    "found": 3,
+    "pages_read": 112,
+    "found": 5,
     "found_names": [
       "中央区/期限",
+      "新宿区/窓口/オンライン可否",
+      "墨田区/必要書類",
       "墨田区/窓口/オンライン可否",
       "墨田区/期限"
     ],
-    "exhausted": 29,
+    "exhausted": 27,
     "budget_hit": 0,
     "budget_names": [],
     "unreadable": 1,
@@ -35,22 +37,22 @@
     "chiyoda": "読めない",
     "edogawa": "読めない",
     "itabashi": "読めない",
+    "katsushika": "読めない",
+    "kita": "読めない",
+    "meguro": "読めない",
     "nerima": "読めない",
     "shibuya": "読めない",
     "suginami": "読めない",
     "taito": "読めない",
     "toshima": "読めない",
     "nakano": "読めない",
-    "katsushika": "読めない",
-    "kita": "読めない",
     "koto": "読めない",
-    "meguro": "読めない",
     "ota": "読めない",
     "shinagawa": "読めない",
-    "shinjuku": "読めない",
-    "arakawa": "読めない",
     "chuo": "読めない",
     "setagaya": "読めない",
+    "shinjuku": "読めない",
+    "arakawa": "読めない",
     "sumida": "読めない"
   },
   "rows": [
@@ -1009,14 +1011,12 @@
         },
         {
           "field": "窓口/オンライン可否",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "本庁舎1階 戸籍住民課 住民記録係（窓口での手続きが必要。インターネットのみでは完結しない）",
+          "url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00011.html",
+          "evidence": "利用できる窓口\n本庁舎1階 戸籍住民課 住民記録係\n※特別出張所及びその他の窓口ではご利用できません。\n作成できる届出書（請求書）\n転入届\n転出届\n転居届\n住民票の写し交付請求書（※）\n注意事項\n本サービスはインターネットで手続きが完了するものではありません。システムでの画面入力後、窓口での手続きが必要です。入力後に表示されるＱＲコードをもとに届出書等を出力しますので、ご来庁の際に必ずＱＲコードをご持参ください。",
+          "stopped": "found",
           "errors": 0,
-          "unreadable": [],
-          "candidates": 6,
           "looked": [
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000001_00002.html",
@@ -1033,26 +1033,8 @@
             {
               "url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00011.html",
               "link_text": "スマートフォン等から住所変更の届出書・住民票等の請求書の作成ができます",
-              "verified": false,
+              "verified": true,
               "from_cache": true
-            },
-            {
-              "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_002019.html",
-              "link_text": "戸籍住民課各窓口受付状況",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
-              "link_text": "住民票等の証明",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.shinjuku.lg.jp/living_03.html",
-              "link_text": "引越し",
-              "verified": false,
-              "from_cache": false
             }
           ]
         },
@@ -1133,14 +1115,12 @@
       "fields": [
         {
           "field": "必要書類",
-          "found": false,
-          "value": "",
-          "url": null,
-          "evidence": "",
-          "stopped": "exhausted",
+          "found": true,
+          "value": "本人であることを確認できるもの（注釈1）／転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）／マイナンバーカード（お持ちの方のみ）（注釈3）",
+          "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
+          "evidence": "届出に必要なもの\n\n本人であることを確認できるもの（注釈1）\n\n転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）\n\nマイナンバーカード（お持ちの方のみ）（注釈3）\n\n※暗証番号（4桁の数字）の入力が必要です。",
+          "stopped": "found",
           "errors": 0,
-          "unreadable": [],
-          "candidates": 4,
           "looked": [
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
@@ -1157,13 +1137,7 @@
             {
               "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
               "link_text": "住民登録の届出",
-              "verified": false,
-              "from_cache": true
-            },
-            {
-              "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
-              "link_text": "住民票等の証明書",
-              "verified": false,
+              "verified": true,
               "from_cache": true
             }
           ]
