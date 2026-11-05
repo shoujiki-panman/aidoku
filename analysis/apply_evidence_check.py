@@ -240,18 +240,19 @@ def record_summary(results: list[dict]) -> dict:
 
 
 def item_summary(verdicts: Counter[str]) -> dict:
-    checked = sum(verdicts[v] for v in ("exact", "normalized", "partial", "missing", "too_short"))
-    verified = sum(verdicts[v] for v in ("exact", "normalized"))
+    checked = sum(verdicts[v] for v in ("exact", "normalized", "segmented", "partial", "missing", "too_short"))
+    verified = sum(verdicts[v] for v in ("exact", "normalized", "segmented"))
     return {
         "checked": checked,
         "verified": verified,
+        "segmented": verdicts["segmented"],
         "partial": verdicts["partial"],
         "missing": verdicts["missing"],
         "too_short": verdicts["too_short"],
         "not_checked": verdicts["not_checked"],
         "not_applicable": verdicts["not_applicable"],
         "verdicts": {key: verdicts[key] for key in
-                     ("exact", "normalized", "partial", "missing", "too_short",
+                     ("exact", "normalized", "segmented", "partial", "missing", "too_short",
                       "not_checked", "not_applicable")},
     }
 

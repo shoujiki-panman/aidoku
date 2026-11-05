@@ -10,6 +10,7 @@
 
   exact      本文にそのまま含まれる
   normalized 空白・全角半角・記号のゆれを吸収すると含まれる
+  segmented  区切りごとの断片がすべて、本文に順番どおり近い位置にある（表・離れた文の引用）
   partial    連続する部分文字列が MIN_RUN 文字ぶん一致する（引用全体は未確認）
   missing    どれにも当たらない ← 捏造の疑い
 
@@ -35,6 +36,11 @@ MIN_RUN = 15
 # 引用としてまともに扱う最短長。これ未満は判定しない（「無料」等の2文字は
 # 本文のどこにでもあり、照合しても意味が無い）
 MIN_EVIDENCE_LEN = 8
+
+# 断片どうしの間に挟まってよい本文の長さ（正規化後）。同じ表や同じ段落の範囲を想定する。
+# 実測: 墨田区の表は別の列「届出人 引っ越し後14日以内」を挟み、世田谷区のPDFは1文を挟む。
+# これより離れた文をつなぐと、別の話を1つの引用に見せられる。
+MAX_SEGMENT_GAP = 200
 
 # extractor が LLM に渡す本文と、既存結果の再照合で読む本文の上限を揃える。
 MAX_TEXT_CHARS_PER_PAGE = 18000
@@ -79,6 +85,36 @@ def longest_common_run(a: str, b: str) -> int:
     return best
 
 
+def split_segments(evidence: str) -> list[str]:
+    """引用を改行と句点で分け、正規化した断片にする。空の断片は捨てる。"""
+    parts = re.split(r"(?<=[。.!?！？])|[\r\n]+", evidence)
+    return [seg for seg in (normalize(part) for part in parts if part) if seg]
+
+
+def segments_in_order(segments: list[str], page: str, max_gap: int = MAX_SEGMENT_GAP) -> bool:
+    """断片がすべて、順番どおり、間を max_gap 文字以内にして本文にあるか。"""
+    start = page.find(segments[0])
+    while start != -1:
+        end = start + len(segments[0])
+        for seg in segments[1:]:
+            at = page.find(seg, end)
+            if at == -1 or at - end > max_gap:
+                break
+            end = at + len(seg)
+        else:
+            return True
+        start = page.find(segments[0], start + 1)
+    return False
+
+
+def check_segments(evidence: str, page: str) -> bool:
+    """★短い断片だけの引用は通さない。どこにでもある語を並べれば一致してしまう。"""
+    segments = split_segments(evidence)
+    return (len(segments) >= 2
+            and max(len(seg) for seg in segments) >= MIN_RUN
+            and segments_in_order(segments, page))
+
+
 def check_one(evidence: object, page_text: str) -> dict:
     """1つの evidence を照合する。"""
     if not isinstance(evidence, str):
@@ -97,6 +133,10 @@ def check_one(evidence: object, page_text: str) -> dict:
         return {"verdict": "normalized", "run": len(nev),
                 "note": "空白・記号のゆれを吸収すると一致"}
 
+    if check_segments(ev, npage):
+        return {"verdict": "segmented", "run": len(nev),
+                "note": "断片がすべて本文に順番どおり近い位置にある"}
+
     run = longest_common_run(nev, npage)
     if run >= MIN_RUN:
         return {"verdict": "partial", "run": run,
@@ -107,10 +147,11 @@ def check_one(evidence: object, page_text: str) -> dict:
 
 
 # 引用全体が本文にあると確認できた判定。partial はここに含めない。
-VERIFIED_VERDICTS = ("exact", "normalized")
+VERIFIED_VERDICTS = ("exact", "normalized", "segmented")
 VERDICT_PRIORITY = {
-    "exact": 5,
-    "normalized": 4,
+    "exact": 6,
+    "normalized": 5,
+    "segmented": 4,
     "partial": 3,
     "missing": 2,
     "too_short": 1,
@@ -169,6 +210,7 @@ def summarize(checks: dict) -> dict:
     return {
         "checked": len(considered),
         "verified": len(verified),
+        "segmented": sum(1 for c in considered if c["verdict"] == "segmented"),
         "partial": sum(1 for c in considered if c["verdict"] == "partial"),
         "missing": sum(1 for c in considered if c["verdict"] == "missing"),
         "too_short": sum(1 for c in considered if c["verdict"] == "too_short"),

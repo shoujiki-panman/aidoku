@@ -32,6 +32,7 @@
 | 外部の変換器（anydoc）の方がよく読めるか | 突き合わせ済み → `plans/decisions/external-reader.md` | `compare_readers.py` |
 | 読めない画像PDFはOCRで読めるか | 読めた。**その後 OCR は測定本体に入れた**（`plans/decisions/ocr-in-measurement.md`）ので、この道具は役目を終えている | `ocr_unreadable.py` |
 | リンクの並べ替えで渡せるリンクは増えるか | 増えた → `plans/decisions/link-order.md` | `check_link_order.py` |
+| 根拠検査の `segmented` で新しく通る引用は何か | 保存済みの引用で再判定する（LLMを呼ばない） → `plans/evidence-segments.md` | `replay_evidence.py` |
 | 「書いていない」は別系統のモデルでも同じか | **79件中10件で食い違い。13判定中5判定は Claude の再読でも見つかった** → `plans/decisions/exhausted-crosscheck.md` | `crosscheck_exhausted.py` |
 | 対外文に書いた数字は、いまの実測と合っているか | 突き合わせる道具。**数字を対外に出す前に走らせる** | `check_claims.py` |
 

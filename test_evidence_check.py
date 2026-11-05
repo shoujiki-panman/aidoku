@@ -10,13 +10,17 @@ from __future__ import annotations
 import unittest
 
 from evidence_check import (
+    MAX_SEGMENT_GAP,
     MIN_EVIDENCE_LEN,
     MIN_RUN,
+    VERIFIED_VERDICTS,
     attach_checks,
     check_items,
     check_one,
     check_one_across_pages,
     normalize,
+    segments_in_order,
+    split_segments,
     summarize,
 )
 
@@ -82,6 +86,66 @@ class 要約されている場合(unittest.TestCase):
                 evidence = "あ" * run + "甲" * 10
                 page = "あ" * run + "乙" * 10
                 self.assertEqual(check_one(evidence, page)["verdict"], verdict)
+
+
+class 断片に分けて照合する(unittest.TestCase):
+    TABLE = ("届出期間\n\n届出に必要なもの\n\n届出人\n\n引っ越し後14日以内\n\n"
+             "本人であることを確認できるもの\n\n転出証明書をお持ちください。")
+
+    def verdict(self, evidence, page=None):
+        return check_one(evidence, self.TABLE if page is None else page)["verdict"]
+
+    def test_表の別の列を挟んだ引用は通す(self):
+        self.assertEqual(self.verdict("本人であることを確認できるもの\n\n転出証明書をお持ちください。\n"), "exact")
+        evidence = "届出に必要なもの\n本人であることを確認できるもの\n転出証明書をお持ちください。"
+        self.assertEqual(self.verdict(evidence), "segmented")
+
+    def test_離れた文をつないだ引用は通す(self):
+        page = ("郵送、窓口又は電子申請で提出してください。添付が足りなくても先に出せます。"
+                "各支所の窓口でも提出できます。")
+        evidence = "郵送、窓口又は電子申請で提出してください。各支所の窓口でも提出できます。"
+        self.assertEqual(self.verdict(evidence, page), "segmented")
+
+    def test_segmentedはverifiedに数える(self):
+        check = {"verdict": "segmented", "run": 1}
+        summary = summarize({"必要書類": check})
+        self.assertEqual((summary["verified"], summary["segmented"]), (1, 1))
+        self.assertIn("segmented", VERIFIED_VERDICTS)
+
+    def test_本文にない断片が混ざれば通さない(self):
+        evidence = "本人であることを確認できるもの\n住民税の納税証明書をお持ちください。"
+        self.assertNotIn(self.verdict(evidence), VERIFIED_VERDICTS)
+
+    def test_本文を言い換えた断片は通さない(self):
+        self.assertNotIn(self.verdict("本人であることを確認できるもの\n転出証明書は不要です。"), VERIFIED_VERDICTS)
+
+    def test_順番が逆なら通さない(self):
+        evidence = "転出証明書をお持ちください。\n本人であることを確認できるもの"
+        self.assertNotIn(self.verdict(evidence), VERIFIED_VERDICTS)
+
+    def test_遠く離れた文のつなぎ合わせは通さない(self):
+        head, tail = "転入届は14日以内に出してください。", "転出届は郵送でも出せます。"
+        for gap, expected in ((MAX_SEGMENT_GAP, "segmented"), (MAX_SEGMENT_GAP + 1, "partial")):
+            with self.subTest(gap=gap):
+                self.assertEqual(self.verdict(head + tail, head + "甲" * gap + tail), expected)
+
+    def test_短い語だけを並べた引用は通さない(self):
+        page = "窓口の案内。" + "甲" * 50 + "電子申請の案内。"
+        self.assertNotIn(self.verdict("窓口の案内。\n電子申請の案内。", page), VERIFIED_VERDICTS)
+
+    def test_断片が1つならsegmentedにしない(self):
+        self.assertEqual(split_segments("改行も句点もない引用"), ["改行も句点もない引用"])
+        self.assertNotEqual(self.verdict("本人であることを確認できるもの追加の語"), "segmented")
+
+    def test_同じ語が前にあっても後ろの並びで見つける(self):
+        page = "転出証明書のご案内です。" + "甲" * 300 + "転出証明書のご案内です。本人確認書類をお持ちください。"
+        self.assertEqual(self.verdict("転出証明書のご案内です。\n本人確認書類をお持ちください。", page), "normalized")
+        self.assertTrue(segments_in_order(["転出証明書のご案内です。", "本人確認書類"], normalize(page), max_gap=0))
+
+    def test_別ページの断片は合成しない(self):
+        result = check_one_across_pages("本人であることを確認できるもの\n転出証明書をお持ちください。",
+                                        ["本人であることを確認できるもの", "転出証明書をお持ちください。"])
+        self.assertNotIn(result["verdict"], VERIFIED_VERDICTS)
 
 
 class ページ境界(unittest.TestCase):
