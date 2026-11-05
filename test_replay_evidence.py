@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "analysis" / "probes"))
-from replay_evidence import replay  # noqa: E402
+from replay_evidence import apply_replay, no_llm, replay  # noqa: E402
 
 PAGE = "届出に必要なもの。届出人。本人であることを確認できるものをお持ちください。"
 
@@ -37,6 +37,24 @@ class 判定し直す(unittest.TestCase):
 
     def test_記録以外の値は読み飛ばす(self):
         self.assertEqual(replay({"schema": 1}, lambda _: PAGE), [])
+
+
+class 反映する(unittest.TestCase):
+    def test_通るようになった判定だけ直す(self):
+        ok = visit("届出に必要なもの。本人であることを確認できるものをお持ちください。")
+        ng = visit("届出に必要なもの。住民税の納税証明書をお持ちください。")
+        self.assertEqual(apply_replay({"ok": ok, "ng": ng}, lambda _: PAGE), ["ok"])
+        self.assertEqual((ok["verified"], ok["evidence_check"]["verdict"]), (True, "segmented"))
+        self.assertEqual((ng["verified"], ng["evidence_check"]["verdict"]), (False, "partial"))
+
+    def test_二度反映しても変わらない(self):
+        visits = {"ok": visit("届出に必要なもの。本人であることを確認できるものをお持ちください。")}
+        apply_replay(visits, lambda _: PAGE)
+        self.assertEqual(apply_replay(visits, lambda _: PAGE), [])
+
+    def test_記録に無ければLLMを呼ばずに止める(self):
+        with self.assertRaises(SystemExit):
+            no_llm("page")
 
 
 if __name__ == "__main__":

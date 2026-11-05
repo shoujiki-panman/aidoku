@@ -1202,11 +1202,11 @@
       "evidence": "利用できる窓口\n本庁舎1階 戸籍住民課 住民記録係\n※特別出張所及びその他の窓口ではご利用できません。\n作成できる届出書（請求書）\n転入届\n転出届\n転居届\n住民票の写し交付請求書（※）\n注意事項\n本サービスはインターネットで手続きが完了するものではありません。システムでの画面入力後、窓口での手続きが必要です。入力後に表示されるＱＲコードをもとに届出書等を出力しますので、ご来庁の際に必ずＱＲコードをご持参ください。",
       "why_not": "",
       "evidence_check": {
-        "verdict": "partial",
-        "run": 108,
-        "note": "連続108文字だけ一致。引用全体は確認できない"
+        "verdict": "segmented",
+        "run": 187,
+        "note": "断片がすべて本文に順番どおり近い位置にある"
       },
-      "verified": false
+      "verified": true
     },
     "https://www.city.shinjuku.lg.jp/todokede/koseki03_002019.html\t窓口/オンライン可否": {
       "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_002019.html",
@@ -1342,11 +1342,11 @@
       "evidence": "届出に必要なもの\n\n本人であることを確認できるもの（注釈1）\n\n転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）\n\nマイナンバーカード（お持ちの方のみ）（注釈3）\n\n※暗証番号（4桁の数字）の入力が必要です。",
       "why_not": "",
       "evidence_check": {
-        "verdict": "partial",
-        "run": 96,
-        "note": "連続96文字だけ一致。引用全体は確認できない"
+        "verdict": "segmented",
+        "run": 104,
+        "note": "断片がすべて本文に順番どおり近い位置にある"
       },
-      "verified": false
+      "verified": true
     },
     "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html\t必要書類": {
       "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
