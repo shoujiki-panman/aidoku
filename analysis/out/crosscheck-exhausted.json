@@ -1,0 +1,4141 @@
+{
+ "_about": "plans/exhausted-crosscheck.md。公開データではない。食い違いは人が読むまで誤りと書かない。",
+ "claude_model": "claude-sonnet-5",
+ "summary": {
+  "control": 16,
+  "control_found": 14,
+  "control_passed": true,
+  "exhausted_judgments": 235,
+  "exhausted_pairs": 79,
+  "codex_errors": 0,
+  "unjudged": 0,
+  "codex_found_judgments": 13,
+  "codex_found_pairs": 10,
+  "by_label": {
+   "系統の食い違い": 8,
+   "1回ごとのぶれ": 5
+  }
+ },
+ "items": [
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "手数料",
+   "url": "https://www.city.adachi.tokyo.jp/kodomokate/kosodate-application-2025.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文の「登録料、利用料は無料です」は子育てアプリ「足立区おやこ手帳」の料金の説明であり、児童手当の認定請求そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/taisho.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "申請窓口は区役所2階子育て推進課および区内各出張所。郵送は子育て推進課宛て。オンライン申請の可否は記載なし。",
+    "evidence": "申請の受け付けは、次の場所で行っています。なお、郵送の場合は、1の子育て推進課へお送りください。\n\n区役所2階子育て推進課\n\n〒102-8688千代田区九段南1-2-1\n\n電話番号：03-5211-4230\n\n区内各出張所",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/jidoteate/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "児童手当の制度概要や申請手続きの案内はありますが、認定請求そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/kodomoiryo.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文はこども・高校生等医療費助成制度の申請や医療費の自己負担・還付についての説明であり、児童手当の認定請求そのものの手数料は記載されていません。無料ダウンロードはAdobe Acrobat Readerのことです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は手当・助成の一覧で、「児童手当」という項目はありますが、児童手当の認定請求そのものの手数料については記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/chukosei-oenteate.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は区独自の中高生世代応援手当の案内で、月額15,000円は支給額、無料はAdobe Acrobat Readerのダウンロードの話です。児童手当の認定請求そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kosodate/teate/shin-chugakusei.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は区独自の「中高生世代応援手当」の申請案内であり、児童手当の認定請求そのものの手数料は記載されていません。「無料」はAdobe Acrobat Readerのダウンロードの話です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/oyakudachi/1004610.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育て応援アプリの利用が無料で、通信料は利用者負担という説明であり、児童手当の認定請求そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065179.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は児童扶養手当の現況届の郵送手続きについての案内で、児童手当の認定請求そのものの手数料は記載されていません。「無料」はAdobe Readerのダウンロードについてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065176.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は児童扶養手当の現況届の提出案内であり、児童手当の認定請求そのものの手数料は記載されていません。「無料」はAdobe Readerのダウンロードについてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1064581/1065172.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は児童扶養手当の現況届と一部支給停止適用除外届の案内であり、児童手当の認定請求そのものの手数料は記載されていません。「無料」はAdobe Readerのダウンロードの話です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/book/1004606.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は子育て情報ブックの紹介と配布方法の案内です。「無料」はAdobe Readerのダウンロードについてであり、児童手当の認定請求そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/kosodate/teate/teate/1004635.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は児童育成手当の案内で、児童手当の認定請求そのものの手数料は記載されていません。月額13,500円は手当の支給額、「無料」はAdobe Readerのダウンロードの話です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "koto",
+   "municipality": "江東区",
+   "field": "手数料",
+   "url": "https://www.city.koto.lg.jp/281011/kodomo/kosodate/teate/6028.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は児童扶養手当の支給額や申請方法、粗大ごみ等の収集手数料の免除についての説明であり、児童手当の認定請求そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "koto",
+   "municipality": "江東区",
+   "field": "手数料",
+   "url": "https://www.city.koto.lg.jp/kodomo/kosodate/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育て支援の各制度へのリンク一覧であり、児童手当の認定請求そのものの手数料について記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "koto",
+   "municipality": "江東区",
+   "field": "手数料",
+   "url": "https://www.city.koto.lg.jp/281012/kodomo/kosodate/benri/4911.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育てハンドブックの配布・閲覧方法と、アプリ「マチイロ」の無料利用や通信料についての記載であり、児童手当の認定請求そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "meguro",
+   "municipality": "目黒区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.meguro.tokyo.jp/kosodatekyouiku/kosodate/shien/jidousoudan/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育て・DV・児童虐待などの相談窓口の案内であり、児童手当の認定請求の窓口やオンライン申請可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "meguro",
+   "municipality": "目黒区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.meguro.tokyo.jp/kateishien/kosodatekyouiku/kosodate/sogosodan.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育ての悩みや困りごとの相談窓口と、電話・メール・来所・オンライン等の相談方法の案内です。児童手当の認定請求の窓口やオンライン申請可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "minato",
+   "municipality": "港区",
+   "field": "手数料",
+   "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kodomo/bukkadakataioukosodateouenteate.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "物価高対応子育て応援手当の支給額（対象児童一人につき2万円）や申請方法の説明であり、児童手当の認定請求そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "minato",
+   "municipality": "港区",
+   "field": "手数料",
+   "url": "https://www.city.minato.tokyo.jp/kodomo/kate/teate/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "手当て・助成の案内一覧で、「児童手当」へのリンクはありますが、児童手当の認定請求そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "minato",
+   "municipality": "港区",
+   "field": "手数料",
+   "url": "https://www.city.minato.tokyo.jp/kosodatesien/kodomo/kodomo/shienshisetsu/ai-port.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されているのは子育てひろば「あい・ぽーと」の会員登録の年会費とひろばの利用料であり、児童手当の認定請求の手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "minato",
+   "municipality": "港区",
+   "field": "手数料",
+   "url": "https://www.city.minato.tokyo.jp/kodomokyufu/kodomo/kate/teate/jidofuyo.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は児童扶養手当の案内で、児童手当の認定請求そのものの手数料は記載されていません。金額は手当の支給額や所得制限額で、手数料の記載は粗大ごみ収集手数料の免除についてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "nakano",
+   "municipality": "中野区",
+   "field": "必要書類",
+   "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "児童手当の認定請求に必要な書類が記載されています。認定請求書、個人番号が分かるものと本人確認書類、請求者名義の振込口座が確認できるもの。条件により、加入保険が確認できるものの写し、監護相当・生計費の負担についての確認書、別居監護同意書も必要です。郵送では本人確認書類等や口座確認書類の写しを提出します。",
+    "evidence": "認定請求手続き（初めて児童手当の申請をする方）\n\n出生、転入などにより、児童手当の認定請求をするときは添付書類を添えて、「児童手当 認定請求書」をご提出ください。\n\n電子申請\n\n児童手当 認定請求書 ぴったりサービス（外部サイト）からご申請ください。\n\n監護相当・生計費の負担についての確認書 ぴったりサービス（外部サイト）で申請ができます。\n※18歳年度末を経過した後から22歳年度末までの子を含めて、養育するお子さんが3人以上の場合\n\n郵送による申請（様式は関連ファイルをご確認ください。）\n\n児童手当 認定請求書（PDF形式：135KB）\n\n監護相当・生計費の負担についての確認書（PDF形式：120KB）\n※18歳年度末を経過した後から22歳年度末までの子を含めて、養育するお子さんが3人以上の場合\n\n個人番号が分かるもの＋本人確認書類（マイナンバーカード・運転免許証等）の写し\n※マイナンバーカードのみで本人確認を兼ねます。\n\n申請者の加入保険が確認できるもの（資格確認書等※）の写し\n※3歳未満の児童を養育し、かつ各種共済組合員（私立学校教職員共済を除く）の方のみ必要です。「保険者番号・記号・番号・枝番」の各欄はマスキングしてください。\n※資格確認書、マイナポータルから保険情報を印字したもの（保険者名・氏名・生年月日・性別・資格取得年月日がわかるもの）\n\n児童手当 別居監護同意書（PDF形式：107KB）\n※支給対象のお子さんと別居している方のみ\n\n請求者名義の振込口座（普通預金）が確認できるものの写し（通帳またはカード等）",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "nakano",
+   "municipality": "中野区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "児童手当などの関連ページへのリンク一覧で、児童手当の認定請求の窓口やオンライン申請の可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "nakano",
+   "municipality": "中野区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate-seidokaisei.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "申請受付窓口は中野区役所3階 子育て窓口。申請方法は「こちら（児童手当）」のリンク先を案内。",
+    "evidence": "お問い合わせ・提出先/申請受付窓口\n\n〒164-8501 中野区中野4-11-19 中野区役所3階 子育て窓口\n電話番号 03-3228-5484 (平日 午前8時半から午後5時まで)",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "このページは児童手当の制度改正についての説明で、申請方法については「こちら（児童手当）をご確認ください」と別ページへのリンクを示すのみで、窓口/オンライン可否の具体的な記載は本文中にない",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "nakano",
+   "municipality": "中野区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "児童手当の認定請求は、ぴったりサービスでオンライン申請可能。申請窓口は子ども総合窓口（区役所3階1番、平日午前8時半から午後5時まで）および地域事務所（江古田、鷺宮、東部、南中野、野方）。",
+    "evidence": "電子申請\n\n児童手当 認定請求書 ぴったりサービス（外部サイト）からご申請ください。\n\n申請受付窓口\n\n子ども教育部 子ども総合窓口（区役所3階1番） 平日午前8時半から午後5時まで \n\n地域事務所（江古田、鷺宮、東部、南中野、野方）",
+    "why_not": "",
+    "evidence_verdict": "partial",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "nakano",
+   "municipality": "中野区",
+   "field": "期限",
+   "url": "https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoteate.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）",
+    "evidence": "お子さんが生まれたり、中野区に転入された場合は、出生日や前住所地での転出予定日の翌日から15日以内（土・日・祝含む）に手続きをしてください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "ota",
+   "municipality": "大田区",
+   "field": "手数料",
+   "url": "https://www.city.ota.tokyo.jp/seikatsu/kodomo/teate/jidouteate/r7bukkadakataiouteate.files/ouennteatetirashipdf.pdf",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "物価高対応子育て応援手当の支給額と、支給のための手数料の振り込みを求める詐欺への注意喚起です。児童手当の認定請求そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "必要書類",
+   "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "必須：児童手当認定請求書。共通の添付書類：請求者・配偶者のマイナンバーカード両面の写し。該当者のみ：監護相当・生計費の負担についての確認書、別居監護の申立書、請求者の健康保険情報を確認できるものの写し、請求者の年金加入証明書の原本。",
+    "evidence": "4.必要書類\n\n『児童手当認定請求書』又は『児童手当額改定請求書』≪必須≫\n\n『監護相当・生計費の負担についての確認書』≪該当する方のみ≫\n\n※19歳に達する年度～22歳年度末の児童等は、監護相当の要件を満たす必要があります。\n\n※監護相当している19歳に達する年度～22歳年度末の児童等を含めると3人以上となる方のみ提出が必要です。該当すると思われる方は、書類をお送りしますので、このページ下のお問い合わせ先までご連絡ください。（このページ下の添付ファイルからもプリントアウトできます。）\n\n『別居監護の申立書』≪該当する方のみ≫\n\n※監護している18歳年度末までの児童と別居している場合は提出が必要です。該当する方には、書類をお送りしますので、このページ下のお問い合わせ先までご連絡ください。（このページ下の添付ファイルからもプリントアウトできます。）\n\n(注意)状況により、追加書類の提出を求める場合があります。\n\n請求者の健康保険情報を確認できるものの写し≪該当する方のみ≫\n\n(補足)請求者が加入している年金が国民年金、厚生年金(民間企業、私立学校共済)又は未加入の場合と額改定請求の場合は、健康保険証等の写しの貼付は不要です。その他の年金に加入している場合は、請求者の健康保険情報を確認できるものの写しが必要となる場合があります。詳しくは『児童手当認定請求書』又は『児童手当額改定請求書』の裏面をご確認ください。\n\n(補足)令和6年12月2日より、健康保険証の発行が終了し、マイナ保険証（健康保険証の利用登録が行われたマイナンバーカード）を基本とする仕組みに移行しました。健康保険証がお手元にない場合は、医療保険の保険者から交付された「資格情報のお知らせ」、「資格確認書」又はマイナポータルからダウンロードした「資格情報画面」を添付してください。\n\n4-1.添付書類\n\n請求者・配偶者のマイナンバー（個人番号）カードの表面・裏面の写し≪共通≫ \n\n請求者の『年金加入証明書』の原本≪該当する方のみ≫ ",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "子ども家庭課へ郵送・窓口・電子申請で提出可能。各総合支所保健福祉センター子ども家庭支援課の窓口でも提出可能。",
+    "evidence": "「児童手当認定請求書（額改定請求書）（以下、認定請求書という）」と「添付書類（必要な場合）」を合わせて、郵送、窓口又は電子申請で子ども家庭課に提出してください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": true,
+    "value": "窓口可・電子申請可（郵送可）",
+    "evidence": "「児童手当認定請求書（額改定請求書）（以下、認定請求書という）」と「添付書類（必要な場合）」を合わせて、郵送、窓口又は電子申請で子ども家庭課に提出してください。　添付書類が必要な方で、すべてそろわない場合は、認定請求書だけ先に提出してください。＊各総合支所保健福祉センター子ども家庭支援課の窓口でもご提出いただけます。　＊電子申請については、世田谷区のホームページをご確認ください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteatesinsesho.pdf",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "児童手当の認定請求書の様式と添付書類の説明です。本人確認書類の「窓口での提示」への言及はありますが、認定請求の受付窓口やオンライン申請の可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "申請窓口は子ども家庭課子ども医療・手当担当、または各総合支所の子ども家庭支援課。マイナンバーカードがあれば、マイナポータル経由で児童手当の認定請求をオンライン申請できる。",
+    "evidence": "上の必要書類と添付書類を合わせて、子ども家庭課子ども医療・手当担当の窓口又は各総合支所の子ども家庭支援課の窓口でご提出ください。\n\n5-3.電子申請をご希望の場合\n\nマイナンバーカードをお持ちの方は、マイナポータルを経由して電子申請をすることができます。\n\nご希望の方は、以下のリンクから申請ページへお進みください。\n\n児童手当認定請求書(新規申請)",
+    "why_not": "",
+    "evidence_verdict": "partial",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "窓口・電子申請の案内は、受給継続を確認する児童手当現況届の提出方法についてであり、児童手当の認定請求そのものの窓口・オンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/11545.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "育児・子育ての関連ページ一覧で、「手当・助成」への案内はありますが、児童手当の認定請求の窓口やオンライン申請の可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11726.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育ての区情報誌・メールマガジン等の一覧ページであり、児童手当の認定請求の窓口やオンライン申請の可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/11729.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育て支援のカテゴリ一覧で、手当・助成への案内と区の代表連絡先はありますが、児童手当の認定請求の窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/12400.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育てステーションの施設やほっとステイの案内ページであり、児童手当の認定請求の窓口やオンライン可否は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13019.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子どもの医療費助成や奨学金、就学援助などの関連ページ一覧であり、児童手当の認定請求の窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "ひとり親家庭向けの児童扶養手当・児童育成手当、医療費助成、貸付などの一覧であり、児童手当の認定請求の窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "期限",
+   "url": "https://www.city.setagaya.lg.jp/documents/18187/jidouteategoannai.pdf",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "出生日や前住所地での転出予定日の翌日から15日以内（申請月から支給を受けるための15日特例）",
+    "evidence": "ただし、申請日が出生日や前住所地での転出予定日の翌月になった場合でも、出生日や前住所地での転出予定日の翌日から15日以内に申請すれば、申請月から支給（又は増額）されます（15日特例）。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "申請が遅れると支給されない月が生じるという注意書きや、出生・転出に伴う「15日特例」（申請日の翌月分からの支給開始に関する例外規定）、他区市町村への転出時に転出先で15日以内に申請すべきという案内はあるが、世田谷区への児童手当認定請求そのものに「いつまでに申請しなければならない」という期限は記載されていない。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "期限",
+   "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "出生日・前住所地での転出予定日の翌日から15日以内（申請月から支給を受けるための15日特例）",
+    "evidence": "原則、申請日の翌月分から支給（増額）されます。ただし、申請日が出生日・前住所地での転出予定日の翌月になった場合でも、出生日・前住所地での転出予定日の翌日から15日以内に申請すれば、申請月から支給（又は増額）されます（15日特例）。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文に児童手当の認定請求（申請）自体の期限は書かれていない。「令和8年6月30日（火曜日）申請受付終了」は別制度の『物価高対応子育て応援手当』の受付終了日であり児童手当の申請期限ではない。また「15日特例」は出生・転出から15日以内に申請すれば申請月から支給される旨の規定で、支給開始月の扱いに関する記載であり、児童手当の申請そのものの期限ではない。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "期限",
+   "url": "https://www.city.setagaya.lg.jp/02413/1310.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている令和8年7月24日（金曜日）は現況届の提出期限であり、児童手当の認定請求そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "手数料",
+   "url": "https://www.city.setagaya.lg.jp/02413/18187.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文に記載された金額は児童手当や018サポートの支給額であり、児童手当の認定請求そのものの手数料については記載がありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "手数料",
+   "url": "https://www.city.setagaya.lg.jp/kodomokyouiku/kosodate/category/13024.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文はひとり親家庭向けの手当・助成・貸付の案内一覧であり、児童手当の認定請求そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "手数料",
+   "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/R7_kosodateouen.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は物価高対応子育て応援手当の案内です。2万円は支給額で、手数料への言及は給付金詐欺への注意喚起です。児童手当の認定請求そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "手数料",
+   "url": "https://www.city.shibuya.tokyo.jp/kodomo/kodomo-teate-josei/kodomo-teate/jido_f.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は特別児童扶養手当の案内で、記載された金額は手当の支給額、手数料の記載は粗大ごみなどの処理手数料の免除です。児童手当の認定請求そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "手数料",
+   "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/ninshin-teate/",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "妊娠・出産に関する手当・助成の一覧ページで、「児童手当」は関連コンテンツ名として記載されているだけです。児童手当の認定請求そのものの手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "手数料",
+   "url": "https://www.city.shibuya.tokyo.jp/contents/koho-news/1612/20260715_kodomo.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "児童手当の金額は月額の支給額です。ほかの費用は家事援助の費用負担、協賛広告料、講座の参加費・教材費であり、児童手当の認定請求そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "shinagawa",
+   "municipality": "品川区",
+   "field": "手数料",
+   "url": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-siryo/kuseizyoho-siryo-shinseisyo/hpg000009624.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は児童手当の申請書・添付書類・提出方法の案内で、申請そのものの手数料の記載はありません。「無料提供」はAdobe Readerについての記載です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "shinagawa",
+   "municipality": "品川区",
+   "field": "手数料",
+   "url": "https://www.city.shinagawa.tokyo.jp/PC/kodomo/kodomo-iryohizyosei/20250106164225.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は子育て世帯生活支援特別給付金の案内です。「手数料」は同給付金の支給を装った詐欺への注意喚起であり、児童手当の認定請求そのものの手数料の記載ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "手数料",
+   "url": "https://www.city.shinjuku.lg.jp/kodomo/jidoikusei01_000001_00004.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は物価高対応子育て応援手当の案内です。20,000円はその支給額であり、手数料への言及は同手当の支給を装った詐欺への注意喚起です。児童手当の認定請求そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "必要書類",
+   "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/km/kodomowakufes2026.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "こどもわくわくフェスティバルの開催日時・会場・実施内容などの案内であり、児童手当の認定請求に必要な書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "必要書類",
+   "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "育児講演会の開催案内で、一時保育を利用する際の持ち物が記載されています。児童手当の認定請求に必要な書類の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "期限",
+   "url": "https://www.city.sumida.lg.jp/kosodate_kyouiku/kosodate_site/teate_jyosei_shien/kosodatetokyoPP.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育て応援とうきょうパスポートの入手方法・利用方法や協賛店募集の案内であり、児童手当の認定請求の期限は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "手数料",
+   "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/natsu-kouryusitsu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「費用 無料」は交流室開放＆手形・足形カード作りの参加費の話であり、児童手当の認定請求の手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "手数料",
+   "url": "https://www.city.sumida.lg.jp/eventcalendar/kodomo_kosodate/ikujikouenkai.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「参加費 無料」は育児講演会の参加費のことであり、児童手当の認定請求の手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "必要書類",
+   "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/taitoukunoninteikodo/ishihamahashiba/isihamahasiba.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "石浜橋場こども園の未就園児向け交流・クラス体験、子育て相談、赤ちゃんの駅の案内です。児童手当の認定請求に必要な書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "幼児教育・保育の無償化に関する保育の必要性の認定申請・施設等利用費の請求手続きの案内であり、児童手当の認定請求の窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "認定こども園の入園申込みの窓口・電子申請についての案内であり、児童手当の認定請求の窓口・オンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "期限",
+   "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/moushikomi.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "認定こども園の入園申込期間・期限の案内であり、児童手当の認定請求の期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kosodatekyouiku/ninteikodomoen/1234.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は認定こども園の保育料・預かり保育の無償化とその認定・請求手続きについての案内であり、児童手当の認定請求そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "toshima",
+   "municipality": "豊島区",
+   "field": "必要書類",
+   "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育て世帯への食料支援事業（区内共通商品券の配付）の案内です。本人確認書類は商品券の受け取りに必要なもので、児童手当の認定請求の必要書類ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "toshima",
+   "municipality": "豊島区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育て世帯への食料支援事業（区内共通商品券の配付）の申請・受取窓口の案内であり、児童手当の認定請求の窓口やオンライン可否は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "jidouteate",
+   "municipality_id": "toshima",
+   "municipality": "豊島区",
+   "field": "期限",
+   "url": "https://www.city.toshima.lg.jp/261/kosodate/kosodate/teate-jose/2607031810.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "子育て世帯への食料支援事業の商品券配付に関する申請受付開始時期や受取可能期間の案内であり、児童手当の認定請求の期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "必要書類",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は、はてなブックマークの足立区関連ページ一覧や各記事の紹介であり、足立区の粗大ごみ収集の申込に必要な書類の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "必要書類",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kaden_sodai.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は、はてなブックマークの足立区関連ページの一覧であり、粗大ごみ収集の申込そのものの必要書類は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "必要書類",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/recycle-box.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "はてなブックマークの足立区関連ページ一覧であり、粗大ごみ収集の申込に必要な書類の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "必要書類",
+   "url": "https://www.city.adachi.tokyo.jp/gomi/reusesyokki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "地域イベント向けのリユース食器の貸出申請・取消申請・利用報告に関する案内であり、粗大ごみ収集の申込の必要書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.adachi.tokyo.jp/gomi/reusesyokki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "リユース食器の貸出・取消申請の窓口とオンライン申請の案内であり、粗大ごみ収集の申込に関する記載ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-namagomishoriki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "生ごみ処理機・コンポスト化容器の購入費補助金の申請方法（オンライン・郵送・窓口）の案内であり、粗大ごみ収集の申込の窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "期限",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は、はてなブックマークの足立区関連記事一覧です。図書館の標語募集期間や企画展の開催期間などはありますが、粗大ごみ収集の申込そのものの期限は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "期限",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kaden_sodai.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は、はてなブックマークの足立区関連の記事一覧や各記事の抜粋です。図書館の標語募集期間や企画展の開催期間などはありますが、粗大ごみ収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "期限",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/recycle-box.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は、はてなブックマークの足立区関連記事一覧で、図書館の標語募集期間や企画展の開催期間などはありますが、粗大ごみ収集の申込期限の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "期限",
+   "url": "https://www.city.adachi.tokyo.jp/gomi/reusesyokki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている期限はリユース食器の貸出申請・取消申請・返却に関するもので、粗大ごみ収集の申込期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "期限",
+   "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-namagomishoriki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている期限は、生ごみ処理機・コンポスト化容器購入費補助金の申請受付期間や購入後の経過期間、実機展示の期間であり、粗大ごみ収集の申込期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "手数料",
+   "url": "https://www.city.adachi.tokyo.jp/gomi/kaden_sodai.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "有料（金額の記載なし）",
+    "evidence": "粗大ごみは事前申込（予約）制です。「収集（有料）」と「指定場所への持ち込み（無料）」がありますが、いずれも粗大ごみ受付センターに申し込みが必要です。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "粗大ごみ収集は「収集（有料）」「指定場所への持ち込み（無料）」とだけ記載されており、具体的な手数料額や品目ごとの料金表は本文に記載されていない。家電リサイクル料金についての記述のみで、粗大ごみ処理手数料の具体的な記載はない。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "手数料",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/mokuseisodai.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は、はてなブックマークの足立区関連ページの紹介一覧であり、粗大ごみ収集の申込や品目ごとの処理手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "手数料",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kaden_sodai.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は、はてなブックマークの足立区関連ページの一覧であり、家庭の粗大ごみ収集の申込手数料や品目ごとの処理手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "手数料",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/recycle-box.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は、はてなブックマーク上の足立区関連ページの紹介一覧であり、足立区の粗大ごみ収集の申込手数料や品目ごとの処理手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "手数料",
+   "url": "https://www.city.adachi.tokyo.jp/gomi/reusesyokki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文はリユース食器貸出事業についてで、「無料」は食器の貸出費用です。粗大ごみ収集の申込や品目ごとの処理手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "手数料",
+   "url": "https://www.city.adachi.tokyo.jp/gomi/kurashi/kankyo/gomi-namagomishoriki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "生ごみ処理機・コンポスト化容器の購入費補助金についての案内であり、粗大ごみ収集の申込や品目ごとの処理手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "期限",
+   "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/sodaigomi/tesuryo.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "受付時間と、収集予定日の朝8時までに粗大ごみを出す期限の案内であり、収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "期限",
+   "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/josei/namagomishoriki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文の申請受付期間は生ごみ処理機等購入費助成金の申請期限であり、粗大ごみ収集の申込期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "期限",
+   "url": "https://www.city.arakawa.tokyo.jp/a025/recycle/shuushuubi/syusyubi.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文はごみ・プラスチックの収集・回収日と当日朝8時までの排出時刻、区役所の開庁時間の案内であり、粗大ごみ収集の申込そのものの期限は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "bunkyo",
+   "municipality": "文京区",
+   "field": "期限",
+   "url": "https://www.city.bunkyo.lg.jp/documents/959/sodaigomiitiran0806.pdf",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "品目ごとの処理手数料と出し方・申込時の注意点を示す一覧であり、粗大ごみ収集の申込そのものの期限は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "bunkyo",
+   "municipality": "文京区",
+   "field": "期限",
+   "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/gomi/kateigomi/chuui/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「朝8時まで」はごみを集積所に出す時刻の案内で、粗大ごみ収集の申込期限ではありません。ほかに区役所の開庁時間の記載はありますが、申込期限の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "必要書類",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/jigyoyonamagomi-josei.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "事業用生ごみ処理機購入費助成制度の提出書類の案内であり、家庭の粗大ごみ収集の申込に必要な書類の記載ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "必要書類",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/yuryo/kanpu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "有料ごみ処理券の還付請求に必要な書類等の案内であり、粗大ごみ収集の申込そのものの必要書類ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "期限",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/sodaigomi/menjo.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「収集日までに」は粗大ごみの収集手数料の免除申請の期限であり、粗大ごみ収集の申込そのものの期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "期限",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されているのは、ごみの収集曜日・カレンダーや排出時間、窓口の開庁時間、事業系有料ごみ処理券の差額交換期限であり、家庭の粗大ごみ収集の申込期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "期限",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/wakekata/kanen.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "燃やすごみ・燃やさないごみの収集曜日や排出時間の案内であり、粗大ごみ収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "期限",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/gomi/shokuhin-loss/jigyoyonamagomi-josei.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "事業用生ごみ処理機購入費の助成制度の案内です。1月末日までという期限は機器の設置・稼働の要件であり、粗大ごみ収集の申込期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "必要書類",
+   "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/wakekata/kunooshirasequiz.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "家庭ごみと資源の分別クイズの回答・解説で、携帯トイレ、モバイルバッテリー、雑紙の出し方の案内です。粗大ごみ収集の申込に必要な書類の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/50onjyun230401.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "中央区粗大ごみ受付センターで申込可能。電話：03-6833-2525（月曜日から土曜日の午前8時から午後7時まで）。インターネット：24時間受付。",
+    "evidence": "ご家庭で使用していたものを出す場合（業務用は除く）は、中央区粗大ごみ受付センター（外部サイトへリンク）（別ウィンドウで開きます）へお申込みください。\n\n電話：03-6833-2525（受付時間：月曜日から土曜日の午前8時から午後7時まで）\n\nインターネット：中央区粗大ごみ受付センター（24時間受付）（外部サイトへリンク）（別ウィンドウで開きます）",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "期限",
+   "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/bunbetsu/how_to_dispose_corona.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "感染症対策としてのごみ・資源の出し方や、集積所に出す時間・曜日の案内であり、粗大ごみ収集の申込期限は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "手数料",
+   "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/kouenkai2026.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「費用 無料」は清掃リサイクル講演会の参加費のことで、粗大ごみ収集の申込や品目ごとの処理手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "手数料",
+   "url": "https://www.city.chuo.lg.jp/a0039/kurashi/gomi/genryou/user_kdseiso_time_2019082209091.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "家電リサイクル法対象品目の収集運搬料金とリサイクル料金についての記載であり、中央区の粗大ごみ収集の申込の手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "期限",
+   "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/1065533.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "夏期のごみ収集作業と、収集日当日の午前8時までにごみを排出する案内であり、粗大ごみ収集の申込期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "期限",
+   "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/shigen/1001855.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "収集日当日の朝8時までという資源とごみの排出時刻や、出し方の注意事項の案内であり、粗大ごみ収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "期限",
+   "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/gomi/loss/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は生ごみ減量・食品ロス削減の説明であり、粗大ごみ収集の申込期限は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "kita",
+   "municipality": "北区",
+   "field": "期限",
+   "url": "https://www.city.kita.lg.jp/living/bins/1002013/1002020/1002024.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "有料粗大ごみ処理券の還付手続きの案内です。「1週間以内」は還付の電子申請後に処理券を送付する期限であり、粗大ごみ収集の申込期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "meguro",
+   "municipality": "目黒区",
+   "field": "期限",
+   "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/kanen.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "燃やすごみの分別・出し方や収集頻度、多量のごみを出す場合の事前相談の案内です。粗大ごみの対象や手続きへのリンクはありますが、粗大ごみ収集の申込期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "meguro",
+   "municipality": "目黒区",
+   "field": "期限",
+   "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/nenmatsu_mgr100.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "ごみ減量の目標や3Rの取り組みを案内する本文です。申請期間への注意はエコテイクアウト推進事業に関するもので、粗大ごみ収集の申込期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "meguro",
+   "municipality": "目黒区",
+   "field": "期限",
+   "url": "https://www.city.meguro.tokyo.jp/kurashi/gomi/bunbetsu/kensaku/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "資源・ごみの収集曜日や、水銀を含む製品を出す時刻の案内です。粗大ごみ収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "meguro",
+   "municipality": "目黒区",
+   "field": "手数料",
+   "url": "https://www.city.meguro.tokyo.jp/recycle/kurashi/gomi/ticket_shop.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "粗大ごみ処理券：A券200円、B券300円（手数料に合わせて組み合わせて購入）",
+    "evidence": "粗大ごみ処理券には、A券（200円券）とB券（300円券）があります。粗大ごみ手数料に合わせて組み合わせてお求め下さい。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": true,
+    "value": "粗大ごみ処理券 A券200円・B券300円",
+    "evidence": "粗大ごみ処理券には、A券（200円券）とB券（300円券）があります。粗大ごみ手数料に合わせて組み合わせてお求め下さい。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "minato",
+   "municipality": "港区",
+   "field": "期限",
+   "url": "https://www.city.minato.tokyo.jp/documents/67227/r6sodairyoukin.pdf",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「収集日の10日前まで」は手数料減免申請書等の郵送到着期限です。ほかに排出時刻や受付時間の記載はありますが、粗大ごみ収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "minato",
+   "municipality": "港区",
+   "field": "期限",
+   "url": "https://www.city.minato.tokyo.jp/kurashi/gomi/seso/toke/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文はごみ収集量・資源回収量の統計やごみ削減目標の案内であり、粗大ごみ収集の申込そのものの期限は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "minato",
+   "municipality": "港区",
+   "field": "期限",
+   "url": "https://www.city.minato.tokyo.jp/unei/kurashi/gomi/kate/konnabai/rinji.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "粗大ごみは事前申込が必要との案内のみで、申込期限は書かれていません。「収集日までに」は臨時ごみの処理券の購入期限、「事業活動実施日の2週間前までに」は地域活動やボランティア活動で発生したごみの収集相談の期限です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "minato",
+   "municipality": "港区",
+   "field": "期限",
+   "url": "https://www.city.minato.tokyo.jp/gomigenryou/kurashi/gomi/kate/k-wakekata/funen.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "不燃ごみの収集曜日や収集日にごみを出す時刻の案内であり、粗大ごみ収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "nakano",
+   "municipality": "中野区",
+   "field": "期限",
+   "url": "https://www.city.tokyo-nakano.lg.jp/kurashi/gomi/syoten-jigyosyo/syugojyutaku-recycle.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "集合住宅のリサイクル資源集積所の設置・検査と資源の排出時刻についての案内であり、家庭の粗大ごみ収集の申込期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "nakano",
+   "municipality": "中野区",
+   "field": "手数料",
+   "url": "https://www.city.tokyo-nakano.lg.jp/faq/gomi/sodaigomi01.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "品目ごとの処理手数料は排出品目一覧または受付センターで確認。申込時に有料粗大ごみ処理券の種類と必要枚数を案内。",
+    "evidence": "粗大ごみの手数料は、「排出品目一覧（外部サイト）」でご確認いただくか、粗大ごみ受付センター（外部サイト）（03‐5715‐2255 8～19時 月曜日～土曜日：年末年始を除く）にお問い合わせください。また、お申し込みの際には、処理手数料を含む「有料粗大ごみ処理券」の種類と必要枚数をご案内いたします。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "nerima",
+   "municipality": "練馬区",
+   "field": "期限",
+   "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
+   "group": "control",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されているのは手数料の決済期限、変更・取消しの申込期限、ごみを出す時刻であり、粗大ごみ収集の申込そのものの期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "nerima",
+   "municipality": "練馬区",
+   "field": "手数料",
+   "url": "https://www.city.nerima.tokyo.jp/kurashi/gomi/oshirase/sodaikessai.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "粗大ごみ処理手数料あり（金額の記載なし。オンライン決済可能）",
+    "evidence": "令和8年4月1日から、インターネットで粗大ごみ収集の申込みを行う場合、粗大ごみ処理手数料をオンライン決済（キャッシュレス決済）で支払うことができるようになりました。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "ota",
+   "municipality": "大田区",
+   "field": "手数料",
+   "url": "https://www.city.ota.tokyo.jp/seikatsu/gomi/shigentogomi/sodai.files/sodaitirai.pdf",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "品目に合わせた粗大ごみ処理券が必要（金額の記載なし）",
+    "evidence": "⑤運び出し料金は無料ですが、品目に合わせた粗大ごみ処理券が必要です。訪問調査（下見）の際に担当者からご案内いたしますので収集日までにコンビニエンスストア等でご購入ください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "期限",
+   "url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/381.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "粗大ごみの持ち込みの事前申込み、持ち込み日時、前日までのオンライン決済についての案内であり、収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "期限",
+   "url": "https://www.city.setagaya.lg.jp/02239/383.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "受付時間、処理券購入前の事前申込の案内、処理券の使用期限がない旨はありますが、粗大ごみ収集の申込そのものの期限は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "手数料",
+   "url": "https://www.city.setagaya.lg.jp/kurashi/gomi/11535.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "粗大ごみの処理手数料に関するリンク名はありますが、手数料の金額や処理券の枚数などの具体的な記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "手数料",
+   "url": "https://www.city.setagaya.lg.jp/02241/online_tetsuzuki/381.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されているのは持ち込みの手数料で、「手数料は、収集の場合の半額程度になります。」という比較のみです。収集の申込そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "手数料",
+   "url": "https://www.city.setagaya.lg.jp/02239/383.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "有料粗大ごみ処理券はA券200円、B券300円。処理手数料に合わせて組み合わせ、手数料は収集申込時に案内される。",
+    "evidence": "有料粗大ごみ処理券は、A券（200円）とB券（300円）の2種類あります。処理手数料に合わせて2種類を組み合わせて粗大ごみに貼ってください。手数料は収集お申し込み時にご案内します。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": true,
+    "value": "A券200円、B券300円",
+    "evidence": "有料粗大ごみ処理券は、A券（200円）とB券（300円）の2種類あります。処理手数料に合わせて2種類を組み合わせて粗大ごみに貼ってください。手数料は収集お申し込み時にご案内します。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "手数料",
+   "url": "https://www.city.setagaya.lg.jp/02241/385.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は違法な不用品回収業者への注意喚起と家庭の不用品の処理方法の案内です。業者の料金請求やリユース品の無償引取りへの言及はありますが、世田谷区の粗大ごみ収集の処理手数料の金額・料金表はなく、手数料に関する記載は関連ページのリンク名のみです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "必要書類",
+   "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文の必要書類は、有料ごみ処理券の還付（払戻し）請求に必要な書類であり、粗大ごみ収集の申込そのものに必要な書類ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "必要書類",
+   "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/r_shop.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "リサイクルショップの委託販売に登録・出品するための案内であり、記載された必要なものは登録時のものです。粗大ごみ収集の申込の必要書類ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "期限",
+   "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/kateigomi/kyasshuresu_sodaigomi.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "収集日の7日前という期限は、処理手数料のキャッシュレス決済と申込内容の変更・取り消しの期限です。粗大ごみ収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "期限",
+   "url": "https://www.city.shibuya.tokyo.jp/jigyosha/jigyo-gomi/haiki/ku_syusyu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "事業系ごみの収集利用・処理券・排出時刻と窓口の受付時間の案内です。家庭の粗大ごみ収集の申込期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "期限",
+   "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/recycle-torikumi/kaisyu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は資源の集団回収活動の案内です。「開始予定の1か月前」などは集団回収の団体登録や廃止・停止・再開の届出期限であり、粗大ごみ収集の申込期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "手数料",
+   "url": "https://www.city.shibuya.tokyo.jp/kurashi/gomi/gomi-tesuryo/gomi_seal.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "有料粗大ごみ処理券A：1枚200円、B：1枚300円",
+    "evidence": "有料粗大ごみ処理券の料金表\n\n券種\n\n現行料金\n\n有料粗大ごみ処理券A（1枚）\n\n200円\n\n有料粗大ごみ処理券B（1枚）\n\n300円",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "期限",
+   "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00023.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "ごみ減量新宿フェアの開催日程やフードドライブで受け入れる食品の賞味期限の条件についての案内であり、粗大ごみ収集の申込期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "手数料",
+   "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00023.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「費用 無料」はごみ減量新宿フェアの参加費の話であり、粗大ごみ収集の申込や品目ごとの処理手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "手数料",
+   "url": "https://www.city.shinjuku.lg.jp/kankyo/gomi01_000001_00026.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「費用 無料」は四谷リサイクルフェアの参加費のことであり、粗大ごみ収集の申込や品目ごとの処理手数料の記載ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "suginami",
+   "municipality": "杉並区",
+   "field": "手数料",
+   "url": "https://www.city.suginami.tokyo.jp/documents/727/sodai_itiran5080401.pdf",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "品目ごとに異なる（例：額縁は5枚まで400円）",
+    "evidence": "か額縁400５枚まで４００円です。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "手数料",
+   "url": "https://www.city.sumida.lg.jp/kurashi/gomi_recycle/kateikei/gomi_dashikata/sodaidasu/index.files/tesuuryou20250301.pdf",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "品目別の処理手数料あり。処理券はＡ券200円、Ｂ券300円。",
+    "evidence": "有料粗大ごみ処理券 （Ａ券＝200円　Ｂ券＝300円）",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "期限",
+   "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/sodaikaitei.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "令和5年9月30日（土曜日）まで（9月までの手数料を適用するための収集申込完了期限）",
+    "evidence": "〇令和5年9月30日（土曜日）までに収集の申込を完了していれば、収集日が10月でも9月までの手数料で収集します。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「令和5年9月30日（土曜日）までに収集の申込を完了していれば、収集日が10月でも9月までの手数料で収集します」という記載は、料率改定に伴う手数料適用の切り替え日を説明したものであり、粗大ごみ収集の申込そのものの受付期限を示すものではない。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "期限",
+   "url": "https://www.city.taito.lg.jp/kurashi/gomi/keikaku/kakusyupanfuretto/gomitoshigen.files/10.pdf",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "収集当日の朝８時までにごみを出す期限、電話・インターネットの受付時間、持込の事前予約や受入時間の案内であり、粗大ごみ収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "期限",
+   "url": "https://www.city.taito.lg.jp/kurashi/gomi/jigyosho/gomi/gomi.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "事業系ごみの処理方法、古い事業系有料ごみ処理券の使用期限、ごみを出す時刻の案内です。家庭の粗大ごみ収集の申込期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/gomi/wakekata/gomiinfo/sodaigomi/yuryogomishoriken.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "有料粗大ごみ処理券：A券200円、B券300円。粗大ごみの処理手数料額に合わせて組み合わせて使用。",
+    "evidence": "有料粗大ごみ処理券には、A券（200円）とB券（300円）があります。出される粗大ごみの処理手数料額となるように、2種類の券を組み合わせてご使用ください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "toshima",
+   "municipality": "豊島区",
+   "field": "期限",
+   "url": "https://www.city.toshima.lg.jp/150/kurashi/gomi/shigen/2211020850.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "年末年始の収集休止日と粗大ごみ受付センターの電話受付時間・休止期間の案内です。早めの申込を促していますが、粗大ごみ収集の申込そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "toshima",
+   "municipality": "豊島区",
+   "field": "期限",
+   "url": "https://www.city.toshima.lg.jp/155/kurashi/gomi/jigyosha/005558.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "「届出期限…毎年5月31日」は、事業用大規模建築物の所有者によるごみ処理・リサイクルフロー図の届出期限であり、家庭の粗大ごみ収集の申込期限ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "toshima",
+   "municipality": "豊島区",
+   "field": "手数料",
+   "url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/shigen/003060.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は有料ごみ処理券の取扱所一覧の案内です。「粗大ごみ処理手数料（料金）」という関連リンクはありますが、手数料の金額や処理券の枚数の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "sodaigomi",
+   "municipality_id": "toshima",
+   "municipality": "豊島区",
+   "field": "手数料",
+   "url": "https://www.city.toshima.lg.jp/151/kurashi/gomi/jigyosha/009044.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文にある有料収集や1キログラムあたり46円の手数料は、事業系ごみの処理費用についての記載です。家庭から出る粗大ごみ収集の申込や品目ごとの処理手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "手数料",
+   "url": "https://www.city.adachi.tokyo.jp/kurashi/todokede/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入届の案内へのリンクはありますが、転入届そのものの手数料は記載されていません。手数料の記載はコンビニエンスストア等での証明書発行についてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "adachi",
+   "municipality": "足立区",
+   "field": "手数料",
+   "url": "https://b.hatena.ne.jp/entry/https://www.city.adachi.tokyo.jp/koseki/kurashi/todokede/koseki-todokede.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文ははてなブックマークの足立区関連記事一覧で、入浴料や施設入場・イベント体験の無料案内はありますが、転入届そのものの手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "必要書類",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し等の証明書の交付申請に関する案内であり、転入届そのものの必要書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "必要書類",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写しの電話予約と受け取りに必要な書類についての案内であり、転入届そのものの必要書類ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "必要書類",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/ininjou/koronayuusou.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写しや戸籍に関する証明書等の郵送請求の案内であり、荒川区への転入届そのものの必要書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "必要書類",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し・戸籍証明書の郵送請求と交付手数料のキャッシュレス決済に関する案内であり、転入届そのものの必要書類は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/tennyuutenshutsu/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入届の詳細ページへのリンクはありますが、本文には転入届そのものの窓口やオンライン可否の記載はありません。オンラインの案内は転出届についてで、開庁時間は区役所全体の案内です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入届の案内ページへのリンクはありますが、転入届そのものの受付窓口やオンライン可否の記載はありません。オンラインの記載は転出届についてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/tenseki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本籍地を移す転籍届の届出先・窓口についての案内であり、他の市区町村から荒川区へ引っ越した際の転入届については書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/koseki-tetsuzuki/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍に関する手続きの一覧です。「転入・転出・転居」へのリンクや区役所全体の開庁時間はありますが、転入届そのものの窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/juuminhyou/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の証明書請求などの案内ページです。「転入・転出・転居」のリンクはありますが、転入届そのものの受付窓口やオンライン可否の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/todokede/koseki/yuusouseikyuu/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票に関する証明書等の窓口・郵送請求の案内であり、荒川区への転入届そのものの窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票関連の証明書の窓口交付・コンビニ交付・郵送・電話予約・オンライン申請の案内であり、転入届そのものの窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写しの電話予約と受け取り窓口の案内であり、転入届そのものの窓口・オンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/ininjou/koronayuusou.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写しや戸籍に関する証明書等の郵送・窓口請求の案内であり、転入届そのものの窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/a012/todokede/shoumeisho/online_manyuaru.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し・戸籍証明書等のオンライン申請と郵送受け取りの案内であり、転入届そのものの窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し・戸籍証明書の郵送請求における交付手数料のキャッシュレス決済の案内であり、転入届そのものの窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "手数料",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/utsushi.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は住民票の写し等の証明書の交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "手数料",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/koseki/denwayoyaku.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載の手数料「1通につき300円」は住民票の写しの交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "手数料",
+   "url": "https://www.city.arakawa.tokyo.jp/a012/todokede/shoumeisho/online_manyuaru.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されているのは住民票の写し・戸籍証明書・身分証明書の交付手数料や郵送料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "arakawa",
+   "municipality": "荒川区",
+   "field": "手数料",
+   "url": "https://www.city.arakawa.tokyo.jp/a010/todokede/shoumeisho/yuusou_cashless.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し・戸籍証明書の交付手数料と、そのキャッシュレス決済についての案内であり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "bunkyo",
+   "municipality": "文京区",
+   "field": "手数料",
+   "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "届出・証明などの案内リンク一覧で、転入届へのリンクはありますが、転入届そのものの手数料の記載はありません。「手数料一覧」や手数料免除の案内は証明書に関するものです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "bunkyo",
+   "municipality": "文京区",
+   "field": "手数料",
+   "url": "https://www.city.bunkyo.lg.jp/tetsuzuki/todokede/shoumeisho/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "各種証明書の案内ページで、証明書の手数料に関するリンクはありますが、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/mainambadenshi/card-keizoku.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "マイナンバーカードの住所・氏名等の変更や電子証明書の発行に関する案内で、転入届そのものの手数料の記載はありません。「無料」はAdobe Acrobat Readerのダウンロードの説明です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/juminhyo/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文の手数料の記載は、コンビニ交付で取得する各種証明書の手数料が一律100円引きになるという説明であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenshutsu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は転出届の手続きの説明で、千代田区の転入届そのものの手数料は記載されていません。「無料」はAdobe Acrobat Readerのダウンロードについてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tenkyo.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は千代田区内の転居届の手続き案内で、転入届そのものの手数料の記載はありません。「無料」はAdobe Acrobat Readerのダウンロードの話です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/koseki/todokede.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は出生届・婚姻届・転籍届などの戸籍の届出に関する案内で、転入届そのものの手数料の記載はありません。「無料」はAdobe Acrobat Readerのダウンロードについてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/jyuminhyo-heiki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は旧氏（旧姓）等の住民票等への併記手続きの案内です。「無料」はAdobe Acrobat Readerのダウンロードのことで、転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/yoshikihenko.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "手数料の記載は住民票の写し・住民票の除票の写しの交付に関するもので、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chiyoda",
+   "municipality": "千代田区",
+   "field": "手数料",
+   "url": "https://www.city.chiyoda.lg.jp/koho/kurashi/koseki/jumintoroku/tokkyuhakko.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されているのはマイナンバーカードの特急発行に伴う再交付手数料であり、千代田区の転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "必要書類",
+   "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/zyushohenkoutodokede.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "代理人が届け出る場合は、委任状と委任者の本人確認書類のコピーが必要。",
+    "evidence": "代理人（委任状と委任者の本人確認書類のコピーが必要です。）",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入・転居・転出の届出一覧や受付窓口・時間の案内のみで、転入届に必要な持参物（書類）は本文に記載されていない",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "必要書類",
+   "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/syusseitodoke/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "出生届の提出方法と必要書類についてのページであり、転入届そのものの必要書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "必要書類",
+   "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/user_kumin_time_20191030.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文の必要書類は、住民票やマイナンバーカードへの「旧氏」の記載請求に関するもので、転入届そのものの必要書類ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "必要書類",
+   "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/koseki/furigana.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍の氏名の振り仮名の記録・変更に関する案内であり、記載されている必要書類は振り仮名の変更届のものです。中央区への転入届の必要書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "期限",
+   "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminidou/zyushohenkoutodokede.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "住み始めた日から14日以内",
+    "evidence": "届出期間\n\n住み始めた日から14日以内",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "手数料",
+   "url": "https://www.city.chuo.lg.jp/a0012/kurashi/touroku/juuminhyou/shoumeisho/kosekitohu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は戸籍謄本・戸籍の附票・受理証明書などの証明書の交付手数料であり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "chuo",
+   "municipality": "中央区",
+   "field": "手数料",
+   "url": "https://www.city.chuo.lg.jp/kurashi/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "くらし・手続きの案内一覧で、「住民の異動の届出（転入・転出など）」の項目はありますが、転入届そのものの手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "edogawa",
+   "municipality": "江戸川区",
+   "field": "手数料",
+   "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/ido_todoke/hikkoshi_info.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "引越しワンストップサービスの利用方法や転入届に伴う手続きの案内であり、転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "edogawa",
+   "municipality": "江戸川区",
+   "field": "手数料",
+   "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/hyojunka.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は、住民票の除票の写しを複数人分請求する場合の交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "edogawa",
+   "municipality": "江戸川区",
+   "field": "手数料",
+   "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/seikyu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は住民票の写しなどの証明書の交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "edogawa",
+   "municipality": "江戸川区",
+   "field": "手数料",
+   "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/koikikofu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は、広域交付による住民票の写しの交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "edogawa",
+   "municipality": "江戸川区",
+   "field": "手数料",
+   "url": "https://www.city.edogawa.tokyo.jp/e038/kurashi/todoke/juminhyo/kihondaicho.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている「30分：1,000円」は住民基本台帳の閲覧手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "edogawa",
+   "municipality": "江戸川区",
+   "field": "手数料",
+   "url": "https://www.city.edogawa.tokyo.jp/kurashi/todoke/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入届の案内へのリンクはありますが、転入届そのものの手数料の記載はありません。手数料への言及は証明書の交付に関するものです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "edogawa",
+   "municipality": "江戸川区",
+   "field": "手数料",
+   "url": "https://www.city.edogawa.tokyo.jp/kurashi/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "くらし・手続きのカテゴリ一覧で、「住所の異動（引越し等）」の案内はありますが、転入届そのものの手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "hachioji",
+   "municipality": "八王子市",
+   "field": "手数料",
+   "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入届へのリンクはありますが、転入届そのものの手数料の記載はありません。手数料に関する記載は、住民票の写し・戸籍証明書などの交付手数料改定のお知らせです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "hachioji",
+   "municipality": "八王子市",
+   "field": "手数料",
+   "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し・戸籍証明の請求と証明書の交付手数料に関する案内であり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "hachioji",
+   "municipality": "八王子市",
+   "field": "手数料",
+   "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/p037367.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し・戸籍証明書などの交付手数料の改定についての案内であり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "hachioji",
+   "municipality": "八王子市",
+   "field": "手数料",
+   "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文にある手数料の記載は、住民票の写し・戸籍証明書などの交付手数料やその減免に関するもので、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "hachioji",
+   "municipality": "八王子市",
+   "field": "手数料",
+   "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/madoguchi/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し・戸籍証明書などの請求や交付手数料についてのページであり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "hachioji",
+   "municipality": "八王子市",
+   "field": "手数料",
+   "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/001/yuusou/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し・戸籍証明書などの交付手数料に関する案内であり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "hachioji",
+   "municipality": "八王子市",
+   "field": "手数料",
+   "url": "https://www.city.hachioji.tokyo.jp/kurashi/kosekijumin/001/002/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍証明等の請求や証明書の交付手数料に関する案内であり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001614.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "国外からの転入届の手続き案内で、転入届そのものの手数料の記載はありません。「無料」はAdobe Readerのダウンロードについてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001613.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は板橋区内での引越しに伴う転居届の案内であり、転入届そのものの手数料は記載されていません。「無料」はAdobe Readerのダウンロードについてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1058257.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "団体での住民異動届出の事前連絡や申請方法の案内で、転入届そのものの手数料は記載されていません。「無料」はAdobe Readerのダウンロードの話です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1014796.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は旧氏（旧姓）の住民票などへの併記についての案内で、転入届そのものの手数料は記載されていません。「無料」はAdobe Readerのダウンロードの説明です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "itabashi",
+   "municipality": "板橋区",
+   "field": "手数料",
+   "url": "https://www.city.itabashi.tokyo.jp/tetsuduki/koseki/juminhyo/1001619.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "補助番号制度の申請や、それに伴う住所変更等の費用負担、Adobe Readerの無料ダウンロードの説明であり、転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "katsushika",
+   "municipality": "葛飾区",
+   "field": "手数料",
+   "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/1030654.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "オンラインでの転出届と転入手続きの案内であり、転入届そのものの手数料の記載はありません。「無料」はAdobe Readerのダウンロードについてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "katsushika",
+   "municipality": "葛飾区",
+   "field": "手数料",
+   "url": "https://www.city.katsushika.lg.jp/kurashi/1000046/1001401/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "手数料の記載は各種証明書の交付手数料の免除についてであり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "kita",
+   "municipality": "北区",
+   "field": "手数料",
+   "url": "https://www.city.kita.lg.jp/living/registration/1001564/1016956.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入・転居に伴うマイナンバーカードなどの住所変更や電子証明書の発行手続きの説明で、転入届そのものの手数料は記載されていません。「無料」はAdobe Readerのダウンロードの話です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "kita",
+   "municipality": "北区",
+   "field": "手数料",
+   "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001573.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "団体での転入手続きに必要なものの案内で、転入届そのものの手数料の記載はありません。「無料」はAdobe Readerのダウンロードについてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "kita",
+   "municipality": "北区",
+   "field": "手数料",
+   "url": "https://www.city.kita.lg.jp/living/registration/1001564/1001571.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入届の手続き方法・届出場所・期間・持ち物などの案内であり、転入届そのものの手数料の記載はありません。「無料」はAdobe Readerのダウンロードについてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "koto",
+   "municipality": "江東区",
+   "field": "手数料",
+   "url": "https://www.city.koto.lg.jp/060301/kurashi/jumin/idotodoke/5015.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は江東区からの転出届の案内です。国外転出者向けマイナンバーカードの申請手数料免除や郵送料の記載はありますが、江東区への転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "koto",
+   "municipality": "江東区",
+   "field": "手数料",
+   "url": "https://www.city.koto.lg.jp/kurashi/jumin/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入届へのリンクはありますが、転入届そのものの手数料の記載はありません。手数料の記載は証明書の交付に関するものです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "meguro",
+   "municipality": "目黒区",
+   "field": "手数料",
+   "url": "https://www.city.meguro.tokyo.jp/kurashi/kosekitodokede/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍の届出（出生、婚姻、死亡など）の案内ページで、目黒区の転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "meguro",
+   "municipality": "目黒区",
+   "field": "手数料",
+   "url": "https://www.city.meguro.tokyo.jp/dxsenryaku/kurashi/sonota/hikkoshioss.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "引越しワンストップサービスの申請方法や転入・転出に伴う関連手続きの案内であり、目黒区の転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "meguro",
+   "municipality": "目黒区",
+   "field": "手数料",
+   "url": "https://www.city.meguro.tokyo.jp/koseki/kurashi/juuminhyou/mynumber.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている「住民票 1通300円」はマイナンバー入りの住民票の交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "nerima",
+   "municipality": "練馬区",
+   "field": "手数料",
+   "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/dennkinado.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "電気・水道・ガス等の引越し手続きの案内です。証明書の交付手数料に関するリンクはありますが、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "nerima",
+   "municipality": "練馬区",
+   "field": "手数料",
+   "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/20200303.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "証明書のコンビニ交付が窓口より100円安いことや、証明書の郵送請求の手数料の支払い方法についての記載であり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "nerima",
+   "municipality": "練馬区",
+   "field": "手数料",
+   "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/kosekitodokede0717.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されているのは戸籍謄本・抄本や受理証明書の交付手数料と郵送料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "nerima",
+   "municipality": "練馬区",
+   "field": "手数料",
+   "url": "https://www.city.nerima.tokyo.jp/kurashi/koseki/oshirase/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍・住民登録のお知らせ一覧です。証明書の郵送請求の手数料への言及はありますが、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "nerima",
+   "municipality": "練馬区",
+   "field": "手数料",
+   "url": "https://www.city.nerima.tokyo.jp/kurashi/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "くらし・手続きの案内や各分野へのリンクを掲載したページで、転入届そのものの手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "ota",
+   "municipality": "大田区",
+   "field": "手数料",
+   "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/jyuminhyo/todokede/jyuusyo-henkou_mynumber-card.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は、国外転出後のマイナンバーカードの再交付申請に関するもので、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "ota",
+   "municipality": "大田区",
+   "field": "手数料",
+   "url": "https://www.city.ota.tokyo.jp/seikatsu/koseki_j/kosekijyuminyuso.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は戸籍謄本・受理証明書・住民票の写し等の証明書の交付手数料であり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "必要書類",
+   "url": "https://www.city.setagaya.lg.jp/02233/84.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入・転居届に伴う関連手続きの受付窓口・受付時間・リンク先の案内であり、転入届そのものの必要書類は本文に記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "期限",
+   "url": "https://www.city.setagaya.lg.jp/kurashi/11524.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文はくらし・手続きの案内一覧で、転入届そのものの期限は記載されていません。「3か月間」は電子証明書の有効期限切れ後のマイナ保険証利用期間、「午前8時から午後9時まで」はお問い合わせセンターの受付時間です。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "setagaya",
+   "municipality": "世田谷区",
+   "field": "手数料",
+   "url": "https://www.city.setagaya.lg.jp/02233/84.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入・転居届に伴う関連手続きの受付窓口・受付時間・リンク先の案内であり、転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "手数料",
+   "url": "https://www.city.shibuya.tokyo.jp/kurashi/",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "くらしのカテゴリ一覧であり、「住所の異動」への案内はありますが、転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shibuya",
+   "municipality": "渋谷区",
+   "field": "手数料",
+   "url": "https://www.city.shibuya.tokyo.jp/kodomo/ninshin/nimpu-info/tennyuu_ninpu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "妊婦転入届の手続きや妊婦健診の公費負担・費用助成の案内であり、他の市区町村から渋谷区への転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "必要書類",
+   "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し等の証明書を請求・取得するときの必要書類の案内であり、転入届そのものの必要書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000001_00002.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "転入届は必ず窓口での手続きが必要（オンライン不可）",
+    "evidence": "転入届（他の市区町村から新宿区に引っ越してきた時の届出）及び転居届（新宿区内で引越したときの届出）は必ず窓口でのお手続きが必要となるためご注意ください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": true,
+    "value": "転入届は必ず窓口でのお手続きが必要（オンライン不可）",
+    "evidence": "転入届（他の市区町村から新宿区に引っ越してきた時の届出）及び転居届（新宿区内で引越したときの届出）は必ず窓口でのお手続きが必要となるためご注意ください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.shinjuku.lg.jp/todokede/kurashi00_100002.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住所変更の届出や電子申請サービスへのリンク、スマートフォン等での届出書作成の案内はありますが、転入届そのものの受付窓口やオンラインで提出できるかは書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.shinjuku.lg.jp/todokede/koseki01_000001_00011.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "転入届はオンラインでは完了せず、窓口での手続きが必要です。届出書作成サービスを利用できる窓口は本庁舎1階の戸籍住民課住民記録係です。",
+    "evidence": "利用できる窓口\n\n本庁舎1階 戸籍住民課 住民記録係\n\n※特別出張所及びその他の窓口ではご利用できません。\n\n作成できる届出書（請求書）\n\n転入届\n\n転出届\n\n転居届\n\n住民票の写し交付請求書（※）\n\n※新宿区に住民票がある方で、世帯全員または世帯一部の住民票の写しのみです。\n\n住民票記載事項証明書、または除かれた住民票（除票）の請求書は作成できません。\n\n注意事項\n\n本サービスはインターネットで手続きが完了するものではありません。システムでの画面入力後、窓口での手続きが必要です。入力後に表示されるＱＲコードをもとに届出書等を出力しますので、ご来庁の際に必ずＱＲコードをご持参ください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": true,
+    "value": "転入届はスマートフォン等で入力してQRコード化できるが、インターネットで手続きは完了せず、区役所本庁舎1階 戸籍住民課 住民記録係の窓口で手続きが必要",
+    "evidence": "作成できる届出書（請求書）\n\n転入届\n\n転出届\n\n転居届\n\n住民票の写し交付請求書（※）\n\n本サービスはインターネットで手続きが完了するものではありません。システムでの画面入力後、窓口での手続きが必要です。入力後に表示されるＱＲコードをもとに届出書等を出力しますので、ご来庁の際に必ずＱＲコードをご持参ください。",
+    "why_not": "",
+    "evidence_verdict": "partial",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_002019.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "転入届の窓口は戸籍住民課。スマートフォン等から受付番号を発券できる。オンラインで届出を完結できるかの記載はない。",
+    "evidence": "転入・転出など住民異動の手続きで戸籍住民課へ来庁される方は、スマートフォン等から受付番号を発券することができます。詳細は、こちらをご確認ください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "このページは戸籍住民課の窓口受付時間・混雑状況の案内で、受付番号の発券（来庁前提）やスマートフォンでの届出書作成について触れているだけで、転入届そのものの窓口可否・オンライン可否を明示していない",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し等の証明書の窓口請求・郵送請求・コンビニ交付等の案内です。住所変更の届出書を作成できる旨のリンクはありますが、転入届そのものの受付窓口やオンライン可否は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.shinjuku.lg.jp/living_03.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "引越し関連の案内ページで、「住所変更の届け出」「休日窓口」などのリンクはありますが、転入届そのものの受付窓口やオンライン可否は本文に書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "期限",
+   "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写し等の請求方法、本人確認書類の有効期限、窓口の受付時間についての案内であり、転入届そのものの期限は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "shinjuku",
+   "municipality": "新宿区",
+   "field": "手数料",
+   "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されているのは住民票の写し等の証明書の交付手数料や住民基本台帳一覧表の閲覧手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "suginami",
+   "municipality": "杉並区",
+   "field": "手数料",
+   "url": "https://www.city.suginami.tokyo.jp/kurashi/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "くらし・手続きの各項目を案内するページで、「引越しの手続き（転入・転出など）」への案内はありますが、転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "suginami",
+   "municipality": "杉並区",
+   "field": "手数料",
+   "url": "https://www.city.suginami.tokyo.jp/s018/536.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入届の手続き案内や関連手続きの説明はありますが、転入届そのものの手数料は記載されていません。有料の記載は東京都シルバーパスや自転車駐車場についてです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "必要書類",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "出生届・死亡届・婚姻届・離婚届・転籍届・分籍届・養子縁組届など、戸籍の届出に必要な書類の説明であり、転入届そのものの必要書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "必要書類",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍謄本・抄本などの戸籍証明書を請求する際の必要書類や請求方法についてのページであり、墨田区への転入届そのものの必要書類は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "必要書類",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_touroku.html",
+   "group": "exhausted",
+   "codex": {
+    "found": true,
+    "value": "本人確認書類、転出証明書（前住所地で個人番号カードを使って手続きした場合はそのカード）、マイナンバーカード（所持者のみ・異動者全員分）。別世帯の代理人が届け出る場合は委任状が必要。",
+    "evidence": "本人であることを確認できるもの（注釈1）\n\n転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）\n\nマイナンバーカード（お持ちの方のみ）（注釈3）\n\n※暗証番号（4桁の数字）の入力が必要です。\n\n本人又は世帯員\n（注釈2）\n\n（注釈1）運転免許証、パスポート、マイナンバーカード、資格確認書、在留カード、特別永住者証明書など\n（注釈2）別世帯の方が代理で届け出をする場合は、委任状が必要です。\n なお、同一世帯員は転入と併せて「電子証明書の発行」を行うことができます。詳細は「転入届と併せて行う「電子証明書の発行」の同一世帯員による代理手続について」をご確認ください。\n（注釈3）異動者全員分のマイナンバーカードをお持ちください。",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   },
+   "claude_again": {
+    "found": true,
+    "value": "本人であることを確認できるもの、転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードを持参）、マイナンバーカード（お持ちの方のみ、暗証番号の入力が必要）",
+    "evidence": "本人であることを確認できるもの（注釈1）\n転出証明書（前の住所地で個人番号カードを使った手続をされた方は、そのカードをお持ちください。）\nマイナンバーカード（お持ちの方のみ）（注釈3）\n※暗証番号（4桁の数字）の入力が必要です。",
+    "why_not": "",
+    "evidence_verdict": "normalized",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "必要書類",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票等の証明書の取得方法と、証明書を請求するときに必要なものについてのページです。転入届そのものの必要書類は本文に書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "窓口/オンライン可否",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "転入届は窓口への来庁が必要で、オンラインのみでは完結しません。窓口は墨田区役所1階1番窓口（窓口課住民異動係）又は各出張所です。",
+    "evidence": "（注釈1）転入、転居の手続は窓口に来ていただく必要があります。その際は必ずマイナンバーカードをご持参ください。\n\n来庁場所\n\n墨田区役所1階1番窓口（窓口課住民異動係）又は各出張所",
+    "why_not": "",
+    "evidence_verdict": "partial",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "期限",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/tenshutsunyu_oss.html",
+   "group": "control",
+   "codex": {
+    "found": true,
+    "value": "引越し後14日以内",
+    "evidence": "墨田区への転入・転居手続\n\n来庁申込できる期間\n\n引越し後14日以内",
+    "why_not": "",
+    "evidence_verdict": "exact",
+    "verified": true
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "手数料",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍の届出・証明の案内ページで、「戸籍証明の種類と手数料」はありますが、転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "手数料",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_todokede.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文は出生届・婚姻届・転籍届などの戸籍の届出についての案内で、転入届そのものの手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "手数料",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/koseki/koseki_syoumei.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "本文の手数料は戸籍証明書などの交付に関するもので、転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "手数料",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/yd/mado-yuso_taisaku.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は、住民票の写し等の証明書のコンビニ交付やオンライン請求に関するもので、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "sumida",
+   "municipality": "墨田区",
+   "field": "手数料",
+   "url": "https://www.city.sumida.lg.jp/kurashi/todokede_syoumei/zyuumintouroku/zyuumin_syoumei.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている料金は住民票等の証明書の交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/tennyu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "転入に伴う手続きや必要書類の案内であり、転入届そのものの手数料は記載されていません。「手数料一覧」はリンク名のみです。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/kosekitodokede/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍に関する届出の一覧ページです。「手数料一覧（戸籍）」へのリンクはありますが、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/honninkakunin.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍・住民登録関係の請求や届出に必要な本人確認書類の案内です。転入届そのものの手数料の記載はありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kouikikoufu_koseki.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は戸籍謄本・除籍謄本・改製原戸籍謄本・独身証明書の交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍に関する案内と「手数料一覧（戸籍）」へのリンクであり、転入届そのものの手数料は記載されていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍に関する証明や届出の案内ページで、「手数料一覧（戸籍）」や引越し手続きへのリンクはありますが、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍に関する証明書の取得方法や交付手数料の案内であり、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/koseki/koseki/kosekisyoumei/kosekiyuusouseikyuu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載されている手数料は戸籍の証明書を郵送で取得する際の交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/jyuminhyo/juminutusi/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "住民票の写しの取得方法や証明書についての案内です。手数料への言及は証明書に関するもので、転入届そのものの手数料は書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/madoguti/convenience/konnbinikoufu.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "記載の150円は、住民票の写し・印鑑登録証明書のコンビニ交付手数料であり、転入届そのものの手数料ではありません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  },
+  {
+   "procedure": "tennyu",
+   "municipality_id": "taito",
+   "municipality": "台東区",
+   "field": "手数料",
+   "url": "https://www.city.taito.lg.jp/kurashi/todokede/index.html",
+   "group": "exhausted",
+   "codex": {
+    "found": false,
+    "value": "",
+    "evidence": "",
+    "why_not": "戸籍・住民登録等の案内ページで、「転入・転居・転出について」や「手数料一覧」へのリンクはありますが、転入届そのものの手数料は本文に書かれていません。",
+    "evidence_verdict": "too_short",
+    "verified": false
+   }
+  }
+ ]
+}
